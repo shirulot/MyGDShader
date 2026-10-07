@@ -1,0 +1,4113 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "status": "TECHNICAL_40_PNG_RESOURCES_GODOT_VERIFIED",
+  "art_units": 123,
+  "technical_inputs": 40,
+  "physical_pngs": 40,
+  "scene_layout_masks": {
+    "actual_count": 0,
+    "budget_upper_bound": 30,
+    "status": "LAYOUT_DEPENDENT",
+    "reason": "现有布局未登记实际水面、露天降雨和热区；不以预算伪造图"
+  },
+  "assets": [
+    {
+      "id": "checkerboard",
+      "manifest_id": "D01",
+      "file": "res://assets/ember/data/calibration/checkerboard_v001.png",
+      "sha256": "28b8ffa55e1579f9a6910933f3d06f37547643c9c3b970ba82946fe8aaa12f12",
+      "canvas": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "data_semantics": "32px binary checker tiles; RGB32/224",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "color_test",
+      "manifest_id": "D01",
+      "file": "res://assets/ember/data/calibration/color_test_v001.png",
+      "sha256": "bf8941f026d90d5d871d751db92c7ef6bec85f3bd4b4d829c39f5bdf2665faa0",
+      "canvas": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": {
+        "patches": [
+          [
+            255,
+            0,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            0,
+            255
+          ],
+          [
+            255,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            255
+          ],
+          [
+            255,
+            0,
+            255
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            255,
+            255,
+            255
+          ]
+        ],
+        "gray_ramp_endpoints": [
+          0,
+          255
+        ],
+        "gray_steps": [
+          0,
+          17,
+          34,
+          51,
+          68,
+          85,
+          102,
+          119,
+          136,
+          153,
+          170,
+          187,
+          204,
+          221,
+          238,
+          255
+        ]
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "non_square_grid",
+      "manifest_id": "D01",
+      "file": "res://assets/ember/data/calibration/non_square_grid_v001.png",
+      "sha256": "a7652899645b3a024c65eeeee334d09cc7a1fd8dbf3056bce1a73c1b560e1e98",
+      "canvas": [
+        512,
+        256
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": "512x256 native grid, 64px square cells expose aspect ratio",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "straight_background",
+      "manifest_id": "D01",
+      "file": "res://assets/ember/data/calibration/straight_background_v001.png",
+      "sha256": "12563caaefddbec8231ef2de773071c41db1f22ccd9ca60a4cd18ea791a10507",
+      "canvas": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": "Horizontal/vertical64px and diagonal128px straight lines for distortion",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "uv_grid",
+      "manifest_id": "D01",
+      "file": "res://assets/ember/data/calibration/uv_grid_v001.png",
+      "sha256": "4b4a03345a8c3c8f39eb52b623b4675cd95fe519e2eb90d1935d78ff04611a2e",
+      "canvas": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": "R=U G=V background, labelled64px cells; origin top-left",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "color_ramp",
+      "manifest_id": "D02",
+      "file": "res://assets/ember/data/ramps/color_ramp_v001.png",
+      "sha256": "a4c3e562cb8705cfdacc5ee57092ea1e3af7c5dd3ed492ace40be45c7fdc8265",
+      "canvas": [
+        256,
+        1
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": {
+        "stops": [
+          [
+            0,
+            [
+              16,
+              24,
+              32
+            ]
+          ],
+          [
+            64,
+            [
+              30,
+              190,
+              200
+            ]
+          ],
+          [
+            128,
+            [
+              255,
+              180,
+              40
+            ]
+          ],
+          [
+            192,
+            [
+              240,
+              70,
+              60
+            ]
+          ],
+          [
+            255,
+            [
+              255,
+              255,
+              255
+            ]
+          ]
+        ],
+        "interpolation": "linear in encoded RGB; mark source_color when used as color",
+        "addressing": "clamp X; one-pixel Y"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "grayscale_gradient",
+      "manifest_id": "D02",
+      "file": "res://assets/ember/data/ramps/grayscale_gradient_v001.png",
+      "sha256": "2911d9c7191c5651c5da35b5d56f9395e6f13f37437148ff8134b9201c3d7299",
+      "canvas": [
+        256,
+        1
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": {
+        "linear_values": "x/255",
+        "endpoints": [
+          0,
+          255
+        ],
+        "steps": 256
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "circle_mask",
+      "manifest_id": "D03",
+      "file": "res://assets/ember/data/masks/circle_mask_v001.png",
+      "sha256": "4b54bac369f67089c879fa33b7d342bba43dfb8234e2ceaf973a200322eebdd3",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [],
+      "data_semantics": "center128/128 radius92; 2px soft boundary; black0 white1",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "star_mask",
+      "manifest_id": "D03",
+      "file": "res://assets/ember/data/masks/star_mask_v001.png",
+      "sha256": "296147c4c560599fa360514924f200a877a7defb12b4581572703da629459c8c",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [],
+      "data_semantics": {
+        "vertices": [
+          [
+            128.0,
+            34.0
+          ],
+          [
+            152.68698059628386,
+            94.02128623625221
+          ],
+          [
+            217.39931253174444,
+            98.95240252875494
+          ],
+          [
+            167.94437368439645,
+            140.9787137637478
+          ],
+          [
+            183.25181371549246,
+            204.04759747124507
+          ],
+          [
+            128.0,
+            170.0
+          ],
+          [
+            72.74818628450754,
+            204.04759747124507
+          ],
+          [
+            88.05562631560355,
+            140.9787137637478
+          ],
+          [
+            38.60068746825556,
+            98.95240252875496
+          ],
+          [
+            103.31301940371613,
+            94.02128623625221
+          ]
+        ],
+        "binary_values": [
+          0,
+          255
+        ],
+        "origin": "center128/128"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "noise_high",
+      "manifest_id": "D04",
+      "file": "res://assets/ember/data/noise/noise_high_v001.png",
+      "sha256": "7fbd0fa409a130054d6504d4d1a135749c1d30144b9277fc7bec941f73022069",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "data_semantics": {
+        "seed": 240411,
+        "phase_frequency_band": [
+          10,
+          24
+        ],
+        "modes": [
+          [
+            -11,
+            19,
+            3.8582947755739663,
+            0.39999169560860715
+          ],
+          [
+            -14,
+            19,
+            4.860019384702083,
+            0.7080270810622235
+          ],
+          [
+            18,
+            -20,
+            3.119134495838602,
+            0.8990747830160521
+          ],
+          [
+            11,
+            14,
+            3.741360888898951,
+            0.6855015243325253
+          ],
+          [
+            -14,
+            -19,
+            1.169525127001663,
+            0.9473823369706811
+          ],
+          [
+            16,
+            23,
+            0.2328165678077561,
+            0.6901812464192238
+          ],
+          [
+            -23,
+            -10,
+            1.1473811654457653,
+            0.36544234028223577
+          ],
+          [
+            -21,
+            15,
+            2.1890328670749657,
+            0.7570705933383304
+          ],
+          [
+            11,
+            21,
+            0.3371736766249075,
+            0.5027298416894301
+          ],
+          [
+            -22,
+            -20,
+            2.4274113134452637,
+            0.34233474644194095
+          ],
+          [
+            14,
+            12,
+            0.5208612980036837,
+            0.5529668730271374
+          ],
+          [
+            -16,
+            24,
+            5.7787715046181125,
+            0.3760569335871077
+          ],
+          [
+            -12,
+            24,
+            3.354064874728648,
+            0.727227367782894
+          ],
+          [
+            19,
+            -23,
+            5.862449729034519,
+            0.32231318560261846
+          ],
+          [
+            -14,
+            -15,
+            0.36946518002094175,
+            0.8465349691327628
+          ],
+          [
+            -23,
+            12,
+            0.021528634383830916,
+            0.5894020980166166
+          ],
+          [
+            13,
+            12,
+            2.3868232854740983,
+            0.34556081262752536
+          ],
+          [
+            -10,
+            11,
+            1.9825440034619553,
+            0.8080820672457854
+          ],
+          [
+            23,
+            14,
+            5.515672559867095,
+            0.9906521236110841
+          ],
+          [
+            15,
+            -20,
+            6.261305911622954,
+            0.8168309384859809
+          ],
+          [
+            -20,
+            20,
+            1.3095863516612014,
+            0.6792243802422924
+          ],
+          [
+            10,
+            -17,
+            5.618458078395736,
+            0.40777189013016546
+          ],
+          [
+            24,
+            -22,
+            4.809099861868621,
+            0.9734964136157733
+          ],
+          [
+            -18,
+            19,
+            1.7640786758016505,
+            0.5502087583967428
+          ]
+        ],
+        "coordinates": "q(s)=s-sin(2*pi*s)/(2*pi); endpoint derivative zero; nonuniform phase speed",
+        "seam": "XY endpoints and finite first differences exact"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "noise_low",
+      "manifest_id": "D04",
+      "file": "res://assets/ember/data/noise/noise_low_v001.png",
+      "sha256": "593e85cbe83f2c9e3d7a85c0af8fe9ac5bb998a30b219973be53fd98effa979a",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "data_semantics": {
+        "seed": 240410,
+        "phase_frequency_band": [
+          1,
+          4
+        ],
+        "modes": [
+          [
+            -1,
+            1,
+            2.0512689789539755,
+            0.599891052500714
+          ],
+          [
+            4,
+            -4,
+            6.205712985185638,
+            0.3734473122857906
+          ],
+          [
+            -2,
+            1,
+            3.1278186250075906,
+            0.8942101855643829
+          ],
+          [
+            -2,
+            -4,
+            2.823547758317705,
+            0.6371836238167796
+          ],
+          [
+            -3,
+            4,
+            4.664940290769204,
+            0.9450163051083942
+          ],
+          [
+            -1,
+            4,
+            5.024808296703175,
+            0.8199942332765102
+          ],
+          [
+            1,
+            -4,
+            4.623158741676254,
+            0.7660055598614546
+          ],
+          [
+            -2,
+            -3,
+            2.87801155018723,
+            0.9793330769788056
+          ],
+          [
+            -3,
+            -3,
+            3.3840802014190388,
+            0.32894852234118327
+          ],
+          [
+            -3,
+            2,
+            5.147935407658484,
+            0.30618192843060404
+          ],
+          [
+            -1,
+            -3,
+            0.31288656123275316,
+            0.42796380378911564
+          ],
+          [
+            4,
+            2,
+            0.4590348887012266,
+            0.4904397439817006
+          ],
+          [
+            2,
+            1,
+            5.184876588026078,
+            0.6976618386209682
+          ],
+          [
+            4,
+            1,
+            5.741059074557481,
+            0.3735718758956772
+          ],
+          [
+            4,
+            3,
+            1.5178504555768866,
+            0.6650564133210152
+          ],
+          [
+            -3,
+            2,
+            0.6805103391457801,
+            0.5317995082068733
+          ],
+          [
+            -2,
+            4,
+            4.760498967108383,
+            0.6520924059226723
+          ],
+          [
+            4,
+            1,
+            1.359116074113185,
+            0.5163817695963132
+          ],
+          [
+            2,
+            -4,
+            4.15860332176506,
+            0.6780310669016776
+          ],
+          [
+            -2,
+            3,
+            3.725319617956373,
+            0.35527284073694315
+          ],
+          [
+            4,
+            -4,
+            3.824664889144819,
+            0.5371248066655214
+          ],
+          [
+            2,
+            3,
+            0.7933025281099043,
+            0.9497074980774027
+          ],
+          [
+            4,
+            2,
+            6.268806476498345,
+            0.6322168524041981
+          ],
+          [
+            -3,
+            -4,
+            1.072955487364654,
+            0.6560843350105038
+          ]
+        ],
+        "coordinates": "q(s)=s-sin(2*pi*s)/(2*pi); endpoint derivative zero; nonuniform phase speed",
+        "seam": "XY endpoints and finite first differences exact"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "alpha_edge_test",
+      "manifest_id": "D05",
+      "file": "res://assets/ember/data/calibration/alpha_edge_test_v001.png",
+      "sha256": "af62f2c5a36c367f34d398a399c4b30423c4e65938e8f50d7dc45f6334c3dbe1",
+      "canvas": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "data_semantics": {
+        "opaque_body": [
+          12,
+          12,
+          91,
+          95
+        ],
+        "transparent_hole": [
+          30,
+          30,
+          66,
+          66
+        ],
+        "thin_lines": "isolated 1px horizontal and vertical lines",
+        "alpha_gradient": "x12..75 y108..119 alpha0..255"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "energy_stripe",
+      "manifest_id": "D06",
+      "file": "res://assets/ember/data/energy/energy_stripe_v001.png",
+      "sha256": "1e3128dcbe9e8d6c467bd2a46260c3b598585d2f96ae4e5ae8bce532cfc2c7f2",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "data_semantics": "eight32px sinusoidal stripes; X/Y periodic center sampling",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "radial_ramp",
+      "manifest_id": "D06",
+      "file": "res://assets/ember/data/energy/radial_ramp_v001.png",
+      "sha256": "7af92ddfe2a535e23a4182260f3d12d926658027fc2770b3518136355bfd8a3f",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [],
+      "data_semantics": "center1 to radius128=0; .r weight",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "test_height",
+      "manifest_id": "D07",
+      "file": "res://assets/ember/data/calibration/test_height_v001.png",
+      "sha256": "4c6ea997cc54bc842b3c301293f0fa9e50f3807f0f916fa864e645e29e7edc81",
+      "canvas": [
+        128,
+        128
+      ],
+      "mode": "L",
+      "repeat_axes": [],
+      "data_semantics": {
+        "convex_center": [
+          35,
+          46
+        ],
+        "concave_center": [
+          91,
+          46
+        ],
+        "neutral": 128,
+        "ramp_x": [
+          16,
+          88,
+          48,
+          112
+        ],
+        "ramp_y": [
+          80,
+          88,
+          112,
+          112
+        ],
+        "height_scale": 8.0
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "test_normal",
+      "manifest_id": "D07",
+      "file": "res://assets/ember/data/calibration/test_normal_v001.png",
+      "sha256": "806f82a0d4657034c873cbd23c30b846b36226b749fbe2c8bd4fe1c7accd726f",
+      "canvas": [
+        128,
+        128
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": {
+        "height_id": "test_height",
+        "convention": "OpenGL +X,+Y,+Z; n=(-dh/dx,+dh/dy,1)",
+        "height_scale": 8.0,
+        "difference": "numpy gradient on actual quantized L PNG"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "console",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/console_mask_v001.png",
+      "sha256": "07eb3a4b27ec2ee5e66fa719bffb60b2b6bd7f4265f050e155a89d74d1ef735f",
+      "canvas": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        48,
+        80
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        18,
+        22,
+        78,
+        80
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 336,
+          "bbox": [
+            36,
+            33,
+            60,
+            47
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 336,
+          "bbox": [
+            36,
+            33,
+            60,
+            47
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 2928,
+          "bbox": [
+            18,
+            22,
+            78,
+            80
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "console_base",
+      "source_file": "res://assets/ember/buildings/console/console_base_v001.png",
+      "source_sha256": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/0/runtime_windows",
+      "registered_geometry_sha256": "55a1fe9fc16554ee63c7bf61416706ad5d9661c0f3accfe4b59c5a94b5d2905c",
+      "registered_geometry": {
+        "canvas": [
+          96,
+          96
+        ],
+        "anchor": [
+          48,
+          80
+        ],
+        "windows": [
+          {
+            "id": "console_screen",
+            "visual_frame_bounds": [
+              33,
+              29,
+              63,
+              50
+            ],
+            "safe_active_rect": [
+              36,
+              33,
+              60,
+              47
+            ],
+            "center": [
+              48.0,
+              40.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.5,
+              0.4166666666666667
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "screen_neutral",
+        "selection_sources": [
+          {
+            "layer_name": "screen_neutral",
+            "file": "art-source/ember/batch-03-objects/layers/console_base/screen_neutral_selection.png",
+            "sha256": "572b573f95d1bb7ca3f4ce72b6c1b69d633e723d031e8cbc63f2f3de72a5b2cb",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/console_base/screen_neutral.png",
+            "component_sha256": "307e973ffdaa9165886ad46005ea9a2601eea5210bb2f82d8d7afa2ca77d065c",
+            "component_anchor": [
+              48,
+              80
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 336,
+            "bbox": [
+              36,
+              33,
+              60,
+              47
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "screen_neutral",
+          "file": "art-source/ember/batch-03-objects/layers/console_base/screen_neutral_selection.png",
+          "sha256": "572b573f95d1bb7ca3f4ce72b6c1b69d633e723d031e8cbc63f2f3de72a5b2cb",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/console_base/screen_neutral.png",
+          "component_sha256": "307e973ffdaa9165886ad46005ea9a2601eea5210bb2f82d8d7afa2ca77d065c",
+          "component_anchor": [
+            48,
+            80
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 336,
+          "bbox": [
+            36,
+            33,
+            60,
+            47
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/console_mask_review_2x.png",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/object-masks/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "cooler",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/cooler_mask_v001.png",
+      "sha256": "c58e6a6e5183459a28a7b041587c08930d35af29ff426d735a2fd46d52fdf3da",
+      "canvas": [
+        160,
+        192
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        80,
+        176
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        29,
+        50,
+        132,
+        176
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 60,
+          "bbox": [
+            75,
+            122,
+            85,
+            128
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 60,
+          "bbox": [
+            75,
+            122,
+            85,
+            128
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 10191,
+          "bbox": [
+            29,
+            50,
+            132,
+            176
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "cooler_base",
+      "source_file": "res://assets/ember/buildings/cooler/cooler_base_v001.png",
+      "source_sha256": "86606ba53c17e572cc19e5f1b9336e8245ecc52fa01cc6ddc08761b13047ca2b",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/3/runtime_windows",
+      "registered_geometry_sha256": "3db442e713aac1e6f98658a9c763ed61c51f97d170e74a14bc92ce2b36ae9759",
+      "registered_geometry": {
+        "canvas": [
+          160,
+          192
+        ],
+        "anchor": [
+          80,
+          176
+        ],
+        "windows": [
+          {
+            "id": "cooling_core",
+            "visual_frame_bounds": [
+              72,
+              118,
+              89,
+              131
+            ],
+            "safe_active_rect": [
+              75,
+              122,
+              85,
+              128
+            ],
+            "center": [
+              80.0,
+              125.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.5,
+              0.6510416666666666
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "core_window",
+        "selection_sources": [
+          {
+            "layer_name": "core_window",
+            "file": "art-source/ember/batch-03-objects/layers/cooler_base/core_window_selection.png",
+            "sha256": "7e8ddafedfe786a5cad17ce99c5148f65f15eb782bfcc99ecc96086244fb0bcb",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/cooler_base/core_window.png",
+            "component_sha256": "c8c851fbdab302086c5c37bef412060775d3b9629445ce9d5ec836b1944d3a84",
+            "component_anchor": [
+              80,
+              176
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 60,
+            "bbox": [
+              75,
+              122,
+              85,
+              128
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "core_window",
+          "file": "art-source/ember/batch-03-objects/layers/cooler_base/core_window_selection.png",
+          "sha256": "7e8ddafedfe786a5cad17ce99c5148f65f15eb782bfcc99ecc96086244fb0bcb",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/cooler_base/core_window.png",
+          "component_sha256": "c8c851fbdab302086c5c37bef412060775d3b9629445ce9d5ec836b1944d3a84",
+          "component_anchor": [
+            80,
+            176
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 60,
+          "bbox": [
+            75,
+            122,
+            85,
+            128
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/cooler_mask_review_2x.png",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/object-masks/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "floor_lamp",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/floor_lamp_mask_v001.png",
+      "sha256": "ea187834f857c07d0fbd9de2ddee489805d2a52a988a72c96fa79e4c15c2375d",
+      "canvas": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        23,
+        12,
+        41,
+        56
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 24,
+          "bbox": [
+            30,
+            26,
+            34,
+            32
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 24,
+          "bbox": [
+            30,
+            26,
+            34,
+            32
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 628,
+          "bbox": [
+            23,
+            12,
+            41,
+            56
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "floor_lamp",
+      "source_file": "res://assets/ember/buildings/lights/floor_lamp_v001.png",
+      "source_sha256": "09b7b326be066958f0c9015cd07bdf6532bd74c7e0861d2eabacfb3b8590b464",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/6/runtime_windows",
+      "registered_geometry_sha256": "9e1c715539cc1f18ee336980b3ab83ac096bbfc693fd45fa2919f5cf7a497805",
+      "registered_geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          56
+        ],
+        "windows": [
+          {
+            "id": "lamp_lens",
+            "visual_frame_bounds": [
+              28,
+              24,
+              36,
+              34
+            ],
+            "safe_active_rect": [
+              30,
+              26,
+              34,
+              32
+            ],
+            "center": [
+              32.0,
+              29.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.5,
+              0.453125
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "lens_neutral",
+        "selection_sources": [
+          {
+            "layer_name": "lens_neutral",
+            "file": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral_selection.png",
+            "sha256": "8e7b45bd054789292b1dd191960a0bf253bb195e5daf48594aaaf4f5d713056d",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral.png",
+            "component_sha256": "b283880f60f9a4e8e753925b506b81c514bdc9a26003bd744646e2e3231febd9",
+            "component_anchor": [
+              32,
+              56
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 24,
+            "bbox": [
+              30,
+              26,
+              34,
+              32
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "lens_neutral",
+          "file": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral_selection.png",
+          "sha256": "8e7b45bd054789292b1dd191960a0bf253bb195e5daf48594aaaf4f5d713056d",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral.png",
+          "component_sha256": "b283880f60f9a4e8e753925b506b81c514bdc9a26003bd744646e2e3231febd9",
+          "component_anchor": [
+            32,
+            56
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 24,
+          "bbox": [
+            30,
+            26,
+            34,
+            32
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/floor_lamp_mask_review_2x.png",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/object-masks/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "pump",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/pump_mask_v001.png",
+      "sha256": "14eb5624ea241bc8234fd1e5e0baa0c57b1adeacb213c4f1b715febc502e4436",
+      "canvas": [
+        160,
+        192
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        80,
+        176
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        25,
+        58,
+        136,
+        176
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 32,
+          "bbox": [
+            77,
+            140,
+            85,
+            144
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 32,
+          "bbox": [
+            77,
+            140,
+            85,
+            144
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 7731,
+          "bbox": [
+            25,
+            58,
+            136,
+            176
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "pump_base",
+      "source_file": "res://assets/ember/buildings/pump/pump_base_v001.png",
+      "source_sha256": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/1/runtime_windows",
+      "registered_geometry_sha256": "81904780b237a75f949b7dc02f1769d4be979ac4e06df1c2bea576bd22a82e31",
+      "registered_geometry": {
+        "canvas": [
+          160,
+          192
+        ],
+        "anchor": [
+          80,
+          176
+        ],
+        "windows": [
+          {
+            "id": "pump_gauge",
+            "visual_frame_bounds": [
+              73,
+              136,
+              89,
+              146
+            ],
+            "safe_active_rect": [
+              77,
+              140,
+              85,
+              144
+            ],
+            "center": [
+              81.0,
+              142.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.50625,
+              0.7395833333333334
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": null,
+        "selection_sources": []
+      },
+      "selection_sources": [],
+      "selection_rect_difference_count": null,
+      "selection_basis": "已验收登记 safe_active_rect ∩ 底图 Alpha；底图没有独立窗口 selection",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/pump_mask_review_2x.png",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/object-masks/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "relay",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/relay_mask_v001.png",
+      "sha256": "e3f91d9ec9462f28131571589197d668b8f2d13530360c5442fada3515108a75",
+      "canvas": [
+        192,
+        256
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        96,
+        240
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        51,
+        52,
+        141,
+        240
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 210,
+          "bbox": [
+            91,
+            166,
+            101,
+            187
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 210,
+          "bbox": [
+            91,
+            166,
+            101,
+            187
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 8932,
+          "bbox": [
+            51,
+            52,
+            141,
+            240
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "relay_base",
+      "source_file": "res://assets/ember/buildings/relay/relay_base_v001.png",
+      "source_sha256": "2c42f50ae8af4aa2397255112fa4255ed5f50d943919611c4419d04b06669b98",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/4/runtime_windows",
+      "registered_geometry_sha256": "c2f42b849334d5a2f3b84801998be48ea5387b4c05c3696b3a71b3f251e4ef53",
+      "registered_geometry": {
+        "canvas": [
+          192,
+          256
+        ],
+        "anchor": [
+          96,
+          240
+        ],
+        "windows": [
+          {
+            "id": "relay_core",
+            "visual_frame_bounds": [
+              87,
+              162,
+              106,
+              192
+            ],
+            "safe_active_rect": [
+              91,
+              166,
+              101,
+              187
+            ],
+            "center": [
+              96.0,
+              176.5
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.5,
+              0.689453125
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "core_window",
+        "selection_sources": [
+          {
+            "layer_name": "core_window",
+            "file": "art-source/ember/batch-03-objects/layers/relay_base/core_window_selection.png",
+            "sha256": "e3f1a8ee6352fcc646d77d1d051c9ca274a49b9b854291716395cfde2c7107e8",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/relay_base/core_window.png",
+            "component_sha256": "1be4315343d3aa61fcd7d9c3cd6ce57a5cb40ea638d9ebc9a5539e3f9e938595",
+            "component_anchor": [
+              96,
+              240
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 210,
+            "bbox": [
+              91,
+              166,
+              101,
+              187
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "core_window",
+          "file": "art-source/ember/batch-03-objects/layers/relay_base/core_window_selection.png",
+          "sha256": "e3f1a8ee6352fcc646d77d1d051c9ca274a49b9b854291716395cfde2c7107e8",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/relay_base/core_window.png",
+          "component_sha256": "1be4315343d3aa61fcd7d9c3cd6ce57a5cb40ea638d9ebc9a5539e3f9e938595",
+          "component_anchor": [
+            96,
+            240
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 210,
+          "bbox": [
+            91,
+            166,
+            101,
+            187
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/relay_mask_review_2x.png",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/object-masks/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "station",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/station_mask_v001.png",
+      "sha256": "c8e3d80b7858b22e4c2a293ec9b9a200ba9aea2b27e24e9a30983c36d4dd7fdf",
+      "canvas": [
+        128,
+        160
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        64,
+        144
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        17,
+        26,
+        111,
+        144
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 580,
+          "bbox": [
+            54,
+            66,
+            74,
+            95
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 580,
+          "bbox": [
+            54,
+            66,
+            74,
+            95
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 8036,
+          "bbox": [
+            17,
+            26,
+            111,
+            144
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "B01",
+      "source_file": "res://assets/ember/buildings/station/station_base_v001.png",
+      "source_sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4",
+      "source_geometry_file": "art-source/ember/batch-01/pixel-finish-v001/finishing-record.json",
+      "source_geometry_sha256": "a09ffeee72bf424c45dfe2ddff9895d26829fbefab8d76f67cee296f99a7c17f",
+      "source_geometry_json_pointer": "/1/runtime_layout/windows",
+      "registered_geometry_sha256": "0ade12cb4e41c3274c8a671d9929d07df8efa833b44a94c6b8130efdc1ac4d99",
+      "registered_geometry": {
+        "canvas": [
+          128,
+          160
+        ],
+        "anchor": [
+          64,
+          144
+        ],
+        "windows": [
+          {
+            "id": "energy_core",
+            "appearance": "未运行的两档中性暗面",
+            "frame_visual_bounds": [
+              49,
+              60,
+              79,
+              102
+            ],
+            "frame_visual_bounds_role": "含安装框的视觉定位范围，非精确窗口Mask",
+            "safe_active_rect": [
+              54,
+              66,
+              74,
+              95
+            ],
+            "center": [
+              64,
+              80.5
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.5,
+              0.503125
+            ],
+            "safe_active_rect_role": "实际连续20×29暗面；也是像素整理的中间处理区，仅用于安全局部变化，未覆盖完整倒角窗口。",
+            "mask_delivery_status": "NOT_PRODUCED"
+          }
+        ],
+        "selected_layer": null,
+        "selection_sources": []
+      },
+      "selection_sources": [],
+      "selection_rect_difference_count": null,
+      "selection_basis": "已验收登记 safe_active_rect ∩ 底图 Alpha；底图没有独立窗口 selection",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/station_mask_review_2x.png",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/object-masks/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "telepad",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/telepad_mask_v001.png",
+      "sha256": "f9509bfebac8f0c3344658fa7014b86b595962ac703cf399f0fd775b3447d1fc",
+      "canvas": [
+        128,
+        160
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        64,
+        144
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        22,
+        78,
+        107,
+        144
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 64,
+          "bbox": [
+            42,
+            90,
+            87,
+            121
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 64,
+          "bbox": [
+            42,
+            90,
+            87,
+            121
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 4298,
+          "bbox": [
+            22,
+            78,
+            107,
+            144
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "telepad_base",
+      "source_file": "res://assets/ember/buildings/telepad/telepad_base_v001.png",
+      "source_sha256": "8d59c3ba8ed09aa50a9232c5b3f8ffe204c9a8f41da408499d5208cd8c081512",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/9/runtime_windows",
+      "registered_geometry_sha256": "dc0242c1822f5c2ba1890fc2bb0293e1f672c61a86c5848ba24c72cc26434325",
+      "registered_geometry": {
+        "canvas": [
+          128,
+          160
+        ],
+        "anchor": [
+          64,
+          144
+        ],
+        "windows": [
+          {
+            "id": "marker_n",
+            "visual_frame_bounds": [
+              59,
+              88,
+              70,
+              94
+            ],
+            "safe_active_rect": [
+              61,
+              90,
+              68,
+              92
+            ],
+            "center": [
+              64.5,
+              91.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.50390625,
+              0.56875
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          },
+          {
+            "id": "marker_w",
+            "visual_frame_bounds": [
+              40,
+              100,
+              48,
+              110
+            ],
+            "safe_active_rect": [
+              42,
+              102,
+              45,
+              108
+            ],
+            "center": [
+              43.5,
+              105.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.33984375,
+              0.65625
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          },
+          {
+            "id": "marker_e",
+            "visual_frame_bounds": [
+              82,
+              100,
+              90,
+              110
+            ],
+            "safe_active_rect": [
+              84,
+              102,
+              87,
+              108
+            ],
+            "center": [
+              85.5,
+              105.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.66796875,
+              0.65625
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          },
+          {
+            "id": "marker_s",
+            "visual_frame_bounds": [
+              59,
+              117,
+              71,
+              123
+            ],
+            "safe_active_rect": [
+              61,
+              119,
+              68,
+              121
+            ],
+            "center": [
+              64.5,
+              120.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.50390625,
+              0.75
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "marker_windows",
+        "selection_sources": [
+          {
+            "layer_name": "marker_windows",
+            "file": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows_selection.png",
+            "sha256": "e751f808ab84508e92db7a4da8ecf1e48cd1464438885b790def2b7783ebae17",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows.png",
+            "component_sha256": "95c1d0b71eaaadb472d57a159ad80e0a2f26e4ef58341bf5e62fc1646bde096b",
+            "component_anchor": [
+              64,
+              144
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 64,
+            "bbox": [
+              42,
+              90,
+              87,
+              121
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "marker_windows",
+          "file": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows_selection.png",
+          "sha256": "e751f808ab84508e92db7a4da8ecf1e48cd1464438885b790def2b7783ebae17",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows.png",
+          "component_sha256": "95c1d0b71eaaadb472d57a159ad80e0a2f26e4ef58341bf5e62fc1646bde096b",
+          "component_anchor": [
+            64,
+            144
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 64,
+          "bbox": [
+            42,
+            90,
+            87,
+            121
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/telepad_mask_review_2x.png",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/object-masks/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "terminal_window",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/terminal_window_mask_v001.png",
+      "sha256": "f8f95b4765e57dfd23d77db98868ea48f806e2d2314eb03e63720c4091cf17d6",
+      "canvas": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        48,
+        80
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        24,
+        16,
+        73,
+        80
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 209,
+          "bbox": [
+            38,
+            30,
+            57,
+            41
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 209,
+          "bbox": [
+            38,
+            30,
+            57,
+            41
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 2610,
+          "bbox": [
+            24,
+            16,
+            73,
+            80
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "terminal_body",
+      "source_file": "res://assets/ember/buildings/terminal/terminal_body_v001.png",
+      "source_sha256": "67c2c54fb0efbc1ffdb1cfa01c61ae6216f2947a74b1e29847c37be401c1b812",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/10/runtime_windows",
+      "registered_geometry_sha256": "af2cbf0b2d8469ce8e6ecf9d67363917d5e9a9e928a98f978ae496e54926545c",
+      "registered_geometry": {
+        "canvas": [
+          96,
+          96
+        ],
+        "anchor": [
+          48,
+          80
+        ],
+        "windows": [
+          {
+            "id": "terminal_scene_screen",
+            "visual_frame_bounds": [
+              34,
+              26,
+              61,
+              45
+            ],
+            "safe_active_rect": [
+              38,
+              30,
+              57,
+              41
+            ],
+            "center": [
+              47.5,
+              35.5
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.4947916666666667,
+              0.3697916666666667
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "inner_screen",
+        "selection_sources": [
+          {
+            "layer_name": "inner_screen",
+            "file": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen_selection.png",
+            "sha256": "807111f7c6a7991eb861dc3ea1372961b473b7f5856d83e10c314a8686c4926d",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen.png",
+            "component_sha256": "5bc131473afe6cb59e3c29c47cf6fee9464308e4081ed8ac94c4ba5a7092e654",
+            "component_anchor": [
+              48,
+              80
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 209,
+            "bbox": [
+              38,
+              30,
+              57,
+              41
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "inner_screen",
+          "file": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen_selection.png",
+          "sha256": "807111f7c6a7991eb861dc3ea1372961b473b7f5856d83e10c314a8686c4926d",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen.png",
+          "component_sha256": "5bc131473afe6cb59e3c29c47cf6fee9464308e4081ed8ac94c4ba5a7092e654",
+          "component_anchor": [
+            48,
+            80
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 209,
+          "bbox": [
+            38,
+            30,
+            57,
+            41
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全内区不等于完整窗框；不覆盖外框装甲、管口、烟/光外部区域",
+        "B未启用；不提供整设备扰动、叶片旋转答案或外部烟火Mask",
+        "terminal_window对应96×96 terminal_body，不对应独立screen_frame"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/terminal_window_mask_review_2x.png",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/object-masks/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "ventilator",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/ventilator_mask_v001.png",
+      "sha256": "01f711785e661ced1818e981f5add1472007280177eb88653669e93bb64ed220",
+      "canvas": [
+        160,
+        192
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        80,
+        176
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        40,
+        52,
+        120,
+        176
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 886,
+          "bbox": [
+            57,
+            78,
+            105,
+            119
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "可选局部叶片换色"
+        },
+        "G": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "未登记发光窗口，保持0"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 7923,
+          "bbox": [
+            40,
+            52,
+            120,
+            176
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "ventilator_base",
+      "source_file": "res://assets/ember/buildings/ventilator/ventilator_base_v001.png",
+      "source_sha256": "74a301919676247d40b5e163bf116d011c3231cc2d2cb18949d2e950af09f187",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/2/runtime_windows",
+      "registered_geometry_sha256": "30ec7207bf1ab7c252706b2d9b5f8b0ff10eb12d11e79bd40a666d999794f6b2",
+      "registered_geometry": {
+        "canvas": [
+          160,
+          192
+        ],
+        "anchor": [
+          80,
+          176
+        ],
+        "windows": [],
+        "selected_layer": "fan_rotor",
+        "selection_sources": [
+          {
+            "layer_name": "fan_rotor",
+            "file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor_selection.png",
+            "sha256": "2d9be0e8bf3a63faf06e678d33f7fbaaed36bdfeee4f4fb7fff0a10822cc2fef",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor.png",
+            "component_sha256": "24c2ce3fa7876c055bfa4c19d48a5d1e6fb82b67422908e40706a9b57d19a47b",
+            "component_anchor": [
+              80,
+              176
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 886,
+            "bbox": [
+              57,
+              78,
+              105,
+              119
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "fan_rotor",
+          "file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor_selection.png",
+          "sha256": "2d9be0e8bf3a63faf06e678d33f7fbaaed36bdfeee4f4fb7fff0a10822cc2fef",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor.png",
+          "component_sha256": "24c2ce3fa7876c055bfa4c19d48a5d1e6fb82b67422908e40706a9b57d19a47b",
+          "component_anchor": [
+            80,
+            176
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 886,
+          "bbox": [
+            57,
+            78,
+            105,
+            119
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": null,
+      "selection_basis": "真实 fan_rotor L selection；已核对与同画布叶片组件 Alpha 完全一致",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/ventilator_mask_review_2x.png",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/object-masks/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "wall_lamp",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/wall_lamp_mask_v001.png",
+      "sha256": "9ab4095dc6d324a7cd76e94aa81f9fca1a3c3a0481d091980eb9c82e2fae7d3c",
+      "canvas": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        21,
+        14,
+        43,
+        56
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 15,
+          "bbox": [
+            30,
+            45,
+            33,
+            50
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 15,
+          "bbox": [
+            30,
+            45,
+            33,
+            50
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 637,
+          "bbox": [
+            21,
+            14,
+            43,
+            56
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "wall_lamp",
+      "source_file": "res://assets/ember/buildings/lights/wall_lamp_v001.png",
+      "source_sha256": "aa27b42d2d09a608416bbcf770e78de947e096f7beca4797b23b38ff29932a79",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/5/runtime_windows",
+      "registered_geometry_sha256": "713f07fa6f57dc4e44cf5f50244e9f81d6fa7afbc34bd97a3757db073e5c33ac",
+      "registered_geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          56
+        ],
+        "windows": [
+          {
+            "id": "lamp_lens",
+            "visual_frame_bounds": [
+              28,
+              41,
+              35,
+              52
+            ],
+            "safe_active_rect": [
+              30,
+              45,
+              33,
+              50
+            ],
+            "center": [
+              31.5,
+              47.5
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.4921875,
+              0.7421875
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "lens_neutral",
+        "selection_sources": [
+          {
+            "layer_name": "lens_neutral",
+            "file": "art-source/ember/batch-03-objects/layers/wall_lamp/lens_neutral_selection.png",
+            "sha256": "cea7a58e3cbd95dd1769c081cb4070c95b40b5c7822e6741ec6a5fe1b0ea380f",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/wall_lamp/lens_neutral.png",
+            "component_sha256": "5769bd414ff24a03a42d44ea2011b64221c511f12fb0ed597affa35f6b0c0346",
+            "component_anchor": [
+              32,
+              56
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 15,
+            "bbox": [
+              30,
+              45,
+              33,
+              50
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "lens_neutral",
+          "file": "art-source/ember/batch-03-objects/layers/wall_lamp/lens_neutral_selection.png",
+          "sha256": "cea7a58e3cbd95dd1769c081cb4070c95b40b5c7822e6741ec6a5fe1b0ea380f",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/wall_lamp/lens_neutral.png",
+          "component_sha256": "5769bd414ff24a03a42d44ea2011b64221c511f12fb0ed597affa35f6b0c0346",
+          "component_anchor": [
+            32,
+            56
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 15,
+          "bbox": [
+            30,
+            45,
+            33,
+            50
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/wall_lamp_mask_review_2x.png",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/object-masks/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "console_normal",
+      "manifest_id": "D09",
+      "file": "res://assets/ember/data/normals/console_normal_v001.png",
+      "sha256": "1094516a476ddff930cb6cce29ea492bf980ce13b884d49c6f5ffda42ce0ed30",
+      "canvas": [
+        96,
+        96
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/buildings/console/console_base_v001.png",
+          "sha256": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "heightfield": {
+        "file": "art-source/ember/technical-inputs-v001/surfaces/heightfields/console_normal_height_v001.npy",
+        "sha256": "618d2012a79260e796179bdb71776e4c9e388bf27d88f85128e0c0e8defef88b",
+        "format": "NPY float32 [y,x]",
+        "canvas": [
+          96,
+          96
+        ],
+        "units": "artistic native-pixel relief unit",
+        "range": [
+          0.0,
+          0.9399999976158142
+        ],
+        "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/console_normal_geometry_v001.json",
+        "geometry_sha256": "8e6fb3df15cd1df52da95e5e3af7e1a6b8ad0b747c40bbb376931a7a2141d7eb",
+        "physical_model": false
+      },
+      "strength": 0.85,
+      "anchor": [
+        48,
+        80
+      ],
+      "neutral_window": [
+        36,
+        33,
+        60,
+        47
+      ],
+      "base_region": null,
+      "normal_encoding": "RGB8 normalized tangent vector; lossless; normal_map=0",
+      "mipmaps": false,
+      "texture_filter": "NEAREST",
+      "support": "source Alpha exactly; transparent exterior encoded neutral",
+      "encoded_max_unit_length_error": 0.004189608825392543,
+      "derivative_max": [
+        0.32083332538604736,
+        0.32083332538604736
+      ],
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/surfaces/catalog.json",
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      }
+    },
+    {
+      "id": "floor_clean_normal",
+      "manifest_id": "D09",
+      "file": "res://assets/ember/data/normals/floor_clean_normal_v001.png",
+      "sha256": "bc49137517987d1a81529d92149666990c3e26eb7fd518cbf2be98369c59d872",
+      "canvas": [
+        32,
+        32
+      ],
+      "mode": "RGB",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/environment/tilesets/ground_details_v001.png",
+          "sha256": "f0b1481291be5816f0e775e3f193eb702d17a5da62b14ffbaefae89a3230a757"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "heightfield": {
+        "file": "art-source/ember/technical-inputs-v001/surfaces/heightfields/floor_clean_normal_height_v001.npy",
+        "sha256": "340c9467afb5721d4e5c70a13efdf10210c01e5cfcee17f622e139bd7217172b",
+        "format": "NPY float32 [y,x]",
+        "canvas": [
+          32,
+          32
+        ],
+        "units": "artistic native-pixel relief unit",
+        "range": [
+          -0.07999999821186066,
+          0.18000000715255737
+        ],
+        "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/floor_clean_normal_geometry_v001.json",
+        "geometry_sha256": "2ecffa78bb42ec87786960ef2d9d988235f3717bbce49a57a456cad1c3d16f57",
+        "physical_model": false
+      },
+      "strength": 1.0,
+      "anchor": [
+        0,
+        0
+      ],
+      "neutral_window": null,
+      "base_region": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "normal_encoding": "RGB8 normalized tangent vector; lossless; normal_map=0",
+      "mipmaps": false,
+      "texture_filter": "NEAREST",
+      "support": "full canvas",
+      "encoded_max_unit_length_error": 0.0037440331134305227,
+      "derivative_max": [
+        0.12999999523162842,
+        0.12999999523162842
+      ],
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/surfaces/catalog.json",
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      }
+    },
+    {
+      "id": "station_normal",
+      "manifest_id": "D09",
+      "file": "res://assets/ember/data/normals/station_normal_v001.png",
+      "sha256": "0999ebfb12316672b687ffc576f1f0b72fafb9dd272723da62f020f27d26beda",
+      "canvas": [
+        128,
+        160
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/buildings/station/station_base_v001.png",
+          "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "heightfield": {
+        "file": "art-source/ember/technical-inputs-v001/surfaces/heightfields/station_normal_height_v001.npy",
+        "sha256": "3caa9ff05832a9c2aeb526b742f3744742a3e015ef27a4d64dbc63b7dcbd3cef",
+        "format": "NPY float32 [y,x]",
+        "canvas": [
+          128,
+          160
+        ],
+        "units": "artistic native-pixel relief unit",
+        "range": [
+          0.0,
+          1.100000023841858
+        ],
+        "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/station_normal_geometry_v001.json",
+        "geometry_sha256": "da56fab80ffb8d0469137d7a3d204d3684c2b73d989ad07082e8317f89a84abc",
+        "physical_model": false
+      },
+      "strength": 0.85,
+      "anchor": [
+        64,
+        144
+      ],
+      "neutral_window": [
+        54,
+        66,
+        74,
+        95
+      ],
+      "base_region": null,
+      "normal_encoding": "RGB8 normalized tangent vector; lossless; normal_map=0",
+      "mipmaps": false,
+      "texture_filter": "NEAREST",
+      "support": "source Alpha exactly; transparent exterior encoded neutral",
+      "encoded_max_unit_length_error": 0.004618324390354811,
+      "derivative_max": [
+        0.3566666543483734,
+        0.4300000071525574
+      ],
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/surfaces/catalog.json",
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      }
+    },
+    {
+      "id": "dust_dot",
+      "manifest_id": "D10",
+      "file": "res://assets/ember/vfx/particles/dust_dot_v001.png",
+      "sha256": "3d7b1eca336e79d45d003cb6b59a49a2f83d7f2a2e388d6b47c23c7e9dd9cffb",
+      "canvas": [
+        16,
+        16
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "data_semantics": "16px native binary Alpha particle input; no baked effect",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "rain_line",
+      "manifest_id": "D10",
+      "file": "res://assets/ember/vfx/particles/rain_line_v001.png",
+      "sha256": "14743fd691e33dc9a9a44eabb8ff63c35248743b68c3205ef81e7b252c0f35c4",
+      "canvas": [
+        16,
+        16
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "data_semantics": "16px native binary Alpha particle input; no baked effect",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "spark",
+      "manifest_id": "D10",
+      "file": "res://assets/ember/vfx/particles/spark_v001.png",
+      "sha256": "ef8c00139f785574ba5c4efffd892635026111c0afed5807376600e6362c0e2b",
+      "canvas": [
+        16,
+        16
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "data_semantics": "16px native binary Alpha particle input; no baked effect",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "water_drop",
+      "manifest_id": "D10",
+      "file": "res://assets/ember/vfx/particles/water_drop_v001.png",
+      "sha256": "711d95aa06b437101dd173512ddf210576afb2167511fbbbf794feb6bd712418",
+      "canvas": [
+        16,
+        16
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "data_semantics": "16px native binary Alpha particle input; no baked effect",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/basic/catalog.json",
+      "mipmaps": false,
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      },
+      "sampling": "linear data; single channel .r; no source_color for data"
+    },
+    {
+      "id": "concrete_metallic",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/concrete/concrete_metallic_v001.png",
+      "sha256": "5933d4c44ed2bc2f431e2698b41923a18d056b24b450540bb109e7592a547060",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/concrete/concrete_albedo_v001.png",
+          "sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "nominal_parameter": 0.0,
+      "channel": "R",
+      "mipmaps": true,
+      "byte_value": 0,
+      "quantized_parameter": 0.0,
+      "texture_filter": "LINEAR",
+      "derivation": "documented uniform artistic PBR parameter; no albedo inference",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/surfaces/catalog.json",
+      "runtime_sampler": {
+        "preview_filter": "Nearest with Mipmaps",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      }
+    },
+    {
+      "id": "concrete_normal",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/concrete/concrete_normal_v001.png",
+      "sha256": "1f512d718e2e134cd93ffad0371df7b869dc3db963d23d4621a6e507320d3e0b",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "RGB",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/concrete/concrete_albedo_v001.png",
+          "sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "heightfield": {
+        "file": "art-source/ember/technical-inputs-v001/surfaces/heightfields/concrete_normal_height_v001.npy",
+        "sha256": "010fa1d696ebebcaa38ee3721888d36faab2e58d0d443a96430ee9d6f9d5ca7b",
+        "format": "NPY float32 [y,x]",
+        "canvas": [
+          256,
+          256
+        ],
+        "units": "artistic native-pixel relief unit",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/concrete_normal_geometry_v001.json",
+        "geometry_sha256": "1dc31879493d6c297e715694f0ef160a86ce538b35abe606499fefc9fb912ed8",
+        "physical_model": false
+      },
+      "strength": 1.0,
+      "anchor": [
+        0,
+        0
+      ],
+      "neutral_window": null,
+      "base_region": null,
+      "normal_encoding": "RGB8 normalized tangent vector; lossless; normal_map=0",
+      "mipmaps": true,
+      "texture_filter": "LINEAR",
+      "support": "full canvas",
+      "encoded_max_unit_length_error": 1.5378582249425676e-05,
+      "derivative_max": [
+        0.0,
+        0.0
+      ],
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/surfaces/catalog.json",
+      "runtime_sampler": {
+        "preview_filter": "Nearest with Mipmaps",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      }
+    },
+    {
+      "id": "concrete_roughness",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/concrete/concrete_roughness_v001.png",
+      "sha256": "f06e89dc7f39be266a34ab9d56c628694bcc6f491e27b9fad873cfa459731143",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/concrete/concrete_albedo_v001.png",
+          "sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "nominal_parameter": 1.0,
+      "channel": "R",
+      "mipmaps": true,
+      "byte_value": 255,
+      "quantized_parameter": 1.0,
+      "texture_filter": "LINEAR",
+      "derivation": "documented uniform artistic PBR parameter; no albedo inference",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/surfaces/catalog.json",
+      "runtime_sampler": {
+        "preview_filter": "Nearest with Mipmaps",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      }
+    },
+    {
+      "id": "metal_metallic",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/metal/metal_metallic_v001.png",
+      "sha256": "4f87abe77997e5b2c59334159ef429af261bb0aa5792830e2cfe5c3f3ed5e08c",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/metal/metal_albedo_v001.png",
+          "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "nominal_parameter": 0.55,
+      "channel": "R",
+      "mipmaps": true,
+      "byte_value": 140,
+      "quantized_parameter": 0.5490196078431373,
+      "texture_filter": "LINEAR",
+      "derivation": "documented uniform artistic PBR parameter; no albedo inference",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/surfaces/catalog.json",
+      "runtime_sampler": {
+        "preview_filter": "Nearest with Mipmaps",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      }
+    },
+    {
+      "id": "metal_normal",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/metal/metal_normal_v001.png",
+      "sha256": "29439a8edebc9ca5d5a405533af6f01ca32af9abc87111375663399d57dbf1f4",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "RGB",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/metal/metal_albedo_v001.png",
+          "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "heightfield": {
+        "file": "art-source/ember/technical-inputs-v001/surfaces/heightfields/metal_normal_height_v001.npy",
+        "sha256": "f9aacfc673b9ad3dcf670acb9b49d8efc8c807ea49958f6bd9de80dab906b9a6",
+        "format": "NPY float32 [y,x]",
+        "canvas": [
+          256,
+          256
+        ],
+        "units": "artistic native-pixel relief unit",
+        "range": [
+          0.0,
+          0.05999999865889549
+        ],
+        "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/metal_normal_geometry_v001.json",
+        "geometry_sha256": "9dc0e4ef7c2e869160ca56bd037985003088011d30947d9a9fcdf18705e0d668",
+        "physical_model": false
+      },
+      "strength": 1.0,
+      "anchor": [
+        0,
+        0
+      ],
+      "neutral_window": null,
+      "base_region": null,
+      "normal_encoding": "RGB8 normalized tangent vector; lossless; normal_map=0",
+      "mipmaps": true,
+      "texture_filter": "LINEAR",
+      "support": "full canvas",
+      "encoded_max_unit_length_error": 0.0003843936332625919,
+      "derivative_max": [
+        0.02534722164273262,
+        0.023576388135552406
+      ],
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/surfaces/catalog.json",
+      "runtime_sampler": {
+        "preview_filter": "Nearest with Mipmaps",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      }
+    },
+    {
+      "id": "metal_roughness",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/metal/metal_roughness_v001.png",
+      "sha256": "03da38db1bd7a24b390c53a65aed3893a12855b8b1798a35cfacd1d7f4d60962",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/metal/metal_albedo_v001.png",
+          "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "nominal_parameter": 0.65,
+      "channel": "R",
+      "mipmaps": true,
+      "byte_value": 166,
+      "quantized_parameter": 0.6509803921568628,
+      "texture_filter": "LINEAR",
+      "derivation": "documented uniform artistic PBR parameter; no albedo inference",
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/surfaces/catalog.json",
+      "runtime_sampler": {
+        "preview_filter": "Nearest with Mipmaps",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": null
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      }
+    },
+    {
+      "id": "grass_height_weight",
+      "manifest_id": "D12",
+      "file": "res://assets/ember/three_d/textures/grass/grass_height_weight_v001.png",
+      "sha256": "3db9548646a6cefbb9f448a119ec88601d434172b35fe3e4e66b9619b17186e4",
+      "canvas": [
+        64,
+        128
+      ],
+      "mode": "L",
+      "repeat_axes": [],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/grass/grass_leaf_v001.png",
+          "sha256": "1dc463fc71b8e44fc7148de106fdd05fbc0389364925eee0180c4a6e37b23888"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "anchor": [
+        32,
+        120
+      ],
+      "channel": "R",
+      "root_boundary": 120,
+      "zero_root_pixel_y": 119,
+      "full_weight_visible_y": 10,
+      "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/grass_height_weight_geometry_v001.json",
+      "geometry_sha256": "7b605411e107a7f3a0a195ddfe4168b37082bc7e0b3c836e4a8f24e98d29ce4f",
+      "formula": "where alpha=255: round(clamp((119-y)/109,0,1)*255); else 0",
+      "mipmaps": true,
+      "texture_filter": "LINEAR",
+      "linear_parameter": true,
+      "producer_catalog": "res://art-source/ember/technical-inputs-v001/surfaces/catalog.json",
+      "runtime_sampler": {
+        "preview_filter": "Nearest",
+        "recommendation_scope": "Producer LINEAR/filter notes are sampling recommendations; the supplied pixel-art preview and material use this runtime filter",
+        "grass_weight": "No wind material is supplied; choose linear/nearest explicitly in your future sampler"
+      },
+      "import_policy": {
+        "compression": "Lossless",
+        "normal_map_compression": "Disabled",
+        "roughness_processing": "Disabled",
+        "detect_3d_compression": "Disabled",
+        "godot_import_values": {
+          "compress/mode": 0,
+          "compress/normal_map": 2,
+          "roughness/mode": 1,
+          "detect_3d/compress_to": 0
+        },
+        "supersedes_producer_import_recommendations": true,
+        "fix_alpha_border": false,
+        "premult_alpha": false,
+        "normal_map_invert_y": false
+      }
+    }
+  ],
+  "producer_dependency_sha256": {
+    "art-source/ember/technical-inputs-v001/basic/catalog.json": "e096dd6006a59486e78b68b9c09fa37ed025fdb7594a98f66d9c682a43fe47f7",
+    "art-source/ember/technical-inputs-v001/object-masks/catalog.json": "0f92025b5fec00972abb1dd00ecc737f353d7aa285d1d81ea7945a3d6f413488",
+    "art-source/ember/technical-inputs-v001/surfaces/catalog.json": "ca7361e1ce220144897a1193957d21d57f2971e1cfd2786ad31396b7cd123525",
+    "art-source/ember/technical-inputs-v001/basic/generate_basic.py": "8951f82a5da6b6dbebefa007d5a4bb70ecc3589a5759bc1e5839a6cc0e422fb8",
+    "art-source/ember/technical-inputs-v001/basic/preview.png": "41eb654ab90c58bd962d31334f2609a7353486c4cdd83b8a8c8e02531da16419",
+    "art-source/ember/technical-inputs-v001/basic/validate_basic.py": "343228b4b25e8a0757d08f15dd6be7a554db17227f219ef1dda16b5442652b66",
+    "art-source/ember/technical-inputs-v001/basic/validation.json": "31959215b1848dbd148a865db81e756aa3abbb14fbd75e126dcd3ffc43620f43",
+    "art-source/ember/technical-inputs-v001/object-masks/validation-v001.json": "1903e6f482c2ff073eb0d76454738eef208264de1bd80d1213ff11a9d014b8ea",
+    "art-source/ember/technical-inputs-v001/object-masks/visual-review-v001.json": "cd74182c735ae7087d00c4dbeaa603498632a4c0efc16fe6a1be4b1b08a10808",
+    "art-source/ember/technical-inputs-v001/object-masks/review/console_mask_review_1x.png": "8e1ff284f96090328c7d2a6618b982c33951ee2e9dc4fc83fbd88721be444b5f",
+    "art-source/ember/technical-inputs-v001/object-masks/review/console_mask_review_2x.png": "aaccf84046738ded35371c530222730a33885778e8cd9ef635cdae8cd096cbae",
+    "art-source/ember/technical-inputs-v001/object-masks/review/cooler_mask_review_1x.png": "4e3f5780a0c4a19aefd9b101f5f6544b25e14a1c6c5860561ec60ddc7169e442",
+    "art-source/ember/technical-inputs-v001/object-masks/review/cooler_mask_review_2x.png": "f44b377765fe77a3655719485c37149a4c7812757bf76065eb2b55123bc0a296",
+    "art-source/ember/technical-inputs-v001/object-masks/review/floor_lamp_mask_review_1x.png": "3bab90f51b057a81f36736ab575e1659393ce895924f7d6545d95ad78ef40e06",
+    "art-source/ember/technical-inputs-v001/object-masks/review/floor_lamp_mask_review_2x.png": "2884d7bc8a48cf5bede493f92bf756edd1db39d08f18faf8b094712a56ed1aa0",
+    "art-source/ember/technical-inputs-v001/object-masks/review/index.json": "008047f4f47a957ce9b55f63e9fbd7c1446c481452146b1814ad732097bfd46a",
+    "art-source/ember/technical-inputs-v001/object-masks/review/pump_mask_review_1x.png": "3cb6d13b49ded6e7b8d0ae221c6b94cd1554325173368e6bbd0f2b5b39aa3ef4",
+    "art-source/ember/technical-inputs-v001/object-masks/review/pump_mask_review_2x.png": "377d40c4b1e5c5648f45f91f4919e08112496077b02b5de3b93a48bdd61e078d",
+    "art-source/ember/technical-inputs-v001/object-masks/review/relay_mask_review_1x.png": "1d8f5d33295fe9315c161418937513298604c4c592c40e2bcdef3f58ef01e14f",
+    "art-source/ember/technical-inputs-v001/object-masks/review/relay_mask_review_2x.png": "ddffd41516f5f1496e1b7760186c44413f656f5d92c6ff0560476e6aac9c9a88",
+    "art-source/ember/technical-inputs-v001/object-masks/review/station_mask_review_1x.png": "4ba1b4c755464eb2165c9bec76ca2a950845a7a826f6b301ba10550f643a43bb",
+    "art-source/ember/technical-inputs-v001/object-masks/review/station_mask_review_2x.png": "9e9aa36a9992ff2936674340d96582e892c37da9b37521b278becb512b4346a5",
+    "art-source/ember/technical-inputs-v001/object-masks/review/telepad_mask_review_1x.png": "895e9f05c72864093a34a2514269216fef8dfc493446435f581c018a5c4a5bd6",
+    "art-source/ember/technical-inputs-v001/object-masks/review/telepad_mask_review_2x.png": "475aade5bdfb4329f514bd79d68417cda177d990d7d14d9c096beda1abf0b454",
+    "art-source/ember/technical-inputs-v001/object-masks/review/terminal_window_mask_review_1x.png": "e5e14d42b026aaebb8698d843380939188a823b1cf6fa87529e9476f2bcd72e9",
+    "art-source/ember/technical-inputs-v001/object-masks/review/terminal_window_mask_review_2x.png": "a46cfb96201909956e6fc6a5699736d3e054746c07cfb206dd26d0d965c6682c",
+    "art-source/ember/technical-inputs-v001/object-masks/review/ventilator_mask_review_1x.png": "dc90084dc22437d5ccd205692120c24ace84ab55a81cc59e93de75ed38a72351",
+    "art-source/ember/technical-inputs-v001/object-masks/review/ventilator_mask_review_2x.png": "f429ef241b51facef118725d6ac96582f6dfdfc4f08fea3589de041339ad6b33",
+    "art-source/ember/technical-inputs-v001/object-masks/review/wall_lamp_mask_review_1x.png": "e4b4714b87c22dcb6ceb9455074868dd3382eaaa05c717ab01a7acc674d7e82e",
+    "art-source/ember/technical-inputs-v001/object-masks/review/wall_lamp_mask_review_2x.png": "cd0d0a3f4b155d68b1dd8cad6a46ffe5ba338602d1515aec5d17ddb081c5f415",
+    "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+    "art-source/ember/technical-inputs-v001/surfaces/producer-review-v001.json": "3d25dc0ca620487cfb2061cd0a3aa00382fea301bb0271ce6d807dbdc0569730",
+    "art-source/ember/technical-inputs-v001/surfaces/README.md": "52293357a7d98b052286c6caf141b13ab686173ac6fcb6105692f436483ea75f",
+    "art-source/ember/technical-inputs-v001/surfaces/validation-v001.json": "c15fdf59f1f79074c9038b99dcac7931cbff460b860d11a6432c6cbf4e86735f",
+    "art-source/ember/technical-inputs-v001/surfaces/geometry/concrete_normal_geometry_v001.json": "1dc31879493d6c297e715694f0ef160a86ce538b35abe606499fefc9fb912ed8",
+    "art-source/ember/technical-inputs-v001/surfaces/geometry/console_normal_geometry_v001.json": "8e6fb3df15cd1df52da95e5e3af7e1a6b8ad0b747c40bbb376931a7a2141d7eb",
+    "art-source/ember/technical-inputs-v001/surfaces/geometry/floor_clean_normal_geometry_v001.json": "2ecffa78bb42ec87786960ef2d9d988235f3717bbce49a57a456cad1c3d16f57",
+    "art-source/ember/technical-inputs-v001/surfaces/geometry/grass_height_weight_geometry_v001.json": "7b605411e107a7f3a0a195ddfe4168b37082bc7e0b3c836e4a8f24e98d29ce4f",
+    "art-source/ember/technical-inputs-v001/surfaces/geometry/metal_coating_label_v001.png": "1a8edece7fc7503100ed1880d67dab33935a8fe117a7e872a20ba06148c1efac",
+    "art-source/ember/technical-inputs-v001/surfaces/geometry/metal_normal_geometry_v001.json": "9dc0e4ef7c2e869160ca56bd037985003088011d30947d9a9fcdf18705e0d668",
+    "art-source/ember/technical-inputs-v001/surfaces/geometry/station_normal_geometry_v001.json": "da56fab80ffb8d0469137d7a3d204d3684c2b73d989ad07082e8317f89a84abc",
+    "art-source/ember/technical-inputs-v001/surfaces/heightfields/concrete_normal_height_v001.npy": "010fa1d696ebebcaa38ee3721888d36faab2e58d0d443a96430ee9d6f9d5ca7b",
+    "art-source/ember/technical-inputs-v001/surfaces/heightfields/console_normal_height_v001.npy": "618d2012a79260e796179bdb71776e4c9e388bf27d88f85128e0c0e8defef88b",
+    "art-source/ember/technical-inputs-v001/surfaces/heightfields/floor_clean_normal_height_v001.npy": "340c9467afb5721d4e5c70a13efdf10210c01e5cfcee17f622e139bd7217172b",
+    "art-source/ember/technical-inputs-v001/surfaces/heightfields/metal_normal_height_v001.npy": "f9aacfc673b9ad3dcf670acb9b49d8efc8c807ea49958f6bd9de80dab906b9a6",
+    "art-source/ember/technical-inputs-v001/surfaces/heightfields/station_normal_height_v001.npy": "3caa9ff05832a9c2aeb526b742f3744742a3e015ef27a4d64dbc63b7dcbd3cef",
+    "art-source/ember/technical-inputs-v001/surfaces/review/concrete_normal_3x3_light_v001.png": "149ae5d3ef31809c2aec4dd1fbaf53c432bbf9f0158877bfed1571ae639b9653",
+    "art-source/ember/technical-inputs-v001/surfaces/review/concrete_normal_height_display_v001.png": "5933d4c44ed2bc2f431e2698b41923a18d056b24b450540bb109e7592a547060",
+    "art-source/ember/technical-inputs-v001/surfaces/review/concrete_normal_registration_light_v001.png": "2a938224b2870750f7a5372bde1456db72e0778a125d77c125cac769e52462b6",
+    "art-source/ember/technical-inputs-v001/surfaces/review/console_base_coordinate_review_4x.png": "e383beafa80ad6e11bd2a3f40b19d30284813a0fa27c7abf100bd2f81ae92833",
+    "art-source/ember/technical-inputs-v001/surfaces/review/console_normal_height_display_v001.png": "3059b6831b7a9c186b03e2f55f4ccca29964e3bbc9d9b2e08eca19f47572872f",
+    "art-source/ember/technical-inputs-v001/surfaces/review/console_normal_registration_light_v001.png": "9714779384cf962d3a52a39149809d48ca2ae4345ed39de6a1d1e11be66a6711",
+    "art-source/ember/technical-inputs-v001/surfaces/review/floor_clean_normal_3x3_light_v001.png": "cae14afa955badc7cc0918256ea03e2a7c22aee1f915f0a85fdacce4947fec69",
+    "art-source/ember/technical-inputs-v001/surfaces/review/floor_clean_normal_height_display_v001.png": "4c6796a0cd2937b945251c52c07aa4c18fe7590835f3688ea15c208634fbb9a9",
+    "art-source/ember/technical-inputs-v001/surfaces/review/floor_clean_normal_registration_light_v001.png": "44899709873c248a68ff817d63129603deabf9320494e306fc8bdbfdc2924fa3",
+    "art-source/ember/technical-inputs-v001/surfaces/review/grass_height_weight_registration_v001.png": "6c28a09eca271dcc78799d30b692f48970baf36d4a8ec2f57530df36aa7779e8",
+    "art-source/ember/technical-inputs-v001/surfaces/review/metal_normal_3x3_light_v001.png": "44e4ea46294f9b331bd82da03d6ccdc2125f936a1dba0da90cbb6c0c99ebaefa",
+    "art-source/ember/technical-inputs-v001/surfaces/review/metal_normal_height_display_v001.png": "3eece081a2f165091f9196de18a312f4061b661ef5c57ce9973f28873e3facf2",
+    "art-source/ember/technical-inputs-v001/surfaces/review/metal_normal_registration_light_v001.png": "590855de29dbf1ec8c441ef760894a672afe72f5449039932555baad040f15a0",
+    "art-source/ember/technical-inputs-v001/surfaces/review/pbr_uniform_parameters_v001.png": "aa3f40f977ea0ab620408fb2c9c105ec1bb3e4e94da858f041f6b13c206ea19e",
+    "art-source/ember/technical-inputs-v001/surfaces/review/station_base_coordinate_review_4x.png": "5e9c52bc9941596672d580520317ae285f53ede9f2fb8ffe737a5531768552e1",
+    "art-source/ember/technical-inputs-v001/surfaces/review/station_normal_height_display_v001.png": "e17cc15e1ac9382e6342857ee211aee6da5fbd6fbedeb0b6d955818ad04ab069",
+    "art-source/ember/technical-inputs-v001/surfaces/review/station_normal_registration_light_v001.png": "aed2904c39932ae77078febd21832eb4fb8aece00582d9d89b64e02768aff7b9",
+    "art-source/ember/technical-inputs-v001/surfaces/tools/build_surface_inputs.py": "3d5af86161852c5242f972fd162d256e4d782dfad3465ae38d5857a5e73b8782",
+    "art-source/ember/technical-inputs-v001/surfaces/tools/validate_surface_inputs.py": "59b62e41c7fbbe408e39e60595a747032830b73770a43f575b610502634a5273"
+  },
+  "acceptance_report": "res://art-source/ember/technical-inputs-v001/final-acceptance.json"
+}

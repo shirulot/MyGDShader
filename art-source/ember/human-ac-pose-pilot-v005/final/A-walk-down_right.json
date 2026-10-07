@@ -1,0 +1,310 @@
+{
+  "key": "A-walk-down_right",
+  "cell": [
+    64,
+    96
+  ],
+  "root": [
+    32,
+    80
+  ],
+  "frame_count": 8,
+  "duration_ms": 120,
+  "loop": true,
+  "atlas": "final/A-walk-down_right.png",
+  "old": {
+    "key": "A-walk-down_right",
+    "character": "A",
+    "action": "walk",
+    "direction": "down_right",
+    "cell": [
+      64,
+      96
+    ],
+    "root": [
+      32,
+      80
+    ],
+    "frame_count": 8,
+    "duration_ms": 120,
+    "loop": true,
+    "atlas": "final/A-walk-down_right.png",
+    "review": "candidate",
+    "production_ready": false,
+    "source": "source\\A-walk-down_right.png",
+    "source_sha256": "a3617aa2e56a00493bc2d8065022710fef555c08ba370c94352f895dc192abab",
+    "uniform_scale": 0.20689655172413793,
+    "source_row_baselines": [
+      411,
+      847
+    ],
+    "frames": [
+      {
+        "frame": 0,
+        "source_bbox": [
+          129,
+          95,
+          277,
+          411
+        ],
+        "bbox": [
+          14,
+          15,
+          44,
+          80
+        ],
+        "source_grid_x": 216.625,
+        "source_row_baseline": 411
+      },
+      {
+        "frame": 1,
+        "source_bbox": [
+          546,
+          97,
+          753,
+          401
+        ],
+        "bbox": [
+          11,
+          15,
+          53,
+          78
+        ],
+        "source_grid_x": 649.875,
+        "source_row_baseline": 411
+      },
+      {
+        "frame": 2,
+        "source_bbox": [
+          970,
+          104,
+          1191,
+          405
+        ],
+        "bbox": [
+          9,
+          17,
+          54,
+          79
+        ],
+        "source_grid_x": 1083.125,
+        "source_row_baseline": 411
+      },
+      {
+        "frame": 3,
+        "source_bbox": [
+          1441,
+          103,
+          1619,
+          405
+        ],
+        "bbox": [
+          16,
+          16,
+          53,
+          79
+        ],
+        "source_grid_x": 1516.375,
+        "source_row_baseline": 411
+      },
+      {
+        "frame": 4,
+        "source_bbox": [
+          116,
+          522,
+          310,
+          830
+        ],
+        "bbox": [
+          11,
+          13,
+          51,
+          76
+        ],
+        "source_grid_x": 216.625,
+        "source_row_baseline": 847
+      },
+      {
+        "frame": 5,
+        "source_bbox": [
+          544,
+          524,
+          763,
+          843
+        ],
+        "bbox": [
+          10,
+          14,
+          55,
+          79
+        ],
+        "source_grid_x": 649.875,
+        "source_row_baseline": 847
+      },
+      {
+        "frame": 6,
+        "source_bbox": [
+          981,
+          532,
+          1197,
+          847
+        ],
+        "bbox": [
+          11,
+          15,
+          56,
+          80
+        ],
+        "source_grid_x": 1083.125,
+        "source_row_baseline": 847
+      },
+      {
+        "frame": 7,
+        "source_bbox": [
+          1445,
+          526,
+          1647,
+          843
+        ],
+        "bbox": [
+          17,
+          14,
+          59,
+          79
+        ],
+        "source_grid_x": 1516.375,
+        "source_row_baseline": 847
+      }
+    ],
+    "waist_landmarks": [
+      [
+        31,
+        46
+      ],
+      [
+        32,
+        46
+      ],
+      [
+        34,
+        46
+      ],
+      [
+        36,
+        46
+      ],
+      [
+        34,
+        44
+      ],
+      [
+        34,
+        44
+      ],
+      [
+        37,
+        43
+      ],
+      [
+        38,
+        44
+      ]
+    ],
+    "waist_targets": [
+      [
+        32,
+        45
+      ],
+      [
+        32,
+        45
+      ],
+      [
+        32,
+        45
+      ],
+      [
+        32,
+        45
+      ],
+      [
+        32,
+        45
+      ],
+      [
+        32,
+        45
+      ],
+      [
+        32,
+        45
+      ],
+      [
+        32,
+        45
+      ]
+    ],
+    "draw_offsets": [
+      [
+        1,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        -2,
+        -1
+      ],
+      [
+        -4,
+        -1
+      ],
+      [
+        -2,
+        1
+      ],
+      [
+        -2,
+        1
+      ],
+      [
+        -5,
+        2
+      ],
+      [
+        -6,
+        1
+      ]
+    ],
+    "registration": "manual waist/pelvis landmarks; integer translation only"
+  },
+  "production_ready": false,
+  "technical_status": "pass",
+  "visual_status": "needs_revision",
+  "runtime_status": "not_reviewed",
+  "source": "source/A-walk-down_right.png",
+  "source_size": [
+    1536,
+    1024
+  ],
+  "source_cell": [
+    384.0,
+    512.0
+  ],
+  "common_anchor": [
+    192.0,
+    512.0
+  ],
+  "common_scale": 0.1542056074766355,
+  "method": "imagegen soft pose guidance; fixed-cell diagnostic export",
+  "limitations": [
+    "Generated source does not exactly follow guide cell coordinates.",
+    "Whole-strip first-frame calibration; no per-frame registration corrections.",
+    "Downsampled diagnostic candidate, not approved native pixel art."
+  ],
+  "issues": [
+    "F04-F07支撑脚高度相对前半段偏高约2-4px，腿部比例及相位需继续修订。"
+  ]
+}

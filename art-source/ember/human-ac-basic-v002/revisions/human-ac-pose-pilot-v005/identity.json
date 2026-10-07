@@ -1,0 +1,24 @@
+{
+  "scope": "Freeze only A down_right and C down_left for this pilot; other directions remain under review.",
+  "A": {
+    "reference": "../human-ac-expanded-v003/references/A-down_right.png",
+    "features": ["ivory forelock", "diagonal ivory jacket", "dark anatomical right shoulder and brass gauge", "ivory front kneepads", "rigid dark boots"],
+    "status": "pilot_reference_not_full_eight_direction_approval"
+  },
+  "C": {
+    "reference": "../human-ac-expanded-v003/references/C-down_left.png",
+    "features": ["ivory bob with dark left-side band", "single left ear headset per existing prompt contract", "ivory fitted vest", "dark high collar", "slate trousers without kneepads"],
+    "side_evidence": "Existing generation prompt declares anatomical LEFT. Front and left-view masters support it. Full eight-view consistency is not established.",
+    "direction_observations": {
+      "down": "headset visible screen-right, compatible with declared anatomical left",
+      "down_left": "headset visible screen-right near temple, selected pilot reference",
+      "left": "headset visible near temple, compatible",
+      "up_left": "headset visible at left silhouette of displayed master, needs projection review",
+      "up": "headset hidden by head/hair; not evidence of missing part",
+      "up_right": "headset not visible; retain pending",
+      "right": "headset not visible, compatible with far side occlusion",
+      "down_right": "headset remains conspicuous on screen-right silhouette; far-side visibility and dark hair band need revision/review"
+    },
+    "status": "direction_inventory_complete_full_identity_review_pending"
+  }
+}

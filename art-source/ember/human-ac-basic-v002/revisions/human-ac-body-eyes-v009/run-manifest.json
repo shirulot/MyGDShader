@@ -1,0 +1,39 @@
+{
+  "id": "A-walk-down_right-body-eyes-v009",
+  "parent": "human-ac-gait-v008",
+  "production_ready": false,
+  "loop": true,
+  "playback": "forward",
+  "duration_ms": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "cell": [
+    64,
+    96
+  ],
+  "root": [
+    32,
+    80
+  ],
+  "world_displacement_per_cycle": [
+    13,
+    4.6
+  ],
+  "source_sha256": "f15979fc9c0bc795c742c1a8ffbb544c28c94bd259e28089f4def2c2f4d43a76",
+  "method": "v008 static parts and leg rig; integer upper-body bob; cached native head/torso sampling with integer top-left",
+  "runtime_status": "not_tested_in_godot",
+  "visual_status": "candidate_pending_review",
+  "mounts": "qa/mounts.json",
+  "poses": "qa/poses.json",
+  "targeted_changes": [
+    "restore upper-body/head motion",
+    "preserve visible open-eye sampling"
+  ]
+}

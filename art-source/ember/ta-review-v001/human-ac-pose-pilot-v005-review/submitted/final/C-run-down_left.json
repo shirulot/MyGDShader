@@ -1,0 +1,310 @@
+{
+  "key": "C-run-down_left",
+  "cell": [
+    64,
+    96
+  ],
+  "root": [
+    32,
+    80
+  ],
+  "frame_count": 8,
+  "duration_ms": 80,
+  "loop": true,
+  "atlas": "final/C-run-down_left.png",
+  "old": {
+    "key": "C-run-down_left",
+    "character": "C",
+    "action": "run",
+    "direction": "down_left",
+    "cell": [
+      64,
+      96
+    ],
+    "root": [
+      32,
+      80
+    ],
+    "frame_count": 8,
+    "duration_ms": 80,
+    "loop": true,
+    "atlas": "final/C-run-down_left.png",
+    "review": "candidate",
+    "production_ready": false,
+    "source": "source\\C-run-down_left.png",
+    "source_sha256": "38bf0aaa138ef3f9a81b41e4cf1fc99b85d3665162faa78fa876f5e20a6432d7",
+    "uniform_scale": 0.1853932584269663,
+    "source_row_baselines": [
+      433,
+      847
+    ],
+    "frames": [
+      {
+        "frame": 0,
+        "source_bbox": [
+          96,
+          79,
+          326,
+          406
+        ],
+        "bbox": [
+          10,
+          14,
+          52,
+          75
+        ],
+        "source_grid_x": 216.75,
+        "source_row_baseline": 433
+      },
+      {
+        "frame": 1,
+        "source_bbox": [
+          532,
+          78,
+          749,
+          423
+        ],
+        "bbox": [
+          10,
+          14,
+          50,
+          78
+        ],
+        "source_grid_x": 650.25,
+        "source_row_baseline": 433
+      },
+      {
+        "frame": 2,
+        "source_bbox": [
+          965,
+          77,
+          1182,
+          433
+        ],
+        "bbox": [
+          10,
+          14,
+          50,
+          80
+        ],
+        "source_grid_x": 1083.75,
+        "source_row_baseline": 433
+      },
+      {
+        "frame": 3,
+        "source_bbox": [
+          1403,
+          83,
+          1613,
+          425
+        ],
+        "bbox": [
+          11,
+          15,
+          50,
+          79
+        ],
+        "source_grid_x": 1517.25,
+        "source_row_baseline": 433
+      },
+      {
+        "frame": 4,
+        "source_bbox": [
+          107,
+          528,
+          351,
+          841
+        ],
+        "bbox": [
+          12,
+          21,
+          57,
+          79
+        ],
+        "source_grid_x": 216.75,
+        "source_row_baseline": 847
+      },
+      {
+        "frame": 5,
+        "source_bbox": [
+          545,
+          528,
+          789,
+          847
+        ],
+        "bbox": [
+          12,
+          21,
+          58,
+          80
+        ],
+        "source_grid_x": 650.25,
+        "source_row_baseline": 847
+      },
+      {
+        "frame": 6,
+        "source_bbox": [
+          964,
+          528,
+          1238,
+          842
+        ],
+        "bbox": [
+          10,
+          21,
+          61,
+          79
+        ],
+        "source_grid_x": 1083.75,
+        "source_row_baseline": 847
+      },
+      {
+        "frame": 7,
+        "source_bbox": [
+          1412,
+          531,
+          1658,
+          843
+        ],
+        "bbox": [
+          12,
+          21,
+          58,
+          79
+        ],
+        "source_grid_x": 1517.25,
+        "source_row_baseline": 847
+      }
+    ],
+    "waist_landmarks": [
+      [
+        28,
+        45
+      ],
+      [
+        29,
+        45
+      ],
+      [
+        31,
+        45
+      ],
+      [
+        32,
+        46
+      ],
+      [
+        30,
+        48
+      ],
+      [
+        32,
+        48
+      ],
+      [
+        35,
+        49
+      ],
+      [
+        36,
+        49
+      ]
+    ],
+    "waist_targets": [
+      [
+        32,
+        47
+      ],
+      [
+        32,
+        47
+      ],
+      [
+        32,
+        47
+      ],
+      [
+        32,
+        48
+      ],
+      [
+        32,
+        47
+      ],
+      [
+        32,
+        47
+      ],
+      [
+        32,
+        47
+      ],
+      [
+        32,
+        48
+      ]
+    ],
+    "draw_offsets": [
+      [
+        4,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        -3,
+        -2
+      ],
+      [
+        -4,
+        -1
+      ]
+    ],
+    "registration": "manual waist/pelvis landmarks; integer translation only"
+  },
+  "production_ready": false,
+  "technical_status": "pass",
+  "visual_status": "needs_revision",
+  "runtime_status": "not_reviewed",
+  "source": "source/C-run-down_left.png",
+  "source_size": [
+    1536,
+    1024
+  ],
+  "source_cell": [
+    384.0,
+    512.0
+  ],
+  "common_anchor": [
+    192.0,
+    507.0
+  ],
+  "common_scale": 0.17886178861788618,
+  "method": "imagegen soft pose guidance; fixed-cell diagnostic export",
+  "limitations": [
+    "Generated source does not exactly follow guide cell coordinates.",
+    "Whole-strip first-frame calibration; no per-frame registration corrections.",
+    "Downsampled diagnostic candidate, not approved native pixel art."
+  ],
+  "issues": [
+    "F03到F04头顶约上跳6px，半周期布局偏移未解决；部分换步和摆臂仍待修订。"
+  ]
+}

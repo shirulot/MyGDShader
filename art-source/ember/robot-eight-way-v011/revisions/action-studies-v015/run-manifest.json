@@ -1,0 +1,163 @@
+{
+  "status": "PILOTS_READY_WITH_KNOWN_GAIT_ISSUES",
+  "scope": {
+    "direction": "left",
+    "actions": [
+      "idle",
+      "walk",
+      "run",
+      "push",
+      "pull"
+    ],
+    "frames_per_action": 6,
+    "cell": [
+      64,
+      96
+    ]
+  },
+  "method": "imagegen",
+  "reference_page": "https://deadrevolver.itch.io/pixel-prototype-player-sprites",
+  "identity": "original robot, light armor, blue-gray mechanical limbs, limited brass",
+  "production_replacement": false,
+  "review": {
+    "run": "needs_revision_opposite_leg_readability",
+    "others": "awaiting_user_visual_feedback"
+  },
+  "generation_calls": 7,
+  "original_frames_unchanged": true,
+  "sources": [
+    {
+      "file": "source/identity-grid.png",
+      "sha256": "6b0d804dcd5d14c1301d4636c018c268265692f3572bfad3c34ccaddc0b7f177"
+    },
+    {
+      "file": "source/idle-v1.png",
+      "sha256": "8f887af9384942b2a3cefa1c84d5b89f484f436db54369e7335cff16f49f957e"
+    },
+    {
+      "file": "source/pull-v1.png",
+      "sha256": "ee2153882bfa083ae5e48b78df22533dd994733eb0aefb5567f31cf2cf9533d9"
+    },
+    {
+      "file": "source/push-v1.png",
+      "sha256": "2bb4e99dbdc4e163d714220f83364b1eeea1a97fe9e592ca41242e0ba24d291e"
+    },
+    {
+      "file": "source/run-v1.png",
+      "sha256": "2c177b442b5f662d8527fdae0336521504bb789da543d5b6f97e0e9cd91e7bf4"
+    },
+    {
+      "file": "source/run-v2.png",
+      "sha256": "711269f7599bcf5e54a72be1d8ca7d5b94692983702df5a565711275438cc24c"
+    },
+    {
+      "file": "source/walk-v1.png",
+      "sha256": "5228d4db5f7eb48308e02505c00895b363702e4fa6efebdfbb33d59666ac81b8"
+    },
+    {
+      "file": "source/walk-v2.png",
+      "sha256": "4e46e86fac6547ba96fb169aefd5efc1e840dffc31e5c739e1c997f00aebdab6"
+    }
+  ],
+  "prompts": [
+    "prompts/idle.txt",
+    "prompts/pull.txt",
+    "prompts/push.txt",
+    "prompts/run-repair.txt",
+    "prompts/run.txt",
+    "prompts/walk-repair.txt",
+    "prompts/walk.txt"
+  ],
+  "strips": [
+    {
+      "action": "walk",
+      "direction": "left",
+      "cell": [
+        64,
+        96
+      ],
+      "frames": 6,
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-02faaff8-eb2c-47de-b2e6-de00481b9661.png",
+      "source_path": "source/walk-v1.png",
+      "prompt_path": "prompts/walk.txt"
+    },
+    {
+      "action": "idle",
+      "direction": "left",
+      "cell": [
+        64,
+        96
+      ],
+      "frames": 6,
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-2dfb8f2a-ec87-4988-a7aa-6257403b0cc7.png",
+      "source_path": "source/idle-v1.png",
+      "prompt_path": "prompts/idle.txt"
+    },
+    {
+      "action": "run",
+      "direction": "left",
+      "cell": [
+        64,
+        96
+      ],
+      "frames": 6,
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-893f114b-98ab-436c-a0b8-a6b69bbffe34.png",
+      "source_path": "source/run-v1.png",
+      "prompt_path": "prompts/run.txt"
+    },
+    {
+      "action": "push",
+      "direction": "left",
+      "cell": [
+        64,
+        96
+      ],
+      "frames": 6,
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-7bd7a5ff-94d7-4e2e-bae5-ba32310176cb.png",
+      "source_path": "source/push-v1.png",
+      "prompt_path": "prompts/push.txt"
+    },
+    {
+      "action": "pull",
+      "direction": "left",
+      "cell": [
+        64,
+        96
+      ],
+      "frames": 6,
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-dbe9374e-6230-43fc-82a0-ccc0d4659a00.png",
+      "source_path": "source/pull-v1.png",
+      "prompt_path": "prompts/pull.txt"
+    },
+    {
+      "action": "walk",
+      "direction": "left",
+      "method": "imagegen",
+      "revision": 2,
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-e1173dd0-9263-4e91-af90-d62478b88bbd.png",
+      "source_path": "source/walk-v2.png",
+      "prompt_path": "prompts/walk-repair.txt"
+    },
+    {
+      "action": "run",
+      "direction": "left",
+      "method": "imagegen",
+      "revision": 2,
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-5dc80f44-e855-426d-b527-8726301362b2.png",
+      "source_path": "source/run-v2.png",
+      "prompt_path": "prompts/run-repair.txt"
+    }
+  ],
+  "browser_verified": [
+    "36 frames loaded",
+    "switch action",
+    "slow playback",
+    "manual F3",
+    "resume normal playback"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "basic_action_trial_ready_for_review",
+  "generation_ledger": "source/generation-ledger.json",
+  "total_frames": 40,
+  "preview_url": "http://127.0.0.1:8157/preview.html",
+  "reference": {
+    "source": "../human-design-options-v001/source/character-options.png",
+    "used_for_generation": true
+  },
+  "scope": {
+    "characters": [
+      "A",
+      "C"
+    ],
+    "actions": [
+      "idle",
+      "walk",
+      "run"
+    ],
+    "direction": "left",
+    "cell": [
+      64,
+      96
+    ],
+    "frames": {
+      "idle": 4,
+      "walk": 8,
+      "run": 8
+    }
+  },
+  "generation": {
+    "method": "imagegen",
+    "procedural": false
+  },
+  "notes": [
+    "Single-direction pilot; no extended actions.",
+    "Generated high-resolution sources will be resized and registered, not claimed native-authored pixels.",
+    "No main game changes."
+  ]
+}

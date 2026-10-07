@@ -1,0 +1,46 @@
+{
+  "status": "candidate_exported_needs_visual_revision",
+  "production_ready": false,
+  "user_feedback": "v002 好的多了；补其他方向和其他动作",
+  "characters": [
+    "A",
+    "C"
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "base_actions": [
+    "idle",
+    "walk",
+    "run"
+  ],
+  "expanded_actions": [
+    "crouch",
+    "jump",
+    "collect",
+    "push",
+    "pull"
+  ],
+  "expanded_action_initial_direction": "left",
+  "preserved_baseline": "../human-ac-basic-v002",
+  "cell": [
+    64,
+    96
+  ],
+  "root": [
+    32,
+    80
+  ],
+  "method": "imagegen single direction/action; shared grid transform for export; no per-frame bbox fitting",
+  "review": "candidate; preserve asymmetric equipment, anatomy, support and loop seam",
+  "clip_count": 58,
+  "frame_count": 456,
+  "preview_url": "http://127.0.0.1:8158/revisions/human-ac-expanded-v003/preview.html"
+}

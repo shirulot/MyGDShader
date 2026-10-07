@@ -1,15 +1,18 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://cb6q8w33hetpw"]
 
-[ext_resource type="Shader" path="res://scenes/chapter06/ch06_01_sine_distortion.gdshader" id="1_shader"]
-[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/straight_background_v001.png" id="2_background"]
+[ext_resource type="Shader" uid="uid://226smrd4gr11" path="res://scenes/chapter06/ch06_01_sine_distortion.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://tfpr5mweo7ee" path="res://assets/ember/data/calibration/straight_background_v001.png" id="2_background"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_distortion"]
 resource_local_to_scene = true
 shader = ExtResource("1_shader")
+shader_parameter/wave_speed = 2.68676993283075
+shader_parameter/wave_amplitude = 0.01999999955297
+shader_parameter/wave_frequency = 2.0000000149012003
 
-[node name="Ch0601SineDistortion" type="Node2D"]
+[node name="Ch0601SineDistortion" type="Node2D" unique_id=922895547]
 
-[node name="StraightBackground" type="Sprite2D" parent="."]
+[node name="StraightBackground" type="Sprite2D" parent="." unique_id=977198508]
 texture_filter = 2
 texture_repeat = 1
 material = SubResource("ShaderMaterial_distortion")

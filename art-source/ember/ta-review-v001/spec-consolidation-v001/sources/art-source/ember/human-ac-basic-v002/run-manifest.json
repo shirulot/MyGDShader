@@ -1,0 +1,37 @@
+{
+  "status": "loop_revision_ready_for_review",
+  "approval": "NOT_USER_OR_TA_APPROVED",
+  "frame_counts": {"idle": 4, "walk": 8, "run": 8},
+  "period_ms": {"idle": 1000, "walk": 960, "run": 640},
+  "total_frames": 40,
+  "generation_ledger": "source/generation-ledger.json",
+  "preview_url": "http://127.0.0.1:8158/preview.html",
+  "scope": {
+    "characters": [
+      "A",
+      "C"
+    ],
+    "actions": [
+      "idle",
+      "walk",
+      "run"
+    ],
+    "directions": [
+      "left"
+    ],
+    "cell": [
+      64,
+      96
+    ]
+  },
+  "requirement": "Every action must form a continuous periodic motion; seam is last->first->second, not identical start/end copies.",
+  "method": "imagegen for new pixels; export tools only crop/register/sequence",
+  "preserve": "v001 original files frozen for comparison",
+  "checks": [
+    "phase sequence full cycle",
+    "last/first neighborhood",
+    "constant period with no double-held endpoint",
+    "multiple cycles",
+    "joint continuity"
+  ]
+}

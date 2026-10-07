@@ -1,0 +1,137 @@
+{
+  "id": "A-walk-down_right-rig-v006",
+  "production_ready": false,
+  "scope": "one editable rig pilot only",
+  "frame_size": [
+    64,
+    96
+  ],
+  "root": [
+    32,
+    80
+  ],
+  "duration_ms": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "loop": true,
+  "playback": "forward",
+  "phase": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5,
+    0.625,
+    0.75,
+    0.875
+  ],
+  "near_side": "anatomical_right",
+  "far_side": "anatomical_left",
+  "stance_frames": {
+    "near": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "far": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "world_displacement_per_cycle": [
+    24,
+    8.4
+  ],
+  "source": "source/A-parts.png",
+  "source_sha256": "f15979fc9c0bc795c742c1a8ffbb544c28c94bd259e28089f4def2c2f4d43a76",
+  "rig": "rig.js",
+  "poses": "qa/poses.json",
+  "static_regions": "rig.js:textureRegions",
+  "alpha_threshold": 128,
+  "palette_colors": 18,
+  "status": {
+    "size": [
+      512,
+      96
+    ],
+    "cell": [
+      64,
+      96
+    ],
+    "root": [
+      32,
+      80
+    ],
+    "frame_count": 8,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "opaque_colors": 17,
+    "unique_frames": 8,
+    "bboxes": [
+      [
+        13,
+        15,
+        49,
+        82
+      ],
+      [
+        16,
+        16,
+        48,
+        81
+      ],
+      [
+        19,
+        15,
+        48,
+        79
+      ],
+      [
+        21,
+        14,
+        49,
+        78
+      ],
+      [
+        18,
+        15,
+        48,
+        80
+      ],
+      [
+        19,
+        16,
+        46,
+        79
+      ],
+      [
+        19,
+        15,
+        45,
+        77
+      ],
+      [
+        14,
+        14,
+        45,
+        77
+      ]
+    ],
+    "end_frame_is_duplicate": false,
+    "technical_export_pass": true,
+    "visual_status": "pending_ta",
+    "runtime_status": "not_tested_in_godot"
+  }
+}

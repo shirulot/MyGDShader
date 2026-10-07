@@ -1,0 +1,116 @@
+{
+  "revision": "enemy_examples_v001",
+  "status": "VISUAL_EXAMPLES_READY",
+  "scope": "Four static visual examples for user review. No animation, collision or combat implementation.",
+  "reference_robot_canvas_px": [
+    64,
+    96
+  ],
+  "reference_world_cell_px": 32,
+  "examples": [
+    {
+      "id": "enemy_patrol",
+      "name": "轻型巡逻兵",
+      "role": "普通远程／巡逻",
+      "canvas_px": [
+        64,
+        96
+      ],
+      "body_max_px": [
+        40,
+        64
+      ],
+      "pivot_px": [
+        32,
+        80
+      ],
+      "subject": "A compact biped security automaton, only a little bulkier than the player repair robot. Rounded small helmet with a black horizontal visor and one restrained amber-red sensor, off-white chest shell, narrow waist, clearly separated stout blue-grey legs and small brass joints. One forearm has an integrated stubby industrial bolt-projector; the other is a simple articulated manipulator. Keep this silhouette recognisably light and mobile, neither a human soldier nor a giant mech. Native visible body about40x64logicalpixels.",
+      "prompt": "Use case: stylized-concept.\nAsset type: one isolated static enemy-unit pixel-art example for the existing Ember game; this is a visual design sample, not an animation sheet.\nPrimary request: design a hostile industrial automaton that unmistakably belongs to the exact same manufacturing family and game camera as the provided references.\nInput image 1 role: existing player robot, authoritative viewpoint, compact proportions, readable pixel clusters, ivory armour / blue-grey joints / tiny brass connectors. Do not duplicate its friendly face or exact silhouette.\nInput image 2 role: actual assembled game scene, authoritative environment and character scale. This is a style reference only; do not include its floor or scenery.\nInput image 3 role: existing registered equipment and sprite library, authoritative material language; do not copy labels or create a contact sheet.\nScene/backdrop: actual fully transparent alpha, no visible or hidden opaque background, no rectangle or ground tile. One unit only.\nStyle/medium: strict crisp low-resolution 2D game pixel art, bold deliberate square pixel clusters and stepped contour, a nearest-neighbour enlarged native sprite, restrained discrete shading. Match the reference's quiet weathered industrial look. Orthographic slightly elevated top/front viewpoint, facing straight down toward the screen; show the upper surface and front consistently. NO isometric diagonal, NO side-on or three-quarter character turn.\nPalette: desaturated pale warm ivory plates, dark petrol / blue-grey machinery, small dull brass interfaces, a little grey-brown wear. Enemy identity comes from one small muted amber-red sensor and its clearly different silhouette, not a giant red recolour. Very sparse marks, restrained highlights.\nLighting: simple baked upper-left light and compact dark outline/occlusion inside the unit, no cast shadow, no glow haze, no bloom, no rim light.\nComposition: full body and every appendage visible, centered with ample empty alpha margin on every side. Clear neutral alert / ready pose. All equipment integrated into the enemy itself.\nAvoid: human face, humans, photorealism, 3D render, smooth glossy metal, antialiased painterly edges, noisy tiny rivet patterns, dense thin greebles, neon, background, floor, platform, floating shadow, effects, smoke, rain, bullets, damage numbers, labels, typography, UI, watermark, extra units, multiple angles, panels or grids.\nOutput: transparent PNG, around1024x1024; enlarge the underlying limited logical-pixel sprite without increasing native detail density.\n\nSubject: A compact biped security automaton, only a little bulkier than the player repair robot. Rounded small helmet with a black horizontal visor and one restrained amber-red sensor, off-white chest shell, narrow waist, clearly separated stout blue-grey legs and small brass joints. One forearm has an integrated stubby industrial bolt-projector; the other is a simple articulated manipulator. Keep this silhouette recognisably light and mobile, neither a human soldier nor a giant mech. Native visible body about40x64logicalpixels.",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_idle_down_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_dry_mine_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png"
+      ],
+      "stage": "STATIC_VISUAL_EXAMPLE",
+      "output_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_patrol_master_v001.png"
+    },
+    {
+      "id": "enemy_cutter",
+      "name": "近战切割工蜂",
+      "role": "快速近战／夹击",
+      "canvas_px": [
+        80,
+        80
+      ],
+      "body_max_px": [
+        56,
+        48
+      ],
+      "pivot_px": [
+        40,
+        64
+      ],
+      "subject": "A low compact four-legged industrial cutting worker, a squat oval off-white carapace on four visibly separate short articulated blue-grey legs. A small front sensor slit with one amber-red dot; one forward work arm ends in a recognisable chunky circular cutter with a few broad steel teeth, the other is a compact hooked gripping claw. Make the tool readable at small native scale. Dense weight is in the shell, limbs are short and sturdy; no organic insect, no huge spider, no many thin tentacles. Native visible body about56x48logicalpixels, noticeably lower and wider than the player.",
+      "prompt": "Use case: stylized-concept.\nAsset type: one isolated static enemy-unit pixel-art example for the existing Ember game; this is a visual design sample, not an animation sheet.\nPrimary request: design a hostile industrial automaton that unmistakably belongs to the exact same manufacturing family and game camera as the provided references.\nInput image 1 role: existing player robot, authoritative viewpoint, compact proportions, readable pixel clusters, ivory armour / blue-grey joints / tiny brass connectors. Do not duplicate its friendly face or exact silhouette.\nInput image 2 role: actual assembled game scene, authoritative environment and character scale. This is a style reference only; do not include its floor or scenery.\nInput image 3 role: existing registered equipment and sprite library, authoritative material language; do not copy labels or create a contact sheet.\nScene/backdrop: actual fully transparent alpha, no visible or hidden opaque background, no rectangle or ground tile. One unit only.\nStyle/medium: strict crisp low-resolution 2D game pixel art, bold deliberate square pixel clusters and stepped contour, a nearest-neighbour enlarged native sprite, restrained discrete shading. Match the reference's quiet weathered industrial look. Orthographic slightly elevated top/front viewpoint, facing straight down toward the screen; show the upper surface and front consistently. NO isometric diagonal, NO side-on or three-quarter character turn.\nPalette: desaturated pale warm ivory plates, dark petrol / blue-grey machinery, small dull brass interfaces, a little grey-brown wear. Enemy identity comes from one small muted amber-red sensor and its clearly different silhouette, not a giant red recolour. Very sparse marks, restrained highlights.\nLighting: simple baked upper-left light and compact dark outline/occlusion inside the unit, no cast shadow, no glow haze, no bloom, no rim light.\nComposition: full body and every appendage visible, centered with ample empty alpha margin on every side. Clear neutral alert / ready pose. All equipment integrated into the enemy itself.\nAvoid: human face, humans, photorealism, 3D render, smooth glossy metal, antialiased painterly edges, noisy tiny rivet patterns, dense thin greebles, neon, background, floor, platform, floating shadow, effects, smoke, rain, bullets, damage numbers, labels, typography, UI, watermark, extra units, multiple angles, panels or grids.\nOutput: transparent PNG, around1024x1024; enlarge the underlying limited logical-pixel sprite without increasing native detail density.\n\nSubject: A low compact four-legged industrial cutting worker, a squat oval off-white carapace on four visibly separate short articulated blue-grey legs. A small front sensor slit with one amber-red dot; one forward work arm ends in a recognisable chunky circular cutter with a few broad steel teeth, the other is a compact hooked gripping claw. Make the tool readable at small native scale. Dense weight is in the shell, limbs are short and sturdy; no organic insect, no huge spider, no many thin tentacles. Native visible body about56x48logicalpixels, noticeably lower and wider than the player.",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_idle_down_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_dry_mine_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png"
+      ],
+      "stage": "STATIC_VISUAL_EXAMPLE",
+      "output_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_cutter_master_v001.png"
+    },
+    {
+      "id": "enemy_tracked_heavy",
+      "name": "履带重装机",
+      "role": "低速重装／火力压制",
+      "canvas_px": [
+        112,
+        96
+      ],
+      "body_max_px": [
+        80,
+        64
+      ],
+      "pivot_px": [
+        56,
+        80
+      ],
+      "subject": "A squat broad tracked industrial heavy automaton. Two short wide dark-blue-grey tread pods frame a compact central ivory rounded-armour tower and stout front plate. Small brass couplings and one horizontal amber-red sensor slit. A short blunt integrated energy-projector barrel at the front, not a long military tank gun; broad shoulder plates and the two caterpillar tread blocks define the silhouette. Heavier than the player with roughly twice its width and similar native body height, not a towering boss. Native visible body about80x64logicalpixels. Keep tracks thick and readable with only a few large tread segments.",
+      "prompt": "Use case: stylized-concept.\nAsset type: one isolated static enemy-unit pixel-art example for the existing Ember game; this is a visual design sample, not an animation sheet.\nPrimary request: design a hostile industrial automaton that unmistakably belongs to the exact same manufacturing family and game camera as the provided references.\nInput image 1 role: existing player robot, authoritative viewpoint, compact proportions, readable pixel clusters, ivory armour / blue-grey joints / tiny brass connectors. Do not duplicate its friendly face or exact silhouette.\nInput image 2 role: actual assembled game scene, authoritative environment and character scale. This is a style reference only; do not include its floor or scenery.\nInput image 3 role: existing registered equipment and sprite library, authoritative material language; do not copy labels or create a contact sheet.\nScene/backdrop: actual fully transparent alpha, no visible or hidden opaque background, no rectangle or ground tile. One unit only.\nStyle/medium: strict crisp low-resolution 2D game pixel art, bold deliberate square pixel clusters and stepped contour, a nearest-neighbour enlarged native sprite, restrained discrete shading. Match the reference's quiet weathered industrial look. Orthographic slightly elevated top/front viewpoint, facing straight down toward the screen; show the upper surface and front consistently. NO isometric diagonal, NO side-on or three-quarter character turn.\nPalette: desaturated pale warm ivory plates, dark petrol / blue-grey machinery, small dull brass interfaces, a little grey-brown wear. Enemy identity comes from one small muted amber-red sensor and its clearly different silhouette, not a giant red recolour. Very sparse marks, restrained highlights.\nLighting: simple baked upper-left light and compact dark outline/occlusion inside the unit, no cast shadow, no glow haze, no bloom, no rim light.\nComposition: full body and every appendage visible, centered with ample empty alpha margin on every side. Clear neutral alert / ready pose. All equipment integrated into the enemy itself.\nAvoid: human face, humans, photorealism, 3D render, smooth glossy metal, antialiased painterly edges, noisy tiny rivet patterns, dense thin greebles, neon, background, floor, platform, floating shadow, effects, smoke, rain, bullets, damage numbers, labels, typography, UI, watermark, extra units, multiple angles, panels or grids.\nOutput: transparent PNG, around1024x1024; enlarge the underlying limited logical-pixel sprite without increasing native detail density.\n\nSubject: A squat broad tracked industrial heavy automaton. Two short wide dark-blue-grey tread pods frame a compact central ivory rounded-armour tower and stout front plate. Small brass couplings and one horizontal amber-red sensor slit. A short blunt integrated energy-projector barrel at the front, not a long military tank gun; broad shoulder plates and the two caterpillar tread blocks define the silhouette. Heavier than the player with roughly twice its width and similar native body height, not a towering boss. Native visible body about80x64logicalpixels. Keep tracks thick and readable with only a few large tread segments.",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_idle_down_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_dry_mine_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png"
+      ],
+      "stage": "STATIC_VISUAL_EXAMPLE",
+      "output_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_tracked_heavy_master_v001.png"
+    },
+    {
+      "id": "enemy_scout_drone",
+      "name": "悬浮侦察机",
+      "role": "空中侦察／骚扰",
+      "canvas_px": [
+        96,
+        80
+      ],
+      "body_max_px": [
+        64,
+        40
+      ],
+      "pivot_px": [
+        48,
+        56
+      ],
+      "subject": "A small hovering industrial scout automaton with a compact ivory rounded-rectangle central sensor body and two short lateral blue-grey enclosed ducted-fan pods. Two matching stout protected fan rings / housings are clearly visible from the same elevated orthographic top/front game camera. One small front amber-red optical sensor and a tiny brass connector underneath; no legs. Shape is compact, broad, and visibly lighter than the biped, with a few large readable internal fan blades and transparent gaps between pods and central shell. No helicopter tail, no long wings, no jet flames and no ground shadow. Native visible body about64x40logicalpixels.",
+      "prompt": "Use case: stylized-concept.\nAsset type: one isolated static enemy-unit pixel-art example for the existing Ember game; this is a visual design sample, not an animation sheet.\nPrimary request: design a hostile industrial automaton that unmistakably belongs to the exact same manufacturing family and game camera as the provided references.\nInput image 1 role: existing player robot, authoritative viewpoint, compact proportions, readable pixel clusters, ivory armour / blue-grey joints / tiny brass connectors. Do not duplicate its friendly face or exact silhouette.\nInput image 2 role: actual assembled game scene, authoritative environment and character scale. This is a style reference only; do not include its floor or scenery.\nInput image 3 role: existing registered equipment and sprite library, authoritative material language; do not copy labels or create a contact sheet.\nScene/backdrop: actual fully transparent alpha, no visible or hidden opaque background, no rectangle or ground tile. One unit only.\nStyle/medium: strict crisp low-resolution 2D game pixel art, bold deliberate square pixel clusters and stepped contour, a nearest-neighbour enlarged native sprite, restrained discrete shading. Match the reference's quiet weathered industrial look. Orthographic slightly elevated top/front viewpoint, facing straight down toward the screen; show the upper surface and front consistently. NO isometric diagonal, NO side-on or three-quarter character turn.\nPalette: desaturated pale warm ivory plates, dark petrol / blue-grey machinery, small dull brass interfaces, a little grey-brown wear. Enemy identity comes from one small muted amber-red sensor and its clearly different silhouette, not a giant red recolour. Very sparse marks, restrained highlights.\nLighting: simple baked upper-left light and compact dark outline/occlusion inside the unit, no cast shadow, no glow haze, no bloom, no rim light.\nComposition: full body and every appendage visible, centered with ample empty alpha margin on every side. Clear neutral alert / ready pose. All equipment integrated into the enemy itself.\nAvoid: human face, humans, photorealism, 3D render, smooth glossy metal, antialiased painterly edges, noisy tiny rivet patterns, dense thin greebles, neon, background, floor, platform, floating shadow, effects, smoke, rain, bullets, damage numbers, labels, typography, UI, watermark, extra units, multiple angles, panels or grids.\nOutput: transparent PNG, around1024x1024; enlarge the underlying limited logical-pixel sprite without increasing native detail density.\n\nSubject: A small hovering industrial scout automaton with a compact ivory rounded-rectangle central sensor body and two short lateral blue-grey enclosed ducted-fan pods. Two matching stout protected fan rings / housings are clearly visible from the same elevated orthographic top/front game camera. One small front amber-red optical sensor and a tiny brass connector underneath; no legs. Shape is compact, broad, and visibly lighter than the biped, with a few large readable internal fan blades and transparent gaps between pods and central shell. No helicopter tail, no long wings, no jet flames and no ground shadow. Native visible body about64x40logicalpixels.",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_idle_down_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_dry_mine_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png"
+      ],
+      "stage": "STATIC_VISUAL_EXAMPLE",
+      "output_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_scout_drone_master_v001.png"
+    }
+  ]
+}

@@ -97,8 +97,8 @@ assets/shader-learning/
 | 03 | 无 | 使用 ColorRect、Gradient 和内建 `TIME` | 不准备 |
 | 04 | 既有 D02 灰度渐变、D03 圆/星 Mask | 复用已登记的项目生成数据 | 04.1 用渐变/圆，04.3 再用星形；不重复生成 |
 | 05 | 既有 D04 低频/高频 Noise；NoiseTexture2D 内建资源 | 优先复用项目生成数据，仍学习内建资源 | 05.1 先观察已有两图，再按小步连接最小 NoiseTexture2D；不重复生成 PNG |
-| 06 | 既有直线背景、Noise、非方形校准/色块与独立机器人帧 | 复用已登记技术输入与自制素材 | 06.1直线底图起步，06.2/06.3按节复用；不再生成一套校准图 |
-| 07 | 带孔洞和细边的 Sprite | 生成测试轮廓图 | 到 07.1 再生成 |
+| 06 | 既有直线背景、低频 Noise/圆 Mask、非方形校准/色块 | 复用已登记项目生成输入 | 四实验已实际使用；本章未用机器人或 C05 内建 Noise，无新 PNG |
+| 07 | 既有 D05 Alpha 校准 Sprite；可选独立机器人帧 | 复用项目生成与已登记角色 | 07.1 优先 128×128 Alpha 图，孔洞/细线/渐变齐全，不重复生成 |
 | 08 | 环形 Gradient、能量纹理 | 程序生成 | 按 Section 分别生成 |
 | 09 | 一个统一主题的 Sprite 与背景 | 从已生成资源中组合 | 不新增大素材包 |
 | 10 | 最小交互场景 | Godot 节点搭建 | 章节 Chat 创建 |
@@ -266,9 +266,22 @@ T01 四种地板母稿共 4/4 候选。高分辨率母稿、目标网格诊断�
 
 两张PNG的生成器为 `art-source/ember/technical-inputs-v001/basic/generate_basic.py`，证据为 `assets/ember/data/technical_inputs_catalog_v001.json`。它们是周期频率叠加灰度测试数据，不冒称FastNoiseLite/Perlin；本章另有真实FastNoiseLite内建资源，来源不要混淆。Noise线性读`.r`，无`source_color`；观察器seamless且Repeat开启，溶解Noise不重复。05.2/05.3最终成品在05.2文件，正边宽为灰度跨度、RGB柔和混色，原Alpha保留；05.3单独文件仅起点。Ramp/双色挑战未做且非核心阻塞，未新增GDScript。课程和真实游戏应用分别登记，不宣称GPU性能测量。
 
-## C06 最小资源计划（2026-10-07）
+## C06 最小资源与实际使用（2026-10-07）
 
-用于 [C06交接](chapter06-chat-prompt.md)，已核对路径与technical-input catalog；尚非实际使用/课程验收。06.1先复用`assets/ember/data/calibration/straight_background_v001.png`（512×512 RGB、D01），06.2复用D04或C05观察器内建Noise，06.3再用`non_square_grid_v001.png`（512×256 RGB）与`assets/shader-learning/common/color_test_512.png`；独立机器人帧按观察需要选用。前两类校准图来源同上项目生成脚本，旧Color Test来源`tools/generate_chapter01_assets.ps1`；角色来源仍非CC0。彩色底图读完整颜色，数据Noise才读`.r`，不机械套用catalog通用备注。首步无需地板/机器人/Noise/GDScript，不新增素材或回改C05资源；水波、热浪、量化与RGB分离仍需按课程逐项学习。
+依据 [C06 报告](chapter06-completion-report.md)及保存的四实验更新实际使用，不再只是启动计划。06.1/06.2 用 `assets/ember/data/calibration/straight_background_v001.png`（512×512 RGB、D01）；06.2 实际用 D04 `assets/ember/data/noise/noise_low_v001.png`（256×256 单通道）与 D03 `assets/ember/data/masks/circle_mask_v001.png`（256×256 单通道），不是 C05 内建 Noise。06.3 像素化用 `assets/ember/data/calibration/non_square_grid_v001.png`（512×256 RGB），RGB 色散用 `assets/shader-learning/common/color_test_512.png`（512×512 RGBA、当前全不透明）。本章未用独立机器人帧/地板、未新增 PNG/下载/生图/课程 GDScript，艺术与技术输入生产计数不变。
+
+技术校准/Noise/Mask 来源 `GENERATED_IN_PROJECT`，沿用 technical-input catalog / 已登记生成脚本；Color Test 来源 `tools/generate_chapter01_assets.ps1`。颜色底图读完整 RGBA，Noise/Mask 读 `.r`；色散保留原点 Alpha 的代码已核对，但全不透明色块不能证明透明机器人视觉。前两节实际 Linear，像素化/色散 Nearest；按当前实验解释，不机械套用 catalog 通用备注。四实验核心完成，真实游戏水渠/热浪/终端应用仍待验收，不以素材交付替代。
+
+## C07 最小资源计划（2026-10-07）
+
+用于 [C07 交接](chapter07-chat-prompt.md)。已核对文件、catalog 尺寸与 D05 哈希；此处登记准备齐全，不冒充课程作品/应用完成。
+
+| 输入 | 本章用途与边界 | 来源 |
+| --- | --- | --- |
+| `assets/ember/data/calibration/alpha_edge_test_v001.png`，128×128 RGBA | 07.1 首步 Alpha 读数，再邻域/孔洞/细线；有透明椭圆孔洞、孤立单像素线与 Alpha 渐变。先 1 源像素描边；边距不是任意宽光晕保证。读 `.a`，不读通用数据备注的 `.r` | D05，`GENERATED_IN_PROJECT`；`art-source/ember/technical-inputs-v001/basic/generate_basic.py`；technical-input catalog 中 `alpha_edge_test` |
+| `assets/ember/characters/robot/robot_idle_down_v001.png`，64×96 RGBA | 适合时验证真实非方形轮廓与假发光；先独立 Sprite2D 帧，不引入 AtlasUV/动画 | AI 母稿经原生整理，不是 CC0；当前 v003 组合仍复用此已登记待机帧 |
+
+D05 1 源纹理像素为每轴 1/128 UV（0.0078125）；Sprite scale=4 且无其他变换时为 4 场景单位，实际屏幕像素另受视口/窗口缩放影响。机器人每轴单位分别 1/64、1/96 UV，不混称显示距离。可用现有节点做背景，首步不用 Noise、地板、额外美术或 GDScript；不重新生成 D05、不改旧实验/M0。07.2 保留两层假柔光与成本观察，07.3 保留三种参数化强调，不因像素风选材删标准。
 
 ## 资源验收
 

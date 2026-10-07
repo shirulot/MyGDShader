@@ -1,0 +1,38 @@
+{
+  "status": "LOOP_REVISION_CANDIDATE",
+  "approval": "NO_USER_OR_TA_PASS",
+  "inspected": [
+    "A/C walk/run full contact sheets",
+    "A/C walk/run F06-F07-F00-F01 seam sheets",
+    "browser walk F07 then F00",
+    "browser run F07 then F00",
+    "browser idle F03 then F00"
+  ],
+  "observedBrowserWrapCountsBeforeManualStep": {
+    "walk": 48,
+    "run": 141,
+    "idle": 41
+  },
+  "technical_checks": {
+    "frames": 40,
+    "binary_alpha": true,
+    "body_4_connected": true,
+    "clipped_frames": 0,
+    "duplicated_terminal_frames": 0,
+    "stationary_sole_row": 80,
+    "run_flight_sole_row": 77
+  },
+  "observations": [
+    "Both halves of walk now have distinct near/far arm and leg overlap.",
+    "Head registration removes waist-mask-driven lateral root jumps.",
+    "Contact soles are fixed; run flight uses 3px elevation.",
+    "Idle uses source 0,1,2,1; source F03 drift was excluded.",
+    "UI wraps last->first without extra holding frame."
+  ],
+  "remaining_limits": [
+    "Generated face, costume and torso volume still change subtly between phases.",
+    "Motion images are approximated from reference and not a verified skeletal retarget.",
+    "Perfect visual continuity is not established by timing/alpha/difference metrics alone."
+  ],
+  "production_ready": false
+}

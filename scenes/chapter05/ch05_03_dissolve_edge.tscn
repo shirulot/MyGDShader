@@ -1,7 +1,7 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://cac55w8swk6w5"]
 
-[ext_resource type="Shader" path="res://scenes/chapter05/ch05_03_dissolve_edge.gdshader" id="1_shader"]
-[ext_resource type="Texture2D" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="2_robot"]
+[ext_resource type="Shader" uid="uid://bootyw73r8ymo" path="res://scenes/chapter05/ch05_03_dissolve_edge.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="2_robot"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_dissolve"]
 seed = 7
@@ -18,11 +18,11 @@ noise = SubResource("FastNoiseLite_dissolve")
 resource_local_to_scene = true
 shader = ExtResource("1_shader")
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_dissolve")
-shader_parameter/dissolve_progress = 0.5
+shader_parameter/dissolve_progress = 0.0
 
-[node name="Ch0503DissolveEdge" type="Node2D"]
+[node name="Ch0503DissolveEdge" type="Node2D" unique_id=831899163]
 
-[node name="Robot" type="Sprite2D" parent="."]
+[node name="Robot" type="Sprite2D" parent="." unique_id=1822978394]
 texture_filter = 1
 texture_repeat = 1
 material = SubResource("ShaderMaterial_dissolve")

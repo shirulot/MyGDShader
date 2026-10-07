@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A/C v004 · 全身位移修正对照</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101820;color:#ece9d8;font:16px system-ui,sans-serif}main{max-width:1040px;margin:auto;padding:24px}h1{font-size:25px}p{color:#aab7b1;line-height:1.6}nav{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0;padding:14px;background:#20313d;border-radius:8px}label{display:flex;align-items:center;gap:6px}button,select{font:inherit;padding:8px;background:#304653;color:#ece9d8;border:1px solid #829ba3;border-radius:5px;cursor:pointer}button:disabled{opacity:.35;cursor:default}button[aria-pressed=true]{background:#665034;border-color:#e2b77a}.directions{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}section{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}article{background:#182631;border:1px solid #304653;border-radius:8px;text-align:center;padding:12px}h2{font-size:18px;margin:0 0 8px}canvas{image-rendering:pixelated;max-width:100%;height:auto}small{display:block;color:#aab7b1;margin:8px}a{color:#e2b77a}#status{align-self:center;color:#e2b77a}.seams{width:100%}footer{font-size:14px;line-height:1.8}
+</style>
+<main><h1>v004 · 全身位移修正对照</h1>
+<p>同一帧、同一速度对比：左列为 v003，右列修正整帧的无故平移。左向所有动作保持原样。身体转角、比例和细节跳变仍属于源图问题，本页不表示动作整体验收通过。</p>
+<nav><label>动作<select id="action"><option value="idle">待机</option><option value="walk" selected>行走</option><option value="run">跑动</option><option value="crouch">下蹲起身</option><option value="jump">跳跃</option><option value="collect">采集</option><option value="push">原地推力</option><option value="pull">原地拉力</option></select></label>
+<label>速度<select id="speed"><option value="1">正常</option><option value="0.333333">慢放 ⅓</option></select></label>
+<label>背景<select id="bg"><option value="#182631">深色</option><option value="#ece9d8">浅色</option></select></label>
+<label><input id="guides" type="checkbox" checked>定位辅助线</label><button id="play">暂停</button><button id="step">下一帧</button><button id="seam">尾帧 → 首帧</button><span id="status"></span></nav>
+<nav><div class="directions"><button data-dir="up_left">↖ 左后</button><button data-dir="up">↑ 背面</button><button data-dir="up_right">↗ 右后</button><button data-dir="left">← 左</button><span></span><button data-dir="right">右 →</button><button data-dir="down_left">↙ 左前</button><button data-dir="down">↓ 正面</button><button data-dir="down_right">↘ 右前</button></div><p id="note"></p></nav>
+<section><article><h2>A · v003 原始定位</h2><canvas id="A-old" width="384" height="384"></canvas></article><article><h2>A · v004 定位修正</h2><canvas id="A-new" width="384" height="384"></canvas><small id="A-offset"></small></article>
+<article><h2>C · v003 原始定位</h2><canvas id="C-old" width="384" height="384"></canvas></article><article><h2>C · v004 定位修正</h2><canvas id="C-new" width="384" height="384"></canvas><small id="C-offset"></small></article></section>
+<p>修正后的尾首四帧：F06 → F07 → F00 → F01（4帧待机则为 F02 → F03 → F00 → F01）。</p>
+<canvas class="seams" id="seams" width="768" height="384"></canvas>
+<footer>黄点为登记的腰部位置，竖线为固定参考轴。修正量按原尺寸整数像素记录，未缩放或形变人物。<br><a href="catalog.json">逐帧偏移数据</a> · <a href="qa/registration-review.json">检查记录</a> · <a href="../human-ac-expanded-v003/preview.html">返回 v003</a></footer></main>
+<script>
+const el=id=>document.getElementById(id);
+const ui=Object.fromEntries(['action','speed','bg','guides','play','step','seam','status','note'].map(id=>[id,el(id)]));
+let clips=[],images={},direction='down_left',elapsed=0,last=null,playing=true;
+const extras=['crouch','jump','collect','push','pull'];
+const clip=ch=>clips.find(c=>c.character===ch&&c.action===ui.action.value&&c.direction===direction);
+// 帧索引始终取模，不追加重复首帧，也不反向播放。
+function frameAt(ms,c){return Math.floor(ms/c.duration_ms)%c.frame_count;}
+function drawFrame(canvas,c,f,corrected){
+ const g=canvas.getContext('2d');g.imageSmoothingEnabled=false;g.fillStyle=ui.bg.value;g.fillRect(0,0,canvas.width,canvas.height);
+ if(!c)return;
+ const shift=corrected?c.draw_offsets[f]:[0,0];
+ // 64x96原图按4倍显示，左右各留16原像素，偏移不裁切贴图内容。
+ g.drawImage(images[c.key],f*64,0,64,96,64+shift[0]*4,shift[1]*4,256,384);
+ if(ui.guides.checked){
+  g.strokeStyle='#637975';g.beginPath();g.moveTo(192,0);g.lineTo(192,384);g.moveTo(0,320);g.lineTo(384,320);g.stroke();
+  const p=c.waist_landmarks?.[f];if(p){g.fillStyle='#e2b77a';g.fillRect(64+(p[0]+shift[0])*4-2,(p[1]+shift[1])*4-2,5,5);}
+ }
+}
+function draw(){
+ for(const ch of ['A','C']){const c=clip(ch);if(!c)continue;const f=frameAt(elapsed,c);drawFrame(el(ch+'-old'),c,f,false);drawFrame(el(ch+'-new'),c,f,true);el(ch+'-offset').textContent=c.direction==='left'?'左向保留，偏移为 0':`F${f} · 修正 (${c.draw_offsets[f].join(', ')}) px`;}
+ const c=clip('A');if(c)ui.status.textContent=`F${frameAt(elapsed,c)} / ${c.frame_count-1} · ${Math.floor(elapsed/(c.duration_ms*c.frame_count))} 个周期`;
+}
+function refresh(){
+ for(const b of document.querySelectorAll('[data-dir]')){b.setAttribute('aria-pressed',String(b.dataset.dir===direction));b.disabled=extras.includes(ui.action.value)&&b.dataset.dir!=='left';}
+ ui.note.textContent=direction==='left'?'保留的左向动作，前后应完全相同。':'本次只修正全身位置；重点比较尾首和 F03 → F04。';
+ const g=el('seams').getContext('2d');g.imageSmoothingEnabled=false;g.fillStyle=ui.bg.value;g.fillRect(0,0,768,384);
+ for(const [row,ch] of ['A','C'].entries()){const c=clip(ch);if(!c)continue;for(const [col,f] of [c.frame_count-2,c.frame_count-1,0,1].entries()){const [dx,dy]=c.draw_offsets[f];g.drawImage(images[c.key],f*64,0,64,96,col*192+32+dx*2,row*192+dy*2,128,192);}}
+ draw();
+}
+function tick(t){if(last!==null&&playing)elapsed+=Math.min(200,t-last)*Number(ui.speed.value);last=t;draw();requestAnimationFrame(tick);}
+ui.action.onchange=()=>{if(extras.includes(ui.action.value))direction='left';elapsed=0;refresh();};
+for(const b of document.querySelectorAll('[data-dir]'))b.onclick=()=>{const old=clip('A'),phase=old?(elapsed%(old.duration_ms*old.frame_count))/(old.duration_ms*old.frame_count):0;direction=b.dataset.dir;const next=clip('A');elapsed=phase*next.duration_ms*next.frame_count;refresh();};
+ui.play.onclick=()=>{playing=!playing;ui.play.textContent=playing?'暂停':'播放';};
+ui.step.onclick=()=>{playing=false;ui.play.textContent='播放';const c=clip('A');elapsed=(Math.floor(elapsed/c.duration_ms)+1)*c.duration_ms;draw();};
+ui.seam.onclick=()=>{playing=false;ui.play.textContent='播放';const c=clip('A');elapsed=(c.frame_count-1)*c.duration_ms;draw();};
+ui.bg.onchange=refresh;ui.guides.onchange=draw;
+(async()=>{clips=(await(await fetch('catalog.json',{cache:'no-store'})).json()).clips;await Promise.all(clips.map(async c=>{const im=new Image();im.src=c.atlas;await im.decode();images[c.key]=im;}));refresh();requestAnimationFrame(tick);})().catch(e=>ui.note.textContent='载入失败：'+e.message);
+</script></html>

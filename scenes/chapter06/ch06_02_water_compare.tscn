@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scenes/chapter06/ch06_02_water_compare.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://scenes/chapter06/ch06_02_water_existing.tscn" id="2_existing"]
+[ext_resource type="PackedScene" path="res://scenes/chapter06/ch06_02_water_generated.tscn" id="3_generated"]
+
+[sub_resource type="SystemFont" id="SystemFont_chinese"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC")
+
+[node name="Ch0602WaterCompare" type="Node2D"]
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1112.0
+offset_bottom = 680.0
+mouse_filter = 2
+color = Color(0.055, 0.065, 0.085, 1)
+
+[node name="Title" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 14.0
+offset_right = 1084.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0.88, 0.9, 0.92, 1)
+theme_override_fonts/font = SubResource("SystemFont_chinese")
+theme_override_font_sizes/font_size = 22
+text = "06.2 水面效果对比"
+
+[node name="ExistingTitle" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 52.0
+offset_right = 540.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(0.8, 0.84, 0.86, 1)
+theme_override_fonts/font = SubResource("SystemFont_chinese")
+theme_override_font_sizes/font_size = 20
+text = "现有水 tile"
+
+[node name="GeneratedTitle" type="Label" parent="."]
+offset_left = 572.0
+offset_top = 52.0
+offset_right = 1084.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(0.8, 0.84, 0.86, 1)
+theme_override_fonts/font = SubResource("SystemFont_chinese")
+theme_override_font_sizes/font_size = 20
+text = "新生成水面"
+
+[node name="ExistingWater" parent="." instance=ExtResource("2_existing")]
+position = Vector2(-76, -20)
+
+[node name="GeneratedWater" parent="." instance=ExtResource("3_generated")]
+position = Vector2(468, -20)
+
+[node name="ExistingCaption" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 606.0
+offset_right = 540.0
+offset_bottom = 630.0
+theme_override_colors/font_color = Color(0.58, 0.65, 0.69, 1)
+theme_override_fonts/font = SubResource("SystemFont_chinese")
+theme_override_font_sizes/font_size = 17
+text = "现有 128×128 水 tile · 4×4 平铺"
+
+[node name="GeneratedCaption" type="Label" parent="."]
+offset_left = 572.0
+offset_top = 606.0
+offset_right = 1084.0
+offset_bottom = 630.0
+theme_override_colors/font_color = Color(0.58, 0.65, 0.69, 1)
+theme_override_fonts/font = SubResource("SystemFont_chinese")
+theme_override_font_sizes/font_size = 17
+text = "AI 水面图 · 显示 512×512"
+
+[node name="EffectCaption" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 644.0
+offset_right = 1084.0
+offset_bottom = 668.0
+theme_override_colors/font_color = Color(0.7, 0.77, 0.79, 1)
+theme_override_fonts/font = SubResource("SystemFont_chinese")
+theme_override_font_sizes/font_size = 17
+text = "同一 Shader · Noise 控制水纹的横向波动"
+horizontal_alignment = 1

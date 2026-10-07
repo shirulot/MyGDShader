@@ -1,0 +1,70 @@
+{
+  "status": "CANONICAL_AND_FOUR_PUBLIC_PREVIEW_PILOTS_READY",
+  "character": "human industrial field technician; new character separate from robot",
+  "scope": "canonical design + idle/walk/run/crouch public-preview pilots",
+  "direction": "left profile",
+  "cell": [
+    64,
+    96
+  ],
+  "root": [
+    32,
+    80
+  ],
+  "method": "imagegen",
+  "full_animation_match": "DEFERRED_UNTIL_ORIGINAL_SOURCE_AVAILABLE",
+  "main_project_modified": false,
+  "animation_frames": 29,
+  "public_listing_entries": 95,
+  "production_approved": false,
+  "strips": [
+    {
+      "action": "canonical",
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-1fdeb3e6-6472-4b86-bb6d-3a8054701093.png",
+      "source_path": "source/canonical-generated.png",
+      "prompt_path": "prompts/canonical.txt",
+      "status": "candidate"
+    },
+    {
+      "action": "walk_rejected",
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-e208de2f-05a6-4464-b290-f1bd01089c66.png",
+      "source_path": "source/walk_rejected-generated.png",
+      "prompt_path": "prompts/walk.txt",
+      "status": "rejected_direction_flip"
+    },
+    {
+      "action": "walk",
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-f3a00dec-6e82-42c7-adf1-26b50f18188f.png",
+      "source_path": "source/walk-generated.png",
+      "prompt_path": "prompts/walk-pose-transfer.txt",
+      "status": "candidate"
+    },
+    {
+      "action": "run",
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-f22dc690-9918-4106-bd6f-6a3d72d0b3f1.png",
+      "source_path": "source/run-generated.png",
+      "prompt_path": "prompts/run-pose-transfer.txt",
+      "status": "candidate"
+    },
+    {
+      "action": "idle",
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-07163ebc-7c71-4993-8194-b4022dae9e5c.png",
+      "source_path": "source/idle-generated.png",
+      "prompt_path": "prompts/idle.txt",
+      "status": "candidate"
+    },
+    {
+      "action": "crouch",
+      "method": "imagegen",
+      "imagegen_output_path": "C:/Users/shiru/.codex/generated_images/01a10cd5-c2d4-7a01-8740-0c3b355f7465/exec-1145a5b6-9bff-4562-8467-90d349cc83c0.png",
+      "source_path": "source/crouch-generated.png",
+      "prompt_path": "prompts/crouch.txt",
+      "status": "candidate"
+    }
+  ]
+}

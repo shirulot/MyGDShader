@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://clqug1iyqo4id"]
+
+[ext_resource type="Shader" path="res://scenes/chapter06/ch06_02_water_preview.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://dt28syuge1a7m" path="res://assets/ember/vfx/water/ch06_water_generated_v001.png" id="2_water"]
+[ext_resource type="Texture2D" uid="uid://bdi0mh6ck27g" path="res://assets/ember/data/noise/noise_low_v001.png" id="3_noise"]
+[ext_resource type="Texture2D" uid="uid://depyfrn40jrtk" path="res://assets/ember/data/masks/circle_mask_v001.png" id="4_mask"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_water"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/noise_texture = ExtResource("3_noise")
+shader_parameter/region_mask = ExtResource("4_mask")
+shader_parameter/noise_speed = 0.1
+
+[node name="Ch0602WaterGenerated" type="Node2D" unique_id=688974990]
+metadata/source_image_size = Vector2i(1254, 1254)
+metadata/display_image_size = Vector2i(512, 512)
+
+[node name="WaterSurface" type="Sprite2D" parent="." unique_id=1413075543]
+texture_filter = 2
+texture_repeat = 1
+material = SubResource("ShaderMaterial_water")
+position = Vector2(360, 360)
+scale = Vector2(0.40829346, 0.40829346)
+texture = ExtResource("2_water")

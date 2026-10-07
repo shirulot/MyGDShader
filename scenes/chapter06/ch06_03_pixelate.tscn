@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://5vnmyc6swr31"]
+
+[ext_resource type="Shader" uid="uid://dymiqt2b8qnd6" path="res://scenes/chapter06/ch06_03_pixelate.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://ddgcr5jdk75qi" path="res://assets/ember/data/calibration/non_square_grid_v001.png" id="2_background"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pixelate"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/cell = 32.0
+
+[node name="Ch0603Pixelate" type="Node2D" unique_id=1389781321]
+
+[node name="GridBackground" type="Sprite2D" parent="." unique_id=559739928]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_pixelate")
+position = Vector2(360, 360)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("2_background")
