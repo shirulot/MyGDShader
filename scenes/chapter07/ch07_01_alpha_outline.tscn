@@ -1,21 +1,21 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene format=3 uid="uid://c5si2h3m35kp0"]
 
-[ext_resource type="Shader" path="res://scenes/chapter07/ch07_01_alpha_outline.gdshader" id="1_shader"]
-[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/alpha_edge_test_v001.png" id="2_alpha_test"]
+[ext_resource type="Shader" uid="uid://chshrrn0r8as2" path="res://scenes/chapter07/ch07_01_alpha_outline.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://ccte1j3fhlkvr" path="res://assets/ember/data/calibration/alpha_edge_test_v001.png" id="2_alpha_test"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_alpha_outline"]
 resource_local_to_scene = true
 shader = ExtResource("1_shader")
 
-[node name="Ch0701AlphaOutline" type="Node2D"]
+[node name="Ch0701AlphaOutline" type="Node2D" unique_id=1025714995]
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="." unique_id=556051161]
 offset_right = 720.0
 offset_bottom = 720.0
 mouse_filter = 2
 color = Color(0.12, 0.14, 0.18, 1)
 
-[node name="AlphaTestSprite" type="Sprite2D" parent="."]
+[node name="AlphaTestSprite" type="Sprite2D" parent="." unique_id=337873367]
 texture_filter = 1
 texture_repeat = 1
 material = SubResource("ShaderMaterial_alpha_outline")

@@ -4,5 +4,6 @@ shader_type canvas_item;
 void fragment() {
 	// 沿用原始 UV，读回完整 RGBA；当前没有邻域偏移。
 	vec4 tex_color = texture(TEXTURE, UV);
-	COLOR = tex_color;
+	COLOR = vec4(vec3(tex_color.a),1.0);
+	//COLOR = tex_color;
 }
