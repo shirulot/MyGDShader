@@ -1,0 +1,51 @@
+{
+  "status": "GODOT_RUNTIME_VISUAL_REVIEW_PASS",
+  "date_utc": "2026-10-04T03:20:14.771169+00:00",
+  "reviewer": "root",
+  "actual_viewed": [
+    "主工程4个实际页签+3D近/远共6PNG",
+    "新工程UI页/3D页/远景；其余与已看主工程逐字节一致"
+  ],
+  "screenshots": [
+    {
+      "main": "art-source/ember/full-art-v001/render/library_page_00.png",
+      "fresh": "art-source/ember/full-art-v001/fresh-render/library_page_00.png",
+      "sha256": "29a8a26e9a0089c9700c4b54a31167a9832515345d1bd81119cd9ab5e62a6811",
+      "main_fresh_bytes_equal": true
+    },
+    {
+      "main": "art-source/ember/full-art-v001/render/library_page_01.png",
+      "fresh": "art-source/ember/full-art-v001/fresh-render/library_page_01.png",
+      "sha256": "3def32f8fb003a10ab301df714537d0a5e2c86a646b9fb475e69ac29e97fb163",
+      "main_fresh_bytes_equal": true
+    },
+    {
+      "main": "art-source/ember/full-art-v001/render/library_page_02.png",
+      "fresh": "art-source/ember/full-art-v001/fresh-render/library_page_02.png",
+      "sha256": "f834252960a7fda74f8b67eee17390bba9d9bb5345ccd4760621f07895c2bb56",
+      "main_fresh_bytes_equal": true
+    },
+    {
+      "main": "art-source/ember/full-art-v001/render/library_page_03.png",
+      "fresh": "art-source/ember/full-art-v001/fresh-render/library_page_03.png",
+      "sha256": "da5979f91e6c2fb9c00f507064cf7b041f7593778521e60caec96b368f794bc4",
+      "main_fresh_bytes_equal": true
+    },
+    {
+      "main": "art-source/ember/full-art-v001/render/materials_far.png",
+      "fresh": "art-source/ember/full-art-v001/fresh-render/materials_far.png",
+      "sha256": "0a676d01fc9e9df1e46180cfb47a01129d8049a9f2d6262ac16aba9933f38669",
+      "main_fresh_bytes_equal": true
+    },
+    {
+      "main": "art-source/ember/full-art-v001/render/materials_near.png",
+      "fresh": "art-source/ember/full-art-v001/fresh-render/materials_near.png",
+      "sha256": "321d1b40e395c1d4a13e091db567a3779ebde06465329ce1077f0df4d6e6de9f",
+      "main_fresh_bytes_equal": true
+    }
+  ],
+  "observations": "18对象和14图标布局无裁切；三面板和640×96透明屏框显示正确；原生2D纹理清楚；3D草片Alpha Scissor轮廓/根部及两材质在近远观察正常，实际mips由资源检查确认。",
+  "asset_units": 40,
+  "resource_count": 6,
+  "course_shaders_or_gameplay_claimed": false
+}

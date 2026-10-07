@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "status": "ART_REJECTED_REQUIRES_REVISION",
+  "reviewer": "/root/joint_reaudit",
+  "reviewed_at_utc": "2026-10-06T09:00:06.302Z",
+  "scope": "Read-only independent review of frozen v007 first native GPU candidate. Only these two report files were added.",
+  "review_basis": [
+    "actual original 64x96 PNGs",
+    "all eight actual 4x nearest PNG previews",
+    "1x and 4x checker contact sheets",
+    "raw RGBA alpha rows and separate alpha components",
+    "actual pose projection and renderer source"
+  ],
+  "not_claimed": [
+    "animated GIF playback was not visually observed",
+    "single alpha component does not prove believable joints",
+    "rig lengths and encoding checks do not approve art"
+  ],
+  "hashes": {
+    "source_master": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+    "rig": "53962879f56be8393682eba6b08f9889f7e5831d24a0a3ce02b23924b64d3114",
+    "canonical": "a545443f3171b9f9c1b28b29da11b6c2222cfdbe03f15b138f756c6b9c4479b2",
+    "atlas": "80f5cb1487c410e2eed84081be29c90792a8b44c327949517a21ededdde2abde",
+    "renderer": "ee8bfbeb0fe294e74e23def5f99a93ac6c3b3d5a7f774eb6bfbea391188464d4"
+  },
+  "positive_observations": [
+    "Head/chest identity and original glove design remain stable at 1x/4x",
+    "Brass wrist tool stays on anatomical left / viewer right in every frame",
+    "There are two alternating lifted-leg halves, with no dominant one-sided limp"
+  ],
+  "observed_art_failures": [
+    "f01 and f05 contain true transparent knee separations",
+    "Other frames still have thin/dark visible shoulder and hip connections",
+    "Foot front/back separation is weak in contact poses",
+    "Passing poses read mainly as vertical shortening / in-place lifting; clear bend and weight transfer are insufficient"
+  ],
+  "inferred_causes": [
+    {
+      "kind": "source_semantic_split",
+      "evidence": "Source y65 knee rim is assigned to thigh; y66..70 assigned to knee whose parent is shin. Adjacent rim rows undergo different affine projections.",
+      "scope": "The rim interpretation is visual/semantic; alpha gap coordinates are direct measurements."
+    },
+    {
+      "kind": "cap_extent",
+      "evidence": "4x4 knee cap centered near projected knee y70 starts near y68, and does not reach the thigh endpoint above the transparent y67 row."
+    },
+    {
+      "kind": "invisible_depth",
+      "evidence": "Front XY projection discards Z; all keypoint X coordinates are fixed. Depth-changing swing is therefore mostly invisible."
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "frames/robot_walk_down_f00_v007.png",
+      "sha256": "dabfbbdde17b2d780d91cc8e6a889ae603eab3042545204956c92be4a49902c1",
+      "phase": "left_contact",
+      "support_leg": "left",
+      "art_observation": "接触姿势前后脚关系弱；鞋底位置与 f04 相同，主要差异是膝和腕的小幅纵向变化。",
+      "components8": [
+        {
+          "opaque_pixels": 1458,
+          "bbox_xyxy": [
+            12,
+            22,
+            51,
+            79
+          ]
+        }
+      ],
+      "actual_alpha_gap": null,
+      "projected_sole_left": [
+        39,
+        80
+      ],
+      "projected_sole_right": [
+        22,
+        80
+      ]
+    },
+    {
+      "index": 1,
+      "file": "frames/robot_walk_down_f01_v007.png",
+      "sha256": "c1e79848dbfeb925f5c859f897d578e9ba0d54b3312f5e29e27ff0c55ae4cba4",
+      "phase": "left_down",
+      "support_leg": "left",
+      "art_observation": "真实透明断裂：机器人右腿、观众左侧，在 y67 分离；下半腿独立。",
+      "components8": [
+        {
+          "opaque_pixels": 1317,
+          "bbox_xyxy": [
+            12,
+            23,
+            51,
+            79
+          ]
+        },
+        {
+          "opaque_pixels": 98,
+          "bbox_xyxy": [
+            18,
+            68,
+            29,
+            78
+          ]
+        }
+      ],
+      "actual_alpha_gap": {
+        "anatomical_leg": "right",
+        "viewer_side": "left",
+        "transparent_row_y": 67,
+        "x_inclusive": [
+          18,
+          30
+        ],
+        "alpha_values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "projected_sole_left": [
+        39,
+        80
+      ],
+      "projected_sole_right": [
+        22,
+        79
+      ]
+    },
+    {
+      "index": 2,
+      "file": "frames/robot_walk_down_f02_v007.png",
+      "sha256": "ebdc2442c5966b25eeab23d552540fda58f849aea924302e6f681fd0ff29f2f2",
+      "phase": "right_passing",
+      "support_leg": "left",
+      "art_observation": "抬脚成立；通过姿势仍像直柱缩短，膝弯和穿过身体的动作不清楚。",
+      "components8": [
+        {
+          "opaque_pixels": 1444,
+          "bbox_xyxy": [
+            12,
+            22,
+            51,
+            79
+          ]
+        }
+      ],
+      "actual_alpha_gap": null,
+      "projected_sole_left": [
+        39,
+        80
+      ],
+      "projected_sole_right": [
+        22,
+        77
+      ]
+    },
+    {
+      "index": 3,
+      "file": "frames/robot_walk_down_f03_v007.png",
+      "sha256": "4ab9e913fb3cdf722cb98892223abd4d0d09f24ff82b2e72d37dcb94acd8596a",
+      "phase": "right_up",
+      "support_leg": "left",
+      "art_observation": "缺少清楚的前摆与即将落脚形体；区别主要是纵向缩短。",
+      "components8": [
+        {
+          "opaque_pixels": 1436,
+          "bbox_xyxy": [
+            12,
+            22,
+            51,
+            79
+          ]
+        }
+      ],
+      "actual_alpha_gap": null,
+      "projected_sole_left": [
+        39,
+        80
+      ],
+      "projected_sole_right": [
+        22,
+        78.80000305175781
+      ]
+    },
+    {
+      "index": 4,
+      "file": "frames/robot_walk_down_f04_v007.png",
+      "sha256": "6af9484af8f7f95c631f88e466760785bc101882d03f5d56f2543cc34125ba0a",
+      "phase": "right_contact",
+      "support_leg": "right",
+      "art_observation": "另一半步接触成立，但与 f00 前后脚形体差异弱。",
+      "components8": [
+        {
+          "opaque_pixels": 1457,
+          "bbox_xyxy": [
+            12,
+            22,
+            51,
+            79
+          ]
+        }
+      ],
+      "actual_alpha_gap": null,
+      "projected_sole_left": [
+        39,
+        80
+      ],
+      "projected_sole_right": [
+        22,
+        80
+      ]
+    },
+    {
+      "index": 5,
+      "file": "frames/robot_walk_down_f05_v007.png",
+      "sha256": "bde5e16b8494d20c28a7414321d38c59180666b782fb3f7be0e96394ea39a881",
+      "phase": "right_down",
+      "support_leg": "right",
+      "art_observation": "真实透明断裂：机器人左腿、观众右侧，在 y67 分离；下半腿独立。",
+      "components8": [
+        {
+          "opaque_pixels": 1319,
+          "bbox_xyxy": [
+            12,
+            23,
+            51,
+            79
+          ]
+        },
+        {
+          "opaque_pixels": 97,
+          "bbox_xyxy": [
+            34,
+            68,
+            44,
+            78
+          ]
+        }
+      ],
+      "actual_alpha_gap": {
+        "anatomical_leg": "left",
+        "viewer_side": "right",
+        "transparent_row_y": 67,
+        "x_inclusive": [
+          33,
+          46
+        ],
+        "alpha_values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "projected_sole_left": [
+        39,
+        79
+      ],
+      "projected_sole_right": [
+        22,
+        80
+      ]
+    },
+    {
+      "index": 6,
+      "file": "frames/robot_walk_down_f06_v007.png",
+      "sha256": "dff22c49b14352b7c13596ea3cfd8381ba0748bd7337f8c7d9ce4f8bc1179dd7",
+      "phase": "left_passing",
+      "support_leg": "right",
+      "art_observation": "抬起另一侧脚；与 f02 相同，形体仍缺少可见的通过与前后摆。",
+      "components8": [
+        {
+          "opaque_pixels": 1445,
+          "bbox_xyxy": [
+            12,
+            22,
+            51,
+            79
+          ]
+        }
+      ],
+      "actual_alpha_gap": null,
+      "projected_sole_left": [
+        39,
+        77
+      ],
+      "projected_sole_right": [
+        22,
+        80
+      ]
+    },
+    {
+      "index": 7,
+      "file": "frames/robot_walk_down_f07_v007.png",
+      "sha256": "d686ae9fe7b5f272b0fd89893afff82acaabb7a9fe449510328844672c51cdee",
+      "phase": "left_up",
+      "support_leg": "right",
+      "art_observation": "回到 f00 时没有清楚的前摆落脚；没有单独的大幅循环跳帧，但闭环步态不够可读。",
+      "components8": [
+        {
+          "opaque_pixels": 1439,
+          "bbox_xyxy": [
+            12,
+            22,
+            51,
+            79
+          ]
+        }
+      ],
+      "actual_alpha_gap": null,
+      "projected_sole_left": [
+        39,
+        78.80000305175781
+      ],
+      "projected_sole_right": [
+        22,
+        80
+      ]
+    }
+  ],
+  "v008_recommendations": {
+    "projection": "screen_y=model_y+0.65*model_z; keep root anchor [32,80]; register model ground y80 and projected sole positions separately",
+    "source_split": "Reassign only enumerated semantic knee-rim pixels at source y65 from thigh to knee, and tibial endpoint pixels at y70 from knee to shin. Preserve every RGBA byte and unique pixel ownership.",
+    "knee_sleeve": "Author once: medium steel 4px section, upper insertion about 4px and lower insertion 2px around the knee axis. Upper/lower sleeves follow their own fixed bones and overlap the axis; no output-alpha-dependent repair.",
+    "draw_order": "old inner dark core < fixed continuous steel sleeves < rigid original patella/armor rim; retain only single-sided sleeve shadow and keep it from covering all medium steel width.",
+    "validation": "Re-review actual native and 4x PNGs, local joint continuity, visible sleeve thickness, contact/passing/up phases and 7->0/3->4 transitions. Do not substitute component/encoding passes for art judgment."
+  }
+}

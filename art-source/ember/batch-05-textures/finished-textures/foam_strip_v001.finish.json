@@ -1,0 +1,97 @@
+{
+  "id": "foam_strip",
+  "source": "art-source/ember/batch-05-textures/generated/foam_strip_master_v001.png",
+  "source_sha256": "56bb11c50e2a7bfe2eed1acbaa46d5a500182c66514cf67bd7b7cce1088b1395",
+  "prompt": "art-source/ember/batch-05-textures/prompts/foam_strip_v001.txt",
+  "output": "art-source/ember/batch-05-textures/finished-textures/foam_strip_v001.png",
+  "output_sha256": "970dac7f57d35732c145d6b8ef307de59b9dd707cf0cd957a5ddbe3416605e24",
+  "process": {
+    "source_crop": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "native_patch_size": [
+      64,
+      64
+    ],
+    "native_patch_origin": [
+      0,
+      0
+    ],
+    "source_alpha_threshold": 160,
+    "alpha_policy": "BINARY_0_255",
+    "palette_subset": [
+      "#829BA3",
+      "#BECBC4",
+      "#ECE9D8"
+    ],
+    "native_quantization": "BOX coverage into designed native canvas, nearest fixed color, no dithering",
+    "isolated_native_pixels_removed": 4,
+    "source_use": "AI_MATERIAL_AND_SILHOUETTE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+    "before_boundary_repair": {
+      "X": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 4,
+        "max_channel_delta": 255,
+        "mean_absolute_channel_delta": 6.417969
+      },
+      "Y": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      }
+    },
+    "seam_band_pixels": 3
+  },
+  "measurement": {
+    "canvas": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      0,
+      28,
+      64,
+      41
+    ],
+    "alpha_zero": 3703,
+    "alpha_partial": 0,
+    "alpha_opaque": 393,
+    "visible_rgb_count": 3,
+    "palette_off_pixels": 0,
+    "edges": {
+      "X": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      },
+      "Y": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      }
+    }
+  },
+  "anchor": [
+    0,
+    0
+  ],
+  "tiling": "X",
+  "runtime_layout": {
+    "layer_convention": "STATIC_SINGLE_FLATTENED_BASE",
+    "emitter_points": [],
+    "emission_baked": false,
+    "pbr_derived_maps": "NOT_PRODUCED",
+    "height_weight_map": "NOT_PRODUCED"
+  },
+  "source_use": "AI_MATERIAL_AND_SILHOUETTE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+  "producer_visual_status": "PRODUCER_VISUAL_REVIEW_PASS_ONLY",
+  "independent_visual_status": "PENDING_ROOT_OR_OTHER_AGENT_REVIEW",
+  "producer_visual_observation": "原生断续双带和小团位于y28..40，真实二值Alpha，X边配对连续；Y透明留白不作为Y平铺许可，岸线限制由后续Mask接入。"
+}

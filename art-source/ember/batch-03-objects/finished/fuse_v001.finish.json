@@ -1,0 +1,135 @@
+{
+  "id": "fuse",
+  "manifest_id": "B11",
+  "file": "art-source/ember/batch-03-objects/finished/fuse_v001.png",
+  "production_file": "res://assets/ember/props/calibration/fuse_v001.png",
+  "sha256": "71288a979fade1ac91a129b0d808a3576877d478c2e3c2292927d2f008c9951a",
+  "size": [
+    64,
+    64
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/fuse_v001.finish.json",
+  "canvas": [
+    64,
+    64
+  ],
+  "bbox": [
+    13,
+    44,
+    51,
+    56
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/fuse/foundation_body.png",
+      "sha256": "71288a979fade1ac91a129b0d808a3576877d478c2e3c2292927d2f008c9951a",
+      "z_index": 0,
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/fuse_master_v001.png",
+    "master_sha256": "e11da345fa2277f5c8273a18b78e60501078c7febc70ba4fa7b493f47f7db59d",
+    "prompt": "prompts/fuse.txt",
+    "prompt_sha256": "32bbe490cfe5ef13331244c18f365ef056802707b1d42e1f9f9b4817e199779b",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-e1e12345-48f4-4da8-b3d7-d06ad5dfd4f1.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        344,
+        336,
+        1313,
+        636
+      ],
+      "material_sampling_size": [
+        38,
+        12
+      ],
+      "native_origin": [
+        13,
+        44
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 7,
+      "native_outline_pixels_corrected": 62
+    },
+    "native_adjustments": [
+      "陶瓷管中部[25,47,41,50)整理为连续浅装甲块、下一行钢亮灰，消除模型微颗粒但保留上亮下暗",
+      "左叉口归并2×2透明缺口；右端依据母稿细槽原生切1×3真透明孔，形成方向/描边可观察结构",
+      "不加灯或文字；底界56，同64画布保留8px以上留边"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": {
+    "orientation": "左叉/右细槽，不对称",
+    "through_hole_rects": [
+      [
+        48,
+        48,
+        49,
+        51
+      ]
+    ],
+    "notch_rects": [
+      [
+        13,
+        49,
+        16,
+        51
+      ]
+    ]
+  },
+  "non_runtime_glass": [],
+  "observations": "实际母稿为横陶瓷管、两种不同端头，左端为分叉、右端细槽；原生38×12较小，孔槽需在本体像素网格清楚保留。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

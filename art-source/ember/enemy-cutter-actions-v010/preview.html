@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>切割工蜂五动作候选 v010</title>
+<style>body{margin:24px;background:#16252b;color:#d5dfd7;font:16px/1.7 system-ui}h1{font-size:24px}button,select{background:#31464e;color:inherit;border:1px solid #5d747a;border-radius:5px;padding:9px;margin:3px}button:focus-visible,select:focus-visible{outline:2px solid #caac73}.players{display:flex;gap:20px;flex-wrap:wrap}canvas,img{image-rendering:pixelated}canvas{border:1px solid #52646a}.pending{color:#d5b879}img{max-width:100%;height:auto}</style>
+<h1>切割工蜂五动作候选 · v010</h1><p class="pending">四条行走腿与两条工具臂分别绑定，等待TA独立审核。</p>
+<p>前腿使用一次补画的固定源零件；移动为对角交替，圆锯臂独立短切，死亡折叠并下沉。待机/移动循环；其余单次动作仅在预览中停留半秒后重播。</p>
+<select id="action" aria-label="动作"><option value="idle_down">待机 · 4 FPS · 循环</option><option value="move_down">移动 · 8 FPS · 循环</option><option value="hit_down">受击 · 12 FPS · 单次</option><option selected value="attack_down">攻击 · 10 FPS · 单次</option><option value="death_down">死亡 · 10 FPS · 单次</option></select><button id="toggle">暂停</button><button id="previous">前一帧</button><button id="next">后一帧</button><button id="restart">重播</button><button id="zoom">切到 1×</button><button id="background">切换底色</button>
+<p id="status"></p><div class="players"><section><p>正常速度</p><canvas id="normal" width="352" height="320"></canvas></section><section><p>1 FPS 慢速</p><canvas id="slow" width="352" height="320"></canvas></section></div><p>同一观察区域的全帧联系图：</p><img id="contact" alt="全帧联系图">
+<script>
+let catalog,images={},action='attack_down',playing=true,elapsed=0,last=performance.now(),scale=4,bg=0,manual=0;
+const backdrops=['#20353c','#fff','#000'];
+const el=id=>document.getElementById(id);
+function phase(fps){const clip=catalog.actions[action],duration=clip.frame_count/fps;if(!playing)return manual;if(clip.loop)return Math.floor(elapsed*fps)%clip.frame_count;return Math.min(clip.frame_count-1,Math.floor((elapsed%(duration+.5))*fps));}
+function render(){if(!catalog)return;const clip=catalog.actions[action];for(const [id,fps] of [['normal',clip.fps],['slow',1]]){const canvas=el(id),ctx=canvas.getContext('2d');canvas.width=88*scale;canvas.height=80*scale;ctx.imageSmoothingEnabled=false;ctx.fillStyle=backdrops[bg];ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(images[action],phase(fps)*128+32,32,88,80,0,0,canvas.width,canvas.height);}el('status').textContent=`${playing?'播放中':'已暂停'} · 正常 f0${phase(clip.fps)} · 慢速 f0${phase(1)} · ${scale}×`;}
+function refreshContact(){el('contact').src=`qa/${action}_${bg===2?'black':'white'}_4x.png`;}
+el('action').onchange=e=>{action=e.target.value;elapsed=0;manual=0;refreshContact();render();};
+el('toggle').onclick=()=>{if(playing)manual=phase(catalog.actions[action].fps);else elapsed=manual/catalog.actions[action].fps;playing=!playing;el('toggle').textContent=playing?'暂停':'继续';render();};
+for(const [id,step] of [['previous',-1],['next',1]])el(id).onclick=()=>{const current=phase(catalog.actions[action].fps);playing=false;manual=(current+step+catalog.actions[action].frame_count)%catalog.actions[action].frame_count;el('toggle').textContent='继续';render();};
+el('restart').onclick=()=>{elapsed=0;manual=0;render();};el('zoom').onclick=()=>{scale=scale===4?1:4;el('zoom').textContent=scale===4?'切到 1×':'切到 4×';render();};el('background').onclick=()=>{bg=(bg+1)%3;refreshContact();render();};
+async function init(){catalog=await(await fetch('output/catalog_v010.json')).json();await Promise.all(Object.keys(catalog.actions).map(action=>new Promise((resolve,reject)=>{const image=new Image();image.onload=resolve;image.onerror=reject;image.src=`output/${action}_v010.png`;images[action]=image;})));refreshContact();requestAnimationFrame(tick);}
+function tick(now){if(playing)elapsed+=(now-last)/1000;last=now;render();requestAnimationFrame(tick);}init().catch(error=>el('status').textContent='资源加载失败：'+error.message);
+</script></html>
+
+

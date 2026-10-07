@@ -1,0 +1,406 @@
+{
+	"bridge_source_sha256": "7e8b85fa99bde2166a839d4789137d7a97f47c842cc6d8001c29918046f56da8",
+	"cap_world_px": 8,
+	"corner_source_sha256": "52324249f6367fedce3bb08a00e4f4d695480a28a5947d7aeba3a9ecd1980ac0",
+	"demo_rebuild_ms": 8275,
+	"floor_period_texture_px": 1024,
+	"processing": "Actual artist RGBA crop, nearest resize, binary alpha masking; no local mean removal or palette quantization.",
+	"source_rois": [
+		{
+			"id": "floor_albedo_period",
+			"output_size": [
+				1024,
+				1024
+			],
+			"rect": [
+				32,
+				32,
+				448,
+				442
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/platform_modules_master_v001.png"
+		},
+		{
+			"id": "south_cap_source",
+			"output_size": [
+				512,
+				32
+			],
+			"rect": [
+				536,
+				262,
+				461,
+				47
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/platform_modules_master_v001.png"
+		},
+		{
+			"id": "north_cap_source",
+			"output_size": [
+				512,
+				32
+			],
+			"rect": [
+				32,
+				710,
+				448,
+				60
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/platform_modules_master_v001.png"
+		},
+		{
+			"id": "east_cap_source",
+			"output_size": [
+				32,
+				512
+			],
+			"rect": [
+				878,
+				552,
+				62,
+				390
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/platform_modules_master_v001.png"
+		},
+		{
+			"id": "south_face_source",
+			"output_size": [
+				512,
+				128
+			],
+			"rect": [
+				536,
+				309,
+				461,
+				158
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/platform_modules_master_v001.png"
+		},
+		{
+			"id": "east_face_source",
+			"output_size": [
+				32,
+				512
+			],
+			"rect": [
+				946,
+				534,
+				31,
+				452
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/platform_modules_master_v001.png"
+		},
+		{
+			"id": "water_artist_period",
+			"output_size": [
+				3072,
+				2048
+			],
+			"rect": [
+				0,
+				0,
+				1536,
+				1024
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/water_texture_master_v001.png"
+		},
+		{
+			"id": "bridge_horizontal_artist",
+			"output_size": [
+				512,
+				160
+			],
+			"rect": [
+				90,
+				166,
+				590,
+				178
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"id": "bridge_vertical_artist",
+			"output_size": [
+				160,
+				512
+			],
+			"rect": [
+				1066,
+				52,
+				168,
+				368
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"id": "bridge_grate_period",
+			"output_size": [
+				512,
+				84
+			],
+			"rect": [
+				100,
+				202,
+				290,
+				48
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"id": "bridge_beam_n",
+			"output_size": [
+				512,
+				24
+			],
+			"rect": [
+				92,
+				166,
+				580,
+				27
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"id": "bridge_beam_s",
+			"output_size": [
+				512,
+				24
+			],
+			"rect": [
+				92,
+				296,
+				580,
+				47
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"id": "bridge_beam_w",
+			"output_size": [
+				24,
+				512
+			],
+			"rect": [
+				1067,
+				52,
+				27,
+				368
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"id": "bridge_beam_e",
+			"output_size": [
+				24,
+				512
+			],
+			"rect": [
+				1209,
+				52,
+				25,
+				368
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"id": "bridge_head_left_artist",
+			"output_size": [
+				48,
+				160
+			],
+			"rect": [
+				24,
+				150,
+				66,
+				195
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"id": "bridge_head_right_artist",
+			"output_size": [
+				48,
+				160
+			],
+			"rect": [
+				680,
+				150,
+				66,
+				195
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"id": "bridge_head_north_artist",
+			"output_size": [
+				160,
+				48
+			],
+			"rect": [
+				1060,
+				8,
+				190,
+				48
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"id": "bridge_head_south_artist",
+			"output_size": [
+				160,
+				48
+			],
+			"rect": [
+				1060,
+				422,
+				190,
+				64
+			],
+			"resampling": "nearest",
+			"source": "res://art-source/ember/reference-floor-v002/bridge_modules_master_v001.png"
+		},
+		{
+			"alpha": "warm cap segmentation +3px dilation to retain actual bolts; original RGB retained",
+			"id": "outer_nw",
+			"output_size": [
+				64,
+				64
+			],
+			"rect": [
+				55,
+				76,
+				104,
+				84
+			],
+			"source": "res://art-source/ember/reference-floor-v002/corner_modules_master_v001.png"
+		},
+		{
+			"alpha": "warm cap segmentation +3px dilation to retain actual bolts; original RGB retained",
+			"id": "outer_ne",
+			"output_size": [
+				64,
+				64
+			],
+			"rect": [
+				610,
+				76,
+				112,
+				84
+			],
+			"source": "res://art-source/ember/reference-floor-v002/corner_modules_master_v001.png"
+		},
+		{
+			"alpha": "warm cap segmentation +3px dilation to retain actual bolts; original RGB retained",
+			"id": "outer_sw",
+			"output_size": [
+				64,
+				64
+			],
+			"rect": [
+				851,
+				224,
+				112,
+				97
+			],
+			"source": "res://art-source/ember/reference-floor-v002/corner_modules_master_v001.png"
+		},
+		{
+			"alpha": "warm cap segmentation +3px dilation to retain actual bolts; original RGB retained",
+			"id": "outer_se",
+			"output_size": [
+				64,
+				64
+			],
+			"rect": [
+				1346,
+				227,
+				104,
+				97
+			],
+			"source": "res://art-source/ember/reference-floor-v002/corner_modules_master_v001.png"
+		},
+		{
+			"alpha": "warm cap segmentation +3px dilation to retain actual bolts; original RGB retained",
+			"id": "inner_nw",
+			"output_size": [
+				64,
+				64
+			],
+			"rect": [
+				159,
+				673,
+				81,
+				83
+			],
+			"source": "res://art-source/ember/reference-floor-v002/corner_modules_master_v001.png"
+		},
+		{
+			"alpha": "warm cap segmentation +3px dilation to retain actual bolts; original RGB retained",
+			"id": "inner_ne",
+			"output_size": [
+				64,
+				64
+			],
+			"rect": [
+				545,
+				673,
+				81,
+				83
+			],
+			"source": "res://art-source/ember/reference-floor-v002/corner_modules_master_v001.png"
+		},
+		{
+			"alpha": "warm cap segmentation +3px dilation to retain actual bolts; original RGB retained",
+			"id": "inner_sw",
+			"output_size": [
+				64,
+				64
+			],
+			"rect": [
+				947,
+				680,
+				82,
+				73
+			],
+			"source": "res://art-source/ember/reference-floor-v002/corner_modules_master_v001.png"
+		},
+		{
+			"alpha": "warm cap segmentation +3px dilation to retain actual bolts; original RGB retained",
+			"id": "inner_se",
+			"output_size": [
+				64,
+				64
+			],
+			"rect": [
+				1276,
+				680,
+				82,
+				73
+			],
+			"source": "res://art-source/ember/reference-floor-v002/corner_modules_master_v001.png"
+		}
+	],
+	"source_sha256": "b25b08415e35fb26e19360e13696db0cf634029cc02823174a942d6e96a86865",
+	"south_facade_world_px": 32,
+	"status": "VISUAL_CANDIDATE",
+	"texture_tile_size": 128,
+	"water_scope": "independent reference-based artist water source; auxiliary display",
+	"world_cell_size": 32
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-04",
+  "status": "ROBOT_20_FRAME_VISUAL_REVIEW_PASS",
+  "reviewer": "root agent; user final style approval not claimed",
+  "scope": "20帧原生/整数2x，4方向contact表，浅/深底轮廓，以及逐帧f03到f00循环端点",
+  "frame_sha256": {
+    "robot_idle_down": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+    "robot_walk_down_f00": "5b91a60e5ab5428a7b988a6aea4f336c55e946208aa2897e43d49452ad767267",
+    "robot_walk_down_f01": "6598040c164838b1cf8b847a98683b9fe3a757a9c823019abefc9acb321f9818",
+    "robot_walk_down_f02": "75763a286bc88182ffaad28569db80d49f2619d699c1d77463310ba8b3ac4819",
+    "robot_walk_down_f03": "d58d28a1c1ae09dc3787bf0ce2394d4239fa66c3f71efc43fe9fc5902e15888f",
+    "robot_idle_left": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+    "robot_walk_left_f00": "41faa14587e8933003c6809f0af1cca75a90c8bd26326eb0ed67593874bb5930",
+    "robot_walk_left_f01": "b79f0c4a8ced161f570fd6dde138f4b6ea31869494903f0f085b08a9ffb68410",
+    "robot_walk_left_f02": "177a1985bff483574cbe46b84e674d304a7dd61197ad9287fa5e2a4ceae93566",
+    "robot_walk_left_f03": "1c50a3e23d413513adda8ce353a8515fb71768b5276fd84da42005cb61316f2d",
+    "robot_idle_right": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+    "robot_walk_right_f00": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+    "robot_walk_right_f01": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+    "robot_walk_right_f02": "6d721027b8e57da224b1d7ae705cd48c88bd193a2e51ae2031448769e5c156be",
+    "robot_walk_right_f03": "5c039750f75d145415cfba89c53b81ec101587117a99be2dd9f4bae70fb078d3",
+    "robot_idle_up": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+    "robot_walk_up_f00": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+    "robot_walk_up_f01": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+    "robot_walk_up_f02": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+    "robot_walk_up_f03": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d"
+  },
+  "viewed": [
+    "pixel-review/all20_neutral_2x.png",
+    "pixel-review/all20_light_1x.png",
+    "pixel-review/all20_dark_1x.png",
+    "pixel-review/walk_down_contact_2x.png",
+    "pixel-review/walk_left_contact_2x.png",
+    "pixel-review/walk_right_contact_2x.png",
+    "pixel-review/walk_up_contact_2x.png"
+  ],
+  "findings": [
+    "同一浅陶瓷装甲/钢灰关节/黄铜左腕工具，四方向轮廓与明暗可读；侧向未镜像换手。",
+    "逐部件步态交替，头/胸起伏最多1原生像素；手臂、工具与靴保持连接。",
+    "侧视近远靴投影高度不同；抬脚帧最低可见底边78或79，虚拟地面锚点始终(32,80)。",
+    "所有方向末帧接首帧回到接触相，头部1px起伏复位；无突然换头、改胸甲或新增肢体。",
+    "浅/深底可见轮廓连贯；运行能量/危险状态及投影未烘焙，背视没有伪造前胸窗口。"
+  ],
+  "source_limits": "19份实际AI母稿只作造型/材料/姿态参考；模型phase和比例漂移按原生rig整理纠正，不称直接逐像素提取。",
+  "playback_evidence": "此记录是逐帧和端点视觉审查；实际8FPS播放、帧访问与循环时序另由Godot报告确认。",
+  "independent_review": "完整20帧独立审查见validation-frames-v001.json；审查状态以该报告为准。",
+  "independent_visual_status": "PASS",
+  "automatic_report": "validation-frames-v001.json"
+}

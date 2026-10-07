@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bk03goiw25pdw"]
+
+[ext_resource type="Shader" uid="uid://cbnlhbpadsmut" path="res://scenes/chapter03/ch03_02_repeat.gdshader" id="1_shader"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_repeat"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/repeat_count = 8.0
+shader_parameter/move_weight = 0.0999999977648
+
+[node name="Ch0302Repeat" type="Node2D" unique_id=439286142]
+
+[node name="RepeatCanvas" type="ColorRect" parent="." unique_id=1958841141]
+material = SubResource("ShaderMaterial_repeat")
+offset_left = 104.0
+offset_top = 104.0
+offset_right = 616.0
+offset_bottom = 616.0
+mouse_filter = 2

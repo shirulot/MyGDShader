@@ -1,0 +1,108 @@
+{
+  "status": "COLOR_STYLE_LOCALLY_IMPROVED_STRUCTURE_AND_COVERAGE_NOT_PASSED",
+  "evidence_atlas_sha256": "0bad27f3ce173d8604b30f19633873af3d1cac2d196c409ac8eb9d336618d46e",
+  "gpu_views": [
+    "connected_native_gpu.png",
+    "connected_world32_gpu.png",
+    "registration_compare_gpu.png"
+  ],
+  "old_assets_in_corrected_layout": 0,
+  "selected_floor_crop_side": 627,
+  "alternate617_selected": false,
+  "selected_corridor_revision": 2,
+  "local_color_style_observation": "本轮真实GPU组合未见上轮大块写实/像素切换或明显颜色色带。",
+  "complete_47": false,
+  "production_ready": false,
+  "user_visual_approval": false,
+  "independent_review": "review/independent-floor-source-review.md",
+  "results": [
+    {
+      "id": "floor_outer_NW",
+      "source_sha256": "54d0e32fa0b2690bad4e78ed084b8427415b68ba76d09bbd42a882f9f7584157",
+      "status": "PALETTE_CONTIGUOUS_ADJACENCY_IMPROVED_REPEAT_NOT_PASSED",
+      "reason": "627地板来自同一母图，当前角→边及自然相邻的颜色/像素语言一致性明显改善；中心裁框切在[623,633)原稿竖缝内，重复边界半缝与内部完整倒角不一致，板距仍轻微交替。不能把自然相邻连续性登记为任意重复通过。",
+      "production_ready": false,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_edge_N",
+      "source_sha256": "7fd6157283d4badee777558bbc1ffad04effa16a3ab3a51ab21b21b666e26bb3",
+      "status": "PALETTE_CONTIGUOUS_ADJACENCY_IMPROVED_REPEAT_NOT_PASSED",
+      "reason": "627地板来自同一母图，当前角→边及自然相邻的颜色/像素语言一致性明显改善；中心裁框切在[623,633)原稿竖缝内，重复边界半缝与内部完整倒角不一致，板距仍轻微交替。不能把自然相邻连续性登记为任意重复通过。",
+      "production_ready": false,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_edge_W",
+      "source_sha256": "2f5c1a37a20bc1ae0f1b009439c0c761676642a4c6037160b4921444223495de",
+      "status": "PALETTE_CONTIGUOUS_ADJACENCY_IMPROVED_REPEAT_NOT_PASSED",
+      "reason": "627地板来自同一母图，当前角→边及自然相邻的颜色/像素语言一致性明显改善；中心裁框切在[623,633)原稿竖缝内，重复边界半缝与内部完整倒角不一致，板距仍轻微交替。不能把自然相邻连续性登记为任意重复通过。",
+      "production_ready": false,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_center",
+      "source_sha256": "669bd9653ec8be071970e00d623a16fbde5129d1ea3c9a2077a0d1dd0ea7a1ed",
+      "status": "PALETTE_CONTIGUOUS_ADJACENCY_IMPROVED_REPEAT_NOT_PASSED",
+      "reason": "627地板来自同一母图，当前角→边及自然相邻的颜色/像素语言一致性明显改善；中心裁框切在[623,633)原稿竖缝内，重复边界半缝与内部完整倒角不一致，板距仍轻微交替。不能把自然相邻连续性登记为任意重复通过。",
+      "production_ready": false,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_end_N",
+      "source_sha256": "281602c1e21f2f5028c02a869752c39ece900c6863b94b3007bb311b4fccb553",
+      "status": "PALETTE_RIM_IMPROVED_STRICT_GRID_NOT_PASSED",
+      "reason": "当前v002新端头和中段共享连续母图，蓝灰像素材质与地板更一致；主侧梁约8px，完整截面含隔缝/倒角约10~11px。首缝中心约66而非64；固定周期及全方向连接仍未通过。",
+      "production_ready": false,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_narrow_NS",
+      "source_sha256": "57630a26197c3197384fa48db769afdda95c4ce42bda060a5622a5b1be9ed102",
+      "status": "PALETTE_RIM_IMPROVED_STRICT_GRID_NOT_PASSED",
+      "reason": "当前v002新端头和中段共享连续母图，蓝灰像素材质与地板更一致；主侧梁约8px，完整截面含隔缝/倒角约10~11px。首缝中心约66而非64；固定周期及全方向连接仍未通过。",
+      "production_ready": false,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_end_S",
+      "source_sha256": "779bfb9b6f5db3be814dc8711118cd1ba377c12cbf0c5910c4aa50a16b671e1b",
+      "status": "PALETTE_RIM_IMPROVED_STRICT_GRID_NOT_PASSED",
+      "reason": "当前v002新端头和中段共享连续母图，蓝灰像素材质与地板更一致；主侧梁约8px，完整截面含隔缝/倒角约10~11px。首缝中心约66而非64；固定周期及全方向连接仍未通过。",
+      "production_ready": false,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_outer_NW_registered617",
+      "source_sha256": "1b6cf2ed2f7a8dd9a1fdaedf5e3a677aada84e693947700562a024b90dce1a8a",
+      "status": "REJECTED_ALTERNATE_REGISTRATION_SET",
+      "reason": "617整套裁框虽保留更多起点倒角，仍存在约65/63px板距交替；N边最右铆钉bbox[1220,65,1238,83)跨出整套x1234切线，37个亮铜像素被截去。整套未采用，保留作比较，不逐块冒称全部铆钉都被截。",
+      "production_ready": false,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_edge_N_registered617",
+      "source_sha256": "c69dbac74a082b33e432112cf201074b0a80551fff9f5a5b98eb348c847f4419",
+      "status": "REJECTED_ALTERNATE_REGISTRATION_SET",
+      "reason": "617整套裁框虽保留更多起点倒角，仍存在约65/63px板距交替；N边最右铆钉bbox[1220,65,1238,83)跨出整套x1234切线，37个亮铜像素被截去。整套未采用，保留作比较，不逐块冒称全部铆钉都被截。",
+      "production_ready": false,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_edge_W_registered617",
+      "source_sha256": "aefcead0571539002c543c37775c9f8384a3f2a5298361aedbd16c9e13873dd1",
+      "status": "REJECTED_ALTERNATE_REGISTRATION_SET",
+      "reason": "617整套裁框虽保留更多起点倒角，仍存在约65/63px板距交替；N边最右铆钉bbox[1220,65,1238,83)跨出整套x1234切线，37个亮铜像素被截去。整套未采用，保留作比较，不逐块冒称全部铆钉都被截。",
+      "production_ready": false,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_center_registered617",
+      "source_sha256": "a11e8a250511e3b31020032257ccaad636784c1341187a1989b0fb03440fe8ca",
+      "status": "REJECTED_ALTERNATE_REGISTRATION_SET",
+      "reason": "617整套裁框虽保留更多起点倒角，仍存在约65/63px板距交替；N边最右铆钉bbox[1220,65,1238,83)跨出整套x1234切线，37个亮铜像素被截去。整套未采用，保留作比较，不逐块冒称全部铆钉都被截。",
+      "production_ready": false,
+      "user_visual_approval": false
+    }
+  ]
+}

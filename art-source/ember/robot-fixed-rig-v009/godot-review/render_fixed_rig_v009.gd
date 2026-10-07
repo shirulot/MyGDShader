@@ -1,0 +1,393 @@
+extends SceneTree
+## 候选骨架渲染器：母稿层只读，真实三维骨长保持，前视投影交给Godot纹理光栅化。
+## 只用固定部件/关节几何；不根据输出Alpha补洞、不逐帧bbox定心或拉伸骨长。
+
+const BASE := "art-source/ember/robot-fixed-rig-v009/"
+const RIG_FILE := BASE + "source/rig_down_v009.json"
+const FOOT_FILE := BASE + "source/foot_motion_v009.json"
+const SIZE := Vector2i(64,96)
+const ROOT_ANCHOR := Vector2(32,80)
+const PHASES := ["left_contact","left_down","right_passing","right_up","right_contact","right_down","left_passing","left_up"]
+# 固定一次降低母稿骨盆1px，给真实15px腿链留下屈膝余量；每帧骨长完全相同。
+const BIND_BODY_LOWER := 1.0
+const DEPTH_TO_SCREEN_Y := 0.65
+const ROOT_STRIDE_PER_FRAME := 1.6
+var workspace := ""
+var rig: Dictionary
+var foot_motion: Dictionary
+var rest := {}
+var bones := {}
+var images := {}
+var textures := {}
+var source_hashes := {}
+var mask_consumption: Array = []
+var errors: Array = []
+var frame_records: Array = []
+var native_frames: Array[Image] = []
+var owner_shader := Shader.new()
+
+func _initialize() -> void: call_deferred("_run")
+func _abs(file: String) -> String: return workspace.path_join(file.trim_prefix("res://"))
+func _json(file: String) -> Dictionary: return JSON.parse_string(FileAccess.get_file_as_string(_abs(file)))
+func _write(file: String,value: Dictionary) -> void:
+	DirAccess.make_dir_recursive_absolute(_abs(file).get_base_dir())
+	var output := FileAccess.open(_abs(file),FileAccess.WRITE)
+	output.store_string(JSON.stringify(value,"\t",false,true)+"\n")
+func _v2(value: Array) -> Vector2: return Vector2(float(value[0]),float(value[1]))
+func _project(value: Vector3) -> Vector2: return Vector2(value.x,value.y+DEPTH_TO_SCREEN_Y*value.z)
+func _arr(value: Vector3) -> Array: return [value.x,value.y,value.z]
+
+func _run() -> void:
+	for arg: String in OS.get_cmdline_user_args():
+		if arg.begins_with("--workspace="): workspace=arg.trim_prefix("--workspace=")
+	if workspace.is_empty() or DisplayServer.get_name()=="headless": push_error("需要--workspace及真实GPU窗口渲染器"); quit(1); return
+	rig=_json(RIG_FILE)
+	foot_motion=_json(FOOT_FILE)
+	source_hashes[FOOT_FILE]=FileAccess.get_sha256(_abs(FOOT_FILE))
+	source_hashes[RIG_FILE]=FileAccess.get_sha256(_abs(RIG_FILE))
+	source_hashes[str(rig.source_master)]=FileAccess.get_sha256(_abs(str(rig.source_master)))
+	for key: String in rig.keypoints: rest[key]=_v2(rig.keypoints[key])
+	for bone: Dictionary in rig.bones: bones[str(bone.id)]=bone
+	for part: Dictionary in rig.parts:
+		var image := Image.load_from_file(_abs(str(part.path))); image.convert(Image.FORMAT_RGBA8)
+		images[str(part.id)]=image; textures[str(part.id)]=ImageTexture.create_from_image(image)
+		source_hashes[str(part.path)]=FileAccess.get_sha256(_abs(str(part.path)))
+		if part.has("source_core_pixel_mask"):
+			var used:={}; var count:=0
+			for kind: String in ["core","armor"]:
+				var masked:=Image.create(64,96,false,Image.FORMAT_RGBA8); masked.fill(Color(0,0,0,0))
+				for value: Array in part["source_"+kind+"_pixel_mask"]:
+					var point:=Vector2i(value[0],value[1]); var key:=str(point)
+					if used.has(key) or image.get_pixelv(point).a8!=255: errors.append("源显式mask重叠/非原实体: "+str(part.id)+" "+key)
+					used[key]=true; count+=1; masked.set_pixelv(point,image.get_pixelv(point))
+				textures[str(part.id)+"_"+kind]=ImageTexture.create_from_image(masked)
+			if count!=int(part.pixel_count): errors.append("源显式mask不是唯一原部件并集: "+str(part.id))
+			mask_consumption.append({"part":part.id,"source_pixel_count":part.pixel_count,"union_pixel_count":count,"unique_coordinates":used.size(),
+				"core_count":part.source_core_pixel_mask.size(),"armor_count":part.source_armor_pixel_mask.size(),"policy":"only explicit frozen source coordinate masks; copy original RGBA, never output-alpha-dependent"})
+	owner_shader.code="shader_type canvas_item; render_mode unshaded; uniform vec4 owner_color; void fragment(){ COLOR=vec4(owner_color.rgb,texture(TEXTURE,UV).a); }"
+	var bind := _pose(-1)
+	var canonical := await _capture(bind,false)
+	var canonical_file := BASE+"source/robot_idle_down_fixed_rig_canonical_v009.png"
+	canonical.save_png(_abs(canonical_file))
+	_write(BASE+"source/canonical_bind_pose_v009.json",_pose_json(bind))
+	var atlas := Image.create(512,96,false,Image.FORMAT_RGBA8); atlas.fill(Color(0,0,0,0))
+	for index in 8:
+		var pose := _pose(index)
+		var image := await _capture(pose,false)
+		native_frames.append(image)
+		var owners := await _capture(pose,true)
+		var owner_file := BASE+"owner_maps/walk_down_f%02d_owner_v009.png"%index
+		DirAccess.make_dir_recursive_absolute(_abs(owner_file).get_base_dir()); owners.save_png(_abs(owner_file))
+		var file := BASE+"frames/robot_walk_down_f%02d_v009.png"%index
+		DirAccess.make_dir_recursive_absolute(_abs(file).get_base_dir()); image.save_png(_abs(file))
+		atlas.blit_rect(image,Rect2i(Vector2i.ZERO,SIZE),Vector2i(index*64,0))
+		var record := _pose_json(pose)
+		record["file"]="res://"+file; record["sha256"]=FileAccess.get_sha256(_abs(file)); record["measurement"]=_measure(image)
+		record["stable_parts"]=_stable_owner_mapping(pose,image,owners)
+		for stable: String in ["head","chest"]:
+			if int(record.stable_parts[stable].unknown_rgba_samples)>0: errors.append("固定源身份owner映射未证实: f%d/%s unknown=%d"%[index,stable,record.stable_parts[stable].unknown_rgba_samples])
+		record["owner_map_file"]="res://"+owner_file
+		record["owner_map_sha256"]=FileAccess.get_sha256(_abs(owner_file))
+		for side: String in ["left","right"]:
+			var stance: bool=record.contacts[side].stance
+			var ground_touch: bool=record.contacts[side].ground_contact
+			var sole: Vector2=rest["sole_"+side]
+			var contact_pixel:=Vector2i(_map_point(Vector2(sole.x+0.5,79.5),"boot_"+side,pose).floor())
+			var contact_alpha:=image.get_pixelv(contact_pixel).a8 if ground_touch else -1
+			record.contacts[side]["registered_sole_source_pixel"]=[int(sole.x),79]
+			record.contacts[side]["registered_contact_pixel"]=[contact_pixel.x,contact_pixel.y]
+			record.contacts[side]["actual_gpu_contact_pixel_alpha"]=contact_alpha
+			if ground_touch and contact_alpha!=255: errors.append("投影触地登记点非实体: f%d/%s"%[index,side])
+		if not record.measurement.binary_alpha or not record.measurement.palette_registered: errors.append("GPU源帧Alpha/调色板失败: f%d"%index)
+		_write(BASE+"poses/walk_down_f%02d_v009.json"%index,record); frame_records.append(record)
+		# 骨轴图仅另存，绝不混入正式候选帧。
+		var overlay := await _capture(pose,false,true)
+		var overlay_file := BASE+"overlays/walk_down_f%02d_overlay_v009.png"%index
+		DirAccess.make_dir_recursive_absolute(_abs(overlay_file).get_base_dir()); overlay.save_png(_abs(overlay_file))
+	var atlas_file:=BASE+"robot_walk_down_atlas_v009.png"; atlas.save_png(_abs(atlas_file))
+	# 先给审阅整板：已经冻结的原生GPU帧再由Sprite2D最近邻4倍显示。
+	# 不以更高分辨率重新光栅化骨架来改变原生像素轮廓。
+	var draft_board:=await _draft_board(native_frames)
+	var draft_file:=BASE+"draft-preview/walk_down_board_4x_v009.png"
+	DirAccess.make_dir_recursive_absolute(_abs(draft_file).get_base_dir()); draft_board.save_png(_abs(draft_file))
+	var canonical_board:=await _draft_board([canonical])
+	canonical_board.save_png(_abs(BASE+"draft-preview/canonical_4x_v009.png"))
+	_build_preview_resource(atlas_file)
+	for file: String in source_hashes:
+		if FileAccess.get_sha256(_abs(file))!=source_hashes[file]: errors.append("原母稿/rig/部件SHA改变: "+file)
+	_write(BASE+"fixed_rig_render_v009.json",{"status":"CANDIDATE","technical_checks":"PASS" if errors.is_empty() else "FAIL","errors":errors,
+		"source_hashes":source_hashes,"explicit_source_mask_consumption":mask_consumption,"renderer_sha256":FileAccess.get_sha256(get_script().resource_path),"engine":Engine.get_version_info(),
+		"gpu_renderer":RenderingServer.get_video_adapter_name(),"canvas":[64,96],"root_anchor":[32,80],"fps":8,"frames":frame_records,
+		"canonical":{"file":canonical_file,"sha256":FileAccess.get_sha256(_abs(canonical_file)),"measure":_measure(canonical),"bind_body_lower_px":BIND_BODY_LOWER,"status":"RIG_DERIVED_NATIVE_CANDIDATE_NOT_HAND_PIXEL_FINAL"},
+		"projection":"Fixed oblique front projection: screen=(X,Y+0.65Z). Full 3D two-bone IK retains original bone lengths and fixed foot X. Rest-bone local texture basis maps to projected bone tangent/normal; transverse width stays fixed.",
+		"caps":{"count":rig.cap_definitions.size(),"definition":"once-authored native cuff/crossbeam/sleeve polygons from frozen rig; single-sided steel shade; no alpha gap detector"},
+		"old_assets_changed":false,"art_acceptance":"NOT_CLAIMED"})
+	print("FIXED_RIG_V009 CANDIDATE technical=", "PASS" if errors.is_empty() else "FAIL")
+	for error: String in errors: push_error(error)
+	quit(0 if errors.is_empty() else 1)
+
+func _pose(index: int) -> Dictionary:
+	var points := {}
+	var bob: float=BIND_BODY_LOWER if index<0 else foot_motion.body_lower_px[index]
+	var sway: float=0.0 if index<0 else [0.0,0.35,0.7,0.35,0.0,-0.35,-0.7,-0.35][index]
+	for key: String in rest:
+		var p: Vector2=rest[key]; points[key]=Vector3(p.x+sway,p.y+bob,0)
+	points.root=Vector3(32,80,0)
+	# 先放脚，再解腿：鞋底的接触、抬升和俯仰不继承小腿转角。
+	# 左右使用同一条足部曲线、相差半周期；源造型本身的左右差异保留。
+	var feet := {}
+	for side: String in ["left","right"]:
+		var phase: int=-1 if index<0 else (index+(0 if side=="left" else 4))%8
+		feet[side]=_foot_pose(side,phase)
+		_solve_leg(points,side,feet[side].ankle)
+		points["sole_"+side]=feet[side].sole
+		points["heel_"+side]=feet[side].heel
+		points["toe_"+side]=feet[side].toe
+		points["contact_"+side]=feet[side].contact
+	var counter: float=0 if index<0 else [-18,-12,0,15,18,12,0,-15][index]
+	_solve_arm(points,"left",counter,12)
+	_solve_arm(points,"right",-counter,12)
+	var support: String="both" if index<0 else ("left" if index<4 else "right")
+	return {"index":index,"phase":"canonical_relaxed_bind" if index<0 else PHASES[index],"points":points,"body_lower":bob,"body_sway":sway,"support_leg":support,
+		"feet":feet,"lift":{"left":feet.left.lift,"right":feet.right.lift},"depth":{"left":feet.left.depth,"right":feet.right.depth}}
+
+func _foot_pose(side: String,phase: int) -> Dictionary:
+	var depth: float=0 if phase<0 else foot_motion.foot_z_px[phase]
+	var lift: float=0 if phase<0 else foot_motion.lift_px[phase]
+	var pitch: float=0 if phase<0 else foot_motion.pitch_degrees[phase]
+	var angle:=deg_to_rad(pitch)
+	var half_depth: float=foot_motion.sole_half_depth_px
+	var ankle_rest: Vector2=rest["ankle_"+side]
+	var sole_rest: Vector2=rest["sole_"+side]
+	# 正角抬脚尖，绕后跟转；负角抬后跟，绕脚尖转。鞋作为整块刚体。
+	# Y向下，地面Y80；接触轴独立于人体根节点，身体下沉不会拖动脚。
+	var pivot_z: float=-half_depth if pitch>=0 else half_depth
+	var pivot:=Vector3(ankle_rest.x,80.0-lift,depth+pivot_z)
+	var rotation:=Basis(Vector3.RIGHT,angle)
+	var sole:=pivot+rotation*Vector3(0,0,-pivot_z)
+	var ankle:=pivot+rotation*Vector3(0,ankle_rest.y-sole_rest.y,-pivot_z)
+	var heel:=pivot+rotation*Vector3(0,0,-half_depth-pivot_z)
+	var toe:=pivot+rotation*Vector3(0,0,half_depth-pivot_z)
+	return {"ankle":ankle,"sole":sole,"heel":heel,"toe":toe,"contact":pivot,
+		"contact_kind":"heel" if pitch>0 else ("toe" if pitch<0 else "flat"),
+		"pitch_degrees":pitch,"lift":lift,"depth":depth,"phase":phase}
+
+func _solve_leg(points: Dictionary,side: String,ankle: Vector3) -> void:
+	var hip: Vector3=points["hip_"+side]
+	var knee_rest: Vector2=rest["knee_"+side]; var ankle_rest: Vector2=rest["ankle_"+side]
+	var length_a: float=bones["thigh_"+side].rest_length
+	var length_b: float=bones["shin_"+side].rest_length
+	var delta:=ankle-hip; var distance:=delta.length()
+	if distance>length_a+length_b+0.00001: errors.append("腿目标不可达，禁止拉伸: "+side)
+	var along: float=(length_a*length_a-length_b*length_b+distance*distance)/(2*distance)
+	var height: float=sqrt(maxf(0,length_a*length_a-along*along))
+	var direction:=delta/distance
+	# 固定前向屈膝pole，与髋踝连线正交；X侧摆也由完整三维求解承担。
+	var pole:=(Vector3(0,0,1)-direction*direction.dot(Vector3(0,0,1))).normalized()
+	points["knee_"+side]=hip+direction*along+pole*height
+	points["ankle_"+side]=ankle
+
+func _solve_arm(points: Dictionary,side: String,upper_deg: float,elbow_deg: float) -> void:
+	var shoulder: Vector3=points["shoulder_"+side]
+	var upper: Vector2=rest["elbow_"+side]-rest["shoulder_"+side]
+	var lower: Vector2=rest["wrist_"+side]-rest["elbow_"+side]
+	var a:=deg_to_rad(upper_deg); var b:=deg_to_rad(upper_deg+elbow_deg)
+	var elbow:=shoulder+Vector3(upper.x,upper.y*cos(a),upper.y*sin(a))
+	points["elbow_"+side]=elbow
+	points["wrist_"+side]=elbow+Vector3(lower.x,lower.y*cos(b),lower.y*sin(b))
+
+func _pose_json(pose: Dictionary) -> Dictionary:
+	var p: Dictionary=pose.points; var points3d:={}; var points2d:={}; var measures: Array=[]
+	for key: String in p:
+		points3d[key]=_arr(p[key]); var projected:=_project(p[key]); points2d[key]=[projected.x,projected.y]
+	for bone: Dictionary in rig.bones:
+		var from: Vector3=p[str(bone.from)]; var to: Vector3=p[str(bone.to)]; var vector:=to-from
+		var actual:=vector.length(); var error:=absf(actual-float(bone.rest_length))
+		if error>0.0001: errors.append("骨长改变: "+str(bone.id)+" error="+str(error))
+		measures.append({"bone":bone.id,"rest_length":bone.rest_length,"actual_length_3d":actual,"length_error":error,
+			"projected_length":(_project(to)-_project(from)).length(),"angle_yz_degrees":rad_to_deg(atan2(vector.z,vector.y))})
+	var contacts:={}
+	for side: String in ["left","right"]:
+		var sole: Vector3=p["sole_"+side]; var projected:=_project(sole)
+		var foot: Dictionary=pose.feet[side]
+		var contact_point: Vector3=foot.contact
+		# 真正接地点可能是跟/尖；抬跟时鞋底中心不再是假定的地面点。
+		if is_zero_approx(foot.lift) and absf(contact_point.y-80.0)>0.0001:
+			errors.append("脚部接触控制未落在地面: "+side)
+		var root_motion: float=0.0 if pose.index<0 else ROOT_STRIDE_PER_FRAME*pose.index
+		var primary: bool=pose.support_leg==side or pose.support_leg=="both"
+		contacts[side]={"stance":primary,"primary_support":primary,"ground_contact":is_zero_approx(pose.lift[side]),"sole_world":_arr(sole),"sole_projected":[projected.x,projected.y],
+			"sole_world_with_root_motion":[sole.x,sole.y,sole.z+root_motion],"world_ground_y":80,"ground_touch":is_zero_approx(pose.lift[side]),
+			"ankle3d":_arr(p["ankle_"+side]),"lift_px":pose.lift[side],"pitch_degrees":foot.pitch_degrees,"contact_kind":foot.contact_kind,
+			"contact_world":_arr(contact_point),"contact_projected":[_project(contact_point).x,_project(contact_point).y],
+			"heel_world":_arr(foot.heel),"toe_world":_arr(foot.toe),
+			"contact_world_with_root_motion":[contact_point.x,contact_point.y,contact_point.z+root_motion],
+			"contact_definition":"independent rigid foot heel/toe pivot on world Y80; sole center can be above ground during foot roll; flat source projection remains a small-angle 2.5D approximation"}
+	return {"status":"CANDIDATE","phase":pose.phase,"frame_index":pose.index,"root_anchor":[32,80],"support_leg":pose.support_leg,"double_support":pose.index<0 or pose.index in [0,4],
+		"source_rig_sha256":source_hashes[RIG_FILE],"source_master_sha256":source_hashes[str(rig.source_master)],
+		"canonical_bind_body_lower":BIND_BODY_LOWER,"pelvis_bob":pose.body_lower-BIND_BODY_LOWER,"body_lower_from_original":pose.body_lower,"body_sway_x":pose.body_sway,
+		"camera_projection":{"kind":"oblique_front_2_5d","z_to_screen_y":DEPTH_TO_SCREEN_Y,"world_ground_y":80,"screen_root_anchor":[32,80],"same_for_static_and_all_frames":true},
+		"root_motion_z_per_frame":ROOT_STRIDE_PER_FRAME,"root_motion_note":"in-place asset uses fixed model root; stance-foot worldZ is constant when runtime consumes declared uniform forward root motion",
+		"keypoints3d":points3d,"keypoints_projected":points2d,"bone_measures":measures,"contacts":contacts,
+		"whole_sprite_scale":1,"bbox_alignment":"NONE","part_transforms":_part_transform_records(pose)}
+
+func _map_point(point: Vector2,bone_id: String,pose: Dictionary) -> Vector2:
+	var bone: Dictionary=bones[bone_id]
+	var from: Vector2=rest[str(bone.from)]; var to: Vector2=rest[str(bone.to)]
+	var actual_from:=_project(pose.points[str(bone.from)]); var actual_to:=_project(pose.points[str(bone.to)])
+	var source_direction:=(to-from).normalized(); var source_normal:=Vector2(-source_direction.y,source_direction.x)
+	var target_direction:=(actual_to-actual_from).normalized(); var target_normal:=Vector2(-target_direction.y,target_direction.x)
+	var delta:=point-from; var length_ratio:=(actual_to-actual_from).length()/(to-from).length()
+	return actual_from+target_direction*(delta.dot(source_direction)*length_ratio)+target_normal*delta.dot(source_normal)
+
+func _part_transform_records(pose: Dictionary) -> Array:
+	var records: Array=[]
+	for part: Dictionary in rig.parts:
+		var bone: Dictionary=bones[str(part.parent_bone)]
+		var a: Vector2=rest[str(bone.from)]; var b: Vector2=rest[str(bone.to)]
+		var aa: Vector3=pose.points[str(bone.from)]; var bb: Vector3=pose.points[str(bone.to)]
+		records.append({"part":part.id,"source_sha256":source_hashes[str(part.path)],"bone":part.parent_bone,
+			"projected_length_ratio":(_project(bb)-_project(aa)).length()/(b-a).length(),"transverse_source_width_ratio":1,
+			"basis":"rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"})
+	return records
+
+func _material(owner_id: int,owner_pass: bool) -> Material:
+	if owner_pass:
+		var material:=ShaderMaterial.new(); material.shader=owner_shader; material.set_shader_parameter("owner_color",Color(float(owner_id)/255,0,0,1)); return material
+	var material:=CanvasItemMaterial.new(); material.light_mode=CanvasItemMaterial.LIGHT_MODE_UNSHADED; return material
+
+func _polygon(parent: Node,points: PackedVector2Array,color: Color,z: int,owner_id: int,owner_pass: bool) -> Polygon2D:
+	var polygon:=Polygon2D.new(); polygon.polygon=points; polygon.color=color; polygon.antialiased=false; polygon.z_index=z
+	polygon.texture_filter=CanvasItem.TEXTURE_FILTER_NEAREST; polygon.material=_material(owner_id,owner_pass); parent.add_child(polygon); return polygon
+
+func _rig_nodes(pose: Dictionary,owner_pass: bool,overlay: bool) -> Node2D:
+	var node:=Node2D.new(); node.name="FixedRigRoot"; node.position=ROOT_ANCHOR
+	# Godot实际关节树沿rig父骨关系建立。世界角由真实3D骨前视投影导出；
+	# 下方纹理quad再转到该父骨局部坐标，保持同一物理投影而非机械逐层平移。
+	var joint_nodes:={"root":node}
+	for bone: Dictionary in rig.bones:
+		var joint:=Node2D.new(); joint.name=str(bone.id)
+		var parent: Node2D=joint_nodes[str(bone.parent)]; parent.add_child(joint)
+		var origin:=_project(pose.points[str(bone.from)])
+		var direction:=_project(pose.points[str(bone.to)])-origin
+		joint.transform=parent.global_transform.affine_inverse()*Transform2D(direction.angle(),origin)
+		joint_nodes[str(bone.id)]=joint
+	var cap_id:=100
+	for cap: Dictionary in rig.cap_definitions:
+		var pivot: Vector2=rest[str(cap.pivot_keypoint)]; var points:=PackedVector2Array()
+		var joint: Node2D=joint_nodes[str(cap.parent_bone)]
+		var to_local:=joint.global_transform.affine_inverse()
+		# 固定套的端面和该骨甲片共用同一真实骨投影，避免两种纵向变换拉开。
+		# 几何始终来自冻结rig；不读取结果Alpha决定长度或补点。
+		for value: Array in cap.local_polygon: points.append(to_local*_map_point(pivot+_v2(value),str(cap.parent_bone),pose))
+		_polygon(joint,points,Color(str(cap.medium_color)),10,cap_id,owner_pass)
+		# 固定单侧阴影，不把4px轴承四边包黑缩成细针。源装甲在其上搭接。
+		var extent:=float(cap.get("span_native",cap.width_native))*0.5; var low: float=0; var high: float=0
+		for value: Array in cap.local_polygon: low=minf(low,float(value[1])); high=maxf(high,float(value[1]))
+		var shade:=PackedVector2Array()
+		for value: Vector2 in [Vector2(-extent,low+1),Vector2(-extent+1,low+1),Vector2(-extent+1,high-1),Vector2(-extent,high-1)]: shade.append(to_local*_map_point(pivot+value,str(cap.parent_bone),pose))
+		_polygon(joint,shade,Color(str(cap.edge_color)),11,cap_id,owner_pass); cap_id+=1
+	for index in rig.parts.size():
+		var part: Dictionary=rig.parts[index]; var id:=str(part.id); var bbox: Array=part.bbox
+		var corners:=[Vector2(bbox[0],bbox[1]),Vector2(bbox[0]+bbox[2],bbox[1]),Vector2(bbox[0]+bbox[2],bbox[1]+bbox[3]),Vector2(bbox[0],bbox[1]+bbox[3])]
+		var points:=PackedVector2Array(); var uv:=PackedVector2Array()
+		var joint: Node2D=joint_nodes[str(part.parent_bone)]
+		var to_local:=joint.global_transform.affine_inverse()
+		for corner: Vector2 in corners: points.append(to_local*_map_point(corner,str(part.parent_bone),pose)); uv.append(corner)
+		var z:=30+int(part.draw_order)
+		if id.begins_with("elbow_") or id.begins_with("knee_") or id in ["waist_core","pelvis_core"]: z=0
+		if id=="chest_shell": z=80
+		if "arm_" in id or id.begins_with("shoulder_") or id.begins_with("hand_") or id=="left_wrist_tool":
+			var side: String="left" if id.ends_with("left") or id=="left_wrist_tool" else "right"
+			z=(90 if pose.points["wrist_"+side].z>=0 else 40)+int(part.draw_order)
+		if id=="head": z=200
+		if part.has("source_core_pixel_mask"):
+			# 只依照母稿一次登记的作者mask分层；保留外轮廓暗边与完整白甲。
+			var core:=_polygon(joint,points,Color.WHITE,0,index+1,owner_pass); core.uv=uv; core.texture=textures[id+"_core"]
+			var armor_z:=30 if id.begins_with("knee_") else 40
+			var armor:=_polygon(joint,points,Color.WHITE,armor_z,index+1,owner_pass); armor.uv=uv; armor.texture=textures[id+"_armor"]
+		else:
+			var polygon:=_polygon(joint,points,Color.WHITE,z,index+1,owner_pass); polygon.uv=uv; polygon.texture=textures[id]
+	if overlay:
+		for bone: Dictionary in rig.bones:
+			var line:=Line2D.new(); line.points=PackedVector2Array([_project(pose.points[str(bone.from)])-ROOT_ANCHOR,_project(pose.points[str(bone.to)])-ROOT_ANCHOR]); line.width=0.4; line.default_color=Color(1,0.35,0.2); line.z_index=300; node.add_child(line)
+	return node
+
+func _capture(pose: Dictionary,owner_pass: bool,overlay: bool=false) -> Image:
+	var viewport:=SubViewport.new(); viewport.size=SIZE; viewport.transparent_bg=true; viewport.render_target_update_mode=SubViewport.UPDATE_ALWAYS
+	viewport.canvas_item_default_texture_filter=Viewport.DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST; viewport.msaa_2d=Viewport.MSAA_DISABLED
+	viewport.add_child(_rig_nodes(pose,owner_pass,overlay)); root.add_child(viewport)
+	await process_frame; await process_frame; await RenderingServer.frame_post_draw
+	var image:=viewport.get_texture().get_image(); image.convert(Image.FORMAT_RGBA8)
+	root.remove_child(viewport); viewport.free(); return image
+
+func _stable_owner_mapping(pose: Dictionary,image: Image,owners: Image) -> Dictionary:
+	var result:={}
+	for id: String in ["head","chest_shell","left_wrist_tool","hand_left","hand_right"]:
+		var index:=0
+		for i in rig.parts.size():
+			if str(rig.parts[i].id)==id: index=i; break
+		var part: Dictionary=rig.parts[index]; var source: Image=images[id]; var mapped: Array=[]; var seen:={}; var unknown:=0; var visible_owner:=0
+		# 取实际骨仿射逆矩阵，逐个GPU owner像素中心回溯UV；避免前向压缩多对一误判。
+		var origin:=_map_point(Vector2.ZERO,str(part.parent_bone),pose)
+		var basis_x:=_map_point(Vector2(1,0),str(part.parent_bone),pose)-origin
+		var basis_y:=_map_point(Vector2(0,1),str(part.parent_bone),pose)-origin
+		var inverse:=Transform2D(basis_x,basis_y,origin).affine_inverse()
+		for y in 96:
+			for x in 64:
+				if owners.get_pixel(x,y).r8!=index+1: continue
+				visible_owner+=1
+				var point:=Vector2i((inverse*Vector2(x+0.5,y+0.5)).floor())
+				if point.x<0 or point.x>=64 or point.y<0 or point.y>=96 or image.get_pixel(x,y)!=source.get_pixelv(point): unknown+=1; continue
+				mapped.append([x,y,point.x,point.y]); seen[str(point)]=true
+		var key: String="chest" if id=="chest_shell" else id
+		result[key]={"visible_source_pixels":mapped,"source_pixel_count":part.pixel_count,"visible_gpu_owner_pixels":visible_owner,"unique_visible_source_pixels":seen.size(),
+			"unseen_source_pixel_count":int(part.pixel_count)-seen.size(),"unseen_source_classification":"UNKNOWN_PROJECTION_OR_OCCLUSION","unknown_rgba_samples":unknown,
+			"transform_note":"Actual GPU owner-ID pixels inverse-map their centers to unchanged source UV floor. Unseen source pixels remain Unknown; head/chest source width/height ratio stays 1."}
+	return result
+
+func _draft_board(frames: Array) -> Image:
+	var viewport:=SubViewport.new(); viewport.size=Vector2i(64*frames.size()*4,96*4)
+	viewport.transparent_bg=true; viewport.render_target_update_mode=SubViewport.UPDATE_ALWAYS
+	viewport.msaa_2d=Viewport.MSAA_DISABLED; viewport.canvas_item_default_texture_filter=Viewport.DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST
+	for index in frames.size():
+		var sprite:=Sprite2D.new(); sprite.texture=ImageTexture.create_from_image(frames[index]); sprite.centered=false
+		sprite.position=Vector2(index*256,0); sprite.scale=Vector2.ONE*4; sprite.texture_filter=CanvasItem.TEXTURE_FILTER_NEAREST
+		viewport.add_child(sprite)
+	root.add_child(viewport)
+	await process_frame; await process_frame; await RenderingServer.frame_post_draw
+	var image:=viewport.get_texture().get_image(); image.convert(Image.FORMAT_RGBA8)
+	root.remove_child(viewport); viewport.free(); return image
+
+func _measure(image: Image) -> Dictionary:
+	var binary:=true; var palette:=true; var count:=0; var colors:={}
+	for y in 96:
+		for x in 64:
+			var value:=image.get_pixel(x,y); binary=binary and value.a8 in [0,255]
+			if value.a8==0: continue
+			count+=1; var key:="#"+value.to_html(false).to_upper(); colors[key]=true; palette=palette and key in rig.palette
+	var bbox:=image.get_used_rect()
+	return {"canvas":[64,96],"binary_alpha":binary,"palette_registered":palette,"colors":colors.keys(),"opaque_pixels":count,
+		"bbox_xywh":[bbox.position.x,bbox.position.y,bbox.size.x,bbox.size.y],"visible_bottom_boundary":bbox.end.y,"root_is_not_bbox":true}
+
+func _build_preview_resource(atlas_file: String) -> void:
+	var local_atlas:="res://assets/robot_walk_down_atlas_v009.png"
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("res://assets")); DirAccess.copy_absolute(_abs(atlas_file),ProjectSettings.globalize_path(local_atlas))
+	# 候选工程禁止导入器改变透明RGB；正式原生PNG从不经此步骤修改。
+	var import_settings:=ConfigFile.new()
+	if FileAccess.file_exists(local_atlas+".import"): import_settings.load(local_atlas+".import")
+	else:
+		import_settings.set_value("remap","importer","texture")
+		import_settings.set_value("remap","type","CompressedTexture2D")
+		import_settings.set_value("deps","source_file",local_atlas)
+	import_settings.set_value("params","compress/mode",0)
+	import_settings.set_value("params","mipmaps/generate",false)
+	import_settings.set_value("params","process/fix_alpha_border",false)
+	import_settings.set_value("params","process/premult_alpha",false)
+	import_settings.save(local_atlas+".import")
+	var text:="[gd_resource type=\"SpriteFrames\" format=3]\n\n[ext_resource type=\"Texture2D\" path=\"%s\" id=\"1_atlas\"]\n\n"%local_atlas
+	for index in 8: text+="[sub_resource type=\"AtlasTexture\" id=\"Frame_%d\"]\natlas = ExtResource(\"1_atlas\")\nregion = Rect2(%d, 0, 64, 96)\nfilter_clip = true\n\n"%[index,index*64]
+	text+="[resource]\nresource_name=\"FixedRigWalkDownV009Candidate\"\nanimations=[{\"frames\":["
+	for index in 8: text+="{\"duration\":1.0,\"texture\":SubResource(\"Frame_%d\")}%s"%[index,"," if index<7 else ""]
+	text+="],\"loop\":true,\"name\":&\"walk_down\",\"speed\":8.0}]\n"
+	var file:=FileAccess.open("res://robot_sprite_frames_v009.tres",FileAccess.WRITE); file.store_string(text)

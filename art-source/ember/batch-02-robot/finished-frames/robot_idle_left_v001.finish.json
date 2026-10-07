@@ -1,0 +1,89 @@
+{
+  "id": "robot_idle_left",
+  "source": "art-source/ember/batch-02-robot/generated/robot_idle_left_master_v001.png",
+  "source_sha256": "7456d17af62d38992757df691336b120863386f703fe0725516084226ec9cc0d",
+  "output": "art-source/ember/batch-02-robot/finished-frames/robot_idle_left_v001.png",
+  "annotation": "art-source/ember/batch-02-robot/annotations/idle_left.json",
+  "annotation_sha256": "8b194c5476fef9cf69ac1ec34509a54dcefe9feb9eaf90999eb4c49ccb6b222c",
+  "dependencies": [],
+  "source_use": "AI_MATERIAL_AND_POSE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+  "observations": {
+    "design_observation": "实际母稿为左向三分之四侧身：面罩朝屏幕左，近侧圆耳与大肩甲清楚，顶部陶瓷圆盖仍可见；两腿存在近远投影高度差，原生总高保持59。胸部有侧向中性暗窗。",
+    "tool_hand_observation": "黄铜维修工具在屏幕右下的近侧左腕，不与right母稿镜像。近侧前臂和工具共用安装关系，工具暗孔保持中性。"
+  },
+  "adjustments": [
+    "母稿主体区域采样到27×59原生起点，保留侧向自然变窄，不压缩down图",
+    "固定11色并去除Alpha halo/碎片；原生外轮廓统一1像素",
+    "原生重画面罩核心两个2像素暗区，保留前方圆角与侧缘反光",
+    "胸部侧窗以[26,49,28,51)的实际4像素连续区整理为中性暗蓝灰，不把处理区称作完整窗",
+    "近侧维修工具保持下方腕部装配，两脚前后投影层次与足底80固定"
+  ],
+  "process": {
+    "subject_crop": [
+      275,
+      317,
+      751,
+      1363
+    ],
+    "material_sampling_size": [
+      27,
+      59
+    ],
+    "native_subject_origin": [
+      18,
+      21
+    ],
+    "sampling_role": "材质和造型起点；不是独立验收结果"
+  },
+  "measurement": {
+    "canvas": [
+      64,
+      96
+    ],
+    "bbox": [
+      18,
+      21,
+      45,
+      80
+    ],
+    "anchor": [
+      32,
+      80
+    ],
+    "anchor_convention": "脚底边界；接地像素末行79",
+    "rgb_count": 11,
+    "rules": {
+      "binary_alpha": true,
+      "palette": true,
+      "subject_max_40x64": true,
+      "ground_boundary_80": true,
+      "subject_centered_in_x12_52": true
+    }
+  },
+  "runtime_windows": [
+    {
+      "id": "chest_status",
+      "safe_active_rect": [
+        26,
+        49,
+        28,
+        51
+      ],
+      "center": [
+        27,
+        50
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.421875,
+        0.5208333333333334
+      ],
+      "mask_delivery_status": "NOT_PRODUCED",
+      "visibility": "PARTIAL_SIDE_VIEW"
+    }
+  ],
+  "emitter_points": [],
+  "emission_baked": false,
+  "review_status": "ROOT_VISUAL_REVIEW_REQUIRED",
+  "output_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77"
+}

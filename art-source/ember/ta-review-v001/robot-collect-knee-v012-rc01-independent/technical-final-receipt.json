@@ -1,0 +1,84 @@
+{
+  "status": "PASS_TECHNICAL_SOURCE_SCOPE_COLD",
+  "payloads": 698,
+  "old_frozen_payloads_preserved": 336,
+  "png_changed": 16,
+  "png_preserved": 96,
+  "imagegen_sources_bound": 8,
+  "fixed_source_png_mappings": 96,
+  "independent_raw_support_rgba_residual": 0,
+  "independent_input_cells": 32,
+  "independent_composite_rgba_residual": 0,
+  "adoption_counts_by_direction": {
+    "down": {
+      "F01": 6,
+      "F02": 6,
+      "common_same_color": 6
+    },
+    "down_left": {
+      "F01": 17,
+      "F02": 15,
+      "common_same_color": 15
+    },
+    "left": {
+      "F01": 6,
+      "F02": 6,
+      "common_same_color": 5
+    },
+    "up_left": {
+      "F01": 14,
+      "F02": 14,
+      "common_same_color": 14
+    },
+    "up": {
+      "F01": 70,
+      "F02": 71,
+      "common_same_color": 70
+    },
+    "up_right": {
+      "F01": 32,
+      "F02": 31,
+      "common_same_color": 29
+    },
+    "right": {
+      "F01": 3,
+      "F02": 3,
+      "common_same_color": 3
+    },
+    "down_right": {
+      "F01": 67,
+      "F02": 67,
+      "common_same_color": 67
+    }
+  },
+  "adoption_pixel_events": 428,
+  "cold_clips": 24,
+  "cold_frames_rgba": 112,
+  "independent_gpu_samples": [
+    {
+      "direction": "down_right",
+      "frame": 1,
+      "mismatch": 0,
+      "opaque_samples": 22656,
+      "scale": 4
+    },
+    {
+      "direction": "down_right",
+      "frame": 1,
+      "mismatch": 0,
+      "opaque_samples": 1416,
+      "scale": 1
+    }
+  ],
+  "natural_collect_recoveries": 8,
+  "author_gpu64_independent_replay": false,
+  "visual_boundary": "Technical PASS only; knee/waist motion naturalness is independently judged by visual reviewer and lead TA.",
+  "evidence_sha256": {
+    "technical-zip-binding.json": "281a410875b823676a61010f08b3706dfaf9d9783b2f01494183ae4df8902841",
+    "technical-integrity.json": "72eef1b24ebdf98e5390de0ecb0418491dcf93e7d73465b95fd891c9ed5ffa1a",
+    "technical-resample.json": "470e7dde61b150fd8d3cb82dca9de668658e121f537c99ea1ce7703dd3df1d7e",
+    "technical-cold-receipt.json": "81fd19b53b6797404bed7c123356cd806f7b9e240f6a035628bc00fc3e711a4b",
+    "technical-runtime-entry.json": "11c89938c88e3bf63bc156cd923201b48fa30fe8deac64949de93c285c493a83",
+    "integrity.md": "89c630a88530d60db82b88dfe3e25bf2d700cd1cd2c96254f3d6cdb1c51bd307"
+  }
+}

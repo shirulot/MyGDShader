@@ -1,0 +1,6027 @@
+{
+  "generated_utc": "2026-10-04T01:49:52.398073+00:00",
+  "catalog_path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\frames-catalog-v001.json",
+  "tool": "validate_robot_frames.py / Pillow / read-only pixel and catalog checks",
+  "validator_sha256": "3ff5813b08a110124d763b0254b5da2024ddfe76215a4f2beb02bcfa886b3cff",
+  "mode": "READ_ONLY_PNG_AND_CATALOG",
+  "checks": [
+    {
+      "name": "original_down_idle_sha_hard_lock",
+      "passed": true,
+      "actual": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "expected": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+    },
+    {
+      "name": "canvas_contract",
+      "passed": true,
+      "actual": [
+        64,
+        96
+      ],
+      "expected": [
+        64,
+        96
+      ]
+    },
+    {
+      "name": "anchor_contract",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "bbox_limit_contract",
+      "passed": true,
+      "actual": [
+        40,
+        64
+      ],
+      "expected": [
+        40,
+        64
+      ]
+    },
+    {
+      "name": "four_direction_order",
+      "passed": true,
+      "actual": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "expected": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ]
+    },
+    {
+      "name": "fixed_palette_declaration",
+      "passed": true,
+      "actual": [
+        "#101820",
+        "#182631",
+        "#2B3E4B",
+        "#4D6470",
+        "#829BA3",
+        "#BECBC4",
+        "#7B4D35",
+        "#B77C4B",
+        "#E2B77A",
+        "#51C5C2",
+        "#E5A44B",
+        "#E65B4A",
+        "#566B78",
+        "#203A4B",
+        "#406B78",
+        "#ECE9D8"
+      ],
+      "expected": "the exact registered 16 colors"
+    },
+    {
+      "name": "twenty_declared_frames",
+      "passed": true,
+      "actual": 20,
+      "expected": 20
+    },
+    {
+      "name": "frame_0_unique_id",
+      "passed": true,
+      "actual": "robot_idle_down",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_idle_down_direction_state_index",
+      "passed": true,
+      "actual": [
+        "down",
+        "idle",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_idle_down_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_idle_down_sheet_coord",
+      "passed": true,
+      "actual": [
+        0,
+        0
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "down_idle_reuses_original_path",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\assets\\ember\\characters\\robot\\robot_idle_down_v001.png",
+      "expected": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\assets\\ember\\characters\\robot\\robot_idle_down_v001.png"
+    },
+    {
+      "name": "down_idle_declared_hard_lock",
+      "passed": true,
+      "actual": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "expected": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+    },
+    {
+      "name": "frame_1_unique_id",
+      "passed": true,
+      "actual": "robot_walk_down_f00",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_down_f00_direction_state_index",
+      "passed": true,
+      "actual": [
+        "down",
+        "walk",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_down_f00_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_down_f00_sheet_coord",
+      "passed": true,
+      "actual": [
+        1,
+        0
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_2_unique_id",
+      "passed": true,
+      "actual": "robot_walk_down_f01",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_down_f01_direction_state_index",
+      "passed": true,
+      "actual": [
+        "down",
+        "walk",
+        1
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_down_f01_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_down_f01_sheet_coord",
+      "passed": true,
+      "actual": [
+        2,
+        0
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_3_unique_id",
+      "passed": true,
+      "actual": "robot_walk_down_f02",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_down_f02_direction_state_index",
+      "passed": true,
+      "actual": [
+        "down",
+        "walk",
+        2
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_down_f02_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_down_f02_sheet_coord",
+      "passed": true,
+      "actual": [
+        3,
+        0
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_4_unique_id",
+      "passed": true,
+      "actual": "robot_walk_down_f03",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_down_f03_direction_state_index",
+      "passed": true,
+      "actual": [
+        "down",
+        "walk",
+        3
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_down_f03_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_down_f03_sheet_coord",
+      "passed": true,
+      "actual": [
+        4,
+        0
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_5_unique_id",
+      "passed": true,
+      "actual": "robot_idle_left",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_idle_left_direction_state_index",
+      "passed": true,
+      "actual": [
+        "left",
+        "idle",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_idle_left_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_idle_left_sheet_coord",
+      "passed": true,
+      "actual": [
+        0,
+        1
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_6_unique_id",
+      "passed": true,
+      "actual": "robot_walk_left_f00",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_left_f00_direction_state_index",
+      "passed": true,
+      "actual": [
+        "left",
+        "walk",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_left_f00_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_left_f00_sheet_coord",
+      "passed": true,
+      "actual": [
+        1,
+        1
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_7_unique_id",
+      "passed": true,
+      "actual": "robot_walk_left_f01",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_left_f01_direction_state_index",
+      "passed": true,
+      "actual": [
+        "left",
+        "walk",
+        1
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_left_f01_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_left_f01_sheet_coord",
+      "passed": true,
+      "actual": [
+        2,
+        1
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_8_unique_id",
+      "passed": true,
+      "actual": "robot_walk_left_f02",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_left_f02_direction_state_index",
+      "passed": true,
+      "actual": [
+        "left",
+        "walk",
+        2
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_left_f02_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_left_f02_sheet_coord",
+      "passed": true,
+      "actual": [
+        3,
+        1
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_9_unique_id",
+      "passed": true,
+      "actual": "robot_walk_left_f03",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_left_f03_direction_state_index",
+      "passed": true,
+      "actual": [
+        "left",
+        "walk",
+        3
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_left_f03_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_left_f03_sheet_coord",
+      "passed": true,
+      "actual": [
+        4,
+        1
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_10_unique_id",
+      "passed": true,
+      "actual": "robot_idle_right",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_idle_right_direction_state_index",
+      "passed": true,
+      "actual": [
+        "right",
+        "idle",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_idle_right_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_idle_right_sheet_coord",
+      "passed": true,
+      "actual": [
+        0,
+        2
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_11_unique_id",
+      "passed": true,
+      "actual": "robot_walk_right_f00",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_right_f00_direction_state_index",
+      "passed": true,
+      "actual": [
+        "right",
+        "walk",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_right_f00_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_right_f00_sheet_coord",
+      "passed": true,
+      "actual": [
+        1,
+        2
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_12_unique_id",
+      "passed": true,
+      "actual": "robot_walk_right_f01",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_right_f01_direction_state_index",
+      "passed": true,
+      "actual": [
+        "right",
+        "walk",
+        1
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_right_f01_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_right_f01_sheet_coord",
+      "passed": true,
+      "actual": [
+        2,
+        2
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_13_unique_id",
+      "passed": true,
+      "actual": "robot_walk_right_f02",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_right_f02_direction_state_index",
+      "passed": true,
+      "actual": [
+        "right",
+        "walk",
+        2
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_right_f02_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_right_f02_sheet_coord",
+      "passed": true,
+      "actual": [
+        3,
+        2
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_14_unique_id",
+      "passed": true,
+      "actual": "robot_walk_right_f03",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_right_f03_direction_state_index",
+      "passed": true,
+      "actual": [
+        "right",
+        "walk",
+        3
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_right_f03_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_right_f03_sheet_coord",
+      "passed": true,
+      "actual": [
+        4,
+        2
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_15_unique_id",
+      "passed": true,
+      "actual": "robot_idle_up",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_idle_up_direction_state_index",
+      "passed": true,
+      "actual": [
+        "up",
+        "idle",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_idle_up_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_idle_up_sheet_coord",
+      "passed": true,
+      "actual": [
+        0,
+        3
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_16_unique_id",
+      "passed": true,
+      "actual": "robot_walk_up_f00",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_up_f00_direction_state_index",
+      "passed": true,
+      "actual": [
+        "up",
+        "walk",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_up_f00_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_up_f00_sheet_coord",
+      "passed": true,
+      "actual": [
+        1,
+        3
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_17_unique_id",
+      "passed": true,
+      "actual": "robot_walk_up_f01",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_up_f01_direction_state_index",
+      "passed": true,
+      "actual": [
+        "up",
+        "walk",
+        1
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_up_f01_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_up_f01_sheet_coord",
+      "passed": true,
+      "actual": [
+        2,
+        3
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_18_unique_id",
+      "passed": true,
+      "actual": "robot_walk_up_f02",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_up_f02_direction_state_index",
+      "passed": true,
+      "actual": [
+        "up",
+        "walk",
+        2
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_up_f02_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_up_f02_sheet_coord",
+      "passed": true,
+      "actual": [
+        3,
+        3
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_19_unique_id",
+      "passed": true,
+      "actual": "robot_walk_up_f03",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_up_f03_direction_state_index",
+      "passed": true,
+      "actual": [
+        "up",
+        "walk",
+        3
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_up_f03_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_up_f03_sheet_coord",
+      "passed": true,
+      "actual": [
+        4,
+        3
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "complete_four_idle_sixteen_walk_roles",
+      "passed": true,
+      "actual": [
+        {
+          "role": [
+            "down",
+            "idle",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "down",
+            "walk",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "down",
+            "walk",
+            1
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "down",
+            "walk",
+            2
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "down",
+            "walk",
+            3
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "left",
+            "idle",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "left",
+            "walk",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "left",
+            "walk",
+            1
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "left",
+            "walk",
+            2
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "left",
+            "walk",
+            3
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "right",
+            "idle",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "right",
+            "walk",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "right",
+            "walk",
+            1
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "right",
+            "walk",
+            2
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "right",
+            "walk",
+            3
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "up",
+            "idle",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "up",
+            "walk",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "up",
+            "walk",
+            1
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "up",
+            "walk",
+            2
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "up",
+            "walk",
+            3
+          ],
+          "count": 1
+        }
+      ],
+      "expected": "every required role exactly once"
+    },
+    {
+      "name": "unique_single_frame_paths",
+      "passed": true,
+      "actual": 20,
+      "expected": 20
+    },
+    {
+      "name": "eight_animations",
+      "passed": true,
+      "actual": 8,
+      "expected": 8
+    },
+    {
+      "name": "unique_required_animation_roles",
+      "passed": true,
+      "actual": [
+        [
+          "down",
+          "idle"
+        ],
+        [
+          "down",
+          "walk"
+        ],
+        [
+          "left",
+          "idle"
+        ],
+        [
+          "left",
+          "walk"
+        ],
+        [
+          "right",
+          "idle"
+        ],
+        [
+          "right",
+          "walk"
+        ],
+        [
+          "up",
+          "idle"
+        ],
+        [
+          "up",
+          "walk"
+        ]
+      ],
+      "expected": "one idle and one walk animation per direction"
+    },
+    {
+      "name": "sheet_object",
+      "passed": true,
+      "actual": "dict",
+      "expected": "object"
+    },
+    {
+      "name": "original_down_idle_unchanged_during_read",
+      "passed": true,
+      "actual": {
+        "before": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+        "after": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      },
+      "expected": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+    }
+  ],
+  "warnings": [],
+  "frames": [
+    {
+      "id": "robot_idle_down",
+      "file": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+          "expected": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            12,
+            21,
+            52,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4652,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            40,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "idle",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 14,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "idle visible bottom 80 with opaque contact pixels at y79; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "bbox_exclusive": [
+        12,
+        21,
+        52,
+        80
+      ],
+      "subject_size": [
+        40,
+        59
+      ],
+      "transparent_pixels": 4652,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1492,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          19,
+          26
+        ],
+        [
+          38,
+          45
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.8237,
+        50.1977
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_down_f00",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_down_f00_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "5b91a60e5ab5428a7b988a6aea4f336c55e946208aa2897e43d49452ad767267",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "5b91a60e5ab5428a7b988a6aea4f336c55e946208aa2897e43d49452ad767267",
+          "expected": "5b91a60e5ab5428a7b988a6aea4f336c55e946208aa2897e43d49452ad767267"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            12,
+            21,
+            52,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4664,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            40,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 7,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "5b91a60e5ab5428a7b988a6aea4f336c55e946208aa2897e43d49452ad767267",
+      "bbox_exclusive": [
+        12,
+        21,
+        52,
+        80
+      ],
+      "subject_size": [
+        40,
+        59
+      ],
+      "transparent_pixels": 4664,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1480,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          38,
+          45
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.8608,
+        50.0338
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_down_f01",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_down_f01_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "6598040c164838b1cf8b847a98683b9fe3a757a9c823019abefc9acb321f9818",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "6598040c164838b1cf8b847a98683b9fe3a757a9c823019abefc9acb321f9818",
+          "expected": "6598040c164838b1cf8b847a98683b9fe3a757a9c823019abefc9acb321f9818"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            12,
+            20,
+            52,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4660,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            40,
+            60
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 7,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "6598040c164838b1cf8b847a98683b9fe3a757a9c823019abefc9acb321f9818",
+      "bbox_exclusive": [
+        12,
+        20,
+        52,
+        80
+      ],
+      "subject_size": [
+        40,
+        60
+      ],
+      "transparent_pixels": 4660,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1484,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          38,
+          45
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.8592,
+        49.1361
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_down_f02",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_down_f02_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "75763a286bc88182ffaad28569db80d49f2619d699c1d77463310ba8b3ac4819",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "75763a286bc88182ffaad28569db80d49f2619d699c1d77463310ba8b3ac4819",
+          "expected": "75763a286bc88182ffaad28569db80d49f2619d699c1d77463310ba8b3ac4819"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            12,
+            21,
+            52,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4665,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            40,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 7,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "75763a286bc88182ffaad28569db80d49f2619d699c1d77463310ba8b3ac4819",
+      "bbox_exclusive": [
+        12,
+        21,
+        52,
+        80
+      ],
+      "subject_size": [
+        40,
+        59
+      ],
+      "transparent_pixels": 4665,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1479,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          19,
+          26
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.7813,
+        50.0368
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_down_f03",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_down_f03_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "d58d28a1c1ae09dc3787bf0ce2394d4239fa66c3f71efc43fe9fc5902e15888f",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "d58d28a1c1ae09dc3787bf0ce2394d4239fa66c3f71efc43fe9fc5902e15888f",
+          "expected": "d58d28a1c1ae09dc3787bf0ce2394d4239fa66c3f71efc43fe9fc5902e15888f"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            12,
+            20,
+            52,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4659,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            40,
+            60
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 7,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "d58d28a1c1ae09dc3787bf0ce2394d4239fa66c3f71efc43fe9fc5902e15888f",
+      "bbox_exclusive": [
+        12,
+        20,
+        52,
+        80
+      ],
+      "subject_size": [
+        40,
+        60
+      ],
+      "transparent_pixels": 4659,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1485,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          19,
+          26
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.7869,
+        49.1465
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_idle_left",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_idle_left_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+          "expected": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            18,
+            21,
+            45,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 5022,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            27,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "idle",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 4,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "idle visible bottom 80 with opaque contact pixels at y79; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+      "bbox_exclusive": [
+        18,
+        21,
+        45,
+        80
+      ],
+      "subject_size": [
+        27,
+        59
+      ],
+      "transparent_pixels": 5022,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1122,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          32,
+          36
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.7852,
+        49.3619
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_left_f00",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_left_f00_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "41faa14587e8933003c6809f0af1cca75a90c8bd26326eb0ed67593874bb5930",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "41faa14587e8933003c6809f0af1cca75a90c8bd26326eb0ed67593874bb5930",
+          "expected": "41faa14587e8933003c6809f0af1cca75a90c8bd26326eb0ed67593874bb5930"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            17,
+            21,
+            46,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 5076,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            29,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 4,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "41faa14587e8933003c6809f0af1cca75a90c8bd26326eb0ed67593874bb5930",
+      "bbox_exclusive": [
+        17,
+        21,
+        46,
+        80
+      ],
+      "subject_size": [
+        29,
+        59
+      ],
+      "transparent_pixels": 5076,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1068,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          30,
+          34
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.6676,
+        48.471
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_left_f01",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_left_f01_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "b79f0c4a8ced161f570fd6dde138f4b6ea31869494903f0f085b08a9ffb68410",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "b79f0c4a8ced161f570fd6dde138f4b6ea31869494903f0f085b08a9ffb68410",
+          "expected": "b79f0c4a8ced161f570fd6dde138f4b6ea31869494903f0f085b08a9ffb68410"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            18,
+            20,
+            45,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 5022,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            27,
+            60
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 4,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "b79f0c4a8ced161f570fd6dde138f4b6ea31869494903f0f085b08a9ffb68410",
+      "bbox_exclusive": [
+        18,
+        20,
+        45,
+        80
+      ],
+      "subject_size": [
+        27,
+        60
+      ],
+      "transparent_pixels": 5022,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1122,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          32,
+          36
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.7852,
+        48.5178
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_left_f02",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_left_f02_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "177a1985bff483574cbe46b84e674d304a7dd61197ad9287fa5e2a4ceae93566",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "177a1985bff483574cbe46b84e674d304a7dd61197ad9287fa5e2a4ceae93566",
+          "expected": "177a1985bff483574cbe46b84e674d304a7dd61197ad9287fa5e2a4ceae93566"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            18,
+            21,
+            44,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 5068,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            26,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 4,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "177a1985bff483574cbe46b84e674d304a7dd61197ad9287fa5e2a4ceae93566",
+      "bbox_exclusive": [
+        18,
+        21,
+        44,
+        80
+      ],
+      "subject_size": [
+        26,
+        59
+      ],
+      "transparent_pixels": 5068,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1076,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          33,
+          37
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.5929,
+        49.1933
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_left_f03",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_left_f03_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "1c50a3e23d413513adda8ce353a8515fb71768b5276fd84da42005cb61316f2d",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "1c50a3e23d413513adda8ce353a8515fb71768b5276fd84da42005cb61316f2d",
+          "expected": "1c50a3e23d413513adda8ce353a8515fb71768b5276fd84da42005cb61316f2d"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            18,
+            20,
+            45,
+            79
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 5031,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            27,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 79,
+            "opaque_pixels_at_y79": 0,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "1c50a3e23d413513adda8ce353a8515fb71768b5276fd84da42005cb61316f2d",
+      "bbox_exclusive": [
+        18,
+        20,
+        45,
+        79
+      ],
+      "subject_size": [
+        27,
+        59
+      ],
+      "transparent_pixels": 5031,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1113,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [],
+      "visible_bottom_boundary_y": 79,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": false,
+      "visible_centroid": [
+        31.7453,
+        48.2673
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_idle_right",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_idle_right_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+          "expected": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            17,
+            21,
+            46,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4933,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            29,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "idle",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 5,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "idle visible bottom 80 with opaque contact pixels at y79; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+      "bbox_exclusive": [
+        17,
+        21,
+        46,
+        80
+      ],
+      "subject_size": [
+        29,
+        59
+      ],
+      "transparent_pixels": 4933,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1211,
+      "visible_rgb_color_count": 10,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          27,
+          32
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.391,
+        49.7667
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_right_f00",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_right_f00_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+          "expected": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            18,
+            21,
+            48,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4973,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            30,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 5,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+      "bbox_exclusive": [
+        18,
+        21,
+        48,
+        80
+      ],
+      "subject_size": [
+        30,
+        59
+      ],
+      "transparent_pixels": 4973,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1171,
+      "visible_rgb_color_count": 10,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          26,
+          31
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.5453,
+        49.6623
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_right_f01",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_right_f01_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+          "expected": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            17,
+            20,
+            46,
+            78
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4942,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            29,
+            58
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 78,
+            "opaque_pixels_at_y79": 0,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+      "bbox_exclusive": [
+        17,
+        20,
+        46,
+        78
+      ],
+      "subject_size": [
+        29,
+        58
+      ],
+      "transparent_pixels": 4942,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1202,
+      "visible_rgb_color_count": 10,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [],
+      "visible_bottom_boundary_y": 78,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": false,
+      "visible_centroid": [
+        31.4052,
+        48.6223
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_right_f02",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_right_f02_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "6d721027b8e57da224b1d7ae705cd48c88bd193a2e51ae2031448769e5c156be",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "6d721027b8e57da224b1d7ae705cd48c88bd193a2e51ae2031448769e5c156be",
+          "expected": "6d721027b8e57da224b1d7ae705cd48c88bd193a2e51ae2031448769e5c156be"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            16,
+            21,
+            46,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4962,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            30,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 5,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "6d721027b8e57da224b1d7ae705cd48c88bd193a2e51ae2031448769e5c156be",
+      "bbox_exclusive": [
+        16,
+        21,
+        46,
+        80
+      ],
+      "subject_size": [
+        30,
+        59
+      ],
+      "transparent_pixels": 4962,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1182,
+      "visible_rgb_color_count": 10,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          29,
+          34
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.3816,
+        49.3731
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_right_f03",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_right_f03_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "5c039750f75d145415cfba89c53b81ec101587117a99be2dd9f4bae70fb078d3",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "5c039750f75d145415cfba89c53b81ec101587117a99be2dd9f4bae70fb078d3",
+          "expected": "5c039750f75d145415cfba89c53b81ec101587117a99be2dd9f4bae70fb078d3"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            17,
+            20,
+            46,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4933,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            29,
+            60
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 5,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "5c039750f75d145415cfba89c53b81ec101587117a99be2dd9f4bae70fb078d3",
+      "bbox_exclusive": [
+        17,
+        20,
+        46,
+        80
+      ],
+      "subject_size": [
+        29,
+        60
+      ],
+      "transparent_pixels": 4933,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1211,
+      "visible_rgb_color_count": 10,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          27,
+          32
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        31.391,
+        48.9244
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_idle_up",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_idle_up_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+          "expected": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            13,
+            21,
+            51,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4737,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            38,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "idle",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 12,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "idle visible bottom 80 with opaque contact pixels at y79; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+      "bbox_exclusive": [
+        13,
+        21,
+        51,
+        80
+      ],
+      "subject_size": [
+        38,
+        59
+      ],
+      "transparent_pixels": 4737,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1407,
+      "visible_rgb_color_count": 10,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          23,
+          29
+        ],
+        [
+          36,
+          42
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        32.3436,
+        50.6393
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_up_f00",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_up_f00_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+          "expected": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            13,
+            21,
+            51,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4748,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            38,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 6,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+      "bbox_exclusive": [
+        13,
+        21,
+        51,
+        80
+      ],
+      "subject_size": [
+        38,
+        59
+      ],
+      "transparent_pixels": 4748,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1396,
+      "visible_rgb_color_count": 10,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          36,
+          42
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        32.3804,
+        50.4771
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_up_f01",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_up_f01_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+          "expected": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            13,
+            20,
+            51,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4744,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            38,
+            60
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 6,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+      "bbox_exclusive": [
+        13,
+        20,
+        51,
+        80
+      ],
+      "subject_size": [
+        38,
+        60
+      ],
+      "transparent_pixels": 4744,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1400,
+      "visible_rgb_color_count": 10,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          23,
+          29
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        32.3071,
+        49.5871
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_up_f02",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_up_f02_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+          "expected": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            13,
+            21,
+            51,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4748,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            38,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 6,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+      "bbox_exclusive": [
+        13,
+        21,
+        51,
+        80
+      ],
+      "subject_size": [
+        38,
+        59
+      ],
+      "transparent_pixels": 4748,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1396,
+      "visible_rgb_color_count": 10,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          23,
+          29
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        32.3044,
+        50.4656
+      ],
+      "suggested_x_envelope_12_to_51": true
+    },
+    {
+      "id": "robot_walk_up_f03",
+      "file": "res://art-source/ember/batch-02-robot/finished-frames/robot_walk_up_f03_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+          "expected": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            13,
+            20,
+            51,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4744,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            38,
+            60
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 6,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+      "bbox_exclusive": [
+        13,
+        20,
+        51,
+        80
+      ],
+      "subject_size": [
+        38,
+        60
+      ],
+      "transparent_pixels": 4744,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1400,
+      "visible_rgb_color_count": 10,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          36,
+          42
+        ]
+      ],
+      "visible_bottom_boundary_y": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "visible_contact_at_anchor_boundary": true,
+      "visible_centroid": [
+        32.3786,
+        49.5843
+      ],
+      "suggested_x_envelope_12_to_51": true
+    }
+  ],
+  "animations": [
+    {
+      "id": "idle_down",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_idle_down"
+          ],
+          "expected": [
+            "robot_idle_down"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 1.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "down",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_down"
+      ],
+      "fps": 1.0,
+      "preview_effective_fps": null,
+      "cycle_seconds": null
+    },
+    {
+      "id": "walk_down",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_walk_down_f00",
+            "robot_walk_down_f01",
+            "robot_walk_down_f02",
+            "robot_walk_down_f03"
+          ],
+          "expected": [
+            "robot_walk_down_f00",
+            "robot_walk_down_f01",
+            "robot_walk_down_f02",
+            "robot_walk_down_f03"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 8.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "down",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_down_f00",
+        "robot_walk_down_f01",
+        "robot_walk_down_f02",
+        "robot_walk_down_f03"
+      ],
+      "fps": 8.0,
+      "preview_effective_fps": 8.0,
+      "cycle_seconds": 0.5
+    },
+    {
+      "id": "idle_left",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_idle_left"
+          ],
+          "expected": [
+            "robot_idle_left"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 1.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "left",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_left"
+      ],
+      "fps": 1.0,
+      "preview_effective_fps": null,
+      "cycle_seconds": null
+    },
+    {
+      "id": "walk_left",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_walk_left_f00",
+            "robot_walk_left_f01",
+            "robot_walk_left_f02",
+            "robot_walk_left_f03"
+          ],
+          "expected": [
+            "robot_walk_left_f00",
+            "robot_walk_left_f01",
+            "robot_walk_left_f02",
+            "robot_walk_left_f03"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 8.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "left",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_left_f00",
+        "robot_walk_left_f01",
+        "robot_walk_left_f02",
+        "robot_walk_left_f03"
+      ],
+      "fps": 8.0,
+      "preview_effective_fps": 8.0,
+      "cycle_seconds": 0.5
+    },
+    {
+      "id": "idle_right",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_idle_right"
+          ],
+          "expected": [
+            "robot_idle_right"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 1.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "right",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_right"
+      ],
+      "fps": 1.0,
+      "preview_effective_fps": null,
+      "cycle_seconds": null
+    },
+    {
+      "id": "walk_right",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_walk_right_f00",
+            "robot_walk_right_f01",
+            "robot_walk_right_f02",
+            "robot_walk_right_f03"
+          ],
+          "expected": [
+            "robot_walk_right_f00",
+            "robot_walk_right_f01",
+            "robot_walk_right_f02",
+            "robot_walk_right_f03"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 8.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "right",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_right_f00",
+        "robot_walk_right_f01",
+        "robot_walk_right_f02",
+        "robot_walk_right_f03"
+      ],
+      "fps": 8.0,
+      "preview_effective_fps": 8.0,
+      "cycle_seconds": 0.5
+    },
+    {
+      "id": "idle_up",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_idle_up"
+          ],
+          "expected": [
+            "robot_idle_up"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 1.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "up",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_up"
+      ],
+      "fps": 1.0,
+      "preview_effective_fps": null,
+      "cycle_seconds": null
+    },
+    {
+      "id": "walk_up",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_walk_up_f00",
+            "robot_walk_up_f01",
+            "robot_walk_up_f02",
+            "robot_walk_up_f03"
+          ],
+          "expected": [
+            "robot_walk_up_f00",
+            "robot_walk_up_f01",
+            "robot_walk_up_f02",
+            "robot_walk_up_f03"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 8.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "up",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_up_f00",
+        "robot_walk_up_f01",
+        "robot_walk_up_f02",
+        "robot_walk_up_f03"
+      ],
+      "fps": 8.0,
+      "preview_effective_fps": 8.0,
+      "cycle_seconds": 0.5
+    }
+  ],
+  "motion": [
+    {
+      "direction": "down",
+      "status": "MEASURED_NOT_ART_ACCEPTANCE",
+      "checks": [
+        {
+          "name": "walk_has_visible_cross_frame_changes",
+          "passed": true,
+          "actual": [
+            640,
+            786,
+            639,
+            783
+          ],
+          "expected": "at least one visible change; gait still needs review"
+        },
+        {
+          "name": "walk_not_whole_sprite_translation",
+          "passed": true,
+          "actual": [],
+          "expected": "no exact nonzero translation of the complete subject between poses"
+        }
+      ],
+      "transitions": [
+        {
+          "from": "robot_walk_down_f00",
+          "to": "robot_walk_down_f01",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 640,
+          "alpha_changed_pixels": 130,
+          "silhouette_iou": 0.915966,
+          "changed_visible_fraction": 0.413704,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_down_f01",
+          "to": "robot_walk_down_f02",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 786,
+          "alpha_changed_pixels": 167,
+          "silhouette_iou": 0.893291,
+          "changed_visible_fraction": 0.502236,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_down_f02",
+          "to": "robot_walk_down_f03",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 639,
+          "alpha_changed_pixels": 122,
+          "silhouette_iou": 0.920933,
+          "changed_visible_fraction": 0.414128,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_down_f03",
+          "to": "robot_walk_down_f00",
+          "loop_join": true,
+          "visible_rgba_changed_pixels": 783,
+          "alpha_changed_pixels": 173,
+          "silhouette_iou": 0.889739,
+          "changed_visible_fraction": 0.499044,
+          "exact_whole_subject_translation": null
+        }
+      ]
+    },
+    {
+      "direction": "left",
+      "status": "MEASURED_NOT_ART_ACCEPTANCE",
+      "checks": [
+        {
+          "name": "walk_has_visible_cross_frame_changes",
+          "passed": true,
+          "actual": [
+            810,
+            773,
+            843,
+            773
+          ],
+          "expected": "at least one visible change; gait still needs review"
+        },
+        {
+          "name": "walk_not_whole_sprite_translation",
+          "passed": true,
+          "actual": [],
+          "expected": "no exact nonzero translation of the complete subject between poses"
+        }
+      ],
+      "transitions": [
+        {
+          "from": "robot_walk_left_f00",
+          "to": "robot_walk_left_f01",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 810,
+          "alpha_changed_pixels": 220,
+          "silhouette_iou": 0.817427,
+          "changed_visible_fraction": 0.672199,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_left_f01",
+          "to": "robot_walk_left_f02",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 773,
+          "alpha_changed_pixels": 226,
+          "silhouette_iou": 0.813531,
+          "changed_visible_fraction": 0.637789,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_left_f02",
+          "to": "robot_walk_left_f03",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 843,
+          "alpha_changed_pixels": 247,
+          "silhouette_iou": 0.797209,
+          "changed_visible_fraction": 0.692118,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_left_f03",
+          "to": "robot_walk_left_f00",
+          "loop_join": true,
+          "visible_rgba_changed_pixels": 773,
+          "alpha_changed_pixels": 205,
+          "silhouette_iou": 0.828164,
+          "changed_visible_fraction": 0.647946,
+          "exact_whole_subject_translation": null
+        }
+      ]
+    },
+    {
+      "direction": "right",
+      "status": "MEASURED_NOT_ART_ACCEPTANCE",
+      "checks": [
+        {
+          "name": "walk_has_visible_cross_frame_changes",
+          "passed": true,
+          "actual": [
+            846,
+            845,
+            848,
+            794
+          ],
+          "expected": "at least one visible change; gait still needs review"
+        },
+        {
+          "name": "walk_not_whole_sprite_translation",
+          "passed": true,
+          "actual": [],
+          "expected": "no exact nonzero translation of the complete subject between poses"
+        }
+      ],
+      "transitions": [
+        {
+          "from": "robot_walk_right_f00",
+          "to": "robot_walk_right_f01",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 846,
+          "alpha_changed_pixels": 209,
+          "silhouette_iou": 0.83811,
+          "changed_visible_fraction": 0.655306,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_right_f01",
+          "to": "robot_walk_right_f02",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 845,
+          "alpha_changed_pixels": 218,
+          "silhouette_iou": 0.832437,
+          "changed_visible_fraction": 0.6495,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_right_f02",
+          "to": "robot_walk_right_f03",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 848,
+          "alpha_changed_pixels": 227,
+          "silhouette_iou": 0.826718,
+          "changed_visible_fraction": 0.647328,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_right_f03",
+          "to": "robot_walk_right_f00",
+          "loop_join": true,
+          "visible_rgba_changed_pixels": 794,
+          "alpha_changed_pixels": 196,
+          "silhouette_iou": 0.847944,
+          "changed_visible_fraction": 0.615981,
+          "exact_whole_subject_translation": null
+        }
+      ]
+    },
+    {
+      "direction": "up",
+      "status": "MEASURED_NOT_ART_ACCEPTANCE",
+      "checks": [
+        {
+          "name": "walk_has_visible_cross_frame_changes",
+          "passed": true,
+          "actual": [
+            743,
+            590,
+            735,
+            601
+          ],
+          "expected": "at least one visible change; gait still needs review"
+        },
+        {
+          "name": "walk_not_whole_sprite_translation",
+          "passed": true,
+          "actual": [],
+          "expected": "no exact nonzero translation of the complete subject between poses"
+        }
+      ],
+      "transitions": [
+        {
+          "from": "robot_walk_up_f00",
+          "to": "robot_walk_up_f01",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 743,
+          "alpha_changed_pixels": 170,
+          "silhouette_iou": 0.885367,
+          "changed_visible_fraction": 0.501011,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_up_f01",
+          "to": "robot_walk_up_f02",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 590,
+          "alpha_changed_pixels": 122,
+          "silhouette_iou": 0.916381,
+          "changed_visible_fraction": 0.404387,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_up_f02",
+          "to": "robot_walk_up_f03",
+          "loop_join": false,
+          "visible_rgba_changed_pixels": 735,
+          "alpha_changed_pixels": 166,
+          "silhouette_iou": 0.887914,
+          "changed_visible_fraction": 0.496286,
+          "exact_whole_subject_translation": null
+        },
+        {
+          "from": "robot_walk_up_f03",
+          "to": "robot_walk_up_f00",
+          "loop_join": true,
+          "visible_rgba_changed_pixels": 601,
+          "alpha_changed_pixels": 126,
+          "silhouette_iou": 0.913758,
+          "changed_visible_fraction": 0.411362,
+          "exact_whole_subject_translation": null
+        }
+      ]
+    }
+  ],
+  "sheet": {
+    "checks": [
+      {
+        "name": "five_columns_four_rows",
+        "passed": true,
+        "actual": [
+          5,
+          4
+        ],
+        "expected": [
+          5,
+          4
+        ]
+      },
+      {
+        "name": "sheet_native_size_declaration",
+        "passed": true,
+        "actual": [
+          320,
+          384
+        ],
+        "expected": [
+          320,
+          384
+        ]
+      },
+      {
+        "name": "twenty_sheet_mappings",
+        "passed": true,
+        "actual": 20,
+        "expected": 20
+      },
+      {
+        "name": "sheet_entry_0_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_idle_down",
+          "coord": [
+            0,
+            0
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_idle_down_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          0,
+          0
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_idle_down_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "sheet_entry_1_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_down_f00",
+          "coord": [
+            1,
+            0
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_down_f00_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          1,
+          0
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_down_f00_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          1,
+          0
+        ],
+        "expected": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "sheet_entry_2_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_down_f01",
+          "coord": [
+            2,
+            0
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_down_f01_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          2,
+          0
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_down_f01_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          2,
+          0
+        ],
+        "expected": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "sheet_entry_3_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_down_f02",
+          "coord": [
+            3,
+            0
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_down_f02_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          3,
+          0
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_down_f02_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          3,
+          0
+        ],
+        "expected": [
+          3,
+          0
+        ]
+      },
+      {
+        "name": "sheet_entry_4_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_down_f03",
+          "coord": [
+            4,
+            0
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_down_f03_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          4,
+          0
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_down_f03_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          4,
+          0
+        ],
+        "expected": [
+          4,
+          0
+        ]
+      },
+      {
+        "name": "sheet_entry_5_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_idle_left",
+          "coord": [
+            0,
+            1
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_idle_left_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          0,
+          1
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_idle_left_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          0,
+          1
+        ],
+        "expected": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "sheet_entry_6_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_left_f00",
+          "coord": [
+            1,
+            1
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_left_f00_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          1,
+          1
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_left_f00_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          1,
+          1
+        ],
+        "expected": [
+          1,
+          1
+        ]
+      },
+      {
+        "name": "sheet_entry_7_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_left_f01",
+          "coord": [
+            2,
+            1
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_left_f01_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          2,
+          1
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_left_f01_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          2,
+          1
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      },
+      {
+        "name": "sheet_entry_8_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_left_f02",
+          "coord": [
+            3,
+            1
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_left_f02_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          3,
+          1
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_left_f02_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          3,
+          1
+        ],
+        "expected": [
+          3,
+          1
+        ]
+      },
+      {
+        "name": "sheet_entry_9_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_left_f03",
+          "coord": [
+            4,
+            1
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_left_f03_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          4,
+          1
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_left_f03_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          4,
+          1
+        ],
+        "expected": [
+          4,
+          1
+        ]
+      },
+      {
+        "name": "sheet_entry_10_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_idle_right",
+          "coord": [
+            0,
+            2
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_idle_right_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          0,
+          2
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_idle_right_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          0,
+          2
+        ],
+        "expected": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "sheet_entry_11_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_right_f00",
+          "coord": [
+            1,
+            2
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_right_f00_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          1,
+          2
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_right_f00_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          1,
+          2
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "sheet_entry_12_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_right_f01",
+          "coord": [
+            2,
+            2
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_right_f01_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          2,
+          2
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_right_f01_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          2,
+          2
+        ],
+        "expected": [
+          2,
+          2
+        ]
+      },
+      {
+        "name": "sheet_entry_13_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_right_f02",
+          "coord": [
+            3,
+            2
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_right_f02_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          3,
+          2
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_right_f02_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          3,
+          2
+        ],
+        "expected": [
+          3,
+          2
+        ]
+      },
+      {
+        "name": "sheet_entry_14_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_right_f03",
+          "coord": [
+            4,
+            2
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_right_f03_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          4,
+          2
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_right_f03_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          4,
+          2
+        ],
+        "expected": [
+          4,
+          2
+        ]
+      },
+      {
+        "name": "sheet_entry_15_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_idle_up",
+          "coord": [
+            0,
+            3
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_idle_up_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          0,
+          3
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_idle_up_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          0,
+          3
+        ],
+        "expected": [
+          0,
+          3
+        ]
+      },
+      {
+        "name": "sheet_entry_16_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_up_f00",
+          "coord": [
+            1,
+            3
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_up_f00_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          1,
+          3
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_up_f00_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          1,
+          3
+        ],
+        "expected": [
+          1,
+          3
+        ]
+      },
+      {
+        "name": "sheet_entry_17_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_up_f01",
+          "coord": [
+            2,
+            3
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_up_f01_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          2,
+          3
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_up_f01_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          2,
+          3
+        ],
+        "expected": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "sheet_entry_18_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_up_f02",
+          "coord": [
+            3,
+            3
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_up_f02_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          3,
+          3
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_up_f02_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          3,
+          3
+        ],
+        "expected": [
+          3,
+          3
+        ]
+      },
+      {
+        "name": "sheet_entry_19_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_up_f03",
+          "coord": [
+            4,
+            3
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_up_f03_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          4,
+          3
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_up_f03_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          4,
+          3
+        ],
+        "expected": [
+          4,
+          3
+        ]
+      },
+      {
+        "name": "complete_sheet_frame_ids",
+        "passed": true,
+        "actual": 20,
+        "expected": 20
+      },
+      {
+        "name": "unique_sheet_coords",
+        "passed": true,
+        "actual": 20,
+        "expected": 20
+      },
+      {
+        "name": "sheet_png_format",
+        "passed": true,
+        "actual": "PNG",
+        "expected": "PNG"
+      },
+      {
+        "name": "sheet_native_canvas",
+        "passed": true,
+        "actual": [
+          320,
+          384
+        ],
+        "expected": [
+          320,
+          384
+        ]
+      },
+      {
+        "name": "sheet_sha256_matches",
+        "passed": true,
+        "actual": "d3515552ac8ca72170f3ff558844a74552f71d96217b5660669f6cef59bb89e3",
+        "expected": "d3515552ac8ca72170f3ff558844a74552f71d96217b5660669f6cef59bb89e3"
+      },
+      {
+        "name": "robot_idle_down_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_down_f00_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_down_f01_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_down_f02_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_down_f03_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_idle_left_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_left_f00_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_left_f01_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_left_f02_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_left_f03_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_idle_right_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_right_f00_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_right_f01_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_right_f02_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_right_f03_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_idle_up_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_up_f00_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_up_f01_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_up_f02_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "robot_walk_up_f03_sheet_rgba_exact",
+        "passed": true,
+        "actual": 0,
+        "expected": 0
+      },
+      {
+        "name": "all_twenty_sheet_cells_measured",
+        "passed": true,
+        "actual": 20,
+        "expected": 20
+      }
+    ],
+    "file": "res://art-source/ember/batch-02-robot/robot_animations_native_v001.png",
+    "sha256": "d3515552ac8ca72170f3ff558844a74552f71d96217b5660669f6cef59bb89e3",
+    "size": [
+      320,
+      384
+    ],
+    "frame_matches": [
+      {
+        "frame_id": "robot_idle_down",
+        "coord": [
+          0,
+          0
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_down_f00",
+        "coord": [
+          1,
+          0
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_down_f01",
+        "coord": [
+          2,
+          0
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_down_f02",
+        "coord": [
+          3,
+          0
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_down_f03",
+        "coord": [
+          4,
+          0
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_idle_left",
+        "coord": [
+          0,
+          1
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_left_f00",
+        "coord": [
+          1,
+          1
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_left_f01",
+        "coord": [
+          2,
+          1
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_left_f02",
+        "coord": [
+          3,
+          1
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_left_f03",
+        "coord": [
+          4,
+          1
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_idle_right",
+        "coord": [
+          0,
+          2
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_right_f00",
+        "coord": [
+          1,
+          2
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_right_f01",
+        "coord": [
+          2,
+          2
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_right_f02",
+        "coord": [
+          3,
+          2
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_right_f03",
+        "coord": [
+          4,
+          2
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_idle_up",
+        "coord": [
+          0,
+          3
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_up_f00",
+        "coord": [
+          1,
+          3
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_up_f01",
+        "coord": [
+          2,
+          3
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_up_f02",
+        "coord": [
+          3,
+          3
+        ],
+        "rgba_mismatched_pixels": 0
+      },
+      {
+        "frame_id": "robot_walk_up_f03",
+        "coord": [
+          4,
+          3
+        ],
+        "rgba_mismatched_pixels": 0
+      }
+    ]
+  },
+  "manual_review_required": [
+    "四方向仍是同一机器人，比例、装甲、关节和原生像素尺度一致。",
+    "上向可读为背面，左右可读为对应侧面，保持俯视三分之四正交视角。",
+    "工具始终在解剖左前臂；遮挡合理，未因左右镜像换手或翻转左上光照。",
+    "双腿交替接触/经过，支撑脚接地；动作不是整张站姿平移或局部噪点。",
+    "臂腿反向摆动，工具受控；头身轻微起伏不改变世界锚点。",
+    "逐帧、8 FPS 与末帧接首帧播放均无跳位、肢体增减、色块闪烁或滑步。",
+    "待机进入/退出行走自然；窗口定位随姿势登记，背向遮挡不画成前窗。",
+    "原生及整数 2 倍在透明、浅色、深色底上检查轮廓和 Alpha 描边。"
+  ],
+  "png_modified": false,
+  "summary": {
+    "expected_frames": 20,
+    "catalog_frames": 20,
+    "measured_frames": 20,
+    "missing_frames": [],
+    "automatic_checks": 456,
+    "failed_checks": 0,
+    "warning_count": 0,
+    "sheet_cells_measured": 20,
+    "original_down_idle_locked": true
+  },
+  "failed_checks": [],
+  "catalog_and_present_png_checks_passed": true,
+  "automated_png_and_catalog_checks_passed": true,
+  "full_art_acceptance_status": "NATIVE_FRAMES_INDEPENDENT_VISUAL_REVIEW_PASS",
+  "independent_review_utc": "2026-10-04T01:59:15.775535+00:00",
+  "independent_visual_review": {
+    "reviewer": "asset_audit independent agent",
+    "status": "PASS",
+    "actual_view_mode": "ALL_20_NATIVE_FRAMES_AND_1X_2X_CONTACT_SHEETS_STATIC_ENDPOINT_REVIEW",
+    "direct_viewed_files": [
+      {
+        "file": "art-source/ember/batch-02-robot/robot_animations_native_v001.png",
+        "sha256": "d3515552ac8ca72170f3ff558844a74552f71d96217b5660669f6cef59bb89e3"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/walk_down_contact_1x.png",
+        "sha256": "36ab5568740dfbca40ee1abdd673b6e966e7070b622c269ac5b92094bbb448c9"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/walk_down_contact_2x.png",
+        "sha256": "d0ebd0c348e81558da6ae07cf76c19c5fd148b060340c86dbeda1a21b409c66e"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/walk_left_contact_1x.png",
+        "sha256": "f833d345a0c365b10dfab1e7eee4228c529b5199fc7202c126ab9d0718f40147"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/walk_left_contact_2x.png",
+        "sha256": "8c091fe18f169bff3a135cb2456977fb79657a7ffd9dad2823251960f4166c16"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/walk_right_contact_1x.png",
+        "sha256": "ccfea8748157719c87b6aea708357bab8c5661248119f931d8b715eba8c4b81a"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/walk_right_contact_2x.png",
+        "sha256": "5fc5aae80a0b89c019196fb01c854452285ed68ac794c33e78b38e204ae643ce"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/walk_up_contact_1x.png",
+        "sha256": "c05c7fc1e8d9c549c0cb9860179bf3c557d70e25c9c437893ef9246ba6b9891e"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/walk_up_contact_2x.png",
+        "sha256": "66d19a8df69c9557b9eea538afd2b251b7a3b7563516610f82a177d39a724c8a"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/idle_directions_review_1x.png",
+        "sha256": "35d21c49962b85d9087815925d9e20a104f252f8306ee8b856282f28d3f4672d"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/idle_directions_review_2x.png",
+        "sha256": "dff2a18eb2a43dc37b878a34f8700d930eea28faf9318552a1d6711b4e37844f"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/idle_directions_review_4x.png",
+        "sha256": "36e82240188547257f7f1cc149fc15ee34fbbdd76350a60517f65cd6741c33f4"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/all20_light_2x.png",
+        "sha256": "02725a7f64a1d87a8d1b2e35e9ec01ef15ff85f1f8f10857a237276fcadb1206"
+      },
+      {
+        "file": "art-source/ember/batch-02-robot/pixel-review/all20_dark_2x.png",
+        "sha256": "f56ef5b2bfc41b2008c72ccb6f3609a7ad6407eab357583dac86a87ce707c5f1"
+      }
+    ],
+    "unique_frames_actually_viewed": 20,
+    "walk_loop_endpoints_actually_viewed": [
+      {
+        "direction": "down",
+        "from": "robot_walk_down_f03",
+        "to": "robot_walk_down_f00",
+        "loop_join": true,
+        "visible_rgba_changed_pixels": 783,
+        "alpha_changed_pixels": 173,
+        "silhouette_iou": 0.889739,
+        "changed_visible_fraction": 0.499044,
+        "exact_whole_subject_translation": null,
+        "visual_observation": "已实际查看原生与整数2倍接触表的f03接f00；身份、左腕工具和轮廓稳定，轻微机械步态无明显跳位。"
+      },
+      {
+        "direction": "left",
+        "from": "robot_walk_left_f03",
+        "to": "robot_walk_left_f00",
+        "loop_join": true,
+        "visible_rgba_changed_pixels": 773,
+        "alpha_changed_pixels": 205,
+        "silhouette_iou": 0.828164,
+        "changed_visible_fraction": 0.647946,
+        "exact_whole_subject_translation": null,
+        "visual_observation": "已实际查看原生与整数2倍接触表的f03接f00；身份、左腕工具和轮廓稳定，轻微机械步态无明显跳位。"
+      },
+      {
+        "direction": "right",
+        "from": "robot_walk_right_f03",
+        "to": "robot_walk_right_f00",
+        "loop_join": true,
+        "visible_rgba_changed_pixels": 794,
+        "alpha_changed_pixels": 196,
+        "silhouette_iou": 0.847944,
+        "changed_visible_fraction": 0.615981,
+        "exact_whole_subject_translation": null,
+        "visual_observation": "已实际查看原生与整数2倍接触表的f03接f00；身份、左腕工具和轮廓稳定，轻微机械步态无明显跳位。"
+      },
+      {
+        "direction": "up",
+        "from": "robot_walk_up_f03",
+        "to": "robot_walk_up_f00",
+        "loop_join": true,
+        "visible_rgba_changed_pixels": 601,
+        "alpha_changed_pixels": 126,
+        "silhouette_iou": 0.913758,
+        "changed_visible_fraction": 0.411362,
+        "exact_whole_subject_translation": null,
+        "visual_observation": "已实际查看原生与整数2倍接触表的f03接f00；身份、左腕工具和轮廓稳定，轻微机械步态无明显跳位。"
+      }
+    ],
+    "observations": [
+      "四方向装甲、蓝灰关节与黄铜接口保持同一身份；侧面更窄，上向背槽清楚，不把背面画成正面胸灯。",
+      "解剖左臂工具保持归属：down画面右侧、up画面左侧；侧视近远遮挡合理，未对左右整图镜像换手。",
+      "四相为左接触、右经过、右接触、左经过；小幅机械步态、头胸1px起伏、脚1–2px，未发现整姿平移冒充行走。",
+      "固定虚拟锚点32/80与可见底界分开：idle底界80，walk实测78..80；远脚保持投影高度，未发现填假接地点。",
+      "已实际看浅色与深色20帧审阅表，无可见透明杂点、半透明光晕或烘焙状态色。",
+      "f03接f00逐帧静态端点审阅通过；本代理未观看Godot实时回放，编码时序另做只读测量，实时播放由制作方Godot报告独立提供。"
+    ],
+    "limits": [
+      "制作/独立验收通过不代表用户确认最终风格；此批为紧凑维修机器人步行而非跑步。",
+      "本代理未执行或代替Godot导入、重载与实时播放核验。"
+    ],
+    "finding_fixed": {
+      "id": "LEFT_WALK_VISIBLE_BOTTOM_TEXT",
+      "severity": "RECORD_TEXT_ONLY",
+      "original": "camera_depth称bbox下边界78，与实际79不一致",
+      "resolution": "制作方将4份left标注与finish文字改为末行78/bbox下边界79，并同步annotation SHA；4项只读复查通过；原PNG字节未改。"
+    },
+    "additional_finding_fixed": {
+      "id": "COMBINED_GIF_PALETTE_QUANTIZATION",
+      "severity": "DIAGNOSTIC_PREVIEW_ONLY",
+      "original": "默认16色量化使每帧76个整数2x像素的黄铜色偏灰；正式PNG/APNG不受影响。",
+      "resolution": "制作方改为标准显式16色palette；本代理仅复验合并GIF四帧，sprite RGB/RGBA不一致像素全部0，500ms周期与无限循环保持。"
+    }
+  },
+  "independent_provenance_review": {
+    "archived_master_sha_checked": 19,
+    "original_tool_output_sha_checked": 19,
+    "prompts_present": 19,
+    "finish_records_checked": 19,
+    "annotation_sha_checked": 19,
+    "dependency_sha_checked": 32,
+    "promoted_frames_sha_equal": 20,
+    "source_use": "AI_MATERIAL_AND_POSE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+    "walk_source_note": "母稿相位/比例漂移，16walk使用确认方向idle的显式原生部件、整像素移动与关节修补；不是母稿逐像素提取。",
+    "errors": [],
+    "passed": true
+  },
+  "encoded_animation_previews_read_only": [
+    {
+      "file": "art-source/ember/batch-02-robot/pixel-review/walk_down_8fps_2x.apng",
+      "sha256": "0a69985ef5837771f7ec93b3123643772164d93f806f5c649bc040d99113bd5d",
+      "frames": 4,
+      "durations_ms": [
+        125.0,
+        125.0,
+        125.0,
+        125.0
+      ],
+      "cycle_ms": 500.0,
+      "loop": 0,
+      "sprite_rgba_mismatches_by_frame": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "file": "art-source/ember/batch-02-robot/pixel-review/walk_down_8fps_2x.gif",
+      "sha256": "85e4ad4fdcf0cc6d87b94df79a61453439a950f20d9e511dcbed3d61585c6ffd",
+      "frames": 4,
+      "durations_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "cycle_ms": 500,
+      "loop": 0,
+      "sprite_rgba_mismatches_by_frame": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "file": "art-source/ember/batch-02-robot/pixel-review/walk_left_8fps_2x.apng",
+      "sha256": "e92a4bb22a3763ac37633cf4577b8d9564737e492473fc7f33d2d7bee63aa57b",
+      "frames": 4,
+      "durations_ms": [
+        125.0,
+        125.0,
+        125.0,
+        125.0
+      ],
+      "cycle_ms": 500.0,
+      "loop": 0,
+      "sprite_rgba_mismatches_by_frame": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "file": "art-source/ember/batch-02-robot/pixel-review/walk_left_8fps_2x.gif",
+      "sha256": "0828ff841e537588e01b0607577fbceecea53a986f543198b0bdbeb2ed77836b",
+      "frames": 4,
+      "durations_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "cycle_ms": 500,
+      "loop": 0,
+      "sprite_rgba_mismatches_by_frame": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "file": "art-source/ember/batch-02-robot/pixel-review/walk_right_8fps_2x.apng",
+      "sha256": "5409fe0cb55ec6982e6a0d777f155cbfa69c5944daa3364ff60a086b2903d541",
+      "frames": 4,
+      "durations_ms": [
+        125.0,
+        125.0,
+        125.0,
+        125.0
+      ],
+      "cycle_ms": 500.0,
+      "loop": 0,
+      "sprite_rgba_mismatches_by_frame": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "file": "art-source/ember/batch-02-robot/pixel-review/walk_right_8fps_2x.gif",
+      "sha256": "03faa78b1283cf5069377f84fb8d6b60ac7be586a0527136db146ce801dc53a9",
+      "frames": 4,
+      "durations_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "cycle_ms": 500,
+      "loop": 0,
+      "sprite_rgba_mismatches_by_frame": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "file": "art-source/ember/batch-02-robot/pixel-review/walk_up_8fps_2x.apng",
+      "sha256": "840be78d963481653e9e7d957b176fe1a64bf7ef1951c69bdc6d708f65968c60",
+      "frames": 4,
+      "durations_ms": [
+        125.0,
+        125.0,
+        125.0,
+        125.0
+      ],
+      "cycle_ms": 500.0,
+      "loop": 0,
+      "sprite_rgba_mismatches_by_frame": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "file": "art-source/ember/batch-02-robot/pixel-review/walk_up_8fps_2x.gif",
+      "sha256": "61c9350bd5ec14d92d1a9a7ab18bfb77b65ae534b55a5be002500c0f0d63035e",
+      "frames": 4,
+      "durations_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "cycle_ms": 500,
+      "loop": 0,
+      "sprite_rgba_mismatches_by_frame": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "file": "art-source/ember/batch-02-robot/pixel-review/walk_all_directions_8fps_2x.apng",
+      "sha256": "5dc443ef799e143d1be9cf2e99b562c963e3fc9e0c9b3bd878bfa60af0fdff98",
+      "frames": 4,
+      "durations_ms": [
+        125.0,
+        125.0,
+        125.0,
+        125.0
+      ],
+      "cycle_ms": 500.0,
+      "loop": 0,
+      "sprite_rgba_mismatches_by_frame": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "file": "art-source/ember/batch-02-robot/pixel-review/walk_all_directions_8fps_2x.gif",
+      "sha256": "8b4a7a6c5fa5f6dba8ae4d2c33f91353890e2cb6b48b02ba7d9b0fdfb3120793",
+      "frames": 4,
+      "durations_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "cycle_ms": 500,
+      "loop": 0,
+      "sprite_rgba_mismatches_by_frame": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    }
+  ],
+  "independent_preview_recheck_utc": "2026-10-04T02:01:25.212610+00:00"
+}

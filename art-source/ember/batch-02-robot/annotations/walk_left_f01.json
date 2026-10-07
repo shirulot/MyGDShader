@@ -1,0 +1,116 @@
+{
+  "direction": "left",
+  "state": "walk",
+  "frame_index": 1,
+  "idle_source": "art-source/ember/batch-02-robot/finished-frames/robot_idle_left_v001.png",
+  "parts_file": "annotations/rig_left_v001.json",
+  "design_observation": "实际4母稿逐项观看；造型材料语汇相同但头身/维护槽/相位有漂移，用确认方向idle保持一致",
+  "tool_hand_observation": "黄铜维修工具在屏幕右下的近侧左腕，不与right母稿镜像。近侧前臂和工具共用安装关系，工具暗孔保持中性。",
+  "pose_observation": "f01母稿与f00偏同只前靴，经过相不够明确；原生抬起远侧右脚并保持近侧左脚支撑。",
+  "adjustments": [
+    "AI_POSE_INCONSISTENCY: 观察到的模型phase/头身/装甲漂移逐帧如实记录",
+    "NATIVE_CORRECTIVE_COMPOSITING: 用确认方向idle的显式像素部件、不同近远zorder和局部关节修补",
+    "四phase明确接触/经过两脚交替；脚1–2px、摆臂1px、头身起伏1px；不整图warp/镜像",
+    "相机侧视的远近足底高度不同；虚拟地面原点固定(32,80)，抬脚可使可见底界78..80"
+  ],
+  "offsets": {
+    "head": [
+      0,
+      -1
+    ],
+    "torso": [
+      0,
+      -1
+    ],
+    "left_arm": [
+      0,
+      -1
+    ],
+    "right_arm": [
+      0,
+      -1
+    ],
+    "left_leg": [
+      0,
+      0
+    ],
+    "right_leg": [
+      0,
+      -1
+    ]
+  },
+  "draw_order": [
+    "right_leg",
+    "right_arm",
+    "torso",
+    "left_leg",
+    "left_arm",
+    "head"
+  ],
+  "patches": [
+    {
+      "type": "pixel",
+      "at": [
+        34,
+        45
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        35,
+        46
+      ],
+      "color": 1
+    },
+    {
+      "type": "pixel",
+      "at": [
+        30,
+        56
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        32,
+        58
+      ],
+      "color": 1
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "chest_status",
+      "safe_active_rect": [
+        26,
+        48,
+        28,
+        50
+      ],
+      "center": [
+        27,
+        49
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.421875,
+        0.5104166666666666
+      ],
+      "mask_delivery_status": "NOT_PRODUCED",
+      "visibility": "PARTIAL_SIDE_VIEW"
+    }
+  ],
+  "gait": {
+    "support_leg": "left",
+    "lifted_leg": "right",
+    "phase": "right_passing",
+    "camera_depth": "left侧视：left_leg近侧靴最低79，right_leg远侧靴投影较高；f03近侧抬2px，全体最低可见末行78、bbox下边界79（含躯干/接缝），原点不动",
+    "virtual_ground_anchor": [
+      32,
+      80
+    ]
+  }
+}

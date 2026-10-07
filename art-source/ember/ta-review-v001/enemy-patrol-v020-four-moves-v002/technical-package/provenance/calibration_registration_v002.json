@@ -1,0 +1,105 @@
+{
+  "scope": "One-time neutral source registration. Isotropic scale per unit; no animation frames normalized.",
+  "units": [
+    {
+      "unit": "enemy_patrol",
+      "source": "res://source/turnarounds/enemy_patrol_calibration_v002.png",
+      "source_sha256": "3808e7bda817d081ecf9a9e22668ab20e7379832aa9065277c16a5a261da2490",
+      "common_scale": 0.10743801652892562,
+      "target_anchor_y": 104,
+      "anchor_definition": "helmet/body axis x and mean two neutral soles y",
+      "actual_source_order_note": "Raw order matches front, southwest, southeast.",
+      "views": [
+        {
+          "direction": "generated_front",
+          "source_rect": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "source_anchor": [
+            370,
+            614
+          ]
+        },
+        {
+          "direction": "down_left",
+          "source_rect": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "source_anchor": [
+            356.5,
+            618.5
+          ]
+        },
+        {
+          "direction": "down_right",
+          "source_rect": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "source_anchor": [
+            355.5,
+            618.5
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "enemy_scout_drone",
+      "source": "res://source/turnarounds/enemy_scout_drone_calibration_v003.png",
+      "source_sha256": "0569718129648400e84b0908662b9c42fcdf2988149f7f0745695203019986b1",
+      "common_scale": 0.10655737704918032,
+      "target_anchor_y": 80,
+      "anchor_definition": "central upper-hull axis x and small central probe bottom y; outer fan bottoms are not ground anchors",
+      "actual_source_order_note": "Drone raw middle is southeast and right is southwest by hull front/near-pod orientation; cells reassigned without reflection.",
+      "views": [
+        {
+          "direction": "generated_front",
+          "source_rect": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "source_anchor": [
+            367.5,
+            494
+          ]
+        },
+        {
+          "direction": "down_left",
+          "source_rect": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "source_anchor": [
+            357.5,
+            498
+          ]
+        },
+        {
+          "direction": "down_right",
+          "source_rect": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "source_anchor": [
+            366.5,
+            499
+          ]
+        }
+      ]
+    }
+  ]
+}

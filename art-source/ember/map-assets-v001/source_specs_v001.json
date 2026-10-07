@@ -1,0 +1,946 @@
+{
+  "revision": "map_assets_v001",
+  "date": "2026-10-06",
+  "status": "REGISTERED_VISUAL_CANDIDATE",
+  "world_cell_px": 32,
+  "texture_cell_px": 128,
+  "floor_layer_scale": 0.25,
+  "camera_zoom": 2,
+  "sprites": [
+    {
+      "id": "energy_station",
+      "name": "能源站",
+      "category": "buildings",
+      "canvas_px": [
+        128,
+        160
+      ],
+      "body_max_px": [
+        96,
+        128
+      ],
+      "pivot_px": [
+        64,
+        144
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/energy_station.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+      ],
+      "subject": "The single tall off-white cylindrical energy station with circular blue-grey top, a narrow cyan vertical window and a dark polygonal mechanical base. Include its tiny integrated side elbow only; exclude separate console, ground, pipes leading away, cables, rails and shadow.",
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "console",
+      "name": "控制台",
+      "category": "buildings",
+      "canvas_px": [
+        96,
+        96
+      ],
+      "body_max_px": [
+        64,
+        64
+      ],
+      "pivot_px": [
+        48,
+        80
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/console.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+      ],
+      "subject": "The small separate off-white rectangular console immediately beside the cylindrical station, with dark cyan screen and chunky blue-grey foot. No cylindrical station, side cables, floor or labels.",
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "pump",
+      "name": "水泵",
+      "category": "buildings",
+      "canvas_px": [
+        96,
+        128
+      ],
+      "body_max_px": [
+        64,
+        96
+      ],
+      "pivot_px": [
+        48,
+        112
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/pump.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+      ],
+      "subject": "The compact upright water-pump unit at the lower-right courtyard edge: off-white small upper housing, grey-blue vertical motor, one cyan indicator, dark feet and restrained copper/brass connector. Include only short integral inlet and outlet stubs, not long external pipework, water, ground or rails.",
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "door",
+      "name": "工业门",
+      "category": "buildings",
+      "canvas_px": [
+        96,
+        128
+      ],
+      "body_max_px": [
+        64,
+        96
+      ],
+      "pivot_px": [
+        48,
+        112
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/door.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "The closed off-white framed industrial personnel door at the bottom-left of the port. Upright south-facing door, blue-grey inset panel, tiny restrained amber header light and brass latch, same stepped pixel curvature. Door plus its own frame only; exclude walls, stairs and any adjoining floor.",
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "wall_module",
+      "name": "工业墙段",
+      "category": "buildings",
+      "canvas_px": [
+        96,
+        80
+      ],
+      "body_max_px": [
+        64,
+        48
+      ],
+      "pivot_px": [
+        48,
+        64
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/wall_module.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "One straight blue-grey metal industrial wall segment matching the port's left building wall. A horizontal modular south-facing panel with pale narrow top coping, dark short front face and one understated maintenance recess. Width twice its wall-face height; exact level horizontal top. Open repeatable left and right cut ends with no end pillars or big enclosing frame. No door, pipes, attached ground, other walls or scenery.",
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "cargo_crate_blue",
+      "name": "蓝灰货箱",
+      "category": "props",
+      "canvas_px": [
+        80,
+        80
+      ],
+      "body_max_px": [
+        56,
+        56
+      ],
+      "pivot_px": [
+        40,
+        64
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/cargo_crate_blue.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "The single blue-grey ribbed cargo crate in the upper-left receiving yard: squat rectangular industrial box, visible rectangular horizontal/vertical aligned top lid and short south face, recessed panel, muted grey-blue ribs. One closed crate only, no ground or other crates.",
+      "maps": [
+        "tidal_port"
+      ]
+    },
+    {
+      "id": "cargo_crate_olive",
+      "name": "灰绿货箱",
+      "category": "props",
+      "canvas_px": [
+        80,
+        80
+      ],
+      "body_max_px": [
+        56,
+        56
+      ],
+      "pivot_px": [
+        40,
+        64
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/cargo_crate_olive.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "The single small muted grey-olive cargo crate below the blue crate in the upper-left receiving yard. Squat industrial box with recessed lid segments, grey dark trim and short south face. Keep the same manufacture and pixel density as its neighbours. One closed crate only, no ground or other crates.",
+      "maps": [
+        "tidal_port"
+      ]
+    },
+    {
+      "id": "cargo_crate_brown",
+      "name": "灰褐货箱",
+      "category": "props",
+      "canvas_px": [
+        80,
+        80
+      ],
+      "body_max_px": [
+        56,
+        56
+      ],
+      "pivot_px": [
+        40,
+        64
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/cargo_crate_brown.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "The single small dusty grey-brown cargo crate below the olive crate in the port receiving yard. Squat industrial box, panelled lid and darker ribbed sides, no bright saturation. One closed crate only, no other crates or ground.",
+      "maps": [
+        "tidal_port"
+      ]
+    },
+    {
+      "id": "winch",
+      "name": "码头绞盘",
+      "category": "props",
+      "canvas_px": [
+        96,
+        80
+      ],
+      "body_max_px": [
+        80,
+        48
+      ],
+      "pivot_px": [
+        48,
+        64
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/winch.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "The single low horizontal dock winch at the far end of the lower wooden finger pier. Blue-grey fixed rectangular frame, horizontal wound cable drum with muted brass collars, two short feet; include its own little frame only, no wooden deck, exterior guardrails or surrounding floor.",
+      "maps": [
+        "tidal_port"
+      ]
+    },
+    {
+      "id": "ore_bin",
+      "name": "矿石箱",
+      "category": "props",
+      "canvas_px": [
+        128,
+        96
+      ],
+      "body_max_px": [
+        96,
+        64
+      ],
+      "pivot_px": [
+        64,
+        80
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/ore_bin.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+      ],
+      "subject": "The open rectangular ore storage bin at the upper-left gravel yard. Blue-grey low steel tray frame, understated brass fasteners and a contained pile of small desaturated grey stones. Horizontal aligned plan, short south face. One full bin only, not empty loose ground pebbles, yard or surrounding machinery.",
+      "maps": [
+        "dry_mine"
+      ]
+    },
+    {
+      "id": "conveyor",
+      "name": "短输送带",
+      "category": "props",
+      "canvas_px": [
+        160,
+        96
+      ],
+      "body_max_px": [
+        128,
+        64
+      ],
+      "pivot_px": [
+        80,
+        80
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/conveyor.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+      ],
+      "subject": "The short horizontal ore conveyor/belt module at the lower-left work apron. A low blue-grey frame with restrained brass joints and off-white motor housing at one end, visible dark belt carrying a small line of subdued grey aggregate. One compact self-contained belt module; no ground, cargo bins or connecting machinery beyond its short ends.",
+      "maps": [
+        "dry_mine"
+      ]
+    },
+    {
+      "id": "research_cabinet",
+      "name": "研究设备柜",
+      "category": "props",
+      "canvas_px": [
+        96,
+        96
+      ],
+      "body_max_px": [
+        64,
+        64
+      ],
+      "pivot_px": [
+        48,
+        80
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/research_cabinet.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+      ],
+      "subject": "One small off-white research equipment cabinet from the upper-right research pad, rectangular housing with a dark blue-grey pedestal and small inset blue-grey service panel. One self-contained closed cabinet, tiny connector detail, no station, console, floor or multiple cabinets.",
+      "maps": [
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "sample_tank",
+      "name": "生态样本池",
+      "category": "props",
+      "canvas_px": [
+        160,
+        96
+      ],
+      "body_max_px": [
+        128,
+        64
+      ],
+      "pivot_px": [
+        80,
+        80
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/sample_tank.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+      ],
+      "subject": "One low rectangular ecological sample tank from the upper-left courtyard: a blue-grey steel raised trough with an off-white thin rim, subdued brass corner clamps and contained dark blue-green water, a few muted olive floating leaves and sparse short reeds INSIDE the tank. Keep the outside silhouette clean. One tank only; no surrounding water, flooring, extra tanks or long trailing foliage.",
+      "maps": [
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "drum",
+      "name": "工业桶",
+      "category": "props",
+      "canvas_px": [
+        64,
+        80
+      ],
+      "body_max_px": [
+        40,
+        56
+      ],
+      "pivot_px": [
+        32,
+        64
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/drum.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+      ],
+      "subject": "One small upright off-white and blue-grey industrial drum beside the ore bins, visible round top in orthographic near-top-down view, subtle body bands, tiny dark lid mark and short base rim. No lettering, hazard logo, accompanying crates, ground or shadows.",
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "rock_cluster",
+      "name": "岩石簇",
+      "category": "props",
+      "canvas_px": [
+        96,
+        80
+      ],
+      "body_max_px": [
+        64,
+        48
+      ],
+      "pivot_px": [
+        48,
+        64
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/rock_cluster.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+      ],
+      "subject": "One compact cluster of three low grey-brown angular stones like the sparse stones on the outer sandy ground. Large quiet stepped pixel planes, muted colours, restrained upper-left volume shade, no photorealism or glitter. Entire isolated three-stone cluster only, no ground, dust cloud or other props.",
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "reed_cluster",
+      "name": "芦苇簇",
+      "category": "props",
+      "canvas_px": [
+        80,
+        96
+      ],
+      "body_max_px": [
+        48,
+        64
+      ],
+      "pivot_px": [
+        40,
+        80
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/reed_cluster.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+      ],
+      "subject": "One sparse small rooted clump of five to seven slender muted olive and straw-colour wetland reeds with a few broad low leaves, matching the channel-edge plants. Root contact line at bottom, no soil, pot, water patch, horizon or giant fern. Clear small pixel clusters, no soft semi-transparent painterly brush or neon green.",
+      "maps": [
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "lily_patch",
+      "name": "浮叶簇",
+      "category": "props",
+      "canvas_px": [
+        80,
+        64
+      ],
+      "body_max_px": [
+        56,
+        40
+      ],
+      "pivot_px": [
+        40,
+        32
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/lily_patch.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+      ],
+      "subject": "One flat sparse floating-leaf patch from the channels: six to nine small muted olive-green roundish pixel lily leaves at varying little sizes, with dark subdued outlines and small gaps between, viewed from the same orthographic top angle. Isolated floating leaves only. Absolutely no blue water rectangle, ground, tall vegetation, pot or shadow.",
+      "maps": [
+        "overgrown_lab"
+      ],
+      "anchor_mode": "center"
+    },
+    {
+      "id": "wall_vertical",
+      "name": "工业纵向墙段",
+      "category": "buildings",
+      "canvas_px": [
+        80,
+        128
+      ],
+      "body_max_px": [
+        48,
+        96
+      ],
+      "pivot_px": [
+        40,
+        112
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/wall_vertical.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "One straight north-south industrial wall module matching the tall boundary wall along the left side of the port. A slim long blue-grey wall segment in the same orthographic viewpoint: vertical in the image, a narrow pale coping visible along its top plane and a restrained dark west/front side. Clean open connection ends at its top and bottom; no terminal pillars, door, attached floor, pipes or long cast shadow. Keep the same wall thickness and manufacture as the horizontal wall module.",
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "wall_corner",
+      "name": "工业墙转角",
+      "category": "buildings",
+      "canvas_px": [
+        96,
+        96
+      ],
+      "body_max_px": [
+        64,
+        64
+      ],
+      "pivot_px": [
+        48,
+        80
+      ],
+      "source_path": "res://art-source/ember/map-assets-v001/masters/wall_corner.png",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "One industrial wall L-corner module, for joining an east-west and north-south segment of the port boundary wall. Axis-aligned stepped right-angle plan; blue-grey wall panel, narrow pale coping and restrained dark exposed south/west faces in fixed upper-left light. Two open joining arms, not a sealed freestanding pillar, no enclosing floor square, door, attached pipe or scenery.",
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ]
+    },
+    {
+      "id": "pipe_horizontal",
+      "name": "pipe_horizontal",
+      "category": "props",
+      "canvas_px": [
+        64,
+        64
+      ],
+      "body_max_px": [
+        32,
+        32
+      ],
+      "pivot_px": [
+        32,
+        32
+      ],
+      "anchor_mode": "center",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/pipe_kit.png",
+      "region_px": [
+        0,
+        0,
+        384,
+        512
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ],
+      "registration_note": "Observed 1536x1024 source sheet, four columns/two rows. Manually confirmed ROI; decorative piece, no automatic port guarantee."
+    },
+    {
+      "id": "pipe_vertical",
+      "name": "pipe_vertical",
+      "category": "props",
+      "canvas_px": [
+        64,
+        64
+      ],
+      "body_max_px": [
+        32,
+        32
+      ],
+      "pivot_px": [
+        32,
+        32
+      ],
+      "anchor_mode": "center",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/pipe_kit.png",
+      "region_px": [
+        384,
+        0,
+        384,
+        512
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ],
+      "registration_note": "Observed 1536x1024 source sheet, four columns/two rows. Manually confirmed ROI; decorative piece, no automatic port guarantee."
+    },
+    {
+      "id": "pipe_elbow_ne",
+      "name": "pipe_elbow_ne",
+      "category": "props",
+      "canvas_px": [
+        64,
+        64
+      ],
+      "body_max_px": [
+        32,
+        32
+      ],
+      "pivot_px": [
+        32,
+        32
+      ],
+      "anchor_mode": "center",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/pipe_kit.png",
+      "region_px": [
+        768,
+        0,
+        384,
+        512
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ],
+      "registration_note": "Observed 1536x1024 source sheet, four columns/two rows. Manually confirmed ROI; decorative piece, no automatic port guarantee."
+    },
+    {
+      "id": "pipe_elbow_nw",
+      "name": "pipe_elbow_nw",
+      "category": "props",
+      "canvas_px": [
+        64,
+        64
+      ],
+      "body_max_px": [
+        32,
+        32
+      ],
+      "pivot_px": [
+        32,
+        32
+      ],
+      "anchor_mode": "center",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/pipe_kit.png",
+      "region_px": [
+        1152,
+        0,
+        384,
+        512
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ],
+      "registration_note": "Observed 1536x1024 source sheet, four columns/two rows. Manually confirmed ROI; decorative piece, no automatic port guarantee."
+    },
+    {
+      "id": "pipe_elbow_se",
+      "name": "pipe_elbow_se",
+      "category": "props",
+      "canvas_px": [
+        64,
+        64
+      ],
+      "body_max_px": [
+        32,
+        32
+      ],
+      "pivot_px": [
+        32,
+        32
+      ],
+      "anchor_mode": "center",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/pipe_kit.png",
+      "region_px": [
+        0,
+        512,
+        384,
+        512
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ],
+      "registration_note": "Observed 1536x1024 source sheet, four columns/two rows. Manually confirmed ROI; decorative piece, no automatic port guarantee."
+    },
+    {
+      "id": "pipe_elbow_sw",
+      "name": "pipe_elbow_sw",
+      "category": "props",
+      "canvas_px": [
+        64,
+        64
+      ],
+      "body_max_px": [
+        32,
+        32
+      ],
+      "pivot_px": [
+        32,
+        32
+      ],
+      "anchor_mode": "center",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/pipe_kit.png",
+      "region_px": [
+        384,
+        512,
+        384,
+        512
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ],
+      "registration_note": "Observed 1536x1024 source sheet, four columns/two rows. Manually confirmed ROI; decorative piece, no automatic port guarantee."
+    },
+    {
+      "id": "pipe_terminal_h",
+      "name": "pipe_terminal_h",
+      "category": "props",
+      "canvas_px": [
+        64,
+        64
+      ],
+      "body_max_px": [
+        32,
+        32
+      ],
+      "pivot_px": [
+        32,
+        32
+      ],
+      "anchor_mode": "center",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/pipe_kit.png",
+      "region_px": [
+        768,
+        512,
+        384,
+        512
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ],
+      "registration_note": "Observed 1536x1024 source sheet, four columns/two rows. Manually confirmed ROI; decorative piece, no automatic port guarantee."
+    },
+    {
+      "id": "pipe_terminal_v",
+      "name": "pipe_terminal_v",
+      "category": "props",
+      "canvas_px": [
+        64,
+        64
+      ],
+      "body_max_px": [
+        32,
+        32
+      ],
+      "pivot_px": [
+        32,
+        32
+      ],
+      "anchor_mode": "center",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/pipe_kit.png",
+      "region_px": [
+        1152,
+        512,
+        384,
+        512
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "maps": [
+        "tidal_port",
+        "dry_mine",
+        "overgrown_lab"
+      ],
+      "registration_note": "Observed 1536x1024 source sheet, four columns/two rows. Manually confirmed ROI; decorative piece, no automatic port guarantee."
+    }
+  ],
+  "floors": [
+    {
+      "material_id": 0,
+      "key": "steel",
+      "name": "蓝灰钢板",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/floor_steel.png",
+      "target_size_px": [
+        1024,
+        1024
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "Muted blue-grey coated steel continuous floor matching the large quiet blue apron in the port. Very sparse low-contrast grouped wear and fine muted grain, no individual-cell outline, no rivets or metal sheen."
+    },
+    {
+      "material_id": 3,
+      "key": "rust",
+      "name": "锈褐钢面",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/floor_rust.png",
+      "target_size_px": [
+        1024,
+        1024
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+      ],
+      "subject": "Muted rust-brown worn metal surface matching the machine servicing pad in the mine. Low-chroma brown-orange weathering on an understated blue-grey base, in quiet large irregular patches. No bright rust, raised flakes, rivets, panels, hole or machinery."
+    },
+    {
+      "material_id": 4,
+      "key": "concrete",
+      "name": "浅砂混凝土",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/floor_concrete.png",
+      "target_size_px": [
+        1024,
+        1024
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "Desaturated light sandy-grey concrete surface matching the cargo receiving strip in the port. Quiet broad warm grey mass, subtle flat speckle, very occasional tiny low-contrast scuffs. No slab grid, thick borders, big cracks or directional shading."
+    },
+    {
+      "material_id": 5,
+      "key": "teal",
+      "name": "青绿旧涂层",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/floor_teal.png",
+      "target_size_px": [
+        1024,
+        1024
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+      ],
+      "subject": "Desaturated grey-teal worn coated floor matching the laboratory service corridors. Quiet worn blue-green paint over muted grey substrate, tiny restrained patchy scuffs. No moss, grass, plates, bolted grid, gloss or neon."
+    },
+    {
+      "material_id": 6,
+      "key": "ceramic",
+      "name": "灰白地砖",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/floor_ceramic.png",
+      "target_size_px": [
+        1024,
+        1024
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+      ],
+      "subject": "Worn pale warm-grey ceramic work tiles matching the laboratory energy-station work pad. Simple level rectangular square tile arrangement with narrow low-contrast grey grout, about eight equal square tiles across the whole1024 period. A few quiet muted olive-grey traces, not vegetation. No individual tile bevel, thick black joints, highlights or embossed frame. Opposite border grout phases match, seamless bothaxes."
+    },
+    {
+      "material_id": 9,
+      "key": "wood",
+      "name": "灰褐木板",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/floor_wood.png",
+      "target_size_px": [
+        1024,
+        1024
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+      ],
+      "subject": "Grey-brown aged timber planks matching the lower dock finger in the port. Horizontal plank bands with fine very low-contrast grain and staggered end joints, orderly flat worn working deck, about sixteen plank rows across the whole1024 period. No nails array, frame, strong grooves, perspective, loose ends or bevel. Opposite-edge plank and joint phases match seamless bothaxes."
+    },
+    {
+      "material_id": 10,
+      "key": "sand",
+      "name": "压实沙土",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/floor_sand.png",
+      "target_size_px": [
+        1024,
+        1024
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+      ],
+      "subject": "Desaturated muted golden-ochre compacted hard sandy ground matching the large walkable mine yard. Tiny quiet grey-brown grains and a few flat restrained wear patches, hard level maintained work surface, no dunes, footprints, pebble objects, cracks, white stones or shadows."
+    },
+    {
+      "material_id": 11,
+      "key": "gravel",
+      "name": "灰色碎石",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/floor_gravel.png",
+      "target_size_px": [
+        1024,
+        1024
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+      ],
+      "subject": "Desaturated cool grey compacted aggregate matching the upper-left storage yard in the mine. Small tightly packed angular grey grain clusters, flat and quiet at game scale, avoid sparse giant isolated stones. No raised rock piles, grass, strong individual pebble shadows, soil frame or metal plates."
+    },
+    {
+      "material_id": 12,
+      "key": "moss",
+      "name": "苔石地坪",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/floor_moss.png",
+      "target_size_px": [
+        1024,
+        1024
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+      ],
+      "subject": "Muted grey weathered stone with sparse sage and olive-green flat moss islands matching the lab courtyards. Most area remains neutral quiet grey; moss is low-saturation and thin, grouped irregularly, at most thirtypercent of area. No tall grass, leaves, holes, thick crack trenches, rocks, fluorescentgreen or strong dark border."
+    }
+  ],
+  "backgrounds": [
+    {
+      "id": "pit_rock",
+      "source_path": "res://art-source/ember/map-assets-v001/masters/pit_rock.png",
+      "target_size_px": [
+        1024,
+        1024
+      ],
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+      ]
+    }
+  ],
+  "pipe_kit": {
+    "id": "pipe_kit",
+    "source_path": "res://art-source/ember/map-assets-v001/masters/pipe_kit.png",
+    "components": [
+      "pipe_horizontal",
+      "pipe_vertical",
+      "pipe_elbow_ne",
+      "pipe_elbow_nw",
+      "pipe_elbow_se",
+      "pipe_elbow_sw",
+      "pipe_terminal_h",
+      "pipe_terminal_v"
+    ],
+    "layout": "Observed source1536x1024, 4x2; explicit384x512 regions, alpha crop and nearest only",
+    "category": "props",
+    "registration": "manual modular decoration, not an automatically validated pipe terrain"
+  },
+  "reuse": {
+    "robot": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+    "structural": "res://assets/ember/environment/reference_floor_v002/",
+    "prior_materials": [
+      1,
+      2,
+      7,
+      8
+    ]
+  },
+  "constraints": "Transparent sprites; floor interiors fullyopaque; preserve generated RGBA in nearest registration; no procedural repaint; shader/collision/navigation/gameplay unchanged."
+}

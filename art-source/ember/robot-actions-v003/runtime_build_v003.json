@@ -1,0 +1,477 @@
+{
+	"status": "ROBOT_ACTIONS_V003_PASS",
+	"phase": "build",
+	"errors": [],
+	"engine": {
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"hex": 263938,
+		"status": "stable",
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"timestamp": 0,
+		"string": "4.7.2-stable (steam)"
+	},
+	"timestamp_utc": "2026-10-06T06:24:36",
+	"gpu_requested": false,
+	"snapshot_requested": false,
+	"animation_frames_dir": "",
+	"dependencies_sha256": {
+		"res://art-source/ember/robot-actions-v003/frame_manifest_v003.json": "977d382130cd89aafebbf7102dbc1daf9ff0bdb001fe5a4c47c6eb89bce030a5",
+		"res://assets/ember/characters/robot/robot_frames_catalog_v002.json": "4294535fb05c1fec456003184aa674c6a639d64eeb8ccb57ee03c8d9b7b14630",
+		"res://assets/ember/characters/robot/robot_frames_catalog_v003.json": "68dc31540d80f0f3215a2e679ff4f7f2fa84bb4ed551e38c583c60996ebc9f3c",
+		"res://assets/ember/characters/robot/robot_animations_v003.png": "09c42739f28eb9b97f9e209e7ee05100a572968c6fc152603117165e3edb7bc4",
+		"res://assets/ember/characters/robot/robot_sprite_frames_v003.tres": "bb18fe3dd0ef30e2ce23f7bb659e8f68f160448c0138887a3c5d02256313cab9",
+		"res://scenes/ember/robot_animation_sandbox_v003.tscn": "a37268566495a25c38be67c49b8639486dddba5cf6d4d40d30aa91ac31398e8b",
+		"res://scripts/ember/robot_action_preview_v003.gd": "e8e206edbbe21d4ab14d9143a73b333bb3152d3ec959c4fb435c7d3971c30b6a",
+		"res://tools/build_robot_animation_v003.gd": "97d56d4e67d6cc41b54dac44d4842ffabba07367257812b1cf6f6c57625353ff"
+	},
+	"observed": {
+		"new_pose_count": 20,
+		"reused_pose_count": 20,
+		"source_frames": [
+			{
+				"id": "robot_idle_down_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+				"sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_idle_down_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_down_f01_v003.png",
+				"sha256": "2e95993438938a2857b2e8de816b7f6c4561e907ef0e69bcdf4285e10ad9225e",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_walk_down_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_down_f00_v002.png",
+				"sha256": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_down_f01",
+				"file": "res://assets/ember/characters/robot/robot_walk_down_f01_v002.png",
+				"sha256": "f95d486bc2c11f4bf1364a879b3b091dc0015320092a26a8c0b113bf8b2bc779",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_down_f02",
+				"file": "res://assets/ember/characters/robot/robot_walk_down_f02_v002.png",
+				"sha256": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_down_f03",
+				"file": "res://assets/ember/characters/robot/robot_walk_down_f03_v002.png",
+				"sha256": "aa6507d006d10b81bcf299c4bec1f3b59b3f21bec135ec8283497fcd47106f07",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_collect_down_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f00_v003.png",
+				"sha256": "d3169fb88ecfcad45d271553e458b5b937180f95472166a4b3d016fe771893b6",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_down_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f01_v003.png",
+				"sha256": "fa4ce9bd6ffa21dd5f684593a1154391a4e8b7d9bda5e7379a36900458131e43",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_down_f02",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f02_v003.png",
+				"sha256": "17b43444043493a0fdc7e3c6c18559c657c64077c4ad009331d1b0f02c0cb836",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_down_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f03_v003.png",
+				"sha256": "1fcf5723fca74164f5ebac61e21fa07b875074351ac1b85d06c3fcc01b45a709",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_idle_left_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+				"sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_idle_left_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_left_f01_v003.png",
+				"sha256": "874b57cf2a0d7485f8519fe9928ea742211c8fa5669b334fe2b6eea002b548a5",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_walk_left_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f00_v002.png",
+				"sha256": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_left_f01",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f01_v002.png",
+				"sha256": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_left_f02",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f02_v002.png",
+				"sha256": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_left_f03",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f03_v002.png",
+				"sha256": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_collect_left_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f00_v003.png",
+				"sha256": "ae201113c546d552dc60cc1c83986f91d14bde6a07dd60a76e09887c85993364",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_left_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f01_v003.png",
+				"sha256": "6030aef3abd4b8fae86a68008d18cac85c8e9de0a0dd4bd3f20aadf95042ec8c",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_left_f02",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f02_v003.png",
+				"sha256": "9a24e21acb504b2e656cb82519ebe36286b4221220dfb27b6a882203786e2600",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_left_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f03_v003.png",
+				"sha256": "5bbaf306937ba18119613606eb55ef673dcaded359c821f8b9bf7809cdb7c240",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_idle_right_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+				"sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_idle_right_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_right_f01_v003.png",
+				"sha256": "2c3c41847a951f5b8747eb0823785b703fa4d6d5db4822ece863079265a8bed6",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_walk_right_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_right_f00_v002.png",
+				"sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_right_f01",
+				"file": "res://assets/ember/characters/robot/robot_walk_right_f01_v002.png",
+				"sha256": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_right_f02",
+				"file": "res://assets/ember/characters/robot/robot_walk_right_f02_v002.png",
+				"sha256": "29976d10acaf633868d577e2be6eac8194ffd162965483ff261ae3f63996f311",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_right_f03",
+				"file": "res://assets/ember/characters/robot/robot_walk_right_f03_v002.png",
+				"sha256": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_collect_right_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f00_v003.png",
+				"sha256": "e72c000e5358d8ca9052fe26036ddfa37dab306bbfbc7870b109bf67f812868c",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_right_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f01_v003.png",
+				"sha256": "19be1e21a176a592e76beede30247989a04586863d90fc009b13528e6b73a9f0",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_right_f02",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f02_v003.png",
+				"sha256": "70bbe562c8d28a53cc3ee1307205e19cfdd9c1dc9af607b6f22f7501c5cf1302",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_right_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f03_v003.png",
+				"sha256": "7b00a234a10fd1302bee92ca6e004006316bb25e35f753bc4958457630f332ec",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_idle_up_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+				"sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_idle_up_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_up_f01_v003.png",
+				"sha256": "43206b342b7ed309b64170632308b7336b4b9ea11b3660dfedc7d24e63290760",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_walk_up_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_up_f00_v002.png",
+				"sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_up_f01",
+				"file": "res://assets/ember/characters/robot/robot_walk_up_f01_v002.png",
+				"sha256": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_up_f02",
+				"file": "res://assets/ember/characters/robot/robot_walk_up_f02_v002.png",
+				"sha256": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_walk_up_f03",
+				"file": "res://assets/ember/characters/robot/robot_walk_up_f03_v002.png",
+				"sha256": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": true
+			},
+			{
+				"id": "robot_collect_up_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f00_v003.png",
+				"sha256": "0f410fb1584b702aaf1dd47bf2285ab23ad76a88827cf6caa639856bf4362912",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_up_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f01_v003.png",
+				"sha256": "1c9045a4285abe78a0a01bae15f354b24f7e14265865a8fe0d8b68a5c96410ec",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_up_f02",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f02_v003.png",
+				"sha256": "7b574766f799b985304979df1bcc3027022a8acb84441ed2db211afa8bdde4fd",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			},
+			{
+				"id": "robot_collect_up_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f03_v003.png",
+				"sha256": "2c17206f911e002844274e3449d5b54debb123a9ed0433b137249683fc49fba8",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"reused_original": false
+			}
+		]
+	},
+	"scope": "40个姿态源SHA/二值Alpha、逐RGBA图集、40个导入裁片、12剪辑时序、固定脚底/Nearest/4倍预览、真实计时播放、公开控制入口；可选80项透明GPU读回。关节与动作美术由独立逐帧审查负责。"
+}

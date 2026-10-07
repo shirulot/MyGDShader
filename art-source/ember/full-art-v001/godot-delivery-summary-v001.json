@@ -1,0 +1,150 @@
+{
+  "status": "GODOT_FULL_ART_AND_FRESH_REUSE_PASS",
+  "fresh_files_changed": [],
+  "stages": [
+    {
+      "stage": "import",
+      "stderr_bytes": 0,
+      "exit_code": 0,
+      "arguments": [
+        "--headless",
+        "--editor",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--import"
+      ]
+    },
+    {
+      "stage": "import-settings",
+      "stderr_bytes": 0,
+      "exit_code": 0,
+      "arguments": [
+        "--headless",
+        "--editor",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--import"
+      ]
+    },
+    {
+      "stage": "build",
+      "stderr_bytes": 0,
+      "arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--script",
+        "res://tools/build_ember_asset_library.gd",
+        "--"
+      ],
+      "exit_code": 0
+    },
+    {
+      "stage": "verify",
+      "stderr_bytes": 0,
+      "arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--script",
+        "res://tools/build_ember_asset_library.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\godot-verify-only-v001.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "stage": "render",
+      "stderr_bytes": 0,
+      "arguments": [
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--position",
+        "-2000,-2000",
+        "--script",
+        "res://tools/build_ember_asset_library.gd",
+        "--",
+        "--verify-only",
+        "--screenshots=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\render",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\godot-render-v001.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "stage": "fresh-import",
+      "stderr_bytes": 0,
+      "arguments": [
+        "--headless",
+        "--editor",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\fresh-project-v001",
+        "--import"
+      ],
+      "exit_code": 0
+    },
+    {
+      "stage": "fresh-library",
+      "stderr_bytes": 0,
+      "arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\fresh-project-v001",
+        "--script",
+        "res://tools/build_ember_asset_library.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\godot-fresh-library-v001.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "stage": "fresh-tilesets",
+      "stderr_bytes": 0,
+      "arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\fresh-project-v001",
+        "--script",
+        "res://tools/build_ember_tilesets.gd",
+        "--",
+        "--verify-only"
+      ],
+      "exit_code": 0
+    },
+    {
+      "stage": "fresh-robot",
+      "stderr_bytes": 0,
+      "arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\fresh-project-v001",
+        "--script",
+        "res://tools/build_ember_robot_animation.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\godot-fresh-robot-v001.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "stage": "fresh-render",
+      "stderr_bytes": 0,
+      "arguments": [
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\fresh-project-v001",
+        "--position",
+        "-2000,-2000",
+        "--script",
+        "res://tools/build_ember_asset_library.gd",
+        "--",
+        "--verify-only",
+        "--screenshots=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\fresh-render",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\godot-fresh-render-v001.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "copied_file_count": 153,
+  "fresh_project": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\full-art-v001\\fresh-project-v001"
+}

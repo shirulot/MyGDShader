@@ -1,0 +1,22 @@
+; 独立复用工程，不加载主项目的 Game autoload 或课程状态。
+config_version=5
+
+[application]
+config/name="Ember Floor Materials v003"
+run/main_scene="res://scenes/ember/reference_floor_sandbox_v003.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1536
+window/size/viewport_height=1024
+window/size/window_width_override=1152
+window/size/window_height_override=768
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.04,0.06,0.08,1)
+

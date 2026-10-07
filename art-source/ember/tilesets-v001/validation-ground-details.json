@@ -1,0 +1,952 @@
+{
+  "schema_version": 1,
+  "report_type": "READ_ONLY_NATIVE_GROUND_DETAILS_VALIDATION",
+  "created_utc": "2026-10-03T16:50:48.071438+00:00",
+  "scope": "12 native single-tile PNGs only; full 62-tile atlases/catalog and Godot resource loading are validated separately.",
+  "measurement_method": "Read PNG pixels with Pillow; reuse atlas validator palette/metrics/seam definitions; write JSON only.",
+  "png_modified_by_validation": false,
+  "summary": {
+    "tiles_measured": 12,
+    "native_size": [
+      32,
+      32
+    ],
+    "semi_transparent_pixels": 0,
+    "off_registered_palette_color_occurrences": 0,
+    "directed_floor_seams": 32,
+    "nonexact_floor_seams": 0,
+    "automatic_checks_pass": true
+  },
+  "checks": {
+    "exact_12_tile_set": true,
+    "12_unique_finish_records": true,
+    "all_png_automatic_checks": true,
+    "32_directed_floor_seams_exact": true,
+    "hatch_common_frame_and_alpha": true,
+    "review_boards_present": true,
+    "native_redraw_provenance_declared": true
+  },
+  "tiles": [
+    {
+      "id": "decal_bolts",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/decal_bolts.png",
+      "sha256": "aa14f99052366801eb4e3284df3511ec4e381308eb34ca85e5c79fd6f552ea26",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        5,
+        7,
+        23,
+        27
+      ],
+      "transparent_pixels": 949,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 75,
+      "visible_rgb_color_count": 4,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "DESIGN_REFERENCE_WITH_NATIVE_REDRAW",
+      "sources": [
+        "art-source/ember/tilesets-v001/generated/hatch_closed_module_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "object_has_transparency": true,
+        "object_not_cut_at_canvas_border": true
+      }
+    },
+    {
+      "id": "decal_cable_loop",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/decal_cable_loop.png",
+      "sha256": "8ada2b14ab4dbfb8347ddabf8a0e78937b0cc5724ebcd481b0e14f4f416532e7",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        4,
+        6,
+        28,
+        26
+      ],
+      "transparent_pixels": 904,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 120,
+      "visible_rgb_color_count": 9,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "SAMPLED_MATERIAL_OR_COMPONENT_WITH_NATIVE_RETOUCH",
+      "sources": [
+        "art-source/ember/tilesets-v001/generated/cable_loop_module_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "object_has_transparency": true,
+        "object_not_cut_at_canvas_border": true
+      }
+    },
+    {
+      "id": "decal_crack",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/decal_crack.png",
+      "sha256": "04528067fd93954689421f42ebf1ea243c8a329071e6d43746ae519f2a9d2b5c",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        7,
+        8,
+        23,
+        24
+      ],
+      "transparent_pixels": 998,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 26,
+      "visible_rgb_color_count": 2,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "DESIGN_REFERENCE_WITH_NATIVE_REDRAW",
+      "sources": [
+        "art-source/ember/tilesets-v001/generated/crack_decal_master_v002.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "object_has_transparency": true,
+        "object_not_cut_at_canvas_border": true
+      }
+    },
+    {
+      "id": "decal_debris",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/decal_debris.png",
+      "sha256": "a1338fd91bfd8f4a9f6cbc9af86d55ec7ccb7f72875fd65021ac95854ca81a24",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        7,
+        10,
+        24,
+        22
+      ],
+      "transparent_pixels": 918,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 106,
+      "visible_rgb_color_count": 9,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "SAMPLED_MATERIAL_OR_COMPONENT_WITH_NATIVE_RETOUCH",
+      "sources": [
+        "art-source/ember/tilesets-v001/generated/debris_module_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "object_has_transparency": true,
+        "object_not_cut_at_canvas_border": true
+      }
+    },
+    {
+      "id": "decal_oil",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/decal_oil.png",
+      "sha256": "a4d676c03a3b96cd38a3ea3807e40d47a4cb1d9b53fddf9d51ca81927925e497",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        7,
+        10,
+        25,
+        24
+      ],
+      "transparent_pixels": 854,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 170,
+      "visible_rgb_color_count": 2,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "DESIGN_REFERENCE_WITH_NATIVE_REDRAW",
+      "sources": [
+        "art-source/ember/batch-01/generated/floor_wet_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "object_has_transparency": true,
+        "object_not_cut_at_canvas_border": true
+      }
+    },
+    {
+      "id": "decal_rust",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/decal_rust.png",
+      "sha256": "e16a10489c9abfd491dcea033832dc830be483a057a7b1f216229f05014a635d",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        7,
+        8,
+        17,
+        23
+      ],
+      "transparent_pixels": 948,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 76,
+      "visible_rgb_color_count": 2,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "DESIGN_REFERENCE_WITH_NATIVE_REDRAW",
+      "sources": [
+        "art-source/ember/tilesets-v001/generated/crack_module_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "object_has_transparency": true,
+        "object_not_cut_at_canvas_border": true
+      }
+    },
+    {
+      "id": "floor_clean",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/floor_clean.png",
+      "sha256": "e7efe956a453ca7a0e1be4670d5b4b9b06d0af7030f441182d3ca919753f70d2",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "transparent_pixels": 0,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1024,
+      "visible_rgb_color_count": 3,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "SAMPLED_MATERIAL_OR_COMPONENT_WITH_NATIVE_RETOUCH",
+      "sources": [
+        "art-source/ember/batch-01/generated/floor_clean_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "floor_fully_opaque": true,
+        "floor_interface_metadata_valid": true
+      }
+    },
+    {
+      "id": "floor_grate",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/floor_grate.png",
+      "sha256": "642343987efe539b710a4a40d091c1f42baef58af46b5a549abd38d92639acac",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "transparent_pixels": 0,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1024,
+      "visible_rgb_color_count": 4,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "SAMPLED_MATERIAL_OR_COMPONENT_WITH_NATIVE_RETOUCH",
+      "sources": [
+        "art-source/ember/batch-01/generated/floor_grate_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "floor_fully_opaque": true,
+        "floor_interface_metadata_valid": true
+      }
+    },
+    {
+      "id": "floor_wet",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/floor_wet.png",
+      "sha256": "b9fd5fcfc9e1d8769b4d298a37b89633da45ceb8d22f29ff68908575f47d615e",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "transparent_pixels": 0,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1024,
+      "visible_rgb_color_count": 5,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "SAMPLED_MATERIAL_OR_COMPONENT_WITH_NATIVE_RETOUCH",
+      "sources": [
+        "art-source/ember/batch-01/generated/floor_wet_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "floor_fully_opaque": true,
+        "floor_interface_metadata_valid": true
+      }
+    },
+    {
+      "id": "floor_worn",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/floor_worn.png",
+      "sha256": "c95f216bd68b8a012a12bed934ed82df0207f00eb51d38f3f530c16a808d97f3",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "transparent_pixels": 0,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1024,
+      "visible_rgb_color_count": 5,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "SAMPLED_MATERIAL_OR_COMPONENT_WITH_NATIVE_RETOUCH",
+      "sources": [
+        "art-source/ember/batch-01/generated/floor_worn_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "floor_fully_opaque": true,
+        "floor_interface_metadata_valid": true
+      }
+    },
+    {
+      "id": "hatch_closed",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/hatch_closed.png",
+      "sha256": "7f91785d9c2aa94e182541c1fcf9e7ac8637fe5000e75bbcbeba45cd38a25d75",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "transparent_pixels": 296,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 728,
+      "visible_rgb_color_count": 9,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "SAMPLED_MATERIAL_OR_COMPONENT_WITH_NATIVE_RETOUCH",
+      "sources": [
+        "art-source/ember/tilesets-v001/generated/hatch_closed_module_master_v001.png",
+        "art-source/ember/tilesets-v001/generated/hatch_open_module_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "object_has_transparency": true,
+        "object_not_cut_at_canvas_border": true
+      }
+    },
+    {
+      "id": "hatch_open",
+      "path": "art-source/ember/tilesets-v001/finished-tiles/ground_details/hatch_open.png",
+      "sha256": "506b41ea2f30ad3224e1578cbd1421e749a2f4c815eff21be006c2ed426e8a00",
+      "size": [
+        32,
+        32
+      ],
+      "source_mode": "RGBA",
+      "bbox_exclusive_local": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "transparent_pixels": 296,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 728,
+      "visible_rgb_color_count": 7,
+      "off_registered_palette_colors": [],
+      "off_registered_palette_pixels": 0,
+      "source_use": "DESIGN_REFERENCE_WITH_NATIVE_REDRAW",
+      "sources": [
+        "art-source/ember/tilesets-v001/generated/hatch_closed_module_master_v001.png",
+        "art-source/ember/tilesets-v001/generated/hatch_open_module_master_v001.png"
+      ],
+      "checks": {
+        "native_size_32": true,
+        "source_alpha_channel": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "visible_nonempty": true,
+        "source_record_present": true,
+        "unchanged_during_measurement": true,
+        "object_has_transparency": true,
+        "object_not_cut_at_canvas_border": true
+      }
+    }
+  ],
+  "floor_adjacencies": [
+    {
+      "first": "floor_clean",
+      "second": "floor_clean",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_clean",
+      "second": "floor_clean",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_clean",
+      "second": "floor_worn",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_clean",
+      "second": "floor_worn",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_clean",
+      "second": "floor_grate",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_clean",
+      "second": "floor_grate",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_clean",
+      "second": "floor_wet",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_clean",
+      "second": "floor_wet",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_worn",
+      "second": "floor_clean",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_worn",
+      "second": "floor_clean",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_worn",
+      "second": "floor_worn",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_worn",
+      "second": "floor_worn",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_worn",
+      "second": "floor_grate",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_worn",
+      "second": "floor_grate",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_worn",
+      "second": "floor_wet",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_worn",
+      "second": "floor_wet",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_grate",
+      "second": "floor_clean",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_grate",
+      "second": "floor_clean",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_grate",
+      "second": "floor_worn",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_grate",
+      "second": "floor_worn",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_grate",
+      "second": "floor_grate",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_grate",
+      "second": "floor_grate",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_grate",
+      "second": "floor_wet",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_grate",
+      "second": "floor_wet",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_wet",
+      "second": "floor_clean",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_wet",
+      "second": "floor_clean",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_wet",
+      "second": "floor_worn",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_wet",
+      "second": "floor_worn",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_wet",
+      "second": "floor_grate",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_wet",
+      "second": "floor_grate",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_wet",
+      "second": "floor_wet",
+      "axis": "H",
+      "side": "E",
+      "opposite": "W",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    },
+    {
+      "first": "floor_wet",
+      "second": "floor_wet",
+      "axis": "V",
+      "side": "S",
+      "opposite": "N",
+      "samples": 32,
+      "mean_absolute_rgb_delta_0_255": 0.0,
+      "max_mean_absolute_rgb_delta_0_255": 0.0,
+      "visible_rgba_mismatch_count": 0,
+      "alpha_mismatch_count": 0,
+      "exact_edge_pass": true
+    }
+  ],
+  "hatch_state_alignment": {
+    "replaceable_inner_rect_exclusive": [
+      8,
+      8,
+      24,
+      24
+    ],
+    "outside_inner_rect_rgba_difference_count": 0,
+    "alpha_difference_count": 0,
+    "same_bbox": true
+  },
+  "agent_visual_review": {
+    "status": "REVIEWED_BY_ROOT_AND_ASSET_AUDIT_AGENTS",
+    "reviewer_ids": [
+      "/root",
+      "/root/asset_audit"
+    ],
+    "boards": [
+      {
+        "path": "art-source/ember/tilesets-v001/review/floor_self_3x3_2x.png",
+        "exists": true,
+        "sha256": "76d29def6ab65f190ecada450e091fe59912c6848936284de166c2031f7f4444"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/all_floor_adjacencies_2x.png",
+        "exists": true,
+        "sha256": "be87f1e752162ccb7fbca5e069c8024ffcc659977981a2088d7d0694b761e00b"
+      }
+    ],
+    "observations": [
+      "Root reports successful visual inspection of four 3x3 floor repetitions and all 16 ordered type adjacencies in both H/V orientations.",
+      "Asset-audit independently inspected the native 4x ground sheet and both floor boards: panel/grid connections remain aligned; no visible checkerboard background or white alpha fringe.",
+      "Worn/wet share an intentionally repeated four-panel motif; wet is a static low-contrast material patch, without running water/highlight animation.",
+      "Hatch states share the same outer frame; small decals remain identifiable against the steel review background."
+    ],
+    "user_style_approval_recorded": false
+  },
+  "source_semantics": {
+    "sampled_and_retouched_ids": [
+      "floor_clean",
+      "floor_worn",
+      "floor_grate",
+      "floor_wet",
+      "hatch_closed",
+      "decal_cable_loop",
+      "decal_debris"
+    ],
+    "design_reference_native_redraw_ids": [
+      "hatch_open",
+      "decal_crack",
+      "decal_rust",
+      "decal_bolts",
+      "decal_oil"
+    ],
+    "note": "Design-reference redraw entries are not claimed as direct mother-pixel extraction. Open hatch retains the shared closed-frame component and redraws its inner state."
+  },
+  "formal_library_acceptance": "PENDING_FULL_62_ATLAS_AND_GODOT_VALIDATION"
+}

@@ -1,0 +1,138 @@
+{
+  "date_local": "2026-10-04",
+  "engine_live": "4.7.2-stable (steam)",
+  "verify_only_exit_code": 0,
+  "stderr_empty": true,
+  "source_tool_modified": false,
+  "atlases": [
+    {
+      "id": "ground_details",
+      "native_size": [
+        256,
+        64
+      ],
+      "png_mode": "RGBA",
+      "tile_size": 32,
+      "tile_count": 12,
+      "empty_slots": 4,
+      "lossless": true,
+      "mipmaps_disabled": true,
+      "imported_texture_cache_exists": true
+    },
+    {
+      "id": "structures",
+      "native_size": [
+        256,
+        128
+      ],
+      "png_mode": "RGBA",
+      "tile_size": 32,
+      "tile_count": 26,
+      "empty_slots": 6,
+      "lossless": true,
+      "mipmaps_disabled": true,
+      "imported_texture_cache_exists": true
+    },
+    {
+      "id": "utilities",
+      "native_size": [
+        256,
+        96
+      ],
+      "png_mode": "RGBA",
+      "tile_size": 32,
+      "tile_count": 24,
+      "empty_slots": 0,
+      "lossless": true,
+      "mipmaps_disabled": true,
+      "imported_texture_cache_exists": true
+    }
+  ],
+  "tilesets": [
+    {
+      "file": "assets/ember/environment/tilesets/ember_common_tileset_v001.tres",
+      "source_ids": [
+        0,
+        1,
+        2
+      ],
+      "source_count": 3,
+      "native_tile_size_32": true,
+      "custom_data_layers": [
+        "tile_id",
+        "category"
+      ]
+    },
+    {
+      "file": "assets/ember/environment/tilesets/ground_details_tileset_v001.tres",
+      "source_ids": [
+        0
+      ],
+      "source_count": 1,
+      "native_tile_size_32": true,
+      "custom_data_layers": [
+        "tile_id",
+        "category"
+      ]
+    },
+    {
+      "file": "assets/ember/environment/tilesets/structures_tileset_v001.tres",
+      "source_ids": [
+        1
+      ],
+      "source_count": 1,
+      "native_tile_size_32": true,
+      "custom_data_layers": [
+        "tile_id",
+        "category"
+      ]
+    },
+    {
+      "file": "assets/ember/environment/tilesets/utilities_tileset_v001.tres",
+      "source_ids": [
+        2
+      ],
+      "source_count": 1,
+      "native_tile_size_32": true,
+      "custom_data_layers": [
+        "tile_id",
+        "category"
+      ]
+    }
+  ],
+  "scene": {
+    "file": "scenes/ember/tileset_layout_sandbox.tscn",
+    "tilemap_layer_count": 7,
+    "editable_layout_layers": [
+      "Ground",
+      "Structures",
+      "Utilities",
+      "Details"
+    ],
+    "runtime_scripts_attached": false,
+    "tilemap_data_serialized": true,
+    "nearest_filter": true,
+    "common_tileset_reference": true
+  },
+  "actual_tile_total": 62,
+  "old_report_modified": false,
+  "readonly_audit_wrote_only_new_audit_directory": true,
+  "filesystem_observations": {
+    "tracked_file_count": 17,
+    "unchanged_file_count": 16,
+    "changed_files": [
+      {
+        "Path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\deliveries\\ember_reusable_tilesets_v001_2026-10-04.zip",
+        "Before": "5130A8B97F46C1E4E13D623AEA440B300171CAC8BB8FD4DD69D9C4356F400381",
+        "After": "098054607C02796B13D6356DECC03D5FD47869ED443D91B1244C660AA6ABE01B",
+        "Unchanged": false
+      }
+    ],
+    "note": "16个原工具/PNG/TileSet/场景/项目/旧报告文件SHA未变。交付ZIP并发变化由根代理主动修正文档、Pillow兼容后重新打包；已确认不是本核验的写入副作用。",
+    "zip_change_author": "root",
+    "zip_change_confirmed_as_packaging_update": true,
+    "audit_side_effect_on_original_files": false
+  },
+  "found_godot_integration_defects": [],
+  "manual_editing_scope": "场景为持久TileMapLayer单元数据、共享外部TileSet，未挂运行时重画脚本；本轮只读核验没有模拟用户绘制。"
+}

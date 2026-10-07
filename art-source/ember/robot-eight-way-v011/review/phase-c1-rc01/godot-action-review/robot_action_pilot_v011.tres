@@ -1,0 +1,71 @@
+[gd_resource type="SpriteFrames" load_steps=17 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/robot_action_pilot_atlas_v011.png" id="1_atlas"]
+
+[sub_resource type="AtlasTexture" id="Atlas_0"]
+atlas = ExtResource("1_atlas")
+region = Rect2(0, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_1"]
+atlas = ExtResource("1_atlas")
+region = Rect2(64, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_2"]
+atlas = ExtResource("1_atlas")
+region = Rect2(0, 96, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_3"]
+atlas = ExtResource("1_atlas")
+region = Rect2(64, 96, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_4"]
+atlas = ExtResource("1_atlas")
+region = Rect2(128, 96, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_5"]
+atlas = ExtResource("1_atlas")
+region = Rect2(192, 96, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_6"]
+atlas = ExtResource("1_atlas")
+region = Rect2(0, 192, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_7"]
+atlas = ExtResource("1_atlas")
+region = Rect2(64, 192, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_8"]
+atlas = ExtResource("1_atlas")
+region = Rect2(128, 192, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_9"]
+atlas = ExtResource("1_atlas")
+region = Rect2(192, 192, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_10"]
+atlas = ExtResource("1_atlas")
+region = Rect2(256, 192, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_11"]
+atlas = ExtResource("1_atlas")
+region = Rect2(320, 192, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_12"]
+atlas = ExtResource("1_atlas")
+region = Rect2(384, 192, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_13"]
+atlas = ExtResource("1_atlas")
+region = Rect2(448, 192, 64, 96)
+
+[sub_resource type="AtlasTexture" id="Atlas_14"]
+atlas = ExtResource("1_atlas")
+region = Rect2(0, 288, 64, 96)
+
+[resource]
+animations = [
+{ "frames": [{ "duration": 1.0, "texture": SubResource("Atlas_0") }, { "duration": 1.0, "texture": SubResource("Atlas_1") }], "loop": true, "name": &"idle_down_left", "speed": 2.0 },
+{ "frames": [{ "duration": 1.0, "texture": SubResource("Atlas_2") }, { "duration": 1.0, "texture": SubResource("Atlas_3") }, { "duration": 1.0, "texture": SubResource("Atlas_4") }, { "duration": 1.0, "texture": SubResource("Atlas_5") }], "loop": false, "name": &"collect_down_left", "speed": 6.0 },
+{ "frames": [{ "duration": 1.0, "texture": SubResource("Atlas_6") }, { "duration": 1.0, "texture": SubResource("Atlas_7") }, { "duration": 1.0, "texture": SubResource("Atlas_8") }, { "duration": 1.0, "texture": SubResource("Atlas_9") }, { "duration": 1.0, "texture": SubResource("Atlas_10") }, { "duration": 1.0, "texture": SubResource("Atlas_11") }, { "duration": 1.0, "texture": SubResource("Atlas_12") }, { "duration": 1.0, "texture": SubResource("Atlas_13") }], "loop": true, "name": &"walk_down_left", "speed": 8.0 },
+{ "frames": [{ "duration": 1.0, "texture": SubResource("Atlas_14") }], "loop": false, "name": &"pose_down_left", "speed": 1.0 }
+]

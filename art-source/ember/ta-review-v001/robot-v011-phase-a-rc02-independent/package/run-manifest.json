@@ -1,0 +1,176 @@
+{
+  "revision": "robot_eight_way_v011",
+  "status": "PHASE_A_RC02_READY_FOR_TA",
+  "authorization": {
+    "source_thread": "01a11049-fdfd-7f12-b83d-6c3a2c506501",
+    "verified_human_message_id": "01a11142-e0e5-74e3-9dc0-876ac05ad8df",
+    "request": "After validation, complete existing animation frames and expand missing eight-way directions",
+    "model_dispatch_verified": {
+      "model": "gpt-6-astra",
+      "thinking": "max"
+    }
+  },
+  "canvas": [
+    64,
+    96
+  ],
+  "root_anchor": [
+    32,
+    80
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "final_actions": {
+    "idle": {
+      "frames_per_direction": 2,
+      "fps": 2,
+      "loop": true
+    },
+    "walk": {
+      "frames_per_direction": 8,
+      "fps": 8,
+      "loop": true
+    },
+    "collect": {
+      "frames_per_direction": 4,
+      "fps": 6,
+      "loop": false
+    }
+  },
+  "target_clips": 24,
+  "target_frames": 112,
+  "phases": [
+    {
+      "id": "A",
+      "scope": "eight stable direction masters and down_left walk 8-frame pilot",
+      "status": "READY_FOR_TA"
+    },
+    {
+      "id": "B",
+      "scope": "remaining walk directions after pilot TA acceptance",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "C",
+      "scope": "controlled idle micro-motion and collect pilot then all eight directions",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "D",
+      "scope": "integrated eight-direction Godot preview, frozen delivery and independent review",
+      "status": "NOT_STARTED"
+    }
+  ],
+  "protected_baseline": {
+    "revision": "robot-joint-repair-v010",
+    "direction": "down",
+    "action": "walk",
+    "frames": 8,
+    "frame_set_sha256": "3ee1b794757491fc96745a1441507d2f85f445f41714feedc0060403268d2b99",
+    "atlas_sha256": "80c26370261cf0c4a803a140c005a55a6aa883589ae2b178774323913870ca63",
+    "zip_sha256": "97eac4dd8914da78da5543ee0b2641c2045b5e7eb4cfc5452560d74b4f605241"
+  },
+  "joint_rules": [
+    "thick continuous support",
+    "overlapping armor and inner structures",
+    "no dark full-width cut-through",
+    "left-wrist tool chirality",
+    "same rigid parts throughout each action"
+  ],
+  "generation": [
+    {
+      "scope": "eight direction neutral mother poses",
+      "method": "imagegen_edit",
+      "source": "source/eight_direction_idle_master_raw_v011.png",
+      "sha256": "991a34fc51a1fd8eeaca4ea431842acff8d0d6e19054303c4f26093abdbc82df",
+      "prompt": "prompts/eight_direction_idle_master_v011.txt",
+      "references": [
+        "source/approved_walk_down_v010_4x.png",
+        "source/original_four_direction_identity_4x.png",
+        "../robot-structure-v005/robot_three_views_annotated_v005.png"
+      ],
+      "processed_output_note": "common grid conversion and original palette; raw output is not natively 64x96",
+      "used_directions": [
+        "down_left",
+        "left",
+        "up_left",
+        "up",
+        "up_right",
+        "right",
+        "down_right"
+      ]
+    },
+    {
+      "scope": "down idle joint edit attempt",
+      "method": "imagegen_edit",
+      "source": "source/idle_down_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_down_joint_edit_v011.txt",
+      "status": "REJECTED_NOT_USED",
+      "reason": "generated limb placement cannot be composited into the original idle without structural regression"
+    },
+    {
+      "scope": "down_left walk pose guide",
+      "method": "imagegen_edit",
+      "source": "source/walk_down_left_pose_guide_raw_v011.png",
+      "prompt": "prompts/walk_down_left_pose_guide_v011.txt",
+      "sha256": "515ded6e67865eb1972b3560414c0fac5cc84b072d05ff2c9d95e70f08a15e15",
+      "usage": "REFERENCE_ONLY_NOT_ANIMATION_SOURCE"
+    },
+    {
+      "scope": "down_left local joint repair",
+      "method": "imagegen_edit",
+      "source": "source/walk_down_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/walk_down_left_joint_edit_v011.txt",
+      "sha256": "60ce1c45df11cfe7c45dc9ba877124471d9d1e1a062ccc0853e769c01034dc6b",
+      "usage": "JOINT_LOCAL_PATCH_ON_FIXED_RIG"
+    }
+  ],
+  "new_directions_art_acceptance": "MOTION_PENDING_TA",
+  "production_assets_modified": false,
+  "down_idle_source": {
+    "file": "frames/walk/down/robot_walk_down_f02_v010.png",
+    "sha256": "31aef53af6a5552d9adae69f5afefab25ee35cc30059bf285dffc375f374dc79",
+    "method": "exact frozen frame reuse",
+    "status": "IDENTITY_REFERENCE_ONLY_NOT_IDLE_ACCEPTANCE",
+    "note": "This reuse preserves approved identity, but does not automatically approve idle support or later micro-motion."
+  },
+  "current_review_metadata": "phase-a-metadata.json",
+  "frozen_review": "review/phase-a-rc02",
+  "current_candidate_revision": "phase-a-rc02",
+  "review_history": [
+    {
+      "revision": "phase-a-rc01",
+      "scope": "phase A",
+      "decision": "NEEDS_REVISION",
+      "static_identity": "seven new directions STATIC_IDENTITY_PASS; S is the approved v010 F02 identity reference only",
+      "walk_down": "original v010 PASS retained",
+      "walk_down_left": "P2 far anatomical right thigh armor changed shape under similar poses",
+      "review": "qa/ta-receipt-phase-a-rc01.md",
+      "review_sha256": "4b2adc4c00fdc7a7d29a997873cd30e8570aae99bf93fb54258dd1e2f4e1e6c6"
+    }
+  ],
+  "current_revision_fix": {
+    "scope": "far anatomical right upper-leg rigid armor only",
+    "method": "restore fixed-source armor and contour; reuse same imagegen joint source elsewhere",
+    "source_rows": [
+      54,
+      62
+    ],
+    "unchanged": [
+      "v010 down walk",
+      "all eight pose candidates",
+      "rig and pose transforms",
+      "head/chest/hands/tool/boots"
+    ],
+    "art_acceptance": "PENDING_TA_RECHECK"
+  },
+  "new_directions_static_identity": "STATIC_IDENTITY_PASS"
+}

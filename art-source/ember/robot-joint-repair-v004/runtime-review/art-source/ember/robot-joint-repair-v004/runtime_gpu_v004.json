@@ -1,0 +1,3759 @@
+{
+	"status": "ROBOT_JOINT_REPAIR_V004_PASS",
+	"phase": "verify",
+	"errors": [],
+	"engine": {
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"hex": 263938,
+		"status": "stable",
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"timestamp": 0,
+		"string": "4.7.2-stable (steam)"
+	},
+	"timestamp_utc": "2026-10-06T07:24:25",
+	"gpu_requested": true,
+	"snapshot_requested": true,
+	"animation_frames_dir": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames",
+	"dependencies_sha256": {
+		"res://art-source/ember/robot-joint-repair-v004/frame_manifest_v004.json": "69969bd16edeae3838eb7eb4ec73e50747bcce0d011f5f766045d736e255e85a",
+		"res://assets/ember/characters/robot/robot_frames_catalog_v003.json": "68dc31540d80f0f3215a2e679ff4f7f2fa84bb4ed551e38c583c60996ebc9f3c",
+		"res://assets/ember/characters/robot/robot_frames_catalog_v004.json": "100dde7c504bbaa6f339679ee4b2a5a814af9ad6871b60908cd38b1f1d03ebc8",
+		"res://assets/ember/characters/robot/robot_animations_v004.png": "db77994bfd5e7b5dd9023b08940b90a76949dbecc331d5c1766af39e94ce6176",
+		"res://assets/ember/characters/robot/robot_sprite_frames_v004.tres": "3aedaab317b6b911c326a44efd2335574ea9162f5ca240ac8ece858914d1bb0d",
+		"res://scenes/ember/robot_animation_sandbox_v004.tscn": "49e48428387d7a23e917338c7c1b662f1611e2f30c96afebda1bedb4e170b49f",
+		"res://scripts/ember/robot_action_preview_v004.gd": "e8e206edbbe21d4ab14d9143a73b333bb3152d3ec959c4fb435c7d3971c30b6a",
+		"res://tools/build_robot_animation_v004.gd": "993022c149b91cc845630662e0f4c87a1bfabbb6d63b5d3a889160a299ecabf1"
+	},
+	"observed": {
+		"changed_pose_count": 13,
+		"preserved_pose_count": 27,
+		"changed_pose_ids": [
+			"robot_walk_down_f01",
+			"robot_walk_down_f03",
+			"robot_collect_down_f01",
+			"robot_collect_down_f02",
+			"robot_collect_left_f01",
+			"robot_collect_left_f02",
+			"robot_walk_right_f01",
+			"robot_walk_right_f02",
+			"robot_collect_right_f01",
+			"robot_collect_right_f02",
+			"robot_walk_up_f01",
+			"robot_walk_up_f02",
+			"robot_walk_up_f03"
+		],
+		"preserved_pose_ids": [
+			"robot_idle_down_f00",
+			"robot_idle_down_f01",
+			"robot_walk_down_f00",
+			"robot_walk_down_f02",
+			"robot_collect_down_f00",
+			"robot_collect_down_f03",
+			"robot_idle_left_f00",
+			"robot_idle_left_f01",
+			"robot_walk_left_f00",
+			"robot_walk_left_f01",
+			"robot_walk_left_f02",
+			"robot_walk_left_f03",
+			"robot_collect_left_f00",
+			"robot_collect_left_f03",
+			"robot_idle_right_f00",
+			"robot_idle_right_f01",
+			"robot_walk_right_f00",
+			"robot_walk_right_f03",
+			"robot_collect_right_f00",
+			"robot_collect_right_f03",
+			"robot_idle_up_f00",
+			"robot_idle_up_f01",
+			"robot_walk_up_f00",
+			"robot_collect_up_f00",
+			"robot_collect_up_f01",
+			"robot_collect_up_f02",
+			"robot_collect_up_f03"
+		],
+		"original_v003_source_frames": [
+			{
+				"id": "robot_idle_down_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+				"sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+				"expected_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+				"unchanged": true
+			},
+			{
+				"id": "robot_idle_down_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_down_f01_v003.png",
+				"sha256": "2e95993438938a2857b2e8de816b7f6c4561e907ef0e69bcdf4285e10ad9225e",
+				"expected_sha256": "2e95993438938a2857b2e8de816b7f6c4561e907ef0e69bcdf4285e10ad9225e",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_down_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_down_f00_v002.png",
+				"sha256": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+				"expected_sha256": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_down_f01",
+				"file": "res://assets/ember/characters/robot/robot_walk_down_f01_v002.png",
+				"sha256": "f95d486bc2c11f4bf1364a879b3b091dc0015320092a26a8c0b113bf8b2bc779",
+				"expected_sha256": "f95d486bc2c11f4bf1364a879b3b091dc0015320092a26a8c0b113bf8b2bc779",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_down_f02",
+				"file": "res://assets/ember/characters/robot/robot_walk_down_f02_v002.png",
+				"sha256": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+				"expected_sha256": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_down_f03",
+				"file": "res://assets/ember/characters/robot/robot_walk_down_f03_v002.png",
+				"sha256": "aa6507d006d10b81bcf299c4bec1f3b59b3f21bec135ec8283497fcd47106f07",
+				"expected_sha256": "aa6507d006d10b81bcf299c4bec1f3b59b3f21bec135ec8283497fcd47106f07",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_down_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f00_v003.png",
+				"sha256": "d3169fb88ecfcad45d271553e458b5b937180f95472166a4b3d016fe771893b6",
+				"expected_sha256": "d3169fb88ecfcad45d271553e458b5b937180f95472166a4b3d016fe771893b6",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_down_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f01_v003.png",
+				"sha256": "fa4ce9bd6ffa21dd5f684593a1154391a4e8b7d9bda5e7379a36900458131e43",
+				"expected_sha256": "fa4ce9bd6ffa21dd5f684593a1154391a4e8b7d9bda5e7379a36900458131e43",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_down_f02",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f02_v003.png",
+				"sha256": "17b43444043493a0fdc7e3c6c18559c657c64077c4ad009331d1b0f02c0cb836",
+				"expected_sha256": "17b43444043493a0fdc7e3c6c18559c657c64077c4ad009331d1b0f02c0cb836",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_down_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f03_v003.png",
+				"sha256": "1fcf5723fca74164f5ebac61e21fa07b875074351ac1b85d06c3fcc01b45a709",
+				"expected_sha256": "1fcf5723fca74164f5ebac61e21fa07b875074351ac1b85d06c3fcc01b45a709",
+				"unchanged": true
+			},
+			{
+				"id": "robot_idle_left_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+				"sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+				"expected_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+				"unchanged": true
+			},
+			{
+				"id": "robot_idle_left_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_left_f01_v003.png",
+				"sha256": "874b57cf2a0d7485f8519fe9928ea742211c8fa5669b334fe2b6eea002b548a5",
+				"expected_sha256": "874b57cf2a0d7485f8519fe9928ea742211c8fa5669b334fe2b6eea002b548a5",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_left_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f00_v002.png",
+				"sha256": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+				"expected_sha256": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_left_f01",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f01_v002.png",
+				"sha256": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+				"expected_sha256": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_left_f02",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f02_v002.png",
+				"sha256": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+				"expected_sha256": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_left_f03",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f03_v002.png",
+				"sha256": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+				"expected_sha256": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_left_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f00_v003.png",
+				"sha256": "ae201113c546d552dc60cc1c83986f91d14bde6a07dd60a76e09887c85993364",
+				"expected_sha256": "ae201113c546d552dc60cc1c83986f91d14bde6a07dd60a76e09887c85993364",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_left_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f01_v003.png",
+				"sha256": "6030aef3abd4b8fae86a68008d18cac85c8e9de0a0dd4bd3f20aadf95042ec8c",
+				"expected_sha256": "6030aef3abd4b8fae86a68008d18cac85c8e9de0a0dd4bd3f20aadf95042ec8c",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_left_f02",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f02_v003.png",
+				"sha256": "9a24e21acb504b2e656cb82519ebe36286b4221220dfb27b6a882203786e2600",
+				"expected_sha256": "9a24e21acb504b2e656cb82519ebe36286b4221220dfb27b6a882203786e2600",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_left_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f03_v003.png",
+				"sha256": "5bbaf306937ba18119613606eb55ef673dcaded359c821f8b9bf7809cdb7c240",
+				"expected_sha256": "5bbaf306937ba18119613606eb55ef673dcaded359c821f8b9bf7809cdb7c240",
+				"unchanged": true
+			},
+			{
+				"id": "robot_idle_right_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+				"sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+				"expected_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+				"unchanged": true
+			},
+			{
+				"id": "robot_idle_right_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_right_f01_v003.png",
+				"sha256": "2c3c41847a951f5b8747eb0823785b703fa4d6d5db4822ece863079265a8bed6",
+				"expected_sha256": "2c3c41847a951f5b8747eb0823785b703fa4d6d5db4822ece863079265a8bed6",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_right_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_right_f00_v002.png",
+				"sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+				"expected_sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_right_f01",
+				"file": "res://assets/ember/characters/robot/robot_walk_right_f01_v002.png",
+				"sha256": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+				"expected_sha256": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_right_f02",
+				"file": "res://assets/ember/characters/robot/robot_walk_right_f02_v002.png",
+				"sha256": "29976d10acaf633868d577e2be6eac8194ffd162965483ff261ae3f63996f311",
+				"expected_sha256": "29976d10acaf633868d577e2be6eac8194ffd162965483ff261ae3f63996f311",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_right_f03",
+				"file": "res://assets/ember/characters/robot/robot_walk_right_f03_v002.png",
+				"sha256": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+				"expected_sha256": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_right_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f00_v003.png",
+				"sha256": "e72c000e5358d8ca9052fe26036ddfa37dab306bbfbc7870b109bf67f812868c",
+				"expected_sha256": "e72c000e5358d8ca9052fe26036ddfa37dab306bbfbc7870b109bf67f812868c",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_right_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f01_v003.png",
+				"sha256": "19be1e21a176a592e76beede30247989a04586863d90fc009b13528e6b73a9f0",
+				"expected_sha256": "19be1e21a176a592e76beede30247989a04586863d90fc009b13528e6b73a9f0",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_right_f02",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f02_v003.png",
+				"sha256": "70bbe562c8d28a53cc3ee1307205e19cfdd9c1dc9af607b6f22f7501c5cf1302",
+				"expected_sha256": "70bbe562c8d28a53cc3ee1307205e19cfdd9c1dc9af607b6f22f7501c5cf1302",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_right_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f03_v003.png",
+				"sha256": "7b00a234a10fd1302bee92ca6e004006316bb25e35f753bc4958457630f332ec",
+				"expected_sha256": "7b00a234a10fd1302bee92ca6e004006316bb25e35f753bc4958457630f332ec",
+				"unchanged": true
+			},
+			{
+				"id": "robot_idle_up_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+				"sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+				"expected_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+				"unchanged": true
+			},
+			{
+				"id": "robot_idle_up_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_up_f01_v003.png",
+				"sha256": "43206b342b7ed309b64170632308b7336b4b9ea11b3660dfedc7d24e63290760",
+				"expected_sha256": "43206b342b7ed309b64170632308b7336b4b9ea11b3660dfedc7d24e63290760",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_up_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_up_f00_v002.png",
+				"sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+				"expected_sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_up_f01",
+				"file": "res://assets/ember/characters/robot/robot_walk_up_f01_v002.png",
+				"sha256": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+				"expected_sha256": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_up_f02",
+				"file": "res://assets/ember/characters/robot/robot_walk_up_f02_v002.png",
+				"sha256": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+				"expected_sha256": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+				"unchanged": true
+			},
+			{
+				"id": "robot_walk_up_f03",
+				"file": "res://assets/ember/characters/robot/robot_walk_up_f03_v002.png",
+				"sha256": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+				"expected_sha256": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_up_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f00_v003.png",
+				"sha256": "0f410fb1584b702aaf1dd47bf2285ab23ad76a88827cf6caa639856bf4362912",
+				"expected_sha256": "0f410fb1584b702aaf1dd47bf2285ab23ad76a88827cf6caa639856bf4362912",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_up_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f01_v003.png",
+				"sha256": "1c9045a4285abe78a0a01bae15f354b24f7e14265865a8fe0d8b68a5c96410ec",
+				"expected_sha256": "1c9045a4285abe78a0a01bae15f354b24f7e14265865a8fe0d8b68a5c96410ec",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_up_f02",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f02_v003.png",
+				"sha256": "7b574766f799b985304979df1bcc3027022a8acb84441ed2db211afa8bdde4fd",
+				"expected_sha256": "7b574766f799b985304979df1bcc3027022a8acb84441ed2db211afa8bdde4fd",
+				"unchanged": true
+			},
+			{
+				"id": "robot_collect_up_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f03_v003.png",
+				"sha256": "2c17206f911e002844274e3449d5b54debb123a9ed0433b137249683fc49fba8",
+				"expected_sha256": "2c17206f911e002844274e3449d5b54debb123a9ed0433b137249683fc49fba8",
+				"unchanged": true
+			}
+		],
+		"source_frames": [
+			{
+				"id": "robot_idle_down_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+				"sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_idle_down_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_down_f01_v003.png",
+				"sha256": "2e95993438938a2857b2e8de816b7f6c4561e907ef0e69bcdf4285e10ad9225e",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_down_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_down_f00_v002.png",
+				"sha256": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_down_f01",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_walk_down_f01_v004.png",
+				"sha256": "63ddd8be932a31b0284d65e321ca53e2dfc2168206aaef4e5b0f2967c24eb93b",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_walk_down_f02",
+				"file": "res://assets/ember/characters/robot/robot_walk_down_f02_v002.png",
+				"sha256": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_down_f03",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_walk_down_f03_v004.png",
+				"sha256": "9b4e22993d9eafe1cfff287757273f251048aada0619f49c99d6af34e1947c55",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_collect_down_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f00_v003.png",
+				"sha256": "d3169fb88ecfcad45d271553e458b5b937180f95472166a4b3d016fe771893b6",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_collect_down_f01",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_collect_down_f01_v004.png",
+				"sha256": "880a9410ae432d96f10ed99bfc89bc909176212b2ea1ad58b3df7e0ea707afc3",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_collect_down_f02",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_collect_down_f02_v004.png",
+				"sha256": "206b3291a520ecae7c59cc4a570f283f18d902eecc56984fe022fc403ead8f16",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_collect_down_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f03_v003.png",
+				"sha256": "1fcf5723fca74164f5ebac61e21fa07b875074351ac1b85d06c3fcc01b45a709",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_idle_left_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+				"sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_idle_left_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_left_f01_v003.png",
+				"sha256": "874b57cf2a0d7485f8519fe9928ea742211c8fa5669b334fe2b6eea002b548a5",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_left_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f00_v002.png",
+				"sha256": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_left_f01",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f01_v002.png",
+				"sha256": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_left_f02",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f02_v002.png",
+				"sha256": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_left_f03",
+				"file": "res://assets/ember/characters/robot/robot_walk_left_f03_v002.png",
+				"sha256": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_collect_left_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f00_v003.png",
+				"sha256": "ae201113c546d552dc60cc1c83986f91d14bde6a07dd60a76e09887c85993364",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_collect_left_f01",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_collect_left_f01_v004.png",
+				"sha256": "7243ce5c9c628afa12dd827349ba3b24baad8cc973ae08c730c23d8e86a0cc4c",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_collect_left_f02",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_collect_left_f02_v004.png",
+				"sha256": "2f86f9fb6f73d5311798b6e3f8f20c1a2634ed145a2d6b7393dbcf324d984592",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_collect_left_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f03_v003.png",
+				"sha256": "5bbaf306937ba18119613606eb55ef673dcaded359c821f8b9bf7809cdb7c240",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_idle_right_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+				"sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_idle_right_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_right_f01_v003.png",
+				"sha256": "2c3c41847a951f5b8747eb0823785b703fa4d6d5db4822ece863079265a8bed6",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_right_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_right_f00_v002.png",
+				"sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_right_f01",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_walk_right_f01_v004.png",
+				"sha256": "f8f72bf6d8a42e26e27f06504aa8daef59b46edc1b75a91c2f84b15ee02dda58",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_walk_right_f02",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_walk_right_f02_v004.png",
+				"sha256": "4eb69b03dddf584eb38473de22e0a04e8653d6a56f05f29099449342dcfdc095",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_walk_right_f03",
+				"file": "res://assets/ember/characters/robot/robot_walk_right_f03_v002.png",
+				"sha256": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_collect_right_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f00_v003.png",
+				"sha256": "e72c000e5358d8ca9052fe26036ddfa37dab306bbfbc7870b109bf67f812868c",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_collect_right_f01",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_collect_right_f01_v004.png",
+				"sha256": "a9a6b69fae7fc6e4e4fb32b63da8dc049b4a3ef97571bde25c9add6dd1b4a839",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_collect_right_f02",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_collect_right_f02_v004.png",
+				"sha256": "8d1d510dc44f0a67fec8cf6deaf1bd534e6117071861996d77f013f20f196f1c",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_collect_right_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f03_v003.png",
+				"sha256": "7b00a234a10fd1302bee92ca6e004006316bb25e35f753bc4958457630f332ec",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_idle_up_f00",
+				"file": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+				"sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_idle_up_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_up_f01_v003.png",
+				"sha256": "43206b342b7ed309b64170632308b7336b4b9ea11b3660dfedc7d24e63290760",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_up_f00",
+				"file": "res://assets/ember/characters/robot/robot_walk_up_f00_v002.png",
+				"sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_walk_up_f01",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_walk_up_f01_v004.png",
+				"sha256": "8500dcfd1504ef4481d936f4a4b87eed7912e063563313cbe548e392368973f6",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_walk_up_f02",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_walk_up_f02_v004.png",
+				"sha256": "59411e11fcc6d800ffba6f59813463412fc7b3940d851642d62725c00d872bf0",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_walk_up_f03",
+				"file": "res://assets/ember/characters/robot/repairs_v004/robot_walk_up_f03_v004.png",
+				"sha256": "d8f77b77268dfde2ca212821a06a429e10395c475587a7ba540c89fc60c1fd3a",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": true,
+				"preserved_v003_source": false
+			},
+			{
+				"id": "robot_collect_up_f00",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f00_v003.png",
+				"sha256": "0f410fb1584b702aaf1dd47bf2285ab23ad76a88827cf6caa639856bf4362912",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_collect_up_f01",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f01_v003.png",
+				"sha256": "1c9045a4285abe78a0a01bae15f354b24f7e14265865a8fe0d8b68a5c96410ec",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_collect_up_f02",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f02_v003.png",
+				"sha256": "7b574766f799b985304979df1bcc3027022a8acb84441ed2db211afa8bdde4fd",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			},
+			{
+				"id": "robot_collect_up_f03",
+				"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f03_v003.png",
+				"sha256": "2c17206f911e002844274e3449d5b54debb123a9ed0433b137249683fc49fba8",
+				"size": [
+					64,
+					96
+				],
+				"binary_alpha": true,
+				"joint_repair_changed": false,
+				"preserved_v003_source": true
+			}
+		],
+		"resource_frames": [
+			{
+				"id": "robot_idle_down_f00",
+				"clip": "idle_down",
+				"index": 0,
+				"region": [
+					0,
+					0,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_idle_down_f01",
+				"clip": "idle_down",
+				"index": 1,
+				"region": [
+					64,
+					0,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_down_f00",
+				"clip": "walk_down",
+				"index": 0,
+				"region": [
+					128,
+					0,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_down_f01",
+				"clip": "walk_down",
+				"index": 1,
+				"region": [
+					192,
+					0,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_down_f02",
+				"clip": "walk_down",
+				"index": 2,
+				"region": [
+					256,
+					0,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_down_f03",
+				"clip": "walk_down",
+				"index": 3,
+				"region": [
+					320,
+					0,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_down_f00",
+				"clip": "collect_down",
+				"index": 0,
+				"region": [
+					384,
+					0,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_down_f01",
+				"clip": "collect_down",
+				"index": 1,
+				"region": [
+					448,
+					0,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_down_f02",
+				"clip": "collect_down",
+				"index": 2,
+				"region": [
+					512,
+					0,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_down_f03",
+				"clip": "collect_down",
+				"index": 3,
+				"region": [
+					576,
+					0,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_idle_left_f00",
+				"clip": "idle_left",
+				"index": 0,
+				"region": [
+					0,
+					96,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_idle_left_f01",
+				"clip": "idle_left",
+				"index": 1,
+				"region": [
+					64,
+					96,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_left_f00",
+				"clip": "walk_left",
+				"index": 0,
+				"region": [
+					128,
+					96,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_left_f01",
+				"clip": "walk_left",
+				"index": 1,
+				"region": [
+					192,
+					96,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_left_f02",
+				"clip": "walk_left",
+				"index": 2,
+				"region": [
+					256,
+					96,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_left_f03",
+				"clip": "walk_left",
+				"index": 3,
+				"region": [
+					320,
+					96,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_left_f00",
+				"clip": "collect_left",
+				"index": 0,
+				"region": [
+					384,
+					96,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_left_f01",
+				"clip": "collect_left",
+				"index": 1,
+				"region": [
+					448,
+					96,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_left_f02",
+				"clip": "collect_left",
+				"index": 2,
+				"region": [
+					512,
+					96,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_left_f03",
+				"clip": "collect_left",
+				"index": 3,
+				"region": [
+					576,
+					96,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_idle_right_f00",
+				"clip": "idle_right",
+				"index": 0,
+				"region": [
+					0,
+					192,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_idle_right_f01",
+				"clip": "idle_right",
+				"index": 1,
+				"region": [
+					64,
+					192,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_right_f00",
+				"clip": "walk_right",
+				"index": 0,
+				"region": [
+					128,
+					192,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_right_f01",
+				"clip": "walk_right",
+				"index": 1,
+				"region": [
+					192,
+					192,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_right_f02",
+				"clip": "walk_right",
+				"index": 2,
+				"region": [
+					256,
+					192,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_right_f03",
+				"clip": "walk_right",
+				"index": 3,
+				"region": [
+					320,
+					192,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_right_f00",
+				"clip": "collect_right",
+				"index": 0,
+				"region": [
+					384,
+					192,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_right_f01",
+				"clip": "collect_right",
+				"index": 1,
+				"region": [
+					448,
+					192,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_right_f02",
+				"clip": "collect_right",
+				"index": 2,
+				"region": [
+					512,
+					192,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_right_f03",
+				"clip": "collect_right",
+				"index": 3,
+				"region": [
+					576,
+					192,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_idle_up_f00",
+				"clip": "idle_up",
+				"index": 0,
+				"region": [
+					0,
+					288,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_idle_up_f01",
+				"clip": "idle_up",
+				"index": 1,
+				"region": [
+					64,
+					288,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_up_f00",
+				"clip": "walk_up",
+				"index": 0,
+				"region": [
+					128,
+					288,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_up_f01",
+				"clip": "walk_up",
+				"index": 1,
+				"region": [
+					192,
+					288,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_up_f02",
+				"clip": "walk_up",
+				"index": 2,
+				"region": [
+					256,
+					288,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_walk_up_f03",
+				"clip": "walk_up",
+				"index": 3,
+				"region": [
+					320,
+					288,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_up_f00",
+				"clip": "collect_up",
+				"index": 0,
+				"region": [
+					384,
+					288,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_up_f01",
+				"clip": "collect_up",
+				"index": 1,
+				"region": [
+					448,
+					288,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_up_f02",
+				"clip": "collect_up",
+				"index": 2,
+				"region": [
+					512,
+					288,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			},
+			{
+				"id": "robot_collect_up_f03",
+				"clip": "collect_up",
+				"index": 3,
+				"region": [
+					576,
+					288,
+					64,
+					96
+				],
+				"import_readback": {
+					"alpha_changed": 0,
+					"visible_rgb_changed": 0,
+					"max_rgb_channel_error": 0,
+					"transparent_rgb_ignored": true
+				}
+			}
+		],
+		"atlas_regions_rgba_equal": 40,
+		"clip_dependencies": [
+			{
+				"id": "idle_down",
+				"direction": "down",
+				"state": "idle",
+				"frame_ids": [
+					"robot_idle_down_f00",
+					"robot_idle_down_f01"
+				],
+				"fps": 2.0,
+				"loop": true
+			},
+			{
+				"id": "walk_down",
+				"direction": "down",
+				"state": "walk",
+				"frame_ids": [
+					"robot_walk_down_f00",
+					"robot_walk_down_f01",
+					"robot_walk_down_f02",
+					"robot_walk_down_f03"
+				],
+				"fps": 8.0,
+				"loop": true
+			},
+			{
+				"id": "collect_down",
+				"direction": "down",
+				"state": "collect",
+				"frame_ids": [
+					"robot_collect_down_f00",
+					"robot_collect_down_f01",
+					"robot_collect_down_f02",
+					"robot_collect_down_f03"
+				],
+				"fps": 6.0,
+				"loop": false
+			},
+			{
+				"id": "idle_left",
+				"direction": "left",
+				"state": "idle",
+				"frame_ids": [
+					"robot_idle_left_f00",
+					"robot_idle_left_f01"
+				],
+				"fps": 2.0,
+				"loop": true
+			},
+			{
+				"id": "walk_left",
+				"direction": "left",
+				"state": "walk",
+				"frame_ids": [
+					"robot_walk_left_f00",
+					"robot_walk_left_f01",
+					"robot_walk_left_f02",
+					"robot_walk_left_f03"
+				],
+				"fps": 8.0,
+				"loop": true
+			},
+			{
+				"id": "collect_left",
+				"direction": "left",
+				"state": "collect",
+				"frame_ids": [
+					"robot_collect_left_f00",
+					"robot_collect_left_f01",
+					"robot_collect_left_f02",
+					"robot_collect_left_f03"
+				],
+				"fps": 6.0,
+				"loop": false
+			},
+			{
+				"id": "idle_right",
+				"direction": "right",
+				"state": "idle",
+				"frame_ids": [
+					"robot_idle_right_f00",
+					"robot_idle_right_f01"
+				],
+				"fps": 2.0,
+				"loop": true
+			},
+			{
+				"id": "walk_right",
+				"direction": "right",
+				"state": "walk",
+				"frame_ids": [
+					"robot_walk_right_f00",
+					"robot_walk_right_f01",
+					"robot_walk_right_f02",
+					"robot_walk_right_f03"
+				],
+				"fps": 8.0,
+				"loop": true
+			},
+			{
+				"id": "collect_right",
+				"direction": "right",
+				"state": "collect",
+				"frame_ids": [
+					"robot_collect_right_f00",
+					"robot_collect_right_f01",
+					"robot_collect_right_f02",
+					"robot_collect_right_f03"
+				],
+				"fps": 6.0,
+				"loop": false
+			},
+			{
+				"id": "idle_up",
+				"direction": "up",
+				"state": "idle",
+				"frame_ids": [
+					"robot_idle_up_f00",
+					"robot_idle_up_f01"
+				],
+				"fps": 2.0,
+				"loop": true
+			},
+			{
+				"id": "walk_up",
+				"direction": "up",
+				"state": "walk",
+				"frame_ids": [
+					"robot_walk_up_f00",
+					"robot_walk_up_f01",
+					"robot_walk_up_f02",
+					"robot_walk_up_f03"
+				],
+				"fps": 8.0,
+				"loop": true
+			},
+			{
+				"id": "collect_up",
+				"direction": "up",
+				"state": "collect",
+				"frame_ids": [
+					"robot_collect_up_f00",
+					"robot_collect_up_f01",
+					"robot_collect_up_f02",
+					"robot_collect_up_f03"
+				],
+				"fps": 6.0,
+				"loop": false
+			}
+		],
+		"runtime_playback": {
+			"Grid/IdleDown": {
+				"animation": "idle_down",
+				"wraps": 2,
+				"finished": 0,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						0
+					]
+				],
+				"visited_frames": [
+					0,
+					1
+				]
+			},
+			"Grid/WalkDown": {
+				"animation": "walk_down",
+				"wraps": 4,
+				"finished": 0,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				]
+			},
+			"Grid/CollectDown": {
+				"animation": "collect_down",
+				"wraps": 2,
+				"finished": 2,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				]
+			},
+			"Grid/IdleLeft": {
+				"animation": "idle_left",
+				"wraps": 2,
+				"finished": 0,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						0
+					]
+				],
+				"visited_frames": [
+					0,
+					1
+				]
+			},
+			"Grid/WalkLeft": {
+				"animation": "walk_left",
+				"wraps": 4,
+				"finished": 0,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				]
+			},
+			"Grid/CollectLeft": {
+				"animation": "collect_left",
+				"wraps": 2,
+				"finished": 2,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				]
+			},
+			"Grid/IdleRight": {
+				"animation": "idle_right",
+				"wraps": 2,
+				"finished": 0,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						0
+					]
+				],
+				"visited_frames": [
+					0,
+					1
+				]
+			},
+			"Grid/WalkRight": {
+				"animation": "walk_right",
+				"wraps": 4,
+				"finished": 0,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				]
+			},
+			"Grid/CollectRight": {
+				"animation": "collect_right",
+				"wraps": 2,
+				"finished": 2,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				]
+			},
+			"Grid/IdleUp": {
+				"animation": "idle_up",
+				"wraps": 2,
+				"finished": 0,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						0
+					]
+				],
+				"visited_frames": [
+					0,
+					1
+				]
+			},
+			"Grid/WalkUp": {
+				"animation": "walk_up",
+				"wraps": 4,
+				"finished": 0,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				]
+			},
+			"Grid/CollectUp": {
+				"animation": "collect_up",
+				"wraps": 2,
+				"finished": 2,
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"runtime_observation_ms": 2193,
+		"collect_preview_restarts": {
+			"down": 2,
+			"left": 2,
+			"right": 2,
+			"up": 2
+		},
+		"control_state_cases": [
+			{
+				"direction": "down",
+				"move_selects_walk": true,
+				"collect_starts": true,
+				"collect_locks_movement": true,
+				"complete_returns_idle": true
+			},
+			{
+				"direction": "left",
+				"move_selects_walk": true,
+				"collect_starts": true,
+				"collect_locks_movement": true,
+				"complete_returns_idle": true
+			},
+			{
+				"direction": "right",
+				"move_selects_walk": true,
+				"collect_starts": true,
+				"collect_locks_movement": true,
+				"complete_returns_idle": true
+			},
+			{
+				"direction": "up",
+				"move_selects_walk": true,
+				"collect_starts": true,
+				"collect_locks_movement": true,
+				"complete_returns_idle": true
+			}
+		],
+		"keyboard_input_scope": "公开控制入口与实际键盘处理共用；未模拟原生操作系统按键。",
+		"preview_screenshot": {
+			"file": "res://assets/ember/characters/robot/robot_preview_v004.png",
+			"sha256": "85645c36564090214a536b2b65257ae51ed86978e59e3d031537a173a5c012c3",
+			"size": [
+				1536,
+				1024
+			]
+		},
+		"gpu_cases": [
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_down_f00",
+				"factor": 1,
+				"animation": "idle_down",
+				"frame": 0,
+				"source_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_down_f00",
+				"factor": 4,
+				"animation": "idle_down",
+				"frame": 0,
+				"source_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_down_f01",
+				"factor": 1,
+				"animation": "idle_down",
+				"frame": 1,
+				"source_sha256": "2e95993438938a2857b2e8de816b7f6c4561e907ef0e69bcdf4285e10ad9225e",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_down_f01",
+				"factor": 4,
+				"animation": "idle_down",
+				"frame": 1,
+				"source_sha256": "2e95993438938a2857b2e8de816b7f6c4561e907ef0e69bcdf4285e10ad9225e",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_down_f00",
+				"factor": 1,
+				"animation": "walk_down",
+				"frame": 0,
+				"source_sha256": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_down_f00",
+				"factor": 4,
+				"animation": "walk_down",
+				"frame": 0,
+				"source_sha256": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_down_f01",
+				"factor": 1,
+				"animation": "walk_down",
+				"frame": 1,
+				"source_sha256": "63ddd8be932a31b0284d65e321ca53e2dfc2168206aaef4e5b0f2967c24eb93b",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_down_f01",
+				"factor": 4,
+				"animation": "walk_down",
+				"frame": 1,
+				"source_sha256": "63ddd8be932a31b0284d65e321ca53e2dfc2168206aaef4e5b0f2967c24eb93b",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_down_f02",
+				"factor": 1,
+				"animation": "walk_down",
+				"frame": 2,
+				"source_sha256": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_down_f02",
+				"factor": 4,
+				"animation": "walk_down",
+				"frame": 2,
+				"source_sha256": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_down_f03",
+				"factor": 1,
+				"animation": "walk_down",
+				"frame": 3,
+				"source_sha256": "9b4e22993d9eafe1cfff287757273f251048aada0619f49c99d6af34e1947c55",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_down_f03",
+				"factor": 4,
+				"animation": "walk_down",
+				"frame": 3,
+				"source_sha256": "9b4e22993d9eafe1cfff287757273f251048aada0619f49c99d6af34e1947c55",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_down_f00",
+				"factor": 1,
+				"animation": "collect_down",
+				"frame": 0,
+				"source_sha256": "d3169fb88ecfcad45d271553e458b5b937180f95472166a4b3d016fe771893b6",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_down_f00",
+				"factor": 4,
+				"animation": "collect_down",
+				"frame": 0,
+				"source_sha256": "d3169fb88ecfcad45d271553e458b5b937180f95472166a4b3d016fe771893b6",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_down_f01",
+				"factor": 1,
+				"animation": "collect_down",
+				"frame": 1,
+				"source_sha256": "880a9410ae432d96f10ed99bfc89bc909176212b2ea1ad58b3df7e0ea707afc3",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_down_f01",
+				"factor": 4,
+				"animation": "collect_down",
+				"frame": 1,
+				"source_sha256": "880a9410ae432d96f10ed99bfc89bc909176212b2ea1ad58b3df7e0ea707afc3",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_down_f02",
+				"factor": 1,
+				"animation": "collect_down",
+				"frame": 2,
+				"source_sha256": "206b3291a520ecae7c59cc4a570f283f18d902eecc56984fe022fc403ead8f16",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_down_f02",
+				"factor": 4,
+				"animation": "collect_down",
+				"frame": 2,
+				"source_sha256": "206b3291a520ecae7c59cc4a570f283f18d902eecc56984fe022fc403ead8f16",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_down_f03",
+				"factor": 1,
+				"animation": "collect_down",
+				"frame": 3,
+				"source_sha256": "1fcf5723fca74164f5ebac61e21fa07b875074351ac1b85d06c3fcc01b45a709",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_down_f03",
+				"factor": 4,
+				"animation": "collect_down",
+				"frame": 3,
+				"source_sha256": "1fcf5723fca74164f5ebac61e21fa07b875074351ac1b85d06c3fcc01b45a709",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_left_f00",
+				"factor": 1,
+				"animation": "idle_left",
+				"frame": 0,
+				"source_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_left_f00",
+				"factor": 4,
+				"animation": "idle_left",
+				"frame": 0,
+				"source_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_left_f01",
+				"factor": 1,
+				"animation": "idle_left",
+				"frame": 1,
+				"source_sha256": "874b57cf2a0d7485f8519fe9928ea742211c8fa5669b334fe2b6eea002b548a5",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_left_f01",
+				"factor": 4,
+				"animation": "idle_left",
+				"frame": 1,
+				"source_sha256": "874b57cf2a0d7485f8519fe9928ea742211c8fa5669b334fe2b6eea002b548a5",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_left_f00",
+				"factor": 1,
+				"animation": "walk_left",
+				"frame": 0,
+				"source_sha256": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_left_f00",
+				"factor": 4,
+				"animation": "walk_left",
+				"frame": 0,
+				"source_sha256": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_left_f01",
+				"factor": 1,
+				"animation": "walk_left",
+				"frame": 1,
+				"source_sha256": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_left_f01",
+				"factor": 4,
+				"animation": "walk_left",
+				"frame": 1,
+				"source_sha256": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_left_f02",
+				"factor": 1,
+				"animation": "walk_left",
+				"frame": 2,
+				"source_sha256": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_left_f02",
+				"factor": 4,
+				"animation": "walk_left",
+				"frame": 2,
+				"source_sha256": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_left_f03",
+				"factor": 1,
+				"animation": "walk_left",
+				"frame": 3,
+				"source_sha256": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_left_f03",
+				"factor": 4,
+				"animation": "walk_left",
+				"frame": 3,
+				"source_sha256": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_left_f00",
+				"factor": 1,
+				"animation": "collect_left",
+				"frame": 0,
+				"source_sha256": "ae201113c546d552dc60cc1c83986f91d14bde6a07dd60a76e09887c85993364",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_left_f00",
+				"factor": 4,
+				"animation": "collect_left",
+				"frame": 0,
+				"source_sha256": "ae201113c546d552dc60cc1c83986f91d14bde6a07dd60a76e09887c85993364",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_left_f01",
+				"factor": 1,
+				"animation": "collect_left",
+				"frame": 1,
+				"source_sha256": "7243ce5c9c628afa12dd827349ba3b24baad8cc973ae08c730c23d8e86a0cc4c",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_left_f01",
+				"factor": 4,
+				"animation": "collect_left",
+				"frame": 1,
+				"source_sha256": "7243ce5c9c628afa12dd827349ba3b24baad8cc973ae08c730c23d8e86a0cc4c",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_left_f02",
+				"factor": 1,
+				"animation": "collect_left",
+				"frame": 2,
+				"source_sha256": "2f86f9fb6f73d5311798b6e3f8f20c1a2634ed145a2d6b7393dbcf324d984592",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_left_f02",
+				"factor": 4,
+				"animation": "collect_left",
+				"frame": 2,
+				"source_sha256": "2f86f9fb6f73d5311798b6e3f8f20c1a2634ed145a2d6b7393dbcf324d984592",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_left_f03",
+				"factor": 1,
+				"animation": "collect_left",
+				"frame": 3,
+				"source_sha256": "5bbaf306937ba18119613606eb55ef673dcaded359c821f8b9bf7809cdb7c240",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_left_f03",
+				"factor": 4,
+				"animation": "collect_left",
+				"frame": 3,
+				"source_sha256": "5bbaf306937ba18119613606eb55ef673dcaded359c821f8b9bf7809cdb7c240",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_right_f00",
+				"factor": 1,
+				"animation": "idle_right",
+				"frame": 0,
+				"source_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_right_f00",
+				"factor": 4,
+				"animation": "idle_right",
+				"frame": 0,
+				"source_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_right_f01",
+				"factor": 1,
+				"animation": "idle_right",
+				"frame": 1,
+				"source_sha256": "2c3c41847a951f5b8747eb0823785b703fa4d6d5db4822ece863079265a8bed6",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_right_f01",
+				"factor": 4,
+				"animation": "idle_right",
+				"frame": 1,
+				"source_sha256": "2c3c41847a951f5b8747eb0823785b703fa4d6d5db4822ece863079265a8bed6",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_right_f00",
+				"factor": 1,
+				"animation": "walk_right",
+				"frame": 0,
+				"source_sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_right_f00",
+				"factor": 4,
+				"animation": "walk_right",
+				"frame": 0,
+				"source_sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_right_f01",
+				"factor": 1,
+				"animation": "walk_right",
+				"frame": 1,
+				"source_sha256": "f8f72bf6d8a42e26e27f06504aa8daef59b46edc1b75a91c2f84b15ee02dda58",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_right_f01",
+				"factor": 4,
+				"animation": "walk_right",
+				"frame": 1,
+				"source_sha256": "f8f72bf6d8a42e26e27f06504aa8daef59b46edc1b75a91c2f84b15ee02dda58",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_right_f02",
+				"factor": 1,
+				"animation": "walk_right",
+				"frame": 2,
+				"source_sha256": "4eb69b03dddf584eb38473de22e0a04e8653d6a56f05f29099449342dcfdc095",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_right_f02",
+				"factor": 4,
+				"animation": "walk_right",
+				"frame": 2,
+				"source_sha256": "4eb69b03dddf584eb38473de22e0a04e8653d6a56f05f29099449342dcfdc095",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_right_f03",
+				"factor": 1,
+				"animation": "walk_right",
+				"frame": 3,
+				"source_sha256": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_right_f03",
+				"factor": 4,
+				"animation": "walk_right",
+				"frame": 3,
+				"source_sha256": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_right_f00",
+				"factor": 1,
+				"animation": "collect_right",
+				"frame": 0,
+				"source_sha256": "e72c000e5358d8ca9052fe26036ddfa37dab306bbfbc7870b109bf67f812868c",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_right_f00",
+				"factor": 4,
+				"animation": "collect_right",
+				"frame": 0,
+				"source_sha256": "e72c000e5358d8ca9052fe26036ddfa37dab306bbfbc7870b109bf67f812868c",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_right_f01",
+				"factor": 1,
+				"animation": "collect_right",
+				"frame": 1,
+				"source_sha256": "a9a6b69fae7fc6e4e4fb32b63da8dc049b4a3ef97571bde25c9add6dd1b4a839",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_right_f01",
+				"factor": 4,
+				"animation": "collect_right",
+				"frame": 1,
+				"source_sha256": "a9a6b69fae7fc6e4e4fb32b63da8dc049b4a3ef97571bde25c9add6dd1b4a839",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_right_f02",
+				"factor": 1,
+				"animation": "collect_right",
+				"frame": 2,
+				"source_sha256": "8d1d510dc44f0a67fec8cf6deaf1bd534e6117071861996d77f013f20f196f1c",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_right_f02",
+				"factor": 4,
+				"animation": "collect_right",
+				"frame": 2,
+				"source_sha256": "8d1d510dc44f0a67fec8cf6deaf1bd534e6117071861996d77f013f20f196f1c",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_right_f03",
+				"factor": 1,
+				"animation": "collect_right",
+				"frame": 3,
+				"source_sha256": "7b00a234a10fd1302bee92ca6e004006316bb25e35f753bc4958457630f332ec",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_right_f03",
+				"factor": 4,
+				"animation": "collect_right",
+				"frame": 3,
+				"source_sha256": "7b00a234a10fd1302bee92ca6e004006316bb25e35f753bc4958457630f332ec",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_up_f00",
+				"factor": 1,
+				"animation": "idle_up",
+				"frame": 0,
+				"source_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_up_f00",
+				"factor": 4,
+				"animation": "idle_up",
+				"frame": 0,
+				"source_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_up_f01",
+				"factor": 1,
+				"animation": "idle_up",
+				"frame": 1,
+				"source_sha256": "43206b342b7ed309b64170632308b7336b4b9ea11b3660dfedc7d24e63290760",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_idle_up_f01",
+				"factor": 4,
+				"animation": "idle_up",
+				"frame": 1,
+				"source_sha256": "43206b342b7ed309b64170632308b7336b4b9ea11b3660dfedc7d24e63290760",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_up_f00",
+				"factor": 1,
+				"animation": "walk_up",
+				"frame": 0,
+				"source_sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_up_f00",
+				"factor": 4,
+				"animation": "walk_up",
+				"frame": 0,
+				"source_sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_up_f01",
+				"factor": 1,
+				"animation": "walk_up",
+				"frame": 1,
+				"source_sha256": "8500dcfd1504ef4481d936f4a4b87eed7912e063563313cbe548e392368973f6",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_up_f01",
+				"factor": 4,
+				"animation": "walk_up",
+				"frame": 1,
+				"source_sha256": "8500dcfd1504ef4481d936f4a4b87eed7912e063563313cbe548e392368973f6",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_up_f02",
+				"factor": 1,
+				"animation": "walk_up",
+				"frame": 2,
+				"source_sha256": "59411e11fcc6d800ffba6f59813463412fc7b3940d851642d62725c00d872bf0",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_up_f02",
+				"factor": 4,
+				"animation": "walk_up",
+				"frame": 2,
+				"source_sha256": "59411e11fcc6d800ffba6f59813463412fc7b3940d851642d62725c00d872bf0",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_up_f03",
+				"factor": 1,
+				"animation": "walk_up",
+				"frame": 3,
+				"source_sha256": "d8f77b77268dfde2ca212821a06a429e10395c475587a7ba540c89fc60c1fd3a",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_walk_up_f03",
+				"factor": 4,
+				"animation": "walk_up",
+				"frame": 3,
+				"source_sha256": "d8f77b77268dfde2ca212821a06a429e10395c475587a7ba540c89fc60c1fd3a",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_up_f00",
+				"factor": 1,
+				"animation": "collect_up",
+				"frame": 0,
+				"source_sha256": "0f410fb1584b702aaf1dd47bf2285ab23ad76a88827cf6caa639856bf4362912",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_up_f00",
+				"factor": 4,
+				"animation": "collect_up",
+				"frame": 0,
+				"source_sha256": "0f410fb1584b702aaf1dd47bf2285ab23ad76a88827cf6caa639856bf4362912",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_up_f01",
+				"factor": 1,
+				"animation": "collect_up",
+				"frame": 1,
+				"source_sha256": "1c9045a4285abe78a0a01bae15f354b24f7e14265865a8fe0d8b68a5c96410ec",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_up_f01",
+				"factor": 4,
+				"animation": "collect_up",
+				"frame": 1,
+				"source_sha256": "1c9045a4285abe78a0a01bae15f354b24f7e14265865a8fe0d8b68a5c96410ec",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_up_f02",
+				"factor": 1,
+				"animation": "collect_up",
+				"frame": 2,
+				"source_sha256": "7b574766f799b985304979df1bcc3027022a8acb84441ed2db211afa8bdde4fd",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_up_f02",
+				"factor": 4,
+				"animation": "collect_up",
+				"frame": 2,
+				"source_sha256": "7b574766f799b985304979df1bcc3027022a8acb84441ed2db211afa8bdde4fd",
+				"size": [
+					256,
+					384
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_up_f03",
+				"factor": 1,
+				"animation": "collect_up",
+				"frame": 3,
+				"source_sha256": "2c17206f911e002844274e3449d5b54debb123a9ed0433b137249683fc49fba8",
+				"size": [
+					64,
+					96
+				]
+			},
+			{
+				"alpha_changed": 0,
+				"visible_rgb_changed": 0,
+				"max_rgb_channel_error": 0,
+				"transparent_rgb_ignored": true,
+				"id": "robot_collect_up_f03",
+				"factor": 4,
+				"animation": "collect_up",
+				"frame": 3,
+				"source_sha256": "2c17206f911e002844274e3449d5b54debb123a9ed0433b137249683fc49fba8",
+				"size": [
+					256,
+					384
+				]
+			}
+		],
+		"gpu_case_count": 80,
+		"gpu_renderer": "NVIDIA GeForce RTX 4070 Laptop GPU",
+		"gpu_artifacts": [
+			{
+				"factor": 1,
+				"file": "res://assets/ember/characters/robot/robot_gpu_1x_v004.png",
+				"sha256": "db77994bfd5e7b5dd9023b08940b90a76949dbecc331d5c1766af39e94ce6176"
+			},
+			{
+				"factor": 4,
+				"file": "res://assets/ember/characters/robot/robot_gpu_4x_v004.png",
+				"sha256": "3a94f9459e5c225b1237957ce49ed558a4cde19f9bab2dd3527fb3c25d932761"
+			}
+		],
+		"animation_boards": {
+			"files": [
+				{
+					"phase": 0,
+					"seconds": 0.0,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_00_v004.png",
+					"sha256": "0f54c189f551bd41e5efd204161012d98fe9f11848d305240c415a9df5b3bc1d",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "collect",
+					"collect_frame": 0,
+					"walk_frame": 0,
+					"idle_frame": 0
+				},
+				{
+					"phase": 1,
+					"seconds": 0.08333333333333333,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_01_v004.png",
+					"sha256": "cc0cf77dd25867533e6d68a960c766428a791db0fc8c755b9097f3c03b7977d6",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "collect",
+					"collect_frame": 0,
+					"walk_frame": 0,
+					"idle_frame": 0
+				},
+				{
+					"phase": 2,
+					"seconds": 0.16666666666666666,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_02_v004.png",
+					"sha256": "43bb55a23a0cd9b15fabe4a70846be9e35fa8bca0bac25b9de5f71dc5b9958c6",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "collect",
+					"collect_frame": 1,
+					"walk_frame": 1,
+					"idle_frame": 0
+				},
+				{
+					"phase": 3,
+					"seconds": 0.25,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_03_v004.png",
+					"sha256": "122890cd6dc8bedb83de24368ce27c119d1cf4e3b9d21f4057d90324a3f88bdd",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "collect",
+					"collect_frame": 1,
+					"walk_frame": 2,
+					"idle_frame": 0
+				},
+				{
+					"phase": 4,
+					"seconds": 0.3333333333333333,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_04_v004.png",
+					"sha256": "8f14f24787f8c6573e26ffb2145bc97f8905c591942d250432ae182b26ec20c2",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "collect",
+					"collect_frame": 2,
+					"walk_frame": 2,
+					"idle_frame": 0
+				},
+				{
+					"phase": 5,
+					"seconds": 0.4166666666666667,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_05_v004.png",
+					"sha256": "5c2e8229d61d873020d707e870586c6adb4e3134310450f828c478f48f180769",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "collect",
+					"collect_frame": 2,
+					"walk_frame": 3,
+					"idle_frame": 0
+				},
+				{
+					"phase": 6,
+					"seconds": 0.5,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_06_v004.png",
+					"sha256": "641063e60b88a476ad52c8be8d15ae9c3e10375e8e016b5cdfed6cb4865ff9f0",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "collect",
+					"collect_frame": 3,
+					"walk_frame": 0,
+					"idle_frame": 1
+				},
+				{
+					"phase": 7,
+					"seconds": 0.5833333333333334,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_07_v004.png",
+					"sha256": "37fb6c5a82bac2cfb85da2b26af1d73afbb4905b777ed71808c9d03cb4b3f007",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "collect",
+					"collect_frame": 3,
+					"walk_frame": 0,
+					"idle_frame": 1
+				},
+				{
+					"phase": 8,
+					"seconds": 0.6666666666666666,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_08_v004.png",
+					"sha256": "f0dbe7b3a75e10bf956c675d3b24039bd225ecfc5bce091e77c35ccebe9ae51b",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "idle",
+					"collect_frame": 1,
+					"walk_frame": 1,
+					"idle_frame": 1
+				},
+				{
+					"phase": 9,
+					"seconds": 0.75,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_09_v004.png",
+					"sha256": "fcd6056144bc3cce0c403da25864a1a56e1060c641b57f1a13e336aeeac65832",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "idle",
+					"collect_frame": 1,
+					"walk_frame": 2,
+					"idle_frame": 1
+				},
+				{
+					"phase": 10,
+					"seconds": 0.8333333333333334,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_10_v004.png",
+					"sha256": "9dbfcc46e32843e97fad48e42a6945c3897375c1781e2c40ef06a54b29c5841b",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "idle",
+					"collect_frame": 1,
+					"walk_frame": 2,
+					"idle_frame": 1
+				},
+				{
+					"phase": 11,
+					"seconds": 0.9166666666666666,
+					"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-joint-repair-v004\\runtime-review\\art-source\\ember\\robot-joint-repair-v004\\previews\\animation_frames/robot_actions_phase_11_v004.png",
+					"sha256": "a3fc35620b607b804d3f8bb22bbeecea9f7ddfe1f71ac13e22620b8c8879e743",
+					"size": [
+						1536,
+						1024
+					],
+					"collect_state": "idle",
+					"collect_frame": 1,
+					"walk_frame": 3,
+					"idle_frame": 1
+				}
+			],
+			"encoding_fps": 12,
+			"duration_seconds": 1.0,
+			"scope": "实际SpriteFrames由AnimatedSprite2D以4倍GPU显示；一秒时轴按12FPS采样原idle2/walk8/collect6，采集结束回待机。供人工循环GIF审阅，非资源内collect循环，也不是原生按键事件实测。"
+		}
+	},
+	"scope": "40个姿态源SHA/二值Alpha、逐RGBA图集、40个导入裁片、12剪辑时序、固定脚底/Nearest/4倍预览、真实计时播放、公开控制入口；可选80项透明GPU读回。关节与动作美术由独立逐帧审查负责。"
+}

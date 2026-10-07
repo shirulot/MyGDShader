@@ -1,0 +1,242 @@
+{
+  "version": "v011",
+  "unit": "enemy_scout_drone",
+  "source": "res://source/canonical.png",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "parts": [
+    {
+      "id": "left_pod",
+      "pivot": [
+        41.5,
+        64.5
+      ],
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          0
+        ],
+        [
+          54,
+          128
+        ],
+        [
+          0,
+          128
+        ]
+      ],
+      "z": 3
+    },
+    {
+      "id": "right_pod",
+      "pivot": [
+        85.5,
+        64.5
+      ],
+      "polygon": [
+        [
+          74,
+          0
+        ],
+        [
+          128,
+          0
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          74,
+          128
+        ]
+      ],
+      "z": 3
+    },
+    {
+      "id": "body",
+      "pivot": [
+        64,
+        67
+      ],
+      "polygon": [
+        [
+          54,
+          0
+        ],
+        [
+          74,
+          0
+        ],
+        [
+          74,
+          128
+        ],
+        [
+          67,
+          128
+        ],
+        [
+          67,
+          76
+        ],
+        [
+          61,
+          76
+        ],
+        [
+          61,
+          128
+        ],
+        [
+          54,
+          128
+        ]
+      ],
+      "z": 4
+    },
+    {
+      "id": "probe",
+      "pivot": [
+        64,
+        77
+      ],
+      "polygon": [
+        [
+          61,
+          76
+        ],
+        [
+          67,
+          76
+        ],
+        [
+          67,
+          128
+        ],
+        [
+          61,
+          128
+        ]
+      ],
+      "z": 5
+    },
+    {
+      "id": "left_strut",
+      "pivot": [
+        54,
+        67
+      ],
+      "polygon": [
+        [
+          51,
+          64
+        ],
+        [
+          56,
+          64
+        ],
+        [
+          56,
+          71
+        ],
+        [
+          51,
+          71
+        ]
+      ],
+      "z": 2
+    },
+    {
+      "id": "right_strut",
+      "pivot": [
+        74,
+        67
+      ],
+      "polygon": [
+        [
+          72,
+          64
+        ],
+        [
+          77,
+          64
+        ],
+        [
+          77,
+          71
+        ],
+        [
+          72,
+          71
+        ]
+      ],
+      "z": 2
+    },
+    {
+      "id": "probe_rail",
+      "z": 4,
+      "polygon": [
+        [
+          62,
+          76
+        ],
+        [
+          66,
+          76
+        ],
+        [
+          66,
+          77
+        ],
+        [
+          62,
+          77
+        ]
+      ],
+      "pivot": [
+        64,
+        76
+      ]
+    }
+  ],
+  "fan_source": "res://source/rotor_well_master.png",
+  "rotor_source_rect": [
+    223,
+    165,
+    583,
+    584
+  ],
+  "well_source_rect": [
+    1000,
+    192,
+    535,
+    528
+  ],
+  "fan_centers": [
+    [
+      41.5,
+      64.5
+    ],
+    [
+      85.5,
+      64.5
+    ]
+  ],
+  "fan_radius": [
+    6.5,
+    4.5
+  ],
+  "source_correction": "Replace original ambiguous three-leaf interiors with two copies of one fixed four-blade rotor and one fixed empty well. Rim/casing remains original. Rotor rotates in its own plane before fixed 9/13 Y projection.",
+  "probe_rail_note": "One fixed canonical blue-gray mounting band x62..65/y76 forms a telescopic neck behind the moving probe; only its connector length changes from1 to3px."
+}

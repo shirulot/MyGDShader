@@ -1,0 +1,1739 @@
+{
+  "status": "RC02_LOCAL_TECHNICAL_INCREMENT_PASS",
+  "zip_sha256": "df9884f9668dc89b8c74cf746dbd975a87e9a5b566b6783b5582cb2c78b4d521",
+  "zip_bytes": 5141175,
+  "zip_entries": 212,
+  "manifest_payloads": 210,
+  "crc": "all entries pass",
+  "active_fixed_snapshot_same_files": 211,
+  "old_zip_sha256": "ee0b416f194363d4e37e751c03446c944c217af3a2f567a03eff4a00ad91e7e6",
+  "common_changed_files": [
+    "FROZEN.md",
+    "README.md",
+    "composite_joint_repair_v011.cjs",
+    "export_phase_a_v011.cjs",
+    "frames/walk/down_left/robot_walk_down_left_f00_v011.png",
+    "frames/walk/down_left/robot_walk_down_left_f01_v011.png",
+    "frames/walk/down_left/robot_walk_down_left_f02_v011.png",
+    "frames/walk/down_left/robot_walk_down_left_f03_v011.png",
+    "frames/walk/down_left/robot_walk_down_left_f04_v011.png",
+    "frames/walk/down_left/robot_walk_down_left_f05_v011.png",
+    "frames/walk/down_left/robot_walk_down_left_f06_v011.png",
+    "frames/walk/down_left/robot_walk_down_left_f07_v011.png",
+    "godot-review/assets/robot_phase_a_atlas_v011.png",
+    "godot-review/phase-a-metadata.json",
+    "gpu-playback/down_to_down_left_same_phase_4x.png",
+    "gpu-playback/walk_down_left_f00_1x.png",
+    "gpu-playback/walk_down_left_f00_4x.png",
+    "gpu-playback/walk_down_left_f01_1x.png",
+    "gpu-playback/walk_down_left_f01_4x.png",
+    "gpu-playback/walk_down_left_f02_1x.png",
+    "gpu-playback/walk_down_left_f02_4x.png",
+    "gpu-playback/walk_down_left_f03_1x.png",
+    "gpu-playback/walk_down_left_f03_4x.png",
+    "gpu-playback/walk_down_left_f04_1x.png",
+    "gpu-playback/walk_down_left_f04_4x.png",
+    "gpu-playback/walk_down_left_f05_1x.png",
+    "gpu-playback/walk_down_left_f05_4x.png",
+    "gpu-playback/walk_down_left_f06_1x.png",
+    "gpu-playback/walk_down_left_f06_4x.png",
+    "gpu-playback/walk_down_left_f07_1x.png",
+    "gpu-playback/walk_down_left_f07_4x.png",
+    "phase-a-metadata.json",
+    "previews/walk_down_left_dark_1x_v011.png",
+    "previews/walk_down_left_dark_4x_v011.png",
+    "previews/walk_down_left_light_1x_v011.png",
+    "previews/walk_down_left_light_4x_v011.png",
+    "previews/walk_down_left_normal_1x_v011.gif",
+    "previews/walk_down_left_normal_1x_v011.webp",
+    "previews/walk_down_left_normal_4x_v011.gif",
+    "previews/walk_down_left_normal_4x_v011.webp",
+    "previews/walk_down_left_slow_1x_v011.gif",
+    "previews/walk_down_left_slow_1x_v011.webp",
+    "previews/walk_down_left_slow_4x_v011.gif",
+    "previews/walk_down_left_slow_4x_v011.webp",
+    "previews/walk_down_left_transparent_1x_v011.png",
+    "previews/walk_down_left_transparent_4x_v011.png",
+    "qa/down_left_joint_patch_mask_f00.png",
+    "qa/down_left_joint_patch_mask_f01.png",
+    "qa/down_left_joint_patch_mask_f02.png",
+    "qa/down_left_joint_patch_mask_f03.png",
+    "qa/down_left_joint_patch_mask_f04.png",
+    "qa/down_left_joint_patch_mask_f05.png",
+    "qa/down_left_joint_patch_mask_f06.png",
+    "qa/down_left_joint_patch_mask_f07.png",
+    "qa/down_left_joint_patch_masks_4x.png",
+    "qa/down_left_joint_patch_v011.json",
+    "qa/export_validation_phase_a.json",
+    "qa/godot_phase_a_v011.json",
+    "qa/visual-self-review.md",
+    "review.html",
+    "robot_phase_a_atlas_v011.png",
+    "run-manifest.json",
+    "sha256-manifest.json",
+    "validate_phase_a_assets.cjs"
+  ],
+  "added_files": [
+    "WORKLOG.md",
+    "eight_way_action_contract_v011.json",
+    "qa/browser/phase_a_rc02_f00_dark.png",
+    "qa/browser/phase_a_rc02_f01_light.png",
+    "qa/browser/phase_a_rc02_f04_dark.png",
+    "qa/browser/phase_a_rc02_f07_dark.png",
+    "qa/browser/phase_a_rc02_normal_light.png",
+    "qa/browser/phase_a_rc02_slow_dark.png",
+    "qa/build_armor_comparison.cjs",
+    "qa/cold_delivery_validation_rc01.json",
+    "qa/down_left_rigid_armor_mask_f00.png",
+    "qa/down_left_rigid_armor_mask_f01.png",
+    "qa/down_left_rigid_armor_mask_f02.png",
+    "qa/down_left_rigid_armor_mask_f03.png",
+    "qa/down_left_rigid_armor_mask_f04.png",
+    "qa/down_left_rigid_armor_mask_f05.png",
+    "qa/down_left_rigid_armor_mask_f06.png",
+    "qa/down_left_rigid_armor_mask_f07.png",
+    "qa/far_right_armor_f01_f04_rc02_comparison.png",
+    "qa/rc02-revision.md",
+    "qa/sw_legs_rc02_8x.png",
+    "qa/ta-receipt-phase-a-rc01.md",
+    "source/reference-phase-a-rc01/frames/robot_walk_down_left_f00_v011.png",
+    "source/reference-phase-a-rc01/frames/robot_walk_down_left_f01_v011.png",
+    "source/reference-phase-a-rc01/frames/robot_walk_down_left_f02_v011.png",
+    "source/reference-phase-a-rc01/frames/robot_walk_down_left_f03_v011.png",
+    "source/reference-phase-a-rc01/frames/robot_walk_down_left_f04_v011.png",
+    "source/reference-phase-a-rc01/frames/robot_walk_down_left_f05_v011.png",
+    "source/reference-phase-a-rc01/frames/robot_walk_down_left_f06_v011.png",
+    "source/reference-phase-a-rc01/frames/robot_walk_down_left_f07_v011.png"
+  ],
+  "removed_files": [],
+  "unchanged_old_source_payloads": [
+    "source/approved_walk_down_v010_4x.png",
+    "source/candidate-masters/robot_idle_down_left_v011.png",
+    "source/candidate-masters/robot_idle_down_right_v011.png",
+    "source/candidate-masters/robot_idle_down_v011.png",
+    "source/candidate-masters/robot_idle_left_v011.png",
+    "source/candidate-masters/robot_idle_right_v011.png",
+    "source/candidate-masters/robot_idle_up_left_v011.png",
+    "source/candidate-masters/robot_idle_up_right_v011.png",
+    "source/candidate-masters/robot_idle_up_v011.png",
+    "source/down_left_master_reference_8x.png",
+    "source/eight_direction_idle_master_raw_v011.png",
+    "source/fixed-parts/down_left/arm_left_lower.png",
+    "source/fixed-parts/down_left/arm_left_upper.png",
+    "source/fixed-parts/down_left/arm_right_lower.png",
+    "source/fixed-parts/down_left/arm_right_upper.png",
+    "source/fixed-parts/down_left/body.png",
+    "source/fixed-parts/down_left/leg_left_end.png",
+    "source/fixed-parts/down_left/leg_left_lower.png",
+    "source/fixed-parts/down_left/leg_left_upper.png",
+    "source/fixed-parts/down_left/leg_right_end.png",
+    "source/fixed-parts/down_left/leg_right_lower.png",
+    "source/fixed-parts/down_left/leg_right_upper.png",
+    "source/fixed-rig-pilot/down_left/edit_target_4x.png",
+    "source/fixed-rig-pilot/down_left/rig_and_poses.json",
+    "source/fixed-rig-pilot/down_left/robot_walk_down_left_f00_v011.png",
+    "source/fixed-rig-pilot/down_left/robot_walk_down_left_f01_v011.png",
+    "source/fixed-rig-pilot/down_left/robot_walk_down_left_f02_v011.png",
+    "source/fixed-rig-pilot/down_left/robot_walk_down_left_f03_v011.png",
+    "source/fixed-rig-pilot/down_left/robot_walk_down_left_f04_v011.png",
+    "source/fixed-rig-pilot/down_left/robot_walk_down_left_f05_v011.png",
+    "source/fixed-rig-pilot/down_left/robot_walk_down_left_f06_v011.png",
+    "source/fixed-rig-pilot/down_left/robot_walk_down_left_f07_v011.png",
+    "source/idle_down_edit_target_8x.png",
+    "source/idle_down_joint_edit_raw_v011.png",
+    "source/original_four_direction_identity_4x.png",
+    "source/reference-down-v001/part_masks_v009.json",
+    "source/reference-down-v001/rig_down_v009.json",
+    "source/reference-down-v001/robot_idle_down_v001.png",
+    "source/walk_down_left_joint_edit_quantized_v011.png",
+    "source/walk_down_left_joint_edit_raw_v011.png",
+    "source/walk_down_left_pose_guide_raw_v011.png"
+  ],
+  "unchanged_runtime_files": [
+    "godot-review/preview_phase_a.gd",
+    "godot-review/preview_phase_a.tscn",
+    "godot-review/project.godot",
+    "godot-review/robot_phase_a_v011.tres",
+    "godot-review/verify_phase_a.gd"
+  ],
+  "immutable_non_SW_final_pngs": [
+    "frames/walk/down/robot_walk_down_f00_v010.png",
+    "frames/walk/down/robot_walk_down_f01_v010.png",
+    "frames/walk/down/robot_walk_down_f02_v010.png",
+    "frames/walk/down/robot_walk_down_f03_v010.png",
+    "frames/walk/down/robot_walk_down_f04_v010.png",
+    "frames/walk/down/robot_walk_down_f05_v010.png",
+    "frames/walk/down/robot_walk_down_f06_v010.png",
+    "frames/walk/down/robot_walk_down_f07_v010.png",
+    "source/candidate-masters/robot_idle_down_v011.png",
+    "source/candidate-masters/robot_idle_down_left_v011.png",
+    "source/candidate-masters/robot_idle_left_v011.png",
+    "source/candidate-masters/robot_idle_up_left_v011.png",
+    "source/candidate-masters/robot_idle_up_v011.png",
+    "source/candidate-masters/robot_idle_up_right_v011.png",
+    "source/candidate-masters/robot_idle_right_v011.png",
+    "source/candidate-masters/robot_idle_down_right_v011.png"
+  ],
+  "armor_source_rect": [
+    20,
+    54,
+    12,
+    9
+  ],
+  "records": [
+    {
+      "frame": 0,
+      "rc01_to_rc02_full_rgba_changed_pixels": 41,
+      "outside_independently_rebuilt_armor_mask_changed_pixels": 0,
+      "inside_armor_fixed_rig_rgba_difference": 0,
+      "restoration_exact_full_frame": true,
+      "changed_pixels_vs_unedited_rig": 155,
+      "change_coordinates": [
+        [
+          21,
+          55
+        ],
+        [
+          22,
+          55
+        ],
+        [
+          23,
+          55
+        ],
+        [
+          24,
+          55
+        ],
+        [
+          25,
+          55
+        ],
+        [
+          26,
+          55
+        ],
+        [
+          21,
+          56
+        ],
+        [
+          22,
+          56
+        ],
+        [
+          23,
+          56
+        ],
+        [
+          24,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          26,
+          56
+        ],
+        [
+          21,
+          57
+        ],
+        [
+          25,
+          57
+        ],
+        [
+          31,
+          57
+        ],
+        [
+          22,
+          58
+        ],
+        [
+          25,
+          58
+        ],
+        [
+          26,
+          58
+        ],
+        [
+          31,
+          58
+        ],
+        [
+          22,
+          59
+        ],
+        [
+          21,
+          60
+        ],
+        [
+          22,
+          60
+        ],
+        [
+          23,
+          60
+        ],
+        [
+          24,
+          60
+        ],
+        [
+          25,
+          60
+        ],
+        [
+          20,
+          61
+        ],
+        [
+          21,
+          61
+        ],
+        [
+          22,
+          61
+        ],
+        [
+          23,
+          61
+        ],
+        [
+          24,
+          61
+        ],
+        [
+          25,
+          61
+        ],
+        [
+          20,
+          62
+        ],
+        [
+          21,
+          62
+        ],
+        [
+          24,
+          62
+        ],
+        [
+          26,
+          62
+        ],
+        [
+          22,
+          63
+        ],
+        [
+          23,
+          63
+        ],
+        [
+          24,
+          63
+        ],
+        [
+          28,
+          63
+        ],
+        [
+          30,
+          63
+        ],
+        [
+          29,
+          64
+        ]
+      ]
+    },
+    {
+      "frame": 1,
+      "rc01_to_rc02_full_rgba_changed_pixels": 36,
+      "outside_independently_rebuilt_armor_mask_changed_pixels": 0,
+      "inside_armor_fixed_rig_rgba_difference": 0,
+      "restoration_exact_full_frame": true,
+      "changed_pixels_vs_unedited_rig": 164,
+      "change_coordinates": [
+        [
+          22,
+          55
+        ],
+        [
+          23,
+          55
+        ],
+        [
+          24,
+          55
+        ],
+        [
+          25,
+          55
+        ],
+        [
+          22,
+          56
+        ],
+        [
+          23,
+          56
+        ],
+        [
+          24,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          26,
+          56
+        ],
+        [
+          21,
+          57
+        ],
+        [
+          25,
+          57
+        ],
+        [
+          31,
+          57
+        ],
+        [
+          23,
+          58
+        ],
+        [
+          25,
+          58
+        ],
+        [
+          31,
+          58
+        ],
+        [
+          22,
+          59
+        ],
+        [
+          23,
+          59
+        ],
+        [
+          24,
+          59
+        ],
+        [
+          25,
+          59
+        ],
+        [
+          22,
+          60
+        ],
+        [
+          24,
+          60
+        ],
+        [
+          21,
+          61
+        ],
+        [
+          22,
+          61
+        ],
+        [
+          23,
+          61
+        ],
+        [
+          24,
+          61
+        ],
+        [
+          25,
+          61
+        ],
+        [
+          22,
+          62
+        ],
+        [
+          23,
+          62
+        ],
+        [
+          25,
+          62
+        ],
+        [
+          21,
+          63
+        ],
+        [
+          22,
+          63
+        ],
+        [
+          23,
+          63
+        ],
+        [
+          25,
+          64
+        ],
+        [
+          29,
+          64
+        ],
+        [
+          28,
+          65
+        ],
+        [
+          29,
+          65
+        ]
+      ]
+    },
+    {
+      "frame": 2,
+      "rc01_to_rc02_full_rgba_changed_pixels": 25,
+      "outside_independently_rebuilt_armor_mask_changed_pixels": 0,
+      "inside_armor_fixed_rig_rgba_difference": 0,
+      "restoration_exact_full_frame": true,
+      "changed_pixels_vs_unedited_rig": 157,
+      "change_coordinates": [
+        [
+          22,
+          55
+        ],
+        [
+          23,
+          55
+        ],
+        [
+          24,
+          55
+        ],
+        [
+          25,
+          55
+        ],
+        [
+          26,
+          55
+        ],
+        [
+          22,
+          56
+        ],
+        [
+          23,
+          56
+        ],
+        [
+          24,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          26,
+          56
+        ],
+        [
+          21,
+          57
+        ],
+        [
+          22,
+          57
+        ],
+        [
+          23,
+          57
+        ],
+        [
+          25,
+          57
+        ],
+        [
+          31,
+          57
+        ],
+        [
+          23,
+          58
+        ],
+        [
+          25,
+          58
+        ],
+        [
+          26,
+          58
+        ],
+        [
+          31,
+          58
+        ],
+        [
+          23,
+          59
+        ],
+        [
+          23,
+          61
+        ],
+        [
+          24,
+          61
+        ],
+        [
+          23,
+          62
+        ],
+        [
+          25,
+          62
+        ],
+        [
+          24,
+          63
+        ]
+      ]
+    },
+    {
+      "frame": 3,
+      "rc01_to_rc02_full_rgba_changed_pixels": 18,
+      "outside_independently_rebuilt_armor_mask_changed_pixels": 0,
+      "inside_armor_fixed_rig_rgba_difference": 0,
+      "restoration_exact_full_frame": true,
+      "changed_pixels_vs_unedited_rig": 155,
+      "change_coordinates": [
+        [
+          20,
+          54
+        ],
+        [
+          21,
+          54
+        ],
+        [
+          22,
+          54
+        ],
+        [
+          24,
+          54
+        ],
+        [
+          20,
+          55
+        ],
+        [
+          21,
+          55
+        ],
+        [
+          22,
+          55
+        ],
+        [
+          23,
+          55
+        ],
+        [
+          25,
+          55
+        ],
+        [
+          26,
+          55
+        ],
+        [
+          23,
+          56
+        ],
+        [
+          24,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          26,
+          56
+        ],
+        [
+          25,
+          57
+        ],
+        [
+          31,
+          57
+        ],
+        [
+          25,
+          61
+        ],
+        [
+          25,
+          63
+        ]
+      ]
+    },
+    {
+      "frame": 4,
+      "rc01_to_rc02_full_rgba_changed_pixels": 17,
+      "outside_independently_rebuilt_armor_mask_changed_pixels": 0,
+      "inside_armor_fixed_rig_rgba_difference": 0,
+      "restoration_exact_full_frame": true,
+      "changed_pixels_vs_unedited_rig": 128,
+      "change_coordinates": [
+        [
+          21,
+          55
+        ],
+        [
+          22,
+          55
+        ],
+        [
+          23,
+          55
+        ],
+        [
+          24,
+          55
+        ],
+        [
+          25,
+          55
+        ],
+        [
+          26,
+          55
+        ],
+        [
+          20,
+          56
+        ],
+        [
+          24,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          26,
+          56
+        ],
+        [
+          25,
+          57
+        ],
+        [
+          31,
+          57
+        ],
+        [
+          25,
+          58
+        ],
+        [
+          26,
+          58
+        ],
+        [
+          31,
+          58
+        ],
+        [
+          25,
+          59
+        ],
+        [
+          26,
+          62
+        ]
+      ]
+    },
+    {
+      "frame": 5,
+      "rc01_to_rc02_full_rgba_changed_pixels": 16,
+      "outside_independently_rebuilt_armor_mask_changed_pixels": 0,
+      "inside_armor_fixed_rig_rgba_difference": 0,
+      "restoration_exact_full_frame": true,
+      "changed_pixels_vs_unedited_rig": 136,
+      "change_coordinates": [
+        [
+          21,
+          55
+        ],
+        [
+          22,
+          55
+        ],
+        [
+          23,
+          55
+        ],
+        [
+          24,
+          55
+        ],
+        [
+          25,
+          55
+        ],
+        [
+          20,
+          56
+        ],
+        [
+          23,
+          56
+        ],
+        [
+          24,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          26,
+          56
+        ],
+        [
+          21,
+          57
+        ],
+        [
+          23,
+          57
+        ],
+        [
+          25,
+          58
+        ],
+        [
+          31,
+          58
+        ],
+        [
+          25,
+          59
+        ],
+        [
+          25,
+          62
+        ]
+      ]
+    },
+    {
+      "frame": 6,
+      "rc01_to_rc02_full_rgba_changed_pixels": 31,
+      "outside_independently_rebuilt_armor_mask_changed_pixels": 0,
+      "inside_armor_fixed_rig_rgba_difference": 0,
+      "restoration_exact_full_frame": true,
+      "changed_pixels_vs_unedited_rig": 156,
+      "change_coordinates": [
+        [
+          22,
+          55
+        ],
+        [
+          23,
+          55
+        ],
+        [
+          24,
+          55
+        ],
+        [
+          25,
+          55
+        ],
+        [
+          26,
+          55
+        ],
+        [
+          21,
+          56
+        ],
+        [
+          23,
+          56
+        ],
+        [
+          24,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          26,
+          56
+        ],
+        [
+          22,
+          57
+        ],
+        [
+          23,
+          57
+        ],
+        [
+          25,
+          57
+        ],
+        [
+          31,
+          57
+        ],
+        [
+          25,
+          58
+        ],
+        [
+          26,
+          58
+        ],
+        [
+          31,
+          58
+        ],
+        [
+          23,
+          59
+        ],
+        [
+          24,
+          59
+        ],
+        [
+          25,
+          59
+        ],
+        [
+          23,
+          60
+        ],
+        [
+          24,
+          60
+        ],
+        [
+          24,
+          61
+        ],
+        [
+          25,
+          61
+        ],
+        [
+          24,
+          62
+        ],
+        [
+          26,
+          62
+        ],
+        [
+          29,
+          62
+        ],
+        [
+          26,
+          63
+        ],
+        [
+          28,
+          63
+        ],
+        [
+          29,
+          63
+        ],
+        [
+          28,
+          64
+        ]
+      ]
+    },
+    {
+      "frame": 7,
+      "rc01_to_rc02_full_rgba_changed_pixels": 47,
+      "outside_independently_rebuilt_armor_mask_changed_pixels": 0,
+      "inside_armor_fixed_rig_rgba_difference": 0,
+      "restoration_exact_full_frame": true,
+      "changed_pixels_vs_unedited_rig": 172,
+      "change_coordinates": [
+        [
+          21,
+          54
+        ],
+        [
+          22,
+          54
+        ],
+        [
+          23,
+          54
+        ],
+        [
+          24,
+          54
+        ],
+        [
+          21,
+          55
+        ],
+        [
+          22,
+          55
+        ],
+        [
+          23,
+          55
+        ],
+        [
+          24,
+          55
+        ],
+        [
+          25,
+          55
+        ],
+        [
+          26,
+          55
+        ],
+        [
+          21,
+          56
+        ],
+        [
+          22,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          26,
+          56
+        ],
+        [
+          31,
+          56
+        ],
+        [
+          21,
+          57
+        ],
+        [
+          22,
+          57
+        ],
+        [
+          25,
+          57
+        ],
+        [
+          31,
+          57
+        ],
+        [
+          22,
+          58
+        ],
+        [
+          24,
+          58
+        ],
+        [
+          25,
+          58
+        ],
+        [
+          26,
+          58
+        ],
+        [
+          31,
+          58
+        ],
+        [
+          22,
+          59
+        ],
+        [
+          23,
+          59
+        ],
+        [
+          21,
+          60
+        ],
+        [
+          22,
+          60
+        ],
+        [
+          23,
+          60
+        ],
+        [
+          24,
+          60
+        ],
+        [
+          31,
+          60
+        ],
+        [
+          21,
+          61
+        ],
+        [
+          22,
+          61
+        ],
+        [
+          24,
+          61
+        ],
+        [
+          25,
+          61
+        ],
+        [
+          26,
+          61
+        ],
+        [
+          21,
+          62
+        ],
+        [
+          22,
+          62
+        ],
+        [
+          23,
+          62
+        ],
+        [
+          28,
+          62
+        ],
+        [
+          30,
+          62
+        ],
+        [
+          25,
+          63
+        ],
+        [
+          26,
+          63
+        ],
+        [
+          27,
+          63
+        ],
+        [
+          28,
+          63
+        ],
+        [
+          29,
+          63
+        ],
+        [
+          30,
+          63
+        ]
+      ]
+    }
+  ],
+  "full_rgba_restored_pixels_total": 231,
+  "frame_pngs": 24,
+  "clips": 10,
+  "atlas_sha256": "b3767668e427c1a90e77bd80fb98edfd63c0517ef78f6e5fca51354c2b3ec0d7",
+  "saved_gpu_capture_cases": [
+    {
+      "clip": "walk_down",
+      "frame": 0,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_f00_1x.png",
+      "sha256": "51b63fa850d5c0d937d36623889e38e0b9d96cd6eea587a72d1dda5fa81c7dbf",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 0,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_f00_4x.png",
+      "sha256": "569e3cf2f050b9e02458f5c506a2be24a94d73b2c56314c4e031a1e4db5aaab1",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 1,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_f01_1x.png",
+      "sha256": "e1dc3fcf7d4b20d8b345566cd0f5c5f6a83168a3dc52d5f7cc0e5b0f1445d1d6",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 1,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_f01_4x.png",
+      "sha256": "7cba2f7194406d32859c6413c0d4bcfe770dab29c3faf5de26084e62ab56ae14",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 2,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_f02_1x.png",
+      "sha256": "0bb0ffdb8432c2ec4bd157a91a181ccf49c77afd1dba57f15b6959f0f98110fe",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 2,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_f02_4x.png",
+      "sha256": "58fac8153a9c96a7b09430795f314ebf11cb5b0f64082ad3cf21bcd973ed7a80",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 3,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_f03_1x.png",
+      "sha256": "bb2b52c431b839775f67da967a7c40e7aae88b64ef4d8f0868bbdee0fa3a0157",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 3,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_f03_4x.png",
+      "sha256": "4e32c69718a03d0e67ba5dd78b9647ccc7eb784a186060de7901c0149f9e8dfe",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 4,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_f04_1x.png",
+      "sha256": "3ab2e467a3f06222aa213e3253046c4bde7d2dd78e85ad418aff9f0e5de91b98",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 4,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_f04_4x.png",
+      "sha256": "e67050e68f6bd6e7a099429e0f28eeebae91f1f56cdbd0f4f95719ef5af3823c",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 5,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_f05_1x.png",
+      "sha256": "dfb4938d8c0c0dfed4b45cb583f78863895a763c81c23ec8619f730ed1bdb305",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 5,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_f05_4x.png",
+      "sha256": "17e5d281c1a64831ca79259d43512c4c1f2699c08211e9745c4d894e85decc76",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 6,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_f06_1x.png",
+      "sha256": "140f371b237f92db58d0ad370f7da5eb0531e723120067b79862bf799156b468",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 6,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_f06_4x.png",
+      "sha256": "92236c49996a5f7c4a421bd412108d8585957321515d45d5de1557c75a03c95a",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 7,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_f07_1x.png",
+      "sha256": "b06c4c8552e2bed65364cb02a992e7d76f76d0dff2ff3435bcb110e67a0262eb",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down",
+      "frame": 7,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_f07_4x.png",
+      "sha256": "aa801c430a0a4b039e2e4e761f28838fd0b40f4bc630a249ee0a57826353879f",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 0,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_left_f00_1x.png",
+      "sha256": "9270c715d1c61aa3d85400131d85ee952e635f03060dc977e1edfb92a090426a",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 0,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_left_f00_4x.png",
+      "sha256": "80d2aaef92d7d9126b1f4f82dc30179a127eaaa2a487ad49794d74612a318428",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 1,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_left_f01_1x.png",
+      "sha256": "269f151a94f963cb0a2cec7b4732f0a1743d798f193aa166a20fdc1e71da2338",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 1,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_left_f01_4x.png",
+      "sha256": "9c03456e2b5a67982c34b26cde645569a678af90f4f4ae6e154ccb718d72e425",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 2,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_left_f02_1x.png",
+      "sha256": "23573b8e02e138926b4ad87e4b5d50061cbcfe8b89892a3bd918fad40f96a9ad",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 2,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_left_f02_4x.png",
+      "sha256": "3534ed4c40f39b8793c27ead12cb9fb926df012f21a7ff420eb98a8548ac2a01",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 3,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_left_f03_1x.png",
+      "sha256": "4456b08d265f01976969569bbc5812a89f7459b84b52fefdcb4119f70bd8b782",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 3,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_left_f03_4x.png",
+      "sha256": "aee775d2ce8b2706445258e01882be496801df3ea64958aa3e2641a3558b499d",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 4,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_left_f04_1x.png",
+      "sha256": "7a828a767f2a09dc2acb2c7fc7bd627b8602967f79d6ef5aa0fa4622065f079f",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 4,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_left_f04_4x.png",
+      "sha256": "1d9b9e68a2ae72477722005288a7cf85443bbb6535620c5557d2a682ce1eb610",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 5,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_left_f05_1x.png",
+      "sha256": "71120a49d6222510b0856339e6f7074006ce285c8ce9cfc6f79e87a7b11b7779",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 5,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_left_f05_4x.png",
+      "sha256": "778c0ced2e09da92ca307e793a4dca9bc1f2a120c2fd3e979f5b2f592e84fcbf",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 6,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_left_f06_1x.png",
+      "sha256": "3b17e20bc387a6677a35b67bd87b4b908d03274dfb29ec0906b7b68491f415ab",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 6,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_left_f06_4x.png",
+      "sha256": "70392913aea586fbacf8e8629f5c699988881a1c5d3bab6caf98ed5bc50f292a",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 7,
+      "scale": 1,
+      "file": "gpu-playback/walk_down_left_f07_1x.png",
+      "sha256": "ad2231437c1ebf1e9fc405080e402359a580c006000ff35225f43d020f544c08",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "walk_down_left",
+      "frame": 7,
+      "scale": 4,
+      "file": "gpu-playback/walk_down_left_f07_4x.png",
+      "sha256": "bb82176d9ee9f98581f1fc35d24e2a5afff369742981581772c6fe50ca83f973",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_down",
+      "frame": 0,
+      "scale": 1,
+      "file": "gpu-playback/pose_down_f00_1x.png",
+      "sha256": "0bb0ffdb8432c2ec4bd157a91a181ccf49c77afd1dba57f15b6959f0f98110fe",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_down",
+      "frame": 0,
+      "scale": 4,
+      "file": "gpu-playback/pose_down_f00_4x.png",
+      "sha256": "58fac8153a9c96a7b09430795f314ebf11cb5b0f64082ad3cf21bcd973ed7a80",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_down_left",
+      "frame": 0,
+      "scale": 1,
+      "file": "gpu-playback/pose_down_left_f00_1x.png",
+      "sha256": "c28cd363fc183004155f3b138ef6d497f90918aa6f5192884fbee5212e7796fd",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_down_left",
+      "frame": 0,
+      "scale": 4,
+      "file": "gpu-playback/pose_down_left_f00_4x.png",
+      "sha256": "5e0cb706619139d41f386c598c37c92967f8de3b21d194521725eb83c387acbe",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_left",
+      "frame": 0,
+      "scale": 1,
+      "file": "gpu-playback/pose_left_f00_1x.png",
+      "sha256": "88a6bfbbeac69997239ab200ba78ca6e619bb6dff7920de057dc7e00471a2acc",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_left",
+      "frame": 0,
+      "scale": 4,
+      "file": "gpu-playback/pose_left_f00_4x.png",
+      "sha256": "fbf09bf701a98f0be5b55efe84b401c547d02bf20dfc1d0092bc23a1779d4b57",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_up_left",
+      "frame": 0,
+      "scale": 1,
+      "file": "gpu-playback/pose_up_left_f00_1x.png",
+      "sha256": "acecb494b82edd88165c1e66dc066df5b830f25b308a64da37b37f671cc549d3",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_up_left",
+      "frame": 0,
+      "scale": 4,
+      "file": "gpu-playback/pose_up_left_f00_4x.png",
+      "sha256": "6bb4e60a81d7189b26966884cec6f072e519b3390d5fbb95a6cfa63111db5053",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_up",
+      "frame": 0,
+      "scale": 1,
+      "file": "gpu-playback/pose_up_f00_1x.png",
+      "sha256": "8c63558fac326e94e26f167fa1ec001647be91f742bb5793da58f0ceb1aebccc",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_up",
+      "frame": 0,
+      "scale": 4,
+      "file": "gpu-playback/pose_up_f00_4x.png",
+      "sha256": "e33a675330e2cd6aae4d1eb722da44f67963ba909153491ad67d23bf35b8c93b",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_up_right",
+      "frame": 0,
+      "scale": 1,
+      "file": "gpu-playback/pose_up_right_f00_1x.png",
+      "sha256": "a6d05ed9b6d8d01f49b9637d6483710dc7b0a9cefe64cdf9d325af25f9520ef8",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_up_right",
+      "frame": 0,
+      "scale": 4,
+      "file": "gpu-playback/pose_up_right_f00_4x.png",
+      "sha256": "10ea70496b45fc0a24efd65a1a944b659d7e95b54d4c90758089d755063b6f0a",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_right",
+      "frame": 0,
+      "scale": 1,
+      "file": "gpu-playback/pose_right_f00_1x.png",
+      "sha256": "4cfaf9db39a31cb28f43e268ed6917854b5e231f9cbc719d734ae3865b8724a8",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_right",
+      "frame": 0,
+      "scale": 4,
+      "file": "gpu-playback/pose_right_f00_4x.png",
+      "sha256": "074280fcb451307c16e59d109c12a6eb31c71c1e81b5868548cbfd3e846a217a",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_down_right",
+      "frame": 0,
+      "scale": 1,
+      "file": "gpu-playback/pose_down_right_f00_1x.png",
+      "sha256": "81d5278325ebab9c197acd89793e30d8a96e4d199df1247ddf138db235707ae4",
+      "saved_capture_full_rgba_difference": 0
+    },
+    {
+      "clip": "pose_down_right",
+      "frame": 0,
+      "scale": 4,
+      "file": "gpu-playback/pose_down_right_f00_4x.png",
+      "sha256": "fab08078091de296fb9ba2fc75fcf29452b51095e873d65a55545c47fb9556d3",
+      "saved_capture_full_rgba_difference": 0
+    }
+  ],
+  "producer_natural_playback_records": [
+    {
+      "clip": "walk_down",
+      "actual_loops": 2,
+      "sequence": [
+        {
+          "frame": 0,
+          "elapsed_ms": 0
+        },
+        {
+          "frame": 1,
+          "elapsed_ms": 119
+        },
+        {
+          "frame": 2,
+          "elapsed_ms": 244
+        },
+        {
+          "frame": 3,
+          "elapsed_ms": 369
+        },
+        {
+          "frame": 4,
+          "elapsed_ms": 494
+        },
+        {
+          "frame": 5,
+          "elapsed_ms": 619
+        },
+        {
+          "frame": 6,
+          "elapsed_ms": 744
+        },
+        {
+          "frame": 7,
+          "elapsed_ms": 869
+        },
+        {
+          "frame": 0,
+          "elapsed_ms": 994
+        },
+        {
+          "frame": 1,
+          "elapsed_ms": 1119
+        },
+        {
+          "frame": 2,
+          "elapsed_ms": 1244
+        },
+        {
+          "frame": 3,
+          "elapsed_ms": 1369
+        },
+        {
+          "frame": 4,
+          "elapsed_ms": 1494
+        },
+        {
+          "frame": 5,
+          "elapsed_ms": 1623
+        },
+        {
+          "frame": 6,
+          "elapsed_ms": 1748
+        },
+        {
+          "frame": 7,
+          "elapsed_ms": 1873
+        },
+        {
+          "frame": 0,
+          "elapsed_ms": 1998
+        },
+        {
+          "frame": 1,
+          "elapsed_ms": 2123
+        }
+      ]
+    },
+    {
+      "clip": "walk_down_left",
+      "actual_loops": 2,
+      "sequence": [
+        {
+          "frame": 0,
+          "elapsed_ms": 0
+        },
+        {
+          "frame": 1,
+          "elapsed_ms": 115
+        },
+        {
+          "frame": 2,
+          "elapsed_ms": 240
+        },
+        {
+          "frame": 3,
+          "elapsed_ms": 365
+        },
+        {
+          "frame": 4,
+          "elapsed_ms": 490
+        },
+        {
+          "frame": 5,
+          "elapsed_ms": 615
+        },
+        {
+          "frame": 6,
+          "elapsed_ms": 740
+        },
+        {
+          "frame": 7,
+          "elapsed_ms": 865
+        },
+        {
+          "frame": 0,
+          "elapsed_ms": 990
+        },
+        {
+          "frame": 1,
+          "elapsed_ms": 1115
+        },
+        {
+          "frame": 2,
+          "elapsed_ms": 1240
+        },
+        {
+          "frame": 3,
+          "elapsed_ms": 1365
+        },
+        {
+          "frame": 4,
+          "elapsed_ms": 1490
+        },
+        {
+          "frame": 5,
+          "elapsed_ms": 1615
+        },
+        {
+          "frame": 6,
+          "elapsed_ms": 1740
+        },
+        {
+          "frame": 7,
+          "elapsed_ms": 1865
+        },
+        {
+          "frame": 0,
+          "elapsed_ms": 1990
+        },
+        {
+          "frame": 1,
+          "elapsed_ms": 2115
+        }
+      ]
+    }
+  ],
+  "ta_engine_rerun": false,
+  "acceptance_limit": "Local pixel/source/resource verification; motion/visual acceptance remains the root TA review."
+}

@@ -1,0 +1,344 @@
+{
+  "status": "LIMITED_HIDDEN_SOURCE_TRANSFORM_PASS",
+  "scope": "Seven new direction hidden source registration, masks and static permitted sampling only; no GPU/cold/full packet audit",
+  "zip_sha256": "c16edaeb70592d03cd8426a584399d815bb00fd7791e3242a606abdf9ff8d192",
+  "shader_bindings": {
+    "rig.gd": "e64f139ad041abceba927bbfa7f33f456e1430b9186dc1e228d452fcc89e8a7a",
+    "hidden_chassis.gdshader": "0c006ecfeb5f5b88bb696c6e4b7055cd9883df13440d58346f8b8c1765b49ec2",
+    "socket.gdshader": "630bbff52c4eb7902d5fae360e0760932ac6b72c5895a42a456055f8b8e2e6b9",
+    "part.gdshader": "621b5436384aa7059a742f5eb2c2b37e9bf645f844621101173875d0898dc150",
+    "source/hidden_registration.json": "a49270f851fe86efa38fe6ecd606327befb8a5deb8e714300a3f8aa41a3cdea4",
+    "source/hidden_chassis_prompt.txt": "41b914c306110ee08cd3cea35561c127143be9378490c6e351da35fe38a3a4c2",
+    "source/hidden_chassis_eight_views_v001.png": "b86983c603d938e933b3d86c5d85cf821d62e9306015588cc1eb3849db1269f0"
+  },
+  "sheet_size": [
+    1774,
+    887
+  ],
+  "common_scale": "32/373",
+  "canonical_clip": "original canonical alpha >=128 AND screen y>=72; hidden z=-1, fixed original tracks z=2",
+  "socket_clip": "original canonical alpha >=128 AND original gun polygon ownership; source interior sampled at .4/.55 offset and .2/.15 size",
+  "socket_sampling_boundary": "socket interior is mapped to fixed gun bounds and is not the same uniform 32/373 transform as the lower chassis; restricted interior surface sampling, not new cannon silhouette",
+  "directions": [
+    {
+      "direction": "down_left",
+      "canonical_sha256": "aa21e0e940ff581a38b6afe5117aeabb53e464aa3203f8c50af1cd4b235593f8",
+      "hidden_source_rect": [
+        478,
+        134,
+        384,
+        239
+      ],
+      "uniform_scale": 0.08579088471849866,
+      "target_bottom": [
+        64,
+        98
+      ],
+      "quad_top_left": [
+        47.52815013404826,
+        77.49597855227881
+      ],
+      "quad_size": [
+        32.943699731903486,
+        20.50402144772118
+      ],
+      "hidden_sample_permitted_pixels": 386,
+      "hidden_sample_permitted_bbox": [
+        48,
+        77,
+        79,
+        97
+      ],
+      "hidden_under_fixed_original_pixels": 355,
+      "original_track_opaque_pixels": 1792,
+      "original_track_not_fixed": 0,
+      "socket_source_rect": [
+        631.6,
+        265.45000000000005,
+        76.80000000000001,
+        35.85
+      ],
+      "socket_sample_allowed_pixels": 92,
+      "socket_allowed_bbox": [
+        48,
+        76,
+        57,
+        86
+      ],
+      "socket_outside_original_gun_region": 0
+    },
+    {
+      "direction": "left",
+      "canonical_sha256": "522409a89a7748cd2c50a3822978246382c794187953084e86d7384900979d36",
+      "hidden_source_rect": [
+        954,
+        132,
+        290,
+        239
+      ],
+      "uniform_scale": 0.08579088471849866,
+      "target_bottom": [
+        64,
+        98
+      ],
+      "quad_top_left": [
+        51.56032171581769,
+        77.49597855227881
+      ],
+      "quad_size": [
+        24.87935656836461,
+        20.50402144772118
+      ],
+      "hidden_sample_permitted_pixels": 410,
+      "hidden_sample_permitted_bbox": [
+        52,
+        77,
+        75,
+        97
+      ],
+      "hidden_under_fixed_original_pixels": 410,
+      "original_track_opaque_pixels": 2012,
+      "original_track_not_fixed": 0,
+      "socket_source_rect": [
+        1070.0,
+        263.45000000000005,
+        58.0,
+        35.85
+      ],
+      "socket_sample_allowed_pixels": 84,
+      "socket_allowed_bbox": [
+        24,
+        73,
+        30,
+        86
+      ],
+      "socket_outside_original_gun_region": 0
+    },
+    {
+      "direction": "up_left",
+      "canonical_sha256": "8b478c2f32173b75bcfa26d7f534140e4075dda1ad83d33e5185c5487af215e6",
+      "hidden_source_rect": [
+        1360,
+        132,
+        376,
+        241
+      ],
+      "uniform_scale": 0.08579088471849866,
+      "target_bottom": [
+        64,
+        98
+      ],
+      "quad_top_left": [
+        47.871313672922255,
+        77.32439678284183
+      ],
+      "quad_size": [
+        32.257372654155496,
+        20.675603217158177
+      ],
+      "hidden_sample_permitted_pixels": 335,
+      "hidden_sample_permitted_bbox": [
+        48,
+        77,
+        78,
+        95
+      ],
+      "hidden_under_fixed_original_pixels": 331,
+      "original_track_opaque_pixels": 1770,
+      "original_track_not_fixed": 0,
+      "socket_source_rect": [
+        1510.4,
+        264.55,
+        75.2,
+        36.15
+      ],
+      "socket_sample_allowed_pixels": 0,
+      "socket_allowed_bbox": null,
+      "socket_outside_original_gun_region": 0
+    },
+    {
+      "direction": "up",
+      "canonical_sha256": "0f0f48f166999d08ed5a114a2a492b4c0e8837d16f0294f2a9b9b10f2d0785a6",
+      "hidden_source_rect": [
+        38,
+        550,
+        369,
+        237
+      ],
+      "uniform_scale": 0.08579088471849866,
+      "target_bottom": [
+        64,
+        98
+      ],
+      "quad_top_left": [
+        48.171581769437,
+        77.66756032171583
+      ],
+      "quad_size": [
+        31.656836461126005,
+        20.33243967828418
+      ],
+      "hidden_sample_permitted_pixels": 457,
+      "hidden_sample_permitted_bbox": [
+        48,
+        78,
+        79,
+        97
+      ],
+      "hidden_under_fixed_original_pixels": 387,
+      "original_track_opaque_pixels": 1708,
+      "original_track_not_fixed": 0,
+      "socket_source_rect": [
+        185.6,
+        680.35,
+        73.8,
+        35.55
+      ],
+      "socket_sample_allowed_pixels": 0,
+      "socket_allowed_bbox": null,
+      "socket_outside_original_gun_region": 0
+    },
+    {
+      "direction": "up_right",
+      "canonical_sha256": "c04db1b041d79c850c7edf06b35890a61bafafbeaf70d825fb9b60670df686b6",
+      "hidden_source_rect": [
+        478,
+        543,
+        381,
+        244
+      ],
+      "uniform_scale": 0.08579088471849866,
+      "target_bottom": [
+        64,
+        98
+      ],
+      "quad_top_left": [
+        47.656836461126005,
+        77.06702412868633
+      ],
+      "quad_size": [
+        32.68632707774799,
+        20.932975871313673
+      ],
+      "hidden_sample_permitted_pixels": 368,
+      "hidden_sample_permitted_bbox": [
+        48,
+        77,
+        79,
+        96
+      ],
+      "hidden_under_fixed_original_pixels": 362,
+      "original_track_opaque_pixels": 1800,
+      "original_track_not_fixed": 0,
+      "socket_source_rect": [
+        630.4,
+        677.2,
+        76.2,
+        36.6
+      ],
+      "socket_sample_allowed_pixels": 0,
+      "socket_allowed_bbox": null,
+      "socket_outside_original_gun_region": 0
+    },
+    {
+      "direction": "right",
+      "canonical_sha256": "a42740bfe07fbd4448bc07e59bc3febf26ebac9948a354aae54858567d6ee1b2",
+      "hidden_source_rect": [
+        966,
+        541,
+        295,
+        245
+      ],
+      "uniform_scale": 0.08579088471849866,
+      "target_bottom": [
+        64,
+        98
+      ],
+      "quad_top_left": [
+        51.34584450402145,
+        76.98123324396784
+      ],
+      "quad_size": [
+        25.308310991957104,
+        21.01876675603217
+      ],
+      "hidden_sample_permitted_pixels": 421,
+      "hidden_sample_permitted_bbox": [
+        51,
+        77,
+        76,
+        97
+      ],
+      "hidden_under_fixed_original_pixels": 421,
+      "original_track_opaque_pixels": 2010,
+      "original_track_not_fixed": 0,
+      "socket_source_rect": [
+        1084.0,
+        675.75,
+        59.0,
+        36.75
+      ],
+      "socket_sample_allowed_pixels": 85,
+      "socket_allowed_bbox": [
+        92,
+        73,
+        98,
+        86
+      ],
+      "socket_outside_original_gun_region": 0
+    },
+    {
+      "direction": "down_right",
+      "canonical_sha256": "7812398344d56901cc0f3673bf724b5eb1a22c229dc30231c437c65e0ebdf073",
+      "hidden_source_rect": [
+        1363,
+        550,
+        380,
+        239
+      ],
+      "uniform_scale": 0.08579088471849866,
+      "target_bottom": [
+        64,
+        98
+      ],
+      "quad_top_left": [
+        47.69973190348526,
+        77.49597855227881
+      ],
+      "quad_size": [
+        32.60053619302949,
+        20.50402144772118
+      ],
+      "hidden_sample_permitted_pixels": 370,
+      "hidden_sample_permitted_bbox": [
+        48,
+        77,
+        79,
+        97
+      ],
+      "hidden_under_fixed_original_pixels": 334,
+      "original_track_opaque_pixels": 1816,
+      "original_track_not_fixed": 0,
+      "socket_source_rect": [
+        1515.0,
+        681.45,
+        76.0,
+        35.85
+      ],
+      "socket_sample_allowed_pixels": 74,
+      "socket_allowed_bbox": [
+        68,
+        76,
+        77,
+        86
+      ],
+      "socket_outside_original_gun_region": 0
+    }
+  ],
+  "source_P2_confirmed": false,
+  "limitations": [
+    "Permitted sample pixels describe eligibility before upper rigid part occlusion; not a visible exposed-pixel count or visual PASS",
+    "Source identity/design of generated interior sheet belongs to visual audit; prompt alone is not approval",
+    "No claim about GPU roundtrip or complete frame/player suite in this check"
+  ]
+}

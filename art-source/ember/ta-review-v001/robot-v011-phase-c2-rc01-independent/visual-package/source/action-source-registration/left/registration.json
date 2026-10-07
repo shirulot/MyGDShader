@@ -1,0 +1,183 @@
+{
+  "status": "FIXED_SOURCE_PREPARATION_ONLY",
+  "direction": "left",
+  "source_file": "source/candidate-masters/robot_idle_left_v011.png",
+  "source_sha256": "fe934d8a891c42b7dc3d39d9cc4fb1a5de29ffca39afba49661c6deac776c25b",
+  "rig": {
+    "forward": [
+      -1,
+      0
+    ],
+    "limb_order": [
+      "arm_right",
+      "leg_right",
+      "leg_left",
+      "body",
+      "arm_left"
+    ],
+    "limbs": {
+      "arm_left": {
+        "kind": "arm",
+        "side": "left",
+        "root": [
+          31,
+          47
+        ],
+        "joint": [
+          31,
+          53
+        ],
+        "end": [
+          28,
+          60
+        ],
+        "bend": 1,
+        "split": [
+          53,
+          60
+        ],
+        "end_part": false
+      },
+      "arm_right": {
+        "kind": "arm",
+        "side": "right",
+        "root": [
+          27,
+          45
+        ],
+        "joint": [
+          26,
+          51
+        ],
+        "end": [
+          26,
+          58
+        ],
+        "bend": -1,
+        "split": [
+          51,
+          58
+        ],
+        "end_part": false
+      },
+      "leg_left": {
+        "kind": "leg",
+        "side": "left",
+        "root": [
+          29,
+          55
+        ],
+        "joint": [
+          29,
+          65
+        ],
+        "end": [
+          29,
+          72
+        ],
+        "bend": 1,
+        "split": [
+          65,
+          72
+        ],
+        "end_part": true
+      },
+      "leg_right": {
+        "kind": "leg",
+        "side": "right",
+        "root": [
+          32,
+          55
+        ],
+        "joint": [
+          32,
+          64.5
+        ],
+        "end": [
+          32,
+          71
+        ],
+        "bend": 1,
+        "split": [
+          64.5,
+          71
+        ],
+        "end_part": true
+      }
+    },
+    "action_waist_overlap": [
+      54,
+      55
+    ]
+  },
+  "parts": [
+    {
+      "id": "body",
+      "file": "source/action-fixed-parts/left/body.png",
+      "raw_sha256": "0f88da440d02d4de73fafdd1c23a8798df724375bfe575aa2ed7f7dc9de44c65"
+    },
+    {
+      "id": "arm_left_upper",
+      "file": "source/action-fixed-parts/left/arm_left_upper.png",
+      "raw_sha256": "bd17a9073be5f4116d26f926ca0a0becb4fc581a1d2c39b28ad0005c1dd910b5"
+    },
+    {
+      "id": "arm_left_lower",
+      "file": "source/action-fixed-parts/left/arm_left_lower.png",
+      "raw_sha256": "9de8ab39b3a9ef6f8193ac491346c56610f0c1ae7da3ea63de9570bd77261803"
+    },
+    {
+      "id": "arm_right_upper",
+      "file": "source/action-fixed-parts/left/arm_right_upper.png",
+      "raw_sha256": "59fb8813587f0efb1fcf4e421b24696b3ab7db6fb98ddbb4892b1b9329e2340f"
+    },
+    {
+      "id": "arm_right_lower",
+      "file": "source/action-fixed-parts/left/arm_right_lower.png",
+      "raw_sha256": "6181591e1c39a135982abbdbb050aff6d93a42f7648cc02d13e537002802aae7"
+    },
+    {
+      "id": "leg_left_upper",
+      "file": "source/action-fixed-parts/left/leg_left_upper.png",
+      "raw_sha256": "c56c36b9cd721b5648cd475775a2f848d3d74c71f2be793a09077a60a89a6d9f"
+    },
+    {
+      "id": "leg_left_lower",
+      "file": "source/action-fixed-parts/left/leg_left_lower.png",
+      "raw_sha256": "f9ff831b704ca1852e040f5f4889db3668226800718589bf973e63e378bb8dbf"
+    },
+    {
+      "id": "leg_left_end",
+      "file": "source/action-fixed-parts/left/leg_left_end.png",
+      "raw_sha256": "481f553f2948f382361da2f7776e3a95349fe4accdd240a0356fdc7acc4cdcaf"
+    },
+    {
+      "id": "leg_right_upper",
+      "file": "source/action-fixed-parts/left/leg_right_upper.png",
+      "raw_sha256": "872008a058411066d3e43c46df2bf2844b0543bdda909a96b58032522fc2e7d3"
+    },
+    {
+      "id": "leg_right_lower",
+      "file": "source/action-fixed-parts/left/leg_right_lower.png",
+      "raw_sha256": "49ac386245c93b563a22e9c51fc3e4b36b68a4eb0fe47b061c5c753b19e4484b"
+    },
+    {
+      "id": "leg_right_end",
+      "file": "source/action-fixed-parts/left/leg_right_end.png",
+      "raw_sha256": "ebc772c106cc8e84b36ac169f1d0f9fe0a132f17b50b3d01d827761303e4313d"
+    },
+    {
+      "id": "pelvis",
+      "file": "source/action-fixed-parts/left/pelvis.png",
+      "raw_sha256": "36cf7c49f0fe97023895b1f95d06bec24e187b805ee031d21aa9629943286c21"
+    }
+  ],
+  "neutral_reassembly_pixel_mismatch": 0,
+  "body_pixels_below_y64": [],
+  "waist_overlap_source_rows": [
+    54,
+    55
+  ],
+  "source_art_status": "STATIC_IDENTITY_PASS_ACTIONS_NOT_ACCEPTED",
+  "walk_frames_modified": false
+}

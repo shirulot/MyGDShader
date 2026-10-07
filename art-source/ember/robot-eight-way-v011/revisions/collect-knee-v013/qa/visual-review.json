@@ -1,0 +1,6 @@
+{
+  "status": "AUTHOR_REVIEW_ONLY_PENDING_USER_FEEDBACK",
+  "reviewed": ["all eight direction F1 before/after contact sheets", "west and southeast four-frame before/after sheets", "native and 4x browser comparison", "all eight source and imagegen edit sheets"],
+  "findings": ["knee movement restored in character-forward sagittal plane", "front/back flexion uses projection and overlapping armor, not lateral leg splay", "approved upper-body pixels retained to avoid regressing previous elbow cleanup", "generated backgrounds and whole-character redraws rejected; only masked joint colors adopted", "boot sole pixels preserved after removing source-part rotation intrusion"],
+  "limitations": ["four-frame timing is unchanged; this is a shallow squat, not a full ground-level kneel", "alpha connectivity does not establish natural joint motion", "Godot import passed but new GPU playback was blocked by automatic approval", "no independent TA or user acceptance of v013 yet"]
+}

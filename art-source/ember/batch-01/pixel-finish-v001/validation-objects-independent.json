@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-03T17:29:12.881197+00:00",
+  "tool": "Pillow read-only measurements; JSON output only",
+  "scope": "C01 one idle-down frame and B01 static base; no other robot frames or building parts counted",
+  "png_modified_by_validation": false,
+  "automatic_checks_pass": true,
+  "assets": [
+    {
+      "id": "C01",
+      "path": "assets/ember/characters/robot/robot_idle_down_v001.png",
+      "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "canvas": [
+        64,
+        96
+      ],
+      "bbox_exclusive": [
+        12,
+        21,
+        52,
+        80
+      ],
+      "subject_size": [
+        40,
+        59
+      ],
+      "margins_l_t_r_b": [
+        12,
+        21,
+        12,
+        16
+      ],
+      "transparent_pixels": 4652,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1492,
+      "visible_rgb_color_count": 11,
+      "off_palette_color_count": 0,
+      "reserved_runtime_status_color_count": 0,
+      "anchor": [
+        32,
+        80
+      ],
+      "anchor_convention": "bottom boundary; last visible row is anchor_y - 1",
+      "bottom_contact_x_spans_exclusive": [
+        [
+          19,
+          26
+        ],
+        [
+          38,
+          45
+        ]
+      ],
+      "source_sha256_matches_record": true,
+      "checks": {
+        "size_matches_record": true,
+        "bbox_matches_record": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "anchor_matches_bottom_boundary": true,
+        "bbox_center_matches_anchor_x": true,
+        "neutral_status_colors": true,
+        "source_unchanged": true
+      }
+    },
+    {
+      "id": "B01",
+      "path": "assets/ember/buildings/station/station_base_v001.png",
+      "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4",
+      "canvas": [
+        128,
+        160
+      ],
+      "bbox_exclusive": [
+        17,
+        26,
+        111,
+        144
+      ],
+      "subject_size": [
+        94,
+        118
+      ],
+      "margins_l_t_r_b": [
+        17,
+        26,
+        17,
+        16
+      ],
+      "transparent_pixels": 12444,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 8036,
+      "visible_rgb_color_count": 11,
+      "off_palette_color_count": 0,
+      "reserved_runtime_status_color_count": 0,
+      "anchor": [
+        64,
+        144
+      ],
+      "anchor_convention": "bottom boundary; last visible row is anchor_y - 1",
+      "bottom_contact_x_spans_exclusive": [
+        [
+          35,
+          47
+        ],
+        [
+          81,
+          93
+        ]
+      ],
+      "source_sha256_matches_record": true,
+      "checks": {
+        "size_matches_record": true,
+        "bbox_matches_record": true,
+        "binary_alpha": true,
+        "registered_palette": true,
+        "anchor_matches_bottom_boundary": true,
+        "bbox_center_matches_anchor_x": true,
+        "neutral_status_colors": true,
+        "source_unchanged": true,
+        "station_margins_at_least16": true
+      }
+    }
+  ],
+  "visual_review": {
+    "directly_viewed": [
+      "art-source/ember/batch-01/pixel-finish-v001/objects_2x_review.png",
+      "art-source/ember/references/batch01_native_scale_v002.png"
+    ],
+    "root_reported_views": [
+      "native",
+      "integer2x",
+      "integer4x",
+      "new shared-ground scale board"
+    ],
+    "status": "ROOT_PRODUCER_AND_INDEPENDENT_AGENT_VISUAL_REVIEW_PASS",
+    "observations": [
+      "Native pixel outline and material density remain readable at integer scale; blue-gray structure, light armor and brass interfaces form a consistent new style.",
+      "Windows are neutral dark/light regions; no energy/warning/danger palette state colors, running flame/rain/shield or projection shadow are included.",
+      "Robot foot and station base share their documented bottom-boundary anchors without canvas truncation."
+    ],
+    "user_final_style_confirmation_asserted": false
+  },
+  "scale_reference": {
+    "path": "art-source/ember/references/batch01_native_scale_v002.png",
+    "sha256": "c6d7b8dc6d522ee2c8795328113a567f05c0ee0544cc7748be53209a108a0402",
+    "size": [
+      1024,
+      832
+    ],
+    "scope": "Robot/station/four native floor variants only; no door or console",
+    "R01_completion": "PARTIAL_NATIVE_SCALE_REVIEW_NOT_FULL_REFERENCE_COMPLETE"
+  }
+}

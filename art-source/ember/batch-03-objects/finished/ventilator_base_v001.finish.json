@@ -1,0 +1,150 @@
+{
+  "id": "ventilator_base",
+  "manifest_id": "B04",
+  "file": "art-source/ember/batch-03-objects/finished/ventilator_base_v001.png",
+  "production_file": "res://assets/ember/buildings/ventilator/ventilator_base_v001.png",
+  "sha256": "74a301919676247d40b5e163bf116d011c3231cc2d2cb18949d2e950af09f187",
+  "size": [
+    160,
+    192
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/ventilator_base_v001.finish.json",
+  "canvas": [
+    160,
+    192
+  ],
+  "bbox": [
+    40,
+    52,
+    120,
+    176
+  ],
+  "anchor": [
+    80,
+    176
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [],
+  "emitter_points": [
+    {
+      "id": "exhaust_smoke",
+      "at": [
+        80.5,
+        58.5
+      ],
+      "region": [
+        75,
+        56,
+        86,
+        61
+      ],
+      "purpose": "出烟口几何中心；烟/火焰/热浪没有烘焙于底图"
+    }
+  ],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/ventilator_base/foundation_body.png",
+      "sha256": "bb690ccc8c2b057cba4b0475e7d6ca991270f665092b952a522ec04cfb632242",
+      "z_index": 0,
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    },
+    {
+      "name": "fan_rotor",
+      "file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor_selection.png",
+      "sha256": "24c2ce3fa7876c055bfa4c19d48a5d1e6fb82b67422908e40706a9b57d19a47b",
+      "z_index": 2,
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "purpose": "实际3片扇叶与轴；移开后机壳有中性腔底",
+      "editable_source": true,
+      "hidden_underpaint_color_index": 1
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/ventilator_base_master_v001.png",
+    "master_sha256": "8c34821330ab9ad203c50dd55c3f61ffdb7c945b494b806e446eddee4261eeb8",
+    "prompt": "prompts/ventilator_base.txt",
+    "prompt_sha256": "48c16d4611103314a08c3296106a243c89adaab4182639c3940ee9df834c766b",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-6012ef4b-7291-4512-95b0-621c563eb4df.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        244,
+        199,
+        901,
+        1214
+      ],
+      "material_sampling_size": [
+        80,
+        124
+      ],
+      "native_origin": [
+        40,
+        52
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 83,
+      "native_outline_pixels_corrected": 0
+    },
+    "native_adjustments": [
+      "上后方出烟口内区[75,56,86,61)归并为连续暗腔；记录实际烟粒子发射中心而不生成烟",
+      "三扇叶原生边缘亮点改成短连贯高光；中心轴保留黄铜，中性深腔补于可动叶片之下",
+      "逐像素选择真实三叶与轴组件，导出fan_rotor和选择mask；housing源PNG可独立编辑，重组与最终严格相同"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [],
+  "observations": "实际母稿三片钢灰扇叶、中央黄铜轴、深风腔与上后方矩形出烟口都清楚；原生草案无需整体变形。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

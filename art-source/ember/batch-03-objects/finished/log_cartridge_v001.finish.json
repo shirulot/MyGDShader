@@ -1,0 +1,128 @@
+{
+  "id": "log_cartridge",
+  "manifest_id": "B12",
+  "file": "art-source/ember/batch-03-objects/finished/log_cartridge_v001.png",
+  "production_file": "res://assets/ember/props/story/log_cartridge_v001.png",
+  "sha256": "14faf29c1959209f37c196bf47480b41fdac604f9587b7cd9c273c80cdce9b6a",
+  "size": [
+    64,
+    64
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/log_cartridge_v001.finish.json",
+  "canvas": [
+    64,
+    64
+  ],
+  "bbox": [
+    21,
+    22,
+    44,
+    56
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/log_cartridge/foundation_body.png",
+      "sha256": "14faf29c1959209f37c196bf47480b41fdac604f9587b7cd9c273c80cdce9b6a",
+      "z_index": 0,
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/log_cartridge_master_v001.png",
+    "master_sha256": "b50f9b6c11bc48941452159426244ddca387c22673cb258acc7e15af82ef8038",
+    "prompt": "prompts/log_cartridge.txt",
+    "prompt_sha256": "389bc749643706bf1a803d89f3048b88a21b8674702bdcd11a51f8bbc683f80a",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-b6990d76-cad5-4701-bb3e-f8c6a4dd7de7.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        352,
+        269,
+        862,
+        1026
+      ],
+      "material_sampling_size": [
+        23,
+        34
+      ],
+      "native_origin": [
+        21,
+        22
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 10,
+      "native_outline_pixels_corrected": 53
+    },
+    "native_adjustments": [
+      "中心物理凹槽[29,36,35,46)归并为6px宽中性深色块、最下2行加深；它不是发光运行屏幕",
+      "两铜触点的顶边分别整理成2px材质亮点，保留槽中性及单侧锁扣不对称方向",
+      "去半透明halo与孤立钢灰点；64画布底界56，日志正文留给UI"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [
+    {
+      "id": "physical_recess",
+      "rect": [
+        29,
+        36,
+        35,
+        46
+      ],
+      "emits": false
+    }
+  ],
+  "observations": "实际母稿两根顶铜触点、长方陶瓷记录壳、中央深凹槽和右下铜锁扣；没有文字内容，原生23×34识别明确。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

@@ -1,0 +1,24 @@
+{
+  "direction": "right",
+  "state": "idle",
+  "source_subject_crop": [281,336,757,1305],
+  "native_subject_height": 59,
+  "native_subject_width": 29,
+  "native_subject_origin": [17,21],
+  "design_observation": "实际母稿为右向三分之四侧身：右向面罩与近侧左屏圆耳/陶瓷肩甲，胸部中性暗窗侧向可见；两腿近远投影不同。耳模块细节及躯干并不是left母稿的机械镜像。",
+  "tool_hand_observation": "黄铜维修接口在屏幕右上方的远侧左腕，部分被身体遮挡；同一解剖左手，禁止为了更显眼移到近侧空手。",
+  "adjustments": ["母稿主体区域采样到29×59原生起点，保持同一高度和固定(32,80)脚底边界", "固定11种静态颜色，清除halo与细碎抗锯齿，整理1像素轮廓", "原生减少头盔右方大片最高亮色，将高光集中在世界左上两处陶瓷边缘；不是翻转left光照", "面罩核心与胸部侧窗2×2安全内区改为连续中性钢灰，保留窗口遮挡和侧轮廓", "近侧空手与远侧左腕黄铜接口分别保留母稿装配关系"],
+  "runtime_windows": [{"id":"chest_status","safe_active_rect":[36,49,38,51],"center":[37,50],"center_basis":"safe_active_rect_geometric_center","normalized_uv":[0.578125,0.5208333333333334],"mask_delivery_status":"NOT_PRODUCED","visibility":"PARTIAL_SIDE_VIEW"}],
+  "patches": [
+    {"type":"line","points":[[25,25],[29,25]],"color":15},
+    {"type":"line","points":[[24,26],[28,26]],"color":15},
+    {"type":"line","points":[[36,26],[39,26]],"color":5},
+    {"type":"line","points":[[36,27],[40,27]],"color":5},
+    {"type":"line","points":[[37,28],[40,28]],"color":5},
+    {"type":"line","points":[[37,29],[40,29]],"color":5},
+    {"type":"line","points":[[36,35],[38,35]],"color":2},
+    {"type":"line","points":[[36,36],[38,36]],"color":2},
+    {"type":"line","points":[[36,49],[37,49]],"color":2},
+    {"type":"line","points":[[36,50],[37,50]],"color":2}
+  ]
+}

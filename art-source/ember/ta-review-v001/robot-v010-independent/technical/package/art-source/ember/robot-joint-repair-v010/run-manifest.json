@@ -1,0 +1,162 @@
+{
+  "revision": "v010",
+  "status": "FROZEN_CANDIDATE_PENDING_TA",
+  "user_feedback": "v008 and v009 both still appear to have broken joints; find a specialist pixel-character skill and repair them",
+  "reference": {
+    "source_type": "local_file",
+    "source": "source/v009_edit_target_4x.png",
+    "used_for_generation": true,
+    "identity_notes": [
+      "aged ivory armor",
+      "blue-gray inner structure",
+      "large dark visor",
+      "small brass tool on robot left wrist, viewer right",
+      "same 64x96 cells and eight down-walk poses"
+    ]
+  },
+  "scope": {
+    "cell": [
+      64,
+      96
+    ],
+    "actions": [
+      "walk"
+    ],
+    "directions": [
+      "south"
+    ],
+    "frames": 8,
+    "fps": 8,
+    "root_anchor": [
+      32,
+      80
+    ],
+    "loop": true
+  },
+  "generation": {
+    "method": "imagegen_edit",
+    "purpose": "local joint continuity repaint; keep accepted poses and identity",
+    "source_output": "source/joint_edit_raw_v010.png",
+    "raw_sha256": "94567bbfb8d485b9163c613911219ad35c602b7f2c36c25e7a4b2d06534109c2",
+    "raw_size": [
+      1448,
+      1086
+    ],
+    "patch_transform": [
+      0.17679558011049723,
+      0.17679558011049723
+    ],
+    "actual_pipeline": "imagegen edit -> one shared nearest grid transform -> original 11-color palette -> joint-local pixel composite"
+  },
+  "skills": [
+    "find-skills",
+    "game-character-sprites",
+    "imagegen",
+    "pixel-art-sprites references"
+  ],
+  "prior_versions_art_status": {
+    "v008": "NEEDS_REVISION_USER_JOINT_FEEDBACK",
+    "v009": "NEEDS_REVISION_USER_JOINT_FEEDBACK"
+  },
+  "production_assets_modified": false,
+  "art_acceptance": "NOT_CLAIMED",
+  "frozen_frames": [
+    {
+      "frame": 0,
+      "file": "frames/robot_walk_down_f00_v010.png",
+      "sha256": "b9ce74bd930f4a7374b81d335346214d9b0b55d0493a90a4cb4841e9a13d074a"
+    },
+    {
+      "frame": 1,
+      "file": "frames/robot_walk_down_f01_v010.png",
+      "sha256": "819278cf93ef2d9b38040f122e9f05a06f4a50eca89a7f44622a90a8e25b41da"
+    },
+    {
+      "frame": 2,
+      "file": "frames/robot_walk_down_f02_v010.png",
+      "sha256": "31aef53af6a5552d9adae69f5afefab25ee35cc30059bf285dffc375f374dc79"
+    },
+    {
+      "frame": 3,
+      "file": "frames/robot_walk_down_f03_v010.png",
+      "sha256": "9914b57e5dd31780e6eb4bccfe6c8365e61b2a663b2665eb4e205cd7c5cfffa9"
+    },
+    {
+      "frame": 4,
+      "file": "frames/robot_walk_down_f04_v010.png",
+      "sha256": "aebb3279ddb0ed939f9bc08e36af2bfc39c18cf998df8b8430240b438cb4e69e"
+    },
+    {
+      "frame": 5,
+      "file": "frames/robot_walk_down_f05_v010.png",
+      "sha256": "461c6129565a722d10a9b5e7dff3f2c95dbe79c73e8e5cca0f3ad8e609365448"
+    },
+    {
+      "frame": 6,
+      "file": "frames/robot_walk_down_f06_v010.png",
+      "sha256": "9057d916e83aef6d53b493ba5e18b50cd16996c96153ff2ef0fe04a73190bb2b"
+    },
+    {
+      "frame": 7,
+      "file": "frames/robot_walk_down_f07_v010.png",
+      "sha256": "b4abfd3c8392fd679c377e5611093caa63409e29627a5cb461bcd776118d0120"
+    }
+  ],
+  "frame_set_sha256": "3ee1b794757491fc96745a1441507d2f85f445f41714feedc0060403268d2b99",
+  "atlas": {
+    "file": "robot_walk_down_atlas_v010.png",
+    "sha256": "80c26370261cf0c4a803a140c005a55a6aa883589ae2b178774323913870ca63",
+    "size": [
+      512,
+      96
+    ]
+  },
+  "edit_contract": {
+    "protected_visible_parts": [
+      "head",
+      "chest_shell",
+      "left_wrist_tool",
+      "hand_left",
+      "hand_right"
+    ],
+    "changes_outside_mask": 0,
+    "original_frame_resampling": false,
+    "per_frame_bbox_alignment": false,
+    "whole_joint_cover_repaint": [
+      "elbow",
+      "knee",
+      "ankle"
+    ],
+    "changed_pixels_per_frame": [
+      325,
+      328,
+      306,
+      308,
+      294,
+      293,
+      317,
+      286
+    ],
+    "removed_original_opaque_pixels": [
+      3,
+      2,
+      2,
+      1,
+      3,
+      0,
+      0,
+      0
+    ]
+  },
+  "limitations": [
+    "Baked frame-local repair; original rig is a positioning reference, not a proof for new pixel contours",
+    "Down walk only; no acceptance claimed for other actions or directions",
+    "Visual acceptance remains separate from technical export tests"
+  ],
+  "validation": {
+    "export": "qa/export_validation_v010.json",
+    "motion_skill": "qa/skill_motion_audit_v010.json",
+    "godot": "fixed_rig_playback_v010.json",
+    "protection": "qa/production_protection_v010.json"
+  }
+}

@@ -1,0 +1,3367 @@
+{
+  "version": "v024-cutter-attack-death",
+  "unit": "enemy_cutter",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "configs": {
+    "down_left": {
+      "source": "res://source/down_left.png",
+      "source_sha256": "733bdba60ea1794609040619909951cfb12b2caffa69adf6909cdd154fdd89ad",
+      "parts": [
+        {
+          "id": "rear_right",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              56,
+              0
+            ],
+            [
+              56,
+              67
+            ],
+            [
+              54,
+              67
+            ],
+            [
+              54,
+              71
+            ],
+            [
+              51,
+              71
+            ],
+            [
+              51,
+              77
+            ],
+            [
+              0,
+              77
+            ]
+          ],
+          "pivot": [
+            50,
+            72
+          ],
+          "sole": [
+            50,
+            77
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 0,
+          "z": -2,
+          "opaque_source_pixels": 69,
+          "socket": {
+            "start": [
+              53,
+              69
+            ],
+            "end": [
+              50,
+              70
+            ],
+            "width": 3,
+            "source_rect": [
+              50,
+              77,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 73,
+          "fold_sign": 1,
+          "fold_multiplier": 1.6,
+          "ankle": [
+            50,
+            73
+          ]
+        },
+        {
+          "id": "rear_left",
+          "polygon": [
+            [
+              80,
+              0
+            ],
+            [
+              128,
+              0
+            ],
+            [
+              128,
+              84
+            ],
+            [
+              85,
+              84
+            ],
+            [
+              85,
+              82
+            ],
+            [
+              80,
+              82
+            ]
+          ],
+          "pivot": [
+            82,
+            77
+          ],
+          "sole": [
+            86,
+            84
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 4,
+          "z": -2,
+          "opaque_source_pixels": 139,
+          "socket": {
+            "start": [
+              80,
+              76
+            ],
+            "end": [
+              84,
+              76
+            ],
+            "width": 3,
+            "source_rect": [
+              81,
+              76,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 80,
+          "fold_sign": -1,
+          "fold_multiplier": 1.6,
+          "ankle": [
+            86,
+            80
+          ]
+        },
+        {
+          "id": "front_right",
+          "polygon": [
+            [
+              50,
+              85
+            ],
+            [
+              56,
+              85
+            ],
+            [
+              56,
+              89
+            ],
+            [
+              57,
+              89
+            ],
+            [
+              57,
+              92
+            ],
+            [
+              55,
+              94
+            ],
+            [
+              49,
+              94
+            ],
+            [
+              49,
+              89
+            ]
+          ],
+          "pivot": [
+            54,
+            87
+          ],
+          "sole": [
+            54,
+            93
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 4,
+          "z": -2,
+          "opaque_source_pixels": 48,
+          "socket": {
+            "start": [
+              55,
+              86
+            ],
+            "end": [
+              53,
+              90
+            ],
+            "width": 3,
+            "source_rect": [
+              55,
+              87,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 89,
+          "fold_sign": 1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            54,
+            89
+          ]
+        },
+        {
+          "id": "front_left",
+          "polygon": [
+            [
+              83,
+              84
+            ],
+            [
+              88,
+              84
+            ],
+            [
+              88,
+              87
+            ],
+            [
+              91,
+              87
+            ],
+            [
+              91,
+              96
+            ],
+            [
+              82,
+              96
+            ],
+            [
+              82,
+              91
+            ],
+            [
+              83,
+              91
+            ]
+          ],
+          "pivot": [
+            85,
+            85
+          ],
+          "sole": [
+            84,
+            96
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 0,
+          "z": -2,
+          "opaque_source_pixels": 53,
+          "socket": {
+            "start": [
+              82,
+              85
+            ],
+            "end": [
+              85,
+              88
+            ],
+            "width": 3,
+            "source_rect": [
+              80,
+              84,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 92,
+          "fold_sign": -1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            84,
+            92
+          ]
+        }
+      ],
+      "heading": [
+        -0.7071,
+        0.7071
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            34,
+            81
+          ],
+          [
+            41,
+            81
+          ],
+          [
+            41,
+            78
+          ],
+          [
+            48,
+            78
+          ],
+          [
+            48,
+            77
+          ],
+          [
+            50,
+            77
+          ],
+          [
+            50,
+            80
+          ],
+          [
+            53,
+            80
+          ],
+          [
+            53,
+            85
+          ],
+          [
+            50,
+            85
+          ],
+          [
+            50,
+            88
+          ],
+          [
+            48,
+            88
+          ],
+          [
+            48,
+            98
+          ],
+          [
+            34,
+            98
+          ]
+        ],
+        [
+          [
+            72,
+            85
+          ],
+          [
+            75,
+            85
+          ],
+          [
+            75,
+            82
+          ],
+          [
+            81,
+            82
+          ],
+          [
+            81,
+            86
+          ],
+          [
+            83,
+            86
+          ],
+          [
+            83,
+            90
+          ],
+          [
+            81,
+            90
+          ],
+          [
+            81,
+            94
+          ],
+          [
+            78,
+            94
+          ],
+          [
+            78,
+            104
+          ],
+          [
+            68,
+            104
+          ],
+          [
+            68,
+            97
+          ],
+          [
+            70,
+            97
+          ],
+          [
+            70,
+            91
+          ],
+          [
+            72,
+            91
+          ]
+        ],
+        [
+          [
+            56,
+            84
+          ],
+          [
+            66,
+            84
+          ],
+          [
+            66,
+            90
+          ],
+          [
+            56,
+            90
+          ]
+        ]
+      ],
+      "hidden_legs": [],
+      "occlusion_note": "The far pair in W/E and far front leg in diagonals remain behind the chassis/tools. Hidden sole positions are not claimed as measured contact pixels.",
+      "tools": [
+        {
+          "id": "saw",
+          "polygon": [
+            [
+              34,
+              81
+            ],
+            [
+              41,
+              81
+            ],
+            [
+              41,
+              78
+            ],
+            [
+              48,
+              78
+            ],
+            [
+              48,
+              77
+            ],
+            [
+              50,
+              77
+            ],
+            [
+              50,
+              80
+            ],
+            [
+              53,
+              80
+            ],
+            [
+              53,
+              85
+            ],
+            [
+              50,
+              85
+            ],
+            [
+              50,
+              88
+            ],
+            [
+              48,
+              88
+            ],
+            [
+              48,
+              98
+            ],
+            [
+              34,
+              98
+            ]
+          ],
+          "extra_polygons": [],
+          "pivot": [
+            49,
+            81
+          ],
+          "attack_angle": -22,
+          "death_angle": 55,
+          "blade_polygon": [
+            [
+              39,
+              83
+            ],
+            [
+              44,
+              83
+            ],
+            [
+              44,
+              84
+            ],
+            [
+              45,
+              84
+            ],
+            [
+              45,
+              85
+            ],
+            [
+              46,
+              85
+            ],
+            [
+              46,
+              88
+            ],
+            [
+              48,
+              88
+            ],
+            [
+              48,
+              94
+            ],
+            [
+              46,
+              96
+            ],
+            [
+              44,
+              98
+            ],
+            [
+              35,
+              98
+            ],
+            [
+              34,
+              89
+            ],
+            [
+              36,
+              85
+            ]
+          ],
+          "hub": [
+            41.5,
+            90.5
+          ],
+          "radius": [
+            6.5,
+            7.5
+          ],
+          "socket": {
+            "start": [
+              54,
+              82
+            ],
+            "end": [
+              49,
+              82
+            ],
+            "width": 3,
+            "source_rect": [
+              55,
+              87,
+              2,
+              2
+            ]
+          },
+          "spindle": {
+            "start": [
+              48,
+              84
+            ],
+            "end": [
+              41.5,
+              90.5
+            ],
+            "width": 3,
+            "source_rect": [
+              55,
+              87,
+              2,
+              2
+            ]
+          }
+        },
+        {
+          "id": "claw",
+          "polygon": [
+            [
+              72,
+              85
+            ],
+            [
+              75,
+              85
+            ],
+            [
+              75,
+              82
+            ],
+            [
+              81,
+              82
+            ],
+            [
+              81,
+              86
+            ],
+            [
+              83,
+              86
+            ],
+            [
+              83,
+              90
+            ],
+            [
+              81,
+              90
+            ],
+            [
+              81,
+              94
+            ],
+            [
+              78,
+              94
+            ],
+            [
+              78,
+              104
+            ],
+            [
+              68,
+              104
+            ],
+            [
+              68,
+              97
+            ],
+            [
+              70,
+              97
+            ],
+            [
+              70,
+              91
+            ],
+            [
+              72,
+              91
+            ]
+          ],
+          "extra_polygons": [
+            [
+              [
+                68,
+                90
+              ],
+              [
+                83,
+                90
+              ],
+              [
+                83,
+                105
+              ],
+              [
+                68,
+                105
+              ]
+            ]
+          ],
+          "pivot": [
+            78,
+            85
+          ],
+          "attack_angle": 15,
+          "death_angle": 65,
+          "blade_polygon": [],
+          "hub": [
+            0,
+            0
+          ],
+          "radius": [
+            1,
+            1
+          ]
+        }
+      ],
+      "sensor_rect": [
+        58,
+        77,
+        5,
+        5
+      ],
+      "ownership_overrides": [
+        {
+          "polygon": [
+            [
+              81,
+              82
+            ],
+            [
+              85,
+              82
+            ],
+            [
+              85,
+              86
+            ],
+            [
+              81,
+              86
+            ]
+          ],
+          "owner": "front_left"
+        }
+      ],
+      "attack_note": "Only originally visible tools are articulated."
+    },
+    "left": {
+      "source": "res://source/left.png",
+      "source_sha256": "0cdcb5fcd4fd7d91eaf3f9c51eb2b004581656e74d388b2e21329d7147e25066",
+      "parts": [
+        {
+          "id": "front_left",
+          "polygon": [
+            [
+              52,
+              89
+            ],
+            [
+              67,
+              89
+            ],
+            [
+              67,
+              104
+            ],
+            [
+              52,
+              104
+            ]
+          ],
+          "pivot": [
+            62,
+            90
+          ],
+          "sole": [
+            58,
+            104
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 0,
+          "z": -2,
+          "opaque_source_pixels": 141,
+          "socket": {
+            "start": [
+              64,
+              88
+            ],
+            "end": [
+              62,
+              92
+            ],
+            "width": 3,
+            "source_rect": [
+              63,
+              89,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 100,
+          "fold_sign": 1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            58,
+            100
+          ]
+        },
+        {
+          "id": "rear_left",
+          "polygon": [
+            [
+              74,
+              88
+            ],
+            [
+              89,
+              88
+            ],
+            [
+              89,
+              104
+            ],
+            [
+              74,
+              104
+            ]
+          ],
+          "pivot": [
+            76,
+            89
+          ],
+          "sole": [
+            83,
+            103
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 4,
+          "z": -2,
+          "opaque_source_pixels": 139,
+          "socket": {
+            "start": [
+              76,
+              87
+            ],
+            "end": [
+              78,
+              91
+            ],
+            "width": 3,
+            "source_rect": [
+              76,
+              86,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 99,
+          "fold_sign": -1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            83,
+            99
+          ]
+        }
+      ],
+      "heading": [
+        -1,
+        0
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            32,
+            84
+          ],
+          [
+            53,
+            84
+          ],
+          [
+            53,
+            83
+          ],
+          [
+            56,
+            83
+          ],
+          [
+            56,
+            91
+          ],
+          [
+            52,
+            91
+          ],
+          [
+            52,
+            93
+          ],
+          [
+            49,
+            93
+          ],
+          [
+            49,
+            99
+          ],
+          [
+            32,
+            99
+          ]
+        ]
+      ],
+      "hidden_legs": [
+        "front_right",
+        "rear_right"
+      ],
+      "occlusion_note": "The far pair in W/E and far front leg in diagonals remain behind the chassis/tools. Hidden sole positions are not claimed as measured contact pixels.",
+      "tools": [
+        {
+          "id": "claw",
+          "polygon": [
+            [
+              32,
+              84
+            ],
+            [
+              53,
+              84
+            ],
+            [
+              53,
+              83
+            ],
+            [
+              56,
+              83
+            ],
+            [
+              56,
+              91
+            ],
+            [
+              52,
+              91
+            ],
+            [
+              52,
+              93
+            ],
+            [
+              49,
+              93
+            ],
+            [
+              49,
+              99
+            ],
+            [
+              32,
+              99
+            ]
+          ],
+          "extra_polygons": [
+            [
+              [
+                32,
+                91
+              ],
+              [
+                52,
+                91
+              ],
+              [
+                52,
+                101
+              ],
+              [
+                32,
+                101
+              ]
+            ]
+          ],
+          "pivot": [
+            54,
+            87
+          ],
+          "attack_angle": -18,
+          "death_angle": 55,
+          "blade_polygon": [],
+          "hub": [
+            0,
+            0
+          ],
+          "radius": [
+            1,
+            1
+          ]
+        }
+      ],
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ownership_overrides": [],
+      "attack_note": "Only originally visible tools are articulated."
+    },
+    "up_left": {
+      "source": "res://source/up_left.png",
+      "source_sha256": "12410030fba8a46ed597bd71cd5dd8da9994bc1d0d2109a116b238214d1d46eb",
+      "parts": [
+        {
+          "id": "rear_left",
+          "polygon": [
+            [
+              44,
+              89
+            ],
+            [
+              59,
+              89
+            ],
+            [
+              59,
+              104
+            ],
+            [
+              44,
+              104
+            ]
+          ],
+          "pivot": [
+            54,
+            91
+          ],
+          "sole": [
+            51,
+            104
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 4,
+          "z": -2,
+          "opaque_source_pixels": 129,
+          "socket": {
+            "start": [
+              55,
+              89
+            ],
+            "end": [
+              52,
+              93
+            ],
+            "width": 3,
+            "source_rect": [
+              55,
+              89,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 100,
+          "fold_sign": 1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            51,
+            100
+          ]
+        },
+        {
+          "id": "rear_right",
+          "polygon": [
+            [
+              76,
+              87
+            ],
+            [
+              91,
+              87
+            ],
+            [
+              91,
+              104
+            ],
+            [
+              76,
+              104
+            ]
+          ],
+          "pivot": [
+            79,
+            90
+          ],
+          "sole": [
+            84,
+            102
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 0,
+          "z": -2,
+          "opaque_source_pixels": 131,
+          "socket": {
+            "start": [
+              79,
+              86
+            ],
+            "end": [
+              82,
+              92
+            ],
+            "width": 3,
+            "source_rect": [
+              79,
+              86,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 98,
+          "fold_sign": -1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            84,
+            98
+          ]
+        },
+        {
+          "id": "front_right",
+          "polygon": [
+            [
+              73,
+              67
+            ],
+            [
+              82,
+              67
+            ],
+            [
+              86,
+              71
+            ],
+            [
+              86,
+              75
+            ],
+            [
+              82,
+              75
+            ],
+            [
+              82,
+              77
+            ],
+            [
+              78,
+              77
+            ],
+            [
+              78,
+              72
+            ],
+            [
+              73,
+              72
+            ]
+          ],
+          "pivot": [
+            79,
+            72
+          ],
+          "sole": null,
+          "overlap_polygons": [],
+          "phase_offset": 4,
+          "z": -2,
+          "opaque_source_pixels": 45,
+          "socket": {
+            "start": [
+              77,
+              72
+            ],
+            "end": [
+              81,
+              71
+            ],
+            "width": 3,
+            "source_rect": [
+              80,
+              78,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 128,
+          "fold_sign": -1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            79,
+            72
+          ]
+        }
+      ],
+      "heading": [
+        -0.7071,
+        -0.7071
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            32,
+            75
+          ],
+          [
+            56,
+            75
+          ],
+          [
+            56,
+            89
+          ],
+          [
+            32,
+            89
+          ]
+        ],
+        [
+          [
+            83,
+            73
+          ],
+          [
+            96,
+            73
+          ],
+          [
+            96,
+            90
+          ],
+          [
+            87,
+            90
+          ],
+          [
+            87,
+            88
+          ],
+          [
+            83,
+            88
+          ],
+          [
+            83,
+            86
+          ],
+          [
+            81,
+            86
+          ],
+          [
+            81,
+            76
+          ]
+        ]
+      ],
+      "hidden_legs": [
+        "front_left"
+      ],
+      "occlusion_note": "The far pair in W/E and far front leg in diagonals remain behind the chassis/tools. Hidden sole positions are not claimed as measured contact pixels.",
+      "tools": [
+        {
+          "id": "claw",
+          "polygon": [
+            [
+              32,
+              75
+            ],
+            [
+              56,
+              75
+            ],
+            [
+              56,
+              89
+            ],
+            [
+              32,
+              89
+            ]
+          ],
+          "extra_polygons": [
+            [
+              [
+                32,
+                75
+              ],
+              [
+                56,
+                75
+              ],
+              [
+                56,
+                91
+              ],
+              [
+                32,
+                91
+              ]
+            ]
+          ],
+          "pivot": [
+            54,
+            84
+          ],
+          "attack_angle": -16,
+          "death_angle": 45,
+          "blade_polygon": [],
+          "hub": [
+            0,
+            0
+          ],
+          "radius": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "saw",
+          "polygon": [
+            [
+              83,
+              73
+            ],
+            [
+              96,
+              73
+            ],
+            [
+              96,
+              90
+            ],
+            [
+              87,
+              90
+            ],
+            [
+              87,
+              88
+            ],
+            [
+              83,
+              88
+            ],
+            [
+              83,
+              86
+            ],
+            [
+              81,
+              86
+            ],
+            [
+              81,
+              76
+            ]
+          ],
+          "extra_polygons": [],
+          "pivot": [
+            84,
+            74
+          ],
+          "attack_angle": 20,
+          "death_angle": -45,
+          "blade_polygon": [
+            [
+              83,
+              73
+            ],
+            [
+              87,
+              73
+            ],
+            [
+              90,
+              76
+            ],
+            [
+              92,
+              78
+            ],
+            [
+              92,
+              82
+            ],
+            [
+              90,
+              85
+            ],
+            [
+              86,
+              88
+            ],
+            [
+              82,
+              88
+            ],
+            [
+              79,
+              84
+            ],
+            [
+              79,
+              78
+            ],
+            [
+              80,
+              76
+            ],
+            [
+              82,
+              76
+            ]
+          ],
+          "hub": [
+            84.5,
+            79.5
+          ],
+          "radius": [
+            6.5,
+            7.5
+          ]
+        }
+      ],
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ownership_overrides": [],
+      "attack_note": "Only originally visible tools are articulated."
+    },
+    "up": {
+      "source": "res://source/up.png",
+      "source_sha256": "9f4972198f556692e92211835f781ff66f8aac04172547be294899700a6fdef3",
+      "parts": [
+        {
+          "id": "front_left",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              52,
+              0
+            ],
+            [
+              52,
+              80
+            ],
+            [
+              51,
+              80
+            ],
+            [
+              51,
+              86
+            ],
+            [
+              46,
+              86
+            ],
+            [
+              46,
+              89
+            ],
+            [
+              43,
+              89
+            ],
+            [
+              43,
+              95
+            ],
+            [
+              0,
+              95
+            ]
+          ],
+          "pivot": [
+            49,
+            80
+          ],
+          "sole": [
+            42,
+            95
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 0,
+          "z": -2,
+          "opaque_source_pixels": 184,
+          "socket": {
+            "start": [
+              51,
+              81
+            ],
+            "end": [
+              46,
+              81
+            ],
+            "width": 3,
+            "source_rect": [
+              48,
+              78,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 91,
+          "fold_sign": 1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            42,
+            91
+          ]
+        },
+        {
+          "id": "front_right",
+          "polygon": [
+            [
+              76,
+              0
+            ],
+            [
+              128,
+              0
+            ],
+            [
+              128,
+              95
+            ],
+            [
+              86,
+              95
+            ],
+            [
+              86,
+              89
+            ],
+            [
+              82,
+              89
+            ],
+            [
+              82,
+              86
+            ],
+            [
+              78,
+              86
+            ],
+            [
+              78,
+              80
+            ],
+            [
+              76,
+              80
+            ]
+          ],
+          "pivot": [
+            79,
+            80
+          ],
+          "sole": [
+            86,
+            95
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 4,
+          "z": -2,
+          "opaque_source_pixels": 173,
+          "socket": {
+            "start": [
+              77,
+              81
+            ],
+            "end": [
+              82,
+              81
+            ],
+            "width": 3,
+            "source_rect": [
+              78,
+              78,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 91,
+          "fold_sign": -1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            86,
+            91
+          ]
+        },
+        {
+          "id": "rear_left",
+          "polygon": [
+            [
+              43,
+              89
+            ],
+            [
+              55,
+              89
+            ],
+            [
+              55,
+              97
+            ],
+            [
+              50,
+              97
+            ],
+            [
+              50,
+              104
+            ],
+            [
+              39,
+              104
+            ],
+            [
+              39,
+              96
+            ],
+            [
+              43,
+              96
+            ]
+          ],
+          "pivot": [
+            52,
+            92
+          ],
+          "sole": [
+            44,
+            104
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 4,
+          "z": -2,
+          "opaque_source_pixels": 147,
+          "socket": {
+            "start": [
+              53,
+              89
+            ],
+            "end": [
+              49,
+              93
+            ],
+            "width": 3,
+            "source_rect": [
+              54,
+              91,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 100,
+          "fold_sign": 1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            44,
+            100
+          ]
+        },
+        {
+          "id": "rear_right",
+          "polygon": [
+            [
+              78,
+              89
+            ],
+            [
+              86,
+              89
+            ],
+            [
+              86,
+              96
+            ],
+            [
+              89,
+              96
+            ],
+            [
+              89,
+              104
+            ],
+            [
+              78,
+              104
+            ],
+            [
+              78,
+              98
+            ],
+            [
+              74,
+              96
+            ],
+            [
+              74,
+              91
+            ]
+          ],
+          "pivot": [
+            77,
+            92
+          ],
+          "sole": [
+            84,
+            104
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 0,
+          "z": -2,
+          "opaque_source_pixels": 145,
+          "socket": {
+            "start": [
+              76,
+              89
+            ],
+            "end": [
+              80,
+              93
+            ],
+            "width": 3,
+            "source_rect": [
+              76,
+              90,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 100,
+          "fold_sign": -1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            84,
+            100
+          ]
+        }
+      ],
+      "heading": [
+        0,
+        -1
+      ],
+      "protected_body_polygons": [],
+      "hidden_legs": [],
+      "occlusion_note": "The far pair in W/E and far front leg in diagonals remain behind the chassis/tools. Hidden sole positions are not claimed as measured contact pixels.",
+      "tools": [],
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ownership_overrides": [
+        {
+          "polygon": [
+            [
+              50,
+              97
+            ],
+            [
+              51,
+              97
+            ],
+            [
+              51,
+              98
+            ],
+            [
+              50,
+              98
+            ]
+          ],
+          "owner": "rear_left"
+        },
+        {
+          "polygon": [
+            [
+              86,
+              95
+            ],
+            [
+              87,
+              95
+            ],
+            [
+              87,
+              96
+            ],
+            [
+              86,
+              96
+            ]
+          ],
+          "owner": "front_right_foot"
+        },
+        {
+          "polygon": [
+            [
+              41,
+              95
+            ],
+            [
+              43,
+              95
+            ],
+            [
+              43,
+              96
+            ],
+            [
+              41,
+              96
+            ]
+          ],
+          "owner": "front_left_foot"
+        }
+      ],
+      "attack_note": "Rear tools remain occluded; body anticipation/recovery is visible.",
+      "attack_body_poses": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          2,
+          1,
+          5
+        ],
+        [
+          -2,
+          -1,
+          -7
+        ],
+        [
+          -1,
+          0,
+          -2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "attack_body_pivot": [
+        64,
+        85
+      ]
+    },
+    "up_right": {
+      "source": "res://source/up_right.png",
+      "source_sha256": "97780b575fa89f6046b3cced81e0a71e3efbc133cbee28cbb46da26cb13088b4",
+      "parts": [
+        {
+          "id": "front_left",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              47,
+              0
+            ],
+            [
+              47,
+              70
+            ],
+            [
+              45,
+              70
+            ],
+            [
+              45,
+              80
+            ],
+            [
+              42,
+              80
+            ],
+            [
+              42,
+              83
+            ],
+            [
+              0,
+              83
+            ]
+          ],
+          "pivot": [
+            45,
+            74
+          ],
+          "sole": [
+            41,
+            81
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 0,
+          "z": -2,
+          "opaque_source_pixels": 22,
+          "socket": {
+            "start": [
+              46,
+              74
+            ],
+            "end": [
+              43,
+              75
+            ],
+            "width": 2,
+            "source_rect": [
+              43,
+              79,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 77,
+          "fold_sign": 1,
+          "fold_multiplier": 1.6,
+          "ankle": [
+            41,
+            77
+          ]
+        },
+        {
+          "id": "rear_left",
+          "polygon": [
+            [
+              36,
+              83
+            ],
+            [
+              50,
+              83
+            ],
+            [
+              50,
+              98
+            ],
+            [
+              36,
+              98
+            ]
+          ],
+          "pivot": [
+            45,
+            87
+          ],
+          "sole": [
+            43,
+            98
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 4,
+          "z": -2,
+          "opaque_source_pixels": 124,
+          "socket": {
+            "start": [
+              47,
+              83
+            ],
+            "end": [
+              44,
+              87
+            ],
+            "width": 3,
+            "source_rect": [
+              48,
+              86,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 94,
+          "fold_sign": 1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            43,
+            94
+          ]
+        },
+        {
+          "id": "rear_right",
+          "polygon": [
+            [
+              62,
+              87
+            ],
+            [
+              78,
+              87
+            ],
+            [
+              78,
+              104
+            ],
+            [
+              62,
+              104
+            ]
+          ],
+          "pivot": [
+            65,
+            90
+          ],
+          "sole": [
+            70,
+            104
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 0,
+          "z": -2,
+          "opaque_source_pixels": 153,
+          "socket": {
+            "start": [
+              64,
+              87
+            ],
+            "end": [
+              67,
+              92
+            ],
+            "width": 3,
+            "source_rect": [
+              64,
+              89,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 100,
+          "fold_sign": -1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            70,
+            100
+          ]
+        }
+      ],
+      "heading": [
+        0.7071,
+        -0.7071
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            71,
+            79
+          ],
+          [
+            81,
+            79
+          ],
+          [
+            81,
+            80
+          ],
+          [
+            97,
+            80
+          ],
+          [
+            97,
+            97
+          ],
+          [
+            80,
+            97
+          ],
+          [
+            80,
+            90
+          ],
+          [
+            75,
+            90
+          ],
+          [
+            75,
+            88
+          ],
+          [
+            71,
+            88
+          ]
+        ],
+        [
+          [
+            71,
+            63
+          ],
+          [
+            85,
+            63
+          ],
+          [
+            85,
+            79
+          ],
+          [
+            71,
+            79
+          ]
+        ]
+      ],
+      "hidden_legs": [
+        "front_right"
+      ],
+      "occlusion_note": "The far pair in W/E and far front leg in diagonals remain behind the chassis/tools. Hidden sole positions are not claimed as measured contact pixels.",
+      "tools": [
+        {
+          "id": "saw",
+          "polygon": [
+            [
+              71,
+              79
+            ],
+            [
+              81,
+              79
+            ],
+            [
+              81,
+              80
+            ],
+            [
+              97,
+              80
+            ],
+            [
+              97,
+              97
+            ],
+            [
+              80,
+              97
+            ],
+            [
+              80,
+              90
+            ],
+            [
+              75,
+              90
+            ],
+            [
+              75,
+              88
+            ],
+            [
+              71,
+              88
+            ]
+          ],
+          "extra_polygons": [],
+          "pivot": [
+            75,
+            84
+          ],
+          "attack_angle": 18,
+          "death_angle": -50,
+          "blade_polygon": [
+            [
+              83,
+              81
+            ],
+            [
+              90,
+              81
+            ],
+            [
+              94,
+              84
+            ],
+            [
+              94,
+              92
+            ],
+            [
+              90,
+              96
+            ],
+            [
+              84,
+              96
+            ],
+            [
+              81,
+              91
+            ],
+            [
+              81,
+              87
+            ],
+            [
+              82,
+              83
+            ]
+          ],
+          "hub": [
+            86.5,
+            87.5
+          ],
+          "radius": [
+            6.5,
+            7.5
+          ]
+        },
+        {
+          "id": "claw",
+          "polygon": [
+            [
+              71,
+              63
+            ],
+            [
+              85,
+              63
+            ],
+            [
+              85,
+              79
+            ],
+            [
+              71,
+              79
+            ]
+          ],
+          "extra_polygons": [],
+          "pivot": [
+            78,
+            75
+          ],
+          "attack_angle": -12,
+          "death_angle": -35,
+          "blade_polygon": [],
+          "hub": [
+            0,
+            0
+          ],
+          "radius": [
+            1,
+            1
+          ]
+        }
+      ],
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ownership_overrides": [],
+      "attack_note": "Only originally visible tools are articulated."
+    },
+    "right": {
+      "source": "res://source/right.png",
+      "source_sha256": "f935c34072b3dc379b6378808ed50c89dea9c4a191abc2afa53a7f8d04c1c8fa",
+      "parts": [
+        {
+          "id": "rear_right",
+          "polygon": [
+            [
+              34,
+              87
+            ],
+            [
+              50,
+              87
+            ],
+            [
+              50,
+              104
+            ],
+            [
+              34,
+              104
+            ]
+          ],
+          "pivot": [
+            45,
+            90
+          ],
+          "sole": [
+            42,
+            103
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 0,
+          "z": -2,
+          "opaque_source_pixels": 134,
+          "socket": {
+            "start": [
+              47,
+              87
+            ],
+            "end": [
+              44,
+              92
+            ],
+            "width": 3,
+            "source_rect": [
+              47,
+              88,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 99,
+          "fold_sign": 1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            42,
+            99
+          ]
+        },
+        {
+          "id": "front_right",
+          "polygon": [
+            [
+              56,
+              90
+            ],
+            [
+              71,
+              90
+            ],
+            [
+              71,
+              104
+            ],
+            [
+              56,
+              104
+            ]
+          ],
+          "pivot": [
+            60,
+            91
+          ],
+          "sole": [
+            66,
+            104
+          ],
+          "overlap_polygons": [],
+          "phase_offset": 4,
+          "z": -2,
+          "opaque_source_pixels": 122,
+          "socket": {
+            "start": [
+              60,
+              88
+            ],
+            "end": [
+              62,
+              92
+            ],
+            "width": 3,
+            "source_rect": [
+              59,
+              91,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 100,
+          "fold_sign": 1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            66,
+            100
+          ]
+        }
+      ],
+      "heading": [
+        1,
+        0
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            64,
+            82
+          ],
+          [
+            78,
+            82
+          ],
+          [
+            78,
+            81
+          ],
+          [
+            95,
+            81
+          ],
+          [
+            95,
+            100
+          ],
+          [
+            74,
+            100
+          ],
+          [
+            74,
+            93
+          ],
+          [
+            69,
+            93
+          ],
+          [
+            69,
+            91
+          ],
+          [
+            64,
+            91
+          ]
+        ]
+      ],
+      "hidden_legs": [
+        "front_left",
+        "rear_left"
+      ],
+      "occlusion_note": "The far pair in W/E and far front leg in diagonals remain behind the chassis/tools. Hidden sole positions are not claimed as measured contact pixels.",
+      "tools": [
+        {
+          "id": "saw",
+          "polygon": [
+            [
+              64,
+              82
+            ],
+            [
+              78,
+              82
+            ],
+            [
+              78,
+              81
+            ],
+            [
+              95,
+              81
+            ],
+            [
+              95,
+              100
+            ],
+            [
+              74,
+              100
+            ],
+            [
+              74,
+              93
+            ],
+            [
+              69,
+              93
+            ],
+            [
+              69,
+              91
+            ],
+            [
+              64,
+              91
+            ]
+          ],
+          "extra_polygons": [],
+          "pivot": [
+            69,
+            87
+          ],
+          "attack_angle": 10,
+          "death_angle": -50,
+          "blade_polygon": [
+            [
+              78,
+              85
+            ],
+            [
+              84,
+              85
+            ],
+            [
+              88,
+              88
+            ],
+            [
+              89,
+              95
+            ],
+            [
+              86,
+              99
+            ],
+            [
+              80,
+              100
+            ],
+            [
+              75,
+              97
+            ],
+            [
+              74,
+              92
+            ],
+            [
+              74,
+              89
+            ],
+            [
+              76,
+              87
+            ]
+          ],
+          "hub": [
+            80.5,
+            92
+          ],
+          "radius": [
+            7,
+            8
+          ]
+        }
+      ],
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ownership_overrides": [],
+      "attack_note": "Only originally visible tools are articulated."
+    },
+    "down_right": {
+      "source": "res://source/down_right.png",
+      "binding": "approved pilot rig",
+      "parts": [
+        {
+          "id": "rear_right",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              50,
+              0
+            ],
+            [
+              50,
+              68
+            ],
+            [
+              49,
+              68
+            ],
+            [
+              49,
+              77
+            ],
+            [
+              48,
+              77
+            ],
+            [
+              48,
+              85
+            ],
+            [
+              0,
+              85
+            ]
+          ],
+          "pivot": [
+            49,
+            77
+          ],
+          "sole": [
+            44,
+            85
+          ],
+          "socket": {
+            "start": [
+              51,
+              76
+            ],
+            "end": [
+              47,
+              78
+            ],
+            "width": 3,
+            "source_rect": [
+              49,
+              79,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 81,
+          "fold_sign": 1,
+          "fold_multiplier": 1.6,
+          "ankle": [
+            44,
+            81
+          ],
+          "nominal_previous_sole": [
+            44,
+            85
+          ]
+        },
+        {
+          "id": "rear_left",
+          "polygon": [
+            [
+              72,
+              0
+            ],
+            [
+              83,
+              0
+            ],
+            [
+              83,
+              75
+            ],
+            [
+              80,
+              79
+            ],
+            [
+              78,
+              81
+            ],
+            [
+              78,
+              74
+            ],
+            [
+              76,
+              74
+            ],
+            [
+              76,
+              70
+            ],
+            [
+              72,
+              70
+            ]
+          ],
+          "pivot": [
+            78,
+            75
+          ],
+          "sole": [
+            78,
+            81
+          ],
+          "socket": {
+            "start": [
+              77,
+              74
+            ],
+            "end": [
+              79,
+              76
+            ],
+            "width": 3,
+            "source_rect": [
+              76,
+              77,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 75,
+          "fold_sign": -1,
+          "fold_multiplier": 1.6,
+          "ankle": [
+            79,
+            75
+          ],
+          "nominal_previous_sole": [
+            79,
+            79
+          ]
+        },
+        {
+          "id": "front_right",
+          "polygon": [
+            [
+              47,
+              81
+            ],
+            [
+              58,
+              81
+            ],
+            [
+              58,
+              95
+            ],
+            [
+              47,
+              95
+            ]
+          ],
+          "pivot": [
+            54,
+            83
+          ],
+          "sole": [
+            50,
+            94
+          ],
+          "socket": {
+            "start": [
+              55,
+              83
+            ],
+            "end": [
+              52,
+              87
+            ],
+            "width": 3,
+            "source_rect": [
+              51,
+              90,
+              2,
+              2
+            ]
+          },
+          "foot_cut_y": 90,
+          "fold_sign": 1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            50,
+            90
+          ],
+          "nominal_previous_sole": [
+            52,
+            94
+          ]
+        },
+        {
+          "id": "front_left",
+          "polygon": [
+            [
+              72,
+              78
+            ],
+            [
+              84,
+              78
+            ],
+            [
+              84,
+              92
+            ],
+            [
+              72,
+              92
+            ]
+          ],
+          "pivot": [
+            75,
+            80
+          ],
+          "sole": [
+            79,
+            91
+          ],
+          "socket": {
+            "start": [
+              75,
+              79
+            ],
+            "end": [
+              78,
+              85
+            ],
+            "width": 3,
+            "source_rect": [
+              77,
+              86,
+              2,
+              2
+            ],
+            "material_note": "Fixed UV has one opaque dark-brown source pixel and three transparent pixels; not a solid 2x2 blue patch."
+          },
+          "foot_cut_y": 87,
+          "fold_sign": -1,
+          "fold_multiplier": 0.85,
+          "ankle": [
+            79,
+            87
+          ],
+          "nominal_previous_sole": [
+            81,
+            91
+          ]
+        }
+      ],
+      "hidden_legs": [],
+      "protected_body_polygons": [
+        [
+          [
+            53,
+            81
+          ],
+          [
+            61,
+            81
+          ],
+          [
+            61,
+            87
+          ],
+          [
+            64,
+            87
+          ],
+          [
+            64,
+            89
+          ],
+          [
+            69,
+            89
+          ],
+          [
+            69,
+            105
+          ],
+          [
+            51,
+            105
+          ],
+          [
+            51,
+            90
+          ],
+          [
+            53,
+            90
+          ]
+        ],
+        [
+          [
+            81,
+            77
+          ],
+          [
+            86,
+            77
+          ],
+          [
+            86,
+            81
+          ],
+          [
+            90,
+            81
+          ],
+          [
+            90,
+            84
+          ],
+          [
+            96,
+            84
+          ],
+          [
+            96,
+            97
+          ],
+          [
+            83,
+            97
+          ],
+          [
+            83,
+            90
+          ],
+          [
+            80,
+            90
+          ],
+          [
+            80,
+            82
+          ]
+        ],
+        [
+          [
+            56,
+            80
+          ],
+          [
+            74,
+            80
+          ],
+          [
+            74,
+            88
+          ],
+          [
+            56,
+            88
+          ]
+        ]
+      ],
+      "source_sha256": "79e56cd5438f5b78d4dad555e9a364c359635b8cb8b58c6b1790cc166679b462",
+      "tools": [
+        {
+          "id": "saw",
+          "polygon": [
+            [
+              53,
+              81
+            ],
+            [
+              61,
+              81
+            ],
+            [
+              61,
+              87
+            ],
+            [
+              64,
+              87
+            ],
+            [
+              64,
+              89
+            ],
+            [
+              69,
+              89
+            ],
+            [
+              69,
+              105
+            ],
+            [
+              51,
+              105
+            ],
+            [
+              51,
+              90
+            ],
+            [
+              53,
+              90
+            ]
+          ],
+          "extra_polygons": [],
+          "pivot": [
+            56,
+            85
+          ],
+          "attack_angle": -20,
+          "death_angle": -80,
+          "blade_polygon": [
+            [
+              55,
+              90
+            ],
+            [
+              61,
+              90
+            ],
+            [
+              65,
+              93
+            ],
+            [
+              65,
+              99
+            ],
+            [
+              62,
+              103
+            ],
+            [
+              58,
+              104
+            ],
+            [
+              52,
+              101
+            ],
+            [
+              51,
+              95
+            ],
+            [
+              51,
+              92
+            ]
+          ],
+          "hub": [
+            59.5,
+            96.5
+          ],
+          "radius": [
+            6.5,
+            7.5
+          ]
+        },
+        {
+          "id": "claw",
+          "polygon": [
+            [
+              81,
+              77
+            ],
+            [
+              86,
+              77
+            ],
+            [
+              86,
+              81
+            ],
+            [
+              90,
+              81
+            ],
+            [
+              90,
+              84
+            ],
+            [
+              96,
+              84
+            ],
+            [
+              96,
+              97
+            ],
+            [
+              83,
+              97
+            ],
+            [
+              83,
+              90
+            ],
+            [
+              80,
+              90
+            ],
+            [
+              80,
+              82
+            ]
+          ],
+          "extra_polygons": [
+            [
+              [
+                80,
+                83
+              ],
+              [
+                96,
+                83
+              ],
+              [
+                96,
+                99
+              ],
+              [
+                80,
+                99
+              ]
+            ]
+          ],
+          "pivot": [
+            82,
+            82
+          ],
+          "attack_angle": 16,
+          "death_angle": -55,
+          "blade_polygon": [],
+          "hub": [
+            0,
+            0
+          ],
+          "radius": [
+            1,
+            1
+          ]
+        }
+      ],
+      "sensor_rect": [
+        65,
+        76,
+        5,
+        5
+      ],
+      "ownership_overrides": [
+        {
+          "polygon": [
+            [
+              45,
+              85
+            ],
+            [
+              47,
+              85
+            ],
+            [
+              47,
+              90
+            ],
+            [
+              45,
+              90
+            ]
+          ],
+          "owner": "front_right"
+        },
+        {
+          "polygon": [
+            [
+              72,
+              88
+            ],
+            [
+              73,
+              88
+            ],
+            [
+              73,
+              89
+            ],
+            [
+              72,
+              89
+            ]
+          ],
+          "owner": "body"
+        }
+      ],
+      "attack_note": "Only originally visible tools are articulated."
+    }
+  },
+  "preserved": [
+    {
+      "action": "attack_down",
+      "atlas_sha256": "f925321fdf91049dd519825be672a43f5c89c1cb16e7df2a6e1f906fdf279a7d",
+      "frame_hashes": [
+        "e3101a2a5dec9a7aa336745efab890c7e3469b172641c40bfbc8542943c3e447",
+        "835698437b8b8610161e0107a33f8c7623795c70396f642688dcb5b1922256da",
+        "6f7dd777d2577db31d7a10975aea96925db7001f71113d1ed551b981e70c8489",
+        "9334205cba22d628729a5937b2a709a0a34b7ea9e823756a5d23d8b180656deb",
+        "4afce9c619e9d0ada170a20c336a895492f3bcedc4ab4e6de4544c8854a9e254",
+        "e3101a2a5dec9a7aa336745efab890c7e3469b172641c40bfbc8542943c3e447"
+      ]
+    },
+    {
+      "action": "death_down",
+      "atlas_sha256": "18b755c92ed2a462e1c4c3034618585adc37d0d0cf9059e52e4800fc317504a2",
+      "frame_hashes": [
+        "e3101a2a5dec9a7aa336745efab890c7e3469b172641c40bfbc8542943c3e447",
+        "d92595f9b86903aadda5c2265f56554bc5f359f8ee392fceb13164266b99ebcc",
+        "e2cff5ac98d987bf9071847a0ece1f5edc88bd8d324faf6111108e4fc11f8d1e",
+        "3888f9eef58233889938dbe11ca23f9291884523e8afac3eb91582c6dd9c6cbd",
+        "4f142021b45140a601e5bde90982a80da5c3b0acfd3a5329d8aadaffa839c0c0",
+        "1626f1955af68515976a8f5ade2a23717d8b1a65a587bbfce0dbfdfb0701365c",
+        "1626f1955af68515976a8f5ade2a23717d8b1a65a587bbfce0dbfdfb0701365c",
+        "1626f1955af68515976a8f5ade2a23717d8b1a65a587bbfce0dbfdfb0701365c"
+      ]
+    }
+  ],
+  "depth": [
+    2,
+    1,
+    0,
+    -1,
+    -2,
+    -1,
+    0,
+    1
+  ],
+  "lift": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    1
+  ],
+  "body_y": [
+    0,
+    0,
+    -1,
+    0,
+    0,
+    0,
+    -1,
+    0
+  ],
+  "actions": {
+    "attack": {
+      "frame_count": 6,
+      "fps": 10,
+      "loop": false,
+      "body_y": [
+        0,
+        -1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "swing": [
+        0,
+        -0.35,
+        -0.6,
+        1,
+        0.3,
+        0
+      ],
+      "blade": [
+        0,
+        15,
+        30,
+        45,
+        15,
+        0
+      ],
+      "fold": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "power": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "death": {
+      "frame_count": 8,
+      "fps": 10,
+      "loop": false,
+      "body_y": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        7,
+        7
+      ],
+      "swing": [
+        0,
+        0.2,
+        0.4,
+        0.65,
+        0.85,
+        1,
+        1,
+        1
+      ],
+      "blade": [
+        0,
+        15,
+        25,
+        30,
+        32,
+        32,
+        32,
+        32
+      ],
+      "fold": [
+        0,
+        5,
+        12,
+        25,
+        42,
+        55,
+        55,
+        55
+      ],
+      "power": [
+        1,
+        0.6,
+        0.2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "method": "Single fixed canonical texture per direction; disjoint visible body/tool/leg ownership; fixed UV blue-gray joint links; no frame regeneration or mirroring."
+}

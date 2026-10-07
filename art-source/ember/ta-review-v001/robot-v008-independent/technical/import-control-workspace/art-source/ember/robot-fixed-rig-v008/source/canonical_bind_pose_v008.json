@@ -1,0 +1,597 @@
+{
+	"status": "CANDIDATE",
+	"phase": "canonical_relaxed_bind",
+	"frame_index": -1,
+	"root_anchor": [
+		32,
+		80
+	],
+	"support_leg": "both",
+	"double_support": true,
+	"source_rig_sha256": "e11638a6751cdaab475224cea772aa80425066daadcfab6e71436f84fd1341a4",
+	"source_master_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+	"canonical_bind_body_lower": 1.0,
+	"pelvis_bob": 0.0,
+	"body_lower_from_original": 1.0,
+	"body_sway_x": 0.0,
+	"camera_projection": {
+		"kind": "oblique_front_2_5d",
+		"z_to_screen_y": 0.65,
+		"world_ground_y": 80,
+		"screen_root_anchor": [
+			32,
+			80
+		],
+		"same_for_static_and_all_frames": true
+	},
+	"root_motion_z_per_frame": 1.6,
+	"root_motion_note": "in-place asset uses fixed model root; stance-foot worldZ is constant when runtime consumes declared uniform forward root motion",
+	"keypoints3d": {
+		"root": [
+			32.0,
+			80.0,
+			0.0
+		],
+		"pelvis": [
+			32.0,
+			61.0,
+			0.0
+		],
+		"waist": [
+			32.0,
+			59.0,
+			0.0
+		],
+		"chest": [
+			32.0,
+			52.0,
+			0.0
+		],
+		"neck": [
+			32.0,
+			43.0,
+			0.0
+		],
+		"head_center": [
+			32.0,
+			33.0,
+			0.0
+		],
+		"shoulder_right": [
+			21.0,
+			46.0,
+			0.0
+		],
+		"elbow_right": [
+			16.0,
+			53.0,
+			0.0
+		],
+		"wrist_right": [
+			16.0,
+			60.82518005371094,
+			1.663293480873108
+		],
+		"hip_right": [
+			26.0,
+			62.0,
+			0.0
+		],
+		"knee_right": [
+			23.858489990234375,
+			69.49528503417969,
+			2.6897342205047607
+		],
+		"ankle_right": [
+			22.0,
+			76.0,
+			0.0
+		],
+		"sole_right": [
+			22.0,
+			80.0,
+			0.0
+		],
+		"shoulder_left": [
+			42.0,
+			46.0,
+			0.0
+		],
+		"elbow_left": [
+			46.0,
+			53.0,
+			0.0
+		],
+		"wrist_left": [
+			47.0,
+			59.8470344543457,
+			1.4553818702697754
+		],
+		"hip_left": [
+			38.0,
+			62.0,
+			0.0
+		],
+		"knee_left": [
+			38.5355339050293,
+			69.4974594116211,
+			2.738845109939575
+		],
+		"ankle_left": [
+			39.0,
+			76.0,
+			0.0
+		],
+		"sole_left": [
+			39.0,
+			80.0,
+			0.0
+		]
+	},
+	"keypoints_projected": {
+		"root": [
+			32.0,
+			80.0
+		],
+		"pelvis": [
+			32.0,
+			61.0
+		],
+		"waist": [
+			32.0,
+			59.0
+		],
+		"chest": [
+			32.0,
+			52.0
+		],
+		"neck": [
+			32.0,
+			43.0
+		],
+		"head_center": [
+			32.0,
+			33.0
+		],
+		"shoulder_right": [
+			21.0,
+			46.0
+		],
+		"elbow_right": [
+			16.0,
+			53.0
+		],
+		"wrist_right": [
+			16.0,
+			61.90632247924805
+		],
+		"hip_right": [
+			26.0,
+			62.0
+		],
+		"knee_right": [
+			23.858489990234375,
+			71.24361419677734
+		],
+		"ankle_right": [
+			22.0,
+			76.0
+		],
+		"sole_right": [
+			22.0,
+			80.0
+		],
+		"shoulder_left": [
+			42.0,
+			46.0
+		],
+		"elbow_left": [
+			46.0,
+			53.0
+		],
+		"wrist_left": [
+			47.0,
+			60.793033599853516
+		],
+		"hip_left": [
+			38.0,
+			62.0
+		],
+		"knee_left": [
+			38.5355339050293,
+			71.2777099609375
+		],
+		"ankle_left": [
+			39.0,
+			76.0
+		],
+		"sole_left": [
+			39.0,
+			80.0
+		]
+	},
+	"bone_measures": [
+		{
+			"bone": "torso_core",
+			"rest_length": 9.0,
+			"actual_length_3d": 9.0,
+			"length_error": 0.0,
+			"projected_length": 9.0,
+			"angle_yz_degrees": 180.0
+		},
+		{
+			"bone": "neck",
+			"rest_length": 9.0,
+			"actual_length_3d": 9.0,
+			"length_error": 0.0,
+			"projected_length": 9.0,
+			"angle_yz_degrees": 180.0
+		},
+		{
+			"bone": "head",
+			"rest_length": 10.0,
+			"actual_length_3d": 10.0,
+			"length_error": 0.0,
+			"projected_length": 10.0,
+			"angle_yz_degrees": 180.0
+		},
+		{
+			"bone": "shoulder_right",
+			"rest_length": 12.529964086141668,
+			"actual_length_3d": 12.529964447021484,
+			"length_error": 3.6087981669652436e-07,
+			"projected_length": 12.529964447021484,
+			"angle_yz_degrees": 180.0
+		},
+		{
+			"bone": "upper_arm_right",
+			"rest_length": 8.602325267042627,
+			"actual_length_3d": 8.602325439453125,
+			"length_error": 1.724104983225061e-07,
+			"projected_length": 8.602325439453125,
+			"angle_yz_degrees": 0.0
+		},
+		{
+			"bone": "forearm_right",
+			"rest_length": 8.0,
+			"actual_length_3d": 7.999999046325684,
+			"length_error": 9.5367431640625e-07,
+			"projected_length": 8.906322479248047,
+			"angle_yz_degrees": 12.000000800076654
+		},
+		{
+			"bone": "hip_right",
+			"rest_length": 6.0827625302982185,
+			"actual_length_3d": 6.082762718200684,
+			"length_error": 1.8790246514299724e-07,
+			"projected_length": 6.082762718200684,
+			"angle_yz_degrees": 0.0
+		},
+		{
+			"bone": "thigh_right",
+			"rest_length": 8.246211251235321,
+			"actual_length_3d": 8.246213912963867,
+			"length_error": 2.6617285460162066e-06,
+			"projected_length": 9.488438606262207,
+			"angle_yz_degrees": 19.740871115952977
+		},
+		{
+			"bone": "shin_right",
+			"rest_length": 7.280109889280519,
+			"actual_length_3d": 7.2801079750061035,
+			"length_error": 1.9142744154265756e-06,
+			"projected_length": 5.106583118438721,
+			"angle_yz_degrees": -22.465354558272328
+		},
+		{
+			"bone": "boot_right",
+			"rest_length": 4.0,
+			"actual_length_3d": 4.0,
+			"length_error": 0.0,
+			"projected_length": 4.0,
+			"angle_yz_degrees": 0.0
+		},
+		{
+			"bone": "shoulder_left",
+			"rest_length": 11.6619037896906,
+			"actual_length_3d": 11.661903381347656,
+			"length_error": 4.0834294345870603e-07,
+			"projected_length": 11.661903381347656,
+			"angle_yz_degrees": 180.0
+		},
+		{
+			"bone": "upper_arm_left",
+			"rest_length": 8.06225774829855,
+			"actual_length_3d": 8.062257766723633,
+			"length_error": 1.8425083680995158e-08,
+			"projected_length": 8.062257766723633,
+			"angle_yz_degrees": 0.0
+		},
+		{
+			"bone": "forearm_left",
+			"rest_length": 7.0710678118654755,
+			"actual_length_3d": 7.071069240570068,
+			"length_error": 1.4287045928540465e-06,
+			"projected_length": 7.856931686401367,
+			"angle_yz_degrees": 11.999998150700385
+		},
+		{
+			"bone": "hip_left",
+			"rest_length": 6.0827625302982185,
+			"actual_length_3d": 6.082762718200684,
+			"length_error": 1.8790246514299724e-07,
+			"projected_length": 6.082762718200684,
+			"angle_yz_degrees": 0.0
+		},
+		{
+			"bone": "thigh_left",
+			"rest_length": 8.0,
+			"actual_length_3d": 7.999998092651367,
+			"length_error": 1.9073486328125e-06,
+			"projected_length": 9.293153762817383,
+			"angle_yz_degrees": 20.06740499283048
+		},
+		{
+			"bone": "shin_left",
+			"rest_length": 7.0710678118654755,
+			"actual_length_3d": 7.071070671081543,
+			"length_error": 2.8592160674634215e-06,
+			"projected_length": 4.745076656341553,
+			"angle_yz_degrees": -22.840638898079824
+		},
+		{
+			"bone": "boot_left",
+			"rest_length": 4.0,
+			"actual_length_3d": 4.0,
+			"length_error": 0.0,
+			"projected_length": 4.0,
+			"angle_yz_degrees": 0.0
+		}
+	],
+	"contacts": {
+		"left": {
+			"stance": true,
+			"primary_support": true,
+			"ground_contact": true,
+			"sole_world": [
+				39.0,
+				80.0,
+				0.0
+			],
+			"sole_projected": [
+				39.0,
+				80.0
+			],
+			"sole_world_with_root_motion": [
+				39.0,
+				80.0,
+				0.0
+			],
+			"world_ground_y": 80,
+			"ground_touch": true,
+			"ankle3d": [
+				39.0,
+				76.0,
+				0.0
+			],
+			"lift_px": 0.0,
+			"contact_definition": "actual registered sole after fixed projection; world ground Y80 differs from screen contact Y"
+		},
+		"right": {
+			"stance": true,
+			"primary_support": true,
+			"ground_contact": true,
+			"sole_world": [
+				22.0,
+				80.0,
+				0.0
+			],
+			"sole_projected": [
+				22.0,
+				80.0
+			],
+			"sole_world_with_root_motion": [
+				22.0,
+				80.0,
+				0.0
+			],
+			"world_ground_y": 80,
+			"ground_touch": true,
+			"ankle3d": [
+				22.0,
+				76.0,
+				0.0
+			],
+			"lift_px": 0.0,
+			"contact_definition": "actual registered sole after fixed projection; world ground Y80 differs from screen contact Y"
+		}
+	},
+	"whole_sprite_scale": 1,
+	"bbox_alignment": "NONE",
+	"part_transforms": [
+		{
+			"part": "boot_right",
+			"source_sha256": "dc3126bc261081e1b21dc9f7e708b9817527a4adf20b67bed7c7d652e9a6e20f",
+			"bone": "boot_right",
+			"projected_length_ratio": 1.0,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "shin_right",
+			"source_sha256": "aa479aa606b77bc5197b29e273e3458d37cef7dfecb7a1ac0f498e3c6d06cd9c",
+			"bone": "shin_right",
+			"projected_length_ratio": 0.7014431376669011,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "knee_right",
+			"source_sha256": "dcb4c228e41c7a4889bd074bd09d82385d28fa00e19626c4e4ed0f76fc5f9f4a",
+			"bone": "shin_right",
+			"projected_length_ratio": 0.7014431376669011,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "thigh_right",
+			"source_sha256": "89cb81db474e5f3a55c985a99766f2261e1194e001db7dae12a49eb9d59a3273",
+			"bone": "thigh_right",
+			"projected_length_ratio": 1.1506422218030552,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "boot_left",
+			"source_sha256": "0125b223a3bbc11ea83b7b2703ccd60d6694776d2421fcc098acbb8880dbf849",
+			"bone": "boot_left",
+			"projected_length_ratio": 1.0,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "shin_left",
+			"source_sha256": "301a453e2f13709af1e3d46d933e3ff6a540c64d8a67f23ea21edf28617ffc72",
+			"bone": "shin_left",
+			"projected_length_ratio": 0.671055176361296,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "knee_left",
+			"source_sha256": "d5fbbd8488f37efb76e7b2ff22125e6834e04af1a817538ee9ab937d4d83c107",
+			"bone": "shin_left",
+			"projected_length_ratio": 0.671055176361296,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "thigh_left",
+			"source_sha256": "205a623c45452c397af5244521c6fcb50fbb1f77abae14674c1fe7e7ad355bcf",
+			"bone": "thigh_left",
+			"projected_length_ratio": 1.1616442203521729,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "pelvis_core",
+			"source_sha256": "d359e72c7e5d4a379e7dee25e1523bd5e234ab89f0a8d839a85320a3a911dede",
+			"bone": "torso_core",
+			"projected_length_ratio": 1.0,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "waist_core",
+			"source_sha256": "7b23f85f1e68f4ad0fed07e839ca0047288f91fa9a3ab0b7ce240031fd397974",
+			"bone": "torso_core",
+			"projected_length_ratio": 1.0,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "chest_shell",
+			"source_sha256": "da4ff4689bae1c1e6281141e4f3b7cbdb25ab848b855add32831fd8e9759ba64",
+			"bone": "torso_core",
+			"projected_length_ratio": 1.0,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "shoulder_right",
+			"source_sha256": "fa95c3b37f844d205a1ba4b82f36ce607d17862ba2beaa0f90c393d40d29efa3",
+			"bone": "shoulder_right",
+			"projected_length_ratio": 1.0,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "upper_arm_right",
+			"source_sha256": "4a1829ad6b32f9f5218205f0e4b9960c714877e34d8374e09ba28799cd9c3563",
+			"bone": "upper_arm_right",
+			"projected_length_ratio": 1.0,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "elbow_right",
+			"source_sha256": "ad99c5efb698417fdeb0430df510b567503b29858d64026bed62f5d9fc1f42c2",
+			"bone": "forearm_right",
+			"projected_length_ratio": 1.1132903099060059,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "forearm_right",
+			"source_sha256": "636ad3e4c5fcb108869407d8efc538231f2bd4acba79ddd512788f111828f539",
+			"bone": "forearm_right",
+			"projected_length_ratio": 1.1132903099060059,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "hand_right",
+			"source_sha256": "c41c0d1ce52327694d1505c174849af35a5b08efb69b4742115c99e15161ff0b",
+			"bone": "forearm_right",
+			"projected_length_ratio": 1.1132903099060059,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "shoulder_left",
+			"source_sha256": "d26f73d7c9f6557eef8b59a87922c8e9184e951593d38d4dfcce95d80cdf4477",
+			"bone": "shoulder_left",
+			"projected_length_ratio": 1.0,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "upper_arm_left",
+			"source_sha256": "2292eff5075f21745d8e5e9f281bcbb2194c88f73a8c210d634da4603bda0313",
+			"bone": "upper_arm_left",
+			"projected_length_ratio": 1.0,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "elbow_left",
+			"source_sha256": "6795616ff584a9c56b1fc77ad0f61fd04d0161748ec3e7104ee9ed73c742e212",
+			"bone": "forearm_left",
+			"projected_length_ratio": 1.1111379352387036,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "forearm_left",
+			"source_sha256": "bf512e2a7a77a46584809746cd53efb19e684ceae44c3200e3f5b0d790330142",
+			"bone": "forearm_left",
+			"projected_length_ratio": 1.1111379352387036,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "hand_left",
+			"source_sha256": "6e86064fba8748a2f8556207125a61024a5d87a14b7ddbd2c9a65c1a4521c228",
+			"bone": "forearm_left",
+			"projected_length_ratio": 1.1111379352387036,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "left_wrist_tool",
+			"source_sha256": "fc63167d50a2b58ffb6687de05f733b5b77e8b396994bfeb948fc00b3b4a44b4",
+			"bone": "forearm_left",
+			"projected_length_ratio": 1.1111379352387036,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		},
+		{
+			"part": "head",
+			"source_sha256": "5d8c0513e7b93216f6e82252493ab66dcee42158126c1c94c0258d6355ade0b0",
+			"bone": "head",
+			"projected_length_ratio": 1.0,
+			"transverse_source_width_ratio": 1,
+			"basis": "rest-bone tangent/normal to current projected-bone tangent/normal; fixed transverse source width, original UV"
+		}
+	]
+}

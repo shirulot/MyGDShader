@@ -1,0 +1,23 @@
+--- scripts/ember/building_demo_v002.gd
++++ scripts/ember/building_demo_v003.gd
+@@ -1,8 +1,8 @@
+ extends "res://scripts/ember/building_demo_v001.gd"
+-## v002使用完整功能层预制体；修复读档时旧角色占用误触发开门。
++## v003使用完整功能层预制体；修复读档时旧角色占用误触发开门。
+ 
+-const COMBINED_BUILDING := preload("res://scripts/ember/building_asset_v002.gd")
+-const SAVE_PATH_V002 := "user://building_assets_demo_v002.json"
++const COMBINED_BUILDING := preload("res://scripts/ember/building_asset_v003.gd")
++const SAVE_PATH_V002 := "user://building_assets_demo_v003.json"
+ 
+ 
+ func _ready() -> void:
+@@ -26,7 +26,7 @@
+ 	actor.z_index = 0
+ 	world.add_child(actor)
+ 	_build_ui()
+-	title_label.text = "BUILDING ASSETS v002 / COMPLETE BUILDINGS + FUNCTIONAL LAYERS"
++	title_label.text = "BUILDING ASSETS v003 / COMPLETE BUILDINGS + FUNCTIONAL LAYERS"
+ 
+ 
+ func save_state(path: String = SAVE_PATH_V002) -> void:

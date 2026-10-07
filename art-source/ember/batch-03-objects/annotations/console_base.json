@@ -1,0 +1,92 @@
+{
+  "observations": "实际母稿为浅色装甲立台、单大屏、三按钮及两侧黄铜连接；原生草案大屏清楚，但内屏细微颜色梯度需整理为可控中性色块。",
+  "adjustments": [
+    "原生大屏[36,33,60,47)消除渐变与碎灰，改为单一深蓝灰安全区；底部一行更深形成玻璃边界",
+    "左上框缘补连续3px金属亮边；保留3按钮与右下维修孔，固定基座边界80",
+    "屏幕安全区拆实际RGBA组件与二值选择mask；未交付运行灯/技术通道Mask"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        36,
+        33,
+        60,
+        47
+      ],
+      "color": 2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          36,
+          46
+        ],
+        [
+          59,
+          46
+        ]
+      ],
+      "color": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          36,
+          31
+        ],
+        [
+          58,
+          31
+        ]
+      ],
+      "color": 4
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "console_screen",
+      "visual_frame_bounds": [
+        33,
+        29,
+        63,
+        50
+      ],
+      "safe_active_rect": [
+        36,
+        33,
+        60,
+        47
+      ],
+      "center": [
+        48.0,
+        40.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.5,
+        0.4166666666666667
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "components": [
+    {
+      "name": "screen_neutral",
+      "rects": [
+        [
+          36,
+          33,
+          60,
+          47
+        ]
+      ],
+      "z_index": 1,
+      "purpose": "独立中性屏幕内区，方便后续材质驱动"
+    }
+  ],
+  "emitter_points": []
+}

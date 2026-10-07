@@ -1,0 +1,20 @@
+--- scripts/ember/building_asset.gd
++++ assets/ember/buildings_final/scripts/building_asset.gd
+@@ -7,7 +7,7 @@
+ signal operation_denied(reason: String)
+ 
+ @export_enum("control_tower", "repair_workshop", "logistics_warehouse") var building_id := "control_tower"
+-@export_file("*.json") var catalog_path := "res://assets/ember/building_assets_v004r1/catalog_v004r1.json"
++@export_file("*.json") var catalog_path := "res://assets/ember/buildings_final/textures/catalog_v004r1.json"
+ @export var motion_seconds := 0.8
+ @export var interaction_distance := 64.0
+ 
+@@ -33,7 +33,7 @@
+ 
+ 
+ 
+-const INTACT_SHADER := preload("res://shaders/ember/building_intact.gdshader")
++const INTACT_SHADER := preload("res://assets/ember/buildings_final/shaders/building_intact.gdshader")
+ var intact_sprite: Sprite2D
+ var intact_material: ShaderMaterial
+ var native_scale := 1.0

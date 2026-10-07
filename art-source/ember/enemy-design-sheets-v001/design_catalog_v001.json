@@ -1,0 +1,373 @@
+{
+  "revision": "enemy_design_sheets_v001",
+  "status": "DESIGN_REFERENCE_QA_REVIEWED",
+  "tool": "built_in_imagegen",
+  "deliverables_count": 8,
+  "view_order": [
+    "front",
+    "right_side",
+    "back"
+  ],
+  "camera": "same mildly elevated orthographic game camera, unit rotated about vertical axis",
+  "left_right_convention": "unit anatomical left/right; in front view unit right is viewer left",
+  "scope": "Static pixel-art concept turnarounds and exploded major-module design sheets. No production-native sprite cuts, animations, collisions or gameplay.",
+  "units": [
+    {
+      "id": "enemy_patrol",
+      "name": "轻型巡逻兵",
+      "reference": "references/enemy_patrol_master_v001.png",
+      "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_patrol_master_v001.png",
+      "three_views": "three_views/enemy_patrol_three_views_v001.png",
+      "parts_sheet": "parts/enemy_patrol_parts_v001.png",
+      "parts_legend": [
+        {
+          "number": "01",
+          "english": "Helmet shell",
+          "chinese": "头部装甲与顶盖"
+        },
+        {
+          "number": "02",
+          "english": "Visor sensor",
+          "chinese": "视窗与传感器组件"
+        },
+        {
+          "number": "03",
+          "english": "Torso armour",
+          "chinese": "胸甲与背部检修盖"
+        },
+        {
+          "number": "04",
+          "english": "Torso frame",
+          "chinese": "蓝灰躯干骨架"
+        },
+        {
+          "number": "05",
+          "english": "Joint couplings",
+          "chinese": "黄铜关节接头组"
+        },
+        {
+          "number": "06",
+          "english": "Right projector",
+          "chinese": "右臂发射器"
+        },
+        {
+          "number": "07",
+          "english": "Left manipulator",
+          "chinese": "左臂夹爪"
+        },
+        {
+          "number": "08",
+          "english": "Hip block",
+          "chinese": "腰胯连接块"
+        },
+        {
+          "number": "09",
+          "english": "Leg assemblies",
+          "chinese": "左右腿组件"
+        },
+        {
+          "number": "10",
+          "english": "Foot shells",
+          "chinese": "左右脚部护壳"
+        }
+      ]
+    },
+    {
+      "id": "enemy_cutter",
+      "name": "近战切割工蜂",
+      "reference": "references/enemy_cutter_master_v001.png",
+      "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_cutter_master_v001.png",
+      "three_views": "three_views/enemy_cutter_three_views_v002.png",
+      "parts_sheet": "parts/enemy_cutter_parts_v002.png",
+      "parts_legend": [
+        {
+          "number": "01",
+          "english": "Upper carapace",
+          "chinese": "上部装甲壳"
+        },
+        {
+          "number": "02",
+          "english": "Lower chassis",
+          "chinese": "下部承载底盘"
+        },
+        {
+          "number": "03",
+          "english": "Top service cap",
+          "chinese": "顶部检修盖"
+        },
+        {
+          "number": "04",
+          "english": "Sensor cassette",
+          "chinese": "前部传感器盒"
+        },
+        {
+          "number": "05",
+          "english": "Walking legs x4",
+          "chinese": "四组短支腿"
+        },
+        {
+          "number": "06",
+          "english": "Joint couplings",
+          "chinese": "黄铜关节接头组"
+        },
+        {
+          "number": "07",
+          "english": "Cutter arm",
+          "chinese": "右侧切割臂"
+        },
+        {
+          "number": "08",
+          "english": "Blade and hub",
+          "chinese": "圆盘刀片与轮毂"
+        },
+        {
+          "number": "09",
+          "english": "Gripper arm",
+          "chinese": "左侧夹持臂"
+        }
+      ]
+    },
+    {
+      "id": "enemy_tracked_heavy",
+      "name": "履带重装机",
+      "reference": "references/enemy_tracked_heavy_master_v001.png",
+      "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_tracked_heavy_master_v001.png",
+      "three_views": "three_views/enemy_tracked_heavy_three_views_v001.png",
+      "parts_sheet": "parts/enemy_tracked_heavy_parts_v002.png",
+      "parts_legend": [
+        {
+          "number": "01",
+          "english": "Tower armour",
+          "chinese": "中央机塔装甲壳"
+        },
+        {
+          "number": "02",
+          "english": "Top cap",
+          "chinese": "顶部蓝灰盖"
+        },
+        {
+          "number": "03",
+          "english": "Central chassis",
+          "chinese": "中央承载底盘"
+        },
+        {
+          "number": "04",
+          "english": "Sensor cassette",
+          "chinese": "正面传感器盒"
+        },
+        {
+          "number": "05",
+          "english": "Short projector",
+          "chinese": "前置短炮模块"
+        },
+        {
+          "number": "06",
+          "english": "Right track pod",
+          "chinese": "右侧履带组件"
+        },
+        {
+          "number": "07",
+          "english": "Left track pod",
+          "chinese": "左侧履带组件"
+        },
+        {
+          "number": "08",
+          "english": "Track covers",
+          "chinese": "左右履带护盖"
+        },
+        {
+          "number": "09",
+          "english": "Brass couplings",
+          "chinese": "底盘黄铜连接座"
+        }
+      ]
+    },
+    {
+      "id": "enemy_scout_drone",
+      "name": "悬浮侦察机",
+      "reference": "references/enemy_scout_drone_master_v001.png",
+      "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_scout_drone_master_v001.png",
+      "three_views": "three_views/enemy_scout_drone_three_views_v002.png",
+      "parts_sheet": "parts/enemy_scout_drone_parts_v002.png",
+      "parts_legend": [
+        {
+          "number": "01",
+          "english": "Upper body shell",
+          "chinese": "中央机身上壳"
+        },
+        {
+          "number": "02",
+          "english": "Lower body frame",
+          "chinese": "中央机身下框"
+        },
+        {
+          "number": "03",
+          "english": "Optical sensor",
+          "chinese": "前部光学传感器"
+        },
+        {
+          "number": "04",
+          "english": "Fan housings x2",
+          "chinese": "左右风扇护罩"
+        },
+        {
+          "number": "05",
+          "english": "Rotors x2",
+          "chinese": "左右四叶转子"
+        },
+        {
+          "number": "06",
+          "english": "Fan motors x2",
+          "chinese": "左右驱动电机"
+        },
+        {
+          "number": "07",
+          "english": "Side struts x2",
+          "chinese": "左右支撑臂"
+        },
+        {
+          "number": "08",
+          "english": "Brass connectors",
+          "chinese": "黄铜接口组"
+        },
+        {
+          "number": "09",
+          "english": "Lower probe",
+          "chinese": "底部小型探头"
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "enemy_patrol_three_views",
+      "path": "prompts/enemy_patrol_three_views.prompt.txt",
+      "output": "three_views/enemy_patrol_three_views_v001.png",
+      "kind": "three_views",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_patrol_master_v001.png"
+      ]
+    },
+    {
+      "id": "enemy_cutter_three_views",
+      "path": "prompts/enemy_cutter_three_views.prompt.txt",
+      "output": "three_views/enemy_cutter_three_views_v001.png",
+      "kind": "three_views",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_cutter_master_v001.png"
+      ]
+    },
+    {
+      "id": "enemy_tracked_heavy_three_views",
+      "path": "prompts/enemy_tracked_heavy_three_views.prompt.txt",
+      "output": "three_views/enemy_tracked_heavy_three_views_v001.png",
+      "kind": "three_views",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_tracked_heavy_master_v001.png"
+      ]
+    },
+    {
+      "id": "enemy_scout_drone_three_views",
+      "path": "prompts/enemy_scout_drone_three_views.prompt.txt",
+      "output": "three_views/enemy_scout_drone_three_views_v001.png",
+      "kind": "three_views",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_scout_drone_master_v001.png"
+      ]
+    },
+    {
+      "id": "enemy_patrol_parts",
+      "path": "prompts/enemy_patrol_parts.prompt.txt",
+      "output": "parts/enemy_patrol_parts_v001.png",
+      "kind": "parts",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_patrol_master_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_patrol_three_views_v001.png"
+      ]
+    },
+    {
+      "id": "enemy_tracked_heavy_parts",
+      "path": "prompts/enemy_tracked_heavy_parts.prompt.txt",
+      "output": "parts/enemy_tracked_heavy_parts_v001.png",
+      "kind": "parts",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_tracked_heavy_master_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_tracked_heavy_three_views_v001.png"
+      ]
+    },
+    {
+      "id": "enemy_cutter_parts",
+      "path": "prompts/enemy_cutter_parts.prompt.txt",
+      "output": "parts/enemy_cutter_parts_v001.png",
+      "kind": "parts",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_cutter_master_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_cutter_three_views_v002.png"
+      ]
+    },
+    {
+      "id": "enemy_scout_drone_parts",
+      "path": "prompts/enemy_scout_drone_parts.prompt.txt",
+      "output": "parts/enemy_scout_drone_parts_v001.png",
+      "kind": "parts",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_scout_drone_master_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_scout_drone_three_views_v002.png"
+      ]
+    },
+    {
+      "id": "enemy_cutter_three_views_revision",
+      "path": "prompts/enemy_cutter_three_views_revision.prompt.txt",
+      "output": "three_views/enemy_cutter_three_views_v002.png",
+      "kind": "three_views_revision",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_cutter_three_views_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_cutter_master_v001.png"
+      ]
+    },
+    {
+      "id": "enemy_scout_drone_three_views_revision",
+      "path": "prompts/enemy_scout_drone_three_views_revision.prompt.txt",
+      "output": "three_views/enemy_scout_drone_three_views_v002.png",
+      "kind": "three_views_revision",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_scout_drone_three_views_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_scout_drone_master_v001.png"
+      ]
+    },
+    {
+      "id": "enemy_tracked_heavy_parts_labels_revision",
+      "path": "prompts/enemy_tracked_heavy_parts_labels_revision.prompt.txt",
+      "output": "parts/enemy_tracked_heavy_parts_v002.png",
+      "kind": "parts_label_revision",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/parts/enemy_tracked_heavy_parts_v001.png"
+      ]
+    },
+    {
+      "id": "enemy_cutter_parts_mounts_revision",
+      "path": "prompts/enemy_cutter_parts_mounts_revision.prompt.txt",
+      "output": "parts/enemy_cutter_parts_v002.png",
+      "kind": "parts_mount_revision",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/parts/enemy_cutter_parts_v001.png"
+      ]
+    },
+    {
+      "id": "enemy_scout_drone_parts_cavities_revision",
+      "path": "prompts/enemy_scout_drone_parts_cavities_revision.prompt.txt",
+      "output": "parts/enemy_scout_drone_parts_v002.png",
+      "kind": "parts_cavity_revision",
+      "reference_paths": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/parts/enemy_scout_drone_parts_v001.png"
+      ]
+    }
+  ],
+  "qa_notes": [
+    "Cutter right-profile saw corrected to an edge-on thin disk.",
+    "Scout right profile faces left with near fan occluding the fuselage and far fan behind it.",
+    "Tracked part labels use anatomical right 06 / left 07.",
+    "Cutter legless chassis now has four short mounting sockets; exactly four detached walking legs.",
+    "Scout detached fan housings are empty with thin fixed supports; two rotors and two motors are separately shown."
+  ]
+}

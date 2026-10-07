@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "source_zip_sha256": "64a3a18625dccc2fc1bde35ae44388a7acfb92ddb9aa4c83db811d2e5c10aa1b",
+  "initial_godot_cache_absent": true,
+  "original_import_settings_preserved": true,
+  "original_payload_count": 1723,
+  "payload_changes_after_import": [],
+  "calls": [
+    {
+      "call": "import",
+      "exit_code": 0,
+      "seconds": 3.828,
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\robot-v011-phase-c2-rc02-independent\\technical-cold-package\\godot-full-review",
+        "--editor",
+        "--import"
+      ],
+      "stdout": "technical-cold-import.stdout.log",
+      "stderr": "technical-cold-import.stderr.log",
+      "stderr_bytes": 0
+    },
+    {
+      "call": "probe",
+      "exit_code": 0,
+      "seconds": 0.937,
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\robot-v011-phase-c2-rc02-independent\\technical-cold-package\\godot-full-review",
+        "--script",
+        "res://ta_minimal_load.gd"
+      ],
+      "stdout": "technical-cold-probe.stdout.log",
+      "stderr": "technical-cold-probe.stderr.log",
+      "stderr_bytes": 0
+    }
+  ],
+  "probe_sha256": "ebae6d490bac37ff4f1d91f5f3b822a1ea60068212cfacb8f242b479473fdf13",
+  "result_sha256": "467334b96b63a4c5f76283b9234bd30a87f107132aace1e292bd3dc042bdc904",
+  "replayed_gpu": false,
+  "replayed_full_switch_matrix": false
+}

@@ -1,0 +1,407 @@
+{
+  "status": "PASS",
+  "scope": "Fresh ZIP directory import and real GPU playback; producer evidence only",
+  "cold_workspace": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-drone-actions-v011-coldcheck",
+  "zip_path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\deliveries\\enemy_drone_actions_v011_2026-10-06.zip",
+  "zip_sha256": "13a4942d34d0ceabac7473c1689aa4784bc0c6f1555ff68817ed9d93159dab3e",
+  "import_exit": 0,
+  "capture_exit": 0,
+  "actual_playback_report": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-drone-actions-v011-coldcheck/qa/gpu_playback.json",
+  "playback_report_sha256": "63ed914cc9c74ccd121dff7b1efd0d04407f5661a65cd3424c5d6227da6b586a",
+  "gpu": {
+    "catalog_sha256": "8038f076359fb15c67c485833c6e07725303b844f5b8358a1ff0efd3234b320e",
+    "finished": {
+      "attack_down_normal": 8,
+      "attack_down_slow": 1,
+      "death_down_normal": 7,
+      "death_down_slow": 1,
+      "hit_down_normal": 11,
+      "hit_down_slow": 2,
+      "idle_down_normal": 0,
+      "idle_down_slow": 0,
+      "move_down_normal": 0,
+      "move_down_slow": 0
+    },
+    "loops": {
+      "attack_down_normal": 0,
+      "attack_down_slow": 0,
+      "death_down_normal": 0,
+      "death_down_slow": 0,
+      "hit_down_normal": 0,
+      "hit_down_slow": 0,
+      "idle_down_normal": 9,
+      "idle_down_slow": 2,
+      "move_down_normal": 9,
+      "move_down_slow": 1
+    },
+    "scope": "runtime traversal only",
+    "seconds": 9.2004079999998,
+    "seen": {
+      "attack_down_normal": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "attack_down_slow": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "death_down_normal": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "death_down_slow": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "hit_down_normal": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "hit_down_slow": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "idle_down_normal": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "idle_down_slow": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "move_down_normal": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "move_down_slow": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "status": "PASS"
+  },
+  "core_files": [
+    {
+      "path": "action_rig.gd",
+      "sha256": "80c0c71a9dd93e1ebb89027d17b535c45cf9ca188c72e29c3456d857fc8fa653",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "capture.gd",
+      "sha256": "d3734dacb99c958fdb39213855b0da62625909e85c0fdfddd9a30d668714fc61",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "entity_cutout.gdshader",
+      "sha256": "3c4091cb59752fc6e93cc036b7507487359a13d10bdf088900715409a86b4cc3",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "export.gd",
+      "sha256": "83ad5097f5c9db77e7659c1a0fe7c96c8ee09e4fdb8b0274fd7204f6336c7bbd",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "fan_cutout.gdshader",
+      "sha256": "73cfc3c9514dd23296deab6de4d8f2e5854558dad7a87f45f624ffe0e27c12ed",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "preview.gd",
+      "sha256": "95d932948df59e6ac8ad8333e7c89aa294064b52dc669a18b310256cf6c22849",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "preview.html",
+      "sha256": "7a798e2b3d382cb3c7c8481aaad9fb47e9b6d8eb5df89527cbf76cbcd1f50b8a",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "preview.tscn",
+      "sha256": "29970aa2303897ca48b453a26d6e445894a862e1235354bab3db171b02065945",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "project.godot",
+      "sha256": "784b6ba34834971fe8c885c7c9ffe6d0a64f83b69844db25599a163d0a248b1f",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "1d7dcbc2cea4ff12dd5f403057432c3919aa8d2952747e5ad606f1020f96ef28",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "rig.json",
+      "sha256": "05bcb93353fbbf5a228fc987d21be87fae808ffa7303a3ff64b6e3d76e906b87",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "verify.gd",
+      "sha256": "56036125b5cad0b7ccc22dec740c09bed5b72b108ae7cb4b9b64ebbc61046195",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/attack_down_v011.png",
+      "sha256": "61d5b9093c0b1b990d026ce98f2d04462df6c6aeab696ff6d704a8800f63ea0f",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/catalog_v011.json",
+      "sha256": "8038f076359fb15c67c485833c6e07725303b844f5b8358a1ff0efd3234b320e",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/death_down_v011.png",
+      "sha256": "5986af52aaba86467656ff3ded441ac2b5b7e7784997694d48d7c5e312e9ad23",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/drone_actions_v011.tres",
+      "sha256": "b10a3ebfe702fe6495b637b3ea8731dba9430186279df3439be522b94cc0b9e6",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/hit_down_v011.png",
+      "sha256": "734eb1d07adad7ac2680037229870b3047f1b5a30d8d7bc8c5ad1b791fc7f219",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/idle_down_v011.png",
+      "sha256": "e9ec587c5902cd50694d5a3690cb4a646e6e7c487388060024c630d9bf03b0ea",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down_v011.png",
+      "sha256": "43a1c3579245d5d494243817e86bafeac83cece11d6bee074734327992615b1d",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/attack_down/f00.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/attack_down/f01.png",
+      "sha256": "6b49acacf54e62247fb1058ac5e8e70429b44f7e8bbda01835811f55ebf8d3f3",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/attack_down/f02.png",
+      "sha256": "9a32ede622424434bf8c97d019831c9a1be84f6526388501f396c87d604f59ad",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/attack_down/f03.png",
+      "sha256": "5398601882651cdbd2f90ad3a8aafac2bd354139aba4951464bdc6684cf44cf5",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/attack_down/f04.png",
+      "sha256": "de3fb5bb00a98ee5685cffbb2613fc7380ea5032b57b6e5a20cf1b9806e70023",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/attack_down/f05.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/death_down/f00.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/death_down/f01.png",
+      "sha256": "6c73342859ec3090498c6306beaffebc63d4e489618d3f316000cc262ec9b8dc",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/death_down/f02.png",
+      "sha256": "f078f37af9ddb70de4d4d96f1fefe1a8537c6d9ac01fd7c6a9b8e0a76f9ad15d",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/death_down/f03.png",
+      "sha256": "5ad5bf715316fe2dac8c83ad6d89ed216a6217060d21c1d14285e32715c5b36f",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/death_down/f04.png",
+      "sha256": "e9b3589dcf5f1044e48b391460c6c774cb7a678cf95aa22fc1f3eec797c7d33e",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/death_down/f05.png",
+      "sha256": "4500141210ab3e590562d5b1d64ce6efb11e38b5ee85457c310fa020c369c8a9",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/death_down/f06.png",
+      "sha256": "4500141210ab3e590562d5b1d64ce6efb11e38b5ee85457c310fa020c369c8a9",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/death_down/f07.png",
+      "sha256": "4500141210ab3e590562d5b1d64ce6efb11e38b5ee85457c310fa020c369c8a9",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/hit_down/f00.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/hit_down/f01.png",
+      "sha256": "6dd752451606ca5fa5f79bdd838211c5cb966816de01e4ee0e4ec4e6f1d58857",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/hit_down/f02.png",
+      "sha256": "47f63ccb2886f29f2ae0b2aabb591b1280b2bb436b3224900a047f3c6bce5c88",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/hit_down/f03.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/idle_down/f00.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/idle_down/f01.png",
+      "sha256": "a6c6a965b0d6b5112b514badaf16b19ec70def0e2ee88a29c0c12175d29b1fbc",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/idle_down/f02.png",
+      "sha256": "640d2c78b72c5b512b3aa4ac10631d78415faee97197f91ab9f1a6bdb91c3a4e",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/idle_down/f03.png",
+      "sha256": "61fbfffee771470805e205c1d31de8d0a341df12dc285e7d5f63778de6f64c17",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f00.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f01.png",
+      "sha256": "c5ef8ed14c68015e020dc79107328090ac9069ee2722dc8cd76440ac1fa075ea",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f02.png",
+      "sha256": "a6c6a965b0d6b5112b514badaf16b19ec70def0e2ee88a29c0c12175d29b1fbc",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f03.png",
+      "sha256": "56c84d8fec88b8eaf5db3588a5f3cdbecdf1beb67d24e632a42ffcbd61ebbf46",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f04.png",
+      "sha256": "aded5f2d54959625749efb4a07abad29b657575b801612585373adda2f033105",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f05.png",
+      "sha256": "5e66f1becf50d31a739e127b0d9b6907d085f97d8d77fd67830cb8039243f7ce",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f06.png",
+      "sha256": "6e901d3fb1bebebaa222cc4dcf13dd7af2710edfda319b05b7406ef069688f5f",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f07.png",
+      "sha256": "5ec799821884d5caba697aace11753517735d25ddafbda265126a5cd3ac13379",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "source/canonical.png",
+      "sha256": "b2ad42cb2244a563bf30adf5d70820f41385624587a1895ba408ad500eaf4c6a",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "source/rotor_well_master.png",
+      "sha256": "8824eeff102796d523fa8fab1f17f90c5716b7f34097987c0d5ea8151c2a3a94",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "source/rotor_well_prompt.txt",
+      "sha256": "36c20ebf5c967d582bec79905ac3537ad2ab3dd87dcd7fe10dce5d60df5eceb8",
+      "zip_manifest_equal": true
+    }
+  ],
+  "logs": [
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-drone-actions-v011/qa/cold_import.log",
+      "bytes": 29455,
+      "sha256": "27b75f8b66b3f4cafc395a3c332409a30c4d1815913bbfc7b36d0755c387ed4d"
+    },
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-drone-actions-v011/qa/cold_import.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-drone-actions-v011/qa/cold_capture.log",
+      "bytes": 1107,
+      "sha256": "cfeb9d6fbab7078bd942a93752d0f3ddf546583cd32bd71033206473dd33ed14"
+    },
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-drone-actions-v011/qa/cold_capture.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

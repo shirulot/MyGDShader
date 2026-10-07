@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://nenm2hp8tf4b"]
+
+[ext_resource type="Shader" uid="uid://ep02drnawobr" path="res://scenes/chapter05/ch05_01_noise_observer.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://b0wq61m0ib3p6" path="res://scenes/chapter05/ch05_01_builtin_noise.tres" id="2_noise"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_observer"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/noise_scale = 1.0
+shader_parameter/scale = 0.5999999865888
+shader_parameter/contrast = 1.0000000149012
+
+[node name="Ch0501NoiseObserver" type="Node2D" unique_id=1627195278]
+
+[node name="NoisePreview" type="Sprite2D" parent="." unique_id=1597651825]
+texture_filter = 2
+texture_repeat = 2
+material = SubResource("ShaderMaterial_observer")
+position = Vector2(360, 360)
+scale = Vector2(2, 2)
+texture = ExtResource("2_noise")

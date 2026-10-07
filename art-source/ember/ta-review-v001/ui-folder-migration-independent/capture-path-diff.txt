@@ -1,0 +1,41 @@
+--- v006/tools/capture_ui_interactions_v004.gd
++++ current/tools/capture_ui_interactions_v004.gd
+@@ -2,7 +2,9 @@
+ ## 直接截取真实Godot UI和地图。没有烘焙文字，也没有把概念图当作游戏截图。
+ const PREVIEW = preload("res://scenes/ember/ui_edge_interactive_v004.tscn")
+ const STYLE = preload("res://scripts/ember/ui_edge_v001/edge_ui_style.gd")
+-const OUT := "res://art-source/ember/ui-interactions-v004/previews/"
++const OUT := "res://assets/ember/ui_final/previews/"
++## 图片统一进入 assets；验证元数据留在审查资料目录。
++const EVIDENCE := "res://art-source/ember/ui-interactions-v004/"
+ var captures: Array[Dictionary] = []
+ 
+ func _initialize() -> void:
+@@ -11,6 +13,9 @@
+ func _run() -> void:
+ 	root.position = Vector2i(-10000,-10000)
+ 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(OUT))
++	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(EVIDENCE))
++	var preview_ignore := FileAccess.open(OUT + ".gdignore", FileAccess.WRITE)
++	preview_ignore.close()
+ 	var board := SubViewport.new()
+ 	board.size = Vector2i(1600,960)
+ 	board.render_target_update_mode = SubViewport.UPDATE_ALWAYS
+@@ -64,7 +69,7 @@
+ 					if focused.get_pixel(x,y) != unfocused.get_pixel(x,y):
+ 						changed += 1
+ 			var focus_report := {"status":"PASS" if focused_has_focus and not slider.has_focus() and changed > 0 else "FAIL","focused_has_focus":focused_has_focus,"unfocused_has_focus":slider.has_focus(),"same_value":slider.value,"roi":[slider_rect.position.x,slider_rect.position.y,slider_rect.size.x,slider_rect.size.y],"changed_pixels":changed}
+-			var evidence := FileAccess.open(OUT+"../slider-focus-validation.json",FileAccess.WRITE)
++			var evidence := FileAccess.open(EVIDENCE+"slider-focus-validation.json",FileAccess.WRITE)
+ 			evidence.store_string(JSON.stringify(focus_report,"\t"))
+ 			evidence.close()
+ 	demo.ui.close_all()
+@@ -81,7 +86,7 @@
+ 	await _draw()
+ 	_save(right,"compact_settings_320x480.png")
+ 	var report := {"status":"PASS","render":"Godot Compatibility GPU, native screen pixels","captures":captures,"logical_base":[720,720],"overview_scale":1}
+-	var output := FileAccess.open(OUT + "../gpu-validation.json",FileAccess.WRITE)
++	var output := FileAccess.open(EVIDENCE + "gpu-validation.json",FileAccess.WRITE)
+ 	output.store_string(JSON.stringify(report,"\t"))
+ 	output.close()
+ 	print("UI_INTERACTION_CAPTURES ",captures.size())

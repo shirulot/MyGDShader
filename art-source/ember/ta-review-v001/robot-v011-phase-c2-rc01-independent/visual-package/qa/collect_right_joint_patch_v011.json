@@ -1,0 +1,470 @@
+{
+  "status": "ACTION_PILOT_PENDING_VISUAL_REVIEW",
+  "action": "collect",
+  "direction": "right",
+  "source_file": "source/collect_right_joint_edit_raw_v011.png",
+  "source_sha256": "4d5fbb767d84a3ab8718184513c03d56a9040a151144a48e57762aaf11508407",
+  "source_size": [
+    1024,
+    1536
+  ],
+  "common_sheet_transform": [
+    0.125,
+    0.125
+  ],
+  "no_per_frame_bbox_fit": true,
+  "protection": [
+    {
+      "part": "body",
+      "rule": "all opaque fixed body/pelvis source pixels"
+    },
+    {
+      "part": "arm_right_upper",
+      "source_y": [
+        0,
+        51
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "arm_right_lower",
+      "source_y": [
+        55,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "arm_left_upper",
+      "source_y": [
+        0,
+        49
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "arm_left_lower",
+      "source_y": [
+        53,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_right_upper",
+      "source_y": [
+        0,
+        62
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_right_lower",
+      "source_y": [
+        67,
+        70
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_right_end",
+      "source_y": [
+        0,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_left_upper",
+      "source_y": [
+        0,
+        62
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_left_lower",
+      "source_y": [
+        67,
+        69
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_left_end",
+      "source_y": [
+        0,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "pelvis",
+      "rule": "all opaque fixed body/pelvis source pixels"
+    }
+  ],
+  "records": [
+    {
+      "frame": 0,
+      "file": "frames/collect/right/robot_collect_right_f00_v011.png",
+      "sha256": "a1cdcea166e460a83c9e3290dbd8928d597972b2c91c584f7094bb54717c7864",
+      "locked": false,
+      "changed_pixels": 4,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "shared_pose_patch": null,
+      "rejected_detached_additions": 0,
+      "regions": [
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            28,
+            47
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            27.70012498437593,
+            52.992501562369796
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            34,
+            45
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            35.71108187958738,
+            50.83713960783428
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 1,
+      "file": "frames/collect/right/robot_collect_right_f01_v011.png",
+      "sha256": "6d9d395c2ac66e2a27015ac408512c639a62336a62a76f38c561ea1dec2aa726",
+      "locked": false,
+      "changed_pixels": 22,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "shared_pose_patch": null,
+      "rejected_detached_additions": 0,
+      "regions": [
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            28.8,
+            49
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            28.081726756266484,
+            54.9568518151232
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            34.8,
+            47
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            38.15965165866972,
+            52.07077318881428
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            31.8,
+            57
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            35.203824820157045,
+            66.40287065707504
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            31,
+            72
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            28.8,
+            57
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            32.0593132538618,
+            65.92338932879211
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            28,
+            71
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "file": "frames/collect/right/robot_collect_right_f02_v011.png",
+      "sha256": "34bfc8858530a7f2d0d6abff5479bd45eaa1e4ca81999e011ee157a386f7f898",
+      "locked": false,
+      "changed_pixels": 23,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "shared_pose_patch": {
+        "reference_frame": 1,
+        "scope": "body, legs, boots and far arm outside old/new anatomical left arm union",
+        "shared_pixels": 5928
+      },
+      "rejected_detached_additions": 0,
+      "regions": [
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            28.8,
+            49
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            28.081726756266484,
+            54.9568518151232
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            34.8,
+            47
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            38.35974113931864,
+            51.93236687818763
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            31.8,
+            57
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            35.203824820157045,
+            66.40287065707504
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            31,
+            72
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            28.8,
+            57
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            32.0593132538618,
+            65.92338932879211
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            28,
+            71
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "file": "frames/collect/right/robot_collect_right_f03_v011.png",
+      "sha256": "60f02055aafa8e5f2d5997b06ae5a3c0060ba4562b8d84410004810b0dfde5dc",
+      "locked": true,
+      "changed_pixels": 0,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "shared_pose_patch": null,
+      "rejected_detached_additions": 0,
+      "regions": [
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            28,
+            47
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            28,
+            53
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            34,
+            45
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            35,
+            51
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            31,
+            55
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            31,
+            65
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            31,
+            72
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            28,
+            55
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            28,
+            64.5
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            28,
+            71
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    }
+  ]
+}

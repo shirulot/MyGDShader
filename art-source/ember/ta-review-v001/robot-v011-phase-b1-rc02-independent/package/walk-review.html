@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>机器人八向 · v011 小样审查</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#18232b;color:#e7e8dc}*{box-sizing:border-box}body{margin:0}main{max-width:1280px;margin:auto;padding:28px}header{display:flex;justify-content:space-between;align-items:center;gap:20px}h1{font-size:26px;margin:0 0 8px}p{color:#aebbbd;line-height:1.65;margin:8px 0}small{color:#aebbbd}.badge{padding:6px 10px;border:1px solid #99764e;border-radius:4px;color:#e2b77a;white-space:nowrap}.controls{display:flex;flex-wrap:wrap;gap:14px;align-items:end;margin:24px 0 16px}label{display:grid;gap:6px;font-size:13px;color:#b9c5c7}select,button,input{font:inherit}select,button{background:#2b3e4b;color:#ece9d8;border:1px solid #526670;border-radius:5px;padding:9px 12px}button{cursor:pointer}button:hover{background:#3f5563}.stage{display:grid;grid-template-columns:minmax(280px,1fr) 210px;gap:16px}.card{border:1px solid #3a4e5a;border-radius:8px;overflow:hidden}.caption{padding:12px 16px;border-bottom:1px solid #3a4e5a;font-size:13px;color:#becbc4}.surface{background:#ece9d8;display:flex;align-items:center;justify-content:center;min-height:430px;position:relative}canvas,img{image-rendering:pixelated}canvas{max-width:100%;object-fit:contain}.foot{padding:12px 16px;background:#20313d;display:flex;gap:14px;align-items:center;min-height:54px}.foot input{flex:1}#status{font-size:13px;color:#e2b77a;min-height:22px;margin:12px 0}.directions{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-top:26px}.direction{border:1px solid #3a4e5a;border-radius:6px;background:#20313d;padding:8px;cursor:pointer;text-align:center}.direction.selected{border-color:#e2b77a}.direction img{display:block;width:128px;height:192px;max-width:100%;object-fit:contain;margin:auto}.direction span{font-size:12px;color:#becbc4}.notes{border-top:1px solid #3a4e5a;margin-top:24px;padding-top:14px}a{color:#a9cad8}.contact{width:100%;height:auto;background:#ece9d8;margin-top:12px}details{margin-top:22px}summary{cursor:pointer}#count{font-variant-numeric:tabular-nums;white-space:nowrap}@media(max-width:850px){.stage{grid-template-columns:1fr}.directions{grid-template-columns:repeat(4,1fr)}main{padding:18px}.surface{min-height:400px}}
+</style>
+<main>
+<header><div><h1>机器人八向 · v011</h1><p>步相返修：东北、东南交错摆臂，朝北纵向投影。南、南西、北西保持原帧。</p></div><span class="badge">phase-b1-rc02 · 待审</span></header>
+<div class="controls">
+ <label>方向<select id="direction" aria-label="方向"></select></label>
+ <label>内容<select id="action" aria-label="内容"><option value="walk">行走</option><option value="pose">固定造型</option></select></label>
+ <label>播放速度<select id="speed" aria-label="播放速度"><option value="1">正常 · 8 FPS</option><option value="0.25">慢放 · 2 FPS</option></select></label>
+ <label>背景<select id="background" aria-label="背景"><option value="light">浅底</option><option value="dark">深底</option><option value="checker">棋盘格</option></select></label>
+ <button id="play">暂停</button><button id="previous">上一帧</button><button id="next">下一帧</button>
+ <button id="turn">自动切换方向</button>
+</div>
+<div id="status" role="status"></div>
+<div class="stage">
+ <div class="card"><div class="caption">4× 最近邻 · 固定脚底锚点</div><div class="surface"><canvas id="large" width="256" height="384"></canvas></div><div class="foot"><span id="count"></span><input id="frame" aria-label="帧索引" type="range" min="0" max="7" step="1" value="0"></div></div>
+ <div class="card"><div class="caption">1× 原生 · 64 × 96</div><div class="surface"><canvas id="native" width="64" height="96"></canvas></div><div class="foot"><small>root (32, 80)<br>S / SW 保留已通过原帧</small></div></div>
+</div>
+<div class="directions" id="direction-board"></div>
+<details><summary>up_left · 八帧对照</summary><img class="contact" src="previews/walk_up_left_light_4x_v011.png" alt="up_left行走八帧联系图"></details>
+<details><summary>up · 八帧对照</summary><img class="contact" src="previews/walk_up_light_4x_v011.png" alt="up行走八帧联系图"></details>
+<details><summary>up_right · 八帧对照</summary><img class="contact" src="previews/walk_up_right_light_4x_v011.png" alt="up_right行走八帧联系图"></details>
+<details><summary>down_right · 八帧对照</summary><img class="contact" src="previews/walk_down_right_light_4x_v011.png" alt="down_right行走八帧联系图"></details>
+<div class="notes"><p>本批有 6 向行走，共 48 帧，S/SW 已通过并保持原字节。其余新增方向待审；左右侧面行走、八向双帧待机与四帧采集仍在后续批次。固定造型只代表身份参考。</p><p><a href="walk-batch-metadata.json">当前帧数与注册清单</a> · <a id="normal-link" href="previews/walk_up_left_normal_4x_v011.webp">正常速度 WebP</a> · <a id="slow-link" href="previews/walk_up_left_slow_4x_v011.webp">慢放 WebP</a> · <a href="godot-walk-review/project.godot">独立 Godot 工程</a></p></div>
+</main>
+<script>
+(async()=>{
+ const meta=await fetch('walk-batch-metadata.json').then(r=>r.json());
+ const names={down:'下 S',down_left:'左下 SW',left:'左 W',up_left:'左上 NW',up:'上 N',up_right:'右上 NE',right:'右 E',down_right:'右下 SE'};
+ const $=s=>document.querySelector(s),images=new Map();
+ for(const file of new Set(meta.clips.flatMap(c=>c.frames.map(f=>f.file)))){const im=new Image();im.src=file;await im.decode();images.set(file,im);}
+ meta.direction_order.forEach(d=>{
+   const o=document.createElement('option');o.value=d;o.textContent=names[d];$('#direction').append(o);
+   const b=document.createElement('button');b.className='direction';b.dataset.direction=d;b.innerHTML=`<img src="source/candidate-masters/robot_idle_${d}_v011.png" alt="${names[d]}固定造型候选"><span>${names[d]}</span>`;
+   b.onclick=()=>{$('#direction').value=d;update();};$('#direction-board').append(b);
+ });
+ $('#direction').value='up_left';let index=0,playing=true,turning=false,last=performance.now(),turnStart=last,loops=0,clip;
+ const ctxs=[$('#large').getContext('2d'),$('#native').getContext('2d')];
+ function draw(){
+   for(const ctx of ctxs){ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);ctx.drawImage(images.get(clip.frames[index].file),0,0,ctx.canvas.width,ctx.canvas.height);}
+   $('#count').textContent=`F${String(index).padStart(2,'0')} / ${clip.frames.length}帧`;
+   $('#frame').value=index;$('#frame').max=clip.frames.length-1;
+   document.body.dataset.clip=clip.name;document.body.dataset.frame=index;document.body.dataset.loops=loops;
+ }
+ function update(){
+   const d=$('#direction').value,a=$('#action').value;clip=meta.clips.find(c=>c.name===`${a}_${d}`);const fallback=!clip;
+   clip||=meta.clips.find(c=>c.name===`pose_${d}`);index%=clip.frames.length;
+   $('#status').textContent=fallback?'此方向行走尚未制作，当前显示固定造型候选。':a==='pose'?'固定造型候选；后续待机为 2 帧，尚未完成。':['down','down_left'].includes(d)?'保留已通过的阶段 A 行走原帧。':'新增行走小样：固定部件与局部关节修形，待独立审查。';
+   document.querySelectorAll('.direction').forEach(b=>b.classList.toggle('selected',b.dataset.direction===d));
+   for(const speed of ['normal','slow']){const link=$('#'+speed+'-link');link.hidden=clip.action!=='walk';if(clip.action==='walk')link.href='previews/'+clip.name+'_'+speed+'_4x_v011.webp';}last=performance.now();draw();
+ }
+ function playLabel(){$('#play').textContent=playing?'暂停':'播放';}
+ function step(delta){playing=false;turning=false;playLabel();index=(index+delta+clip.frames.length)%clip.frames.length;draw();}
+ $('#play').onclick=()=>{playing=!playing;last=performance.now();playLabel();};$('#previous').onclick=()=>step(-1);$('#next').onclick=()=>step(1);
+ $('#direction').onchange=update;$('#action').onchange=update;$('#speed').onchange=()=>last=performance.now();
+ $('#frame').oninput=()=>{playing=false;playLabel();index=Number($('#frame').value);draw();};
+ $('#background').onchange=()=>{const bg=$('#background').value;document.querySelectorAll('.surface').forEach(s=>{s.style.background=bg==='light'?'#ece9d8':bg==='dark'?'#182631':'repeating-conic-gradient(#435763 0% 25%,#2b3e4b 0% 50%) 0 / 16px 16px';});};
+ $('#turn').onclick=()=>{turning=!turning;$('#turn').textContent=turning?'停止切换':'自动切换方向';if(turning){turnStart=performance.now();update();}};
+ function tick(now){
+   if(turning&&now-turnStart>=850){const i=meta.direction_order.indexOf($('#direction').value);$('#direction').value=meta.direction_order[(i+1)%8];turnStart=now;update();}
+   const interval=1000/(clip.fps*Number($('#speed').value));
+   if(playing&&clip.loop&&now-last>=interval){const steps=Math.floor((now-last)/interval);loops+=Math.floor((index+steps)/clip.frames.length);index=(index+steps)%clip.frames.length;last+=steps*interval;draw();}
+   requestAnimationFrame(tick);
+ }
+ update();requestAnimationFrame(tick);
+})();
+</script></html>

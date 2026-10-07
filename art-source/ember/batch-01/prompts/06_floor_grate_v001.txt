@@ -1,0 +1,10 @@
+Use case: stylized-concept
+Asset type: T01 one SINGLE industrial floor tile for Ember Energy Station / 余烬采能站.
+Input image 1 is NEW FLOOR REFERENCE clean-floor v001. Input image 2 is new station v001 MATERIAL REFERENCE. Generate a new floor variant matching reference 1 base blue-gray and horizontal/vertical seam positions, quiet gameplay readability and manufacturing system.
+Camera: strictly vertical top-down, flat square texture; no isometric diamond or perspective.
+FINAL DESIGN GRID exactly 32x32 native logical pixels; output an actual 32x32 PNG if supported, otherwise an exact nearest-neighbor enlarged version with constant square pixel blocks. Broad flat clusters, discrete 3-4 shades, no smooth gradients, tiny flecks, random grain, dithering, antialiasing or glossy rendering.
+Exact 16-color palette: #101820 #182631 #2B3E4B #4D6470 #829BA3 #BECBC4 #7B4D35 #B77C4B #E2B77A #51C5C2 #E5A44B #E65B4A #566B78 #203A4B #406B78 #ECE9D8. Base floor is predominantly muted #4D6470 and #566B78, #2B3E4B sparse recesses; no bright saturated color.
+Shared edge contract: outer edges continue the same quiet blue-gray steel and reference seam positions. XY seamless repeating; must adjoin all four clean/worn/grate/wet variants. No bevel, raised border, standalone plaque, bright outline or padding.
+Background: fully OPAQUE surface reaches every edge and corner.
+No equipment, robots, lettering, watermark, safety lines, danger marks, baked shadows, aura, rain, animated water or other runtime effects.
+Variant: INDUSTRIAL GRATING. Flat recessed blue-gray steel grate with a simple sparse regular horizontal/vertical lattice; chunky few-pixel rectangular apertures. The lattice is orthogonal, NOT diagonal mesh. Keep reference panel seam locations, steel perimeter and same base value. Deep recesses #2B3E4B rather than pitch black; no transparency or visible floor underneath. All structure low contrast, no illuminated edges. Regular lattice closes correctly at repetition boundaries.

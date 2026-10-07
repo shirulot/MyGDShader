@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ember/three_d/textures/concrete/concrete_albedo_v001.png" id="1_uyi22"]
+[ext_resource type="Texture2D" path="res://assets/ember/three_d/textures/concrete/concrete_metallic_v001.png" id="2_0qjlu"]
+[ext_resource type="Texture2D" path="res://assets/ember/three_d/textures/concrete/concrete_normal_v001.png" id="3_tdq0x"]
+[ext_resource type="Texture2D" path="res://assets/ember/three_d/textures/concrete/concrete_roughness_v001.png" id="4_p30ma"]
+
+[resource]
+albedo_texture = ExtResource("1_uyi22")
+metallic = 1.0
+metallic_texture = ExtResource("2_0qjlu")
+roughness_texture = ExtResource("4_p30ma")
+normal_enabled = true
+normal_texture = ExtResource("3_tdq0x")
+texture_filter = 2

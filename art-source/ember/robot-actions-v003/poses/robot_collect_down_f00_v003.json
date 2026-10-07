@@ -1,0 +1,112 @@
+{
+	"direction": "down",
+	"draw_order": [
+		"right_leg",
+		"left_leg",
+		"torso",
+		"right_arm",
+		"left_upper_arm",
+		"left_forearm_tool",
+		"head"
+	],
+	"foot_anchor": [
+		32,
+		80
+	],
+	"frame_index": 0,
+	"idle_source": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+	"joint_pixels": [
+		{
+			"anatomical_reason": "Anchored upper-arm cuff to reaching forearm elbow sleeve; original dark joint outline and steel colors.",
+			"at": [
+				43,
+				50
+			],
+			"source_rgba_at": [
+				43,
+				50
+			]
+		},
+		{
+			"anatomical_reason": "Anchored upper-arm cuff to reaching forearm elbow sleeve; original dark joint outline and steel colors.",
+			"at": [
+				44,
+				50
+			],
+			"source_rgba_at": [
+				44,
+				50
+			]
+		},
+		{
+			"anatomical_reason": "Anchored upper-arm cuff to reaching forearm elbow sleeve; original dark joint outline and steel colors.",
+			"at": [
+				45,
+				50
+			],
+			"source_rgba_at": [
+				45,
+				50
+			]
+		},
+		{
+			"anatomical_reason": "Anchored upper-arm cuff to reaching forearm elbow sleeve; original dark joint outline and steel colors.",
+			"at": [
+				46,
+				50
+			],
+			"source_rgba_at": [
+				46,
+				50
+			]
+		},
+		{
+			"anatomical_reason": "Anchored upper-arm cuff to reaching forearm elbow sleeve; original dark joint outline and steel colors.",
+			"at": [
+				47,
+				50
+			],
+			"source_rgba_at": [
+				47,
+				50
+			]
+		}
+	],
+	"joint_policy": "Explicit overlap and draw order. Empty joint_pixels means no new pixel paint.",
+	"offsets": {
+		"head": [
+			0,
+			1
+		],
+		"left_forearm_tool": [
+			0,
+			2
+		],
+		"left_leg": [
+			0,
+			0
+		],
+		"left_upper_arm": [
+			0,
+			1
+		],
+		"right_arm": [
+			0,
+			1
+		],
+		"right_leg": [
+			0,
+			0
+		],
+		"torso": [
+			0,
+			1
+		]
+	},
+	"parts_file": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_actions_v003.json",
+	"pose_description": "准备：微俯身并抬出原左腕采集工具。",
+	"schema_version": 2,
+	"source_art_policy": "Original component RGBA only; integer translation, no whole sprite transform or alpha repair.",
+	"state": "collect",
+	"tool_hand": "anatomical_left_arm_from_v002_rig; no mirror and no hand swap"
+}

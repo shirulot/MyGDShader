@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "revision": "v003",
+  "archive_sha256": "24def0986879b32e87c862561639140898b6fb21c6d4127f376fcb6cddd6dc49",
+  "p2_detached_hud_close": "CLOSED",
+  "new_blocking_findings": [],
+  "original_ta_probe_sha256": "5eddd6cd8dad4ddfdcf6b66e36b28fa0cda52542f53cc42e2ead29ecca27b472",
+  "checks": [
+    {
+      "run": "original_ta_probe",
+      "count": 8,
+      "status": "PASS",
+      "stderr_bytes": 0
+    },
+    {
+      "run": "lifecycle",
+      "count": 112,
+      "status": "PASS",
+      "stderr_bytes": 0
+    },
+    {
+      "run": "independent_supplement",
+      "count": 34,
+      "status": "PASS",
+      "stderr_bytes": 0
+    }
+  ],
+  "check_count": 154,
+  "scope": "Current HUD, single energy-station drawer, declared reusable component boundaries",
+  "integrity_report": "art-source/ember/ta-review-v001/ui-v003-integrity/integrity-v003.json",
+  "review_report": "art-source/ember/ta-review-v001/ui-v003-independent/review-ui-v003.md"
+}

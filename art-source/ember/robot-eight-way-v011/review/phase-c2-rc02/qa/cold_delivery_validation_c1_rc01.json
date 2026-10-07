@@ -1,0 +1,76 @@
+{
+  "revision": "phase-c1-rc01",
+  "zip": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\deliveries\\robot_eight_way_v011_phase_c1_rc01_2026-10-07.zip",
+  "zip_sha256": "0c62177198973b24bb3fbfcc306ba4617af3ad754eb5a0696bdfddb4f19f51df",
+  "zip_bytes": 19576548,
+  "zip_entries": 859,
+  "payload_files": 858,
+  "payload_hash_mismatches": 0,
+  "sha256_manifest_sha256": "510dd359d86575299fa88a8a2d0c489bddb3886566905e642cf374764d42a36a",
+  "metadata_file": "action-pilot-metadata.json",
+  "metadata_sha256": "44083663252fcf5447ba63d2bf0bdb453ba80d2da24f36d8f8663f0d96433214",
+  "cold_root": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-eight-way-v011\\review\\cold-phase-c1-rc01",
+  "cold_engine_validation": "PASS",
+  "status": "PASS",
+  "atlas_sha256": "9262c6eac7fb6885d529ba6a39d3ecab01305aa1d9d7f2101ba84906e5211be7",
+  "actual_gpu_cases": 30,
+  "natural_playback": [
+    {
+      "clip": "idle_down_left",
+      "loops": 2,
+      "sequence": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "clip": "walk_down_left",
+      "loops": 2,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        0,
+        1
+      ]
+    }
+  ],
+  "collect_to_idle": {
+    "finished_events": [
+      {
+        "frame": 3,
+        "clip": "collect_down_left"
+      }
+    ],
+    "collect_sequence": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "result_animation": "idle_down_left",
+    "result_frame": 0,
+    "idle0_rgba_exact": true
+  },
+  "errors": [],
+  "cold_payload_changes_after_engine": 0,
+  "engine_outputs": "qa/cold-action-validation/c1-rc01",
+  "frozen_and_zip_read_only": true,
+  "art_acceptance": "PENDING_TA"
+}

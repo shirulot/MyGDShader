@@ -1,0 +1,43 @@
+{
+	"checked_alpha_pixels": 139264,
+	"checked_neighbor_band_pixels": 704,
+	"checked_south_bridge_gap_pixels": 17408,
+	"checks": [
+		"136图块二值Alpha",
+		"每块上16px透明",
+		"有S地板邻居整块透明",
+		"无S地板下16px有立面",
+		"南桥24px全高透空与4px肩部完整",
+		"相邻面板边缘/4px截面/32px切向周期",
+		"原351图块SHA256保持"
+	],
+	"core_sha256": {
+		"bridge": "23daa235901c4815aade61049114290eef90b962546a4bc9d3f91a23dfacadfa",
+		"floor": "ed68464548ac336f06eaf2c969e29ad385e00a5a26122a411da41d4c36690312",
+		"floor_landing": "d107718acb08913cb268902f6412a04ae070cc4d467ba9b602c8e62e64265e6e",
+		"grate": "2bbc317436619ff0a9f79dcfca7e7b9335613d4fbd17434bf55892bc66852e85",
+		"rim": "d9af8566dff08415f788d2ec2a13005b275465f953b7c40500860b024fbe4e5e",
+		"rim_landing": "52e135c101ca321d658f3191c6dc59b7bec9ec0abd3e0f3110232ebf897695d2",
+		"seam": "b928910de32b84f119185c1b4b7a30916421aca306397fb58e484ec7a3175b1d"
+	},
+	"counts": {
+		"facade": 47,
+		"facade_landing": 89
+	},
+	"engine": "4.7.2-stable (steam)",
+	"errors": [],
+	"geometry": {
+		"face_height": 16,
+		"face_start_in_tile": 16,
+		"layer_offset": [
+			0,
+			16
+		],
+		"south_bridge_gap": [
+			4,
+			28
+		],
+		"tile_size": 32
+	},
+	"status": "CONNECTIVITY_PASS"
+}

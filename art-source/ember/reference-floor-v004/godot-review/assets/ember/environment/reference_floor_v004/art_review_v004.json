@@ -1,0 +1,64 @@
+{
+  "revision": "reference_floor_v004",
+  "status": "VISUAL_CANDIDATE",
+  "user_accepted": false,
+  "source_imagegen_calls": 3,
+  "new_material_ids": [
+    4,
+    5,
+    6
+  ],
+  "retained_material_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "actual_scene_previews": [
+    "gpu_concrete_scene_v004.png",
+    "gpu_teal_scene_v004.png",
+    "gpu_ceramic_scene_v004.png",
+    "gpu_mixed_scene_v004.png"
+  ],
+  "comparison": "gpu_material_comparison_v004.png",
+  "review_method": "Root agent visually inspected the actual Godot GPU comparison. The board combines four actual scene captures, with no artistic mockup replacing the TileMap output.",
+  "fixed_standards": {
+    "texture_tile_px": 128,
+    "world_cell_px": 32,
+    "tilemap_scale": 0.25,
+    "camera_zoom": 2,
+    "coping_world_px": 8,
+    "south_facade_world_px": 32,
+    "wide_bridge_body_world_px": 40,
+    "bridge_shoulders_world_px": 12
+  },
+  "visual_findings": [
+    "Concrete aggregate, worn teal paint and flush grey-white ceramic grid are visually distinct at the existing native scale.",
+    "All three maps keep the original robot, station, rail, hatch, coping, facade and bridge geometry.",
+    "The mixed map contains all seven materials and keeps a continuous ground surface across material boundaries.",
+    "Ceramic grout is an albedo pattern; it does not create inner facade, coping or collision geometry."
+  ],
+  "gpu_verification": {
+    "actual_scenes": 4,
+    "pure_material_edits": 3,
+    "max_rgb_error": 0.0,
+    "report": "gpu_capture_v004.json"
+  },
+  "structural_verification_report": "independent_validation_v004.json",
+  "editor_gui_undo_redo": "NOT_TESTED",
+  "limits": [
+    "New art is awaiting user visual review.",
+    "Panel seams, hatch and rails remain independent decorations.",
+    "Collision and navigation are outside this material extension."
+  ],
+  "verification": {
+    "same_size_bounds_shift_and_restore": true,
+    "compiler_sha256": "244161deb264aadf89b12356efe46f36b6893fc9d4e33486d09a8998d5e5b45d",
+    "status": "PASS",
+    "pair_cases": 30,
+    "context_tile_origin_mappings_checked": 504,
+    "painter_sha256": "8c881bdaf9e2a94c82637b362de89249ea2614512980443af5341f0283b4c42a",
+    "full_rgba_comparisons": 12,
+    "landing_cases": 12
+  }
+}

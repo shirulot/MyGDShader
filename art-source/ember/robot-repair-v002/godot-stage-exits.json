@@ -1,0 +1,170 @@
+{
+  "stages": [
+    {
+      "stage": "syntax",
+      "engine_arguments": [
+        "--headless",
+        "--path",
+        ".",
+        "-s",
+        "res://tools/build_ember_robot_animation_v002.gd",
+        "--check-only"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_log": "syntax.stdout.log",
+      "stderr_log": "syntax.stderr.log",
+      "stdout_sha256": "0fb41bb7cc71b68a335c01d8f84a806304e1cc6bb173f34ca02cb913d0f62013",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "stage": "import",
+      "engine_arguments": [
+        "--headless",
+        "--editor",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--import"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_log": "import.stdout.log",
+      "stderr_log": "import.stderr.log",
+      "stdout_sha256": "291d3a48acedf38594d503532a88d2efbbbfe3be2186f4ccc55ae73f0b1604fc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "stage": "import-settings",
+      "engine_arguments": [
+        "--headless",
+        "--editor",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--import"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_log": "import-settings.stdout.log",
+      "stderr_log": "import-settings.stderr.log",
+      "stdout_sha256": "4b1133d9709c2edd5e9805c6b8979b9729d154fd8dd78b36f4bec9f563b215ee",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "stage": "build",
+      "engine_arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "-s",
+        "res://tools/build_ember_robot_animation_v002.gd"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_log": "build.stdout.log",
+      "stderr_log": "build.stderr.log",
+      "stdout_sha256": "99ce4c4eb173e1df6b8ac8f36dd279f2b555987e77036279823a8cf0fde4f21b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "stage": "verify",
+      "engine_arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "-s",
+        "res://tools/build_ember_robot_animation_v002.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\godot-verify-only.json"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_log": "verify.stdout.log",
+      "stderr_log": "verify.stderr.log",
+      "stdout_sha256": "7e6ec71d1c4e8a1ac0becb88fb4fe1feb32f3a917058ffade75114d84d2da9af",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "stage": "render",
+      "engine_arguments": [
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--rendering-method",
+        "gl_compatibility",
+        "--disable-vsync",
+        "-s",
+        "res://tools/build_ember_robot_animation_v002.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\godot-render.json",
+        "--screenshots=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\render",
+        "--screenshot=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\godot-robot-v002.png"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_log": "render.stdout.log",
+      "stderr_log": "render.stderr.log",
+      "stdout_sha256": "a737dcebed702a0b4692da98696ced77e16f390f83200a57083c44d4ebc7667f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "stage": "fresh-import",
+      "engine_arguments": [
+        "--headless",
+        "--editor",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\fresh-project-v001",
+        "--import"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_log": "fresh-import.stdout.log",
+      "stderr_log": "fresh-import.stderr.log",
+      "stdout_sha256": "5f014c374b35d73777fc38cfe2a420a74215ab92ebee209c7292d4576e8b0917",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "stage": "fresh-verify",
+      "engine_arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\fresh-project-v001",
+        "-s",
+        "res://tools/build_ember_robot_animation_v002.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\fresh-godot-verify.json"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_log": "fresh-verify.stdout.log",
+      "stderr_log": "fresh-verify.stderr.log",
+      "stdout_sha256": "079be9fdb2161b14ce75f1c3097d48ae831c03998b0bbc5dccfdaac99e0dcafe",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "stage": "fresh-render",
+      "engine_arguments": [
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\fresh-project-v001",
+        "--rendering-method",
+        "gl_compatibility",
+        "--disable-vsync",
+        "-s",
+        "res://tools/build_ember_robot_animation_v002.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\fresh-godot-render.json",
+        "--screenshots=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\fresh-render",
+        "--screenshot=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\robot-repair-v002\\fresh-godot-robot-v002.png"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_log": "fresh-render.stdout.log",
+      "stderr_log": "fresh-render.stderr.log",
+      "stdout_sha256": "58a2f5ab21f831f256bc9218a3f33af5b707b67741c496620180272217f0d3ea",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "builder_sha256": "2a4e09015b1dd5aa8166663bbfa1887a63f6a461752cfeed9e5cc344d1b44cbe"
+}

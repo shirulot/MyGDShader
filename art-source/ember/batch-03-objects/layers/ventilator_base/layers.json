@@ -1,0 +1,49 @@
+{
+  "canvas": [
+    160,
+    192
+  ],
+  "anchor": [
+    80,
+    176
+  ],
+  "rect_coordinate_convention": "left/top included; right/bottom excluded",
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/ventilator_base/foundation_body.png",
+      "sha256": "bb690ccc8c2b057cba4b0475e7d6ca991270f665092b952a522ec04cfb632242",
+      "z_index": 0,
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    },
+    {
+      "name": "fan_rotor",
+      "file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor_selection.png",
+      "sha256": "24c2ce3fa7876c055bfa4c19d48a5d1e6fb82b67422908e40706a9b57d19a47b",
+      "z_index": 2,
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "purpose": "实际3片扇叶与轴；移开后机壳有中性腔底",
+      "editable_source": true,
+      "hidden_underpaint_color_index": 1
+    }
+  ],
+  "exact_recomposition": true,
+  "type": "editable_same_canvas_RGBA_components_with_explicit_selection_masks"
+}

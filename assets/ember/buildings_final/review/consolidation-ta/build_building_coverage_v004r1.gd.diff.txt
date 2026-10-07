@@ -1,0 +1,11 @@
+--- frozen/build_building_coverage_v004r1.gd
++++ current/build_building_coverage_v004r1.gd
+@@ -7,7 +7,7 @@
+ const COVERAGE_THRESHOLD := 128
+ 
+ func _initialize() -> void:
+-	var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/ember/building_assets_v004/catalog_v004.json"))
++	var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://art-source/ember/building-assets-v004/registration_baseline_v004.json"))
+ 	catalog.revision = "building_assets_v004r1"
+ 	catalog.status = "COVERAGE_AND_DEMO_FIX_PENDING_TA"
+ 	catalog.coverage_rule = "One source mask: alpha >= 128 becomes 255, otherwise 0; retain covered RGB; canonical empty RGBA=0. No geometry, scale or anchor changes."

@@ -1,0 +1,82 @@
+{
+  "id": "smoke_blob",
+  "source": "art-source/ember/batch-05-textures/generated/smoke_blob_master_v001.png",
+  "source_sha256": "9abeda1d5c92bd2d6d88be5b8ea0b34694983870215c690097d073c26341a9e9",
+  "prompt": "art-source/ember/batch-05-textures/prompts/smoke_blob_v001.txt",
+  "output": "art-source/ember/batch-05-textures/finished-textures/smoke_blob_v001.png",
+  "output_sha256": "31a27aec9a4cbe4edcd73dea99676c2d534802b5063256f0706409239a446a2d",
+  "process": {
+    "source_crop": [
+      274,
+      315,
+      1000,
+      973
+    ],
+    "native_patch_size": [
+      46,
+      42
+    ],
+    "native_patch_origin": [
+      9,
+      11
+    ],
+    "source_alpha_threshold": 160,
+    "alpha_policy": "BINARY_0_255",
+    "palette_subset": [
+      "#4D6470",
+      "#566B78",
+      "#829BA3"
+    ],
+    "native_quantization": "BOX coverage into designed native canvas, nearest fixed color, no dithering",
+    "isolated_native_pixels_removed": 0,
+    "source_use": "AI_MATERIAL_AND_SILHOUETTE_REFERENCE_WITH_NATIVE_PIXEL_FINISH"
+  },
+  "measurement": {
+    "canvas": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      9,
+      11,
+      55,
+      53
+    ],
+    "alpha_zero": 2832,
+    "alpha_partial": 0,
+    "alpha_opaque": 1264,
+    "visible_rgb_count": 3,
+    "palette_off_pixels": 0,
+    "edges": {
+      "X": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      },
+      "Y": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      }
+    }
+  },
+  "anchor": [
+    32,
+    32
+  ],
+  "tiling": "NONE",
+  "runtime_layout": {
+    "layer_convention": "STATIC_SINGLE_FLATTENED_BASE",
+    "emitter_points": [],
+    "emission_baked": false,
+    "pbr_derived_maps": "NOT_PRODUCED",
+    "height_weight_map": "NOT_PRODUCED"
+  },
+  "source_use": "AI_MATERIAL_AND_SILHOUETTE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+  "producer_visual_status": "PRODUCER_VISUAL_REVIEW_PASS_ONLY",
+  "independent_visual_status": "PENDING_ROOT_OR_OTHER_AGENT_REVIEW",
+  "producer_visual_observation": "4个主要圆瓣组成一个居中完整puff；少色块静态输入，选择二值Alpha，不交付柔烟梯度、火源或投影。"
+}

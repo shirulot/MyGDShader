@@ -1,0 +1,268 @@
+{
+  "status": "PASS",
+  "scope": "Fresh ZIP directory import and real GPU playback; producer evidence only",
+  "cold_workspace": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-heavy-actions-v007-coldcheck",
+  "zip_path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\deliveries\\enemy_heavy_actions_v007_2026-10-06.zip",
+  "zip_sha256": "05350a58ef0a0e44ee19c3c6af69a2f38048f4e1c5d4ce24afae5076ece14494",
+  "import_exit": 0,
+  "capture_exit": 0,
+  "actual_playback_report": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-heavy-actions-v007-coldcheck/qa/gpu_playback.json",
+  "playback_report_sha256": "fefed3270132e3a605cd62fb200de2bcfd76761dd19bbf2a8516bdb5a90247d9",
+  "gpu": {
+    "catalog_sha256": "13cba4f39b0e47126aadff9cf2b78bb640c4fb4a336223a51f95b4dc15865a18",
+    "finished": {
+      "hit_down_normal": 11,
+      "hit_down_slow": 2,
+      "idle_down_normal": 0,
+      "idle_down_slow": 0,
+      "move_down_normal": 0,
+      "move_down_slow": 0
+    },
+    "loops": {
+      "hit_down_normal": 0,
+      "hit_down_slow": 0,
+      "idle_down_normal": 9,
+      "idle_down_slow": 2,
+      "move_down_normal": 9,
+      "move_down_slow": 1
+    },
+    "scope": "runtime traversal only",
+    "seconds": 9.20144799999975,
+    "seen": {
+      "hit_down_normal": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hit_down_slow": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "idle_down_normal": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "idle_down_slow": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "move_down_normal": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "move_down_slow": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "status": "PASS"
+  },
+  "core_files": [
+    {
+      "path": "action_rig.gd",
+      "sha256": "af71c7e269b0099c29c067a357822273921ad8d5a969a0cc31c2344fd6584a9d",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "capture.gd",
+      "sha256": "12208fab913b89f2f420ddccbbf367697496b9e466dbc67e7e00efc35508ed29",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "entity_cutout.gdshader",
+      "sha256": "2d4e49676106cede9b961746dc734e5e80d5c969c0745fdf024e1c70ee56323d",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "export.gd",
+      "sha256": "e7dc58a88fd02ab793f9026252f064aeff2b6d6bf4630a088ba52f05a39be047",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "preview.gd",
+      "sha256": "15c8984f502c4313f72dbbd77871d8ee92444b2d10d8b260e55bb58c124f58b3",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "preview.html",
+      "sha256": "dfe66144b55bec7188be8f3beb31c1512d9114e0d0b17efeb204db01d10d1b39",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "preview.tscn",
+      "sha256": "02ec975cc2cf722d0ffa5a4dd3c9888217c805f69106240308ecacad12256715",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "project.godot",
+      "sha256": "526169b604290f9fae519a0b744cbe40f36cadbe8919c7b2cfd4473aeb1bb146",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "bbea6a694e8553bd20a6b95ccf86b1d452e938e83dd6bd4ad57cebb0a8d271c6",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "rig.json",
+      "sha256": "2d16e3e7db0772be890b4563d2e8c6f8a02565cdcd54e9d6e583192f782b42f9",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "verify.gd",
+      "sha256": "871d2a756316b085438d4d5a675a1e7922e696b97a5dfd84a370bf15d40a292e",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/catalog_v007.json",
+      "sha256": "13cba4f39b0e47126aadff9cf2b78bb640c4fb4a336223a51f95b4dc15865a18",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/heavy_actions_v007.tres",
+      "sha256": "346ee345f79e9109ce86b2d1fae637aaf5efb68b3c7f66b8f75dfc6fef6555aa",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/hit_down_v007.png",
+      "sha256": "ecf5d6e39c19b312bfe55661fc4c045bf6fad1075085edff66bd794961fe7a98",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/idle_down_v007.png",
+      "sha256": "28baed3260747b32ab273c8828f36a81bc8655f4c229520875e784dd7f5c03a1",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down_v007.png",
+      "sha256": "5315a7af9c59ba1aa74702de8dc3318609724c6dab0bc5d9eb395c7a728276a2",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/hit_down/f00.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/hit_down/f01.png",
+      "sha256": "dfbbf184f693841dc6f69dd345bdeb12c516eba99531c81d06400441f6b94c1d",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/hit_down/f02.png",
+      "sha256": "3218abb431838a921d2165a9d3d638f2c7d75987d4f5ac9f98f69071b21f71f0",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/hit_down/f03.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/idle_down/f00.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/idle_down/f01.png",
+      "sha256": "765c42c18839f43a9975365d9f8a642ed37f28997ed4fbb05f0e7e77decd26d2",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/idle_down/f02.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/idle_down/f03.png",
+      "sha256": "1b38ccab5d081e148b8cb85657baef458b03a5f08b02d3f3c533e16278a189fd",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f00.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f01.png",
+      "sha256": "a7e6724167ae15af43b346f3f1df2bd62313fe0b323492a26fd865b42ba56463",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f02.png",
+      "sha256": "9832ff68c2763e897ebe98adfc68689a0ca89d254748ecff0a69ba05ddea8ec8",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f03.png",
+      "sha256": "c08d80ec4935479f1db8fdee953099255528ecc80757e7aec283b4b1a5fdf1bf",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f04.png",
+      "sha256": "93a596fc02b905e3e7a463088b3fd8c28dd423dac69d8a5aec094ccfbd6a22ef",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f05.png",
+      "sha256": "41e1740487d05e73a9475a856813e58371a7d7cc2e76221ae621ea13cae3a78b",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f06.png",
+      "sha256": "47aebbedc19bb8e02f3daa65d59919706e1925fea4fc7cfa31e1bf3cd6a4e279",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "output/move_down/f07.png",
+      "sha256": "fd0a177e90e6ef1a4025e9fa7f46031b5b7e77cb731476a2c166bb0284c4abfe",
+      "zip_manifest_equal": true
+    },
+    {
+      "path": "source/canonical.png",
+      "sha256": "f970aec0962bb8fe8ad7d515e5a11f1c6bbafec23410a665c08a61baed2f20de",
+      "zip_manifest_equal": true
+    }
+  ],
+  "logs": [
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-heavy-actions-v007/qa/cold_import.log",
+      "bytes": 17133,
+      "sha256": "667a88dd6a0f5649c0af74bda14e0e3fdbe0428f57ad1fe148d56d973a9bd8ff"
+    },
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-heavy-actions-v007/qa/cold_import.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-heavy-actions-v007/qa/cold_capture.log",
+      "bytes": 794,
+      "sha256": "5a3697798be29d0e1be291304f7194b1215afde1b2c995a3e78c557ff0e2e715"
+    },
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-heavy-actions-v007/qa/cold_capture.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

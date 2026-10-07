@@ -1,0 +1,261 @@
+{
+  "scope": "Only E attack F03 two points and SW death F04/F06/F07 three connected-source points; no GPU/cold/full action scan",
+  "zip_sha256": "c16edaeb70592d03cd8426a584399d815bb00fd7791e3242a606abdf9ff8d192",
+  "east_socket_source_rect": [
+    1084.0,
+    675.75,
+    59.0,
+    36.75
+  ],
+  "east_target_bounds": [
+    92,
+    73,
+    8,
+    14
+  ],
+  "east_attack_f03_gun_translation": [
+    -2,
+    0
+  ],
+  "east_attack_f03_gun_rotation": 0,
+  "points": [
+    {
+      "output": [
+        98,
+        83
+      ],
+      "original_ownership": "gun; inside right gun polygon [92,73]-[100,87] and canonical opaque",
+      "canonical_RGBA": [
+        2,
+        5,
+        12,
+        255
+      ],
+      "attack_f00_RGBA": [
+        2,
+        5,
+        12,
+        255
+      ],
+      "attack_f03_RGBA": [
+        209,
+        213,
+        212,
+        255
+      ],
+      "visible_layer": "fixed socket under moving gun; NOT hidden lower chassis and NOT tower",
+      "socket_source_continuous": [
+        1131.9375,
+        703.3125
+      ],
+      "nearest_source_texel": [
+        1131,
+        703
+      ],
+      "source_RGBA": [
+        209,
+        213,
+        212,
+        253
+      ],
+      "source_alpha_binary_threshold_result": 255,
+      "gun_inverse_pixel_center": [
+        100.5,
+        83.5
+      ],
+      "gun_inverse_canonical_RGBA": [
+        255,
+        255,
+        255,
+        0
+      ],
+      "gun_inverse_owner": "outside gun polygon, alpha0; moving gun does not cover point",
+      "original_gun_row_front_x": 98,
+      "retracted_gun_row_front_x": 96,
+      "fixed_socket_row_front_x": 98
+    },
+    {
+      "output": [
+        98,
+        84
+      ],
+      "original_ownership": "gun; inside right gun polygon [92,73]-[100,87] and canonical opaque",
+      "canonical_RGBA": [
+        3,
+        7,
+        12,
+        255
+      ],
+      "attack_f00_RGBA": [
+        3,
+        7,
+        12,
+        255
+      ],
+      "attack_f03_RGBA": [
+        237,
+        236,
+        233,
+        255
+      ],
+      "visible_layer": "fixed socket under moving gun; NOT hidden lower chassis and NOT tower",
+      "socket_source_continuous": [
+        1131.9375,
+        705.9375
+      ],
+      "nearest_source_texel": [
+        1131,
+        705
+      ],
+      "source_RGBA": [
+        237,
+        236,
+        233,
+        253
+      ],
+      "source_alpha_binary_threshold_result": 255,
+      "gun_inverse_pixel_center": [
+        100.5,
+        84.5
+      ],
+      "gun_inverse_canonical_RGBA": [
+        255,
+        255,
+        255,
+        0
+      ],
+      "gun_inverse_owner": "outside gun polygon, alpha0; moving gun does not cover point",
+      "original_gun_row_front_x": 98,
+      "retracted_gun_row_front_x": 96,
+      "fixed_socket_row_front_x": 98
+    }
+  ],
+  "front_edge_interpretation": "These two rows keep the original static front x98 through generated socket after original gun front moves to x96. Allowed-domain containment is confirmed; containment alone does not demonstrate a mechanically correct inner-wall/exterior-edge design. The bright RGB is in the generated interior sampling, not new recoloring of the canonical gun. Visual/design disposition belongs to root TA.",
+  "minimum_fix_boundary_if_visual_rejected": "Change only socket source subregion or fixed socket ownership so interior samples are dark and restricted to the fixed receiver/rear interior rather than the old moving muzzle front. Preserve canonical source, gun motion and track fixed masks. Do not treat original-alpha clipping alone as sufficient.",
+  "southwest_tower_trace": [
+    {
+      "output": [
+        46,
+        89
+      ],
+      "canonical_source": [
+        46,
+        76
+      ],
+      "source_RGBA": [
+        76,
+        94,
+        106,
+        255
+      ],
+      "ownership": "tower original source; not track, housing, gun or generated hidden",
+      "translation": [
+        0,
+        13
+      ],
+      "frames": {
+        "f04": [
+          76,
+          94,
+          106,
+          255
+        ],
+        "f06": [
+          76,
+          94,
+          106,
+          255
+        ],
+        "f07": [
+          76,
+          94,
+          106,
+          255
+        ]
+      }
+    },
+    {
+      "output": [
+        46,
+        90
+      ],
+      "canonical_source": [
+        46,
+        77
+      ],
+      "source_RGBA": [
+        88,
+        91,
+        88,
+        255
+      ],
+      "ownership": "tower original source; not track, housing, gun or generated hidden",
+      "translation": [
+        0,
+        13
+      ],
+      "frames": {
+        "f04": [
+          88,
+          91,
+          88,
+          255
+        ],
+        "f06": [
+          88,
+          91,
+          88,
+          255
+        ],
+        "f07": [
+          88,
+          91,
+          88,
+          255
+        ]
+      }
+    },
+    {
+      "output": [
+        47,
+        88
+      ],
+      "canonical_source": [
+        47,
+        75
+      ],
+      "source_RGBA": [
+        206,
+        203,
+        192,
+        255
+      ],
+      "ownership": "tower original source; not track, housing, gun or generated hidden",
+      "translation": [
+        0,
+        13
+      ],
+      "frames": {
+        "f04": [
+          206,
+          203,
+          192,
+          255
+        ],
+        "f06": [
+          206,
+          203,
+          192,
+          255
+        ],
+        "f07": [
+          206,
+          203,
+          192,
+          255
+        ]
+      }
+    }
+  ],
+  "static_hidden_mount_scope": "Previous technical-hidden-check counted eligible source pixels before occlusion, not visible newly exposed mount. Full98 exposed-count is style_specs independent evidence, not rerun here."
+}

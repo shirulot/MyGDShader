@@ -1,0 +1,3606 @@
+{
+  "alpha_repair_or_dilation": "NONE",
+  "anchor": [
+    32,
+    80
+  ],
+  "builder_sha256": "c7bb5729e0842f2862f8781f891065f70882ae060f33bb67d66fcf53835ab7a1",
+  "canvas": [
+    64,
+    96
+  ],
+  "construction": "AUTHORED_INTEGER_COMPONENT_POSES_FROM_ACCEPTED_NATIVE_IDLE_AND_REPAIRED_V002_RIG",
+  "date": "2026-10-06",
+  "dependency_sha256": {
+    "art-source/ember/robot-repair-v002/annotations/rig_down_v002.json": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+    "art-source/ember/robot-repair-v002/annotations/rig_left_v002.json": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+    "art-source/ember/robot-repair-v002/annotations/rig_right_v002.json": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+    "art-source/ember/robot-repair-v002/annotations/rig_up_v002.json": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+    "assets/ember/characters/robot/robot_idle_down_v001.png": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+    "assets/ember/characters/robot/robot_idle_left_v001.png": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+    "assets/ember/characters/robot/robot_idle_right_v001.png": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+    "assets/ember/characters/robot/robot_idle_up_v001.png": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833"
+  },
+  "directions": [
+    "down",
+    "left",
+    "right",
+    "up"
+  ],
+  "engine": {
+    "build": "steam",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (steam)",
+    "timestamp": 0
+  },
+  "errors": [],
+  "frame_count": 24,
+  "frames": [
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 0,
+      "direction": "down",
+      "draw_order": [],
+      "file": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+      "frame_index": 0,
+      "id": "robot_idle_down_f00",
+      "measurement": {
+        "bbox": [
+          12,
+          21,
+          52,
+          80
+        ],
+        "bbox_xywh": [
+          12,
+          21,
+          40,
+          59
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1492,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {},
+      "pose_description": "Original idle reused unchanged.",
+      "reused_original": true,
+      "runtime_windows": [
+        {
+          "appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+          "center": [
+            32.0,
+            53.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.5,
+            0.552083333333333
+          ],
+          "safe_active_rect": [
+            30.0,
+            52.0,
+            34.0,
+            54.0
+          ]
+        }
+      ],
+      "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+      "source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "state": "idle"
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 590,
+      "direction": "down",
+      "draw_order": [
+        "right_leg",
+        "left_leg",
+        "torso",
+        "right_arm",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_idle_down_f01_v003.png",
+      "frame_index": 1,
+      "head_exact_translated_rgba": true,
+      "id": "robot_idle_down_f01",
+      "measurement": {
+        "bbox": [
+          12,
+          22,
+          52,
+          80
+        ],
+        "bbox_xywh": [
+          12,
+          22,
+          40,
+          58
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1479,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          1.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          1.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          1.0
+        ],
+        "right_arm": [
+          0.0,
+          1.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          1.0
+        ]
+      },
+      "pose_description": "呼吸微动：上身下降 1 像素，双脚原位支撑。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_idle_down_f01_v003.json",
+      "pose_sha256": "ac42ac22a90e10af99bf8f4e3986745b114ddfb7171f6d5cf6704f9fa2abcf90",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+          "center": [
+            32.0,
+            54.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.5,
+            0.5625
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            30,
+            53,
+            34,
+            55
+          ]
+        }
+      ],
+      "sha256": "2e95993438938a2857b2e8de816b7f6c4561e907ef0e69bcdf4285e10ad9225e",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+      "source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_actions_v003.json",
+      "source_rig_sha256": "3d70923099f4e616b214730ba7c07ec9e80a08c3724d697a052c1b7db0ef8c8c",
+      "state": "idle",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 13,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 13,
+        "forearm_tool_offset": [
+          0,
+          1
+        ],
+        "source_bronze_points": [
+          [
+            49,
+            55
+          ],
+          [
+            48,
+            56
+          ],
+          [
+            49,
+            56
+          ],
+          [
+            48,
+            57
+          ],
+          [
+            49,
+            57
+          ],
+          [
+            50,
+            57
+          ],
+          [
+            48,
+            58
+          ],
+          [
+            49,
+            58
+          ],
+          [
+            48,
+            59
+          ],
+          [
+            49,
+            59
+          ],
+          [
+            48,
+            60
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            49,
+            61
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [
+          {
+            "at": [
+              43,
+              31
+            ],
+            "part": "head"
+          },
+          {
+            "at": [
+              23,
+              49
+            ],
+            "part": "torso"
+          },
+          {
+            "at": [
+              23,
+              47
+            ],
+            "part": "right_arm"
+          },
+          {
+            "at": [
+              23,
+              48
+            ],
+            "part": "right_arm"
+          }
+        ],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 616,
+      "direction": "down",
+      "draw_order": [
+        "right_leg",
+        "left_leg",
+        "torso",
+        "right_arm",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f00_v003.png",
+      "frame_index": 0,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_down_f00",
+      "measurement": {
+        "bbox": [
+          12,
+          22,
+          52,
+          80
+        ],
+        "bbox_xywh": [
+          12,
+          22,
+          40,
+          58
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1484,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          1.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          2.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          1.0
+        ],
+        "right_arm": [
+          0.0,
+          1.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          1.0
+        ]
+      },
+      "pose_description": "准备：微俯身并抬出原左腕采集工具。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_down_f00_v003.json",
+      "pose_sha256": "260f546f4c77f3698418fa37fc919c8690342bfb50c359da12ff2e69b39fc5b2",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+          "center": [
+            32.0,
+            54.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.5,
+            0.5625
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            30,
+            53,
+            34,
+            55
+          ]
+        }
+      ],
+      "sha256": "d3169fb88ecfcad45d271553e458b5b937180f95472166a4b3d016fe771893b6",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+      "source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_actions_v003.json",
+      "source_rig_sha256": "3d70923099f4e616b214730ba7c07ec9e80a08c3724d697a052c1b7db0ef8c8c",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 13,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 13,
+        "forearm_tool_offset": [
+          0,
+          2
+        ],
+        "source_bronze_points": [
+          [
+            49,
+            55
+          ],
+          [
+            48,
+            56
+          ],
+          [
+            49,
+            56
+          ],
+          [
+            48,
+            57
+          ],
+          [
+            49,
+            57
+          ],
+          [
+            50,
+            57
+          ],
+          [
+            48,
+            58
+          ],
+          [
+            49,
+            58
+          ],
+          [
+            48,
+            59
+          ],
+          [
+            49,
+            59
+          ],
+          [
+            48,
+            60
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            49,
+            61
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [
+          {
+            "at": [
+              43,
+              31
+            ],
+            "part": "head"
+          },
+          {
+            "at": [
+              23,
+              49
+            ],
+            "part": "torso"
+          },
+          {
+            "at": [
+              23,
+              47
+            ],
+            "part": "right_arm"
+          },
+          {
+            "at": [
+              23,
+              48
+            ],
+            "part": "right_arm"
+          }
+        ],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 1044,
+      "direction": "down",
+      "draw_order": [
+        "right_leg",
+        "left_leg",
+        "torso",
+        "right_arm",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f01_v003.png",
+      "frame_index": 1,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_down_f01",
+      "measurement": {
+        "bbox": [
+          12,
+          24,
+          52,
+          80
+        ],
+        "bbox_xywh": [
+          12,
+          24,
+          40,
+          56
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1465,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          3.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          6.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          3.0
+        ],
+        "right_arm": [
+          0.0,
+          3.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          3.0
+        ]
+      },
+      "pose_description": "下探：头盔和胸甲整体俯低，左腕伸向采集方向。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_down_f01_v003.json",
+      "pose_sha256": "4030e3ef3dfb6c4d6d3d057d6781ff561135db0329011548ecfed9141c3ccd8d",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+          "center": [
+            32.0,
+            56.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.5,
+            0.583333333333333
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            30,
+            55,
+            34,
+            57
+          ]
+        }
+      ],
+      "sha256": "fa4ce9bd6ffa21dd5f684593a1154391a4e8b7d9bda5e7379a36900458131e43",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+      "source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_actions_v003.json",
+      "source_rig_sha256": "3d70923099f4e616b214730ba7c07ec9e80a08c3724d697a052c1b7db0ef8c8c",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 13,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 13,
+        "forearm_tool_offset": [
+          0,
+          6
+        ],
+        "source_bronze_points": [
+          [
+            49,
+            55
+          ],
+          [
+            48,
+            56
+          ],
+          [
+            49,
+            56
+          ],
+          [
+            48,
+            57
+          ],
+          [
+            49,
+            57
+          ],
+          [
+            50,
+            57
+          ],
+          [
+            48,
+            58
+          ],
+          [
+            49,
+            58
+          ],
+          [
+            48,
+            59
+          ],
+          [
+            49,
+            59
+          ],
+          [
+            48,
+            60
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            49,
+            61
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [
+          {
+            "at": [
+              43,
+              31
+            ],
+            "part": "head"
+          },
+          {
+            "at": [
+              23,
+              49
+            ],
+            "part": "torso"
+          },
+          {
+            "at": [
+              23,
+              47
+            ],
+            "part": "right_arm"
+          },
+          {
+            "at": [
+              23,
+              48
+            ],
+            "part": "right_arm"
+          }
+        ],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 1173,
+      "direction": "down",
+      "draw_order": [
+        "right_leg",
+        "left_leg",
+        "torso",
+        "right_arm",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f02_v003.png",
+      "frame_index": 2,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_down_f02",
+      "measurement": {
+        "bbox": [
+          12,
+          25,
+          52,
+          80
+        ],
+        "bbox_xywh": [
+          12,
+          25,
+          40,
+          55
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1449,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          4.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          7.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          4.0
+        ],
+        "right_arm": [
+          0.0,
+          4.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          4.0
+        ]
+      },
+      "pose_description": "保持：维持支撑与工具指向，继续 1 像素下探。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_down_f02_v003.json",
+      "pose_sha256": "1fe23b9a29bc27c6db3863fcc4341a4c9ef0b479252df530dc903adb5ad8ddc6",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+          "center": [
+            32.0,
+            57.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.5,
+            0.59375
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            30,
+            56,
+            34,
+            58
+          ]
+        }
+      ],
+      "sha256": "17b43444043493a0fdc7e3c6c18559c657c64077c4ad009331d1b0f02c0cb836",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+      "source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_actions_v003.json",
+      "source_rig_sha256": "3d70923099f4e616b214730ba7c07ec9e80a08c3724d697a052c1b7db0ef8c8c",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 13,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 13,
+        "forearm_tool_offset": [
+          0,
+          7
+        ],
+        "source_bronze_points": [
+          [
+            49,
+            55
+          ],
+          [
+            48,
+            56
+          ],
+          [
+            49,
+            56
+          ],
+          [
+            48,
+            57
+          ],
+          [
+            49,
+            57
+          ],
+          [
+            50,
+            57
+          ],
+          [
+            48,
+            58
+          ],
+          [
+            49,
+            58
+          ],
+          [
+            48,
+            59
+          ],
+          [
+            49,
+            59
+          ],
+          [
+            48,
+            60
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            49,
+            61
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [
+          {
+            "at": [
+              43,
+              31
+            ],
+            "part": "head"
+          },
+          {
+            "at": [
+              23,
+              49
+            ],
+            "part": "torso"
+          },
+          {
+            "at": [
+              23,
+              47
+            ],
+            "part": "right_arm"
+          },
+          {
+            "at": [
+              23,
+              48
+            ],
+            "part": "right_arm"
+          }
+        ],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 869,
+      "direction": "down",
+      "draw_order": [
+        "right_leg",
+        "left_leg",
+        "torso",
+        "right_arm",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f03_v003.png",
+      "frame_index": 3,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_down_f03",
+      "measurement": {
+        "bbox": [
+          12,
+          23,
+          52,
+          80
+        ],
+        "bbox_xywh": [
+          12,
+          23,
+          40,
+          57
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1470,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          2.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          3.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          2.0
+        ],
+        "right_arm": [
+          0.0,
+          2.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          2.0
+        ]
+      },
+      "pose_description": "收回：左腕与上身朝原站姿返回。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_down_f03_v003.json",
+      "pose_sha256": "4d5693cb137040e02c50aa67d07fb8cc9a4f300f141951ab8eeb62f1bef22c05",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+          "center": [
+            32.0,
+            55.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.5,
+            0.572916666666667
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            30,
+            54,
+            34,
+            56
+          ]
+        }
+      ],
+      "sha256": "1fcf5723fca74164f5ebac61e21fa07b875074351ac1b85d06c3fcc01b45a709",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+      "source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_actions_v003.json",
+      "source_rig_sha256": "3d70923099f4e616b214730ba7c07ec9e80a08c3724d697a052c1b7db0ef8c8c",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 13,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 13,
+        "forearm_tool_offset": [
+          0,
+          3
+        ],
+        "source_bronze_points": [
+          [
+            49,
+            55
+          ],
+          [
+            48,
+            56
+          ],
+          [
+            49,
+            56
+          ],
+          [
+            48,
+            57
+          ],
+          [
+            49,
+            57
+          ],
+          [
+            50,
+            57
+          ],
+          [
+            48,
+            58
+          ],
+          [
+            49,
+            58
+          ],
+          [
+            48,
+            59
+          ],
+          [
+            49,
+            59
+          ],
+          [
+            48,
+            60
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            49,
+            61
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [
+          {
+            "at": [
+              43,
+              31
+            ],
+            "part": "head"
+          },
+          {
+            "at": [
+              23,
+              49
+            ],
+            "part": "torso"
+          },
+          {
+            "at": [
+              23,
+              47
+            ],
+            "part": "right_arm"
+          },
+          {
+            "at": [
+              23,
+              48
+            ],
+            "part": "right_arm"
+          }
+        ],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 0,
+      "direction": "left",
+      "draw_order": [],
+      "file": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+      "frame_index": 0,
+      "id": "robot_idle_left_f00",
+      "measurement": {
+        "bbox": [
+          18,
+          21,
+          45,
+          80
+        ],
+        "bbox_xywh": [
+          18,
+          21,
+          27,
+          59
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1122,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {},
+      "pose_description": "Original idle reused unchanged.",
+      "reused_original": true,
+      "runtime_windows": [
+        {
+          "center": [
+            27.0,
+            50.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.421875,
+            0.520833333333333
+          ],
+          "safe_active_rect": [
+            26.0,
+            49.0,
+            28.0,
+            51.0
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+      "source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+      "state": "idle"
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 438,
+      "direction": "left",
+      "draw_order": [
+        "right_leg",
+        "right_arm",
+        "torso",
+        "left_leg",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_idle_left_f01_v003.png",
+      "frame_index": 1,
+      "head_exact_translated_rgba": true,
+      "id": "robot_idle_left_f01",
+      "measurement": {
+        "bbox": [
+          18,
+          22,
+          45,
+          80
+        ],
+        "bbox_xywh": [
+          18,
+          22,
+          27,
+          58
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1106,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          1.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          1.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          1.0
+        ],
+        "right_arm": [
+          0.0,
+          1.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          1.0
+        ]
+      },
+      "pose_description": "呼吸微动：上身下降 1 像素，双脚原位支撑。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_idle_left_f01_v003.json",
+      "pose_sha256": "a6596447664d7d18b9838f329615b319053df23340a345cb220dda613ba4fa3a",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "center": [
+            27.0,
+            51.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.421875,
+            0.53125
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            26,
+            50,
+            28,
+            52
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "874b57cf2a0d7485f8519fe9928ea742211c8fa5669b334fe2b6eea002b548a5",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+      "source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_actions_v003.json",
+      "source_rig_sha256": "47283c4c625c3404fc511eb0efb728f785cd0fadbe4743899b0f0dc0b2dca10a",
+      "state": "idle",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 12,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 12,
+        "forearm_tool_offset": [
+          0,
+          1
+        ],
+        "source_bronze_points": [
+          [
+            42,
+            58
+          ],
+          [
+            43,
+            58
+          ],
+          [
+            42,
+            59
+          ],
+          [
+            43,
+            59
+          ],
+          [
+            40,
+            60
+          ],
+          [
+            42,
+            60
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            40,
+            61
+          ],
+          [
+            41,
+            61
+          ],
+          [
+            42,
+            61
+          ],
+          [
+            40,
+            62
+          ],
+          [
+            41,
+            62
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 456,
+      "direction": "left",
+      "draw_order": [
+        "right_leg",
+        "right_arm",
+        "torso",
+        "left_leg",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f00_v003.png",
+      "frame_index": 0,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_left_f00",
+      "measurement": {
+        "bbox": [
+          18,
+          22,
+          44,
+          80
+        ],
+        "bbox_xywh": [
+          18,
+          22,
+          26,
+          58
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1096,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          1.0
+        ],
+        "left_forearm_tool": [
+          -1.0,
+          1.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          1.0
+        ],
+        "right_arm": [
+          0.0,
+          1.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          1.0
+        ]
+      },
+      "pose_description": "准备：微俯身并抬出原左腕采集工具。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_left_f00_v003.json",
+      "pose_sha256": "7c15eae854ea6fc3f7c0cee8f29bf2c159cf3cab34766a1c4d99fdc7e89e3bb4",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "center": [
+            27.0,
+            51.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.421875,
+            0.53125
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            26,
+            50,
+            28,
+            52
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "ae201113c546d552dc60cc1c83986f91d14bde6a07dd60a76e09887c85993364",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+      "source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_actions_v003.json",
+      "source_rig_sha256": "47283c4c625c3404fc511eb0efb728f785cd0fadbe4743899b0f0dc0b2dca10a",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 12,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 12,
+        "forearm_tool_offset": [
+          -1,
+          1
+        ],
+        "source_bronze_points": [
+          [
+            42,
+            58
+          ],
+          [
+            43,
+            58
+          ],
+          [
+            42,
+            59
+          ],
+          [
+            43,
+            59
+          ],
+          [
+            40,
+            60
+          ],
+          [
+            42,
+            60
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            40,
+            61
+          ],
+          [
+            41,
+            61
+          ],
+          [
+            42,
+            61
+          ],
+          [
+            40,
+            62
+          ],
+          [
+            41,
+            62
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 782,
+      "direction": "left",
+      "draw_order": [
+        "right_leg",
+        "right_arm",
+        "torso",
+        "left_leg",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f01_v003.png",
+      "frame_index": 1,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_left_f01",
+      "measurement": {
+        "bbox": [
+          16,
+          24,
+          42,
+          80
+        ],
+        "bbox_xywh": [
+          16,
+          24,
+          26,
+          56
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1012,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          -2.0,
+          3.0
+        ],
+        "left_forearm_tool": [
+          -7.0,
+          3.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          -2.0,
+          3.0
+        ],
+        "right_arm": [
+          -2.0,
+          3.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          -2.0,
+          3.0
+        ]
+      },
+      "pose_description": "下探：头盔和胸甲整体俯低，左腕伸向采集方向。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_left_f01_v003.json",
+      "pose_sha256": "f3c341da82ce9e5f115a0c04c8be841948241f5f94cb0fb79c19dfc11041412f",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "center": [
+            25.0,
+            53.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.390625,
+            0.552083333333333
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            24,
+            52,
+            26,
+            54
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "6030aef3abd4b8fae86a68008d18cac85c8e9de0a0dd4bd3f20aadf95042ec8c",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+      "source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_actions_v003.json",
+      "source_rig_sha256": "47283c4c625c3404fc511eb0efb728f785cd0fadbe4743899b0f0dc0b2dca10a",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 12,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 12,
+        "forearm_tool_offset": [
+          -7,
+          3
+        ],
+        "source_bronze_points": [
+          [
+            42,
+            58
+          ],
+          [
+            43,
+            58
+          ],
+          [
+            42,
+            59
+          ],
+          [
+            43,
+            59
+          ],
+          [
+            40,
+            60
+          ],
+          [
+            42,
+            60
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            40,
+            61
+          ],
+          [
+            41,
+            61
+          ],
+          [
+            42,
+            61
+          ],
+          [
+            40,
+            62
+          ],
+          [
+            41,
+            62
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 832,
+      "direction": "left",
+      "draw_order": [
+        "right_leg",
+        "right_arm",
+        "torso",
+        "left_leg",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f02_v003.png",
+      "frame_index": 2,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_left_f02",
+      "measurement": {
+        "bbox": [
+          16,
+          25,
+          42,
+          80
+        ],
+        "bbox_xywh": [
+          16,
+          25,
+          26,
+          55
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1000,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          -2.0,
+          4.0
+        ],
+        "left_forearm_tool": [
+          -7.0,
+          4.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          -2.0,
+          4.0
+        ],
+        "right_arm": [
+          -2.0,
+          4.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          -2.0,
+          4.0
+        ]
+      },
+      "pose_description": "保持：维持支撑与工具指向，继续 1 像素下探。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_left_f02_v003.json",
+      "pose_sha256": "9e21682595259e0bfd1b90b985d12f0d392edf0e534421114ffedac073ce1f8e",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "center": [
+            25.0,
+            54.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.390625,
+            0.5625
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            24,
+            53,
+            26,
+            55
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "9a24e21acb504b2e656cb82519ebe36286b4221220dfb27b6a882203786e2600",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+      "source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_actions_v003.json",
+      "source_rig_sha256": "47283c4c625c3404fc511eb0efb728f785cd0fadbe4743899b0f0dc0b2dca10a",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 12,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 12,
+        "forearm_tool_offset": [
+          -7,
+          4
+        ],
+        "source_bronze_points": [
+          [
+            42,
+            58
+          ],
+          [
+            43,
+            58
+          ],
+          [
+            42,
+            59
+          ],
+          [
+            43,
+            59
+          ],
+          [
+            40,
+            60
+          ],
+          [
+            42,
+            60
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            40,
+            61
+          ],
+          [
+            41,
+            61
+          ],
+          [
+            42,
+            61
+          ],
+          [
+            40,
+            62
+          ],
+          [
+            41,
+            62
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 653,
+      "direction": "left",
+      "draw_order": [
+        "right_leg",
+        "right_arm",
+        "torso",
+        "left_leg",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f03_v003.png",
+      "frame_index": 3,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_left_f03",
+      "measurement": {
+        "bbox": [
+          17,
+          23,
+          43,
+          80
+        ],
+        "bbox_xywh": [
+          17,
+          23,
+          26,
+          57
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1058,
+        "rgb_count": 11,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          -1.0,
+          2.0
+        ],
+        "left_forearm_tool": [
+          -3.0,
+          2.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          -1.0,
+          2.0
+        ],
+        "right_arm": [
+          -1.0,
+          2.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          -1.0,
+          2.0
+        ]
+      },
+      "pose_description": "收回：左腕与上身朝原站姿返回。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_left_f03_v003.json",
+      "pose_sha256": "6aa1f687f689208c3e7d9cb4f032e9beb566ed548858cb7a03d7a0d99c59646f",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "center": [
+            26.0,
+            52.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.40625,
+            0.541666666666667
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            25,
+            51,
+            27,
+            53
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "5bbaf306937ba18119613606eb55ef673dcaded359c821f8b9bf7809cdb7c240",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+      "source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_actions_v003.json",
+      "source_rig_sha256": "47283c4c625c3404fc511eb0efb728f785cd0fadbe4743899b0f0dc0b2dca10a",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 12,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 12,
+        "forearm_tool_offset": [
+          -3,
+          2
+        ],
+        "source_bronze_points": [
+          [
+            42,
+            58
+          ],
+          [
+            43,
+            58
+          ],
+          [
+            42,
+            59
+          ],
+          [
+            43,
+            59
+          ],
+          [
+            40,
+            60
+          ],
+          [
+            42,
+            60
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            40,
+            61
+          ],
+          [
+            41,
+            61
+          ],
+          [
+            42,
+            61
+          ],
+          [
+            40,
+            62
+          ],
+          [
+            41,
+            62
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 0,
+      "direction": "right",
+      "draw_order": [],
+      "file": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+      "frame_index": 0,
+      "id": "robot_idle_right_f00",
+      "measurement": {
+        "bbox": [
+          17,
+          21,
+          46,
+          80
+        ],
+        "bbox_xywh": [
+          17,
+          21,
+          29,
+          59
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1211,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {},
+      "pose_description": "Original idle reused unchanged.",
+      "reused_original": true,
+      "runtime_windows": [
+        {
+          "center": [
+            37.0,
+            50.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.578125,
+            0.520833333333333
+          ],
+          "safe_active_rect": [
+            36.0,
+            49.0,
+            38.0,
+            51.0
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+      "source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+      "state": "idle"
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 498,
+      "direction": "right",
+      "draw_order": [
+        "left_leg",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "torso",
+        "right_leg",
+        "right_arm",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_idle_right_f01_v003.png",
+      "frame_index": 1,
+      "head_exact_translated_rgba": true,
+      "id": "robot_idle_right_f01",
+      "measurement": {
+        "bbox": [
+          17,
+          22,
+          46,
+          80
+        ],
+        "bbox_xywh": [
+          17,
+          22,
+          29,
+          58
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1195,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          1.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          1.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          1.0
+        ],
+        "right_arm": [
+          0.0,
+          1.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          1.0
+        ]
+      },
+      "pose_description": "呼吸微动：上身下降 1 像素，双脚原位支撑。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_idle_right_f01_v003.json",
+      "pose_sha256": "9fb1300c46ca2dc90b81223f321cad80b504ba3c1ff7cd8b548738842ecf583c",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "center": [
+            37.0,
+            51.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.578125,
+            0.53125
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            36,
+            50,
+            38,
+            52
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "2c3c41847a951f5b8747eb0823785b703fa4d6d5db4822ece863079265a8bed6",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+      "source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_right_actions_v003.json",
+      "source_rig_sha256": "f89f6632309d1347bfceb8531d3c85a4f052ba8a759ac71e8af08bd6b28a29dd",
+      "state": "idle",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 5,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 5,
+        "forearm_tool_offset": [
+          0,
+          1
+        ],
+        "source_bronze_points": [
+          [
+            43,
+            50
+          ],
+          [
+            43,
+            51
+          ],
+          [
+            43,
+            52
+          ],
+          [
+            41,
+            53
+          ],
+          [
+            42,
+            53
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 515,
+      "direction": "right",
+      "draw_order": [
+        "left_leg",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "torso",
+        "right_leg",
+        "right_arm",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f00_v003.png",
+      "frame_index": 0,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_right_f00",
+      "measurement": {
+        "bbox": [
+          17,
+          22,
+          46,
+          80
+        ],
+        "bbox_xywh": [
+          17,
+          22,
+          29,
+          58
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1195,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          1.0
+        ],
+        "left_forearm_tool": [
+          1.0,
+          1.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          1.0
+        ],
+        "right_arm": [
+          0.0,
+          1.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          1.0
+        ]
+      },
+      "pose_description": "准备：微俯身并抬出原左腕采集工具。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_right_f00_v003.json",
+      "pose_sha256": "493e480bc487d375ba204376e4037a91fbb7692d4f6c153ec050ed5849d7cde6",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "center": [
+            37.0,
+            51.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.578125,
+            0.53125
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            36,
+            50,
+            38,
+            52
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "e72c000e5358d8ca9052fe26036ddfa37dab306bbfbc7870b109bf67f812868c",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+      "source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_right_actions_v003.json",
+      "source_rig_sha256": "f89f6632309d1347bfceb8531d3c85a4f052ba8a759ac71e8af08bd6b28a29dd",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 5,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 5,
+        "forearm_tool_offset": [
+          1,
+          1
+        ],
+        "source_bronze_points": [
+          [
+            43,
+            50
+          ],
+          [
+            43,
+            51
+          ],
+          [
+            43,
+            52
+          ],
+          [
+            41,
+            53
+          ],
+          [
+            42,
+            53
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 860,
+      "direction": "right",
+      "draw_order": [
+        "left_leg",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "torso",
+        "right_leg",
+        "right_arm",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f01_v003.png",
+      "frame_index": 1,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_right_f01",
+      "measurement": {
+        "bbox": [
+          19,
+          24,
+          49,
+          80
+        ],
+        "bbox_xywh": [
+          19,
+          24,
+          30,
+          56
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1150,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          2.0,
+          3.0
+        ],
+        "left_forearm_tool": [
+          4.0,
+          3.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          2.0,
+          3.0
+        ],
+        "right_arm": [
+          2.0,
+          3.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          2.0,
+          3.0
+        ]
+      },
+      "pose_description": "下探：头盔和胸甲整体俯低，左腕伸向采集方向。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_right_f01_v003.json",
+      "pose_sha256": "02d363999968ef4c5d9056b21a35d59585988a54125213e55d1cc65f77a08c0e",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "center": [
+            39.0,
+            53.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.609375,
+            0.552083333333333
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            38,
+            52,
+            40,
+            54
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "19be1e21a176a592e76beede30247989a04586863d90fc009b13528e6b73a9f0",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+      "source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_right_actions_v003.json",
+      "source_rig_sha256": "f89f6632309d1347bfceb8531d3c85a4f052ba8a759ac71e8af08bd6b28a29dd",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 5,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 5,
+        "forearm_tool_offset": [
+          4,
+          3
+        ],
+        "source_bronze_points": [
+          [
+            43,
+            50
+          ],
+          [
+            43,
+            51
+          ],
+          [
+            43,
+            52
+          ],
+          [
+            41,
+            53
+          ],
+          [
+            42,
+            53
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 905,
+      "direction": "right",
+      "draw_order": [
+        "left_leg",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "torso",
+        "right_leg",
+        "right_arm",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f02_v003.png",
+      "frame_index": 2,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_right_f02",
+      "measurement": {
+        "bbox": [
+          19,
+          25,
+          49,
+          80
+        ],
+        "bbox_xywh": [
+          19,
+          25,
+          30,
+          55
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1134,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          2.0,
+          4.0
+        ],
+        "left_forearm_tool": [
+          4.0,
+          4.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          2.0,
+          4.0
+        ],
+        "right_arm": [
+          2.0,
+          4.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          2.0,
+          4.0
+        ]
+      },
+      "pose_description": "保持：维持支撑与工具指向，继续 1 像素下探。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_right_f02_v003.json",
+      "pose_sha256": "b276aef92695f83980e0aa360de3a1903dc90900b52937aedd4b8966dcb07367",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "center": [
+            39.0,
+            54.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.609375,
+            0.5625
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            38,
+            53,
+            40,
+            55
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "70bbe562c8d28a53cc3ee1307205e19cfdd9c1dc9af607b6f22f7501c5cf1302",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+      "source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_right_actions_v003.json",
+      "source_rig_sha256": "f89f6632309d1347bfceb8531d3c85a4f052ba8a759ac71e8af08bd6b28a29dd",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 5,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 5,
+        "forearm_tool_offset": [
+          4,
+          4
+        ],
+        "source_bronze_points": [
+          [
+            43,
+            50
+          ],
+          [
+            43,
+            51
+          ],
+          [
+            43,
+            52
+          ],
+          [
+            41,
+            53
+          ],
+          [
+            42,
+            53
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 742,
+      "direction": "right",
+      "draw_order": [
+        "left_leg",
+        "left_upper_arm",
+        "left_forearm_tool",
+        "torso",
+        "right_leg",
+        "right_arm",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f03_v003.png",
+      "frame_index": 3,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_right_f03",
+      "measurement": {
+        "bbox": [
+          18,
+          23,
+          47,
+          80
+        ],
+        "bbox_xywh": [
+          18,
+          23,
+          29,
+          57
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1173,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          1.0,
+          2.0
+        ],
+        "left_forearm_tool": [
+          2.0,
+          2.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          1.0,
+          2.0
+        ],
+        "right_arm": [
+          1.0,
+          2.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          1.0,
+          2.0
+        ]
+      },
+      "pose_description": "收回：左腕与上身朝原站姿返回。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_right_f03_v003.json",
+      "pose_sha256": "a85eb9528482357729c53e7428a8972a7be6c181b90d6d1aa9650a6a770fe1b5",
+      "reused_original": false,
+      "runtime_windows": [
+        {
+          "actual_rgba_matches_source": true,
+          "center": [
+            38.0,
+            52.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "id": "chest_status",
+          "mask_delivery_status": "NOT_PRODUCED",
+          "normalized_uv": [
+            0.59375,
+            0.541666666666667
+          ],
+          "runtime_paint_allowed": true,
+          "safe_active_rect": [
+            37,
+            51,
+            39,
+            53
+          ],
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "sha256": "7b00a234a10fd1302bee92ca6e004006316bb25e35f753bc4958457630f332ec",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+      "source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_right_actions_v003.json",
+      "source_rig_sha256": "f89f6632309d1347bfceb8531d3c85a4f052ba8a759ac71e8af08bd6b28a29dd",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 5,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 5,
+        "forearm_tool_offset": [
+          2,
+          2
+        ],
+        "source_bronze_points": [
+          [
+            43,
+            50
+          ],
+          [
+            43,
+            51
+          ],
+          [
+            43,
+            52
+          ],
+          [
+            41,
+            53
+          ],
+          [
+            42,
+            53
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 0,
+      "direction": "up",
+      "draw_order": [],
+      "file": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+      "frame_index": 0,
+      "id": "robot_idle_up_f00",
+      "measurement": {
+        "bbox": [
+          13,
+          21,
+          51,
+          80
+        ],
+        "bbox_xywh": [
+          13,
+          21,
+          38,
+          59
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1407,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {},
+      "pose_description": "Original idle reused unchanged.",
+      "reused_original": true,
+      "runtime_windows": [],
+      "sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+      "source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+      "state": "idle"
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 538,
+      "direction": "up",
+      "draw_order": [
+        "left_leg",
+        "right_leg",
+        "torso",
+        "left_forearm_tool",
+        "left_upper_arm",
+        "right_arm",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_idle_up_f01_v003.png",
+      "frame_index": 1,
+      "head_exact_translated_rgba": true,
+      "id": "robot_idle_up_f01",
+      "measurement": {
+        "bbox": [
+          13,
+          22,
+          51,
+          80
+        ],
+        "bbox_xywh": [
+          13,
+          22,
+          38,
+          58
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1391,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          1.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          1.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          1.0
+        ],
+        "right_arm": [
+          0.0,
+          1.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          1.0
+        ]
+      },
+      "pose_description": "呼吸微动：上身下降 1 像素，双脚原位支撑。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_idle_up_f01_v003.json",
+      "pose_sha256": "69528d97304af0585bafe434225e9ba53e26a05d26cdc8f525b190403ba5b671",
+      "reused_original": false,
+      "runtime_windows": [],
+      "sha256": "43206b342b7ed309b64170632308b7336b4b9ea11b3660dfedc7d24e63290760",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+      "source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_up_actions_v003.json",
+      "source_rig_sha256": "86be38d6e6bf497f1ae3eae78322871593c6a4892f462444d00b2dfeecfb1a02",
+      "state": "idle",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 7,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 7,
+        "forearm_tool_offset": [
+          0,
+          1
+        ],
+        "source_bronze_points": [
+          [
+            14,
+            55
+          ],
+          [
+            14,
+            56
+          ],
+          [
+            14,
+            57
+          ],
+          [
+            14,
+            58
+          ],
+          [
+            15,
+            58
+          ],
+          [
+            15,
+            59
+          ],
+          [
+            15,
+            60
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 533,
+      "direction": "up",
+      "draw_order": [
+        "left_leg",
+        "right_leg",
+        "torso",
+        "left_forearm_tool",
+        "left_upper_arm",
+        "right_arm",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f00_v003.png",
+      "frame_index": 0,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_up_f00",
+      "measurement": {
+        "bbox": [
+          13,
+          22,
+          51,
+          80
+        ],
+        "bbox_xywh": [
+          13,
+          22,
+          38,
+          58
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1378,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          1.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          -1.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          1.0
+        ],
+        "right_arm": [
+          0.0,
+          1.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          1.0
+        ]
+      },
+      "pose_description": "准备：微俯身并抬出原左腕采集工具。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_up_f00_v003.json",
+      "pose_sha256": "3bf4ebaeded285f70145a4ff017442f65de6a2fce3436d962e4649ab225b7663",
+      "reused_original": false,
+      "runtime_windows": [],
+      "sha256": "0f410fb1584b702aaf1dd47bf2285ab23ad76a88827cf6caa639856bf4362912",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+      "source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_up_actions_v003.json",
+      "source_rig_sha256": "86be38d6e6bf497f1ae3eae78322871593c6a4892f462444d00b2dfeecfb1a02",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 7,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 7,
+        "forearm_tool_offset": [
+          0,
+          -1
+        ],
+        "source_bronze_points": [
+          [
+            14,
+            55
+          ],
+          [
+            14,
+            56
+          ],
+          [
+            14,
+            57
+          ],
+          [
+            14,
+            58
+          ],
+          [
+            15,
+            58
+          ],
+          [
+            15,
+            59
+          ],
+          [
+            15,
+            60
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 946,
+      "direction": "up",
+      "draw_order": [
+        "left_leg",
+        "right_leg",
+        "torso",
+        "left_forearm_tool",
+        "left_upper_arm",
+        "right_arm",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f01_v003.png",
+      "frame_index": 1,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_up_f01",
+      "measurement": {
+        "bbox": [
+          13,
+          24,
+          51,
+          80
+        ],
+        "bbox_xywh": [
+          13,
+          24,
+          38,
+          56
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1322,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          3.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          -4.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          3.0
+        ],
+        "right_arm": [
+          0.0,
+          3.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          3.0
+        ]
+      },
+      "pose_description": "下探：头盔和胸甲整体俯低，左腕伸向采集方向。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_up_f01_v003.json",
+      "pose_sha256": "89a40c62930778682c0982c5f1ba47686a8d831eda4a6a0c6f9b637c4afa2b8a",
+      "reused_original": false,
+      "runtime_windows": [],
+      "sha256": "1c9045a4285abe78a0a01bae15f354b24f7e14265865a8fe0d8b68a5c96410ec",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+      "source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_up_actions_v003.json",
+      "source_rig_sha256": "86be38d6e6bf497f1ae3eae78322871593c6a4892f462444d00b2dfeecfb1a02",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 7,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 7,
+        "forearm_tool_offset": [
+          0,
+          -4
+        ],
+        "source_bronze_points": [
+          [
+            14,
+            55
+          ],
+          [
+            14,
+            56
+          ],
+          [
+            14,
+            57
+          ],
+          [
+            14,
+            58
+          ],
+          [
+            15,
+            58
+          ],
+          [
+            15,
+            59
+          ],
+          [
+            15,
+            60
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 1041,
+      "direction": "up",
+      "draw_order": [
+        "left_leg",
+        "right_leg",
+        "torso",
+        "left_forearm_tool",
+        "left_upper_arm",
+        "right_arm",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f02_v003.png",
+      "frame_index": 2,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_up_f02",
+      "measurement": {
+        "bbox": [
+          13,
+          25,
+          51,
+          80
+        ],
+        "bbox_xywh": [
+          13,
+          25,
+          38,
+          55
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1304,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          4.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          -5.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          4.0
+        ],
+        "right_arm": [
+          0.0,
+          4.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          4.0
+        ]
+      },
+      "pose_description": "保持：维持支撑与工具指向，继续 1 像素下探。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_up_f02_v003.json",
+      "pose_sha256": "c5d524c095ff7ae9c573dff37c7526aff2e97fb11ffe9f1e316f138e4e412753",
+      "reused_original": false,
+      "runtime_windows": [],
+      "sha256": "7b574766f799b985304979df1bcc3027022a8acb84441ed2db211afa8bdde4fd",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+      "source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_up_actions_v003.json",
+      "source_rig_sha256": "86be38d6e6bf497f1ae3eae78322871593c6a4892f462444d00b2dfeecfb1a02",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 7,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 7,
+        "forearm_tool_offset": [
+          0,
+          -5
+        ],
+        "source_bronze_points": [
+          [
+            14,
+            55
+          ],
+          [
+            14,
+            56
+          ],
+          [
+            14,
+            57
+          ],
+          [
+            14,
+            58
+          ],
+          [
+            15,
+            58
+          ],
+          [
+            15,
+            59
+          ],
+          [
+            15,
+            60
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "changed_rgba_pixels_vs_idle": 792,
+      "direction": "up",
+      "draw_order": [
+        "left_leg",
+        "right_leg",
+        "torso",
+        "left_forearm_tool",
+        "left_upper_arm",
+        "right_arm",
+        "head"
+      ],
+      "file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f03_v003.png",
+      "frame_index": 3,
+      "head_exact_translated_rgba": true,
+      "id": "robot_collect_up_f03",
+      "measurement": {
+        "bbox": [
+          13,
+          23,
+          51,
+          80
+        ],
+        "bbox_xywh": [
+          13,
+          23,
+          38,
+          57
+        ],
+        "binary_alpha": true,
+        "canvas": [
+          64,
+          96
+        ],
+        "components_8": 1,
+        "opaque_pixels": 1351,
+        "rgb_count": 10,
+        "subject_size_pass": true,
+        "transparent_border": true,
+        "visible_bottom_boundary": 80
+      },
+      "offsets": {
+        "head": [
+          0.0,
+          2.0
+        ],
+        "left_forearm_tool": [
+          0.0,
+          -2.0
+        ],
+        "left_leg": [
+          0.0,
+          0.0
+        ],
+        "left_upper_arm": [
+          0.0,
+          2.0
+        ],
+        "right_arm": [
+          0.0,
+          2.0
+        ],
+        "right_leg": [
+          0.0,
+          0.0
+        ],
+        "torso": [
+          0.0,
+          2.0
+        ]
+      },
+      "pose_description": "收回：左腕与上身朝原站姿返回。",
+      "pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_up_f03_v003.json",
+      "pose_sha256": "7613bd9df6ebe1d9ee3f2256371ba059131479b1a1d057b2b0caebf4cee6b331",
+      "reused_original": false,
+      "runtime_windows": [],
+      "sha256": "2c17206f911e002844274e3449d5b54debb123a9ed0433b137249683fc49fba8",
+      "shoulder_offset_matches_torso": true,
+      "source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+      "source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+      "source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_up_actions_v003.json",
+      "source_rig_sha256": "86be38d6e6bf497f1ae3eae78322871593c6a4892f462444d00b2dfeecfb1a02",
+      "state": "collect",
+      "support_feet_rows_74_79_unchanged": true,
+      "tool_integrity": {
+        "anatomical_hand": "left",
+        "source_bronze_pixel_count": 7,
+        "all_tool_source_bronze_pixels_owned_by_forearm_tool": true,
+        "translated_visible_exact_bronze_pixels": 7,
+        "forearm_tool_offset": [
+          0,
+          -2
+        ],
+        "source_bronze_points": [
+          [
+            14,
+            55
+          ],
+          [
+            14,
+            56
+          ],
+          [
+            14,
+            57
+          ],
+          [
+            14,
+            58
+          ],
+          [
+            15,
+            58
+          ],
+          [
+            15,
+            59
+          ],
+          [
+            15,
+            60
+          ]
+        ],
+        "tool_source_component": "original_left_arm_pixels_from_repaired_v002_rig",
+        "non_tool_bronze_points": [],
+        "note": "Tool identity uses original left-arm ownership, not color alone. Head/torso/empty wrist bronze accents retain their original part; no tool copied onto the right arm."
+      }
+    }
+  ],
+  "new_png_count": 20,
+  "schema_version": 1,
+  "status": "PASS",
+  "subject_limit": [
+    40,
+    64
+  ],
+  "whole_image_transform": "NONE"
+}

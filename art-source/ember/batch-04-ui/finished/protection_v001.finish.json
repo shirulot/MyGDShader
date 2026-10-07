@@ -1,0 +1,65 @@
+{
+  "id": "protection",
+  "method": "AI_BODY_MATERIAL_SAMPLING_NATIVE_SEMANTIC_PIXEL_FINISH",
+  "source_use": {
+    "mother": "art-source/ember/batch-04-ui/generated/protection_master_v001.png",
+    "mother_sha256": "7593c5e138afac02fbd4af1f252767f4da40722b910518097886a6c91c8eb2ba",
+    "source_unchanged": true,
+    "direct_original_rgba_byte_reuse": false,
+    "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+    "sampling": {
+      "source_alpha_threshold": 128,
+      "source_body_bbox": [
+        304,
+        278,
+        951,
+        1027
+      ],
+      "material_grid_size": [
+        21,
+        24
+      ],
+      "material_grid_origin": [
+        5,
+        4
+      ],
+      "native_semantic_changed_pixels": 85
+    }
+  },
+  "adjustments": [
+    "保留盾形陶瓷外壳，与心形HP独立区分",
+    "把母稿圆芯重建为闭合环，5×5内孔用壳体浅色，表示稳定保护"
+  ],
+  "native_pixel_source": "art-source/ember/batch-04-ui/annotations/protection_native_pixel_source_v001.json",
+  "measurement": {
+    "canvas": [
+      32,
+      32
+    ],
+    "bbox": [
+      5,
+      4,
+      26,
+      28
+    ],
+    "opaque_pixels": 383,
+    "transparent_pixels": 641,
+    "partial_alpha_pixels": 0,
+    "color_count": 11,
+    "palette_rgb": [
+      "#101820",
+      "#182631",
+      "#203A4B",
+      "#2B3E4B",
+      "#4D6470",
+      "#566B78",
+      "#7B4D35",
+      "#829BA3",
+      "#B77C4B",
+      "#BECBC4",
+      "#ECE9D8"
+    ],
+    "all_opaque_colors_in_standard16": true
+  },
+  "output_sha256": "101b87a8bc083b07d01e469fb41dab6082e3cda188b33abcaea37226f0ea9fc5"
+}

@@ -1,0 +1,36 @@
+--- scripts/ember/building_asset_v002.gd
++++ scripts/ember/building_asset_v003.gd
+@@ -1,11 +1,11 @@
+ @tool
+ extends "res://scripts/ember/building_asset_v001.gd"
+-## v002加载已组合好的整栋功能层，继承已审的门/设备/碰撞行为。
++## v003加载已组合好的整栋功能层，继承已审的门/设备/碰撞行为。
+ ## 只因遮挡、动态或状态不同保留独立层，不在运行时逐块拼柱梁装甲。
+ 
+ 
+ func _init() -> void:
+-	catalog_path = "res://assets/ember/building_assets_v002/catalog_v002.json"
++	catalog_path = "res://assets/ember/building_assets_v003/catalog_v003.json"
+ 
+ 
+ func _rebuild() -> void:
+@@ -52,6 +52,12 @@
+ 	_apply_covers()
+ 	initialized = load_errors.is_empty()
+ 	advance_state(0.0)
++	_apply_occlusion()
++
++
++func _apply_occlusion() -> void:
++	super._apply_occlusion()
++	if _layers.has("RearShell"): _layers.RearShell.visible = interior_visible or inspection_mode
+ 
+ 
+ func _bind_door(spec: Dictionary) -> void:
+@@ -106,5 +112,5 @@
+ 
+ func snapshot() -> Dictionary:
+ 	var state := super.snapshot()
+-	state.revision = "building_assets_v002"
++	state.revision = "building_assets_v003"
+ 	return state

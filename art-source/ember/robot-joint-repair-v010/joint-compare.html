@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>机器人关节修复 · v009 / v010</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#111b23;color:#ece9d8}body{margin:0;padding:16px;max-width:1120px}h1{font-size:24px;margin:0 0 10px}p{color:#bfcbc8;line-height:1.6}.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0}label{display:flex;align-items:center;gap:7px}button,select{font:inherit;padding:7px 10px;color:inherit;background:#2b3e4b;border:1px solid #647c89;border-radius:5px}input[type=range]{width:150px}output{font-variant-numeric:tabular-nums}.pair{display:flex;gap:12px;flex-wrap:wrap}figure{margin:0;border:1px solid #455b68;border-radius:8px;overflow:hidden}figcaption{padding:8px 12px;background:#263945}canvas{display:block;image-rendering:pixelated;background:#182631}.stage.light canvas{background:#ece9d8}.full{width:256px;height:384px}.detail{width:256px;height:160px}.native{width:64px;height:96px}h2{font-size:17px;margin:20px 0 10px}a{color:#a8ccd0}.note{max-width:760px;font-size:14px}.legend{padding:5px 9px;font-size:12px;color:#bfcbc8}
+</style></head><body>
+<h1>机器人关节修复：v009 → v010</h1>
+<p>肩、肘、腕、髋、膝、踝局部修形。保留头胸、工具、步相与原生尺寸。</p>
+<div class="controls"><button id="play" aria-pressed="true">暂停</button><button id="previous">上一帧</button><button id="next">下一帧</button>
+<label>帧 <input id="frame" aria-label="帧索引" type="range" min="0" max="7" step="1" value="0"></label><output id="phase">F00</output>
+<label>速度 <select id="speed"><option value="8">正常 8 FPS</option><option value="2">慢速 2 FPS</option></select></label>
+<label>背景 <select id="background"><option value="dark">深色</option><option value="light">浅色</option></select></label><output id="loops">0 轮</output></div>
+<div class="pair stage"><figure><figcaption>v009 · 修复前 4×</figcaption><canvas id="old" class="full" width="64" height="96"></canvas></figure><figure><figcaption>v010 · 修复候选 4×</figcaption><canvas id="new" class="full" width="64" height="96"></canvas></figure></div>
+<h2>原生尺寸 · 同帧播放</h2><div class="pair stage"><figure><figcaption>v009</figcaption><canvas id="oldNative" class="native" width="64" height="96"></canvas></figure><figure><figcaption>v010</figcaption><canvas id="newNative" class="native" width="64" height="96"></canvas></figure></div>
+<h2>关节局部 · 4×</h2><div class="controls"><label>部位 <select id="region"><option value="44">膝与踝</option><option value="38">肩、肘、腕与髋</option></select></label></div>
+<div class="pair stage"><figure><figcaption>v009</figcaption><canvas id="oldDetail" class="detail" width="64" height="40"></canvas></figure><figure><figcaption>v010</figcaption><canvas id="newDetail" class="detail" width="64" height="40"></canvas></figure></div>
+<p id="status" class="note">载入帧…</p><p class="note">局部视图使用固定截取位置。切换深浅背景、逐帧或正常速度，检查承接是否连续。</p>
+<p><a href="previews/contact_light_4x_v010.png">8 帧联系表</a> · <a href="qa/before_joint_regions_v010.png">修前关节标记</a> · <a href="README.md">制作说明</a></p>
+<script>
+const el=id=>document.getElementById(id),pad=i=>String(i).padStart(2,'0');let before=[],after=[],frame=0,playing=true,loops=0,last=0,elapsed=0;
+// 所有视图读取同一张整格 PNG，不按每帧边界重定位或缩放。
+function draw(id,image,detail=false){const canvas=el(id),ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,canvas.width,canvas.height);if(detail)ctx.drawImage(image,0,Number(el('region').value),64,40,0,0,64,40);else ctx.drawImage(image,0,0);}
+function render(){if(after.length!==8)return;for(const id of ['old','oldNative'])draw(id,before[frame]);for(const id of ['new','newNative'])draw(id,after[frame]);draw('oldDetail',before[frame],true);draw('newDetail',after[frame],true);el('phase').textContent='F'+pad(frame)+' / 07';el('frame').value=frame;el('loops').textContent='已播放 '+loops+' 轮';}
+function state(){el('play').textContent=playing?'暂停':'继续';el('play').setAttribute('aria-pressed',String(playing));elapsed=0;}
+function select(value){frame=(value+8)%8;playing=false;state();render();}
+el('play').onclick=()=>{playing=!playing;state();};el('frame').oninput=e=>select(Number(e.target.value));el('previous').onclick=()=>select(frame-1);el('next').onclick=()=>select(frame+1);el('speed').onchange=()=>{elapsed=0;};el('region').onchange=render;
+el('background').onchange=e=>document.querySelectorAll('.stage').forEach(s=>s.classList.toggle('light',e.target.value==='light'));
+const load=src=>new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>reject(new Error('无法加载 '+src));image.src=src;});
+Promise.all([Promise.all(Array.from({length:8},(_,i)=>load('reference-v009/robot_walk_down_f'+pad(i)+'_v009.png'))),Promise.all(Array.from({length:8},(_,i)=>load('frames/robot_walk_down_f'+pad(i)+'_v010.png')))]).then(([a,b])=>{before=a;after=b;render();el('status').textContent='两版各 8 帧已加载。v010 为关节修复候选，保持 64×96、8 FPS。';}).catch(error=>{el('status').textContent=error.message;});
+function tick(now){const delta=Math.min(250,now-last);last=now;if(playing&&after.length===8){elapsed+=delta;const step=1000/Number(el('speed').value);while(elapsed>=step){elapsed-=step;frame=(frame+1)%8;if(frame===0)loops++;render();}}requestAnimationFrame(tick);}requestAnimationFrame(tick);
+</script></body></html>

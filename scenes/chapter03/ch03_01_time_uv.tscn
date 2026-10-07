@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ralsddeinedj"]
+
+[ext_resource type="Shader" uid="uid://bvi22m0rjooh3" path="res://scenes/chapter03/ch03_01_time_uv.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://coeow6ad5kb3t" path="res://assets/shader-learning/common/uv_grid_512.png" id="2_grid"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_time_uv"]
+shader = ExtResource("1_shader")
+shader_parameter/horizontal_move = 0.22999999485904
+
+[node name="Ch0301TimeUv" type="Node2D" unique_id=1375770264]
+
+[node name="UvGrid" type="Sprite2D" parent="." unique_id=98667390]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_time_uv")
+position = Vector2(360, 360)
+texture = ExtResource("2_grid")

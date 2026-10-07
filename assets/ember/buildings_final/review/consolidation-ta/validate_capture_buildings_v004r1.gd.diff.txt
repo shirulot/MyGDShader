@@ -1,0 +1,11 @@
+--- frozen/validate_capture_buildings_v004r1.gd
++++ current/validate_capture_buildings_v004r1.gd
+@@ -197,7 +197,7 @@
+ func _validate_coverage() -> void:
+ 	var path := "res://assets/ember/building_assets_v004r1/"
+ 	var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(path + "catalog_v004r1.json"))
+-	var previous: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/ember/building_assets_v004/catalog_v004.json"))
++	var previous: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://art-source/ember/building-assets-v004/registration_baseline_v004.json"))
+ 	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(path + "functional_layers_v004r1.json"))
+ 	for b: Dictionary in catalog.buildings:
+ 		var source := Image.load_from_file(ProjectSettings.globalize_path(b.source_master))

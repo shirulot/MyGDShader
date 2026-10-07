@@ -1,0 +1,564 @@
+{
+  "snapshot_sha256": "08b0c908ee11715906cf9007a18f497002ebd1b41737d81295362067620e3cae",
+  "snapshot_files": [
+    {
+      "path": "scripts/ember/building_asset.gd",
+      "sha256": "31d48dadfe84825670cd1546cb20175bf7f15ef46a07b3ba51c7b3a57071b3f3",
+      "bytes": 14060
+    },
+    {
+      "path": "scripts/ember/building_demo.gd",
+      "sha256": "00e4a9fd2fc974061eacec1beac3c49de91459eb68b35fcd3872c930911b8e68",
+      "bytes": 8438
+    },
+    {
+      "path": "scripts/ember/building_demo_actor.gd",
+      "sha256": "dcc2adc73cb41d846be216f5715307d3c4be7f302e45a108b49eb34c24ce3077",
+      "bytes": 1549
+    },
+    {
+      "path": "shaders/ember/building_intact.gdshader",
+      "sha256": "2f47d83b1da8ed8baf5cd72c5bc242ad7a629114ac8f86b48bced4e3cc8f1dc5",
+      "bytes": 3035
+    },
+    {
+      "path": "tools/sync_building_demo.ps1",
+      "sha256": "2711c4d8a1f634e65c0ede1d915a72449b1bfeb2055a82d0c00db71dae06a7cd",
+      "bytes": 4359
+    },
+    {
+      "path": "docs/shader-learning/ember-building-standard-v002.md",
+      "sha256": "ac27621a08fc9ac568188ad66ff99613d520a1ed8bdfe9e4329bffe40ddde9c8",
+      "bytes": 21030
+    },
+    {
+      "path": "art-source/ember/buildings-final/demo/SYNC_MANIFEST.json",
+      "sha256": "7d48d723b03a799dea613a514f484902d77d4b3df248a829efff191586c4cdab",
+      "bytes": 10627
+    },
+    {
+      "path": "art-source/ember/buildings-final/demo/SOURCE_SYNC_MANIFEST.json",
+      "sha256": "c2003f4a7a409a3a2285f51cb52aa18edb3ddd8b6edfcecdc9d7de7291199343",
+      "bytes": 10627
+    },
+    {
+      "path": "art-source/ember/buildings-final/verification/validation.json",
+      "sha256": "db1556dc5df0a17237cee8d7555ccf539b75c251a871e0199dcec6e8f30c0a99",
+      "bytes": 11224
+    }
+  ],
+  "source_manifest_59": [
+    {
+      "path": "assets/ember/building_assets_v004r1/catalog_v004r1.json",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/coverage_export_v004r1.json",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional_layers_v004r1.json",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/complete/control_tower_closed_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/complete/logistics_warehouse_closed_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/complete/repair_workshop_closed_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/coverage/control_tower_coverage_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/coverage/logistics_warehouse_coverage_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/coverage/repair_workshop_coverage_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/control_tower/fixed_architecture.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/control_tower/glass.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/control_tower/personnel_leaf.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/control_tower/roof_hatch.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/control_tower/status_lenses.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/logistics_warehouse/cargo_leaf.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/logistics_warehouse/fixed_architecture.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/logistics_warehouse/maintenance_cover.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/logistics_warehouse/personnel_leaf.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/logistics_warehouse/status_lenses.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/repair_workshop/fixed_architecture.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/repair_workshop/glass.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/repair_workshop/maintenance_cover.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/repair_workshop/personnel_leaf.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/repair_workshop/status_lenses.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/control_tower_coverage_edges_4x_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_demo_ui_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_closed_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_half_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_occlusion_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_open_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_power_off_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_service_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_original_vs_intact_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/logistics_warehouse_coverage_edges_4x_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/repair_workshop_coverage_edges_4x_v004r1.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/validation_v004r1.json",
+      "source_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/control_tower_static.tscn",
+      "source_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/control_tower.tscn",
+      "source_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/demo.tscn",
+      "source_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/logistics_warehouse_static.tscn",
+      "source_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/logistics_warehouse.tscn",
+      "source_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/repair_workshop_static.tscn",
+      "source_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/repair_workshop.tscn",
+      "source_hash_matches": true
+    },
+    {
+      "path": "scripts/ember/building_asset.gd",
+      "source_hash_matches": true
+    },
+    {
+      "path": "scripts/ember/building_demo.gd",
+      "source_hash_matches": true
+    },
+    {
+      "path": "scripts/ember/building_demo_actor.gd",
+      "source_hash_matches": true
+    },
+    {
+      "path": "shaders/ember/building_intact.gdshader",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/map_assets_v001/floors/floor_steel_period_v001.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "assets/ember/characters/robot/robot_idle_down_v001.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "tools/build_building_coverage_v004r1.gd",
+      "source_hash_matches": true
+    },
+    {
+      "path": "tools/export_building_parts_v004r1.gd",
+      "source_hash_matches": true
+    },
+    {
+      "path": "tools/validate_capture_buildings_v004r1.gd",
+      "source_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/building-assets-v004/registration_baseline_v004.json",
+      "source_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/building-assets-v004/masters/control_tower_intact_v004.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/selected-buildings-v001/references/control_tower_user_selected.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/building-assets-v004/masters/repair_workshop_intact_v004.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/selected-buildings-v001/references/repair_workshop_user_selected.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/building-assets-v004/masters/logistics_warehouse_intact_v004.png",
+      "source_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/selected-buildings-v001/references/logistics_warehouse_user_selected.png",
+      "source_hash_matches": true
+    }
+  ],
+  "final_manifest_59": [
+    {
+      "path": "assets/ember/building_assets_v004r1/catalog_v004r1.json",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/coverage_export_v004r1.json",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional_layers_v004r1.json",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/complete/control_tower_closed_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/complete/logistics_warehouse_closed_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/complete/repair_workshop_closed_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/coverage/control_tower_coverage_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/coverage/logistics_warehouse_coverage_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/coverage/repair_workshop_coverage_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/control_tower/fixed_architecture.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/control_tower/glass.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/control_tower/personnel_leaf.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/control_tower/roof_hatch.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/control_tower/status_lenses.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/logistics_warehouse/cargo_leaf.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/logistics_warehouse/fixed_architecture.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/logistics_warehouse/maintenance_cover.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/logistics_warehouse/personnel_leaf.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/logistics_warehouse/status_lenses.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/repair_workshop/fixed_architecture.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/repair_workshop/glass.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/repair_workshop/maintenance_cover.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/repair_workshop/personnel_leaf.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/functional/repair_workshop/status_lenses.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/control_tower_coverage_edges_4x_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_demo_ui_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_closed_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_half_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_occlusion_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_open_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_power_off_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_intact_service_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/gpu_original_vs_intact_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/logistics_warehouse_coverage_edges_4x_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/repair_workshop_coverage_edges_4x_v004r1.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/validation_v004r1.json",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/control_tower_static.tscn",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/control_tower.tscn",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/demo.tscn",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/logistics_warehouse_static.tscn",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/logistics_warehouse.tscn",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/repair_workshop_static.tscn",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "scenes/ember/building_assets_v004r1/repair_workshop.tscn",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "scripts/ember/building_asset.gd",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "scripts/ember/building_demo.gd",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "scripts/ember/building_demo_actor.gd",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "shaders/ember/building_intact.gdshader",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/map_assets_v001/floors/floor_steel_period_v001.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "assets/ember/characters/robot/robot_idle_down_v001.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "tools/build_building_coverage_v004r1.gd",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "tools/export_building_parts_v004r1.gd",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "tools/validate_capture_buildings_v004r1.gd",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/building-assets-v004/registration_baseline_v004.json",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/building-assets-v004/masters/control_tower_intact_v004.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/selected-buildings-v001/references/control_tower_user_selected.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/building-assets-v004/masters/repair_workshop_intact_v004.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/selected-buildings-v001/references/repair_workshop_user_selected.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/building-assets-v004/masters/logistics_warehouse_intact_v004.png",
+      "demo_hash_matches": true
+    },
+    {
+      "path": "art-source/ember/selected-buildings-v001/references/logistics_warehouse_user_selected.png",
+      "demo_hash_matches": true
+    }
+  ],
+  "generated_evidence_changes_only": [
+    "assets/ember/building_assets_v004r1/previews/validation_v004r1.json"
+  ],
+  "independent_runtime_tested_sources_match_final_snapshot": [
+    {
+      "path": "scripts/ember/building_asset.gd",
+      "sha256": "31d48dadfe84825670cd1546cb20175bf7f15ef46a07b3ba51c7b3a57071b3f3",
+      "bytes": 14060
+    },
+    {
+      "path": "scripts/ember/building_demo.gd",
+      "sha256": "00e4a9fd2fc974061eacec1beac3c49de91459eb68b35fcd3872c930911b8e68",
+      "bytes": 8438
+    },
+    {
+      "path": "scripts/ember/building_demo_actor.gd",
+      "sha256": "dcc2adc73cb41d846be216f5715307d3c4be7f302e45a108b49eb34c24ce3077",
+      "bytes": 1549
+    },
+    {
+      "path": "shaders/ember/building_intact.gdshader",
+      "sha256": "2f47d83b1da8ed8baf5cd72c5bc242ad7a629114ac8f86b48bced4e3cc8f1dc5",
+      "bytes": 3035
+    }
+  ],
+  "independent_checks": {
+    "passed": 23,
+    "total": 23,
+    "result_sha256": "f98c273800387c12f12cf4744c8771bef4674ccaf88e29f268020fa3a0899f2a",
+    "rendered_stderr_bytes": 0
+  },
+  "tool_review": "Whitelist copy; SOURCE hashes immediately after copy; final SYNC hashes after optional verification; no deletion or gameplay method changes.",
+  "author_94": {
+    "passed": 94,
+    "total": 94,
+    "hash_bound_only_not_independent_rerun": true
+  },
+  "cleanup": "read-only evidence; no move, deletion, approval bypass or tool execution"
+}

@@ -1,0 +1,152 @@
+{
+  "status": "ACTION_PILOT_PENDING_VISUAL_REVIEW",
+  "action": "idle",
+  "direction": "right",
+  "source_file": "source/idle_right_joint_edit_raw_v011.png",
+  "source_sha256": "29c3a802bbb03029fa23f97a5dd66ca03ca61c4faca5beb10e60c2939a7a980d",
+  "source_size": [
+    1448,
+    1086
+  ],
+  "common_sheet_transform": [
+    0.08839779005524862,
+    0.08839779005524862
+  ],
+  "no_per_frame_bbox_fit": true,
+  "protection": [
+    {
+      "part": "body",
+      "rule": "all opaque fixed body/pelvis source pixels"
+    },
+    {
+      "part": "arm_right_upper",
+      "source_y": [
+        0,
+        51
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "arm_right_lower",
+      "source_y": [
+        55,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "arm_left_upper",
+      "source_y": [
+        0,
+        49
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "arm_left_lower",
+      "source_y": [
+        53,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_right_upper",
+      "source_y": [
+        0,
+        62
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_right_lower",
+      "source_y": [
+        67,
+        70
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_right_end",
+      "source_y": [
+        0,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_left_upper",
+      "source_y": [
+        0,
+        62
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_left_lower",
+      "source_y": [
+        67,
+        69
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_left_end",
+      "source_y": [
+        0,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "pelvis",
+      "rule": "all opaque fixed body/pelvis source pixels"
+    }
+  ],
+  "records": [
+    {
+      "frame": 0,
+      "file": "frames/idle/right/robot_idle_right_f00_v011.png",
+      "sha256": "60f02055aafa8e5f2d5997b06ae5a3c0060ba4562b8d84410004810b0dfde5dc",
+      "locked": true,
+      "changed_pixels": 0,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "shared_pose_patch": null,
+      "rejected_detached_additions": 0,
+      "regions": [
+        {
+          "id": "waist",
+          "center": [
+            32,
+            54
+          ],
+          "rx": 9,
+          "ry": 3
+        }
+      ]
+    },
+    {
+      "frame": 1,
+      "file": "frames/idle/right/robot_idle_right_f01_v011.png",
+      "sha256": "3180ff3d7b968c25b3529d88e636ca6880ee59cca24a15bddb186cd732d60f05",
+      "locked": false,
+      "changed_pixels": 11,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "shared_pose_patch": null,
+      "rejected_detached_additions": 2,
+      "regions": [
+        {
+          "id": "waist",
+          "center": [
+            32,
+            54
+          ],
+          "rx": 9,
+          "ry": 3
+        }
+      ]
+    }
+  ]
+}

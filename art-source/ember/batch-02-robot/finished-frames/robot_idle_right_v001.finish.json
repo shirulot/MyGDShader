@@ -1,0 +1,89 @@
+{
+  "id": "robot_idle_right",
+  "source": "art-source/ember/batch-02-robot/generated/robot_idle_right_master_v001.png",
+  "source_sha256": "c70b36e56fe73be455bcca5b9ce72d65620ea1402b53dd3d8120fac758e46362",
+  "output": "art-source/ember/batch-02-robot/finished-frames/robot_idle_right_v001.png",
+  "annotation": "art-source/ember/batch-02-robot/annotations/idle_right.json",
+  "annotation_sha256": "e97025e91ae3cf02021ecbccc56ebef011d13948d3479af6d6d621af474f25e7",
+  "dependencies": [],
+  "source_use": "AI_MATERIAL_AND_POSE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+  "observations": {
+    "design_observation": "实际母稿为右向三分之四侧身：右向面罩与近侧左屏圆耳/陶瓷肩甲，胸部中性暗窗侧向可见；两腿近远投影不同。耳模块细节及躯干并不是left母稿的机械镜像。",
+    "tool_hand_observation": "黄铜维修接口在屏幕右上方的远侧左腕，部分被身体遮挡；同一解剖左手，禁止为了更显眼移到近侧空手。"
+  },
+  "adjustments": [
+    "母稿主体区域采样到29×59原生起点，保持同一高度和固定(32,80)脚底边界",
+    "固定11种静态颜色，清除halo与细碎抗锯齿，整理1像素轮廓",
+    "原生减少头盔右方大片最高亮色，将高光集中在世界左上两处陶瓷边缘；不是翻转left光照",
+    "面罩核心与胸部侧窗2×2安全内区改为连续中性钢灰，保留窗口遮挡和侧轮廓",
+    "近侧空手与远侧左腕黄铜接口分别保留母稿装配关系"
+  ],
+  "process": {
+    "subject_crop": [
+      281,
+      336,
+      757,
+      1305
+    ],
+    "material_sampling_size": [
+      29,
+      59
+    ],
+    "native_subject_origin": [
+      17,
+      21
+    ],
+    "sampling_role": "材质和造型起点；不是独立验收结果"
+  },
+  "measurement": {
+    "canvas": [
+      64,
+      96
+    ],
+    "bbox": [
+      17,
+      21,
+      46,
+      80
+    ],
+    "anchor": [
+      32,
+      80
+    ],
+    "anchor_convention": "脚底边界；接地像素末行79",
+    "rgb_count": 10,
+    "rules": {
+      "binary_alpha": true,
+      "palette": true,
+      "subject_max_40x64": true,
+      "ground_boundary_80": true,
+      "subject_centered_in_x12_52": true
+    }
+  },
+  "runtime_windows": [
+    {
+      "id": "chest_status",
+      "safe_active_rect": [
+        36,
+        49,
+        38,
+        51
+      ],
+      "center": [
+        37,
+        50
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.578125,
+        0.5208333333333334
+      ],
+      "mask_delivery_status": "NOT_PRODUCED",
+      "visibility": "PARTIAL_SIDE_VIEW"
+    }
+  ],
+  "emitter_points": [],
+  "emission_baked": false,
+  "review_status": "ROOT_VISUAL_REVIEW_REQUIRED",
+  "output_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2"
+}

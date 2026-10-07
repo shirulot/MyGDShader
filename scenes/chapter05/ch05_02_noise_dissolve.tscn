@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://4f2623rcgqff"]
+
+[ext_resource type="Shader" uid="uid://dgd7sdsr7qlpb" path="res://scenes/chapter05/ch05_02_noise_dissolve.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="2_robot"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_dissolve"]
+seed = 7
+frequency = 0.02
+fractal_type = 0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_dissolve"]
+width = 256
+height = 256
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_dissolve")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dissolve"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_dissolve")
+shader_parameter/dissolve_progress = 0.499999988824
+shader_parameter/edge_width = 0.0999999977648
+shader_parameter/line_color = Vector3(1, 0.55, 0.1)
+
+[node name="Ch0502NoiseDissolve" type="Node2D" unique_id=1126494555]
+
+[node name="Robot" type="Sprite2D" parent="." unique_id=796648250]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_dissolve")
+position = Vector2(360, 360)
+scale = Vector2(4, 4)
+texture = ExtResource("2_robot")

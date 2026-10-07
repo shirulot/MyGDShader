@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "status": "GENERATED_PENDING_INDEPENDENT_REVIEW",
+  "normal_convention": "OpenGL +X +Y +Z; image-y down; n=(-dh/dx,+dh/dy,1)",
+  "assets": [
+    {
+      "id": "station_normal",
+      "manifest_id": "D09",
+      "file": "res://assets/ember/data/normals/station_normal_v001.png",
+      "sha256": "0999ebfb12316672b687ffc576f1f0b72fafb9dd272723da62f020f27d26beda",
+      "canvas": [
+        128,
+        160
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/buildings/station/station_base_v001.png",
+          "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "heightfield": {
+        "file": "art-source/ember/technical-inputs-v001/surfaces/heightfields/station_normal_height_v001.npy",
+        "sha256": "3caa9ff05832a9c2aeb526b742f3744742a3e015ef27a4d64dbc63b7dcbd3cef",
+        "format": "NPY float32 [y,x]",
+        "canvas": [
+          128,
+          160
+        ],
+        "units": "artistic native-pixel relief unit",
+        "range": [
+          0.0,
+          1.100000023841858
+        ],
+        "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/station_normal_geometry_v001.json",
+        "geometry_sha256": "da56fab80ffb8d0469137d7a3d204d3684c2b73d989ad07082e8317f89a84abc",
+        "physical_model": false
+      },
+      "strength": 0.85,
+      "anchor": [
+        64,
+        144
+      ],
+      "neutral_window": [
+        54,
+        66,
+        74,
+        95
+      ],
+      "base_region": null,
+      "normal_encoding": "RGB8 normalized tangent vector; lossless; normal_map=0",
+      "mipmaps": false,
+      "texture_filter": "NEAREST",
+      "support": "source Alpha exactly; transparent exterior encoded neutral",
+      "encoded_max_unit_length_error": 0.004618324390354811,
+      "derivative_max": [
+        0.3566666543483734,
+        0.4300000071525574
+      ]
+    },
+    {
+      "id": "console_normal",
+      "manifest_id": "D09",
+      "file": "res://assets/ember/data/normals/console_normal_v001.png",
+      "sha256": "1094516a476ddff930cb6cce29ea492bf980ce13b884d49c6f5ffda42ce0ed30",
+      "canvas": [
+        96,
+        96
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/buildings/console/console_base_v001.png",
+          "sha256": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "heightfield": {
+        "file": "art-source/ember/technical-inputs-v001/surfaces/heightfields/console_normal_height_v001.npy",
+        "sha256": "618d2012a79260e796179bdb71776e4c9e388bf27d88f85128e0c0e8defef88b",
+        "format": "NPY float32 [y,x]",
+        "canvas": [
+          96,
+          96
+        ],
+        "units": "artistic native-pixel relief unit",
+        "range": [
+          0.0,
+          0.9399999976158142
+        ],
+        "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/console_normal_geometry_v001.json",
+        "geometry_sha256": "8e6fb3df15cd1df52da95e5e3af7e1a6b8ad0b747c40bbb376931a7a2141d7eb",
+        "physical_model": false
+      },
+      "strength": 0.85,
+      "anchor": [
+        48,
+        80
+      ],
+      "neutral_window": [
+        36,
+        33,
+        60,
+        47
+      ],
+      "base_region": null,
+      "normal_encoding": "RGB8 normalized tangent vector; lossless; normal_map=0",
+      "mipmaps": false,
+      "texture_filter": "NEAREST",
+      "support": "source Alpha exactly; transparent exterior encoded neutral",
+      "encoded_max_unit_length_error": 0.004189608825392543,
+      "derivative_max": [
+        0.32083332538604736,
+        0.32083332538604736
+      ]
+    },
+    {
+      "id": "floor_clean_normal",
+      "manifest_id": "D09",
+      "file": "res://assets/ember/data/normals/floor_clean_normal_v001.png",
+      "sha256": "bc49137517987d1a81529d92149666990c3e26eb7fd518cbf2be98369c59d872",
+      "canvas": [
+        32,
+        32
+      ],
+      "mode": "RGB",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/environment/tilesets/ground_details_v001.png",
+          "sha256": "f0b1481291be5816f0e775e3f193eb702d17a5da62b14ffbaefae89a3230a757"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "heightfield": {
+        "file": "art-source/ember/technical-inputs-v001/surfaces/heightfields/floor_clean_normal_height_v001.npy",
+        "sha256": "340c9467afb5721d4e5c70a13efdf10210c01e5cfcee17f622e139bd7217172b",
+        "format": "NPY float32 [y,x]",
+        "canvas": [
+          32,
+          32
+        ],
+        "units": "artistic native-pixel relief unit",
+        "range": [
+          -0.07999999821186066,
+          0.18000000715255737
+        ],
+        "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/floor_clean_normal_geometry_v001.json",
+        "geometry_sha256": "2ecffa78bb42ec87786960ef2d9d988235f3717bbce49a57a456cad1c3d16f57",
+        "physical_model": false
+      },
+      "strength": 1.0,
+      "anchor": [
+        0,
+        0
+      ],
+      "neutral_window": null,
+      "base_region": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "normal_encoding": "RGB8 normalized tangent vector; lossless; normal_map=0",
+      "mipmaps": false,
+      "texture_filter": "NEAREST",
+      "support": "full canvas",
+      "encoded_max_unit_length_error": 0.0037440331134305227,
+      "derivative_max": [
+        0.12999999523162842,
+        0.12999999523162842
+      ]
+    },
+    {
+      "id": "metal_normal",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/metal/metal_normal_v001.png",
+      "sha256": "29439a8edebc9ca5d5a405533af6f01ca32af9abc87111375663399d57dbf1f4",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "RGB",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/metal/metal_albedo_v001.png",
+          "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "heightfield": {
+        "file": "art-source/ember/technical-inputs-v001/surfaces/heightfields/metal_normal_height_v001.npy",
+        "sha256": "f9aacfc673b9ad3dcf670acb9b49d8efc8c807ea49958f6bd9de80dab906b9a6",
+        "format": "NPY float32 [y,x]",
+        "canvas": [
+          256,
+          256
+        ],
+        "units": "artistic native-pixel relief unit",
+        "range": [
+          0.0,
+          0.05999999865889549
+        ],
+        "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/metal_normal_geometry_v001.json",
+        "geometry_sha256": "9dc0e4ef7c2e869160ca56bd037985003088011d30947d9a9fcdf18705e0d668",
+        "physical_model": false
+      },
+      "strength": 1.0,
+      "anchor": [
+        0,
+        0
+      ],
+      "neutral_window": null,
+      "base_region": null,
+      "normal_encoding": "RGB8 normalized tangent vector; lossless; normal_map=0",
+      "mipmaps": true,
+      "texture_filter": "LINEAR",
+      "support": "full canvas",
+      "encoded_max_unit_length_error": 0.0003843936332625919,
+      "derivative_max": [
+        0.02534722164273262,
+        0.023576388135552406
+      ]
+    },
+    {
+      "id": "metal_roughness",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/metal/metal_roughness_v001.png",
+      "sha256": "03da38db1bd7a24b390c53a65aed3893a12855b8b1798a35cfacd1d7f4d60962",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/metal/metal_albedo_v001.png",
+          "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "nominal_parameter": 0.65,
+      "channel": "R",
+      "mipmaps": true,
+      "byte_value": 166,
+      "quantized_parameter": 0.6509803921568628,
+      "texture_filter": "LINEAR",
+      "derivation": "documented uniform artistic PBR parameter; no albedo inference"
+    },
+    {
+      "id": "metal_metallic",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/metal/metal_metallic_v001.png",
+      "sha256": "4f87abe77997e5b2c59334159ef429af261bb0aa5792830e2cfe5c3f3ed5e08c",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/metal/metal_albedo_v001.png",
+          "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "nominal_parameter": 0.55,
+      "channel": "R",
+      "mipmaps": true,
+      "byte_value": 140,
+      "quantized_parameter": 0.5490196078431373,
+      "texture_filter": "LINEAR",
+      "derivation": "documented uniform artistic PBR parameter; no albedo inference"
+    },
+    {
+      "id": "concrete_normal",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/concrete/concrete_normal_v001.png",
+      "sha256": "1f512d718e2e134cd93ffad0371df7b869dc3db963d23d4621a6e507320d3e0b",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "RGB",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/concrete/concrete_albedo_v001.png",
+          "sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "heightfield": {
+        "file": "art-source/ember/technical-inputs-v001/surfaces/heightfields/concrete_normal_height_v001.npy",
+        "sha256": "010fa1d696ebebcaa38ee3721888d36faab2e58d0d443a96430ee9d6f9d5ca7b",
+        "format": "NPY float32 [y,x]",
+        "canvas": [
+          256,
+          256
+        ],
+        "units": "artistic native-pixel relief unit",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/concrete_normal_geometry_v001.json",
+        "geometry_sha256": "1dc31879493d6c297e715694f0ef160a86ce538b35abe606499fefc9fb912ed8",
+        "physical_model": false
+      },
+      "strength": 1.0,
+      "anchor": [
+        0,
+        0
+      ],
+      "neutral_window": null,
+      "base_region": null,
+      "normal_encoding": "RGB8 normalized tangent vector; lossless; normal_map=0",
+      "mipmaps": true,
+      "texture_filter": "LINEAR",
+      "support": "full canvas",
+      "encoded_max_unit_length_error": 1.5378582249425676e-05,
+      "derivative_max": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "concrete_roughness",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/concrete/concrete_roughness_v001.png",
+      "sha256": "f06e89dc7f39be266a34ab9d56c628694bcc6f491e27b9fad873cfa459731143",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/concrete/concrete_albedo_v001.png",
+          "sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "nominal_parameter": 1.0,
+      "channel": "R",
+      "mipmaps": true,
+      "byte_value": 255,
+      "quantized_parameter": 1.0,
+      "texture_filter": "LINEAR",
+      "derivation": "documented uniform artistic PBR parameter; no albedo inference"
+    },
+    {
+      "id": "concrete_metallic",
+      "manifest_id": "D11",
+      "file": "res://assets/ember/three_d/textures/concrete/concrete_metallic_v001.png",
+      "sha256": "5933d4c44ed2bc2f431e2698b41923a18d056b24b450540bb109e7592a547060",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/concrete/concrete_albedo_v001.png",
+          "sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "nominal_parameter": 0.0,
+      "channel": "R",
+      "mipmaps": true,
+      "byte_value": 0,
+      "quantized_parameter": 0.0,
+      "texture_filter": "LINEAR",
+      "derivation": "documented uniform artistic PBR parameter; no albedo inference"
+    },
+    {
+      "id": "grass_height_weight",
+      "manifest_id": "D12",
+      "file": "res://assets/ember/three_d/textures/grass/grass_height_weight_v001.png",
+      "sha256": "3db9548646a6cefbb9f448a119ec88601d434172b35fe3e4e66b9619b17186e4",
+      "canvas": [
+        64,
+        128
+      ],
+      "mode": "L",
+      "repeat_axes": [],
+      "sampling": "linear data; do not apply sRGB decoding",
+      "sources": [
+        {
+          "file": "res://assets/ember/three_d/textures/grass/grass_leaf_v001.png",
+          "sha256": "1dc463fc71b8e44fc7148de106fdd05fbc0389364925eee0180c4a6e37b23888"
+        }
+      ],
+      "source_use": "PROCEDURAL_GEOMETRY_DERIVED_TECHNICAL_INPUT",
+      "anchor": [
+        32,
+        120
+      ],
+      "channel": "R",
+      "root_boundary": 120,
+      "zero_root_pixel_y": 119,
+      "full_weight_visible_y": 10,
+      "geometry_file": "art-source/ember/technical-inputs-v001/surfaces/geometry/grass_height_weight_geometry_v001.json",
+      "geometry_sha256": "7b605411e107a7f3a0a195ddfe4168b37082bc7e0b3c836e4a8f24e98d29ce4f",
+      "formula": "where alpha=255: round(clamp((119-y)/109,0,1)*255); else 0",
+      "mipmaps": true,
+      "texture_filter": "LINEAR",
+      "linear_parameter": true
+    }
+  ]
+}

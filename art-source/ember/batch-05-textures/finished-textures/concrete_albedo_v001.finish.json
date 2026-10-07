@@ -1,0 +1,95 @@
+{
+  "id": "concrete_albedo",
+  "source": "art-source/ember/batch-05-textures/generated/concrete_albedo_master_v001.png",
+  "source_sha256": "ff08d814da3291a47a6450a1c8d022fcc705b22dafc926056c7a65c5934b7ce4",
+  "prompt": "art-source/ember/batch-05-textures/prompts/concrete_albedo_v001.txt",
+  "output": "art-source/ember/batch-05-textures/finished-textures/concrete_albedo_v001.png",
+  "output_sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8",
+  "process": {
+    "source_crop": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "source_reference_canvas": [
+      1254,
+      1254
+    ],
+    "native_quantization": "source luminance cluster quantiles, fixed palette, no dithering",
+    "quantile_thresholds": [
+      150.462
+    ],
+    "palette_subset": [
+      "#829BA3",
+      "#BECBC4"
+    ],
+    "sample_filter": "BOX to native grid then 3x3 median",
+    "isolated_native_pixels_removed": 373,
+    "seam_band_pixels": 5,
+    "before_boundary_repair": {
+      "X": {
+        "samples": 256,
+        "rgba_mismatched_pixels": 17,
+        "max_channel_delta": 60,
+        "mean_absolute_channel_delta": 2.34082
+      },
+      "Y": {
+        "samples": 256,
+        "rgba_mismatched_pixels": 21,
+        "max_channel_delta": 60,
+        "mean_absolute_channel_delta": 2.891602
+      }
+    },
+    "directional_lighting_baked": false,
+    "source_use": "AI_MATERIAL_PATTERN_REFERENCE_WITH_NATIVE_GRID_RECONSTRUCTION"
+  },
+  "measurement": {
+    "canvas": [
+      256,
+      256
+    ],
+    "mode": "RGB",
+    "bbox": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "alpha_zero": 0,
+    "alpha_partial": 0,
+    "alpha_opaque": 65536,
+    "visible_rgb_count": 2,
+    "palette_off_pixels": 0,
+    "edges": {
+      "X": {
+        "samples": 256,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      },
+      "Y": {
+        "samples": 256,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      }
+    }
+  },
+  "anchor": [
+    0,
+    0
+  ],
+  "tiling": "XY",
+  "runtime_layout": {
+    "layer_convention": "STATIC_SINGLE_FLATTENED_BASE",
+    "emitter_points": [],
+    "emission_baked": false,
+    "pbr_derived_maps": "NOT_PRODUCED",
+    "height_weight_map": "NOT_PRODUCED"
+  },
+  "source_use": "AI_MATERIAL_PATTERN_REFERENCE_WITH_NATIVE_GRID_RECONSTRUCTION",
+  "producer_visual_status": "PRODUCER_VISUAL_REVIEW_PASS_ONLY",
+  "independent_visual_status": "PENDING_ROOT_OR_OTHER_AGENT_REVIEW",
+  "producer_visual_observation": "两档蓝灰聚合斑，较金属更浅且颗粒簇更明显；3x3无边框接缝或阴影高光，规律重复仍可见，近远mipmap/滤波需实际3D检验。"
+}

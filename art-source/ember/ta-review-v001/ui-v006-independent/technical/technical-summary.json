@@ -1,0 +1,66 @@
+{
+  "decision": "TECHNICAL_INCREMENT_PASS",
+  "zip_sha256": "af61549eef1605a98301f822c2018d68bed4687118a2ed8c499073e71e758504",
+  "zip_bytes": 17022123,
+  "manifest_count": 223,
+  "payload_all_match": true,
+  "changed_existing_components": [
+    "scripts/ember/ui_edge_v004/interaction_ui.gd",
+    "scripts/ember/ui_edge_v004/modal_window.gd"
+  ],
+  "unchanged_asset_pngs": 45,
+  "independent_focus_scroll_checks": 16,
+  "independent_gamepad_checks": 25,
+  "all_runtime_pass": true,
+  "input_map_unchanged": true,
+  "gpu_captures": [
+    {
+      "file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\ui-v006-independent\\technical\\gpu-focus-scroll/settings_slider_focused_720.png",
+      "height": 720,
+      "sha256": "e88aa3d8ede3ef18f15c3500a356580e0e28896c44af21fdf3b91713acf2a3c3",
+      "width": 720
+    },
+    {
+      "file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\ui-v006-independent\\technical\\gpu-focus-scroll/settings_slider_unfocused_720.png",
+      "height": 720,
+      "sha256": "0a7a5e510dc6532f3e4b7178daaf5572770ee8ffcce74157c19331a857b6226d",
+      "width": 720
+    },
+    {
+      "file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\ui-v006-independent\\technical\\gpu-focus-scroll/compact_cancel_after_real_shift_tab_320.png",
+      "height": 480,
+      "sha256": "8d8dc6257e03535425312bd3bd24774c74000466e3a22b72fb9bd8158d60b9f6",
+      "width": 320
+    },
+    {
+      "file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\ui-v006-independent\\technical\\gpu-focus-scroll/compact_slider_after_real_shift_tab_320.png",
+      "height": 480,
+      "sha256": "4a1ca0d9d608edde2c0fdd7155824944ecd6855c510d95497214cd376484de8b",
+      "width": 320
+    }
+  ],
+  "source_sha256": "bb3b3e2a240137fe3995464089c3ebf6966f2a2caafec76d0f4735b498949016",
+  "modal_sha256": "0b2788cc6504c1c2d96998ca7e57e75baa3afd8c21d7dca2204716ef459c21bb",
+  "engine": {
+    "build": "steam",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (steam)",
+    "timestamp": 0
+  },
+  "renderer": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "stderr": {
+    "cold-import.stderr.log": 0,
+    "gamepad.stderr.log": 0,
+    "focus-scroll.stderr.log": 0
+  },
+  "probe_source_sha256": {
+    "ta_ui_v005_gamepad_probe.gd": "9e2126c16c89580ea326e387dcec51f4c88a71854264c41d6ccf9f35e6980b16",
+    "ta_ui_v006_focus_scroll_probe.gd": "402712e66f230ee1e6226ffa16bdca2b9798ecd4168e49ae01fd91899035d5bb"
+  },
+  "scope": "New focus and deferred scroll repairs plus original independent 25 gamepad regression. Producer 15+153 declarations are not independent reruns."
+}

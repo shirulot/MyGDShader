@@ -1,0 +1,387 @@
+{
+	"button_after_changes": {
+		"disabled_immediate": {
+			"disabled": true,
+			"focus_overlay_visible": true,
+			"focus_owner": "/root/WidgetProbeHost/NativeButtonProbe",
+			"has_focus": true
+		},
+		"disabled_next_frame": {
+			"disabled": true,
+			"focus_overlay_visible": false,
+			"focus_owner": "",
+			"has_focus": false
+		},
+		"enabled_refocused": {
+			"disabled": false,
+			"focus_overlay_visible": true,
+			"focus_owner": "/root/WidgetProbeHost/NativeButtonProbe",
+			"has_focus": true
+		},
+		"focused": {
+			"disabled": false,
+			"focus_overlay_visible": true,
+			"focus_owner": "/root/WidgetProbeHost/NativeButtonProbe",
+			"has_focus": true
+		}
+	},
+	"button_before_change_validation": {
+		"checks": [
+			{
+				"id": "button_focus_grabbed",
+				"passed": true
+			},
+			{
+				"id": "button_focus_overlay_shown",
+				"passed": true
+			},
+			{
+				"id": "button_disabled_overlay_hidden_immediately",
+				"passed": false
+			},
+			{
+				"id": "button_disabled_overlay_hidden_next_frame",
+				"passed": false
+			},
+			{
+				"id": "button_disabled_native_focus_released",
+				"passed": false
+			},
+			{
+				"id": "button_reenabled_can_focus",
+				"passed": true
+			},
+			{
+				"id": "button_reenabled_focus_overlay_shown",
+				"passed": true
+			},
+			{
+				"id": "button_explicit_release_hides_overlay",
+				"passed": true
+			}
+		],
+		"failures": [
+			"button_disabled_overlay_hidden_immediately",
+			"button_disabled_overlay_hidden_next_frame",
+			"button_disabled_native_focus_released"
+		],
+		"status": "FAIL"
+	},
+	"button_before_changes": {
+		"disabled_immediate": {
+			"disabled": true,
+			"focus_overlay_visible": true,
+			"focus_owner": "/root/WidgetProbeHost/NativeButtonProbe",
+			"has_focus": true
+		},
+		"disabled_next_frame": {
+			"disabled": true,
+			"focus_overlay_visible": true,
+			"focus_owner": "/root/WidgetProbeHost/NativeButtonProbe",
+			"has_focus": true
+		},
+		"enabled_refocused": {
+			"disabled": false,
+			"focus_overlay_visible": true,
+			"focus_owner": "/root/WidgetProbeHost/NativeButtonProbe",
+			"has_focus": true
+		},
+		"focused": {
+			"disabled": false,
+			"focus_overlay_visible": true,
+			"focus_owner": "/root/WidgetProbeHost/NativeButtonProbe",
+			"has_focus": true
+		}
+	},
+	"button_disable_sync_contract": "Native disabled property is synchronized by the next process frame; immediate state is observed, not asserted.",
+	"check_count": 68,
+	"checks": [
+		{
+			"id": "button_focus_grabbed",
+			"passed": true
+		},
+		{
+			"id": "button_focus_overlay_shown",
+			"passed": true
+		},
+		{
+			"id": "button_disabled_property_set",
+			"passed": true
+		},
+		{
+			"id": "button_disabled_overlay_hidden_next_frame",
+			"passed": true
+		},
+		{
+			"id": "button_disabled_native_focus_released",
+			"passed": true
+		},
+		{
+			"id": "button_reenabled_can_focus",
+			"passed": true
+		},
+		{
+			"id": "button_reenabled_focus_overlay_shown",
+			"passed": true
+		},
+		{
+			"id": "button_explicit_release_hides_overlay",
+			"passed": true
+		},
+		{
+			"id": "drawer_pre_tree_close_hides",
+			"passed": true
+		},
+		{
+			"id": "drawer_pre_tree_close_emits_once",
+			"passed": true
+		},
+		{
+			"id": "drawer_pre_tree_repeated_close_silent",
+			"passed": true
+		},
+		{
+			"id": "drawer_pre_tree_close_ignores_pointer",
+			"passed": true
+		},
+		{
+			"id": "drawer_ready_preserves_closed_visibility",
+			"passed": true
+		},
+		{
+			"id": "drawer_open_visible",
+			"passed": true
+		},
+		{
+			"id": "drawer_open_stops_pointer",
+			"passed": true
+		},
+		{
+			"id": "drawer_open_focuses_back_button",
+			"passed": true
+		},
+		{
+			"id": "drawer_real_close_emits_once",
+			"passed": true
+		},
+		{
+			"id": "drawer_real_close_hides",
+			"passed": true
+		},
+		{
+			"id": "drawer_real_close_releases_focus",
+			"passed": true
+		},
+		{
+			"id": "drawer_real_close_ignores_pointer",
+			"passed": true
+		},
+		{
+			"id": "drawer_five_repeated_closes_silent",
+			"passed": true
+		},
+		{
+			"id": "drawer_no_focus_open_visible",
+			"passed": true
+		},
+		{
+			"id": "drawer_no_focus_open_preserves_focus",
+			"passed": true
+		},
+		{
+			"id": "drawer_second_real_close_emits_once",
+			"passed": true
+		},
+		{
+			"id": "drawer_removed_from_tree_close_safe",
+			"passed": true
+		},
+		{
+			"id": "drawer_removed_from_tree_repeated_close_silent",
+			"passed": true
+		},
+		{
+			"id": "progress_pre_tree_labels_false_minimum",
+			"passed": true
+		},
+		{
+			"id": "progress_pre_tree_labels_true_minimum",
+			"passed": true
+		},
+		{
+			"id": "progress_ready_hidden_value_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_ready_hidden_percent_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_ready_hidden_plate_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_ready_hidden_minimum_height",
+			"passed": true
+		},
+		{
+			"id": "progress_ready_hidden_track_y",
+			"passed": true
+		},
+		{
+			"id": "progress_ready_hidden_left_clamp_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_ready_hidden_right_clamp_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_shown_value_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_shown_percent_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_shown_plate_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_shown_minimum_height",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_shown_track_y",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_shown_left_clamp_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_shown_right_clamp_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_label_toggle_preserves_fill_pixels",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_shown_value_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_shown_percent_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_shown_plate_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_shown_minimum_height",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_shown_track_y",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_shown_left_clamp_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_shown_right_clamp_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_hidden_again_value_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_hidden_again_percent_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_hidden_again_plate_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_hidden_again_minimum_height",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_hidden_again_track_y",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_hidden_again_left_clamp_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_labels_hidden_again_right_clamp_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_hidden_again_value_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_hidden_again_percent_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_hidden_again_plate_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_hidden_again_minimum_height",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_hidden_again_track_y",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_hidden_again_left_clamp_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_clamps_hidden_again_right_clamp_visibility",
+			"passed": true
+		},
+		{
+			"id": "progress_toggles_preserve_minimum_width",
+			"passed": true
+		},
+		{
+			"id": "progress_toggles_preserve_fill_ratio",
+			"passed": true
+		},
+		{
+			"id": "progress_full_200_labels_keep_eight_pixel_gap",
+			"passed": true
+		},
+		{
+			"id": "progress_full_224_labels_keep_eight_pixel_gap",
+			"passed": true
+		}
+	],
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"failures": [],
+	"mode": "full_widget_regression",
+	"schema_version": 2,
+	"status": "PASS"
+}

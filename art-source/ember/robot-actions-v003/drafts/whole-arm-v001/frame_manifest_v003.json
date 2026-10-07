@@ -1,0 +1,2271 @@
+{
+	"alpha_repair_or_dilation": "NONE",
+	"anchor": [
+		32,
+		80
+	],
+	"builder_sha256": "579583ce8c238cbc3e23e47a4d1fff59322287570103a92ae47f06d6275e5873",
+	"canvas": [
+		64,
+		96
+	],
+	"construction": "AUTHORED_INTEGER_COMPONENT_POSES_FROM_ACCEPTED_NATIVE_IDLE_AND_REPAIRED_V002_RIG",
+	"date": "2026-10-06",
+	"dependency_sha256": {
+		"art-source/ember/robot-repair-v002/annotations/rig_down_v002.json": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+		"art-source/ember/robot-repair-v002/annotations/rig_left_v002.json": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+		"art-source/ember/robot-repair-v002/annotations/rig_right_v002.json": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+		"art-source/ember/robot-repair-v002/annotations/rig_up_v002.json": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+		"assets/ember/characters/robot/robot_idle_down_v001.png": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+		"assets/ember/characters/robot/robot_idle_left_v001.png": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+		"assets/ember/characters/robot/robot_idle_right_v001.png": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+		"assets/ember/characters/robot/robot_idle_up_v001.png": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833"
+	},
+	"directions": [
+		"down",
+		"left",
+		"right",
+		"up"
+	],
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"errors": [],
+	"frame_count": 24,
+	"frames": [
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 0,
+			"direction": "down",
+			"draw_order": [],
+			"file": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+			"frame_index": 0,
+			"id": "robot_idle_down_f00",
+			"measurement": {
+				"bbox": [
+					12,
+					21,
+					52,
+					80
+				],
+				"bbox_xywh": [
+					12,
+					21,
+					40,
+					59
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1492,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {},
+			"pose_description": "Original idle reused unchanged.",
+			"reused_original": true,
+			"runtime_windows": [
+				{
+					"appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+					"center": [
+						32.0,
+						53.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.5,
+						0.552083333333333
+					],
+					"safe_active_rect": [
+						30.0,
+						52.0,
+						34.0,
+						54.0
+					]
+				}
+			],
+			"sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+			"source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+			"state": "idle"
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 590,
+			"direction": "down",
+			"draw_order": [
+				"right_leg",
+				"left_leg",
+				"torso",
+				"right_arm",
+				"left_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_down_f01_v003.png",
+			"frame_index": 1,
+			"head_exact_translated_rgba": true,
+			"id": "robot_idle_down_f01",
+			"measurement": {
+				"bbox": [
+					12,
+					22,
+					52,
+					80
+				],
+				"bbox_xywh": [
+					12,
+					22,
+					40,
+					58
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1479,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					1.0
+				],
+				"left_arm": [
+					0.0,
+					1.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					1.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					1.0
+				]
+			},
+			"pose_description": "呼吸微动：上身下降 1 像素，双脚原位支撑。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_idle_down_f01_v003.json",
+			"pose_sha256": "5701c22fc10dbdde88e6e87ca6a95f77a381b786b26de21d5079b29a7dff69f7",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+					"center": [
+						32.0,
+						54.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.5,
+						0.5625
+					],
+					"safe_active_rect": [
+						30,
+						53,
+						34,
+						55
+					]
+				}
+			],
+			"sha256": "2e95993438938a2857b2e8de816b7f6c4561e907ef0e69bcdf4285e10ad9225e",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+			"source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_v002.json",
+			"source_rig_sha256": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+			"state": "idle",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 638,
+			"direction": "down",
+			"draw_order": [
+				"right_leg",
+				"left_leg",
+				"torso",
+				"right_arm",
+				"left_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f00_v003.png",
+			"frame_index": 0,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_down_f00",
+			"measurement": {
+				"bbox": [
+					12,
+					22,
+					52,
+					80
+				],
+				"bbox_xywh": [
+					12,
+					22,
+					40,
+					58
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1478,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					1.0
+				],
+				"left_arm": [
+					0.0,
+					2.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					1.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					1.0
+				]
+			},
+			"pose_description": "准备：微俯身并抬出原左腕采集工具。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_down_f00_v003.json",
+			"pose_sha256": "508e0e9fa4a1412e833feba67669e1d64b3c63951cd2314578496890ba8c1b39",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+					"center": [
+						32.0,
+						54.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.5,
+						0.5625
+					],
+					"safe_active_rect": [
+						30,
+						53,
+						34,
+						55
+					]
+				}
+			],
+			"sha256": "f72da7132055c10ba05cfad23d21c73d187d3cef6531f94b7d4c558f6f74136a",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+			"source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_v002.json",
+			"source_rig_sha256": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 1085,
+			"direction": "down",
+			"draw_order": [
+				"right_leg",
+				"left_leg",
+				"torso",
+				"right_arm",
+				"left_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f01_v003.png",
+			"frame_index": 1,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_down_f01",
+			"measurement": {
+				"bbox": [
+					12,
+					24,
+					52,
+					80
+				],
+				"bbox_xywh": [
+					12,
+					24,
+					40,
+					56
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1448,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					3.0
+				],
+				"left_arm": [
+					0.0,
+					8.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					3.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					3.0
+				]
+			},
+			"pose_description": "下探：头盔和胸甲整体俯低，左腕伸向采集方向。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_down_f01_v003.json",
+			"pose_sha256": "891902a20d3b3a5ecd6fdd604c95a3cdf285d86b33a62129b70a8cb8db4e6637",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+					"center": [
+						32.0,
+						56.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.5,
+						0.583333333333333
+					],
+					"safe_active_rect": [
+						30,
+						55,
+						34,
+						57
+					]
+				}
+			],
+			"sha256": "c2ce09e85b965666487990056bfefb328f8e5dc9107be727f2a7b35e21ce7a6e",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+			"source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_v002.json",
+			"source_rig_sha256": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 1199,
+			"direction": "down",
+			"draw_order": [
+				"right_leg",
+				"left_leg",
+				"torso",
+				"right_arm",
+				"left_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f02_v003.png",
+			"frame_index": 2,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_down_f02",
+			"measurement": {
+				"bbox": [
+					12,
+					25,
+					52,
+					80
+				],
+				"bbox_xywh": [
+					12,
+					25,
+					40,
+					55
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1431,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					4.0
+				],
+				"left_arm": [
+					0.0,
+					9.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					4.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					4.0
+				]
+			},
+			"pose_description": "保持：维持支撑与工具指向，继续 1 像素下探。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_down_f02_v003.json",
+			"pose_sha256": "d1646d475a7b2ceb4694e7c8904abd29c5c52f7dbc6078a9614a9c89f1757986",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+					"center": [
+						32.0,
+						57.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.5,
+						0.59375
+					],
+					"safe_active_rect": [
+						30,
+						56,
+						34,
+						58
+					]
+				}
+			],
+			"sha256": "1743323541bd145eb3c1b90b4b63adcdf6a3e30733971c4120c49a05d4f6a30e",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+			"source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_v002.json",
+			"source_rig_sha256": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 909,
+			"direction": "down",
+			"draw_order": [
+				"right_leg",
+				"left_leg",
+				"torso",
+				"right_arm",
+				"left_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_down_f03_v003.png",
+			"frame_index": 3,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_down_f03",
+			"measurement": {
+				"bbox": [
+					12,
+					23,
+					52,
+					80
+				],
+				"bbox_xywh": [
+					12,
+					23,
+					40,
+					57
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1463,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					2.0
+				],
+				"left_arm": [
+					0.0,
+					4.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					2.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					2.0
+				]
+			},
+			"pose_description": "收回：左腕与上身朝原站姿返回。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_down_f03_v003.json",
+			"pose_sha256": "c308d15abdaa1177d5dd446353ae324fae93c100dde32bbdc17dce6a0e3d923d",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+					"center": [
+						32.0,
+						55.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.5,
+						0.572916666666667
+					],
+					"safe_active_rect": [
+						30,
+						54,
+						34,
+						56
+					]
+				}
+			],
+			"sha256": "eb39b6d88933963316cefdc586699175f0b9e28653f41d6b3e13469c93b2b36b",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+			"source_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_v002.json",
+			"source_rig_sha256": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 0,
+			"direction": "left",
+			"draw_order": [],
+			"file": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+			"frame_index": 0,
+			"id": "robot_idle_left_f00",
+			"measurement": {
+				"bbox": [
+					18,
+					21,
+					45,
+					80
+				],
+				"bbox_xywh": [
+					18,
+					21,
+					27,
+					59
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1122,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {},
+			"pose_description": "Original idle reused unchanged.",
+			"reused_original": true,
+			"runtime_windows": [
+				{
+					"center": [
+						27.0,
+						50.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.421875,
+						0.520833333333333
+					],
+					"safe_active_rect": [
+						26.0,
+						49.0,
+						28.0,
+						51.0
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+			"source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+			"state": "idle"
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 438,
+			"direction": "left",
+			"draw_order": [
+				"right_leg",
+				"right_arm",
+				"torso",
+				"left_leg",
+				"left_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_left_f01_v003.png",
+			"frame_index": 1,
+			"head_exact_translated_rgba": true,
+			"id": "robot_idle_left_f01",
+			"measurement": {
+				"bbox": [
+					18,
+					22,
+					45,
+					80
+				],
+				"bbox_xywh": [
+					18,
+					22,
+					27,
+					58
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1106,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					1.0
+				],
+				"left_arm": [
+					0.0,
+					1.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					1.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					1.0
+				]
+			},
+			"pose_description": "呼吸微动：上身下降 1 像素，双脚原位支撑。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_idle_left_f01_v003.json",
+			"pose_sha256": "bdf58259f54f3c92de282d4e38d3ef17b3bf6ad439374edce868ffaf2354f64b",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"center": [
+						27.0,
+						51.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.421875,
+						0.53125
+					],
+					"safe_active_rect": [
+						26,
+						50,
+						28,
+						52
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "874b57cf2a0d7485f8519fe9928ea742211c8fa5669b334fe2b6eea002b548a5",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+			"source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_v002.json",
+			"source_rig_sha256": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+			"state": "idle",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 525,
+			"direction": "left",
+			"draw_order": [
+				"right_leg",
+				"right_arm",
+				"torso",
+				"left_leg",
+				"left_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f00_v003.png",
+			"frame_index": 0,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_left_f00",
+			"measurement": {
+				"bbox": [
+					18,
+					22,
+					44,
+					80
+				],
+				"bbox_xywh": [
+					18,
+					22,
+					26,
+					58
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1038,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					1.0
+				],
+				"left_arm": [
+					-3.0,
+					2.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					1.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					1.0
+				]
+			},
+			"pose_description": "准备：微俯身并抬出原左腕采集工具。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_left_f00_v003.json",
+			"pose_sha256": "8a74634e9e5a2df816703fd536a0146fdf1884442711fee0096afb75ea78ccb4",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"center": [
+						27.0,
+						51.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.421875,
+						0.53125
+					],
+					"safe_active_rect": [
+						26,
+						50,
+						28,
+						52
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "aaab70763951ba81b73c3f2c5c769c7ddd7d39fa6fd5c9c430ffc476db4b27d7",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+			"source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_v002.json",
+			"source_rig_sha256": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 812,
+			"direction": "left",
+			"draw_order": [
+				"right_leg",
+				"right_arm",
+				"torso",
+				"left_leg",
+				"left_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f01_v003.png",
+			"frame_index": 1,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_left_f01",
+			"measurement": {
+				"bbox": [
+					16,
+					24,
+					42,
+					80
+				],
+				"bbox_xywh": [
+					16,
+					24,
+					26,
+					56
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 961,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					-2.0,
+					3.0
+				],
+				"left_arm": [
+					-17.0,
+					5.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					-2.0,
+					3.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					-2.0,
+					3.0
+				]
+			},
+			"pose_description": "下探：头盔和胸甲整体俯低，左腕伸向采集方向。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_left_f01_v003.json",
+			"pose_sha256": "c8f943930479796bc6d30b559286e4e443b426486d9a1fc615ae87de6efd2f88",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"center": [
+						25.0,
+						53.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.390625,
+						0.552083333333333
+					],
+					"safe_active_rect": [
+						24,
+						52,
+						26,
+						54
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "7e996ca4e731f36ae8b76b8316c03fe5e28496d4e2082cd398b2530cf9456407",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+			"source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_v002.json",
+			"source_rig_sha256": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 857,
+			"direction": "left",
+			"draw_order": [
+				"right_leg",
+				"right_arm",
+				"torso",
+				"left_leg",
+				"left_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f02_v003.png",
+			"frame_index": 2,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_left_f02",
+			"measurement": {
+				"bbox": [
+					16,
+					25,
+					42,
+					80
+				],
+				"bbox_xywh": [
+					16,
+					25,
+					26,
+					55
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 962,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					-2.0,
+					4.0
+				],
+				"left_arm": [
+					-18.0,
+					6.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					-2.0,
+					4.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					-2.0,
+					4.0
+				]
+			},
+			"pose_description": "保持：维持支撑与工具指向，继续 1 像素下探。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_left_f02_v003.json",
+			"pose_sha256": "ce865f9b5ec60c93d03ab75b7d7cee01ca37e51f8e5b2007d653610832286d55",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"center": [
+						25.0,
+						54.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.390625,
+						0.5625
+					],
+					"safe_active_rect": [
+						24,
+						53,
+						26,
+						55
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "570ac33d011e8d9e83a6206a9ccd11d194e28b7bcdce5edf2d25a851450fa033",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+			"source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_v002.json",
+			"source_rig_sha256": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 693,
+			"direction": "left",
+			"draw_order": [
+				"right_leg",
+				"right_arm",
+				"torso",
+				"left_leg",
+				"left_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_left_f03_v003.png",
+			"frame_index": 3,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_left_f03",
+			"measurement": {
+				"bbox": [
+					17,
+					23,
+					43,
+					80
+				],
+				"bbox_xywh": [
+					17,
+					23,
+					26,
+					57
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 963,
+				"rgb_count": 11,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					-1.0,
+					2.0
+				],
+				"left_arm": [
+					-7.0,
+					3.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					-1.0,
+					2.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					-1.0,
+					2.0
+				]
+			},
+			"pose_description": "收回：左腕与上身朝原站姿返回。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_left_f03_v003.json",
+			"pose_sha256": "f969c088a59d7366a5d103068251bc39398ad9fc1b7273e6c342fbad14352520",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"center": [
+						26.0,
+						52.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.40625,
+						0.541666666666667
+					],
+					"safe_active_rect": [
+						25,
+						51,
+						27,
+						53
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "fd71566c4312b4248c52c7e66c013acbdae20661fffb28fc0fbbca1a71be8582",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+			"source_idle_sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_v002.json",
+			"source_rig_sha256": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 0,
+			"direction": "right",
+			"draw_order": [],
+			"file": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+			"frame_index": 0,
+			"id": "robot_idle_right_f00",
+			"measurement": {
+				"bbox": [
+					17,
+					21,
+					46,
+					80
+				],
+				"bbox_xywh": [
+					17,
+					21,
+					29,
+					59
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1211,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {},
+			"pose_description": "Original idle reused unchanged.",
+			"reused_original": true,
+			"runtime_windows": [
+				{
+					"center": [
+						37.0,
+						50.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.578125,
+						0.520833333333333
+					],
+					"safe_active_rect": [
+						36.0,
+						49.0,
+						38.0,
+						51.0
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+			"source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+			"state": "idle"
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 498,
+			"direction": "right",
+			"draw_order": [
+				"left_leg",
+				"left_arm",
+				"torso",
+				"right_leg",
+				"right_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_right_f01_v003.png",
+			"frame_index": 1,
+			"head_exact_translated_rgba": true,
+			"id": "robot_idle_right_f01",
+			"measurement": {
+				"bbox": [
+					17,
+					22,
+					46,
+					80
+				],
+				"bbox_xywh": [
+					17,
+					22,
+					29,
+					58
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1195,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					1.0
+				],
+				"left_arm": [
+					0.0,
+					1.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					1.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					1.0
+				]
+			},
+			"pose_description": "呼吸微动：上身下降 1 像素，双脚原位支撑。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_idle_right_f01_v003.json",
+			"pose_sha256": "93f7e14200a2a790ef184bad4e3ff418eba69e408f7d1bfa7335faeabae93395",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"center": [
+						37.0,
+						51.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.578125,
+						0.53125
+					],
+					"safe_active_rect": [
+						36,
+						50,
+						38,
+						52
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "2c3c41847a951f5b8747eb0823785b703fa4d6d5db4822ece863079265a8bed6",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+			"source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_right_v002.json",
+			"source_rig_sha256": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+			"state": "idle",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 539,
+			"direction": "right",
+			"draw_order": [
+				"left_leg",
+				"left_arm",
+				"torso",
+				"right_leg",
+				"right_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f00_v003.png",
+			"frame_index": 0,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_right_f00",
+			"measurement": {
+				"bbox": [
+					17,
+					22,
+					47,
+					80
+				],
+				"bbox_xywh": [
+					17,
+					22,
+					30,
+					58
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1193,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					1.0
+				],
+				"left_arm": [
+					2.0,
+					2.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					1.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					1.0
+				]
+			},
+			"pose_description": "准备：微俯身并抬出原左腕采集工具。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_right_f00_v003.json",
+			"pose_sha256": "2042cfed0268350447fa0921aa194120e19b40c1c9f9dd15a1eb97d961e2306c",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"center": [
+						37.0,
+						51.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.578125,
+						0.53125
+					],
+					"safe_active_rect": [
+						36,
+						50,
+						38,
+						52
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "c97766ef0b688c070e4cc19493ccfa220f14f81a441be53837df5969519491ae",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+			"source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_right_v002.json",
+			"source_rig_sha256": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 877,
+			"direction": "right",
+			"draw_order": [
+				"left_leg",
+				"left_arm",
+				"torso",
+				"right_leg",
+				"right_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f01_v003.png",
+			"frame_index": 1,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_right_f01",
+			"measurement": {
+				"bbox": [
+					19,
+					24,
+					50,
+					80
+				],
+				"bbox_xywh": [
+					19,
+					24,
+					31,
+					56
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1149,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					2.0,
+					3.0
+				],
+				"left_arm": [
+					5.0,
+					5.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					2.0,
+					3.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					2.0,
+					3.0
+				]
+			},
+			"pose_description": "下探：头盔和胸甲整体俯低，左腕伸向采集方向。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_right_f01_v003.json",
+			"pose_sha256": "6f706891d71199a3c6dd952ac2ff1308572dc99954448739786d4ff9d88e1754",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"center": [
+						39.0,
+						53.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.609375,
+						0.552083333333333
+					],
+					"safe_active_rect": [
+						38,
+						52,
+						40,
+						54
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "c946a5abb91744520de4768ff27a3400967b10f4e99f79a44c1585946b1cee2c",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+			"source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_right_v002.json",
+			"source_rig_sha256": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 921,
+			"direction": "right",
+			"draw_order": [
+				"left_leg",
+				"left_arm",
+				"torso",
+				"right_leg",
+				"right_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f02_v003.png",
+			"frame_index": 2,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_right_f02",
+			"measurement": {
+				"bbox": [
+					19,
+					25,
+					51,
+					80
+				],
+				"bbox_xywh": [
+					19,
+					25,
+					32,
+					55
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1134,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					2.0,
+					4.0
+				],
+				"left_arm": [
+					6.0,
+					6.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					2.0,
+					4.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					2.0,
+					4.0
+				]
+			},
+			"pose_description": "保持：维持支撑与工具指向，继续 1 像素下探。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_right_f02_v003.json",
+			"pose_sha256": "178a1eb80e0f29ba7db8867bc1265a0ee0822022089f45e0941a5c090f9cb016",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"center": [
+						39.0,
+						54.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.609375,
+						0.5625
+					],
+					"safe_active_rect": [
+						38,
+						53,
+						40,
+						55
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "beccdacd745117bc141da57908fe98468641cd205059d3af7cce9a9bbb03d4b2",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+			"source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_right_v002.json",
+			"source_rig_sha256": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 762,
+			"direction": "right",
+			"draw_order": [
+				"left_leg",
+				"left_arm",
+				"torso",
+				"right_leg",
+				"right_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_right_f03_v003.png",
+			"frame_index": 3,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_right_f03",
+			"measurement": {
+				"bbox": [
+					18,
+					23,
+					48,
+					80
+				],
+				"bbox_xywh": [
+					18,
+					23,
+					30,
+					57
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1171,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					1.0,
+					2.0
+				],
+				"left_arm": [
+					3.0,
+					3.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					1.0,
+					2.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					1.0,
+					2.0
+				]
+			},
+			"pose_description": "收回：左腕与上身朝原站姿返回。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_right_f03_v003.json",
+			"pose_sha256": "2756d16d5e0b96ef8044dbc3dc6c5b15654fd83e423ffff99ac93ff1bb599bb4",
+			"reused_original": false,
+			"runtime_windows": [
+				{
+					"center": [
+						38.0,
+						52.0
+					],
+					"center_basis": "safe_active_rect_geometric_center",
+					"id": "chest_status",
+					"mask_delivery_status": "NOT_PRODUCED",
+					"normalized_uv": [
+						0.59375,
+						0.541666666666667
+					],
+					"safe_active_rect": [
+						37,
+						51,
+						39,
+						53
+					],
+					"visibility": "PARTIAL_SIDE_VIEW"
+				}
+			],
+			"sha256": "195e681ba25452927c0574c8d61f7765f0e4b8612d0e1dd7158fd098a60f2de8",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+			"source_idle_sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_right_v002.json",
+			"source_rig_sha256": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 0,
+			"direction": "up",
+			"draw_order": [],
+			"file": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+			"frame_index": 0,
+			"id": "robot_idle_up_f00",
+			"measurement": {
+				"bbox": [
+					13,
+					21,
+					51,
+					80
+				],
+				"bbox_xywh": [
+					13,
+					21,
+					38,
+					59
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1407,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {},
+			"pose_description": "Original idle reused unchanged.",
+			"reused_original": true,
+			"runtime_windows": [],
+			"sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+			"source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+			"state": "idle"
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 538,
+			"direction": "up",
+			"draw_order": [
+				"left_leg",
+				"right_leg",
+				"torso",
+				"left_arm",
+				"right_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_idle_up_f01_v003.png",
+			"frame_index": 1,
+			"head_exact_translated_rgba": true,
+			"id": "robot_idle_up_f01",
+			"measurement": {
+				"bbox": [
+					13,
+					22,
+					51,
+					80
+				],
+				"bbox_xywh": [
+					13,
+					22,
+					38,
+					58
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1391,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					1.0
+				],
+				"left_arm": [
+					0.0,
+					1.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					1.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					1.0
+				]
+			},
+			"pose_description": "呼吸微动：上身下降 1 像素，双脚原位支撑。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_idle_up_f01_v003.json",
+			"pose_sha256": "35437842416c16a07d970f5cdb8ded1630111c9be55013631523d1b98843d2fe",
+			"reused_original": false,
+			"runtime_windows": [],
+			"sha256": "43206b342b7ed309b64170632308b7336b4b9ea11b3660dfedc7d24e63290760",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+			"source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_up_v002.json",
+			"source_rig_sha256": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+			"state": "idle",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 542,
+			"direction": "up",
+			"draw_order": [
+				"left_leg",
+				"right_leg",
+				"torso",
+				"left_arm",
+				"right_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f00_v003.png",
+			"frame_index": 0,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_up_f00",
+			"measurement": {
+				"bbox": [
+					13,
+					22,
+					51,
+					80
+				],
+				"bbox_xywh": [
+					13,
+					22,
+					38,
+					58
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1390,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					1.0
+				],
+				"left_arm": [
+					0.0,
+					-1.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					1.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					1.0
+				]
+			},
+			"pose_description": "准备：微俯身并抬出原左腕采集工具。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_up_f00_v003.json",
+			"pose_sha256": "d1ecc2d6a20aad8180684863ee9f9fc53812dbbda67beaed44ab5ad7cae2ce66",
+			"reused_original": false,
+			"runtime_windows": [],
+			"sha256": "b467196f1687817232fd4c6adc05ad831cf80974a5e9fbd7d9bf09e5aaf81345",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+			"source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_up_v002.json",
+			"source_rig_sha256": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 982,
+			"direction": "up",
+			"draw_order": [
+				"left_leg",
+				"right_leg",
+				"torso",
+				"left_arm",
+				"right_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f01_v003.png",
+			"frame_index": 1,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_up_f01",
+			"measurement": {
+				"bbox": [
+					13,
+					24,
+					51,
+					80
+				],
+				"bbox_xywh": [
+					13,
+					24,
+					38,
+					56
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1329,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					3.0
+				],
+				"left_arm": [
+					0.0,
+					-6.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					3.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					3.0
+				]
+			},
+			"pose_description": "下探：头盔和胸甲整体俯低，左腕伸向采集方向。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_up_f01_v003.json",
+			"pose_sha256": "6fc0b97d17cbe086b0ecf85416e3e4c869dbee21367215c785dc2b5563b77940",
+			"reused_original": false,
+			"runtime_windows": [],
+			"sha256": "5e099d38606f965f774a3fe06c35b470b1ebebd3aeb8e1ce4cb324d160db0a7b",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+			"source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_up_v002.json",
+			"source_rig_sha256": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 1075,
+			"direction": "up",
+			"draw_order": [
+				"left_leg",
+				"right_leg",
+				"torso",
+				"left_arm",
+				"right_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f02_v003.png",
+			"frame_index": 2,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_up_f02",
+			"measurement": {
+				"bbox": [
+					13,
+					25,
+					51,
+					80
+				],
+				"bbox_xywh": [
+					13,
+					25,
+					38,
+					55
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1309,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					4.0
+				],
+				"left_arm": [
+					0.0,
+					-7.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					4.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					4.0
+				]
+			},
+			"pose_description": "保持：维持支撑与工具指向，继续 1 像素下探。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_up_f02_v003.json",
+			"pose_sha256": "1a6f6d28f0977535d50259770ad35836d3b5a54c338408bf46bb3722b8073a77",
+			"reused_original": false,
+			"runtime_windows": [],
+			"sha256": "fc0a27c50d626146376e6272797a8090ca58bdbe4538a99221a73247a14e5fd9",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+			"source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_up_v002.json",
+			"source_rig_sha256": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		},
+		{
+			"anchor": [
+				32,
+				80
+			],
+			"changed_rgba_pixels_vs_idle": 829,
+			"direction": "up",
+			"draw_order": [
+				"left_leg",
+				"right_leg",
+				"torso",
+				"left_arm",
+				"right_arm",
+				"head"
+			],
+			"file": "res://assets/ember/characters/robot/actions_v003/robot_collect_up_f03_v003.png",
+			"frame_index": 3,
+			"head_exact_translated_rgba": true,
+			"id": "robot_collect_up_f03",
+			"measurement": {
+				"bbox": [
+					13,
+					23,
+					51,
+					80
+				],
+				"bbox_xywh": [
+					13,
+					23,
+					38,
+					57
+				],
+				"binary_alpha": true,
+				"canvas": [
+					64,
+					96
+				],
+				"components_8": 1,
+				"opaque_pixels": 1363,
+				"rgb_count": 10,
+				"subject_size_pass": true,
+				"transparent_border": true,
+				"visible_bottom_boundary": 80
+			},
+			"offsets": {
+				"head": [
+					0.0,
+					2.0
+				],
+				"left_arm": [
+					0.0,
+					-3.0
+				],
+				"left_leg": [
+					0.0,
+					0.0
+				],
+				"right_arm": [
+					0.0,
+					2.0
+				],
+				"right_leg": [
+					0.0,
+					0.0
+				],
+				"torso": [
+					0.0,
+					2.0
+				]
+			},
+			"pose_description": "收回：左腕与上身朝原站姿返回。",
+			"pose_file": "res://art-source/ember/robot-actions-v003/poses/robot_collect_up_f03_v003.json",
+			"pose_sha256": "bdf6e82bf0b7fbe5c314d65e9319072eeadc1763727eb5114ed2a5554fed3935",
+			"reused_original": false,
+			"runtime_windows": [],
+			"sha256": "996f98ec53a3455aff8250250effd516bb88ecb542230321608292d30d320683",
+			"source_idle": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+			"source_idle_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+			"source_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_up_v002.json",
+			"source_rig_sha256": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+			"state": "collect",
+			"support_feet_rows_74_79_unchanged": true
+		}
+	],
+	"new_png_count": 20,
+	"schema_version": 1,
+	"status": "PASS",
+	"subject_limit": [
+		40,
+		64
+	],
+	"whole_image_transform": "NONE"
+}

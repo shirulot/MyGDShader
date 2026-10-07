@@ -1,0 +1,128 @@
+{
+  "id": "helmet",
+  "manifest_id": "B12",
+  "file": "art-source/ember/batch-03-objects/finished/helmet_v001.png",
+  "production_file": "res://assets/ember/props/story/helmet_v001.png",
+  "sha256": "a920b3f0ac6940f7c2a53ccc04e59f8b13003486052d15d93e9e5488fe288dc6",
+  "size": [
+    64,
+    64
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/helmet_v001.finish.json",
+  "canvas": [
+    64,
+    64
+  ],
+  "bbox": [
+    16,
+    22,
+    49,
+    56
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/helmet/foundation_body.png",
+      "sha256": "a920b3f0ac6940f7c2a53ccc04e59f8b13003486052d15d93e9e5488fe288dc6",
+      "z_index": 0,
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/helmet_master_v001.png",
+    "master_sha256": "5a623cca2c58eab9018720f6c89aca504e66d69e50f7202958887e14ce744f4c",
+    "prompt": "prompts/helmet.txt",
+    "prompt_sha256": "f227c15ae8cbc881ebb905f6188c41ebe510f59deba35dd7d4280c5f55cd11d1",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-227b23f0-d020-47c9-9a3f-dee5690f8d5c.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        419,
+        427,
+        863,
+        883
+      ],
+      "material_sampling_size": [
+        33,
+        34
+      ],
+      "native_origin": [
+        16,
+        22
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 21,
+      "native_outline_pixels_corrected": 35
+    },
+    "native_adjustments": [
+      "visor内侧[23,41,32,47)归并为中性深灰，去母稿微渐变，原有倾斜壳缘轮廓仍保留",
+      "左上陶瓷亮簇归并成3px连续色块，右侧壳面继续较暗；不镜像或改变右侧铜扣",
+      "实体1px外轮廓、二值Alpha、原生33×34底界56；玻璃无运行状态光、无地面影"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [
+    {
+      "id": "helmet_visor",
+      "rect": [
+        23,
+        41,
+        32,
+        47
+      ],
+      "emits": false
+    }
+  ],
+  "observations": "实际母稿浅陶瓷壳、深visor边与右侧黄铜扣，属于同一制造系统的现场头盔；它是静态叙事物，不新增角色动作或发射点。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

@@ -1,0 +1,152 @@
+{
+  "id": "console_normal",
+  "source": {
+    "file": "res://assets/ember/buildings/console/console_base_v001.png",
+    "sha256": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd"
+  },
+  "annotation": {
+    "file": "res://art-source/ember/batch-03-objects/finished/console_base_v001.finish.json",
+    "sha256": "8c5b160f6b6e9411287be38f670a63d060397e6a32a39bb86a59b7813ec0dcf5"
+  },
+  "coordinate_convention": "pixel boundaries; rect [x0,y0,x1,y1)",
+  "canvas": [
+    96,
+    96
+  ],
+  "alpha_bbox": [
+    18,
+    22,
+    78,
+    80
+  ],
+  "anchor": [
+    48,
+    80
+  ],
+  "basis": "source annotation + visually registered component silhouettes; no RGB luminance conversion",
+  "base_z": 0.2,
+  "outer_bevel_px": 2,
+  "components": [
+    {
+      "name": "foundation",
+      "rect": [
+        19,
+        63,
+        77,
+        80
+      ],
+      "z": 0.24,
+      "bevel": 2
+    },
+    {
+      "name": "housing",
+      "polygon": [
+        [
+          31,
+          22
+        ],
+        [
+          65,
+          22
+        ],
+        [
+          70,
+          28
+        ],
+        [
+          70,
+          59
+        ],
+        [
+          64,
+          67
+        ],
+        [
+          32,
+          67
+        ],
+        [
+          26,
+          59
+        ],
+        [
+          26,
+          28
+        ]
+      ],
+      "z": 0.85,
+      "bevel": 3
+    },
+    {
+      "name": "screen_frame",
+      "rect": [
+        33,
+        29,
+        63,
+        50
+      ],
+      "z": 0.94,
+      "bevel": 2
+    },
+    {
+      "name": "control_deck",
+      "rect": [
+        33,
+        51,
+        63,
+        58
+      ],
+      "z": 0.9,
+      "bevel": 2
+    },
+    {
+      "name": "left_coupler",
+      "rect": [
+        20,
+        36,
+        28,
+        63
+      ],
+      "z": 0.48,
+      "bevel": 2
+    },
+    {
+      "name": "right_coupler",
+      "rect": [
+        68,
+        36,
+        76,
+        63
+      ],
+      "z": 0.48,
+      "bevel": 2
+    },
+    {
+      "name": "front_hatch",
+      "rect": [
+        39,
+        67,
+        56,
+        77
+      ],
+      "z": 0.38,
+      "bevel": 2
+    }
+  ],
+  "neutral_window": {
+    "safe_rect": [
+      36,
+      33,
+      60,
+      47
+    ],
+    "planar_rect": [
+      35,
+      32,
+      61,
+      48
+    ],
+    "z": 0.38
+  },
+  "limits": "low relief for CanvasTexture learning; no physical dimensions or back-facing 3D geometry"
+}

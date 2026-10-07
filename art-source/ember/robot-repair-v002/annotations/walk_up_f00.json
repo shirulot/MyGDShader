@@ -1,0 +1,100 @@
+{
+  "direction": "up",
+  "state": "walk",
+  "frame_index": 0,
+  "idle_source": "art-source/ember/batch-02-robot/finished-frames/robot_idle_up_v001.png",
+  "parts_file": "annotations/rig_up_v002.json",
+  "design_observation": "实际4母稿逐项观看；造型材料语汇相同但头身/维护槽/相位有漂移，用确认方向idle保持一致",
+  "tool_hand_observation": "背视黄铜工具明确在屏幕左腕，是与down屏幕右腕对应的同一解剖左手。母稿工具为细长维修接口，不翻图。",
+  "pose_observation": "f00母稿黄铜工具左侧保持；屏幕左腿最低，画出的前后投影与上向前移符号不稳，原生按上向左脚接触调整。",
+  "adjustments": [
+    "AI_POSE_INCONSISTENCY: 观察到的模型phase/头身/装甲漂移逐帧如实记录",
+    "NATIVE_CORRECTIVE_COMPOSITING: 用确认方向idle的显式像素部件、不同近远zorder和局部关节修补",
+    "四phase明确接触/经过两脚交替；脚1–2px、摆臂1px、头身起伏1px；不整图warp/镜像",
+    "相机侧视的远近足底高度不同；虚拟地面原点固定(32,80)，抬脚可使可见底界78..80",
+    "V002_SOURCE_REPAIR: semantic boot/pelvis rig reassignment and individually drawn native joint pixels; original body shape, palette, gait offsets and draw order preserved."
+  ],
+  "offsets": {
+    "head": [
+      0,
+      0
+    ],
+    "torso": [
+      0,
+      0
+    ],
+    "left_arm": [
+      0,
+      1
+    ],
+    "right_arm": [
+      0,
+      -1
+    ],
+    "left_leg": [
+      0,
+      -1
+    ],
+    "right_leg": [
+      0,
+      0
+    ]
+  },
+  "draw_order": [
+    "left_leg",
+    "right_leg",
+    "torso",
+    "left_arm",
+    "right_arm",
+    "head"
+  ],
+  "patches": [
+    {
+      "type": "pixel",
+      "at": [
+        26,
+        61
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        26,
+        62
+      ],
+      "color": 1
+    },
+    {
+      "type": "pixel",
+      "at": [
+        38,
+        61
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        38,
+        62
+      ],
+      "color": 1
+    }
+  ],
+  "runtime_windows": [],
+  "gait": {
+    "support_leg": "left",
+    "lifted_leg": null,
+    "phase": "left_contact",
+    "camera_depth": "up背视双脚深度近似一致；前步沿屏幕上向，固定地面原点80",
+    "virtual_ground_anchor": [
+      32,
+      80
+    ]
+  },
+  "repair_version": "v002",
+  "source_annotation": "art-source/ember/batch-02-robot/annotations/walk_up_f00.json",
+  "source_annotation_sha256": "596a8651ca02ee7cf894ea1454d9f59cacdbd9396a4e3d4295a7c14d63f9d3f8",
+  "repair_edits": []
+}

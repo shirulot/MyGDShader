@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>机器人固定母稿行走试样 v009</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color-scheme:dark;background:#101820;color:#ece9d8}body{margin:0;padding:24px;max-width:1180px}h1{font-size:24px}p{color:#becbc4;line-height:1.6}a{color:#829ba3}
+.controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:20px 0}button,select{font:inherit;background:#2b3e4b;color:#ece9d8;border:1px solid #4d6470;border-radius:6px;padding:8px 14px}label{display:flex;align-items:center;gap:8px}input[type=range]{width:220px}output{font-variant-numeric:tabular-nums}
+.panels{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}.panel{border:1px solid #4d6470;border-radius:8px;overflow:hidden}h2{font-size:16px;padding:12px 16px;margin:0;background:#2b3e4b}.stage{padding:16px;background:#182631;min-width:110px}.stage.light{background:#ece9d8}canvas,img{display:block;image-rendering:pixelated}.large{width:256px;height:384px}.caption{font-size:13px;max-width:256px;padding:12px;color:#becbc4}#contact,#status{font-size:14px}
+</style></head><body>
+<h1>机器人固定母稿行走试样 v009</h1>
+<p>朝下 · 八帧 · 待审小样。64×96 原生整格，固定 root 为 (32,80)。关节、肢段长度和工具安装侧来自同一可编辑母稿。</p>
+<div class="controls"><button id="play" aria-pressed="true">暂停</button>
+<label>帧 <input id="frame" aria-label="帧索引" type="range" min="0" max="7" step="1" value="0"></label><output id="phase">F00</output>
+<label>速度 <select id="speed"><option value="8">正常 8 FPS</option><option value="2">慢速 2 FPS</option></select></label><output id="cycles">已播放 0 轮</output>
+<label><input id="ghost" type="checkbox">原始母稿叠加</label><label><input id="anchors" type="checkbox">root与脚底登记</label><label><input id="skeleton" type="checkbox">关节轴</label>
+<label>背景 <select id="background"><option value="dark">深色</option><option value="light">浅色</option></select></label></div>
+<div class="panels"><section class="panel"><h2>原生 1×</h2><div class="stage"><canvas id="native" width="64" height="96"></canvas></div></section>
+<section class="panel"><h2>整数 4× · 实际帧</h2><div class="stage"><canvas id="large" class="large" width="64" height="96"></canvas></div><div class="caption">整格放大，没有逐帧裁切、缩放或齐底。辅助线只用于观察。</div></section>
+<section class="panel"><h2>固定骨架静态母稿 · 4×</h2><div class="stage"><img class="large" src="source/robot_idle_down_fixed_rig_canonical_v009.png" alt="固定骨架静态候选母稿"></div><div class="caption">关节隐藏结构一次定义；头盔、胸甲和工具复用原始来源。</div></section>
+<section class="panel"><h2>冻结原始来源 · 4×</h2><div class="stage"><img id="original" class="large" src="source/robot_idle_down_canonical_original.png" alt="冻结原始母稿"></div></section></div>
+<p id="status">正在载入八张原生帧…</p><p id="contact"></p>
+<p><a href="README.md">制作与限制</a> · <a href="source/rig_down_v009.json">关节登记</a> · <a href="qa/export_validation_v009.json">导出保真核验</a> · <a href="fixed_rig_playback_v009.json">Godot 播放核验</a></p>
+<script>
+// 固定整格读图；原图与动作帧都没有bbox重新对齐。
+const names=['左脚接触','左脚承重下降','右脚经过','右脚前摆','右脚接触','右脚承重下降','左脚经过','左脚前摆'];
+const slider=document.getElementById('frame'),play=document.getElementById('play'),ghost=document.getElementById('ghost'),anchors=document.getElementById('anchors'),skeleton=document.getElementById('skeleton');
+const canvases=[document.getElementById('native'),document.getElementById('large')],original=document.getElementById('original');
+let frames=[],poses=[],rig=null,current=0,playing=true,cycles=0,ticks=0;
+const pad=i=>String(i).padStart(2,'0');
+function render(){
+ if(frames.length!==8)return;
+ const pose=poses[current],points=pose?.keypoints_projected;
+ canvases.forEach(canvas=>{
+  const ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,64,96);ctx.globalAlpha=1;ctx.drawImage(frames[current],0,0);
+  if(ghost.checked&&original.complete){ctx.globalAlpha=.25;ctx.drawImage(original,0,0);ctx.globalAlpha=1;}
+  if(skeleton.checked&&points&&rig){ctx.strokeStyle='#e2b77a';ctx.lineWidth=.3;rig.bones.forEach(b=>{const a=points[b.from],z=points[b.to];if(a&&z){ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...z);ctx.stroke();}});}
+  if(anchors.checked&&points){
+   ctx.fillStyle='#e2b77a';ctx.fillRect(29,80,7,.5);ctx.fillRect(32,77,.5,7);
+   ['left','right'].forEach(side=>{const sole=points['contact_'+side];if(!sole)return;ctx.fillStyle=pose.contacts[side].ground_contact?'#829ba3':'#b77c4b';ctx.fillRect(sole[0]-2,sole[1],4,.5);});
+  }
+ });
+ slider.value=String(current);document.getElementById('phase').textContent='F'+pad(current)+' · '+names[current];
+ if(pose&&points){document.getElementById('contact').textContent=['left','right'].map(side=>{
+  const name=side==='left'?'机器人左脚':'机器人右脚',p=points['contact_'+side],world=pose.keypoints3d['contact_'+side];
+  const contact=pose.contacts[side],state=contact.primary_support?'主支撑':contact.ground_contact?'触地过渡':'摆动';
+  return name+'：'+state+'，世界接触点 Y='+world[1].toFixed(2)+'，画布接触点 ('+p.map(x=>x.toFixed(2)).join(', ')+')';
+ }).join('；')+'。世界地面与镜头投影分别登记。';}
+}
+function updateButton(){play.textContent=playing?'暂停':'继续';play.setAttribute('aria-pressed',String(playing));}
+play.addEventListener('click',()=>{playing=!playing;updateButton();});slider.addEventListener('input',()=>{current=Number(slider.value);playing=false;updateButton();render();});
+[ghost,anchors,skeleton].forEach(input=>input.addEventListener('change',render));document.getElementById('background').addEventListener('change',event=>document.querySelectorAll('.stage').forEach(node=>node.classList.toggle('light',event.target.value==='light')));
+document.getElementById('speed').addEventListener('change',()=>{ticks=0;});
+async function loadImage(src){return new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>reject(new Error('帧尚未生成：'+src));image.src=src;});}
+async function loadJson(src){const response=await fetch(src);if(!response.ok)throw new Error('登记尚未生成：'+src);return response.json();}
+Promise.all([Promise.all(Array.from({length:8},(_,i)=>loadImage('frames/robot_walk_down_f'+pad(i)+'_v009.png'))),Promise.all(Array.from({length:8},(_,i)=>loadJson('poses/walk_down_f'+pad(i)+'_v009.json'))),loadJson('source/rig_down_v009.json')]).then(([images,records,sourceRig])=>{frames=images;poses=records;rig=sourceRig;render();document.getElementById('status').textContent='已加载 8 张 64×96 原生渲染帧 · 8 FPS · 候选小样，艺术结论见审阅记录';}).catch(error=>document.getElementById('status').textContent=error.message);
+setInterval(()=>{if(playing&&frames.length===8){ticks++;const every=8/Number(document.getElementById('speed').value);if(ticks%every!==0)return;current=(current+1)%8;if(current===0){cycles++;document.getElementById('cycles').textContent='已播放 '+cycles+' 轮';}render();}},125);
+</script></body></html>

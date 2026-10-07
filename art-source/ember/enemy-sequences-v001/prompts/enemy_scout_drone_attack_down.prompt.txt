@@ -1,0 +1,30 @@
+Use case: precise-object-edit.
+Asset type: transparent fixed-grid 2D pixel-art animation atlas for the existing Ember game.
+Input image 1 is the exact FIXED-GRID LAYOUT TARGET. It contains repeated accepted neutral sprites, provided only as the starting registration. Change the poses frame-by-frame into the requested action, keep the exact grid, cell sizes, scale, neutral design and root positions. It is NOT a completed animation; you must make the specified frame poses visibly different.
+Input image 2 is the accepted isolated transparent identity master. Use it only for identity, anatomy, tool sides and construction, not high-resolution extra detail. Both inputs have genuine alpha; hidden black/white RGB stored under alpha zero is empty transparency, never an opaque rectangle. Output only actual RGBA sprites: no coloured page, paper, grey backdrop, black panels or checkerboard.
+Highest priority: consistent design and pixel density across ALL frames, exactly one unit in each cell, exact anatomy counts, no clipping. Keep the same head/shell shape, armour contours, material colours, weapon design and persistent wear across poses. Match the deliberate native pixel clusters of image 1, not smooth detailed painting. Neutral first frame and recovery frames must match the template's same unit.
+Camera: face DOWN / toward viewer, original slightly elevated orthographic top/front game camera, no camera orbit or view switching. Rotating body parts for the action is allowed, rotating the whole unit away is not.
+Rendering: strict crisp nearest-neighbour enlarged 2D pixel art, flat discrete colour planes, ivory armour / blue-grey machinery / tiny dull brass and restrained amber-red sensor. Sparse wear remains attached to the same shell parts. Simple upper-left baked light, no cast ground shadows.
+Transparency: actually transparent RGBA across EVERY empty cell margin, no coloured/checkerboard background, no opaque rectangles, no connecting platforms, no shadows. Interiors have clean solid pixel colours. No grid lines or borders in the exported image.
+Avoid: text, labels, numbers, caption, sprite sheet title, UI, watermark, duplicate robots in a cell, perspective, 3D render, smooth anti-aliased blur, ghost frames/onion skins, speed lines, sword trails, glow haze, bloom, projectile, beam, dust, sparks, smoke, fire, red/white hit recolour, extra anatomy or weapons.
+Animation root: fixed logical virtual-ground anchor (64,104) in EACH 128x128 native cell, corresponding to (256,416) within EACH 512x512 output cell. Units stay at that root, no horizontal/vertical whole-sprite drift or frame-specific auto-centering. Movement is in-place. Body motion occurs only at existing joints within the cell. Ground locomotion may lift individual feet but no full-body translation.
+All frames have the SAME registered body scale, do not independently enlarge/crop each frame to fill its cell. Leave ample transparent padding for tools and death poses.
+
+Exact output geometry: 1536 x 1024 pixels, 3 columns x 2 rows of EXACTLY 512x512 equally spaced cells. EXACTLY 6 different sequential poses. No extra rows or empty trailing cells. Read frames row-major from top-left.
+
+Unit identity and handedness: Compact ivory central fuselage with blue-grey top vent, ONE small front vertical optical sensor and tiny brass lower probe. Exactly TWO enclosed horizontal fan pods on two short lateral struts; each pod contains exactly ONE FOUR-BLADE rotor with brass hub, two motors total. No legs, tail, wings or newly added weapons.
+
+Action: attack; 10 frames per second; This is a ONE-SHOT: frames progress in chronological order. Do not reverse or restart mid-strip.
+
+This unit hovers above its virtual ground root: in normal actions body-bottom is around logical y80, leaving 24 logical pixels above ground y104. Hover variation is at most 1 pixel. In death only, descend gradually toward logical ground y104. Exactly two horizontal fan rotors with exactly four broad blades each.
+Maintain the existing normal silhouette and same approximate head/shell dimensions; only articulated action poses change.
+
+Exact ordered action poses:
+Frame 0 (row 0, column 0): neutral front-facing hover.
+Frame 1 (row 0, column 1): central optical module tips forward slightly for target lock, fans stabilize.
+Frame 2 (row 0, column 2): tiny bottom probe aligns forward with the original body, no new gun.
+Frame 3 (row 1, column 0): brief restrained forward pitch as sensor/probe emits an implied pulse, no beam or glow drawn.
+Frame 4 (row 1, column 1): body pitches halfway back to level.
+Frame 5 (row 1, column 2): exact original neutral hover returns.
+
+Make the atlas a usable sequential sprite layout, not an illustrative storyboard. Preserve all invariants while showing the listed joint, leg, tread or rotor changes.

@@ -1,0 +1,91 @@
+{
+  "observations": "实际母稿三根立管与换热核心/两侧铜管结构形成识别，顶左高光清楚；内侧小窗不属于背景孔。",
+  "adjustments": [
+    "安全小窗[75,122,85,128)重画为中性深色矩形并留边框，不让母稿渐变/伪光点进入运行窗口",
+    "中心立管顶段高光整理为5px短线、右侧保留较暗管面以固定左上光照；固定基座176",
+    "把窗口内区与高处换热管导出实际独立源层，不宣称运行通道Mask已完成"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        75,
+        122,
+        85,
+        128
+      ],
+      "color": 2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          79,
+          55
+        ],
+        [
+          79,
+          59
+        ]
+      ],
+      "color": 4
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "cooling_core",
+      "visual_frame_bounds": [
+        72,
+        118,
+        89,
+        131
+      ],
+      "safe_active_rect": [
+        75,
+        122,
+        85,
+        128
+      ],
+      "center": [
+        80.0,
+        125.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.5,
+        0.6510416666666666
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "components": [
+    {
+      "name": "exchange_pipes_high",
+      "rects": [
+        [
+          57,
+          50,
+          105,
+          91
+        ]
+      ],
+      "z_index": 2,
+      "purpose": "可编辑上部换热管与实际遮挡像素"
+    },
+    {
+      "name": "core_window",
+      "rects": [
+        [
+          75,
+          122,
+          85,
+          128
+        ]
+      ],
+      "z_index": 1,
+      "purpose": "核心中性窗口内区"
+    }
+  ],
+  "emitter_points": []
+}

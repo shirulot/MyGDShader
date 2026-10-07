@@ -1,0 +1,257 @@
+{
+  "schema_version": 2,
+  "scope": "Keep all 40 original PNG bytes; preserve clean paths and timing; bind declared native joint edits, full real runtime/GPU checks, independent visual review and lossless preview encoding.",
+  "reports": [
+    {
+      "id": "manifest",
+      "path": "art-source/ember/robot-joint-repair-v004/frame_manifest_v004.json",
+      "status_field": "status",
+      "success_values": [
+        "PASS"
+      ]
+    },
+    {
+      "id": "repair",
+      "path": "art-source/ember/robot-joint-repair-v004/joint_repair_v004.json",
+      "status_field": "status",
+      "success_values": [
+        "PASS"
+      ],
+      "issues_field": "errors"
+    },
+    {
+      "id": "build",
+      "path": "art-source/ember/robot-joint-repair-v004/runtime_build_v004.json",
+      "status_field": "status",
+      "success_values": [
+        "ROBOT_JOINT_REPAIR_V004_PASS"
+      ],
+      "issues_field": "errors"
+    },
+    {
+      "id": "runtime",
+      "path": "art-source/ember/robot-joint-repair-v004/runtime_verify_v004.json",
+      "status_field": "status",
+      "success_values": [
+        "ROBOT_JOINT_REPAIR_V004_PASS"
+      ],
+      "issues_field": "errors"
+    },
+    {
+      "id": "gpu",
+      "path": "art-source/ember/robot-joint-repair-v004/runtime_gpu_v004.json",
+      "status_field": "status",
+      "success_values": [
+        "ROBOT_JOINT_REPAIR_V004_PASS"
+      ],
+      "issues_field": "errors"
+    },
+    {
+      "id": "visual",
+      "path": "art-source/ember/robot-joint-repair-v004/visual_review_v004.json",
+      "status_field": "status",
+      "success_values": [
+        "PASS"
+      ],
+      "issues_field": "issues"
+    },
+    {
+      "id": "encoding",
+      "path": "art-source/ember/robot-joint-repair-v004/previews/preview_encoding_v004.json",
+      "status_field": "status",
+      "success_values": [
+        "PASS"
+      ]
+    },
+    {
+      "id": "protected",
+      "path": "art-source/ember/robot-joint-repair-v004/protected_sources_after_v004.json",
+      "status_field": "status",
+      "success_values": [
+        "PASS"
+      ],
+      "issues_field": "errors"
+    }
+  ],
+  "hash_bindings": [
+    {
+      "report": "repair",
+      "field": "source_manifest_sha256",
+      "path": "art-source/ember/robot-joint-repair-v004/frame_manifest_v004.json"
+    },
+    {
+      "report": "repair",
+      "field": "old_catalog_sha256",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v003.json"
+    },
+    {
+      "report": "repair",
+      "field": "plan_sha256",
+      "path": "art-source/ember/robot-joint-repair-v004/joint_overlay_plan_v004.json"
+    },
+    {
+      "report": "repair",
+      "field": "repair_tool_sha256",
+      "path": "tools/repair_robot_joints_v004.gd"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://art-source/ember/robot-joint-repair-v004/frame_manifest_v004.json",
+      "path": "art-source/ember/robot-joint-repair-v004/frame_manifest_v004.json"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_frames_catalog_v003.json",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v003.json"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_frames_catalog_v004.json",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v004.json"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_animations_v004.png",
+      "path": "assets/ember/characters/robot/robot_animations_v004.png"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_sprite_frames_v004.tres",
+      "path": "assets/ember/characters/robot/robot_sprite_frames_v004.tres"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://scenes/ember/robot_animation_sandbox_v004.tscn",
+      "path": "scenes/ember/robot_animation_sandbox_v004.tscn"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://scripts/ember/robot_action_preview_v004.gd",
+      "path": "scripts/ember/robot_action_preview_v004.gd"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://tools/build_robot_animation_v004.gd",
+      "path": "tools/build_robot_animation_v004.gd"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://art-source/ember/robot-joint-repair-v004/frame_manifest_v004.json",
+      "path": "art-source/ember/robot-joint-repair-v004/frame_manifest_v004.json"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_frames_catalog_v003.json",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v003.json"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_frames_catalog_v004.json",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v004.json"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_animations_v004.png",
+      "path": "assets/ember/characters/robot/robot_animations_v004.png"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_sprite_frames_v004.tres",
+      "path": "assets/ember/characters/robot/robot_sprite_frames_v004.tres"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://scenes/ember/robot_animation_sandbox_v004.tscn",
+      "path": "scenes/ember/robot_animation_sandbox_v004.tscn"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://scripts/ember/robot_action_preview_v004.gd",
+      "path": "scripts/ember/robot_action_preview_v004.gd"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://tools/build_robot_animation_v004.gd",
+      "path": "tools/build_robot_animation_v004.gd"
+    },
+    {
+      "report": "visual",
+      "field": "source_manifest_sha256",
+      "path": "art-source/ember/robot-joint-repair-v004/frame_manifest_v004.json"
+    },
+    {
+      "report": "visual",
+      "field": "catalog_sha256",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v004.json"
+    },
+    {
+      "report": "visual",
+      "field": "frames_resource_sha256",
+      "path": "assets/ember/characters/robot/robot_sprite_frames_v004.tres"
+    },
+    {
+      "report": "visual",
+      "field": "atlas_sha256",
+      "path": "assets/ember/characters/robot/robot_animations_v004.png"
+    },
+    {
+      "report": "encoding",
+      "field": "encoder_sha256",
+      "path": "tools/encode_robot_preview_v004.cjs"
+    },
+    {
+      "report": "protected",
+      "field": "source_baseline_sha256",
+      "path": "art-source/ember/robot-joint-repair-v004/protected_sources_before_v004.json"
+    },
+    {
+      "report": "visual",
+      "field": "native_report_sha256",
+      "path": "art-source/ember/robot-joint-repair-v004/joint_repair_v004.json"
+    },
+    {
+      "report": "visual",
+      "field": "independent_findings_sha256",
+      "path": "art-source/ember/robot-joint-repair-v004/audit/independent/postrepair_visual_findings_v004.md"
+    },
+    {
+      "report": "visual",
+      "field": "independent_sha_checks_sha256",
+      "path": "art-source/ember/robot-joint-repair-v004/audit/independent/postrepair_sha_checks_v004.json"
+    }
+  ],
+  "extra_files": [
+    "assets/ember/characters/robot/robot_gpu_1x_v004.png",
+    "assets/ember/characters/robot/robot_gpu_4x_v004.png",
+    "assets/ember/characters/robot/robot_preview_v004.png",
+    "tools/encode_robot_preview_v004.cjs",
+    "art-source/ember/robot-joint-repair-v004/previews/.gdignore"
+  ],
+  "cold_verify": {
+    "script": "res://tools/build_robot_animation_v004.gd",
+    "arguments": [
+      "--verify-only",
+      "--report={REPORT_PATH}"
+    ],
+    "success_stdout": "ROBOT_JOINT_REPAIR_V004 PASS",
+    "success_statuses": [
+      "ROBOT_JOINT_REPAIR_V004_PASS"
+    ]
+  }
+}

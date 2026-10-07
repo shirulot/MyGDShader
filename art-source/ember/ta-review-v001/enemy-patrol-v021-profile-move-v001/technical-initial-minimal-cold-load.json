@@ -1,0 +1,3260 @@
+{
+	"canvas": [
+		128.0,
+		128.0
+	],
+	"clips": [
+		{
+			"fps": 8.0,
+			"frames": 8,
+			"loop": true,
+			"name": "move_down"
+		},
+		{
+			"fps": 8.0,
+			"frames": 8,
+			"loop": true,
+			"name": "move_left"
+		},
+		{
+			"fps": 8.0,
+			"frames": 8,
+			"loop": true,
+			"name": "move_right"
+		},
+		{
+			"fps": 8.0,
+			"frames": 8,
+			"loop": true,
+			"name": "move_down_right"
+		}
+	],
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"errors": [
+		"preview cache expected 8 neutral + 4 moves",
+		"preview cache expected 8 neutral + 4 moves"
+	],
+	"frames": 32,
+	"rig_cpu_checks": [
+		{
+			"direction": "left",
+			"masks": [
+				{
+					"format": 2,
+					"id": "body",
+					"path": "res://../technical-runtime-mask-left-body.png",
+					"z": 10
+				},
+				{
+					"format": 2,
+					"id": "left_thigh",
+					"path": "res://../technical-runtime-mask-left-left_thigh.png",
+					"z": 4
+				},
+				{
+					"format": 2,
+					"id": "left_shin",
+					"path": "res://../technical-runtime-mask-left-left_shin.png",
+					"z": 4
+				},
+				{
+					"format": 2,
+					"id": "left_cap",
+					"path": "res://../technical-runtime-mask-left-left_cap.png",
+					"z": 6
+				},
+				{
+					"format": 2,
+					"id": "left_foot",
+					"path": "res://../technical-runtime-mask-left-left_foot.png",
+					"z": 5
+				},
+				{
+					"format": 2,
+					"id": "right_thigh",
+					"path": "res://../technical-runtime-mask-left-right_thigh.png",
+					"z": -4
+				},
+				{
+					"format": 2,
+					"id": "right_shin",
+					"path": "res://../technical-runtime-mask-left-right_shin.png",
+					"z": -4
+				},
+				{
+					"format": 2,
+					"id": "right_cap",
+					"path": "res://../technical-runtime-mask-left-right_cap.png",
+					"z": -2
+				},
+				{
+					"format": 2,
+					"id": "right_foot",
+					"path": "res://../technical-runtime-mask-left-right_foot.png",
+					"z": -3
+				}
+			],
+			"poses": [
+				{
+					"action": "move_left",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								99.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.707106828689575,
+								0.707106828689575
+							],
+							"basis_y": [
+								-1.5,
+								1.5
+							],
+							"position": [
+								67.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.986177146434784,
+								0.0683415234088898
+							],
+							"basis_y": [
+								-0.138907745480537,
+								0.837616682052612
+							],
+							"position": [
+								66.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								72.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.70710676908493,
+								-0.70710676908493
+							],
+							"basis_y": [
+								0.5,
+								0.5
+							],
+							"position": [
+								71.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.00404989719391,
+								-0.207719951868057
+							],
+							"basis_y": [
+								0.427414298057556,
+								1.20220565795898
+							],
+							"position": [
+								66.0,
+								78.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								64.0,
+								99.0
+							],
+							"depth": 6.0,
+							"ground": [
+								64.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								81.0
+							],
+							"knee": [
+								67.0,
+								89.0
+							],
+							"lift": 0.0,
+							"sole": [
+								64.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								72.0,
+								96.0
+							],
+							"depth": -6.0,
+							"ground": [
+								72.0,
+								101.0
+							],
+							"hip": [
+								66.0,
+								78.0
+							],
+							"knee": [
+								71.0,
+								88.0
+							],
+							"lift": 0.0,
+							"sole": [
+								72.0,
+								101.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_left",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								99.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								94.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.961523950099945,
+								0.226415082812309
+							],
+							"basis_y": [
+								-0.27472111582756,
+								0.792452812194824
+							],
+							"position": [
+								66.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								87.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								94.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.0,
+								-1.0
+							],
+							"basis_y": [
+								1.5,
+								0.0
+							],
+							"position": [
+								67.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.986177146434784,
+								0.0683415234088898
+							],
+							"basis_y": [
+								-0.138907745480537,
+								0.837616682052612
+							],
+							"position": [
+								66.0,
+								79.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								66.0,
+								99.0
+							],
+							"depth": 3.0,
+							"ground": [
+								66.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								82.0
+							],
+							"knee": [
+								66.0,
+								90.0
+							],
+							"lift": 0.0,
+							"sole": [
+								66.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								70.0,
+								94.0
+							],
+							"depth": -3.0,
+							"ground": [
+								70.0,
+								101.0
+							],
+							"hip": [
+								66.0,
+								79.0
+							],
+							"knee": [
+								67.0,
+								87.0
+							],
+							"lift": 3.0,
+							"sole": [
+								70.0,
+								99.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_left",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								99.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								94.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								85.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								92.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.0,
+								-1.0
+							],
+							"basis_y": [
+								1.5,
+								0.0
+							],
+							"position": [
+								65.0,
+								89.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.905116021633148,
+								0.377249598503113
+							],
+							"basis_y": [
+								-0.401461720466614,
+								0.606500089168549
+							],
+							"position": [
+								66.0,
+								78.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								68.0,
+								99.0
+							],
+							"depth": 0.0,
+							"ground": [
+								68.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								81.0
+							],
+							"knee": [
+								68.0,
+								90.0
+							],
+							"lift": 0.0,
+							"sole": [
+								68.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								68.0,
+								92.0
+							],
+							"depth": 0.0,
+							"ground": [
+								68.0,
+								101.0
+							],
+							"hip": [
+								66.0,
+								78.0
+							],
+							"knee": [
+								65.0,
+								85.0
+							],
+							"lift": 5.0,
+							"sole": [
+								68.0,
+								97.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_left",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								99.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								71.0,
+								94.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.00404989719391,
+								-0.207719951868057
+							],
+							"basis_y": [
+								0.427414298057556,
+								1.20220565795898
+							],
+							"position": [
+								66.0,
+								80.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								85.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								94.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								67.0,
+								89.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.986177146434784,
+								0.0683415234088898
+							],
+							"basis_y": [
+								-0.138907745480537,
+								0.837616682052612
+							],
+							"position": [
+								66.0,
+								77.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								70.0,
+								99.0
+							],
+							"depth": -3.0,
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								80.0
+							],
+							"knee": [
+								71.0,
+								90.0
+							],
+							"lift": 0.0,
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								66.0,
+								94.0
+							],
+							"depth": 3.0,
+							"ground": [
+								66.0,
+								101.0
+							],
+							"hip": [
+								66.0,
+								77.0
+							],
+							"knee": [
+								67.0,
+								85.0
+							],
+							"lift": 2.0,
+							"sole": [
+								66.0,
+								99.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_left",
+					"frame": 4,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								91.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								72.0,
+								99.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.70710676908493,
+								-0.70710676908493
+							],
+							"basis_y": [
+								0.5,
+								0.5
+							],
+							"position": [
+								71.0,
+								95.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.00404989719391,
+								-0.207719951868057
+							],
+							"basis_y": [
+								0.427414298057556,
+								1.20220565795898
+							],
+							"position": [
+								66.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								86.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.707106828689575,
+								0.707106828689575
+							],
+							"basis_y": [
+								-1.5,
+								1.5
+							],
+							"position": [
+								67.0,
+								90.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.986177146434784,
+								0.0683415234088898
+							],
+							"basis_y": [
+								-0.138907745480537,
+								0.837616682052612
+							],
+							"position": [
+								66.0,
+								78.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								72.0,
+								99.0
+							],
+							"depth": -6.0,
+							"ground": [
+								72.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								81.0
+							],
+							"knee": [
+								71.0,
+								91.0
+							],
+							"lift": 0.0,
+							"sole": [
+								72.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								64.0,
+								96.0
+							],
+							"depth": 6.0,
+							"ground": [
+								64.0,
+								101.0
+							],
+							"hip": [
+								66.0,
+								78.0
+							],
+							"knee": [
+								67.0,
+								86.0
+							],
+							"lift": 0.0,
+							"sole": [
+								64.0,
+								101.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_left",
+					"frame": 5,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.0,
+								-1.0
+							],
+							"basis_y": [
+								1.5,
+								0.0
+							],
+							"position": [
+								67.0,
+								94.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.986177146434784,
+								0.0683415234088898
+							],
+							"basis_y": [
+								-0.138907745480537,
+								0.837616682052612
+							],
+							"position": [
+								66.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								87.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.961523950099945,
+								0.226415082812309
+							],
+							"basis_y": [
+								-0.27472111582756,
+								0.792452812194824
+							],
+							"position": [
+								66.0,
+								79.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"depth": -3.0,
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								82.0
+							],
+							"knee": [
+								67.0,
+								90.0
+							],
+							"lift": 3.0,
+							"sole": [
+								70.0,
+								102.0
+							],
+							"support": false
+						},
+						"right": {
+							"ankle": [
+								66.0,
+								96.0
+							],
+							"depth": 3.0,
+							"ground": [
+								66.0,
+								101.0
+							],
+							"hip": [
+								66.0,
+								79.0
+							],
+							"knee": [
+								66.0,
+								87.0
+							],
+							"lift": 0.0,
+							"sole": [
+								66.0,
+								101.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_left",
+					"frame": 6,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								95.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.0,
+								-1.0
+							],
+							"basis_y": [
+								1.5,
+								0.0
+							],
+							"position": [
+								65.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.905116021633148,
+								0.377249598503113
+							],
+							"basis_y": [
+								-0.401461720466614,
+								0.606500089168549
+							],
+							"position": [
+								66.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								87.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								78.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								68.0,
+								95.0
+							],
+							"depth": 0.0,
+							"ground": [
+								68.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								81.0
+							],
+							"knee": [
+								65.0,
+								88.0
+							],
+							"lift": 5.0,
+							"sole": [
+								68.0,
+								100.0
+							],
+							"support": false
+						},
+						"right": {
+							"ankle": [
+								68.0,
+								96.0
+							],
+							"depth": 0.0,
+							"ground": [
+								68.0,
+								101.0
+							],
+							"hip": [
+								66.0,
+								78.0
+							],
+							"knee": [
+								68.0,
+								87.0
+							],
+							"lift": 0.0,
+							"sole": [
+								68.0,
+								101.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_left",
+					"frame": 7,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								67.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.986177146434784,
+								0.0683415234088898
+							],
+							"basis_y": [
+								-0.138907745480537,
+								0.837616682052612
+							],
+							"position": [
+								66.0,
+								80.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								87.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								71.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.00404989719391,
+								-0.207719951868057
+							],
+							"basis_y": [
+								0.427414298057556,
+								1.20220565795898
+							],
+							"position": [
+								66.0,
+								77.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								66.0,
+								97.0
+							],
+							"depth": 3.0,
+							"ground": [
+								66.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								80.0
+							],
+							"knee": [
+								67.0,
+								88.0
+							],
+							"lift": 2.0,
+							"sole": [
+								66.0,
+								102.0
+							],
+							"support": false
+						},
+						"right": {
+							"ankle": [
+								70.0,
+								96.0
+							],
+							"depth": -3.0,
+							"ground": [
+								70.0,
+								101.0
+							],
+							"hip": [
+								66.0,
+								77.0
+							],
+							"knee": [
+								71.0,
+								87.0
+							],
+							"lift": 0.0,
+							"sole": [
+								70.0,
+								101.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_patrol"
+				}
+			]
+		},
+		{
+			"direction": "right",
+			"masks": [
+				{
+					"format": 2,
+					"id": "body",
+					"path": "res://../technical-runtime-mask-right-body.png",
+					"z": 10
+				},
+				{
+					"format": 2,
+					"id": "right_thigh",
+					"path": "res://../technical-runtime-mask-right-right_thigh.png",
+					"z": 4
+				},
+				{
+					"format": 2,
+					"id": "right_shin",
+					"path": "res://../technical-runtime-mask-right-right_shin.png",
+					"z": 4
+				},
+				{
+					"format": 2,
+					"id": "right_cap",
+					"path": "res://../technical-runtime-mask-right-right_cap.png",
+					"z": 6
+				},
+				{
+					"format": 2,
+					"id": "right_foot",
+					"path": "res://../technical-runtime-mask-right-right_foot.png",
+					"z": 5
+				},
+				{
+					"format": 2,
+					"id": "left_thigh",
+					"path": "res://../technical-runtime-mask-right-left_thigh.png",
+					"z": -4
+				},
+				{
+					"format": 2,
+					"id": "left_shin",
+					"path": "res://../technical-runtime-mask-right-left_shin.png",
+					"z": -4
+				},
+				{
+					"format": 2,
+					"id": "left_cap",
+					"path": "res://../technical-runtime-mask-right-left_cap.png",
+					"z": -2
+				},
+				{
+					"format": 2,
+					"id": "left_foot",
+					"path": "res://../technical-runtime-mask-right-left_foot.png",
+					"z": -3
+				}
+			],
+			"poses": [
+				{
+					"action": "move_right",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								86.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								63.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.344208419322968,
+								-1.0961389541626
+							],
+							"basis_y": [
+								1.17210412025452,
+								0.951930463314056
+							],
+							"position": [
+								61.0,
+								90.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.989949464797974,
+								-0.120000004768372
+							],
+							"basis_y": [
+								0.141421362757683,
+								0.839999973773956
+							],
+							"position": [
+								61.0,
+								78.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								55.0,
+								91.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								53.0,
+								99.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.799999952316284,
+								0.599999964237213
+							],
+							"basis_y": [
+								-0.599999964237213,
+								0.799999952316284
+							],
+							"position": [
+								55.0,
+								95.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.965437710285187,
+								0.2827188372612
+							],
+							"basis_y": [
+								-0.43350887298584,
+								1.18324553966522
+							],
+							"position": [
+								59.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								63.0,
+								96.0
+							],
+							"depth": 6.0,
+							"ground": [
+								63.0,
+								101.0
+							],
+							"hip": [
+								61.0,
+								78.0
+							],
+							"knee": [
+								61.0,
+								86.0
+							],
+							"lift": 0.0,
+							"sole": [
+								63.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								53.0,
+								99.0
+							],
+							"depth": -6.0,
+							"ground": [
+								53.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								81.0
+							],
+							"knee": [
+								55.0,
+								91.0
+							],
+							"lift": 0.0,
+							"sole": [
+								53.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_right",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								62.0,
+								87.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								62.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.956480085849762,
+								-0.28274667263031
+							],
+							"basis_y": [
+								0.279497146606445,
+								0.816750466823578
+							],
+							"position": [
+								61.0,
+								79.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								55.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.799999952316284,
+								0.894427180290222
+							],
+							"basis_y": [
+								-1.59999990463257,
+								0.447213590145111
+							],
+							"position": [
+								59.0,
+								94.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.989949464797974,
+								-0.120000004768372
+							],
+							"basis_y": [
+								0.141421362757683,
+								0.839999973773956
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								61.0,
+								96.0
+							],
+							"depth": 3.0,
+							"ground": [
+								61.0,
+								101.0
+							],
+							"hip": [
+								61.0,
+								79.0
+							],
+							"knee": [
+								62.0,
+								87.0
+							],
+							"lift": 0.0,
+							"sole": [
+								61.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								55.0,
+								97.0
+							],
+							"depth": -3.0,
+							"ground": [
+								55.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								59.0,
+								90.0
+							],
+							"lift": 3.0,
+							"sole": [
+								55.0,
+								102.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_right",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								60.0,
+								87.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								60.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								61.0,
+								78.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								95.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.799999952316284,
+								0.894427180290222
+							],
+							"basis_y": [
+								-1.59999990463257,
+								0.447213590145111
+							],
+							"position": [
+								61.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.879144966602325,
+								-0.46765798330307
+							],
+							"basis_y": [
+								0.411306440830231,
+								0.647477388381958
+							],
+							"position": [
+								59.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								59.0,
+								96.0
+							],
+							"depth": 0.0,
+							"ground": [
+								59.0,
+								101.0
+							],
+							"hip": [
+								61.0,
+								78.0
+							],
+							"knee": [
+								60.0,
+								87.0
+							],
+							"lift": 0.0,
+							"sole": [
+								59.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								57.0,
+								95.0
+							],
+							"depth": 0.0,
+							"ground": [
+								57.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								81.0
+							],
+							"knee": [
+								61.0,
+								88.0
+							],
+							"lift": 5.0,
+							"sole": [
+								57.0,
+								100.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_right",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								87.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.894427180290222,
+								-0.399999976158142
+							],
+							"basis_y": [
+								0.447213590145111,
+								0.799999952316284
+							],
+							"position": [
+								57.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.965437710285187,
+								0.2827188372612
+							],
+							"basis_y": [
+								-0.43350887298584,
+								1.18324553966522
+							],
+							"position": [
+								61.0,
+								77.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.894427180290222,
+								-0.399999976158142
+							],
+							"basis_y": [
+								0.447213590145111,
+								0.799999952316284
+							],
+							"position": [
+								59.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.989949464797974,
+								-0.120000004768372
+							],
+							"basis_y": [
+								0.141421362757683,
+								0.839999973773956
+							],
+							"position": [
+								59.0,
+								80.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								57.0,
+								96.0
+							],
+							"depth": -3.0,
+							"ground": [
+								57.0,
+								101.0
+							],
+							"hip": [
+								61.0,
+								77.0
+							],
+							"knee": [
+								57.0,
+								87.0
+							],
+							"lift": 0.0,
+							"sole": [
+								57.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								59.0,
+								97.0
+							],
+							"depth": 3.0,
+							"ground": [
+								59.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								80.0
+							],
+							"knee": [
+								59.0,
+								88.0
+							],
+							"lift": 2.0,
+							"sole": [
+								59.0,
+								102.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_right",
+					"frame": 4,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								55.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.799999952316284,
+								0.599999964237213
+							],
+							"basis_y": [
+								-0.599999964237213,
+								0.799999952316284
+							],
+							"position": [
+								57.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.965437710285187,
+								0.2827188372612
+							],
+							"basis_y": [
+								-0.43350887298584,
+								1.18324553966522
+							],
+							"position": [
+								61.0,
+								78.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								99.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.344208419322968,
+								-1.0961389541626
+							],
+							"basis_y": [
+								1.17210412025452,
+								0.951930463314056
+							],
+							"position": [
+								59.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.989949464797974,
+								-0.120000004768372
+							],
+							"basis_y": [
+								0.141421362757683,
+								0.839999973773956
+							],
+							"position": [
+								59.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								55.0,
+								96.0
+							],
+							"depth": -6.0,
+							"ground": [
+								55.0,
+								101.0
+							],
+							"hip": [
+								61.0,
+								78.0
+							],
+							"knee": [
+								57.0,
+								88.0
+							],
+							"lift": 0.0,
+							"sole": [
+								55.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								61.0,
+								99.0
+							],
+							"depth": 6.0,
+							"ground": [
+								61.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								81.0
+							],
+							"knee": [
+								59.0,
+								89.0
+							],
+							"lift": 0.0,
+							"sole": [
+								61.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_right",
+					"frame": 5,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								87.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								94.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.799999952316284,
+								0.894427180290222
+							],
+							"basis_y": [
+								-1.59999990463257,
+								0.447213590145111
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.989949464797974,
+								-0.120000004768372
+							],
+							"basis_y": [
+								0.141421362757683,
+								0.839999973773956
+							],
+							"position": [
+								61.0,
+								79.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								60.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								99.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								60.0,
+								94.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.956480085849762,
+								-0.28274667263031
+							],
+							"basis_y": [
+								0.279497146606445,
+								0.816750466823578
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								57.0,
+								94.0
+							],
+							"depth": -3.0,
+							"ground": [
+								57.0,
+								101.0
+							],
+							"hip": [
+								61.0,
+								79.0
+							],
+							"knee": [
+								61.0,
+								87.0
+							],
+							"lift": 3.0,
+							"sole": [
+								57.0,
+								99.0
+							],
+							"support": false
+						},
+						"right": {
+							"ankle": [
+								59.0,
+								99.0
+							],
+							"depth": 3.0,
+							"ground": [
+								59.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								60.0,
+								90.0
+							],
+							"lift": 0.0,
+							"sole": [
+								59.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_right",
+					"frame": 6,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								63.0,
+								85.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								92.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.799999952316284,
+								0.894427180290222
+							],
+							"basis_y": [
+								-1.59999990463257,
+								0.447213590145111
+							],
+							"position": [
+								63.0,
+								89.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.879144966602325,
+								-0.46765798330307
+							],
+							"basis_y": [
+								0.411306440830231,
+								0.647477388381958
+							],
+							"position": [
+								61.0,
+								78.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								99.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								58.0,
+								94.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								59.0,
+								92.0
+							],
+							"depth": 0.0,
+							"ground": [
+								59.0,
+								101.0
+							],
+							"hip": [
+								61.0,
+								78.0
+							],
+							"knee": [
+								63.0,
+								85.0
+							],
+							"lift": 5.0,
+							"sole": [
+								59.0,
+								97.0
+							],
+							"support": false
+						},
+						"right": {
+							"ankle": [
+								57.0,
+								99.0
+							],
+							"depth": 0.0,
+							"ground": [
+								57.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								81.0
+							],
+							"knee": [
+								58.0,
+								90.0
+							],
+							"lift": 0.0,
+							"sole": [
+								57.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_patrol"
+				},
+				{
+					"action": "move_right",
+					"frame": 7,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								85.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								94.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.894427180290222,
+								-0.399999976158142
+							],
+							"basis_y": [
+								0.447213590145111,
+								0.799999952316284
+							],
+							"position": [
+								61.0,
+								89.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.989949464797974,
+								-0.120000004768372
+							],
+							"basis_y": [
+								0.141421362757683,
+								0.839999973773956
+							],
+							"position": [
+								61.0,
+								77.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								55.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								55.0,
+								99.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.894427180290222,
+								-0.399999976158142
+							],
+							"basis_y": [
+								0.447213590145111,
+								0.799999952316284
+							],
+							"position": [
+								55.0,
+								94.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.965437710285187,
+								0.2827188372612
+							],
+							"basis_y": [
+								-0.43350887298584,
+								1.18324553966522
+							],
+							"position": [
+								59.0,
+								80.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								61.0,
+								94.0
+							],
+							"depth": 3.0,
+							"ground": [
+								61.0,
+								101.0
+							],
+							"hip": [
+								61.0,
+								77.0
+							],
+							"knee": [
+								61.0,
+								85.0
+							],
+							"lift": 2.0,
+							"sole": [
+								61.0,
+								99.0
+							],
+							"support": false
+						},
+						"right": {
+							"ankle": [
+								55.0,
+								99.0
+							],
+							"depth": -3.0,
+							"ground": [
+								55.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								80.0
+							],
+							"knee": [
+								55.0,
+								90.0
+							],
+							"lift": 0.0,
+							"sole": [
+								55.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_patrol"
+				}
+			]
+		}
+	],
+	"root": [
+		64.0,
+		104.0
+	],
+	"scope": "Independent fresh headless import; 4 moves / 32 embedded frames, 8 neutral dependencies, preview instantiation, 18 W/E CPU ownership masks and 16 W/E pose readbacks. No GPU, loops, turn replay, or visual verdict.",
+	"sprites": [
+		{
+			"animation": "move_left",
+			"cached_animations": [
+				"move_down",
+				"move_down_right",
+				"move_left",
+				"move_right",
+				"neutral_down",
+				"neutral_down_left",
+				"neutral_down_right",
+				"neutral_left",
+				"neutral_right",
+				"neutral_up",
+				"neutral_up_left",
+				"neutral_up_right",
+				"original_down",
+				"original_down_left",
+				"original_down_right",
+				"original_left",
+				"original_right",
+				"original_up",
+				"original_up_left",
+				"original_up_right"
+			],
+			"centered": false,
+			"frame": 0,
+			"texture_filter": 1
+		},
+		{
+			"animation": "move_down",
+			"cached_animations": [
+				"move_down",
+				"move_down_right",
+				"move_left",
+				"move_right",
+				"neutral_down",
+				"neutral_down_left",
+				"neutral_down_right",
+				"neutral_left",
+				"neutral_right",
+				"neutral_up",
+				"neutral_up_left",
+				"neutral_up_right",
+				"original_down",
+				"original_down_left",
+				"original_down_right",
+				"original_left",
+				"original_right",
+				"original_up",
+				"original_up_left",
+				"original_up_right"
+			],
+			"centered": false,
+			"frame": 0,
+			"texture_filter": 1
+		}
+	],
+	"status": "FAIL"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "coordinate_convention": "原生像素，画布左上边界为(0,0)；矩形[x0,y0,x1,y1)右/下排除；center为矩形边界的几何中心；UV=center/canvas。",
+  "scope": "本次只读审查登记窗口、发射点、分层及静帧约定；没有编辑PNG或制作独立Mask。",
+  "assets": [
+    {
+      "id": "C01",
+      "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+      "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "canvas": [64, 96],
+      "windows": [
+        {
+          "id": "chest_status",
+          "appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+          "safe_active_rect": [30, 52, 34, 54],
+          "center": [32, 53],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [0.5, 0.5520833333333334],
+          "mask_delivery_status": "NOT_PRODUCED"
+        }
+      ],
+      "emitter_points": [],
+      "emitter_points_status": "NOT_APPLICABLE_STATIC_IDLE_BASE",
+      "emission_baked": false,
+      "layering": {
+        "delivered": "single_flattened_rgba_base",
+        "included": "头盔、面罩、躯干、四肢和黄铜工具位于同一张base；Alpha为主体遮罩。",
+        "separate_component_pngs": [],
+        "dynamic_effects": "状态发光由后续Shader或效果层表现；头盔面罩不登记为发光器。"
+      },
+      "tiling": "NONE_OBJECT_SPRITE",
+      "animation": {"direction": "down", "state": "idle", "frame_index": 0, "delivered_frames": 1, "planned_frames": 20, "preview_fps": null, "preview_fps_reason": "单张静帧，无播放帧率"}
+    },
+    {
+      "id": "B01",
+      "file": "assets/ember/buildings/station/station_base_v001.png",
+      "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4",
+      "canvas": [128, 160],
+      "windows": [
+        {
+          "id": "energy_core",
+          "appearance": "未运行的两档中性暗面",
+          "frame_visual_bounds": [49, 60, 79, 102],
+          "frame_visual_bounds_role": "含安装框的视觉定位范围，非精确窗口Mask",
+          "safe_active_rect": [54, 66, 74, 95],
+          "center": [64, 80.5],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [0.5, 0.503125],
+          "safe_active_rect_role": "实际连续20×29暗面；也是像素整理的中间处理区，仅用于安全局部变化，未覆盖完整倒角窗口。",
+          "mask_delivery_status": "NOT_PRODUCED"
+        }
+      ],
+      "emitter_points": [],
+      "emitter_points_status": "NOT_APPLICABLE_STATIC_STATION_BASE",
+      "emission_baked": false,
+      "layering": {
+        "delivered": "single_flattened_rgba_base",
+        "included": "基座、核心、侧管与窗口位于同一张base；Alpha为主体遮罩。",
+        "separate_component_pngs": [],
+        "dynamic_effects": "状态发光、粒子和烟火由后续效果层表现；完整窗口Mask及可动/前景层按后续实际用途派生。"
+      },
+      "tiling": "NONE_OBJECT_SPRITE",
+      "animation": {"direction": null, "state": "static_base", "frame_index": 0, "delivered_frames": 1, "preview_fps": null, "preview_fps_reason": "单张静态底图，无播放帧率"}
+    }
+  ]
+}

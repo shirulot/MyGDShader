@@ -1,0 +1,88 @@
+{
+  "generated_utc": "2026-10-04T02:32:15.508116+00:00",
+  "status": "PRODUCER_VISUAL_REVIEW_PASS_REQUIRES_CROSS_AGENT_ACCEPTANCE",
+  "reviewer": "asset_audit acting as texture producer in batch-05; not independent reviewer of own production",
+  "scope": "7 actual single-asset imagegen masters plus 7 native candidates; no PBR derived maps/height Mask",
+  "actual_viewed_files": [
+    {
+      "file": "art-source/ember/batch-05-textures/review/textures_contact_native_v001.png",
+      "sha256": "bfc8bdeaa3eafae5693f86a1fb0acae082118f85dbd062b82bb95236b8c2b00f"
+    },
+    {
+      "file": "art-source/ember/batch-05-textures/review/textures_contact_2x_v001.png",
+      "sha256": "5e7f68b9f749aaccbf19b4f656084204dfbbf4a0f588dab3ee404b7e70a17998"
+    },
+    {
+      "file": "art-source/ember/batch-05-textures/review/water_calm_3x3_2x.png",
+      "sha256": "67f716d21a5177af412181b4d41bd2b88b8ef9c971290be607eb31df80650342"
+    },
+    {
+      "file": "art-source/ember/batch-05-textures/review/water_directional_3x3_2x.png",
+      "sha256": "d8904878c0453619ae039701ee960df7efdd2eb8e4ed4fc2bc9e639853fa105a"
+    },
+    {
+      "file": "art-source/ember/batch-05-textures/review/foam_strip_3x3_2x.png",
+      "sha256": "9c81657d451b74d62eb6b781cb1ac926b0d5436317cbbb4a9368c0ddfe9352dd"
+    },
+    {
+      "file": "art-source/ember/batch-05-textures/review/metal_albedo_3x3_2x.png",
+      "sha256": "3410e53fa9aadd7f997411e44e2f45e72872e8201c964019d23c9cb741b6ad6a"
+    },
+    {
+      "file": "art-source/ember/batch-05-textures/review/concrete_albedo_3x3_2x.png",
+      "sha256": "dbcbe8b056ad968ef8ec3ac279ca3495eac7eebfef3f5f0fe5fefadd61d7093c"
+    },
+    {
+      "file": "art-source/ember/batch-05-textures/review/grass_leaf_native_2x.png",
+      "sha256": "3c3be27ab95da13cf3311565acc852604938966efa05b4e98b4d62a57711246d"
+    }
+  ],
+  "assets": [
+    {
+      "id": "water_calm",
+      "sha256": "5a1aeb3389a5d633ff81e43ae299057388dda8dd8b88923690012079798d3881",
+      "observations": "母稿的多方向缓弧整理为3色低对比小簇；3x3未见直线边框或RGB断缝，纹样有固定重复；动态扰动由未来Shader接入。"
+    },
+    {
+      "id": "water_directional",
+      "sha256": "2f3d48baa11688f3f37caa230415b32cef4aa5603e1301662ce5b3b2c32b2e38",
+      "observations": "水平拉长纹样比calm更明确；原生3色，3x3连续，无箭头或发光。"
+    },
+    {
+      "id": "foam_strip",
+      "sha256": "970dac7f57d35732c145d6b8ef307de59b9dd707cf0cd957a5ddbe3416605e24",
+      "observations": "原生断续双带和小团位于y28..40，真实二值Alpha，X边配对连续；Y透明留白不作为Y平铺许可，岸线限制由后续Mask接入。"
+    },
+    {
+      "id": "smoke_blob",
+      "sha256": "31a27aec9a4cbe4edcd73dea99676c2d534802b5063256f0706409239a446a2d",
+      "observations": "4个主要圆瓣组成一个居中完整puff；少色块静态输入，选择二值Alpha，不交付柔烟梯度、火源或投影。"
+    },
+    {
+      "id": "grass_leaf",
+      "sha256": "1dc463fc71b8e44fc7148de106fdd05fbc0389364925eee0180c4a6e37b23888",
+      "observations": "实际原生查看6条高度不等叶片，源低Alpha晕边已去除；根部x31..33在末行119会合，anchor32/120；bbox8/10/56/120满足四边8留白，无风摆和地面投影。"
+    },
+    {
+      "id": "metal_albedo",
+      "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3",
+      "observations": "两档接近钢灰色，以母稿的轻微磨漆簇重建；3x3无亮边接缝、单向高光或板格，纹样与材质参数分别处理。"
+    },
+    {
+      "id": "concrete_albedo",
+      "sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8",
+      "observations": "两档蓝灰聚合斑，较金属更浅且颗粒簇更明显；3x3无边框接缝或阴影高光，规律重复仍可见，近远mipmap/滤波需实际3D检验。"
+    }
+  ],
+  "numeric_report": "art-source/ember/batch-05-textures/validation-native-textures-v001.json",
+  "numeric_checks": {
+    "assets": 7,
+    "checks": 167,
+    "failed_checks": 0,
+    "source_masters": 7
+  },
+  "independent_visual_acceptance": "PENDING_ROOT_OR_OTHER_AGENT",
+  "godot_close_far_alpha_scissor_and_mipmaps": "PENDING_ROOT",
+  "source_masters_pixels_modified": false,
+  "formal_approved_units": 0
+}

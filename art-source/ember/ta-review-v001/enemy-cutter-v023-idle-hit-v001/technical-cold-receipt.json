@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "initial_cache_absent": true,
+  "complete_zip_copy": true,
+  "payload_count": 219,
+  "payload_changes": [],
+  "calls": [
+    {
+      "call": "import",
+      "exit_code": 0,
+      "seconds": 5.33,
+      "stdout": "technical-cold-import.stdout.log",
+      "stderr": "technical-cold-import.stderr.log",
+      "stderr_bytes": 0
+    },
+    {
+      "call": "probe",
+      "exit_code": 0,
+      "seconds": 3.814,
+      "stdout": "technical-cold-probe.stdout.log",
+      "stderr": "technical-cold-probe.stderr.log",
+      "stderr_bytes": 0
+    }
+  ],
+  "replayed_gpu": false,
+  "replayed_player_matrix": false
+}

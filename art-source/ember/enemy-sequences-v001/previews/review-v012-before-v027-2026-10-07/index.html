@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember 敌人动作 · 当前审核版本</title>
+<style>
+:root{color-scheme:dark;font:16px/1.6 system-ui;background:#142329;color:#dce1db}body{max-width:1100px;margin:32px auto;padding:0 20px}h1{font-size:27px;font-weight:600}p{color:#b3c0bd}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}button,select{font:inherit;color:inherit;background:#263b43;border:1px solid #5c7076;border-radius:6px;padding:8px 14px;cursor:pointer}button:focus-visible,select:focus-visible{outline:3px solid #c3a577}button[aria-pressed=true]{background:#566762;color:#fff}.players{display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap}.player{margin:0}.player figcaption{margin-bottom:8px;color:#b3c0bd}canvas{display:block;image-rendering:pixelated;border:1px solid #4a5d64;max-width:100%;height:auto}.pill{display:inline-block;padding:3px 10px;border:1px solid #526c64;border-radius:20px;font-size:14px}.pass{color:#a7d3ba}.pending{color:#dbbc81}table{border-collapse:collapse;width:100%;margin:24px 0}th,td{padding:10px;text-align:left;border-bottom:1px solid #32474e}th{color:#98afae;font-weight:500}a{color:#a5c4cf}small{color:#a4b5b3}#error{color:#edaa96}#position{font-variant-numeric:tabular-nums}.native{padding-top:0}.legend{border-top:1px solid #32474e;padding-top:16px}
+</style>
+<h1>Ember · 敌人动作审阅</h1>
+<p id="summary">加载当前固定版本…</p>
+<div class="toolbar" id="units" aria-label="敌人单位"></div>
+<div class="toolbar">
+<select id="action" aria-label="动作"><option value="idle_down">待机</option><option value="move_down">移动</option><option value="attack_down">攻击</option><option value="hit_down">受击</option><option value="death_down">死亡</option></select>
+<button id="play">暂停</button><button id="prev">前一帧</button><button id="next">后一帧</button><button id="restart">重播</button><button id="background">切换底色</button>
+</div>
+<p><span id="verdict" class="pill"></span> <span id="position"></span></p>
+<div class="players"><figure class="player"><figcaption>正常速度 · 4×</figcaption><canvas id="normal" width="384" height="320"></canvas></figure><figure class="player"><figcaption>1 FPS · 4×</figcaption><canvas id="slow" width="384" height="320"></canvas></figure><figure class="player native"><figcaption>正常速度 · 原生 1×</figcaption><canvas id="native" width="96" height="80"></canvas></figure></div>
+<p id="detail"></p><p id="error" role="alert"></p>
+<table><thead><tr><th>单位</th><th>待机</th><th>移动</th><th>攻击</th><th>受击</th><th>死亡</th></tr></thead><tbody id="matrix"></tbody></table>
+<p class="legend">只显示固定源零件导出的原生序列帧。非循环动作在此页停留半秒后重新演示；资源本身保持单次播放。审核状态以技术美术总监的正式回执为准。</p>
+<script>
+const units={patrol:'巡逻兵',heavy:'履带重装机',cutter:'切割工蜂',drone:'悬浮侦察机'};
+const actions=['idle_down','move_down','attack_down','hit_down','death_down'];
+const folders={patrol:'patrol-actions-v008',heavy:'heavy-actions-v007',heavy_new:'heavy-actions-v009',cutter:'cutter-actions-v010-r1',drone:'drone-actions-v011'};
+let state,clips={},unit='patrol',action='idle_down',elapsed=0,playing=true,manual=0,last=performance.now(),bg=0;
+const el=id=>document.getElementById(id), backgrounds=['#20353c','#fff','#000'];
+function sourceKey(u,a){return u==='heavy'&&['attack_down','death_down'].includes(a)?'heavy_new':u;}
+function current(){return clips[unit+'/'+action];}
+function frame(fps){const c=current();if(!playing)return manual;const duration=c.frame_count/fps;return c.loop?Math.floor(elapsed*fps)%c.frame_count:Math.min(c.frame_count-1,Math.floor(elapsed%(duration+.5)*fps));}
+function reset(){elapsed=0;manual=0;render();}
+function render(){if(!current())return;const c=current();for(const [id,fps,scale]of[['normal',c.fps,4],['slow',1,4],['native',c.fps,1]]){const canvas=el(id),ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.fillStyle=backgrounds[bg];ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(c.image,frame(fps)*128+16,32,96,80,0,0,96*scale,80*scale);}const approved=state.approved[unit].includes(action);el('verdict').className='pill '+(approved?'pass':'pending');el('verdict').textContent=approved?'TA 已通过':'等待 TA 复审';el('position').textContent=`${c.version} · ${c.fps} FPS · ${c.frame_count} 帧 · 正常 F${String(frame(c.fps)).padStart(2,'0')} / 慢速 F${String(frame(1)).padStart(2,'0')}`;el('detail').textContent=state.notes[unit];}
+el('action').onchange=e=>{action=e.target.value;reset();};
+el('play').onclick=()=>{if(playing)manual=frame(current().fps);else elapsed=manual/current().fps;playing=!playing;el('play').textContent=playing?'暂停':'继续';render();};
+for(const[id,step]of[['prev',-1],['next',1]])el(id).onclick=()=>{const f=frame(current().fps);playing=false;manual=(f+step+current().frame_count)%current().frame_count;el('play').textContent='继续';render();};
+el('restart').onclick=reset;el('background').onclick=()=>{bg=(bg+1)%backgrounds.length;render();};
+async function init(){state=await(await fetch('status.json',{cache:'no-store'})).json();let total=0;for(const[u,name]of Object.entries(units)){const b=document.createElement('button');b.textContent=name;b.setAttribute('aria-pressed',u===unit?'true':'false');b.onclick=()=>{unit=u;for(const node of el('units').children)node.setAttribute('aria-pressed',node===b?'true':'false');reset();};el('units').append(b);const row=document.createElement('tr');const nameCell=document.createElement('td');nameCell.textContent=name;row.append(nameCell);for(const a of actions){const cell=document.createElement('td'),pass=state.approved[u].includes(a);cell.className=pass?'pass':'pending';cell.textContent=pass?'已通过':'待复审';row.append(cell);if(pass)total++;}el('matrix').append(row);}
+el('summary').textContent=`4 款敌人 · 20 条正向动作 · 正式通过 ${total}/20 · ${state.updated}`;
+const catalogs={};await Promise.all(Object.entries(folders).map(async([key,folder])=>{const version=folder.match(/v\d{3}/)[0];catalogs[key]=await(await fetch(`../${folder}/output/catalog_${version}.json`)).json();}));
+await Promise.all(Object.keys(units).flatMap(u=>actions.map(async a=>{const key=sourceKey(u,a),folder=folders[key],catalog=catalogs[key],clip=catalog.actions[a],image=new Image();await new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=()=>reject(Error(`${u}/${a} 载入失败`));image.src=`../${folder}/output/${a}_${catalog.version}.png`;});clips[u+'/'+a]={...clip,image,version:folder.match(/v\d{3}(?:-r\d+)?/)[0]};})));
+render();requestAnimationFrame(function tick(now){if(playing)elapsed+=(now-last)/1000;last=now;render();requestAnimationFrame(tick);});}
+init().catch(e=>el('error').textContent=e.message);
+</script></html>
+

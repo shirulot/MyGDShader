@@ -1,0 +1,957 @@
+{
+  "actual_builtin_call_count": 8,
+  "root_records": [
+    {
+      "id": "floor_center_pixel_v001",
+      "mask": 255,
+      "tool": "image_gen.imagegen built-in",
+      "original_tool_path": "C:/Users/shiru/.codex/generated_images/01a10204-0a39-77b3-b144-9e7a03fd8e93/exec-1eb8568d-aac3-4314-acd4-8a750b742b21.png",
+      "raw_path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+      "raw_sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819",
+      "actual_raw_size": [
+        1254,
+        1254
+      ],
+      "crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "resampling": "NEAREST",
+      "candidate_path": "art-source/ember/production-v008/correction-v001/candidates/floor_center_pixel_v001.png",
+      "candidate_sha256": "8b8eb1c94093f0a6062842060489cf8ac2c61d785eca4d2e004d1da22b974187",
+      "transparent_background_requested": false,
+      "prompt_file": "art-source/ember/production-v008/correction-v001/floor_center_pixel_v001.prompt.txt",
+      "prompt_sha256": "4a3675d9aabfa43542a650f68b71f1cd78107e0e1fd353b7051782334eeefcbd",
+      "prompt": "Use case: style-transfer / game texture correction.\nAsset: one complete square industrial FLOOR CENTER tile, mask255, intended for seamless XY repetition in a Godot TileMapLayer. The attached image is the old detailed floor tile to rebuild, not a demand to retain its noisy rendering.\nPrimary correction: replace the painterly/photo-like grit with clean, deliberate PIXEL ART. Draw on a conceptual native 128x128 grid, enlarged with crisp nearest-neighbor pixel clusters. Clear 1-2 native-pixel contour/seam widths, 3-4 controlled value steps per metal surface, blue-grey steel, restrained muted brass. No smooth gradients, blur, dense scratches, grain, photorealism, 3D render or antialiased glossy edges.\nComposition: completely fill the square edge-to-edge with SOLID FLOOR, opaque all the way to all four borders. No page margin, no drop shadow, no holes, no rounded outside silhouette, no raised outer border.\nShared material basis: use a quiet regular 2-by-2 arrangement of large steel plates; the principal vertical and horizontal panel joints land exactly at the half-width/half-height, with compatible thin seam continuation at opposite borders. Same plate scale and seam profile on every side so this one tile repeats naturally. Subtle small brass fasteners wholly inside the plate corners, never cut in half at image borders. Very sparse wear, flat readable plate faces, mild consistent upper-left pixel highlight.\nKeep the reference's industrial blue-grey / muted brass identity while simplifying its numerous irregular little panels and heavy weathering. This is production tile artwork only, no labels, arrows, grids drawn over it, text, watermark, comparison board or multiple separated sprites. Output one whole square tile.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/raw/floor_center_v001.png",
+          "sha256": "255b3fafbdb1f352d3908250f65ef7e365f835c6f652304b9fbbfcb192c2d69f"
+        }
+      ],
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          255,
+          255
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              128
+            ]
+          ],
+          "S": [
+            [
+              0,
+              128
+            ]
+          ],
+          "W": [
+            [
+              0,
+              128
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16384
+        ],
+        "darkest_cross_joint_row_in_48_80": 64,
+        "darkest_cross_joint_column_in_48_80": 64,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      }
+    },
+    {
+      "id": "floor_edge_N_pixel_v001",
+      "mask": 124,
+      "tool": "image_gen.imagegen built-in",
+      "original_tool_path": "C:/Users/shiru/.codex/generated_images/01a10204-0a39-77b3-b144-9e7a03fd8e93/exec-f789967f-cbeb-4b57-a121-114ead738fa6.png",
+      "raw_path": "art-source/ember/production-v008/correction-v001/raw/floor_edge_N_pixel_v001.png",
+      "raw_sha256": "ed5db6cf53a1a8a880bbbb0f3ea73b051d5aecdae64c9b0c781c5e5328de800e",
+      "actual_raw_size": [
+        1254,
+        1254
+      ],
+      "crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "resampling": "NEAREST",
+      "candidate_path": "art-source/ember/production-v008/correction-v001/candidates/floor_edge_N_pixel_v001.png",
+      "candidate_sha256": "a79c56a1f76c500a9819fc2925e30be8b2a5a19125ca7f94b53da1e615f51280",
+      "transparent_background_requested": false,
+      "prompt_file": "art-source/ember/production-v008/correction-v001/floor_edge_N_pixel_v001.prompt.txt",
+      "prompt_sha256": "4c27001214fb62a854156defb2a1ed2879a99d08fab442aac725f20193e9747d",
+      "prompt": "Use case: precise-object-edit / matching pixel-art terrain component.\nInput image: the attached pixel-art floor center is the EXACT material, palette, plate grid and pixel-cluster reference. Preserve this square tile's regular 2x2 steel-plate design and the exact panel seam positions. This is not a style-only loose reinterpretation.\nChange only the narrow top strip into the NORTH EXTERIOR EDGE of the same floor. On a conceptual native128x128 grid the complete north rim is 8 pixels tall, exactly the top 6.25 percent of the canvas. A continuous blue-grey metal edge beam, small controlled upper-left pixel highlights and dark inner bevel, no brass fasteners near the left/right cuts. The beam is horizontal from the exact left boundary through to the exact right boundary with open cut ends, no end caps and no page margin. No beam along left, right or bottom.\nAll the floor area below the top8pixels remains completely solid and extends to the entire south, east and west borders. Do not shift the panel grid or enlarge/smaller the plates. The main vertical seam remains exactly at half width; the horizontal seam remains at half height. Keep the same restrained brass, clean pixel contours and 3-4 stepped value levels. No smoothing, gradients, dense noise, glossy photographic scratches, cast shadows or light halos.\nOutput one square complete tile, opaque RGB/PNG floor right to every border. Do not fade out or create transparent padding along the south/open edge. No labels, text, rulers, grid overlay, comparison board or separated pieces.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        }
+      ],
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          255,
+          255
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              128
+            ]
+          ],
+          "S": [
+            [
+              0,
+              128
+            ]
+          ],
+          "W": [
+            [
+              0,
+              128
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16384
+        ],
+        "darkest_cross_joint_row_in_48_80": 67,
+        "darkest_cross_joint_column_in_48_80": 63,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      }
+    },
+    {
+      "id": "floor_narrow_NS_pixel_v001",
+      "mask": 17,
+      "tool": "image_gen.imagegen built-in",
+      "original_tool_path": "C:/Users/shiru/.codex/generated_images/01a10204-0a39-77b3-b144-9e7a03fd8e93/exec-18032380-a9a5-48b6-9231-ccd3eede98db.png",
+      "raw_path": "art-source/ember/production-v008/correction-v001/raw/floor_narrow_NS_pixel_v001.png",
+      "raw_sha256": "54d02b9170c6e87174eb8410d1a32915ec7283f6ecdcaa70d13de26317b5aaf7",
+      "actual_raw_size": [
+        1254,
+        1254
+      ],
+      "crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "resampling": "NEAREST",
+      "candidate_path": "art-source/ember/production-v008/correction-v001/candidates/floor_narrow_NS_pixel_v001.png",
+      "candidate_sha256": "f731fbabe2f2edbc742cf18f68fa5f7ab385ae8bc540059ee4dfc06c44d7a07a",
+      "transparent_background_requested": true,
+      "prompt_file": "art-source/ember/production-v008/correction-v001/floor_narrow_NS_pixel_v001.prompt.txt",
+      "prompt_sha256": "aa626973924ddf8d6e395054f1faf66f79c5671d3cad864d0fec378519c2be00",
+      "prompt": "Use case: precise-object-edit / pixel-art terrain geometry correction.\nInput image 1 is the exact newly selected PIXEL ART floor material and plate grid. Input image2 is the rejected old thin vertical passage for direction/context ONLY: its one-third-width composition is specifically wrong and must NOT be copied.\nMake ONE complete north-south floor passage tile on a conceptual native128x128 grid. The metal floor must occupy essentially the entire canvas width: solid body x1 through x126, only a one-native-pixel optional transparent outside fringe at x0/x127. This is a ONE-WHOLE-GRID-CELL wide corridor, not a narrow strip floating in the middle. Its north and south ends must reach exactly y0 and y127 across the full126pixel opening. No large empty gutters, page margins, tall isolated object or display sheet.\nUse image1's same blue-grey pixel plates and brass, identical 2x2 plate scale and seam phase. Add continuous slim vertical manufactured edge beams along BOTH outer sides, approximately8 nativepixels wide on each side. Beams and plate material run completely through the top and bottom canvas cuts; do not cap or round off those ends, and do not add a horizontal perimeter beam on top or bottom. The passage should connect to full-width end tiles without sudden width change.\nCrisp native pixel clusters, stepped 3-4-value metal shading, restrained upper-left highlight, very sparse wear. No photographic gritty noise, gradients, blur, random extra panels, halos or shadows outside the component. No central transparent slit or Alpha holes. No text, labels, perspective, rulers, montage or additional pieces. Output one whole square PNG tile with genuine transparency only in the optional one-pixel outside side fringe.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        },
+        {
+          "path": "art-source/ember/production-v008/floor/raw/floor_narrow_NS_v002.png",
+          "sha256": "ab6e04147c941ba1be81d824daa9354b3e70fadb9dd098490c5297e85088522a"
+        }
+      ],
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          8,
+          251
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              1,
+              127
+            ]
+          ],
+          "E": [
+            [
+              1,
+              127
+            ]
+          ],
+          "S": [
+            [
+              1,
+              127
+            ]
+          ],
+          "W": [
+            [
+              1,
+              127
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16380
+        ],
+        "darkest_cross_joint_row_in_48_80": 64,
+        "darkest_cross_joint_column_in_48_80": 64,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      }
+    },
+    {
+      "id": "floor_edge_N_pixel_v002",
+      "mask": 124,
+      "tool": "image_gen.imagegen built-in",
+      "original_tool_path": "C:/Users/shiru/.codex/generated_images/01a10204-0a39-77b3-b144-9e7a03fd8e93/exec-0f42edbe-f91c-431a-a1df-212e299ce1fe.png",
+      "raw_path": "art-source/ember/production-v008/correction-v001/raw/floor_edge_N_pixel_v002.png",
+      "raw_sha256": "8e88a29f6e19fb25936f2e5281b42e7fafb8fe6eb95fa82dd0a3474f6254f7cd",
+      "actual_raw_size": [
+        1254,
+        1254
+      ],
+      "crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "resampling": "NEAREST",
+      "candidate_path": "art-source/ember/production-v008/correction-v001/candidates/floor_edge_N_pixel_v002.png",
+      "candidate_sha256": "fb192e1a9a270bbf0530bfb44e509822e594777f57d124de188ea8aaacfa5c20",
+      "transparent_background_requested": false,
+      "prompt_file": "art-source/ember/production-v008/correction-v001/floor_edge_N_pixel_v002.prompt.txt",
+      "prompt_sha256": "13c879c1c860234adb0fc31781ac823a5b92b2154d62cdfab216293decc608a3",
+      "prompt": "Use case: precise-object-edit / one targeted geometry correction.\nInput image1 is the current north-edge pixel tile. Input image2 is its shared center material reference. Keep the pixel-art style, palette and whole plate grid, do not redraw another material.\nThe current north exterior beam is too thin (about5 pixels on a native128-pixel grid). Increase ONLY this north beam's complete profile to 8 nativepixels tall, exactly6.25percent of the whole square height: upper highlight, cap surface, dark bevel together occupy y0..7. Increase its height by about60percent, so it is visibly thicker than the first reference. Its open cut ends still reach x0 and x127, with NO end caps, rounded tips, cut brass fasteners, page margins or vertical side beams.\nDo not shift the plate grid below it: the reference center's horizontal seam must remain at y64 and vertical seam at x64. Use a clean straight manufactured pixel edge, controlled3-4-step metal shading, very sparse wear. Below y8 the existing center floor stays fully opaque through the south and both side borders, and its regular2x2 panels retain their scale and seam phase. No blur, gradients, photo-grit, cast shadows or transparent fade.\nOne complete opaque square PNG tile, no text or labels. Change only beam thickness/profile and preserve the material and plate placement.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_edge_N_pixel_v001.png",
+          "sha256": "ed5db6cf53a1a8a880bbbb0f3ea73b051d5aecdae64c9b0c781c5e5328de800e"
+        },
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        }
+      ],
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          255,
+          255
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              128
+            ]
+          ],
+          "S": [
+            [
+              0,
+              128
+            ]
+          ],
+          "W": [
+            [
+              0,
+              128
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16384
+        ],
+        "darkest_cross_joint_row_in_48_80": 66,
+        "darkest_cross_joint_column_in_48_80": 63,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      }
+    },
+    {
+      "id": "floor_outer_NW_pixel_v001",
+      "mask": 28,
+      "tool": "image_gen.imagegen built-in",
+      "original_tool_path": "C:/Users/shiru/.codex/generated_images/01a10204-0a39-77b3-b144-9e7a03fd8e93/exec-b5f17c47-3e9a-4f48-b37e-d0f706d30cb9.png",
+      "raw_path": "art-source/ember/production-v008/correction-v001/raw/floor_outer_NW_pixel_v001.png",
+      "raw_sha256": "5029679563eddf285e683adac36a5a95c1a59de83737351a62529286c8fc5dbc",
+      "actual_raw_size": [
+        1254,
+        1254
+      ],
+      "crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "resampling": "NEAREST",
+      "candidate_path": "art-source/ember/production-v008/correction-v001/candidates/floor_outer_NW_pixel_v001.png",
+      "candidate_sha256": "9f24be728dd165a937b66f99fb33807fef51f037f9add0f99cb2d520e535b7f3",
+      "transparent_background_requested": true,
+      "prompt_file": "art-source/ember/production-v008/correction-v001/floor_outer_NW_pixel_v001.prompt.txt",
+      "prompt_sha256": "8395f18d6b24f2e257bc8b3aa6d99c76a932cd979550a19afe61d6c9fa55a460",
+      "prompt": "Use case: precise-object-edit / shared pixel-art floor corner.\nInput image1 is the exact new NORTH EDGE tile; input image2 is the exact shared CENTER plate material. Preserve the clean pixel-art style, blue-grey/brass palette, regular2x2 plate scale and seam phase.\nMake one NORTHWEST EXTERIOR CONVEX CORNER tile, mask28: exposed north and west perimeter, open east and south floor connections. Keep the reference's complete north beam profile; add an equivalent vertical west beam at x0..7 on a conceptual native128grid. Both beams have the same8pixel nominal thickness, same3-4 stepped values and same manufactured metal layering. Their meeting at NW is a small clean pixel chamfer/miter, not a huge round pillar or detached corner bolt. Any outside corner transparency is confined to the tiny NW chamfer.\nThe horizontal north beam must continue through the exact right canvas cut; the vertical west beam must continue through the exact bottom canvas cut. No end caps, framing on east/south, repeated crossbars or brass decorations at the cuts. E and S floor material is fully filled and compatible with the shared center/north-edge plate pattern. Main material seams stay at x64 and y64; adding west trim must not rescale, shift or invent different interior plates. Remove any brass fastener covered by the new west beam instead of leaving half of it visible.\nGenuine crisp native pixel clusters, sparse wear, slight consistent upper-left shading. No smooth gradients, photorealistic grit, blur, cast shadows, page margin or isolated floating sprite. One whole square PNG tile, no text, labels or comparison sheet. Do not rotate the reference to synthesize the west lighting.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_edge_N_pixel_v002.png",
+          "sha256": "8e88a29f6e19fb25936f2e5281b42e7fafb8fe6eb95fa82dd0a3474f6254f7cd"
+        },
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        }
+      ],
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          130,
+          249
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              128
+            ]
+          ],
+          "S": [
+            [
+              0,
+              128
+            ]
+          ],
+          "W": [
+            [
+              0,
+              128
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16384
+        ],
+        "darkest_cross_joint_row_in_48_80": 78,
+        "darkest_cross_joint_column_in_48_80": 78,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      }
+    },
+    {
+      "id": "floor_outer_NW_pixel_v002",
+      "mask": 28,
+      "tool": "image_gen.imagegen built-in",
+      "original_tool_path": "C:/Users/shiru/.codex/generated_images/01a10204-0a39-77b3-b144-9e7a03fd8e93/exec-1dfc7662-60b5-4235-8e2b-2d9c79c61ed4.png",
+      "raw_path": "art-source/ember/production-v008/correction-v001/raw/floor_outer_NW_pixel_v002.png",
+      "raw_sha256": "14b0ef0217aa33fca1923d365dde9e27dfcd2f7d57c23209b2b24309883208b0",
+      "actual_raw_size": [
+        1254,
+        1254
+      ],
+      "crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "resampling": "NEAREST",
+      "candidate_path": "art-source/ember/production-v008/correction-v001/candidates/floor_outer_NW_pixel_v002.png",
+      "candidate_sha256": "3fa7c6e9eefacc30f33f8e7490aa1b15243146eee739fb58d91722b428a53fc3",
+      "transparent_background_requested": true,
+      "prompt_file": "art-source/ember/production-v008/correction-v001/floor_outer_NW_pixel_v002.prompt.txt",
+      "prompt_sha256": "8fc65cae01d5cb0a505c98530a9291015b7aef85935cf6c7a40d598a857e96a4",
+      "prompt": "Use case: precise-object-edit, one targeted correction of a failed tile.\nImage1 is the failed NW outer corner to edit. Its north and west rim geometry already exists. Image2 is the REQUIRED regular four-panel pixel-art floor. Image3 is the matching north edge.\nChange ONLY the interior of image1 to restore the exact 2-BY-2 FOUR STEEL PLATES from image2. The failed image1 currently has one giant plate and no main interior cross seams: that is the specific defect. Draw a thin dark vertical joint at EXACTLY50percent width (x64 on native128grid) and a thin dark horizontal joint at EXACTLY50percent height(y64), with the same small stepped highlights and entirely visible muted-brass interior fasteners as image2. There must be FOUR distinct large plates, one in each quadrant, not a single plate, not an irregular many-panel pattern. Keep the regular panel scale and positions when adding the rim.\nPreserve image1's continuous north and west exterior rim and tiny NW chamfer, but match its north beam complete profile to image3's approximately8nativepixel profile. The east endpoint remains open at the right canvas cut, south endpoint open at the bottom canvas cut. No east or south perimeter beam and no cut fasteners at these cuts. Do not rotate either reference or create different shading on west.\nPixel-art only: crisp pixel clusters, controlled3-4-value blue-grey metal, restrained small brass, sparse wear. No photographic noise, smoothing, soft gradients, new large shadows, page margins, labels or text. One square PNG complete NW outer corner. The four-panel cross joint is mandatory and must clearly remain visible after export to128x128.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_outer_NW_pixel_v001.png",
+          "sha256": "5029679563eddf285e683adac36a5a95c1a59de83737351a62529286c8fc5dbc"
+        },
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        },
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_edge_N_pixel_v002.png",
+          "sha256": "8e88a29f6e19fb25936f2e5281b42e7fafb8fe6eb95fa82dd0a3474f6254f7cd"
+        }
+      ],
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          225,
+          248
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              128
+            ]
+          ],
+          "S": [
+            [
+              0,
+              128
+            ]
+          ],
+          "W": [
+            [
+              0,
+              128
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16384
+        ],
+        "darkest_cross_joint_row_in_48_80": 73,
+        "darkest_cross_joint_column_in_48_80": 64,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      }
+    }
+  ],
+  "bank_generation_record": "art-source/ember/production-v008/correction-v001/bank/generation-record.json",
+  "bank_registered_candidates": [
+    {
+      "id": "bank_straight_N_pixel_v001",
+      "mask": 124,
+      "tool_output": "exec-c8ee78e4-3a42-4834-8b2b-3188058bc04e.png",
+      "crop_xyxy": [
+        0,
+        176,
+        1254,
+        1430
+      ],
+      "status": "DIAGNOSTIC_ONLY_PORTS_PASS_REPEAT_INTERFACE_REJECTED",
+      "geometry_result": "E/W 主体均为 [0,32)，达到本轮位置和总岸宽目标。",
+      "material_result": "像素色簇改善，但左端白亮竖边与右端暗边构成重复封边；不满足贯通无端头要求。",
+      "bank_connection_sides": [
+        "E",
+        "W"
+      ],
+      "water_neighbor_sides": [
+        "E",
+        "S",
+        "W"
+      ],
+      "family": "bank",
+      "tool": "image_gen.imagegen built-in",
+      "call_number": 1,
+      "tool_original_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10c06-70f1-7100-bf8d-c2032eb22807\\exec-c8ee78e4-3a42-4834-8b2b-3188058bc04e.png",
+      "tool_original_sha256": "147c6b93d999fffc342cbf9803bca0f35ca7a12dbd1386369e0313d0321e4aff",
+      "raw_path": "art-source/ember/production-v008/correction-v001/bank/raw/bank_straight_N_pixel_v001.png",
+      "raw_sha256": "147c6b93d999fffc342cbf9803bca0f35ca7a12dbd1386369e0313d0321e4aff",
+      "raw_measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_unique_value_count": 207,
+        "alpha_zero_pixel_count": 1174001,
+        "alpha_bbox_gt0": [
+          0,
+          0,
+          1254,
+          1212
+        ],
+        "alpha_bbox_gt4": [
+          0,
+          178,
+          1254,
+          487
+        ],
+        "alpha_bbox_gt127": [
+          0,
+          179,
+          1254,
+          486
+        ],
+        "body_ports_alpha_gt127": {
+          "N": [],
+          "E": [
+            [
+              183,
+              485
+            ]
+          ],
+          "S": [],
+          "W": [
+            [
+              183,
+              485
+            ]
+          ]
+        },
+        "body_edge_counts_alpha_gt127": {
+          "N": 0,
+          "E": 302,
+          "S": 0,
+          "W": 302
+        }
+      },
+      "prompt_path": "art-source/ember/production-v008/correction-v001/bank/prompts/bank_straight_N_pixel_v001.txt",
+      "prompt_sha256": "7976387e166c2a105fd12849c68dd42fce3054fef53dc4435709821ae8c59f88",
+      "candidate_path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_straight_N_pixel_v001_128.png",
+      "candidate_sha256": "1c8abdda7571b88a037474cb612a38a746d4a925c4cb06145ca60bf22ddb8990",
+      "candidate_measurements": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_unique_value_count": 33,
+        "alpha_zero_pixel_count": 12211,
+        "alpha_bbox_gt0": [
+          0,
+          0,
+          128,
+          44
+        ],
+        "alpha_bbox_gt4": [
+          0,
+          0,
+          128,
+          32
+        ],
+        "alpha_bbox_gt127": [
+          0,
+          0,
+          128,
+          32
+        ],
+        "body_ports_alpha_gt127": {
+          "N": [
+            [
+              0,
+              25
+            ],
+            [
+              26,
+              63
+            ],
+            [
+              64,
+              102
+            ],
+            [
+              103,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              32
+            ]
+          ],
+          "S": [],
+          "W": [
+            [
+              0,
+              32
+            ]
+          ]
+        },
+        "body_edge_counts_alpha_gt127": {
+          "N": 125,
+          "E": 32,
+          "S": 0,
+          "W": 32
+        }
+      },
+      "body_components8": [
+        4093
+      ],
+      "crop_coordinate_convention": "XYXY half-open",
+      "whole_component_offset_native_pixels": [
+        0,
+        -176
+      ],
+      "registered_canvas_size": [
+        1254,
+        1254
+      ],
+      "uniform_scale_factor": 0.10207336523125997,
+      "out_of_source_padding_LTRB": [
+        0,
+        0,
+        0,
+        176
+      ],
+      "resampling": "PIL.Image.Resampling.NEAREST",
+      "no_local_art_or_alpha_repair": true,
+      "user_visual_approval": false,
+      "GPU_result": "PENDING_ROOT_UNIFIED_REVIEW"
+    },
+    {
+      "id": "bank_straight_N_pixel_registered_v002",
+      "family": "bank",
+      "mask": 124,
+      "registration_source_id": "bank_straight_N_pixel_v001",
+      "new_generation": false,
+      "tool": "image_gen.imagegen built-in original; mechanical registration only",
+      "call_number": 1,
+      "tool_original_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10c06-70f1-7100-bf8d-c2032eb22807\\exec-c8ee78e4-3a42-4834-8b2b-3188058bc04e.png",
+      "tool_original_sha256": "147c6b93d999fffc342cbf9803bca0f35ca7a12dbd1386369e0313d0321e4aff",
+      "raw_path": "art-source/ember/production-v008/correction-v001/bank/raw/bank_straight_N_pixel_v001.png",
+      "raw_sha256": "147c6b93d999fffc342cbf9803bca0f35ca7a12dbd1386369e0313d0321e4aff",
+      "raw_measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_unique_value_count": 207,
+        "alpha_zero_pixel_count": 1174001,
+        "alpha_bbox_gt0": [
+          0,
+          0,
+          1254,
+          1212
+        ],
+        "alpha_bbox_gt4": [
+          0,
+          178,
+          1254,
+          487
+        ],
+        "alpha_bbox_gt127": [
+          0,
+          179,
+          1254,
+          486
+        ],
+        "body_ports_alpha_gt127": {
+          "N": [],
+          "E": [
+            [
+              183,
+              485
+            ]
+          ],
+          "S": [],
+          "W": [
+            [
+              183,
+              485
+            ]
+          ]
+        },
+        "body_edge_counts_alpha_gt127": {
+          "N": 0,
+          "E": 302,
+          "S": 0,
+          "W": 302
+        }
+      },
+      "candidate_path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_straight_N_pixel_registered_v002_128.png",
+      "candidate_sha256": "ebcff7cfb05107818b9eb227ea8a2e9fb4914e8653cca05e6451a2c6a802b630",
+      "candidate_measurements": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_unique_value_count": 32,
+        "alpha_zero_pixel_count": 12064,
+        "alpha_bbox_gt0": [
+          0,
+          0,
+          128,
+          48
+        ],
+        "alpha_bbox_gt4": [
+          0,
+          0,
+          128,
+          33
+        ],
+        "alpha_bbox_gt127": [
+          0,
+          0,
+          128,
+          33
+        ],
+        "body_ports_alpha_gt127": {
+          "N": [
+            [
+              0,
+              23
+            ],
+            [
+              25,
+              63
+            ],
+            [
+              64,
+              103
+            ],
+            [
+              105,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              33
+            ]
+          ],
+          "S": [],
+          "W": [
+            [
+              0,
+              33
+            ]
+          ]
+        },
+        "body_edge_counts_alpha_gt127": {
+          "N": 123,
+          "E": 33,
+          "S": 0,
+          "W": 33
+        }
+      },
+      "body_components8": [
+        4219
+      ],
+      "crop_xyxy": [
+        20,
+        176,
+        1234,
+        1390
+      ],
+      "crop_coordinate_convention": "XYXY half-open",
+      "whole_component_offset_native_pixels": [
+        -20,
+        -176
+      ],
+      "registered_canvas_size": [
+        1214,
+        1214
+      ],
+      "uniform_scale_factor": 0.10543657331136738,
+      "out_of_source_padding_LTRB": [
+        0,
+        0,
+        0,
+        136
+      ],
+      "resampling": "PIL.Image.Resampling.NEAREST",
+      "no_local_art_or_alpha_repair": true,
+      "bank_connection_sides": [
+        "E",
+        "W"
+      ],
+      "water_neighbor_sides": [
+        "E",
+        "S",
+        "W"
+      ],
+      "status": "DIAGNOSTIC_CANDIDATE_PORTS_WITHIN_1PX_GPU_AND_VISUAL_PENDING",
+      "geometry_result": "E/W主体均[0,33)，比目标[0,32)多1px；处在首轮容差内，未达到严格32px。",
+      "material_result": "整块裁去原稿两端20px后明显端封边消失，RGBA差异减小；长段视觉仍待根代理GPU审核。",
+      "exact_32px_target_result": false,
+      "geometry_1px_screening_result": true,
+      "production_ready": false,
+      "user_visual_approval": false,
+      "GPU_result": "PENDING_ROOT_UNIFIED_REVIEW"
+    },
+    {
+      "id": "bank_inner_NW_pixel_v001",
+      "mask": 127,
+      "tool_output": "exec-d1210736-1379-4d3a-83dd-cd9885a3d40e.png",
+      "crop_xyxy": [
+        65,
+        68,
+        1319,
+        1322
+      ],
+      "status": "REJECTED_PORTS_CROSS_SECTION_SEMANTICS_AND_STYLE",
+      "geometry_result": "原图四边均无主体接点；完整注册后 N=[0,2)，W=[0,18)+[19,55)，均不匹配32px直岸，压顶仍封边。",
+      "material_result": "细碎写实磨损和圆润高光回流，未稳定采用新直岸像素簇。",
+      "bank_connection_sides": [
+        "N",
+        "W"
+      ],
+      "water_neighbor_sides": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "family": "bank",
+      "tool": "image_gen.imagegen built-in",
+      "call_number": 2,
+      "tool_original_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10c06-70f1-7100-bf8d-c2032eb22807\\exec-d1210736-1379-4d3a-83dd-cd9885a3d40e.png",
+      "tool_original_sha256": "1835cb4d5ebdedc7a92897950dc63c334f15dac4208b5f969540e2a0bbdeaa7e",
+      "raw_path": "art-source/ember/production-v008/correction-v001/bank/raw/bank_inner_NW_pixel_v001.png",
+      "raw_sha256": "1835cb4d5ebdedc7a92897950dc63c334f15dac4208b5f969540e2a0bbdeaa7e",
+      "raw_measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_unique_value_count": 256,
+        "alpha_zero_pixel_count": 1325364,
+        "alpha_bbox_gt0": [
+          62,
+          21,
+          1210,
+          1212
+        ],
+        "alpha_bbox_gt4": [
+          66,
+          69,
+          624,
+          608
+        ],
+        "alpha_bbox_gt127": [
+          68,
+          71,
+          621,
+          605
+        ],
+        "body_ports_alpha_gt127": {
+          "N": [],
+          "E": [],
+          "S": [],
+          "W": []
+        },
+        "body_edge_counts_alpha_gt127": {
+          "N": 0,
+          "E": 0,
+          "S": 0,
+          "W": 0
+        }
+      },
+      "prompt_path": "art-source/ember/production-v008/correction-v001/bank/prompts/bank_inner_NW_pixel_v001.txt",
+      "prompt_sha256": "8a0ccc2648f1a51e705f1dfe3777828332c5ee94ae7697769fd0d5739f447167",
+      "candidate_path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_inner_NW_pixel_v001_128.png",
+      "candidate_sha256": "19413b2b61322fc6ee243c1b7f3fe105f149a5cc019c6ce669159027bb5e08f3",
+      "candidate_measurements": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_unique_value_count": 55,
+        "alpha_zero_pixel_count": 13826,
+        "alpha_bbox_gt0": [
+          0,
+          0,
+          110,
+          101
+        ],
+        "alpha_bbox_gt4": [
+          0,
+          0,
+          57,
+          55
+        ],
+        "alpha_bbox_gt127": [
+          0,
+          0,
+          57,
+          55
+        ],
+        "body_ports_alpha_gt127": {
+          "N": [
+            [
+              0,
+              2
+            ]
+          ],
+          "E": [],
+          "S": [],
+          "W": [
+            [
+              0,
+              18
+            ],
+            [
+              19,
+              55
+            ]
+          ]
+        },
+        "body_edge_counts_alpha_gt127": {
+          "N": 2,
+          "E": 0,
+          "S": 0,
+          "W": 54
+        }
+      },
+      "body_components8": [
+        2511
+      ],
+      "crop_coordinate_convention": "XYXY half-open",
+      "whole_component_offset_native_pixels": [
+        -65,
+        -68
+      ],
+      "registered_canvas_size": [
+        1254,
+        1254
+      ],
+      "uniform_scale_factor": 0.10207336523125997,
+      "out_of_source_padding_LTRB": [
+        0,
+        0,
+        65,
+        68
+      ],
+      "resampling": "PIL.Image.Resampling.NEAREST",
+      "no_local_art_or_alpha_repair": true,
+      "user_visual_approval": false,
+      "GPU_result": "PENDING_ROOT_UNIFIED_REVIEW"
+    }
+  ],
+  "production_ready": false
+}

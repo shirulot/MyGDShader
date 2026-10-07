@@ -1,0 +1,128 @@
+{
+  "version": "v002",
+  "date": "2026-10-06",
+  "generator": "built-in imagegen",
+  "status": "visual-alternatives-not-integrated",
+  "shared_standard": "docs/shader-learning/art-style-standard-v002.md",
+  "purpose": "Four visibly different UI directions for user selection, each with a HUD and device terminal.",
+  "visual_review": {
+    "reviewed_all_four": true,
+    "distinct_layouts": [
+      "A vertical left life / bottom energy / right drawer",
+      "B light top horizontal HUD / bottom dock",
+      "C dark bottom-left instruments / stepped asymmetric console",
+      "D distributed pale tickets / left archive page"
+    ],
+    "scope": "Art direction only; font glyphs, exact pixel grid, state mapping and numeric bar fills are not implementation verification.",
+    "deviations": [
+      "A shows two filled life segments and one empty, still three total life slots.",
+      "Generated progress-bar fill lengths and phase icon details are illustrative and require data-driven Godot controls after a direction is chosen."
+    ]
+  },
+  "images": [
+    {
+      "id": "ui_a_edge_markers_v002",
+      "title": "A · 边缘标记",
+      "caption": "细线 / 留白 / 侧抽屉",
+      "source_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a1100d-bf7d-76c3-994a-9b56e6b66d1a\\exec-b37b662d-30e3-4703-8e87-9fb2c5aadb1d.png",
+      "saved_path": "art-source/ember/ui-concepts-v002/ui_a_edge_markers_v002.png",
+      "prompt_path": "art-source/ember/ui-concepts-v002/ui_a_edge_markers_v002.prompt.txt",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_tidal_port_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e8285e9a8b83f96da611b858af0fab7789b36243b891b39cb23f0bd4e3cd5545",
+      "prompt_sha256": "eb38f1caebccae8b5da37b00542c66e8114e809e49ea4bb0923e79192657c1c1",
+      "reference_hashes": [
+        {
+          "path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_tidal_port_v001.png",
+          "sha256": "11409a2bf81efedbbb859150a3d9571b3d1d433c6072ae450096e6b415e59680"
+        },
+        {
+          "path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png",
+          "sha256": "9c9f1cb80d9a1c31343d0b7325d6bf221b87a78532cdbcd8536e306f9a74558b"
+        }
+      ]
+    },
+    {
+      "id": "ui_b_light_modules_v002",
+      "title": "B · 浅装甲模块",
+      "caption": "浅装甲 / 横向模块 / 底座面板",
+      "source_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a1100d-bf7d-76c3-994a-9b56e6b66d1a\\exec-192a71af-a458-4798-a61d-c7dcd669eefe.png",
+      "saved_path": "art-source/ember/ui-concepts-v002/ui_b_light_modules_v002.png",
+      "prompt_path": "art-source/ember/ui-concepts-v002/ui_b_light_modules_v002.prompt.txt",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_tidal_port_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "76158be69b690050fa3291bb2c0f5c6360e2c779daee7f588e1c6132da4b5628",
+      "prompt_sha256": "b17f62ed5a2c248d2860ef89a4adf242397d204ec53994e7996ce2e0842d3edf",
+      "reference_hashes": [
+        {
+          "path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_tidal_port_v001.png",
+          "sha256": "11409a2bf81efedbbb859150a3d9571b3d1d433c6072ae450096e6b415e59680"
+        },
+        {
+          "path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png",
+          "sha256": "9c9f1cb80d9a1c31343d0b7325d6bf221b87a78532cdbcd8536e306f9a74558b"
+        }
+      ]
+    },
+    {
+      "id": "ui_c_instrument_console_v002",
+      "title": "C · 仪表控制台",
+      "caption": "暗仪器 / 大读数 / 阶梯结构",
+      "source_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a1100d-bf7d-76c3-994a-9b56e6b66d1a\\exec-513a343c-6060-47fb-b8d8-0292d886ce6a.png",
+      "saved_path": "art-source/ember/ui-concepts-v002/ui_c_instrument_console_v002.png",
+      "prompt_path": "art-source/ember/ui-concepts-v002/ui_c_instrument_console_v002.prompt.txt",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_tidal_port_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "c59585e6522d0881c49c5b2d3d1855d93f9446b69c715d2be17da91f9b544f0b",
+      "prompt_sha256": "9611b00217f77638d7ae851d081322ca08fb0424f1411e7aaa5214f1c59d288c",
+      "reference_hashes": [
+        {
+          "path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_tidal_port_v001.png",
+          "sha256": "11409a2bf81efedbbb859150a3d9571b3d1d433c6072ae450096e6b415e59680"
+        },
+        {
+          "path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png",
+          "sha256": "9c9f1cb80d9a1c31343d0b7325d6bf221b87a78532cdbcd8536e306f9a74558b"
+        }
+      ]
+    },
+    {
+      "id": "ui_d_index_archive_v002",
+      "title": "D · 工业档案页",
+      "caption": "索引标签 / 记录行 / 实心页",
+      "source_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a1100d-bf7d-76c3-994a-9b56e6b66d1a\\exec-94cabf5c-8feb-47e0-af4d-6fda57c09818.png",
+      "saved_path": "art-source/ember/ui-concepts-v002/ui_d_index_archive_v002.png",
+      "prompt_path": "art-source/ember/ui-concepts-v002/ui_d_index_archive_v002.prompt.txt",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_tidal_port_v001.png",
+        "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "178f33b2e98dcfa89b9e334a45d82d1e7781db552c8633534eda25eb06a8441d",
+      "prompt_sha256": "e4c56f2ed54a515796e825603c3dbd85191d5107bf2047e040441de8b04340a3",
+      "reference_hashes": [
+        {
+          "path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/gpu_tidal_port_v001.png",
+          "sha256": "11409a2bf81efedbbb859150a3d9571b3d1d433c6072ae450096e6b415e59680"
+        },
+        {
+          "path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/map_assets_v001/previews/sprite_library_v001.png",
+          "sha256": "9c9f1cb80d9a1c31343d0b7325d6bf221b87a78532cdbcd8536e306f9a74558b"
+        }
+      ]
+    }
+  ]
+}

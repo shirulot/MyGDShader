@@ -1,0 +1,786 @@
+{
+  "status": "RAW_ACTION_RIG_NOT_ART_ACCEPTED",
+  "direction": "up",
+  "source_file": "source/candidate-masters/robot_idle_up_v011.png",
+  "source_sha256": "209c9cfbce55c66b3b5b003e34e26472c20c89a4548320f3ee464fe4a9952957",
+  "rig": {
+    "forward": [
+      0,
+      -0.4
+    ],
+    "limb_order": [
+      "arm_right",
+      "arm_left",
+      "leg_right",
+      "leg_left",
+      "body"
+    ],
+    "limbs": {
+      "arm_left": {
+        "kind": "arm",
+        "side": "left",
+        "root": [
+          18,
+          47
+        ],
+        "joint": [
+          17,
+          52
+        ],
+        "end": [
+          18,
+          58
+        ],
+        "bend": 1,
+        "polygon": [
+          [
+            13,
+            47
+          ],
+          [
+            23,
+            47
+          ],
+          [
+            23,
+            54
+          ],
+          [
+            22,
+            54
+          ],
+          [
+            22,
+            60
+          ],
+          [
+            20,
+            63
+          ],
+          [
+            13,
+            63
+          ]
+        ],
+        "split": [
+          52,
+          58
+        ],
+        "end_part": false
+      },
+      "arm_right": {
+        "kind": "arm",
+        "side": "right",
+        "root": [
+          44,
+          47
+        ],
+        "joint": [
+          46,
+          52
+        ],
+        "end": [
+          45,
+          58
+        ],
+        "bend": -1,
+        "polygon": [
+          [
+            40,
+            47
+          ],
+          [
+            51,
+            47
+          ],
+          [
+            51,
+            63
+          ],
+          [
+            43,
+            63
+          ],
+          [
+            42,
+            57
+          ],
+          [
+            42,
+            54
+          ],
+          [
+            40,
+            54
+          ]
+        ],
+        "split": [
+          52,
+          58
+        ],
+        "end_part": false
+      },
+      "leg_left": {
+        "kind": "leg",
+        "side": "left",
+        "root": [
+          25,
+          56
+        ],
+        "joint": [
+          24,
+          65
+        ],
+        "end": [
+          24,
+          72
+        ],
+        "bend": 1,
+        "polygon": [
+          [
+            23,
+            55
+          ],
+          [
+            28,
+            55
+          ],
+          [
+            29,
+            60
+          ],
+          [
+            30,
+            64
+          ],
+          [
+            30,
+            81
+          ],
+          [
+            17,
+            81
+          ],
+          [
+            16,
+            78
+          ],
+          [
+            17,
+            73
+          ],
+          [
+            20,
+            70
+          ],
+          [
+            20,
+            64
+          ],
+          [
+            21,
+            62
+          ],
+          [
+            22,
+            61
+          ],
+          [
+            22,
+            56
+          ]
+        ],
+        "split": [
+          65,
+          72
+        ],
+        "end_part": true
+      },
+      "leg_right": {
+        "kind": "leg",
+        "side": "right",
+        "root": [
+          38,
+          56
+        ],
+        "joint": [
+          38,
+          65
+        ],
+        "end": [
+          39,
+          72
+        ],
+        "bend": -1,
+        "polygon": [
+          [
+            35,
+            55
+          ],
+          [
+            40,
+            55
+          ],
+          [
+            41,
+            60
+          ],
+          [
+            44,
+            63
+          ],
+          [
+            44,
+            70
+          ],
+          [
+            47,
+            73
+          ],
+          [
+            48,
+            81
+          ],
+          [
+            33,
+            81
+          ],
+          [
+            33,
+            71
+          ],
+          [
+            34,
+            65
+          ]
+        ],
+        "split": [
+          65,
+          72
+        ],
+        "end_part": true
+      }
+    },
+    "action_waist_overlap": [
+      54,
+      55
+    ]
+  },
+  "parts": [
+    {
+      "id": "body",
+      "file": "source/action-fixed-parts/up/body.png",
+      "raw_sha256": "6c771d68aab98e7e1594870901f9d7ad538eb2acb1486be0c86df4ab8b73221f"
+    },
+    {
+      "id": "arm_left_upper",
+      "file": "source/action-fixed-parts/up/arm_left_upper.png",
+      "raw_sha256": "fff0e69bfc365cf908f719228ce7c307bed4a995d929fa8e04d16dc5b986126f"
+    },
+    {
+      "id": "arm_left_lower",
+      "file": "source/action-fixed-parts/up/arm_left_lower.png",
+      "raw_sha256": "7e3bd392468257e94027c47ce99d9e097636fa067550cdc2b45f67cd97da7e26"
+    },
+    {
+      "id": "arm_right_upper",
+      "file": "source/action-fixed-parts/up/arm_right_upper.png",
+      "raw_sha256": "5e90ad32459289d7ccb7242b6fcbb464ae6a37dc47b8770d652eb456c2085eb6"
+    },
+    {
+      "id": "arm_right_lower",
+      "file": "source/action-fixed-parts/up/arm_right_lower.png",
+      "raw_sha256": "83fce234ddc9fb80de8c9578968778b2b74491b04e862b3ddc4384743503b17a"
+    },
+    {
+      "id": "leg_left_upper",
+      "file": "source/action-fixed-parts/up/leg_left_upper.png",
+      "raw_sha256": "d0572d814810059ae6ef54d70cff469d331978e9309f7ec1cecc62bb8d5b5005"
+    },
+    {
+      "id": "leg_left_lower",
+      "file": "source/action-fixed-parts/up/leg_left_lower.png",
+      "raw_sha256": "66edc2ee70f8515c5109325f02101dcae1a6e36ab5d7583ba4327c8eeaac3388"
+    },
+    {
+      "id": "leg_left_end",
+      "file": "source/action-fixed-parts/up/leg_left_end.png",
+      "raw_sha256": "04b75ef73bd34e2b633a7e76b554a1cef0fe3a5ff1ad5576c21a5281f5c44e7d"
+    },
+    {
+      "id": "leg_right_upper",
+      "file": "source/action-fixed-parts/up/leg_right_upper.png",
+      "raw_sha256": "6632011a4609541f8394630cb6e3f6b289f572bf2d52ac2fb6398ad4f580136c"
+    },
+    {
+      "id": "leg_right_lower",
+      "file": "source/action-fixed-parts/up/leg_right_lower.png",
+      "raw_sha256": "2baf00771be66fe2f27c833b0ab3ce2be2be6a6e343a86e7bdd093aabc9b5b5e"
+    },
+    {
+      "id": "leg_right_end",
+      "file": "source/action-fixed-parts/up/leg_right_end.png",
+      "raw_sha256": "4105013cbe54f56c8104aaf9b93e556995d0b3d5717ddec11b1c1d0b40bef349"
+    },
+    {
+      "id": "pelvis",
+      "file": "source/action-fixed-parts/up/pelvis.png",
+      "raw_sha256": "8d77c6b3a7b02f5c98299ffadf4501aa84eac88a2900cbebe35240d657c9a6d8"
+    }
+  ],
+  "neutral_reassembly_pixel_mismatch": 0,
+  "body_pixels_below_y64": [],
+  "waist_overlap_source_rows": [
+    54,
+    55
+  ],
+  "source_art_status": "STATIC_IDENTITY_PASS_ACTIONS_NOT_ACCEPTED",
+  "walk_frames_modified": false,
+  "action": "idle",
+  "canvas": [
+    64,
+    96
+  ],
+  "root": [
+    32,
+    80
+  ],
+  "fps": 2,
+  "loop": true,
+  "states": [
+    {
+      "action": "idle",
+      "frame": 0,
+      "phase": "neutral",
+      "transforms": {
+        "body": {
+          "sourcePivot": [
+            32,
+            54
+          ],
+          "targetPivot": [
+            32,
+            54
+          ],
+          "radians": 0
+        },
+        "pelvis": {
+          "sourcePivot": [
+            32,
+            56
+          ],
+          "targetPivot": [
+            32,
+            56
+          ],
+          "radians": 0
+        },
+        "arm_left_upper": {
+          "sourcePivot": [
+            18,
+            47
+          ],
+          "targetPivot": [
+            18,
+            47
+          ],
+          "radians": 0
+        },
+        "arm_left_lower": {
+          "sourcePivot": [
+            17,
+            52
+          ],
+          "targetPivot": [
+            17,
+            52
+          ],
+          "radians": 0
+        },
+        "arm_right_upper": {
+          "sourcePivot": [
+            44,
+            47
+          ],
+          "targetPivot": [
+            44,
+            47
+          ],
+          "radians": 0
+        },
+        "arm_right_lower": {
+          "sourcePivot": [
+            46,
+            52
+          ],
+          "targetPivot": [
+            46,
+            52
+          ],
+          "radians": 0
+        },
+        "leg_left_upper": {
+          "sourcePivot": [
+            25,
+            56
+          ],
+          "targetPivot": [
+            25,
+            56
+          ],
+          "radians": 0
+        },
+        "leg_left_lower": {
+          "sourcePivot": [
+            24,
+            65
+          ],
+          "targetPivot": [
+            24,
+            65
+          ],
+          "radians": 0
+        },
+        "leg_left_end": {
+          "sourcePivot": [
+            24,
+            72
+          ],
+          "targetPivot": [
+            24,
+            72
+          ],
+          "radians": 0
+        },
+        "leg_right_upper": {
+          "sourcePivot": [
+            38,
+            56
+          ],
+          "targetPivot": [
+            38,
+            56
+          ],
+          "radians": 0
+        },
+        "leg_right_lower": {
+          "sourcePivot": [
+            38,
+            65
+          ],
+          "targetPivot": [
+            38,
+            65
+          ],
+          "radians": 0
+        },
+        "leg_right_end": {
+          "sourcePivot": [
+            39,
+            72
+          ],
+          "targetPivot": [
+            39,
+            72
+          ],
+          "radians": 0
+        }
+      },
+      "joints": {
+        "arm_left": {
+          "root": [
+            18,
+            47
+          ],
+          "joint": [
+            17,
+            52
+          ],
+          "wrist": [
+            18,
+            58
+          ]
+        },
+        "arm_right": {
+          "root": [
+            44,
+            47
+          ],
+          "joint": [
+            46,
+            52
+          ],
+          "wrist": [
+            45,
+            58
+          ]
+        },
+        "leg_left": {
+          "root": [
+            25,
+            56
+          ],
+          "joint": [
+            24,
+            65
+          ],
+          "ankle": [
+            24,
+            72
+          ],
+          "lift": 0,
+          "contact": true
+        },
+        "leg_right": {
+          "root": [
+            38,
+            56
+          ],
+          "joint": [
+            38,
+            65
+          ],
+          "ankle": [
+            39,
+            72
+          ],
+          "lift": 0,
+          "contact": true
+        }
+      },
+      "notes": [],
+      "pelvis_shift": [
+        0,
+        0
+      ],
+      "upper_body_shift": [
+        0,
+        0
+      ],
+      "both_feet_fixed": true
+    },
+    {
+      "action": "idle",
+      "frame": 1,
+      "phase": "servo_up",
+      "transforms": {
+        "body": {
+          "sourcePivot": [
+            32,
+            54
+          ],
+          "targetPivot": [
+            32,
+            53
+          ],
+          "radians": 0
+        },
+        "pelvis": {
+          "sourcePivot": [
+            32,
+            56
+          ],
+          "targetPivot": [
+            32,
+            56
+          ],
+          "radians": 0
+        },
+        "arm_left_upper": {
+          "sourcePivot": [
+            18,
+            47
+          ],
+          "targetPivot": [
+            18,
+            46
+          ],
+          "radians": 0
+        },
+        "arm_left_lower": {
+          "sourcePivot": [
+            17,
+            52
+          ],
+          "targetPivot": [
+            17,
+            51
+          ],
+          "radians": 0
+        },
+        "arm_right_upper": {
+          "sourcePivot": [
+            44,
+            47
+          ],
+          "targetPivot": [
+            44,
+            46
+          ],
+          "radians": 0
+        },
+        "arm_right_lower": {
+          "sourcePivot": [
+            46,
+            52
+          ],
+          "targetPivot": [
+            46,
+            51
+          ],
+          "radians": 0
+        },
+        "leg_left_upper": {
+          "sourcePivot": [
+            25,
+            56
+          ],
+          "targetPivot": [
+            25,
+            56
+          ],
+          "radians": 0
+        },
+        "leg_left_lower": {
+          "sourcePivot": [
+            24,
+            65
+          ],
+          "targetPivot": [
+            24,
+            65
+          ],
+          "radians": 0
+        },
+        "leg_left_end": {
+          "sourcePivot": [
+            24,
+            72
+          ],
+          "targetPivot": [
+            24,
+            72
+          ],
+          "radians": 0
+        },
+        "leg_right_upper": {
+          "sourcePivot": [
+            38,
+            56
+          ],
+          "targetPivot": [
+            38,
+            56
+          ],
+          "radians": 0
+        },
+        "leg_right_lower": {
+          "sourcePivot": [
+            38,
+            65
+          ],
+          "targetPivot": [
+            38,
+            65
+          ],
+          "radians": 0
+        },
+        "leg_right_end": {
+          "sourcePivot": [
+            39,
+            72
+          ],
+          "targetPivot": [
+            39,
+            72
+          ],
+          "radians": 0
+        }
+      },
+      "joints": {
+        "arm_left": {
+          "root": [
+            18,
+            46
+          ],
+          "joint": [
+            17,
+            51
+          ],
+          "wrist": [
+            18,
+            57
+          ]
+        },
+        "arm_right": {
+          "root": [
+            44,
+            46
+          ],
+          "joint": [
+            46,
+            51
+          ],
+          "wrist": [
+            45,
+            57
+          ]
+        },
+        "leg_left": {
+          "root": [
+            25,
+            56
+          ],
+          "joint": [
+            24,
+            65
+          ],
+          "ankle": [
+            24,
+            72
+          ],
+          "lift": 0,
+          "contact": true
+        },
+        "leg_right": {
+          "root": [
+            38,
+            56
+          ],
+          "joint": [
+            38,
+            65
+          ],
+          "ankle": [
+            39,
+            72
+          ],
+          "lift": 0,
+          "contact": true
+        }
+      },
+      "notes": [],
+      "pelvis_shift": [
+        0,
+        0
+      ],
+      "upper_body_shift": [
+        0,
+        -1
+      ],
+      "both_feet_fixed": true
+    }
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "file": "source/action-rig-batch/idle/up/robot_idle_up_f00_v011.png",
+      "raw_sha256": "967d164e710199594bd2244c7b8d694edaf67d2bafe1b9d3cd09ab95da481c5e"
+    },
+    {
+      "frame": 1,
+      "file": "source/action-rig-batch/idle/up/robot_idle_up_f01_v011.png",
+      "raw_sha256": "0066ee23014123ef8a9482ef110006029738bd5be84822413458ade38fd6e4a0"
+    }
+  ]
+}

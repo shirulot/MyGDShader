@@ -1,0 +1,1937 @@
+{
+  "schema_version": 1,
+  "status": "CANDIDATE_FIXED_MASTER_PART_DECOMPOSITION",
+  "direction": "down",
+  "canvas": [
+    64,
+    96
+  ],
+  "root_anchor": [
+    32,
+    80
+  ],
+  "anchor": [
+    32,
+    80
+  ],
+  "source_master": "res://art-source/ember/robot-fixed-rig-v007/source/robot_idle_down_canonical_original.png",
+  "source_master_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+  "source_mask_rig": "res://art-source/ember/robot-actions-v003/source-rigs/rig_down_actions_v003.json",
+  "source_mask_rig_sha256": "3d70923099f4e616b214730ba7c07ec9e80a08c3724d697a052c1b7db0ef8c8c",
+  "part_masks": "res://art-source/ember/robot-fixed-rig-v007/source/part_masks_v007.json",
+  "keypoint_authoring_status": "AUTHORED_NATIVE_COORDINATE_RIG_CANDIDATE_REQUIRES_STRUCTURE_REVIEW",
+  "keypoints": {
+    "root": [
+      32,
+      80
+    ],
+    "pelvis": [
+      32,
+      60
+    ],
+    "waist": [
+      32,
+      58
+    ],
+    "chest": [
+      32,
+      51
+    ],
+    "neck": [
+      32,
+      42
+    ],
+    "head_center": [
+      32,
+      32
+    ],
+    "shoulder_right": [
+      21,
+      45
+    ],
+    "elbow_right": [
+      16,
+      52
+    ],
+    "wrist_right": [
+      16,
+      60
+    ],
+    "hip_right": [
+      26,
+      61
+    ],
+    "knee_right": [
+      24,
+      69
+    ],
+    "ankle_right": [
+      22,
+      76
+    ],
+    "sole_right": [
+      22,
+      80
+    ],
+    "shoulder_left": [
+      42,
+      45
+    ],
+    "elbow_left": [
+      46,
+      52
+    ],
+    "wrist_left": [
+      47,
+      59
+    ],
+    "hip_left": [
+      38,
+      61
+    ],
+    "knee_left": [
+      38,
+      69
+    ],
+    "ankle_left": [
+      39,
+      76
+    ],
+    "sole_left": [
+      39,
+      80
+    ]
+  },
+  "bones": [
+    {
+      "id": "torso_core",
+      "parent": "root",
+      "from": "pelvis",
+      "to": "chest",
+      "rest_from": [
+        32,
+        60
+      ],
+      "rest_to": [
+        32,
+        51
+      ],
+      "rest_length": 9,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "neck",
+      "parent": "torso_core",
+      "from": "chest",
+      "to": "neck",
+      "rest_from": [
+        32,
+        51
+      ],
+      "rest_to": [
+        32,
+        42
+      ],
+      "rest_length": 9,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "head",
+      "parent": "neck",
+      "from": "neck",
+      "to": "head_center",
+      "rest_from": [
+        32,
+        42
+      ],
+      "rest_to": [
+        32,
+        32
+      ],
+      "rest_length": 10,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "shoulder_right",
+      "parent": "torso_core",
+      "from": "chest",
+      "to": "shoulder_right",
+      "rest_from": [
+        32,
+        51
+      ],
+      "rest_to": [
+        21,
+        45
+      ],
+      "rest_length": 12.529964086141668,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "upper_arm_right",
+      "parent": "shoulder_right",
+      "from": "shoulder_right",
+      "to": "elbow_right",
+      "rest_from": [
+        21,
+        45
+      ],
+      "rest_to": [
+        16,
+        52
+      ],
+      "rest_length": 8.602325267042627,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "forearm_right",
+      "parent": "upper_arm_right",
+      "from": "elbow_right",
+      "to": "wrist_right",
+      "rest_from": [
+        16,
+        52
+      ],
+      "rest_to": [
+        16,
+        60
+      ],
+      "rest_length": 8,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "hip_right",
+      "parent": "torso_core",
+      "from": "pelvis",
+      "to": "hip_right",
+      "rest_from": [
+        32,
+        60
+      ],
+      "rest_to": [
+        26,
+        61
+      ],
+      "rest_length": 6.0827625302982185,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "thigh_right",
+      "parent": "hip_right",
+      "from": "hip_right",
+      "to": "knee_right",
+      "rest_from": [
+        26,
+        61
+      ],
+      "rest_to": [
+        24,
+        69
+      ],
+      "rest_length": 8.246211251235321,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "shin_right",
+      "parent": "thigh_right",
+      "from": "knee_right",
+      "to": "ankle_right",
+      "rest_from": [
+        24,
+        69
+      ],
+      "rest_to": [
+        22,
+        76
+      ],
+      "rest_length": 7.280109889280519,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "boot_right",
+      "parent": "shin_right",
+      "from": "ankle_right",
+      "to": "sole_right",
+      "rest_from": [
+        22,
+        76
+      ],
+      "rest_to": [
+        22,
+        80
+      ],
+      "rest_length": 4,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "shoulder_left",
+      "parent": "torso_core",
+      "from": "chest",
+      "to": "shoulder_left",
+      "rest_from": [
+        32,
+        51
+      ],
+      "rest_to": [
+        42,
+        45
+      ],
+      "rest_length": 11.6619037896906,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "upper_arm_left",
+      "parent": "shoulder_left",
+      "from": "shoulder_left",
+      "to": "elbow_left",
+      "rest_from": [
+        42,
+        45
+      ],
+      "rest_to": [
+        46,
+        52
+      ],
+      "rest_length": 8.06225774829855,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "forearm_left",
+      "parent": "upper_arm_left",
+      "from": "elbow_left",
+      "to": "wrist_left",
+      "rest_from": [
+        46,
+        52
+      ],
+      "rest_to": [
+        47,
+        59
+      ],
+      "rest_length": 7.0710678118654755,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "hip_left",
+      "parent": "torso_core",
+      "from": "pelvis",
+      "to": "hip_left",
+      "rest_from": [
+        32,
+        60
+      ],
+      "rest_to": [
+        38,
+        61
+      ],
+      "rest_length": 6.0827625302982185,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "thigh_left",
+      "parent": "hip_left",
+      "from": "hip_left",
+      "to": "knee_left",
+      "rest_from": [
+        38,
+        61
+      ],
+      "rest_to": [
+        38,
+        69
+      ],
+      "rest_length": 8,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "shin_left",
+      "parent": "thigh_left",
+      "from": "knee_left",
+      "to": "ankle_left",
+      "rest_from": [
+        38,
+        69
+      ],
+      "rest_to": [
+        39,
+        76
+      ],
+      "rest_length": 7.0710678118654755,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    },
+    {
+      "id": "boot_left",
+      "parent": "shin_left",
+      "from": "ankle_left",
+      "to": "sole_left",
+      "rest_from": [
+        39,
+        76
+      ],
+      "rest_to": [
+        39,
+        80
+      ],
+      "rest_length": 4,
+      "length_policy": "FIXED_IN_SKELETON_SPACE; projection or pixel rounding may change raster span"
+    }
+  ],
+  "bone_rest_lengths": {
+    "torso_core": 9,
+    "neck": 9,
+    "head": 10,
+    "shoulder_right": 12.529964086141668,
+    "upper_arm_right": 8.602325267042627,
+    "forearm_right": 8,
+    "hip_right": 6.0827625302982185,
+    "thigh_right": 8.246211251235321,
+    "shin_right": 7.280109889280519,
+    "boot_right": 4,
+    "shoulder_left": 11.6619037896906,
+    "upper_arm_left": 8.06225774829855,
+    "forearm_left": 7.0710678118654755,
+    "hip_left": 6.0827625302982185,
+    "thigh_left": 8,
+    "shin_left": 7.0710678118654755,
+    "boot_left": 4
+  },
+  "parents": {
+    "torso_core": "root",
+    "neck": "torso_core",
+    "head": "neck",
+    "shoulder_right": "torso_core",
+    "upper_arm_right": "shoulder_right",
+    "forearm_right": "upper_arm_right",
+    "hip_right": "torso_core",
+    "thigh_right": "hip_right",
+    "shin_right": "thigh_right",
+    "boot_right": "shin_right",
+    "shoulder_left": "torso_core",
+    "upper_arm_left": "shoulder_left",
+    "forearm_left": "upper_arm_left",
+    "hip_left": "torso_core",
+    "thigh_left": "hip_left",
+    "shin_left": "thigh_left",
+    "boot_left": "shin_left"
+  },
+  "parts": [
+    {
+      "id": "boot_right",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/boot_right.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        18,
+        75,
+        10,
+        5
+      ],
+      "pixel_count": 44,
+      "parent_bone": "boot_right",
+      "pivot_keypoint": "ankle_right",
+      "rest_pivot": [
+        22,
+        76
+      ],
+      "draw_order": 0,
+      "source_part_counts": {
+        "right_leg": 44
+      },
+      "rgba_sha256": "c187db4fb567540541352d3aedae4429321b04d2dc0ba7f0188ac4eb120ae22e",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "dc3126bc261081e1b21dc9f7e708b9817527a4adf20b67bed7c7d652e9a6e20f"
+    },
+    {
+      "id": "shin_right",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/shin_right.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        19,
+        71,
+        10,
+        4
+      ],
+      "pixel_count": 39,
+      "parent_bone": "shin_right",
+      "pivot_keypoint": "knee_right",
+      "rest_pivot": [
+        24,
+        69
+      ],
+      "draw_order": 1,
+      "source_part_counts": {
+        "right_leg": 39
+      },
+      "rgba_sha256": "ee5083a7c5c603fc1352b866170b5abf80ede4a48f9c0b54cc7eb3f5f57cdb60",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "aaf53e86b38dfb1a74896f82949257ba2f9e58bb65b6d21517a2b17352d0963d"
+    },
+    {
+      "id": "knee_right",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/knee_right.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        20,
+        66,
+        10,
+        5
+      ],
+      "pixel_count": 43,
+      "parent_bone": "shin_right",
+      "pivot_keypoint": "knee_right",
+      "rest_pivot": [
+        24,
+        69
+      ],
+      "draw_order": 2,
+      "source_part_counts": {
+        "right_leg": 43
+      },
+      "rgba_sha256": "ecae76bbedba01a392c174208b5ee260ed1144cc93d6709e68f8236e7da38ad0",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "a177b98426f54275076d25a5ee82722e3e0b2d22890325a4f9e536f419d6df0b"
+    },
+    {
+      "id": "thigh_right",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/thigh_right.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        20,
+        58,
+        10,
+        8
+      ],
+      "pixel_count": 60,
+      "parent_bone": "thigh_right",
+      "pivot_keypoint": "hip_right",
+      "rest_pivot": [
+        26,
+        61
+      ],
+      "draw_order": 3,
+      "source_part_counts": {
+        "torso": 28,
+        "right_leg": 32
+      },
+      "rgba_sha256": "6d11e51f298bcd7e64617984043c7ceb058c554cf9c5b16302d1d11d7eecf1fa",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "7494111315317ab29ba02905cba5ab786bc7408add34c8b372cd356acb0dd7e0"
+    },
+    {
+      "id": "boot_left",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/boot_left.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        35,
+        75,
+        10,
+        5
+      ],
+      "pixel_count": 43,
+      "parent_bone": "boot_left",
+      "pivot_keypoint": "ankle_left",
+      "rest_pivot": [
+        39,
+        76
+      ],
+      "draw_order": 4,
+      "source_part_counts": {
+        "left_leg": 43
+      },
+      "rgba_sha256": "2d99c0b304dab4df648eabd6872a0a68e3669fad5de793f21268be659fabb784",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "0125b223a3bbc11ea83b7b2703ccd60d6694776d2421fcc098acbb8880dbf849"
+    },
+    {
+      "id": "shin_left",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/shin_left.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        34,
+        71,
+        11,
+        4
+      ],
+      "pixel_count": 41,
+      "parent_bone": "shin_left",
+      "pivot_keypoint": "knee_left",
+      "rest_pivot": [
+        38,
+        69
+      ],
+      "draw_order": 5,
+      "source_part_counts": {
+        "left_leg": 41
+      },
+      "rgba_sha256": "062bddcf528bbf4f199c28ca9fe3fb3a034e4ed01f39809c6758658f2c2a18d9",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "1002fcc79f3f2019da8c9a23025754a5799c28a5c12d51b04e9074eb6ab1055d"
+    },
+    {
+      "id": "knee_left",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/knee_left.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        34,
+        66,
+        9,
+        5
+      ],
+      "pixel_count": 41,
+      "parent_bone": "shin_left",
+      "pivot_keypoint": "knee_left",
+      "rest_pivot": [
+        38,
+        69
+      ],
+      "draw_order": 6,
+      "source_part_counts": {
+        "left_leg": 41
+      },
+      "rgba_sha256": "7bb7f7789ebc833828bd06eebbc5668aa067a8b3b2f9e1a26d2d626d467ea6c4",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "c74892bb7e6cc0c3bc3ceb13aa14e97a2b0fe2316985c3ba9692028d4e0ea443"
+    },
+    {
+      "id": "thigh_left",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/thigh_left.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        34,
+        58,
+        9,
+        8
+      ],
+      "pixel_count": 59,
+      "parent_bone": "thigh_left",
+      "pivot_keypoint": "hip_left",
+      "rest_pivot": [
+        38,
+        61
+      ],
+      "draw_order": 7,
+      "source_part_counts": {
+        "torso": 28,
+        "left_leg": 31
+      },
+      "rgba_sha256": "240887e63a56bcb56f8982639598fe467d941c9b55ae561987a6e1c5b9036c38",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "9dd2ae901bc469e0c87e1e59ffc0e5450e4f3d29286f499db3a3ec1be8e827e2"
+    },
+    {
+      "id": "pelvis_core",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/pelvis_core.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        29,
+        58,
+        6,
+        5
+      ],
+      "pixel_count": 27,
+      "parent_bone": "torso_core",
+      "pivot_keypoint": "pelvis",
+      "rest_pivot": [
+        32,
+        60
+      ],
+      "draw_order": 8,
+      "source_part_counts": {
+        "torso": 27
+      },
+      "rgba_sha256": "85c0d7d868bebbd43f413171346659c844828d094bab5a39b82a872b2a68583d",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "d359e72c7e5d4a379e7dee25e1523bd5e234ab89f0a8d839a85320a3a911dede"
+    },
+    {
+      "id": "waist_core",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/waist_core.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        22,
+        55,
+        20,
+        3
+      ],
+      "pixel_count": 59,
+      "parent_bone": "torso_core",
+      "pivot_keypoint": "waist",
+      "rest_pivot": [
+        32,
+        58
+      ],
+      "draw_order": 9,
+      "source_part_counts": {
+        "torso": 59
+      },
+      "rgba_sha256": "e6a871f8ea3db8442a2562e59db853a38c45625e9e930ed5aacac974461ce622",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "7b23f85f1e68f4ad0fed07e839ca0047288f91fa9a3ab0b7ce240031fd397974"
+    },
+    {
+      "id": "chest_shell",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/chest_shell.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        22,
+        43,
+        19,
+        12
+      ],
+      "pixel_count": 199,
+      "parent_bone": "torso_core",
+      "pivot_keypoint": "chest",
+      "rest_pivot": [
+        32,
+        51
+      ],
+      "draw_order": 10,
+      "source_part_counts": {
+        "torso": 199
+      },
+      "rgba_sha256": "3c82a599e8ea02b23cee47004e522c4a294ccd1618aedb6d94d9892d4661c8b1",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "da4ff4689bae1c1e6281141e4f3b7cbdb25ab848b855add32831fd8e9759ba64"
+    },
+    {
+      "id": "shoulder_right",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/shoulder_right.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        14,
+        40,
+        10,
+        7
+      ],
+      "pixel_count": 61,
+      "parent_bone": "shoulder_right",
+      "pivot_keypoint": "shoulder_right",
+      "rest_pivot": [
+        21,
+        45
+      ],
+      "draw_order": 11,
+      "source_part_counts": {
+        "right_arm": 61
+      },
+      "rgba_sha256": "b9f970885b273f73950f4cdbc0d4d608d007fa74365453d0ae2d85ba306147c0",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "fa95c3b37f844d205a1ba4b82f36ce607d17862ba2beaa0f90c393d40d29efa3"
+    },
+    {
+      "id": "upper_arm_right",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/upper_arm_right.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        14,
+        47,
+        10,
+        3
+      ],
+      "pixel_count": 25,
+      "parent_bone": "upper_arm_right",
+      "pivot_keypoint": "shoulder_right",
+      "rest_pivot": [
+        21,
+        45
+      ],
+      "draw_order": 12,
+      "source_part_counts": {
+        "right_arm": 25
+      },
+      "rgba_sha256": "005783ae922c1b3e8e8ac8962a7abb86d4553ce079e649f2bf1337430e470a44",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "4a1829ad6b32f9f5218205f0e4b9960c714877e34d8374e09ba28799cd9c3563"
+    },
+    {
+      "id": "elbow_right",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/elbow_right.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        13,
+        50,
+        7,
+        3
+      ],
+      "pixel_count": 20,
+      "parent_bone": "forearm_right",
+      "pivot_keypoint": "elbow_right",
+      "rest_pivot": [
+        16,
+        52
+      ],
+      "draw_order": 13,
+      "source_part_counts": {
+        "right_arm": 20
+      },
+      "rgba_sha256": "d121d578d888c0ad210778a611f5c54131f9d4cd5fb9e1645960295079ffdb1f",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "ad99c5efb698417fdeb0430df510b567503b29858d64026bed62f5d9fc1f42c2"
+    },
+    {
+      "id": "forearm_right",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/forearm_right.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        12,
+        53,
+        8,
+        6
+      ],
+      "pixel_count": 45,
+      "parent_bone": "forearm_right",
+      "pivot_keypoint": "elbow_right",
+      "rest_pivot": [
+        16,
+        52
+      ],
+      "draw_order": 14,
+      "source_part_counts": {
+        "right_arm": 45
+      },
+      "rgba_sha256": "223fb5c5927a923a4234b7e14fff73bcd44a1ecbb8760b11e236fe2b87a6c115",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "636ad3e4c5fcb108869407d8efc538231f2bd4acba79ddd512788f111828f539"
+    },
+    {
+      "id": "hand_right",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/hand_right.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        13,
+        59,
+        7,
+        6
+      ],
+      "pixel_count": 36,
+      "parent_bone": "forearm_right",
+      "pivot_keypoint": "wrist_right",
+      "rest_pivot": [
+        16,
+        60
+      ],
+      "draw_order": 15,
+      "source_part_counts": {
+        "right_arm": 36
+      },
+      "rgba_sha256": "6c264ea38249f4122d5979caca0bc6da011abffe17cdf140c936e4611b05dd0a",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "c41c0d1ce52327694d1505c174849af35a5b08efb69b4742115c99e15161ff0b"
+    },
+    {
+      "id": "shoulder_left",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/shoulder_left.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        40,
+        40,
+        9,
+        7
+      ],
+      "pixel_count": 55,
+      "parent_bone": "shoulder_left",
+      "pivot_keypoint": "shoulder_left",
+      "rest_pivot": [
+        42,
+        45
+      ],
+      "draw_order": 16,
+      "source_part_counts": {
+        "left_upper_arm": 55
+      },
+      "rgba_sha256": "7645f0da73bd041022b253e161dc74b47da77ae61ab8e0ba17d96ab8884a4aa8",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "d26f73d7c9f6557eef8b59a87922c8e9184e951593d38d4dfcce95d80cdf4477"
+    },
+    {
+      "id": "upper_arm_left",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/upper_arm_left.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        40,
+        47,
+        9,
+        3
+      ],
+      "pixel_count": 24,
+      "parent_bone": "upper_arm_left",
+      "pivot_keypoint": "shoulder_left",
+      "rest_pivot": [
+        42,
+        45
+      ],
+      "draw_order": 17,
+      "source_part_counts": {
+        "left_upper_arm": 17,
+        "left_forearm_tool": 7
+      },
+      "rgba_sha256": "c7516e20e61c6ac958c295c9adf84664266519dfa91a26212a0fa45c02df7312",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "2292eff5075f21745d8e5e9f281bcbb2194c88f73a8c210d634da4603bda0313"
+    },
+    {
+      "id": "elbow_left",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/elbow_left.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        43,
+        50,
+        8,
+        3
+      ],
+      "pixel_count": 22,
+      "parent_bone": "forearm_left",
+      "pivot_keypoint": "elbow_left",
+      "rest_pivot": [
+        46,
+        52
+      ],
+      "draw_order": 18,
+      "source_part_counts": {
+        "left_forearm_tool": 22
+      },
+      "rgba_sha256": "ea55095adc673a5de33d264d17e0e024e43ca8fc4a4713680a1e93739880b095",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "6795616ff584a9c56b1fc77ad0f61fd04d0161748ec3e7104ee9ed73c742e212"
+    },
+    {
+      "id": "forearm_left",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/forearm_left.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        43,
+        53,
+        9,
+        6
+      ],
+      "pixel_count": 40,
+      "parent_bone": "forearm_left",
+      "pivot_keypoint": "elbow_left",
+      "rest_pivot": [
+        46,
+        52
+      ],
+      "draw_order": 19,
+      "source_part_counts": {
+        "left_forearm_tool": 40
+      },
+      "rgba_sha256": "86b9d77d871d5304710f0b5ff43ce9c71344d85e214685321b4ca4d5d9d5c93d",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "bf512e2a7a77a46584809746cd53efb19e684ceae44c3200e3f5b0d790330142"
+    },
+    {
+      "id": "hand_left",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/hand_left.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        43,
+        59,
+        9,
+        6
+      ],
+      "pixel_count": 34,
+      "parent_bone": "forearm_left",
+      "pivot_keypoint": "wrist_left",
+      "rest_pivot": [
+        47,
+        59
+      ],
+      "draw_order": 20,
+      "source_part_counts": {
+        "left_forearm_tool": 34
+      },
+      "rgba_sha256": "540a6a8a918c576f2f42d64d53e0a421a4270a50ecd0f6c38b1a8f02d70ebb3a",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "6e86064fba8748a2f8556207125a61024a5d87a14b7ddbd2c9a65c1a4521c228"
+    },
+    {
+      "id": "left_wrist_tool",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/left_wrist_tool.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        48,
+        55,
+        3,
+        7
+      ],
+      "pixel_count": 13,
+      "parent_bone": "forearm_left",
+      "pivot_keypoint": "wrist_left",
+      "rest_pivot": [
+        47,
+        59
+      ],
+      "draw_order": 21,
+      "source_part_counts": {
+        "left_forearm_tool": 13
+      },
+      "rgba_sha256": "fefda8252d246f22a198f97aeb8d2a4300658f99e927b564471a27e8ecc87a00",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "fc63167d50a2b58ffb6687de05f733b5b77e8b396994bfeb948fc00b3b4a44b4"
+    },
+    {
+      "id": "head",
+      "path": "res://art-source/ember/robot-fixed-rig-v007/source/parts/head.png",
+      "canvas": [
+        64,
+        96
+      ],
+      "uv_rect": [
+        0,
+        0,
+        64,
+        96
+      ],
+      "bbox": [
+        19,
+        21,
+        26,
+        22
+      ],
+      "pixel_count": 462,
+      "parent_bone": "head",
+      "pivot_keypoint": "neck",
+      "rest_pivot": [
+        32,
+        42
+      ],
+      "draw_order": 22,
+      "source_part_counts": {
+        "head": 462
+      },
+      "rgba_sha256": "ee91a2c9f31032a8b2aeb168bf2b73bf30c2153c16d44c2411f9699aa2f7f4a6",
+      "source_pixel_policy": "EXACT_RGBA_SOURCE_MASK_COPY; full canvas original coordinates; no crop realignment",
+      "png_sha256": "5d8c0513e7b93216f6e82252493ab66dcee42158126c1c94c0258d6355ade0b0"
+    }
+  ],
+  "draw_order": [
+    "boot_right",
+    "shin_right",
+    "knee_right",
+    "thigh_right",
+    "boot_left",
+    "shin_left",
+    "knee_left",
+    "thigh_left",
+    "pelvis_core",
+    "waist_core",
+    "chest_shell",
+    "shoulder_right",
+    "upper_arm_right",
+    "elbow_right",
+    "forearm_right",
+    "hand_right",
+    "shoulder_left",
+    "upper_arm_left",
+    "elbow_left",
+    "forearm_left",
+    "hand_left",
+    "left_wrist_tool",
+    "head"
+  ],
+  "cap_definitions": [
+    {
+      "id": "neck_socket",
+      "parent_bone": "neck",
+      "pivot_keypoint": "neck",
+      "width_native": 3,
+      "height_native": 4,
+      "local_polygon": [
+        [
+          -1.5,
+          -2
+        ],
+        [
+          1.5,
+          -2
+        ],
+        [
+          1.5,
+          2
+        ],
+        [
+          -1.5,
+          2
+        ]
+      ],
+      "rest_pivot": [
+        32,
+        42
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "waist_core_bridge",
+      "parent_bone": "torso_core",
+      "pivot_keypoint": "waist",
+      "width_native": 4,
+      "height_native": 11,
+      "local_polygon": [
+        [
+          -2,
+          -8
+        ],
+        [
+          2,
+          -8
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -2,
+          3
+        ]
+      ],
+      "rest_pivot": [
+        32,
+        58
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "pelvis_crossbeam",
+      "parent_bone": "torso_core",
+      "pivot_keypoint": "pelvis",
+      "width_native": 4,
+      "height_native": 4,
+      "span_native": 12,
+      "local_polygon": [
+        [
+          -6,
+          -2
+        ],
+        [
+          6,
+          -2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          -6,
+          2
+        ]
+      ],
+      "rest_pivot": [
+        32,
+        60
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "width_native is crossbeam material thickness; span_native is full hip-to-hip span."
+    },
+    {
+      "id": "shoulder_socket_right",
+      "parent_bone": "shoulder_right",
+      "pivot_keypoint": "shoulder_right",
+      "width_native": 4,
+      "height_native": 4,
+      "local_polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          -1
+        ]
+      ],
+      "rest_pivot": [
+        21,
+        45
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "elbow_socket_right",
+      "parent_bone": "forearm_right",
+      "pivot_keypoint": "elbow_right",
+      "width_native": 4,
+      "height_native": 4,
+      "local_polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          -1
+        ]
+      ],
+      "rest_pivot": [
+        16,
+        52
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "hip_socket_right",
+      "parent_bone": "thigh_right",
+      "pivot_keypoint": "hip_right",
+      "width_native": 4,
+      "height_native": 4,
+      "local_polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          -1
+        ]
+      ],
+      "rest_pivot": [
+        26,
+        61
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "knee_socket_right",
+      "parent_bone": "shin_right",
+      "pivot_keypoint": "knee_right",
+      "width_native": 4,
+      "height_native": 4,
+      "local_polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          -1
+        ]
+      ],
+      "rest_pivot": [
+        24,
+        69
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "shoulder_socket_left",
+      "parent_bone": "shoulder_left",
+      "pivot_keypoint": "shoulder_left",
+      "width_native": 4,
+      "height_native": 4,
+      "local_polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          -1
+        ]
+      ],
+      "rest_pivot": [
+        42,
+        45
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "elbow_socket_left",
+      "parent_bone": "forearm_left",
+      "pivot_keypoint": "elbow_left",
+      "width_native": 4,
+      "height_native": 4,
+      "local_polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          -1
+        ]
+      ],
+      "rest_pivot": [
+        46,
+        52
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "hip_socket_left",
+      "parent_bone": "thigh_left",
+      "pivot_keypoint": "hip_left",
+      "width_native": 4,
+      "height_native": 4,
+      "local_polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          -1
+        ]
+      ],
+      "rest_pivot": [
+        38,
+        61
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "knee_socket_left",
+      "parent_bone": "shin_left",
+      "pivot_keypoint": "knee_left",
+      "width_native": 4,
+      "height_native": 4,
+      "local_polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          -1
+        ]
+      ],
+      "rest_pivot": [
+        38,
+        69
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "ankle_socket_right",
+      "parent_bone": "boot_right",
+      "pivot_keypoint": "ankle_right",
+      "width_native": 3,
+      "height_native": 3,
+      "local_polygon": [
+        [
+          -1.5,
+          -1.5
+        ],
+        [
+          1.5,
+          -1.5
+        ],
+        [
+          1.5,
+          1.5
+        ],
+        [
+          -1.5,
+          1.5
+        ]
+      ],
+      "rest_pivot": [
+        22,
+        76
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    },
+    {
+      "id": "ankle_socket_left",
+      "parent_bone": "boot_left",
+      "pivot_keypoint": "ankle_left",
+      "width_native": 3,
+      "height_native": 3,
+      "local_polygon": [
+        [
+          -1.5,
+          -1.5
+        ],
+        [
+          1.5,
+          -1.5
+        ],
+        [
+          1.5,
+          1.5
+        ],
+        [
+          -1.5,
+          1.5
+        ]
+      ],
+      "rest_pivot": [
+        39,
+        76
+      ],
+      "medium_color": "#4D6470",
+      "edge_color": "#2B3E4B",
+      "edge_width_native": 1,
+      "draw_order": "BEHIND_SOURCE_ARMOR",
+      "status": "EXPLICIT_RECONSTRUCTION_NEEDED_NOT_IN_ORIGINAL_PART_COMPOSITION",
+      "authoring_policy": "Define neutral cap once; transform with fixed skeleton and depth. Never inspect output Alpha to paint a gap.",
+      "width_note": "Material section width, not a single dark pin."
+    }
+  ],
+  "explicit_reconstruction_needed": [
+    {
+      "id": "continuous_chest_waist_pelvis_inner_core",
+      "reason": "Old torso combines shell and weak dark cut lines. Chest/waist/core split only records original pixels; continuous medium-bluegray internal volume must be authored once.",
+      "cap_ids": [
+        "waist_core_bridge",
+        "pelvis_crossbeam"
+      ],
+      "status": "NEEDS_MANUAL_NEUTRAL_STRUCTURE_REVIEW",
+      "must_author_once": true,
+      "per_frame_gap_filling": false
+    },
+    {
+      "id": "shoulder_sockets_hidden_under_armor",
+      "reason": "Original idle hides internal shoulder-bearing surfaces; source silhouette alone does not provide all rotated views.",
+      "cap_ids": [
+        "shoulder_socket_right",
+        "shoulder_socket_left"
+      ],
+      "status": "NEEDS_MANUAL_NEUTRAL_STRUCTURE_REVIEW",
+      "must_author_once": true,
+      "per_frame_gap_filling": false
+    },
+    {
+      "id": "elbow_sleeve_overlaps",
+      "reason": "Source forearm mask originally displaced separately. Rest source strips lack fixed visible medium-tone overlap through bend angles.",
+      "cap_ids": [
+        "elbow_socket_right",
+        "elbow_socket_left"
+      ],
+      "status": "NEEDS_MANUAL_NEUTRAL_STRUCTURE_REVIEW",
+      "must_author_once": true,
+      "per_frame_gap_filling": false
+    },
+    {
+      "id": "pelvis_hip_caps_and_inner_thigh_surfaces",
+      "reason": "Upper-thigh side plates were owned by old torso. New thigh ownership preserves exact rest pixels, but original fixed-pose hidden hip coverage must be authored once.",
+      "cap_ids": [
+        "pelvis_crossbeam",
+        "hip_socket_right",
+        "hip_socket_left"
+      ],
+      "status": "NEEDS_MANUAL_NEUTRAL_STRUCTURE_REVIEW",
+      "must_author_once": true,
+      "per_frame_gap_filling": false
+    },
+    {
+      "id": "knee_ankle_overlaps",
+      "reason": "Neutral masks do not reveal hidden backsides during flexion; use one fixed sleeve/cap and consistently occlude with source guards.",
+      "cap_ids": [
+        "knee_socket_right",
+        "knee_socket_left",
+        "ankle_socket_right",
+        "ankle_socket_left"
+      ],
+      "status": "NEEDS_MANUAL_NEUTRAL_STRUCTURE_REVIEW",
+      "must_author_once": true,
+      "per_frame_gap_filling": false
+    }
+  ],
+  "palette": [
+    "#101820",
+    "#182631",
+    "#2B3E4B",
+    "#4D6470",
+    "#829BA3",
+    "#BECBC4",
+    "#566B78",
+    "#ECE9D8",
+    "#7B4D35",
+    "#B77C4B",
+    "#E2B77A"
+  ],
+  "identity_locks": {
+    "head_part": "head",
+    "chest_part": "chest_shell",
+    "tool_part": "left_wrist_tool",
+    "tool_anatomical_side": "left",
+    "tool_viewer_side_down": "right",
+    "no_mirror": true,
+    "no_independent_frame_generation": true,
+    "no_per_frame_resizing": true,
+    "no_per_frame_free_translation": true,
+    "contact_anchor": [
+      32,
+      80
+    ],
+    "support_foot_raster_rounding_tolerance_px": 1
+  },
+  "reconstruction": {
+    "status": "EXACT_ORIGINAL_SOURCE_MASK_RECONSTRUCTION",
+    "opaque_pixels": 1492,
+    "owned_opaque_pixels": 1492,
+    "unique_ownership": true,
+    "static_rgba_equal": true,
+    "source_rgba_sha256": "57d1fae5b2751e52b87d89feb946896e8a4a9daac6d40846c89be6522fdcf631",
+    "composed_rgba_sha256": "57d1fae5b2751e52b87d89feb946896e8a4a9daac6d40846c89be6522fdcf631",
+    "transparent_nonzero_rgb": 0,
+    "left_tool_brass_pixel_count": 13,
+    "torso_side_plate_pixels_reassigned_to_thighs": 56,
+    "new_cap_pixels_in_this_comparison": 0,
+    "verification_scope": "Source part masks reconstruct frozen original only; not motion or final structural art approval."
+  },
+  "notes": [
+    "Head and chest source pixels are frozen. Their global position may move with body pose; visible owner mappings must prove source RGBA fidelity.",
+    "Hidden core/caps are separately authored candidate definitions. They are not included in the exact original-alpha composition proof.",
+    "Rest keypoints are local rig design choices, not engineering measurements of the imagegen diagrams.",
+    "Original torso lower side-plate pixels are reassigned semantically to thighs to avoid sliding leg armor with chest offsets; original RGBA remains unchanged."
+  ]
+}

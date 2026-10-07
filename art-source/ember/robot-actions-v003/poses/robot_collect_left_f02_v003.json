@@ -1,0 +1,56 @@
+{
+	"direction": "left",
+	"draw_order": [
+		"right_leg",
+		"right_arm",
+		"torso",
+		"left_leg",
+		"left_upper_arm",
+		"left_forearm_tool",
+		"head"
+	],
+	"foot_anchor": [
+		32,
+		80
+	],
+	"frame_index": 2,
+	"idle_source": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+	"joint_pixels": [],
+	"joint_policy": "Explicit overlap and draw order. Empty joint_pixels means no new pixel paint.",
+	"offsets": {
+		"head": [
+			-2,
+			4
+		],
+		"left_forearm_tool": [
+			-7,
+			4
+		],
+		"left_leg": [
+			0,
+			0
+		],
+		"left_upper_arm": [
+			-2,
+			4
+		],
+		"right_arm": [
+			-2,
+			4
+		],
+		"right_leg": [
+			0,
+			0
+		],
+		"torso": [
+			-2,
+			4
+		]
+	},
+	"parts_file": "res://art-source/ember/robot-actions-v003/source-rigs/rig_left_actions_v003.json",
+	"pose_description": "保持：维持支撑与工具指向，继续 1 像素下探。",
+	"schema_version": 2,
+	"source_art_policy": "Original component RGBA only; integer translation, no whole sprite transform or alpha repair.",
+	"state": "collect",
+	"tool_hand": "anatomical_left_arm_from_v002_rig; no mirror and no hand swap"
+}

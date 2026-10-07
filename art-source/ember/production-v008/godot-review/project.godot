@@ -1,0 +1,20 @@
+; 独立素材审核工程，不加载原项目 autoload、不替换课程场景。
+config_version=5
+
+[application]
+config/name="Ember v008 official-layout review"
+run/main_scene="res://review.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1536
+window/size/viewport_height=900
+window/size/window_width_override=1536
+window/size/window_height_override=900
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.047,0.075,0.094,1)
+textures/default_filters/use_nearest_mipmap_filter=false

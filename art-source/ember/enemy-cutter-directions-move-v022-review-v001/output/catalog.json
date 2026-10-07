@@ -1,0 +1,6376 @@
+{
+	"canvas": [
+		128,
+		128
+	],
+	"clips": [
+		{
+			"action": "move_down",
+			"atlas": "res://output/enemy_cutter/move_down.png",
+			"atlas_sha256": "a89c3d7ef8941d009f5ea8e042ab8a4ffea2249585acd85138cb5af7f3a43772",
+			"direction": "down",
+			"fps": 8,
+			"frame_count": 8,
+			"frame_hashes": [
+				"721dbd65d42b4bd8996992b36bb2a7f15ceea6df751ddeb5a4df6a840da16328",
+				"bb7d3a4735e0715531554f0c1d317869dab5239e894e11c74ff1646ec317e845",
+				"5d21cc9a2db1a2fa05f0a4b62353e9e48b083270f939d246343ce4b969162300",
+				"667dd9ccd31972e3eff30059d699ad3d553cb3bfbf8724793291289f1bfef7b3",
+				"1e5fbdbfea640fc67cb813d335641b1193fa273109582e706e2bae7399656184",
+				"667dd9ccd31972e3eff30059d699ad3d553cb3bfbf8724793291289f1bfef7b3",
+				"5d21cc9a2db1a2fa05f0a4b62353e9e48b083270f939d246343ce4b969162300",
+				"bb7d3a4735e0715531554f0c1d317869dab5239e894e11c74ff1646ec317e845"
+			],
+			"loop": true,
+			"poses": [],
+			"status": "PRESERVED_TA_APPROVED",
+			"unit": "enemy_cutter"
+		},
+		{
+			"action": "move_down_left",
+			"atlas": "res://output/enemy_cutter/move_down_left.png",
+			"atlas_sha256": "7a9cab48ab15d6f378c327c75ba527e8b1575f21875738130cc7016a25e16f7c",
+			"direction": "down_left",
+			"fps": 8,
+			"frame_count": 8,
+			"frame_hashes": [
+				"33095bf74aa0ddfabccec0b6bbdb777835c4adb77888b60be1de6d03a4be5a5c",
+				"998d2d5ccaea6f0ffa31d511f4146ec7b2e7abb60eba0af10d0e3898d4ba39c5",
+				"8b46f513d676546413f2641f47354193b926bdadf10ce2c2f36d25330fcfbaa0",
+				"998d2d5ccaea6f0ffa31d511f4146ec7b2e7abb60eba0af10d0e3898d4ba39c5",
+				"e0e78521f56b4b849455c744280e5b051a354db32ccddb2d09858775198bde65",
+				"7477752353b7be8e1f1432dd34f7b52ddd2268c1dee42abd901bc5745ba24e8d",
+				"c75dc836363678bab323b22eb156f362882e9dc746d297d34b0327493f0bf082",
+				"7477752353b7be8e1f1432dd34f7b52ddd2268c1dee42abd901bc5745ba24e8d"
+			],
+			"loop": true,
+			"poses": [
+				{
+					"action": "move_down_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 0,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								84.0,
+								85.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								55.0,
+								87.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								83.0,
+								77.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								49.0,
+								72.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 2.0,
+							"ground": [
+								83.0,
+								96.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								83.0,
+								96.0
+							],
+							"support": true
+						},
+						"front_right": {
+							"depth": -2.0,
+							"ground": [
+								55.0,
+								93.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								55.0,
+								93.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": -2.0,
+							"ground": [
+								87.0,
+								84.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								87.0,
+								84.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 2.0,
+							"ground": [
+								49.0,
+								77.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								49.0,
+								77.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_down_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 1,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								85.0,
+								85.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								86.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								82.0,
+								76.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								50.0,
+								72.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 1.0,
+							"ground": [
+								84.0,
+								96.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								84.0,
+								96.0
+							],
+							"support": true
+						},
+						"front_right": {
+							"depth": -1.0,
+							"ground": [
+								54.0,
+								93.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								54.0,
+								92.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": -1.0,
+							"ground": [
+								86.0,
+								84.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								86.0,
+								83.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": 1.0,
+							"ground": [
+								50.0,
+								77.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								50.0,
+								77.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_down_left",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 2,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								85.0,
+								85.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								85.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								82.0,
+								75.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								50.0,
+								72.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 0.0,
+							"ground": [
+								84.0,
+								96.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								84.0,
+								96.0
+							],
+							"support": true
+						},
+						"front_right": {
+							"depth": 0.0,
+							"ground": [
+								54.0,
+								93.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								54.0,
+								91.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": 0.0,
+							"ground": [
+								86.0,
+								84.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								86.0,
+								82.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": 0.0,
+							"ground": [
+								50.0,
+								77.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								50.0,
+								77.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_down_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 3,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								85.0,
+								85.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								86.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								82.0,
+								76.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								50.0,
+								72.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -1.0,
+							"ground": [
+								84.0,
+								96.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								84.0,
+								96.0
+							],
+							"support": true
+						},
+						"front_right": {
+							"depth": 1.0,
+							"ground": [
+								54.0,
+								93.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								54.0,
+								92.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": 1.0,
+							"ground": [
+								86.0,
+								84.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								86.0,
+								83.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": -1.0,
+							"ground": [
+								50.0,
+								77.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								50.0,
+								77.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_down_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 4,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								86.0,
+								85.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								53.0,
+								87.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								81.0,
+								77.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								51.0,
+								72.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -2.0,
+							"ground": [
+								85.0,
+								96.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								85.0,
+								96.0
+							],
+							"support": true
+						},
+						"front_right": {
+							"depth": 2.0,
+							"ground": [
+								53.0,
+								93.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								53.0,
+								93.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 2.0,
+							"ground": [
+								85.0,
+								84.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								85.0,
+								84.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": -2.0,
+							"ground": [
+								51.0,
+								77.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								51.0,
+								77.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_down_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 5,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								85.0,
+								84.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								87.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								82.0,
+								77.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								50.0,
+								71.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -1.0,
+							"ground": [
+								84.0,
+								96.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								84.0,
+								95.0
+							],
+							"support": false
+						},
+						"front_right": {
+							"depth": 1.0,
+							"ground": [
+								54.0,
+								93.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								54.0,
+								93.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 1.0,
+							"ground": [
+								86.0,
+								84.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								86.0,
+								84.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": -1.0,
+							"ground": [
+								50.0,
+								77.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								50.0,
+								76.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_down_left",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 6,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								85.0,
+								83.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								87.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								82.0,
+								77.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								50.0,
+								70.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 0.0,
+							"ground": [
+								84.0,
+								96.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								84.0,
+								94.0
+							],
+							"support": false
+						},
+						"front_right": {
+							"depth": 0.0,
+							"ground": [
+								54.0,
+								93.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								54.0,
+								93.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 0.0,
+							"ground": [
+								86.0,
+								84.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								86.0,
+								84.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 0.0,
+							"ground": [
+								50.0,
+								77.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								50.0,
+								75.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_down_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 7,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								85.0,
+								84.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								87.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								82.0,
+								77.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								50.0,
+								71.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 1.0,
+							"ground": [
+								84.0,
+								96.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								84.0,
+								95.0
+							],
+							"support": false
+						},
+						"front_right": {
+							"depth": -1.0,
+							"ground": [
+								54.0,
+								93.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								54.0,
+								93.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": -1.0,
+							"ground": [
+								86.0,
+								84.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								86.0,
+								84.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 1.0,
+							"ground": [
+								50.0,
+								77.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								50.0,
+								76.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				}
+			],
+			"status": "PENDING_TA_REVIEW",
+			"unit": "enemy_cutter"
+		},
+		{
+			"action": "move_left",
+			"atlas": "res://output/enemy_cutter/move_left.png",
+			"atlas_sha256": "86fedf1b8d8f553ce511d164d5b00c6b55f7680df90786783a92b3daa1b74fb7",
+			"direction": "left",
+			"fps": 8,
+			"frame_count": 8,
+			"frame_hashes": [
+				"26a53e212cc225662d0f04922d3aa86484d0943dcc092a8288b4e5d07ee4ebd9",
+				"49061820233345ca178d6d86e54fdfa667bf1d1f285a9a8bb3f9e7757ae9e1b9",
+				"c1b8e9b4e08b87838f58496591496f79c9836e29066118a24dbc7587d3c2d8ae",
+				"e7961eb4bfbfaf4cd595c1e30062ca8302b6550cfff591b0eafc4bb5de1b9c5e",
+				"44887311332ac7c4cc639717df2bcda12b0d28dbee89899490601e3decd3fe3b",
+				"09aa6b541a2a3f3abe6ccfdfd11e2c7a4b4d66d3c0b94bea6c3d71b09a259863",
+				"1cff37c6d2607f4ffe586f98ef834d07a6c7bab127a7169e1884af8ccc149080",
+				"971332c8a7d97d5f5609678c73c1b7746131338651174c3db66aea1a3239d86d"
+			],
+			"loop": true,
+			"poses": [
+				{
+					"action": "move_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 0,
+					"hidden_legs": [
+						"front_right",
+						"rear_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								90.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 2.0,
+							"ground": [
+								57.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								57.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": -2.0,
+							"ground": [
+								84.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								84.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 1,
+					"hidden_legs": [
+						"front_right",
+						"rear_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								90.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								88.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 1.0,
+							"ground": [
+								57.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								57.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": -1.0,
+							"ground": [
+								84.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								84.0,
+								102.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_left",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 2,
+					"hidden_legs": [
+						"front_right",
+						"rear_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								62.0,
+								90.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								76.0,
+								87.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 0.0,
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 0.0,
+							"ground": [
+								83.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								83.0,
+								101.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 3,
+					"hidden_legs": [
+						"front_right",
+						"rear_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								63.0,
+								90.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								75.0,
+								88.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -1.0,
+							"ground": [
+								59.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								59.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 1.0,
+							"ground": [
+								82.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								82.0,
+								102.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 4,
+					"hidden_legs": [
+						"front_right",
+						"rear_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								63.0,
+								90.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								75.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -2.0,
+							"ground": [
+								59.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								59.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 2.0,
+							"ground": [
+								82.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								82.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 5,
+					"hidden_legs": [
+						"front_right",
+						"rear_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								63.0,
+								89.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								75.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -1.0,
+							"ground": [
+								59.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								59.0,
+								103.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": 1.0,
+							"ground": [
+								82.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								82.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_left",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 6,
+					"hidden_legs": [
+						"front_right",
+						"rear_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								62.0,
+								88.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								76.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 0.0,
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								58.0,
+								102.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": 0.0,
+							"ground": [
+								83.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								83.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 7,
+					"hidden_legs": [
+						"front_right",
+						"rear_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								89.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 1.0,
+							"ground": [
+								57.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								57.0,
+								103.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": -1.0,
+							"ground": [
+								84.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								84.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				}
+			],
+			"status": "PENDING_TA_REVIEW",
+			"unit": "enemy_cutter"
+		},
+		{
+			"action": "move_up_left",
+			"atlas": "res://output/enemy_cutter/move_up_left.png",
+			"atlas_sha256": "1a828eab971f832666af7aacad0f5a8b0bbf1b157d1aebd2dfe602604d4c9ab5",
+			"direction": "up_left",
+			"fps": 8,
+			"frame_count": 8,
+			"frame_hashes": [
+				"c319bf176a36a4b32c8d40b57799c67ce824f4b7cad5b7b3f6c81bc35653cba6",
+				"4903ec019e121aabd92d844bb757ecefc682c58dad9169d5d6bb3204f8128b5f",
+				"d8a1a8f823bc58d0d451276e089bfd1d89a6afdd721f94fd79476989ef498c44",
+				"4903ec019e121aabd92d844bb757ecefc682c58dad9169d5d6bb3204f8128b5f",
+				"06ea68eeb06567b9d3868ade02c68edf681e6c7d6970cc8f53cc531fa28a1a5b",
+				"c5df437a4f54c341bf38a3b5de62f78c2a2e0eb8cfd549ecbe693ea10470b93a",
+				"99f54b7fe9f66fc422a8f17290855ca03a1bb72aa8c06fd790a18dada03344be",
+				"c5df437a4f54c341bf38a3b5de62f78c2a2e0eb8cfd549ecbe693ea10470b93a"
+			],
+			"loop": true,
+			"poses": [
+				{
+					"action": "move_up_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 0,
+					"hidden_legs": [
+						"front_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								80.0,
+								72.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								55.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								78.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": -2.0,
+							"ground": null,
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": null,
+							"support": true
+						},
+						"rear_left": {
+							"depth": -2.0,
+							"ground": [
+								52.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								52.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 2.0,
+							"ground": [
+								83.0,
+								102.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								83.0,
+								102.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 1,
+					"hidden_legs": [
+						"front_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								71.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								90.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": -1.0,
+							"ground": null,
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": null,
+							"support": false
+						},
+						"rear_left": {
+							"depth": -1.0,
+							"ground": [
+								51.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								51.0,
+								103.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": 1.0,
+							"ground": [
+								84.0,
+								102.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								84.0,
+								102.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_left",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 2,
+					"hidden_legs": [
+						"front_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								70.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								89.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": 0.0,
+							"ground": null,
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": null,
+							"support": false
+						},
+						"rear_left": {
+							"depth": 0.0,
+							"ground": [
+								51.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								51.0,
+								102.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": 0.0,
+							"ground": [
+								84.0,
+								102.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								84.0,
+								102.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 3,
+					"hidden_legs": [
+						"front_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								71.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								90.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": 1.0,
+							"ground": null,
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": null,
+							"support": false
+						},
+						"rear_left": {
+							"depth": 1.0,
+							"ground": [
+								51.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								51.0,
+								103.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": -1.0,
+							"ground": [
+								84.0,
+								102.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								84.0,
+								102.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 4,
+					"hidden_legs": [
+						"front_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								78.0,
+								72.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								53.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								80.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": 2.0,
+							"ground": null,
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": null,
+							"support": true
+						},
+						"rear_left": {
+							"depth": 2.0,
+							"ground": [
+								50.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								50.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": -2.0,
+							"ground": [
+								85.0,
+								102.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								85.0,
+								102.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 5,
+					"hidden_legs": [
+						"front_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								72.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": 1.0,
+							"ground": null,
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": null,
+							"support": true
+						},
+						"rear_left": {
+							"depth": 1.0,
+							"ground": [
+								51.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								51.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": -1.0,
+							"ground": [
+								84.0,
+								102.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								84.0,
+								101.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_left",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 6,
+					"hidden_legs": [
+						"front_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								72.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								88.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": 0.0,
+							"ground": null,
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": null,
+							"support": true
+						},
+						"rear_left": {
+							"depth": 0.0,
+							"ground": [
+								51.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								51.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 0.0,
+							"ground": [
+								84.0,
+								102.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								84.0,
+								100.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_left",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 7,
+					"hidden_legs": [
+						"front_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								72.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								54.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": -1.0,
+							"ground": null,
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": null,
+							"support": true
+						},
+						"rear_left": {
+							"depth": -1.0,
+							"ground": [
+								51.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								51.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 1.0,
+							"ground": [
+								84.0,
+								102.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								84.0,
+								101.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				}
+			],
+			"status": "PENDING_TA_REVIEW",
+			"unit": "enemy_cutter"
+		},
+		{
+			"action": "move_up",
+			"atlas": "res://output/enemy_cutter/move_up.png",
+			"atlas_sha256": "cc89f1cc160a9737b570ebc78e937b320f4c6f255a6f68bfe8528664e4832a69",
+			"direction": "up",
+			"fps": 8,
+			"frame_count": 8,
+			"frame_hashes": [
+				"a29d20d6e308ddd2a60010347802b9cde32c6c23f5df132a04f2cb219ac6bb08",
+				"2cbbba6f58a91e70930ac8a866564277f94dede6bbdcc8fa4dfd7e9e981c0244",
+				"28ce0e0cf4524a6c4f35cdc517f316d757d6dce8d5b899afcd44ad18c989423c",
+				"2cbbba6f58a91e70930ac8a866564277f94dede6bbdcc8fa4dfd7e9e981c0244",
+				"cbaf348889a41369d1d51ad1f91137bac6501ef17f6985d7ec91017603da2372",
+				"c12984040e9e6349cac00236497537643002cce8edafc245c941708876f4a7eb",
+				"d979e97713f7414e17a6d191b514dddede2408e63eeb1b7baa4b794b3a800800",
+				"c12984040e9e6349cac00236497537643002cce8edafc245c941708876f4a7eb"
+			],
+			"loop": true,
+			"poses": [
+				{
+					"action": "move_up",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 0,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								49.0,
+								79.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								81.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								52.0,
+								93.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								91.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 2.0,
+							"ground": [
+								42.0,
+								94.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								42.0,
+								94.0
+							],
+							"support": true
+						},
+						"front_right": {
+							"depth": -2.0,
+							"ground": [
+								86.0,
+								96.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								1.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								86.0,
+								96.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": -2.0,
+							"ground": [
+								44.0,
+								105.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								1.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								44.0,
+								105.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 2.0,
+							"ground": [
+								84.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								84.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 1,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								49.0,
+								80.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								79.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								52.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								92.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 1.0,
+							"ground": [
+								42.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								42.0,
+								95.0
+							],
+							"support": true
+						},
+						"front_right": {
+							"depth": -1.0,
+							"ground": [
+								86.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								86.0,
+								94.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": -1.0,
+							"ground": [
+								44.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								44.0,
+								103.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": 1.0,
+							"ground": [
+								84.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								84.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 2,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								49.0,
+								80.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								78.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								52.0,
+								90.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								92.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 0.0,
+							"ground": [
+								42.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								42.0,
+								95.0
+							],
+							"support": true
+						},
+						"front_right": {
+							"depth": 0.0,
+							"ground": [
+								86.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								86.0,
+								93.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": 0.0,
+							"ground": [
+								44.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								44.0,
+								102.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": 0.0,
+							"ground": [
+								84.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								84.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 3,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								49.0,
+								80.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								79.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								52.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								92.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -1.0,
+							"ground": [
+								42.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								42.0,
+								95.0
+							],
+							"support": true
+						},
+						"front_right": {
+							"depth": 1.0,
+							"ground": [
+								86.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								86.0,
+								94.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": 1.0,
+							"ground": [
+								44.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								44.0,
+								103.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": -1.0,
+							"ground": [
+								84.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								84.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 4,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								49.0,
+								81.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								79.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								52.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								93.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -2.0,
+							"ground": [
+								42.0,
+								96.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								1.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								42.0,
+								96.0
+							],
+							"support": true
+						},
+						"front_right": {
+							"depth": 2.0,
+							"ground": [
+								86.0,
+								94.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								86.0,
+								94.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 2.0,
+							"ground": [
+								44.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								44.0,
+								103.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": -2.0,
+							"ground": [
+								84.0,
+								105.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								1.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								84.0,
+								105.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 5,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								49.0,
+								79.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								80.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								52.0,
+								92.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								91.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -1.0,
+							"ground": [
+								42.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								42.0,
+								94.0
+							],
+							"support": false
+						},
+						"front_right": {
+							"depth": 1.0,
+							"ground": [
+								86.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								86.0,
+								95.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 1.0,
+							"ground": [
+								44.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								44.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": -1.0,
+							"ground": [
+								84.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								84.0,
+								103.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 6,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								49.0,
+								78.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								80.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								52.0,
+								92.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 0.0,
+							"ground": [
+								42.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								42.0,
+								93.0
+							],
+							"support": false
+						},
+						"front_right": {
+							"depth": 0.0,
+							"ground": [
+								86.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								86.0,
+								95.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 0.0,
+							"ground": [
+								44.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								44.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 0.0,
+							"ground": [
+								84.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								84.0,
+								102.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 7,
+					"hidden_legs": [],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								49.0,
+								79.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								79.0,
+								80.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								52.0,
+								92.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								77.0,
+								91.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 1.0,
+							"ground": [
+								42.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								42.0,
+								94.0
+							],
+							"support": false
+						},
+						"front_right": {
+							"depth": -1.0,
+							"ground": [
+								86.0,
+								95.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								86.0,
+								95.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": -1.0,
+							"ground": [
+								44.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								44.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 1.0,
+							"ground": [
+								84.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								84.0,
+								103.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				}
+			],
+			"status": "PENDING_TA_REVIEW",
+			"unit": "enemy_cutter"
+		},
+		{
+			"action": "move_up_right",
+			"atlas": "res://output/enemy_cutter/move_up_right.png",
+			"atlas_sha256": "99ad101024a09b29b2719e1ec28dd2bbf9c7eae5816f9ae30f00062e8e8e1413",
+			"direction": "up_right",
+			"fps": 8,
+			"frame_count": 8,
+			"frame_hashes": [
+				"3adb3bee224898a10621060c327f1277c70d68029f4315c6cdde4780d8ea8117",
+				"776bd289933ab9129e4ad6a549b30cd80887c9ff3772c5cb0298119b92720238",
+				"d9c3047321c721f0a8a8bb880a8f304f76314be8b8e9d322c887bcb48c1cd3d3",
+				"776bd289933ab9129e4ad6a549b30cd80887c9ff3772c5cb0298119b92720238",
+				"ad4c034c245d7a05eb7aae6c3f57b75c2d817d2ce7bca7ea2b90680e2d54d481",
+				"99ca5217648adca73f232f34d7d75c4ceb4e6407c69503cff2ce2490e37bea46",
+				"1fad7bba245e08935a2c1ee1a33f980a1197b934c26ec1c9d00ab821c48caa6d",
+				"99ca5217648adca73f232f34d7d75c4ceb4e6407c69503cff2ce2490e37bea46"
+			],
+			"loop": true,
+			"poses": [
+				{
+					"action": "move_up_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 0,
+					"hidden_legs": [
+						"front_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								46.0,
+								74.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								44.0,
+								87.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 2.0,
+							"ground": [
+								42.0,
+								81.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								42.0,
+								81.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": -2.0,
+							"ground": [
+								41.0,
+								97.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								41.0,
+								97.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 2.0,
+							"ground": [
+								71.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								71.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 1,
+					"hidden_legs": [
+						"front_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								74.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								86.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 1.0,
+							"ground": [
+								41.0,
+								81.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								41.0,
+								81.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": -1.0,
+							"ground": [
+								42.0,
+								97.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								42.0,
+								96.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": 1.0,
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_right",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 2,
+					"hidden_legs": [
+						"front_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								74.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								85.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 0.0,
+							"ground": [
+								41.0,
+								81.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								41.0,
+								81.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 0.0,
+							"ground": [
+								42.0,
+								97.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								42.0,
+								95.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": 0.0,
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 3,
+					"hidden_legs": [
+						"front_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								74.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								86.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -1.0,
+							"ground": [
+								41.0,
+								81.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								41.0,
+								81.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 1.0,
+							"ground": [
+								42.0,
+								97.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								42.0,
+								96.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": -1.0,
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 4,
+					"hidden_legs": [
+						"front_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								44.0,
+								74.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								46.0,
+								87.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -2.0,
+							"ground": [
+								40.0,
+								81.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								40.0,
+								81.0
+							],
+							"support": true
+						},
+						"rear_left": {
+							"depth": 2.0,
+							"ground": [
+								43.0,
+								97.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								43.0,
+								97.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": -2.0,
+							"ground": [
+								69.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								69.0,
+								104.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 5,
+					"hidden_legs": [
+						"front_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								73.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								87.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": -1.0,
+							"ground": [
+								41.0,
+								81.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								41.0,
+								80.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": 1.0,
+							"ground": [
+								42.0,
+								97.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								42.0,
+								97.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": -1.0,
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								70.0,
+								103.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_right",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 6,
+					"hidden_legs": [
+						"front_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								72.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								87.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								88.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 0.0,
+							"ground": [
+								41.0,
+								81.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								41.0,
+								79.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": 0.0,
+							"ground": [
+								42.0,
+								97.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								42.0,
+								97.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 0.0,
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								70.0,
+								102.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_up_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 7,
+					"hidden_legs": [
+						"front_right"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								73.0
+							]
+						},
+						"rear_left": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								87.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_left": {
+							"depth": 1.0,
+							"ground": [
+								41.0,
+								81.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								41.0,
+								80.0
+							],
+							"support": false
+						},
+						"rear_left": {
+							"depth": -1.0,
+							"ground": [
+								42.0,
+								97.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								42.0,
+								97.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 1.0,
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								70.0,
+								103.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				}
+			],
+			"status": "PENDING_TA_REVIEW",
+			"unit": "enemy_cutter"
+		},
+		{
+			"action": "move_right",
+			"atlas": "res://output/enemy_cutter/move_right.png",
+			"atlas_sha256": "7aeda7aa6fbc01053a625be7f623ec2c99e9eccdf82324f9005c86c0641dff67",
+			"direction": "right",
+			"fps": 8,
+			"frame_count": 8,
+			"frame_hashes": [
+				"255f7e4edafe14064c1e11d2b3223282cdf54bd5ea10f8c04a08b39b51ec46c0",
+				"4ca1cb8835f2f9c845fff71d8c530e19c7f3c2dca74a089c694028aa8ae85416",
+				"4166e0572c44a111b3df008e3598290a6d6cd04f787942415b4902f5081401bc",
+				"0a985839e63f61990d8ad6cee86777d65ac72f00ee59f6140dde0147739f6747",
+				"9040a2d916e2c64049f723f47623666a421824056fb8279a9643f9039ce9aca1",
+				"2ed6be47e15f53e8712fe6d71ae139a1b65fa347c7fba960809fd45da60cfaa9",
+				"d79176256815c758d337b0ece7b0cf70bdd1349561cb1175d054f709d646e7a1",
+				"a6caa7e99c09aa450e3827e78965fbd20412136b3a9fe49696b13feaf0032853"
+			],
+			"loop": true,
+			"poses": [
+				{
+					"action": "move_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 0,
+					"hidden_legs": [
+						"front_left",
+						"rear_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								46.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": -2.0,
+							"ground": [
+								65.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								65.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 2.0,
+							"ground": [
+								43.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								43.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 1,
+					"hidden_legs": [
+						"front_left",
+						"rear_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								90.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								46.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": -1.0,
+							"ground": [
+								65.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								65.0,
+								103.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": 1.0,
+							"ground": [
+								43.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								43.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_right",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 2,
+					"hidden_legs": [
+						"front_left",
+						"rear_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								60.0,
+								89.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": 0.0,
+							"ground": [
+								66.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								66.0,
+								102.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": 0.0,
+							"ground": [
+								42.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								42.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 3,
+					"hidden_legs": [
+						"front_left",
+						"rear_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								90.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								44.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": 1.0,
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								67.0,
+								103.0
+							],
+							"support": false
+						},
+						"rear_right": {
+							"depth": -1.0,
+							"ground": [
+								41.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								41.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 4,
+					"hidden_legs": [
+						"front_left",
+						"rear_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								44.0,
+								90.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": 2.0,
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 0,
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": -2.0,
+							"ground": [
+								41.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 4,
+							"sole": [
+								41.0,
+								103.0
+							],
+							"support": true
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 5,
+					"hidden_legs": [
+						"front_left",
+						"rear_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								44.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": 1.0,
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 1,
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": -1.0,
+							"ground": [
+								41.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 5,
+							"sole": [
+								41.0,
+								102.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_right",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"frame": 6,
+					"hidden_legs": [
+						"front_left",
+						"rear_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								60.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								45.0,
+								88.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": 0.0,
+							"ground": [
+								66.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 2,
+							"sole": [
+								66.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 0.0,
+							"ground": [
+								42.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								0.0,
+								-2.0
+							],
+							"lift": 2.0,
+							"phase": 6,
+							"sole": [
+								42.0,
+								101.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				},
+				{
+					"action": "move_right",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"frame": 7,
+					"hidden_legs": [
+						"front_left",
+						"rear_left"
+					],
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"front_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								91.0
+							]
+						},
+						"rear_right": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								46.0,
+								89.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"front_right": {
+							"depth": -1.0,
+							"ground": [
+								65.0,
+								104.0
+							],
+							"hidden_mount_travel": [
+								-1.0,
+								0.0
+							],
+							"lift": 0.0,
+							"phase": 3,
+							"sole": [
+								65.0,
+								104.0
+							],
+							"support": true
+						},
+						"rear_right": {
+							"depth": 1.0,
+							"ground": [
+								43.0,
+								103.0
+							],
+							"hidden_mount_travel": [
+								1.0,
+								-1.0
+							],
+							"lift": 1.0,
+							"phase": 7,
+							"sole": [
+								43.0,
+								102.0
+							],
+							"support": false
+						}
+					},
+					"unit": "enemy_cutter"
+				}
+			],
+			"status": "PENDING_TA_REVIEW",
+			"unit": "enemy_cutter"
+		},
+		{
+			"action": "move_down_right",
+			"atlas": "res://output/enemy_cutter/move_down_right.png",
+			"atlas_sha256": "e263656e96b15dd7f44bf54bbbe0c59d4d6c46a0f6bfd0ac187987660193898d",
+			"direction": "down_right",
+			"fps": 8,
+			"frame_count": 8,
+			"frame_hashes": [
+				"783b177d9a0697fe2de79f926afe6cdba6e331c34e755fe6eb02f3c7822531f2",
+				"225a7763ed49085484f2f2b3091ebc961a3698a11d37f78dfa9c0aca396a75f2",
+				"ebc1c896d595db7f2719e60fec8c18e8d88e17d4a8be7577bc99cd0e46843628",
+				"549d9e8d41e52f77963d6070ff6da747dd35dd16dd4dfe854bcbe2caf68241f1",
+				"e2302e80f39e575caf824f1655fee7c5e90746db559a24d890f1204c0c3ca5b9",
+				"6c539cd10df3621b59a04489faf393d98ffd6047b68b841efd39354a21d4ebda",
+				"bc616addd4fd9015424dc4f71b0492023fc6a1c67ae83d605001e203f673e9f4",
+				"1d73b5c0c79ef3516b8c9796f475c4df6fc4f57863620cb2d06d67f71b59b40a"
+			],
+			"loop": true,
+			"poses": [],
+			"status": "PRESERVED_TA_APPROVED",
+			"unit": "enemy_cutter"
+		}
+	],
+	"rig_sha256": "937de798f052051105836fba59a08d0b35e8032a235042213b49fa5073c69fd1",
+	"root": [
+		64,
+		104
+	],
+	"scope": "6 new moves / 48 new frames; down and down_right preserved",
+	"status": "PENDING_TA_REVIEW",
+	"tres": "res://output/enemy_cutter_move_v022.tres",
+	"tres_sha256": "dc57350cf3ad90172534d3e1871eecbbf0186f531a7c52e57a5e696c7256225c",
+	"version": "v022-cutter-move"
+}

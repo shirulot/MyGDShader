@@ -1,0 +1,60 @@
+--- building_demo_v004r1.gd::save_state
++++ building_demo.gd::save_state
+@@ -1,2 +1,9 @@
+-func save_state(path: String = "user://building_assets_demo_v004r1.json") -> void:
+-	super.save_state(path)
++func save_state(path: String = SAVE_PATH) -> void:
++	var states: Array[Dictionary] = []
++	for building in buildings: states.append(building.snapshot())
++	var file := FileAccess.open(path, FileAccess.WRITE)
++	if file == null:
++		_show_toast("保存失败")
++		return
++	file.store_string(JSON.stringify({"buildings": states, "player": [actor.position.x, actor.position.y]}, "\t"))
++	_show_toast("已保存建筑状态")
+--- building_demo_v004r1.gd::load_state
++++ building_demo.gd::load_state
+@@ -1,2 +1,16 @@
+-func load_state(path: String = "user://building_assets_demo_v004r1.json") -> void:
+-	super.load_state(path)
++func load_state(path: String = SAVE_PATH) -> void:
++	if not FileAccess.file_exists(path):
++		_show_toast("还没有保存记录")
++		return
++	var state: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
++	if not state is Dictionary: return
++	var point: Array = state.get("player", [112, 446])
++	# 先恢复玩家，再向所有建筑提交同一保存时刻的真实接触盒。
++	# restore()内部会做零时长安全检查，不能沿用读档前玩家所在的位置。
++	actor.position = Vector2(float(point[0]), float(point[1]))
++	var actor_rects: Array[Rect2] = [actor.ground_rect()]
++	for building in buildings: building.set_actor_rects(actor_rects)
++	for saved: Dictionary in state.get("buildings", []):
++		for building in buildings:
++			if building.building_id == saved.get("building_id", ""): building.restore(saved)
++	_show_toast("已恢复建筑状态")
+--- building_demo_v004.gd::_build_existing_floor
++++ building_demo.gd::_build_existing_floor
+@@ -1,5 +1,20 @@
+ func _build_existing_floor() -> void:
+-	super._build_existing_floor()
+-	var layer := world.get_node("ExistingContinuousFloor") as TileMapLayer
++	# 从现有1024周期读取8×8原生128图块；TileMapLayer.scale=0.25保持旧地板标准。
++	# 本示例展示连续地面，不生成建筑Terrain，也不宣称新增47型建筑笔刷。
++	var layer := TileMapLayer.new()
++	layer.name = "ExistingContinuousFloor"
++	layer.scale = Vector2(0.25, 0.25)
++	layer.z_index = -10
++	layer.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
++	var set := TileSet.new()
++	set.tile_size = Vector2i(128, 128)
++	var source := TileSetAtlasSource.new()
++	source.texture = load(FLOOR_TEXTURE) as Texture2D
++	source.texture_region_size = Vector2i(128, 128)
++	for y: int in 8:
++		for x: int in 8: source.create_tile(Vector2i(x, y))
++	set.add_source(source, 0)
++	layer.tile_set = set
+ 	for y: int in 25:
+ 		for x: int in 44: layer.set_cell(Vector2i(x, y), 0, Vector2i(x % 8, y % 8))
++	world.add_child(layer)

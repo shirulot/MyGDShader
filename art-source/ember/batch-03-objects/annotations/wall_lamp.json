@@ -1,0 +1,78 @@
+{
+  "observations": "实际母稿有壁面安装板、两个上部铜螺栓、向下防护罩及小笼状镜片；原生22×42可与地灯安装方式区分。",
+  "adjustments": [
+    "笼内[30,45,33,50)玻璃整理为连续中性深灰，去微亮点，灯不发光",
+    "上安装板一枚钢灰线像素归并，保留右侧电缆弯环与孔；安装边界56",
+    "输出真实lens_neutral源组件用于后续灯色，不烘焙光圈"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        30,
+        45,
+        33,
+        50
+      ],
+      "color": 2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          28,
+          15
+        ],
+        [
+          34,
+          15
+        ]
+      ],
+      "color": 5
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "lamp_lens",
+      "visual_frame_bounds": [
+        28,
+        41,
+        35,
+        52
+      ],
+      "safe_active_rect": [
+        30,
+        45,
+        33,
+        50
+      ],
+      "center": [
+        31.5,
+        47.5
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.4921875,
+        0.7421875
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "components": [
+    {
+      "name": "lens_neutral",
+      "rects": [
+        [
+          30,
+          45,
+          33,
+          50
+        ]
+      ],
+      "z_index": 1,
+      "purpose": "未点亮玻璃安全内区"
+    }
+  ],
+  "emitter_points": []
+}

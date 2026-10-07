@@ -1,0 +1,87 @@
+{
+  "revision": "map_concepts_v001",
+  "status": "VISUAL_CANDIDATE",
+  "user_accepted": false,
+  "type": "Generated layout concept images; not Godot runtime screenshots",
+  "source_tool": "built_in_imagegen",
+  "imagegen_calls": 3,
+  "style_reference_feedback": "User said v006 looks quite good and explicitly asked to remember preferences before designing new maps.",
+  "measurements": {
+    "source_png_dimensions": [
+      1536,
+      1024
+    ],
+    "original_copy_sha_checks": "PASS",
+    "numeric_grid_and_bridge_dimensions": "PROMPT_CONSTRAINTS_ONLY_NOT_MEASURED"
+  },
+  "review_scope": "Visual style, route readability and broad buildability only. No new runtime scene, tile extraction, collision or autotile acceptance.",
+  "root_visual_review": [
+    {
+      "key": "tidal_port",
+      "actual_layout": "Comb-like receiving spine with three pier fingers, two vertical local loop bridges and an independent energy landing.",
+      "strengths": [
+        "Continuous quiet steel and concrete fields",
+        "Timber reads as a coherent functional pier strip",
+        "Consistent light armour, blue-grey structure, brass joints and subdued water",
+        "Bridges visually meet platform edges without blocking transverse caps"
+      ],
+      "notes": [
+        "Receiving spine and side landing touch the frame edges; full map boundaries need definition during later grid layout."
+      ]
+    },
+    {
+      "key": "dry_mine",
+      "actual_layout": "A connected outer operating loop around a rectangular excavation plus a crossing grate shortcut.",
+      "strengths": [
+        "Clearly differs from the harbour: dry ochre ground, aggregate yard, central rock pit",
+        "Robot remains clear against the soil",
+        "Machinery placed at margins, central crossing route legible"
+      ],
+      "notes": [
+        "Generated bottom connector makes the plan a complete outer loop rather than the requested open C; documented as actual result.",
+        "Pit rock walls and ore-bin/belt modules are concept-specific artwork, not existing reusable floor tiles."
+      ]
+    },
+    {
+      "key": "overgrown_lab",
+      "actual_layout": "Main wet courtyard circuit formed by two longitudinal service arms and an upper crossing; a second short crossing reaches the central planting island; a wooden southern entrance continues out of frame.",
+      "strengths": [
+        "Flat subdued moss and tiled work pads",
+        "Plants largely confined to channels, sample tanks and exterior margins",
+        "Reference equipment family remains readable",
+        "Arrival yard and main servicing route remain open"
+      ],
+      "notes": [
+        "Water plants, tanks, moss decals and perimeter pipework remain concept decorations and need separately registered assets if implemented."
+      ]
+    }
+  ],
+  "final_prompts": [
+    {
+      "key": "tidal_port",
+      "path": "map_tidal_port_v001.prompt.txt"
+    },
+    {
+      "key": "dry_mine",
+      "path": "map_dry_mine_v001.prompt.txt"
+    },
+    {
+      "key": "overgrown_lab",
+      "path": "map_overgrown_lab_v001.prompt.txt"
+    }
+  ],
+  "production_validation": "NOT_BUILT",
+  "independent_visual_review": {
+    "status": "CONCEPT_CANDIDATE_PASS",
+    "reviewer": "reference_pack_engine",
+    "images_inspected": 3,
+    "style_and_camera_consistent": true,
+    "obvious_blocked_bridge_or_route_found": false,
+    "material_and_route_readable": true,
+    "production_calibration_needed": [
+      "Visible bridge widths and equipment scales remain approximate; register to40world body and12world shoulders during actual construction.",
+      "Dense water plants and pit rock faces are concept decorations, not new terrain elevations or promised tile assets."
+    ],
+    "engine_validation": "NOT_BUILT"
+  }
+}

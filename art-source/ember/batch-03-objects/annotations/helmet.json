@@ -1,0 +1,49 @@
+{
+  "observations": "实际母稿浅陶瓷壳、深visor边与右侧黄铜扣，属于同一制造系统的现场头盔；它是静态叙事物，不新增角色动作或发射点。",
+  "adjustments": [
+    "visor内侧[23,41,32,47)归并为中性深灰，去母稿微渐变，原有倾斜壳缘轮廓仍保留",
+    "左上陶瓷亮簇归并成3px连续色块，右侧壳面继续较暗；不镜像或改变右侧铜扣",
+    "实体1px外轮廓、二值Alpha、原生33×34底界56；玻璃无运行状态光、无地面影"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        23,
+        41,
+        32,
+        47
+      ],
+      "color": 2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          23,
+          30
+        ],
+        [
+          25,
+          30
+        ]
+      ],
+      "color": 5
+    }
+  ],
+  "non_runtime_glass": [
+    {
+      "id": "helmet_visor",
+      "rect": [
+        23,
+        41,
+        32,
+        47
+      ],
+      "emits": false
+    }
+  ],
+  "emitter_points": [],
+  "runtime_windows": [],
+  "components": []
+}

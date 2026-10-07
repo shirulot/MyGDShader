@@ -1,0 +1,42 @@
+{
+  "revision": "phase-c2-rc01",
+  "atlas_sha256": "c9963cd1f9c1db11a932164c57eefde0ed80e2de692f0d3700338d7bddba6cc1",
+  "producer_review": "READY_FOR_INDEPENDENT_REVIEW",
+  "independent_art_acceptance": "PENDING_TA",
+  "scope": "Seven remaining directions idle2/collect4, 42 new frames; includes the new S neutral supported stance.",
+  "viewed_contact_sheets": [
+    "qa/c2_front_back_light_4x.png",
+    "qa/c2_front_back_dark_4x.png",
+    "qa/c2_sides_light_4x.png",
+    "qa/c2_sides_dark_4x.png",
+    "qa/c2_diagonals_light_4x.png",
+    "qa/c2_diagonals_dark_4x.png"
+  ],
+  "observations": [
+    "New S neutral uses the approved F02 identity pixels and lowers its right lower leg/boot by one raster pixel; five knee-core pixels use a registered local imagegen edit. The original identity and walk remain unchanged.",
+    "Every direction uses fixed source armor, tool and boots. Idle upper-body servo motion is one pixel; pelvis and leg transforms stay fixed.",
+    "Collect uses one-pixel torso drop in S/N and two pixels in other directions. Feet stay planted; fixed-length legs bend at their registered joints.",
+    "F01/F02 share body/leg/far-arm seam pixels wherever their transforms are identical. F03 is exactly the same direction idle F00.",
+    "Dark and light contact boards show attached knee/ankle cores and no floating foot or generation halo. Collection crouches remain compact; independent review must judge readability, joint overlap and the S neutral stance.",
+    "The E idle edit initially introduced two detached dark additions. The compositor now rejects new pixels that do not touch the original opaque silhouette; no line was drawn to connect the artifact.",
+    "Source geometry, asymmetric left-wrist tool and screen upper-left lighting are preserved. No mirroring or per-frame bbox alignment was used."
+  ],
+  "browser_checks": [
+    "Seven new collect directions inspected at held F01 or F02, quarter speed and dark background, with native and 4x views together.",
+    "SE collect replayed at normal speed on light background with return enabled; the displayed action returned to idle.",
+    "Browser screenshots are discrete observations, not a recording of continuous playback. Natural loops and completion events were exercised by the actual GPU verifier."
+  ],
+  "browser_evidence": [
+    "qa/browser/phase_c2_rc01_down_collect_f01_dark.png",
+    "qa/browser/phase_c2_rc01_down_right_collect_f02_dark.png",
+    "qa/browser/phase_c2_rc01_left_collect_f02_dark.png",
+    "qa/browser/phase_c2_rc01_right_collect_f02_dark.png",
+    "qa/browser/phase_c2_rc01_se_collect_return_idle_light.png",
+    "qa/browser/phase_c2_rc01_up_collect_f02_dark.png",
+    "qa/browser/phase_c2_rc01_up_left_collect_f02_dark.png",
+    "qa/browser/phase_c2_rc01_up_right_collect_f02_dark.png"
+  ],
+  "engine_playback_evidence": "qa/godot_full_actions_v011.json",
+  "preserved_approved_scope": "64 walk frames, 6 SW action frames and 8 identity masters byte-for-byte",
+  "unreviewed_scope": "Independent TA acceptance of 42 new frames and S neutral; main project integration is outside this standalone delivery."
+}

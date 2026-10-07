@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://5ggv6l8a7x38"]
+
+[ext_resource type="Shader" uid="uid://b3ymqllwdihuk" path="res://scenes/chapter03/ch03_03_edges.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://dt1winny5yuo6" path="res://assets/ember/data/ramps/grayscale_gradient_v001.png" id="2_gradient"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_edges"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/split_weight = 0.5000000074506
+shader_parameter/split_start = 0.4499999899416
+shader_parameter/split_end = 0.5499999877064
+
+[node name="Ch0303Edges" type="Node2D" unique_id=1017867346]
+
+[node name="Gradient" type="Sprite2D" parent="." unique_id=318323200]
+texture_filter = 2
+material = SubResource("ShaderMaterial_edges")
+position = Vector2(360, 360)
+scale = Vector2(2.765625, 710)
+texture = ExtResource("2_gradient")

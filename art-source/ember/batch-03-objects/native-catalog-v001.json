@@ -1,0 +1,2893 @@
+{
+  "assets": [
+    {
+      "id": "console_base",
+      "manifest_id": "B02",
+      "file": "art-source/ember/batch-03-objects/finished/console_base_v001.png",
+      "production_file": "res://assets/ember/buildings/console/console_base_v001.png",
+      "sha256": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd",
+      "size": [
+        96,
+        96
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/console_base_v001.finish.json",
+      "canvas": [
+        96,
+        96
+      ],
+      "bbox": [
+        18,
+        22,
+        78,
+        80
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [
+        {
+          "id": "console_screen",
+          "visual_frame_bounds": [
+            33,
+            29,
+            63,
+            50
+          ],
+          "safe_active_rect": [
+            36,
+            33,
+            60,
+            47
+          ],
+          "center": [
+            48.0,
+            40.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.4166666666666667
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        }
+      ],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/console_base/foundation_body.png",
+          "sha256": "050a3504c5684c71e0ee453d7cc545ebbc9ec6e487121d4ca77dea50e5f90772",
+          "z_index": 0,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            80
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        },
+        {
+          "name": "screen_neutral",
+          "file": "art-source/ember/batch-03-objects/layers/console_base/screen_neutral.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/console_base/screen_neutral_selection.png",
+          "sha256": "307e973ffdaa9165886ad46005ea9a2601eea5210bb2f82d8d7afa2ca77d065c",
+          "z_index": 1,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            80
+          ],
+          "purpose": "独立中性屏幕内区，方便后续材质驱动",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/console_base_master_v001.png",
+        "master_sha256": "aefde6d1b8f1f76a53ace9cf62545e6fdce8100b0aae9cb89174b62b19deeff1",
+        "prompt": "prompts/console_base.txt",
+        "prompt_sha256": "2416e4d83a343935edd24ce58c8cf52c12b9c4bc8ff789f4d4d2dee71b46afc2",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-a61ed0fc-90a4-4905-b936-4a793612457e.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            282,
+            307,
+            972,
+            972
+          ],
+          "material_sampling_size": [
+            60,
+            58
+          ],
+          "native_origin": [
+            18,
+            22
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 44,
+          "native_outline_pixels_corrected": 41
+        },
+        "native_adjustments": [
+          "原生大屏[36,33,60,47)消除渐变与碎灰，改为单一深蓝灰安全区；底部一行更深形成玻璃边界",
+          "左上框缘补连续3px金属亮边；保留3按钮与右下维修孔，固定基座边界80",
+          "屏幕安全区拆实际RGBA组件与二值选择mask；未交付运行灯/技术通道Mask"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际母稿为浅色装甲立台、单大屏、三按钮及两侧黄铜连接；原生草案大屏清楚，但内屏细微颜色梯度需整理为可控中性色块。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "pump_base",
+      "manifest_id": "B03",
+      "file": "art-source/ember/batch-03-objects/finished/pump_base_v001.png",
+      "production_file": "res://assets/ember/buildings/pump/pump_base_v001.png",
+      "sha256": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8",
+      "size": [
+        160,
+        192
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/pump_base_v001.finish.json",
+      "canvas": [
+        160,
+        192
+      ],
+      "bbox": [
+        25,
+        58,
+        136,
+        176
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [
+        {
+          "id": "pump_gauge",
+          "visual_frame_bounds": [
+            73,
+            136,
+            89,
+            146
+          ],
+          "safe_active_rect": [
+            77,
+            140,
+            85,
+            144
+          ],
+          "center": [
+            81.0,
+            142.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.50625,
+            0.7395833333333334
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        }
+      ],
+      "emitter_points": [
+        {
+          "id": "pipe_inlet",
+          "at": [
+            27,
+            134
+          ],
+          "purpose": "静态管口接口，非已烘焙粒子"
+        },
+        {
+          "id": "pipe_outlet",
+          "at": [
+            133,
+            134
+          ],
+          "purpose": "输水接口；外部管线/水效另制作"
+        }
+      ],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/pump_base/foundation_body.png",
+          "sha256": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8",
+          "z_index": 0,
+          "canvas": [
+            160,
+            192
+          ],
+          "anchor": [
+            80,
+            176
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/pump_base_master_v001.png",
+        "master_sha256": "bccc6b83aace92d58d1773027a497bbd317592ddf7f630e77205dd5350c9d339",
+        "prompt": "prompts/pump_base.txt",
+        "prompt_sha256": "5a183942c132da442e3a963c08238587f24ab38a443bbd9eaea28c2db8b0c5c3",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-6cb77688-375c-4de9-a487-8955a5227a87.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            86,
+            200,
+            1059,
+            1234
+          ],
+          "material_sampling_size": [
+            111,
+            118
+          ],
+          "native_origin": [
+            25,
+            58
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 98,
+          "native_outline_pixels_corrected": 24
+        },
+        "native_adjustments": [
+          "原生圆壳表窗[77,140,85,144)归并为中性深蓝灰，非发光运行状态",
+          "左右外接口增加3px深槽与上缘金属点，安装坐标对应真实接头；不画出水/地影",
+          "减少1px随机钢灰点并保持左右接头受同一左上光照；底界176"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际母稿有水平左右黄铜接头、圆泵壳、上部电机与基座；原生管口为黄铜块，需补可辨深色接口，中心小表窗保留。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "ventilator_base",
+      "manifest_id": "B04",
+      "file": "art-source/ember/batch-03-objects/finished/ventilator_base_v001.png",
+      "production_file": "res://assets/ember/buildings/ventilator/ventilator_base_v001.png",
+      "sha256": "74a301919676247d40b5e163bf116d011c3231cc2d2cb18949d2e950af09f187",
+      "size": [
+        160,
+        192
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/ventilator_base_v001.finish.json",
+      "canvas": [
+        160,
+        192
+      ],
+      "bbox": [
+        40,
+        52,
+        120,
+        176
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [],
+      "emitter_points": [
+        {
+          "id": "exhaust_smoke",
+          "at": [
+            80.5,
+            58.5
+          ],
+          "region": [
+            75,
+            56,
+            86,
+            61
+          ],
+          "purpose": "出烟口几何中心；烟/火焰/热浪没有烘焙于底图"
+        }
+      ],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/ventilator_base/foundation_body.png",
+          "sha256": "bb690ccc8c2b057cba4b0475e7d6ca991270f665092b952a522ec04cfb632242",
+          "z_index": 0,
+          "canvas": [
+            160,
+            192
+          ],
+          "anchor": [
+            80,
+            176
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        },
+        {
+          "name": "fan_rotor",
+          "file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor_selection.png",
+          "sha256": "24c2ce3fa7876c055bfa4c19d48a5d1e6fb82b67422908e40706a9b57d19a47b",
+          "z_index": 2,
+          "canvas": [
+            160,
+            192
+          ],
+          "anchor": [
+            80,
+            176
+          ],
+          "purpose": "实际3片扇叶与轴；移开后机壳有中性腔底",
+          "editable_source": true,
+          "hidden_underpaint_color_index": 1
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/ventilator_base_master_v001.png",
+        "master_sha256": "8c34821330ab9ad203c50dd55c3f61ffdb7c945b494b806e446eddee4261eeb8",
+        "prompt": "prompts/ventilator_base.txt",
+        "prompt_sha256": "48c16d4611103314a08c3296106a243c89adaab4182639c3940ee9df834c766b",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-6012ef4b-7291-4512-95b0-621c563eb4df.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            244,
+            199,
+            901,
+            1214
+          ],
+          "material_sampling_size": [
+            80,
+            124
+          ],
+          "native_origin": [
+            40,
+            52
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 83,
+          "native_outline_pixels_corrected": 0
+        },
+        "native_adjustments": [
+          "上后方出烟口内区[75,56,86,61)归并为连续暗腔；记录实际烟粒子发射中心而不生成烟",
+          "三扇叶原生边缘亮点改成短连贯高光；中心轴保留黄铜，中性深腔补于可动叶片之下",
+          "逐像素选择真实三叶与轴组件，导出fan_rotor和选择mask；housing源PNG可独立编辑，重组与最终严格相同"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际母稿三片钢灰扇叶、中央黄铜轴、深风腔与上后方矩形出烟口都清楚；原生草案无需整体变形。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "cooler_base",
+      "manifest_id": "B05",
+      "file": "art-source/ember/batch-03-objects/finished/cooler_base_v001.png",
+      "production_file": "res://assets/ember/buildings/cooler/cooler_base_v001.png",
+      "sha256": "86606ba53c17e572cc19e5f1b9336e8245ecc52fa01cc6ddc08761b13047ca2b",
+      "size": [
+        160,
+        192
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/cooler_base_v001.finish.json",
+      "canvas": [
+        160,
+        192
+      ],
+      "bbox": [
+        29,
+        50,
+        132,
+        176
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [
+        {
+          "id": "cooling_core",
+          "visual_frame_bounds": [
+            72,
+            118,
+            89,
+            131
+          ],
+          "safe_active_rect": [
+            75,
+            122,
+            85,
+            128
+          ],
+          "center": [
+            80.0,
+            125.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.6510416666666666
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        }
+      ],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/cooler_base/foundation_body.png",
+          "sha256": "083c97c1c292e7e14956efacfb8cac9d257f637a310042be99e55b00e0407fc4",
+          "z_index": 0,
+          "canvas": [
+            160,
+            192
+          ],
+          "anchor": [
+            80,
+            176
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        },
+        {
+          "name": "core_window",
+          "file": "art-source/ember/batch-03-objects/layers/cooler_base/core_window.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/cooler_base/core_window_selection.png",
+          "sha256": "c8c851fbdab302086c5c37bef412060775d3b9629445ce9d5ec836b1944d3a84",
+          "z_index": 1,
+          "canvas": [
+            160,
+            192
+          ],
+          "anchor": [
+            80,
+            176
+          ],
+          "purpose": "核心中性窗口内区",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        },
+        {
+          "name": "exchange_pipes_high",
+          "file": "art-source/ember/batch-03-objects/layers/cooler_base/exchange_pipes_high.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/cooler_base/exchange_pipes_high_selection.png",
+          "sha256": "9c791cfc3fa67f1a97c02a1338f5bfc59ba0cfcebde0de311a1ae7cb6f74c17a",
+          "z_index": 2,
+          "canvas": [
+            160,
+            192
+          ],
+          "anchor": [
+            80,
+            176
+          ],
+          "purpose": "可编辑上部换热管与实际遮挡像素",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/cooler_base_master_v001.png",
+        "master_sha256": "80c5812f8cfa201b324c7f967d63715819cb5367d380a4aca5de2e34d232f741",
+        "prompt": "prompts/cooler_base.txt",
+        "prompt_sha256": "c1d95814b453826fea0d544fa436878e8bc5af13d6bffaeea4411c96e88e895c",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-fdc494e1-3940-42b8-a52a-2fc9562c0d5e.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            202,
+            237,
+            943,
+            1144
+          ],
+          "material_sampling_size": [
+            103,
+            126
+          ],
+          "native_origin": [
+            29,
+            50
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 111,
+          "native_outline_pixels_corrected": 9
+        },
+        "native_adjustments": [
+          "安全小窗[75,122,85,128)重画为中性深色矩形并留边框，不让母稿渐变/伪光点进入运行窗口",
+          "中心立管顶段高光整理为5px短线、右侧保留较暗管面以固定左上光照；固定基座176",
+          "把窗口内区与高处换热管导出实际独立源层，不宣称运行通道Mask已完成"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际母稿三根立管与换热核心/两侧铜管结构形成识别，顶左高光清楚；内侧小窗不属于背景孔。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "relay_base",
+      "manifest_id": "B06",
+      "file": "art-source/ember/batch-03-objects/finished/relay_base_v001.png",
+      "production_file": "res://assets/ember/buildings/relay/relay_base_v001.png",
+      "sha256": "2c42f50ae8af4aa2397255112fa4255ed5f50d943919611c4419d04b06669b98",
+      "size": [
+        192,
+        256
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/relay_base_v001.finish.json",
+      "canvas": [
+        192,
+        256
+      ],
+      "bbox": [
+        51,
+        52,
+        141,
+        240
+      ],
+      "anchor": [
+        96,
+        240
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [
+        {
+          "id": "relay_core",
+          "visual_frame_bounds": [
+            87,
+            162,
+            106,
+            192
+          ],
+          "safe_active_rect": [
+            91,
+            166,
+            101,
+            187
+          ],
+          "center": [
+            96.0,
+            176.5
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.689453125
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        }
+      ],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/relay_base/foundation_body.png",
+          "sha256": "a403c526d6c888d3f2258156c6e25834acc4d6763787c49770182f78dc288acc",
+          "z_index": 0,
+          "canvas": [
+            192,
+            256
+          ],
+          "anchor": [
+            96,
+            240
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        },
+        {
+          "name": "core_window",
+          "file": "art-source/ember/batch-03-objects/layers/relay_base/core_window.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/relay_base/core_window_selection.png",
+          "sha256": "1be4315343d3aa61fcd7d9c3cd6ce57a5cb40ea638d9ebc9a5539e3f9e938595",
+          "z_index": 1,
+          "canvas": [
+            192,
+            256
+          ],
+          "anchor": [
+            96,
+            240
+          ],
+          "purpose": "中性核心安全内窗",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        },
+        {
+          "name": "mast_high",
+          "file": "art-source/ember/batch-03-objects/layers/relay_base/mast_high.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/relay_base/mast_high_selection.png",
+          "sha256": "9a6c5e350f7a12845e894628d9aeb1640946e232aefd59f04060287a33cfe531",
+          "z_index": 2,
+          "canvas": [
+            192,
+            256
+          ],
+          "anchor": [
+            96,
+            240
+          ],
+          "purpose": "高处通信桅杆/天线，前景遮挡层；完整同画布同anchor",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/relay_base_master_v001.png",
+        "master_sha256": "02af2ff3338c029be0e9809992ddb2e4d05e927ce73854a6990d0ea390bf9719",
+        "prompt": "prompts/relay_base.txt",
+        "prompt_sha256": "0676d47a2dff3d1422a7dbd0e327a0f6578790788b68e7a35bb29bd7e89ef7bf",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-71e45619-cae3-49ee-9bd5-874c7edecf62.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            258,
+            111,
+            828,
+            1302
+          ],
+          "material_sampling_size": [
+            90,
+            188
+          ],
+          "native_origin": [
+            51,
+            52
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 107,
+          "native_outline_pixels_corrected": 24
+        },
+        "native_adjustments": [
+          "核心窗[91,166,101,187)归并连续中性暗色；顶部天线浅色短条归并以去孤立颗粒",
+          "上部桅杆和横天线按y<128拆实际high_mast源层与选择mask；不是只写文字已分层",
+          "底座统一足界240，原生高天线不缩短以假装小设备"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际母稿上部横天线、窄桅杆、竖直核心与底座；高部件在原生52..128行，远高于机器人，必须登记遮挡源层。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "wall_lamp",
+      "manifest_id": "B07",
+      "file": "art-source/ember/batch-03-objects/finished/wall_lamp_v001.png",
+      "production_file": "res://assets/ember/buildings/lights/wall_lamp_v001.png",
+      "sha256": "aa27b42d2d09a608416bbcf770e78de947e096f7beca4797b23b38ff29932a79",
+      "size": [
+        64,
+        64
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/wall_lamp_v001.finish.json",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        21,
+        14,
+        43,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [
+        {
+          "id": "lamp_lens",
+          "visual_frame_bounds": [
+            28,
+            41,
+            35,
+            52
+          ],
+          "safe_active_rect": [
+            30,
+            45,
+            33,
+            50
+          ],
+          "center": [
+            31.5,
+            47.5
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.4921875,
+            0.7421875
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        }
+      ],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/wall_lamp/foundation_body.png",
+          "sha256": "45aafcecddb878ca66bab1485735bb65dcb07d1c7caf5d24076dba581fc7de33",
+          "z_index": 0,
+          "canvas": [
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            56
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        },
+        {
+          "name": "lens_neutral",
+          "file": "art-source/ember/batch-03-objects/layers/wall_lamp/lens_neutral.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/wall_lamp/lens_neutral_selection.png",
+          "sha256": "5769bd414ff24a03a42d44ea2011b64221c511f12fb0ed597affa35f6b0c0346",
+          "z_index": 1,
+          "canvas": [
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            56
+          ],
+          "purpose": "未点亮玻璃安全内区",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/wall_lamp_master_v001.png",
+        "master_sha256": "eb0849b15d8dd7a41fb82877ce6c73c277aeafd3923a5d3651f400a8c76e7706",
+        "prompt": "prompts/wall_lamp.txt",
+        "prompt_sha256": "721ce3d0cd00bd249e55464b8a6bd158289061ea259459c15a69d1840c4a3067",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-10be5c7c-7d49-4f94-a3f9-e582d02a7aa0.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            295,
+            295,
+            765,
+            1173
+          ],
+          "material_sampling_size": [
+            22,
+            42
+          ],
+          "native_origin": [
+            21,
+            14
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 12,
+          "native_outline_pixels_corrected": 43
+        },
+        "native_adjustments": [
+          "笼内[30,45,33,50)玻璃整理为连续中性深灰，去微亮点，灯不发光",
+          "上安装板一枚钢灰线像素归并，保留右侧电缆弯环与孔；安装边界56",
+          "输出真实lens_neutral源组件用于后续灯色，不烘焙光圈"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际母稿有壁面安装板、两个上部铜螺栓、向下防护罩及小笼状镜片；原生22×42可与地灯安装方式区分。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "floor_lamp",
+      "manifest_id": "B07",
+      "file": "art-source/ember/batch-03-objects/finished/floor_lamp_v001.png",
+      "production_file": "res://assets/ember/buildings/lights/floor_lamp_v001.png",
+      "sha256": "09b7b326be066958f0c9015cd07bdf6532bd74c7e0861d2eabacfb3b8590b464",
+      "size": [
+        64,
+        64
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/floor_lamp_v001.finish.json",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        23,
+        12,
+        41,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [
+        {
+          "id": "lamp_lens",
+          "visual_frame_bounds": [
+            28,
+            24,
+            36,
+            34
+          ],
+          "safe_active_rect": [
+            30,
+            26,
+            34,
+            32
+          ],
+          "center": [
+            32.0,
+            29.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.453125
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        }
+      ],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/floor_lamp/foundation_body.png",
+          "sha256": "93da96adb36678597d8958039a41db234816542aebac4f49c188feb0e227a5ea",
+          "z_index": 0,
+          "canvas": [
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            56
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        },
+        {
+          "name": "lens_neutral",
+          "file": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral_selection.png",
+          "sha256": "b283880f60f9a4e8e753925b506b81c514bdc9a26003bd744646e2e3231febd9",
+          "z_index": 1,
+          "canvas": [
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            56
+          ],
+          "purpose": "未点亮玻璃安全内区",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/floor_lamp_master_v001.png",
+        "master_sha256": "b69e200b8498abd240502cf70efe82cfd67de6f2d241a2b24b06f821cd6bde8b",
+        "prompt": "prompts/floor_lamp.txt",
+        "prompt_sha256": "071dbdb3ad3ba5cebd032078f6171c159b5573daf9bdd9fd823eee61a7d2b26f",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-4f28b145-177d-4ce0-b9ac-51f253e59a24.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            368,
+            355,
+            702,
+            1151
+          ],
+          "material_sampling_size": [
+            18,
+            44
+          ],
+          "native_origin": [
+            23,
+            12
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 11,
+          "native_outline_pixels_corrected": 22
+        },
+        "native_adjustments": [
+          "灯头安全内区[30,26,34,32)归并深蓝灰，去原生采样亮灰点；保留1px玻璃框和四脚螺栓",
+          "上帽金属高光整理为3px短条，左上光照方向保持；底脚边界56",
+          "lens_neutral源层真实同64画布，预留材质发光而不烘焙灯光"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际母稿是窄立柱与方形落地脚，灯头为浅壳框住深玻璃；比壁灯没有背板、向上头罩更明确。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "door_closed",
+      "manifest_id": "B08",
+      "file": "art-source/ember/batch-03-objects/finished/door_closed_v001.png",
+      "production_file": "res://assets/ember/buildings/door/door_closed_v001.png",
+      "sha256": "4aa35db2b665e5f235d019e002bf2aed4e52243c18d00cf53d41d6176ef18437",
+      "size": [
+        96,
+        128
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/door_closed_v001.finish.json",
+      "canvas": [
+        96,
+        128
+      ],
+      "bbox": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "anchor": [
+        48,
+        112
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [
+        {
+          "id": "door_status",
+          "visual_frame_bounds": [
+            70,
+            62,
+            76,
+            71
+          ],
+          "safe_active_rect": [
+            72,
+            64,
+            74,
+            69
+          ],
+          "center": [
+            73.0,
+            66.5
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.7604166666666666,
+            0.51953125
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        }
+      ],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/door_closed/foundation_body.png",
+          "sha256": "e37340845c8ef234ba11c2413da4a91e29335945ae67496d7cb5e67d1df69394",
+          "z_index": 0,
+          "canvas": [
+            96,
+            128
+          ],
+          "anchor": [
+            48,
+            112
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        },
+        {
+          "name": "sliding_leaves",
+          "file": "art-source/ember/batch-03-objects/layers/door_closed/sliding_leaves.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/door_closed/sliding_leaves_selection.png",
+          "sha256": "b0621241b96e5ca978f3e1ee10860c542ce9fd3b00687f9b29622bbd4ed51f56",
+          "z_index": 1,
+          "canvas": [
+            96,
+            128
+          ],
+          "anchor": [
+            48,
+            112
+          ],
+          "purpose": "原生两片关门钢板，共框分层",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        },
+        {
+          "name": "foreground_frame",
+          "file": "art-source/ember/batch-03-objects/layers/door_closed/foreground_frame.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/door_closed/foreground_frame_selection.png",
+          "sha256": "609b61c02bba134b063a7c1e064fd3b5631aaf38dc739ced8de25e0df45d55c1",
+          "z_index": 2,
+          "canvas": [
+            96,
+            128
+          ],
+          "anchor": [
+            48,
+            112
+          ],
+          "purpose": "两态精确共用过梁/立柱，前景遮挡源层",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false,
+        "shared_frame_file": "layers/door_shared/frame_native.png",
+        "opening_rect": [
+          26,
+          38,
+          70,
+          112
+        ],
+        "opening_is_alpha_transparent": false,
+        "installation_point": [
+          48,
+          112
+        ]
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/door_closed_master_v001.png",
+        "master_sha256": "891d19a4c6116ec174a8e1b424f6675038870c4b62908784ea3939f2ceecc54a",
+        "prompt": "prompts/door_closed.txt",
+        "prompt_sha256": "c7c1f652fb2030bd613730fd5a024092b796fcdc8ab4337b4afed148d6a6efd6",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-a58c9fd9-3780-4f0c-89db-2c397c8ee0d1.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            188,
+            321,
+            933,
+            1086
+          ],
+          "material_sampling_size": [
+            64,
+            66
+          ],
+          "native_origin": [
+            16,
+            46
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 37,
+          "native_outline_pixels_corrected": 27,
+          "native_reconstruction_file": "layers/door_shared/door_closed_native.png",
+          "native_reconstruction_sha256": "4aa35db2b665e5f235d019e002bf2aed4e52243c18d00cf53d41d6176ef18437",
+          "native_reconstruction_record": "art-source/ember/batch-03-objects/annotations/architectural-rebuild-record.json",
+          "native_reconstruction_record_sha256": "756782618233937624d6ed8d6af9f7ee3f5c3247241c7efaf68a4a61a04d299d",
+          "source_pixel_use": "sampled draft material/design parts plus explicit structural native redraw; no final whole image resize"
+        },
+        "native_adjustments": [
+          "NATIVE_STRUCTURAL_REBUILD: 原生保留母稿20px过梁/12px框脚材料块；柱截面重新安排长度，接缝/铜件/门板在目标网格重画",
+          "两态共享frame_native.png同一像素结构与右柱中性窗口；anchor(48,112)固定，不整体warp",
+          "ROOT_PROPORTION_CORRECTION: 内柱共同收薄，通路宽32改44以容纳既有40px机器人，外框bbox不变",
+          "门板两片用钢灰折角与黄铜把手原生重画，保留中心缝",
+          "前景过梁/立柱导出同画布可编辑源PNG和显式选择mask；框脚余像素保留foundation层"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际闭门/开门两母稿均已看；框体制造语汇一致但母稿高度偏方。原生重建94px高，共框共安装点；开门母稿空洞用于语义参考。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "door_open",
+      "manifest_id": "B08",
+      "file": "art-source/ember/batch-03-objects/finished/door_open_v001.png",
+      "production_file": "res://assets/ember/buildings/door/door_open_v001.png",
+      "sha256": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f",
+      "size": [
+        96,
+        128
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/door_open_v001.finish.json",
+      "canvas": [
+        96,
+        128
+      ],
+      "bbox": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "anchor": [
+        48,
+        112
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [
+        {
+          "id": "door_status",
+          "visual_frame_bounds": [
+            70,
+            62,
+            76,
+            71
+          ],
+          "safe_active_rect": [
+            72,
+            64,
+            74,
+            69
+          ],
+          "center": [
+            73.0,
+            66.5
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.7604166666666666,
+            0.51953125
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        }
+      ],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/door_open/foundation_body.png",
+          "sha256": "e37340845c8ef234ba11c2413da4a91e29335945ae67496d7cb5e67d1df69394",
+          "z_index": 0,
+          "canvas": [
+            96,
+            128
+          ],
+          "anchor": [
+            48,
+            112
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        },
+        {
+          "name": "foreground_frame",
+          "file": "art-source/ember/batch-03-objects/layers/door_open/foreground_frame.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/door_open/foreground_frame_selection.png",
+          "sha256": "609b61c02bba134b063a7c1e064fd3b5631aaf38dc739ced8de25e0df45d55c1",
+          "z_index": 2,
+          "canvas": [
+            96,
+            128
+          ],
+          "anchor": [
+            48,
+            112
+          ],
+          "purpose": "两态精确共用过梁/立柱，前景遮挡源层",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false,
+        "shared_frame_file": "layers/door_shared/frame_native.png",
+        "opening_rect": [
+          26,
+          38,
+          70,
+          112
+        ],
+        "opening_is_alpha_transparent": true,
+        "installation_point": [
+          48,
+          112
+        ]
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/door_open_master_v001.png",
+        "master_sha256": "4f0d71fe9ff2b170ef8ccf72793adb73408fc5f1894805002f92414f56f37a8a",
+        "prompt": "prompts/door_open_actual.txt",
+        "prompt_sha256": "235dd6def2b0f4c7f7e6a6bae7b3aeaedcc32a5715e76b37fc9842dbdca7f271",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          },
+          {
+            "file": "art-source/ember/batch-03-objects/generated/door_closed_master_v001.png",
+            "sha256": "891d19a4c6116ec174a8e1b424f6675038870c4b62908784ea3939f2ceecc54a"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-86d11f90-625a-405e-abb2-cdc61a595d70.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            123,
+            230,
+            999,
+            1157
+          ],
+          "material_sampling_size": [
+            64,
+            68
+          ],
+          "native_origin": [
+            16,
+            44
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 17,
+          "native_outline_pixels_corrected": 60,
+          "native_reconstruction_file": "layers/door_shared/door_open_native.png",
+          "native_reconstruction_sha256": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f",
+          "native_reconstruction_record": "art-source/ember/batch-03-objects/annotations/architectural-rebuild-record.json",
+          "native_reconstruction_record_sha256": "756782618233937624d6ed8d6af9f7ee3f5c3247241c7efaf68a4a61a04d299d",
+          "source_pixel_use": "sampled draft material/design parts plus explicit structural native redraw; no final whole image resize"
+        },
+        "native_adjustments": [
+          "NATIVE_STRUCTURAL_REBUILD: 原生保留母稿20px过梁/12px框脚材料块；柱截面重新安排长度，接缝/铜件/门板在目标网格重画",
+          "两态共享frame_native.png同一像素结构与右柱中性窗口；anchor(48,112)固定，不整体warp",
+          "ROOT_PROPORTION_CORRECTION: 内柱共同收薄，通路宽32改44以容纳既有40px机器人，外框bbox不变",
+          "整段通路[26,38,70,112)真Alpha透明，不填黑、地板、阈条或阴影",
+          "前景过梁/立柱导出同画布可编辑源PNG和显式选择mask；框脚余像素保留foundation层"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际闭门/开门两母稿均已看；框体制造语汇一致但母稿高度偏方。原生重建94px高，共框共安装点；开门母稿空洞用于语义参考。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "telepad_base",
+      "manifest_id": "B09",
+      "file": "art-source/ember/batch-03-objects/finished/telepad_base_v001.png",
+      "production_file": "res://assets/ember/buildings/telepad/telepad_base_v001.png",
+      "sha256": "8d59c3ba8ed09aa50a9232c5b3f8ffe204c9a8f41da408499d5208cd8c081512",
+      "size": [
+        128,
+        160
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/telepad_base_v001.finish.json",
+      "canvas": [
+        128,
+        160
+      ],
+      "bbox": [
+        22,
+        78,
+        107,
+        144
+      ],
+      "anchor": [
+        64,
+        144
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [
+        {
+          "id": "marker_n",
+          "visual_frame_bounds": [
+            59,
+            88,
+            70,
+            94
+          ],
+          "safe_active_rect": [
+            61,
+            90,
+            68,
+            92
+          ],
+          "center": [
+            64.5,
+            91.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.50390625,
+            0.56875
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        },
+        {
+          "id": "marker_w",
+          "visual_frame_bounds": [
+            40,
+            100,
+            48,
+            110
+          ],
+          "safe_active_rect": [
+            42,
+            102,
+            45,
+            108
+          ],
+          "center": [
+            43.5,
+            105.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.33984375,
+            0.65625
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        },
+        {
+          "id": "marker_e",
+          "visual_frame_bounds": [
+            82,
+            100,
+            90,
+            110
+          ],
+          "safe_active_rect": [
+            84,
+            102,
+            87,
+            108
+          ],
+          "center": [
+            85.5,
+            105.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.66796875,
+            0.65625
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        },
+        {
+          "id": "marker_s",
+          "visual_frame_bounds": [
+            59,
+            117,
+            71,
+            123
+          ],
+          "safe_active_rect": [
+            61,
+            119,
+            68,
+            121
+          ],
+          "center": [
+            64.5,
+            120.0
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.50390625,
+            0.75
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        }
+      ],
+      "emitter_points": [
+        {
+          "id": "teleport_axis",
+          "at": [
+            64,
+            110
+          ],
+          "purpose": "平台几何中心，运行护盾/传送另叠加，无烘焙效果"
+        }
+      ],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/telepad_base/foundation_body.png",
+          "sha256": "32d7e2ed814ddeeff9061fe030bfc06170dc40950f0428db61a0d1f18fb13241",
+          "z_index": 0,
+          "canvas": [
+            128,
+            160
+          ],
+          "anchor": [
+            64,
+            144
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        },
+        {
+          "name": "marker_windows",
+          "file": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows_selection.png",
+          "sha256": "95c1d0b71eaaadb472d57a159ad80e0a2f26e4ef58341bf5e62fc1646bde096b",
+          "z_index": 1,
+          "canvas": [
+            128,
+            160
+          ],
+          "anchor": [
+            64,
+            144
+          ],
+          "purpose": "实际4个中性marker内窗源组件",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": [
+        64,
+        110
+      ],
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/telepad_base_master_v001.png",
+        "master_sha256": "96d1a6fe61c5e4d457ac8a15630ba3843b4bf0aa3cc83fff2a54c0ceaf75bfe7",
+        "prompt": "prompts/telepad_base.txt",
+        "prompt_sha256": "5d51d3eea5469bab5342490105ce480ad195fb36f034024dd7adb3818279bcd9",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-628d3fb8-7c40-455a-b250-4c1c9cc4d2e6.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            148,
+            445,
+            974,
+            1090
+          ],
+          "material_sampling_size": [
+            85,
+            66
+          ],
+          "native_origin": [
+            22,
+            78
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 35,
+          "native_outline_pixels_corrected": 17
+        },
+        "native_adjustments": [
+          "四marker分别以明确原生矩形归并中性暗色，保留围框，不能把中央圆盘误设发光窗",
+          "顶侧钢面连续亮边缩为短条，去细碎颜色梯度；低基座厚度与底界144保持",
+          "记录中心轴[64,110]供传送效果叠加，接地anchor[64,144]独立；四窗导出实际选择源层"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际母稿为低矮八角平台，四内侧marker窗和宽平圆盘；原生中心实心可步入，外圈无自发光和护罩。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "terminal_body",
+      "manifest_id": "B10",
+      "file": "art-source/ember/batch-03-objects/finished/terminal_body_v001.png",
+      "production_file": "res://assets/ember/buildings/terminal/terminal_body_v001.png",
+      "sha256": "67c2c54fb0efbc1ffdb1cfa01c61ae6216f2947a74b1e29847c37be401c1b812",
+      "size": [
+        96,
+        96
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/terminal_body_v001.finish.json",
+      "canvas": [
+        96,
+        96
+      ],
+      "bbox": [
+        24,
+        16,
+        73,
+        80
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [
+        {
+          "id": "terminal_scene_screen",
+          "visual_frame_bounds": [
+            34,
+            26,
+            61,
+            45
+          ],
+          "safe_active_rect": [
+            38,
+            30,
+            57,
+            41
+          ],
+          "center": [
+            47.5,
+            35.5
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.4947916666666667,
+            0.3697916666666667
+          ],
+          "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+          "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+        }
+      ],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/terminal_body/foundation_body.png",
+          "sha256": "f77a65d08aacb3ff28adbf2756a1f72b8356f945722fa9e66d7507f3e750245d",
+          "z_index": 0,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            80
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        },
+        {
+          "name": "inner_screen",
+          "file": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen.png",
+          "selection_mask": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen_selection.png",
+          "sha256": "5bc131473afe6cb59e3c29c47cf6fee9464308e4081ed8ac94c4ba5a7092e654",
+          "z_index": 1,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            80
+          ],
+          "purpose": "中性屏幕内区，真实场景内容后接入",
+          "editable_source": true,
+          "hidden_underpaint_color_index": null
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/terminal_body_master_v001.png",
+        "master_sha256": "dc8341a816b393b76fed71ab3c7437734c3ee0d013afd43175e6376422e2b994",
+        "prompt": "prompts/terminal_body.txt",
+        "prompt_sha256": "24e2e7b98b1a04a3a55a45f6d096ea6dde1682f4b25867e0d09811cca47b6ec2",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-f3240e50-0465-4245-bab2-a97f72cae5b7.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            331,
+            276,
+            919,
+            1045
+          ],
+          "material_sampling_size": [
+            49,
+            64
+          ],
+          "native_origin": [
+            24,
+            16
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 24,
+          "native_outline_pixels_corrected": 29
+        },
+        "native_adjustments": [
+          "安全内屏[38,30,57,41)逐像素归并，彻底清除母稿屏内梯度/形似内容的暗颗粒，屏幕内容应由真实场景提供",
+          "键盘左上短亮边归并3px，保留两排物理按键及右侧铜接口；底脚80",
+          "inner_screen源RGBA+mask与base同画布，可独立绑定场景屏幕材质"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际母稿单屏外框、键盘格、单侧铜连接和落地脚可辨；原生采样屏内出现母稿半透明噪色，需要明确变为单一中性安全区。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "screen_frame",
+      "manifest_id": "B10",
+      "file": "art-source/ember/batch-03-objects/finished/screen_frame_v001.png",
+      "production_file": "res://assets/ember/buildings/terminal/screen_frame_v001.png",
+      "sha256": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+      "size": [
+        96,
+        96
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/screen_frame_v001.finish.json",
+      "canvas": [
+        96,
+        96
+      ],
+      "bbox": [
+        16,
+        16,
+        80,
+        80
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 10,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/screen_frame/foundation_body.png",
+          "sha256": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+          "z_index": 0,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            80
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false,
+        "stretch": "nine_slice",
+        "source_region": [
+          16,
+          16,
+          80,
+          80
+        ],
+        "source_region_convention": "[x0,y0,x1,y1)",
+        "slice_region": [
+          16,
+          16,
+          64,
+          64
+        ],
+        "slice_region_convention": "[x,y,width,height]",
+        "slice_margins": {
+          "left": 8,
+          "top": 8,
+          "right": 8,
+          "bottom": 8
+        },
+        "center_rect": [
+          24,
+          24,
+          72,
+          72
+        ],
+        "draw_center": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/screen_frame_master_v001.png",
+        "master_sha256": "c6ea66ec6ae879a8a30e4a6aef2314e3f46af64ef94f3f9d7cc89758232ca3f6",
+        "prompt": "prompts/screen_frame.txt",
+        "prompt_sha256": "4f9c72864fa9f6107e53e9307bd4520de5117aaf292c2be76d91ae53f35d4ca0",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-d07c2b93-53ab-4b84-b89d-a70fa3f47a58.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            187,
+            208,
+            1067,
+            1046
+          ],
+          "material_sampling_size": [
+            64,
+            61
+          ],
+          "native_origin": [
+            16,
+            19
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 3,
+          "native_outline_pixels_corrected": 181,
+          "native_reconstruction_file": "layers/screen_frame_native.png",
+          "native_reconstruction_sha256": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+          "native_reconstruction_record": "art-source/ember/batch-03-objects/annotations/architectural-rebuild-record.json",
+          "native_reconstruction_record_sha256": "756782618233937624d6ed8d6af9f7ee3f5c3247241c7efaf68a4a61a04d299d",
+          "source_pixel_use": "sampled draft material/design parts plus explicit structural native redraw; no final whole image resize"
+        },
+        "native_adjustments": [
+          "NATIVE_NINE_SLICE_REBUILD: 保留4个实际8px不同光照角块；重画恒厚8px材质截面，不镜像光照",
+          "原生source region [16,16,80,80)为64×64；slice_region使用[x,y,w,h]=[16,16,64,64]，四边8px",
+          "中心[24,24,72,72)完整真透明，draw_center=false；完整96画布四边16px，不把留白当九宫格边条"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [],
+      "observations": "实际母稿四个陶瓷铜栓角、钢灰边条和透空中心；母稿边宽不完全一致，原生草案64×61，需要九宫格结构整理。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "fuse",
+      "manifest_id": "B11",
+      "file": "art-source/ember/batch-03-objects/finished/fuse_v001.png",
+      "production_file": "res://assets/ember/props/calibration/fuse_v001.png",
+      "sha256": "71288a979fade1ac91a129b0d808a3576877d478c2e3c2292927d2f008c9951a",
+      "size": [
+        64,
+        64
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/fuse_v001.finish.json",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        13,
+        44,
+        51,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/fuse/foundation_body.png",
+          "sha256": "71288a979fade1ac91a129b0d808a3576877d478c2e3c2292927d2f008c9951a",
+          "z_index": 0,
+          "canvas": [
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            56
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/fuse_master_v001.png",
+        "master_sha256": "e11da345fa2277f5c8273a18b78e60501078c7febc70ba4fa7b493f47f7db59d",
+        "prompt": "prompts/fuse.txt",
+        "prompt_sha256": "32bbe490cfe5ef13331244c18f365ef056802707b1d42e1f9f9b4817e199779b",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-e1e12345-48f4-4da8-b3d7-d06ad5dfd4f1.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            344,
+            336,
+            1313,
+            636
+          ],
+          "material_sampling_size": [
+            38,
+            12
+          ],
+          "native_origin": [
+            13,
+            44
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 7,
+          "native_outline_pixels_corrected": 62
+        },
+        "native_adjustments": [
+          "陶瓷管中部[25,47,41,50)整理为连续浅装甲块、下一行钢亮灰，消除模型微颗粒但保留上亮下暗",
+          "左叉口归并2×2透明缺口；右端依据母稿细槽原生切1×3真透明孔，形成方向/描边可观察结构",
+          "不加灯或文字；底界56，同64画布保留8px以上留边"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": {
+        "orientation": "左叉/右细槽，不对称",
+        "through_hole_rects": [
+          [
+            48,
+            48,
+            49,
+            51
+          ]
+        ],
+        "notch_rects": [
+          [
+            13,
+            49,
+            16,
+            51
+          ]
+        ]
+      },
+      "non_runtime_glass": [],
+      "observations": "实际母稿为横陶瓷管、两种不同端头，左端为分叉、右端细槽；原生38×12较小，孔槽需在本体像素网格清楚保留。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "antenna_coil",
+      "manifest_id": "B11",
+      "file": "art-source/ember/batch-03-objects/finished/antenna_coil_v001.png",
+      "production_file": "res://assets/ember/props/calibration/antenna_coil_v001.png",
+      "sha256": "eb95dc28410a802402a70e43dfa7403376aebc0ad9ccc7fead3c99168d58904c",
+      "size": [
+        64,
+        64
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/antenna_coil_v001.finish.json",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        14,
+        18,
+        50,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/antenna_coil/foundation_body.png",
+          "sha256": "eb95dc28410a802402a70e43dfa7403376aebc0ad9ccc7fead3c99168d58904c",
+          "z_index": 0,
+          "canvas": [
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            56
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/antenna_coil_master_v001.png",
+        "master_sha256": "9da1ac977e79c8be744ee245660f7dfabaf2c0bdf213ab9287a78ef4c40bcce9",
+        "prompt": "prompts/antenna_coil.txt",
+        "prompt_sha256": "6e3af3b4d2994d79358e8ad2f8d1d2a79e20103f34f0f8897d5a8768132ee757",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-a5befc17-26d6-45af-a9c1-c812378cc3aa.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            392,
+            319,
+            1008,
+            976
+          ],
+          "material_sampling_size": [
+            36,
+            38
+          ],
+          "native_origin": [
+            14,
+            18
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 15,
+          "native_outline_pixels_corrected": 91
+        },
+        "native_adjustments": [
+          "三匝绕组正面原生短高光归并为连续6px铜色段，保留匝间深色核心，不绘制信号发光",
+          "明确保留实际两处2×1透明穿孔[20,27,22,28)、[33,27,35,28)，剪去半透明点而不填孔",
+          "底脚与右侧连接器维持母稿不对称轮廓，安装边界56"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": {
+        "orientation": "右侧独有铜接口",
+        "through_hole_rects": [
+          [
+            20,
+            27,
+            22,
+            28
+          ],
+          [
+            33,
+            27,
+            35,
+            28
+          ]
+        ]
+      },
+      "non_runtime_glass": [],
+      "observations": "实际母稿三匝铜绕组、圆芯、方脚、右侧连接器；原生两个上部线圈外沿小孔实际Alpha为0，不能填黑假装孔。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "split_ring",
+      "manifest_id": "B11",
+      "file": "art-source/ember/batch-03-objects/finished/split_ring_v001.png",
+      "production_file": "res://assets/ember/props/calibration/split_ring_v001.png",
+      "sha256": "30147d02b0140b8a1a258cb713ef88c1778e2a6c061b3715becb2984bdf335ad",
+      "size": [
+        64,
+        64
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/split_ring_v001.finish.json",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        12,
+        24,
+        52,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 10,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/split_ring/foundation_body.png",
+          "sha256": "30147d02b0140b8a1a258cb713ef88c1778e2a6c061b3715becb2984bdf335ad",
+          "z_index": 0,
+          "canvas": [
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            56
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/split_ring_master_v001.png",
+        "master_sha256": "88cca50a3a267ff6680c19290f8c3b3171153406f32374dbd4d5966833229ed2",
+        "prompt": "prompts/split_ring.txt",
+        "prompt_sha256": "a9ed82e0237c4d248b41f0b9c8db9e02e6e6e21414aa36235430409d1f6c6662",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-0db75d14-2489-464d-9750-bce8ec630e7a.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            271,
+            225,
+            1130,
+            910
+          ],
+          "material_sampling_size": [
+            40,
+            32
+          ],
+          "native_origin": [
+            12,
+            24
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 13,
+          "native_outline_pixels_corrected": 139
+        },
+        "native_adjustments": [
+          "右下gap[41,48,44,51)归并成连续透明开口，消除采样可能残留孤立桥点，不填底色",
+          "左上陶瓷高光整理为3px短段、内缘钢灰用1px轮廓清楚收边，保留偏右铜端头",
+          "中央孔保持不规则透视椭圆原生负形，不用几何圆环替换母稿整体轮廓"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": {
+        "orientation": "右下开口/铜端头",
+        "opening_rect": [
+          41,
+          48,
+          44,
+          51
+        ],
+        "central_hole_seed": [
+          32,
+          40
+        ],
+        "hole_connected_to_exterior": true
+      },
+      "non_runtime_glass": [],
+      "observations": "实际母稿C形三分之四钢环、浅色陶瓷圈、右下明确开口和铜端头；原生中央孔与开口真实相通。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "log_cartridge",
+      "manifest_id": "B12",
+      "file": "art-source/ember/batch-03-objects/finished/log_cartridge_v001.png",
+      "production_file": "res://assets/ember/props/story/log_cartridge_v001.png",
+      "sha256": "14faf29c1959209f37c196bf47480b41fdac604f9587b7cd9c273c80cdce9b6a",
+      "size": [
+        64,
+        64
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/log_cartridge_v001.finish.json",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        21,
+        22,
+        44,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/log_cartridge/foundation_body.png",
+          "sha256": "14faf29c1959209f37c196bf47480b41fdac604f9587b7cd9c273c80cdce9b6a",
+          "z_index": 0,
+          "canvas": [
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            56
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/log_cartridge_master_v001.png",
+        "master_sha256": "b50f9b6c11bc48941452159426244ddca387c22673cb258acc7e15af82ef8038",
+        "prompt": "prompts/log_cartridge.txt",
+        "prompt_sha256": "389bc749643706bf1a803d89f3048b88a21b8674702bdcd11a51f8bbc683f80a",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-b6990d76-cad5-4701-bb3e-f8c6a4dd7de7.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            352,
+            269,
+            862,
+            1026
+          ],
+          "material_sampling_size": [
+            23,
+            34
+          ],
+          "native_origin": [
+            21,
+            22
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 10,
+          "native_outline_pixels_corrected": 53
+        },
+        "native_adjustments": [
+          "中心物理凹槽[29,36,35,46)归并为6px宽中性深色块、最下2行加深；它不是发光运行屏幕",
+          "两铜触点的顶边分别整理成2px材质亮点，保留槽中性及单侧锁扣不对称方向",
+          "去半透明halo与孤立钢灰点；64画布底界56，日志正文留给UI"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [
+        {
+          "id": "physical_recess",
+          "rect": [
+            29,
+            36,
+            35,
+            46
+          ],
+          "emits": false
+        }
+      ],
+      "observations": "实际母稿两根顶铜触点、长方陶瓷记录壳、中央深凹槽和右下铜锁扣；没有文字内容，原生23×34识别明确。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "toolbox",
+      "manifest_id": "B12",
+      "file": "art-source/ember/batch-03-objects/finished/toolbox_v001.png",
+      "production_file": "res://assets/ember/props/story/toolbox_v001.png",
+      "sha256": "d3f8b0279f5940c88e064f1d78733ea48ecb9ef320c597953902359a8b9339bd",
+      "size": [
+        64,
+        64
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/toolbox_v001.finish.json",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        10,
+        29,
+        54,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/toolbox/foundation_body.png",
+          "sha256": "d3f8b0279f5940c88e064f1d78733ea48ecb9ef320c597953902359a8b9339bd",
+          "z_index": 0,
+          "canvas": [
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            56
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/toolbox_master_v001.png",
+        "master_sha256": "132baad1e28dfd64d8f968c70be9f7c97a5fa7c5c05e584238f3ba145d69daef",
+        "prompt": "prompts/toolbox.txt",
+        "prompt_sha256": "96650fbbad32e7fc900f6f679102701910917d036ea55102593f55fb912f2fb8",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-cd450432-43db-489d-9642-fcafe0116157.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            360,
+            287,
+            1148,
+            766
+          ],
+          "material_sampling_size": [
+            44,
+            27
+          ],
+          "native_origin": [
+            10,
+            29
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 17,
+          "native_outline_pixels_corrected": 60
+        },
+        "native_adjustments": [
+          "NATIVE_HANDLE_APERTURE: 按实际母稿手柄内槽位置切原生[28,33,37,35)9×2真透明孔，不让halo/灰底残留",
+          "顶手柄亮钢短条[28..35,30]连续归并，箱盖上缘保留钢灰平面，两锁扣不作为运行状态灯",
+          "去所有halo和随机单点；原生44×27底界56，完整轮廓保持，未把灰halo缩图后冒充投影"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": {
+        "through_hole_rects": [
+          [
+            28,
+            33,
+            37,
+            35
+          ]
+        ],
+        "orientation": "左侧单独铰链，正面2锁扣"
+      },
+      "non_runtime_glass": [],
+      "observations": "实际母稿工具箱上手柄、浅陶瓷四角、两铜锁扣与左侧铰链；母稿带明显模型灰halo，原生高Alpha采样已去除，手柄内槽仍需明确透明孔。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    },
+    {
+      "id": "helmet",
+      "manifest_id": "B12",
+      "file": "art-source/ember/batch-03-objects/finished/helmet_v001.png",
+      "production_file": "res://assets/ember/props/story/helmet_v001.png",
+      "sha256": "a920b3f0ac6940f7c2a53ccc04e59f8b13003486052d15d93e9e5488fe288dc6",
+      "size": [
+        64,
+        64
+      ],
+      "finishing_record": "art-source/ember/batch-03-objects/finished/helmet_v001.finish.json",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        16,
+        22,
+        49,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+      "rgb_count": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "size": true,
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "min_margins": true,
+        "ground_or_install_boundary": true
+      },
+      "runtime_windows": [],
+      "emitter_points": [],
+      "layers": [
+        {
+          "name": "foundation_body",
+          "file": "art-source/ember/batch-03-objects/layers/helmet/foundation_body.png",
+          "sha256": "a920b3f0ac6940f7c2a53ccc04e59f8b13003486052d15d93e9e5488fe288dc6",
+          "z_index": 0,
+          "canvas": [
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            56
+          ],
+          "purpose": "地基与主体余下像素",
+          "editable_source": true
+        }
+      ],
+      "tiling": {
+        "axes": [],
+        "repeat": false
+      },
+      "interaction_center": null,
+      "source_use": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/helmet_master_v001.png",
+        "master_sha256": "5a623cca2c58eab9018720f6c89aca504e66d69e50f7202958887e14ce744f4c",
+        "prompt": "prompts/helmet.txt",
+        "prompt_sha256": "f227c15ae8cbc881ebb905f6188c41ebe510f59deba35dd7d4280c5f55cd11d1",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-227b23f0-d020-47c9-9a3f-dee5690f8d5c.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            419,
+            427,
+            863,
+            883
+          ],
+          "material_sampling_size": [
+            33,
+            34
+          ],
+          "native_origin": [
+            16,
+            22
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 21,
+          "native_outline_pixels_corrected": 35
+        },
+        "native_adjustments": [
+          "visor内侧[23,41,32,47)归并为中性深灰，去母稿微渐变，原有倾斜壳缘轮廓仍保留",
+          "左上陶瓷亮簇归并成3px连续色块，右侧壳面继续较暗；不镜像或改变右侧铜扣",
+          "实体1px外轮廓、二值Alpha、原生33×34底界56；玻璃无运行状态光、无地面影"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "calibration_features": null,
+      "non_runtime_glass": [
+        {
+          "id": "helmet_visor",
+          "rect": [
+            23,
+            41,
+            32,
+            47
+          ],
+          "emits": false
+        }
+      ],
+      "observations": "实际母稿浅陶瓷壳、深visor边与右侧黄铜扣，属于同一制造系统的现场头盔；它是静态叙事物，不新增角色动作或发射点。",
+      "emission_baked": false,
+      "review_status": "PENDING_ROOT_ART_REVIEW"
+    }
+  ],
+  "required_assets": 18,
+  "actual_finished_assets": 18,
+  "production_review": "PENDING_ROOT_ART_REVIEW"
+}

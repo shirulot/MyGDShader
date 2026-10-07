@@ -1,0 +1,28 @@
+# 自动识别文本，二进制图片保持原始字节。
+* text=auto
+
+# Godot、文档和跨平台工具采用 LF，减少换行造成的无关差异。
+*.gd text eol=lf
+*.gdshader text eol=lf
+*.tscn text eol=lf
+*.tres text eol=lf
+*.godot text eol=lf
+*.uid text eol=lf
+*.import text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.wav binary
+*.ogg binary
+*.mp3 binary

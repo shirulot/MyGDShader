@@ -1,0 +1,161 @@
+{
+  "id": "pump_base",
+  "manifest_id": "B03",
+  "file": "art-source/ember/batch-03-objects/finished/pump_base_v001.png",
+  "production_file": "res://assets/ember/buildings/pump/pump_base_v001.png",
+  "sha256": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8",
+  "size": [
+    160,
+    192
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/pump_base_v001.finish.json",
+  "canvas": [
+    160,
+    192
+  ],
+  "bbox": [
+    25,
+    58,
+    136,
+    176
+  ],
+  "anchor": [
+    80,
+    176
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [
+    {
+      "id": "pump_gauge",
+      "visual_frame_bounds": [
+        73,
+        136,
+        89,
+        146
+      ],
+      "safe_active_rect": [
+        77,
+        140,
+        85,
+        144
+      ],
+      "center": [
+        81.0,
+        142.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.50625,
+        0.7395833333333334
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "emitter_points": [
+    {
+      "id": "pipe_inlet",
+      "at": [
+        27,
+        134
+      ],
+      "purpose": "静态管口接口，非已烘焙粒子"
+    },
+    {
+      "id": "pipe_outlet",
+      "at": [
+        133,
+        134
+      ],
+      "purpose": "输水接口；外部管线/水效另制作"
+    }
+  ],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/pump_base/foundation_body.png",
+      "sha256": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8",
+      "z_index": 0,
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/pump_base_master_v001.png",
+    "master_sha256": "bccc6b83aace92d58d1773027a497bbd317592ddf7f630e77205dd5350c9d339",
+    "prompt": "prompts/pump_base.txt",
+    "prompt_sha256": "5a183942c132da442e3a963c08238587f24ab38a443bbd9eaea28c2db8b0c5c3",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-6cb77688-375c-4de9-a487-8955a5227a87.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        86,
+        200,
+        1059,
+        1234
+      ],
+      "material_sampling_size": [
+        111,
+        118
+      ],
+      "native_origin": [
+        25,
+        58
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 98,
+      "native_outline_pixels_corrected": 24
+    },
+    "native_adjustments": [
+      "原生圆壳表窗[77,140,85,144)归并为中性深蓝灰，非发光运行状态",
+      "左右外接口增加3px深槽与上缘金属点，安装坐标对应真实接头；不画出水/地影",
+      "减少1px随机钢灰点并保持左右接头受同一左上光照；底界176"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [],
+  "observations": "实际母稿有水平左右黄铜接头、圆泵壳、上部电机与基座；原生管口为黄铜块，需补可辨深色接口，中心小表窗保留。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

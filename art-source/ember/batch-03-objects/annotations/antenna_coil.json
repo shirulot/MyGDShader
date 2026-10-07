@@ -1,0 +1,92 @@
+{
+  "observations": "实际母稿三匝铜绕组、圆芯、方脚、右侧连接器；原生两个上部线圈外沿小孔实际Alpha为0，不能填黑假装孔。",
+  "adjustments": [
+    "三匝绕组正面原生短高光归并为连续6px铜色段，保留匝间深色核心，不绘制信号发光",
+    "明确保留实际两处2×1透明穿孔[20,27,22,28)、[33,27,35,28)，剪去半透明点而不填孔",
+    "底脚与右侧连接器维持母稿不对称轮廓，安装边界56"
+  ],
+  "patches": [
+    {
+      "type": "line",
+      "points": [
+        [
+          25,
+          33
+        ],
+        [
+          30,
+          33
+        ]
+      ],
+      "color": 8
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          25,
+          39
+        ],
+        [
+          30,
+          39
+        ]
+      ],
+      "color": 7
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          25,
+          45
+        ],
+        [
+          30,
+          45
+        ]
+      ],
+      "color": 7
+    },
+    {
+      "type": "rect",
+      "bounds": [
+        20,
+        27,
+        22,
+        28
+      ],
+      "color": "transparent"
+    },
+    {
+      "type": "rect",
+      "bounds": [
+        33,
+        27,
+        35,
+        28
+      ],
+      "color": "transparent"
+    }
+  ],
+  "calibration_features": {
+    "orientation": "右侧独有铜接口",
+    "through_hole_rects": [
+      [
+        20,
+        27,
+        22,
+        28
+      ],
+      [
+        33,
+        27,
+        35,
+        28
+      ]
+    ]
+  },
+  "emitter_points": [],
+  "runtime_windows": [],
+  "components": []
+}

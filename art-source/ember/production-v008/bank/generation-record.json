@@ -1,0 +1,812 @@
+{
+  "status": "THREE_ART_CANDIDATES_INTERFACES_NOT_PASSED",
+  "tool": "image_gen.imagegen built-in",
+  "producer": "v008_bank_samples",
+  "user_visual_approval": false,
+  "is_atlas": false,
+  "single_component_images": true,
+  "texture_size": [
+    128,
+    128
+  ],
+  "world_cell": [
+    32,
+    32
+  ],
+  "scope": "Three bank directions with v003 registered curved inner artwork; no full pool-loop proof.",
+  "reference_files": [
+    {
+      "path": "art-source/ember/autotiles-v003/industrial_tile_master_v003.png",
+      "role": "approved material/style",
+      "sha256": "dccc671f4e754e218ecfea56c07d4096a06f709e2da4fd69b702d719a57c6d7e"
+    },
+    {
+      "path": "art-source/ember/autotiles-v007/bank_master.png",
+      "role": "read-only prior raw comparison",
+      "sha256": "266430fe1c927bb908262aa9d34b5cb11ba26d9f55f1ff68a8649ee56d5e7701"
+    },
+    {
+      "path": "art-source/ember/autotiles-v007/bank_normalized.png",
+      "role": "read-only prior normalized comparison",
+      "sha256": "da3ed460cf2ea42bb51690a66e0795e04a14ee61fc89a297cf348fc4be4e454f"
+    }
+  ],
+  "prompts_path": "art-source/ember/production-v008/bank/prompts.json",
+  "prompts_sha256": "fbb72b82522661c3c14df117bcfd4669a0e1c0f4ea2050a35ba82c4a7aa87fc6",
+  "raw_generation_count": 6,
+  "raw_images": [
+    {
+      "path": "art-source/ember/production-v008/bank/raw/bank_inner_NW_v001.png",
+      "sha256": "e71eb5c877ed034fa81eba1ac34d633e9bcba9c8d5a89b713d4ee1bbf43ad9b8",
+      "measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_values_count": 254,
+        "alpha_zero_count": 1380627,
+        "alpha_bbox_nonzero": [
+          0,
+          0,
+          1198,
+          1198
+        ],
+        "alpha_bbox_above_4": [
+          0,
+          0,
+          548,
+          565
+        ],
+        "alpha_bbox_above_64": [
+          0,
+          0,
+          546,
+          563
+        ],
+        "alpha_bbox_above_127": [
+          0,
+          0,
+          546,
+          563
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 332,
+          "E": 0,
+          "S": 0,
+          "W": 499
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 352,
+          "E": 0,
+          "S": 0,
+          "W": 513
+        }
+      },
+      "prompt_id": "bank_inner_NW_v001"
+    },
+    {
+      "path": "art-source/ember/production-v008/bank/raw/bank_inner_NW_v002.png",
+      "sha256": "90097475eb0a405b5ab45275abcb0f6864e526bbb23af166a3231b202cec7a35",
+      "measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_values_count": 255,
+        "alpha_zero_count": 1471529,
+        "alpha_bbox_nonzero": [
+          0,
+          0,
+          1119,
+          1182
+        ],
+        "alpha_bbox_above_4": [
+          13,
+          0,
+          402,
+          390
+        ],
+        "alpha_bbox_above_64": [
+          15,
+          1,
+          391,
+          388
+        ],
+        "alpha_bbox_above_127": [
+          15,
+          2,
+          391,
+          388
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 0,
+          "E": 0,
+          "S": 0,
+          "W": 0
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 216,
+          "E": 0,
+          "S": 0,
+          "W": 16
+        }
+      },
+      "prompt_id": "bank_inner_NW_v002"
+    },
+    {
+      "path": "art-source/ember/production-v008/bank/raw/bank_outer_NW_v001.png",
+      "sha256": "ccb1cd88ab0af5f0ad26b72f271f0b9e01dcb7cf388b2b5a7f1ebb1104b699fb",
+      "measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_values_count": 255,
+        "alpha_zero_count": 952737,
+        "alpha_bbox_nonzero": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alpha_bbox_above_4": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alpha_bbox_above_64": [
+          0,
+          2,
+          1254,
+          1254
+        ],
+        "alpha_bbox_above_127": [
+          0,
+          3,
+          1254,
+          1254
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 0,
+          "E": 302,
+          "S": 251,
+          "W": 1076
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 1090,
+          "E": 309,
+          "S": 258,
+          "W": 1096
+        }
+      },
+      "prompt_id": "bank_outer_NW_v001"
+    },
+    {
+      "path": "art-source/ember/production-v008/bank/raw/bank_outer_NW_v002.png",
+      "sha256": "afe348bd4adb49364d4615f18214a57698892667370dc416c701b6e955710c4f",
+      "measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_values_count": 250,
+        "alpha_zero_count": 900649,
+        "alpha_bbox_nonzero": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alpha_bbox_above_4": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alpha_bbox_above_64": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alpha_bbox_above_127": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 1070,
+          "E": 301,
+          "S": 303,
+          "W": 1072
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 1088,
+          "E": 307,
+          "S": 314,
+          "W": 1098
+        }
+      },
+      "prompt_id": "bank_outer_NW_v002"
+    },
+    {
+      "path": "art-source/ember/production-v008/bank/raw/bank_straight_N_v001.png",
+      "sha256": "4b6964caeafe74f071f4cf499d4e817caa3db76cfd1e60e59839ea442f5b4810",
+      "measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_values_count": 172,
+        "alpha_zero_count": 1185667,
+        "alpha_bbox_nonzero": [
+          0,
+          0,
+          1254,
+          1200
+        ],
+        "alpha_bbox_above_4": [
+          0,
+          203,
+          1254,
+          504
+        ],
+        "alpha_bbox_above_64": [
+          0,
+          205,
+          1254,
+          501
+        ],
+        "alpha_bbox_above_127": [
+          0,
+          206,
+          1254,
+          501
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 0,
+          "E": 294,
+          "S": 0,
+          "W": 294
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 1,
+          "E": 300,
+          "S": 0,
+          "W": 346
+        }
+      },
+      "prompt_id": "bank_straight_N_v001"
+    },
+    {
+      "path": "art-source/ember/production-v008/bank/raw/bank_inner_NW_v003.png",
+      "sha256": "77842daae3c005c22880dc471fba9629a3b97c44aa4a00c2aa79ee579341f35a",
+      "measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_values_count": 256,
+        "alpha_zero_count": 1322126,
+        "alpha_bbox_nonzero": [
+          49,
+          65,
+          1196,
+          1212
+        ],
+        "alpha_bbox_above_4": [
+          55,
+          69,
+          681,
+          704
+        ],
+        "alpha_bbox_above_64": [
+          57,
+          72,
+          679,
+          701
+        ],
+        "alpha_bbox_above_127": [
+          58,
+          72,
+          679,
+          701
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 0,
+          "E": 0,
+          "S": 0,
+          "W": 0
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 0,
+          "E": 0,
+          "S": 0,
+          "W": 0
+        }
+      },
+      "prompt_id": "bank_inner_NW_v003"
+    }
+  ],
+  "candidate_entries": [
+    {
+      "id": "bank_straight_N",
+      "mask": 124,
+      "raw": "bank_straight_N_v001.png",
+      "crop": [
+        0,
+        203,
+        1254,
+        1457
+      ],
+      "offset": [
+        0,
+        -203
+      ],
+      "status": "VISUAL_SAMPLE_PENDING_CONNECTION_REVIEW",
+      "reason": "Complete N bank registered as one image; sidewall is relatively tall; exact interfaces pending.",
+      "raw_path": "art-source/ember/production-v008/bank/raw/bank_straight_N_v001.png",
+      "raw_sha256": "4b6964caeafe74f071f4cf499d4e817caa3db76cfd1e60e59839ea442f5b4810",
+      "raw_measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_values_count": 172,
+        "alpha_zero_count": 1185667,
+        "alpha_bbox_nonzero": [
+          0,
+          0,
+          1254,
+          1200
+        ],
+        "alpha_bbox_above_4": [
+          0,
+          203,
+          1254,
+          504
+        ],
+        "alpha_bbox_above_64": [
+          0,
+          205,
+          1254,
+          501
+        ],
+        "alpha_bbox_above_127": [
+          0,
+          206,
+          1254,
+          501
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 0,
+          "E": 294,
+          "S": 0,
+          "W": 294
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 1,
+          "E": 300,
+          "S": 0,
+          "W": 346
+        }
+      },
+      "crop_coordinate_convention": "left,top,right_exclusive,bottom_exclusive",
+      "full_graphic_offset_native_pixels": [
+        0,
+        -203
+      ],
+      "registered_canvas": [
+        1254,
+        1254
+      ],
+      "out_of_bounds_transparency_padding": [
+        0,
+        0,
+        0,
+        203
+      ],
+      "uniform_scale_factor": 0.10207336523125997,
+      "resampling": "PIL LANCZOS",
+      "candidate_path": "art-source/ember/production-v008/bank/candidates/bank_straight_N_sample_v001.png",
+      "candidate_sha256": "40fd40c36671cf559fde88bbf563eb28e8c1f58d94538cff3a850641f927ee1a",
+      "candidate_measurements": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_values_count": 30,
+        "alpha_zero_count": 12284,
+        "alpha_bbox_nonzero": [
+          0,
+          0,
+          128,
+          43
+        ],
+        "alpha_bbox_above_4": [
+          0,
+          0,
+          128,
+          31
+        ],
+        "alpha_bbox_above_64": [
+          0,
+          0,
+          128,
+          31
+        ],
+        "alpha_bbox_above_127": [
+          0,
+          0,
+          128,
+          30
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 128,
+          "E": 30,
+          "S": 0,
+          "W": 30
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 128,
+          "E": 32,
+          "S": 0,
+          "W": 32
+        }
+      },
+      "candidate_components8_alpha_above_0": [
+        3968,
+        128,
+        3,
+        1
+      ],
+      "candidate_components8_alpha_above_127": [
+        3840
+      ],
+      "observed_north_band_at_90_percent_width": {
+        "first": 0,
+        "last_exclusive": 30,
+        "count": 30
+      },
+      "observed_west_band_at_90_percent_height": {
+        "first": null,
+        "last_exclusive": null,
+        "count": 0
+      },
+      "artwork_operations": [
+        "one complete-image crop/translation with transparent padding",
+        "uniform complete-image scale"
+      ],
+      "no_local_pixel_or_alpha_repair": true
+    },
+    {
+      "id": "bank_outer_NW",
+      "mask": 28,
+      "raw": "bank_outer_NW_v002.png",
+      "crop": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "status": "VISUAL_SAMPLE_PENDING_CONNECTION_REVIEW",
+      "reason": "One targeted repair improved north/west total width; exact connection interfaces remain pending.",
+      "raw_path": "art-source/ember/production-v008/bank/raw/bank_outer_NW_v002.png",
+      "raw_sha256": "afe348bd4adb49364d4615f18214a57698892667370dc416c701b6e955710c4f",
+      "raw_measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_values_count": 250,
+        "alpha_zero_count": 900649,
+        "alpha_bbox_nonzero": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alpha_bbox_above_4": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alpha_bbox_above_64": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alpha_bbox_above_127": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 1070,
+          "E": 301,
+          "S": 303,
+          "W": 1072
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 1088,
+          "E": 307,
+          "S": 314,
+          "W": 1098
+        }
+      },
+      "crop_coordinate_convention": "left,top,right_exclusive,bottom_exclusive",
+      "full_graphic_offset_native_pixels": [
+        0,
+        0
+      ],
+      "registered_canvas": [
+        1254,
+        1254
+      ],
+      "out_of_bounds_transparency_padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "uniform_scale_factor": 0.10207336523125997,
+      "resampling": "PIL LANCZOS",
+      "candidate_path": "art-source/ember/production-v008/bank/candidates/bank_outer_NW_sample_v001.png",
+      "candidate_sha256": "f971c7c2e0939829a82e587e1d6ec0617b930e952c5c96ac40ceb8be699a30bd",
+      "candidate_measurements": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_values_count": 60,
+        "alpha_zero_count": 9127,
+        "alpha_bbox_nonzero": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "alpha_bbox_above_4": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "alpha_bbox_above_64": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "alpha_bbox_above_127": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 111,
+          "E": 31,
+          "S": 32,
+          "W": 111
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 113,
+          "E": 33,
+          "S": 33,
+          "W": 114
+        }
+      },
+      "candidate_components8_alpha_above_0": [
+        7245,
+        4,
+        4,
+        2,
+        1,
+        1
+      ],
+      "candidate_components8_alpha_above_127": [
+        6930
+      ],
+      "observed_north_band_at_90_percent_width": {
+        "first": 0,
+        "last_exclusive": 31,
+        "count": 31
+      },
+      "observed_west_band_at_90_percent_height": {
+        "first": 0,
+        "last_exclusive": 32,
+        "count": 32
+      },
+      "artwork_operations": [
+        "one complete-image crop/translation with transparent padding",
+        "uniform complete-image scale"
+      ],
+      "no_local_pixel_or_alpha_repair": true
+    },
+    {
+      "id": "bank_inner_NW",
+      "mask": 127,
+      "raw": "bank_inner_NW_v003.png",
+      "crop": [
+        66,
+        80,
+        1320,
+        1334
+      ],
+      "offset": [
+        -66,
+        -80
+      ],
+      "status": "VISUAL_SAMPLE_PENDING_CONNECTION_REVIEW",
+      "reason": "v003曲线构件整体注册后N/W有真实主体端口、E/S透明。跨度约半格、弧口与其他方向接口位置仍需统一；不登记正式无缝通过。",
+      "raw_path": "art-source/ember/production-v008/bank/raw/bank_inner_NW_v003.png",
+      "raw_sha256": "77842daae3c005c22880dc471fba9629a3b97c44aa4a00c2aa79ee579341f35a",
+      "raw_measurements": {
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_values_count": 256,
+        "alpha_zero_count": 1322126,
+        "alpha_bbox_nonzero": [
+          49,
+          65,
+          1196,
+          1212
+        ],
+        "alpha_bbox_above_4": [
+          55,
+          69,
+          681,
+          704
+        ],
+        "alpha_bbox_above_64": [
+          57,
+          72,
+          679,
+          701
+        ],
+        "alpha_bbox_above_127": [
+          58,
+          72,
+          679,
+          701
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 0,
+          "E": 0,
+          "S": 0,
+          "W": 0
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 0,
+          "E": 0,
+          "S": 0,
+          "W": 0
+        }
+      },
+      "candidate_path": "art-source/ember/production-v008/bank/candidates/bank_inner_NW_sample_v003.png",
+      "candidate_sha256": "41ea58ba69f01a56bb1bfb62f45f92538ae4ba3dfec1d5fa5a7b37b291630682",
+      "candidate_measurements": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_values_count": 128,
+        "alpha_zero_count": 13666,
+        "alpha_bbox_nonzero": [
+          0,
+          0,
+          65,
+          66
+        ],
+        "alpha_bbox_above_4": [
+          0,
+          0,
+          63,
+          64
+        ],
+        "alpha_bbox_above_64": [
+          0,
+          0,
+          63,
+          64
+        ],
+        "alpha_bbox_above_127": [
+          0,
+          0,
+          63,
+          63
+        ],
+        "edge_alpha_above_127_pixel_counts": {
+          "N": 32,
+          "E": 0,
+          "S": 0,
+          "W": 32
+        },
+        "edge_alpha_nonzero_pixel_counts": {
+          "N": 35,
+          "E": 0,
+          "S": 0,
+          "W": 36
+        }
+      },
+      "candidate_components8_alpha_above_127": [
+        2471
+      ],
+      "uniform_scale_factor": 0.10207336523125997,
+      "registered_canvas": [
+        1254,
+        1254
+      ],
+      "out_of_bounds_transparency_padding": [
+        0,
+        0,
+        66,
+        80
+      ],
+      "crop_coordinate_convention": "XYXY half-open; whole-component square registration",
+      "artwork_operations": [
+        "complete square crop/translation with transparent padding",
+        "uniform complete image reduction"
+      ],
+      "no_local_pixel_or_alpha_repair": true,
+      "previous_candidate_record": "art-source/ember/production-v008/bank/generation-record.before-inner-v003.json",
+      "previous_candidate_path": "art-source/ember/production-v008/bank/candidates/bank_inner_NW_sample_v001.png",
+      "review_preview": "art-source/ember/production-v008/bank/review/bank_inner_NW_v003_4x.png"
+    }
+  ],
+  "connection_observations": {
+    "repeated_straight_E_to_W": {
+      "samples": 128,
+      "visible_rgba_mismatch_samples": 31,
+      "alpha_mismatch_samples": 7,
+      "max_alpha_difference": 1,
+      "max_visible_rgb_difference": 69
+    },
+    "outer_E_to_straight_W": {
+      "samples": 128,
+      "visible_rgba_mismatch_samples": 34,
+      "alpha_mismatch_samples": 19,
+      "max_alpha_difference": 153,
+      "max_visible_rgb_difference": 89
+    },
+    "numeric_results_are_not_visual_approval": true,
+    "interfaces_not_forced": true
+  },
+  "rejected_originals": {
+    "bank_outer_NW_v001": "North complete side band was about304px while west255px; directional thickness inconsistent.",
+    "bank_inner_NW_v001": "Over-large approximately44% span, capped short L, wrong mask127 footprint.",
+    "bank_inner_NW_v002": "Still capped short L and source four edges lack Alpha>127 contact; semantic rejection."
+  },
+  "remaining_issues": [
+    "接口RGBA仍未一致，不能发布正式连接套件。",
+    "弧形内岸跨度约半格；其他朝向和邻接弧口位置仍需同尺度统一。",
+    "生成的微弱Alpha杂点按原样保留；阈值仅用于主体诊断。",
+    "直岸暗立面比例较高，保留美术审查。",
+    "未生成全四向池岸，没有用旋转光照拼闭环。"
+  ],
+  "review_composition": "PIL diagnostic compositing only, flat-color water placeholder; no image geometry or interfaces repaired",
+  "script_sha256": "9f5f43ef185da2e2a5aa105e7a74d6d80438783b654650421d05fe2fef856033",
+  "previews": [
+    "art-source/ember/production-v008/bank/review/bank_inner_NW_4x.png",
+    "art-source/ember/production-v008/bank/review/bank_outer_NW_4x.png",
+    "art-source/ember/production-v008/bank/review/bank_straight_N_4x.png",
+    "art-source/ember/production-v008/bank/review/north_straight_repeat_1x.png",
+    "art-source/ember/production-v008/bank/review/north_straight_repeat_2x.png",
+    "art-source/ember/production-v008/bank/review/nw_outer_to_north_partial_1x.png",
+    "art-source/ember/production-v008/bank/review/nw_outer_to_north_partial_2x.png",
+    "art-source/ember/production-v008/bank/review/three_samples_4x.png"
+  ],
+  "producer_continuation": "root/register_bank_v003.py"
+}

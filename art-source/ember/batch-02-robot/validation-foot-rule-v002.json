@@ -1,0 +1,156 @@
+{
+  "generated_utc": "2026-10-03T18:42:28.591297+00:00",
+  "mode": "READ_ONLY_TARGETED_DIAGNOSTIC_NO_PNG_OUTPUT",
+  "validator_sha256": "3ff5813b08a110124d763b0254b5da2024ddfe76215a4f2beb02bcfa886b3cff",
+  "groups": [
+    {
+      "name": "idle_strict_boundary",
+      "passed": true,
+      "actual_baseline_visible_bottom": 80,
+      "fixed_virtual_anchor": [
+        32,
+        80
+      ],
+      "checks": [
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "idle",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 14,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "idle visible bottom 80 with opaque contact pixels at y79; fixed anchor (32,80)"
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": false,
+          "actual": {
+            "state": "idle",
+            "visible_bottom_boundary_y": 79,
+            "opaque_pixels_at_y79": 0,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "idle visible bottom 80 with opaque contact pixels at y79; fixed anchor (32,80)"
+        }
+      ]
+    },
+    {
+      "name": "walk_visible_projection_range",
+      "passed": true,
+      "checks": [
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 78,
+            "opaque_pixels_at_y79": 0,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 79,
+            "opaque_pixels_at_y79": 0,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": true,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 80,
+            "opaque_pixels_at_y79": 4,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": false,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 77,
+            "opaque_pixels_at_y79": 0,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        },
+        {
+          "name": "foot_projection_boundary",
+          "passed": false,
+          "actual": {
+            "state": "walk",
+            "visible_bottom_boundary_y": 81,
+            "opaque_pixels_at_y79": 4,
+            "fixed_virtual_anchor": [
+              32,
+              80
+            ]
+          },
+          "expected": "walk visible bottom 78..80; fixed anchor (32,80)"
+        }
+      ]
+    },
+    {
+      "name": "whole_sprite_translation_still_rejected",
+      "passed": true,
+      "measured_shift": {
+        "visible_rgba_changed_pixels": 778,
+        "alpha_changed_pixels": 140,
+        "silhouette_iou": 0.910371,
+        "changed_visible_fraction": 0.498079,
+        "exact_whole_subject_translation": [
+          0,
+          -1
+        ]
+      },
+      "walk_foot_rule_alone_accepts_bottom79": true,
+      "motion_rejection": {
+        "name": "walk_not_whole_sprite_translation",
+        "passed": false,
+        "actual": [
+          {
+            "from": "diagnostic_pose",
+            "to": "diagnostic_whole_pose_shift_up1",
+            "translation": [
+              0,
+              -1
+            ]
+          }
+        ],
+        "expected": "no exact nonzero translation of the complete subject between poses"
+      }
+    }
+  ],
+  "diagnostic_groups": 3,
+  "failed_diagnostic_groups": 0,
+  "pngs_generated_or_modified": 0,
+  "baseline_sha256_unchanged": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+}

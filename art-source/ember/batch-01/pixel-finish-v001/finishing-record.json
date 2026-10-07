@@ -1,0 +1,252 @@
+[
+  {
+    "id": "C01",
+    "source": "art-source/ember/batch-01/generated/robot_idle_down_master_v001.png",
+    "source_sha256": "216ead02b5066e0ce85223c4f5115d8eeb7acdf7428e539018bee309ce899773",
+    "output": "assets/ember/characters/robot/robot_idle_down_v001.png",
+    "source_size": [
+      1024,
+      1536
+    ],
+    "source_subject_crop": [
+      201,
+      239,
+      832,
+      1167
+    ],
+    "method": "AI_SUBJECT_SAMPLING_AND_NATIVE_PIXEL_FINISH",
+    "adjustments": [
+      "高Alpha主体分块中位色采样；透明halo及边缘碎片剔除，母稿保持不变",
+      "固定16色中的中性钢灰、陶瓷及黄铜；移除母稿碎色和渐变",
+      "在原生网格整理1像素外轮廓与孤立材质点，不向透明区扩张主体",
+      "原生重画中性窗口/安装点；脚底边界对齐固定锚点，保存二值Alpha"
+    ],
+    "details": "胸部窗口与头盔前窗清理；两脚最后一行对齐79",
+    "measurements": {
+      "canvas": [
+        64,
+        96
+      ],
+      "bbox": [
+        12,
+        21,
+        52,
+        80
+      ],
+      "subject_size": [
+        40,
+        59
+      ],
+      "margins_l_t_r_b": [
+        12,
+        21,
+        12,
+        16
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "anchor_convention": "底边界；末行像素在anchor_y-1",
+      "visible_rgb_count": 11,
+      "rgb_hex": [
+        "#101820",
+        "#182631",
+        "#2B3E4B",
+        "#4D6470",
+        "#566B78",
+        "#7B4D35",
+        "#829BA3",
+        "#B77C4B",
+        "#BECBC4",
+        "#E2B77A",
+        "#ECE9D8"
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "bbox_limit": true,
+        "foot_boundary_y": true,
+        "no_runtime_status_colors": true
+      }
+    },
+    "visual_status": "PRODUCER_VISUAL_REVIEW_PASS",
+    "output_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+    "runtime_layout": {
+      "windows": [
+        {
+          "id": "chest_status",
+          "appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+          "safe_active_rect": [
+            30,
+            52,
+            34,
+            54
+          ],
+          "center": [
+            32,
+            53
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.5520833333333334
+          ],
+          "mask_delivery_status": "NOT_PRODUCED"
+        }
+      ],
+      "emitter_points": [],
+      "emitter_points_status": "NOT_APPLICABLE_STATIC_IDLE_BASE",
+      "emission_baked": false,
+      "layering": {
+        "delivered": "single_flattened_rgba_base",
+        "included": "头盔、面罩、躯干、四肢和黄铜工具位于同一张base；Alpha为主体遮罩。",
+        "separate_component_pngs": [],
+        "dynamic_effects": "状态发光由后续Shader或效果层表现；头盔面罩不登记为发光器。"
+      },
+      "tiling": "NONE_OBJECT_SPRITE",
+      "animation": {
+        "direction": "down",
+        "state": "idle",
+        "frame_index": 0,
+        "delivered_frames": 1,
+        "planned_frames": 20,
+        "preview_fps": null,
+        "preview_fps_reason": "单张静帧，无播放帧率"
+      }
+    }
+  },
+  {
+    "id": "B01",
+    "source": "art-source/ember/batch-01/generated/station_master_v001.png",
+    "source_sha256": "98ede4e6f0c955cf415d98ad48426aacc68b696032b61ab7f56b05b9754cf72f",
+    "output": "assets/ember/buildings/station/station_base_v001.png",
+    "source_size": [
+      1122,
+      1402
+    ],
+    "source_subject_crop": [
+      89,
+      97,
+      1033,
+      1271
+    ],
+    "method": "AI_SUBJECT_SAMPLING_AND_NATIVE_PIXEL_FINISH",
+    "adjustments": [
+      "高Alpha主体分块中位色采样；透明halo及边缘碎片剔除，母稿保持不变",
+      "固定16色中的中性钢灰、陶瓷及黄铜；移除母稿碎色和渐变",
+      "在原生网格整理1像素外轮廓与孤立材质点，不向透明区扩张主体",
+      "原生重画中性窗口/安装点；脚底边界对齐固定锚点，保存二值Alpha"
+    ],
+    "details": "核心中性窗口两档暗面；左右地脚最后一行对齐143",
+    "measurements": {
+      "canvas": [
+        128,
+        160
+      ],
+      "bbox": [
+        17,
+        26,
+        111,
+        144
+      ],
+      "subject_size": [
+        94,
+        118
+      ],
+      "margins_l_t_r_b": [
+        17,
+        26,
+        17,
+        16
+      ],
+      "anchor": [
+        64,
+        144
+      ],
+      "anchor_convention": "底边界；末行像素在anchor_y-1",
+      "visible_rgb_count": 11,
+      "rgb_hex": [
+        "#101820",
+        "#182631",
+        "#2B3E4B",
+        "#4D6470",
+        "#566B78",
+        "#7B4D35",
+        "#829BA3",
+        "#B77C4B",
+        "#BECBC4",
+        "#E2B77A",
+        "#ECE9D8"
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rules": {
+        "binary_alpha": true,
+        "fixed_palette": true,
+        "bbox_limit": true,
+        "foot_boundary_y": true,
+        "no_runtime_status_colors": true,
+        "minimum_margins_16": true
+      }
+    },
+    "visual_status": "PRODUCER_VISUAL_REVIEW_PASS",
+    "output_sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4",
+    "runtime_layout": {
+      "windows": [
+        {
+          "id": "energy_core",
+          "appearance": "未运行的两档中性暗面",
+          "frame_visual_bounds": [
+            49,
+            60,
+            79,
+            102
+          ],
+          "frame_visual_bounds_role": "含安装框的视觉定位范围，非精确窗口Mask",
+          "safe_active_rect": [
+            54,
+            66,
+            74,
+            95
+          ],
+          "center": [
+            64,
+            80.5
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.503125
+          ],
+          "safe_active_rect_role": "实际连续20×29暗面；也是像素整理的中间处理区，仅用于安全局部变化，未覆盖完整倒角窗口。",
+          "mask_delivery_status": "NOT_PRODUCED"
+        }
+      ],
+      "emitter_points": [],
+      "emitter_points_status": "NOT_APPLICABLE_STATIC_STATION_BASE",
+      "emission_baked": false,
+      "layering": {
+        "delivered": "single_flattened_rgba_base",
+        "included": "基座、核心、侧管与窗口位于同一张base；Alpha为主体遮罩。",
+        "separate_component_pngs": [],
+        "dynamic_effects": "状态发光、粒子和烟火由后续效果层表现；完整窗口Mask及可动/前景层按后续实际用途派生。"
+      },
+      "tiling": "NONE_OBJECT_SPRITE",
+      "animation": {
+        "direction": null,
+        "state": "static_base",
+        "frame_index": 0,
+        "delivered_frames": 1,
+        "preview_fps": null,
+        "preview_fps_reason": "单张静态底图，无播放帧率"
+      }
+    }
+  }
+]

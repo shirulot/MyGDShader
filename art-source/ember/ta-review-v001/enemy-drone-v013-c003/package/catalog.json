@@ -1,0 +1,131 @@
+{
+	"columns": 4,
+	"entries": [
+		{
+			"bounds": "[P: (32, 54), S: (64, 26)]",
+			"copied_from": "res://source/approved_down/enemy_scout_drone.png",
+			"key": "neutral_down",
+			"path": "res://calibration_check_c003_drone/neutral_down.png",
+			"scope": "PRESERVED_APPROVED_DOWN",
+			"sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33"
+		},
+		{
+			"bounds": "[P: (32, 54), S: (64, 26)]",
+			"copied_from": "res://calibration_check_v002/enemy_scout_drone/generated_front.png",
+			"key": "generated_front_c002",
+			"path": "res://calibration_check_c003_drone/generated_front_c002.png",
+			"scope": "PRESERVED_APPROVED_C002_FRONT",
+			"sha256": "b24e4be8519218d63cef0432d93c1d25c6503a05fd25724cede033f4ea092d95"
+		},
+		{
+			"axis_centers_native": [
+				[
+					48.6601181030273,
+					58.3220443725586
+				],
+				[
+					79.3398895263672,
+					69.3911590576172
+				]
+			],
+			"axis_delta_native": [
+				30.6797714233398,
+				11.0691146850586
+			],
+			"bounds": "[P: (39, 52), S: (51, 31)]",
+			"key": "neutral_down_left",
+			"path": "res://calibration_check_c003_drone/neutral_down_left.png",
+			"registration": {
+				"key": "neutral_down_left",
+				"scale": 0.0869758071968507,
+				"scale_note": "Keep c002 scale 26/244 and one atlas-density factor 724/887 for changed cell resolution; no per-pod or per-view stretch. Anchor x at transverse-axis midpoint, y at unchanged central small-probe bottom.",
+				"scope": "DIAGONAL_YAW_REVISION_C003",
+				"source": "res://source/turnarounds/enemy_scout_drone_diagonals_c003r1.png",
+				"source_anchor": [
+					510.173583654312,
+					629.0
+				],
+				"source_axes": [
+					[
+						333.804020100503,
+						379.758793969849
+					],
+					[
+						686.543147208122,
+						507.02538071066
+					]
+				],
+				"source_rect": [
+					0.0,
+					0.0,
+					887.0,
+					887.0
+				],
+				"source_sha256": "6998ebcde01124af54234c989f4ea0fe830785ca62dbb459da5c265fa5ee32d2",
+				"target_anchor": [
+					64.0,
+					80.0
+				]
+			},
+			"scope": "DIAGONAL_YAW_REVISION_C003",
+			"sha256": "6e98ee35c741152a436aa8e90fb597e1b64ae87299c16c723c5f0789d8b0356a"
+		},
+		{
+			"axis_centers_native": [
+				[
+					48.7116394042969,
+					69.3889465332031
+				],
+				[
+					79.2883605957031,
+					58.395751953125
+				]
+			],
+			"axis_delta_native": [
+				30.5767211914063,
+				10.9931945800781
+			],
+			"bounds": "[P: (38, 52), S: (51, 31)]",
+			"key": "neutral_down_right",
+			"path": "res://calibration_check_c003_drone/neutral_down_right.png",
+			"registration": {
+				"key": "neutral_down_right",
+				"scale": 0.0869758071968507,
+				"scale_note": "Keep c002 scale 26/244 and one atlas-density factor 724/887 for changed cell resolution; no per-pod or per-view stretch. Anchor x at transverse-axis midpoint, y at unchanged central small-probe bottom.",
+				"scope": "DIAGONAL_YAW_REVISION_C003",
+				"source": "res://source/turnarounds/enemy_scout_drone_diagonals_c003r1.png",
+				"source_anchor": [
+					420.777202072539,
+					629.0
+				],
+				"source_axes": [
+					[
+						245.0,
+						507.0
+					],
+					[
+						596.554404145078,
+						380.60621761658
+					]
+				],
+				"source_rect": [
+					887.0,
+					0.0,
+					887.0,
+					887.0
+				],
+				"source_sha256": "6998ebcde01124af54234c989f4ea0fe830785ca62dbb459da5c265fa5ee32d2",
+				"target_anchor": [
+					64.0,
+					80.0
+				]
+			},
+			"scope": "DIAGONAL_YAW_REVISION_C003",
+			"sha256": "8cef29b2ad627d52c256a812133b6a3d943ddbdc2a741bd67c0043c8c018acca"
+		}
+	],
+	"name": "drone-diagonal-yaw-c003",
+	"registration_sha256": "194a89cb2d378a575d710a6fdc14b1879eaaceaa801ee171df4b215302a6616b",
+	"scope": "Only two diagonals changed; approved down and c002 generated front copied unchanged",
+	"status": "PENDING_TA_STATIC_REVIEW"
+}

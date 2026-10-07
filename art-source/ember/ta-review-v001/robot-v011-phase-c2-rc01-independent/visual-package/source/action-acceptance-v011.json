@@ -1,0 +1,97 @@
+{
+  "status": "SW_IDLE_COLLECT_ACCEPTED",
+  "receipt": "qa/ta-receipt-phase-c1-rc01.md",
+  "receipt_sha256": "d5ad7ddc28b3bf608bcbac0eff21a5159d1a1413a82126521dc490bdfb136374",
+  "clips": [
+    {
+      "name": "idle_down_left",
+      "direction": "down_left",
+      "action": "idle",
+      "fps": 2,
+      "loop": true,
+      "frames": [
+        {
+          "file": "frames/idle/down_left/robot_idle_down_left_f00_v011.png",
+          "frame": 0,
+          "sha256": "1ce8c81e3b4e1758b4478e78bb5aa1499f3e1cd95687283541a4c4e9b09d16b3",
+          "region": [
+            0,
+            0,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/idle/down_left/robot_idle_down_left_f01_v011.png",
+          "frame": 1,
+          "sha256": "113bcbae069cadbc48d571f63093fa339d8723638fa6a36e62e34abb914f93b1",
+          "region": [
+            64,
+            0,
+            64,
+            96
+          ]
+        }
+      ],
+      "art_status": "NEW_ACTION_PILOT_PENDING_TA"
+    },
+    {
+      "name": "collect_down_left",
+      "direction": "down_left",
+      "action": "collect",
+      "fps": 6,
+      "loop": false,
+      "frames": [
+        {
+          "file": "frames/collect/down_left/robot_collect_down_left_f00_v011.png",
+          "frame": 0,
+          "sha256": "cba8acb6014051921e016d3c882db8d91c125a3f78da5c84d6cbd5c5831ab95a",
+          "region": [
+            0,
+            96,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/collect/down_left/robot_collect_down_left_f01_v011.png",
+          "frame": 1,
+          "sha256": "865c7d5c485d46ef4383662b4de4ce632968132cc9dc7714a94406923bc6f2fe",
+          "region": [
+            64,
+            96,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/collect/down_left/robot_collect_down_left_f02_v011.png",
+          "frame": 2,
+          "sha256": "dcc6e8e055788354e8f7851f57ad8ddb26a79f5a53057cc9d02be487d3509de0",
+          "region": [
+            128,
+            96,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/collect/down_left/robot_collect_down_left_f03_v011.png",
+          "frame": 3,
+          "sha256": "1ce8c81e3b4e1758b4478e78bb5aa1499f3e1cd95687283541a4c4e9b09d16b3",
+          "region": [
+            192,
+            96,
+            64,
+            96
+          ]
+        }
+      ],
+      "art_status": "NEW_ACTION_PILOT_PENDING_TA"
+    }
+  ],
+  "excludes": [
+    "other seven directions idle/collect",
+    "main project integration"
+  ]
+}

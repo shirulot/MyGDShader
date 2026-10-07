@@ -1,0 +1,725 @@
+[gd_scene format=3]
+
+[ext_resource type="SpriteFrames" path="res://assets/ember/characters/robot/robot_sprite_frames_v001.tres" id="1_7k8ir"]
+
+[sub_resource type="GDScript" id="GDScript_vmb3b"]
+script/source = "extends Node2D
+## 仅本次独立动画预览采用 1280×800；不写 ProjectSettings。
+func _ready() -> void:
+	get_window().content_scale_size = Vector2i(1280, 800)
+	if DisplayServer.get_name() != \"headless\":
+		get_window().size = Vector2i(1280, 800)
+"
+
+[sub_resource type="SystemFont" id="SystemFont_dbv3u"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_ms1su"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_gxsax"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_m53wj"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_7r3xj"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_sc46o"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_t5ak0"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_j425k"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_bla3a"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_1c3kd"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_d01jr"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_7u0ww"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_m1my3"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_kjckt"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_7as3p"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_taacy"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_tmhdr"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_i37il"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_lhqr4"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_48ca4"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_flk6d"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_boa0t"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_5qqil"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_nmxww"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_ldf7j"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[node name="EmberRobotAnimationSandbox" type="Node2D" unique_id=1194831455]
+texture_filter = 1
+script = SubResource("GDScript_vmb3b")
+
+[node name="Background" type="ColorRect" parent="." unique_id=147818409]
+offset_right = 1280.0
+offset_bottom = 800.0
+mouse_filter = 2
+color = Color(0.0627451, 0.09411765, 0.1254902, 1)
+
+[node name="Title" type="Label" parent="." unique_id=77464978]
+offset_left = 32.0
+offset_top = 20.0
+offset_right = 32.0
+offset_bottom = 20.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_dbv3u")
+theme_override_font_sizes/font_size = 26
+text = "C01 机器人 · 四方向待机与行走"
+
+[node name="Hint" type="Label" parent="." unique_id=1549008910]
+offset_left = 32.0
+offset_top = 62.0
+offset_right = 32.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_ms1su")
+theme_override_font_sizes/font_size = 17
+text = "64×96 固定画布 · 脚底锚点 (32,80) · 左上受光 · 十字标记便于检查站位"
+
+[node name="Native" type="Node2D" parent="." unique_id=350383537]
+position = Vector2(32, 126)
+
+[node name="Panel" type="ColorRect" parent="Native" unique_id=1672788283]
+offset_right = 480.0
+offset_bottom = 596.0
+mouse_filter = 2
+color = Color(0.09411765, 0.14901961, 0.19215687, 1)
+
+[node name="ScaleLabel" type="Label" parent="Native" unique_id=803125828]
+offset_left = 18.0
+offset_top = 12.0
+offset_right = 18.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_gxsax")
+theme_override_font_sizes/font_size = 20
+text = "原生 1× · 64×96 画布"
+
+[node name="IdleLabel" type="Label" parent="Native" unique_id=728995162]
+offset_left = 18.0
+offset_top = 50.0
+offset_right = 18.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_m53wj")
+theme_override_font_sizes/font_size = 17
+text = "待机 · 单帧"
+
+[node name="WalkLabel" type="Label" parent="Native" unique_id=1904837609]
+offset_left = 18.0
+offset_top = 320.0
+offset_right = 18.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_7r3xj")
+theme_override_font_sizes/font_size = 17
+text = "行走 · 4 帧循环 / 8 FPS"
+
+[node name="IdleDirectionDown" type="Label" parent="Native" unique_id=1121854876]
+offset_left = 36.0
+offset_top = 82.0
+offset_right = 36.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_sc46o")
+theme_override_font_sizes/font_size = 15
+text = "下 / down"
+
+[node name="WalkDirectionDown" type="Label" parent="Native" unique_id=1330079940]
+offset_left = 36.0
+offset_top = 350.0
+offset_right = 36.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_t5ak0")
+theme_override_font_sizes/font_size = 15
+text = "下 / down"
+
+[node name="IdleDownAnchor" type="Node2D" parent="Native" unique_id=546258488]
+position = Vector2(74, 240)
+
+[node name="Horizontal" type="Line2D" parent="Native/IdleDownAnchor" unique_id=1495093082]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Native/IdleDownAnchor" unique_id=998958209]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="IdleDown" type="AnimatedSprite2D" parent="Native" unique_id=199327825]
+texture_filter = 1
+position = Vector2(74, 240)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"idle_down"
+autoplay = "idle_down"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="WalkDownAnchor" type="Node2D" parent="Native" unique_id=366993976]
+position = Vector2(74, 520)
+
+[node name="Horizontal" type="Line2D" parent="Native/WalkDownAnchor" unique_id=1662905065]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Native/WalkDownAnchor" unique_id=1893446126]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="WalkDown" type="AnimatedSprite2D" parent="Native" unique_id=432399524]
+texture_filter = 1
+position = Vector2(74, 520)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"walk_down"
+autoplay = "walk_down"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="IdleDirectionLeft" type="Label" parent="Native" unique_id=1538094036]
+offset_left = 146.0
+offset_top = 82.0
+offset_right = 146.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_j425k")
+theme_override_font_sizes/font_size = 15
+text = "左 / left"
+
+[node name="WalkDirectionLeft" type="Label" parent="Native" unique_id=2085120579]
+offset_left = 146.0
+offset_top = 350.0
+offset_right = 146.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_bla3a")
+theme_override_font_sizes/font_size = 15
+text = "左 / left"
+
+[node name="IdleLeftAnchor" type="Node2D" parent="Native" unique_id=986100449]
+position = Vector2(184, 240)
+
+[node name="Horizontal" type="Line2D" parent="Native/IdleLeftAnchor" unique_id=174907844]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Native/IdleLeftAnchor" unique_id=1880088474]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="IdleLeft" type="AnimatedSprite2D" parent="Native" unique_id=903830368]
+texture_filter = 1
+position = Vector2(184, 240)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"idle_left"
+autoplay = "idle_left"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="WalkLeftAnchor" type="Node2D" parent="Native" unique_id=496628209]
+position = Vector2(184, 520)
+
+[node name="Horizontal" type="Line2D" parent="Native/WalkLeftAnchor" unique_id=704469101]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Native/WalkLeftAnchor" unique_id=404290099]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="WalkLeft" type="AnimatedSprite2D" parent="Native" unique_id=2128690145]
+texture_filter = 1
+position = Vector2(184, 520)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"walk_left"
+autoplay = "walk_left"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="IdleDirectionRight" type="Label" parent="Native" unique_id=1829399856]
+offset_left = 256.0
+offset_top = 82.0
+offset_right = 256.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_1c3kd")
+theme_override_font_sizes/font_size = 15
+text = "右 / right"
+
+[node name="WalkDirectionRight" type="Label" parent="Native" unique_id=2080369870]
+offset_left = 256.0
+offset_top = 350.0
+offset_right = 256.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_d01jr")
+theme_override_font_sizes/font_size = 15
+text = "右 / right"
+
+[node name="IdleRightAnchor" type="Node2D" parent="Native" unique_id=935831592]
+position = Vector2(294, 240)
+
+[node name="Horizontal" type="Line2D" parent="Native/IdleRightAnchor" unique_id=273220660]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Native/IdleRightAnchor" unique_id=2057276813]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="IdleRight" type="AnimatedSprite2D" parent="Native" unique_id=1333944833]
+texture_filter = 1
+position = Vector2(294, 240)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"idle_right"
+autoplay = "idle_right"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="WalkRightAnchor" type="Node2D" parent="Native" unique_id=186059292]
+position = Vector2(294, 520)
+
+[node name="Horizontal" type="Line2D" parent="Native/WalkRightAnchor" unique_id=706545591]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Native/WalkRightAnchor" unique_id=1277983006]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="WalkRight" type="AnimatedSprite2D" parent="Native" unique_id=227489462]
+texture_filter = 1
+position = Vector2(294, 520)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"walk_right"
+autoplay = "walk_right"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="IdleDirectionUp" type="Label" parent="Native" unique_id=1314740795]
+offset_left = 366.0
+offset_top = 82.0
+offset_right = 366.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_7u0ww")
+theme_override_font_sizes/font_size = 15
+text = "上 / up"
+
+[node name="WalkDirectionUp" type="Label" parent="Native" unique_id=1531416085]
+offset_left = 366.0
+offset_top = 350.0
+offset_right = 366.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_m1my3")
+theme_override_font_sizes/font_size = 15
+text = "上 / up"
+
+[node name="IdleUpAnchor" type="Node2D" parent="Native" unique_id=567671678]
+position = Vector2(404, 240)
+
+[node name="Horizontal" type="Line2D" parent="Native/IdleUpAnchor" unique_id=1306836695]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Native/IdleUpAnchor" unique_id=1406535601]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="IdleUp" type="AnimatedSprite2D" parent="Native" unique_id=1016345799]
+texture_filter = 1
+position = Vector2(404, 240)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"idle_up"
+autoplay = "idle_up"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="WalkUpAnchor" type="Node2D" parent="Native" unique_id=956162305]
+position = Vector2(404, 520)
+
+[node name="Horizontal" type="Line2D" parent="Native/WalkUpAnchor" unique_id=2106112852]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Native/WalkUpAnchor" unique_id=426171174]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="WalkUp" type="AnimatedSprite2D" parent="Native" unique_id=1902068303]
+texture_filter = 1
+position = Vector2(404, 520)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"walk_up"
+autoplay = "walk_up"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="Double" type="Node2D" parent="." unique_id=1151134354]
+position = Vector2(568, 126)
+
+[node name="Panel" type="ColorRect" parent="Double" unique_id=1061987748]
+offset_right = 672.0
+offset_bottom = 596.0
+mouse_filter = 2
+color = Color(0.09411765, 0.14901961, 0.19215687, 1)
+
+[node name="ScaleLabel" type="Label" parent="Double" unique_id=7579727]
+offset_left = 18.0
+offset_top = 12.0
+offset_right = 18.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_kjckt")
+theme_override_font_sizes/font_size = 20
+text = "整数 2× · 128×192 画布"
+
+[node name="IdleLabel" type="Label" parent="Double" unique_id=1926956954]
+offset_left = 18.0
+offset_top = 50.0
+offset_right = 18.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_7as3p")
+theme_override_font_sizes/font_size = 17
+text = "待机 · 单帧"
+
+[node name="WalkLabel" type="Label" parent="Double" unique_id=1676931072]
+offset_left = 18.0
+offset_top = 320.0
+offset_right = 18.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_taacy")
+theme_override_font_sizes/font_size = 17
+text = "行走 · 4 帧循环 / 8 FPS"
+
+[node name="IdleDirectionDown" type="Label" parent="Double" unique_id=2016958795]
+offset_left = 42.0
+offset_top = 82.0
+offset_right = 42.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_tmhdr")
+theme_override_font_sizes/font_size = 15
+text = "下 / down"
+
+[node name="WalkDirectionDown" type="Label" parent="Double" unique_id=1669155160]
+offset_left = 42.0
+offset_top = 350.0
+offset_right = 42.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_i37il")
+theme_override_font_sizes/font_size = 15
+text = "下 / down"
+
+[node name="IdleDownAnchor" type="Node2D" parent="Double" unique_id=413481864]
+position = Vector2(80, 240)
+
+[node name="Horizontal" type="Line2D" parent="Double/IdleDownAnchor" unique_id=910106677]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Double/IdleDownAnchor" unique_id=2125635397]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="IdleDown" type="AnimatedSprite2D" parent="Double" unique_id=771380635]
+texture_filter = 1
+position = Vector2(80, 240)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"idle_down"
+autoplay = "idle_down"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="WalkDownAnchor" type="Node2D" parent="Double" unique_id=264455822]
+position = Vector2(80, 520)
+
+[node name="Horizontal" type="Line2D" parent="Double/WalkDownAnchor" unique_id=1907138623]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Double/WalkDownAnchor" unique_id=890245777]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="WalkDown" type="AnimatedSprite2D" parent="Double" unique_id=893869596]
+texture_filter = 1
+position = Vector2(80, 520)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"walk_down"
+autoplay = "walk_down"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="IdleDirectionLeft" type="Label" parent="Double" unique_id=273624291]
+offset_left = 202.0
+offset_top = 82.0
+offset_right = 202.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_lhqr4")
+theme_override_font_sizes/font_size = 15
+text = "左 / left"
+
+[node name="WalkDirectionLeft" type="Label" parent="Double" unique_id=249504691]
+offset_left = 202.0
+offset_top = 350.0
+offset_right = 202.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_48ca4")
+theme_override_font_sizes/font_size = 15
+text = "左 / left"
+
+[node name="IdleLeftAnchor" type="Node2D" parent="Double" unique_id=1719590329]
+position = Vector2(240, 240)
+
+[node name="Horizontal" type="Line2D" parent="Double/IdleLeftAnchor" unique_id=217332565]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Double/IdleLeftAnchor" unique_id=1349132608]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="IdleLeft" type="AnimatedSprite2D" parent="Double" unique_id=1968977476]
+texture_filter = 1
+position = Vector2(240, 240)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"idle_left"
+autoplay = "idle_left"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="WalkLeftAnchor" type="Node2D" parent="Double" unique_id=1127991966]
+position = Vector2(240, 520)
+
+[node name="Horizontal" type="Line2D" parent="Double/WalkLeftAnchor" unique_id=204639239]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Double/WalkLeftAnchor" unique_id=162146003]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="WalkLeft" type="AnimatedSprite2D" parent="Double" unique_id=1668853580]
+texture_filter = 1
+position = Vector2(240, 520)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"walk_left"
+autoplay = "walk_left"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="IdleDirectionRight" type="Label" parent="Double" unique_id=1305047010]
+offset_left = 362.0
+offset_top = 82.0
+offset_right = 362.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_flk6d")
+theme_override_font_sizes/font_size = 15
+text = "右 / right"
+
+[node name="WalkDirectionRight" type="Label" parent="Double" unique_id=1209243524]
+offset_left = 362.0
+offset_top = 350.0
+offset_right = 362.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_boa0t")
+theme_override_font_sizes/font_size = 15
+text = "右 / right"
+
+[node name="IdleRightAnchor" type="Node2D" parent="Double" unique_id=1716329299]
+position = Vector2(400, 240)
+
+[node name="Horizontal" type="Line2D" parent="Double/IdleRightAnchor" unique_id=2092538901]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Double/IdleRightAnchor" unique_id=274463071]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="IdleRight" type="AnimatedSprite2D" parent="Double" unique_id=345745783]
+texture_filter = 1
+position = Vector2(400, 240)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"idle_right"
+autoplay = "idle_right"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="WalkRightAnchor" type="Node2D" parent="Double" unique_id=889040633]
+position = Vector2(400, 520)
+
+[node name="Horizontal" type="Line2D" parent="Double/WalkRightAnchor" unique_id=1276699678]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Double/WalkRightAnchor" unique_id=607503523]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="WalkRight" type="AnimatedSprite2D" parent="Double" unique_id=1140514918]
+texture_filter = 1
+position = Vector2(400, 520)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"walk_right"
+autoplay = "walk_right"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="IdleDirectionUp" type="Label" parent="Double" unique_id=1957430431]
+offset_left = 522.0
+offset_top = 82.0
+offset_right = 522.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_5qqil")
+theme_override_font_sizes/font_size = 15
+text = "上 / up"
+
+[node name="WalkDirectionUp" type="Label" parent="Double" unique_id=60174116]
+offset_left = 522.0
+offset_top = 350.0
+offset_right = 522.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_nmxww")
+theme_override_font_sizes/font_size = 15
+text = "上 / up"
+
+[node name="IdleUpAnchor" type="Node2D" parent="Double" unique_id=713047714]
+position = Vector2(560, 240)
+
+[node name="Horizontal" type="Line2D" parent="Double/IdleUpAnchor" unique_id=2029779762]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Double/IdleUpAnchor" unique_id=749897936]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="IdleUp" type="AnimatedSprite2D" parent="Double" unique_id=57268086]
+texture_filter = 1
+position = Vector2(560, 240)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"idle_up"
+autoplay = "idle_up"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="WalkUpAnchor" type="Node2D" parent="Double" unique_id=1543148695]
+position = Vector2(560, 520)
+
+[node name="Horizontal" type="Line2D" parent="Double/WalkUpAnchor" unique_id=273884047]
+points = PackedVector2Array(-9, 0, 9, 0)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="Vertical" type="Line2D" parent="Double/WalkUpAnchor" unique_id=488881872]
+points = PackedVector2Array(0, -5, 0, 5)
+width = 1.0
+default_color = Color(0.3019608, 0.39215687, 0.4392157, 1)
+
+[node name="WalkUp" type="AnimatedSprite2D" parent="Double" unique_id=871744145]
+texture_filter = 1
+position = Vector2(560, 520)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("1_7k8ir")
+animation = &"walk_up"
+autoplay = "walk_up"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="ReuseHint" type="Label" parent="." unique_id=818182178]
+offset_left = 32.0
+offset_top = 750.0
+offset_right = 32.0
+offset_bottom = 750.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_fonts/font = SubResource("SystemFont_ldf7j")
+theme_override_font_sizes/font_size = 17
+text = "可直接为 AnimatedSprite2D 指定外部 SpriteFrames；本示例只预览动画。"

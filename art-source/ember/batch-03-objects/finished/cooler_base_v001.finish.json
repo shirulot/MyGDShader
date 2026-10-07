@@ -1,0 +1,180 @@
+{
+  "id": "cooler_base",
+  "manifest_id": "B05",
+  "file": "art-source/ember/batch-03-objects/finished/cooler_base_v001.png",
+  "production_file": "res://assets/ember/buildings/cooler/cooler_base_v001.png",
+  "sha256": "86606ba53c17e572cc19e5f1b9336e8245ecc52fa01cc6ddc08761b13047ca2b",
+  "size": [
+    160,
+    192
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/cooler_base_v001.finish.json",
+  "canvas": [
+    160,
+    192
+  ],
+  "bbox": [
+    29,
+    50,
+    132,
+    176
+  ],
+  "anchor": [
+    80,
+    176
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [
+    {
+      "id": "cooling_core",
+      "visual_frame_bounds": [
+        72,
+        118,
+        89,
+        131
+      ],
+      "safe_active_rect": [
+        75,
+        122,
+        85,
+        128
+      ],
+      "center": [
+        80.0,
+        125.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.5,
+        0.6510416666666666
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/cooler_base/foundation_body.png",
+      "sha256": "083c97c1c292e7e14956efacfb8cac9d257f637a310042be99e55b00e0407fc4",
+      "z_index": 0,
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    },
+    {
+      "name": "core_window",
+      "file": "art-source/ember/batch-03-objects/layers/cooler_base/core_window.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/cooler_base/core_window_selection.png",
+      "sha256": "c8c851fbdab302086c5c37bef412060775d3b9629445ce9d5ec836b1944d3a84",
+      "z_index": 1,
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "purpose": "核心中性窗口内区",
+      "editable_source": true,
+      "hidden_underpaint_color_index": null
+    },
+    {
+      "name": "exchange_pipes_high",
+      "file": "art-source/ember/batch-03-objects/layers/cooler_base/exchange_pipes_high.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/cooler_base/exchange_pipes_high_selection.png",
+      "sha256": "9c791cfc3fa67f1a97c02a1338f5bfc59ba0cfcebde0de311a1ae7cb6f74c17a",
+      "z_index": 2,
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "purpose": "可编辑上部换热管与实际遮挡像素",
+      "editable_source": true,
+      "hidden_underpaint_color_index": null
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/cooler_base_master_v001.png",
+    "master_sha256": "80c5812f8cfa201b324c7f967d63715819cb5367d380a4aca5de2e34d232f741",
+    "prompt": "prompts/cooler_base.txt",
+    "prompt_sha256": "c1d95814b453826fea0d544fa436878e8bc5af13d6bffaeea4411c96e88e895c",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-fdc494e1-3940-42b8-a52a-2fc9562c0d5e.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        202,
+        237,
+        943,
+        1144
+      ],
+      "material_sampling_size": [
+        103,
+        126
+      ],
+      "native_origin": [
+        29,
+        50
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 111,
+      "native_outline_pixels_corrected": 9
+    },
+    "native_adjustments": [
+      "安全小窗[75,122,85,128)重画为中性深色矩形并留边框，不让母稿渐变/伪光点进入运行窗口",
+      "中心立管顶段高光整理为5px短线、右侧保留较暗管面以固定左上光照；固定基座176",
+      "把窗口内区与高处换热管导出实际独立源层，不宣称运行通道Mask已完成"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [],
+  "observations": "实际母稿三根立管与换热核心/两侧铜管结构形成识别，顶左高光清楚；内侧小窗不属于背景孔。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

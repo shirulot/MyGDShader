@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://juj3sc5mmj8s"]
+
+[ext_resource type="Shader" uid="uid://dg3j7xy8swy0i" path="res://scenes/chapter02/ch02_02_center_scale.gdshader" id="1_71wyo"]
+[ext_resource type="Texture2D" uid="uid://coeow6ad5kb3t" path="res://assets/shader-learning/common/uv_grid_512.png" id="2_qieg6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ob6qn"]
+shader = ExtResource("1_71wyo")
+shader_parameter/zoom = 1.0000000074506001
+
+[node name="Ch0202CenterScale" type="Node2D" unique_id=1845712170]
+
+[node name="UvGrid512" type="Sprite2D" parent="." unique_id=1419015057]
+material = SubResource("ShaderMaterial_ob6qn")
+position = Vector2(360, 360)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("2_qieg6")

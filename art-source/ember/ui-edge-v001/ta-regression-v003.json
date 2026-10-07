@@ -1,0 +1,53 @@
+{
+	"check_count": 8,
+	"checks": [
+		{
+			"details": {},
+			"id": "input.life_overlay_passes_click_to_world",
+			"pass": true
+		},
+		{
+			"details": {},
+			"id": "input.energy_overlay_passes_click_to_world",
+			"pass": true
+		},
+		{
+			"details": {},
+			"id": "input.drawer_blocks_world_click",
+			"pass": true
+		},
+		{
+			"details": {},
+			"id": "input.back_real_mouse_click_closes_once",
+			"pass": true
+		},
+		{
+			"details": {},
+			"id": "input.closed_drawer_restores_world_click",
+			"pass": true
+		},
+		{
+			"details": {},
+			"id": "input.keyboard_confirm_closes_focus_button",
+			"pass": true
+		},
+		{
+			"details": {
+				"drawer_visible": false,
+				"hud_open": false
+			},
+			"id": "lifecycle.detached_hud_external_close_hides_drawer",
+			"pass": true
+		},
+		{
+			"details": {
+				"drawer_visible": false,
+				"hud_open": false
+			},
+			"id": "lifecycle.reinserted_hud_external_close_is_consistent",
+			"pass": true
+		}
+	],
+	"failures": [],
+	"status": "PASS"
+}

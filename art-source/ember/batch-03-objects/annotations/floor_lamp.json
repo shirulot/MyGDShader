@@ -1,0 +1,78 @@
+{
+  "observations": "实际母稿是窄立柱与方形落地脚，灯头为浅壳框住深玻璃；比壁灯没有背板、向上头罩更明确。",
+  "adjustments": [
+    "灯头安全内区[30,26,34,32)归并深蓝灰，去原生采样亮灰点；保留1px玻璃框和四脚螺栓",
+    "上帽金属高光整理为3px短条，左上光照方向保持；底脚边界56",
+    "lens_neutral源层真实同64画布，预留材质发光而不烘焙灯光"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        30,
+        26,
+        34,
+        32
+      ],
+      "color": 2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          30,
+          13
+        ],
+        [
+          33,
+          13
+        ]
+      ],
+      "color": 4
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "lamp_lens",
+      "visual_frame_bounds": [
+        28,
+        24,
+        36,
+        34
+      ],
+      "safe_active_rect": [
+        30,
+        26,
+        34,
+        32
+      ],
+      "center": [
+        32.0,
+        29.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.5,
+        0.453125
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "components": [
+    {
+      "name": "lens_neutral",
+      "rects": [
+        [
+          30,
+          26,
+          34,
+          32
+        ]
+      ],
+      "z_index": 1,
+      "purpose": "未点亮玻璃安全内区"
+    }
+  ],
+  "emitter_points": []
+}

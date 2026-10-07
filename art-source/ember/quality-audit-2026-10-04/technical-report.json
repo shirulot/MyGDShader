@@ -1,0 +1,1049 @@
+{
+  "status": "TECHNICAL_CHANNEL_AND_TOPOLOGY_RECHECK_PASS",
+  "catalog_sha256": "13ab98865b41713ade90ec0da5700ea60c349b7057e46224b71ea118fc3439d9",
+  "physical_pngs": 40,
+  "checks": 133,
+  "failed_checks": 0,
+  "failures": [],
+  "assets": [
+    {
+      "id": "checkerboard",
+      "file": "res://assets/ember/data/calibration/checkerboard_v001.png",
+      "manifest_id": "D01",
+      "sha256": "28b8ffa55e1579f9a6910933f3d06f37547643c9c3b970ba82946fe8aaa12f12",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "color_test",
+      "file": "res://assets/ember/data/calibration/color_test_v001.png",
+      "manifest_id": "D01",
+      "sha256": "bf8941f026d90d5d871d751db92c7ef6bec85f3bd4b4d829c39f5bdf2665faa0",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "non_square_grid",
+      "file": "res://assets/ember/data/calibration/non_square_grid_v001.png",
+      "manifest_id": "D01",
+      "sha256": "a7652899645b3a024c65eeeee334d09cc7a1fd8dbf3056bce1a73c1b560e1e98",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "straight_background",
+      "file": "res://assets/ember/data/calibration/straight_background_v001.png",
+      "manifest_id": "D01",
+      "sha256": "12563caaefddbec8231ef2de773071c41db1f22ccd9ca60a4cd18ea791a10507",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "uv_grid",
+      "file": "res://assets/ember/data/calibration/uv_grid_v001.png",
+      "manifest_id": "D01",
+      "sha256": "4b4a03345a8c3c8f39eb52b623b4675cd95fe519e2eb90d1935d78ff04611a2e",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "color_ramp",
+      "file": "res://assets/ember/data/ramps/color_ramp_v001.png",
+      "manifest_id": "D02",
+      "sha256": "a4c3e562cb8705cfdacc5ee57092ea1e3af7c5dd3ed492ace40be45c7fdc8265",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "grayscale_gradient",
+      "file": "res://assets/ember/data/ramps/grayscale_gradient_v001.png",
+      "manifest_id": "D02",
+      "sha256": "2911d9c7191c5651c5da35b5d56f9395e6f13f37437148ff8134b9201c3d7299",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "circle_mask",
+      "file": "res://assets/ember/data/masks/circle_mask_v001.png",
+      "manifest_id": "D03",
+      "sha256": "4b54bac369f67089c879fa33b7d342bba43dfb8234e2ceaf973a200322eebdd3",
+      "foreground_components": [
+        {
+          "pixels": 27184,
+          "bbox_inclusive": [
+            35,
+            35,
+            220,
+            220
+          ]
+        }
+      ],
+      "interpretation": "Single connected circle/star foreground; L is mask intensity, not Alpha"
+    },
+    {
+      "id": "star_mask",
+      "file": "res://assets/ember/data/masks/star_mask_v001.png",
+      "manifest_id": "D03",
+      "sha256": "296147c4c560599fa360514924f200a877a7defb12b4581572703da629459c8c",
+      "foreground_components": [
+        {
+          "pixels": 11722,
+          "bbox_inclusive": [
+            38,
+            34,
+            217,
+            204
+          ]
+        }
+      ],
+      "interpretation": "Single connected circle/star foreground; L is mask intensity, not Alpha"
+    },
+    {
+      "id": "noise_high",
+      "file": "res://assets/ember/data/noise/noise_high_v001.png",
+      "manifest_id": "D04",
+      "sha256": "7fbd0fa409a130054d6504d4d1a135749c1d30144b9277fc7bec941f73022069",
+      "interpretation": "Noise is scalar data; disconnected threshold contours are expected, native wrap edges are checked"
+    },
+    {
+      "id": "noise_low",
+      "file": "res://assets/ember/data/noise/noise_low_v001.png",
+      "manifest_id": "D04",
+      "sha256": "593e85cbe83f2c9e3d7a85c0af8fe9ac5bb998a30b219973be53fd98effa979a",
+      "interpretation": "Noise is scalar data; disconnected threshold contours are expected, native wrap edges are checked"
+    },
+    {
+      "id": "alpha_edge_test",
+      "file": "res://assets/ember/data/calibration/alpha_edge_test_v001.png",
+      "manifest_id": "D05",
+      "sha256": "af62f2c5a36c367f34d398a399c4b30423c4e65938e8f50d7dc45f6334c3dbe1",
+      "interpretation": "Transparent ellipse hole, isolated 1px L-shaped line/test block and partial Alpha ramp are explicitly designed test features"
+    },
+    {
+      "id": "energy_stripe",
+      "file": "res://assets/ember/data/energy/energy_stripe_v001.png",
+      "manifest_id": "D06",
+      "sha256": "1e3128dcbe9e8d6c467bd2a46260c3b598585d2f96ae4e5ae8bce532cfc2c7f2",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "radial_ramp",
+      "file": "res://assets/ember/data/energy/radial_ramp_v001.png",
+      "manifest_id": "D06",
+      "sha256": "7af92ddfe2a535e23a4182260f3d12d926658027fc2770b3518136355bfd8a3f",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "test_height",
+      "file": "res://assets/ember/data/calibration/test_height_v001.png",
+      "manifest_id": "D07",
+      "sha256": "4c6ea997cc54bc842b3c301293f0fa9e50f3807f0f916fa864e645e29e7edc81",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "test_normal",
+      "file": "res://assets/ember/data/calibration/test_normal_v001.png",
+      "manifest_id": "D07",
+      "sha256": "806f82a0d4657034c873cbd23c30b846b36226b749fbe2c8bd4fe1c7accd726f",
+      "max_unit_length_error": 0.004250865111349311,
+      "interpretation": "RGB tangent-vector data; blue exterior/flat concrete is neutral normal rather than missing silhouette"
+    },
+    {
+      "id": "console",
+      "file": "res://assets/ember/data/object_masks/console_mask_v001.png",
+      "manifest_id": "D08",
+      "sha256": "07eb3a4b27ec2ee5e66fa719bffb60b2b6bd7f4265f050e155a89d74d1ef735f",
+      "interpretation": "A copies base silhouette exactly; separated R/G windows are intentional selections, not body fragments"
+    },
+    {
+      "id": "cooler",
+      "file": "res://assets/ember/data/object_masks/cooler_mask_v001.png",
+      "manifest_id": "D08",
+      "sha256": "c58e6a6e5183459a28a7b041587c08930d35af29ff426d735a2fd46d52fdf3da",
+      "interpretation": "A copies base silhouette exactly; separated R/G windows are intentional selections, not body fragments"
+    },
+    {
+      "id": "floor_lamp",
+      "file": "res://assets/ember/data/object_masks/floor_lamp_mask_v001.png",
+      "manifest_id": "D08",
+      "sha256": "ea187834f857c07d0fbd9de2ddee489805d2a52a988a72c96fa79e4c15c2375d",
+      "interpretation": "A copies base silhouette exactly; separated R/G windows are intentional selections, not body fragments"
+    },
+    {
+      "id": "pump",
+      "file": "res://assets/ember/data/object_masks/pump_mask_v001.png",
+      "manifest_id": "D08",
+      "sha256": "14eb5624ea241bc8234fd1e5e0baa0c57b1adeacb213c4f1b715febc502e4436",
+      "interpretation": "A copies base silhouette exactly; separated R/G windows are intentional selections, not body fragments"
+    },
+    {
+      "id": "relay",
+      "file": "res://assets/ember/data/object_masks/relay_mask_v001.png",
+      "manifest_id": "D08",
+      "sha256": "e3f91d9ec9462f28131571589197d668b8f2d13530360c5442fada3515108a75",
+      "interpretation": "A copies base silhouette exactly; separated R/G windows are intentional selections, not body fragments"
+    },
+    {
+      "id": "station",
+      "file": "res://assets/ember/data/object_masks/station_mask_v001.png",
+      "manifest_id": "D08",
+      "sha256": "c8e3d80b7858b22e4c2a293ec9b9a200ba9aea2b27e24e9a30983c36d4dd7fdf",
+      "interpretation": "A copies base silhouette exactly; separated R/G windows are intentional selections, not body fragments"
+    },
+    {
+      "id": "telepad",
+      "file": "res://assets/ember/data/object_masks/telepad_mask_v001.png",
+      "manifest_id": "D08",
+      "sha256": "f9509bfebac8f0c3344658fa7014b86b595962ac703cf399f0fd775b3447d1fc",
+      "interpretation": "A copies base silhouette exactly; separated R/G windows are intentional selections, not body fragments"
+    },
+    {
+      "id": "terminal_window",
+      "file": "res://assets/ember/data/object_masks/terminal_window_mask_v001.png",
+      "manifest_id": "D08",
+      "sha256": "f8f95b4765e57dfd23d77db98868ea48f806e2d2314eb03e63720c4091cf17d6",
+      "interpretation": "A copies base silhouette exactly; separated R/G windows are intentional selections, not body fragments"
+    },
+    {
+      "id": "ventilator",
+      "file": "res://assets/ember/data/object_masks/ventilator_mask_v001.png",
+      "manifest_id": "D08",
+      "sha256": "01f711785e661ced1818e981f5add1472007280177eb88653669e93bb64ed220",
+      "interpretation": "A copies base silhouette exactly; separated R/G windows are intentional selections, not body fragments"
+    },
+    {
+      "id": "wall_lamp",
+      "file": "res://assets/ember/data/object_masks/wall_lamp_mask_v001.png",
+      "manifest_id": "D08",
+      "sha256": "9ab4095dc6d324a7cd76e94aa81f9fca1a3c3a0481d091980eb9c82e2fae7d3c",
+      "interpretation": "A copies base silhouette exactly; separated R/G windows are intentional selections, not body fragments"
+    },
+    {
+      "id": "console_normal",
+      "file": "res://assets/ember/data/normals/console_normal_v001.png",
+      "manifest_id": "D09",
+      "sha256": "1094516a476ddff930cb6cce29ea492bf980ce13b884d49c6f5ffda42ce0ed30",
+      "max_unit_length_error": 0.004189608825392543,
+      "interpretation": "RGB tangent-vector data; blue exterior/flat concrete is neutral normal rather than missing silhouette"
+    },
+    {
+      "id": "floor_clean_normal",
+      "file": "res://assets/ember/data/normals/floor_clean_normal_v001.png",
+      "manifest_id": "D09",
+      "sha256": "bc49137517987d1a81529d92149666990c3e26eb7fd518cbf2be98369c59d872",
+      "max_unit_length_error": 0.0037440331134305227,
+      "interpretation": "RGB tangent-vector data; blue exterior/flat concrete is neutral normal rather than missing silhouette"
+    },
+    {
+      "id": "station_normal",
+      "file": "res://assets/ember/data/normals/station_normal_v001.png",
+      "manifest_id": "D09",
+      "sha256": "0999ebfb12316672b687ffc576f1f0b72fafb9dd272723da62f020f27d26beda",
+      "max_unit_length_error": 0.004618324390354811,
+      "interpretation": "RGB tangent-vector data; blue exterior/flat concrete is neutral normal rather than missing silhouette"
+    },
+    {
+      "id": "dust_dot",
+      "file": "res://assets/ember/vfx/particles/dust_dot_v001.png",
+      "manifest_id": "D10",
+      "sha256": "3d7b1eca336e79d45d003cb6b59a49a2f83d7f2a2e388d6b47c23c7e9dd9cffb",
+      "components_8": [
+        {
+          "pixels": 12,
+          "bbox_inclusive": [
+            6,
+            6,
+            9,
+            9
+          ]
+        }
+      ],
+      "components_4": [
+        {
+          "pixels": 12,
+          "bbox_inclusive": [
+            6,
+            6,
+            9,
+            9
+          ]
+        }
+      ],
+      "interpretation": "Diagonal line/rain uses 8-neighbor connectivity; separate 4-neighbor pixels are not missing segments"
+    },
+    {
+      "id": "rain_line",
+      "file": "res://assets/ember/vfx/particles/rain_line_v001.png",
+      "manifest_id": "D10",
+      "sha256": "14743fd691e33dc9a9a44eabb8ff63c35248743b68c3205ef81e7b252c0f35c4",
+      "components_8": [
+        {
+          "pixels": 12,
+          "bbox_inclusive": [
+            6,
+            2,
+            9,
+            13
+          ]
+        }
+      ],
+      "components_4": [
+        {
+          "pixels": 4,
+          "bbox_inclusive": [
+            7,
+            8,
+            7,
+            11
+          ]
+        },
+        {
+          "pixels": 4,
+          "bbox_inclusive": [
+            8,
+            4,
+            8,
+            7
+          ]
+        },
+        {
+          "pixels": 2,
+          "bbox_inclusive": [
+            9,
+            2,
+            9,
+            3
+          ]
+        },
+        {
+          "pixels": 2,
+          "bbox_inclusive": [
+            6,
+            12,
+            6,
+            13
+          ]
+        }
+      ],
+      "interpretation": "Diagonal line/rain uses 8-neighbor connectivity; separate 4-neighbor pixels are not missing segments"
+    },
+    {
+      "id": "spark",
+      "file": "res://assets/ember/vfx/particles/spark_v001.png",
+      "manifest_id": "D10",
+      "sha256": "ef8c00139f785574ba5c4efffd892635026111c0afed5807376600e6362c0e2b",
+      "components_8": [
+        {
+          "pixels": 10,
+          "bbox_inclusive": [
+            3,
+            3,
+            12,
+            12
+          ]
+        }
+      ],
+      "components_4": [
+        {
+          "pixels": 1,
+          "bbox_inclusive": [
+            5,
+            10,
+            5,
+            10
+          ]
+        },
+        {
+          "pixels": 1,
+          "bbox_inclusive": [
+            7,
+            8,
+            7,
+            8
+          ]
+        },
+        {
+          "pixels": 1,
+          "bbox_inclusive": [
+            6,
+            9,
+            6,
+            9
+          ]
+        },
+        {
+          "pixels": 1,
+          "bbox_inclusive": [
+            3,
+            12,
+            3,
+            12
+          ]
+        },
+        {
+          "pixels": 1,
+          "bbox_inclusive": [
+            10,
+            5,
+            10,
+            5
+          ]
+        },
+        {
+          "pixels": 1,
+          "bbox_inclusive": [
+            12,
+            3,
+            12,
+            3
+          ]
+        },
+        {
+          "pixels": 1,
+          "bbox_inclusive": [
+            11,
+            4,
+            11,
+            4
+          ]
+        },
+        {
+          "pixels": 1,
+          "bbox_inclusive": [
+            9,
+            6,
+            9,
+            6
+          ]
+        },
+        {
+          "pixels": 1,
+          "bbox_inclusive": [
+            4,
+            11,
+            4,
+            11
+          ]
+        },
+        {
+          "pixels": 1,
+          "bbox_inclusive": [
+            8,
+            7,
+            8,
+            7
+          ]
+        }
+      ],
+      "interpretation": "Diagonal line/rain uses 8-neighbor connectivity; separate 4-neighbor pixels are not missing segments"
+    },
+    {
+      "id": "water_drop",
+      "file": "res://assets/ember/vfx/particles/water_drop_v001.png",
+      "manifest_id": "D10",
+      "sha256": "711d95aa06b437101dd173512ddf210576afb2167511fbbbf794feb6bd712418",
+      "components_8": [
+        {
+          "pixels": 68,
+          "bbox_inclusive": [
+            4,
+            2,
+            12,
+            13
+          ]
+        }
+      ],
+      "components_4": [
+        {
+          "pixels": 68,
+          "bbox_inclusive": [
+            4,
+            2,
+            12,
+            13
+          ]
+        }
+      ],
+      "interpretation": "Diagonal line/rain uses 8-neighbor connectivity; separate 4-neighbor pixels are not missing segments"
+    },
+    {
+      "id": "concrete_metallic",
+      "file": "res://assets/ember/three_d/textures/concrete/concrete_metallic_v001.png",
+      "manifest_id": "D11",
+      "sha256": "5933d4c44ed2bc2f431e2698b41923a18d056b24b450540bb109e7592a547060",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "concrete_normal",
+      "file": "res://assets/ember/three_d/textures/concrete/concrete_normal_v001.png",
+      "manifest_id": "D11",
+      "sha256": "1f512d718e2e134cd93ffad0371df7b869dc3db963d23d4621a6e507320d3e0b",
+      "max_unit_length_error": 1.5378582249425676e-05,
+      "interpretation": "RGB tangent-vector data; blue exterior/flat concrete is neutral normal rather than missing silhouette"
+    },
+    {
+      "id": "concrete_roughness",
+      "file": "res://assets/ember/three_d/textures/concrete/concrete_roughness_v001.png",
+      "manifest_id": "D11",
+      "sha256": "f06e89dc7f39be266a34ab9d56c628694bcc6f491e27b9fad873cfa459731143",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "metal_metallic",
+      "file": "res://assets/ember/three_d/textures/metal/metal_metallic_v001.png",
+      "manifest_id": "D11",
+      "sha256": "4f87abe77997e5b2c59334159ef429af261bb0aa5792830e2cfe5c3f3ed5e08c",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "metal_normal",
+      "file": "res://assets/ember/three_d/textures/metal/metal_normal_v001.png",
+      "manifest_id": "D11",
+      "sha256": "29439a8edebc9ca5d5a405533af6f01ca32af9abc87111375663399d57dbf1f4",
+      "max_unit_length_error": 0.0003843936332625919,
+      "interpretation": "RGB tangent-vector data; blue exterior/flat concrete is neutral normal rather than missing silhouette"
+    },
+    {
+      "id": "metal_roughness",
+      "file": "res://assets/ember/three_d/textures/metal/metal_roughness_v001.png",
+      "manifest_id": "D11",
+      "sha256": "03da38db1bd7a24b390c53a65aed3893a12855b8b1798a35cfacd1d7f4d60962",
+      "interpretation": "Calibration/ramp/energy/height/material parameter data; assess declared channel semantics rather than single-body Alpha"
+    },
+    {
+      "id": "grass_height_weight",
+      "file": "res://assets/ember/three_d/textures/grass/grass_height_weight_v001.png",
+      "manifest_id": "D12",
+      "sha256": "3db9548646a6cefbb9f448a119ec88601d434172b35fe3e4e66b9619b17186e4",
+      "interpretation": "Root row 119 and all transparent exterior intentionally have zero weight; root zero is not a hole in grass Alpha"
+    }
+  ],
+  "results": [
+    {
+      "check": "checkerboard:source SHA",
+      "pass": true
+    },
+    {
+      "check": "checkerboard:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "color_test:source SHA",
+      "pass": true
+    },
+    {
+      "check": "color_test:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "non_square_grid:source SHA",
+      "pass": true
+    },
+    {
+      "check": "non_square_grid:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "straight_background:source SHA",
+      "pass": true
+    },
+    {
+      "check": "straight_background:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "uv_grid:source SHA",
+      "pass": true
+    },
+    {
+      "check": "uv_grid:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "color_ramp:source SHA",
+      "pass": true
+    },
+    {
+      "check": "color_ramp:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "grayscale_gradient:source SHA",
+      "pass": true
+    },
+    {
+      "check": "grayscale_gradient:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "circle_mask:source SHA",
+      "pass": true
+    },
+    {
+      "check": "circle_mask:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "circle_mask:connected shape",
+      "pass": true
+    },
+    {
+      "check": "star_mask:source SHA",
+      "pass": true
+    },
+    {
+      "check": "star_mask:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "star_mask:connected shape",
+      "pass": true
+    },
+    {
+      "check": "noise_high:source SHA",
+      "pass": true
+    },
+    {
+      "check": "noise_high:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "noise_high:X wrap exact",
+      "pass": true
+    },
+    {
+      "check": "noise_high:Y wrap exact",
+      "pass": true
+    },
+    {
+      "check": "noise_low:source SHA",
+      "pass": true
+    },
+    {
+      "check": "noise_low:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "noise_low:X wrap exact",
+      "pass": true
+    },
+    {
+      "check": "noise_low:Y wrap exact",
+      "pass": true
+    },
+    {
+      "check": "alpha_edge_test:source SHA",
+      "pass": true
+    },
+    {
+      "check": "alpha_edge_test:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "energy_stripe:source SHA",
+      "pass": true
+    },
+    {
+      "check": "energy_stripe:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "radial_ramp:source SHA",
+      "pass": true
+    },
+    {
+      "check": "radial_ramp:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "test_height:source SHA",
+      "pass": true
+    },
+    {
+      "check": "test_height:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "test_normal:source SHA",
+      "pass": true
+    },
+    {
+      "check": "test_normal:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "test_normal:quantized valid normals",
+      "pass": true
+    },
+    {
+      "check": "console:source SHA",
+      "pass": true
+    },
+    {
+      "check": "console:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "console:registered base SHA",
+      "pass": true
+    },
+    {
+      "check": "console:Alpha matches actual base",
+      "pass": true
+    },
+    {
+      "check": "console:RGB selection inside base",
+      "pass": true
+    },
+    {
+      "check": "cooler:source SHA",
+      "pass": true
+    },
+    {
+      "check": "cooler:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "cooler:registered base SHA",
+      "pass": true
+    },
+    {
+      "check": "cooler:Alpha matches actual base",
+      "pass": true
+    },
+    {
+      "check": "cooler:RGB selection inside base",
+      "pass": true
+    },
+    {
+      "check": "floor_lamp:source SHA",
+      "pass": true
+    },
+    {
+      "check": "floor_lamp:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "floor_lamp:registered base SHA",
+      "pass": true
+    },
+    {
+      "check": "floor_lamp:Alpha matches actual base",
+      "pass": true
+    },
+    {
+      "check": "floor_lamp:RGB selection inside base",
+      "pass": true
+    },
+    {
+      "check": "pump:source SHA",
+      "pass": true
+    },
+    {
+      "check": "pump:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "pump:registered base SHA",
+      "pass": true
+    },
+    {
+      "check": "pump:Alpha matches actual base",
+      "pass": true
+    },
+    {
+      "check": "pump:RGB selection inside base",
+      "pass": true
+    },
+    {
+      "check": "relay:source SHA",
+      "pass": true
+    },
+    {
+      "check": "relay:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "relay:registered base SHA",
+      "pass": true
+    },
+    {
+      "check": "relay:Alpha matches actual base",
+      "pass": true
+    },
+    {
+      "check": "relay:RGB selection inside base",
+      "pass": true
+    },
+    {
+      "check": "station:source SHA",
+      "pass": true
+    },
+    {
+      "check": "station:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "station:registered base SHA",
+      "pass": true
+    },
+    {
+      "check": "station:Alpha matches actual base",
+      "pass": true
+    },
+    {
+      "check": "station:RGB selection inside base",
+      "pass": true
+    },
+    {
+      "check": "telepad:source SHA",
+      "pass": true
+    },
+    {
+      "check": "telepad:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "telepad:registered base SHA",
+      "pass": true
+    },
+    {
+      "check": "telepad:Alpha matches actual base",
+      "pass": true
+    },
+    {
+      "check": "telepad:RGB selection inside base",
+      "pass": true
+    },
+    {
+      "check": "terminal_window:source SHA",
+      "pass": true
+    },
+    {
+      "check": "terminal_window:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "terminal_window:registered base SHA",
+      "pass": true
+    },
+    {
+      "check": "terminal_window:Alpha matches actual base",
+      "pass": true
+    },
+    {
+      "check": "terminal_window:RGB selection inside base",
+      "pass": true
+    },
+    {
+      "check": "ventilator:source SHA",
+      "pass": true
+    },
+    {
+      "check": "ventilator:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "ventilator:registered base SHA",
+      "pass": true
+    },
+    {
+      "check": "ventilator:Alpha matches actual base",
+      "pass": true
+    },
+    {
+      "check": "ventilator:RGB selection inside base",
+      "pass": true
+    },
+    {
+      "check": "wall_lamp:source SHA",
+      "pass": true
+    },
+    {
+      "check": "wall_lamp:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "wall_lamp:registered base SHA",
+      "pass": true
+    },
+    {
+      "check": "wall_lamp:Alpha matches actual base",
+      "pass": true
+    },
+    {
+      "check": "wall_lamp:RGB selection inside base",
+      "pass": true
+    },
+    {
+      "check": "console_normal:source SHA",
+      "pass": true
+    },
+    {
+      "check": "console_normal:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "console_normal:quantized valid normals",
+      "pass": true
+    },
+    {
+      "check": "floor_clean_normal:source SHA",
+      "pass": true
+    },
+    {
+      "check": "floor_clean_normal:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "floor_clean_normal:quantized valid normals",
+      "pass": true
+    },
+    {
+      "check": "station_normal:source SHA",
+      "pass": true
+    },
+    {
+      "check": "station_normal:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "station_normal:quantized valid normals",
+      "pass": true
+    },
+    {
+      "check": "dust_dot:source SHA",
+      "pass": true
+    },
+    {
+      "check": "dust_dot:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "dust_dot:connected particle at 8-neighbor",
+      "pass": true
+    },
+    {
+      "check": "dust_dot:binary Alpha",
+      "pass": true
+    },
+    {
+      "check": "rain_line:source SHA",
+      "pass": true
+    },
+    {
+      "check": "rain_line:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "rain_line:connected particle at 8-neighbor",
+      "pass": true
+    },
+    {
+      "check": "rain_line:binary Alpha",
+      "pass": true
+    },
+    {
+      "check": "spark:source SHA",
+      "pass": true
+    },
+    {
+      "check": "spark:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "spark:connected particle at 8-neighbor",
+      "pass": true
+    },
+    {
+      "check": "spark:binary Alpha",
+      "pass": true
+    },
+    {
+      "check": "water_drop:source SHA",
+      "pass": true
+    },
+    {
+      "check": "water_drop:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "water_drop:connected particle at 8-neighbor",
+      "pass": true
+    },
+    {
+      "check": "water_drop:binary Alpha",
+      "pass": true
+    },
+    {
+      "check": "concrete_metallic:source SHA",
+      "pass": true
+    },
+    {
+      "check": "concrete_metallic:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "concrete_normal:source SHA",
+      "pass": true
+    },
+    {
+      "check": "concrete_normal:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "concrete_normal:quantized valid normals",
+      "pass": true
+    },
+    {
+      "check": "concrete_roughness:source SHA",
+      "pass": true
+    },
+    {
+      "check": "concrete_roughness:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "metal_metallic:source SHA",
+      "pass": true
+    },
+    {
+      "check": "metal_metallic:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "metal_normal:source SHA",
+      "pass": true
+    },
+    {
+      "check": "metal_normal:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "metal_normal:quantized valid normals",
+      "pass": true
+    },
+    {
+      "check": "metal_roughness:source SHA",
+      "pass": true
+    },
+    {
+      "check": "metal_roughness:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "grass_height_weight:source SHA",
+      "pass": true
+    },
+    {
+      "check": "grass_height_weight:canvas and mode",
+      "pass": true
+    },
+    {
+      "check": "grass_height_weight:actual grass registration",
+      "pass": true
+    },
+    {
+      "check": "technical physical PNG count",
+      "pass": true
+    },
+    {
+      "check": "manifest counts",
+      "pass": true
+    }
+  ],
+  "scope": "Current source PNG and explicit channel geometry; does not certify all future shader effects or recover defects already present in registered base art."
+}

@@ -1,0 +1,109 @@
+{
+  "status": "ALL_160_CLIPS_FINAL_ASSEMBLY_AND_INSTALLATION_TA_APPROVED",
+  "scope": "4 units x 8 directions x 5 actions",
+  "target_clips": 160,
+  "target_frames": 960,
+  "preserved_approved_down_clips": 20,
+  "preserved_approved_down_frames": 120,
+  "new_approved_clips": 140,
+  "new_approved_frames": 840,
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "first_gate": "four eight-view neutral comparisons plus four down_right move pilots",
+  "ta_thread": "01a11049-fdfd-7f12-b83d-6c3a2c506501",
+  "unit_gates": {
+    "enemy_patrol": {
+      "calibration": "PASS_C002",
+      "seven_static_directions": "PASS_S002",
+      "down_right_move": "PASS_PATROL_V001",
+      "remaining_actions": "ALL_40_CLIPS_240_FRAMES_TA_APPROVED",
+      "six_eight_moves": "PASS_V020_V002_PLUS_PRESERVED",
+      "profile_calibration": "PASS_STATIC_CALIBRATION_C002_V003",
+      "all_eight_moves": "PASS_V020_V002_V021_V003_PLUS_PRESERVED",
+      "profile_move": "PASS_V021_V003",
+      "all_eight_idle_hit": "PASS_V025_V001",
+      "all_eight_attack_death": "PASS_V026_V001"
+    },
+    "enemy_tracked_heavy": {
+      "seven_static_directions": "PASS_V001",
+      "down_right_move": "PASS_HC_V001",
+      "remaining_actions": "ALL_40_CLIPS_240_FRAMES_TA_APPROVED",
+      "all_eight_moves": "PASS_V014_V002",
+      "all_eight_idle_hit": "PASS_V015_V001",
+      "all_eight_attack_death": "PASS_V019_V003"
+    },
+    "enemy_cutter": {
+      "seven_static_directions": "PASS_V001",
+      "down_right_move": "PASS_HC_V001",
+      "remaining_actions": "ALL_40_CLIPS_240_FRAMES_TA_APPROVED",
+      "all_eight_moves": "PASS_V022_V002",
+      "all_eight_idle_hit": "PASS_V023_V001",
+      "all_eight_attack_death": "PASS_V024_V002"
+    },
+    "enemy_scout_drone": {
+      "front_identity": "PASS_C002",
+      "diagonal_yaw": "PASS_C003",
+      "remaining_five_directions": "PASS_S004",
+      "down_right_move": "PASS_DRONE_V001",
+      "seven_static_directions": "PASS_S004",
+      "remaining_actions": "ALL_40_CLIPS_240_FRAMES_TA_APPROVED",
+      "all_eight_moves": "PASS_V016_V001",
+      "all_eight_idle_hit": "PASS_V017_V001",
+      "all_eight_attack_death": "PASS_V018_V001"
+    }
+  },
+  "last_update_note": "All 160 clips / 960 frames, final assembly and actual project installation have explicit TA approval. No pending review items. Immutable packages retain their original submission state.",
+  "clip_counts": {
+    "PRESERVED_TA_APPROVED": 20,
+    "TA_APPROVED": 140
+  },
+  "frame_counts": {
+    "PRESERVED_TA_APPROVED": 120,
+    "TA_APPROVED": 840
+  },
+  "approved_by_unit": {
+    "enemy_patrol": {
+      "clips": 40,
+      "frames": 240
+    },
+    "enemy_tracked_heavy": {
+      "clips": 40,
+      "frames": 240
+    },
+    "enemy_cutter": {
+      "clips": 40,
+      "frames": 240
+    },
+    "enemy_scout_drone": {
+      "clips": 40,
+      "frames": 240
+    }
+  },
+  "final_assembly": {
+    "status": "PASS_ASSEMBLY_ONLY",
+    "report": "art-source/ember/ta-review-v001/enemy-v027-unified-v001/review-unified-package.md",
+    "zip_sha256": "aba87363a03247ab5069dc2d21dac9544a29e200932d86f0d7aa2a8a12e91826"
+  },
+  "installation": {
+    "status": "PASS_INSTALLATION_ONLY",
+    "target": "assets/ember/characters/enemies_v003",
+    "receipt": "art-source/ember/enemy-sequences-eight-directions-v027/qa/installation_submission_receipt_v001.json",
+    "report": "art-source/ember/ta-review-v001/enemy-v027-installation-v001/review-installation.md",
+    "report_sha256": "1395554bf4588c2bf1a24cca1baefbb241d4a091a5e58285940b1882c7d47772"
+  },
+  "historical_submission_receipts": [
+    "qa/static_revision_submissions.json",
+    "qa/hc_v001_cold_receipt.json",
+    "art-source/ember/enemy-sequences-eight-directions-v027/qa/installation_submission_receipt_v001.json"
+  ],
+  "pending_submission_receipts": [],
+  "final_acceptance": "assets/ember/characters/enemies_v003/FINAL_ACCEPTANCE.json"
+}

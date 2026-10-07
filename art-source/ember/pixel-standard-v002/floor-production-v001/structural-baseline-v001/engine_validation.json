@@ -1,0 +1,96 @@
+{
+	"checked_cells": 95274,
+	"context_patterns": {
+		"floor_landing": 89,
+		"rim_landing": 89
+	},
+	"details_edits": "PASS; paint, undo, redo, save, reload, supporting floor erase",
+	"details_slots": 8,
+	"edit_actions": 128,
+	"editor_sync": "@tool + editable layers changed signals + deferred stable fingerprint; Floor remains native source0, FloorLanding/Rim use ordinary context source1",
+	"engine": "4.7.2-stable (steam)",
+	"exhaustive_cases": {
+		"bridge": 16,
+		"floor": 256,
+		"grate": 256,
+		"rim": 256,
+		"seam": 16
+	},
+	"failures": [],
+	"gpu_captures": [
+		{
+			"path": "gpu_sandbox_1x_v001.png",
+			"renderer": "gl_compatibility",
+			"size": [
+				1152,
+				880
+			],
+			"zoom": 1
+		},
+		{
+			"path": "gpu_sandbox_2x_v001.png",
+			"renderer": "gl_compatibility",
+			"size": [
+				1152,
+				880
+			],
+			"zoom": 2
+		},
+		{
+			"path": "gpu_sandbox_4x_v001.png",
+			"renderer": "gl_compatibility",
+			"size": [
+				1152,
+				880
+			],
+			"zoom": 4
+		},
+		{
+			"path": "gpu_landing_four_directions_v001.png",
+			"renderer": "gl_compatibility",
+			"zoom": 1
+		},
+		{
+			"path": "gpu_landing_north_4x_v001.png",
+			"renderer": "gl_compatibility",
+			"zoom": 4
+		},
+		{
+			"path": "gpu_landing_east_4x_v001.png",
+			"renderer": "gl_compatibility",
+			"zoom": 4
+		},
+		{
+			"path": "gpu_landing_south_4x_v001.png",
+			"renderer": "gl_compatibility",
+			"zoom": 4
+		},
+		{
+			"path": "gpu_landing_west_4x_v001.png",
+			"renderer": "gl_compatibility",
+			"zoom": 4
+		}
+	],
+	"incremental_orders_per_family": 3,
+	"landing_cases": 89,
+	"layer_sync_simulation": "PASS; native repaint, layer adoption, overlap reload, floor overwrite; actual editor UI UndoRedo not exercised",
+	"native_erase_contract": "erase_cell + set_cells_terrain_connect(removed,0,-1,false) + survivor reconnect; erase_cell alone does not rederive peering bits",
+	"native_landing_neighbor_edit": {
+		"erase_kept_floor": true,
+		"paint_kept_floor": true
+	},
+	"overlay_pruning": "PASS; both insertion orders",
+	"patterns": {
+		"bridge": 16,
+		"floor": 47,
+		"grate": 47,
+		"rim": 47,
+		"seam": 16
+	},
+	"random_trials_per_family": 24,
+	"save_reload": true,
+	"scene_resource_roundtrip": true,
+	"seam_parallel_paths": true,
+	"status": "PASS",
+	"undo_redo": true
+}

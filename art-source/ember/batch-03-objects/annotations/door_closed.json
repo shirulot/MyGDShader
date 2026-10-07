@@ -1,0 +1,109 @@
+{
+  "observations": "实际闭门/开门两母稿均已看；框体制造语汇一致但母稿高度偏方。原生重建94px高，共框共安装点；开门母稿空洞用于语义参考。",
+  "adjustments": [
+    "NATIVE_STRUCTURAL_REBUILD: 原生保留母稿20px过梁/12px框脚材料块；柱截面重新安排长度，接缝/铜件/门板在目标网格重画",
+    "两态共享frame_native.png同一像素结构与右柱中性窗口；anchor(48,112)固定，不整体warp",
+    "ROOT_PROPORTION_CORRECTION: 内柱共同收薄，通路宽32改44以容纳既有40px机器人，外框bbox不变",
+    "门板两片用钢灰折角与黄铜把手原生重画，保留中心缝",
+    "前景过梁/立柱导出同画布可编辑源PNG和显式选择mask；框脚余像素保留foundation层"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        72,
+        64,
+        74,
+        69
+      ],
+      "color": 2
+    }
+  ],
+  "native_reconstruction_file": "layers/door_shared/door_closed_native.png",
+  "native_reconstruction_record": "annotations/architectural-rebuild-record.json",
+  "runtime_windows": [
+    {
+      "id": "door_status",
+      "visual_frame_bounds": [
+        70,
+        62,
+        76,
+        71
+      ],
+      "safe_active_rect": [
+        72,
+        64,
+        74,
+        69
+      ],
+      "center": [
+        73.0,
+        66.5
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.7604166666666666,
+        0.51953125
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "components": [
+    {
+      "name": "sliding_leaves",
+      "rects": [
+        [
+          26,
+          38,
+          70,
+          110
+        ]
+      ],
+      "z_index": 1,
+      "purpose": "原生两片关门钢板，共框分层"
+    },
+    {
+      "name": "foreground_frame",
+      "rects": [
+        [
+          0,
+          0,
+          96,
+          38
+        ],
+        [
+          0,
+          38,
+          26,
+          100
+        ],
+        [
+          70,
+          38,
+          96,
+          100
+        ]
+      ],
+      "z_index": 2,
+      "purpose": "两态精确共用过梁/立柱，前景遮挡源层"
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false,
+    "shared_frame_file": "layers/door_shared/frame_native.png",
+    "opening_rect": [
+      26,
+      38,
+      70,
+      112
+    ],
+    "opening_is_alpha_transparent": false,
+    "installation_point": [
+      48,
+      112
+    ]
+  },
+  "emitter_points": []
+}

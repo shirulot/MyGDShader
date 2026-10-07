@@ -1,0 +1,168 @@
+{
+  "status": "THREE_BANK_SAMPLES_DIAGNOSTIC_ONLY",
+  "bank_entries": [
+    {
+      "id": "bank_straight_N",
+      "family": "bank",
+      "mask": 124,
+      "source_path": "art-source/ember/production-v008/bank/raw/bank_straight_N_v001.png",
+      "actual_crop_xyxy": [
+        0,
+        203,
+        1254,
+        1457
+      ],
+      "candidate_path": "art-source/ember/production-v008/bank/candidates/bank_straight_N_sample_v001.png",
+      "open_sides": [
+        "E",
+        "S",
+        "W"
+      ],
+      "closed_sides": [
+        "N"
+      ],
+      "corner_semantics": "North bank; water continues E/S/W.",
+      "status": "VISUAL_SAMPLE_PENDING_CONNECTION_REVIEW",
+      "issues": [
+        "Complete N bank registered as one image; sidewall is relatively tall; exact interfaces pending."
+      ],
+      "producer_record": "bank/generation-record.json",
+      "export_record": "bank/generation-record.json",
+      "source_sha256": "4b6964caeafe74f071f4cf499d4e817caa3db76cfd1e60e59839ea442f5b4810",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "40fd40c36671cf559fde88bbf563eb28e8c1f58d94538cff3a850641f927ee1a",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 3840,
+          "touched_edges": [
+            "E",
+            "N",
+            "W"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    },
+    {
+      "id": "bank_outer_NW",
+      "family": "bank",
+      "mask": 28,
+      "source_path": "art-source/ember/production-v008/bank/raw/bank_outer_NW_v002.png",
+      "actual_crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "candidate_path": "art-source/ember/production-v008/bank/candidates/bank_outer_NW_sample_v001.png",
+      "open_sides": [
+        "E",
+        "S"
+      ],
+      "closed_sides": [
+        "N",
+        "W"
+      ],
+      "corner_semantics": "Northwest outer bank; water southeast.",
+      "status": "VISUAL_SAMPLE_PENDING_CONNECTION_REVIEW",
+      "issues": [
+        "One targeted repair improved north/west total width; exact connection interfaces remain pending."
+      ],
+      "producer_record": "bank/generation-record.json",
+      "export_record": "bank/generation-record.json",
+      "source_sha256": "afe348bd4adb49364d4615f18214a57698892667370dc416c701b6e955710c4f",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "f971c7c2e0939829a82e587e1d6ec0617b930e952c5c96ac40ceb8be699a30bd",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 6930,
+          "touched_edges": [
+            "E",
+            "N",
+            "S",
+            "W"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    },
+    {
+      "id": "bank_inner_NW",
+      "family": "bank",
+      "mask": 127,
+      "source_path": "art-source/ember/production-v008/bank/raw/bank_inner_NW_v003.png",
+      "actual_crop_xyxy": [
+        66,
+        80,
+        1320,
+        1334
+      ],
+      "candidate_path": "art-source/ember/production-v008/bank/candidates/bank_inner_NW_sample_v003.png",
+      "open_sides": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "closed_sides": [],
+      "corner_semantics": "Only local NW curved bank, N/W cut ports, E/S water; exact neighboring profiles pending.",
+      "status": "VISUAL_SAMPLE_PENDING_CONNECTION_REVIEW",
+      "issues": [
+        "v003曲线构件整体注册后N/W有真实主体端口、E/S透明。跨度约半格、弧口与其他方向接口位置仍需统一；不登记正式无缝通过。"
+      ],
+      "producer_record": "bank/generation-record.json",
+      "export_record": "bank/generation-record.json",
+      "source_sha256": "77842daae3c005c22880dc471fba9629a3b97c44aa4a00c2aa79ee579341f35a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "41ea58ba69f01a56bb1bfb62f45f92538ae4ba3dfec1d5fa5a7b37b291630682",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 2471,
+          "touched_edges": [
+            "N",
+            "W"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    }
+  ],
+  "atlas_sha256": "dc3dd13882823cb9707310d5ed2bc8131f83b9bd4d098e1b189159d4829060fb",
+  "water_source": "assets/ember/environment/autotiles_v007/water_autotile_v007.png",
+  "water_crop_xyxy": [
+    768,
+    640,
+    896,
+    768
+  ],
+  "water_sha256": "bd1548fa5fa6a36284b7900362263ef8212c25d8d89ffd40d32599c3c3aaf9d7",
+  "operations": "Copy complete 128px candidates; no resizing or pixel correction.",
+  "full_bank_terrain": false
+}

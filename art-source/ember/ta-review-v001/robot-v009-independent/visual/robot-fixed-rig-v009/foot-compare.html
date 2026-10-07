@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>机器人脚踝调整 · v008 / v009</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#111b23;color:#ece9d8}body{margin:0;padding:16px;max-width:1220px}h1{font-size:24px;margin:0 0 10px}p{color:#bfcbc8;line-height:1.6}.controls{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:18px 0}label{display:flex;align-items:center;gap:8px}button,select{font:inherit;padding:7px 12px;color:inherit;background:#2b3e4b;border:1px solid #647c89;border-radius:5px}input[type=range]{width:200px}output{font-variant-numeric:tabular-nums}.pair{display:flex;gap:12px;flex-wrap:wrap}figure{margin:0;border:1px solid #455b68;border-radius:8px;overflow:hidden}figcaption{padding:9px 14px;background:#263945}canvas{display:block;image-rendering:pixelated;background:#182631}.stage.light canvas{background:#ece9d8}.full{width:256px;height:384px}.feet{width:256px;height:128px}.native{width:64px;height:96px}h2{font-size:17px;margin:22px 0 12px}a{color:#a8ccd0}.note{max-width:760px;font-size:14px}#phase,#loops{min-width:80px}.viewer{font-size:13px;color:#c1cdc9;padding:6px 10px;background:#25313b}
+</style></head><body>
+<h1>脚踝调整：v008 → v009</h1>
+<p>独立控制鞋底落点和小幅转动，降低抬脚与下沉幅度。两版同帧、同速度并排播放。</p>
+<div class="controls">
+<button id="play" aria-pressed="true">暂停</button><button id="previous">上一帧</button><button id="next">下一帧</button>
+<label>帧 <input id="frame" aria-label="帧索引" type="range" min="0" max="7" step="1" value="0"></label><output id="phase">F00</output>
+<label>速度 <select id="speed"><option value="8">正常 8 FPS</option><option value="2">慢速 2 FPS</option></select></label>
+<label>背景 <select id="background"><option value="dark">深色</option><option value="light">浅色</option></select></label><output id="loops">已播放 0 轮</output>
+</div>
+<div class="pair stage"><figure><figcaption>v008 · 原版 4×</figcaption><canvas id="old" class="full" width="64" height="96"></canvas></figure>
+<figure><figcaption>v009 · 调整后 4×</figcaption><canvas id="new" class="full" width="64" height="96"></canvas></figure>
+<figure><figcaption>v009 · 原生 1×</figcaption><canvas id="native" class="native" width="64" height="96"></canvas></figure></div>
+<h2>脚部局部 · 4× 最近邻</h2>
+<div class="pair stage"><figure><figcaption>v008 · 原版</figcaption><canvas id="oldFeet" class="feet" width="64" height="32"></canvas><div class="viewer">观众左侧 ↔ 观众右侧</div></figure>
+<figure><figcaption>v009 · 调整后</figcaption><canvas id="newFeet" class="feet" width="64" height="32"></canvas><div class="viewer">重点：F01 / F02 左侧，F05 / F06 右侧</div></figure></div>
+<p id="status" class="note">载入帧…</p>
+<p class="note">下方局部固定截取每帧同一区域（Y56—87），仅供观察；透明 PNG 仍为原来的 64×96 整格。</p>
+<p><a href="review.html">关节与母稿对照</a> · <a href="README.md">制作说明</a> · <a href="source/foot_motion_v009.json">脚部曲线</a> · <a href="qa/foot_motion_comparison_v009.json">前后量测</a></p>
+<script>
+const byId = id => document.getElementById(id), pad = i => String(i).padStart(2,'0');
+let before=[],after=[],frame=0,playing=true,loops=0,last=0,elapsed=0;
+function draw(id,image,crop=false){const canvas=byId(id),ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,canvas.width,canvas.height);if(crop)ctx.drawImage(image,0,56,64,32,0,0,64,32);else ctx.drawImage(image,0,0);}
+function render(){if(after.length!==8)return;draw('old',before[frame]);draw('new',after[frame]);draw('native',after[frame]);draw('oldFeet',before[frame],true);draw('newFeet',after[frame],true);byId('phase').textContent='F'+pad(frame)+' / 07';byId('frame').value=frame;byId('loops').textContent='已播放 '+loops+' 轮';}
+function state(){byId('play').textContent=playing?'暂停':'继续';byId('play').setAttribute('aria-pressed',String(playing));elapsed=0;}
+function select(value){frame=(value+8)%8;playing=false;state();render();}
+byId('play').onclick=()=>{playing=!playing;state();};byId('frame').oninput=e=>select(Number(e.target.value));
+byId('previous').onclick=()=>select(frame-1);byId('next').onclick=()=>select(frame+1);byId('speed').onchange=()=>{elapsed=0;};
+byId('background').onchange=e=>document.querySelectorAll('.stage').forEach(stage=>stage.classList.toggle('light',e.target.value==='light'));
+const load=src=>new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>reject(new Error('无法加载 '+src));image.src=src;});
+Promise.all([Promise.all(Array.from({length:8},(_,i)=>load('reference-v008/robot_walk_down_f'+pad(i)+'_v008.png'))),Promise.all(Array.from({length:8},(_,i)=>load('frames/robot_walk_down_f'+pad(i)+'_v009.png')))]).then(([a,b])=>{before=a;after=b;render();byId('status').textContent='已加载两版各 8 帧。v009 是脚部修订候选；实际脚感请以正常速度与原生尺寸为准。';}).catch(error=>{byId('status').textContent=error.message;});
+function tick(now){const delta=Math.min(250,now-last);last=now;if(playing&&after.length===8){elapsed+=delta;const step=1000/Number(byId('speed').value);while(elapsed>=step){elapsed-=step;frame=(frame+1)%8;if(frame===0)loops++;render();}}requestAnimationFrame(tick);}requestAnimationFrame(tick);
+</script></body></html>

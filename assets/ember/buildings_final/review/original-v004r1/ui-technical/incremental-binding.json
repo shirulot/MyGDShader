@@ -1,0 +1,167 @@
+{
+  "zip_sha256": "22dc4017aef594f33350e71b0af723909fbd1c4fde1a88208c9a66e34c9e2a32",
+  "zip_bytes": 28875505,
+  "common_code": [
+    {
+      "path": "scripts/ember/building_asset_v001.gd",
+      "old_sha256": "afeadbe72d0815a6c39b5afce47645bbba5e86306a8163f34707919d7f284814",
+      "new_sha256": "afeadbe72d0815a6c39b5afce47645bbba5e86306a8163f34707919d7f284814",
+      "same": true
+    },
+    {
+      "path": "scripts/ember/building_asset_v003.gd",
+      "old_sha256": "f4b9947d6c9b4308bf3231cf271b6f23656e07bb4a27ab27f94cfea620ddd763",
+      "new_sha256": "f4b9947d6c9b4308bf3231cf271b6f23656e07bb4a27ab27f94cfea620ddd763",
+      "same": true
+    },
+    {
+      "path": "scripts/ember/building_asset_v004.gd",
+      "old_sha256": "5162666debdb17edecb66ed696b3d958f09ed4eb89d78ced38650252dba0c1af",
+      "new_sha256": "5162666debdb17edecb66ed696b3d958f09ed4eb89d78ced38650252dba0c1af",
+      "same": true
+    },
+    {
+      "path": "scripts/ember/building_demo_actor_v001.gd",
+      "old_sha256": "196619471b3c83fe148f7929f714b9c7861a4ec463b03f602be713720dafbcfb",
+      "new_sha256": "196619471b3c83fe148f7929f714b9c7861a4ec463b03f602be713720dafbcfb",
+      "same": true
+    },
+    {
+      "path": "scripts/ember/building_demo_actor_v004.gd",
+      "old_sha256": "8fd5d5bf4d7cdbf951e7a781f733e55454ef1e0dcf137e9f3d64fd60547eb417",
+      "new_sha256": "8fd5d5bf4d7cdbf951e7a781f733e55454ef1e0dcf137e9f3d64fd60547eb417",
+      "same": true
+    },
+    {
+      "path": "scripts/ember/building_demo_v001.gd",
+      "old_sha256": "1e5b22e469312237b9ea348e32e00a36ea8b991824107e88df288c7af73dcea2",
+      "new_sha256": "1e5b22e469312237b9ea348e32e00a36ea8b991824107e88df288c7af73dcea2",
+      "same": true
+    },
+    {
+      "path": "scripts/ember/building_demo_v003.gd",
+      "old_sha256": "4b28dffa3505b5f8360ffde789ac7891a311d6df0de3337aee29733bd64708c7",
+      "new_sha256": "4b28dffa3505b5f8360ffde789ac7891a311d6df0de3337aee29733bd64708c7",
+      "same": true
+    },
+    {
+      "path": "scripts/ember/building_demo_v004.gd",
+      "old_sha256": "1e7f994843f6f5a611daf175c2c237e83ba38438c3c553317ad0e13f4edd3c2d",
+      "new_sha256": "1e7f994843f6f5a611daf175c2c237e83ba38438c3c553317ad0e13f4edd3c2d",
+      "same": true
+    },
+    {
+      "path": "shaders/ember/building_intact_v004.gdshader",
+      "old_sha256": "2f47d83b1da8ed8baf5cd72c5bc242ad7a629114ac8f86b48bced4e3cc8f1dc5",
+      "new_sha256": "2f47d83b1da8ed8baf5cd72c5bc242ad7a629114ac8f86b48bced4e3cc8f1dc5",
+      "same": true
+    }
+  ],
+  "changed_common_code": [],
+  "catalog_top_level_keys": {
+    "old": [
+      "revision",
+      "status",
+      "architecture",
+      "old_geometry_superseded",
+      "buildings"
+    ],
+    "new": [
+      "architecture",
+      "buildings",
+      "coverage_rule",
+      "old_geometry_superseded",
+      "revision",
+      "status"
+    ]
+  },
+  "geometry": [
+    {
+      "id": "control_tower",
+      "unchanged_fields": {
+        "id": true,
+        "name": true,
+        "uniform_scale": true,
+        "source_pivot_px": true,
+        "footprint_px": true,
+        "doors": true,
+        "service_rect": true,
+        "hatch_rect": true,
+        "lens_rects": true,
+        "glass_rects": true,
+        "service_mount_x": true
+      },
+      "numeric_tolerance_px": 1e-12,
+      "exact_doors_match": false,
+      "old_texture": "res://assets/ember/building_assets_v004/complete/control_tower_closed_v004.png",
+      "new_texture": "res://assets/ember/building_assets_v004r1/complete/control_tower_closed_v004r1.png"
+    },
+    {
+      "id": "repair_workshop",
+      "unchanged_fields": {
+        "id": true,
+        "name": true,
+        "uniform_scale": true,
+        "source_pivot_px": true,
+        "footprint_px": true,
+        "doors": true,
+        "service_rect": true,
+        "hatch_rect": true,
+        "lens_rects": true,
+        "glass_rects": true,
+        "service_mount_x": true
+      },
+      "numeric_tolerance_px": 1e-12,
+      "exact_doors_match": true,
+      "old_texture": "res://assets/ember/building_assets_v004/complete/repair_workshop_closed_v004.png",
+      "new_texture": "res://assets/ember/building_assets_v004r1/complete/repair_workshop_closed_v004r1.png"
+    },
+    {
+      "id": "logistics_warehouse",
+      "unchanged_fields": {
+        "id": true,
+        "name": true,
+        "uniform_scale": true,
+        "source_pivot_px": true,
+        "footprint_px": true,
+        "doors": true,
+        "service_rect": true,
+        "hatch_rect": true,
+        "lens_rects": true,
+        "glass_rects": true,
+        "service_mount_x": true
+      },
+      "numeric_tolerance_px": 1e-12,
+      "exact_doors_match": true,
+      "old_texture": "res://assets/ember/building_assets_v004/complete/logistics_warehouse_closed_v004.png",
+      "new_texture": "res://assets/ember/building_assets_v004r1/complete/logistics_warehouse_closed_v004r1.png"
+    }
+  ],
+  "new_code_paths": [
+    "scripts/ember/building_asset_v004r1.gd",
+    "scripts/ember/building_demo_v004r1.gd",
+    "tools/build_building_coverage_v004r1.gd",
+    "tools/export_building_parts_v004r1.gd",
+    "tools/validate_capture_buildings_v004r1.gd"
+  ],
+  "author_validation_paths": [
+    "assets/ember/building_assets_v004r1/previews/validation_v004r1.json"
+  ],
+  "author_evidence": [
+    {
+      "path": "assets/ember/building_assets_v004r1/previews/validation_v004r1.json",
+      "sha256": "734c377d7924aad56023cdc50b92a6f8d005194f427401206ab20797595b1524",
+      "passed": 94,
+      "total": 94,
+      "not_independent_rerun": true
+    }
+  ],
+  "manifest_cold_runtime": {
+    "passed": 94,
+    "total": 94,
+    "stderr_bytes": 0
+  },
+  "original_project_sha256": "dab5aec73655fc65d4f1bcb851e31362a6aeebbd41971cf4d428e6609a290b9e",
+  "manifest_payload_verified": 78,
+  "status": "INCREMENTAL_BINDING_PASS"
+}

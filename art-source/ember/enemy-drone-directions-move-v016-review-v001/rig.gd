@@ -1,0 +1,53 @@
+extends Node2D
+## 原图机壳完整保持。每个转子先在自身平面旋转，再投影到固定的椭圆风口。
+var direction:String
+var spec:Dictionary
+var config:Dictionary
+var body:Node2D
+var rotors:Dictionary={}
+func point(a:Array)->Vector2:return Vector2(a[0],a[1])
+func source_texture(path:String)->ImageTexture:
+ return ImageTexture.create_from_image(Image.load_from_file(ProjectSettings.globalize_path(path)))
+func _ready()->void:
+ texture_filter=CanvasItem.TEXTURE_FILTER_NEAREST
+ spec=JSON.parse_string(FileAccess.get_file_as_string("res://rig.json"))
+ config=spec.configs[direction]
+ body=Node2D.new()
+ add_child(body)
+ var shell:=Sprite2D.new()
+ shell.centered=false
+ shell.texture=source_texture(config.source)
+ shell.z_index=2
+ var shell_material:=ShaderMaterial.new()
+ shell_material.shader=load("res://pilot_fan_body.gdshader")
+ for index in range(2):
+  var name:="fan_a" if index==0 else "fan_b"
+  shell_material.set_shader_parameter(name+"_center",point(config.fans[index].center))
+  shell_material.set_shader_parameter(name+"_radius",point(config.fans[index].radius))
+ shell.material=shell_material
+ body.add_child(shell)
+ var fan_texture:=source_texture(spec.fan_source)
+ for fan:Dictionary in config.fans:
+  var plane:=Node2D.new()
+  plane.position=point(fan.center)
+  plane.scale=point(fan.radius)/6.5
+  body.add_child(plane)
+  for layer:String in ["well","rotor"]:
+   var part:=Polygon2D.new()
+   var r:Array=spec[layer+"_rect"]
+   part.polygon=PackedVector2Array([Vector2(-6.5,-6.5),Vector2(6.5,-6.5),Vector2(6.5,6.5),Vector2(-6.5,6.5)])
+   part.uv=PackedVector2Array([Vector2(r[0],r[1]),Vector2(r[0]+r[2],r[1]),Vector2(r[0]+r[2],r[1]+r[3]),Vector2(r[0],r[1]+r[3])])
+   part.texture=fan_texture
+   var material:=ShaderMaterial.new()
+   material.shader=load("res://pilot_fan.gdshader")
+   part.material=material
+   plane.add_child(part)
+   if layer=="rotor":rotors[fan.id]=part
+func pose(index:int)->Dictionary:
+ body.position.y=spec.body_y[index]
+ var angles:Dictionary={}
+ for fan:Dictionary in config.fans:
+  var angle:float=index*float(spec.angle_step_degrees)*float(fan.spin)
+  rotors[fan.id].rotation=deg_to_rad(angle)
+  angles[fan.id]=angle
+ return {"direction":direction,"frame":index,"body_translation":[0,body.position.y],"rotor_angles_degrees":angles,"fans":config.fans,"root":[64,104]}

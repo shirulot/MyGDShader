@@ -1,0 +1,46 @@
+{
+  "version": "v008",
+  "review_date": "2026-10-06",
+  "reviewer": "joint_visual_review",
+  "scope": "down direction, eight-frame in-place walk sample, native 64x96, root (32,80)",
+  "verdict": "通过（仅 down 八帧行走小样）",
+  "sample_usable": true,
+  "blocking_art_issues": [],
+  "visual_basis": [
+    "original canonical source and fixed rig canonical",
+    "v005 three-view and exploded joint reference",
+    "native eight PNG frames",
+    "Godot integer 4x contact sheet",
+    "browser native 1x and integer 4x per-frame review on light and dark backgrounds",
+    "8 FPS playback, observed loop count 7 to 28",
+    "2 FPS playback, observed loop count 36 to 44",
+    "manual F07 to F00 comparison on both backgrounds"
+  ],
+  "findings": {
+    "identity": "头盔、胸甲、双手套和解剖左腕工具视觉身份稳定。",
+    "shoulder_hip": "肩部嵌入胸架，骨盆与两侧大腿连续；未见浮甲或浮腿。",
+    "elbow_wrist": "肘和腕连接有厚度；F05 观众左手不再悬浮。",
+    "knee": "全部八帧中央膝套连接上下腿，F01/F05 未见贯穿透明断口；避让切口不横切整条肢体。",
+    "volume": "姿态与投影变化可解释肢体缩短，刚性装甲与靴形未出现独立体积跳变。",
+    "gait": "接触、下沉、经过、前摆及另一脚交替可读，身体小幅重心变化配合支撑转换。",
+    "loop": "F07 前摆衔接 F00 接触；未见姿态突复位、工具换边或头胸体积跳变。"
+  },
+  "initial_draft_observation": "浅底 F01/F02 曾见膝部横向背景细带，初稿需修订；最终固定版已独立复审。",
+  "technical_metrics_used_as_visual_proof": false,
+  "limitations": [
+    "不覆盖主玩法地图中的真实接地、移动速度与步幅配合。",
+    "不覆盖其他方向、其他动作或用户最终造型接受。",
+    "实时播放结论来自浏览器实际播放页画面与抽样，Godot 整板交叉确认。"
+  ],
+  "sha256": {
+    "source/rig_down_v008.json": "e11638a6751cdaab475224cea772aa80425066daadcfab6e71436f84fd1341a4",
+    "frames/robot_walk_down_f00_v008.png": "9ad4836c732e1b8b8bcbf7c2d756bb45c8f7ab69f14efb5034afcf7a39e780e2",
+    "frames/robot_walk_down_f01_v008.png": "c224f0fcc892fc1d9735352fb7ca009b12baebcf045e3681905d37aa11811dc1",
+    "frames/robot_walk_down_f02_v008.png": "27ffc6266bcd6d923e87771a4d97eecca8a6a2eab52e5bcf6cb141a03fbf2da8",
+    "frames/robot_walk_down_f03_v008.png": "388e7e378dad503bda16ad70aa2a7ae02741dcfa77088485bbe123b614afcedc",
+    "frames/robot_walk_down_f04_v008.png": "5ba027dd9a38b2a64ed2fc5ad22c6963d2e41e930225114affc1ab34cd4e09cc",
+    "frames/robot_walk_down_f05_v008.png": "7e119ee3834b5b4edbe1acc7253a91e752d82a4f2dfc9ae55c40ab973fc00645",
+    "frames/robot_walk_down_f06_v008.png": "f565c543aee5e317ea946aedbec919e3f955b9ab904c0bbed332d4a46df85956",
+    "frames/robot_walk_down_f07_v008.png": "564cafb10f4528699a6efde3c48ea35338d144bfb2257fe7786d56a4f4d2520c"
+  }
+}

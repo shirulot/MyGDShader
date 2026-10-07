@@ -1,0 +1,21 @@
+{
+  "id": "grass_height_weight",
+  "source": {
+    "file": "res://assets/ember/three_d/textures/grass/grass_leaf_v001.png",
+    "sha256": "1dc463fc71b8e44fc7148de106fdd05fbc0389364925eee0180c4a6e37b23888"
+  },
+  "source_annotation": {
+    "file": "res://art-source/ember/batch-05-textures/finished-textures/grass_leaf_v001.finish.json",
+    "sha256": "de47a4e4f36c3b4ffbeb4931e88c51052e9458b67841a97216009f744497ecbf"
+  },
+  "basis": "actual accepted Alpha silhouette; zero outside, linear normalized visible vertical height",
+  "root_boundary": 120,
+  "zero_root_pixel_y": 119,
+  "full_weight_visible_y": 10,
+  "anchor": [
+    32,
+    120
+  ],
+  "formula": "where alpha=255: round(clamp((119-y)/109,0,1)*255); else 0",
+  "canvas_height_128_is_not_root": true
+}

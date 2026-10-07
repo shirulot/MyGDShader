@@ -1,0 +1,148 @@
+{
+  "decision": "CONDITIONAL_TECHNICAL_PASS_REPAIR_COLD_FULL_RGBA_EVIDENCE",
+  "finding_priority": "P2",
+  "scope": "walk_down only, eight 64x96 frames, 8 FPS loop, fixed root [32,80]",
+  "zip_sha256": "ac74a58d6ac1751556751046571d5d983a9dcc4f9f85a146b4494706b055ff1b",
+  "rig_sha256": "e11638a6751cdaab475224cea772aa80425066daadcfab6e71436f84fd1341a4",
+  "package_source_checks": 319,
+  "package_source_failures": 0,
+  "cold_import_exit": 0,
+  "cold_verifier_exit": 1,
+  "cold_full_rgba_imported_regions_passed": 0,
+  "cold_gpu_exact_cases": 16,
+  "cold_gpu_total_cases": 16,
+  "transparent_rgb_modified_count": 8698,
+  "opaque_rgba_modified_count": 0,
+  "alpha_modified_count": 0,
+  "cold_natural_playback": {
+    "kind": "actual_timed_AnimatedSprite2D_signals",
+    "sequence": [
+      {
+        "frame": 0,
+        "elapsed_ms": 0
+      },
+      {
+        "frame": 1,
+        "elapsed_ms": 97
+      },
+      {
+        "frame": 2,
+        "elapsed_ms": 222
+      },
+      {
+        "frame": 3,
+        "elapsed_ms": 347
+      },
+      {
+        "frame": 4,
+        "elapsed_ms": 472
+      },
+      {
+        "frame": 5,
+        "elapsed_ms": 597
+      },
+      {
+        "frame": 6,
+        "elapsed_ms": 722
+      },
+      {
+        "frame": 7,
+        "elapsed_ms": 847
+      },
+      {
+        "frame": 0,
+        "elapsed_ms": 972
+      },
+      {
+        "frame": 1,
+        "elapsed_ms": 1097
+      },
+      {
+        "frame": 2,
+        "elapsed_ms": 1222
+      },
+      {
+        "frame": 3,
+        "elapsed_ms": 1347
+      },
+      {
+        "frame": 4,
+        "elapsed_ms": 1472
+      },
+      {
+        "frame": 5,
+        "elapsed_ms": 1597
+      },
+      {
+        "frame": 6,
+        "elapsed_ms": 1722
+      },
+      {
+        "frame": 7,
+        "elapsed_ms": 1847
+      },
+      {
+        "frame": 0,
+        "elapsed_ms": 1972
+      },
+      {
+        "frame": 1,
+        "elapsed_ms": 2097
+      }
+    ],
+    "visited_frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "actual_loops": 2
+  },
+  "cold_frame_intervals_ms": [
+    97,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125
+  ],
+  "control_change": "Only add existing production PNG .import settings sidecar; do not modify native PNG, SpriteFrames, rig, poses or verifier.",
+  "control_verifier_exit": 0,
+  "control_technical_checks": "PASS",
+  "control_full_rgba_imported_regions_passed": 8,
+  "control_gpu_exact_cases": 16,
+  "control_natural_loops": 2,
+  "production_protected_count": 87,
+  "production_changed_after_audit": [],
+  "original_neutral_source_opaque_pixels": 1492,
+  "source_layers": 23,
+  "semantic_ownership_changes": 37,
+  "authored_cap_definitions": 17,
+  "derived_canonical_opaque_pixels": 1463,
+  "derived_canonical_rgba_positions_different_to_original": 805,
+  "art_acceptance": "NOT_CLAIMED",
+  "minimal_repair": "Ship portable texture import settings (fix_alpha_border=false) or explicitly revise import fidelity comparison contract to visible RGBA plus Alpha. Cold-run the declared contract and submit newly hash-bound evidence/package.",
+  "evidence": [
+    "package-source-report.json",
+    "cold-playback-report.json",
+    "cold-import-diagnosis.json",
+    "control-playback-report.json",
+    "playback-rerun.stderr.log",
+    "control-playback.stderr.log"
+  ]
+}

@@ -1,0 +1,2405 @@
+{
+	"canvas": [
+		64,
+		96
+	],
+	"current_map_references": [
+		{
+			"actual_foot_offset_from_node_world": [
+				0.0,
+				-10.3999996185303
+			],
+			"foot_pivot_registration_matches": false,
+			"integration_finding": "FOOT_NODE_REGISTRATION_MISMATCH",
+			"robot_centered": true,
+			"robot_offset": [
+				0.0,
+				-48.0
+			],
+			"robot_scale": [
+				0.649999976158142,
+				0.649999976158142
+			],
+			"scene": "E:/dev/shader/godot-shader/godot-shader-simple/scenes/ember/map_assets_tidal_port_v001.tscn",
+			"sha256": "8f279b451384a227909bdd079b5b9c41b57046a3a03b87dedfd0d4e66f06a650",
+			"uses_animation_atlas_v001": false,
+			"uses_idle_down_v001": true,
+			"uses_walk_v001": false
+		},
+		{
+			"actual_foot_offset_from_node_world": [
+				0.0,
+				-10.3999996185303
+			],
+			"foot_pivot_registration_matches": false,
+			"integration_finding": "FOOT_NODE_REGISTRATION_MISMATCH",
+			"robot_centered": true,
+			"robot_offset": [
+				0.0,
+				-48.0
+			],
+			"robot_scale": [
+				0.649999976158142,
+				0.649999976158142
+			],
+			"scene": "E:/dev/shader/godot-shader/godot-shader-simple/scenes/ember/map_assets_dry_mine_v001.tscn",
+			"sha256": "94c26809ac2aabfa80b020bb9ab30b501ce39398ce1c507387fed03a3465c527",
+			"uses_animation_atlas_v001": false,
+			"uses_idle_down_v001": true,
+			"uses_walk_v001": false
+		},
+		{
+			"actual_foot_offset_from_node_world": [
+				0.0,
+				-10.3999996185303
+			],
+			"foot_pivot_registration_matches": false,
+			"integration_finding": "FOOT_NODE_REGISTRATION_MISMATCH",
+			"robot_centered": true,
+			"robot_offset": [
+				0.0,
+				-48.0
+			],
+			"robot_scale": [
+				0.649999976158142,
+				0.649999976158142
+			],
+			"scene": "E:/dev/shader/godot-shader/godot-shader-simple/scenes/ember/map_assets_overgrown_lab_v001.tscn",
+			"sha256": "477c87722c8c7cfac7944ab61d9073af78169752b16e4cb7824deacc41be9288",
+			"uses_animation_atlas_v001": false,
+			"uses_idle_down_v001": true,
+			"uses_walk_v001": false
+		}
+	],
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"errors": [],
+	"foot_pivot": [
+		32,
+		80
+	],
+	"gpu_transparent_rgba": {
+		"alpha_changed_pixels": 0,
+		"dimensions": [
+			1280,
+			1536
+		],
+		"factor": 4,
+		"file": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/robot-audit-v003/current_v002_gpu_transparent_4x.png",
+		"sha256": "176e6702dfdcbcbbe109121589b6978f0f741d3f4d2a1d465e0a9bf3aa28b140",
+		"source_frames": 20,
+		"visible_rgb_changed_pixels": 0
+	},
+	"map_scale_diagnostic": {
+		"equivalent_scale": 1.3,
+		"file": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/robot-audit-v003/down_equivalent_map_scale_1p3x.png",
+		"purpose": "sampling appearance only; fractional nearest produces alternating pixel widths but no source edits"
+	},
+	"schema_version": 1,
+	"scope": "read_only_raw_png_alpha_and_gpu_audit",
+	"source_hashes_before": {
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_animations_v001.png": "d3515552ac8ca72170f3ff558844a74552f71d96217b5660669f6cef59bb89e3",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_animations_v002.png": "b0a449893f3818e75b5b2b5ebed7bb6f775f951d11a7cbd1b3a446aeb80ef8e9",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_frames_catalog_v001.json": "f4b4f4a7f98afb3d14ea3d8e8825347d7d3bc747bb824d3d78c6f51195d15a94",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_frames_catalog_v002.json": "4294535fb05c1fec456003184aa674c6a639d64eeb8ccb57ee03c8d9b7b14630",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_idle_down_v001.png": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_idle_left_v001.png": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_idle_right_v001.png": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_idle_up_v001.png": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_down_f00_v001.png": "5b91a60e5ab5428a7b988a6aea4f336c55e946208aa2897e43d49452ad767267",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_down_f00_v002.png": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_down_f01_v001.png": "6598040c164838b1cf8b847a98683b9fe3a757a9c823019abefc9acb321f9818",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_down_f01_v002.png": "f95d486bc2c11f4bf1364a879b3b091dc0015320092a26a8c0b113bf8b2bc779",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_down_f02_v001.png": "75763a286bc88182ffaad28569db80d49f2619d699c1d77463310ba8b3ac4819",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_down_f02_v002.png": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_down_f03_v001.png": "d58d28a1c1ae09dc3787bf0ce2394d4239fa66c3f71efc43fe9fc5902e15888f",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_down_f03_v002.png": "aa6507d006d10b81bcf299c4bec1f3b59b3f21bec135ec8283497fcd47106f07",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_left_f00_v001.png": "41faa14587e8933003c6809f0af1cca75a90c8bd26326eb0ed67593874bb5930",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_left_f00_v002.png": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_left_f01_v001.png": "b79f0c4a8ced161f570fd6dde138f4b6ea31869494903f0f085b08a9ffb68410",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_left_f01_v002.png": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_left_f02_v001.png": "177a1985bff483574cbe46b84e674d304a7dd61197ad9287fa5e2a4ceae93566",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_left_f02_v002.png": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_left_f03_v001.png": "1c50a3e23d413513adda8ce353a8515fb71768b5276fd84da42005cb61316f2d",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_left_f03_v002.png": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_right_f00_v001.png": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_right_f00_v002.png": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_right_f01_v001.png": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_right_f01_v002.png": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_right_f02_v001.png": "6d721027b8e57da224b1d7ae705cd48c88bd193a2e51ae2031448769e5c156be",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_right_f02_v002.png": "29976d10acaf633868d577e2be6eac8194ffd162965483ff261ae3f63996f311",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_right_f03_v001.png": "5c039750f75d145415cfba89c53b81ec101587117a99be2dd9f4bae70fb078d3",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_right_f03_v002.png": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_up_f00_v001.png": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_up_f00_v002.png": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_up_f01_v001.png": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_up_f01_v002.png": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_up_f02_v001.png": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_up_f02_v002.png": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_up_f03_v001.png": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+		"E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_walk_up_f03_v002.png": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+		"E:/dev/shader/godot-shader/godot-shader-simple/scenes/ember/map_assets_dry_mine_v001.tscn": "94c26809ac2aabfa80b020bb9ab30b501ce39398ce1c507387fed03a3465c527",
+		"E:/dev/shader/godot-shader/godot-shader-simple/scenes/ember/map_assets_overgrown_lab_v001.tscn": "477c87722c8c7cfac7944ab61d9073af78169752b16e4cb7824deacc41be9288",
+		"E:/dev/shader/godot-shader/godot-shader-simple/scenes/ember/map_assets_tidal_port_v001.tscn": "8f279b451384a227909bdd079b5b9c41b57046a3a03b87dedfd0d4e66f06a650"
+	},
+	"source_hashes_preserved": true,
+	"technical_status": "PASS",
+	"timestamp_utc": "2026-10-06T06:07:07",
+	"versions": {
+		"v001": {
+			"catalog": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_frames_catalog_v001.json",
+			"catalog_sha256": "f4b4f4a7f98afb3d14ea3d8e8825347d7d3bc747bb824d3d78c6f51195d15a94",
+			"frame_count": 20,
+			"frames": [
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						12,
+						21,
+						40,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1492,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1492,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+					"id": "robot_idle_down",
+					"opaque_pixels": 1492,
+					"rgb_count": 11,
+					"sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						12,
+						21,
+						40,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1480,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1480,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_down_f00_v001.png",
+					"id": "robot_walk_down_f00",
+					"opaque_pixels": 1480,
+					"rgb_count": 11,
+					"sha256": "5b91a60e5ab5428a7b988a6aea4f336c55e946208aa2897e43d49452ad767267",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						12,
+						20,
+						40,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1483,
+							"bbox_xywh": [
+								12,
+								20,
+								40,
+								60
+							]
+						},
+						{
+							"area": 1,
+							"bbox_xywh": [
+								32,
+								62,
+								1,
+								1
+							],
+							"exact_pixels": [
+								[
+									32,
+									62
+								]
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1483,
+							"bbox_xywh": [
+								12,
+								20,
+								40,
+								60
+							]
+						},
+						{
+							"area": 1,
+							"bbox_xywh": [
+								32,
+								62,
+								1,
+								1
+							],
+							"exact_pixels": [
+								[
+									32,
+									62
+								]
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_down_f01_v001.png",
+					"id": "robot_walk_down_f01",
+					"opaque_pixels": 1484,
+					"rgb_count": 11,
+					"sha256": "6598040c164838b1cf8b847a98683b9fe3a757a9c823019abefc9acb321f9818",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						12,
+						21,
+						40,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1479,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1479,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_down_f02_v001.png",
+					"id": "robot_walk_down_f02",
+					"opaque_pixels": 1479,
+					"rgb_count": 11,
+					"sha256": "75763a286bc88182ffaad28569db80d49f2619d699c1d77463310ba8b3ac4819",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						12,
+						20,
+						40,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1483,
+							"bbox_xywh": [
+								12,
+								20,
+								40,
+								60
+							]
+						},
+						{
+							"area": 2,
+							"bbox_xywh": [
+								30,
+								62,
+								2,
+								1
+							],
+							"exact_pixels": [
+								[
+									30,
+									62
+								],
+								[
+									31,
+									62
+								]
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1483,
+							"bbox_xywh": [
+								12,
+								20,
+								40,
+								60
+							]
+						},
+						{
+							"area": 2,
+							"bbox_xywh": [
+								30,
+								62,
+								2,
+								1
+							],
+							"exact_pixels": [
+								[
+									30,
+									62
+								],
+								[
+									31,
+									62
+								]
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_down_f03_v001.png",
+					"id": "robot_walk_down_f03",
+					"opaque_pixels": 1485,
+					"rgb_count": 11,
+					"sha256": "d58d28a1c1ae09dc3787bf0ce2394d4239fa66c3f71efc43fe9fc5902e15888f",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						18,
+						21,
+						27,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1122,
+							"bbox_xywh": [
+								18,
+								21,
+								27,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1122,
+							"bbox_xywh": [
+								18,
+								21,
+								27,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+					"id": "robot_idle_left",
+					"opaque_pixels": 1122,
+					"rgb_count": 11,
+					"sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						17,
+						21,
+						29,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1066,
+							"bbox_xywh": [
+								17,
+								21,
+								29,
+								59
+							]
+						},
+						{
+							"area": 2,
+							"bbox_xywh": [
+								38,
+								65,
+								2,
+								1
+							],
+							"exact_pixels": [
+								[
+									38,
+									65
+								],
+								[
+									39,
+									65
+								]
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1068,
+							"bbox_xywh": [
+								17,
+								21,
+								29,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_left_f00_v001.png",
+					"id": "robot_walk_left_f00",
+					"opaque_pixels": 1068,
+					"rgb_count": 11,
+					"sha256": "41faa14587e8933003c6809f0af1cca75a90c8bd26326eb0ed67593874bb5930",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						18,
+						20,
+						27,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1120,
+							"bbox_xywh": [
+								18,
+								20,
+								27,
+								60
+							]
+						},
+						{
+							"area": 2,
+							"bbox_xywh": [
+								40,
+								65,
+								2,
+								1
+							],
+							"exact_pixels": [
+								[
+									40,
+									65
+								],
+								[
+									41,
+									65
+								]
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1122,
+							"bbox_xywh": [
+								18,
+								20,
+								27,
+								60
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_left_f01_v001.png",
+					"id": "robot_walk_left_f01",
+					"opaque_pixels": 1122,
+					"rgb_count": 11,
+					"sha256": "b79f0c4a8ced161f570fd6dde138f4b6ea31869494903f0f085b08a9ffb68410",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						18,
+						21,
+						26,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1062,
+							"bbox_xywh": [
+								18,
+								21,
+								26,
+								59
+							]
+						},
+						{
+							"area": 14,
+							"bbox_xywh": [
+								27,
+								73,
+								3,
+								6
+							],
+							"exact_pixels": [
+								[
+									29,
+									73
+								],
+								[
+									29,
+									74
+								],
+								[
+									28,
+									74
+								],
+								[
+									29,
+									75
+								],
+								[
+									28,
+									75
+								],
+								[
+									29,
+									76
+								],
+								[
+									27,
+									75
+								],
+								[
+									28,
+									76
+								],
+								[
+									29,
+									77
+								],
+								[
+									27,
+									76
+								],
+								[
+									28,
+									77
+								],
+								[
+									29,
+									78
+								],
+								[
+									27,
+									77
+								],
+								[
+									28,
+									78
+								]
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1062,
+							"bbox_xywh": [
+								18,
+								21,
+								26,
+								59
+							]
+						},
+						{
+							"area": 14,
+							"bbox_xywh": [
+								27,
+								73,
+								3,
+								6
+							],
+							"exact_pixels": [
+								[
+									29,
+									73
+								],
+								[
+									28,
+									74
+								],
+								[
+									29,
+									74
+								],
+								[
+									27,
+									75
+								],
+								[
+									28,
+									75
+								],
+								[
+									29,
+									75
+								],
+								[
+									27,
+									76
+								],
+								[
+									28,
+									76
+								],
+								[
+									29,
+									76
+								],
+								[
+									27,
+									77
+								],
+								[
+									28,
+									77
+								],
+								[
+									29,
+									77
+								],
+								[
+									28,
+									78
+								],
+								[
+									29,
+									78
+								]
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_left_f02_v001.png",
+					"id": "robot_walk_left_f02",
+					"opaque_pixels": 1076,
+					"rgb_count": 11,
+					"sha256": "177a1985bff483574cbe46b84e674d304a7dd61197ad9287fa5e2a4ceae93566",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						18,
+						20,
+						27,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1113,
+							"bbox_xywh": [
+								18,
+								20,
+								27,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1113,
+							"bbox_xywh": [
+								18,
+								20,
+								27,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_left_f03_v001.png",
+					"id": "robot_walk_left_f03",
+					"opaque_pixels": 1113,
+					"rgb_count": 11,
+					"sha256": "1c50a3e23d413513adda8ce353a8515fb71768b5276fd84da42005cb61316f2d",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 79
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						17,
+						21,
+						29,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1211,
+							"bbox_xywh": [
+								17,
+								21,
+								29,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1211,
+							"bbox_xywh": [
+								17,
+								21,
+								29,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+					"id": "robot_idle_right",
+					"opaque_pixels": 1211,
+					"rgb_count": 10,
+					"sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						18,
+						21,
+						30,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1171,
+							"bbox_xywh": [
+								18,
+								21,
+								30,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1171,
+							"bbox_xywh": [
+								18,
+								21,
+								30,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_right_f00_v001.png",
+					"id": "robot_walk_right_f00",
+					"opaque_pixels": 1171,
+					"rgb_count": 10,
+					"sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						17,
+						20,
+						29,
+						58
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1202,
+							"bbox_xywh": [
+								17,
+								20,
+								29,
+								58
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1202,
+							"bbox_xywh": [
+								17,
+								20,
+								29,
+								58
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_right_f01_v001.png",
+					"id": "robot_walk_right_f01",
+					"opaque_pixels": 1202,
+					"rgb_count": 10,
+					"sha256": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 78
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						16,
+						21,
+						30,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1181,
+							"bbox_xywh": [
+								16,
+								21,
+								30,
+								59
+							]
+						},
+						{
+							"area": 1,
+							"bbox_xywh": [
+								23,
+								66,
+								1,
+								1
+							],
+							"exact_pixels": [
+								[
+									23,
+									66
+								]
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1182,
+							"bbox_xywh": [
+								16,
+								21,
+								30,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_right_f02_v001.png",
+					"id": "robot_walk_right_f02",
+					"opaque_pixels": 1182,
+					"rgb_count": 10,
+					"sha256": "6d721027b8e57da224b1d7ae705cd48c88bd193a2e51ae2031448769e5c156be",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						17,
+						20,
+						29,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1211,
+							"bbox_xywh": [
+								17,
+								20,
+								29,
+								60
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1211,
+							"bbox_xywh": [
+								17,
+								20,
+								29,
+								60
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_right_f03_v001.png",
+					"id": "robot_walk_right_f03",
+					"opaque_pixels": 1211,
+					"rgb_count": 10,
+					"sha256": "5c039750f75d145415cfba89c53b81ec101587117a99be2dd9f4bae70fb078d3",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						13,
+						21,
+						38,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1407,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1407,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+					"id": "robot_idle_up",
+					"opaque_pixels": 1407,
+					"rgb_count": 10,
+					"sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						13,
+						21,
+						38,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1396,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1396,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_up_f00_v001.png",
+					"id": "robot_walk_up_f00",
+					"opaque_pixels": 1396,
+					"rgb_count": 10,
+					"sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						13,
+						20,
+						38,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1400,
+							"bbox_xywh": [
+								13,
+								20,
+								38,
+								60
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1400,
+							"bbox_xywh": [
+								13,
+								20,
+								38,
+								60
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_up_f01_v001.png",
+					"id": "robot_walk_up_f01",
+					"opaque_pixels": 1400,
+					"rgb_count": 10,
+					"sha256": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						13,
+						21,
+						38,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1396,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1396,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_up_f02_v001.png",
+					"id": "robot_walk_up_f02",
+					"opaque_pixels": 1396,
+					"rgb_count": 10,
+					"sha256": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						13,
+						20,
+						38,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1400,
+							"bbox_xywh": [
+								13,
+								20,
+								38,
+								60
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1400,
+							"bbox_xywh": [
+								13,
+								20,
+								38,
+								60
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_up_f03_v001.png",
+					"id": "robot_walk_up_f03",
+					"opaque_pixels": 1400,
+					"rgb_count": 10,
+					"sha256": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				}
+			],
+			"walk_transitions": [
+				{
+					"from": "robot_walk_down_f00",
+					"rgba_changed_pixels": 640,
+					"to": "robot_walk_down_f01"
+				},
+				{
+					"from": "robot_walk_down_f01",
+					"rgba_changed_pixels": 786,
+					"to": "robot_walk_down_f02"
+				},
+				{
+					"from": "robot_walk_down_f02",
+					"rgba_changed_pixels": 639,
+					"to": "robot_walk_down_f03"
+				},
+				{
+					"from": "robot_walk_down_f03",
+					"rgba_changed_pixels": 783,
+					"to": "robot_walk_down_f00"
+				},
+				{
+					"from": "robot_walk_left_f00",
+					"rgba_changed_pixels": 810,
+					"to": "robot_walk_left_f01"
+				},
+				{
+					"from": "robot_walk_left_f01",
+					"rgba_changed_pixels": 773,
+					"to": "robot_walk_left_f02"
+				},
+				{
+					"from": "robot_walk_left_f02",
+					"rgba_changed_pixels": 843,
+					"to": "robot_walk_left_f03"
+				},
+				{
+					"from": "robot_walk_left_f03",
+					"rgba_changed_pixels": 773,
+					"to": "robot_walk_left_f00"
+				},
+				{
+					"from": "robot_walk_right_f00",
+					"rgba_changed_pixels": 846,
+					"to": "robot_walk_right_f01"
+				},
+				{
+					"from": "robot_walk_right_f01",
+					"rgba_changed_pixels": 845,
+					"to": "robot_walk_right_f02"
+				},
+				{
+					"from": "robot_walk_right_f02",
+					"rgba_changed_pixels": 848,
+					"to": "robot_walk_right_f03"
+				},
+				{
+					"from": "robot_walk_right_f03",
+					"rgba_changed_pixels": 794,
+					"to": "robot_walk_right_f00"
+				},
+				{
+					"from": "robot_walk_up_f00",
+					"rgba_changed_pixels": 743,
+					"to": "robot_walk_up_f01"
+				},
+				{
+					"from": "robot_walk_up_f01",
+					"rgba_changed_pixels": 590,
+					"to": "robot_walk_up_f02"
+				},
+				{
+					"from": "robot_walk_up_f02",
+					"rgba_changed_pixels": 735,
+					"to": "robot_walk_up_f03"
+				},
+				{
+					"from": "robot_walk_up_f03",
+					"rgba_changed_pixels": 601,
+					"to": "robot_walk_up_f00"
+				}
+			]
+		},
+		"v002": {
+			"catalog": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/robot/robot_frames_catalog_v002.json",
+			"catalog_sha256": "4294535fb05c1fec456003184aa674c6a639d64eeb8ccb57ee03c8d9b7b14630",
+			"frame_count": 20,
+			"frames": [
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						12,
+						21,
+						40,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1492,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1492,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+					"id": "robot_idle_down",
+					"opaque_pixels": 1492,
+					"rgb_count": 11,
+					"sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						12,
+						21,
+						40,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1483,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1483,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_down_f00_v002.png",
+					"id": "robot_walk_down_f00",
+					"opaque_pixels": 1483,
+					"rgb_count": 11,
+					"sha256": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						12,
+						20,
+						40,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1486,
+							"bbox_xywh": [
+								12,
+								20,
+								40,
+								60
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1486,
+							"bbox_xywh": [
+								12,
+								20,
+								40,
+								60
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_down_f01_v002.png",
+					"id": "robot_walk_down_f01",
+					"opaque_pixels": 1486,
+					"rgb_count": 11,
+					"sha256": "f95d486bc2c11f4bf1364a879b3b091dc0015320092a26a8c0b113bf8b2bc779",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						12,
+						21,
+						40,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1484,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1484,
+							"bbox_xywh": [
+								12,
+								21,
+								40,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_down_f02_v002.png",
+					"id": "robot_walk_down_f02",
+					"opaque_pixels": 1484,
+					"rgb_count": 11,
+					"sha256": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						12,
+						20,
+						40,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1487,
+							"bbox_xywh": [
+								12,
+								20,
+								40,
+								60
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1487,
+							"bbox_xywh": [
+								12,
+								20,
+								40,
+								60
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_down_f03_v002.png",
+					"id": "robot_walk_down_f03",
+					"opaque_pixels": 1487,
+					"rgb_count": 11,
+					"sha256": "aa6507d006d10b81bcf299c4bec1f3b59b3f21bec135ec8283497fcd47106f07",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						18,
+						21,
+						27,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1122,
+							"bbox_xywh": [
+								18,
+								21,
+								27,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1122,
+							"bbox_xywh": [
+								18,
+								21,
+								27,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+					"id": "robot_idle_left",
+					"opaque_pixels": 1122,
+					"rgb_count": 11,
+					"sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						17,
+						21,
+						29,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1086,
+							"bbox_xywh": [
+								17,
+								21,
+								29,
+								59
+							]
+						},
+						{
+							"area": 2,
+							"bbox_xywh": [
+								38,
+								65,
+								2,
+								1
+							],
+							"exact_pixels": [
+								[
+									38,
+									65
+								],
+								[
+									39,
+									65
+								]
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1088,
+							"bbox_xywh": [
+								17,
+								21,
+								29,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_left_f00_v002.png",
+					"id": "robot_walk_left_f00",
+					"opaque_pixels": 1088,
+					"rgb_count": 11,
+					"sha256": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						18,
+						20,
+						27,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1125,
+							"bbox_xywh": [
+								18,
+								20,
+								27,
+								60
+							]
+						},
+						{
+							"area": 2,
+							"bbox_xywh": [
+								40,
+								65,
+								2,
+								1
+							],
+							"exact_pixels": [
+								[
+									40,
+									65
+								],
+								[
+									41,
+									65
+								]
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1127,
+							"bbox_xywh": [
+								18,
+								20,
+								27,
+								60
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_left_f01_v002.png",
+					"id": "robot_walk_left_f01",
+					"opaque_pixels": 1127,
+					"rgb_count": 11,
+					"sha256": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						18,
+						21,
+						26,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1080,
+							"bbox_xywh": [
+								18,
+								21,
+								26,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1080,
+							"bbox_xywh": [
+								18,
+								21,
+								26,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_left_f02_v002.png",
+					"id": "robot_walk_left_f02",
+					"opaque_pixels": 1080,
+					"rgb_count": 11,
+					"sha256": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						18,
+						20,
+						27,
+						58
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1116,
+							"bbox_xywh": [
+								18,
+								20,
+								27,
+								58
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1116,
+							"bbox_xywh": [
+								18,
+								20,
+								27,
+								58
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_left_f03_v002.png",
+					"id": "robot_walk_left_f03",
+					"opaque_pixels": 1116,
+					"rgb_count": 11,
+					"sha256": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 78
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						17,
+						21,
+						29,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1211,
+							"bbox_xywh": [
+								17,
+								21,
+								29,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1211,
+							"bbox_xywh": [
+								17,
+								21,
+								29,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+					"id": "robot_idle_right",
+					"opaque_pixels": 1211,
+					"rgb_count": 10,
+					"sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						18,
+						21,
+						30,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1171,
+							"bbox_xywh": [
+								18,
+								21,
+								30,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1171,
+							"bbox_xywh": [
+								18,
+								21,
+								30,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_right_f00_v002.png",
+					"id": "robot_walk_right_f00",
+					"opaque_pixels": 1171,
+					"rgb_count": 10,
+					"sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						17,
+						20,
+						29,
+						58
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1202,
+							"bbox_xywh": [
+								17,
+								20,
+								29,
+								58
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1202,
+							"bbox_xywh": [
+								17,
+								20,
+								29,
+								58
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_right_f01_v002.png",
+					"id": "robot_walk_right_f01",
+					"opaque_pixels": 1202,
+					"rgb_count": 10,
+					"sha256": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 78
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						16,
+						21,
+						30,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1187,
+							"bbox_xywh": [
+								16,
+								21,
+								30,
+								59
+							]
+						},
+						{
+							"area": 1,
+							"bbox_xywh": [
+								23,
+								66,
+								1,
+								1
+							],
+							"exact_pixels": [
+								[
+									23,
+									66
+								]
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1188,
+							"bbox_xywh": [
+								16,
+								21,
+								30,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_right_f02_v002.png",
+					"id": "robot_walk_right_f02",
+					"opaque_pixels": 1188,
+					"rgb_count": 10,
+					"sha256": "29976d10acaf633868d577e2be6eac8194ffd162965483ff261ae3f63996f311",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						17,
+						20,
+						29,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1219,
+							"bbox_xywh": [
+								17,
+								20,
+								29,
+								60
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1219,
+							"bbox_xywh": [
+								17,
+								20,
+								29,
+								60
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_right_f03_v002.png",
+					"id": "robot_walk_right_f03",
+					"opaque_pixels": 1219,
+					"rgb_count": 10,
+					"sha256": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						13,
+						21,
+						38,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1407,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1407,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+					"id": "robot_idle_up",
+					"opaque_pixels": 1407,
+					"rgb_count": 10,
+					"sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						13,
+						21,
+						38,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1396,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1396,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_up_f00_v002.png",
+					"id": "robot_walk_up_f00",
+					"opaque_pixels": 1396,
+					"rgb_count": 10,
+					"sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						13,
+						20,
+						38,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1400,
+							"bbox_xywh": [
+								13,
+								20,
+								38,
+								60
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1400,
+							"bbox_xywh": [
+								13,
+								20,
+								38,
+								60
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_up_f01_v002.png",
+					"id": "robot_walk_up_f01",
+					"opaque_pixels": 1400,
+					"rgb_count": 10,
+					"sha256": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						13,
+						21,
+						38,
+						59
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1396,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1396,
+							"bbox_xywh": [
+								13,
+								21,
+								38,
+								59
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_up_f02_v002.png",
+					"id": "robot_walk_up_f02",
+					"opaque_pixels": 1396,
+					"rgb_count": 10,
+					"sha256": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				},
+				{
+					"atlas_region_rgba_matches": true,
+					"bbox_xywh": [
+						13,
+						20,
+						38,
+						60
+					],
+					"binary_alpha": true,
+					"catalog_sha_matches": true,
+					"components_4": [
+						{
+							"area": 1400,
+							"bbox_xywh": [
+								13,
+								20,
+								38,
+								60
+							]
+						}
+					],
+					"components_8": [
+						{
+							"area": 1400,
+							"bbox_xywh": [
+								13,
+								20,
+								38,
+								60
+							]
+						}
+					],
+					"edge_occupied": false,
+					"file": "res://assets/ember/characters/robot/robot_walk_up_f03_v002.png",
+					"id": "robot_walk_up_f03",
+					"opaque_pixels": 1400,
+					"rgb_count": 10,
+					"sha256": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+					"size": [
+						64,
+						96
+					],
+					"visible_bottom_boundary": 80
+				}
+			],
+			"walk_transitions": [
+				{
+					"from": "robot_walk_down_f00",
+					"rgba_changed_pixels": 637,
+					"to": "robot_walk_down_f01"
+				},
+				{
+					"from": "robot_walk_down_f01",
+					"rgba_changed_pixels": 788,
+					"to": "robot_walk_down_f02"
+				},
+				{
+					"from": "robot_walk_down_f02",
+					"rgba_changed_pixels": 645,
+					"to": "robot_walk_down_f03"
+				},
+				{
+					"from": "robot_walk_down_f03",
+					"rgba_changed_pixels": 776,
+					"to": "robot_walk_down_f00"
+				},
+				{
+					"from": "robot_walk_left_f00",
+					"rgba_changed_pixels": 819,
+					"to": "robot_walk_left_f01"
+				},
+				{
+					"from": "robot_walk_left_f01",
+					"rgba_changed_pixels": 755,
+					"to": "robot_walk_left_f02"
+				},
+				{
+					"from": "robot_walk_left_f02",
+					"rgba_changed_pixels": 835,
+					"to": "robot_walk_left_f03"
+				},
+				{
+					"from": "robot_walk_left_f03",
+					"rgba_changed_pixels": 783,
+					"to": "robot_walk_left_f00"
+				},
+				{
+					"from": "robot_walk_right_f00",
+					"rgba_changed_pixels": 846,
+					"to": "robot_walk_right_f01"
+				},
+				{
+					"from": "robot_walk_right_f01",
+					"rgba_changed_pixels": 844,
+					"to": "robot_walk_right_f02"
+				},
+				{
+					"from": "robot_walk_right_f02",
+					"rgba_changed_pixels": 847,
+					"to": "robot_walk_right_f03"
+				},
+				{
+					"from": "robot_walk_right_f03",
+					"rgba_changed_pixels": 794,
+					"to": "robot_walk_right_f00"
+				},
+				{
+					"from": "robot_walk_up_f00",
+					"rgba_changed_pixels": 743,
+					"to": "robot_walk_up_f01"
+				},
+				{
+					"from": "robot_walk_up_f01",
+					"rgba_changed_pixels": 590,
+					"to": "robot_walk_up_f02"
+				},
+				{
+					"from": "robot_walk_up_f02",
+					"rgba_changed_pixels": 735,
+					"to": "robot_walk_up_f03"
+				},
+				{
+					"from": "robot_walk_up_f03",
+					"rgba_changed_pixels": 601,
+					"to": "robot_walk_up_f00"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+  "canvas": [
+    96,
+    128
+  ],
+  "anchor": [
+    48,
+    112
+  ],
+  "rect_coordinate_convention": "left/top included; right/bottom excluded",
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/door_open/foundation_body.png",
+      "sha256": "e37340845c8ef234ba11c2413da4a91e29335945ae67496d7cb5e67d1df69394",
+      "z_index": 0,
+      "canvas": [
+        96,
+        128
+      ],
+      "anchor": [
+        48,
+        112
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    },
+    {
+      "name": "foreground_frame",
+      "file": "art-source/ember/batch-03-objects/layers/door_open/foreground_frame.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/door_open/foreground_frame_selection.png",
+      "sha256": "609b61c02bba134b063a7c1e064fd3b5631aaf38dc739ced8de25e0df45d55c1",
+      "z_index": 2,
+      "canvas": [
+        96,
+        128
+      ],
+      "anchor": [
+        48,
+        112
+      ],
+      "purpose": "两态精确共用过梁/立柱，前景遮挡源层",
+      "editable_source": true,
+      "hidden_underpaint_color_index": null
+    }
+  ],
+  "exact_recomposition": true,
+  "type": "editable_same_canvas_RGBA_components_with_explicit_selection_masks"
+}

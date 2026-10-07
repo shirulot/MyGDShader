@@ -1,0 +1,284 @@
+{
+  "revision": "robot_eight_way_v011",
+  "status": "PHASE_B1_RC02_READY_FOR_TA",
+  "authorization": {
+    "source_thread": "01a11049-fdfd-7f12-b83d-6c3a2c506501",
+    "verified_human_message_id": "01a11142-e0e5-74e3-9dc0-876ac05ad8df",
+    "request": "After validation, complete existing animation frames and expand missing eight-way directions",
+    "model_dispatch_verified": {
+      "model": "gpt-6-astra",
+      "thinking": "max"
+    }
+  },
+  "canvas": [
+    64,
+    96
+  ],
+  "root_anchor": [
+    32,
+    80
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "final_actions": {
+    "idle": {
+      "frames_per_direction": 2,
+      "fps": 2,
+      "loop": true
+    },
+    "walk": {
+      "frames_per_direction": 8,
+      "fps": 8,
+      "loop": true
+    },
+    "collect": {
+      "frames_per_direction": 4,
+      "fps": 6,
+      "loop": false
+    }
+  },
+  "target_clips": 24,
+  "target_frames": 112,
+  "phases": [
+    {
+      "id": "A",
+      "scope": "eight stable direction masters and down_left walk 8-frame pilot",
+      "status": "PASS_FIXED_RC02"
+    },
+    {
+      "id": "B",
+      "scope": "remaining walk directions after pilot TA acceptance",
+      "status": "FOUR_NEW_WALK_DIRECTIONS_PENDING_TA"
+    },
+    {
+      "id": "C",
+      "scope": "controlled idle micro-motion and collect pilot then all eight directions",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "D",
+      "scope": "integrated eight-direction Godot preview, frozen delivery and independent review",
+      "status": "NOT_STARTED"
+    }
+  ],
+  "protected_baseline": {
+    "revision": "robot-joint-repair-v010",
+    "direction": "down",
+    "action": "walk",
+    "frames": 8,
+    "frame_set_sha256": "3ee1b794757491fc96745a1441507d2f85f445f41714feedc0060403268d2b99",
+    "atlas_sha256": "80c26370261cf0c4a803a140c005a55a6aa883589ae2b178774323913870ca63",
+    "zip_sha256": "97eac4dd8914da78da5543ee0b2641c2045b5e7eb4cfc5452560d74b4f605241"
+  },
+  "joint_rules": [
+    "thick continuous support",
+    "overlapping armor and inner structures",
+    "no dark full-width cut-through",
+    "left-wrist tool chirality",
+    "same rigid parts throughout each action"
+  ],
+  "generation": [
+    {
+      "scope": "eight direction neutral mother poses",
+      "method": "imagegen_edit",
+      "source": "source/eight_direction_idle_master_raw_v011.png",
+      "sha256": "991a34fc51a1fd8eeaca4ea431842acff8d0d6e19054303c4f26093abdbc82df",
+      "prompt": "prompts/eight_direction_idle_master_v011.txt",
+      "references": [
+        "source/approved_walk_down_v010_4x.png",
+        "source/original_four_direction_identity_4x.png",
+        "../robot-structure-v005/robot_three_views_annotated_v005.png"
+      ],
+      "processed_output_note": "common grid conversion and original palette; raw output is not natively 64x96",
+      "used_directions": [
+        "down_left",
+        "left",
+        "up_left",
+        "up",
+        "up_right",
+        "right",
+        "down_right"
+      ]
+    },
+    {
+      "scope": "down idle joint edit attempt",
+      "method": "imagegen_edit",
+      "source": "source/idle_down_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_down_joint_edit_v011.txt",
+      "status": "REJECTED_NOT_USED",
+      "reason": "generated limb placement cannot be composited into the original idle without structural regression"
+    },
+    {
+      "scope": "down_left walk pose guide",
+      "method": "imagegen_edit",
+      "source": "source/walk_down_left_pose_guide_raw_v011.png",
+      "prompt": "prompts/walk_down_left_pose_guide_v011.txt",
+      "sha256": "515ded6e67865eb1972b3560414c0fac5cc84b072d05ff2c9d95e70f08a15e15",
+      "usage": "REFERENCE_ONLY_NOT_ANIMATION_SOURCE"
+    },
+    {
+      "scope": "down_left local joint repair",
+      "method": "imagegen_edit",
+      "source": "source/walk_down_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/walk_down_left_joint_edit_v011.txt",
+      "sha256": "60ce1c45df11cfe7c45dc9ba877124471d9d1e1a062ccc0853e769c01034dc6b",
+      "usage": "JOINT_LOCAL_PATCH_ON_FIXED_RIG"
+    },
+    {
+      "scope": "B1 rc01 up_left local joints",
+      "method": "imagegen_edit",
+      "source": "source/walk_up_left_joint_edit_raw_v011.png",
+      "sha256": "6c666d37724c1e623a6b43a4853ef41bfe933363c8a2ffb957d6902c06017efa",
+      "prompt": "prompts/walk_up_left_joint_edit_v011.txt",
+      "usage": "CURRENT_JOINT_PATCH"
+    },
+    {
+      "scope": "B1 rc01 up local joints",
+      "method": "imagegen_edit",
+      "source": "source/walk_up_joint_edit_raw_v011.png",
+      "sha256": "a4d611cc63c96b93505553d9b56b1ba78212d0ccb9b2672da9907ba24bd2cb69",
+      "prompt": "prompts/walk_up_joint_edit_v011.txt",
+      "usage": "HISTORICAL_RC01_PATCH"
+    },
+    {
+      "scope": "B1 rc01 up_right local joints",
+      "method": "imagegen_edit",
+      "source": "source/walk_up_right_joint_edit_raw_v011.png",
+      "sha256": "3d2c647d2996a9080fa732c48c903ec3dcaa4bfc7b1f9761363130f071722ae4",
+      "prompt": "prompts/walk_up_right_joint_edit_v011.txt",
+      "usage": "HISTORICAL_RC01_PATCH"
+    },
+    {
+      "scope": "B1 rc01 down_right local joints",
+      "method": "imagegen_edit",
+      "source": "source/walk_down_right_joint_edit_raw_v011.png",
+      "sha256": "8017c52d9643c6fdbe7d58a7f61798f39e4aa18a84b8a46628866f4056047e86",
+      "prompt": "prompts/walk_down_right_joint_edit_v011.txt",
+      "usage": "HISTORICAL_RC01_PATCH"
+    },
+    {
+      "scope": "B1 rc02 up shoulder and elbow",
+      "method": "imagegen_edit",
+      "source": "source/walk_up_joint_edit_b1_rc02.png",
+      "sha256": "dae3b4b62ca3719d99cce20c6b7ff2c02020387aa7975bd62f0ce473c27a406f",
+      "prompt": "prompts/walk_up_joint_edit_b1_rc02.txt",
+      "actual_input": "source/arm_edit_inputs_b1_rc02/up.png",
+      "input_sha256": "838180489970452d0aac3018160f72f5603f4a6ed888cd0e94e1f98330b50051",
+      "usage": "ARM_SCOPE_PATCH_ON_CORRECTED_FIXED_RIG",
+      "note": "Fixed canvas; no per-frame registration."
+    },
+    {
+      "scope": "B1 rc02 up_right shoulder and elbow",
+      "method": "imagegen_edit",
+      "source": "source/walk_up_right_joint_edit_b1_rc02.png",
+      "sha256": "67dcf56625b50ffad12b3d2faf9857bbf24f1f9f655e1e30244dd2bb80e84186",
+      "prompt": "prompts/walk_up_right_joint_edit_b1_rc02.txt",
+      "actual_input": "source/arm_edit_inputs_b1_rc02/up_right.png",
+      "input_sha256": "6013af91f16bdb8f01d09344720ba5e2be21a96daa1abb959780c8db34b3976e",
+      "usage": "ARM_SCOPE_PATCH_ON_CORRECTED_FIXED_RIG",
+      "note": "Input predates the one-pixel ownership repair; exact input preserved separately."
+    },
+    {
+      "scope": "B1 rc02 down_right shoulder and elbow",
+      "method": "imagegen_edit",
+      "source": "source/walk_down_right_joint_edit_b1_rc02.png",
+      "sha256": "eba7d365023227a606a041af7a902a03c39b9e0b26ae0c6e2061f07c3236929a",
+      "prompt": "prompts/walk_down_right_joint_edit_b1_rc02.txt",
+      "actual_input": "source/arm_edit_inputs_b1_rc02/down_right.png",
+      "input_sha256": "74e5592b7926bb2b7f9927f6b0bc6cbf6191352b161bcad004796ecb2f4e6cc0",
+      "usage": "ARM_SCOPE_PATCH_ON_CORRECTED_FIXED_RIG",
+      "note": "Fixed canvas; no per-frame registration."
+    }
+  ],
+  "new_directions_art_acceptance": "MOTION_PENDING_TA",
+  "production_assets_modified": false,
+  "down_idle_source": {
+    "file": "frames/walk/down/robot_walk_down_f02_v010.png",
+    "sha256": "31aef53af6a5552d9adae69f5afefab25ee35cc30059bf285dffc375f374dc79",
+    "method": "exact frozen frame reuse",
+    "status": "IDENTITY_REFERENCE_ONLY_NOT_IDLE_ACCEPTANCE",
+    "note": "This reuse preserves approved identity, but does not automatically approve idle support or later micro-motion."
+  },
+  "current_review_metadata": "walk-batch-metadata.json",
+  "frozen_review": "review/phase-b1-rc02",
+  "current_candidate_revision": "phase-b1-rc02",
+  "review_history": [
+    {
+      "revision": "phase-a-rc01",
+      "scope": "phase A",
+      "decision": "NEEDS_REVISION",
+      "static_identity": "seven new directions STATIC_IDENTITY_PASS; S is the approved v010 F02 identity reference only",
+      "walk_down": "original v010 PASS retained",
+      "walk_down_left": "P2 far anatomical right thigh armor changed shape under similar poses",
+      "review": "qa/ta-receipt-phase-a-rc01.md",
+      "review_sha256": "4b2adc4c00fdc7a7d29a997873cd30e8570aae99bf93fb54258dd1e2f4e1e6c6"
+    },
+    {
+      "revision": "phase-b1-rc01",
+      "decision": "NEEDS_REVISION",
+      "issue": "P2 NE/SE same-side arm and leg phase",
+      "review": "qa/ta-receipt-phase-b1-rc01.md",
+      "review_sha256": "4046ec1488ae5f9f5ff7a8fd1474230875cc35fa952754d9a5e8dc856d486445"
+    }
+  ],
+  "current_revision_fix": {
+    "revision": "phase-b1-rc02",
+    "reference_revision": "phase-b1-rc01",
+    "scope": "N/NE/SE arm phase, shoulder/elbow connections and local occlusion",
+    "source_ownership_exception": {
+      "direction": "up_right",
+      "source_xy": [
+        22,
+        59
+      ],
+      "from": "body",
+      "to": "arm_left_lower",
+      "rgba_preserved": true
+    },
+    "unchanged": [
+      "24 S/SW/NW walk frames byte-for-byte",
+      "eight identity masters byte-for-byte",
+      "body and leg/boot transforms",
+      "fixed source artwork except one pixel ownership transfer"
+    ],
+    "evidence": "qa/arm_phase_revision_evidence.json",
+    "art_acceptance": "PENDING_TA_RECHECK"
+  },
+  "new_directions_static_identity": "STATIC_IDENTITY_PASS",
+  "static_identity_receipt": "source/static-identity-acceptance-v011.json",
+  "phase_a_acceptance": {
+    "review": "qa/ta-receipt-phase-a-rc02.md",
+    "zip_sha256": "df9884f9668dc89b8c74cf746dbd975a87e9a5b566b6783b5582cb2c78b4d521",
+    "scope": "seven static identities, S retained, SW walk 8 frames",
+    "not_accepted": [
+      "final idle",
+      "collect",
+      "remaining walks",
+      "main game integration"
+    ]
+  },
+  "phase_b": {
+    "walk_directions": [
+      "down",
+      "down_left",
+      "up_left",
+      "up",
+      "up_right",
+      "down_right"
+    ],
+    "new_direction_frames": 32,
+    "source_rig": "build_remaining_walk_v011.cjs",
+    "local_compositor": "composite_remaining_joints_v011.cjs",
+    "side_hidden_source": "source/side_hidden_parts_raw_v011.png",
+    "side_hidden_source_usage": "PREPARATION_ONLY_NOT_IN_CURRENT_FRAMES",
+    "motion_art_acceptance": "PENDING_TA"
+  }
+}

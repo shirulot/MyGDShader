@@ -1,0 +1,74 @@
+{
+  "scope": "normative style/interaction document and resolved runtime dependencies; source art unchanged",
+  "checks": 94,
+  "passed": 94,
+  "approved_art_archive": "22dc4017aef594f33350e71b0af723909fbd1c4fde1a88208c9a66e34c9e2a32",
+  "runtime_ta_status": "PASS",
+  "cleanup_status": "ARCHIVED_PENDING_DELETE",
+  "files": [
+    {
+      "path": "scripts/ember/building_asset.gd",
+      "sha256": "31d48dadfe84825670cd1546cb20175bf7f15ef46a07b3ba51c7b3a57071b3f3",
+      "bytes": 14060
+    },
+    {
+      "path": "scripts/ember/building_demo.gd",
+      "sha256": "00e4a9fd2fc974061eacec1beac3c49de91459eb68b35fcd3872c930911b8e68",
+      "bytes": 8438
+    },
+    {
+      "path": "scripts/ember/building_demo_actor.gd",
+      "sha256": "dcc2adc73cb41d846be216f5715307d3c4be7f302e45a108b49eb34c24ce3077",
+      "bytes": 1549
+    },
+    {
+      "path": "shaders/ember/building_intact.gdshader",
+      "sha256": "2f47d83b1da8ed8baf5cd72c5bc242ad7a629114ac8f86b48bced4e3cc8f1dc5",
+      "bytes": 3035
+    },
+    {
+      "path": "tools/sync_building_demo.ps1",
+      "sha256": "2711c4d8a1f634e65c0ede1d915a72449b1bfeb2055a82d0c00db71dae06a7cd",
+      "bytes": 4359
+    },
+    {
+      "path": "docs/shader-learning/ember-building-standard-v002.md",
+      "sha256": "ac27621a08fc9ac568188ad66ff99613d520a1ed8bdfe9e4329bffe40ddde9c8",
+      "bytes": 21030
+    }
+  ],
+  "cleanup": {
+    "status": "ARCHIVED_PENDING_DELETE",
+    "archived_files": 9628,
+    "archived_bytes": 2005614066,
+    "deleted_files": 0,
+    "deleted_bytes": 0
+  },
+  "latest_validation": "verification/validation.json",
+  "snapshot": "verification/review-snapshot.json",
+  "spec_ta_status": "PASS",
+  "ta_review": {
+    "path": "art-source/ember/buildings-final/ta-review.md",
+    "sha256": "63192fe924c675c21e635ccc1d8bb55b1ee41302437f335daa3ac66cda359477",
+    "scope": "building style/interaction specification and final runtime integration; original artwork approval scope retained",
+    "independent_targeted_checks": {
+      "passed": 23,
+      "total": 23
+    },
+    "independent_opengl_checks": {
+      "passed": 23,
+      "total": 23,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    "author_full_suite": {
+      "passed": 94,
+      "total": 94,
+      "independently_rerun_by_ta": false
+    },
+    "archival_verification": "137 mappings, file counts and byte totals; not a full hash audit of all retired payload",
+    "cleanup_status": "ARCHIVED_PENDING_DELETE",
+    "deleted_files": 0,
+    "released_bytes": 0
+  }
+}

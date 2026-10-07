@@ -1,0 +1,145 @@
+{
+  "revision": "robot_fixed_rig_v009",
+  "stage": "FROZEN_CANDIDATE_PENDING_TA",
+  "scope": {
+    "direction": "down",
+    "action": "walk",
+    "frames": 8,
+    "fps": 8,
+    "canvas": [
+      64,
+      96
+    ],
+    "root_anchor": [
+      32,
+      80
+    ],
+    "projection": "screen=(X,Y+0.65Z)",
+    "loop": true
+  },
+  "change": "Independent rigid foot pivot/pitch and restrained lift/body bob; fixed source parts and camera",
+  "fixed_parts_count": 23,
+  "source_parts_unchanged_from_v008": true,
+  "canonical_bind_unchanged_from_v008": true,
+  "frozen_frames": [
+    {
+      "frame": 0,
+      "phase": "left_contact",
+      "file": "res://art-source/ember/robot-fixed-rig-v009/frames/robot_walk_down_f00_v009.png",
+      "sha256": "bef9ce2e757ee2a47f09b6ff343bf72cf2824cc8b18600551be8ab3a01ad985a"
+    },
+    {
+      "frame": 1,
+      "phase": "left_down",
+      "file": "res://art-source/ember/robot-fixed-rig-v009/frames/robot_walk_down_f01_v009.png",
+      "sha256": "4ab438f0c64d807b78d5971cbf799df698c6aff8efbc655d7cced9d8e070cfd5"
+    },
+    {
+      "frame": 2,
+      "phase": "right_passing",
+      "file": "res://art-source/ember/robot-fixed-rig-v009/frames/robot_walk_down_f02_v009.png",
+      "sha256": "12e8f8537f2496534bc35cd55385c89d2950fa8d45b8039aff239f2dc975a693"
+    },
+    {
+      "frame": 3,
+      "phase": "right_up",
+      "file": "res://art-source/ember/robot-fixed-rig-v009/frames/robot_walk_down_f03_v009.png",
+      "sha256": "aecc2e7bc67d2d639cf411fcbcac8c4309aa1fb6fa9e64b44864d97deaa13298"
+    },
+    {
+      "frame": 4,
+      "phase": "right_contact",
+      "file": "res://art-source/ember/robot-fixed-rig-v009/frames/robot_walk_down_f04_v009.png",
+      "sha256": "4dc2e0b120e4ff10840b8483fa09ef680a8f6b094e2a7c14851b85ef467f6848"
+    },
+    {
+      "frame": 5,
+      "phase": "right_down",
+      "file": "res://art-source/ember/robot-fixed-rig-v009/frames/robot_walk_down_f05_v009.png",
+      "sha256": "5ee4fcd4c9ec4c370823bfa78ee22e4ba9e213fe932890776cbcf1eaabab3903"
+    },
+    {
+      "frame": 6,
+      "phase": "left_passing",
+      "file": "res://art-source/ember/robot-fixed-rig-v009/frames/robot_walk_down_f06_v009.png",
+      "sha256": "4d98618c1cd700f9475f6bb6b6230456e8a224c838b3e86eb693d28b7452f913"
+    },
+    {
+      "frame": 7,
+      "phase": "left_up",
+      "file": "res://art-source/ember/robot-fixed-rig-v009/frames/robot_walk_down_f07_v009.png",
+      "sha256": "e92937d068e321a4cda9d3a4e7655a8f8415a7b8a422454a559ad8c9a2a68454"
+    }
+  ],
+  "technical_render": "PASS",
+  "technical_playback": "PASS",
+  "natural_playback_loops": 2,
+  "encoding": "ENCODING_PASS",
+  "producer_visual_review": "REVIEWED_LOCAL_FOOT_REVISION_CANDIDATE",
+  "ta_art_review": "PENDING",
+  "production_accepted": false,
+  "production_assets_modified": false,
+  "preserved_v008_zip": {
+    "file": "art-source/ember/deliveries/robot_fixed_rig_v008_walk_down_candidate_2026-10-06.zip",
+    "expected": "ac74a58d6ac1751556751046571d5d983a9dcc4f9f85a146b4494706b055ff1b",
+    "actual": "ac74a58d6ac1751556751046571d5d983a9dcc4f9f85a146b4494706b055ff1b"
+  },
+  "minimum_shin_projection_before": 0.22568345998145378,
+  "minimum_shin_projection_after": 0.5209615158155151,
+  "limitations": [
+    "Small-angle planar 2.5D boot projection, not a full volumetric shoe",
+    "Foot ground markers are rig-space evidence; gameplay contact/root-speed integration not covered"
+  ],
+  "evidence": [
+    {
+      "file": "source/robot_idle_down_canonical_original.png",
+      "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+    },
+    {
+      "file": "source/rig_down_v009.json",
+      "sha256": "2a08e84f86bd3611afad19b1573ff12a844615e2d987aa8053c5a1e3cbb343f3"
+    },
+    {
+      "file": "source/foot_motion_v009.json",
+      "sha256": "fd05b35d796f1fbeef78619f76ce6ef1b2c859c8b3f4aba3b9e024e508d9845e"
+    },
+    {
+      "file": "robot_walk_down_atlas_v009.png",
+      "sha256": "50669508acd565455c8b0834a4f90c1d93ec5a1ff2a2721da3e4f5ca1d9c51e3"
+    },
+    {
+      "file": "godot-review/render_fixed_rig_v009.gd",
+      "sha256": "7edc055d273d4b309dadfa9b390182aa88019e34ec1ee9d8f126f24db77e0ec6"
+    },
+    {
+      "file": "godot-review/assets/robot_walk_down_atlas_v009.png.import",
+      "sha256": "55ece5f228a76177ef8b03ec4b85cb7f8bfc53513573f3437cbfba13cc3ea5cf"
+    },
+    {
+      "file": "fixed_rig_render_v009.json",
+      "sha256": "f93d65ee0871453e835582d45608897ea944843d40077cfa08e6ae038447ada7"
+    },
+    {
+      "file": "fixed_rig_playback_v009.json",
+      "sha256": "e66b34be2695a343ef8e01b3c683e5cf4060b2cb93c01c09886b243fb081b9b0"
+    },
+    {
+      "file": "qa/export_validation_v009.json",
+      "sha256": "226b4cb4129e4e02369f17f4f62915f5008b5c30baf7aca95bead9791c462564"
+    },
+    {
+      "file": "qa/foot_motion_comparison_v009.json",
+      "sha256": "2154788c0d00a0d2efeed85c33f8da80ed5101f73c610c22d3f3099e5fd93eb5"
+    },
+    {
+      "file": "qa/producer_visual_review_v009.md",
+      "sha256": "9864386188be1406150ce4cd793c5811d090d88bd011b6cbc6080244e3d0f921"
+    },
+    {
+      "file": "qa/production_protection_v009.json",
+      "sha256": "cf5ee3fb2b334765e639fe6d6ed8841ca056ea49a19e988e8a126b03cff29223"
+    }
+  ],
+  "delivery_zip": "art-source/ember/deliveries/robot_fixed_rig_v009_foot_revision_candidate_2026-10-06.zip",
+  "cold_unpack_evidence": "External sidecar in deliveries binds the ZIP SHA; .import is mandatory package content"
+}

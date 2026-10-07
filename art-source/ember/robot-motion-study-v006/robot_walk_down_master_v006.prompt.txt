@@ -1,0 +1,31 @@
+Generate ONE coherent 8-frame WALK CYCLE SPRITESHEET of the existing Ember utility robot, following the redesigned structure in the two reference images.
+Reference 1 is the canonical ASSEMBLED robot identity, proportions and materials (front view on its left); reference 2 defines continuous inner frame, full pelvis crossbar, nested shoulder/elbow/knee joints, and armor overlap. Ignore all text, guide lines, pivot dots, arrows and detached armor in the references. Every animation frame must show the FULLY ASSEMBLED SAME ROBOT.
+
+Output: true TRANSPARENT background, no checkerboard baked into the image, no scenery, ground shadows, labels, numbers, text, borders, arrows, grids or decorative material. Exactly EIGHT full-body robot frames in a regular FOUR-COLUMN by TWO-ROW invisible fixed-cell grid. Row-major chronological order: top row frames 0,1,2,3; bottom row frames 4,5,6,7. Each cell is the SAME size and has equal outer margins. No extra figures and no ninth frame. Prefer canvas 1536×1152, logically each frame 64×96 enlarged 6× for presentation (384×576 per cell). If raster size differs, keep the same equal 4×2 cell geometry and aspect. Do not crowd or touch adjacent cells.
+
+Camera: always FRONT-facing/down/south toward viewer, same subtle game-sprite overhead angle as the original. No turning to profile, no changing camera or perspective between frames. Consistent compact proportions: round broad helmet, large dark visor, short stout torso and limbs, sturdy boots. Maintain identical helmet outline, head size, chest size, limb lengths, armor thickness and tool size throughout the cycle. Frame-to-frame head/body bob is subtle (about 1–2 logical pixels), not large jumping or scaling.
+
+Art: true clear pixel-art planes authored for the project's logical 64×96 cell and approximately 40×64 subject budget. Crisp stepped edges; small stable flat palette of aged cream armor, blue-gray structural steel and restrained brass. Keep close to these existing material colors: #101820, #182631, #2B3E4B, #4D6470, #829BA3, #BECBC4, #566B78, #ECE9D8, #7B4D35, #B77C4B, #E2B77A. No smooth photorealistic metal, fine texture noise, gradients, blur, glows, bright energy colors, white diagram buttons, extra guns or backpacks.
+
+MANDATORY NEW JOINT RULES, visible in EVERY frame:
+- Chest frame -> waist coupling -> FULL-WIDTH pelvis beam -> two seated hip sockets form one continuous supporting body.
+- Shoulder axles stay seated inside chest roots under shoulder armor. Upper arms bend/swing about fixed shoulder pivots.
+- Elbows, hips, knees and ankles retain compact SOLID MEDIUM-VALUE BLUE-GRAY volume, readable against a dark game background. At the logical resolution, use a substantial approximately 3–4 pixel bearing/cuff thickness where visible, not a 1-pixel rod.
+- Upper/lower limb armor overlaps the joint sleeves at both ends. Bent elbows/knees rotate about the actual joint center, with correct armor clearance and changing occlusion; do not slide isolated flat parts apart and connect them with a long thin dark bar.
+- Deep color is only limited local shadow/outer outline. Do not draw black bands or transparent gaps across the full limb width, or outline each armor plate as a disconnected closed island. Keep genuine negative space between legs and under armpits.
+- Exactly ONE small brass tool remains mounted to the ANATOMICAL LEFT WRIST in all frames: viewer RIGHT in this front-facing sheet. It moves with that wrist and stays attached. Right hand has no tool. The second half of the walk MUST be newly posed, not a mirrored copy that swaps the tool.
+
+WALK PHASES, anatomical left is viewer RIGHT:
+0: left foot contacts forward, right foot pushes off behind; right arm forward, left tool arm back.
+1: left leg bears weight and flexes slightly, right foot leaves ground; torso lowers subtly.
+2: left leg supports, right knee bends and right foot passes forward near body midline; pelvis remains stable.
+3: left leg extends as support, right foot swings forward preparing contact; torso rises subtly.
+4: right foot contacts forward, left foot pushes off behind; left tool arm forward, right arm back.
+5: right leg bears weight and flexes slightly, left foot leaves ground; torso lowers subtly.
+6: right leg supports, left knee bends and left foot passes forward near body midline.
+7: right leg extends as support, left foot swings forward toward the contact pose of frame 0.
+Use a full left-right walking cycle with mild opposing arm swing; no standing clones, floating jump, dance or idle sequence.
+
+Registration: each cell has the same virtual foot anchor at logical (32,80). At least one clearly weight-bearing sole contacts the SAME local ground height in every frame; the swinging foot may lift. Preserve one fixed cell origin, no per-cell camera centering changes. Leave clean transparent safety margins around the entire figure. End-to-start pose transition must be smooth.
+
+Highest priorities: continuous load-bearing form and visible joint thickness; stable SAME robot identity; correct alternating support and left-wrist tool; then readable pixel art and fixed-grid layout. This is a first one-direction motion study intended to be cut into individual frames and looped, not an annotated concept board.

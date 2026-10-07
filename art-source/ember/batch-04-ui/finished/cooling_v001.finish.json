@@ -1,0 +1,66 @@
+{
+  "id": "cooling",
+  "method": "AI_BODY_MATERIAL_SAMPLING_NATIVE_SEMANTIC_PIXEL_FINISH",
+  "source_use": {
+    "mother": "art-source/ember/batch-04-ui/generated/cooling_master_v001.png",
+    "mother_sha256": "1ef5c4e10fb284f94ba9376f8bd8e597d3b1fb67cfad916083176993279f776a",
+    "source_unchanged": true,
+    "direct_original_rgba_byte_reuse": false,
+    "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+    "sampling": {
+      "source_alpha_threshold": 128,
+      "source_body_bbox": [
+        159,
+        250,
+        1095,
+        1044
+      ],
+      "material_grid_size": [
+        24,
+        20
+      ],
+      "material_grid_origin": [
+        4,
+        6
+      ],
+      "native_semantic_changed_pixels": 110
+    }
+  },
+  "adjustments": [
+    "保留三组换热鳍片，避免与风扇相同轮廓",
+    "中央重建6枝中性雪花与13×13暗底牌，细枝均1px而非运行光效"
+  ],
+  "native_pixel_source": "art-source/ember/batch-04-ui/annotations/cooling_native_pixel_source_v001.json",
+  "measurement": {
+    "canvas": [
+      32,
+      32
+    ],
+    "bbox": [
+      4,
+      6,
+      28,
+      26
+    ],
+    "opaque_pixels": 408,
+    "transparent_pixels": 616,
+    "partial_alpha_pixels": 0,
+    "color_count": 12,
+    "palette_rgb": [
+      "#101820",
+      "#182631",
+      "#203A4B",
+      "#2B3E4B",
+      "#4D6470",
+      "#566B78",
+      "#7B4D35",
+      "#829BA3",
+      "#B77C4B",
+      "#BECBC4",
+      "#E2B77A",
+      "#ECE9D8"
+    ],
+    "all_opaque_colors_in_standard16": true
+  },
+  "output_sha256": "0e037939288b99d4fa1f510347e18d4d53474508383a7f0d8998d2d520099585"
+}

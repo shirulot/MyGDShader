@@ -1,0 +1,39 @@
+{
+  "revision": "phase-c1-rc01",
+  "atlas_sha256": "9262c6eac7fb6885d529ba6a39d3ecab01305aa1d9d7f2101ba84906e5211be7",
+  "producer_review": "READY_FOR_INDEPENDENT_REVIEW",
+  "independent_art_acceptance": "PENDING_TA",
+  "scope": "down_left idle2 and collect4 only",
+  "viewed_contact_sheets": [
+    "previews/idle_down_left_light_4x_v011.png",
+    "previews/collect_down_left_light_4x_v011.png"
+  ],
+  "observations": [
+    "Identity armor, blue-gray core and anatomical left wrist brass tool match the accepted SW master.",
+    "Idle F00/F01 retain the same pelvis, knees and boots; the upper body moves one pixel with connected waist.",
+    "Collect F01/F02 lower the same torso and bend the same leg parts; boots remain fixed and knees stay visibly connected.",
+    "The crouch silhouette is deliberately compact. Independent review must judge its action readability and the overlap at the far knee.",
+    "F01/F02 use identical body, leg, boot and far-arm seam pixels wherever their transforms are identical.",
+    "F03 recovery is the exact idle F00, avoiding a pose change at the completion boundary.",
+    "No detached alpha islands or glowing fringe in final sheets; rejected and raw generation backgrounds are not final art."
+  ],
+  "browser_checks": [
+    "Idle normal/light and slow/dark; F00 and F01 inspected.",
+    "Collect normal/light stopped at F03 with return disabled.",
+    "Collect slow/dark F01 and F02 inspected using step controls.",
+    "Collect replay with return enabled was observed to switch the action selector back to idle.",
+    "Browser captures are discrete states, not a recording of continuous animation; one full-page screenshot attempt failed and was retried later."
+  ],
+  "browser_evidence": [
+    "qa/browser/phase_c1_rc01_idle_normal_light.png",
+    "qa/browser/phase_c1_rc01_idle_f00_dark.png",
+    "qa/browser/phase_c1_rc01_idle_f01_dark.png",
+    "qa/browser/phase_c1_rc01_collect_f01_dark.png",
+    "qa/browser/phase_c1_rc01_collect_f02_dark.png",
+    "qa/browser/phase_c1_rc01_collect_return_idle_dark.png",
+    "qa/browser/phase_c1_rc01_preview.png"
+  ],
+  "engine_playback_evidence": "qa/godot_action_pilot_v011.json",
+  "preserved_approved_scope": "64 walk frames and 8 identity masters byte-for-byte",
+  "unreviewed_scope": "Other seven directions idle/collect, full 112-frame integration and main project integration"
+}

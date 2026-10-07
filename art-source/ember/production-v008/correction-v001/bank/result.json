@@ -1,0 +1,687 @@
+{
+  "status": "LIMITED_TWO_CALLS_COMPLETE_NOT_FULL_TILESET",
+  "straight": {
+    "id": "bank_straight_N_pixel_registered_v002",
+    "family": "bank",
+    "mask": 124,
+    "registration_source_id": "bank_straight_N_pixel_v001",
+    "new_generation": false,
+    "tool": "image_gen.imagegen built-in original; mechanical registration only",
+    "call_number": 1,
+    "tool_original_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10c06-70f1-7100-bf8d-c2032eb22807\\exec-c8ee78e4-3a42-4834-8b2b-3188058bc04e.png",
+    "tool_original_sha256": "147c6b93d999fffc342cbf9803bca0f35ca7a12dbd1386369e0313d0321e4aff",
+    "raw_path": "art-source/ember/production-v008/correction-v001/bank/raw/bank_straight_N_pixel_v001.png",
+    "raw_sha256": "147c6b93d999fffc342cbf9803bca0f35ca7a12dbd1386369e0313d0321e4aff",
+    "raw_measurements": {
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_unique_value_count": 207,
+      "alpha_zero_pixel_count": 1174001,
+      "alpha_bbox_gt0": [
+        0,
+        0,
+        1254,
+        1212
+      ],
+      "alpha_bbox_gt4": [
+        0,
+        178,
+        1254,
+        487
+      ],
+      "alpha_bbox_gt127": [
+        0,
+        179,
+        1254,
+        486
+      ],
+      "body_ports_alpha_gt127": {
+        "N": [],
+        "E": [
+          [
+            183,
+            485
+          ]
+        ],
+        "S": [],
+        "W": [
+          [
+            183,
+            485
+          ]
+        ]
+      },
+      "body_edge_counts_alpha_gt127": {
+        "N": 0,
+        "E": 302,
+        "S": 0,
+        "W": 302
+      }
+    },
+    "candidate_path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_straight_N_pixel_registered_v002_128.png",
+    "candidate_sha256": "ebcff7cfb05107818b9eb227ea8a2e9fb4914e8653cca05e6451a2c6a802b630",
+    "candidate_measurements": {
+      "size": [
+        128,
+        128
+      ],
+      "alpha_unique_value_count": 32,
+      "alpha_zero_pixel_count": 12064,
+      "alpha_bbox_gt0": [
+        0,
+        0,
+        128,
+        48
+      ],
+      "alpha_bbox_gt4": [
+        0,
+        0,
+        128,
+        33
+      ],
+      "alpha_bbox_gt127": [
+        0,
+        0,
+        128,
+        33
+      ],
+      "body_ports_alpha_gt127": {
+        "N": [
+          [
+            0,
+            23
+          ],
+          [
+            25,
+            63
+          ],
+          [
+            64,
+            103
+          ],
+          [
+            105,
+            128
+          ]
+        ],
+        "E": [
+          [
+            0,
+            33
+          ]
+        ],
+        "S": [],
+        "W": [
+          [
+            0,
+            33
+          ]
+        ]
+      },
+      "body_edge_counts_alpha_gt127": {
+        "N": 123,
+        "E": 33,
+        "S": 0,
+        "W": 33
+      }
+    },
+    "body_components8": [
+      4219
+    ],
+    "crop_xyxy": [
+      20,
+      176,
+      1234,
+      1390
+    ],
+    "crop_coordinate_convention": "XYXY half-open",
+    "whole_component_offset_native_pixels": [
+      -20,
+      -176
+    ],
+    "registered_canvas_size": [
+      1214,
+      1214
+    ],
+    "uniform_scale_factor": 0.10543657331136738,
+    "out_of_source_padding_LTRB": [
+      0,
+      0,
+      0,
+      136
+    ],
+    "resampling": "PIL.Image.Resampling.NEAREST",
+    "no_local_art_or_alpha_repair": true,
+    "bank_connection_sides": [
+      "E",
+      "W"
+    ],
+    "water_neighbor_sides": [
+      "E",
+      "S",
+      "W"
+    ],
+    "status": "DIAGNOSTIC_CANDIDATE_PORTS_WITHIN_1PX_GPU_AND_VISUAL_PENDING",
+    "geometry_result": "E/W主体均[0,33)，比目标[0,32)多1px；处在首轮容差内，未达到严格32px。",
+    "material_result": "整块裁去原稿两端20px后明显端封边消失，RGBA差异减小；长段视觉仍待根代理GPU审核。",
+    "exact_32px_target_result": false,
+    "geometry_1px_screening_result": true,
+    "production_ready": false,
+    "user_visual_approval": false,
+    "GPU_result": "PENDING_ROOT_UNIFIED_REVIEW"
+  },
+  "straight_v001_preserved": {
+    "id": "bank_straight_N_pixel_v001",
+    "mask": 124,
+    "tool_output": "exec-c8ee78e4-3a42-4834-8b2b-3188058bc04e.png",
+    "crop_xyxy": [
+      0,
+      176,
+      1254,
+      1430
+    ],
+    "status": "DIAGNOSTIC_ONLY_PORTS_PASS_REPEAT_INTERFACE_REJECTED",
+    "geometry_result": "E/W 主体均为 [0,32)，达到本轮位置和总岸宽目标。",
+    "material_result": "像素色簇改善，但左端白亮竖边与右端暗边构成重复封边；不满足贯通无端头要求。",
+    "bank_connection_sides": [
+      "E",
+      "W"
+    ],
+    "water_neighbor_sides": [
+      "E",
+      "S",
+      "W"
+    ],
+    "family": "bank",
+    "tool": "image_gen.imagegen built-in",
+    "call_number": 1,
+    "tool_original_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10c06-70f1-7100-bf8d-c2032eb22807\\exec-c8ee78e4-3a42-4834-8b2b-3188058bc04e.png",
+    "tool_original_sha256": "147c6b93d999fffc342cbf9803bca0f35ca7a12dbd1386369e0313d0321e4aff",
+    "raw_path": "art-source/ember/production-v008/correction-v001/bank/raw/bank_straight_N_pixel_v001.png",
+    "raw_sha256": "147c6b93d999fffc342cbf9803bca0f35ca7a12dbd1386369e0313d0321e4aff",
+    "raw_measurements": {
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_unique_value_count": 207,
+      "alpha_zero_pixel_count": 1174001,
+      "alpha_bbox_gt0": [
+        0,
+        0,
+        1254,
+        1212
+      ],
+      "alpha_bbox_gt4": [
+        0,
+        178,
+        1254,
+        487
+      ],
+      "alpha_bbox_gt127": [
+        0,
+        179,
+        1254,
+        486
+      ],
+      "body_ports_alpha_gt127": {
+        "N": [],
+        "E": [
+          [
+            183,
+            485
+          ]
+        ],
+        "S": [],
+        "W": [
+          [
+            183,
+            485
+          ]
+        ]
+      },
+      "body_edge_counts_alpha_gt127": {
+        "N": 0,
+        "E": 302,
+        "S": 0,
+        "W": 302
+      }
+    },
+    "prompt_path": "art-source/ember/production-v008/correction-v001/bank/prompts/bank_straight_N_pixel_v001.txt",
+    "prompt_sha256": "7976387e166c2a105fd12849c68dd42fce3054fef53dc4435709821ae8c59f88",
+    "candidate_path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_straight_N_pixel_v001_128.png",
+    "candidate_sha256": "1c8abdda7571b88a037474cb612a38a746d4a925c4cb06145ca60bf22ddb8990",
+    "candidate_measurements": {
+      "size": [
+        128,
+        128
+      ],
+      "alpha_unique_value_count": 33,
+      "alpha_zero_pixel_count": 12211,
+      "alpha_bbox_gt0": [
+        0,
+        0,
+        128,
+        44
+      ],
+      "alpha_bbox_gt4": [
+        0,
+        0,
+        128,
+        32
+      ],
+      "alpha_bbox_gt127": [
+        0,
+        0,
+        128,
+        32
+      ],
+      "body_ports_alpha_gt127": {
+        "N": [
+          [
+            0,
+            25
+          ],
+          [
+            26,
+            63
+          ],
+          [
+            64,
+            102
+          ],
+          [
+            103,
+            128
+          ]
+        ],
+        "E": [
+          [
+            0,
+            32
+          ]
+        ],
+        "S": [],
+        "W": [
+          [
+            0,
+            32
+          ]
+        ]
+      },
+      "body_edge_counts_alpha_gt127": {
+        "N": 125,
+        "E": 32,
+        "S": 0,
+        "W": 32
+      }
+    },
+    "body_components8": [
+      4093
+    ],
+    "crop_coordinate_convention": "XYXY half-open",
+    "whole_component_offset_native_pixels": [
+      0,
+      -176
+    ],
+    "registered_canvas_size": [
+      1254,
+      1254
+    ],
+    "uniform_scale_factor": 0.10207336523125997,
+    "out_of_source_padding_LTRB": [
+      0,
+      0,
+      0,
+      176
+    ],
+    "resampling": "PIL.Image.Resampling.NEAREST",
+    "no_local_art_or_alpha_repair": true,
+    "user_visual_approval": false,
+    "GPU_result": "PENDING_ROOT_UNIFIED_REVIEW"
+  },
+  "inner": {
+    "id": "bank_inner_NW_pixel_v001",
+    "mask": 127,
+    "tool_output": "exec-d1210736-1379-4d3a-83dd-cd9885a3d40e.png",
+    "crop_xyxy": [
+      65,
+      68,
+      1319,
+      1322
+    ],
+    "status": "REJECTED_PORTS_CROSS_SECTION_SEMANTICS_AND_STYLE",
+    "geometry_result": "原图四边均无主体接点；完整注册后 N=[0,2)，W=[0,18)+[19,55)，均不匹配32px直岸，压顶仍封边。",
+    "material_result": "细碎写实磨损和圆润高光回流，未稳定采用新直岸像素簇。",
+    "bank_connection_sides": [
+      "N",
+      "W"
+    ],
+    "water_neighbor_sides": [
+      "N",
+      "E",
+      "S",
+      "W"
+    ],
+    "family": "bank",
+    "tool": "image_gen.imagegen built-in",
+    "call_number": 2,
+    "tool_original_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10c06-70f1-7100-bf8d-c2032eb22807\\exec-d1210736-1379-4d3a-83dd-cd9885a3d40e.png",
+    "tool_original_sha256": "1835cb4d5ebdedc7a92897950dc63c334f15dac4208b5f969540e2a0bbdeaa7e",
+    "raw_path": "art-source/ember/production-v008/correction-v001/bank/raw/bank_inner_NW_pixel_v001.png",
+    "raw_sha256": "1835cb4d5ebdedc7a92897950dc63c334f15dac4208b5f969540e2a0bbdeaa7e",
+    "raw_measurements": {
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_unique_value_count": 256,
+      "alpha_zero_pixel_count": 1325364,
+      "alpha_bbox_gt0": [
+        62,
+        21,
+        1210,
+        1212
+      ],
+      "alpha_bbox_gt4": [
+        66,
+        69,
+        624,
+        608
+      ],
+      "alpha_bbox_gt127": [
+        68,
+        71,
+        621,
+        605
+      ],
+      "body_ports_alpha_gt127": {
+        "N": [],
+        "E": [],
+        "S": [],
+        "W": []
+      },
+      "body_edge_counts_alpha_gt127": {
+        "N": 0,
+        "E": 0,
+        "S": 0,
+        "W": 0
+      }
+    },
+    "prompt_path": "art-source/ember/production-v008/correction-v001/bank/prompts/bank_inner_NW_pixel_v001.txt",
+    "prompt_sha256": "8a0ccc2648f1a51e705f1dfe3777828332c5ee94ae7697769fd0d5739f447167",
+    "candidate_path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_inner_NW_pixel_v001_128.png",
+    "candidate_sha256": "19413b2b61322fc6ee243c1b7f3fe105f149a5cc019c6ce669159027bb5e08f3",
+    "candidate_measurements": {
+      "size": [
+        128,
+        128
+      ],
+      "alpha_unique_value_count": 55,
+      "alpha_zero_pixel_count": 13826,
+      "alpha_bbox_gt0": [
+        0,
+        0,
+        110,
+        101
+      ],
+      "alpha_bbox_gt4": [
+        0,
+        0,
+        57,
+        55
+      ],
+      "alpha_bbox_gt127": [
+        0,
+        0,
+        57,
+        55
+      ],
+      "body_ports_alpha_gt127": {
+        "N": [
+          [
+            0,
+            2
+          ]
+        ],
+        "E": [],
+        "S": [],
+        "W": [
+          [
+            0,
+            18
+          ],
+          [
+            19,
+            55
+          ]
+        ]
+      },
+      "body_edge_counts_alpha_gt127": {
+        "N": 2,
+        "E": 0,
+        "S": 0,
+        "W": 54
+      }
+    },
+    "body_components8": [
+      2511
+    ],
+    "crop_coordinate_convention": "XYXY half-open",
+    "whole_component_offset_native_pixels": [
+      -65,
+      -68
+    ],
+    "registered_canvas_size": [
+      1254,
+      1254
+    ],
+    "uniform_scale_factor": 0.10207336523125997,
+    "out_of_source_padding_LTRB": [
+      0,
+      0,
+      65,
+      68
+    ],
+    "resampling": "PIL.Image.Resampling.NEAREST",
+    "no_local_art_or_alpha_repair": true,
+    "user_visual_approval": false,
+    "GPU_result": "PENDING_ROOT_UNIFIED_REVIEW"
+  },
+  "interface_observations": {
+    "neighborhood_case": {
+      "center": [
+        1,
+        1
+      ],
+      "water_cells_3x3": [
+        [
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "center_mask": 127,
+      "N_neighbor_bank_direction": "W",
+      "W_neighbor_bank_direction": "N",
+      "N_pair": "W-straight.S -> inner.N",
+      "W_pair": "N-straight.E -> inner.W",
+      "new_target_port_intervals": {
+        "inner.N": [
+          0,
+          32
+        ],
+        "inner.W": [
+          0,
+          32
+        ]
+      },
+      "notes": "边界外水域延续用于方向诊断；旧WEST方向不计新版通过。"
+    },
+    "v001_straight_E_to_straight_W": {
+      "samples": 128,
+      "visible_rgba_mismatch_samples": 32,
+      "alpha_mismatch_samples": 6,
+      "max_alpha_difference": 27,
+      "max_visible_rgb_difference": 184,
+      "a_body_intervals": [
+        [
+          0,
+          32
+        ]
+      ],
+      "b_body_intervals": [
+        [
+          0,
+          32
+        ]
+      ]
+    },
+    "registered_v002_straight_E_to_straight_W": {
+      "samples": 128,
+      "visible_rgba_mismatch_samples": 33,
+      "alpha_mismatch_samples": 4,
+      "max_alpha_difference": 4,
+      "max_visible_rgb_difference": 47,
+      "a_body_intervals": [
+        [
+          0,
+          33
+        ]
+      ],
+      "b_body_intervals": [
+        [
+          0,
+          33
+        ]
+      ]
+    },
+    "new_N_straight_E_to_inner_W": {
+      "samples": 128,
+      "visible_rgba_mismatch_samples": 55,
+      "alpha_mismatch_samples": 55,
+      "max_alpha_difference": 239,
+      "max_visible_rgb_difference": 116,
+      "a_body_intervals": [
+        [
+          0,
+          33
+        ]
+      ],
+      "b_body_intervals": [
+        [
+          0,
+          18
+        ],
+        [
+          19,
+          55
+        ]
+      ]
+    },
+    "legacy_W_straight_S_to_inner_N_DIAGNOSTIC_ONLY": {
+      "samples": 128,
+      "visible_rgba_mismatch_samples": 27,
+      "alpha_mismatch_samples": 27,
+      "max_alpha_difference": 255,
+      "max_visible_rgb_difference": 248,
+      "a_body_intervals": [
+        [
+          1,
+          26
+        ]
+      ],
+      "b_body_intervals": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "legacy_west_source": {
+      "path": "assets/ember/environment/autotiles_v007/bank_autotile_v007.png",
+      "sha256": "0f83b1a7f863173ae33499633d122c1cd5b315291a7c74487db932cec6154a0d",
+      "mask": 31,
+      "coord": [
+        4,
+        1
+      ],
+      "crop_xyxy": [
+        512,
+        128,
+        640,
+        256
+      ],
+      "copy_path": "art-source/ember/production-v008/correction-v001/bank/inputs/v007_bank_W_mask31_diagnostic.png",
+      "copy_sha256": "44b4b071317197575937aa99adc259a3f51945db960b4fff6cca924780312538",
+      "measurements": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_unique_value_count": 113,
+        "alpha_zero_pixel_count": 12447,
+        "alpha_bbox_gt0": [
+          0,
+          0,
+          119,
+          128
+        ],
+        "alpha_bbox_gt4": [
+          0,
+          0,
+          30,
+          128
+        ],
+        "alpha_bbox_gt127": [
+          0,
+          0,
+          26,
+          128
+        ],
+        "body_ports_alpha_gt127": {
+          "N": [
+            [
+              1,
+              26
+            ]
+          ],
+          "E": [],
+          "S": [
+            [
+              1,
+              26
+            ]
+          ],
+          "W": [
+            [
+              5,
+              123
+            ]
+          ]
+        },
+        "body_edge_counts_alpha_gt127": {
+          "N": 25,
+          "E": 0,
+          "S": 25,
+          "W": 118
+        }
+      }
+    },
+    "new_west_direction_generated": false,
+    "full_loop_verified": false,
+    "numeric_results_are_not_user_visual_approval": true
+  }
+}

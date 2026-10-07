@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://b60eqsmdhnayq"]
+
+[ext_resource type="Script" uid="uid://cq6wcf5n63ui3" path="res://scenes/m0/game_result.gd" id="1_hqomj"]
+
+[node name="GameResult" type="Node2D" unique_id=2086776947]
+script = ExtResource("1_hqomj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1375769365]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=2067563959]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=1969786127]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_top = -38.5
+offset_right = 0.5
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Result" type="Label" parent="CanvasLayer/Control/VBoxContainer" unique_id=1132288477]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LifePoint" type="Label" parent="CanvasLayer/Control/VBoxContainer" unique_id=996414544]
+layout_mode = 2
+size_flags_vertical = 3
+text = "LifePoint:0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LastTimer" type="Label" parent="CanvasLayer/Control/VBoxContainer" unique_id=1865479667]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+text = "Time:0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Energy" type="Label" parent="CanvasLayer/Control/VBoxContainer" unique_id=786910777]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+text = "Energy:0"
+horizontal_alignment = 1
+vertical_alignment = 1

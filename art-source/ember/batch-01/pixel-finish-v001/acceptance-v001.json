@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-04",
+  "timezone": "Asia/Irkutsk",
+  "status": "FIRST_BATCH_NATIVE_6_OF_6_ART_REVIEW_PASS",
+  "first_batch_art_units": 6,
+  "native_object_pngs": 2,
+  "floor_units_in_atlas": [
+    {
+      "id": "floor_clean",
+      "texture": "res://assets/ember/environment/tilesets/ground_details_v001.png",
+      "atlas_coord": [
+        0,
+        0
+      ],
+      "native_size": [
+        32,
+        32
+      ],
+      "status": "PRODUCER_VISUAL_REVIEW_PASS"
+    },
+    {
+      "id": "floor_worn",
+      "texture": "res://assets/ember/environment/tilesets/ground_details_v001.png",
+      "atlas_coord": [
+        1,
+        0
+      ],
+      "native_size": [
+        32,
+        32
+      ],
+      "status": "PRODUCER_VISUAL_REVIEW_PASS"
+    },
+    {
+      "id": "floor_grate",
+      "texture": "res://assets/ember/environment/tilesets/ground_details_v001.png",
+      "atlas_coord": [
+        2,
+        0
+      ],
+      "native_size": [
+        32,
+        32
+      ],
+      "status": "PRODUCER_VISUAL_REVIEW_PASS"
+    },
+    {
+      "id": "floor_wet",
+      "texture": "res://assets/ember/environment/tilesets/ground_details_v001.png",
+      "atlas_coord": [
+        3,
+        0
+      ],
+      "native_size": [
+        32,
+        32
+      ],
+      "status": "PRODUCER_VISUAL_REVIEW_PASS"
+    }
+  ],
+  "object_units": [
+    {
+      "id": "C01",
+      "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+      "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+    },
+    {
+      "id": "B01",
+      "file": "assets/ember/buildings/station/station_base_v001.png",
+      "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+    }
+  ],
+  "robot_animation_completed": "1 of 20 frames; downward idle only",
+  "producer_review": [
+    "原生与整数2倍对象轮廓、原生4倍统一地板比例",
+    "锚点、Alpha、16色及静止中性窗口",
+    "四地板3×3自身平铺与全部16类型相邻"
+  ],
+  "independent_object_review": "art-source/ember/batch-01/pixel-finish-v001/validation-objects-independent.json",
+  "object_layout_metadata": "art-source/ember/batch-01/pixel-finish-v001/object-layout-v001.json",
+  "native_scale_board": "art-source/ember/references/batch01_native_scale_v002.png",
+  "scale_board_scope": "机器人、采能站与地板；未包含尚未生成的门及控制台，不宣称完整R01。",
+  "total_completed_art_units": 64,
+  "full_art_budget": 123,
+  "remaining_art_units": 59,
+  "scope": "素材交付；没有自动补其余角色帧或替换现有游戏场景。"
+}

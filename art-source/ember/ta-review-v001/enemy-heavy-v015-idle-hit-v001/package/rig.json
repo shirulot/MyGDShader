@@ -1,0 +1,898 @@
+{
+  "version": "v015-heavy-idle-hit",
+  "unit": "enemy_tracked_heavy",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "frame_count": 8,
+  "fps": 8,
+  "loop": true,
+  "body_y": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "method": "Fixed reviewed masters; same suspension idle and screen-left hit recoil as approved v007; no tread movement in either action.",
+  "configs": {
+    "down_left": {
+      "track_polygons": [
+        [
+          [
+            84,
+            60
+          ],
+          [
+            128,
+            60
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            70,
+            128
+          ],
+          [
+            70,
+            86
+          ],
+          [
+            73,
+            76
+          ],
+          [
+            77,
+            68
+          ],
+          [
+            81,
+            63
+          ],
+          [
+            84,
+            60
+          ]
+        ],
+        [
+          [
+            0,
+            50
+          ],
+          [
+            43,
+            50
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            46,
+            60
+          ],
+          [
+            46,
+            65
+          ],
+          [
+            47,
+            73
+          ],
+          [
+            46,
+            79
+          ],
+          [
+            47,
+            82
+          ],
+          [
+            47,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            75,
+            83
+          ],
+          "cross_width": 12,
+          "period": 16,
+          "shear": 0.25,
+          "sign": 1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            25,
+            73
+          ],
+          "cross_width": 13,
+          "period": 16,
+          "shear": 0.15,
+          "sign": 1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          81,
+          104
+        ],
+        [
+          31,
+          93
+        ]
+      ],
+      "source": "res://source/down_left.png",
+      "source_sha256": "aa21e0e940ff581a38b6afe5117aeabb53e464aa3203f8c50af1cd4b235593f8"
+    },
+    "left": {
+      "track_polygons": [
+        [
+          [
+            34,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            83
+          ],
+          [
+            92,
+            83
+          ],
+          [
+            90,
+            70
+          ],
+          [
+            87,
+            68
+          ],
+          [
+            57,
+            68
+          ],
+          [
+            50,
+            70
+          ],
+          [
+            44,
+            72
+          ],
+          [
+            39,
+            77
+          ],
+          [
+            34,
+            82
+          ]
+        ],
+        [
+          [
+            79,
+            60
+          ],
+          [
+            82,
+            60
+          ],
+          [
+            87,
+            64
+          ],
+          [
+            87,
+            68
+          ],
+          [
+            79,
+            68
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            48,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            64,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            48,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            64,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          43,
+          104
+        ],
+        [
+          85,
+          104
+        ]
+      ],
+      "source": "res://source/left.png",
+      "source_sha256": "522409a89a7748cd2c50a3822978246382c794187953084e86d7384900979d36"
+    },
+    "up_left": {
+      "track_polygons": [
+        [
+          [
+            0,
+            60
+          ],
+          [
+            45,
+            60
+          ],
+          [
+            45,
+            60
+          ],
+          [
+            49,
+            67
+          ],
+          [
+            53,
+            73
+          ],
+          [
+            57,
+            82
+          ],
+          [
+            57,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ],
+        [
+          [
+            81,
+            50
+          ],
+          [
+            128,
+            50
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            82,
+            128
+          ],
+          [
+            82,
+            82
+          ],
+          [
+            85,
+            72
+          ],
+          [
+            82,
+            64
+          ],
+          [
+            81,
+            64
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            41,
+            83
+          ],
+          "cross_width": 12,
+          "period": 16,
+          "shear": 0.25,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            90,
+            72
+          ],
+          "cross_width": 11,
+          "period": 16,
+          "shear": -0.15,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          44,
+          104
+        ],
+        [
+          97,
+          93
+        ]
+      ],
+      "source": "res://source/up_left.png",
+      "source_sha256": "8b478c2f32173b75bcfa26d7f534140e4075dda1ad83d33e5185c5487af215e6"
+    },
+    "up": {
+      "track_polygons": [
+        [
+          [
+            0,
+            60
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            49,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ],
+        [
+          [
+            80,
+            60
+          ],
+          [
+            128,
+            60
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            80,
+            128
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            28,
+            85
+          ],
+          "cross_width": 16,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            85,
+            85
+          ],
+          "cross_width": 14,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          36,
+          104
+        ],
+        [
+          92,
+          104
+        ]
+      ],
+      "source": "res://source/up.png",
+      "source_sha256": "0f0f48f166999d08ed5a114a2a492b4c0e8837d16f0294f2a9b9b10f2d0785a6"
+    },
+    "up_right": {
+      "track_polygons": [
+        [
+          [
+            84,
+            60
+          ],
+          [
+            128,
+            60
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            70,
+            128
+          ],
+          [
+            70,
+            86
+          ],
+          [
+            73,
+            76
+          ],
+          [
+            77,
+            68
+          ],
+          [
+            81,
+            63
+          ],
+          [
+            84,
+            60
+          ]
+        ],
+        [
+          [
+            0,
+            50
+          ],
+          [
+            43,
+            50
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            46,
+            60
+          ],
+          [
+            46,
+            65
+          ],
+          [
+            47,
+            73
+          ],
+          [
+            46,
+            79
+          ],
+          [
+            47,
+            82
+          ],
+          [
+            47,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            75,
+            83
+          ],
+          "cross_width": 12,
+          "period": 16,
+          "shear": 0.25,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            25,
+            73
+          ],
+          "cross_width": 13,
+          "period": 16,
+          "shear": 0.15,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          81,
+          104
+        ],
+        [
+          31,
+          93
+        ]
+      ],
+      "source": "res://source/up_right.png",
+      "source_sha256": "c04db1b041d79c850c7edf06b35890a61bafafbeaf70d825fb9b60670df686b6"
+    },
+    "right": {
+      "track_polygons": [
+        [
+          [
+            89,
+            128
+          ],
+          [
+            -5,
+            128
+          ],
+          [
+            -5,
+            83
+          ],
+          [
+            31,
+            83
+          ],
+          [
+            33,
+            70
+          ],
+          [
+            36,
+            68
+          ],
+          [
+            66,
+            68
+          ],
+          [
+            73,
+            70
+          ],
+          [
+            79,
+            72
+          ],
+          [
+            84,
+            77
+          ],
+          [
+            89,
+            82
+          ]
+        ],
+        [
+          [
+            44,
+            60
+          ],
+          [
+            41,
+            60
+          ],
+          [
+            36,
+            64
+          ],
+          [
+            36,
+            68
+          ],
+          [
+            44,
+            68
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            43,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            59,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            43,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            59,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          38,
+          104
+        ],
+        [
+          80,
+          104
+        ]
+      ],
+      "source": "res://source/right.png",
+      "source_sha256": "a42740bfe07fbd4448bc07e59bc3febf26ebac9948a354aae54858567d6ee1b2"
+    },
+    "down_right": {
+      "track_polygons": [
+        [
+          [
+            0,
+            60
+          ],
+          [
+            45,
+            60
+          ],
+          [
+            49,
+            67
+          ],
+          [
+            53,
+            73
+          ],
+          [
+            57,
+            82
+          ],
+          [
+            57,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ],
+        [
+          [
+            81,
+            50
+          ],
+          [
+            128,
+            50
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            82,
+            128
+          ],
+          [
+            82,
+            82
+          ],
+          [
+            85,
+            72
+          ],
+          [
+            82,
+            64
+          ],
+          [
+            81,
+            64
+          ]
+        ]
+      ],
+      "windows": [],
+      "supports": [
+        [
+          44,
+          104
+        ],
+        [
+          97,
+          93
+        ]
+      ],
+      "source": "res://source/down_right.png",
+      "source_sha256": "7812398344d56901cc0f3673bf724b5eb1a22c229dc30231c437c65e0ebdf073"
+    }
+  },
+  "preserved": [
+    {
+      "action": "idle_down",
+      "source": "enemy-sequences-v012",
+      "atlas_sha256": "28baed3260747b32ab273c8828f36a81bc8655f4c229520875e784dd7f5c03a1",
+      "frame_hashes": [
+        "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+        "765c42c18839f43a9975365d9f8a642ed37f28997ed4fbb05f0e7e77decd26d2",
+        "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+        "1b38ccab5d081e148b8cb85657baef458b03a5f08b02d3f3c533e16278a189fd"
+      ]
+    },
+    {
+      "action": "hit_down",
+      "source": "enemy-sequences-v012",
+      "atlas_sha256": "ecf5d6e39c19b312bfe55661fc4c045bf6fad1075085edff66bd794961fe7a98",
+      "frame_hashes": [
+        "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+        "dfbbf184f693841dc6f69dd345bdeb12c516eba99531c81d06400441f6b94c1d",
+        "3218abb431838a921d2165a9d3d638f2c7d75987d4f5ac9f98f69071b21f71f0",
+        "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85"
+      ]
+    }
+  ],
+  "actions": {
+    "idle": {
+      "frames": 4,
+      "fps": 4,
+      "loop": true,
+      "body": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "hit": {
+      "frames": 4,
+      "fps": 12,
+      "loop": false,
+      "body": [
+        [
+          0,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "mount_overlap": {
+    "radius_x": 3,
+    "radius_y": 1,
+    "y_min": 60,
+    "y_max": 98,
+    "method": "Duplicate fixed source mounting interface underneath moving shell; bind colors unchanged; no per-frame generation."
+  }
+}

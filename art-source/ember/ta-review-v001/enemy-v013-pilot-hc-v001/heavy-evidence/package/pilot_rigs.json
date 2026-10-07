@@ -1,0 +1,919 @@
+{
+  "version": "v013-pilot",
+  "status": "FIRST_GATE_CANDIDATE",
+  "enabled_pilot_units": [
+    "enemy_tracked_heavy",
+    "enemy_cutter"
+  ],
+  "paused_for_static_revision": [
+    "enemy_patrol",
+    "enemy_scout_drone"
+  ],
+  "direction": "down_right",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "fps": 8,
+  "frames": 8,
+  "loop": true,
+  "units": [
+    {
+      "unit": "enemy_patrol",
+      "parts": [
+        {
+          "id": "right_thigh",
+          "polygon": [
+            [
+              54,
+              84
+            ],
+            [
+              64,
+              84
+            ],
+            [
+              64,
+              93
+            ],
+            [
+              54,
+              93
+            ]
+          ],
+          "pivot": [
+            60,
+            85
+          ],
+          "end": [
+            58,
+            91
+          ],
+          "exclude": [
+            [
+              [
+                54,
+                87
+              ],
+              [
+                64,
+                87
+              ],
+              [
+                64,
+                93
+              ],
+              [
+                54,
+                93
+              ]
+            ]
+          ],
+          "z": 1
+        },
+        {
+          "id": "right_shin",
+          "polygon": [
+            [
+              53,
+              91
+            ],
+            [
+              64,
+              91
+            ],
+            [
+              64,
+              99
+            ],
+            [
+              53,
+              99
+            ]
+          ],
+          "pivot": [
+            58,
+            91
+          ],
+          "end": [
+            58,
+            98
+          ],
+          "exclude": [
+            [
+              [
+                54,
+                87
+              ],
+              [
+                64,
+                87
+              ],
+              [
+                64,
+                93
+              ],
+              [
+                54,
+                93
+              ]
+            ]
+          ],
+          "z": 1
+        },
+        {
+          "id": "right_cap",
+          "polygon": [
+            [
+              54,
+              87
+            ],
+            [
+              64,
+              87
+            ],
+            [
+              64,
+              93
+            ],
+            [
+              54,
+              93
+            ]
+          ],
+          "pivot": [
+            58,
+            91
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 3
+        },
+        {
+          "id": "right_foot",
+          "polygon": [
+            [
+              51,
+              98
+            ],
+            [
+              65,
+              98
+            ],
+            [
+              65,
+              128
+            ],
+            [
+              51,
+              128
+            ]
+          ],
+          "pivot": [
+            58,
+            98
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        },
+        {
+          "id": "left_thigh",
+          "polygon": [
+            [
+              66,
+              84
+            ],
+            [
+              77,
+              84
+            ],
+            [
+              77,
+              93
+            ],
+            [
+              66,
+              93
+            ]
+          ],
+          "pivot": [
+            70,
+            85
+          ],
+          "end": [
+            72,
+            91
+          ],
+          "exclude": [
+            [
+              [
+                68,
+                86
+              ],
+              [
+                77,
+                86
+              ],
+              [
+                77,
+                92
+              ],
+              [
+                68,
+                92
+              ]
+            ]
+          ],
+          "z": 0
+        },
+        {
+          "id": "left_shin",
+          "polygon": [
+            [
+              66,
+              91
+            ],
+            [
+              78,
+              91
+            ],
+            [
+              78,
+              98
+            ],
+            [
+              66,
+              98
+            ]
+          ],
+          "pivot": [
+            72,
+            91
+          ],
+          "end": [
+            73,
+            97
+          ],
+          "exclude": [
+            [
+              [
+                68,
+                86
+              ],
+              [
+                77,
+                86
+              ],
+              [
+                77,
+                92
+              ],
+              [
+                68,
+                92
+              ]
+            ]
+          ],
+          "z": 0
+        },
+        {
+          "id": "left_cap",
+          "polygon": [
+            [
+              68,
+              86
+            ],
+            [
+              77,
+              86
+            ],
+            [
+              77,
+              92
+            ],
+            [
+              68,
+              92
+            ]
+          ],
+          "pivot": [
+            72,
+            91
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        },
+        {
+          "id": "left_foot",
+          "polygon": [
+            [
+              66,
+              97
+            ],
+            [
+              79,
+              97
+            ],
+            [
+              79,
+              128
+            ],
+            [
+              66,
+              128
+            ]
+          ],
+          "pivot": [
+            73,
+            97
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 1
+        }
+      ],
+      "legs": {
+        "right": {
+          "hip": [
+            60,
+            85
+          ],
+          "knee": [
+            58,
+            91
+          ],
+          "ankle": [
+            58,
+            98
+          ],
+          "sole_offset": [
+            0,
+            6
+          ]
+        },
+        "left": {
+          "hip": [
+            70,
+            85
+          ],
+          "knee": [
+            72,
+            91
+          ],
+          "ankle": [
+            73,
+            97
+          ],
+          "sole_offset": [
+            0,
+            5
+          ]
+        }
+      },
+      "phases": [
+        {
+          "frame": 0,
+          "phase": "left_contact",
+          "body_y": 0,
+          "left": {
+            "depth": 6,
+            "lift": 0,
+            "support": true
+          },
+          "right": {
+            "depth": -6,
+            "lift": 0,
+            "support": true
+          }
+        },
+        {
+          "frame": 1,
+          "phase": "left_down",
+          "body_y": 1,
+          "left": {
+            "depth": 3,
+            "lift": 0,
+            "support": true
+          },
+          "right": {
+            "depth": -3,
+            "lift": 3,
+            "support": false
+          }
+        },
+        {
+          "frame": 2,
+          "phase": "right_passing",
+          "body_y": 0,
+          "left": {
+            "depth": 0,
+            "lift": 0,
+            "support": true
+          },
+          "right": {
+            "depth": 0,
+            "lift": 5,
+            "support": false
+          }
+        },
+        {
+          "frame": 3,
+          "phase": "left_up",
+          "body_y": -1,
+          "left": {
+            "depth": -3,
+            "lift": 0,
+            "support": true
+          },
+          "right": {
+            "depth": 3,
+            "lift": 2,
+            "support": false
+          }
+        },
+        {
+          "frame": 4,
+          "phase": "right_contact",
+          "body_y": 0,
+          "left": {
+            "depth": -6,
+            "lift": 0,
+            "support": true
+          },
+          "right": {
+            "depth": 6,
+            "lift": 0,
+            "support": true
+          }
+        },
+        {
+          "frame": 5,
+          "phase": "right_down",
+          "body_y": 1,
+          "left": {
+            "depth": -3,
+            "lift": 3,
+            "support": false
+          },
+          "right": {
+            "depth": 3,
+            "lift": 0,
+            "support": true
+          }
+        },
+        {
+          "frame": 6,
+          "phase": "left_passing",
+          "body_y": 0,
+          "left": {
+            "depth": 0,
+            "lift": 5,
+            "support": false
+          },
+          "right": {
+            "depth": 0,
+            "lift": 0,
+            "support": true
+          }
+        },
+        {
+          "frame": 7,
+          "phase": "right_up",
+          "body_y": -1,
+          "left": {
+            "depth": 3,
+            "lift": 2,
+            "support": false
+          },
+          "right": {
+            "depth": -3,
+            "lift": 0,
+            "support": true
+          }
+        }
+      ],
+      "note": "Same anatomical gait phase as approved down; rigid kneecaps and feet; only the dark hinge shafts use endpoint mapping.",
+      "source": "res://source/registered/enemy_patrol_down_right.png",
+      "source_sha256": "112110cbfd82cf061b9a207439955958502718b79ce6d52f343e13ce73ad5409"
+    },
+    {
+      "unit": "enemy_tracked_heavy",
+      "parts": [
+        {
+          "id": "near_track",
+          "polygon": [
+            [
+              0,
+              60
+            ],
+            [
+              45,
+              60
+            ],
+            [
+              49,
+              67
+            ],
+            [
+              53,
+              73
+            ],
+            [
+              57,
+              82
+            ],
+            [
+              57,
+              128
+            ],
+            [
+              0,
+              128
+            ]
+          ],
+          "pivot": [
+            41,
+            83
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        },
+        {
+          "id": "far_track",
+          "polygon": [
+            [
+              81,
+              50
+            ],
+            [
+              128,
+              50
+            ],
+            [
+              128,
+              128
+            ],
+            [
+              82,
+              128
+            ],
+            [
+              82,
+              82
+            ],
+            [
+              85,
+              72
+            ],
+            [
+              82,
+              64
+            ],
+            [
+              81,
+              64
+            ]
+          ],
+          "pivot": [
+            93,
+            76
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 0
+        }
+      ],
+      "note": "Two fixed track silhouettes. Original tread RGB is sampled cyclically inside two registered sheared windows. Tower suspension moves one pixel only.",
+      "tread_windows": [
+        {
+          "x": [
+            43,
+            55
+          ],
+          "top_y": 84,
+          "shear_y_per_x": -0.25,
+          "period": 16
+        },
+        {
+          "x": [
+            90,
+            102
+          ],
+          "top_y": 72,
+          "shear_y_per_x": -0.25,
+          "period": 16
+        }
+      ],
+      "source": "res://source/registered/enemy_tracked_heavy_down_right.png",
+      "source_sha256": "7812398344d56901cc0f3673bf724b5eb1a22c229dc30231c437c65e0ebdf073"
+    },
+    {
+      "unit": "enemy_cutter",
+      "parts": [
+        {
+          "id": "rear_right",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              50,
+              0
+            ],
+            [
+              50,
+              68
+            ],
+            [
+              49,
+              68
+            ],
+            [
+              49,
+              77
+            ],
+            [
+              48,
+              77
+            ],
+            [
+              48,
+              85
+            ],
+            [
+              0,
+              85
+            ]
+          ],
+          "pivot": [
+            49,
+            77
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 0,
+          "overlap_polygons": [
+            [
+              [
+                47,
+                75
+              ],
+              [
+                52,
+                75
+              ],
+              [
+                52,
+                80
+              ],
+              [
+                47,
+                80
+              ]
+            ]
+          ]
+        },
+        {
+          "id": "rear_left",
+          "polygon": [
+            [
+              72,
+              0
+            ],
+            [
+              83,
+              0
+            ],
+            [
+              83,
+              75
+            ],
+            [
+              80,
+              79
+            ],
+            [
+              78,
+              81
+            ],
+            [
+              78,
+              74
+            ],
+            [
+              76,
+              74
+            ],
+            [
+              76,
+              70
+            ],
+            [
+              72,
+              70
+            ]
+          ],
+          "pivot": [
+            78,
+            75
+          ],
+          "end": null,
+          "exclude": [],
+          "z": -1,
+          "overlap_polygons": [
+            [
+              [
+                74,
+                73
+              ],
+              [
+                80,
+                73
+              ],
+              [
+                80,
+                79
+              ],
+              [
+                74,
+                79
+              ]
+            ]
+          ]
+        }
+      ],
+      "remove_polygons": [
+        [
+          [
+            44,
+            90
+          ],
+          [
+            55,
+            90
+          ],
+          [
+            55,
+            95
+          ],
+          [
+            44,
+            95
+          ]
+        ],
+        [
+          [
+            73,
+            85
+          ],
+          [
+            79,
+            85
+          ],
+          [
+            79,
+            90
+          ],
+          [
+            73,
+            90
+          ]
+        ]
+      ],
+      "legs": [
+        {
+          "id": "front_right",
+          "source_rect": [
+            803,
+            172,
+            226,
+            327
+          ],
+          "target_origin": [
+            47.5,
+            81
+          ],
+          "scale": 0.04,
+          "z": 1,
+          "phase_offset": 4,
+          "hip": [
+            55,
+            82
+          ],
+          "sole": [
+            52,
+            94
+          ]
+        },
+        {
+          "id": "front_left",
+          "source_rect": [
+            225,
+            172,
+            295,
+            327
+          ],
+          "target_origin": [
+            72,
+            78
+          ],
+          "scale": 0.04,
+          "z": 0,
+          "phase_offset": 0,
+          "hip": [
+            74,
+            79
+          ],
+          "sole": [
+            81,
+            91
+          ]
+        },
+        {
+          "id": "rear_right",
+          "registered": true,
+          "phase_offset": 0,
+          "hip": [
+            49,
+            77
+          ],
+          "sole": [
+            44,
+            85
+          ]
+        },
+        {
+          "id": "rear_left",
+          "registered": true,
+          "phase_offset": 4,
+          "hip": [
+            78,
+            75
+          ],
+          "sole": [
+            79,
+            79
+          ]
+        }
+      ],
+      "leg_source": "res://source/parts/cutter_down_right_legs_v001.png",
+      "note": "Original registered rear legs and all their visible armor are preserved. Only occluded front legs use the fixed generated parts. Pairs rear_right/front_left versus rear_left/front_right; concealed mounts travel <=2 px. No tool is counted as a support leg.",
+      "source": "res://source/registered/enemy_cutter_down_right.png",
+      "source_sha256": "ea8a624f5e7cb7a7453afd7ee3b9e5d76b7362fa23c6c9105bc290ea56d35819"
+    },
+    {
+      "unit": "enemy_scout_drone",
+      "parts": [],
+      "fan_source": "res://source/parts/rotor_well_master.png",
+      "rotor_rect": [
+        223,
+        165,
+        583,
+        584
+      ],
+      "well_rect": [
+        1000,
+        192,
+        535,
+        528
+      ],
+      "fans": [
+        {
+          "id": "near_right",
+          "center": [
+            44,
+            67.5
+          ],
+          "radius": [
+            6,
+            4
+          ],
+          "spin": 1
+        },
+        {
+          "id": "far_left",
+          "center": [
+            76,
+            60.5
+          ],
+          "radius": [
+            5.75,
+            4
+          ],
+          "spin": -1
+        }
+      ],
+      "note": "Same approved v011 four-blade rotor source, no probe-neck experiment. Rotor turns before fixed fan-plane projection; housing stays rigid.",
+      "source": "res://source/registered/enemy_scout_drone_down_right.png",
+      "source_sha256": "1198da7c85e65d9e6ad420756115b13bc9c8338ef875e159f507893e2dd59ab3"
+    }
+  ]
+}

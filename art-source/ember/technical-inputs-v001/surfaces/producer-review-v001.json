@@ -1,0 +1,35 @@
+{
+  "status": "PRODUCER_NUMERIC_AND_VISUAL_PASS_PENDING_INDEPENDENT_RUNTIME",
+  "assets": 10,
+  "observations": [
+    "实际看station/console注册板：底图轮廓与高度支持一致，安全窗平坦，左右/上下灯改变倒角明暗方向；未新增平面光照颜色或改原底图。",
+    "实际看floor_clean注册板：原生板缝与浅压痕清楚，3×3首尾一致；没有按左上亮边方向生成假的光照高度。",
+    "实际看metal注册板与3×3：涂层微缝非常浅，首尾无亮暗断线；分区源为确切标签，非灰度到高度。",
+    "实际看concrete注册板：高度与法线明确flat，改变方向仅改变整体漫反射；不冒充有表面凹凸。",
+    "实际看grass注册板与PBR参数板：根与Alpha对齐，权重由白顶向黑根递减；常量图166/140/255/0一致。"
+  ],
+  "visual_files": [
+    "art-source/ember/technical-inputs-v001/surfaces/review/concrete_normal_registration_light_v001.png",
+    "art-source/ember/technical-inputs-v001/surfaces/review/console_normal_registration_light_v001.png",
+    "art-source/ember/technical-inputs-v001/surfaces/review/floor_clean_normal_registration_light_v001.png",
+    "art-source/ember/technical-inputs-v001/surfaces/review/grass_height_weight_registration_v001.png",
+    "art-source/ember/technical-inputs-v001/surfaces/review/metal_normal_registration_light_v001.png",
+    "art-source/ember/technical-inputs-v001/surfaces/review/station_normal_registration_light_v001.png",
+    "art-source/ember/technical-inputs-v001/surfaces/review/pbr_uniform_parameters_v001.png",
+    "art-source/ember/technical-inputs-v001/surfaces/review/metal_normal_3x3_light_v001.png"
+  ],
+  "png_sha256": {
+    "res://assets/ember/data/normals/station_normal_v001.png": "0999ebfb12316672b687ffc576f1f0b72fafb9dd272723da62f020f27d26beda",
+    "res://assets/ember/data/normals/console_normal_v001.png": "1094516a476ddff930cb6cce29ea492bf980ce13b884d49c6f5ffda42ce0ed30",
+    "res://assets/ember/data/normals/floor_clean_normal_v001.png": "bc49137517987d1a81529d92149666990c3e26eb7fd518cbf2be98369c59d872",
+    "res://assets/ember/three_d/textures/metal/metal_normal_v001.png": "29439a8edebc9ca5d5a405533af6f01ca32af9abc87111375663399d57dbf1f4",
+    "res://assets/ember/three_d/textures/metal/metal_roughness_v001.png": "03da38db1bd7a24b390c53a65aed3893a12855b8b1798a35cfacd1d7f4d60962",
+    "res://assets/ember/three_d/textures/metal/metal_metallic_v001.png": "4f87abe77997e5b2c59334159ef429af261bb0aa5792830e2cfe5c3f3ed5e08c",
+    "res://assets/ember/three_d/textures/concrete/concrete_normal_v001.png": "1f512d718e2e134cd93ffad0371df7b869dc3db963d23d4621a6e507320d3e0b",
+    "res://assets/ember/three_d/textures/concrete/concrete_roughness_v001.png": "f06e89dc7f39be266a34ab9d56c628694bcc6f491e27b9fad873cfa459731143",
+    "res://assets/ember/three_d/textures/concrete/concrete_metallic_v001.png": "5933d4c44ed2bc2f431e2698b41923a18d056b24b450540bb109e7592a547060",
+    "res://assets/ember/three_d/textures/grass/grass_height_weight_v001.png": "3db9548646a6cefbb9f448a119ec88601d434172b35fe3e4e66b9619b17186e4"
+  },
+  "catalog_sha256": "ca7361e1ce220144897a1193957d21d57f2971e1cfd2786ad31396b7cd123525",
+  "limitations": "CPU previews only; root performs actual Godot moving-light/PBR/readback and independent cross review."
+}

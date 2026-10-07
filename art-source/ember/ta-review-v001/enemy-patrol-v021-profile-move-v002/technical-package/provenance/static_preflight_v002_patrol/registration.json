@@ -1,0 +1,138 @@
+{
+  "name": "patrol-seven-directions-v002",
+  "scope": "Patrol seven new directions plus original down and unchanged c002 front diagnostic",
+  "output_directory": "static_preflight_v002_patrol",
+  "columns": 3,
+  "entries": [
+    {
+      "key": "neutral_down",
+      "copy_path": "res://source/approved_down/enemy_patrol.png",
+      "scope": "PRESERVED_APPROVED_DOWN"
+    },
+    {
+      "key": "generated_front",
+      "copy_path": "res://calibration_check_v002/enemy_patrol/generated_front.png",
+      "scope": "PRESERVED_CALIBRATION_C002"
+    },
+    {
+      "key": "neutral_down_left",
+      "copy_path": "res://calibration_check_v002/enemy_patrol/down_left.png",
+      "scope": "PRESERVED_CALIBRATION_C002"
+    },
+    {
+      "key": "neutral_left",
+      "scope": "NEW_DIRECTION_PENDING",
+      "source": "res://source/turnarounds/enemy_patrol_remaining_five_v004.png",
+      "source_sha256": "e2b3641d7fe3d1f6f32cf606a18a38c6d7cd86abb9a4d94f2ff42f8711ac5832",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scale": 0.1326530612244898,
+      "source_anchor": [
+        260.5,
+        482
+      ],
+      "target_anchor": [
+        64,
+        104
+      ],
+      "scale_note": "One fixed isotropic density for the whole five-view atlas: 392 source pixels per 52 native standing-height pixels. All five use the same scale; no per-view bbox resizing."
+    },
+    {
+      "key": "neutral_up_left",
+      "scope": "NEW_DIRECTION_PENDING",
+      "source": "res://source/turnarounds/enemy_patrol_remaining_five_v004.png",
+      "source_sha256": "e2b3641d7fe3d1f6f32cf606a18a38c6d7cd86abb9a4d94f2ff42f8711ac5832",
+      "source_rect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "scale": 0.1326530612244898,
+      "source_anchor": [
+        264,
+        488
+      ],
+      "target_anchor": [
+        64,
+        104
+      ],
+      "scale_note": "One fixed isotropic density for the whole five-view atlas: 392 source pixels per 52 native standing-height pixels. All five use the same scale; no per-view bbox resizing."
+    },
+    {
+      "key": "neutral_up",
+      "scope": "NEW_DIRECTION_PENDING",
+      "source": "res://source/turnarounds/enemy_patrol_remaining_five_v004.png",
+      "source_sha256": "e2b3641d7fe3d1f6f32cf606a18a38c6d7cd86abb9a4d94f2ff42f8711ac5832",
+      "source_rect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "scale": 0.1326530612244898,
+      "source_anchor": [
+        244.5,
+        488
+      ],
+      "target_anchor": [
+        64,
+        104
+      ],
+      "scale_note": "One fixed isotropic density for the whole five-view atlas: 392 source pixels per 52 native standing-height pixels. All five use the same scale; no per-view bbox resizing."
+    },
+    {
+      "key": "neutral_up_right",
+      "scope": "NEW_DIRECTION_PENDING",
+      "source": "res://source/turnarounds/enemy_patrol_remaining_five_v004.png",
+      "source_sha256": "e2b3641d7fe3d1f6f32cf606a18a38c6d7cd86abb9a4d94f2ff42f8711ac5832",
+      "source_rect": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "scale": 0.1326530612244898,
+      "source_anchor": [
+        271,
+        453
+      ],
+      "target_anchor": [
+        64,
+        104
+      ],
+      "scale_note": "One fixed isotropic density for the whole five-view atlas: 392 source pixels per 52 native standing-height pixels. All five use the same scale; no per-view bbox resizing."
+    },
+    {
+      "key": "neutral_right",
+      "scope": "NEW_DIRECTION_PENDING",
+      "source": "res://source/turnarounds/enemy_patrol_remaining_five_v004.png",
+      "source_sha256": "e2b3641d7fe3d1f6f32cf606a18a38c6d7cd86abb9a4d94f2ff42f8711ac5832",
+      "source_rect": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "scale": 0.1326530612244898,
+      "source_anchor": [
+        267,
+        456
+      ],
+      "target_anchor": [
+        64,
+        104
+      ],
+      "scale_note": "One fixed isotropic density for the whole five-view atlas: 392 source pixels per 52 native standing-height pixels. All five use the same scale; no per-view bbox resizing."
+    },
+    {
+      "key": "neutral_down_right",
+      "copy_path": "res://calibration_check_v002/enemy_patrol/down_right.png",
+      "scope": "PRESERVED_CALIBRATION_C002"
+    }
+  ]
+}

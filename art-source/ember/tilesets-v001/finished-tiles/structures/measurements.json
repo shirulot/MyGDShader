@@ -1,0 +1,776 @@
+{
+  "tiles": [
+    {
+      "id": "wall_center",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "E": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 32,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_edge_n",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        4,
+        32,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "E": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 28,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_edge_e",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        0,
+        28,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 32,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_edge_s",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        0,
+        32,
+        28
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "E": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 28,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_edge_w",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        0,
+        32,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "E": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 28,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_outer_ne",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        4,
+        28,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "S": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 28,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_outer_se",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        0,
+        28,
+        28
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 28,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_outer_sw",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        0,
+        32,
+        28
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "E": {
+          "sample_count": 28,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_outer_nw",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "E": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 28,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_inner_ne",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "E": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 32,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_inner_se",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "E": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 32,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_inner_sw",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "E": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 28,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "wall_inner_nw",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 28,
+          "opaque": true
+        },
+        "E": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 32,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 28,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "rail_straight_h",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        4,
+        32,
+        27
+      ],
+      "opaque_rgb_color_count": 8,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "E": {
+          "sample_count": 6,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 6,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "rail_straight_v",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        10,
+        0,
+        23,
+        32
+      ],
+      "opaque_rgb_color_count": 8,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 6,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 6,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "rail_corner_ne",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        10,
+        0,
+        32,
+        27
+      ],
+      "opaque_rgb_color_count": 8,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 6,
+          "opaque": true
+        },
+        "E": {
+          "sample_count": 6,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "rail_corner_se",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        10,
+        4,
+        32,
+        32
+      ],
+      "opaque_rgb_color_count": 8,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "E": {
+          "sample_count": 6,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 6,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "rail_corner_sw",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        4,
+        23,
+        32
+      ],
+      "opaque_rgb_color_count": 8,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "S": {
+          "sample_count": 6,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 6,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "rail_corner_nw",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        0,
+        23,
+        27
+      ],
+      "opaque_rgb_color_count": 8,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 6,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 6,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "rail_end_h",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        4,
+        21,
+        27
+      ],
+      "opaque_rgb_color_count": 8,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "W": {
+          "sample_count": 6,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "rail_end_v",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        10,
+        0,
+        23,
+        27
+      ],
+      "opaque_rgb_color_count": 8,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 6,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "bridge_deck_h",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        4,
+        32,
+        28
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "E": {
+          "sample_count": 24,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 24,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "bridge_deck_v",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        0,
+        28,
+        32
+      ],
+      "opaque_rgb_color_count": 6,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 24,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 24,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "bridge_edge_h",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        6,
+        32,
+        12
+      ],
+      "opaque_rgb_color_count": 5,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "E": {
+          "sample_count": 6,
+          "opaque": true
+        },
+        "W": {
+          "sample_count": 6,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "bridge_edge_v",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        6,
+        0,
+        12,
+        32
+      ],
+      "opaque_rgb_color_count": 5,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "N": {
+          "sample_count": 6,
+          "opaque": true
+        },
+        "S": {
+          "sample_count": 6,
+          "opaque": true
+        }
+      }
+    },
+    {
+      "id": "bridge_end_cap",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        0,
+        4,
+        28,
+        28
+      ],
+      "opaque_rgb_color_count": 9,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "interfaces": {
+        "W": {
+          "sample_count": 24,
+          "opaque": true
+        }
+      }
+    }
+  ],
+  "scope": "AUTOMATED_MEASUREMENTS_ONLY_VISUAL_APPROVAL_NOT_DECLARED"
+}

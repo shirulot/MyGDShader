@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ember · 切割机八向移动 v022 · v001</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#151b22;color:#dbe2e7}*{box-sizing:border-box}body{margin:0;padding:24px;max-width:1250px;margin-inline:auto}h1{font-size:23px;margin:0 0 8px}p{color:#a6b4be;line-height:1.6;margin:8px 0}.status{color:#e9c28a}header{border-bottom:1px solid #35424d;padding-bottom:16px}button,select{font:inherit;background:#253340;color:inherit;border:1px solid #506271;border-radius:5px;padding:8px 12px;cursor:pointer}button[aria-pressed=true]{background:#47666b;border-color:#a1c7c2}button:focus-visible,select:focus-visible{outline:2px solid #e9c28a;outline-offset:3px}.controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:18px 0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:#202932;border:1px solid #3b4855;border-radius:8px;padding:14px}.panel h2{font-size:16px;margin:0 0 12px}.stage{height:512px;display:flex;justify-content:center;align-items:center;overflow:auto;border:1px solid #515962;background:#d2d6dc}canvas{image-rendering:pixelated;flex-shrink:0;display:block}.detail{min-height:48px;font-size:13px}.directions{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin:18px 0}.dir{padding:6px 0}.dir img{width:100%;max-width:128px;image-rendering:pixelated;background:#d2d6dc;display:block;margin:auto}.dir span{font-size:12px;display:block;padding:6px}details{border-top:1px solid #35424d;padding:15px 0;margin-top:16px}a{color:#99c6d1}@media(max-width:900px){body{padding:15px}.pair{grid-template-columns:1fr}.directions{grid-template-columns:repeat(4,1fr)}.stage{height:400px}}
+.stage{height:514px}
+</style>
+<header><h1>Ember · 切割机八向移动 v022 · v001</h1><p class="status">新增六向移动待审；已通过的正下、右下移动原文件保留。</p><p>左右使用同一动作相位；切换方向不会重置帧。本包八向可播放移动；中性造型使用原已过固定母稿。</p></header>
+<div class="controls">
+<label>单位 <select id="unit" aria-label="单位"></select></label>
+<label>显示 <select id="mode" aria-label="显示"><option value="move">移动</option><option value="neutral">中性造型</option></select></label>
+<button id="play">暂停</button><button id="prev">前一帧</button><button id="next">后一帧</button>
+<label>速度 <select id="speed" aria-label="速度"><option value="8">正常 8 FPS</option><option value="1">慢速 1 FPS</option></select></label>
+<button id="zoom">切到 1×</button><button id="bg">切到深底</button>
+</div>
+<div class="pair"><section class="panel"><h2 id="current-title">新增方向</h2><div class="stage"><canvas id="current" width="128" height="128"></canvas></div><p class="detail" id="current-info"></p></section>
+<section class="panel"><h2>已通过的正向 · down</h2><div class="stage"><canvas id="approved" width="128" height="128"></canvas></div><p class="detail" id="approved-info"></p></section></div>
+<div class="directions" id="directions" aria-label="八方向"></div>
+<details><summary>检查说明</summary><p>图像均为固定母版或 Godot 导出的 128×128 原生帧，按整数倍显示。当前窗口完整保留画布，未按包围盒裁切或逐帧居中。方向母版与动画分别验收；本批动画的通过状态以正式回执为准。</p><p id="build"></p></details>
+<script>
+'use strict';
+const dirs=['down','down_left','left','up_left','up','up_right','right','down_right'];
+const labels=['↓ 正下','↙ 左下','← 正左','↖ 左上','↑ 正上','↗ 右上','→ 正右','↘ 右下'];
+const units=[['enemy_cutter','切割机']];
+const $=id=>document.getElementById(id);let unit='enemy_cutter',direction='down_left',frame=0,progress=0,playing=true,zoom=4,dark=false,last=performance.now(),catalog,cache=new Map();
+for(const [value,label]of units){const op=new Option(label,value);$('unit').append(op)}$('unit').value=unit;
+function img(path){if(!cache.has(path)){const i=new Image();i.src=path;i.onload=draw;cache.set(path,i)}return cache.get(path)}
+function clip(){return catalog?.clips.find(c=>c.unit===unit&&c.action==='move_'+direction)}
+function neutralPath(dir){return `output/${unit}/neutral_${dir}.png`}
+function render(canvas,path,index=0){const ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,128,128);const i=img(path);if(i.complete&&i.naturalWidth)ctx.drawImage(i,index*128,0,128,128,0,0,128,128);canvas.style.width=`${128*zoom}px`;canvas.style.height=`${128*zoom}px`}
+function draw(){const moving=$('mode').value==='move',candidate=clip(),made=direction==='down'||Boolean(candidate),animate=moving&&made;
+const source=direction==='down'?`reference/${unit}/move_down.png`:candidate?.atlas.replace('res://','');
+render($('current'),animate?source:neutralPath(direction),animate?frame:0);
+render($('approved'),moving?`reference/${unit}/move_down.png`:`reference/${unit}/neutral_down.png`,moving?frame:0);
+$('current-title').textContent=`${units.find(u=>u[0]===unit)[1]} · ${labels[dirs.indexOf(direction)]}`;
+$('current-info').textContent=moving&&!made?'移动尚未制作 · 当前显示方向母稿':`${moving?'移动':'中性造型'} · ${moving?'第 '+(frame+1)+' / 8 帧':'固定母版'} · ${zoom}× · ${['down','down_right'].includes(direction)?'原动作已通过':'新增候选未通过'}`;
+$('approved-info').textContent=`正向基准 · ${moving?'同相位第 '+(frame+1)+' / 8 帧':'原通过中性帧'} · ${zoom}×`;
+document.querySelectorAll('.stage,.dir img').forEach(e=>e.style.background=dark?'#070b10':'#d2d6dc');
+document.querySelectorAll('.dir').forEach(e=>e.setAttribute('aria-pressed',String(e.dataset.dir===direction)));
+document.body.dataset.frame=frame;document.body.dataset.direction=direction;document.body.dataset.unit=unit;}
+function refreshDirections(){const box=$('directions');box.replaceChildren();dirs.forEach((d,i)=>{const b=document.createElement('button');b.className='dir';b.dataset.dir=d;b.setAttribute('aria-label',labels[i]);b.innerHTML=`<img src="${neutralPath(d)}" alt=""><span>${labels[i]}</span>`;b.onclick=()=>{direction=d;draw()};box.append(b)});draw()}
+$('unit').onchange=()=>{unit=$('unit').value;refreshDirections()};$('mode').onchange=draw;
+$('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'暂停':'继续';last=performance.now()};
+function step(delta){playing=false;$('play').textContent='继续';frame=(frame+delta+8)%8;progress=0;draw()}
+$('prev').onclick=()=>step(-1);$('next').onclick=()=>step(1);
+$('zoom').onclick=()=>{zoom=zoom===4?1:4;$('zoom').textContent=zoom===4?'切到 1×':'切到 4×';draw()};
+$('bg').onclick=()=>{dark=!dark;$('bg').textContent=dark?'切到浅底':'切到深底';draw()};
+function tick(now){if(playing){progress+=Math.min((now-last)/1000,.1)*Number($('speed').value);while(progress>=1){frame=(frame+1)%8;progress-=1}draw()}last=now;requestAnimationFrame(tick)}
+fetch('catalog.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(c=>{catalog=c;unit=c.clips[0].unit;$('unit').replaceChildren();for(const [value,label]of units){if(c.clips.some(clip=>clip.unit===value))$('unit').append(new Option(label,value))}$('unit').value=unit;$('build').textContent=`本页包含八向移动共64帧，其中6条/48帧待审、2条/16帧保留既有通过版本。其它四类动作不计入本批。`;refreshDirections();requestAnimationFrame(tick)}).catch(e=>{$('current-info').textContent='加载失败：'+e.message});
+</script></html>

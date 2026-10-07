@@ -1,0 +1,136 @@
+[gd_scene format=4]
+
+[ext_resource type="TileSet" path="res://assets/ember/environment/tilesets/ember_common_tileset_v001.tres" id="1_ry7ll"]
+
+[sub_resource type="SystemFont" id="SystemFont_xxllb"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_f7jtu"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_st5ry"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_svad0"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_8caaq"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_af2iu"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[sub_resource type="SystemFont" id="SystemFont_cqj66"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "Arial")
+
+[node name="EmberTileSetLayoutSandbox" type="Node2D" unique_id=819512965]
+texture_filter = 1
+
+[node name="Title" type="Label" parent="." unique_id=954602353]
+offset_left = 32.0
+offset_top = 20.0
+offset_right = 32.0
+offset_bottom = 20.0
+theme_override_fonts/font = SubResource("SystemFont_xxllb")
+theme_override_font_sizes/font_size = 24
+text = "余烬采能站 · 32×32 通用瓦片集"
+
+[node name="Usage" type="Label" parent="." unique_id=757671717]
+offset_left = 32.0
+offset_top = 58.0
+offset_right = 32.0
+offset_bottom = 58.0
+theme_override_fonts/font = SubResource("SystemFont_f7jtu")
+theme_override_font_sizes/font_size = 14
+text = "选择 LayoutWorkspace 下的 TileMapLayer，在编辑器底部 TileMap 面板自由绘制。"
+
+[node name="TileCatalog" type="Node2D" parent="." unique_id=1910174197]
+position = Vector2(32, 116)
+
+[node name="GroundDetails" type="TileMapLayer" parent="TileCatalog" unique_id=2059621684]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAABAAAAAAACAAAAAAACAAAAAAADAAAAAAADAAAAAAAEAAAAAAAEAAAAAAAFAAAAAAAFAAAAAAAGAAAAAAAGAAAAAAAHAAAAAAAHAAAAAAAAAAEAAAAAAAEAAAABAAEAAAABAAEAAAACAAEAAAACAAEAAAADAAEAAAADAAEAAAA=")
+tile_set = ExtResource("1_ry7ll")
+
+[node name="GroundDetailsLabel" type="Label" parent="TileCatalog" unique_id=1606989425]
+offset_top = -26.0
+offset_bottom = -26.0
+theme_override_fonts/font = SubResource("SystemFont_st5ry")
+theme_override_font_sizes/font_size = 16
+text = "地面与细节 · 12 块"
+
+[node name="Structures" type="TileMapLayer" parent="TileCatalog" unique_id=1178861387]
+texture_filter = 1
+position = Vector2(0, 136)
+tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAABAAAAAQABAAAAAAACAAAAAQACAAAAAAADAAAAAQADAAAAAAAEAAAAAQAEAAAAAAAFAAAAAQAFAAAAAAAGAAAAAQAGAAAAAAAHAAAAAQAHAAAAAAAAAAEAAQAAAAEAAAABAAEAAQABAAEAAAACAAEAAQACAAEAAAADAAEAAQADAAEAAAAEAAEAAQAEAAEAAAAFAAEAAQAFAAEAAAAGAAEAAQAGAAEAAAAHAAEAAQAHAAEAAAAAAAIAAQAAAAIAAAABAAIAAQABAAIAAAACAAIAAQACAAIAAAADAAIAAQADAAIAAAAEAAIAAQAEAAIAAAAFAAIAAQAFAAIAAAAGAAIAAQAGAAIAAAAHAAIAAQAHAAIAAAAAAAMAAQAAAAMAAAABAAMAAQABAAMAAAA=")
+tile_set = ExtResource("1_ry7ll")
+
+[node name="StructuresLabel" type="Label" parent="TileCatalog" unique_id=866157391]
+offset_top = 110.0
+offset_bottom = 110.0
+theme_override_fonts/font = SubResource("SystemFont_svad0")
+theme_override_font_sizes/font_size = 16
+text = "墙体 / 栏杆 / 桥面 · 26 块"
+
+[node name="Utilities" type="TileMapLayer" parent="TileCatalog" unique_id=271057168]
+texture_filter = 1
+position = Vector2(320, 136)
+tile_map_data = PackedByteArray("AAAAAAAAAgAAAAAAAAABAAAAAgABAAAAAAACAAAAAgACAAAAAAADAAAAAgADAAAAAAAEAAAAAgAEAAAAAAAFAAAAAgAFAAAAAAAGAAAAAgAGAAAAAAAHAAAAAgAHAAAAAAAAAAEAAgAAAAEAAAABAAEAAgABAAEAAAACAAEAAgACAAEAAAADAAEAAgADAAEAAAAEAAEAAgAEAAEAAAAFAAEAAgAFAAEAAAAGAAEAAgAGAAEAAAAHAAEAAgAHAAEAAAAAAAIAAgAAAAIAAAABAAIAAgABAAIAAAACAAIAAgACAAIAAAADAAIAAgADAAIAAAAEAAIAAgAEAAIAAAAFAAIAAgAFAAIAAAAGAAIAAgAGAAIAAAAHAAIAAgAHAAIAAAA=")
+tile_set = ExtResource("1_ry7ll")
+
+[node name="UtilitiesLabel" type="Label" parent="TileCatalog" unique_id=247984945]
+offset_left = 320.0
+offset_top = 110.0
+offset_right = 320.0
+offset_bottom = 110.0
+theme_override_fonts/font = SubResource("SystemFont_8caaq")
+theme_override_font_sizes/font_size = 16
+text = "管线 / 水渠岸线 · 24 块"
+
+[node name="LayoutWorkspace" type="Node2D" parent="." unique_id=1792041208]
+position = Vector2(32, 468)
+
+[node name="WorkspaceLabel" type="Label" parent="LayoutWorkspace" unique_id=406893787]
+offset_top = -30.0
+offset_bottom = -30.0
+theme_override_fonts/font = SubResource("SystemFont_af2iu")
+theme_override_font_sizes/font_size = 18
+text = "可编辑布局 · 地面 / 结构 / 管线 / 细节四层"
+
+[node name="Ground" type="TileMapLayer" parent="LayoutWorkspace" unique_id=1619548213]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAABAAAAAAADAAAAAAABAAAAAAAEAAAAAAACAAAAAAAFAAAAAAACAAAAAAAGAAAAAAADAAAAAAAHAAAAAAADAAAAAAAAAAEAAAAAAAAAAAABAAEAAAAAAAAAAAACAAEAAAABAAAAAAADAAEAAAABAAAAAAAEAAEAAAACAAAAAAAFAAEAAAACAAAAAAAGAAEAAAADAAAAAAAHAAEAAAADAAAAAAAAAAIAAAAAAAAAAAABAAIAAAAAAAAAAAACAAIAAAABAAAAAAADAAIAAAABAAAAAAAEAAIAAAACAAAAAAAFAAIAAAACAAAAAAAGAAIAAAADAAAAAAAHAAIAAAADAAAAAAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAABAAAAAAADAAMAAAABAAAAAAAEAAMAAAACAAAAAAAFAAMAAAACAAAAAAAGAAMAAAADAAAAAAAHAAMAAAADAAAAAAAAAAQAAAAAAAAAAAABAAQAAAAAAAAAAAACAAQAAAABAAAAAAADAAQAAAABAAAAAAAEAAQAAAACAAAAAAAFAAQAAAACAAAAAAAGAAQAAAADAAAAAAAHAAQAAAADAAAAAAA=")
+tile_set = ExtResource("1_ry7ll")
+
+[node name="Structures" type="TileMapLayer" parent="LayoutWorkspace" unique_id=406925459]
+z_index = 1
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAAAAAAAQAAAAEAAAABAAAAAQABAAAAAAACAAAAAQAFAAAAAAAAAAEAAQAEAAAAAAABAAEAAQAAAAAAAAACAAEAAQACAAAAAAAAAAIAAQAHAAAAAAABAAIAAQADAAAAAAACAAIAAQAGAAAAAAAFAAMAAQAFAAEAAAAGAAMAAQAFAAEAAAAHAAMAAQAFAAEAAAA=")
+tile_set = ExtResource("1_ry7ll")
+
+[node name="Utilities" type="TileMapLayer" parent="LayoutWorkspace" unique_id=1810799971]
+z_index = 2
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAFAAAAAgADAAAAAAAGAAAAAgAAAAEAAAAHAAAAAgAEAAAAAAAFAAEAAgAHAAAAAAAGAAEAAgACAAEAAAAHAAEAAgABAAEAAAAFAAIAAgACAAAAAAAGAAIAAgAGAAAAAAAHAAIAAgAFAAAAAAA=")
+tile_set = ExtResource("1_ry7ll")
+
+[node name="Details" type="TileMapLayer" parent="LayoutWorkspace" unique_id=542729813]
+z_index = 3
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAAAAQAAAAEAAAAAAABAAQAAAAFAAAAAAACAAQAAAAGAAAAAAADAAQAAAABAAEAAAAEAAQAAAACAAEAAAAHAAQAAAADAAEAAAA=")
+tile_set = ExtResource("1_ry7ll")
+
+[node name="Hint" type="Label" parent="LayoutWorkspace" unique_id=827325706]
+offset_left = 292.0
+offset_top = 8.0
+offset_right = 292.0
+offset_bottom = 8.0
+theme_override_fonts/font = SubResource("SystemFont_cqj66")
+theme_override_font_sizes/font_size = 16
+text = "Ground：地板
+Structures：墙体、栏杆、桥面
+Utilities：管线、水渠岸线
+Details：检修口、贴花（T07 / T08）
+
+共享外部 TileSet，可画到任意范围。
+结构、管线与细节可叠在地板上。"

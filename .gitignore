@@ -1,0 +1,51 @@
+# Godot 可重新生成的导入与编辑器缓存；保留 *.import、*.uid、.gdignore。
+.godot/
+.import/
+export.cfg
+export_credentials.cfg
+*.translation
+
+# 编辑器、Python 与操作系统临时文件。
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.log
+
+# 本地凭据不进入公开仓库；允许无凭据的配置示例。
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# 交付压缩包可以由源文件重新生成，避免重复存储与超大文件。
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+
+# 已解包的交付快照、旧建筑隔离备份不属于主工程源文件。
+/art-source/ember/deliveries/
+/art-source/ember/building-cleanup-hold/
+
+# 独立冷导入/临时验收工程：保留目录外的源稿、规范和结果报告。
+/art-source/ember/qa-cold/
+/art-source/ember/*-coldcheck*/
+/art-source/ember/*-cold-qa/
+/art-source/ember/**/technical-cold-*/
+/art-source/ember/**/cold-*/
+/art-source/ember/**/fresh-project*/
+/art-source/ember/qa/robot-joint-repair-v010-cold-20261006/

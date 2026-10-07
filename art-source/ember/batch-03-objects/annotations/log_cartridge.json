@@ -1,0 +1,73 @@
+{
+  "observations": "实际母稿两根顶铜触点、长方陶瓷记录壳、中央深凹槽和右下铜锁扣；没有文字内容，原生23×34识别明确。",
+  "adjustments": [
+    "中心物理凹槽[29,36,35,46)归并为6px宽中性深色块、最下2行加深；它不是发光运行屏幕",
+    "两铜触点的顶边分别整理成2px材质亮点，保留槽中性及单侧锁扣不对称方向",
+    "去半透明halo与孤立钢灰点；64画布底界56，日志正文留给UI"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        29,
+        36,
+        35,
+        46
+      ],
+      "color": 2
+    },
+    {
+      "type": "rect",
+      "bounds": [
+        29,
+        44,
+        35,
+        46
+      ],
+      "color": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          27,
+          23
+        ],
+        [
+          28,
+          23
+        ]
+      ],
+      "color": 8
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          34,
+          23
+        ],
+        [
+          35,
+          23
+        ]
+      ],
+      "color": 8
+    }
+  ],
+  "non_runtime_glass": [
+    {
+      "id": "physical_recess",
+      "rect": [
+        29,
+        36,
+        35,
+        46
+      ],
+      "emits": false
+    }
+  ],
+  "emitter_points": [],
+  "runtime_windows": [],
+  "components": []
+}

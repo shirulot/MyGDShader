@@ -1,0 +1,468 @@
+{
+  "version": "v002",
+  "source": "res://source/canonical.png",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "method": "Immutable texture regions rendered by editable Godot Polygon2D parts; sagittal two-bone kinematics with declared orthographic projection.",
+  "alpha_policy": "Source RGBA retained, no threshold or palette operation; native finish remains pending.",
+  "projection": {
+    "height_to_screen_y": -0.75,
+    "depth_to_screen_y": 0.35,
+    "hip_height": 32.0,
+    "ankle_height": 8.0,
+    "thigh_length": 11.0,
+    "shin_length": 15.0
+  },
+  "parts": [
+    {
+      "id": "right_thigh",
+      "pivot": [
+        58,
+        80
+      ],
+      "end": [
+        57,
+        87
+      ],
+      "polygon": [
+        [
+          53,
+          79
+        ],
+        [
+          59,
+          81
+        ],
+        [
+          59,
+          86
+        ],
+        [
+          64,
+          86
+        ],
+        [
+          53,
+          86
+        ]
+      ],
+      "z": 0
+    },
+    {
+      "id": "left_thigh",
+      "pivot": [
+        70,
+        80
+      ],
+      "end": [
+        71,
+        87
+      ],
+      "polygon": [
+        [
+          70,
+          80
+        ],
+        [
+          74,
+          79
+        ],
+        [
+          75,
+          83
+        ],
+        [
+          77,
+          86
+        ],
+        [
+          65,
+          86
+        ],
+        [
+          70,
+          86
+        ]
+      ],
+      "z": 0
+    },
+    {
+      "id": "right_shin",
+      "pivot": [
+        57,
+        87
+      ],
+      "end": [
+        56,
+        98
+      ],
+      "polygon": [
+        [
+          53,
+          86
+        ],
+        [
+          64,
+          86
+        ],
+        [
+          64,
+          98
+        ],
+        [
+          53,
+          98
+        ]
+      ],
+      "z": 1
+    },
+    {
+      "id": "left_shin",
+      "pivot": [
+        71,
+        87
+      ],
+      "end": [
+        72,
+        98
+      ],
+      "polygon": [
+        [
+          65,
+          86
+        ],
+        [
+          77,
+          86
+        ],
+        [
+          77,
+          98
+        ],
+        [
+          65,
+          98
+        ]
+      ],
+      "z": 1
+    },
+    {
+      "id": "right_foot",
+      "pivot": [
+        56,
+        98
+      ],
+      "polygon": [
+        [
+          50,
+          95
+        ],
+        [
+          64,
+          95
+        ],
+        [
+          64,
+          108
+        ],
+        [
+          50,
+          108
+        ]
+      ],
+      "z": 2
+    },
+    {
+      "id": "left_foot",
+      "pivot": [
+        72,
+        98
+      ],
+      "polygon": [
+        [
+          65,
+          95
+        ],
+        [
+          79,
+          95
+        ],
+        [
+          79,
+          108
+        ],
+        [
+          65,
+          108
+        ]
+      ],
+      "z": 2
+    },
+    {
+      "id": "head_chest_pelvis",
+      "pivot": [
+        64,
+        80
+      ],
+      "polygon": [
+        [
+          54,
+          48
+        ],
+        [
+          74,
+          48
+        ],
+        [
+          74,
+          72
+        ],
+        [
+          76,
+          77
+        ],
+        [
+          74,
+          79
+        ],
+        [
+          70,
+          80
+        ],
+        [
+          70,
+          86
+        ],
+        [
+          59,
+          86
+        ],
+        [
+          59,
+          81
+        ],
+        [
+          53,
+          79
+        ],
+        [
+          52,
+          76
+        ],
+        [
+          54,
+          71
+        ]
+      ],
+      "z": 3
+    },
+    {
+      "id": "right_arm_gun",
+      "pivot": [
+        51,
+        69
+      ],
+      "polygon": [
+        [
+          40,
+          48
+        ],
+        [
+          54,
+          48
+        ],
+        [
+          54,
+          71
+        ],
+        [
+          52,
+          76
+        ],
+        [
+          53,
+          79
+        ],
+        [
+          53,
+          96
+        ],
+        [
+          40,
+          96
+        ]
+      ],
+      "z": 4
+    },
+    {
+      "id": "left_arm_claw",
+      "pivot": [
+        77,
+        69
+      ],
+      "polygon": [
+        [
+          74,
+          48
+        ],
+        [
+          88,
+          48
+        ],
+        [
+          88,
+          97
+        ],
+        [
+          77,
+          97
+        ],
+        [
+          75,
+          83
+        ],
+        [
+          74,
+          79
+        ],
+        [
+          76,
+          77
+        ],
+        [
+          74,
+          72
+        ]
+      ],
+      "z": 4
+    }
+  ],
+  "phases": [
+    {
+      "frame": 0,
+      "phase": "left_contact",
+      "body_y": 0,
+      "left": {
+        "depth": 6,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": -6,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 1,
+      "phase": "left_down",
+      "body_y": 1,
+      "left": {
+        "depth": 3,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": -3,
+        "lift": 3,
+        "support": false
+      }
+    },
+    {
+      "frame": 2,
+      "phase": "right_passing",
+      "body_y": 0,
+      "left": {
+        "depth": 0,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": 0,
+        "lift": 5,
+        "support": false
+      }
+    },
+    {
+      "frame": 3,
+      "phase": "left_up",
+      "body_y": -1,
+      "left": {
+        "depth": -3,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": 3,
+        "lift": 2,
+        "support": false
+      }
+    },
+    {
+      "frame": 4,
+      "phase": "right_contact",
+      "body_y": 0,
+      "left": {
+        "depth": -6,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": 6,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 5,
+      "phase": "right_down",
+      "body_y": 1,
+      "left": {
+        "depth": -3,
+        "lift": 3,
+        "support": false
+      },
+      "right": {
+        "depth": 3,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 6,
+      "phase": "left_passing",
+      "body_y": 0,
+      "left": {
+        "depth": 0,
+        "lift": 5,
+        "support": false
+      },
+      "right": {
+        "depth": 0,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 7,
+      "phase": "right_up",
+      "body_y": -1,
+      "left": {
+        "depth": 3,
+        "lift": 2,
+        "support": false
+      },
+      "right": {
+        "depth": -3,
+        "lift": 0,
+        "support": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,873 @@
+{
+  "tile_size": 32,
+  "status": "LAYOUT_SPEC_ONLY_NO_PRODUCTION_PNG",
+  "atlas_columns": 8,
+  "atlases": [
+    {
+      "source_id": 0,
+      "id": "ground_details",
+      "texture": "res://assets/ember/environment/tilesets/ground_details_v001.png",
+      "columns": 8,
+      "margins": [
+        0,
+        0
+      ],
+      "separation": [
+        0,
+        0
+      ],
+      "planned_size": [
+        256,
+        64
+      ],
+      "tiles": [
+        {
+          "id": "floor_clean",
+          "name": "干净钢板",
+          "category": "T01",
+          "variant": "clean",
+          "alpha_mode": "opaque",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "floor_worn",
+          "name": "磨损钢板",
+          "category": "T01",
+          "variant": "worn",
+          "alpha_mode": "opaque",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            1,
+            0
+          ]
+        },
+        {
+          "id": "floor_grate",
+          "name": "格栅地板",
+          "category": "T01",
+          "variant": "grate",
+          "alpha_mode": "opaque",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            2,
+            0
+          ]
+        },
+        {
+          "id": "floor_wet",
+          "name": "潮湿钢板",
+          "category": "T01",
+          "variant": "wet",
+          "alpha_mode": "opaque",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            3,
+            0
+          ]
+        },
+        {
+          "id": "hatch_closed",
+          "name": "检修口关闭",
+          "category": "T07",
+          "variant": "hatch_closed",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            4,
+            0
+          ]
+        },
+        {
+          "id": "hatch_open",
+          "name": "检修口开启",
+          "category": "T07",
+          "variant": "hatch_open",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            5,
+            0
+          ]
+        },
+        {
+          "id": "decal_crack",
+          "name": "浅裂痕",
+          "category": "T08",
+          "variant": "crack",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            6,
+            0
+          ]
+        },
+        {
+          "id": "decal_rust",
+          "name": "轻锈斑",
+          "category": "T08",
+          "variant": "rust",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            7,
+            0
+          ]
+        },
+        {
+          "id": "decal_bolts",
+          "name": "备用螺栓",
+          "category": "T08",
+          "variant": "bolts",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            0,
+            1
+          ]
+        },
+        {
+          "id": "decal_oil",
+          "name": "机油渍",
+          "category": "T08",
+          "variant": "oil",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "decal_cable_loop",
+          "name": "电缆环",
+          "category": "T08",
+          "variant": "cable_loop",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "decal_debris",
+          "name": "维修碎屑",
+          "category": "T08",
+          "variant": "debris",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            3,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": 1,
+      "id": "structures",
+      "texture": "res://assets/ember/environment/tilesets/structures_v001.png",
+      "columns": 8,
+      "margins": [
+        0,
+        0
+      ],
+      "separation": [
+        0,
+        0
+      ],
+      "planned_size": [
+        256,
+        128
+      ],
+      "tiles": [
+        {
+          "id": "wall_center",
+          "name": "墙体中心",
+          "category": "T02",
+          "variant": "center",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "wall_edge_n",
+          "name": "墙体边缘 N",
+          "category": "T02",
+          "variant": "edge_n",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            1,
+            0
+          ]
+        },
+        {
+          "id": "wall_edge_e",
+          "name": "墙体边缘 E",
+          "category": "T02",
+          "variant": "edge_e",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            2,
+            0
+          ]
+        },
+        {
+          "id": "wall_edge_s",
+          "name": "墙体边缘 S",
+          "category": "T02",
+          "variant": "edge_s",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            3,
+            0
+          ]
+        },
+        {
+          "id": "wall_edge_w",
+          "name": "墙体边缘 W",
+          "category": "T02",
+          "variant": "edge_w",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            4,
+            0
+          ]
+        },
+        {
+          "id": "wall_outer_ne",
+          "name": "墙体外角 NE",
+          "category": "T02",
+          "variant": "outer_ne",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            5,
+            0
+          ]
+        },
+        {
+          "id": "wall_outer_se",
+          "name": "墙体外角 SE",
+          "category": "T02",
+          "variant": "outer_se",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            6,
+            0
+          ]
+        },
+        {
+          "id": "wall_outer_sw",
+          "name": "墙体外角 SW",
+          "category": "T02",
+          "variant": "outer_sw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            7,
+            0
+          ]
+        },
+        {
+          "id": "wall_outer_nw",
+          "name": "墙体外角 NW",
+          "category": "T02",
+          "variant": "outer_nw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            0,
+            1
+          ]
+        },
+        {
+          "id": "wall_inner_ne",
+          "name": "墙体内角 NE",
+          "category": "T02",
+          "variant": "inner_ne",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "wall_inner_se",
+          "name": "墙体内角 SE",
+          "category": "T02",
+          "variant": "inner_se",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "wall_inner_sw",
+          "name": "墙体内角 SW",
+          "category": "T02",
+          "variant": "inner_sw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            3,
+            1
+          ]
+        },
+        {
+          "id": "wall_inner_nw",
+          "name": "墙体内角 NW",
+          "category": "T02",
+          "variant": "inner_nw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            4,
+            1
+          ]
+        },
+        {
+          "id": "rail_straight_h",
+          "name": "水平栏杆",
+          "category": "T03",
+          "variant": "straight_h",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            5,
+            1
+          ]
+        },
+        {
+          "id": "rail_straight_v",
+          "name": "垂直栏杆",
+          "category": "T03",
+          "variant": "straight_v",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            6,
+            1
+          ]
+        },
+        {
+          "id": "rail_corner_ne",
+          "name": "栏杆转角 NE",
+          "category": "T03",
+          "variant": "corner_ne",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            7,
+            1
+          ]
+        },
+        {
+          "id": "rail_corner_se",
+          "name": "栏杆转角 SE",
+          "category": "T03",
+          "variant": "corner_se",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            0,
+            2
+          ]
+        },
+        {
+          "id": "rail_corner_sw",
+          "name": "栏杆转角 SW",
+          "category": "T03",
+          "variant": "corner_sw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "rail_corner_nw",
+          "name": "栏杆转角 NW",
+          "category": "T03",
+          "variant": "corner_nw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            2,
+            2
+          ]
+        },
+        {
+          "id": "rail_end_h",
+          "name": "水平栏杆端头",
+          "category": "T03",
+          "variant": "end_h",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            3,
+            2
+          ]
+        },
+        {
+          "id": "rail_end_v",
+          "name": "垂直栏杆端头",
+          "category": "T03",
+          "variant": "end_v",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            4,
+            2
+          ]
+        },
+        {
+          "id": "bridge_deck_h",
+          "name": "水平桥面",
+          "category": "T06",
+          "variant": "deck_h",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            5,
+            2
+          ]
+        },
+        {
+          "id": "bridge_deck_v",
+          "name": "垂直桥面",
+          "category": "T06",
+          "variant": "deck_v",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            6,
+            2
+          ]
+        },
+        {
+          "id": "bridge_edge_h",
+          "name": "水平桥缘",
+          "category": "T06",
+          "variant": "edge_h",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            7,
+            2
+          ]
+        },
+        {
+          "id": "bridge_edge_v",
+          "name": "垂直桥缘",
+          "category": "T06",
+          "variant": "edge_v",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            0,
+            3
+          ]
+        },
+        {
+          "id": "bridge_end_cap",
+          "name": "桥端",
+          "category": "T06",
+          "variant": "end_cap",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": 2,
+      "id": "utilities",
+      "texture": "res://assets/ember/environment/tilesets/utilities_v001.png",
+      "columns": 8,
+      "margins": [
+        0,
+        0
+      ],
+      "separation": [
+        0,
+        0
+      ],
+      "planned_size": [
+        256,
+        96
+      ],
+      "tiles": [
+        {
+          "id": "pipe_straight_h",
+          "name": "水平管线",
+          "category": "T04",
+          "variant": "straight_h",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "pipe_straight_v",
+          "name": "垂直管线",
+          "category": "T04",
+          "variant": "straight_v",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            1,
+            0
+          ]
+        },
+        {
+          "id": "pipe_elbow_ne",
+          "name": "管线弯头 NE",
+          "category": "T04",
+          "variant": "elbow_ne",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            2,
+            0
+          ]
+        },
+        {
+          "id": "pipe_elbow_se",
+          "name": "管线弯头 SE",
+          "category": "T04",
+          "variant": "elbow_se",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            3,
+            0
+          ]
+        },
+        {
+          "id": "pipe_elbow_sw",
+          "name": "管线弯头 SW",
+          "category": "T04",
+          "variant": "elbow_sw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            4,
+            0
+          ]
+        },
+        {
+          "id": "pipe_elbow_nw",
+          "name": "管线弯头 NW",
+          "category": "T04",
+          "variant": "elbow_nw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            5,
+            0
+          ]
+        },
+        {
+          "id": "pipe_tee_n",
+          "name": "管线T接 N",
+          "category": "T04",
+          "variant": "tee_n",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            6,
+            0
+          ]
+        },
+        {
+          "id": "pipe_tee_e",
+          "name": "管线T接 E",
+          "category": "T04",
+          "variant": "tee_e",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            7,
+            0
+          ]
+        },
+        {
+          "id": "pipe_tee_s",
+          "name": "管线T接 S",
+          "category": "T04",
+          "variant": "tee_s",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            0,
+            1
+          ]
+        },
+        {
+          "id": "pipe_tee_w",
+          "name": "管线T接 W",
+          "category": "T04",
+          "variant": "tee_w",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "pipe_cross",
+          "name": "管线交叉",
+          "category": "T04",
+          "variant": "cross",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "pipe_valve",
+          "name": "管线阀门",
+          "category": "T04",
+          "variant": "valve",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            3,
+            1
+          ]
+        },
+        {
+          "id": "channel_edge_n",
+          "name": "水渠岸线 N",
+          "category": "T05",
+          "variant": "edge_n",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            4,
+            1
+          ]
+        },
+        {
+          "id": "channel_edge_e",
+          "name": "水渠岸线 E",
+          "category": "T05",
+          "variant": "edge_e",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            5,
+            1
+          ]
+        },
+        {
+          "id": "channel_edge_s",
+          "name": "水渠岸线 S",
+          "category": "T05",
+          "variant": "edge_s",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            6,
+            1
+          ]
+        },
+        {
+          "id": "channel_edge_w",
+          "name": "水渠岸线 W",
+          "category": "T05",
+          "variant": "edge_w",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            7,
+            1
+          ]
+        },
+        {
+          "id": "channel_outer_ne",
+          "name": "水渠外角 NE",
+          "category": "T05",
+          "variant": "outer_ne",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            0,
+            2
+          ]
+        },
+        {
+          "id": "channel_outer_se",
+          "name": "水渠外角 SE",
+          "category": "T05",
+          "variant": "outer_se",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "channel_outer_sw",
+          "name": "水渠外角 SW",
+          "category": "T05",
+          "variant": "outer_sw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            2,
+            2
+          ]
+        },
+        {
+          "id": "channel_outer_nw",
+          "name": "水渠外角 NW",
+          "category": "T05",
+          "variant": "outer_nw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            3,
+            2
+          ]
+        },
+        {
+          "id": "channel_inner_ne",
+          "name": "水渠内角 NE",
+          "category": "T05",
+          "variant": "inner_ne",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            4,
+            2
+          ]
+        },
+        {
+          "id": "channel_inner_se",
+          "name": "水渠内角 SE",
+          "category": "T05",
+          "variant": "inner_se",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            5,
+            2
+          ]
+        },
+        {
+          "id": "channel_inner_sw",
+          "name": "水渠内角 SW",
+          "category": "T05",
+          "variant": "inner_sw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            6,
+            2
+          ]
+        },
+        {
+          "id": "channel_inner_nw",
+          "name": "水渠内角 NW",
+          "category": "T05",
+          "variant": "inner_nw",
+          "alpha_mode": "binary",
+          "status": "PLANNED_NEEDS_PIXEL_FINISH",
+          "interfaces_status": "TO_BE_DEFINED_AFTER_PIXEL_FINISH",
+          "coord": [
+            7,
+            2
+          ]
+        }
+      ]
+    }
+  ]
+}

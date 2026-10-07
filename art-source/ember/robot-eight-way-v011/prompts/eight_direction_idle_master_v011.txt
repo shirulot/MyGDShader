@@ -1,0 +1,23 @@
+Create a production turnaround master of the EXACT SAME small pixel-art utility robot in the attached references. This is eight directions of ONE fixed character, all in the SAME relaxed standing pose, not an animation strip and not eight redesigns.
+
+Reference priority: the first reference is the approved v010 pixel character and continuous joint construction, in a 4-column by 2-row layout. Match its proportions, ivory armor, restrained blue-gray structure and simple pixel planes. The second reference shows the existing front/left/right/back identity and how the asymmetric left-wrist brass tool rotates with the body. The third reference is ONLY an explanatory construction sheet; use its continuous overlapping elbows/knees and back-head geometry, not its text or diagram styling.
+
+Return ONE transparent sheet, exact aspect ratio 4:3, preferably 1024x768. Four equal columns and two equal rows, NO labels, NO lines, NO panels, NO shadows. Each slot is 256x384 displayed pixels representing a 64x96 logical pixel cell at 4x nearest-neighbor. Every robot stays fully inside its own cell. Crown at logical y21; common ground/sole line at y80; fixed root at logical (32,80). The relaxed pose has both soles planted, pelvis centered, arms at rest. Overall character height about59-60 logical pixels, head about24x23 logical pixels. Keep front/back width around40px; side view appropriately narrower without changing the character's physical proportions. Plenty of transparent padding above and below.
+
+Exact cell order, reading left-to-right then second row:
+1: DOWN / SOUTH. Exactly front-facing toward camera.
+2: DOWN_LEFT / SOUTHWEST. Body and head rotated45 degrees toward screen-left from the front. Visible front and character's physical left side.
+3: LEFT / WEST. True side profile facing screen-left. Character's LEFT arm is near the camera; the brass left-wrist tool is fully visible.
+4: UP_LEFT / NORTHWEST. Back three-quarter view facing upper-left. Mostly back and physical left side, not a front-facing visor.
+5: UP / NORTH. Exact back view. Plain ivory back of helmet with its SMALL blue-gray back slot, no front visor. Keep the original back armor; do not add a backpack or exhausts.
+6: UP_RIGHT / NORTHEAST. Back three-quarter view facing upper-right. Mostly back and physical right side. Physical left wrist and its tool are on the FAR side and naturally occluded.
+7: RIGHT / EAST. True side profile facing screen-right. Character's RIGHT arm is near camera. Physical left wrist tool stays on the FAR arm; do not swap it onto the visible near arm.
+8: DOWN_RIGHT / SOUTHEAST. Body and head rotated45 degrees toward screen-right from the front. Visible front and physical right side. Left-wrist tool remains on the far arm.
+
+The tool is attached ONLY to the robot's anatomical LEFT wrist. In the front it appears on viewer-right, in the back on viewer-left. Rotate one physical robot: NEVER mirror sprites, NEVER put identical tools on both wrists, and do not force an occluded tool to the visible near side. Left and right profiles are separate drawings with the same fixed screen-upper-left illumination.
+
+Pixel construction: crisp intentional logical pixel clusters; hard nearest-neighbor square edges; limited palette. Use colors matching the references: #101820 #182631 #2B3E4B #4D6470 #829BA3 #BECBC4 #566B78 #ECE9D8 and small brass #7B4D35 #B77C4B #E2B77A only on the existing wrist tool. No airbrush, antialiasing, glow, glossy metal, fine new greebles, new marks, random rivets, scratches or extra accessories. Preserve large dark visor shape and the light helmet shell, compact torso, chunky rigid boots, and the exact established head-to-body ratio.
+
+Every shoulder, elbow, wrist, hip, knee and ankle must read as an assembled structure of tangible thickness. Use medium blue-gray internal bearing surfaces tucked under armor on both ends. Knee caps overlap into the thighs and shins; ankles tuck inside the boots. No thin suspension rods, detached ring washers, isolated armor plates, background slit across a limb, or black horizontal cut-through separating the body segments. Show occlusion and depth consistently with the specific view. Do not make the knees or elbows into big new spherical toys. A clean utility robot in the already accepted restrained style.
+
+Keep head, body and both feet aligned to the SAME requested direction in each slot. These are neutral standing mother poses for later fixed-part animation. Transparent background everywhere outside the robots. No titles, numbers, text, arrows, frames, checkerboard or floor.

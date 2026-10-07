@@ -1,0 +1,51 @@
+{
+  "observations": "实际母稿C形三分之四钢环、浅色陶瓷圈、右下明确开口和铜端头；原生中央孔与开口真实相通。",
+  "adjustments": [
+    "右下gap[41,48,44,51)归并成连续透明开口，消除采样可能残留孤立桥点，不填底色",
+    "左上陶瓷高光整理为3px短段、内缘钢灰用1px轮廓清楚收边，保留偏右铜端头",
+    "中央孔保持不规则透视椭圆原生负形，不用几何圆环替换母稿整体轮廓"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        41,
+        48,
+        44,
+        51
+      ],
+      "color": "transparent"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          25,
+          27
+        ],
+        [
+          28,
+          27
+        ]
+      ],
+      "color": 5
+    }
+  ],
+  "calibration_features": {
+    "orientation": "右下开口/铜端头",
+    "opening_rect": [
+      41,
+      48,
+      44,
+      51
+    ],
+    "central_hole_seed": [
+      32,
+      40
+    ],
+    "hole_connected_to_exterior": true
+  },
+  "emitter_points": [],
+  "runtime_windows": [],
+  "components": []
+}

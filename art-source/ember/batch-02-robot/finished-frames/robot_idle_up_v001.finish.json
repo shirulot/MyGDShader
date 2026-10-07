@@ -1,0 +1,68 @@
+{
+  "id": "robot_idle_up",
+  "source": "art-source/ember/batch-02-robot/generated/robot_idle_up_master_v001.png",
+  "source_sha256": "9ec7dca3f4cbaaa45044df49e6b169770e67c1c385a014f3aaaf52c07808efec",
+  "output": "art-source/ember/batch-02-robot/finished-frames/robot_idle_up_v001.png",
+  "annotation": "art-source/ember/batch-02-robot/annotations/idle_up.json",
+  "annotation_sha256": "f65ddf127cabb6d4e9bb4ea5eb50aa6cf7c7e0f8d6ac89d12b768051180bd5f9",
+  "dependencies": [],
+  "source_use": "AI_MATERIAL_AND_POSE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+  "observations": {
+    "design_observation": "实际母稿是陶瓷头盔背面、钢灰下沿与两耳模块；小背部维护槽替代正面visor，浅陶瓷肩/背/前臂/小腿及深钢灰关节保留；没有前面罩或胸部灯。高Alpha主体以240分离，母稿halo不进入原生底图。",
+    "tool_hand_observation": "背视黄铜工具明确在屏幕左腕，是与down屏幕右腕对应的同一解剖左手。母稿工具为细长维修接口，不翻图。"
+  },
+  "adjustments": [
+    "主体母稿区域做38×59网格材料采样，固定同11种静态颜色；母稿只读",
+    "移除半透明halo/碎片，保留最大主体并重画1像素外轮廓",
+    "头盔背槽原生重画为第28行5像素暗蓝灰与第29行3像素深口，去孤立陶瓷亮斑",
+    "背甲维护口原生整理为3像素深口及2像素凹面，明确不是胸部发光窗",
+    "两脚底保持第79行/边界80；左腕黄铜工具按母稿保持，不翻图"
+  ],
+  "process": {
+    "subject_crop": [
+      208,
+      349,
+      801,
+      1265
+    ],
+    "material_sampling_size": [
+      38,
+      59
+    ],
+    "native_subject_origin": [
+      13,
+      21
+    ],
+    "sampling_role": "材质和造型起点；不是独立验收结果"
+  },
+  "measurement": {
+    "canvas": [
+      64,
+      96
+    ],
+    "bbox": [
+      13,
+      21,
+      51,
+      80
+    ],
+    "anchor": [
+      32,
+      80
+    ],
+    "anchor_convention": "脚底边界；接地像素末行79",
+    "rgb_count": 10,
+    "rules": {
+      "binary_alpha": true,
+      "palette": true,
+      "subject_max_40x64": true,
+      "ground_boundary_80": true,
+      "subject_centered_in_x12_52": true
+    }
+  },
+  "runtime_windows": [],
+  "emitter_points": [],
+  "emission_baked": false,
+  "review_status": "ROOT_VISUAL_REVIEW_REQUIRED",
+  "output_sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833"
+}

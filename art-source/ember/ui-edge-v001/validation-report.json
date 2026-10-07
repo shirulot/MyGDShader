@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "revision": "v003",
+  "selected_direction": "A 边缘标记",
+  "generated_at": "2026-10-06T16:50:39.0115936+08:00",
+  "production": "Godot integer pixel skin and native Control components; reference PNG preserved unchanged",
+  "skin_png_count": 18,
+  "component_scene_count": 8,
+  "logic_checks": 245,
+  "logic_failures": 0,
+  "reuse_checks": 53,
+  "widget_checks": 68,
+  "lifecycle_checks": 112,
+  "lifecycle_failures": 0,
+  "ta_probe_regression_checks": 8,
+  "ta_review_status": "PENDING",
+  "audited_layout_samples": 70,
+  "layout_geometry_errors": 0,
+  "layout_limitations": 26,
+  "gpu_status": "PASS",
+  "gpu_capture_count": 12,
+  "gpu_pixel_checks": "0/38/100 fill and fixed clamps at two widths",
+  "visual_review": "12 engine captures reviewed: standard HUD, four states, fixed clamps, compact folded life, long values and narrow drawer fallback",
+  "reference_sha256": "cdbc5d85970c5a1a3d0001d96a40607be4a0d50810e764becc07757f941c2814",
+  "source_sha256": {
+    "res://scripts/ember/ui_edge_binding_v001.gd": "5e55a1b642466ae0c16101cb1cf4db422cc79d5ba3740872314334b43e7c64a4",
+    "res://scripts/ember/ui_edge_v001/bracket_button.gd": "ba618eaa83ce2481f9b1751fa67ecdcebb3ecbd199f7d8255dd5b9e75327ea54",
+    "res://scripts/ember/ui_edge_v001/edge_hud.gd": "ceb8e431d72e180cfee848fcf7e56658cd795e3bccc385f0b70de11c9919be65",
+    "res://scripts/ember/ui_edge_v001/edge_ui_state.gd": "a807697eedd37d06fe1a572faafb64d89769bbea3b4aa647cc1e054367963c5f",
+    "res://scripts/ember/ui_edge_v001/edge_ui_style.gd": "417161ef8cce7a0a39a138c51b2590d8a19746d6587f65d0a7ac2ccb84e59410",
+    "res://scripts/ember/ui_edge_v001/energy_progress.gd": "095e7959a4c28e06d12507a777866f75f761d61690f8253874ae5919eb0c2917",
+    "res://scripts/ember/ui_edge_v001/life_indicator.gd": "2d9b9fea12031ba7709f3ea1887f4c0ad3c32103196a2861d34b2c00da5549f0",
+    "res://scripts/ember/ui_edge_v001/state_row.gd": "4306e5bf927f88ca1aa541800c1ea07d6fb057e014cdbd7efca9adb0eccb885a",
+    "res://scripts/ember/ui_edge_v001/station_drawer.gd": "9543a8963c69f27c0ca80e3e2b1bec099d10e911448f0a0ae2cd35de89c9bc0a",
+    "res://scripts/ember/ui_edge_v001/station_marker.gd": "688144213b942f717bda75580beda7e737b11af5ed24edbe472e4b0b3dab6bc5",
+    "res://scripts/ember/ui_edge_v001/timer_badge.gd": "779c72e79064f4c933600562df914da04a04e53b74ab21ef7e00b0bb56b5efb4"
+  },
+  "protected_existing_sources": [
+    {
+      "path": "scenes/m0/energy_station.gd",
+      "sha256": "f62aa3fea83816e34f3a198545595841a2b0ec27e8d1d3ad3e167ac59403149d",
+      "unchanged": true
+    },
+    {
+      "path": "scenes/ember/map_assets_tidal_port_v001.tscn",
+      "sha256": "ffecabbb1ff9b8755849d572c884768986e6d6b13fe48e9e4327292c14ca6b48",
+      "unchanged": true
+    },
+    {
+      "path": "project.godot",
+      "sha256": "f1b0b9d3a429cbc38d19cfcb9c0d683f15e6543a53c175b78b2c6296ca6718ba",
+      "unchanged": true
+    },
+    {
+      "path": "scenes/m0/ui.gd",
+      "sha256": "28d0783ffd5b83268de91c0ce302abd235c73fb74e7e5d2d0f80ee227f0d5f6c",
+      "unchanged": true
+    },
+    {
+      "path": "scenes/m0/ember_harvest.gd",
+      "sha256": "1bb6558593ebbc30f4745e6e13d1321729d9f49af80e9890223631f8e05dee3f",
+      "unchanged": true
+    }
+  ],
+  "reports": [
+    "logic-validation.json",
+    "reuse-validation-v002.json",
+    "widget-audit-v002.json",
+    "layout-audit-v002.json",
+    "lifecycle-validation-v003.json",
+    "ta-regression-v003.json",
+    "gpu-validation.json",
+    "assets/ember/ui_edge_v001/inventory.json"
+  ],
+  "scope": "Independent reusable components and optional binding helper; M0/main scene unchanged; drawer is nonmodal"
+}

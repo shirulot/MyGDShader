@@ -1,0 +1,22 @@
+--- scripts/ember/building_evidence_player_v002.gd
++++ scripts/ember/building_evidence_player_v003.gd
+@@ -2,8 +2,8 @@
+ ## 播放真实GPU动作帧，旁边的状态来自同一次截图的节点数据。
+ ## 这是验收影像播放器；实际互动请运行 demo.tscn。
+ 
+-const INDEX := "res://assets/ember/building_assets_v002/previews/actions/action_index_v002.json"
+-const BASE := "res://assets/ember/building_assets_v002/previews/"
++const INDEX := "res://assets/ember/building_assets_v003/previews/actions/action_index_v003.json"
++const BASE := "res://assets/ember/building_assets_v003/previews/"
+ var _frames: Array = []
+ var _textures: Array[Texture2D] = []
+ var _image: TextureRect
+@@ -28,7 +28,7 @@
+ 	_label.add_theme_color_override("font_color", Color(0.83, 0.88, 0.82))
+ 	add_child(_label)
+ 	if not FileAccess.file_exists(INDEX):
+-		_label.text = "动作证据尚未拍摄。请先运行 capture_building_assets_v002.gd。"
++		_label.text = "动作证据尚未拍摄。请先运行 capture_building_assets_v003.gd。"
+ 		return
+ 	var record: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(INDEX))
+ 	_frames = record.get("frames", [])

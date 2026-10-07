@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "initial_godot_cache_absent": true,
+  "engine": "E:\\steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+  "calls": [
+    {
+      "call": "import",
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-heavy-v014-move-v002\\cold-project",
+        "--editor",
+        "--import"
+      ],
+      "exit_code": 0,
+      "seconds": 5.763,
+      "stdout_file": "import.stdout.log",
+      "stderr_file": "import.stderr.log",
+      "stderr_bytes": 0,
+      "stdout_sha256": "b6f51a79199fe78db188e8301727c55b64195a9e9fa2eb06210ea6640a39da46",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "call": "probe",
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-heavy-v014-move-v002\\cold-project",
+        "--script",
+        "res://ta_probe.gd",
+        "--",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-heavy-v014-move-v002\\cold-probe.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.315,
+      "stdout_file": "probe.stdout.log",
+      "stderr_file": "probe.stderr.log",
+      "stderr_bytes": 0,
+      "stdout_sha256": "95568b312d6fb448d260cee22fea15b389c3a36a6e6d6100190dc85719bb70ba",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "independent_checks_passed": 24,
+  "independent_checks_total": 24,
+  "probe_sha256": "82892267afef4e3ce92a8a989f2bfa603bcaf6fd7833c50488059d2606ba8bf0",
+  "original161_payloads_after_cold_import_hash_same": true,
+  "ta_gpu_rerun": false,
+  "author96_gpu_or_full16player8direction_suite_rerun": false
+}

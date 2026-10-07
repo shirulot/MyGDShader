@@ -1,0 +1,15 @@
+{
+  "version":"v007",
+  "unit":"enemy_tracked_heavy",
+  "source":"res://source/canonical.png",
+  "canvas":[128,128],
+  "root":[64,104],
+  "method":"Fixed canonical texture regions; static track envelopes and source tread-window phase; no per-frame character regeneration.",
+  "parts":[
+    {"id":"left_track_mount","pivot":[36,104],"polygon":[[0,0],[47,0],[47,128],[0,128]],"z":0},
+    {"id":"right_track_mount","pivot":[92,104],"polygon":[[81,0],[128,0],[128,128],[81,128]],"z":0},
+    {"id":"tower_projector","pivot":[64,80],"polygon":[[44,0],[84,0],[84,128],[44,128]],"z":1}
+  ],
+  "overlap":"Three source pixels at each tower/track mounting interface remain behind the moving tower, preserving the existing mount rather than filling per frame.",
+  "treads":{"left_window":[30,86,12,16],"right_window":[86,86,12,16],"source_period_y":16,"step_px":2}
+}

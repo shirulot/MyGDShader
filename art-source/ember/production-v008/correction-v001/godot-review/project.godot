@@ -1,0 +1,19 @@
+; 仅用于本轮像素候选审查，不加载主项目autoload或课程场景。
+config_version=5
+
+[application]
+config/name="Ember pixel correction pilot"
+run/main_scene="res://review.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1600
+window/size/viewport_height=1100
+window/size/window_width_override=1280
+window/size/window_height_override=880
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.047,0.075,0.094,1)

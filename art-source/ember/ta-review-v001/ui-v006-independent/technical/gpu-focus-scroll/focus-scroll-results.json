@@ -1,0 +1,144 @@
+{
+	"captures": [
+		{
+			"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\ui-v006-independent\\technical\\gpu-focus-scroll/settings_slider_focused_720.png",
+			"height": 720,
+			"sha256": "e88aa3d8ede3ef18f15c3500a356580e0e28896c44af21fdf3b91713acf2a3c3",
+			"width": 720
+		},
+		{
+			"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\ui-v006-independent\\technical\\gpu-focus-scroll/settings_slider_unfocused_720.png",
+			"height": 720,
+			"sha256": "0a7a5e510dc6532f3e4b7178daaf5572770ee8ffcce74157c19331a857b6226d",
+			"width": 720
+		},
+		{
+			"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\ui-v006-independent\\technical\\gpu-focus-scroll/compact_cancel_after_real_shift_tab_320.png",
+			"height": 480,
+			"sha256": "8d8dc6257e03535425312bd3bd24774c74000466e3a22b72fb9bd8158d60b9f6",
+			"width": 320
+		},
+		{
+			"file": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\ui-v006-independent\\technical\\gpu-focus-scroll/compact_slider_after_real_shift_tab_320.png",
+			"height": 480,
+			"sha256": "4a1ca0d9d608edde2c0fdd7155824944ecd6855c510d95497214cd376484de8b",
+			"width": 320
+		}
+	],
+	"check_count": 16,
+	"checks": [
+		{
+			"detail": null,
+			"id": "focus.visible_layer",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "focus.nonblocking_layer",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "focus.hidden_layer",
+			"pass": true
+		},
+		{
+			"detail": {
+				"changed_pixels": 112,
+				"focused": true,
+				"roi": [
+					84,
+					232,
+					552,
+					44
+				],
+				"unfocused": true,
+				"value": 36.0
+			},
+			"id": "focus.same_value_visible_difference",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "focus.reenter_shows_again",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "reparent.current_viewport_focus",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "shift_tab.cancel_receives_real_event",
+			"pass": true
+		},
+		{
+			"detail": {
+				"after_scroll": 47,
+				"before_scroll": 0,
+				"cancel_rect": "[P: (48.0, 380.0), S: (216.0, 52.0)]",
+				"scroll_rect": "[P: (48.0, 112.0), S: (224.0, 320.0)]"
+			},
+			"id": "shift_tab.cancel_scrolls_inside",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "shift_tab.next_back_is_save",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "shift_tab.next_back_is_markers",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "shift_tab.slider_scrolls_back_inside",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "keyboard.slider_one_step",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "tab.unfocus_hides_compact_overlay",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "compact.cancel_discards_draft",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "deferred.close_all_safe",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"id": "input_map.unchanged",
+			"pass": true
+		}
+	],
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"failures": [],
+	"modal_sha256": "0b2788cc6504c1c2d96998ca7e57e75baa3afd8c21d7dca2204716ef459c21bb",
+	"note": "Independent real input events; no manual ensure_control_visible or cycle_focus calls.",
+	"renderer": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"source_sha256": "bb3b3e2a240137fe3995464089c3ebf6966f2a2caafec76d0f4735b498949016",
+	"status": "PASS"
+}

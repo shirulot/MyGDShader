@@ -1,0 +1,287 @@
+{
+  "revision": "enemy_design_sheets_v001",
+  "status": "DESIGN_REFERENCE_QA_REVIEWED",
+  "final_catalog": "design_catalog_v001.json",
+  "scope": "Four accepted enemy designs, front/right/back turnarounds and exploded broad-module visual design sheets. Not animation or implemented game enemies.",
+  "tool": "built_in_imagegen",
+  "source_reference_directory": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/",
+  "output_directory": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001",
+  "units": [
+    {
+      "id": "enemy_patrol",
+      "name": "轻型巡逻兵",
+      "code": "01 / PATROL",
+      "identity": "The exact accepted compact biped from reference image 1: pale ivory domed helmet with a small blue-grey cap plate, dark horizontal visor with one tiny amber-red rectangular sensor; narrow blue-grey waist, ivory chest and rounded shoulder covers, short brass joint couplings, stout separate legs with ivory kneecaps and broad blue-grey toe caps. The robot's anatomical RIGHT forearm (viewer LEFT in the front reference) is the integrated stubby industrial bolt-projector, and its anatomical LEFT forearm is the two-prong manipulator. It is a small industrial robot, never a tall human-proportioned soldier.",
+      "rotation": "Preserve the tool asymmetry anatomically: right profile shows the projector arm nearest camera; BACK view places that same projector on viewer RIGHT. Right-side profile must be a true 90-degree side orientation rather than a three-quarter pose. Rear helmet is ivory without a second face/visor. Back has a compact recessed blue-grey service plate contained within the original torso envelope, with only two broad quiet cooling slots, never a new backpack. Keep head size, shoulder size, leg lengths and total height identical in all three views.",
+      "parts": [
+        [
+          "01",
+          "Helmet shell",
+          "头部装甲与顶盖"
+        ],
+        [
+          "02",
+          "Visor sensor",
+          "视窗与传感器组件"
+        ],
+        [
+          "03",
+          "Torso armour",
+          "胸甲与背部检修盖"
+        ],
+        [
+          "04",
+          "Torso frame",
+          "蓝灰躯干骨架"
+        ],
+        [
+          "05",
+          "Joint couplings",
+          "黄铜关节接头组"
+        ],
+        [
+          "06",
+          "Right projector",
+          "右臂发射器"
+        ],
+        [
+          "07",
+          "Left manipulator",
+          "左臂夹爪"
+        ],
+        [
+          "08",
+          "Hip block",
+          "腰胯连接块"
+        ],
+        [
+          "09",
+          "Leg assemblies",
+          "左右腿组件"
+        ],
+        [
+          "10",
+          "Foot shells",
+          "左右脚部护壳"
+        ]
+      ],
+      "partsRules": "Separate armour covers from the compact blue-grey load-bearing frame. Show two legs and two feet total, paired shoulder covers, and the one projector / one manipulator as distinct non-interchangeable work-arm modules. The sensor cassette is separate from the helmet shell. The rear service plate may be included beside the chest shell. Keep the projector short and broad with the same blue-grey muzzle and ivory casing, no huge gun. Do not add a reactor backpack, new blades, batteries outside the envelope, wiring spaghetti or unsupported micro-components.",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_patrol_master_v001.png"
+    },
+    {
+      "id": "enemy_cutter",
+      "name": "近战切割工蜂",
+      "code": "02 / CUTTER",
+      "identity": "The exact accepted low squat cutting automaton from reference image 1: broad ivory rounded carapace with a compact raised blue-grey top cap, one forward horizontal amber-red sensor slit, compact brass front connector, four short stout blue-grey locomotion legs with ivory guards and brass joints, plus two short forward work arms. Anatomical RIGHT work arm (viewer LEFT in front) holds a broad circular toothed cutter with a brass center; anatomical LEFT work arm holds a chunky two-prong gripping claw. Keep the original squat body, not an upright humanoid or an organic insect.",
+      "rotation": "Exactly FOUR locomotion legs, in front/rear pairs, plus TWO forward work arms; do not confuse the tools with walking legs or invent more appendages. RIGHT profile has the cutter nearest camera; rear view puts the cutter on viewer RIGHT, retaining its front attachment. In a true side profile the circular blade may be narrower by projection and is never moved to the back. The rear carapace stays broad and low with a small recessed blue-grey service opening / two restrained vent slots; no rear visor or second sensor face, no tail. Maintain the same shell width/depth relationship and body height across views.",
+      "parts": [
+        [
+          "01",
+          "Upper carapace",
+          "上部装甲壳"
+        ],
+        [
+          "02",
+          "Lower chassis",
+          "下部承载底盘"
+        ],
+        [
+          "03",
+          "Top service cap",
+          "顶部检修盖"
+        ],
+        [
+          "04",
+          "Sensor cassette",
+          "前部传感器盒"
+        ],
+        [
+          "05",
+          "Walking legs x4",
+          "四组短支腿"
+        ],
+        [
+          "06",
+          "Joint couplings",
+          "黄铜关节接头组"
+        ],
+        [
+          "07",
+          "Cutter arm",
+          "右侧切割臂"
+        ],
+        [
+          "08",
+          "Blade and hub",
+          "圆盘刀片与轮毂"
+        ],
+        [
+          "09",
+          "Gripper arm",
+          "左侧夹持臂"
+        ]
+      ],
+      "partsRules": "Show four locomotion leg assemblies total (two mirrored pairs), separate from the two front work arms. Disassemble the right cutting tool into a short articulated arm, one broad-toothed blade and its brass hub; the other arm ends in the accepted chunky claw. Keep the four leg guards and joint caps grouped rather than inventing many tiny screws. The upper ivory shell lifts above the simple blue-grey chassis; the top service cap and front sensor cassette can be separated. Do not create a humanoid head/torso, giant spider body, six/eight walking legs or extra saws.",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_cutter_master_v001.png"
+    },
+    {
+      "id": "enemy_tracked_heavy",
+      "name": "履带重装机",
+      "code": "03 / TRACKED",
+      "identity": "The exact accepted squat wide tracked heavy automaton from reference image 1: two short broad dark blue-grey caterpillar track pods with ivory upper covers, brass coupling interfaces, compact central rounded ivory tower with layered blue-grey circular cap, one horizontal amber-red forward sensor slit and a single short blunt forward projector/muzzle below it. There are no arms, no legs, no human head, and no long tank gun. Its width is about twice the biped, while body height stays similar.",
+      "rotation": "Right profile must clearly show one long-enough compact caterpillar loop and its upper ivory cover at the same height as the front track blocks. Preserve two track pods total, their longitudinal orientation and attachment to the same central low chassis. Front projector points FORWARD in the right profile and remains at the accepted low front mounting; BACK shows the plain compact rear service plate with restrained vents, not a second muzzle or red visor. Keep the blue-grey cap centered on the same tower and do not extend it into an artillery turret or giant tank.",
+      "parts": [
+        [
+          "01",
+          "Tower armour",
+          "中央机塔装甲壳"
+        ],
+        [
+          "02",
+          "Top cap",
+          "顶部蓝灰盖"
+        ],
+        [
+          "03",
+          "Central chassis",
+          "中央承载底盘"
+        ],
+        [
+          "04",
+          "Sensor cassette",
+          "正面传感器盒"
+        ],
+        [
+          "05",
+          "Short projector",
+          "前置短炮模块"
+        ],
+        [
+          "06",
+          "Left track pod",
+          "左侧履带组件"
+        ],
+        [
+          "07",
+          "Right track pod",
+          "右侧履带组件"
+        ],
+        [
+          "08",
+          "Track covers",
+          "左右履带护盖"
+        ],
+        [
+          "09",
+          "Brass couplings",
+          "底盘黄铜连接座"
+        ]
+      ],
+      "partsRules": "Show two complete track pod subassemblies and two matching removable ivory track covers, a central simple blue-grey chassis, tower shell, top cap, one forward sensor cassette, one short projector module, and grouped brass mounting couplings. Keep each caterpillar loop as an intelligible complete module with a few large tread plates; a small wheel/roller inset may explain it without duplicating the track count. Do not add arms, legs, a human operator, long tank gun, missiles, rear weapons, big antennas or an external backpack.",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_tracked_heavy_master_v001.png"
+    },
+    {
+      "id": "enemy_scout_drone",
+      "name": "悬浮侦察机",
+      "code": "04 / SCOUT",
+      "identity": "The exact accepted hovering scout drone from reference image 1: a narrow ivory rounded-rectangle central sensor fuselage with a dark blue-grey top vent, one small amber-red forward vertical sensor window, a tiny brass lower connector, and two matching short enclosed fan pods on its left and right. Each fan pod has an ivory / blue-grey protective housing and four large dark blades around a brass hub. Short thick blue-grey struts with brass couplings connect the pods to the body. It is broad, compact and legless, with no tail, long wings or jet engines.",
+      "rotation": "Exactly TWO matching fan pods, lateral left and right, in the same level horizontal plane. Right profile is a true side silhouette showing their real short depth, with the far pod naturally occluded / partially visible, never inventing an extra third fan. The front sensor stays at the FORWARD face of the central fuselage; rear face has only a small blue-grey maintenance panel and subdued vent, no duplicate forward sensor. Fan blade count, enclosure thickness, brass hubs and support placement remain consistent. All three views float at the same body-bottom baseline; no landing legs or ground shadow.",
+      "parts": [
+        [
+          "01",
+          "Upper body shell",
+          "中央机身上壳"
+        ],
+        [
+          "02",
+          "Lower body frame",
+          "中央机身下框"
+        ],
+        [
+          "03",
+          "Optical sensor",
+          "前部光学传感器"
+        ],
+        [
+          "04",
+          "Fan housings x2",
+          "左右风扇护罩"
+        ],
+        [
+          "05",
+          "Rotors x2",
+          "左右四叶转子"
+        ],
+        [
+          "06",
+          "Fan motors x2",
+          "左右驱动电机"
+        ],
+        [
+          "07",
+          "Side struts x2",
+          "左右支撑臂"
+        ],
+        [
+          "08",
+          "Brass connectors",
+          "黄铜接口组"
+        ],
+        [
+          "09",
+          "Lower probe",
+          "底部小型探头"
+        ]
+      ],
+      "partsRules": "Disassemble exactly two fan modules: two protective housings, two four-blade rotors, two compact hubs/motor capsules and two short support struts. Position separated rotor disks above their own housing sockets with a clear common fan axis. Split the central fuselage into ivory upper shell and simple blue-grey lower frame; keep front sensor and tiny bottom probe separate. Pair counts must be evident. No legs, tail, landing skids, propellers added above the body, long wings, exhaust flames or a third motor.",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_scout_drone_master_v001.png"
+    }
+  ],
+  "three_view_jobs": [
+    {
+      "id": "enemy_patrol_three_views",
+      "unit_id": "enemy_patrol",
+      "name": "轻型巡逻兵",
+      "kind": "three_views",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_patrol_master_v001.png"
+      ],
+      "output_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_patrol_three_views_v001.png",
+      "prompt": "Use case: stylized-concept.\nAsset type: an Ember enemy-unit visual design sheet derived from an accepted pixel-art master.\nInput image 1 is the AUTHORITATIVE accepted design. Preserve its exact silhouette, compact proportions, geometry, ivory armour shapes, blue-grey structure, dull brass couplings, small amber-red sensor, tool position and sparse wear. The user has approved this exact unit. Do not redesign it or substitute a generic robot.\nStyle: the same crisp low-resolution 2D pixel art as the master, enlarged deliberate square pixel clusters, stepped contours and discreet shading. No smooth anti-aliased painting, glossy 3D rendering, photographic metal, blurred shading, dense rivets, fine wiring or new high-density greebles.\nPalette: muted warm ivory armour, dark petrol blue-grey mechanisms, tiny dull brass joints, restrained grey-brown weathering, one small amber-red sensor. Simple upper-left baked light; avoid bloom or red light spilling over the shell.\nSheet design: landscape roughly 1536x1024 or 2048x1152, quiet flat dark blue-grey background #17232A, generous spacing, clean ivory labels with small restrained brass identifiers, no scenery/floor/large grid/no gradient, no thick frames, no watermarks. Pixel artwork must dominate; labels stay restrained and readable. Entire objects and detached parts must fit with comfortable margins.\n\nPrimary request: create ONE THREE-VIEW TURNAROUND sheet of this SAME accepted enemy. Exactly three equally-sized assembled views in a single horizontal row, left-to-right FRONT, RIGHT SIDE, BACK. This means front, true 90-degree right profile, and 180-degree rear; not front/top/side, not three copies of the front, not three-quarter alternatives.\nCamera: parallel orthographic projection, same slight elevated game-view camera pitch as the original so subtle top surfaces stay visible. Rotate the UNIT between views, keep camera pitch, scale, neutral pose and lighting consistent. No perspective, vanishing points, diagonal isometric composition or extreme overhead. All three views have identical top-height and ground/body-bottom baseline; faint horizontal alignment guides may help, no measurement claims.\nText: top title exactly 01 / PATROL / 三视图. Under the three views, exactly \"正面 FRONT\", \"右侧 RIGHT\", \"背面 BACK\". No other commentary or invented dimensions.\n\nDesign invariants: The exact accepted compact biped from reference image 1: pale ivory domed helmet with a small blue-grey cap plate, dark horizontal visor with one tiny amber-red rectangular sensor; narrow blue-grey waist, ivory chest and rounded shoulder covers, short brass joint couplings, stout separate legs with ivory kneecaps and broad blue-grey toe caps. The robot's anatomical RIGHT forearm (viewer LEFT in the front reference) is the integrated stubby industrial bolt-projector, and its anatomical LEFT forearm is the two-prong manipulator. It is a small industrial robot, never a tall human-proportioned soldier.\n\nRotation / rear construction constraints: Preserve the tool asymmetry anatomically: right profile shows the projector arm nearest camera; BACK view places that same projector on viewer RIGHT. Right-side profile must be a true 90-degree side orientation rather than a three-quarter pose. Rear helmet is ivory without a second face/visor. Back has a compact recessed blue-grey service plate contained within the original torso envelope, with only two broad quiet cooling slots, never a new backpack. Keep head size, shoulder size, leg lengths and total height identical in all three views."
+    },
+    {
+      "id": "enemy_cutter_three_views",
+      "unit_id": "enemy_cutter",
+      "name": "近战切割工蜂",
+      "kind": "three_views",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_cutter_master_v001.png"
+      ],
+      "output_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_cutter_three_views_v001.png",
+      "prompt": "Use case: stylized-concept.\nAsset type: an Ember enemy-unit visual design sheet derived from an accepted pixel-art master.\nInput image 1 is the AUTHORITATIVE accepted design. Preserve its exact silhouette, compact proportions, geometry, ivory armour shapes, blue-grey structure, dull brass couplings, small amber-red sensor, tool position and sparse wear. The user has approved this exact unit. Do not redesign it or substitute a generic robot.\nStyle: the same crisp low-resolution 2D pixel art as the master, enlarged deliberate square pixel clusters, stepped contours and discreet shading. No smooth anti-aliased painting, glossy 3D rendering, photographic metal, blurred shading, dense rivets, fine wiring or new high-density greebles.\nPalette: muted warm ivory armour, dark petrol blue-grey mechanisms, tiny dull brass joints, restrained grey-brown weathering, one small amber-red sensor. Simple upper-left baked light; avoid bloom or red light spilling over the shell.\nSheet design: landscape roughly 1536x1024 or 2048x1152, quiet flat dark blue-grey background #17232A, generous spacing, clean ivory labels with small restrained brass identifiers, no scenery/floor/large grid/no gradient, no thick frames, no watermarks. Pixel artwork must dominate; labels stay restrained and readable. Entire objects and detached parts must fit with comfortable margins.\n\nPrimary request: create ONE THREE-VIEW TURNAROUND sheet of this SAME accepted enemy. Exactly three equally-sized assembled views in a single horizontal row, left-to-right FRONT, RIGHT SIDE, BACK. This means front, true 90-degree right profile, and 180-degree rear; not front/top/side, not three copies of the front, not three-quarter alternatives.\nCamera: parallel orthographic projection, same slight elevated game-view camera pitch as the original so subtle top surfaces stay visible. Rotate the UNIT between views, keep camera pitch, scale, neutral pose and lighting consistent. No perspective, vanishing points, diagonal isometric composition or extreme overhead. All three views have identical top-height and ground/body-bottom baseline; faint horizontal alignment guides may help, no measurement claims.\nText: top title exactly 02 / CUTTER / 三视图. Under the three views, exactly \"正面 FRONT\", \"右侧 RIGHT\", \"背面 BACK\". No other commentary or invented dimensions.\n\nDesign invariants: The exact accepted low squat cutting automaton from reference image 1: broad ivory rounded carapace with a compact raised blue-grey top cap, one forward horizontal amber-red sensor slit, compact brass front connector, four short stout blue-grey locomotion legs with ivory guards and brass joints, plus two short forward work arms. Anatomical RIGHT work arm (viewer LEFT in front) holds a broad circular toothed cutter with a brass center; anatomical LEFT work arm holds a chunky two-prong gripping claw. Keep the original squat body, not an upright humanoid or an organic insect.\n\nRotation / rear construction constraints: Exactly FOUR locomotion legs, in front/rear pairs, plus TWO forward work arms; do not confuse the tools with walking legs or invent more appendages. RIGHT profile has the cutter nearest camera; rear view puts the cutter on viewer RIGHT, retaining its front attachment. In a true side profile the circular blade may be narrower by projection and is never moved to the back. The rear carapace stays broad and low with a small recessed blue-grey service opening / two restrained vent slots; no rear visor or second sensor face, no tail. Maintain the same shell width/depth relationship and body height across views."
+    },
+    {
+      "id": "enemy_tracked_heavy_three_views",
+      "unit_id": "enemy_tracked_heavy",
+      "name": "履带重装机",
+      "kind": "three_views",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_tracked_heavy_master_v001.png"
+      ],
+      "output_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_tracked_heavy_three_views_v001.png",
+      "prompt": "Use case: stylized-concept.\nAsset type: an Ember enemy-unit visual design sheet derived from an accepted pixel-art master.\nInput image 1 is the AUTHORITATIVE accepted design. Preserve its exact silhouette, compact proportions, geometry, ivory armour shapes, blue-grey structure, dull brass couplings, small amber-red sensor, tool position and sparse wear. The user has approved this exact unit. Do not redesign it or substitute a generic robot.\nStyle: the same crisp low-resolution 2D pixel art as the master, enlarged deliberate square pixel clusters, stepped contours and discreet shading. No smooth anti-aliased painting, glossy 3D rendering, photographic metal, blurred shading, dense rivets, fine wiring or new high-density greebles.\nPalette: muted warm ivory armour, dark petrol blue-grey mechanisms, tiny dull brass joints, restrained grey-brown weathering, one small amber-red sensor. Simple upper-left baked light; avoid bloom or red light spilling over the shell.\nSheet design: landscape roughly 1536x1024 or 2048x1152, quiet flat dark blue-grey background #17232A, generous spacing, clean ivory labels with small restrained brass identifiers, no scenery/floor/large grid/no gradient, no thick frames, no watermarks. Pixel artwork must dominate; labels stay restrained and readable. Entire objects and detached parts must fit with comfortable margins.\n\nPrimary request: create ONE THREE-VIEW TURNAROUND sheet of this SAME accepted enemy. Exactly three equally-sized assembled views in a single horizontal row, left-to-right FRONT, RIGHT SIDE, BACK. This means front, true 90-degree right profile, and 180-degree rear; not front/top/side, not three copies of the front, not three-quarter alternatives.\nCamera: parallel orthographic projection, same slight elevated game-view camera pitch as the original so subtle top surfaces stay visible. Rotate the UNIT between views, keep camera pitch, scale, neutral pose and lighting consistent. No perspective, vanishing points, diagonal isometric composition or extreme overhead. All three views have identical top-height and ground/body-bottom baseline; faint horizontal alignment guides may help, no measurement claims.\nText: top title exactly 03 / TRACKED / 三视图. Under the three views, exactly \"正面 FRONT\", \"右侧 RIGHT\", \"背面 BACK\". No other commentary or invented dimensions.\n\nDesign invariants: The exact accepted squat wide tracked heavy automaton from reference image 1: two short broad dark blue-grey caterpillar track pods with ivory upper covers, brass coupling interfaces, compact central rounded ivory tower with layered blue-grey circular cap, one horizontal amber-red forward sensor slit and a single short blunt forward projector/muzzle below it. There are no arms, no legs, no human head, and no long tank gun. Its width is about twice the biped, while body height stays similar.\n\nRotation / rear construction constraints: Right profile must clearly show one long-enough compact caterpillar loop and its upper ivory cover at the same height as the front track blocks. Preserve two track pods total, their longitudinal orientation and attachment to the same central low chassis. Front projector points FORWARD in the right profile and remains at the accepted low front mounting; BACK shows the plain compact rear service plate with restrained vents, not a second muzzle or red visor. Keep the blue-grey cap centered on the same tower and do not extend it into an artillery turret or giant tank."
+    },
+    {
+      "id": "enemy_scout_drone_three_views",
+      "unit_id": "enemy_scout_drone",
+      "name": "悬浮侦察机",
+      "kind": "three_views",
+      "references": [
+        "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_scout_drone_master_v001.png"
+      ],
+      "output_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_scout_drone_three_views_v001.png",
+      "prompt": "Use case: stylized-concept.\nAsset type: an Ember enemy-unit visual design sheet derived from an accepted pixel-art master.\nInput image 1 is the AUTHORITATIVE accepted design. Preserve its exact silhouette, compact proportions, geometry, ivory armour shapes, blue-grey structure, dull brass couplings, small amber-red sensor, tool position and sparse wear. The user has approved this exact unit. Do not redesign it or substitute a generic robot.\nStyle: the same crisp low-resolution 2D pixel art as the master, enlarged deliberate square pixel clusters, stepped contours and discreet shading. No smooth anti-aliased painting, glossy 3D rendering, photographic metal, blurred shading, dense rivets, fine wiring or new high-density greebles.\nPalette: muted warm ivory armour, dark petrol blue-grey mechanisms, tiny dull brass joints, restrained grey-brown weathering, one small amber-red sensor. Simple upper-left baked light; avoid bloom or red light spilling over the shell.\nSheet design: landscape roughly 1536x1024 or 2048x1152, quiet flat dark blue-grey background #17232A, generous spacing, clean ivory labels with small restrained brass identifiers, no scenery/floor/large grid/no gradient, no thick frames, no watermarks. Pixel artwork must dominate; labels stay restrained and readable. Entire objects and detached parts must fit with comfortable margins.\n\nPrimary request: create ONE THREE-VIEW TURNAROUND sheet of this SAME accepted enemy. Exactly three equally-sized assembled views in a single horizontal row, left-to-right FRONT, RIGHT SIDE, BACK. This means front, true 90-degree right profile, and 180-degree rear; not front/top/side, not three copies of the front, not three-quarter alternatives.\nCamera: parallel orthographic projection, same slight elevated game-view camera pitch as the original so subtle top surfaces stay visible. Rotate the UNIT between views, keep camera pitch, scale, neutral pose and lighting consistent. No perspective, vanishing points, diagonal isometric composition or extreme overhead. All three views have identical top-height and ground/body-bottom baseline; faint horizontal alignment guides may help, no measurement claims.\nText: top title exactly 04 / SCOUT / 三视图. Under the three views, exactly \"正面 FRONT\", \"右侧 RIGHT\", \"背面 BACK\". No other commentary or invented dimensions.\n\nDesign invariants: The exact accepted hovering scout drone from reference image 1: a narrow ivory rounded-rectangle central sensor fuselage with a dark blue-grey top vent, one small amber-red forward vertical sensor window, a tiny brass lower connector, and two matching short enclosed fan pods on its left and right. Each fan pod has an ivory / blue-grey protective housing and four large dark blades around a brass hub. Short thick blue-grey struts with brass couplings connect the pods to the body. It is broad, compact and legless, with no tail, long wings or jet engines.\n\nRotation / rear construction constraints: Exactly TWO matching fan pods, lateral left and right, in the same level horizontal plane. Right profile is a true side silhouette showing their real short depth, with the far pod naturally occluded / partially visible, never inventing an extra third fan. The front sensor stays at the FORWARD face of the central fuselage; rear face has only a small blue-grey maintenance panel and subdued vent, no duplicate forward sensor. Fan blade count, enclosure thickness, brass hubs and support placement remain consistent. All three views float at the same body-bottom baseline; no landing legs or ground shadow."
+    }
+  ],
+  "parts_prompt_base": "Use case: stylized-concept.\nAsset type: an Ember enemy-unit visual design sheet derived from an accepted pixel-art master.\nInput image 1 is the AUTHORITATIVE accepted design. Preserve its exact silhouette, compact proportions, geometry, ivory armour shapes, blue-grey structure, dull brass couplings, small amber-red sensor, tool position and sparse wear. The user has approved this exact unit. Do not redesign it or substitute a generic robot.\nStyle: the same crisp low-resolution 2D pixel art as the master, enlarged deliberate square pixel clusters, stepped contours and discreet shading. No smooth anti-aliased painting, glossy 3D rendering, photographic metal, blurred shading, dense rivets, fine wiring or new high-density greebles.\nPalette: muted warm ivory armour, dark petrol blue-grey mechanisms, tiny dull brass joints, restrained grey-brown weathering, one small amber-red sensor. Simple upper-left baked light; avoid bloom or red light spilling over the shell.\nSheet design: landscape roughly 1536x1024 or 2048x1152, quiet flat dark blue-grey background #17232A, generous spacing, clean ivory labels with small restrained brass identifiers, no scenery/floor/large grid/no gradient, no thick frames, no watermarks. Pixel artwork must dominate; labels stay restrained and readable. Entire objects and detached parts must fit with comfortable margins.\n\nPrimary request: create ONE PARTS BREAKDOWN / EXPLODED DESIGN sheet of this SAME accepted enemy, with one large clear exploded assembly diagram and a small fully assembled reference inset. The image is a practical ART DESIGN breakdown, not a physically-certified mechanical schematic.\nInput image 2, when supplied, is the related three-view turnaround: use it to keep inferred rear service panels and side depths consistent, but image 1 wins if any detail disagrees.\nComposition: large exploded diagram in the left two-thirds, numbered detached components and compact readable numbered part legend on the right; small assembled FRONT reference above the legend. Major shells and modules must be genuinely separated with generous gaps, show their socket/attachment relation with subtle thin neutral connector lines, no pieces overlapping or merging. Disassemble only plausible broad modules visible on or required by this exact design, show simple blue-grey internal load-bearing frame, do not invent dense engineering internals.\nArtwork: every detached part uses the SAME master camera pitch, rendering style, light and relative size; turning a part slightly only when necessary to see a socket. Keep asymmetrical tools on their anatomical side and pair quantities exact. No random alternate weapons or decorative loose screws.\nText: top title exactly UNIT_TITLE. Number the diagram parts to match the following SHORT English legend verbatim. Use each numbered part group exactly once; paired parts show both specimens grouped by the same number. No other body text or measurements."
+}

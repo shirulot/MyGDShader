@@ -1,0 +1,130 @@
+{
+  "id": "split_ring",
+  "manifest_id": "B11",
+  "file": "art-source/ember/batch-03-objects/finished/split_ring_v001.png",
+  "production_file": "res://assets/ember/props/calibration/split_ring_v001.png",
+  "sha256": "30147d02b0140b8a1a258cb713ef88c1778e2a6c061b3715becb2984bdf335ad",
+  "size": [
+    64,
+    64
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/split_ring_v001.finish.json",
+  "canvas": [
+    64,
+    64
+  ],
+  "bbox": [
+    12,
+    24,
+    52,
+    56
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 10,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/split_ring/foundation_body.png",
+      "sha256": "30147d02b0140b8a1a258cb713ef88c1778e2a6c061b3715becb2984bdf335ad",
+      "z_index": 0,
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/split_ring_master_v001.png",
+    "master_sha256": "88cca50a3a267ff6680c19290f8c3b3171153406f32374dbd4d5966833229ed2",
+    "prompt": "prompts/split_ring.txt",
+    "prompt_sha256": "a9ed82e0237c4d248b41f0b9c8db9e02e6e6e21414aa36235430409d1f6c6662",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-0db75d14-2489-464d-9750-bce8ec630e7a.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        271,
+        225,
+        1130,
+        910
+      ],
+      "material_sampling_size": [
+        40,
+        32
+      ],
+      "native_origin": [
+        12,
+        24
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 13,
+      "native_outline_pixels_corrected": 139
+    },
+    "native_adjustments": [
+      "右下gap[41,48,44,51)归并成连续透明开口，消除采样可能残留孤立桥点，不填底色",
+      "左上陶瓷高光整理为3px短段、内缘钢灰用1px轮廓清楚收边，保留偏右铜端头",
+      "中央孔保持不规则透视椭圆原生负形，不用几何圆环替换母稿整体轮廓"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": {
+    "orientation": "右下开口/铜端头",
+    "opening_rect": [
+      41,
+      48,
+      44,
+      51
+    ],
+    "central_hole_seed": [
+      32,
+      40
+    ],
+    "hole_connected_to_exterior": true
+  },
+  "non_runtime_glass": [],
+  "observations": "实际母稿C形三分之四钢环、浅色陶瓷圈、右下明确开口和铜端头；原生中央孔与开口真实相通。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

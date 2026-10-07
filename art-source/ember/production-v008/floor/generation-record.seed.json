@@ -1,0 +1,197 @@
+{
+  "date": "2026-10-05",
+  "scope": "four floor classes; eight actual raw model outputs with two north-edge repairs",
+  "records": [
+    {
+      "id": "floor_edge_N",
+      "mask": 124,
+      "version": "v001",
+      "tool": "image_gen.imagegen",
+      "intent": "precise-object-edit",
+      "prompt": "Use case: precise-object-edit. Produce ONE complete north outer-edge industrial floor tile, 1024x1024 square. Image 1 is the approved blue-grey industrial metal style reference; image 2 is the new v008 centre-floor material reference; image 3 is only the north-edge topology reference, and must not impose its pixel contour. Match image 2 material, scale and understated steel plate seams. The floor occupies almost the full square. A single natural manufactured raised blue-grey edge beam runs horizontally ONLY along the north/top boundary, full width, about 10 percent of the square height with softly bevelled metal and two modest brass fasteners. This single beam is an endless horizontal run and is cut flush by the left and right canvas edges; do not put end caps, upright corner posts or perpendicular beams at its endpoints. The south, east and west floor edges are OPEN steel continuations touching the canvas. Except for the actual north external silhouette, no transparent page margin. Open continuation edges and beam endpoints must touch canvas exactly. The outside space north of the natural silhouette has real transparent Alpha, no painted checkerboard/background. Every bit of silhouette and subtle shadow remains within this tile. Top-down orthographic, grid horizontal and vertical, gentle upper-left highlights, delicate blue-grey paint and limited warm brass, restrained wear matching image 2. Preserve fine material painting and smooth natural bevels, no low-resolution pixel art, no stair-step template corners, no 16-colour palette, no32px conversion. No circular hole, no notch, no decorative medallion, no thick frame on east/west/south, no captions, no watermark, no water, no scene, no perspective. Exactly one tile, not a sheet. Designed to reduce the COMPLETE single tile to128px later.",
+      "references": [
+        "art-source/ember/autotiles-v003/industrial_tile_master_v003.png",
+        "art-source/ember/production-v008/raw/floor_center_v001.png",
+        "art-source/ember/production-v008/inputs/v007_floor_mask124.png"
+      ],
+      "raw_file": "art-source/ember/production-v008/floor/raw/floor_edge_N_v001.png",
+      "original_tool_output_hint": "Generated images are saved to C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb as C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb\\exec-7359ca8b-9059-4b4a-8694-c392139b630f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "transparent_background_requested": true,
+      "adoption": "CANDIDATE_NOT_ACCEPTED",
+      "notes": "North-only beam. Transparent page margin above north silhouette; closed-side registration and beam width mismatch remain.",
+      "interface_status": "NOT_PASSED",
+      "visual_status": "CANDIDATE_NOT_USER_APPROVED",
+      "retry_count": 0
+    },
+    {
+      "id": "floor_outer_NW",
+      "mask": 28,
+      "version": "v001",
+      "tool": "image_gen.imagegen",
+      "intent": "precise-object-edit",
+      "prompt": "Use case: precise-object-edit. Generate ONE complete high-fidelity industrial floor NORTHWEST EXTERNAL CORNER tile, square1024x1024. Image1 is the approved painted industrial material/style reference, image2 is the new v008 centre floor whose blue-grey tone, fine plate seams and brass size you must match, image3 is topology only and its low-resolution contour must not be copied. ONLY north/top and west/left are CLOSED exterior edges. Make one continuous natural manufactured L-shaped blue-grey edge beam run along top and left, joined by a modest naturally rounded/chamfered convex NORTHWEST OUTER corner. Approximate beam width10 percent of tile. The beam must continue and touch the east/right canvas edge at its north run and south/bottom canvas edge at its west run, without caps or endpoint brass columns. Floor fill extends openly to east and south edges across the rest of these sides. The northwest convex silhouette may have a small genuine transparent outside corner sliver, everything else is complete opaque steel floor, with no page margin. No centre hole, no diagonal cross beam, no circular well, no internal missing corner, no standalone brass joint island. Top-down orthographic, horizontal/vertical grid. A single complete tile occupies full canvas, not a sheet or displayed isolated miniature. Gently painted upper-left light, fine smooth metal bevels, restrained wear matching image2, blue-grey steel and occasional small warm brass fasteners. Do not draw any external floor frame on east or south. No isometric angle, perspective, water, backdrop, text, watermark, glow or strong shadow. True transparent Alpha outside only, preserve subtle silhouette and shading within the tile. Full painting fidelity, no low-colour/pixel-step conversion. Will export complete single tile to128px.",
+      "references": [
+        "art-source/ember/autotiles-v003/industrial_tile_master_v003.png",
+        "art-source/ember/production-v008/raw/floor_center_v001.png",
+        "art-source/ember/production-v008/inputs/v007_floor_mask28.png"
+      ],
+      "raw_file": "art-source/ember/production-v008/floor/raw/floor_outer_NW_v001.png",
+      "original_tool_output_hint": "Generated images are saved to C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb as C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb\\exec-e6c80fb2-49ec-4d8a-bae9-ff94d5cbf731.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "transparent_background_requested": true,
+      "adoption": "CANDIDATE_NOT_ACCEPTED",
+      "notes": "Continuous northwest manufactured convex corner. Trim width is different from straight beam; open plate seams not aligned to centre.",
+      "interface_status": "NOT_PASSED",
+      "visual_status": "CANDIDATE_NOT_USER_APPROVED",
+      "retry_count": 0
+    },
+    {
+      "id": "floor_inner_NW",
+      "mask": 127,
+      "version": "v001",
+      "tool": "image_gen.imagegen",
+      "intent": "precise-object-edit",
+      "prompt": "Use case: precise-object-edit. Generate ONE complete high-fidelity industrial floor tile whose ONLY missing neighbour is NORTHWEST DIAGONAL. Square1024x1024. Image1 approved industrial blue-grey painted-steel style; image2 the new centre floor material and plate density; image3 topology reference only, not a pixel contour to copy. IMPORTANT topology: north,east,south,west orthogonal neighbours all EXIST, so every one of the FOUR EDGES stays OPEN as continuous opaque blue-grey floor, right up to the canvas, with NO full-edge raised rim. Only the tiny northwest corner where a diagonal outside gap would meet needs a smooth manufactured concave edge-return. It is a small inward-curving L/crescent blue-grey bevel, confined entirely to the northwest corner about12 percent width/height. Its outside is a small genuine transparent corner pocket connected to the top-left canvas corner; it is NOT an isolated hole in the centre, NOT a long diagonal notch, NOT a full north or west border, NOT a brass pedestal/post. Two smoothly connected short bevel arms meet naturally with consistent10percent material thickness. Most of north and west edges remain opaque floor from beyond that tiny corner to the opposite end. All east and south pixels carry uninterrupted floor. Steel plates cover the rest of the tile with thin fine manufacturing seams, modest brass fasteners, delicately worn blue-grey metal exactly matching image2. No brass fastener in the corner return, so no repeated golden joint cluster when tiled. Top-down orthographic horizontal/vertical grid, gentle upper-left lighting, natural smooth metal curve rather than template staircase. Whole tile fills canvas, no page margin, no perspective, no water, no backdrop/checkerboard, no text, no watermark, no glow/castshadow, no low-colour conversion. Exact ONE single tile, not a sheet. Preserve natural true Alpha only in the outer corner pocket; complete tile later downscaled whole to128px.",
+      "references": [
+        "art-source/ember/autotiles-v003/industrial_tile_master_v003.png",
+        "art-source/ember/production-v008/raw/floor_center_v001.png",
+        "art-source/ember/production-v008/inputs/v007_floor_mask127.png"
+      ],
+      "raw_file": "art-source/ember/production-v008/floor/raw/floor_inner_NW_v001.png",
+      "original_tool_output_hint": "Generated images are saved to C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb as C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb\\exec-0f4f2862-7805-4ebc-9bf7-a462f74354c0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "transparent_background_requested": true,
+      "adoption": "REJECTED_SUPERSEDED_BY_V002",
+      "notes": "Corner pocket too large and two gold corner fasteners create repeated joint clutter.",
+      "interface_status": "NOT_PASSED",
+      "visual_status": "CANDIDATE_NOT_USER_APPROVED",
+      "retry_count": 0
+    },
+    {
+      "id": "floor_inner_NW",
+      "mask": 127,
+      "version": "v002",
+      "tool": "image_gen.imagegen",
+      "intent": "precise-object-edit",
+      "prompt": "Use case: precise-object-edit. Image1 is the ONE complete floor tile to edit. Keep the exact original blue-grey steel material, all normal floor plate painting outside northwest area, tile square footprint, continuous east/south/open floor and upper-left lighting. Correct ONLY the NORTHWEST corner return: its present corner pocket is too large and has two gold bolts creating repeated joint clutter. Reduce the tiny transparent northwest concave pocket to at most12percent width and12percent height of the full canvas (about150px on this1254px tile), filling the old excess pocket with consistent complete steel painting. Preserve a small smooth natural curved/chamfered concave steel lip around the outside corner pocket, with restrained thin manufacturing bevel, no staircase silhouette. Remove ALL brass/yellow fasteners in the northwest corner zone only, including the two bolts on the short bevel arms, using blue-grey plain steel there. Do not replace them with posts, circular holes or medallions. Do not add a top or left full-length beam; the four orthogonal edges remain open field beyond this tiny corner. No external page margin. Keep true transparent Alpha only in small northwest outside pocket, never paint checkerboard. Exactly one complete square full-canvas tile. Preserve fine image detail and colours everywhere else, no palette quantisation, no lowresolution conversion, no whole-frame border, no new objects, text, water, shadows or glow.",
+      "references": [
+        "art-source/ember/production-v008/floor/raw/floor_inner_NW_v001.png"
+      ],
+      "raw_file": "art-source/ember/production-v008/floor/raw/floor_inner_NW_v002.png",
+      "original_tool_output_hint": "Generated images are saved to C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb as C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb\\exec-fe64b143-c17c-48d6-8054-e6924a169583.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "transparent_background_requested": true,
+      "adoption": "CANDIDATE_NOT_ACCEPTED",
+      "notes": "Single targeted model edit removes two gold corner fasteners, reduces transparent corner pocket; no centre hole or separate post. Pocket is about16percent rather than prompted12percent. Edge profiles and lips not unified.",
+      "interface_status": "NOT_PASSED",
+      "visual_status": "CANDIDATE_NOT_USER_APPROVED",
+      "retry_count": 1
+    },
+    {
+      "id": "floor_narrow_NS",
+      "mask": 17,
+      "version": "v001",
+      "tool": "image_gen.imagegen",
+      "intent": "precise-object-edit",
+      "prompt": "Use case: precise-object-edit. ONE complete high-fidelity industrial floor NARROW NORTH-SOUTH PASSAGE tile. Square1024x1024. Image1 approved rich blue-grey steel material and full-component style reference. Image2 v008 centre floor, match its steel colours and fine painting. Image3 passage topology reference ONLY, do not copy pixel contour. This is a COMPLETE WALKABLE steel floor tile filling the square from top to bottom; not two floating rails, not an empty transparent channel. EAST/right and WEST/left each have one naturally bevelled raised blue-grey edge beam, vertical, width approximately8percent, aligned evenly. The central walkable floor spans the remaining84percent and is opaque blue-grey plates. NORTH/top and SOUTH/bottom are fully OPEN: floor field and both beams continue straight through the canvas boundary, absolutely no horizontal crossbar, no end caps, no corner columns, no termination outline at top/bottom, no inset miniature with transparent top/bottom margin. Outer side silhouettes only may have genuine transparent Alpha at extreme left/right, all shadow fully within square footprint. Beams vertical lengths continue beyond the image. Restrained small brass fasteners along the two beams, not clustered on endpoints. Plates with thin manufacturing seams and subtle wear, no long dramatic cracks. Top-down orthographic flat floor, axis aligned, gentle upper-left highlights, no perspective/isometric diamond, no water, no environment, no castshadow/glow, no text/logo. Fine smooth full-fidelity paint and natural metal bevels, no16-colour palette/32pixel conversion/stair-step low-resolution template. Exact single complete tile, not a tilesheet; floor reaches TOP and BOTTOM canvas exactly. Will export as complete128px tile.",
+      "references": [
+        "art-source/ember/autotiles-v003/industrial_tile_master_v003.png",
+        "art-source/ember/production-v008/raw/floor_center_v001.png",
+        "art-source/ember/production-v008/inputs/v007_floor_mask17.png"
+      ],
+      "raw_file": "art-source/ember/production-v008/floor/raw/floor_narrow_NS_v001.png",
+      "original_tool_output_hint": "Generated images are saved to C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb as C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb\\exec-3c03836d-ac9c-45ea-a6d8-1bf18483c837.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "transparent_background_requested": true,
+      "adoption": "REJECTED_SUPERSEDED_BY_V002",
+      "notes": "Walkable solid passage is too broad for latest requested narrow-path demonstration. Long side margins preserved in raw.",
+      "interface_status": "NOT_PASSED",
+      "visual_status": "CANDIDATE_NOT_USER_APPROVED",
+      "retry_count": 0
+    },
+    {
+      "id": "floor_narrow_NS",
+      "mask": 17,
+      "version": "v002",
+      "tool": "image_gen.imagegen",
+      "intent": "precise-object-edit",
+      "prompt": "Use case: precise-object-edit. Correct the topology of Image1, a north-south steel walkway tile. Image2 is the official Godot3x3 minimal47 semantic template; specifically its vertical red corridor in the FIRST COLUMN has a narrow centre path with broad white outside areas LEFT and RIGHT. Translate this same occupied/off arrangement faithfully into a high-fidelity manufactured steel floor, keeping natural bevels rather than pixel steps. Image3 is the approved blue-grey/brass painting reference. Make a single square1024x1024 tile: a complete continuous vertical WALKABLE steel passage occupies ONLY the MIDDLE ONE THIRD (roughly x341to683) of the full canvas. The entire LEFT THIRD and RIGHT THIRD are real fully transparent outside space. Do not paint any backdrop or white/checkerboard. This is not a cropped close-up: retain full square tile including broad transparent margins. The passage starts at the TOP canvas boundary and continues to the BOTTOM canvas boundary with no gap or rounded termination there. Two natural steel side beams close the east/west passage sides, each about5percent of full canvas width, and the walkable opaque central steel field lies between them. All beams and floor are cut flush by top and bottom; NO horizontal crossbar or end cap. Restyle the FULL passage as a coherent manufactured component matching the blue-grey paint and warm brass in Image1 andImage3. Fine smooth bevels, delicate upper-left highlights and restrained wear, avoid long dramatic cracks. A few brass fasteners along the two side beams, no terminal posts. Not an empty channel, not floating separated rails, not water. One complete square tile, no sheet, no scene/text/logo/perspective/isometric angle. Real Alpha outside the passage. Preserve high-fidelity painting, no palette16, no32px conversion. Critical: the full passage plus both side beams occupies aboutONE THIRD total image width, not80percent, while touching TOP and BOTTOM.",
+      "references": [
+        "art-source/ember/production-v008/floor/raw/floor_narrow_NS_v001.png",
+        "art-source/ember/production-v008/inputs/official_autotile_template_3x3_minimal.png",
+        "art-source/ember/autotiles-v003/industrial_tile_master_v003.png"
+      ],
+      "raw_file": "art-source/ember/production-v008/floor/raw/floor_narrow_NS_v002.png",
+      "original_tool_output_hint": "Generated images are saved to C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb as C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb\\exec-bdd328b5-3fc5-4163-ae17-602e2f47bb41.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "transparent_background_requested": true,
+      "adoption": "CANDIDATE_NOT_ACCEPTED",
+      "notes": "Single model edit makes explicit narrow north-south passage with broad real transparent sides and both open ends. Official red-white reference supplies neighbour semantics; its one-third width is a composition choice, not forced official geometry.",
+      "interface_status": "NOT_PASSED",
+      "visual_status": "CANDIDATE_NOT_USER_APPROVED",
+      "retry_count": 1
+    },
+    {
+      "id": "floor_edge_N",
+      "mask": 124,
+      "version": "v002",
+      "tool": "image_gen.imagegen",
+      "intent": "precise-object-edit",
+      "prompt": "Use case: precise-object-edit. Fix ONE complete NORTH OUTER EDGE floor tile. Image1 is the high-resolution painted tile to edit; Image2 is a low-resolution registration reference only, showing the desired top boundary registration and the unacceptable HALF GOLD BOLTS at both beam ends; Image3 is the original high-resolution centre-floor painting reference. Preserve the rich fine blue-grey paint, restrained rust, existing interior plate seams and gentle upper-left material light of Image1. Changes ONLY: REMOVE the two brass fasteners on the NORTH beam altogether, leaving continuous plain blue-grey steel there. No yellow/brass fragments anywhere in the north beam, especially none at canvas ends, no replacement posts. Remove the transparent north page margin from Image1 by registering the complete north beam flush at the TOP canvas. Paint the complete single square floor so the TOP edge begins with the continuous north steel beam, with no gap or page margin; that beam is about10percent of the full canvas height, with natural smooth bevel matching the approved style. Preserve the entire beam as one uniform full-width component, not detached pieces. Both EAST and WEST beam endpoints continue beyond canvas and are flush-cut plain steel, with no end caps, corner columns, half bolts or perpendicular return beams. E,S,W floor material edges stay OPEN, filling the canvas exactly all the way to its edges. Do not crop half any interior brass bolt or add a repeated perimeter frame. Complete top-down orthographic square1024x1024 tile footprint, no outside page margin, not a sheet, not a tiny displayed tile. Alpha only where naturally needed outside silhouette, preserved as real transparency, not a painted checkerboard or background. Preserve high-fidelity painting fromImage1; do not copyImage2 block pixels or reduce colours. No isometric angle, perspective, water, text, logo, glow, hole, notch or strongcastshadow. This is a real complete image correction; not an overlay patch. Main goal: north beam touches TOP and left/right boundaries directly, contains NO brass at all, all other OPEN continuations extend to their edges, no half fasteners.",
+      "references": [
+        "art-source/ember/production-v008/floor/raw/floor_edge_N_v001.png",
+        "art-source/ember/production-v008/floor/candidates/floor_edge_N_v001_128.png",
+        "art-source/ember/production-v008/raw/floor_center_v001.png"
+      ],
+      "raw_file": "art-source/ember/production-v008/floor/raw/floor_edge_N_v002.png",
+      "original_tool_output_hint": "Generated images are saved to C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb as C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb\\exec-0ea98cc6-4764-4e95-bf41-dddc21b3149e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "transparent_background_requested": true,
+      "adoption": "REJECTED_SOUTH_ALPHA_FADE",
+      "notes": "North beam was genuinely moved flush to top and both end brass bolts removed. However this single model edit introduced severe south-floor Alpha fade: y1100 median169, y1150 median71, y1253 median32; S edge Alpha>127 count0. This breaks the open south continuation. Reject as replacement; preserve full raw and full-canvas diagnostic, no clipping/filling/Alpha repair. Prior v001 registration and its known partial fasteners are retained historical candidate only.",
+      "interface_status": "NOT_PASSED",
+      "visual_status": "REJECTED_MODEL_OUTPUT_NOT_USER_APPROVED",
+      "retry_count": 1,
+      "source_crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "transparent_padding_added": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "floor_edge_N",
+      "mask": 124,
+      "version": "v003",
+      "tool": "image_gen.imagegen",
+      "intent": "precise-object-edit",
+      "prompt": "Use case: precise-object-edit.\nEdit Image1 into a production NORTH OUTER EDGE FLOOR TILE for the Ember Energy Station, blob mask124. Image1 is the registered complete current tile. Image2 is the new centre floor for blue-grey paint/material family, Image3 the approved industrial art master.\n\nPreserve Image1's complete manufactured floor composition and its plate seam positions as closely as possible. Fix only the top boundary trim and opacity defects. A continuous natural steel bevel beam occupies the top approximately9% of the square, touching the TOP canvas edge, with OPEN CUT continuation ends at both LEFT and RIGHT. Remove the cut half brass bolts at those two endpoints, and do not draw endpoint caps, posts or perpendicular beams. No fastener within the outer5% of the left/right ends. Keep restrained muted brass on floor plates inside the tile.\n\nCRITICAL: this north edge tile is FULLY OPAQUE SOLID FLOOR ACROSS THE ENTIRE SQUARE CANVAS. The three open EAST/WEST/SOUTH continuation edges and all their corners are completely filled with the SAME blue-grey steel field right to the actual image boundaries. No alpha anywhere, no transparent page margins, no soft fade, no dark black bottom strip, no edge vignette, no southern outline/frame/bar. No external space is inside this particular rectangular tile; the north exterior is above the canvas. This tile must never have an empty/faded lower edge. Render on the floor itself, not on a separate background.\n\nOne1024x1024 square, orthographic flat grid-aligned overhead. Fine material painting, gentle upper-left natural bevel shading, quiet blue-grey steel with delicate age. No excessive cracks/rust, chrome, glow or cast shadow. Do not convert to coarse pixel art,16colour palette or32px grid. No perspective/isometric diamond, labels, text, multiple tiles. Complete square composition filling every pixel; no white/black surround.\n",
+      "references": [
+        "art-source/ember/production-v008/floor/candidates/floor_edge_N_v001_128.png",
+        "art-source/ember/production-v008/raw/floor_center_v001.png",
+        "art-source/ember/autotiles-v003/industrial_tile_master_v003.png"
+      ],
+      "raw_file": "art-source/ember/production-v008/floor/raw/floor_edge_N_v003.png",
+      "original_tool_path": "C:/Users/shiru/.codex/generated_images/01a10204-0a39-77b3-b144-9e7a03fd8e93/exec-0f8faae8-a2a7-451b-a5b2-9811e810dc04.png",
+      "original_tool_output_hint": "Generated original saved by image_gen.imagegen: C:/Users/shiru/.codex/generated_images/01a10204-0a39-77b3-b144-9e7a03fd8e93/exec-0f8faae8-a2a7-451b-a5b2-9811e810dc04.png",
+      "transparent_background_requested": false,
+      "adoption": "CANDIDATE_NOT_ACCEPTED",
+      "notes": "v003全画布RGB实底，去掉北梁切口处半黄铜；南开放端无Alpha渐隐。仍需统一梁宽、板缝和新旧相邻接口，不能登记无缝通过。",
+      "interface_status": "NOT_PASSED",
+      "visual_status": "CANDIDATE_NOT_USER_APPROVED",
+      "retry_count": 2,
+      "source_crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "transparent_padding_added": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

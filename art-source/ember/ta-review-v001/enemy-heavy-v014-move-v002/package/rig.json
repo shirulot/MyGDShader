@@ -1,0 +1,771 @@
+{
+  "version": "v014-heavy-six-new-moves",
+  "unit": "enemy_tracked_heavy",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "frame_count": 8,
+  "fps": 8,
+  "loop": true,
+  "body_y": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "method": "Fixed reviewed direction textures and ownership masks; cyclic source sampling confined to tread windows. No directional image mirroring or new per-frame artwork.",
+  "configs": {
+    "down_left": {
+      "track_polygons": [
+        [
+          [
+            84,
+            0
+          ],
+          [
+            128,
+            0
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            70,
+            128
+          ],
+          [
+            70,
+            86
+          ],
+          [
+            73,
+            76
+          ],
+          [
+            77,
+            68
+          ],
+          [
+            81,
+            63
+          ],
+          [
+            84,
+            60
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            43,
+            0
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            46,
+            60
+          ],
+          [
+            46,
+            65
+          ],
+          [
+            47,
+            73
+          ],
+          [
+            46,
+            79
+          ],
+          [
+            47,
+            82
+          ],
+          [
+            47,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            75,
+            83
+          ],
+          "cross_width": 12,
+          "period": 16,
+          "shear": 0.25,
+          "sign": 1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            25,
+            73
+          ],
+          "cross_width": 13,
+          "period": 16,
+          "shear": 0.15,
+          "sign": 1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          81,
+          104
+        ],
+        [
+          31,
+          93
+        ]
+      ],
+      "source": "res://source/down_left.png",
+      "source_sha256": "aa21e0e940ff581a38b6afe5117aeabb53e464aa3203f8c50af1cd4b235593f8"
+    },
+    "left": {
+      "track_polygons": [
+        [
+          [
+            34,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            83
+          ],
+          [
+            92,
+            83
+          ],
+          [
+            90,
+            70
+          ],
+          [
+            87,
+            68
+          ],
+          [
+            57,
+            68
+          ],
+          [
+            50,
+            70
+          ],
+          [
+            44,
+            72
+          ],
+          [
+            39,
+            77
+          ],
+          [
+            34,
+            82
+          ]
+        ],
+        [
+          [
+            79,
+            60
+          ],
+          [
+            82,
+            60
+          ],
+          [
+            87,
+            64
+          ],
+          [
+            87,
+            68
+          ],
+          [
+            79,
+            68
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            48,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            64,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            48,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            64,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          43,
+          104
+        ],
+        [
+          85,
+          104
+        ]
+      ],
+      "source": "res://source/left.png",
+      "source_sha256": "522409a89a7748cd2c50a3822978246382c794187953084e86d7384900979d36"
+    },
+    "up_left": {
+      "track_polygons": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            45,
+            0
+          ],
+          [
+            45,
+            60
+          ],
+          [
+            49,
+            67
+          ],
+          [
+            53,
+            73
+          ],
+          [
+            57,
+            82
+          ],
+          [
+            57,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ],
+        [
+          [
+            81,
+            0
+          ],
+          [
+            128,
+            0
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            82,
+            128
+          ],
+          [
+            82,
+            82
+          ],
+          [
+            85,
+            72
+          ],
+          [
+            82,
+            64
+          ],
+          [
+            81,
+            64
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            41,
+            83
+          ],
+          "cross_width": 12,
+          "period": 16,
+          "shear": 0.25,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            90,
+            72
+          ],
+          "cross_width": 11,
+          "period": 16,
+          "shear": -0.15,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          44,
+          104
+        ],
+        [
+          97,
+          93
+        ]
+      ],
+      "source": "res://source/up_left.png",
+      "source_sha256": "8b478c2f32173b75bcfa26d7f534140e4075dda1ad83d33e5185c5487af215e6"
+    },
+    "up": {
+      "track_polygons": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            49,
+            0
+          ],
+          [
+            49,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ],
+        [
+          [
+            80,
+            0
+          ],
+          [
+            128,
+            0
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            80,
+            128
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            31,
+            85
+          ],
+          "cross_width": 11,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            85,
+            85
+          ],
+          "cross_width": 14,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          36,
+          104
+        ],
+        [
+          92,
+          104
+        ]
+      ],
+      "source": "res://source/up.png",
+      "source_sha256": "0f0f48f166999d08ed5a114a2a492b4c0e8837d16f0294f2a9b9b10f2d0785a6"
+    },
+    "up_right": {
+      "track_polygons": [
+        [
+          [
+            84,
+            0
+          ],
+          [
+            128,
+            0
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            70,
+            128
+          ],
+          [
+            70,
+            86
+          ],
+          [
+            73,
+            76
+          ],
+          [
+            77,
+            68
+          ],
+          [
+            81,
+            63
+          ],
+          [
+            84,
+            60
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            43,
+            0
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            46,
+            60
+          ],
+          [
+            46,
+            65
+          ],
+          [
+            47,
+            73
+          ],
+          [
+            46,
+            79
+          ],
+          [
+            47,
+            82
+          ],
+          [
+            47,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            75,
+            83
+          ],
+          "cross_width": 12,
+          "period": 16,
+          "shear": 0.25,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            25,
+            73
+          ],
+          "cross_width": 13,
+          "period": 16,
+          "shear": 0.15,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          81,
+          104
+        ],
+        [
+          31,
+          93
+        ]
+      ],
+      "source": "res://source/up_right.png",
+      "source_sha256": "c04db1b041d79c850c7edf06b35890a61bafafbeaf70d825fb9b60670df686b6"
+    },
+    "right": {
+      "track_polygons": [
+        [
+          [
+            89,
+            128
+          ],
+          [
+            -5,
+            128
+          ],
+          [
+            -5,
+            83
+          ],
+          [
+            31,
+            83
+          ],
+          [
+            33,
+            70
+          ],
+          [
+            36,
+            68
+          ],
+          [
+            66,
+            68
+          ],
+          [
+            73,
+            70
+          ],
+          [
+            79,
+            72
+          ],
+          [
+            84,
+            77
+          ],
+          [
+            89,
+            82
+          ]
+        ],
+        [
+          [
+            44,
+            60
+          ],
+          [
+            41,
+            60
+          ],
+          [
+            36,
+            64
+          ],
+          [
+            36,
+            68
+          ],
+          [
+            44,
+            68
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            43,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            59,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            43,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            59,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          38,
+          104
+        ],
+        [
+          80,
+          104
+        ]
+      ],
+      "source": "res://source/right.png",
+      "source_sha256": "a42740bfe07fbd4448bc07e59bc3febf26ebac9948a354aae54858567d6ee1b2"
+    }
+  },
+  "preserved": [
+    {
+      "action": "move_down",
+      "source": "enemy-sequences-v012",
+      "atlas_sha256": "5315a7af9c59ba1aa74702de8dc3318609724c6dab0bc5d9eb395c7a728276a2",
+      "frame_hashes": [
+        "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+        "a7e6724167ae15af43b346f3f1df2bd62313fe0b323492a26fd865b42ba56463",
+        "9832ff68c2763e897ebe98adfc68689a0ca89d254748ecff0a69ba05ddea8ec8",
+        "c08d80ec4935479f1db8fdee953099255528ecc80757e7aec283b4b1a5fdf1bf",
+        "93a596fc02b905e3e7a463088b3fd8c28dd423dac69d8a5aec094ccfbd6a22ef",
+        "41e1740487d05e73a9475a856813e58371a7d7cc2e76221ae621ea13cae3a78b",
+        "47aebbedc19bb8e02f3daa65d59919706e1925fea4fc7cfa31e1bf3cd6a4e279",
+        "fd0a177e90e6ef1a4025e9fa7f46031b5b7e77cb731476a2c166bb0284c4abfe"
+      ]
+    },
+    {
+      "action": "move_down_right",
+      "source": "enemy-eight-directions-v013-pilot-hc-v001",
+      "atlas_sha256": "3d2342aa3049cbf3ddc381971cd73b6f49f8a7b06e2cb13b2f4b80c80c2677e6",
+      "frame_hashes": [
+        "7812398344d56901cc0f3673bf724b5eb1a22c229dc30231c437c65e0ebdf073",
+        "2c8dc55fb419e4eca2cf7078163d42ae4797a97955c24e8d9d83200f9c56a07d",
+        "beb51a6b86207c8ca7ad2497b10f96481491e0874d301e70e9d6f35853fa0527",
+        "08ba75580a1c04977d55fa8cc045329db2f5830b36172d3066629edcea7576db",
+        "f0f2016eb4adf879f29d2fd37be65ef3741de2f1020b413b898d5a92b09f396e",
+        "79173d6b1dffad834d01b37910618af1b9030362621a57127bc6aae192700feb",
+        "3af90e65aded4315c55555e964a5ea6316adc3b64bccb8b4dc465deb7ab81b46",
+        "70c673323ec002ce197a29d490f3d6e17fc0a1d5706ec8bb9cd31d07c461a162"
+      ]
+    }
+  ],
+  "revision": "v002: N-left tread source restricted to fully opaque interior x31..41, y85..100"
+}

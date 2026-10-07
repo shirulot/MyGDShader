@@ -1,0 +1,63 @@
+{
+  "door": {
+    "method": "NATIVE_STRUCTURAL_REBUILD",
+    "sampled_parts": [
+      "closed draft 64x20 lintel cluster, moved y46->18 without scaling",
+      "closed draft feet rows100..111 copied unchanged",
+      "closed draft plain post cross-section row86 used as native material strip"
+    ],
+    "native_redrawn": [
+      "94px tall posts, two seam joints and brass couplers",
+      "2 panel leaves with bevel seams/handles, no whole-image warp"
+    ],
+    "shared_frame_file": "art-source/ember/batch-03-objects/layers/door_shared/frame_native.png",
+    "shared_frame_sha256": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f",
+    "opening_rect": [
+      26,
+      38,
+      70,
+      112
+    ],
+    "opening_convention": "[x0,y0,x1,y1), genuine transparent aperture",
+    "native_proportion_correction": "root actual review: widen aperture32->44px for existing40px robot, thin inner posts, preserve64x94 outer silhouette",
+    "source_design_masters": [
+      "art-source/ember/batch-03-objects/generated/door_closed_master_v001.png",
+      "art-source/ember/batch-03-objects/generated/door_open_master_v001.png"
+    ],
+    "exact_same_frame_and_anchor": true,
+    "source_master_sha256": {
+      "art-source/ember/batch-03-objects/generated/door_closed_master_v001.png": "891d19a4c6116ec174a8e1b424f6675038870c4b62908784ea3939f2ceecc54a",
+      "art-source/ember/batch-03-objects/generated/door_open_master_v001.png": "4f0d71fe9ff2b170ef8ccf72793adb73408fc5f1894805002f92414f56f37a8a"
+    }
+  },
+  "screen_frame": {
+    "method": "NATIVE_NINE_SLICE_REBUILD",
+    "sampled_parts": "four actual 8x8 corner clusters, no mirroring",
+    "native_redrawn": "constant 8px material strips and 1px inner/outer outline; 48x48 alpha hole",
+    "source_design_master": "art-source/ember/batch-03-objects/generated/screen_frame_master_v001.png",
+    "slice_region": [
+      16,
+      16,
+      64,
+      64
+    ],
+    "slice_region_convention": "[x,y,width,height]",
+    "slice_margins": {
+      "left": 8,
+      "top": 8,
+      "right": 8,
+      "bottom": 8
+    },
+    "center_rect": [
+      24,
+      24,
+      72,
+      72
+    ],
+    "draw_center": false,
+    "repeat": false,
+    "source_master_sha256": {
+      "art-source/ember/batch-03-objects/generated/screen_frame_master_v001.png": "c6ea66ec6ae879a8a30e4a6aef2314e3f46af64ef94f3f9d7cc89758232ca3f6"
+    }
+  }
+}

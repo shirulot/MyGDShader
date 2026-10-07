@@ -1,0 +1,145 @@
+{
+  "decision": "TECHNICAL_PASS",
+  "scope": "down walk only, 8 frames, 64x96, 8 FPS, root [32,80]; foot visible form is reviewed separately by lead TA.",
+  "zip_sha256": "1abc164e76abc5e7f59978ae0d3062d07b37bd6edfe55c69335ec3f61318c60f",
+  "rig_sha256": "2a08e84f86bd3611afad19b1573ff12a844615e2d987aa8053c5a1e3cbb343f3",
+  "atlas_sha256": "50669508acd565455c8b0834a4f90c1d93ec5a1ff2a2721da3e4f5ca1d9c51e3",
+  "package_source_checks": 373,
+  "package_source_failures": 0,
+  "v008_full_rgba_import_P2_closed": true,
+  "cold_import_exit": 0,
+  "cold_gpu_verifier_exit": 0,
+  "cold_imported_region_full_rgba_passed": 8,
+  "cold_gpu_exact_cases": 16,
+  "playback": {
+    "kind": "actual_timed_AnimatedSprite2D_signals",
+    "sequence": [
+      {
+        "frame": 0,
+        "elapsed_ms": 0
+      },
+      {
+        "frame": 1,
+        "elapsed_ms": 91
+      },
+      {
+        "frame": 2,
+        "elapsed_ms": 216
+      },
+      {
+        "frame": 3,
+        "elapsed_ms": 341
+      },
+      {
+        "frame": 4,
+        "elapsed_ms": 466
+      },
+      {
+        "frame": 5,
+        "elapsed_ms": 591
+      },
+      {
+        "frame": 6,
+        "elapsed_ms": 716
+      },
+      {
+        "frame": 7,
+        "elapsed_ms": 841
+      },
+      {
+        "frame": 0,
+        "elapsed_ms": 966
+      },
+      {
+        "frame": 1,
+        "elapsed_ms": 1091
+      },
+      {
+        "frame": 2,
+        "elapsed_ms": 1216
+      },
+      {
+        "frame": 3,
+        "elapsed_ms": 1341
+      },
+      {
+        "frame": 4,
+        "elapsed_ms": 1466
+      },
+      {
+        "frame": 5,
+        "elapsed_ms": 1591
+      },
+      {
+        "frame": 6,
+        "elapsed_ms": 1716
+      },
+      {
+        "frame": 7,
+        "elapsed_ms": 1841
+      },
+      {
+        "frame": 0,
+        "elapsed_ms": 1966
+      },
+      {
+        "frame": 1,
+        "elapsed_ms": 2091
+      }
+    ],
+    "visited_frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "actual_loops": 2
+  },
+  "natural_frame_intervals_ms": [
+    91,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125
+  ],
+  "portable_import_sidecar_sha256_after_import": "55ece5f228a76177ef8b03ec4b85cb7f8bfc53513573f3437cbfba13cc3ea5cf",
+  "playback_verifier_same_as_v008_after_version_normalization": true,
+  "source_binding_after_playback": true,
+  "source_parts_byte_equal_v008": 23,
+  "caps_definitions_equal_v008": 17,
+  "fixed_canonical_byte_equal_v008": true,
+  "neutral_source_opaque_rgba_exact_original": 1492,
+  "meaningful_changes": "Independent rigid foot heel/toe pivot and pitch to ankle before leg IK; body/lift curves from foot_motion_v009.json; foot contact diagnostics. Fixed source geometry/canonical/camera unchanged.",
+  "rig_structure_changes_after_version_normalization": [],
+  "producer_protection_baseline_matches_original_87": true,
+  "production_protected_changed_after_review": [],
+  "v008_source_frames_changed": [],
+  "v008_zip_sha256_after_review": "ac74a58d6ac1751556751046571d5d983a9dcc4f9f85a146b4494706b055ff1b",
+  "blocking_findings": [],
+  "art_acceptance": "NOT_CLAIMED",
+  "evidence": [
+    "package-source-report.json",
+    "renderer-version-normalized.diff",
+    "cold-playback-report.json",
+    "cold-import.stdout.log",
+    "cold-import.stderr.log",
+    "playback-rerun.stdout.log",
+    "playback-rerun.stderr.log"
+  ]
+}

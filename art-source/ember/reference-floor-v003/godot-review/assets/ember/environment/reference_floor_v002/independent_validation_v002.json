@@ -1,0 +1,89 @@
+{
+	"checked_cells": 27909,
+	"editor_gui_undo_redo": "NOT_TESTED",
+	"engine": "4.7.2-stable (steam)",
+	"failures": [],
+	"native_erase": true,
+	"native_families": {
+		"bridge": {
+			"catalog_masks": 47,
+			"exhaustive_raw_neighborhoods": 256,
+			"incremental_orders": 3,
+			"png_size": [
+				1024,
+				768
+			],
+			"random_paint_erase_trials": 12,
+			"resource_reload": true
+		},
+		"floor": {
+			"catalog_masks": 47,
+			"exhaustive_raw_neighborhoods": 256,
+			"incremental_orders": 3,
+			"png_size": [
+				1024,
+				768
+			],
+			"random_paint_erase_trials": 12,
+			"resource_reload": true
+		}
+	},
+	"normalized_masks": 47,
+	"runtime_checks": {
+		"bridge_junction_actual_rgba_preview": "res://assets/ember/environment/reference_floor_v002/independent_bridge_junctions_v002.png",
+		"bridge_junction_shapes": [
+			"L",
+			"T",
+			"cross",
+			"ring_hole",
+			"diagonal_islands"
+		],
+		"bridge_rgba_interfaces": {
+			"alpha_gaps": 0,
+			"border_to_internal_ratio": 0.655144418759922,
+			"maximum_border_rgb_delta": 0.677124196042617,
+			"mean_adjacent_internal_rgb_delta": 0.0466346803858254,
+			"mean_border_rgb_delta": 0.0305524505754264,
+			"open_interface_samples": 5472,
+			"status": "RGBA_MEASURED; ART_INTERFACE_REQUIRES_VISUAL_REVIEW"
+		},
+		"bridge_shoulders_world": 12,
+		"bridge_visible_width_world": 40,
+		"compiler_footprints": true,
+		"incremental_compiled_bounds": [
+			5,
+			0,
+			7,
+			7
+		],
+		"incremental_erase_vs_full_rgba": true,
+		"incremental_fixture_bounds": [
+			12,
+			10
+		],
+		"incremental_measured_rebuild_ms": 791,
+		"incremental_outside_unchanged": true,
+		"incremental_vs_full_rgba": true,
+		"landing_cross_section_pixels": 1024,
+		"landing_directions": 4,
+		"layout_roundtrip": true,
+		"measured_rebuild_ms": [
+			638,
+			650
+		],
+		"native_input_adoption": true,
+		"native_input_adoption_ms": 819,
+		"production_full_fresh_rebuild_ms": 8280,
+		"production_warm_cache_load_ms": 407,
+		"production_warm_cache_loaded": true,
+		"production_warm_dirty_outside_unchanged": true,
+		"production_warm_dirty_rebuild_ms": 1240,
+		"production_warm_first_dirty_vs_full_rgba": true,
+		"status": "PASS",
+		"undo_redo": true
+	},
+	"scene_resource_roundtrip": true,
+	"scope": "Independent structural verification. User visual acceptance is not inferred.",
+	"specification_mask_crosscheck": true,
+	"status": "PASS"
+}

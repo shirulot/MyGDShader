@@ -1,0 +1,82 @@
+{
+  "name": "drone-diagonal-yaw-c003",
+  "scope": "Only two diagonals changed; approved down and c002 generated front copied unchanged",
+  "output_directory": "calibration_check_c003_drone",
+  "columns": 4,
+  "entries": [
+    {
+      "key": "neutral_down",
+      "copy_path": "res://source/approved_down/enemy_scout_drone.png",
+      "scope": "PRESERVED_APPROVED_DOWN"
+    },
+    {
+      "key": "generated_front_c002",
+      "copy_path": "res://calibration_check_v002/enemy_scout_drone/generated_front.png",
+      "scope": "PRESERVED_APPROVED_C002_FRONT"
+    },
+    {
+      "key": "neutral_down_left",
+      "scope": "DIAGONAL_YAW_REVISION_C003",
+      "source": "res://source/turnarounds/enemy_scout_drone_diagonals_c003r1.png",
+      "source_sha256": "6998ebcde01124af54234c989f4ea0fe830785ca62dbb459da5c265fa5ee32d2",
+      "source_rect": [
+        0,
+        0,
+        887,
+        887
+      ],
+      "scale": 0.08697580719685068,
+      "source_anchor": [
+        510.17358365431215,
+        629
+      ],
+      "target_anchor": [
+        64,
+        80
+      ],
+      "source_axes": [
+        [
+          333.8040201005025,
+          379.75879396984925
+        ],
+        [
+          686.5431472081218,
+          507.0253807106599
+        ]
+      ],
+      "scale_note": "Keep c002 scale 26/244 and one atlas-density factor 724/887 for changed cell resolution; no per-pod or per-view stretch. Anchor x at transverse-axis midpoint, y at unchanged central small-probe bottom."
+    },
+    {
+      "key": "neutral_down_right",
+      "scope": "DIAGONAL_YAW_REVISION_C003",
+      "source": "res://source/turnarounds/enemy_scout_drone_diagonals_c003r1.png",
+      "source_sha256": "6998ebcde01124af54234c989f4ea0fe830785ca62dbb459da5c265fa5ee32d2",
+      "source_rect": [
+        887,
+        0,
+        887,
+        887
+      ],
+      "scale": 0.08697580719685068,
+      "source_anchor": [
+        420.7772020725389,
+        629
+      ],
+      "target_anchor": [
+        64,
+        80
+      ],
+      "source_axes": [
+        [
+          245,
+          507
+        ],
+        [
+          596.5544041450778,
+          380.6062176165803
+        ]
+      ],
+      "scale_note": "Keep c002 scale 26/244 and one atlas-density factor 724/887 for changed cell resolution; no per-pod or per-view stretch. Anchor x at transverse-axis midpoint, y at unchanged central small-probe bottom."
+    }
+  ]
+}

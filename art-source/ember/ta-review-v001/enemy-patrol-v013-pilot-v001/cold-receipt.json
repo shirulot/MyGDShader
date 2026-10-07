@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "initial_godot_cache_absent": true,
+  "engine": "E:\\steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+  "calls": [
+    {
+      "call": "import",
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-v013-pilot-v001\\cold-project",
+        "--editor",
+        "--import"
+      ],
+      "exit_code": 0,
+      "seconds": 3.27,
+      "stdout_file": "import.stdout.log",
+      "stderr_file": "import.stderr.log",
+      "stderr_bytes": 0,
+      "stdout_sha256": "2caa9fe5bad79e0dbddba6ddaf88f72364885ce24a6a1e5d4fa406a93cb821eb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "call": "probe",
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-v013-pilot-v001\\cold-project",
+        "--script",
+        "res://ta_probe.gd",
+        "--",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-v013-pilot-v001\\cold-probe.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.375,
+      "stdout_file": "probe.stdout.log",
+      "stderr_file": "probe.stderr.log",
+      "stderr_bytes": 0,
+      "stdout_sha256": "3fbffe49351f6d7305d8d7f987d724042bff6b569678b5747de38908ec8b4293",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "independent_checks_passed": 29,
+  "independent_checks_total": 29,
+  "probe_sha256": "5c5d68a923dcd120a90984ab1eb166a8b98e65d8e24eddd75bc82a4fc1857949",
+  "original52_payloads_after_cold_import_hash_same": true,
+  "ta_gpu_rerun": false,
+  "author16_gpu_or_full4player8direction_suite_rerun": false
+}

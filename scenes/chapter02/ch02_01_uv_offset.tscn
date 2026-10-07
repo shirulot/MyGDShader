@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://jidyu0px21rt"]
+
+[ext_resource type="Shader" uid="uid://c3a650obh4bpq" path="res://scenes/chapter02/ch02_01_uv_offset.gdshader" id="1_ae1wx"]
+[ext_resource type="Texture2D" uid="uid://coeow6ad5kb3t" path="res://assets/shader-learning/common/uv_grid_512.png" id="2_wo3fc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qmkf3"]
+shader = ExtResource("1_ae1wx")
+shader_parameter/offset_x = 0.23999998904752
+shader_parameter/offset_y = -5.588000007161753e-09
+
+[node name="Ch0201UvOffset" type="Node2D" unique_id=225414307]
+
+[node name="UvGrid512" type="Sprite2D" parent="." unique_id=1014798292]
+texture_repeat = 1
+material = SubResource("ShaderMaterial_qmkf3")
+position = Vector2(360, 360)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("2_wo3fc")

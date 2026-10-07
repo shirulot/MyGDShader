@@ -1,0 +1,265 @@
+{
+  "version": "v016-drone-six-new-moves",
+  "unit": "enemy_scout_drone",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "frame_count": 8,
+  "fps": 8,
+  "loop": true,
+  "configs": {
+    "down_left": {
+      "source": "res://source/down_left.png",
+      "source_sha256": "6e98ee35c741152a436aa8e90fb597e1b64ae87299c16c723c5f0789d8b0356a",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            48.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            79.5,
+            69.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "left": {
+      "source": "res://source/left.png",
+      "source_sha256": "a1ce3052a99109fab887c3efb515c511ba932c83388ab040330385311feba824",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            64.5,
+            57.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            64.5,
+            72.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "up_left": {
+      "source": "res://source/up_left.png",
+      "source_sha256": "e153d5fe5abe5f09c7ffdaadbc3c159e557a662499ef6f00a11ad4aca45f3a68",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            79.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            48.5,
+            70.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "up": {
+      "source": "res://source/up.png",
+      "source_sha256": "b0785d7971ca0fc4c6c869e07a3cb90771f7e944f864ee9553f921770fa3128e",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            85.5,
+            64.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            41.5,
+            64.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "up_right": {
+      "source": "res://source/up_right.png",
+      "source_sha256": "06a37e6a109b5e0e439b079d24f2125ecbd5b3ea55c9428f342b320725637775",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            79.5,
+            70.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            48.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "right": {
+      "source": "res://source/right.png",
+      "source_sha256": "5fab6a03670156d18cb3d14fe4cb4ad2c76d87fc3296259db4227518a26a898e",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            64.5,
+            72.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            64.5,
+            57.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    }
+  },
+  "preserved": [
+    {
+      "action": "move_down",
+      "source": "enemy-sequences-v012",
+      "atlas_sha256": "43a1c3579245d5d494243817e86bafeac83cece11d6bee074734327992615b1d",
+      "frame_hashes": [
+        "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+        "c5ef8ed14c68015e020dc79107328090ac9069ee2722dc8cd76440ac1fa075ea",
+        "a6c6a965b0d6b5112b514badaf16b19ec70def0e2ee88a29c0c12175d29b1fbc",
+        "56c84d8fec88b8eaf5db3588a5f3cdbecdf1beb67d24e632a42ffcbd61ebbf46",
+        "aded5f2d54959625749efb4a07abad29b657575b801612585373adda2f033105",
+        "5e66f1becf50d31a739e127b0d9b6907d085f97d8d77fd67830cb8039243f7ce",
+        "6e901d3fb1bebebaa222cc4dcf13dd7af2710edfda319b05b7406ef069688f5f",
+        "5ec799821884d5caba697aace11753517735d25ddafbda265126a5cd3ac13379"
+      ]
+    },
+    {
+      "action": "move_down_right",
+      "source": "enemy-eight-directions-v013-pilot-drone-v001",
+      "atlas_sha256": "8eadc7a469191f46a83e3942d5b6af3799763f8159294579d90af5a187c2e519",
+      "frame_hashes": [
+        "557e004e9652bc6621a7c6a5ddee7d440ca3ca50d0919e72301ec42cdce8446c",
+        "cb906eb99f0c59abf39d2280c16df43d36542085401de78c5c98fd773a256c78",
+        "4e27bed6591d0c6e12ac56ead4f330e39e7115139bc61b67c047181aac795339",
+        "5fa7484fc43173d5ed128e180431888c5bae4d14f45c279a8fbf2786accd5013",
+        "e955cc0b78cb27475718fe9e9249a84cb5fb25458f843d15fec21b048e8082f1",
+        "981a827ab8666be6b91220c41353ba570a67e842a17c494df0eefb650f72caf0",
+        "0a2ee58780c5890e27022a2129b33333101ae950feb89d5c7ad7e3026c658e97",
+        "173e34de27b3ac6ec9e6cedf5ca82671a29d96c8c9d0a88ba5cf8a947967933d"
+      ]
+    }
+  ],
+  "fan_source": "res://source/rotor_well_master.png",
+  "fan_source_sha256": "8824eeff102796d523fa8fab1f17f90c5716b7f34097987c0d5ea8151c2a3a94",
+  "rotor_rect": [
+    223,
+    165,
+    583,
+    584
+  ],
+  "well_rect": [
+    1000,
+    192,
+    535,
+    528
+  ],
+  "body_y": [
+    0,
+    -1,
+    -1,
+    0,
+    1,
+    1,
+    0,
+    0
+  ],
+  "angle_step_degrees": 11.25,
+  "method": "Approved fixed direction silhouettes; only rotor apertures replaced by fixed v011 well and rotor samples. Counter-rotation in source plane, then ellipse projection. No per-frame generated artwork."
+}

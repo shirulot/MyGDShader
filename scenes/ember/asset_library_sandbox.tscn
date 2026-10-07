@@ -1,0 +1,830 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/ember/asset_library_sandbox.gd" id="1_u56u1"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/console/console_base_v001.png" id="2_gwyto"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/pump/pump_base_v001.png" id="3_sc73t"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/ventilator/ventilator_base_v001.png" id="4_u3va2"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/cooler/cooler_base_v001.png" id="5_hiy5o"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/relay/relay_base_v001.png" id="6_1kk3v"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/lights/wall_lamp_v001.png" id="7_70fsp"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/lights/floor_lamp_v001.png" id="8_qjpk4"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/door/door_closed_v001.png" id="9_d1kxk"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/door/door_open_v001.png" id="10_1h83s"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/telepad/telepad_base_v001.png" id="11_0luye"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/terminal/terminal_body_v001.png" id="12_f85et"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/terminal/screen_frame_v001.png" id="13_ex6rn"]
+[ext_resource type="Texture2D" path="res://assets/ember/props/calibration/fuse_v001.png" id="14_wxsak"]
+[ext_resource type="Texture2D" path="res://assets/ember/props/calibration/antenna_coil_v001.png" id="15_pld8d"]
+[ext_resource type="Texture2D" path="res://assets/ember/props/calibration/split_ring_v001.png" id="16_7j3uv"]
+[ext_resource type="Texture2D" path="res://assets/ember/props/story/log_cartridge_v001.png" id="17_ckwno"]
+[ext_resource type="Texture2D" path="res://assets/ember/props/story/toolbox_v001.png" id="18_fspqc"]
+[ext_resource type="Texture2D" path="res://assets/ember/props/story/helmet_v001.png" id="19_v5ihf"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/icons/hp_v001.png" id="20_pejud"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/icons/energy_v001.png" id="21_wkjpy"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/icons/time_v001.png" id="22_f6428"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/icons/interact_v001.png" id="23_g3n52"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/icons/log_v001.png" id="24_j8s1k"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/icons/pause_v001.png" id="25_m8h6i"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/tasks/lighting_v001.png" id="26_6wit5"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/tasks/drainage_v001.png" id="27_3mgyn"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/tasks/water_supply_v001.png" id="28_0i38v"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/tasks/ventilation_v001.png" id="29_xvls1"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/tasks/cooling_v001.png" id="30_y74rx"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/tasks/communication_v001.png" id="31_0dq70"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/tasks/teleport_v001.png" id="32_qv6as"]
+[ext_resource type="Texture2D" path="res://assets/ember/ui/tasks/protection_v001.png" id="33_eqoa5"]
+[ext_resource type="StyleBox" path="res://assets/ember/ui/panels/panel_style_v001.tres" id="34_qbhkm"]
+[ext_resource type="StyleBox" path="res://assets/ember/buildings/terminal/screen_style_v001.tres" id="35_k778m"]
+[ext_resource type="Texture2D" path="res://assets/ember/vfx/water/water_calm_v001.png" id="36_m4cua"]
+[ext_resource type="Texture2D" path="res://assets/ember/vfx/water/water_directional_v001.png" id="37_77wk2"]
+[ext_resource type="Texture2D" path="res://assets/ember/vfx/water/foam_strip_v001.png" id="38_2f6xt"]
+[ext_resource type="Texture2D" path="res://assets/ember/vfx/smoke/smoke_blob_v001.png" id="39_l0fqf"]
+[ext_resource type="Texture2D" path="res://assets/ember/three_d/textures/grass/grass_leaf_v001.png" id="40_bnuut"]
+[ext_resource type="Texture2D" path="res://assets/ember/three_d/textures/metal/metal_albedo_v001.png" id="41_pnde5"]
+[ext_resource type="Texture2D" path="res://assets/ember/three_d/textures/concrete/concrete_albedo_v001.png" id="42_uixy1"]
+[ext_resource type="Material" path="res://assets/ember/three_d/materials/metal_v001.tres" id="43_campx"]
+[ext_resource type="Material" path="res://assets/ember/three_d/materials/concrete_v001.tres" id="44_wkpjg"]
+[ext_resource type="Material" path="res://assets/ember/three_d/materials/grass_leaf_v001.tres" id="45_p2p7e"]
+
+[sub_resource type="Environment" id="Environment_3ootr"]
+background_mode = 1
+background_color = Color(0.09411765, 0.14901961, 0.19215687, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+ambient_light_energy = 0.8
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_uqbgi"]
+size = Vector2(2.6, 3)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lhbhh"]
+size = Vector2(2.6, 3)
+
+[sub_resource type="QuadMesh" id="QuadMesh_nogxx"]
+size = Vector2(0.75, 1.5)
+
+[sub_resource type="QuadMesh" id="QuadMesh_k4peq"]
+size = Vector2(0.75, 1.5)
+
+[sub_resource type="QuadMesh" id="QuadMesh_ogy8e"]
+size = Vector2(0.75, 1.5)
+
+[node name="EmberAssetLibrary" type="Control" unique_id=512636351]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1440.0
+offset_bottom = 1040.0
+script = ExtResource("1_u56u1")
+
+[node name="@ColorRect@2" type="ColorRect" parent="." unique_id=1804402115]
+layout_mode = 0
+offset_right = 1440.0
+offset_bottom = 1040.0
+color = Color(0.0627451, 0.09411765, 0.1254902, 1)
+
+[node name="@Label@3" type="Label" parent="." unique_id=593246800]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 12.0
+offset_right = 24.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 26
+text = "余烬采能站 · 可复用素材库"
+
+[node name="@Label@4" type="Label" parent="." unique_id=1913422963]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 44.0
+offset_right = 24.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 18
+text = "原生图片、门状态、九宫格与3D材质预览"
+
+[node name="LibraryTabs" type="TabContainer" parent="." unique_id=45480490]
+texture_filter = 1
+layout_mode = 0
+offset_left = 16.0
+offset_top = 80.0
+offset_right = 1424.0
+offset_bottom = 1016.0
+current_tab = 0
+
+[node name="建筑与道具" type="Control" parent="LibraryTabs" unique_id=149877935]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="console_base" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=1836493007]
+texture_filter = 1
+position = Vector2(110, 130)
+texture = ExtResource("2_gwyto")
+
+[node name="@Label@8" type="Label" parent="LibraryTabs/建筑与道具" unique_id=1004753301]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 262.0
+offset_right = 8.0
+offset_bottom = 262.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "控制台"
+
+[node name="pump_base" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=1796210649]
+texture_filter = 1
+position = Vector2(340, 130)
+texture = ExtResource("3_sc73t")
+
+[node name="@Label@9" type="Label" parent="LibraryTabs/建筑与道具" unique_id=669681410]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 262.0
+offset_right = 238.0
+offset_bottom = 262.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "排水泵"
+
+[node name="ventilator_base" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=370374924]
+texture_filter = 1
+position = Vector2(570, 130)
+texture = ExtResource("4_u3va2")
+
+[node name="@Label@10" type="Label" parent="LibraryTabs/建筑与道具" unique_id=1981784944]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 262.0
+offset_right = 468.0
+offset_bottom = 262.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "排热风机"
+
+[node name="cooler_base" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=2070827807]
+texture_filter = 1
+position = Vector2(800, 130)
+texture = ExtResource("5_hiy5o")
+
+[node name="@Label@11" type="Label" parent="LibraryTabs/建筑与道具" unique_id=1698853729]
+layout_mode = 0
+offset_left = 698.0
+offset_top = 262.0
+offset_right = 698.0
+offset_bottom = 262.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "冷却装置"
+
+[node name="relay_base" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=809370577]
+texture_filter = 1
+position = Vector2(1030, 130)
+texture = ExtResource("6_1kk3v")
+
+[node name="@Label@12" type="Label" parent="LibraryTabs/建筑与道具" unique_id=411794464]
+layout_mode = 0
+offset_left = 928.0
+offset_top = 262.0
+offset_right = 928.0
+offset_bottom = 262.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "中继核心"
+
+[node name="wall_lamp" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=1758544746]
+texture_filter = 1
+position = Vector2(1260, 130)
+texture = ExtResource("7_70fsp")
+
+[node name="@Label@13" type="Label" parent="LibraryTabs/建筑与道具" unique_id=2118702305]
+layout_mode = 0
+offset_left = 1158.0
+offset_top = 262.0
+offset_right = 1158.0
+offset_bottom = 262.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "壁灯"
+
+[node name="floor_lamp" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=2036195230]
+texture_filter = 1
+position = Vector2(110, 420)
+texture = ExtResource("8_qjpk4")
+
+[node name="@Label@14" type="Label" parent="LibraryTabs/建筑与道具" unique_id=88433634]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 552.0
+offset_right = 8.0
+offset_bottom = 552.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "地灯"
+
+[node name="door_closed" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=1933675970]
+texture_filter = 1
+position = Vector2(340, 420)
+texture = ExtResource("9_d1kxk")
+
+[node name="@Label@15" type="Label" parent="LibraryTabs/建筑与道具" unique_id=633179126]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 552.0
+offset_right = 238.0
+offset_bottom = 552.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "关闭门"
+
+[node name="door_open" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=197106328]
+texture_filter = 1
+position = Vector2(570, 420)
+texture = ExtResource("10_1h83s")
+
+[node name="@Label@16" type="Label" parent="LibraryTabs/建筑与道具" unique_id=1696619491]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 552.0
+offset_right = 468.0
+offset_bottom = 552.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "开启门"
+
+[node name="telepad_base" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=2112433646]
+texture_filter = 1
+position = Vector2(800, 420)
+texture = ExtResource("11_0luye")
+
+[node name="@Label@17" type="Label" parent="LibraryTabs/建筑与道具" unique_id=852507717]
+layout_mode = 0
+offset_left = 698.0
+offset_top = 552.0
+offset_right = 698.0
+offset_bottom = 552.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "传送底座"
+
+[node name="terminal_body" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=1899932444]
+texture_filter = 1
+position = Vector2(1030, 420)
+texture = ExtResource("12_f85et")
+
+[node name="@Label@18" type="Label" parent="LibraryTabs/建筑与道具" unique_id=661415579]
+layout_mode = 0
+offset_left = 928.0
+offset_top = 552.0
+offset_right = 928.0
+offset_bottom = 552.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "维修终端"
+
+[node name="screen_frame" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=206932835]
+texture_filter = 1
+position = Vector2(1260, 420)
+texture = ExtResource("13_ex6rn")
+
+[node name="@Label@19" type="Label" parent="LibraryTabs/建筑与道具" unique_id=485969831]
+layout_mode = 0
+offset_left = 1158.0
+offset_top = 552.0
+offset_right = 1158.0
+offset_bottom = 552.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "屏幕边框"
+
+[node name="fuse" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=429841102]
+texture_filter = 1
+position = Vector2(110, 710)
+texture = ExtResource("14_wxsak")
+
+[node name="@Label@20" type="Label" parent="LibraryTabs/建筑与道具" unique_id=1225220634]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 842.0
+offset_right = 8.0
+offset_bottom = 842.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "保险丝"
+
+[node name="antenna_coil" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=464682761]
+texture_filter = 1
+position = Vector2(340, 710)
+texture = ExtResource("15_pld8d")
+
+[node name="@Label@21" type="Label" parent="LibraryTabs/建筑与道具" unique_id=1532153529]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 842.0
+offset_right = 238.0
+offset_bottom = 842.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "天线线圈"
+
+[node name="split_ring" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=648432233]
+texture_filter = 1
+position = Vector2(570, 710)
+texture = ExtResource("16_7j3uv")
+
+[node name="@Label@22" type="Label" parent="LibraryTabs/建筑与道具" unique_id=1691325161]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 842.0
+offset_right = 468.0
+offset_bottom = 842.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "开口环"
+
+[node name="log_cartridge" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=1667879881]
+texture_filter = 1
+position = Vector2(800, 710)
+texture = ExtResource("17_ckwno")
+
+[node name="@Label@23" type="Label" parent="LibraryTabs/建筑与道具" unique_id=1365146443]
+layout_mode = 0
+offset_left = 698.0
+offset_top = 842.0
+offset_right = 698.0
+offset_bottom = 842.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "记录匣"
+
+[node name="toolbox" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=364815004]
+texture_filter = 1
+position = Vector2(1030, 710)
+texture = ExtResource("18_fspqc")
+
+[node name="@Label@24" type="Label" parent="LibraryTabs/建筑与道具" unique_id=178966264]
+layout_mode = 0
+offset_left = 928.0
+offset_top = 842.0
+offset_right = 928.0
+offset_bottom = 842.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "工具箱"
+
+[node name="helmet" type="Sprite2D" parent="LibraryTabs/建筑与道具" unique_id=790912271]
+texture_filter = 1
+position = Vector2(1260, 710)
+texture = ExtResource("19_v5ihf")
+
+[node name="@Label@25" type="Label" parent="LibraryTabs/建筑与道具" unique_id=893417816]
+layout_mode = 0
+offset_left = 1158.0
+offset_top = 842.0
+offset_right = 1158.0
+offset_bottom = 842.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 15
+text = "维修头盔"
+
+[node name="UI与九宫格" type="Control" parent="LibraryTabs" unique_id=1621131638]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="hp" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=1905496422]
+texture_filter = 1
+position = Vector2(90, 78)
+scale = Vector2(2, 2)
+texture = ExtResource("20_pejud")
+
+[node name="@Label@26" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=1963761357]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 120.0
+offset_right = 15.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "生命"
+
+[node name="energy" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=1011115033]
+texture_filter = 1
+position = Vector2(284, 78)
+scale = Vector2(2, 2)
+texture = ExtResource("21_wkjpy")
+
+[node name="@Label@27" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=92754389]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 120.0
+offset_right = 209.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "能量"
+
+[node name="time" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=998648639]
+texture_filter = 1
+position = Vector2(478, 78)
+scale = Vector2(2, 2)
+texture = ExtResource("22_f6428")
+
+[node name="@Label@28" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=2018041969]
+layout_mode = 0
+offset_left = 403.0
+offset_top = 120.0
+offset_right = 403.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "时间"
+
+[node name="interact" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=1610223786]
+texture_filter = 1
+position = Vector2(672, 78)
+scale = Vector2(2, 2)
+texture = ExtResource("23_g3n52")
+
+[node name="@Label@29" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=1342348626]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 120.0
+offset_right = 597.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "交互"
+
+[node name="log" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=1811870983]
+texture_filter = 1
+position = Vector2(866, 78)
+scale = Vector2(2, 2)
+texture = ExtResource("24_j8s1k")
+
+[node name="@Label@30" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=1973757206]
+layout_mode = 0
+offset_left = 791.0
+offset_top = 120.0
+offset_right = 791.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "记录"
+
+[node name="pause" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=1364075665]
+texture_filter = 1
+position = Vector2(1060, 78)
+scale = Vector2(2, 2)
+texture = ExtResource("25_m8h6i")
+
+[node name="@Label@31" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=1777646007]
+layout_mode = 0
+offset_left = 985.0
+offset_top = 120.0
+offset_right = 985.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "暂停"
+
+[node name="lighting" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=375493964]
+texture_filter = 1
+position = Vector2(1254, 78)
+scale = Vector2(2, 2)
+texture = ExtResource("26_6wit5")
+
+[node name="@Label@32" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=988762755]
+layout_mode = 0
+offset_left = 1179.0
+offset_top = 120.0
+offset_right = 1179.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "照明"
+
+[node name="drainage" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=800127642]
+texture_filter = 1
+position = Vector2(90, 248)
+scale = Vector2(2, 2)
+texture = ExtResource("27_3mgyn")
+
+[node name="@Label@33" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=1907990486]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 290.0
+offset_right = 15.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "排水"
+
+[node name="water_supply" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=2085871648]
+texture_filter = 1
+position = Vector2(284, 248)
+scale = Vector2(2, 2)
+texture = ExtResource("28_0i38v")
+
+[node name="@Label@34" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=1515906227]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 290.0
+offset_right = 209.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "输水"
+
+[node name="ventilation" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=57426430]
+texture_filter = 1
+position = Vector2(478, 248)
+scale = Vector2(2, 2)
+texture = ExtResource("29_xvls1")
+
+[node name="@Label@35" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=1188441045]
+layout_mode = 0
+offset_left = 403.0
+offset_top = 290.0
+offset_right = 403.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "排热"
+
+[node name="cooling" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=1605227028]
+texture_filter = 1
+position = Vector2(672, 248)
+scale = Vector2(2, 2)
+texture = ExtResource("30_y74rx")
+
+[node name="@Label@36" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=1582315842]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 290.0
+offset_right = 597.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "冷却"
+
+[node name="communication" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=435566890]
+texture_filter = 1
+position = Vector2(866, 248)
+scale = Vector2(2, 2)
+texture = ExtResource("31_0dq70")
+
+[node name="@Label@37" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=787326073]
+layout_mode = 0
+offset_left = 791.0
+offset_top = 290.0
+offset_right = 791.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "通信"
+
+[node name="teleport" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=814511063]
+texture_filter = 1
+position = Vector2(1060, 248)
+scale = Vector2(2, 2)
+texture = ExtResource("32_qv6as")
+
+[node name="@Label@38" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=1577652334]
+layout_mode = 0
+offset_left = 985.0
+offset_top = 290.0
+offset_right = 985.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "传送"
+
+[node name="protection" type="Sprite2D" parent="LibraryTabs/UI与九宫格" unique_id=2066955962]
+texture_filter = 1
+position = Vector2(1254, 248)
+scale = Vector2(2, 2)
+texture = ExtResource("33_eqoa5")
+
+[node name="@Label@39" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=147190031]
+layout_mode = 0
+offset_left = 1179.0
+offset_top = 290.0
+offset_right = 1179.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "保护"
+
+[node name="@Panel@47" type="Panel" parent="LibraryTabs/UI与九宫格" unique_id=1465938369]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 390.0
+offset_right = 220.0
+offset_bottom = 486.0
+theme_override_styles/panel = ExtResource("34_qbhkm")
+
+[node name="@Panel@48" type="Panel" parent="LibraryTabs/UI与九宫格" unique_id=1538825253]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 390.0
+offset_right = 658.0
+offset_bottom = 570.0
+theme_override_styles/panel = ExtResource("34_qbhkm")
+
+[node name="@Panel@49" type="Panel" parent="LibraryTabs/UI与九宫格" unique_id=1507029860]
+layout_mode = 0
+offset_left = 710.0
+offset_top = 390.0
+offset_right = 1310.0
+offset_bottom = 690.0
+theme_override_styles/panel = ExtResource("34_qbhkm")
+
+[node name="@Label@50" type="Label" parent="LibraryTabs/UI与九宫格" unique_id=1435261822]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 728.0
+offset_right = 30.0
+offset_bottom = 728.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 18
+text = "面板九宫格：三种尺寸；固定8px边角"
+
+[node name="@Panel@51" type="Panel" parent="LibraryTabs/UI与九宫格" unique_id=110591067]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 774.0
+offset_right = 688.0
+offset_bottom = 870.0
+theme_override_styles/panel = ExtResource("35_k778m")
+
+[node name="特效与纹理" type="Control" parent="LibraryTabs" unique_id=1273900387]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="water_calm" type="Sprite2D" parent="LibraryTabs/特效与纹理" unique_id=122720709]
+texture_filter = 1
+position = Vector2(168, 160)
+texture = ExtResource("36_m4cua")
+
+[node name="@Label@40" type="Label" parent="LibraryTabs/特效与纹理" unique_id=634170560]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 292.0
+offset_right = 18.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "平静水纹"
+
+[node name="water_directional" type="Sprite2D" parent="LibraryTabs/特效与纹理" unique_id=1533973620]
+texture_filter = 1
+position = Vector2(514, 160)
+texture = ExtResource("37_77wk2")
+
+[node name="@Label@41" type="Label" parent="LibraryTabs/特效与纹理" unique_id=1319308001]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 292.0
+offset_right = 364.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "定向水纹"
+
+[node name="foam_strip" type="Sprite2D" parent="LibraryTabs/特效与纹理" unique_id=994744858]
+texture_filter = 1
+position = Vector2(860, 160)
+texture = ExtResource("38_2f6xt")
+
+[node name="@Label@42" type="Label" parent="LibraryTabs/特效与纹理" unique_id=1402338218]
+layout_mode = 0
+offset_left = 710.0
+offset_top = 292.0
+offset_right = 710.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "泡沫条"
+
+[node name="smoke_blob" type="Sprite2D" parent="LibraryTabs/特效与纹理" unique_id=1192733499]
+texture_filter = 1
+position = Vector2(1206, 160)
+texture = ExtResource("39_l0fqf")
+
+[node name="@Label@43" type="Label" parent="LibraryTabs/特效与纹理" unique_id=150096513]
+layout_mode = 0
+offset_left = 1056.0
+offset_top = 292.0
+offset_right = 1056.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "烟团"
+
+[node name="grass_leaf" type="Sprite2D" parent="LibraryTabs/特效与纹理" unique_id=16515353]
+texture_filter = 1
+position = Vector2(168, 500)
+texture = ExtResource("40_bnuut")
+
+[node name="@Label@44" type="Label" parent="LibraryTabs/特效与纹理" unique_id=1733593475]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 632.0
+offset_right = 18.0
+offset_bottom = 632.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "草片"
+
+[node name="metal_albedo" type="Sprite2D" parent="LibraryTabs/特效与纹理" unique_id=1341651057]
+texture_filter = 1
+position = Vector2(514, 500)
+texture = ExtResource("41_pnde5")
+
+[node name="@Label@45" type="Label" parent="LibraryTabs/特效与纹理" unique_id=202013207]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 632.0
+offset_right = 364.0
+offset_bottom = 632.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "金属底色"
+
+[node name="concrete_albedo" type="Sprite2D" parent="LibraryTabs/特效与纹理" unique_id=1619025300]
+texture_filter = 1
+position = Vector2(860, 500)
+texture = ExtResource("42_uixy1")
+
+[node name="@Label@46" type="Label" parent="LibraryTabs/特效与纹理" unique_id=1680428539]
+layout_mode = 0
+offset_left = 710.0
+offset_top = 632.0
+offset_right = 710.0
+offset_bottom = 632.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "混凝土底色"
+
+[node name="3D材质" type="Control" parent="LibraryTabs" unique_id=1995671518]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="@SubViewportContainer@52" type="SubViewportContainer" parent="LibraryTabs/3D材质" unique_id=545513103]
+layout_mode = 0
+offset_right = 1400.0
+offset_bottom = 880.0
+
+[node name="@SubViewport@53" type="SubViewport" parent="LibraryTabs/3D材质/@SubViewportContainer@52" unique_id=1110422503]
+own_world_3d = true
+size = Vector2i(1400, 880)
+render_target_update_mode = 4
+
+[node name="@Node3D@54" type="Node3D" parent="LibraryTabs/3D材质/@SubViewportContainer@52/@SubViewport@53" unique_id=276812565]
+
+[node name="@WorldEnvironment@55" type="WorldEnvironment" parent="LibraryTabs/3D材质/@SubViewportContainer@52/@SubViewport@53/@Node3D@54" unique_id=1544703334]
+environment = SubResource("Environment_3ootr")
+
+[node name="@DirectionalLight3D@56" type="DirectionalLight3D" parent="LibraryTabs/3D材质/@SubViewportContainer@52/@SubViewport@53/@Node3D@54" unique_id=204324930]
+transform = Transform3D(0.81915206, 0.4262504, -0.38379753, 0, 0.66913056, 0.74314487, 0.57357645, -0.6087487, 0.54811966, 0, 0, 0)
+
+[node name="@MeshInstance3D@57" type="MeshInstance3D" parent="LibraryTabs/3D材质/@SubViewportContainer@52/@SubViewport@53/@Node3D@54" unique_id=710696810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7, 0, 0)
+material_override = ExtResource("43_campx")
+mesh = SubResource("PlaneMesh_uqbgi")
+
+[node name="@MeshInstance3D@58" type="MeshInstance3D" parent="LibraryTabs/3D材质/@SubViewportContainer@52/@SubViewport@53/@Node3D@54" unique_id=1722246927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7, 0, 0)
+material_override = ExtResource("44_wkpjg")
+mesh = SubResource("PlaneMesh_lhbhh")
+
+[node name="@MeshInstance3D@59" type="MeshInstance3D" parent="LibraryTabs/3D材质/@SubViewportContainer@52/@SubViewport@53/@Node3D@54" unique_id=563664819]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.65625, 1.2)
+material_override = ExtResource("45_p2p7e")
+mesh = SubResource("QuadMesh_nogxx")
+
+[node name="@MeshInstance3D@60" type="MeshInstance3D" parent="LibraryTabs/3D材质/@SubViewportContainer@52/@SubViewport@53/@Node3D@54" unique_id=1362850192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65625, 1.2)
+material_override = ExtResource("45_p2p7e")
+mesh = SubResource("QuadMesh_k4peq")
+
+[node name="@MeshInstance3D@61" type="MeshInstance3D" parent="LibraryTabs/3D材质/@SubViewportContainer@52/@SubViewport@53/@Node3D@54" unique_id=750581924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.65625, 1.2)
+material_override = ExtResource("45_p2p7e")
+mesh = SubResource("QuadMesh_ogy8e")
+
+[node name="PreviewCamera" type="Camera3D" parent="LibraryTabs/3D材质/@SubViewportContainer@52/@SubViewport@53/@Node3D@54" unique_id=2000816918]
+transform = Transform3D(1, 0, 0, 0, 0.8320503, 0.55470014, 0, -0.55470014, 0.8320503, 0, 4.5, 6)
+projection = 1
+size = 7.0
+
+[node name="@Label@62" type="Label" parent="LibraryTabs/3D材质" unique_id=1396319490]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 850.0
+offset_right = 24.0
+offset_bottom = 850.0
+theme_override_colors/font_color = Color(0.74509805, 0.79607844, 0.76862746, 1)
+theme_override_font_sizes/font_size = 17
+text = "金属 / 混凝土与草片：标准材质、Alpha Scissor、Mipmaps；未制作Normal贴图或风摆Shader"

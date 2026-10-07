@@ -1,0 +1,66 @@
+{
+  "id": "drainage",
+  "method": "AI_BODY_MATERIAL_SAMPLING_NATIVE_SEMANTIC_PIXEL_FINISH",
+  "source_use": {
+    "mother": "art-source/ember/batch-04-ui/generated/drainage_master_v001.png",
+    "mother_sha256": "15cc0e9fe4f5b79fe960a6f4ff69f9d2a19b3687a11d109e7175a44175f91681",
+    "source_unchanged": true,
+    "direct_original_rgba_byte_reuse": false,
+    "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+    "sampling": {
+      "source_alpha_threshold": 128,
+      "source_body_bbox": [
+        215,
+        294,
+        1040,
+        1014
+      ],
+      "material_grid_size": [
+        24,
+        21
+      ],
+      "material_grid_origin": [
+        4,
+        5
+      ],
+      "native_semantic_changed_pixels": 62
+    }
+  },
+  "adjustments": [
+    "保留接水盆及底部排出口，母稿下排语义保持",
+    "在盆中央重建3px箭杆与三级箭尖；向下排出无需用颜色说明"
+  ],
+  "native_pixel_source": "art-source/ember/batch-04-ui/annotations/drainage_native_pixel_source_v001.json",
+  "measurement": {
+    "canvas": [
+      32,
+      32
+    ],
+    "bbox": [
+      4,
+      5,
+      28,
+      26
+    ],
+    "opaque_pixels": 389,
+    "transparent_pixels": 635,
+    "partial_alpha_pixels": 0,
+    "color_count": 12,
+    "palette_rgb": [
+      "#101820",
+      "#182631",
+      "#203A4B",
+      "#2B3E4B",
+      "#4D6470",
+      "#566B78",
+      "#7B4D35",
+      "#829BA3",
+      "#B77C4B",
+      "#BECBC4",
+      "#E2B77A",
+      "#ECE9D8"
+    ],
+    "all_opaque_colors_in_standard16": true
+  },
+  "output_sha256": "96533facc1dbe1bd9e8c095955ad086d5693c5ab7500f5baea0ff5d38eb9a0d7"
+}

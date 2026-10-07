@@ -1,0 +1,1263 @@
+{
+  "revision": "map_assets_v001",
+  "created_at": "2026-10-06T13:39:55.709084+08:00",
+  "generator": "built_in_imagegen",
+  "status": "TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING",
+  "source_specs": "res://art-source/ember/map-assets-v001/source_specs_v001.json",
+  "source_specs_sha256": "6effeb9821d6c9d01802ded9ea4b2c363a1f90df0cf3dda4dc8315b3364d4583",
+  "counts": {
+    "active_source_pngs": 30,
+    "independent_sprite_masters": 19,
+    "pipe_sheet_masters": 1,
+    "pipe_components": 8,
+    "new_floor_period_masters": 9,
+    "pit_background_masters": 1,
+    "target_transparent_pngs": 27,
+    "target_sprite_scenes": 27
+  },
+  "scale": {
+    "world_cell_px": 32,
+    "texture_cell_px": 128,
+    "floor_layer_scale": 0.25,
+    "filter": "NEAREST",
+    "camera_zoom": 2
+  },
+  "concept_vs_actual": {
+    "references": "Generated concept maps; visual direction only, not production tiles or engine validation",
+    "actual_products": "Registered source RGBA plus actual TileMapLayer / Sprite2D scene assembly",
+    "actual_previews": "res://assets/ember/map_assets_v001/previews/",
+    "technical_pass": "Only final sprite/floor/GPU reports establish their stated checks",
+    "artistic_acceptance": "REQUIRES_USER_REVIEW"
+  },
+  "pending_reviews": [
+    "User choice and visual acceptance of the actual assembled maps",
+    "Delivery ZIP cold-start checks are recorded separately"
+  ],
+  "pixel_policy": "Artist RGBA samples preserved; crop/nearest registration/transparent canvas/pivot only; no procedural redraw, recolour or palette quantization",
+  "unchanged_legacy_floor_ids": [
+    1,
+    2,
+    7,
+    8
+  ],
+  "sources": [
+    {
+      "id": "cargo_crate_blue",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/cargo_crate_blue.png",
+      "source_sha256": "6122bc853605efea4346b471d3effb33db0f578b4bb6e13139e79a58a696131d",
+      "source_bytes": 404017,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/cargo_crate_blue.prompt.txt",
+      "prompt_sha256": "1a370a89d9d5b1718226ee505ae793b660c21fc4995f19932cb54589e0c1c308",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/cargo_crate_blue.generation.json",
+      "generation_record_sha256": "6c642d1af7121665f319f3aa357a357e9dca0af25e8d84dee2e322c7376fb638",
+      "builtin_provenance": {
+        "id": "cargo_crate_blue",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-b37b539d-a0d6-423b-8d52-3495e1bcaed7.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/cargo_crate_blue.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/cargo_crate_blue.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "6122bc853605efea4346b471d3effb33db0f578b4bb6e13139e79a58a696131d",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "cargo_crate_brown",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/cargo_crate_brown.png",
+      "source_sha256": "483535d0d2516ad5051e57eef66f842d879b8aa2c97b16a7ae695b5fee3b9255",
+      "source_bytes": 330224,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/cargo_crate_brown.prompt.txt",
+      "prompt_sha256": "d03bf5578f67d666d3186f3b4d8d69bbc8fd618bd25c8fe25cfd5d8e9b0e3ceb",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/cargo_crate_brown.generation.json",
+      "generation_record_sha256": "3a04f11261bd72fd61d91d76b0d4f001a80ff9f19dc5fafb777f3c8a5cbdcd66",
+      "builtin_provenance": {
+        "id": "cargo_crate_brown",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-603eefe4-fc47-4cdb-8112-69785bdbbde5.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/cargo_crate_brown.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/cargo_crate_brown.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "483535d0d2516ad5051e57eef66f842d879b8aa2c97b16a7ae695b5fee3b9255",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "cargo_crate_olive",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/cargo_crate_olive.png",
+      "source_sha256": "b0e299776a224ecb6076a678b6c0c2ab63a3ff92dba77bfd561146e14e95083d",
+      "source_bytes": 190014,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/cargo_crate_olive.prompt.txt",
+      "prompt_sha256": "d44a90de6720f5c545344071790fda63b5d5453745cc53fdee06843a23455603",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/cargo_crate_olive.generation.json",
+      "generation_record_sha256": "11d17c0df9f5dbabc18d2fc85f8b6bf486103f1e43bbe20347a52e265ebec535",
+      "builtin_provenance": {
+        "id": "cargo_crate_olive",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-e872a36c-4b93-4438-8ff7-c1606b242ba4.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/cargo_crate_olive.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/cargo_crate_olive.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "b0e299776a224ecb6076a678b6c0c2ab63a3ff92dba77bfd561146e14e95083d",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "console",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/console.png",
+      "source_sha256": "b080573cd07ebe49b17c4de380a9f9e6f6f504ed62d266448371d62f6b261905",
+      "source_bytes": 359423,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/console.prompt.txt",
+      "prompt_sha256": "efae4a44668b91ba45f727b38f70f73b032345c4c48e4379e3b1f664f7a1920f",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/console.generation.json",
+      "generation_record_sha256": "cccff87111bd20ab57b4979ea2c8d0ef68721d7b789235a572229295cf689f73",
+      "builtin_provenance": {
+        "id": "console",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-79e354d4-29e9-4279-81e5-dcf2f2832f50.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/console.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/console.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "b080573cd07ebe49b17c4de380a9f9e6f6f504ed62d266448371d62f6b261905",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "sha256": "1f3bf4511ebd413828bd777659e49bf80ecd8c69bab37801c58f16fd97fe437b",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "conveyor",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/conveyor.png",
+      "source_sha256": "d1da8dfd56c322bfb1e148f485297fd96b738c0f481657d2796e1ec7cfcbaacf",
+      "source_bytes": 528953,
+      "source_size_px": [
+        1619,
+        971
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/conveyor.prompt.txt",
+      "prompt_sha256": "09ff54a8a44c60c678dc1634e3cc6ee93e44a6c202438fb2e35af75223b0d2cd",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/conveyor.generation.json",
+      "generation_record_sha256": "0a315ee7b56e11adb16e657ab049e8ae4effda853508da01a7778165fad6c42f",
+      "builtin_provenance": {
+        "id": "conveyor",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-530c62da-224c-499d-a6f2-5c63ec7caf8c.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/conveyor.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/conveyor.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "d1da8dfd56c322bfb1e148f485297fd96b738c0f481657d2796e1ec7cfcbaacf",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "sha256": "73341e0dbd6686406c681a1d20241a8545f99de955f38c7282a4019d520594cc",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "door",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/door.png",
+      "source_sha256": "90b55f84be706609f4b9e6958aa31e7376dd5b14321a7546a4e1931a86e81b2f",
+      "source_bytes": 597661,
+      "source_size_px": [
+        1086,
+        1448
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/door.prompt.txt",
+      "prompt_sha256": "c1f51980bdc52d0d2c0a53751be9b74bfe35e00e21e80382574f8ef74cf59bcf",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/door.generation.json",
+      "generation_record_sha256": "e9d78a8fdead83ee58c99ecbfe69022069036f16dba2250236dd78301a240afb",
+      "builtin_provenance": {
+        "id": "door",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-17bba011-2020-40a0-aae0-acfe45b4a12c.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/door.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/door.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "90b55f84be706609f4b9e6958aa31e7376dd5b14321a7546a4e1931a86e81b2f",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "drum",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/drum.png",
+      "source_sha256": "3456fa3e4bed23ada1a726051c5105fa157744e67552fd963232826c04c7b4ad",
+      "source_bytes": 311864,
+      "source_size_px": [
+        1122,
+        1402
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/drum.prompt.txt",
+      "prompt_sha256": "e31ab3aea19f2fade72facb8166462f93681f1878d38c8e76b7e302ea5b00f65",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/drum.generation.json",
+      "generation_record_sha256": "b3dcbdc6eaed9fa38cc63d1a97def50cd06135743e8909da88c186d9c660d4f8",
+      "builtin_provenance": {
+        "id": "drum",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-d10b67d6-17c6-4f9c-aaab-51a2fc88c4cf.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/drum.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/drum.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "3456fa3e4bed23ada1a726051c5105fa157744e67552fd963232826c04c7b4ad",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "sha256": "73341e0dbd6686406c681a1d20241a8545f99de955f38c7282a4019d520594cc",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "energy_station",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/energy_station.png",
+      "source_sha256": "04ff4076efca20eaf7094da35d3294ba421e05e0e9caf9b031dd5956c446291c",
+      "source_bytes": 573734,
+      "source_size_px": [
+        1122,
+        1402
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/energy_station.prompt.txt",
+      "prompt_sha256": "d93a3948de8d5db78f78a30ff0849414f4d8989151fa453a2b211ddee17a86e2",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/energy_station.generation.json",
+      "generation_record_sha256": "80dedd777eb29d7797d52f749ba4db69860d42c733346305ecdf8a852102f845",
+      "builtin_provenance": {
+        "id": "energy_station",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-f6f0cc22-e56a-43d9-834b-70d85b4ca83d.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/energy_station.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/energy_station.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "04ff4076efca20eaf7094da35d3294ba421e05e0e9caf9b031dd5956c446291c",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "sha256": "73341e0dbd6686406c681a1d20241a8545f99de955f38c7282a4019d520594cc",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "floor_ceramic",
+      "type": "floor",
+      "source": "res://art-source/ember/map-assets-v001/masters/floor_ceramic.png",
+      "source_sha256": "50f95d84d9e203c284bc28d1805de5acb648f56c61296ae1d7c91410116c4832",
+      "source_bytes": 2648012,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/floor_ceramic.prompt.txt",
+      "prompt_sha256": "55ad45e2d68ac4a4ae3c8652916fe5974485d787337da875ec9949af547af2f8",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/floor_ceramic.generation.json",
+      "generation_record_sha256": "ba4010e99ee6f43d3396b41e77cd7486cd0552ab08f8b7d6be325d6eefd40476",
+      "builtin_provenance": {
+        "id": "floor_ceramic",
+        "type": "floor",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-f0534928-dc66-4403-8056-468224ff29ec.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/floor_ceramic.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/floor_ceramic.prompt.txt",
+        "transparent_requested": false,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "50f95d84d9e203c284bc28d1805de5acb648f56c61296ae1d7c91410116c4832",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "sha256": "1f3bf4511ebd413828bd777659e49bf80ecd8c69bab37801c58f16fd97fe437b",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "floor_concrete",
+      "type": "floor",
+      "source": "res://art-source/ember/map-assets-v001/masters/floor_concrete.png",
+      "source_sha256": "5e7b04891d1b5ab2cecf88b0c864bf78697b1c99971344a9391372f9053b8efb",
+      "source_bytes": 2803860,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/floor_concrete.prompt.txt",
+      "prompt_sha256": "bc4aaec71965af4603e0caed4febe3497bc5c83a77552516cc887b6639b2b414",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/floor_concrete.generation.json",
+      "generation_record_sha256": "571a82cfed3bc1f29e9421eaa01a97cef13c6a970b1df274e79785f6ac384d10",
+      "builtin_provenance": {
+        "id": "floor_concrete",
+        "type": "floor",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-bdd74753-62cc-4e4b-9204-95aa2ccc26e8.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/floor_concrete.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/floor_concrete.prompt.txt",
+        "transparent_requested": false,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "5e7b04891d1b5ab2cecf88b0c864bf78697b1c99971344a9391372f9053b8efb",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "floor_gravel",
+      "type": "floor",
+      "source": "res://art-source/ember/map-assets-v001/masters/floor_gravel.png",
+      "source_sha256": "afadca0f0a448685185f0535a33d83b1084c918ef59f48510ac30ff0a176c9e6",
+      "source_bytes": 3405236,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/floor_gravel.prompt.txt",
+      "prompt_sha256": "936b5cf9acee1e1728e08cec8b95e94ddf7747a06b070bab117ababad52cf069",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/floor_gravel.generation.json",
+      "generation_record_sha256": "475cd8cccd5c702bfea6a801f2d67b80fb2fe42f56abe6c2d799323e39a2cf54",
+      "builtin_provenance": {
+        "id": "floor_gravel",
+        "type": "floor",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-96eb38a4-63b7-4630-a4dd-d33de82fc06f.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/floor_gravel.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/floor_gravel.prompt.txt",
+        "transparent_requested": false,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "afadca0f0a448685185f0535a33d83b1084c918ef59f48510ac30ff0a176c9e6",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "sha256": "73341e0dbd6686406c681a1d20241a8545f99de955f38c7282a4019d520594cc",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "floor_moss",
+      "type": "floor",
+      "source": "res://art-source/ember/map-assets-v001/masters/floor_moss.png",
+      "source_sha256": "f5e046e8714406c3fb1e1582bab8890ae6438fac30afc840b7da90c133d71a08",
+      "source_bytes": 3114101,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/floor_moss.prompt.txt",
+      "prompt_sha256": "c385d662b36cc163b6cb3dde319c3fa2db2d2a95723caa8c5aa264abd5f725c4",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/floor_moss.generation.json",
+      "generation_record_sha256": "80b2c0a39e402b0105b1b1d2bcb7f096b23e75060641228da12cf02dbbf72664",
+      "builtin_provenance": {
+        "id": "floor_moss",
+        "type": "floor",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-ca61d39c-9417-4b4b-9dee-112ed96d4fe1.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/floor_moss.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/floor_moss.prompt.txt",
+        "transparent_requested": false,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "f5e046e8714406c3fb1e1582bab8890ae6438fac30afc840b7da90c133d71a08",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "sha256": "1f3bf4511ebd413828bd777659e49bf80ecd8c69bab37801c58f16fd97fe437b",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "floor_rust",
+      "type": "floor",
+      "source": "res://art-source/ember/map-assets-v001/masters/floor_rust.png",
+      "source_sha256": "e991c917bdf77f31ded09aab8cd58ab3fb03656145cbee33856b4c4fbe79e57b",
+      "source_bytes": 2589305,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/floor_rust.prompt.txt",
+      "prompt_sha256": "72926807df8a5b3a5e39bba4c0be232ad4f5c37586523b4b5ebc0c1d8569d68c",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/floor_rust.generation.json",
+      "generation_record_sha256": "47c49ae28384c58f529eecb17380872f29832a241e2a5ff158b33b0ac5a69afb",
+      "builtin_provenance": {
+        "id": "floor_rust",
+        "type": "floor",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-24bffda5-8bed-4468-8ad0-d799d3cf6c01.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/floor_rust.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/floor_rust.prompt.txt",
+        "transparent_requested": false,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "e991c917bdf77f31ded09aab8cd58ab3fb03656145cbee33856b4c4fbe79e57b",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "sha256": "73341e0dbd6686406c681a1d20241a8545f99de955f38c7282a4019d520594cc",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "floor_sand",
+      "type": "floor",
+      "source": "res://art-source/ember/map-assets-v001/masters/floor_sand.png",
+      "source_sha256": "9e0edafc798a7e7270ae5089ed6ab4d5bc97cc7544e636c0efcb00a0705b70ac",
+      "source_bytes": 2646184,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/floor_sand.prompt.txt",
+      "prompt_sha256": "785b51a9e2c82a81652df883b8be39c689ab6f71a40f733e3703ad2f4889c536",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/floor_sand.generation.json",
+      "generation_record_sha256": "ecb1473c98efc57bcfaa6f88a5a057c8b446be9d8b9ad691165d9ab25368b2d4",
+      "builtin_provenance": {
+        "id": "floor_sand",
+        "type": "floor",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-28daa30a-8af6-403f-a2d3-5921c33bbbb1.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/floor_sand.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/floor_sand.prompt.txt",
+        "transparent_requested": false,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "9e0edafc798a7e7270ae5089ed6ab4d5bc97cc7544e636c0efcb00a0705b70ac",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "sha256": "73341e0dbd6686406c681a1d20241a8545f99de955f38c7282a4019d520594cc",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "floor_steel",
+      "type": "floor",
+      "source": "res://art-source/ember/map-assets-v001/masters/floor_steel.png",
+      "source_sha256": "6719bbf0e372b8f830af5cca441cc6dacf634494916f64d4ec9b85276c5ad097",
+      "source_bytes": 2645869,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/floor_steel.prompt.txt",
+      "prompt_sha256": "54f779a112b600bfd942a763068c732b92312e366a464e80adfcd13f1fcf9aa9",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/floor_steel.generation.json",
+      "generation_record_sha256": "d4d153064af762a605e006cc3d49f8cbd5daf3c95a27fbb4aa0918d6a1b09e54",
+      "builtin_provenance": {
+        "id": "floor_steel",
+        "type": "floor",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-c0fe61e2-0ebf-4e4d-90bf-8884f980a0be.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/floor_steel.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/floor_steel.prompt.txt",
+        "transparent_requested": false,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "6719bbf0e372b8f830af5cca441cc6dacf634494916f64d4ec9b85276c5ad097",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "floor_teal",
+      "type": "floor",
+      "source": "res://art-source/ember/map-assets-v001/masters/floor_teal.png",
+      "source_sha256": "8e5aec1259de511bba2d14195e777c091be5d142f4e5d7e82299a96cb5e42bb2",
+      "source_bytes": 2813471,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/floor_teal.prompt.txt",
+      "prompt_sha256": "c50609bdd6bd80fd743b636e40757425626126c9d08f07ce3bb4a73d8a96b425",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/floor_teal.generation.json",
+      "generation_record_sha256": "9455eae83fbb708c4a2de097443b304d502b2b2918dd87e4477778cf1f557f21",
+      "builtin_provenance": {
+        "id": "floor_teal",
+        "type": "floor",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-e4221a38-3ceb-4888-af50-3cf3b7f9b3fb.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/floor_teal.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/floor_teal.prompt.txt",
+        "transparent_requested": false,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "8e5aec1259de511bba2d14195e777c091be5d142f4e5d7e82299a96cb5e42bb2",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "sha256": "1f3bf4511ebd413828bd777659e49bf80ecd8c69bab37801c58f16fd97fe437b",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "floor_wood",
+      "type": "floor",
+      "source": "res://art-source/ember/map-assets-v001/masters/floor_wood.png",
+      "source_sha256": "a0f5c27669974e0aba3d3d424e79cf3d38ae24cb2bd947ff5aaffdd91bdf8d8c",
+      "source_bytes": 1853258,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/floor_wood.prompt.txt",
+      "prompt_sha256": "5f9ebdc0c2fcb293cad8f055ea442400fc3bcbc2e703335fcf4a35d3cdc279fc",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/floor_wood.generation.json",
+      "generation_record_sha256": "6f20be141b5256f71fcd6bbd87a72096abba411fbce58af7c3ff0385c3a157e7",
+      "builtin_provenance": {
+        "id": "floor_wood",
+        "type": "floor",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-4757a64e-9556-4caf-9517-cfa7adf3d5bb.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/floor_wood.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/floor_wood.prompt.txt",
+        "transparent_requested": false,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "a0f5c27669974e0aba3d3d424e79cf3d38ae24cb2bd947ff5aaffdd91bdf8d8c",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "lily_patch",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/lily_patch.png",
+      "source_sha256": "df37c4d4621daf1e2d95c66a6ef0629514811fc1e33a57fb69d9d86bfaba8dd8",
+      "source_bytes": 267739,
+      "source_size_px": [
+        1402,
+        1122
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/lily_patch.prompt.txt",
+      "prompt_sha256": "a733d6082de5f14b7176ab2f66c2c3ee2fdd6a05ebe735164c39c6e30d4e8ba9",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/lily_patch.generation.json",
+      "generation_record_sha256": "3ee45381aa6e3c7544f2f846604ffc8fb1c6c36f851ef81d55d6be50418e4a2c",
+      "builtin_provenance": {
+        "id": "lily_patch",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-36a5bc30-5890-482e-9907-1de7ce9a3d56.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/lily_patch.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/lily_patch.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "df37c4d4621daf1e2d95c66a6ef0629514811fc1e33a57fb69d9d86bfaba8dd8",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "sha256": "1f3bf4511ebd413828bd777659e49bf80ecd8c69bab37801c58f16fd97fe437b",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ore_bin",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/ore_bin.png",
+      "source_sha256": "2765917bbb6b84e641a3a754f1d66e07ba781111670bc757ca49fde08429b347",
+      "source_bytes": 517660,
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/ore_bin.prompt.txt",
+      "prompt_sha256": "bca0e6c85a9b96e49f35ecd163b1cca997714ae5d06e532905937a6fffa463a4",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/ore_bin.generation.json",
+      "generation_record_sha256": "b71c9cb0158d93efcd15dc943206699f94e39e2cadbfb8ebf3609baf27b74543",
+      "builtin_provenance": {
+        "id": "ore_bin",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-024440fb-58e0-43be-a5bd-78072b8e5c90.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/ore_bin.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/ore_bin.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "2765917bbb6b84e641a3a754f1d66e07ba781111670bc757ca49fde08429b347",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "sha256": "73341e0dbd6686406c681a1d20241a8545f99de955f38c7282a4019d520594cc",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "pipe_kit",
+      "type": "sheet",
+      "source": "res://art-source/ember/map-assets-v001/masters/pipe_kit.png",
+      "source_sha256": "38eb9eabbc9b2c375c75ebcd058bd9e32a1d6ad53ab834bb420e79effcfa0305",
+      "source_bytes": 1423810,
+      "source_size_px": [
+        1536,
+        1024
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/pipe_kit.prompt.txt",
+      "prompt_sha256": "947a1570bb33d320ce52c5ec752fa901894672545914af17906f37c5433d415b",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/pipe_kit.generation.json",
+      "generation_record_sha256": "6bb29ddec3b6464263799482ba14162c6296fcb25a468cec8996f66382e14c1b",
+      "builtin_provenance": {
+        "id": "pipe_kit",
+        "type": "sheet",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-f184d45c-5db4-4030-84ae-175ff039c4d0.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/pipe_kit.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/pipe_kit.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "38eb9eabbc9b2c375c75ebcd058bd9e32a1d6ad53ab834bb420e79effcfa0305",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        },
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "sha256": "1f3bf4511ebd413828bd777659e49bf80ecd8c69bab37801c58f16fd97fe437b",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "TRANSPARENT_ALPHA_CONFIRMED_NO_REGENERATION_REQUIRED"
+    },
+    {
+      "id": "pit_rock",
+      "type": "background",
+      "source": "res://art-source/ember/map-assets-v001/masters/pit_rock.png",
+      "source_sha256": "48510d9a03143876b8e18795fe6e38f9291b9065a0dffed77240998975b75fc2",
+      "source_bytes": 1744340,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/pit_rock.prompt.txt",
+      "prompt_sha256": "777edf95e129c7407f378608702b3f31413cb5a2cad337b173733d1674141e35",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/pit_rock.generation.json",
+      "generation_record_sha256": "e8611f728f5ea75c0aabad1c0b7d50a9e39c51bdc995d8ab92dc946203df5979",
+      "builtin_provenance": {
+        "id": "pit_rock",
+        "type": "background",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-941864c5-4ff4-49fa-b3ec-f62ccd9d2d20.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/pit_rock.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/pit_rock.prompt.txt",
+        "transparent_requested": false,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "48510d9a03143876b8e18795fe6e38f9291b9065a0dffed77240998975b75fc2",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "sha256": "73341e0dbd6686406c681a1d20241a8545f99de955f38c7282a4019d520594cc",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "pump",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/pump.png",
+      "source_sha256": "b518a471bd42cbf4c5055d0b2e838096ce67a322887e13788708e8e37dbecb5f",
+      "source_bytes": 437854,
+      "source_size_px": [
+        1122,
+        1402
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/pump.prompt.txt",
+      "prompt_sha256": "7a986cb5ba2a236eb7e8f9471545a1e405900f89a9d1ddf4438d111d0b034dbf",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/pump.generation.json",
+      "generation_record_sha256": "981720b81c3c09764ad1cbc9de1aeb332d66caf931ba6b05462f0f1e91ecd126",
+      "builtin_provenance": {
+        "id": "pump",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-e8b595ce-9c25-4302-8c41-9653f86a6f96.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/pump.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/pump.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "b518a471bd42cbf4c5055d0b2e838096ce67a322887e13788708e8e37dbecb5f",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "sha256": "1f3bf4511ebd413828bd777659e49bf80ecd8c69bab37801c58f16fd97fe437b",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "reed_cluster",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/reed_cluster.png",
+      "source_sha256": "482fda950b5d067a6ca00476e3d059cf9d6ad2745ada32ac32ca311448bfb911",
+      "source_bytes": 341447,
+      "source_size_px": [
+        1145,
+        1374
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/reed_cluster.prompt.txt",
+      "prompt_sha256": "b2d9124976fda848375c8bceb1051cba929cd82361787cc830b39df5ee17fe2f",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/reed_cluster.generation.json",
+      "generation_record_sha256": "13bae2987efe6f5d47b2c5257cf6eb2af2477a4a57df3161089a89d2d3058c45",
+      "builtin_provenance": {
+        "id": "reed_cluster",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-b35a57a3-b93e-4dd1-8935-05ab4c4fa235.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/reed_cluster.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/reed_cluster.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "482fda950b5d067a6ca00476e3d059cf9d6ad2745ada32ac32ca311448bfb911",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "sha256": "1f3bf4511ebd413828bd777659e49bf80ecd8c69bab37801c58f16fd97fe437b",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "research_cabinet",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/research_cabinet.png",
+      "source_sha256": "5df8225ff2fe5ba342a1d5c7571ffe3ec0eba899c68739fe43b206d92e237f1c",
+      "source_bytes": 245651,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/research_cabinet.prompt.txt",
+      "prompt_sha256": "c6ff4c3f7fa0a6d3b68d3d7c2ee7c07901c04ddf934e5da11d4f485c03f60496",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/research_cabinet.generation.json",
+      "generation_record_sha256": "158e43ed8c0ba7027c9c041936adccf756da3fba5515caaef9464b7c66b4dec2",
+      "builtin_provenance": {
+        "id": "research_cabinet",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-dc400b34-0c6b-4a22-90d7-1dffa35ff6ab.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/research_cabinet.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/research_cabinet.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "5df8225ff2fe5ba342a1d5c7571ffe3ec0eba899c68739fe43b206d92e237f1c",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "sha256": "1f3bf4511ebd413828bd777659e49bf80ecd8c69bab37801c58f16fd97fe437b",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "rock_cluster",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/rock_cluster.png",
+      "source_sha256": "0b2d50c872297967ef8665dea56642ed1a3fc272441287c1c64bfdf37dd1e5dc",
+      "source_bytes": 333746,
+      "source_size_px": [
+        1374,
+        1145
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/rock_cluster.prompt.txt",
+      "prompt_sha256": "cc3687a65d4dd498e3fa04e7cf5cf87a25ace543070e5671d557c9d2b28a7117",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/rock_cluster.generation.json",
+      "generation_record_sha256": "adfc293e763389a9c70acff97884ddbccb7416b4a071b889367958a5fb198e2b",
+      "builtin_provenance": {
+        "id": "rock_cluster",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-3f8c9dac-b4e3-4afe-875e-a2f65a626b50.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/rock_cluster.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/rock_cluster.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "0b2d50c872297967ef8665dea56642ed1a3fc272441287c1c64bfdf37dd1e5dc",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_dry_mine_v001.png",
+          "sha256": "73341e0dbd6686406c681a1d20241a8545f99de955f38c7282a4019d520594cc",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "sample_tank",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/sample_tank.png",
+      "source_sha256": "688d74fc3f395652078f226e34b7751925c268d833eef0b1e1f8b77434b1269b",
+      "source_bytes": 472124,
+      "source_size_px": [
+        1619,
+        971
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/sample_tank.prompt.txt",
+      "prompt_sha256": "d3de9f615110a3ff25106d2fc56daabfee2394412bf10cb150d980e0ede059d2",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/sample_tank.generation.json",
+      "generation_record_sha256": "82f08807968722fe81d3f96f1c0112cfb9be1cba86d0f0decc0065acea3b6cd6",
+      "builtin_provenance": {
+        "id": "sample_tank",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-e01ff824-2841-4885-a8ed-4219c551f02d.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/sample_tank.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/sample_tank.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "688d74fc3f395652078f226e34b7751925c268d833eef0b1e1f8b77434b1269b",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_overgrown_lab_v001.png",
+          "sha256": "1f3bf4511ebd413828bd777659e49bf80ecd8c69bab37801c58f16fd97fe437b",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "wall_corner",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/wall_corner.png",
+      "source_sha256": "7f29e6ed6f58665339aa547ccc807bad11f88062c10904a52f115b6ab9a333e1",
+      "source_bytes": 345434,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/wall_corner.prompt.txt",
+      "prompt_sha256": "5b24abbccccf0e6debf5a3417ea7208efd05d4a4f3837762192c3c50b4ad1f28",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/wall_corner.generation.json",
+      "generation_record_sha256": "6bd35757272bd6318751ad871452ed5d4d84b457d2728f610146348b2fbfc3d4",
+      "builtin_provenance": {
+        "id": "wall_corner",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-fe2f65a7-1db0-40b8-8ec8-ff5a6e088bd5.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/wall_corner.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/wall_corner.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "7f29e6ed6f58665339aa547ccc807bad11f88062c10904a52f115b6ab9a333e1",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "wall_module",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/wall_module.png",
+      "source_sha256": "849c2f88819b2ebcc87739013a5f68c75708b7b52c28aa597291361a771cc326",
+      "source_bytes": 352563,
+      "source_size_px": [
+        1374,
+        1145
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/wall_module.prompt.txt",
+      "prompt_sha256": "2f29513f66b4a616388a40ef5c4e41bec688dc3e0b4d6159e5622e9a9cd931e5",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/wall_module.generation.json",
+      "generation_record_sha256": "e50b461d3b24283d3a7778d1a6da8184fec17a9dcb24c4e04ba8dffe44097233",
+      "builtin_provenance": {
+        "id": "wall_module",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-ff018430-41c4-42dd-be0d-acc58d31bd7d.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/wall_module.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/wall_module.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "849c2f88819b2ebcc87739013a5f68c75708b7b52c28aa597291361a771cc326",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "wall_vertical",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/wall_vertical.png",
+      "source_sha256": "795c25246b66b05eaabbfda3e9a6f08e2684029095f40e2e85640051c71cb104",
+      "source_bytes": 259601,
+      "source_size_px": [
+        992,
+        1586
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/wall_vertical.prompt.txt",
+      "prompt_sha256": "ad03225e431b22a83cdeb3f744c29d6e0807f5fb781e30715247011f7d23d071",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/wall_vertical.generation.json",
+      "generation_record_sha256": "06dc92fa7d7096a43c658a6ba249f4025df5237c9e3dfbafc3c7a03e18d4a7ce",
+      "builtin_provenance": {
+        "id": "wall_vertical",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-b07d4ee3-e252-4f7c-88cb-425fe845544d.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/wall_vertical.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/wall_vertical.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "795c25246b66b05eaabbfda3e9a6f08e2684029095f40e2e85640051c71cb104",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "winch",
+      "type": "sprite",
+      "source": "res://art-source/ember/map-assets-v001/masters/winch.png",
+      "source_sha256": "8d1d9f65f44197edce08b56d8cc519577730d9a04e6a65bb2fcc7a742ea75839",
+      "source_bytes": 581660,
+      "source_size_px": [
+        1374,
+        1145
+      ],
+      "prompt": "res://art-source/ember/map-assets-v001/prompts/winch.prompt.txt",
+      "prompt_sha256": "3344979dd70406fe1348f4d8222d013dc2e28690d0a298b1a87f541c350a5b45",
+      "generation_record": "res://art-source/ember/map-assets-v001/masters/winch.generation.json",
+      "generation_record_sha256": "1a2f45f729085a5c90cc17aebec68b595005a4235d7aaa4588b12a89025e1ed6",
+      "builtin_provenance": {
+        "id": "winch",
+        "type": "sprite",
+        "tool": "built_in_imagegen",
+        "raw_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-d14bdd80-f6ba-4afb-b001-b94830c10567.png",
+        "saved_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-assets-v001/masters/winch.png",
+        "prompt_path": "art-source/ember/map-assets-v001/prompts/winch.prompt.txt",
+        "transparent_requested": true,
+        "references": [
+          "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png"
+        ]
+      },
+      "raw_available_at_manifest_time": true,
+      "raw_sha256": "8d1d9f65f44197edce08b56d8cc519577730d9a04e6a65bb2fcc7a742ea75839",
+      "copy_matches_builtin_output": true,
+      "references": [
+        {
+          "path": "res://art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "original_reference_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/map-concepts-v001/map_tidal_port_v001.png",
+          "sha256": "55998b5ea50b2e877d11716f82b984716400c253d4ee2ab5a6a20dddc894f63a",
+          "kind": "CONCEPT_MAP_REFERENCE",
+          "engine_or_asset_validation": "NOT_IMPLIED"
+        }
+      ],
+      "production_review": "REGISTERED_TECHNICAL_PASS_ARTISTIC_REVIEW_PENDING"
+    }
+  ],
+  "finalized_sources_at": "2026-10-06T13:45:27.4481864+08:00",
+  "product_validation": {
+    "sprite_report": "res://assets/ember/map_assets_v001/sprite_validation_v001.json",
+    "floor_report": "res://assets/ember/map_assets_v001/floors/independent_validation_v001.json",
+    "gpu_report": "res://assets/ember/map_assets_v001/floors/gpu_capture_v001.json",
+    "technical_status": "PASS",
+    "artist_acceptance": "REQUIRES_USER_REVIEW",
+    "source_pngs_changed_during_finalization": false,
+    "pipe_transparency": "CONFIRMED_NO_REGENERATION"
+  }
+}

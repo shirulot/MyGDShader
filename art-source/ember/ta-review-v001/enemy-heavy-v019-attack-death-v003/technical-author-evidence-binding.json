@@ -1,0 +1,45 @@
+{
+  "qa/pixel_audit.json": {
+    "sha256": "b7f3a01c9f94e582e37d4d44077ef87a8e1f88bbc2a75c180821325a99f6dcd3",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; GPU/player/turn not independently replayed",
+    "frames_count": 112,
+    "binds_count": 14,
+    "preserved_count": 2
+  },
+  "qa/pose_audit.json": {
+    "sha256": "7f20d44fabc8861471df3a131a9063a781e09b506f5516a213b24ef144773701",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; GPU/player/turn not independently replayed",
+    "records_count": 16
+  },
+  "qa/gpu_roundtrip.json": {
+    "sha256": "396c667ea601b5a5adf05f5a839233a4a9daba187753c6f0eace21d3e41ce36a",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; GPU/player/turn not independently replayed",
+    "records_count": 210,
+    "new_records": 196,
+    "preserved_records": 14,
+    "all_reported_differences_zero": true
+  },
+  "qa/runtime.json": {
+    "sha256": "28badcf4ca0378542bd410c3d4d0b461163262b5b88c10b2cd8044e12f1e9a7b",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; GPU/player/turn not independently replayed",
+    "players_count": 32,
+    "switches_count": 16,
+    "all_players_passed": true,
+    "all_switches_passed": true
+  },
+  "qa/revision_audit_v003.json": {
+    "sha256": "12f838fce6007f2df545e1b3c8df2973c9559bc92b2bb0ce71adc3ebfe0ec639",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; GPU/player/turn not independently replayed",
+    "changed_frames_count": 17
+  }
+}

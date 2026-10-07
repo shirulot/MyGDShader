@@ -1,0 +1,3264 @@
+{
+  "status": "V002_PUBLISHED_NEW_FILES_ONLY",
+  "version": "v002",
+  "frames": [
+    {
+      "id": "robot_walk_down_f00",
+      "direction": "down",
+      "frame_index": 0,
+      "old_file": "assets/ember/characters/robot/robot_walk_down_f00_v001.png",
+      "old_sha256": "5b91a60e5ab5428a7b988a6aea4f336c55e946208aa2897e43d49452ad767267",
+      "new_file": "assets/ember/characters/robot/robot_walk_down_f00_v002.png",
+      "new_sha256": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_down_f00_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_down_f00.json",
+      "old_annotation_sha256": "442ff40cd447193121d99c62f02dc409ebf22a587f7d9ce2399f1c44984db426",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_down_f00.json",
+      "new_annotation_sha256": "dbd4d5ac9f2c5bff44663251d517861a37711523dfec170d48b7686ff67cb812",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_down_v002.json",
+      "rig_sha256": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+      "changed_pixel_count": 9,
+      "alpha_changed_pixel_count": 9,
+      "pixel_diff_xy": [
+        [
+          23,
+          43
+        ],
+        [
+          42,
+          48
+        ],
+        [
+          43,
+          48
+        ],
+        [
+          42,
+          49
+        ],
+        [
+          43,
+          56
+        ],
+        [
+          43,
+          60
+        ],
+        [
+          30,
+          62
+        ],
+        [
+          31,
+          62
+        ],
+        [
+          43,
+          62
+        ]
+      ],
+      "opaque_pixel_count": 1483,
+      "transparent_pixels_added": 3,
+      "transparent_pixels_closed": 6,
+      "components8": [
+        {
+          "pixels": 1483,
+          "bbox_xyxy_inclusive": [
+            12,
+            21,
+            51,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          12,
+          21,
+          52,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [
+        {
+          "id": "DOWN_PELVIS_CENTRAL_PIXELS",
+          "from": "right_leg/left_leg",
+          "to": "torso",
+          "pixels_xy": [
+            [
+              30,
+              62
+            ],
+            [
+              31,
+              62
+            ],
+            [
+              32,
+              62
+            ]
+          ],
+          "reason": "Central pelvis moves with torso; keep both actual legs independent."
+        },
+        {
+          "id": "DOWN_LEFT_FOREARM_COMPLETE_PART",
+          "from": "torso/left_leg",
+          "to": "left_arm",
+          "pixels_xy": [
+            [
+              42,
+              49
+            ],
+            [
+              43,
+              49
+            ],
+            [
+              43,
+              50
+            ],
+            [
+              43,
+              51
+            ],
+            [
+              43,
+              52
+            ],
+            [
+              43,
+              53
+            ],
+            [
+              43,
+              54
+            ],
+            [
+              43,
+              55
+            ],
+            [
+              43,
+              56
+            ],
+            [
+              43,
+              61
+            ],
+            [
+              43,
+              62
+            ]
+          ],
+          "reason": "The actual forearm inner edge and wrist pixels must move with their own arm/tool, not torso or leg."
+        },
+        {
+          "repair_id": "DOWN_00_SHOULDER_PIN",
+          "at": [
+            23,
+            43
+          ],
+          "color": 2,
+          "purpose": "Close one exposed interior shoulder pin pixel; no background gap or silhouette dilation."
+        }
+      ],
+      "closed_issue_ids": [],
+      "old_gait": {
+        "support_leg": "left",
+        "lifted_leg": null,
+        "phase": "left_contact",
+        "camera_depth": "down正面；双脚投影深度基本一致，至少一脚末行79",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "left",
+        "lifted_leg": null,
+        "phase": "left_contact",
+        "camera_depth": "down正面；双脚投影深度基本一致，至少一脚末行79",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_down_f01",
+      "direction": "down",
+      "frame_index": 1,
+      "old_file": "assets/ember/characters/robot/robot_walk_down_f01_v001.png",
+      "old_sha256": "6598040c164838b1cf8b847a98683b9fe3a757a9c823019abefc9acb321f9818",
+      "new_file": "assets/ember/characters/robot/robot_walk_down_f01_v002.png",
+      "new_sha256": "f95d486bc2c11f4bf1364a879b3b091dc0015320092a26a8c0b113bf8b2bc779",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_down_f01_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_down_f01.json",
+      "old_annotation_sha256": "cd5877b350e1fe7f28f64ad99851f20f5a09b2ca38258517855eda45b4555359",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_down_f01.json",
+      "new_annotation_sha256": "e908b477a928eb1b9520852d630d7c314cd2e35eb1dcebd15dfd1b2ee2c9cb79",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_down_v002.json",
+      "rig_sha256": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+      "changed_pixel_count": 6,
+      "alpha_changed_pixel_count": 6,
+      "pixel_diff_xy": [
+        [
+          30,
+          61
+        ],
+        [
+          31,
+          61
+        ],
+        [
+          32,
+          61
+        ],
+        [
+          43,
+          61
+        ],
+        [
+          32,
+          62
+        ],
+        [
+          43,
+          62
+        ]
+      ],
+      "opaque_pixel_count": 1486,
+      "transparent_pixels_added": 2,
+      "transparent_pixels_closed": 4,
+      "components8": [
+        {
+          "pixels": 1486,
+          "bbox_xyxy_inclusive": [
+            12,
+            20,
+            51,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          12,
+          20,
+          52,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [
+        {
+          "id": "DOWN_PELVIS_CENTRAL_PIXELS",
+          "from": "right_leg/left_leg",
+          "to": "torso",
+          "pixels_xy": [
+            [
+              30,
+              62
+            ],
+            [
+              31,
+              62
+            ],
+            [
+              32,
+              62
+            ]
+          ],
+          "reason": "Central pelvis moves with torso; keep both actual legs independent."
+        },
+        {
+          "id": "DOWN_LEFT_FOREARM_COMPLETE_PART",
+          "from": "torso/left_leg",
+          "to": "left_arm",
+          "pixels_xy": [
+            [
+              42,
+              49
+            ],
+            [
+              43,
+              49
+            ],
+            [
+              43,
+              50
+            ],
+            [
+              43,
+              51
+            ],
+            [
+              43,
+              52
+            ],
+            [
+              43,
+              53
+            ],
+            [
+              43,
+              54
+            ],
+            [
+              43,
+              55
+            ],
+            [
+              43,
+              56
+            ],
+            [
+              43,
+              61
+            ],
+            [
+              43,
+              62
+            ]
+          ],
+          "reason": "The actual forearm inner edge and wrist pixels must move with their own arm/tool, not torso or leg."
+        }
+      ],
+      "closed_issue_ids": [
+        "ROBOT_DOWN_01_DETACHED"
+      ],
+      "old_gait": {
+        "support_leg": "left",
+        "lifted_leg": "right",
+        "phase": "right_passing",
+        "camera_depth": "down正面；双脚投影深度基本一致，至少一脚末行79",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "left",
+        "lifted_leg": "right",
+        "phase": "right_passing",
+        "camera_depth": "down正面；双脚投影深度基本一致，至少一脚末行79",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_down_f02",
+      "direction": "down",
+      "frame_index": 2,
+      "old_file": "assets/ember/characters/robot/robot_walk_down_f02_v001.png",
+      "old_sha256": "75763a286bc88182ffaad28569db80d49f2619d699c1d77463310ba8b3ac4819",
+      "new_file": "assets/ember/characters/robot/robot_walk_down_f02_v002.png",
+      "new_sha256": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_down_f02_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_down_f02.json",
+      "old_annotation_sha256": "d178d3e42c482eedd1916ec05a7a5d525404b70edd9ac969c4cfdec50e9503ee",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_down_f02.json",
+      "new_annotation_sha256": "7c6e0a033f58eddc2c1f20939cfd172756795e4264d1d3da238ed46f458d4d8c",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_down_v002.json",
+      "rig_sha256": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+      "changed_pixel_count": 7,
+      "alpha_changed_pixel_count": 7,
+      "pixel_diff_xy": [
+        [
+          40,
+          43
+        ],
+        [
+          42,
+          50
+        ],
+        [
+          43,
+          57
+        ],
+        [
+          43,
+          61
+        ],
+        [
+          32,
+          62
+        ],
+        [
+          43,
+          62
+        ],
+        [
+          43,
+          63
+        ]
+      ],
+      "opaque_pixel_count": 1484,
+      "transparent_pixels_added": 1,
+      "transparent_pixels_closed": 6,
+      "components8": [
+        {
+          "pixels": 1484,
+          "bbox_xyxy_inclusive": [
+            12,
+            21,
+            51,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          12,
+          21,
+          52,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [
+        {
+          "id": "DOWN_PELVIS_CENTRAL_PIXELS",
+          "from": "right_leg/left_leg",
+          "to": "torso",
+          "pixels_xy": [
+            [
+              30,
+              62
+            ],
+            [
+              31,
+              62
+            ],
+            [
+              32,
+              62
+            ]
+          ],
+          "reason": "Central pelvis moves with torso; keep both actual legs independent."
+        },
+        {
+          "id": "DOWN_LEFT_FOREARM_COMPLETE_PART",
+          "from": "torso/left_leg",
+          "to": "left_arm",
+          "pixels_xy": [
+            [
+              42,
+              49
+            ],
+            [
+              43,
+              49
+            ],
+            [
+              43,
+              50
+            ],
+            [
+              43,
+              51
+            ],
+            [
+              43,
+              52
+            ],
+            [
+              43,
+              53
+            ],
+            [
+              43,
+              54
+            ],
+            [
+              43,
+              55
+            ],
+            [
+              43,
+              56
+            ],
+            [
+              43,
+              61
+            ],
+            [
+              43,
+              62
+            ]
+          ],
+          "reason": "The actual forearm inner edge and wrist pixels must move with their own arm/tool, not torso or leg."
+        },
+        {
+          "repair_id": "DOWN_02_SHOULDER_PIN",
+          "at": [
+            40,
+            43
+          ],
+          "color": 2,
+          "purpose": "Close one exposed interior shoulder pin pixel; no background gap or silhouette dilation."
+        }
+      ],
+      "closed_issue_ids": [],
+      "old_gait": {
+        "support_leg": "right",
+        "lifted_leg": null,
+        "phase": "right_contact",
+        "camera_depth": "down正面；双脚投影深度基本一致，至少一脚末行79",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "right",
+        "lifted_leg": null,
+        "phase": "right_contact",
+        "camera_depth": "down正面；双脚投影深度基本一致，至少一脚末行79",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_down_f03",
+      "direction": "down",
+      "frame_index": 3,
+      "old_file": "assets/ember/characters/robot/robot_walk_down_f03_v001.png",
+      "old_sha256": "d58d28a1c1ae09dc3787bf0ce2394d4239fa66c3f71efc43fe9fc5902e15888f",
+      "new_file": "assets/ember/characters/robot/robot_walk_down_f03_v002.png",
+      "new_sha256": "aa6507d006d10b81bcf299c4bec1f3b59b3f21bec135ec8283497fcd47106f07",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_down_f03_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_down_f03.json",
+      "old_annotation_sha256": "e1ae52e4bc16f635ad773445a0404bce86d77dbbd531e50955434fe60228e270",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_down_f03.json",
+      "new_annotation_sha256": "65cc0fd944ae3ae3a4c94541a3595ce5f08c42e6cdfa42e10e3eca91f43bd314",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_down_v002.json",
+      "rig_sha256": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+      "changed_pixel_count": 6,
+      "alpha_changed_pixel_count": 6,
+      "pixel_diff_xy": [
+        [
+          30,
+          61
+        ],
+        [
+          31,
+          61
+        ],
+        [
+          32,
+          61
+        ],
+        [
+          43,
+          61
+        ],
+        [
+          30,
+          62
+        ],
+        [
+          31,
+          62
+        ]
+      ],
+      "opaque_pixel_count": 1487,
+      "transparent_pixels_added": 2,
+      "transparent_pixels_closed": 4,
+      "components8": [
+        {
+          "pixels": 1487,
+          "bbox_xyxy_inclusive": [
+            12,
+            20,
+            51,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          12,
+          20,
+          52,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [
+        {
+          "id": "DOWN_PELVIS_CENTRAL_PIXELS",
+          "from": "right_leg/left_leg",
+          "to": "torso",
+          "pixels_xy": [
+            [
+              30,
+              62
+            ],
+            [
+              31,
+              62
+            ],
+            [
+              32,
+              62
+            ]
+          ],
+          "reason": "Central pelvis moves with torso; keep both actual legs independent."
+        },
+        {
+          "id": "DOWN_LEFT_FOREARM_COMPLETE_PART",
+          "from": "torso/left_leg",
+          "to": "left_arm",
+          "pixels_xy": [
+            [
+              42,
+              49
+            ],
+            [
+              43,
+              49
+            ],
+            [
+              43,
+              50
+            ],
+            [
+              43,
+              51
+            ],
+            [
+              43,
+              52
+            ],
+            [
+              43,
+              53
+            ],
+            [
+              43,
+              54
+            ],
+            [
+              43,
+              55
+            ],
+            [
+              43,
+              56
+            ],
+            [
+              43,
+              61
+            ],
+            [
+              43,
+              62
+            ]
+          ],
+          "reason": "The actual forearm inner edge and wrist pixels must move with their own arm/tool, not torso or leg."
+        }
+      ],
+      "closed_issue_ids": [
+        "ROBOT_DOWN_03_DETACHED"
+      ],
+      "old_gait": {
+        "support_leg": "right",
+        "lifted_leg": "left",
+        "phase": "left_passing",
+        "camera_depth": "down正面；双脚投影深度基本一致，至少一脚末行79",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "right",
+        "lifted_leg": "left",
+        "phase": "left_passing",
+        "camera_depth": "down正面；双脚投影深度基本一致，至少一脚末行79",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_left_f00",
+      "direction": "left",
+      "frame_index": 0,
+      "old_file": "assets/ember/characters/robot/robot_walk_left_f00_v001.png",
+      "old_sha256": "41faa14587e8933003c6809f0af1cca75a90c8bd26326eb0ed67593874bb5930",
+      "new_file": "assets/ember/characters/robot/robot_walk_left_f00_v002.png",
+      "new_sha256": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_left_f00_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_left_f00.json",
+      "old_annotation_sha256": "765a6bb02e9130f3b5ac385d91e0c60f24aa03863c32ef7aba4b76ff27cff516",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_left_f00.json",
+      "new_annotation_sha256": "0c9debb8714c26a5a0626fa7d589bbee24a7bb5f4ae605958b852a113c8808f7",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_left_v002.json",
+      "rig_sha256": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+      "changed_pixel_count": 20,
+      "alpha_changed_pixel_count": 20,
+      "pixel_diff_xy": [
+        [
+          25,
+          44
+        ],
+        [
+          35,
+          44
+        ],
+        [
+          25,
+          45
+        ],
+        [
+          35,
+          45
+        ],
+        [
+          25,
+          46
+        ],
+        [
+          35,
+          46
+        ],
+        [
+          29,
+          73
+        ],
+        [
+          28,
+          74
+        ],
+        [
+          29,
+          74
+        ],
+        [
+          27,
+          75
+        ],
+        [
+          28,
+          75
+        ],
+        [
+          29,
+          75
+        ],
+        [
+          27,
+          76
+        ],
+        [
+          28,
+          76
+        ],
+        [
+          29,
+          76
+        ],
+        [
+          27,
+          77
+        ],
+        [
+          28,
+          77
+        ],
+        [
+          29,
+          77
+        ],
+        [
+          28,
+          78
+        ],
+        [
+          29,
+          78
+        ]
+      ],
+      "opaque_pixel_count": 1088,
+      "transparent_pixels_added": 0,
+      "transparent_pixels_closed": 20,
+      "components8": [
+        {
+          "pixels": 1088,
+          "bbox_xyxy_inclusive": [
+            17,
+            21,
+            45,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          17,
+          21,
+          46,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [
+        {
+          "id": "LEFT_NEAR_BOOT_COMPLETE_PART",
+          "from": "right_leg",
+          "to": "left_leg",
+          "pixels_xy": [
+            [
+              31,
+              73
+            ],
+            [
+              30,
+              74
+            ],
+            [
+              31,
+              74
+            ],
+            [
+              29,
+              75
+            ],
+            [
+              30,
+              75
+            ],
+            [
+              31,
+              75
+            ],
+            [
+              29,
+              76
+            ],
+            [
+              30,
+              76
+            ],
+            [
+              31,
+              76
+            ],
+            [
+              29,
+              77
+            ],
+            [
+              30,
+              77
+            ],
+            [
+              31,
+              77
+            ],
+            [
+              30,
+              78
+            ],
+            [
+              31,
+              78
+            ]
+          ],
+          "reason": "Keep all pixels of the same near-side boot under the same leg transform."
+        },
+        {
+          "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+          "at": [
+            25,
+            44
+          ],
+          "color": 1,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+        },
+        {
+          "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+          "at": [
+            25,
+            45
+          ],
+          "color": 2,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+        },
+        {
+          "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+          "at": [
+            25,
+            46
+          ],
+          "color": 1,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+        },
+        {
+          "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+          "at": [
+            35,
+            44
+          ],
+          "color": 1,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+        },
+        {
+          "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+          "at": [
+            35,
+            45
+          ],
+          "color": 2,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+        },
+        {
+          "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+          "at": [
+            35,
+            46
+          ],
+          "color": 1,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+        }
+      ],
+      "closed_issue_ids": [
+        "ROBOT_LEFT_00_SHOULDER_VERTICAL_CUT"
+      ],
+      "old_gait": {
+        "support_leg": "left",
+        "lifted_leg": null,
+        "phase": "left_contact",
+        "camera_depth": "left侧视：left_leg近侧靴最低79，right_leg远侧靴投影较高；f03近侧抬2px，全体最低可见末行78、bbox下边界79（含躯干/接缝），原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "left",
+        "lifted_leg": null,
+        "phase": "left_contact",
+        "camera_depth": "left side: near left boot reaches row79 in contact/support phases; in f03 its complete boot lifts by2px to row77, giving visible bbox bottom78. Far right boot projects higher. Virtual anchor stays (32,80).",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_left_f01",
+      "direction": "left",
+      "frame_index": 1,
+      "old_file": "assets/ember/characters/robot/robot_walk_left_f01_v001.png",
+      "old_sha256": "b79f0c4a8ced161f570fd6dde138f4b6ea31869494903f0f085b08a9ffb68410",
+      "new_file": "assets/ember/characters/robot/robot_walk_left_f01_v002.png",
+      "new_sha256": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_left_f01_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_left_f01.json",
+      "old_annotation_sha256": "013cb92431edf70160d5234e62e0868297390815168aed1078cc1a0db2c56118",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_left_f01.json",
+      "new_annotation_sha256": "59532f759aa6ec55b652b9ea1763e6600ab07218a25bde3fd62d3b18b03f8513",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_left_v002.json",
+      "rig_sha256": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+      "changed_pixel_count": 18,
+      "alpha_changed_pixel_count": 11,
+      "pixel_diff_xy": [
+        [
+          33,
+          55
+        ],
+        [
+          34,
+          55
+        ],
+        [
+          35,
+          55
+        ],
+        [
+          36,
+          55
+        ],
+        [
+          37,
+          55
+        ],
+        [
+          31,
+          72
+        ],
+        [
+          30,
+          73
+        ],
+        [
+          31,
+          73
+        ],
+        [
+          29,
+          74
+        ],
+        [
+          30,
+          74
+        ],
+        [
+          30,
+          75
+        ],
+        [
+          31,
+          75
+        ],
+        [
+          31,
+          76
+        ],
+        [
+          29,
+          77
+        ],
+        [
+          30,
+          77
+        ],
+        [
+          31,
+          77
+        ],
+        [
+          30,
+          78
+        ],
+        [
+          31,
+          78
+        ]
+      ],
+      "opaque_pixel_count": 1127,
+      "transparent_pixels_added": 3,
+      "transparent_pixels_closed": 8,
+      "components8": [
+        {
+          "pixels": 1127,
+          "bbox_xyxy_inclusive": [
+            18,
+            20,
+            44,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          18,
+          20,
+          45,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [
+        {
+          "id": "LEFT_NEAR_BOOT_COMPLETE_PART",
+          "from": "right_leg",
+          "to": "left_leg",
+          "pixels_xy": [
+            [
+              31,
+              73
+            ],
+            [
+              30,
+              74
+            ],
+            [
+              31,
+              74
+            ],
+            [
+              29,
+              75
+            ],
+            [
+              30,
+              75
+            ],
+            [
+              31,
+              75
+            ],
+            [
+              29,
+              76
+            ],
+            [
+              30,
+              76
+            ],
+            [
+              31,
+              76
+            ],
+            [
+              29,
+              77
+            ],
+            [
+              30,
+              77
+            ],
+            [
+              31,
+              77
+            ],
+            [
+              30,
+              78
+            ],
+            [
+              31,
+              78
+            ]
+          ],
+          "reason": "Keep all pixels of the same near-side boot under the same leg transform."
+        },
+        {
+          "repair_id": "LEFT_01_HIP_COUPLING",
+          "at": [
+            33,
+            55
+          ],
+          "color": 1,
+          "purpose": "Reconnect raised torso to supporting near-side leg with a narrow dark joint row."
+        },
+        {
+          "repair_id": "LEFT_01_HIP_COUPLING",
+          "at": [
+            34,
+            55
+          ],
+          "color": 2,
+          "purpose": "Reconnect raised torso to supporting near-side leg with a narrow dark joint row."
+        },
+        {
+          "repair_id": "LEFT_01_HIP_COUPLING",
+          "at": [
+            35,
+            55
+          ],
+          "color": 2,
+          "purpose": "Reconnect raised torso to supporting near-side leg with a narrow dark joint row."
+        },
+        {
+          "repair_id": "LEFT_01_HIP_COUPLING",
+          "at": [
+            36,
+            55
+          ],
+          "color": 2,
+          "purpose": "Reconnect raised torso to supporting near-side leg with a narrow dark joint row."
+        },
+        {
+          "repair_id": "LEFT_01_HIP_COUPLING",
+          "at": [
+            37,
+            55
+          ],
+          "color": 1,
+          "purpose": "Reconnect raised torso to supporting near-side leg with a narrow dark joint row."
+        }
+      ],
+      "closed_issue_ids": [
+        "ROBOT_LEFT_01_HIP_HORIZONTAL_CUT"
+      ],
+      "old_gait": {
+        "support_leg": "left",
+        "lifted_leg": "right",
+        "phase": "right_passing",
+        "camera_depth": "left侧视：left_leg近侧靴最低79，right_leg远侧靴投影较高；f03近侧抬2px，全体最低可见末行78、bbox下边界79（含躯干/接缝），原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "left",
+        "lifted_leg": "right",
+        "phase": "right_passing",
+        "camera_depth": "left side: near left boot reaches row79 in contact/support phases; in f03 its complete boot lifts by2px to row77, giving visible bbox bottom78. Far right boot projects higher. Virtual anchor stays (32,80).",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_left_f02",
+      "direction": "left",
+      "frame_index": 2,
+      "old_file": "assets/ember/characters/robot/robot_walk_left_f02_v001.png",
+      "old_sha256": "177a1985bff483574cbe46b84e674d304a7dd61197ad9287fa5e2a4ceae93566",
+      "new_file": "assets/ember/characters/robot/robot_walk_left_f02_v002.png",
+      "new_sha256": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_left_f02_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_left_f02.json",
+      "old_annotation_sha256": "c5932ec390e3183e3e5b37a019509029312d3f01a47d4b4795f456f46c5a8473",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_left_f02.json",
+      "new_annotation_sha256": "856bbdd86951ca054b46175988f63662e19e6b72ab8b5f346cac12399974e4d4",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_left_v002.json",
+      "rig_sha256": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+      "changed_pixel_count": 32,
+      "alpha_changed_pixel_count": 32,
+      "pixel_diff_xy": [
+        [
+          27,
+          56
+        ],
+        [
+          28,
+          56
+        ],
+        [
+          33,
+          56
+        ],
+        [
+          33,
+          57
+        ],
+        [
+          29,
+          73
+        ],
+        [
+          32,
+          73
+        ],
+        [
+          28,
+          74
+        ],
+        [
+          29,
+          74
+        ],
+        [
+          31,
+          74
+        ],
+        [
+          32,
+          74
+        ],
+        [
+          27,
+          75
+        ],
+        [
+          28,
+          75
+        ],
+        [
+          29,
+          75
+        ],
+        [
+          30,
+          75
+        ],
+        [
+          31,
+          75
+        ],
+        [
+          32,
+          75
+        ],
+        [
+          27,
+          76
+        ],
+        [
+          28,
+          76
+        ],
+        [
+          29,
+          76
+        ],
+        [
+          30,
+          76
+        ],
+        [
+          31,
+          76
+        ],
+        [
+          32,
+          76
+        ],
+        [
+          27,
+          77
+        ],
+        [
+          28,
+          77
+        ],
+        [
+          29,
+          77
+        ],
+        [
+          30,
+          77
+        ],
+        [
+          31,
+          77
+        ],
+        [
+          32,
+          77
+        ],
+        [
+          28,
+          78
+        ],
+        [
+          29,
+          78
+        ],
+        [
+          31,
+          78
+        ],
+        [
+          32,
+          78
+        ]
+      ],
+      "opaque_pixel_count": 1080,
+      "transparent_pixels_added": 14,
+      "transparent_pixels_closed": 18,
+      "components8": [
+        {
+          "pixels": 1080,
+          "bbox_xyxy_inclusive": [
+            18,
+            21,
+            43,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          18,
+          21,
+          44,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [
+        {
+          "id": "LEFT_NEAR_BOOT_COMPLETE_PART",
+          "from": "right_leg",
+          "to": "left_leg",
+          "pixels_xy": [
+            [
+              31,
+              73
+            ],
+            [
+              30,
+              74
+            ],
+            [
+              31,
+              74
+            ],
+            [
+              29,
+              75
+            ],
+            [
+              30,
+              75
+            ],
+            [
+              31,
+              75
+            ],
+            [
+              29,
+              76
+            ],
+            [
+              30,
+              76
+            ],
+            [
+              31,
+              76
+            ],
+            [
+              29,
+              77
+            ],
+            [
+              30,
+              77
+            ],
+            [
+              31,
+              77
+            ],
+            [
+              30,
+              78
+            ],
+            [
+              31,
+              78
+            ]
+          ],
+          "reason": "Keep all pixels of the same near-side boot under the same leg transform."
+        },
+        {
+          "repair_id": "LEFT_02_HIP_TOP_COUPLINGS",
+          "at": [
+            27,
+            56
+          ],
+          "color": 1,
+          "purpose": "Repair only the proximal hip join after opposite horizontal leg displacement; retain the deeper leg/arm negative space."
+        },
+        {
+          "repair_id": "LEFT_02_HIP_TOP_COUPLINGS",
+          "at": [
+            28,
+            56
+          ],
+          "color": 2,
+          "purpose": "Repair only the proximal hip join after opposite horizontal leg displacement; retain the deeper leg/arm negative space."
+        },
+        {
+          "repair_id": "LEFT_02_HIP_TOP_COUPLINGS",
+          "at": [
+            33,
+            56
+          ],
+          "color": 1,
+          "purpose": "Repair only the proximal hip join after opposite horizontal leg displacement; retain the deeper leg/arm negative space."
+        },
+        {
+          "repair_id": "LEFT_02_HIP_TOP_COUPLINGS",
+          "at": [
+            33,
+            57
+          ],
+          "color": 2,
+          "purpose": "Repair only the proximal hip join after opposite horizontal leg displacement; retain the deeper leg/arm negative space."
+        }
+      ],
+      "closed_issue_ids": [
+        "ROBOT_LEFT_02_DETACHED"
+      ],
+      "old_gait": {
+        "support_leg": "right",
+        "lifted_leg": null,
+        "phase": "right_contact",
+        "camera_depth": "left侧视：left_leg近侧靴最低79，right_leg远侧靴投影较高；f03近侧抬2px，全体最低可见末行78、bbox下边界79（含躯干/接缝），原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "right",
+        "lifted_leg": null,
+        "phase": "right_contact",
+        "camera_depth": "left side: near left boot reaches row79 in contact/support phases; in f03 its complete boot lifts by2px to row77, giving visible bbox bottom78. Far right boot projects higher. Virtual anchor stays (32,80).",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_left_f03",
+      "direction": "left",
+      "frame_index": 3,
+      "old_file": "assets/ember/characters/robot/robot_walk_left_f03_v001.png",
+      "old_sha256": "1c50a3e23d413513adda8ce353a8515fb71768b5276fd84da42005cb61316f2d",
+      "new_file": "assets/ember/characters/robot/robot_walk_left_f03_v002.png",
+      "new_sha256": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_left_f03_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_left_f03.json",
+      "old_annotation_sha256": "d22ae35af52a442b4150f50c98ec80c813a338cb6b637be329696fd9cd10f71b",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_left_f03.json",
+      "new_annotation_sha256": "891c6c4f38d0bbc0bd9a89e66251f2db00818ab5cbd2f46caa39bf060e05ac4a",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_left_v002.json",
+      "rig_sha256": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+      "changed_pixel_count": 22,
+      "alpha_changed_pixel_count": 15,
+      "pixel_diff_xy": [
+        [
+          29,
+          59
+        ],
+        [
+          30,
+          59
+        ],
+        [
+          31,
+          59
+        ],
+        [
+          31,
+          71
+        ],
+        [
+          30,
+          72
+        ],
+        [
+          31,
+          72
+        ],
+        [
+          29,
+          73
+        ],
+        [
+          30,
+          73
+        ],
+        [
+          31,
+          73
+        ],
+        [
+          29,
+          74
+        ],
+        [
+          30,
+          74
+        ],
+        [
+          31,
+          74
+        ],
+        [
+          30,
+          75
+        ],
+        [
+          31,
+          75
+        ],
+        [
+          29,
+          76
+        ],
+        [
+          30,
+          76
+        ],
+        [
+          31,
+          76
+        ],
+        [
+          29,
+          77
+        ],
+        [
+          30,
+          77
+        ],
+        [
+          31,
+          77
+        ],
+        [
+          30,
+          78
+        ],
+        [
+          31,
+          78
+        ]
+      ],
+      "opaque_pixel_count": 1116,
+      "transparent_pixels_added": 6,
+      "transparent_pixels_closed": 9,
+      "components8": [
+        {
+          "pixels": 1116,
+          "bbox_xyxy_inclusive": [
+            18,
+            20,
+            44,
+            77
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          18,
+          20,
+          45,
+          78
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 78,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [
+        {
+          "id": "LEFT_NEAR_BOOT_COMPLETE_PART",
+          "from": "right_leg",
+          "to": "left_leg",
+          "pixels_xy": [
+            [
+              31,
+              73
+            ],
+            [
+              30,
+              74
+            ],
+            [
+              31,
+              74
+            ],
+            [
+              29,
+              75
+            ],
+            [
+              30,
+              75
+            ],
+            [
+              31,
+              75
+            ],
+            [
+              29,
+              76
+            ],
+            [
+              30,
+              76
+            ],
+            [
+              31,
+              76
+            ],
+            [
+              29,
+              77
+            ],
+            [
+              30,
+              77
+            ],
+            [
+              31,
+              77
+            ],
+            [
+              30,
+              78
+            ],
+            [
+              31,
+              78
+            ]
+          ],
+          "reason": "Keep all pixels of the same near-side boot under the same leg transform."
+        },
+        {
+          "repair_id": "LEFT_03_HIP_COUPLING",
+          "at": [
+            29,
+            59
+          ],
+          "color": 1,
+          "purpose": "Reconnect torso to supporting far-side leg while preserving the inter-leg opening below."
+        },
+        {
+          "repair_id": "LEFT_03_HIP_COUPLING",
+          "at": [
+            30,
+            59
+          ],
+          "color": 2,
+          "purpose": "Reconnect torso to supporting far-side leg while preserving the inter-leg opening below."
+        },
+        {
+          "repair_id": "LEFT_03_HIP_COUPLING",
+          "at": [
+            31,
+            59
+          ],
+          "color": 1,
+          "purpose": "Reconnect torso to supporting far-side leg while preserving the inter-leg opening below."
+        }
+      ],
+      "closed_issue_ids": [
+        "ROBOT_LEFT_03_HIP_HORIZONTAL_CUT"
+      ],
+      "old_gait": {
+        "support_leg": "right",
+        "lifted_leg": "left",
+        "phase": "left_passing",
+        "camera_depth": "left侧视：left_leg近侧靴最低79，right_leg远侧靴投影较高；f03近侧抬2px，全体最低可见末行78、bbox下边界79（含躯干/接缝），原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "right",
+        "lifted_leg": "left",
+        "phase": "left_passing",
+        "camera_depth": "left side: near left boot reaches row79 in contact/support phases; in f03 its complete boot lifts by2px to row77, giving visible bbox bottom78. Far right boot projects higher. Virtual anchor stays (32,80).",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_right_f00",
+      "direction": "right",
+      "frame_index": 0,
+      "old_file": "assets/ember/characters/robot/robot_walk_right_f00_v001.png",
+      "old_sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+      "new_file": "assets/ember/characters/robot/robot_walk_right_f00_v002.png",
+      "new_sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_right_f00_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_right_f00.json",
+      "old_annotation_sha256": "064a59162d63238497e62fbc2a79e391d1c16ff32a36775d46b37a8fa45f513e",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_right_f00.json",
+      "new_annotation_sha256": "e35264dc269a8c069513ea773c13083bfb94e132d8b31515763d81f869ce775a",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_right_v002.json",
+      "rig_sha256": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+      "changed_pixel_count": 0,
+      "alpha_changed_pixel_count": 0,
+      "pixel_diff_xy": [],
+      "opaque_pixel_count": 1171,
+      "transparent_pixels_added": 0,
+      "transparent_pixels_closed": 0,
+      "components8": [
+        {
+          "pixels": 1171,
+          "bbox_xyxy_inclusive": [
+            18,
+            21,
+            47,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          18,
+          21,
+          48,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [],
+      "closed_issue_ids": [],
+      "old_gait": {
+        "support_leg": "left",
+        "lifted_leg": null,
+        "phase": "left_contact",
+        "camera_depth": "right侧视：right_leg近側靴最低79，left_leg远侧靴投影较高；f01近侧抬2px时bbox末端78，原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "left",
+        "lifted_leg": null,
+        "phase": "left_contact",
+        "camera_depth": "right侧视：right_leg近側靴最低79，left_leg远侧靴投影较高；f01近侧抬2px时bbox末端78，原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_right_f01",
+      "direction": "right",
+      "frame_index": 1,
+      "old_file": "assets/ember/characters/robot/robot_walk_right_f01_v001.png",
+      "old_sha256": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+      "new_file": "assets/ember/characters/robot/robot_walk_right_f01_v002.png",
+      "new_sha256": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_right_f01_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_right_f01.json",
+      "old_annotation_sha256": "29822a3eafa8221da39bc6aabbdcf031bf533518b0a042c23dcbb6546c700574",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_right_f01.json",
+      "new_annotation_sha256": "a5765277f5f9b44b9342dfddb1b7943b50a0cdbb2d48c042cb22708d0491e712",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_right_v002.json",
+      "rig_sha256": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+      "changed_pixel_count": 0,
+      "alpha_changed_pixel_count": 0,
+      "pixel_diff_xy": [],
+      "opaque_pixel_count": 1202,
+      "transparent_pixels_added": 0,
+      "transparent_pixels_closed": 0,
+      "components8": [
+        {
+          "pixels": 1202,
+          "bbox_xyxy_inclusive": [
+            17,
+            20,
+            45,
+            77
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          17,
+          20,
+          46,
+          78
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 78,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [],
+      "closed_issue_ids": [],
+      "old_gait": {
+        "support_leg": "left",
+        "lifted_leg": "right",
+        "phase": "right_passing",
+        "camera_depth": "right侧视：right_leg近側靴最低79，left_leg远侧靴投影较高；f01近侧抬2px时bbox末端78，原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "left",
+        "lifted_leg": "right",
+        "phase": "right_passing",
+        "camera_depth": "right侧视：right_leg近側靴最低79，left_leg远侧靴投影较高；f01近侧抬2px时bbox末端78，原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_right_f02",
+      "direction": "right",
+      "frame_index": 2,
+      "old_file": "assets/ember/characters/robot/robot_walk_right_f02_v001.png",
+      "old_sha256": "6d721027b8e57da224b1d7ae705cd48c88bd193a2e51ae2031448769e5c156be",
+      "new_file": "assets/ember/characters/robot/robot_walk_right_f02_v002.png",
+      "new_sha256": "29976d10acaf633868d577e2be6eac8194ffd162965483ff261ae3f63996f311",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_right_f02_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_right_f02.json",
+      "old_annotation_sha256": "e8a4b961931896be7983c86f4c09afdfab80727301e48c4e5fefaac631b319d0",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_right_f02.json",
+      "new_annotation_sha256": "46b4f741f69a2c526ca288dcab75890d3bb76f3391f23b5300bd298d7817533c",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_right_v002.json",
+      "rig_sha256": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+      "changed_pixel_count": 6,
+      "alpha_changed_pixel_count": 6,
+      "pixel_diff_xy": [
+        [
+          27,
+          44
+        ],
+        [
+          40,
+          44
+        ],
+        [
+          27,
+          45
+        ],
+        [
+          40,
+          45
+        ],
+        [
+          27,
+          46
+        ],
+        [
+          40,
+          46
+        ]
+      ],
+      "opaque_pixel_count": 1188,
+      "transparent_pixels_added": 0,
+      "transparent_pixels_closed": 6,
+      "components8": [
+        {
+          "pixels": 1188,
+          "bbox_xyxy_inclusive": [
+            16,
+            21,
+            45,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          16,
+          21,
+          46,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [
+        {
+          "repair_id": "RIGHT_02_SHOULDER_COUPLINGS",
+          "at": [
+            27,
+            44
+          ],
+          "color": 1,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; do not fill the entire arm/body gap."
+        },
+        {
+          "repair_id": "RIGHT_02_SHOULDER_COUPLINGS",
+          "at": [
+            27,
+            45
+          ],
+          "color": 2,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; do not fill the entire arm/body gap."
+        },
+        {
+          "repair_id": "RIGHT_02_SHOULDER_COUPLINGS",
+          "at": [
+            27,
+            46
+          ],
+          "color": 1,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; do not fill the entire arm/body gap."
+        },
+        {
+          "repair_id": "RIGHT_02_SHOULDER_COUPLINGS",
+          "at": [
+            40,
+            44
+          ],
+          "color": 1,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; do not fill the entire arm/body gap."
+        },
+        {
+          "repair_id": "RIGHT_02_SHOULDER_COUPLINGS",
+          "at": [
+            40,
+            45
+          ],
+          "color": 2,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; do not fill the entire arm/body gap."
+        },
+        {
+          "repair_id": "RIGHT_02_SHOULDER_COUPLINGS",
+          "at": [
+            40,
+            46
+          ],
+          "color": 1,
+          "purpose": "Draw a three-pixel dark mechanical shoulder coupling; do not fill the entire arm/body gap."
+        }
+      ],
+      "closed_issue_ids": [
+        "ROBOT_RIGHT_02_SHOULDER_VERTICAL_CUT"
+      ],
+      "old_gait": {
+        "support_leg": "right",
+        "lifted_leg": null,
+        "phase": "right_contact",
+        "camera_depth": "right侧视：right_leg近側靴最低79，left_leg远侧靴投影较高；f01近侧抬2px时bbox末端78，原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "right",
+        "lifted_leg": null,
+        "phase": "right_contact",
+        "camera_depth": "right侧视：right_leg近側靴最低79，left_leg远侧靴投影较高；f01近侧抬2px时bbox末端78，原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_right_f03",
+      "direction": "right",
+      "frame_index": 3,
+      "old_file": "assets/ember/characters/robot/robot_walk_right_f03_v001.png",
+      "old_sha256": "5c039750f75d145415cfba89c53b81ec101587117a99be2dd9f4bae70fb078d3",
+      "new_file": "assets/ember/characters/robot/robot_walk_right_f03_v002.png",
+      "new_sha256": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_right_f03_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_right_f03.json",
+      "old_annotation_sha256": "1b0ccf756c2865391dfdbee5aa5a77200dc18ffaa3744a6997a82d1fd45cc581",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_right_f03.json",
+      "new_annotation_sha256": "f50ad32acd1d61f1b8737c4c7ce450e27b8ba7e16a05d86a9aa5d2433cdcf718",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_right_v002.json",
+      "rig_sha256": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+      "changed_pixel_count": 8,
+      "alpha_changed_pixel_count": 8,
+      "pixel_diff_xy": [
+        [
+          27,
+          59
+        ],
+        [
+          28,
+          59
+        ],
+        [
+          29,
+          59
+        ],
+        [
+          30,
+          59
+        ],
+        [
+          31,
+          59
+        ],
+        [
+          32,
+          59
+        ],
+        [
+          33,
+          59
+        ],
+        [
+          34,
+          59
+        ]
+      ],
+      "opaque_pixel_count": 1219,
+      "transparent_pixels_added": 0,
+      "transparent_pixels_closed": 8,
+      "components8": [
+        {
+          "pixels": 1219,
+          "bbox_xyxy_inclusive": [
+            17,
+            20,
+            45,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          17,
+          20,
+          46,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [
+        {
+          "repair_id": "RIGHT_03_HIP_COUPLING",
+          "at": [
+            27,
+            59
+          ],
+          "color": 1,
+          "purpose": "Reconnect the pelvic edge to its near-side supporting leg using one dark native row."
+        },
+        {
+          "repair_id": "RIGHT_03_HIP_COUPLING",
+          "at": [
+            28,
+            59
+          ],
+          "color": 2,
+          "purpose": "Reconnect the pelvic edge to its near-side supporting leg using one dark native row."
+        },
+        {
+          "repair_id": "RIGHT_03_HIP_COUPLING",
+          "at": [
+            29,
+            59
+          ],
+          "color": 2,
+          "purpose": "Reconnect the pelvic edge to its near-side supporting leg using one dark native row."
+        },
+        {
+          "repair_id": "RIGHT_03_HIP_COUPLING",
+          "at": [
+            30,
+            59
+          ],
+          "color": 2,
+          "purpose": "Reconnect the pelvic edge to its near-side supporting leg using one dark native row."
+        },
+        {
+          "repair_id": "RIGHT_03_HIP_COUPLING",
+          "at": [
+            31,
+            59
+          ],
+          "color": 2,
+          "purpose": "Reconnect the pelvic edge to its near-side supporting leg using one dark native row."
+        },
+        {
+          "repair_id": "RIGHT_03_HIP_COUPLING",
+          "at": [
+            32,
+            59
+          ],
+          "color": 2,
+          "purpose": "Reconnect the pelvic edge to its near-side supporting leg using one dark native row."
+        },
+        {
+          "repair_id": "RIGHT_03_HIP_COUPLING",
+          "at": [
+            33,
+            59
+          ],
+          "color": 2,
+          "purpose": "Reconnect the pelvic edge to its near-side supporting leg using one dark native row."
+        },
+        {
+          "repair_id": "RIGHT_03_HIP_COUPLING",
+          "at": [
+            34,
+            59
+          ],
+          "color": 1,
+          "purpose": "Reconnect the pelvic edge to its near-side supporting leg using one dark native row."
+        }
+      ],
+      "closed_issue_ids": [
+        "ROBOT_RIGHT_03_HIP_HORIZONTAL_CUT"
+      ],
+      "old_gait": {
+        "support_leg": "right",
+        "lifted_leg": "left",
+        "phase": "left_passing",
+        "camera_depth": "right侧视：right_leg近側靴最低79，left_leg远侧靴投影较高；f01近侧抬2px时bbox末端78，原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "right",
+        "lifted_leg": "left",
+        "phase": "left_passing",
+        "camera_depth": "right侧视：right_leg近側靴最低79，left_leg远侧靴投影较高；f01近侧抬2px时bbox末端78，原点不动",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_up_f00",
+      "direction": "up",
+      "frame_index": 0,
+      "old_file": "assets/ember/characters/robot/robot_walk_up_f00_v001.png",
+      "old_sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+      "new_file": "assets/ember/characters/robot/robot_walk_up_f00_v002.png",
+      "new_sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_up_f00_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_up_f00.json",
+      "old_annotation_sha256": "596a8651ca02ee7cf894ea1454d9f59cacdbd9396a4e3d4295a7c14d63f9d3f8",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_up_f00.json",
+      "new_annotation_sha256": "0a743b5d080223a7153a0a6e4e7fdbb1c6fe514c45d6ff6669afce956c8e6ae6",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_up_v002.json",
+      "rig_sha256": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+      "changed_pixel_count": 0,
+      "alpha_changed_pixel_count": 0,
+      "pixel_diff_xy": [],
+      "opaque_pixel_count": 1396,
+      "transparent_pixels_added": 0,
+      "transparent_pixels_closed": 0,
+      "components8": [
+        {
+          "pixels": 1396,
+          "bbox_xyxy_inclusive": [
+            13,
+            21,
+            50,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          13,
+          21,
+          51,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [],
+      "closed_issue_ids": [],
+      "old_gait": {
+        "support_leg": "left",
+        "lifted_leg": null,
+        "phase": "left_contact",
+        "camera_depth": "up背视双脚深度近似一致；前步沿屏幕上向，固定地面原点80",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "left",
+        "lifted_leg": null,
+        "phase": "left_contact",
+        "camera_depth": "up背视双脚深度近似一致；前步沿屏幕上向，固定地面原点80",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_up_f01",
+      "direction": "up",
+      "frame_index": 1,
+      "old_file": "assets/ember/characters/robot/robot_walk_up_f01_v001.png",
+      "old_sha256": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+      "new_file": "assets/ember/characters/robot/robot_walk_up_f01_v002.png",
+      "new_sha256": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_up_f01_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_up_f01.json",
+      "old_annotation_sha256": "aac9f63c59f14335f4844c57fc8c6f8e28c5f709bd11151231048b4437f0fbea",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_up_f01.json",
+      "new_annotation_sha256": "f114db9ed4ee809028e841edf814e353196b9e717d456f06b3ec84ef30af9899",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_up_v002.json",
+      "rig_sha256": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+      "changed_pixel_count": 0,
+      "alpha_changed_pixel_count": 0,
+      "pixel_diff_xy": [],
+      "opaque_pixel_count": 1400,
+      "transparent_pixels_added": 0,
+      "transparent_pixels_closed": 0,
+      "components8": [
+        {
+          "pixels": 1400,
+          "bbox_xyxy_inclusive": [
+            13,
+            20,
+            50,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          13,
+          20,
+          51,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [],
+      "closed_issue_ids": [],
+      "old_gait": {
+        "support_leg": "left",
+        "lifted_leg": "right",
+        "phase": "right_passing",
+        "camera_depth": "up背视双脚深度近似一致；前步沿屏幕上向，固定地面原点80",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "left",
+        "lifted_leg": "right",
+        "phase": "right_passing",
+        "camera_depth": "up背视双脚深度近似一致；前步沿屏幕上向，固定地面原点80",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_up_f02",
+      "direction": "up",
+      "frame_index": 2,
+      "old_file": "assets/ember/characters/robot/robot_walk_up_f02_v001.png",
+      "old_sha256": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+      "new_file": "assets/ember/characters/robot/robot_walk_up_f02_v002.png",
+      "new_sha256": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_up_f02_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_up_f02.json",
+      "old_annotation_sha256": "b2b72270b723bbdb6c35a5a3a55f01ccf635045d9714f511d256161f4ff8faff",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_up_f02.json",
+      "new_annotation_sha256": "8a4d14cdb22ba3c237fa0b0c5e61e4f153badba4f5d9353c7d87a4096468c38c",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_up_v002.json",
+      "rig_sha256": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+      "changed_pixel_count": 0,
+      "alpha_changed_pixel_count": 0,
+      "pixel_diff_xy": [],
+      "opaque_pixel_count": 1396,
+      "transparent_pixels_added": 0,
+      "transparent_pixels_closed": 0,
+      "components8": [
+        {
+          "pixels": 1396,
+          "bbox_xyxy_inclusive": [
+            13,
+            21,
+            50,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          13,
+          21,
+          51,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [],
+      "closed_issue_ids": [],
+      "old_gait": {
+        "support_leg": "right",
+        "lifted_leg": null,
+        "phase": "right_contact",
+        "camera_depth": "up背视双脚深度近似一致；前步沿屏幕上向，固定地面原点80",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "right",
+        "lifted_leg": null,
+        "phase": "right_contact",
+        "camera_depth": "up背视双脚深度近似一致；前步沿屏幕上向，固定地面原点80",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    },
+    {
+      "id": "robot_walk_up_f03",
+      "direction": "up",
+      "frame_index": 3,
+      "old_file": "assets/ember/characters/robot/robot_walk_up_f03_v001.png",
+      "old_sha256": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+      "new_file": "assets/ember/characters/robot/robot_walk_up_f03_v002.png",
+      "new_sha256": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+      "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_walk_up_f03_v002.png",
+      "old_annotation": "art-source/ember/batch-02-robot/annotations/walk_up_f03.json",
+      "old_annotation_sha256": "b320be1d3fae7c0ec55423eec37e7d86b431b9a15669af90ff4505cc9b3e4a09",
+      "new_annotation": "art-source/ember/robot-repair-v002/annotations/walk_up_f03.json",
+      "new_annotation_sha256": "c9ab07a334948ec25ae7d003eabb0f07199949e22c76c1ca03299f2fcbc1e08a",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_up_v002.json",
+      "rig_sha256": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+      "changed_pixel_count": 0,
+      "alpha_changed_pixel_count": 0,
+      "pixel_diff_xy": [],
+      "opaque_pixel_count": 1400,
+      "transparent_pixels_added": 0,
+      "transparent_pixels_closed": 0,
+      "components8": [
+        {
+          "pixels": 1400,
+          "bbox_xyxy_inclusive": [
+            13,
+            20,
+            50,
+            79
+          ]
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          13,
+          20,
+          51,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "edits": [],
+      "closed_issue_ids": [],
+      "old_gait": {
+        "support_leg": "right",
+        "lifted_leg": "left",
+        "phase": "left_passing",
+        "camera_depth": "up背视双脚深度近似一致；前步沿屏幕上向，固定地面原点80",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "new_gait": {
+        "support_leg": "right",
+        "lifted_leg": "left",
+        "phase": "left_passing",
+        "camera_depth": "up背视双脚深度近似一致；前步沿屏幕上向，固定地面原点80",
+        "virtual_ground_anchor": [
+          32,
+          80
+        ]
+      },
+      "formal_output_written": true
+    }
+  ],
+  "atlas": {
+    "old_file": "assets/ember/characters/robot/robot_animations_v001.png",
+    "old_sha256": "d3515552ac8ca72170f3ff558844a74552f71d96217b5660669f6cef59bb89e3",
+    "new_file": "assets/ember/characters/robot/robot_animations_v002.png",
+    "new_sha256": "b0a449893f3818e75b5b2b5ebed7bb6f775f951d11a7cbd1b3a446aeb80ef8e9",
+    "finished_file": "art-source/ember/robot-repair-v002/finished-frames/robot_animations_v002.png",
+    "size": [
+      320,
+      384
+    ],
+    "layout": "rows down,left,right,up; columns idle,f00,f01,f02,f03"
+  },
+  "rig_checks": [
+    {
+      "direction": "down",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_down_v002.json",
+      "sha256": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+      "unique_complete_idle_partition": true,
+      "parts_pixel_counts": {
+        "head": 462,
+        "torso": 341,
+        "right_arm": 187,
+        "left_arm": 188,
+        "right_leg": 158,
+        "left_leg": 156
+      },
+      "components8_by_part": {
+        "head": [
+          {
+            "pixels": 462,
+            "bbox_xyxy_inclusive": [
+              19,
+              21,
+              44,
+              42
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "pixels": 341,
+            "bbox_xyxy_inclusive": [
+              22,
+              43,
+              41,
+              62
+            ]
+          }
+        ],
+        "right_arm": [
+          {
+            "pixels": 187,
+            "bbox_xyxy_inclusive": [
+              12,
+              40,
+              23,
+              64
+            ]
+          }
+        ],
+        "left_arm": [
+          {
+            "pixels": 188,
+            "bbox_xyxy_inclusive": [
+              40,
+              40,
+              51,
+              64
+            ]
+          }
+        ],
+        "right_leg": [
+          {
+            "pixels": 158,
+            "bbox_xyxy_inclusive": [
+              18,
+              62,
+              29,
+              79
+            ]
+          }
+        ],
+        "left_leg": [
+          {
+            "pixels": 156,
+            "bbox_xyxy_inclusive": [
+              34,
+              62,
+              44,
+              79
+            ]
+          }
+        ]
+      },
+      "semantic_repairs": [
+        {
+          "id": "DOWN_PELVIS_CENTRAL_PIXELS",
+          "from": "right_leg/left_leg",
+          "to": "torso",
+          "pixels_xy": [
+            [
+              30,
+              62
+            ],
+            [
+              31,
+              62
+            ],
+            [
+              32,
+              62
+            ]
+          ],
+          "reason": "Central pelvis moves with torso; keep both actual legs independent."
+        },
+        {
+          "id": "DOWN_LEFT_FOREARM_COMPLETE_PART",
+          "from": "torso/left_leg",
+          "to": "left_arm",
+          "pixels_xy": [
+            [
+              42,
+              49
+            ],
+            [
+              43,
+              49
+            ],
+            [
+              43,
+              50
+            ],
+            [
+              43,
+              51
+            ],
+            [
+              43,
+              52
+            ],
+            [
+              43,
+              53
+            ],
+            [
+              43,
+              54
+            ],
+            [
+              43,
+              55
+            ],
+            [
+              43,
+              56
+            ],
+            [
+              43,
+              61
+            ],
+            [
+              43,
+              62
+            ]
+          ],
+          "reason": "The actual forearm inner edge and wrist pixels must move with their own arm/tool, not torso or leg."
+        }
+      ]
+    },
+    {
+      "direction": "left",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_left_v002.json",
+      "sha256": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+      "unique_complete_idle_partition": true,
+      "parts_pixel_counts": {
+        "head": 395,
+        "torso": 157,
+        "right_arm": 97,
+        "left_arm": 147,
+        "right_leg": 137,
+        "left_leg": 189
+      },
+      "components8_by_part": {
+        "head": [
+          {
+            "pixels": 395,
+            "bbox_xyxy_inclusive": [
+              20,
+              21,
+              43,
+              41
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "pixels": 157,
+            "bbox_xyxy_inclusive": [
+              24,
+              42,
+              37,
+              59
+            ]
+          }
+        ],
+        "right_arm": [
+          {
+            "pixels": 97,
+            "bbox_xyxy_inclusive": [
+              18,
+              42,
+              25,
+              58
+            ]
+          }
+        ],
+        "left_arm": [
+          {
+            "pixels": 147,
+            "bbox_xyxy_inclusive": [
+              35,
+              42,
+              44,
+              64
+            ]
+          }
+        ],
+        "right_leg": [
+          {
+            "pixels": 137,
+            "bbox_xyxy_inclusive": [
+              20,
+              56,
+              31,
+              73
+            ]
+          }
+        ],
+        "left_leg": [
+          {
+            "pixels": 189,
+            "bbox_xyxy_inclusive": [
+              29,
+              56,
+              41,
+              79
+            ]
+          }
+        ]
+      },
+      "semantic_repairs": [
+        {
+          "id": "LEFT_NEAR_BOOT_COMPLETE_PART",
+          "from": "right_leg",
+          "to": "left_leg",
+          "pixels_xy": [
+            [
+              31,
+              73
+            ],
+            [
+              30,
+              74
+            ],
+            [
+              31,
+              74
+            ],
+            [
+              29,
+              75
+            ],
+            [
+              30,
+              75
+            ],
+            [
+              31,
+              75
+            ],
+            [
+              29,
+              76
+            ],
+            [
+              30,
+              76
+            ],
+            [
+              31,
+              76
+            ],
+            [
+              29,
+              77
+            ],
+            [
+              30,
+              77
+            ],
+            [
+              31,
+              77
+            ],
+            [
+              30,
+              78
+            ],
+            [
+              31,
+              78
+            ]
+          ],
+          "reason": "Keep all pixels of the same near-side boot under the same leg transform."
+        }
+      ]
+    },
+    {
+      "direction": "right",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_right_v002.json",
+      "sha256": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+      "unique_complete_idle_partition": true,
+      "parts_pixel_counts": {
+        "head": 412,
+        "torso": 234,
+        "right_arm": 208,
+        "left_arm": 52,
+        "right_leg": 191,
+        "left_leg": 114
+      },
+      "components8_by_part": {
+        "head": [
+          {
+            "pixels": 412,
+            "bbox_xyxy_inclusive": [
+              19,
+              21,
+              42,
+              41
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "pixels": 234,
+            "bbox_xyxy_inclusive": [
+              27,
+              42,
+              43,
+              59
+            ]
+          }
+        ],
+        "right_arm": [
+          {
+            "pixels": 208,
+            "bbox_xyxy_inclusive": [
+              17,
+              42,
+              27,
+              66
+            ]
+          }
+        ],
+        "left_arm": [
+          {
+            "pixels": 52,
+            "bbox_xyxy_inclusive": [
+              40,
+              42,
+              44,
+              55
+            ]
+          }
+        ],
+        "right_leg": [
+          {
+            "pixels": 191,
+            "bbox_xyxy_inclusive": [
+              22,
+              60,
+              34,
+              79
+            ]
+          }
+        ],
+        "left_leg": [
+          {
+            "pixels": 114,
+            "bbox_xyxy_inclusive": [
+              35,
+              60,
+              45,
+              73
+            ]
+          }
+        ]
+      },
+      "semantic_repairs": []
+    },
+    {
+      "direction": "up",
+      "rig": "art-source/ember/robot-repair-v002/annotations/rig_up_v002.json",
+      "sha256": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+      "unique_complete_idle_partition": true,
+      "parts_pixel_counts": {
+        "head": 439,
+        "torso": 315,
+        "right_arm": 168,
+        "left_arm": 177,
+        "right_leg": 153,
+        "left_leg": 155
+      },
+      "components8_by_part": {
+        "head": [
+          {
+            "pixels": 439,
+            "bbox_xyxy_inclusive": [
+              19,
+              21,
+              44,
+              42
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "pixels": 315,
+            "bbox_xyxy_inclusive": [
+              23,
+              43,
+              41,
+              61
+            ]
+          }
+        ],
+        "right_arm": [
+          {
+            "pixels": 168,
+            "bbox_xyxy_inclusive": [
+              40,
+              41,
+              50,
+              64
+            ]
+          }
+        ],
+        "left_arm": [
+          {
+            "pixels": 177,
+            "bbox_xyxy_inclusive": [
+              13,
+              41,
+              24,
+              64
+            ]
+          }
+        ],
+        "right_leg": [
+          {
+            "pixels": 153,
+            "bbox_xyxy_inclusive": [
+              34,
+              62,
+              44,
+              79
+            ]
+          }
+        ],
+        "left_leg": [
+          {
+            "pixels": 155,
+            "bbox_xyxy_inclusive": [
+              20,
+              62,
+              30,
+              79
+            ]
+          }
+        ]
+      },
+      "semantic_repairs": []
+    }
+  ],
+  "preserved_idle": [
+    {
+      "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+      "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+    },
+    {
+      "file": "assets/ember/characters/robot/robot_idle_left_v001.png",
+      "sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77"
+    },
+    {
+      "file": "assets/ember/characters/robot/robot_idle_right_v001.png",
+      "sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2"
+    },
+    {
+      "file": "assets/ember/characters/robot/robot_idle_up_v001.png",
+      "sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833"
+    }
+  ],
+  "source_builder": {
+    "file": "art-source/ember/batch-02-robot/tools/finish_robot_frames.py",
+    "sha256": "03094ed523fa56ff9f751ecf4dacdb47aa0604a56941a7ab8d8accaafdbcc723",
+    "module_BASE": "art-source/ember/robot-repair-v002",
+    "reuse": "Read-only build_walk/measure and explicit part masks. Module BASE rebound only within this process."
+  },
+  "animation": {
+    "frames_per_direction": 4,
+    "fps": 8,
+    "apng_frame_duration_ms": 125,
+    "gif_frame_duration_ms": [
+      120,
+      130,
+      120,
+      130
+    ],
+    "gif_loop_duration_ms": 500,
+    "loop": true
+  },
+  "protected_input_count": 68,
+  "protected_inputs_changed": [],
+  "image_operations": "Explicit native JSON part attribution, unchanged integer part offsets/draw order, individually drawn joint pixels. No global filtering/closing/dilation, fragment deletion, affine warp or image generation."
+}

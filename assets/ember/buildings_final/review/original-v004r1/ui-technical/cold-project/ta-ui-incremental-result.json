@@ -1,0 +1,230 @@
+{
+	"checks": [
+		{
+			"detail": {
+				"position": [
+					28.0,
+					722.0
+				],
+				"size": [
+					1352.0,
+					58.0
+				],
+				"text": "WASD/方向键 移动 | E 人门 | G 卷帘 | C 检修盖 | F 设备启停 | R 维修\nP 供电 | L 门锁 | X 故障 | I 窗玻璃亮暗 | H 遮挡检视 | J 塔顶盖检视 | F5/F9 保存/恢复",
+				"visible": true
+			},
+			"name": "inside_viewport_@Label@29",
+			"pass": true
+		},
+		{
+			"detail": {
+				"position": [
+					28.0,
+					680.0
+				],
+				"size": [
+					1352.0,
+					27.0
+				],
+				"text": "",
+				"visible": false
+			},
+			"name": "inside_viewport_@Label@30",
+			"pass": true
+		},
+		{
+			"detail": {
+				"position": [
+					65.0,
+					100.0
+				],
+				"size": [
+					190.0,
+					28.0
+				],
+				"text": "控制塔",
+				"visible": true
+			},
+			"name": "building_label_inside_0",
+			"pass": true
+		},
+		{
+			"detail": {
+				"position": [
+					419.0,
+					100.0
+				],
+				"size": [
+					190.0,
+					28.0
+				],
+				"text": "维修间",
+				"visible": true
+			},
+			"name": "building_label_inside_1",
+			"pass": true
+		},
+		{
+			"detail": {
+				"position": [
+					935.0,
+					100.0
+				],
+				"size": [
+					190.0,
+					28.0
+				],
+				"text": "物流仓库",
+				"visible": true
+			},
+			"name": "building_label_inside_2",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"name": "help_content",
+			"pass": true
+		},
+		{
+			"detail": {
+				"position": [
+					28.0,
+					680.0
+				],
+				"size": [
+					1352.0,
+					27.0
+				],
+				"text": "门已锁定",
+				"visible": true
+			},
+			"name": "actual_E_routes_to_locked_door",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"name": "actual_E_toast_is_visible",
+			"pass": true
+		},
+		{
+			"detail": {
+				"position": [
+					28.0,
+					680.0
+				],
+				"size": [
+					1352.0,
+					27.0
+				],
+				"text": "门已锁定",
+				"visible": true
+			},
+			"name": "actual_E_toast_unclipped",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"name": "actual_E_does_not_open_locked_door",
+			"pass": true
+		},
+		{
+			"detail": null,
+			"name": "help_and_toast_do_not_overlap",
+			"pass": true
+		},
+		{
+			"detail": {
+				"position": [
+					28.0,
+					680.0
+				],
+				"size": [
+					1352.0,
+					27.0
+				],
+				"text": "已保存建筑状态",
+				"visible": true
+			},
+			"name": "actual_F5_feedback",
+			"pass": true
+		}
+	],
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"failures": [],
+	"initial_control_rectangles": [
+		{
+			"position": [
+				28.0,
+				722.0
+			],
+			"size": [
+				1352.0,
+				58.0
+			],
+			"text": "WASD/方向键 移动 | E 人门 | G 卷帘 | C 检修盖 | F 设备启停 | R 维修\nP 供电 | L 门锁 | X 故障 | I 窗玻璃亮暗 | H 遮挡检视 | J 塔顶盖检视 | F5/F9 保存/恢复",
+			"visible": true
+		},
+		{
+			"position": [
+				28.0,
+				680.0
+			],
+			"size": [
+				1352.0,
+				27.0
+			],
+			"text": "",
+			"visible": false
+		},
+		{
+			"position": [
+				65.0,
+				100.0
+			],
+			"size": [
+				190.0,
+				28.0
+			],
+			"text": "控制塔",
+			"visible": true
+		},
+		{
+			"position": [
+				419.0,
+				100.0
+			],
+			"size": [
+				190.0,
+				28.0
+			],
+			"text": "维修间",
+			"visible": true
+		},
+		{
+			"position": [
+				935.0,
+				100.0
+			],
+			"size": [
+				190.0,
+				28.0
+			],
+			"text": "物流仓库",
+			"visible": true
+		}
+	],
+	"passed": 12,
+	"renderer": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"scope": "v004r1 UI P2 closure only; actual E/F5 input pipeline and unclipped labels",
+	"total": 12
+}

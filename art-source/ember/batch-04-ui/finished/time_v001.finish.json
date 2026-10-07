@@ -1,0 +1,66 @@
+{
+  "id": "time",
+  "method": "AI_BODY_MATERIAL_SAMPLING_NATIVE_SEMANTIC_PIXEL_FINISH",
+  "source_use": {
+    "mother": "art-source/ember/batch-04-ui/generated/time_master_v001.png",
+    "mother_sha256": "a991cc1e15ad65621df47a95cd425e96ed77a4b25f57dc06c02284dab0575233",
+    "source_unchanged": true,
+    "direct_original_rgba_byte_reuse": false,
+    "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+    "sampling": {
+      "source_alpha_threshold": 128,
+      "source_body_bbox": [
+        269,
+        196,
+        986,
+        1074
+      ],
+      "material_grid_size": [
+        20,
+        24
+      ],
+      "material_grid_origin": [
+        6,
+        4
+      ],
+      "native_semantic_changed_pixels": 162
+    }
+  },
+  "adjustments": [
+    "保留母稿表冠/表壳，简化表盘碎点与小刻度",
+    "重绘共用(16,19)轴的长短指针，保持无数字表盘"
+  ],
+  "native_pixel_source": "art-source/ember/batch-04-ui/annotations/time_native_pixel_source_v001.json",
+  "measurement": {
+    "canvas": [
+      32,
+      32
+    ],
+    "bbox": [
+      6,
+      4,
+      26,
+      28
+    ],
+    "opaque_pixels": 339,
+    "transparent_pixels": 685,
+    "partial_alpha_pixels": 0,
+    "color_count": 12,
+    "palette_rgb": [
+      "#101820",
+      "#182631",
+      "#203A4B",
+      "#2B3E4B",
+      "#4D6470",
+      "#566B78",
+      "#7B4D35",
+      "#829BA3",
+      "#B77C4B",
+      "#BECBC4",
+      "#E2B77A",
+      "#ECE9D8"
+    ],
+    "all_opaque_colors_in_standard16": true
+  },
+  "output_sha256": "60fe96b8625c9d5ffc5d18b715283cd634f0233c4c5d4d1c5db9e91d19be292e"
+}

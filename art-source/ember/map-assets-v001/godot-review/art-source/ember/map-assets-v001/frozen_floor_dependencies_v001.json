@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "SHA256+bytes of current old v002-v006 production art, TRes, JSON reports, runtime GDScript and production scenes versus verified v006 ZIP manifest; documentation, standalone diagnostic fixture and one Godot UID metadata difference are explicitly recorded, not asserted identical",
+  "baseline_zip": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\deliveries\\reference_floor_v006_2026-10-06.zip",
+  "baseline_zip_sha256": "7f8bc265cdab09b28e1197a3c7e25c24c115834b7bfaf1985cb33230e6008ef7",
+  "frozen_files_unchanged": 244,
+  "runtime_asset_files_unchanged": 216,
+  "compiler_sha256": "244161deb264aadf89b12356efe46f36b6893fc9d4e33486d09a8998d5e5b45d",
+  "documentation_packaging_exceptions": [
+    {
+      "actual_sha256": "0ed313eaa83602e84c8522855dd642226276b8b7886b8eeedac8f0264600bbdf",
+      "reason": "Standalone baseline strips workspace self-delivery link; not runtime art",
+      "baseline_sha256": "639a3be0731dacb5371491e436fba3cdf84a32a8e760823a7426e14cd085f4bd",
+      "path": "assets/ember/environment/reference_floor_v002/README.md"
+    },
+    {
+      "actual_sha256": "b36c5f0f93abfe78360e1b8fa10ae5ef6e1ec5c41a31ad75b464104e85b500d2",
+      "reason": "Standalone baseline strips workspace self-delivery link; not runtime art",
+      "baseline_sha256": "2d32dc7cfcd5911c623414a31594fc3990e58084e8777c3631c559782aa0c649",
+      "path": "assets/ember/environment/reference_floor_v003/README.md"
+    },
+    {
+      "actual_sha256": "5352647fa26983c4eb98d8041c56621b09026f25d00230998f4ef1ed0cc80bb9",
+      "reason": "Standalone baseline strips workspace self-delivery link; not runtime art",
+      "baseline_sha256": "60bf225533e2e7e9f54edce4a61b5fdb0d598b57015db482bc444058a3bb3e73",
+      "path": "assets/ember/environment/reference_floor_v004/README.md"
+    },
+    {
+      "actual_sha256": "a684379ff948dc7977f8727b1975148d029c07d501624e87374fc5ed237ff3ef",
+      "reason": "Standalone baseline strips workspace self-delivery link; not runtime art",
+      "baseline_sha256": "23a318180b214c1a8cc58aef7e576b3294b284a4fea7388fcbb804afcc2a1edf",
+      "path": "assets/ember/environment/reference_floor_v005/README.md"
+    },
+    {
+      "actual_sha256": "a0d29d87719c4e994f3dbc58ae2ab754432870f71a4477cd87216d90dce17b11",
+      "reason": "Standalone baseline strips workspace self-delivery link; not runtime art",
+      "baseline_sha256": "59d9156d11476fa7944cf867db2a9e6ea7465fb2878466352561d514af3bc679",
+      "path": "assets/ember/environment/reference_floor_v006/README.md"
+    }
+  ],
+  "failures": [],
+  "non_runtime_manifest_exceptions": [
+    {
+      "path": "assets/ember/environment/reference_floor_v006/independent_scene_roundtrip_v006.tscn",
+      "category": "Packed baseline diagnostic only",
+      "observation": "Working tree lacks this standalone test roundtrip fixture; production scenes are byte-identical"
+    },
+    {
+      "path": "scripts/ember/reference_floor_painter_v003.gd.uid",
+      "baseline_sha256": "663321ee3aaefaf904509d6d36091b909f1e9450a21c5ca24daa850c64d66208",
+      "actual_sha256": "d1d5e01dc440093228c78a82f1c0a7c6d99c96514a80938939bae8b373b911b4",
+      "category": "Godot UID metadata",
+      "observation": "Working tree UID differs from standalone baseline UID; corresponding .gd source is byte-identical; this branch did not rewrite either old file"
+    }
+  ],
+  "entire_old_directory_byte_identity": "NOT_IDENTICAL: known standalone documentation, diagnostic fixture and one UID metadata difference recorded separately"
+}

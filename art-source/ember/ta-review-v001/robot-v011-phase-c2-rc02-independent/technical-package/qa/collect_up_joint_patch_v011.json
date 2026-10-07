@@ -1,0 +1,470 @@
+{
+  "status": "ACTION_PILOT_PENDING_VISUAL_REVIEW",
+  "action": "collect",
+  "direction": "up",
+  "source_file": "source/collect_up_joint_edit_raw_v011.png",
+  "source_sha256": "88815874e9fe9a6651154f11248d7bc0db47849ba0d03f1018f6943d90ab144b",
+  "source_size": [
+    1024,
+    1536
+  ],
+  "common_sheet_transform": [
+    0.125,
+    0.125
+  ],
+  "no_per_frame_bbox_fit": true,
+  "protection": [
+    {
+      "part": "body",
+      "rule": "all opaque fixed body/pelvis source pixels"
+    },
+    {
+      "part": "arm_left_upper",
+      "source_y": [
+        0,
+        50
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "arm_left_lower",
+      "source_y": [
+        54,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "arm_right_upper",
+      "source_y": [
+        0,
+        50
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "arm_right_lower",
+      "source_y": [
+        54,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_left_upper",
+      "source_y": [
+        0,
+        62
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_left_lower",
+      "source_y": [
+        67,
+        70
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_left_end",
+      "source_y": [
+        0,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_right_upper",
+      "source_y": [
+        0,
+        62
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_right_lower",
+      "source_y": [
+        67,
+        70
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "leg_right_end",
+      "source_y": [
+        0,
+        95
+      ],
+      "rule": "rigid shell, endpoints and transparent contour"
+    },
+    {
+      "part": "pelvis",
+      "rule": "all opaque fixed body/pelvis source pixels"
+    }
+  ],
+  "records": [
+    {
+      "frame": 0,
+      "file": "frames/collect/up/robot_collect_up_f00_v011.png",
+      "sha256": "4b26afe1367ebe33704514e9ad0eb96cd02f0cba956392b119018e62631369f1",
+      "locked": false,
+      "changed_pixels": 9,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "shared_pose_patch": null,
+      "rejected_detached_additions": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            18,
+            47
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            16.55755242491842,
+            51.89074074074074
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            44,
+            47
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            45.99999999999999,
+            52
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 1,
+      "file": "frames/collect/up/robot_collect_up_f01_v011.png",
+      "sha256": "da5f8c94035aa0b0d3052910a5666163d0fbfbe62cf564bb7adb6e5b322dbd2f",
+      "locked": false,
+      "changed_pixels": 79,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "shared_pose_patch": null,
+      "rejected_detached_additions": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            18,
+            48
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            15.612331588127365,
+            52.505445544554455
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            44,
+            48
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            46.45393742628538,
+            52.793557249879875
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            25,
+            57
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            21.64115891113498,
+            65.40941059407565
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            24,
+            72
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            38,
+            57
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            41.37960304415333,
+            65.34135979705646
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            39,
+            72
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "file": "frames/collect/up/robot_collect_up_f02_v011.png",
+      "sha256": "c6f84bc96c930e6d679169d842be76ef496cd68b079294fe84301f8e8323454c",
+      "locked": false,
+      "changed_pixels": 67,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "shared_pose_patch": {
+        "reference_frame": 1,
+        "scope": "body, legs, boots and far arm outside old/new anatomical left arm union",
+        "shared_pixels": 5958
+      },
+      "rejected_detached_additions": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            18,
+            48
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            15.510522143099081,
+            52.45
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            44,
+            48
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            46.45393742628538,
+            52.793557249879875
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            25,
+            57
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            21.64115891113498,
+            65.40941059407565
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            24,
+            72
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            38,
+            57
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            41.37960304415333,
+            65.34135979705646
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            39,
+            72
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "file": "frames/collect/up/robot_collect_up_f03_v011.png",
+      "sha256": "209c9cfbce55c66b3b5b003e34e26472c20c89a4548320f3ee464fe4a9952957",
+      "locked": true,
+      "changed_pixels": 0,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "shared_pose_patch": null,
+      "rejected_detached_additions": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            18,
+            47
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            17,
+            52
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            44,
+            47
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            46,
+            52
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            25,
+            56
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            24,
+            65
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            24,
+            72
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            38,
+            56
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            38,
+            65
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            39,
+            72
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "revision": "reference_floor_v003",
+  "status": "VISUAL_CANDIDATE",
+  "user_accepted": false,
+  "base_style_feedback": "User asked to extend the improved v002 style consistently",
+  "source_imagegen_calls": 3,
+  "new_material_ids": [1, 2, 3],
+  "actual_scene_previews": ["gpu_control_scene_v003.png", "gpu_service_scene_v003.png", "gpu_rust_scene_v003.png", "gpu_mixed_scene_v003.png"],
+  "comparison": "gpu_material_comparison_v003.png",
+  "review_method": "Visual inspection of actual Godot GPU scene captures; comparison board only combines those captures",
+  "fixed_standards": {
+    "texture_tile_px": 128,
+    "world_cell_px": 32,
+    "tilemap_scale": 0.25,
+    "camera_zoom": 2,
+    "coping_world_px": 8,
+    "south_facade_world_px": 32,
+    "wide_bridge_body_world_px": 40,
+    "bridge_shoulders_world_px": 12
+  },
+  "findings": [
+    "Pale grey epoxy, dark slate anti-slip steel and muted rusty warehouse steel are visibly distinct at the existing material scale",
+    "All surfaces share the original coping, facade, bridge beams, landing plates and source props",
+    "Mixed map uses common floor occupancy without internal coping or walls at material boundaries",
+    "Pure material changes update the actual TileMap GPU output; two probes match CPU with zero RGB error"
+  ],
+  "verification": {
+    "material_pair_cases": 12,
+    "landing_directions": 4,
+    "incremental_full_rgba_comparisons": 9,
+    "v002_default_six_context_rgba_identical": true,
+    "solo_cache_sample_pixels": 270,
+    "editor_gui_undo_redo": "NOT_TESTED"
+  },
+  "limits": ["Panel seams, hatch and rails remain independent decorations", "Collision and navigation are outside this material extension"]
+}

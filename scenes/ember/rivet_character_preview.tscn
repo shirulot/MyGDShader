@@ -1,0 +1,122 @@
+[gd_scene format=3]
+
+[ext_resource type="SpriteFrames" path="res://assets/ember/characters/rivet/rivet_sprite_frames_v001.tres" id="1_37mfc"]
+[ext_resource type="Script" path="res://scripts/ember/rivet_preview_controller.gd" id="2_vtwrn"]
+
+[node name="RivetCharacterPreview" type="Node2D" unique_id=1724926131]
+texture_filter = 2
+
+[node name="@Label@2" type="Label" parent="." unique_id=1674736412]
+offset_left = 24.0
+offset_top = 20.0
+offset_right = 24.0
+offset_bottom = 20.0
+theme_override_font_sizes/font_size = 23
+text = "铆钉 · 新形象四向待机 / 履带移动"
+
+[node name="@Label@3" type="Label" parent="." unique_id=1747559721]
+offset_left = 24.0
+offset_top = 54.0
+offset_right = 24.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 14
+text = "朝下移动保留 3 帧，其余方向 4 帧；未把错误工具换边帧加入动画。"
+
+[node name="@Label@4" type="Label" parent="." unique_id=1489968241]
+offset_left = 52.0
+offset_top = 94.0
+offset_right = 52.0
+offset_bottom = 94.0
+theme_override_font_sizes/font_size = 18
+text = "down"
+
+[node name="@AnimatedSprite2D@5" type="AnimatedSprite2D" parent="." unique_id=1617381577]
+position = Vector2(100, 208)
+sprite_frames = ExtResource("1_37mfc")
+animation = &"idle_down"
+autoplay = "idle_down"
+
+[node name="@AnimatedSprite2D@6" type="AnimatedSprite2D" parent="." unique_id=285301181]
+position = Vector2(100, 408)
+sprite_frames = ExtResource("1_37mfc")
+animation = &"walk_down"
+autoplay = "walk_down"
+
+[node name="@Label@7" type="Label" parent="." unique_id=306665392]
+offset_left = 220.0
+offset_top = 94.0
+offset_right = 220.0
+offset_bottom = 94.0
+theme_override_font_sizes/font_size = 18
+text = "left"
+
+[node name="@AnimatedSprite2D@8" type="AnimatedSprite2D" parent="." unique_id=719710996]
+position = Vector2(268, 208)
+sprite_frames = ExtResource("1_37mfc")
+animation = &"idle_left"
+autoplay = "idle_left"
+
+[node name="@AnimatedSprite2D@9" type="AnimatedSprite2D" parent="." unique_id=57792125]
+position = Vector2(268, 408)
+sprite_frames = ExtResource("1_37mfc")
+animation = &"walk_left"
+autoplay = "walk_left"
+
+[node name="@Label@10" type="Label" parent="." unique_id=1164946552]
+offset_left = 388.0
+offset_top = 94.0
+offset_right = 388.0
+offset_bottom = 94.0
+theme_override_font_sizes/font_size = 18
+text = "right"
+
+[node name="@AnimatedSprite2D@11" type="AnimatedSprite2D" parent="." unique_id=750738739]
+position = Vector2(436, 208)
+sprite_frames = ExtResource("1_37mfc")
+animation = &"idle_right"
+autoplay = "idle_right"
+
+[node name="@AnimatedSprite2D@12" type="AnimatedSprite2D" parent="." unique_id=885527258]
+position = Vector2(436, 408)
+sprite_frames = ExtResource("1_37mfc")
+animation = &"walk_right"
+autoplay = "walk_right"
+
+[node name="@Label@13" type="Label" parent="." unique_id=271953774]
+offset_left = 556.0
+offset_top = 94.0
+offset_right = 556.0
+offset_bottom = 94.0
+theme_override_font_sizes/font_size = 18
+text = "up"
+
+[node name="@AnimatedSprite2D@14" type="AnimatedSprite2D" parent="." unique_id=577184473]
+position = Vector2(604, 208)
+sprite_frames = ExtResource("1_37mfc")
+animation = &"idle_up"
+autoplay = "idle_up"
+
+[node name="@AnimatedSprite2D@15" type="AnimatedSprite2D" parent="." unique_id=539445460]
+position = Vector2(604, 408)
+sprite_frames = ExtResource("1_37mfc")
+animation = &"walk_up"
+autoplay = "walk_up"
+
+[node name="@Label@16" type="Label" parent="." unique_id=2113265224]
+offset_left = 24.0
+offset_top = 495.0
+offset_right = 24.0
+offset_bottom = 495.0
+theme_override_font_sizes/font_size = 15
+text = "下方角色可用 WASD / 方向键移动；旧角色与正式游戏入口保持不变。"
+
+[node name="PlayableRivet" type="Node2D" parent="." unique_id=283839194]
+position = Vector2(360, 630)
+script = ExtResource("2_vtwrn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PlayableRivet" unique_id=1816043733]
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("1_37mfc")
+animation = &"idle_down"
+autoplay = "idle_down"
+offset = Vector2(0, -56)

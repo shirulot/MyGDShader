@@ -1,0 +1,97 @@
+{
+  "revision": "robot_structure_v005",
+  "date": "2026-10-06",
+  "type": "Annotated structural concept sheets, not production animation frames",
+  "tool": "Built-in image_gen.imagegen",
+  "reference_files": [
+    {
+      "file": "art-source/ember/robot-joint-repair-v004/audit/root/robot_idle_down_f00_actual_12x.png",
+      "sha256": "310f9f425b752c39f84d158857581f3691906aa07a1acb51a84439fb3debb8ae"
+    },
+    {
+      "file": "art-source/ember/robot-joint-repair-v004/audit/root/robot_idle_left_f00_actual_12x.png",
+      "sha256": "b6c6ae937eff770db8ff5673196de03c754dac6822c7e4eef6e3cd66c394e5c0"
+    },
+    {
+      "file": "art-source/ember/robot-joint-repair-v004/audit/root/robot_idle_up_f00_actual_12x.png",
+      "sha256": "f5237b0e5687a851a2ed9503cf43e01f6eb02f0c74943c29725cc43c978a6d80"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "art-source/ember/robot-structure-v005/robot_three_views_annotated_v005.png",
+      "sha256": "85bb6d6a71135609a613f946123507f58cce64b35a4b1377919ec07feefc9b18"
+    },
+    {
+      "file": "art-source/ember/robot-structure-v005/robot_exploded_joints_annotated_v005.png",
+      "sha256": "a2a9a00b0b50678cd7ae9eb40e1a2c896362a54cd6e6760904bbaf967e7f6e29"
+    }
+  ],
+  "prompts": [
+    {
+      "file": "art-source/ember/robot-structure-v005/robot_three_views_annotated_v005.prompt.txt",
+      "sha256": "2ff7ca68994d0a54fc5a66f6d7c11010a9d3a5d7ab805c0683d2dae3a2b66a39"
+    },
+    {
+      "file": "art-source/ember/robot-structure-v005/robot_three_views_annotation_fix_v005.prompt.txt",
+      "sha256": "d72941f601e17d722568c6600df958475cf9f38b19ae5f133d7b7e2108f6a6a6"
+    },
+    {
+      "file": "art-source/ember/robot-structure-v005/robot_three_views_final_annotation_fix_v005.prompt.txt",
+      "sha256": "2fa5dc2e11337fc9b22a2f56c4d215e5fe6dc8e262e7f9493c1559c89f6f97ea"
+    },
+    {
+      "file": "art-source/ember/robot-structure-v005/robot_exploded_joints_annotated_v005.prompt.txt",
+      "sha256": "9a26941aca8c77b18316e6287fbed693181e668ea66695ab939d333722842081"
+    }
+  ],
+  "production_assets_modified": false,
+  "generation_steps": [
+    {
+      "step": "three_views_initial",
+      "prompt": "robot_three_views_annotated_v005.prompt.txt",
+      "inputs": [
+        "front_idle_reference",
+        "left_idle_reference",
+        "back_idle_reference"
+      ],
+      "output": "drafts/robot_three_views_draft01_v005.png"
+    },
+    {
+      "step": "annotation_correction",
+      "prompt": "robot_three_views_annotation_fix_v005.prompt.txt",
+      "inputs": [
+        "drafts/robot_three_views_draft01_v005.png"
+      ],
+      "output": "drafts/robot_three_views_draft02_v005.png"
+    },
+    {
+      "step": "final_joint_annotation_correction",
+      "prompt": "robot_three_views_final_annotation_fix_v005.prompt.txt",
+      "inputs": [
+        "drafts/robot_three_views_draft02_v005.png"
+      ],
+      "output": "robot_three_views_annotated_v005.png"
+    },
+    {
+      "step": "exploded_structure_companion",
+      "prompt": "robot_exploded_joints_annotated_v005.prompt.txt",
+      "inputs": [
+        "drafts/robot_three_views_draft02_v005.png",
+        "front_idle_reference",
+        "back_idle_reference"
+      ],
+      "output": "robot_exploded_joints_annotated_v005.png"
+    }
+  ],
+  "review": {
+    "status": "STRUCTURAL_DESIGN_REVIEWED",
+    "method": "Root and independent visual review of both final sheets",
+    "anatomical_left_tool_consistent": true,
+    "continuous_inner_frame_shown": true,
+    "armor_assembly_relationship_shown": true,
+    "shoulder_elbow_hip_knee_details_shown": true,
+    "bending_axis_and_cuff_overlap_shown": true,
+    "stage": "Design reference; not production sprite validation"
+  }
+}

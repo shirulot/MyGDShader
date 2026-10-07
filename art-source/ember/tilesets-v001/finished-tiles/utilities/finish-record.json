@@ -1,0 +1,1384 @@
+[
+  {
+    "id": "pipe_straight_h",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "E",
+        "W"
+      ],
+      "tee_name": null
+    }
+  },
+  {
+    "id": "pipe_straight_v",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "S"
+      ],
+      "tee_name": null
+    }
+  },
+  {
+    "id": "pipe_elbow_ne",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "E"
+      ],
+      "tee_name": null
+    }
+  },
+  {
+    "id": "pipe_elbow_se",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "S",
+        "E"
+      ],
+      "tee_name": null
+    }
+  },
+  {
+    "id": "pipe_elbow_sw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": null,
+      "S": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "S",
+        "W"
+      ],
+      "tee_name": null
+    }
+  },
+  {
+    "id": "pipe_elbow_nw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": null,
+      "W": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "W"
+      ],
+      "tee_name": null
+    }
+  },
+  {
+    "id": "pipe_tee_n",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "E",
+        "W",
+        "N"
+      ],
+      "tee_name": "支管指向；其余两方向贯通"
+    }
+  },
+  {
+    "id": "pipe_tee_e",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "S",
+        "E"
+      ],
+      "tee_name": "支管指向；其余两方向贯通"
+    }
+  },
+  {
+    "id": "pipe_tee_s",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "E",
+        "W",
+        "S"
+      ],
+      "tee_name": "支管指向；其余两方向贯通"
+    }
+  },
+  {
+    "id": "pipe_tee_w",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "S",
+        "W"
+      ],
+      "tee_name": "支管指向；其余两方向贯通"
+    }
+  },
+  {
+    "id": "pipe_cross",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "tee_name": null
+    }
+  },
+  {
+    "id": "pipe_valve",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/pipe_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样新母稿钢管横截面与三段黄铜套筒材质",
+      "32×32 中重建10像素管径与1像素外轮廓",
+      "四向端口固定在[11,21)，不加边缘封口",
+      "弯曲、分流、十字原生连接轮廓连续化",
+      "每个方向重新设置左上亮面，螺孔与卡箍使用原生整数像素",
+      "清除生成外晕，Alpha二值化，颜色固定16色"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": {
+        "kind": "pipe-10px-v001",
+        "ports": [
+          [
+            11,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "E",
+        "W"
+      ],
+      "tee_name": null
+    }
+  },
+  {
+    "id": "channel_edge_n",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "channel-bank-12px-water-N-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": {
+        "kind": "channel-bank-12px-water-N-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "E",
+        "W"
+      ],
+      "water_sides": [
+        "N"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_edge_e",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "channel-bank-12px-water-E-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": {
+        "kind": "channel-bank-12px-water-E-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "S"
+      ],
+      "water_sides": [
+        "E"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_edge_s",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "channel-bank-12px-water-S-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": {
+        "kind": "channel-bank-12px-water-S-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "E",
+        "W"
+      ],
+      "water_sides": [
+        "S"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_edge_w",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "channel-bank-12px-water-W-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": {
+        "kind": "channel-bank-12px-water-W-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "S"
+      ],
+      "water_sides": [
+        "W"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_outer_ne",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": null,
+      "S": {
+        "kind": "channel-bank-12px-water-E-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "channel-bank-12px-water-N-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "S",
+        "W"
+      ],
+      "water_sides": [
+        "N",
+        "E"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_outer_se",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "channel-bank-12px-water-E-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": null,
+      "W": {
+        "kind": "channel-bank-12px-water-S-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "W"
+      ],
+      "water_sides": [
+        "S",
+        "E"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_outer_sw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "channel-bank-12px-water-W-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "channel-bank-12px-water-S-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "E"
+      ],
+      "water_sides": [
+        "S",
+        "W"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_outer_nw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "channel-bank-12px-water-N-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "channel-bank-12px-water-W-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "S",
+        "E"
+      ],
+      "water_sides": [
+        "N",
+        "W"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_inner_ne",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "channel-bank-12px-water-E-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "channel-bank-12px-water-N-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "E"
+      ],
+      "water_sides": [
+        "N",
+        "E"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_inner_se",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "channel-bank-12px-water-S-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "channel-bank-12px-water-E-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "S",
+        "E"
+      ],
+      "water_sides": [
+        "S",
+        "E"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_inner_sw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": null,
+      "S": {
+        "kind": "channel-bank-12px-water-W-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "channel-bank-12px-water-S-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "S",
+        "W"
+      ],
+      "water_sides": [
+        "S",
+        "W"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  },
+  {
+    "id": "channel_inner_nw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/channel_module_master_v001.png"
+    ],
+    "adjustments": [
+      "裁出新水岸母稿的钢板主面与黄铜铆接条作为材质参考",
+      "重建12像素岸带和1像素外轮廓",
+      "固定全部岸线端口[10,22)，凸角/凹角按真实连接方向分别登记",
+      "水侧冷色包边留在岸体内部，水域保持真实透明",
+      "转角重新绘制左上亮暗与铆接像素，避免旋转造成光照漂移",
+      "删除半透明外晕和杂点，固定16色及0/255 Alpha",
+      "岸线接口kind细分为局部水侧N/E/S/W，排除水陆方向相反的同宽物理口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "channel-bank-12px-water-W-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": null,
+      "W": {
+        "kind": "channel-bank-12px-water-N-v001",
+        "ports": [
+          [
+            10,
+            22
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "layout_topology": {
+      "connected_sides": [
+        "N",
+        "W"
+      ],
+      "water_sides": [
+        "N",
+        "W"
+      ],
+      "corner_semantics": "外角为陆地凸出；内角为水域凹入；方向指水侧",
+      "water_surface_included": false
+    }
+  }
+]

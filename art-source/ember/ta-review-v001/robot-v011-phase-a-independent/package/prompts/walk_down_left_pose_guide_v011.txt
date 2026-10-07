@@ -1,0 +1,19 @@
+Use the FIRST reference as the exact fixed mother character for a pixel-art eight-frame WALK cycle facing DOWN_LEFT / SOUTHWEST (45-degree front-left three-quarter). The SECOND reference is the approved front-facing walk cycle of this same robot, for joint continuity and gait phase only. Keep the FIRST character's head, visor, chest, limb armor shapes, proportions, colors and left-wrist tool identical across all eight frames.
+
+Output one transparent 4-column by2-row sheet, aspect4:3, eight equal64x96 logical cells represented at4x. Do not make eight different characters. Source pose in reference1 has crown around logicaly21, soles y80, root(32,80), torso centered nearx30. Match that occupancy in EVERY slot: no bbox crop, no zoom, no per-frame scale change. Leave the same transparent margins. The same NEAREST pixel grid and limited colors should be visible throughout. Do not add labels or borders.
+
+Read frames left to right, first row then second row:
+F0: anatomical LEFT leg forward toward lower-left, contact; right leg back; right arm forward and left tool arm back.
+F1: left support/down; body settles by at most1px, right heel beginning to lift.
+F2: right leg passing underneath, low knee lift, left support foot flat.
+F3: right leg swings forward toward lower-left; left leg behind, body rises by at most1px.
+F4: anatomical RIGHT leg forward contact, left leg back; left tool arm forward and right arm back.
+F5: right support/down, left heel begins to lift.
+F6: left leg passing underneath, low knee lift, right support foot flat.
+F7: left leg swings toward the same contact as F0, closing the loop smoothly.
+
+Walk in place: the root stays fixed. Every frame keeps head, chest and boots facing DOWN_LEFT, never front-only or side-only. The near arm is the ANATOMICAL LEFT arm bearing the existing small brass wrist tool. Keep the tool on this near arm throughout; do not mirror or swap tools. Arms swing opposite legs with small controlled arcs. The armor pieces and gloves must NOT morph or develop new texture. Head/chest shape is exactly stable, at most1 logicalpixel vertical bob. Keep the same screen-upper-left lighting.
+
+Rigid boots are separate from shins: small lift, natural flat support, no accordion feet, no folding toes, no changing boot length. Preserve the solid overlapping joint construction of the first reference. Continuous medium blue-gray support at shoulders/elbows/wrists/hips/knees/ankles, no floating kneecaps, dark full-width cuts, thin rods or disjoint washers. Same compact body, ivory plates, blue-gray supports and restrained brass. No extra details, glow, smooth shading, realistic metals, ground, contact shadows, motion blur, text, labels or frame numbers.
+
+This is a precise eight-keypose guide for later fixed-part production, not permission to redesign the character per pose. Transparent background. All8 complete bodies fit inside separate equal cells.

@@ -1,0 +1,78 @@
+{
+  "observations": "实际母稿单屏外框、键盘格、单侧铜连接和落地脚可辨；原生采样屏内出现母稿半透明噪色，需要明确变为单一中性安全区。",
+  "adjustments": [
+    "安全内屏[38,30,57,41)逐像素归并，彻底清除母稿屏内梯度/形似内容的暗颗粒，屏幕内容应由真实场景提供",
+    "键盘左上短亮边归并3px，保留两排物理按键及右侧铜接口；底脚80",
+    "inner_screen源RGBA+mask与base同画布，可独立绑定场景屏幕材质"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        38,
+        30,
+        57,
+        41
+      ],
+      "color": 2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          39,
+          53
+        ],
+        [
+          42,
+          53
+        ]
+      ],
+      "color": 4
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "terminal_scene_screen",
+      "visual_frame_bounds": [
+        34,
+        26,
+        61,
+        45
+      ],
+      "safe_active_rect": [
+        38,
+        30,
+        57,
+        41
+      ],
+      "center": [
+        47.5,
+        35.5
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.4947916666666667,
+        0.3697916666666667
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "components": [
+    {
+      "name": "inner_screen",
+      "rects": [
+        [
+          38,
+          30,
+          57,
+          41
+        ]
+      ],
+      "z_index": 1,
+      "purpose": "中性屏幕内区，真实场景内容后接入"
+    }
+  ],
+  "emitter_points": []
+}

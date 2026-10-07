@@ -1,0 +1,133 @@
+{
+	"checks": [
+		{
+			"check": "SpriteFrames loads",
+			"pass": true
+		},
+		{
+			"check": "four clips idle/collect/walk/pose",
+			"pass": true
+		},
+		{
+			"check": "atlas external dependency resolves inside cold project",
+			"pass": true
+		},
+		{
+			"check": "idle_down_left fps/loop/count",
+			"pass": true
+		},
+		{
+			"check": "idle_down_left f0 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "idle_down_left f1 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "collect_down_left fps/loop/count",
+			"pass": true
+		},
+		{
+			"check": "collect_down_left f0 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "collect_down_left f1 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "collect_down_left f2 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "collect_down_left f3 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "walk_down_left fps/loop/count",
+			"pass": true
+		},
+		{
+			"check": "walk_down_left f0 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "walk_down_left f1 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "walk_down_left f2 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "walk_down_left f3 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "walk_down_left f4 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "walk_down_left f5 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "walk_down_left f6 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "walk_down_left f7 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "pose_down_left fps/loop/count",
+			"pass": true
+		},
+		{
+			"check": "pose_down_left f0 atlas import RGBA",
+			"pass": true
+		},
+		{
+			"check": "preview scene loads",
+			"pass": true
+		},
+		{
+			"check": "fixed root/Nearest",
+			"pass": true
+		},
+		{
+			"check": "actual collect observes0/1/2/3 and one finish",
+			"pass": true
+		},
+		{
+			"check": "original finish handler returns both sprites idle0",
+			"pass": true
+		},
+		{
+			"check": "collect last and idle0 actual imported RGBA same",
+			"pass": true
+		}
+	],
+	"display_server": "headless",
+	"engine": "4.7.2-stable (steam)",
+	"failed": [],
+	"finish_count": 1,
+	"finish_state": {
+		"animation": "idle_down_left",
+		"elapsed_ms": 641,
+		"frame": 0,
+		"native_animation": "idle_down_left",
+		"native_frame": 0,
+		"seen_collect_frames": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"passed": 27,
+	"scope": "Independent headless cold four resources/15regions and actual C1 collect single-finish->idle0 only; no GPU or author natural two-loop matrix",
+	"status": "PASS",
+	"total": 27
+}

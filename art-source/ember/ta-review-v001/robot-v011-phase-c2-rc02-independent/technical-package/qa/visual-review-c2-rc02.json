@@ -1,0 +1,31 @@
+{
+  "revision": "phase-c2-rc02",
+  "atlas_sha256": "0340a11ca59efdb18c64385fa24ec8faa833f0c3c6b056b5c6a97d3f3f5b4268",
+  "producer_review": "READY_FOR_INDEPENDENT_REVIEW",
+  "independent_art_acceptance": "PENDING_TA",
+  "scope": "Incremental SE collect F01/F02 outer elbow contour; two frames, three source pixels each",
+  "inherited_review": "qa/visual-review-c2-rc01.json; unaffected110 frame SHA matches original fixed candidate",
+  "viewed_contact_sheets": [
+    "qa/se_elbow_rc02_before_after_light_4x.png",
+    "qa/se_elbow_rc02_source_before_after_light_16x.png",
+    "qa/se_elbow_rc02_source_before_after_dark_16x.png"
+  ],
+  "observations": [
+    "The dark outer contour is continuous again in both reach and hold frames on the light background.",
+    "The six restored pixels are the original rigid-rig outline, not new drawing; both frames use the same three canvas points.",
+    "No other frame, identity master, source part, bone transform, foot, tool or timing changed.",
+    "Deep-background inspection and natural collect-to-idle recovery remain visually consistent."
+  ],
+  "browser_checks": [
+    "SE collect F01/F02 light, F02 dark at quarter speed; native and4x visible together.",
+    "Normal replay returned to idle. Screenshots are discrete evidence; one full-page dark capture failed, the viewport was inspected with getScreenshot."
+  ],
+  "browser_evidence": [
+    "qa/browser/phase_c2_rc02_se_collect_f01_light.png",
+    "qa/browser/phase_c2_rc02_se_collect_f02_light.png",
+    "qa/browser/phase_c2_rc02_se_return_idle_dark.png"
+  ],
+  "revision_evidence": "qa/se_elbow_rc02_revision.json",
+  "engine_playback_evidence": "qa/godot_full_actions_v011.json",
+  "art_scope_note": "TA requested this local P2 repair; overall C2 verdict still pending until its formal receipt."
+}

@@ -1,0 +1,208 @@
+{
+  "decision": "MOUSE_KEYBOARD_TECHNICAL_PASS_GAMEPAD_REPAIR_IN_V005",
+  "scope": "Declared UI v004: horizontal life, details, terminal, pause/settings/help, restart/title confirms, title/results/toast, dedicated host preview; no full-game/M0 acceptance.",
+  "fixed_zip_sha256": "cb61690d89244a2f8dc71d1905a0102399aa6ce063ff1c439d18a9727df8c194",
+  "package_integrity_checks": 348,
+  "runtime_replayed": {
+    "interactions": 153,
+    "lifecycle": 112,
+    "reuse": 53
+  },
+  "independent_runtime_checks": 44,
+  "runtime_total_replayed_and_independent": 362,
+  "independent_probe_sha256": "21f5e6b1459b9336eb7ec94dba3f628e80518246a0ce6ab495f381ac9c457205",
+  "layout_samples": 70,
+  "layout_geometry_errors": 0,
+  "legacy_safe_elision_notes": 26,
+  "gpu_captures": [
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/overview.png",
+      "sha256": "e9d702a604394707d3aacf20cae328a5129815e122a6d563ce6c5b87dae90d24",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/hud.png",
+      "sha256": "4de81241b6acd0c2983206ee589ac9ef4500f464b6af6781028b92093598b8c6",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/details.png",
+      "sha256": "7f30b880e5790d5d109418733668f3023bbe68d1025a530f0589be922124af24",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/pause.png",
+      "sha256": "a66629495f9c47c42bdc2b0535ff5554124e9025dde5d797b5d4beb50579b26b",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/settings.png",
+      "sha256": "fee73c3d1d36dc2836cbb6bf3b27c4cab21fb6fb23b1c26395f682c7c0116f92",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/help.png",
+      "sha256": "d8ad2ac2d3d23a4116ae431b338cfaef264f6e2fb1c647dfebcd71f2bc4edf9c",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/confirm_restart.png",
+      "sha256": "6edb688462717506b2b9b70ba7bae5a0ebd56bba685fc7cb2d0d23762c820286",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/confirm_title.png",
+      "sha256": "8f06c73c170d8af9e082929ce8ef01b93a5acf4d32fdb18f27fd2a4fae0778b0",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/title.png",
+      "sha256": "b3b86512bca136a5cf2d5d8c642a5144afaeabfedcf6ab32bd96ca59606d2758",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/success.png",
+      "sha256": "cd42f558b9fdce1c5e399670c827b688051e1bbf66e60ee8ea42ec95b33f68d8",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/failure.png",
+      "sha256": "f6b04923b657a902c0d0702be08dbc58135b7bae3801f30e0cff217b2b564c2e",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/terminal.png",
+      "sha256": "7e63b548f2a8d9219ddb278559dccedfe806cc0cb3eaf0ec6e5f5739a29a4fb2",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/toast.png",
+      "sha256": "6820bd69df3b40d6e4205325f0a02667e7892c3e97c6dc602fae02df093fe03c",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    },
+    {
+      "path": "res://art-source/ember/ui-interactions-v004/previews/compact_settings_320x480.png",
+      "sha256": "9a7fce187ccff907456f3d6910a6a08b8792835d6d37756e60f15b4c0561a315",
+      "matches_capture_report": true,
+      "matches_original_fixed_capture": true
+    }
+  ],
+  "gpu_capture_count": 14,
+  "gpu_capture_sha_equal_to_original_count": 14,
+  "protected_source_after_review": [
+    {
+      "path": "scenes/m0/energy_station.gd",
+      "unchanged": true
+    },
+    {
+      "path": "scenes/ember/map_assets_tidal_port_v001.tscn",
+      "unchanged": true
+    },
+    {
+      "path": "project.godot",
+      "unchanged": true
+    },
+    {
+      "path": "scenes/m0/ui.gd",
+      "unchanged": true
+    },
+    {
+      "path": "scenes/m0/ember_harvest.gd",
+      "unchanged": true
+    }
+  ],
+  "source_bound_after_review": [
+    {
+      "path": "res://scripts/ember/ui_edge_v001/edge_hud.gd",
+      "cold_matches_frozen_v004": true,
+      "workspace_matches_frozen_v004": true
+    },
+    {
+      "path": "res://scripts/ember/ui_edge_v001/life_indicator.gd",
+      "cold_matches_frozen_v004": true,
+      "workspace_matches_frozen_v004": true
+    },
+    {
+      "path": "res://scripts/ember/ui_edge_v004/interaction_ui.gd",
+      "cold_matches_frozen_v004": true,
+      "workspace_matches_frozen_v004": false
+    },
+    {
+      "path": "res://scripts/ember/ui_edge_v004/interactive_preview.gd",
+      "cold_matches_frozen_v004": true,
+      "workspace_matches_frozen_v004": true
+    },
+    {
+      "path": "res://scripts/ember/ui_edge_v004/modal_window.gd",
+      "cold_matches_frozen_v004": true,
+      "workspace_matches_frozen_v004": true
+    },
+    {
+      "path": "res://scripts/ember/ui_edge_v004/toast.gd",
+      "cold_matches_frozen_v004": true,
+      "workspace_matches_frozen_v004": true
+    }
+  ],
+  "stderr_logs": [
+    {
+      "path": "cold-import.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "gamepad-repro.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "gpu-capture.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "independent-probe.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "probe_ui_edge_layout_v002.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "validate_ui_edge_lifecycle_v003.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "validate_ui_edge_reuse_v002.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "validate_ui_interactions_v004.stderr.log",
+      "bytes": 0
+    }
+  ],
+  "blocking_findings": [
+    {
+      "priority": "P2",
+      "scope": "v004 real gamepad A/B",
+      "reproduction": "ta-ui-probe/gamepad-v004-repro.json",
+      "result": "A does not open focused details; B does not close pause. Built-in ui_accept/ui_cancel contain only keyboard events. Producer submitted v005 local mapping repair."
+    }
+  ],
+  "nonblocking_limits": [
+    "Windows system CJK fonts; other platforms not claimed.",
+    "Dedicated UI host preview, not a full movement/collision game.",
+    "Existing safe text elision / minimum-width notes in legacy components remain bounded behavior."
+  ],
+  "visual_acceptance": "PRIMARY_ART_REVIEW_SEPARATE",
+  "review_writes_only": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\ui-v004-independent\\technical"
+}

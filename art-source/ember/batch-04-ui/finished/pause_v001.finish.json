@@ -1,0 +1,65 @@
+{
+  "id": "pause",
+  "method": "AI_BODY_MATERIAL_SAMPLING_NATIVE_SEMANTIC_PIXEL_FINISH",
+  "source_use": {
+    "mother": "art-source/ember/batch-04-ui/generated/pause_master_v001.png",
+    "mother_sha256": "8b0042d18fef3c0a05bf30f015dbb90a08c3c91ecd8a4ef8d399701ec704307d",
+    "source_unchanged": true,
+    "direct_original_rgba_byte_reuse": false,
+    "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+    "sampling": {
+      "source_alpha_threshold": 128,
+      "source_body_bbox": [
+        267,
+        283,
+        989,
+        972
+      ],
+      "material_grid_size": [
+        24,
+        23
+      ],
+      "material_grid_origin": [
+        4,
+        4
+      ],
+      "native_semantic_changed_pixels": 124
+    }
+  },
+  "adjustments": [
+    "保留母稿钢板底座；去掉暂停条中的渐变碎粒",
+    "重建等宽4px暂停条，条间4px暗间隙，顶端1px亮边"
+  ],
+  "native_pixel_source": "art-source/ember/batch-04-ui/annotations/pause_native_pixel_source_v001.json",
+  "measurement": {
+    "canvas": [
+      32,
+      32
+    ],
+    "bbox": [
+      4,
+      4,
+      28,
+      27
+    ],
+    "opaque_pixels": 462,
+    "transparent_pixels": 562,
+    "partial_alpha_pixels": 0,
+    "color_count": 11,
+    "palette_rgb": [
+      "#101820",
+      "#182631",
+      "#2B3E4B",
+      "#4D6470",
+      "#566B78",
+      "#7B4D35",
+      "#829BA3",
+      "#B77C4B",
+      "#BECBC4",
+      "#E2B77A",
+      "#ECE9D8"
+    ],
+    "all_opaque_colors_in_standard16": true
+  },
+  "output_sha256": "575ac144805cc8cfc533060c87409e40057de2907da5cd5aace4a0ab82a23bc9"
+}

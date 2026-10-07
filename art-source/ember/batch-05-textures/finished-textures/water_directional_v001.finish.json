@@ -1,0 +1,97 @@
+{
+  "id": "water_directional",
+  "source": "art-source/ember/batch-05-textures/generated/water_directional_master_v001.png",
+  "source_sha256": "6c7b396468f1d05337052a78f8834db2d25af01a151f6943fca06b8d089ca6ff",
+  "prompt": "art-source/ember/batch-05-textures/prompts/water_directional_v001.txt",
+  "output": "art-source/ember/batch-05-textures/finished-textures/water_directional_v001.png",
+  "output_sha256": "2f3d48baa11688f3f37caa230415b32cef4aa5603e1301662ce5b3b2c32b2e38",
+  "process": {
+    "source_crop": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "source_reference_canvas": [
+      1254,
+      1254
+    ],
+    "native_quantization": "source luminance cluster quantiles, fixed palette, no dithering",
+    "quantile_thresholds": [
+      56.3428,
+      59.3428
+    ],
+    "palette_subset": [
+      "#203A4B",
+      "#2B3E4B",
+      "#406B78"
+    ],
+    "sample_filter": "BOX to native grid then 3x3 median",
+    "isolated_native_pixels_removed": 7,
+    "seam_band_pixels": 3,
+    "before_boundary_repair": {
+      "X": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 18,
+        "max_channel_delta": 49,
+        "mean_absolute_channel_delta": 3.480469
+      },
+      "Y": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 24,
+        "max_channel_delta": 49,
+        "mean_absolute_channel_delta": 3.140625
+      }
+    },
+    "directional_lighting_baked": false,
+    "source_use": "AI_MATERIAL_PATTERN_REFERENCE_WITH_NATIVE_GRID_RECONSTRUCTION"
+  },
+  "measurement": {
+    "canvas": [
+      64,
+      64
+    ],
+    "mode": "RGB",
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "alpha_zero": 0,
+    "alpha_partial": 0,
+    "alpha_opaque": 4096,
+    "visible_rgb_count": 3,
+    "palette_off_pixels": 0,
+    "edges": {
+      "X": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      },
+      "Y": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      }
+    }
+  },
+  "anchor": [
+    0,
+    0
+  ],
+  "tiling": "XY",
+  "runtime_layout": {
+    "layer_convention": "STATIC_SINGLE_FLATTENED_BASE",
+    "emitter_points": [],
+    "emission_baked": false,
+    "pbr_derived_maps": "NOT_PRODUCED",
+    "height_weight_map": "NOT_PRODUCED"
+  },
+  "source_use": "AI_MATERIAL_PATTERN_REFERENCE_WITH_NATIVE_GRID_RECONSTRUCTION",
+  "producer_visual_status": "PRODUCER_VISUAL_REVIEW_PASS_ONLY",
+  "independent_visual_status": "PENDING_ROOT_OR_OTHER_AGENT_REVIEW",
+  "producer_visual_observation": "水平拉长纹样比calm更明确；原生3色，3x3连续，无箭头或发光。"
+}

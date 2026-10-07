@@ -1,0 +1,116 @@
+--- v005/scripts/ember/ui_edge_v004/interaction_ui.gd
++++ v006/scripts/ember/ui_edge_v004/interaction_ui.gd
+@@ -376,6 +376,14 @@
+ 	slider.add_theme_stylebox_override("grabber_area_highlight", fill)
+ 	slider.add_theme_icon_override("grabber", STYLE.skin("bracket_corner_16"))
+ 	slider.add_theme_icon_override("grabber_highlight", STYLE.skin("bracket_corner_16"))
++	# 轨道和抓手保留原造型。独立角层表示键盘/手柄焦点，不能只改变值。
++	var focus_overlay := STYLE.panel(slider, "button_focus_96")
++	focus_overlay.name = "FocusOverlay"
++	focus_overlay.modulate = Color("51c5c2")
++	focus_overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
++	focus_overlay.visible = slider.has_focus()
++	slider.focus_entered.connect(func(): focus_overlay.show())
++	slider.focus_exited.connect(func(): focus_overlay.hide())
+ 
+ func _layout() -> void:
+ 	if not _built:
+--- v005/scripts/ember/ui_edge_v004/modal_window.gd
++++ v006/scripts/ember/ui_edge_v004/modal_window.gd
+@@ -83,12 +83,26 @@
+ 	body.add_child(button)
+ 	button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+ 	button.pressed.connect(callback)
++	button.focus_entered.connect(_queue_reveal_focus)
+ 	controls.append(button)
+ 	return button
+ 
+ func register_control(control: Control) -> void:
+ 	controls.append(control)
+ 	control.focus_mode = Control.FOCUS_ALL
++	control.focus_entered.connect(_queue_reveal_focus)
++
++func _queue_reveal_focus() -> void:
++	# 跨Viewport重挂后也从当前Viewport读取焦点，不依赖旧视口的focus信号连接。
++	# 只在焦点变化时滚动；不逐帧吸回，用户仍可自由用滚轮查看正文。
++	_reveal_focus.call_deferred()
++
++func _reveal_focus() -> void:
++	if not is_inside_tree() or not is_visible_in_tree():
++		return
++	var focused := get_viewport().gui_get_focus_owner()
++	if focused != null and scroll.is_ancestor_of(focused) and focused.is_visible_in_tree():
++		scroll.ensure_control_visible(focused)
+ 
+ func focus_first(identifier: String = "") -> void:
+ 	if not visible or not is_inside_tree():
+--- v005/tools/capture_ui_interactions_v004.gd
++++ v006/tools/capture_ui_interactions_v004.gd
+@@ -46,6 +46,27 @@
+ 			demo.ui._build_page()
+ 		await _draw()
+ 		_save(right,String(page)+".png")
++		if page == "settings":
++			var slider: HSlider = demo.ui.window.body.get_node("SafeMargin")
++			slider.grab_focus()
++			await _draw()
++			_save(right,"settings_slider_focused_720.png")
++			var focused := right.get_texture().get_image()
++			var focused_has_focus := slider.has_focus()
++			var slider_rect := Rect2i(slider.get_global_rect())
++			demo.ui.window.body.get_node("Markers").grab_focus()
++			await _draw()
++			_save(right,"settings_slider_unfocused_720.png")
++			var unfocused := right.get_texture().get_image()
++			var changed := 0
++			for y in range(slider_rect.position.y,slider_rect.end.y):
++				for x in range(slider_rect.position.x,slider_rect.end.x):
++					if focused.get_pixel(x,y) != unfocused.get_pixel(x,y):
++						changed += 1
++			var focus_report := {"status":"PASS" if focused_has_focus and not slider.has_focus() and changed > 0 else "FAIL","focused_has_focus":focused_has_focus,"unfocused_has_focus":slider.has_focus(),"same_value":slider.value,"roi":[slider_rect.position.x,slider_rect.position.y,slider_rect.size.x,slider_rect.size.y],"changed_pixels":changed}
++			var evidence := FileAccess.open(OUT+"../slider-focus-validation.json",FileAccess.WRITE)
++			evidence.store_string(JSON.stringify(focus_report,"\t"))
++			evidence.close()
+ 	demo.ui.close_all()
+ 	demo.apply_example(0,true,2,145,78,true)
+ 	await _draw()
+--- v005/tools/probe_ui_interaction_navigation_v004.gd
++++ v006/tools/probe_ui_interaction_navigation_v004.gd
+@@ -44,6 +44,10 @@
+ 		return
+ 	var slider := ui.window.body.get_node("SafeMargin") as HSlider
+ 	slider.grab_focus()
++	_check("slider.focus_overlay_visible", slider.get_node("FocusOverlay").visible and slider.get_node("FocusOverlay").mouse_filter == Control.MOUSE_FILTER_IGNORE)
++	ui.window.body.get_node("Markers").grab_focus()
++	_check("slider.focus_overlay_hidden_when_unfocused", not slider.get_node("FocusOverlay").visible)
++	slider.grab_focus()
+ 	_joy(JOY_BUTTON_DPAD_RIGHT)
+ 	_check("joy.slider_edit", slider.value == 40)
+ 	_joy(JOY_BUTTON_B)
+@@ -64,6 +68,26 @@
+ 	_check("modal.reparent_resizes", ui.size == Vector2(960,540) and Rect2(Vector2.ZERO,Vector2(960,540)).encloses(ui.window.panel.get_global_rect()))
+ 	ui.close_all()
+ 	_check("modal.close_after_reparent", not ui.is_blocking() and not ui.window.visible)
++	# 小屏自动滚动后的取消仍可达，焦点角层不能挡住滑条/滚动输入。
++	second.size = Vector2i(320,480)
++	await process_frame
++	await process_frame
++	ui._open("settings",false,true)
++	await process_frame
++	await process_frame
++	await process_frame
++	var cancel: Button = ui.window.body.get_node("Cancel")
++	ui.window.close_button.grab_focus()
++	for pressed in [true,false]:
++		var tab := InputEventKey.new()
++		tab.keycode = KEY_TAB
++		tab.shift_pressed = true
++		tab.pressed = pressed
++		second.push_input(tab,true)
++	await process_frame
++	await process_frame
++	await process_frame
++	_check("compact.cancel_focus_scrolls_inside", cancel.has_focus() and ui.window.scroll.get_global_rect().encloses(cancel.get_global_rect()))
+ 	var failures := checks.filter(func(item: Dictionary): return not item["pass"])
+ 	var report := {"status":"PASS" if failures.is_empty() else "FAIL","check_count":checks.size(),"checks":checks,"failures":failures,"ui_source_sha256":FileAccess.get_sha256("res://scripts/ember/ui_edge_v004/interaction_ui.gd")}
+ 	var output := FileAccess.open("res://art-source/ember/ui-interactions-v004/navigation-supplement.json",FileAccess.WRITE)

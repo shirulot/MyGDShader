@@ -1,0 +1,23 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/door/door_closed_v001.png" id="1_p0e7k"]
+[ext_resource type="Texture2D" path="res://assets/ember/buildings/door/door_open_v001.png" id="2_uyuav"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_p0e7k")
+}],
+"loop": 1,
+"name": &"closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_uyuav")
+}],
+"loop": 1,
+"name": &"open",
+"speed": 1.0
+}]

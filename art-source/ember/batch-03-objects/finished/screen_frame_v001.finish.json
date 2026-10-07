@@ -1,0 +1,150 @@
+{
+  "id": "screen_frame",
+  "manifest_id": "B10",
+  "file": "art-source/ember/batch-03-objects/finished/screen_frame_v001.png",
+  "production_file": "res://assets/ember/buildings/terminal/screen_frame_v001.png",
+  "sha256": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+  "size": [
+    96,
+    96
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/screen_frame_v001.finish.json",
+  "canvas": [
+    96,
+    96
+  ],
+  "bbox": [
+    16,
+    16,
+    80,
+    80
+  ],
+  "anchor": [
+    48,
+    80
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 10,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/screen_frame/foundation_body.png",
+      "sha256": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+      "z_index": 0,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false,
+    "stretch": "nine_slice",
+    "source_region": [
+      16,
+      16,
+      80,
+      80
+    ],
+    "source_region_convention": "[x0,y0,x1,y1)",
+    "slice_region": [
+      16,
+      16,
+      64,
+      64
+    ],
+    "slice_region_convention": "[x,y,width,height]",
+    "slice_margins": {
+      "left": 8,
+      "top": 8,
+      "right": 8,
+      "bottom": 8
+    },
+    "center_rect": [
+      24,
+      24,
+      72,
+      72
+    ],
+    "draw_center": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/screen_frame_master_v001.png",
+    "master_sha256": "c6ea66ec6ae879a8a30e4a6aef2314e3f46af64ef94f3f9d7cc89758232ca3f6",
+    "prompt": "prompts/screen_frame.txt",
+    "prompt_sha256": "4f9c72864fa9f6107e53e9307bd4520de5117aaf292c2be76d91ae53f35d4ca0",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-d07c2b93-53ab-4b84-b89d-a70fa3f47a58.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        187,
+        208,
+        1067,
+        1046
+      ],
+      "material_sampling_size": [
+        64,
+        61
+      ],
+      "native_origin": [
+        16,
+        19
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 3,
+      "native_outline_pixels_corrected": 181,
+      "native_reconstruction_file": "layers/screen_frame_native.png",
+      "native_reconstruction_sha256": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+      "native_reconstruction_record": "art-source/ember/batch-03-objects/annotations/architectural-rebuild-record.json",
+      "native_reconstruction_record_sha256": "756782618233937624d6ed8d6af9f7ee3f5c3247241c7efaf68a4a61a04d299d",
+      "source_pixel_use": "sampled draft material/design parts plus explicit structural native redraw; no final whole image resize"
+    },
+    "native_adjustments": [
+      "NATIVE_NINE_SLICE_REBUILD: 保留4个实际8px不同光照角块；重画恒厚8px材质截面，不镜像光照",
+      "原生source region [16,16,80,80)为64×64；slice_region使用[x,y,w,h]=[16,16,64,64]，四边8px",
+      "中心[24,24,72,72)完整真透明，draw_center=false；完整96画布四边16px，不把留白当九宫格边条"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [],
+  "observations": "实际母稿四个陶瓷铜栓角、钢灰边条和透空中心；母稿边宽不完全一致，原生草案64×61，需要九宫格结构整理。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

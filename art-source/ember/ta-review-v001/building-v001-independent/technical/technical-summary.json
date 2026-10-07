@@ -1,0 +1,25 @@
+{
+  "status": "NEEDS_REVISION",
+  "archive_sha256": "5870774d53e2010158523021661cf30a560386fe2826c39a66845d8e7e45dbc1",
+  "source_assets_count": 47,
+  "source_status": "PASS",
+  "interaction_check_count": 148,
+  "interaction_status": "PASS",
+  "independent_check_count": 41,
+  "independent_failure_count": 2,
+  "findings": [
+    {
+      "priority": "P2",
+      "file": "scripts/ember/building_demo_v001.gd",
+      "line": 120,
+      "root_cause": "Stale pre-load actor rects mutate restored door target before player position is restored",
+      "failed_checks": [
+        "demo.load_preserves_saved_closing_target",
+        "demo.old_occupancy_does_not_reopen_after_load"
+      ]
+    }
+  ],
+  "runtime_sha256": "afeadbe72d0815a6c39b5afce47645bbba5e86306a8163f34707919d7f284814",
+  "demo_sha256": "1e5b22e469312237b9ea348e32e00a36ea8b991824107e88df288c7af73dcea2",
+  "review": "review-technical.md"
+}

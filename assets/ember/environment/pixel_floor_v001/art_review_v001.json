@@ -1,0 +1,34 @@
+{
+  "reviewer": "root",
+  "material_revision": "v002",
+  "visual_status": "USER_REJECTED_STYLE",
+  "user_feedback": "和你的效果图差的有点远；按做完可以直接拼成效果图的标准生成。",
+  "user_accepted": false,
+  "reference": "res://art-source/ember/pixel-standard-v002/previews/scene_preview_v001.png",
+  "reviewed": [
+    "material_sample_4x_v002.png",
+    "facade_sample_4x_v001.png",
+    "connected_floor_review_native_v002.png",
+    "gpu_scene_showcase_1x_v001.png",
+    "gpu_landing_south_4x_v001.png"
+  ],
+  "corrections": [
+    "Actual AI material sampling replaces broad repeated colour blocks and flat edge bands.",
+    "Warm grey coping, darker bridge grating and independent sparse details follow the approved scene.",
+    "Derived 16px south facade adds platform thickness without changing floor occupancy.",
+    "South bridge remains open across the complete 24px corridor and facade height; 4px shoulders remain."
+  ],
+  "resolved_code_findings": [
+    "Prune unsupported overlays before calculating masks.",
+    "Preserve explicit seam path ports during layer adoption.",
+    "Normalize floor/bridge overlap with floor priority.",
+    "Keep native Floor source0 and render ordinary context on FloorLanding.",
+    "Explicitly notify empty Terrain after native API erase."
+  ],
+  "limitations": [
+    "The approved concept contains walls, pipes, rails, water and lighting beyond this floor pack.",
+    "Facade is a south-facing visual projection with no collision or navigation.",
+    "Showcase water colour is preview background only.",
+    "Actual editor GUI UndoRedo was not exercised; runtime undo/redo and API synchronization were exercised."
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "scope": "Independent numeric extraction from fixed rig pose ledger, not a fresh GPU or video judgement",
+  "source_rule": {
+    "phase": [
+      1,
+      0.6,
+      0,
+      -0.6,
+      -1,
+      -0.6,
+      0,
+      0.6
+    ],
+    "same_side_arm_leg_phase": "k=(frame+(side==left?0:4))%8",
+    "leg_x_request": "end.x+forward.x*2*phase[k]",
+    "arm_angle": "-phase[k]*0.25 regardless forward.x"
+  },
+  "directions": [
+    {
+      "direction": "up_left",
+      "forward": [
+        -1,
+        -0.34
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sides": {
+            "left": {
+              "wrist": [
+                21.238822020857842,
+                58.712921486949725
+              ],
+              "ankle": [
+                23,
+                71.49
+              ],
+              "wrist_dx_from_neutral": 2.2388220208578424,
+              "ankle_dx_from_neutral": -2,
+              "wrist_dy_removing_body_bob": 0.012921486949724725,
+              "ankle_dy_ground_from_neutral": -0.5100000000000051
+            },
+            "right": {
+              "wrist": [
+                42.00858193839669,
+                57.744009065239084
+              ],
+              "ankle": [
+                40.99836142063465,
+                72.50081849362284
+              ],
+              "wrist_dx_from_neutral": -1.9914180616033121,
+              "ankle_dx_from_neutral": 1.9983614206346516,
+              "wrist_dy_removing_body_bob": 0.044009065239083656,
+              "ankle_dy_ground_from_neutral": 0.5008184936228446
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "sides": {
+            "left": {
+              "wrist": [
+                16.82335313572087,
+                58.21811356844067
+              ],
+              "ankle": [
+                27,
+                72.51
+              ],
+              "wrist_dx_from_neutral": -2.1766468642791317,
+              "ankle_dx_from_neutral": 2,
+              "wrist_dy_removing_body_bob": -0.48188643155932875,
+              "ankle_dy_ground_from_neutral": 0.5100000000000051
+            },
+            "right": {
+              "wrist": [
+                45.9292429050246,
+                57.24920114673003
+              ],
+              "ankle": [
+                37,
+                71.49
+              ],
+              "wrist_dx_from_neutral": 1.9292429050246014,
+              "ankle_dx_from_neutral": -2,
+              "wrist_dy_removing_body_bob": -0.4507988532699698,
+              "ankle_dy_ground_from_neutral": -0.5100000000000051
+            }
+          }
+        }
+      ],
+      "rig_json_sha256": "c547d87f27ef7f580228b1700c164f9e313702c777d969a680624cc1ab275ed7"
+    },
+    {
+      "direction": "up",
+      "forward": [
+        0,
+        -0.4
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sides": {
+            "left": {
+              "wrist": [
+                20.22564792404817,
+                58.551135712567074
+              ],
+              "ankle": [
+                24,
+                71.4
+              ],
+              "wrist_dx_from_neutral": 2.2256479240481717,
+              "ankle_dx_from_neutral": 0,
+              "wrist_dy_removing_body_bob": -0.1488642874329258,
+              "ankle_dy_ground_from_neutral": -0.5999999999999943
+            },
+            "right": {
+              "wrist": [
+                42.74326449766248,
+                58.7985396718216
+              ],
+              "ankle": [
+                39,
+                72.6
+              ],
+              "wrist_dx_from_neutral": -2.25673550233752,
+              "ankle_dx_from_neutral": 0,
+              "wrist_dy_removing_body_bob": 0.09853967182160095,
+              "ankle_dy_ground_from_neutral": 0.5999999999999943
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "sides": {
+            "left": {
+              "wrist": [
+                15.8101790389112,
+                58.37989934282332
+              ],
+              "ankle": [
+                24,
+                72.6
+              ],
+              "wrist_dx_from_neutral": -2.1898209610888006,
+              "ankle_dx_from_neutral": 0,
+              "wrist_dy_removing_body_bob": -0.32010065717667824,
+              "ankle_dy_ground_from_neutral": 0.5999999999999943
+            },
+            "right": {
+              "wrist": [
+                47.15873338279945,
+                58.1324953835688
+              ],
+              "ankle": [
+                39,
+                71.4
+              ],
+              "wrist_dx_from_neutral": 2.158733382799447,
+              "ankle_dx_from_neutral": 0,
+              "wrist_dy_removing_body_bob": -0.5675046164311979,
+              "ankle_dy_ground_from_neutral": -0.5999999999999943
+            }
+          }
+        }
+      ],
+      "rig_json_sha256": "a78c65c8a3f2425b92f5681380e074a4a99dc7e7b4513e86342070fc770e212f"
+    },
+    {
+      "direction": "up_right",
+      "forward": [
+        1,
+        -0.34
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sides": {
+            "left": {
+              "wrist": [
+                20.816458190411,
+                55.595397387666104
+              ],
+              "ankle": [
+                26,
+                70.49
+              ],
+              "wrist_dx_from_neutral": 1.8164581904110015,
+              "ankle_dx_from_neutral": 2,
+              "wrist_dy_removing_body_bob": -0.10460261233389612,
+              "ankle_dy_ground_from_neutral": -0.5100000000000051
+            },
+            "right": {
+              "wrist": [
+                36.97749436010733,
+                57.991413024493596
+              ],
+              "ankle": [
+                33,
+                72.51
+              ],
+              "wrist_dx_from_neutral": -2.022505639892671,
+              "ankle_dx_from_neutral": -2,
+              "wrist_dy_removing_body_bob": 0.2914130244935962,
+              "ankle_dy_ground_from_neutral": 0.5100000000000051
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "sides": {
+            "left": {
+              "wrist": [
+                17.219368772548364,
+                55.42416101792235
+              ],
+              "ankle": [
+                22,
+                71.51
+              ],
+              "wrist_dx_from_neutral": -1.7806312274516358,
+              "ankle_dx_from_neutral": -2,
+              "wrist_dy_removing_body_bob": -0.27583898207764856,
+              "ankle_dy_ground_from_neutral": 0.5100000000000051
+            },
+            "right": {
+              "wrist": [
+                40.89815532673525,
+                57.0017971874755
+              ],
+              "ankle": [
+                37,
+                71.49
+              ],
+              "wrist_dx_from_neutral": 1.8981553267352496,
+              "ankle_dx_from_neutral": 2,
+              "wrist_dy_removing_body_bob": -0.6982028125244966,
+              "ankle_dy_ground_from_neutral": -0.5100000000000051
+            }
+          }
+        }
+      ],
+      "rig_json_sha256": "d1bf144738b55095ab51146cd54c92a9e34539d89097ba24b4e88274976c34c1"
+    },
+    {
+      "direction": "down_right",
+      "forward": [
+        1,
+        0.34
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sides": {
+            "left": {
+              "wrist": [
+                45.9292429050246,
+                57.24920114673003
+              ],
+              "ankle": [
+                39,
+                71.51
+              ],
+              "wrist_dx_from_neutral": 1.9292429050246014,
+              "ankle_dx_from_neutral": 2,
+              "wrist_dy_removing_body_bob": -0.4507988532699698,
+              "ankle_dy_ground_from_neutral": 0.5100000000000051
+            },
+            "right": {
+              "wrist": [
+                15.841266617200553,
+                58.1324953835688
+              ],
+              "ankle": [
+                23,
+                71.49
+              ],
+              "wrist_dx_from_neutral": -2.158733382799447,
+              "ankle_dx_from_neutral": -2,
+              "wrist_dy_removing_body_bob": -0.5675046164311979,
+              "ankle_dy_ground_from_neutral": -0.5100000000000051
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "sides": {
+            "left": {
+              "wrist": [
+                42.00858193839669,
+                57.744009065239084
+              ],
+              "ankle": [
+                35,
+                70.49
+              ],
+              "wrist_dx_from_neutral": -1.9914180616033121,
+              "ankle_dx_from_neutral": -2,
+              "wrist_dy_removing_body_bob": 0.044009065239083656,
+              "ankle_dy_ground_from_neutral": -0.5100000000000051
+            },
+            "right": {
+              "wrist": [
+                20.256735502337527,
+                58.7985396718216
+              ],
+              "ankle": [
+                27,
+                72.51
+              ],
+              "wrist_dx_from_neutral": 2.256735502337527,
+              "ankle_dx_from_neutral": 2,
+              "wrist_dy_removing_body_bob": 0.09853967182160095,
+              "ankle_dy_ground_from_neutral": 0.5100000000000051
+            }
+          }
+        }
+      ],
+      "rig_json_sha256": "ae9056a795ef02155a7aa8ad3ef5e756f28fb0f1b5da1505948501a6b74995c1"
+    }
+  ]
+}

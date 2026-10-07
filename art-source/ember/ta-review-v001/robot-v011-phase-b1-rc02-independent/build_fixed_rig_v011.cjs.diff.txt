@@ -1,0 +1,9 @@
+--- rc01/build_fixed_rig_v011.cjs
++++ rc02/build_fixed_rig_v011.cjs
+@@ -169,5 +169,5 @@
+   await fs.writeFile(path.join(ROOT,`qa/${direction}_fixed_rig_v011.json`),JSON.stringify(report,null,2)+'\n');
+   console.log(JSON.stringify({direction,neutralMismatch,parts:partEntries.length,frames:entries.length,ikWarnings:states.flatMap(s=>s.notes)}));
+ }
+-module.exports={rigs,extractParts,pose,render,stamp,contact,png};
++module.exports={rigs,extractParts,pose,render,stamp,contact,png,solveTwoBone,matrixBetween};
+ if(require.main===module)run().catch(e=>{console.error(e);process.exitCode=1;});

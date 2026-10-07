@@ -1,0 +1,121 @@
+{
+  "direction": "right",
+  "state": "walk",
+  "frame_index": 1,
+  "idle_source": "art-source/ember/batch-02-robot/finished-frames/robot_idle_right_v001.png",
+  "parts_file": "annotations/rig_right_v002.json",
+  "design_observation": "实际4母稿逐项观看；造型材料语汇相同但头身/维护槽/相位有漂移，用确认方向idle保持一致",
+  "tool_hand_observation": "黄铜维修接口在屏幕右上方的远侧左腕，部分被身体遮挡；同一解剖左手，禁止为了更显眼移到近侧空手。",
+  "pose_observation": "f01母稿近侧靴最低、远侧靴前伸，实际经过/接触语义混杂；原生让近侧右脚抬2px经过。",
+  "adjustments": [
+    "AI_POSE_INCONSISTENCY: 观察到的模型phase/头身/装甲漂移逐帧如实记录",
+    "NATIVE_CORRECTIVE_COMPOSITING: 用确认方向idle的显式像素部件、不同近远zorder和局部关节修补",
+    "四phase明确接触/经过两脚交替；脚1–2px、摆臂1px、头身起伏1px；不整图warp/镜像",
+    "相机侧视的远近足底高度不同；虚拟地面原点固定(32,80)，抬脚可使可见底界78..80",
+    "V002_SOURCE_REPAIR: semantic boot/pelvis rig reassignment and individually drawn native joint pixels; original body shape, palette, gait offsets and draw order preserved."
+  ],
+  "offsets": {
+    "head": [
+      0,
+      -1
+    ],
+    "torso": [
+      0,
+      -1
+    ],
+    "left_arm": [
+      0,
+      -1
+    ],
+    "right_arm": [
+      0,
+      -1
+    ],
+    "left_leg": [
+      0,
+      0
+    ],
+    "right_leg": [
+      0,
+      -2
+    ]
+  },
+  "draw_order": [
+    "left_leg",
+    "left_arm",
+    "torso",
+    "right_leg",
+    "right_arm",
+    "head"
+  ],
+  "patches": [
+    {
+      "type": "pixel",
+      "at": [
+        29,
+        45
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        29,
+        46
+      ],
+      "color": 1
+    },
+    {
+      "type": "pixel",
+      "at": [
+        34,
+        58
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        33,
+        60
+      ],
+      "color": 1
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "chest_status",
+      "safe_active_rect": [
+        36,
+        48,
+        38,
+        50
+      ],
+      "center": [
+        37,
+        49
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.578125,
+        0.5104166666666666
+      ],
+      "mask_delivery_status": "NOT_PRODUCED",
+      "visibility": "PARTIAL_SIDE_VIEW"
+    }
+  ],
+  "gait": {
+    "support_leg": "left",
+    "lifted_leg": "right",
+    "phase": "right_passing",
+    "camera_depth": "right侧视：right_leg近側靴最低79，left_leg远侧靴投影较高；f01近侧抬2px时bbox末端78，原点不动",
+    "virtual_ground_anchor": [
+      32,
+      80
+    ]
+  },
+  "repair_version": "v002",
+  "source_annotation": "art-source/ember/batch-02-robot/annotations/walk_right_f01.json",
+  "source_annotation_sha256": "29822a3eafa8221da39bc6aabbdcf031bf533518b0a042c23dcbb6546c700574",
+  "repair_edits": []
+}

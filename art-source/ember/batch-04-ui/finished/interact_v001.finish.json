@@ -1,0 +1,65 @@
+{
+  "id": "interact",
+  "method": "AI_BODY_MATERIAL_SAMPLING_NATIVE_SEMANTIC_PIXEL_FINISH",
+  "source_use": {
+    "mother": "art-source/ember/batch-04-ui/generated/interact_master_v001.png",
+    "mother_sha256": "4d14c600476a87793fba5ca01240acd0a1d910788736ccabf9804673d38437b5",
+    "source_unchanged": true,
+    "direct_original_rgba_byte_reuse": false,
+    "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+    "sampling": {
+      "source_alpha_threshold": 128,
+      "source_body_bbox": [
+        361,
+        299,
+        941,
+        998
+      ],
+      "material_grid_size": [
+        20,
+        24
+      ],
+      "material_grid_origin": [
+        6,
+        4
+      ],
+      "native_semantic_changed_pixels": 81
+    }
+  },
+  "adjustments": [
+    "保留机械手掌/拇指与关节材料，不替换为文字或emoji手",
+    "将开关重建到右上8×8，指尖以2px陶瓷线连至开关，留下深关节"
+  ],
+  "native_pixel_source": "art-source/ember/batch-04-ui/annotations/interact_native_pixel_source_v001.json",
+  "measurement": {
+    "canvas": [
+      32,
+      32
+    ],
+    "bbox": [
+      6,
+      4,
+      28,
+      28
+    ],
+    "opaque_pixels": 285,
+    "transparent_pixels": 739,
+    "partial_alpha_pixels": 0,
+    "color_count": 11,
+    "palette_rgb": [
+      "#101820",
+      "#182631",
+      "#203A4B",
+      "#2B3E4B",
+      "#4D6470",
+      "#566B78",
+      "#829BA3",
+      "#B77C4B",
+      "#BECBC4",
+      "#E2B77A",
+      "#ECE9D8"
+    ],
+    "all_opaque_colors_in_standard16": true
+  },
+  "output_sha256": "7b770b8ddb0bb385cdabd139efb7f148ecbe9cfd93ab0de61b36f947d9940776"
+}

@@ -1,0 +1,109 @@
+{
+  "observations": "实际母稿有水平左右黄铜接头、圆泵壳、上部电机与基座；原生管口为黄铜块，需补可辨深色接口，中心小表窗保留。",
+  "adjustments": [
+    "原生圆壳表窗[77,140,85,144)归并为中性深蓝灰，非发光运行状态",
+    "左右外接口增加3px深槽与上缘金属点，安装坐标对应真实接头；不画出水/地影",
+    "减少1px随机钢灰点并保持左右接头受同一左上光照；底界176"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        77,
+        140,
+        85,
+        144
+      ],
+      "color": 2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          27,
+          132
+        ],
+        [
+          27,
+          136
+        ]
+      ],
+      "color": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          133,
+          132
+        ],
+        [
+          133,
+          136
+        ]
+      ],
+      "color": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          29,
+          129
+        ],
+        [
+          31,
+          129
+        ]
+      ],
+      "color": 8
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "pump_gauge",
+      "visual_frame_bounds": [
+        73,
+        136,
+        89,
+        146
+      ],
+      "safe_active_rect": [
+        77,
+        140,
+        85,
+        144
+      ],
+      "center": [
+        81.0,
+        142.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.50625,
+        0.7395833333333334
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "emitter_points": [
+    {
+      "id": "pipe_inlet",
+      "at": [
+        27,
+        134
+      ],
+      "purpose": "静态管口接口，非已烘焙粒子"
+    },
+    {
+      "id": "pipe_outlet",
+      "at": [
+        133,
+        134
+      ],
+      "purpose": "输水接口；外部管线/水效另制作"
+    }
+  ],
+  "components": []
+}

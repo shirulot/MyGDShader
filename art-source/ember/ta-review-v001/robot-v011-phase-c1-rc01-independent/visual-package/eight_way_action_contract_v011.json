@@ -1,0 +1,106 @@
+{
+  "status": "PRODUCTION_CONTRACT_NOT_ASSET_ACCEPTANCE",
+  "canvas": [
+    64,
+    96
+  ],
+  "root_anchor": [
+    32,
+    80
+  ],
+  "direction_order": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "anatomical_tool_side": "left",
+  "mirroring": false,
+  "lighting": "screen upper left",
+  "final_total": {
+    "clips": 24,
+    "frames": 112
+  },
+  "idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true,
+    "duration_ms": 1000,
+    "phases": [
+      "stable registered mother pose",
+      "controlled one-pixel upper-body servo motion"
+    ],
+    "invariants": [
+      "feet and pelvis fixed",
+      "helmet and chest retain source shapes",
+      "shoulder and neck attachments follow rigid upper body",
+      "no per-frame texture redraw"
+    ],
+    "acceptance_boundary": "frame 1 to frame 0, then idle to walk and collect"
+  },
+  "walk": {
+    "frames": 8,
+    "fps": 8,
+    "loop": true,
+    "duration_ms": 1000,
+    "phases": [
+      "left contact",
+      "left support/down",
+      "right passing",
+      "right forward/up",
+      "right contact",
+      "right support/down",
+      "left passing",
+      "left forward/up"
+    ],
+    "invariants": [
+      "opposite arm and leg swing",
+      "single fixed direction mother and source pieces",
+      "boots remain rigid",
+      "support follows declared ground projection",
+      "no per-frame bbox fitting"
+    ],
+    "frozen_exception": "down reuses all eight approved v010 PNGs byte-for-byte",
+    "acceptance_boundary": "frame 7 to frame 0, adjacent 45 degree direction at corresponding phase"
+  },
+  "collect": {
+    "frames": 4,
+    "fps": 6,
+    "loop": false,
+    "duration_ms": 666.6666666667,
+    "phases": [
+      "prepare and present left wrist tool",
+      "lower torso and reach toward facing direction",
+      "hold the collection pose",
+      "recover to the same direction idle base"
+    ],
+    "invariants": [
+      "both boots remain in registered stance",
+      "tool stays on anatomical left wrist",
+      "elbow pivots rather than detached forearm translation",
+      "head and chest retain rigid source pieces",
+      "no baked glow or game effects"
+    ],
+    "event_hint": {
+      "frame": 2,
+      "purpose": "visual hold only; does not add gameplay logic"
+    },
+    "acceptance_boundary": "frame 3 to idle frame 0, non-loop completion"
+  },
+  "production_gates": [
+    "Phase A: eight static direction masters plus one new down_left walk pilot",
+    "Phase B: remaining six new walk directions after Phase A review; side views need visible and hidden limb sources before posing",
+    "Phase C: controlled idle and collect pilot then all directions; existing action scope retained",
+    "Phase D: final 24 clips and 112 frames, native and 4x light/dark reviews, real Godot transitions, frozen delivery"
+  ],
+  "current_unfinished": [
+    "SW idle2/collect4 independent art review",
+    "seven remaining idle2/collect4 directions, including a neutral supported S base",
+    "final all-direction preview and delivery",
+    "main project integration"
+  ]
+}

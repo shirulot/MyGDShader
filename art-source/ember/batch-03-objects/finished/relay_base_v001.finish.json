@@ -1,0 +1,180 @@
+{
+  "id": "relay_base",
+  "manifest_id": "B06",
+  "file": "art-source/ember/batch-03-objects/finished/relay_base_v001.png",
+  "production_file": "res://assets/ember/buildings/relay/relay_base_v001.png",
+  "sha256": "2c42f50ae8af4aa2397255112fa4255ed5f50d943919611c4419d04b06669b98",
+  "size": [
+    192,
+    256
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/relay_base_v001.finish.json",
+  "canvas": [
+    192,
+    256
+  ],
+  "bbox": [
+    51,
+    52,
+    141,
+    240
+  ],
+  "anchor": [
+    96,
+    240
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [
+    {
+      "id": "relay_core",
+      "visual_frame_bounds": [
+        87,
+        162,
+        106,
+        192
+      ],
+      "safe_active_rect": [
+        91,
+        166,
+        101,
+        187
+      ],
+      "center": [
+        96.0,
+        176.5
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.5,
+        0.689453125
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/relay_base/foundation_body.png",
+      "sha256": "a403c526d6c888d3f2258156c6e25834acc4d6763787c49770182f78dc288acc",
+      "z_index": 0,
+      "canvas": [
+        192,
+        256
+      ],
+      "anchor": [
+        96,
+        240
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    },
+    {
+      "name": "core_window",
+      "file": "art-source/ember/batch-03-objects/layers/relay_base/core_window.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/relay_base/core_window_selection.png",
+      "sha256": "1be4315343d3aa61fcd7d9c3cd6ce57a5cb40ea638d9ebc9a5539e3f9e938595",
+      "z_index": 1,
+      "canvas": [
+        192,
+        256
+      ],
+      "anchor": [
+        96,
+        240
+      ],
+      "purpose": "中性核心安全内窗",
+      "editable_source": true,
+      "hidden_underpaint_color_index": null
+    },
+    {
+      "name": "mast_high",
+      "file": "art-source/ember/batch-03-objects/layers/relay_base/mast_high.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/relay_base/mast_high_selection.png",
+      "sha256": "9a6c5e350f7a12845e894628d9aeb1640946e232aefd59f04060287a33cfe531",
+      "z_index": 2,
+      "canvas": [
+        192,
+        256
+      ],
+      "anchor": [
+        96,
+        240
+      ],
+      "purpose": "高处通信桅杆/天线，前景遮挡层；完整同画布同anchor",
+      "editable_source": true,
+      "hidden_underpaint_color_index": null
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/relay_base_master_v001.png",
+    "master_sha256": "02af2ff3338c029be0e9809992ddb2e4d05e927ce73854a6990d0ea390bf9719",
+    "prompt": "prompts/relay_base.txt",
+    "prompt_sha256": "0676d47a2dff3d1422a7dbd0e327a0f6578790788b68e7a35bb29bd7e89ef7bf",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-71e45619-cae3-49ee-9bd5-874c7edecf62.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        258,
+        111,
+        828,
+        1302
+      ],
+      "material_sampling_size": [
+        90,
+        188
+      ],
+      "native_origin": [
+        51,
+        52
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 107,
+      "native_outline_pixels_corrected": 24
+    },
+    "native_adjustments": [
+      "核心窗[91,166,101,187)归并连续中性暗色；顶部天线浅色短条归并以去孤立颗粒",
+      "上部桅杆和横天线按y<128拆实际high_mast源层与选择mask；不是只写文字已分层",
+      "底座统一足界240，原生高天线不缩短以假装小设备"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [],
+  "observations": "实际母稿上部横天线、窄桅杆、竖直核心与底座；高部件在原生52..128行，远高于机器人，必须登记遮挡源层。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

@@ -1,0 +1,1618 @@
+{
+  "version": "v020-patrol-four-new-moves",
+  "unit": "enemy_patrol",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "up_left",
+    "up",
+    "up_right",
+    "down_right"
+  ],
+  "not_made": [
+    "left",
+    "right"
+  ],
+  "configs": {
+    "down_left": {
+      "source": "res://source/down_left.png",
+      "source_sha256": "bf556e1e18ef5b54671545807645911dee4ca73d71db66893647c33c031d17a7",
+      "parts": [
+        {
+          "id": "right_thigh",
+          "polygon": [
+            [
+              54,
+              82
+            ],
+            [
+              64,
+              82
+            ],
+            [
+              64,
+              92
+            ],
+            [
+              54,
+              92
+            ]
+          ],
+          "pivot": [
+            58,
+            82
+          ],
+          "end": [
+            58,
+            85
+          ],
+          "exclude": [
+            [
+              [
+                54,
+                85
+              ],
+              [
+                65,
+                85
+              ],
+              [
+                65,
+                92
+              ],
+              [
+                54,
+                92
+              ]
+            ]
+          ],
+          "z": 0
+        },
+        {
+          "id": "right_shin",
+          "polygon": [
+            [
+              54,
+              92
+            ],
+            [
+              65,
+              92
+            ],
+            [
+              65,
+              94
+            ],
+            [
+              54,
+              94
+            ]
+          ],
+          "pivot": [
+            58,
+            92
+          ],
+          "end": [
+            58,
+            94
+          ],
+          "exclude": [],
+          "z": 0
+        },
+        {
+          "id": "right_cap",
+          "polygon": [
+            [
+              54,
+              85
+            ],
+            [
+              65,
+              85
+            ],
+            [
+              65,
+              92
+            ],
+            [
+              54,
+              92
+            ]
+          ],
+          "pivot": [
+            58,
+            89
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        },
+        {
+          "id": "right_foot",
+          "polygon": [
+            [
+              52,
+              94
+            ],
+            [
+              64,
+              94
+            ],
+            [
+              64,
+              128
+            ],
+            [
+              52,
+              128
+            ]
+          ],
+          "pivot": [
+            58,
+            97
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 1
+        },
+        {
+          "id": "left_thigh",
+          "polygon": [
+            [
+              65,
+              82
+            ],
+            [
+              75,
+              82
+            ],
+            [
+              75,
+              92
+            ],
+            [
+              65,
+              92
+            ]
+          ],
+          "pivot": [
+            69,
+            82
+          ],
+          "end": [
+            69,
+            85
+          ],
+          "exclude": [
+            [
+              [
+                65,
+                85
+              ],
+              [
+                75,
+                85
+              ],
+              [
+                75,
+                92
+              ],
+              [
+                65,
+                92
+              ]
+            ]
+          ],
+          "z": 1
+        },
+        {
+          "id": "left_shin",
+          "polygon": [
+            [
+              65,
+              92
+            ],
+            [
+              75,
+              92
+            ],
+            [
+              75,
+              94
+            ],
+            [
+              65,
+              94
+            ]
+          ],
+          "pivot": [
+            69,
+            92
+          ],
+          "end": [
+            70,
+            94
+          ],
+          "exclude": [],
+          "z": 1
+        },
+        {
+          "id": "left_cap",
+          "polygon": [
+            [
+              65,
+              85
+            ],
+            [
+              75,
+              85
+            ],
+            [
+              75,
+              92
+            ],
+            [
+              65,
+              92
+            ]
+          ],
+          "pivot": [
+            69,
+            89
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 3
+        },
+        {
+          "id": "left_foot",
+          "polygon": [
+            [
+              64,
+              94
+            ],
+            [
+              78,
+              94
+            ],
+            [
+              78,
+              128
+            ],
+            [
+              64,
+              128
+            ]
+          ],
+          "pivot": [
+            70,
+            97
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        }
+      ],
+      "legs": {
+        "right": {
+          "hip": [
+            58,
+            82
+          ],
+          "knee": [
+            58,
+            89
+          ],
+          "ankle": [
+            58,
+            97
+          ],
+          "sole_offset": [
+            0,
+            7
+          ]
+        },
+        "left": {
+          "hip": [
+            69,
+            82
+          ],
+          "knee": [
+            69,
+            89
+          ],
+          "ankle": [
+            70,
+            97
+          ],
+          "sole_offset": [
+            0,
+            7
+          ]
+        }
+      },
+      "heading": [
+        -0.7071,
+        0.7071
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            43,
+            76
+          ],
+          [
+            54,
+            76
+          ],
+          [
+            54,
+            88
+          ],
+          [
+            43,
+            88
+          ]
+        ],
+        [
+          [
+            75,
+            82
+          ],
+          [
+            83,
+            82
+          ],
+          [
+            83,
+            94
+          ],
+          [
+            75,
+            94
+          ]
+        ]
+      ]
+    },
+    "up_left": {
+      "source": "res://source/up_left.png",
+      "source_sha256": "59b575f2e2ce37671588c4d81bb16c58135df964b9d33ee33cba63df3862047e",
+      "parts": [
+        {
+          "id": "left_thigh",
+          "polygon": [
+            [
+              54,
+              81
+            ],
+            [
+              64,
+              81
+            ],
+            [
+              64,
+              92
+            ],
+            [
+              54,
+              92
+            ]
+          ],
+          "pivot": [
+            58,
+            81
+          ],
+          "end": [
+            58,
+            84
+          ],
+          "exclude": [
+            [
+              [
+                54,
+                84
+              ],
+              [
+                64,
+                84
+              ],
+              [
+                64,
+                92
+              ],
+              [
+                54,
+                92
+              ]
+            ]
+          ],
+          "z": 1
+        },
+        {
+          "id": "left_shin",
+          "polygon": [
+            [
+              54,
+              92
+            ],
+            [
+              64,
+              92
+            ],
+            [
+              64,
+              94
+            ],
+            [
+              54,
+              94
+            ]
+          ],
+          "pivot": [
+            58,
+            92
+          ],
+          "end": [
+            58,
+            94
+          ],
+          "exclude": [],
+          "z": 1
+        },
+        {
+          "id": "left_cap",
+          "polygon": [
+            [
+              54,
+              84
+            ],
+            [
+              64,
+              84
+            ],
+            [
+              64,
+              92
+            ],
+            [
+              54,
+              92
+            ]
+          ],
+          "pivot": [
+            58,
+            88
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 3
+        },
+        {
+          "id": "left_foot",
+          "polygon": [
+            [
+              51,
+              94
+            ],
+            [
+              66,
+              94
+            ],
+            [
+              66,
+              128
+            ],
+            [
+              51,
+              128
+            ]
+          ],
+          "pivot": [
+            58,
+            97
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        },
+        {
+          "id": "right_thigh",
+          "polygon": [
+            [
+              66,
+              81
+            ],
+            [
+              76,
+              81
+            ],
+            [
+              76,
+              92
+            ],
+            [
+              66,
+              92
+            ]
+          ],
+          "pivot": [
+            71,
+            81
+          ],
+          "end": [
+            71,
+            84
+          ],
+          "exclude": [
+            [
+              [
+                66,
+                84
+              ],
+              [
+                76,
+                84
+              ],
+              [
+                76,
+                92
+              ],
+              [
+                66,
+                92
+              ]
+            ]
+          ],
+          "z": 0
+        },
+        {
+          "id": "right_shin",
+          "polygon": [
+            [
+              66,
+              92
+            ],
+            [
+              76,
+              92
+            ],
+            [
+              76,
+              93
+            ],
+            [
+              66,
+              93
+            ]
+          ],
+          "pivot": [
+            71,
+            92
+          ],
+          "end": [
+            71,
+            93
+          ],
+          "exclude": [],
+          "z": 0
+        },
+        {
+          "id": "right_cap",
+          "polygon": [
+            [
+              66,
+              84
+            ],
+            [
+              76,
+              84
+            ],
+            [
+              76,
+              92
+            ],
+            [
+              66,
+              92
+            ]
+          ],
+          "pivot": [
+            71,
+            88
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        },
+        {
+          "id": "right_foot",
+          "polygon": [
+            [
+              66,
+              93
+            ],
+            [
+              79,
+              93
+            ],
+            [
+              79,
+              128
+            ],
+            [
+              66,
+              128
+            ]
+          ],
+          "pivot": [
+            71,
+            96
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 1
+        }
+      ],
+      "legs": {
+        "left": {
+          "hip": [
+            58,
+            81
+          ],
+          "knee": [
+            58,
+            88
+          ],
+          "ankle": [
+            58,
+            97
+          ],
+          "sole_offset": [
+            0,
+            7
+          ]
+        },
+        "right": {
+          "hip": [
+            71,
+            81
+          ],
+          "knee": [
+            71,
+            88
+          ],
+          "ankle": [
+            71,
+            96
+          ],
+          "sole_offset": [
+            0,
+            6
+          ]
+        }
+      },
+      "heading": [
+        -0.7071,
+        -0.7071
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            43,
+            78
+          ],
+          [
+            56,
+            78
+          ],
+          [
+            56,
+            94
+          ],
+          [
+            43,
+            94
+          ]
+        ],
+        [
+          [
+            75,
+            78
+          ],
+          [
+            82,
+            78
+          ],
+          [
+            82,
+            91
+          ],
+          [
+            75,
+            91
+          ]
+        ]
+      ]
+    },
+    "up": {
+      "source": "res://source/up.png",
+      "source_sha256": "cc34f8efc1f8069d98df353cd6e39fa805d6cc1ea3670fa5bfd6203addaa8260",
+      "parts": [
+        {
+          "id": "left_thigh",
+          "polygon": [
+            [
+              54,
+              82
+            ],
+            [
+              63,
+              82
+            ],
+            [
+              63,
+              92
+            ],
+            [
+              54,
+              92
+            ]
+          ],
+          "pivot": [
+            58,
+            82
+          ],
+          "end": [
+            58,
+            85
+          ],
+          "exclude": [
+            [
+              [
+                53,
+                85
+              ],
+              [
+                63,
+                85
+              ],
+              [
+                63,
+                92
+              ],
+              [
+                53,
+                92
+              ]
+            ]
+          ],
+          "z": 1
+        },
+        {
+          "id": "left_shin",
+          "polygon": [
+            [
+              54,
+              92
+            ],
+            [
+              63,
+              92
+            ],
+            [
+              63,
+              94
+            ],
+            [
+              54,
+              94
+            ]
+          ],
+          "pivot": [
+            58,
+            92
+          ],
+          "end": [
+            58,
+            94
+          ],
+          "exclude": [],
+          "z": 1
+        },
+        {
+          "id": "left_cap",
+          "polygon": [
+            [
+              53,
+              85
+            ],
+            [
+              63,
+              85
+            ],
+            [
+              63,
+              92
+            ],
+            [
+              53,
+              92
+            ]
+          ],
+          "pivot": [
+            58,
+            89
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 3
+        },
+        {
+          "id": "left_foot",
+          "polygon": [
+            [
+              52,
+              94
+            ],
+            [
+              64,
+              94
+            ],
+            [
+              64,
+              128
+            ],
+            [
+              52,
+              128
+            ]
+          ],
+          "pivot": [
+            58,
+            97
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        },
+        {
+          "id": "right_thigh",
+          "polygon": [
+            [
+              65,
+              82
+            ],
+            [
+              76,
+              82
+            ],
+            [
+              76,
+              92
+            ],
+            [
+              65,
+              92
+            ]
+          ],
+          "pivot": [
+            70,
+            82
+          ],
+          "end": [
+            70,
+            85
+          ],
+          "exclude": [
+            [
+              [
+                65,
+                85
+              ],
+              [
+                76,
+                85
+              ],
+              [
+                76,
+                92
+              ],
+              [
+                65,
+                92
+              ]
+            ]
+          ],
+          "z": 0
+        },
+        {
+          "id": "right_shin",
+          "polygon": [
+            [
+              65,
+              92
+            ],
+            [
+              76,
+              92
+            ],
+            [
+              76,
+              94
+            ],
+            [
+              65,
+              94
+            ]
+          ],
+          "pivot": [
+            70,
+            92
+          ],
+          "end": [
+            70,
+            94
+          ],
+          "exclude": [],
+          "z": 0
+        },
+        {
+          "id": "right_cap",
+          "polygon": [
+            [
+              65,
+              85
+            ],
+            [
+              76,
+              85
+            ],
+            [
+              76,
+              92
+            ],
+            [
+              65,
+              92
+            ]
+          ],
+          "pivot": [
+            70,
+            89
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        },
+        {
+          "id": "right_foot",
+          "polygon": [
+            [
+              64,
+              94
+            ],
+            [
+              77,
+              94
+            ],
+            [
+              77,
+              128
+            ],
+            [
+              64,
+              128
+            ]
+          ],
+          "pivot": [
+            70,
+            97
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 1
+        }
+      ],
+      "legs": {
+        "left": {
+          "hip": [
+            58,
+            82
+          ],
+          "knee": [
+            58,
+            89
+          ],
+          "ankle": [
+            58,
+            97
+          ],
+          "sole_offset": [
+            0,
+            7
+          ]
+        },
+        "right": {
+          "hip": [
+            70,
+            82
+          ],
+          "knee": [
+            70,
+            89
+          ],
+          "ankle": [
+            70,
+            97
+          ],
+          "sole_offset": [
+            0,
+            7
+          ]
+        }
+      },
+      "heading": [
+        0,
+        -1
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            43,
+            78
+          ],
+          [
+            53,
+            78
+          ],
+          [
+            53,
+            92
+          ],
+          [
+            43,
+            92
+          ]
+        ],
+        [
+          [
+            76,
+            78
+          ],
+          [
+            83,
+            78
+          ],
+          [
+            83,
+            92
+          ],
+          [
+            76,
+            92
+          ]
+        ]
+      ]
+    },
+    "up_right": {
+      "source": "res://source/up_right.png",
+      "source_sha256": "34339abf0eddf9f15e28e547422d54ae9152cc087aa6b4406b96f636118348dc",
+      "parts": [
+        {
+          "id": "left_thigh",
+          "polygon": [
+            [
+              54,
+              80
+            ],
+            [
+              64,
+              80
+            ],
+            [
+              64,
+              85
+            ],
+            [
+              54,
+              85
+            ]
+          ],
+          "pivot": [
+            57,
+            80
+          ],
+          "end": [
+            57,
+            85
+          ],
+          "exclude": [
+            [
+              [
+                54,
+                85
+              ],
+              [
+                64,
+                85
+              ],
+              [
+                64,
+                92
+              ],
+              [
+                54,
+                92
+              ]
+            ]
+          ],
+          "z": 0
+        },
+        {
+          "id": "left_shin",
+          "polygon": [
+            [
+              54,
+              92
+            ],
+            [
+              64,
+              92
+            ],
+            [
+              64,
+              93
+            ],
+            [
+              54,
+              93
+            ]
+          ],
+          "pivot": [
+            57,
+            92
+          ],
+          "end": [
+            56,
+            93
+          ],
+          "exclude": [],
+          "z": 0
+        },
+        {
+          "id": "left_cap",
+          "polygon": [
+            [
+              54,
+              85
+            ],
+            [
+              64,
+              85
+            ],
+            [
+              64,
+              92
+            ],
+            [
+              54,
+              92
+            ]
+          ],
+          "pivot": [
+            57,
+            88
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        },
+        {
+          "id": "left_foot",
+          "polygon": [
+            [
+              49,
+              93
+            ],
+            [
+              63,
+              93
+            ],
+            [
+              63,
+              128
+            ],
+            [
+              49,
+              128
+            ]
+          ],
+          "pivot": [
+            56,
+            96
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 1
+        },
+        {
+          "id": "right_thigh",
+          "polygon": [
+            [
+              62,
+              82
+            ],
+            [
+              72,
+              82
+            ],
+            [
+              72,
+              92
+            ],
+            [
+              62,
+              92
+            ]
+          ],
+          "pivot": [
+            67,
+            82
+          ],
+          "end": [
+            67,
+            85
+          ],
+          "exclude": [
+            [
+              [
+                62,
+                85
+              ],
+              [
+                72,
+                85
+              ],
+              [
+                72,
+                92
+              ],
+              [
+                62,
+                92
+              ]
+            ]
+          ],
+          "z": 1
+        },
+        {
+          "id": "right_shin",
+          "polygon": [
+            [
+              62,
+              92
+            ],
+            [
+              72,
+              92
+            ],
+            [
+              72,
+              94
+            ],
+            [
+              62,
+              94
+            ]
+          ],
+          "pivot": [
+            67,
+            92
+          ],
+          "end": [
+            67,
+            94
+          ],
+          "exclude": [],
+          "z": 1
+        },
+        {
+          "id": "right_cap",
+          "polygon": [
+            [
+              62,
+              85
+            ],
+            [
+              72,
+              85
+            ],
+            [
+              72,
+              92
+            ],
+            [
+              62,
+              92
+            ]
+          ],
+          "pivot": [
+            67,
+            89
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 3
+        },
+        {
+          "id": "right_foot",
+          "polygon": [
+            [
+              62,
+              94
+            ],
+            [
+              76,
+              94
+            ],
+            [
+              76,
+              128
+            ],
+            [
+              62,
+              128
+            ]
+          ],
+          "pivot": [
+            67,
+            97
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 2
+        }
+      ],
+      "legs": {
+        "left": {
+          "hip": [
+            57,
+            80
+          ],
+          "knee": [
+            57,
+            88
+          ],
+          "ankle": [
+            56,
+            96
+          ],
+          "sole_offset": [
+            0,
+            4
+          ]
+        },
+        "right": {
+          "hip": [
+            67,
+            82
+          ],
+          "knee": [
+            67,
+            89
+          ],
+          "ankle": [
+            67,
+            97
+          ],
+          "sole_offset": [
+            0,
+            7
+          ]
+        }
+      },
+      "heading": [
+        0.7071,
+        -0.7071
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            46,
+            75
+          ],
+          [
+            56,
+            75
+          ],
+          [
+            56,
+            84
+          ],
+          [
+            46,
+            84
+          ]
+        ],
+        [
+          [
+            74,
+            78
+          ],
+          [
+            84,
+            78
+          ],
+          [
+            84,
+            93
+          ],
+          [
+            74,
+            93
+          ]
+        ]
+      ]
+    }
+  },
+  "preserved": [
+    {
+      "action": "move_down",
+      "atlas_sha256": "5c1d26badf462cde1d4dee1707e2fd6bc042cabb8fb21bfb7ea06d881baa58e9",
+      "frame_hashes": [
+        "c08514b7eb8f7a81521191438a80664a47f8b2b7d4277e879541eb1c9ade8e8e",
+        "8d78d4692c644a5168ecf91d4a2c10673fa1b85e4f67e62b4e939259b68e615f",
+        "c42c63a4986cdd94f9eae848eb58ffa338465eeca31dbc39da7facd9ba8b99ea",
+        "df39b6ab539830b1506bd7e3d6d9f2c32e885ca5d430c2a2e959bc126057a88e",
+        "c3a932f13a3e50a47a6d58fe41b862a28ea62102e3742fe81c033df685d3c3e4",
+        "465ef88b559daa82d5a2ca7fed7c220b7fb0ae80d47e3876d670d21f2d1cf4f4",
+        "9017f6b94a89904580e1e5828fb7103da725d946e2aca43acdd454c280725512",
+        "c9934402a50e6f6d7f37323906de8934658c93beb942cf442234233bc66ae144"
+      ]
+    },
+    {
+      "action": "move_down_right",
+      "atlas_sha256": "849c2f1f465dfa0348c97271a3230b0f0c0eae3863f7b2fc0af6d872da945bb3",
+      "frame_hashes": [
+        "66dbec7273be1c2c10a991fcff27240f6802d8113eef33fda34ef44fd78060d5",
+        "ecc79476a4dcb5d4b28623e0d05d2ad756e91e60a0cefd863909443cb2ed0397",
+        "e82c09f5936bb2903ab898fe68f0a61e14a5920e288dff90acbd9e57994cfb70",
+        "f64cb15c9e6fb8636875e508c791e68c6292b2c36cb07d99285aa333ed01f983",
+        "821f92f09e24edafad1473f0c8b08b83b53df0f5a138bc8bd5583e10abe03294",
+        "2bf0765befad8e4ceea8cface29b191c75211073a6f0853eb732cffa4effbf93",
+        "da852482a9c25b607dd1139eb88f6bae261dfe155128f24b09a650f26619cc12",
+        "863e8fc5e9e41c1b635c8936b9a54d1e536ea7c1e2543eccb1396f2d8d8af9a4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "frame": 0,
+      "phase": "left_contact",
+      "body_y": 0,
+      "left": {
+        "depth": 6,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": -6,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 1,
+      "phase": "left_down",
+      "body_y": 1,
+      "left": {
+        "depth": 3,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": -3,
+        "lift": 3,
+        "support": false
+      }
+    },
+    {
+      "frame": 2,
+      "phase": "right_passing",
+      "body_y": 0,
+      "left": {
+        "depth": 0,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": 0,
+        "lift": 5,
+        "support": false
+      }
+    },
+    {
+      "frame": 3,
+      "phase": "left_up",
+      "body_y": -1,
+      "left": {
+        "depth": -3,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": 3,
+        "lift": 2,
+        "support": false
+      }
+    },
+    {
+      "frame": 4,
+      "phase": "right_contact",
+      "body_y": 0,
+      "left": {
+        "depth": -6,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": 6,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 5,
+      "phase": "right_down",
+      "body_y": 1,
+      "left": {
+        "depth": -3,
+        "lift": 3,
+        "support": false
+      },
+      "right": {
+        "depth": 3,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 6,
+      "phase": "left_passing",
+      "body_y": 0,
+      "left": {
+        "depth": 0,
+        "lift": 5,
+        "support": false
+      },
+      "right": {
+        "depth": 0,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 7,
+      "phase": "right_up",
+      "body_y": -1,
+      "left": {
+        "depth": 3,
+        "lift": 2,
+        "support": false
+      },
+      "right": {
+        "depth": -3,
+        "lift": 0,
+        "support": true
+      }
+    }
+  ]
+}

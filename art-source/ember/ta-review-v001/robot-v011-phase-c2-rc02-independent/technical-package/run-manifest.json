@@ -1,0 +1,693 @@
+{
+  "revision": "robot_eight_way_v011",
+  "status": "PHASE_C2_RC02_READY_FOR_TA",
+  "authorization": {
+    "source_thread": "01a11049-fdfd-7f12-b83d-6c3a2c506501",
+    "verified_human_message_id": "01a11142-e0e5-74e3-9dc0-876ac05ad8df",
+    "request": "After validation, complete existing animation frames and expand missing eight-way directions",
+    "model_dispatch_verified": {
+      "model": "gpt-6-astra",
+      "thinking": "max"
+    }
+  },
+  "canvas": [
+    64,
+    96
+  ],
+  "root_anchor": [
+    32,
+    80
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "final_actions": {
+    "idle": {
+      "frames_per_direction": 2,
+      "fps": 2,
+      "loop": true
+    },
+    "walk": {
+      "frames_per_direction": 8,
+      "fps": 8,
+      "loop": true
+    },
+    "collect": {
+      "frames_per_direction": 4,
+      "fps": 6,
+      "loop": false
+    }
+  },
+  "target_clips": 24,
+  "target_frames": 112,
+  "phases": [
+    {
+      "id": "A",
+      "scope": "eight stable direction masters and down_left walk 8-frame pilot",
+      "status": "PASS_FIXED_RC02"
+    },
+    {
+      "id": "B",
+      "scope": "remaining walk directions after pilot TA acceptance",
+      "status": "EIGHT_WALK_DIRECTIONS_PASS"
+    },
+    {
+      "id": "C",
+      "scope": "controlled idle micro-motion and collect pilot then all eight directions",
+      "status": "SW_PILOT_PASS_REMAINING_SEVEN_IN_PROGRESS"
+    },
+    {
+      "id": "D",
+      "scope": "integrated eight-direction Godot preview, frozen delivery and independent review",
+      "status": "NOT_STARTED"
+    }
+  ],
+  "protected_baseline": {
+    "revision": "robot-joint-repair-v010",
+    "direction": "down",
+    "action": "walk",
+    "frames": 8,
+    "frame_set_sha256": "3ee1b794757491fc96745a1441507d2f85f445f41714feedc0060403268d2b99",
+    "atlas_sha256": "80c26370261cf0c4a803a140c005a55a6aa883589ae2b178774323913870ca63",
+    "zip_sha256": "97eac4dd8914da78da5543ee0b2641c2045b5e7eb4cfc5452560d74b4f605241"
+  },
+  "joint_rules": [
+    "thick continuous support",
+    "overlapping armor and inner structures",
+    "no dark full-width cut-through",
+    "left-wrist tool chirality",
+    "same rigid parts throughout each action"
+  ],
+  "generation": [
+    {
+      "scope": "eight direction neutral mother poses",
+      "method": "imagegen_edit",
+      "source": "source/eight_direction_idle_master_raw_v011.png",
+      "sha256": "991a34fc51a1fd8eeaca4ea431842acff8d0d6e19054303c4f26093abdbc82df",
+      "prompt": "prompts/eight_direction_idle_master_v011.txt",
+      "references": [
+        "source/approved_walk_down_v010_4x.png",
+        "source/original_four_direction_identity_4x.png",
+        "../robot-structure-v005/robot_three_views_annotated_v005.png"
+      ],
+      "processed_output_note": "common grid conversion and original palette; raw output is not natively 64x96",
+      "used_directions": [
+        "down_left",
+        "left",
+        "up_left",
+        "up",
+        "up_right",
+        "right",
+        "down_right"
+      ]
+    },
+    {
+      "scope": "down idle joint edit attempt",
+      "method": "imagegen_edit",
+      "source": "source/idle_down_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_down_joint_edit_v011.txt",
+      "status": "REJECTED_NOT_USED",
+      "reason": "generated limb placement cannot be composited into the original idle without structural regression"
+    },
+    {
+      "scope": "down_left walk pose guide",
+      "method": "imagegen_edit",
+      "source": "source/walk_down_left_pose_guide_raw_v011.png",
+      "prompt": "prompts/walk_down_left_pose_guide_v011.txt",
+      "sha256": "515ded6e67865eb1972b3560414c0fac5cc84b072d05ff2c9d95e70f08a15e15",
+      "usage": "REFERENCE_ONLY_NOT_ANIMATION_SOURCE"
+    },
+    {
+      "scope": "down_left local joint repair",
+      "method": "imagegen_edit",
+      "source": "source/walk_down_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/walk_down_left_joint_edit_v011.txt",
+      "sha256": "60ce1c45df11cfe7c45dc9ba877124471d9d1e1a062ccc0853e769c01034dc6b",
+      "usage": "JOINT_LOCAL_PATCH_ON_FIXED_RIG"
+    },
+    {
+      "scope": "B1 rc01 up_left local joints",
+      "method": "imagegen_edit",
+      "source": "source/walk_up_left_joint_edit_raw_v011.png",
+      "sha256": "6c666d37724c1e623a6b43a4853ef41bfe933363c8a2ffb957d6902c06017efa",
+      "prompt": "prompts/walk_up_left_joint_edit_v011.txt",
+      "usage": "CURRENT_JOINT_PATCH"
+    },
+    {
+      "scope": "B1 rc01 up local joints",
+      "method": "imagegen_edit",
+      "source": "source/walk_up_joint_edit_raw_v011.png",
+      "sha256": "a4d611cc63c96b93505553d9b56b1ba78212d0ccb9b2672da9907ba24bd2cb69",
+      "prompt": "prompts/walk_up_joint_edit_v011.txt",
+      "usage": "HISTORICAL_RC01_PATCH"
+    },
+    {
+      "scope": "B1 rc01 up_right local joints",
+      "method": "imagegen_edit",
+      "source": "source/walk_up_right_joint_edit_raw_v011.png",
+      "sha256": "3d2c647d2996a9080fa732c48c903ec3dcaa4bfc7b1f9761363130f071722ae4",
+      "prompt": "prompts/walk_up_right_joint_edit_v011.txt",
+      "usage": "HISTORICAL_RC01_PATCH"
+    },
+    {
+      "scope": "B1 rc01 down_right local joints",
+      "method": "imagegen_edit",
+      "source": "source/walk_down_right_joint_edit_raw_v011.png",
+      "sha256": "8017c52d9643c6fdbe7d58a7f61798f39e4aa18a84b8a46628866f4056047e86",
+      "prompt": "prompts/walk_down_right_joint_edit_v011.txt",
+      "usage": "HISTORICAL_RC01_PATCH"
+    },
+    {
+      "scope": "B1 rc02 up shoulder and elbow",
+      "method": "imagegen_edit",
+      "source": "source/walk_up_joint_edit_b1_rc02.png",
+      "sha256": "dae3b4b62ca3719d99cce20c6b7ff2c02020387aa7975bd62f0ce473c27a406f",
+      "prompt": "prompts/walk_up_joint_edit_b1_rc02.txt",
+      "actual_input": "source/arm_edit_inputs_b1_rc02/up.png",
+      "input_sha256": "838180489970452d0aac3018160f72f5603f4a6ed888cd0e94e1f98330b50051",
+      "usage": "ARM_SCOPE_PATCH_ON_CORRECTED_FIXED_RIG",
+      "note": "Fixed canvas; no per-frame registration."
+    },
+    {
+      "scope": "B1 rc02 up_right shoulder and elbow",
+      "method": "imagegen_edit",
+      "source": "source/walk_up_right_joint_edit_b1_rc02.png",
+      "sha256": "67dcf56625b50ffad12b3d2faf9857bbf24f1f9f655e1e30244dd2bb80e84186",
+      "prompt": "prompts/walk_up_right_joint_edit_b1_rc02.txt",
+      "actual_input": "source/arm_edit_inputs_b1_rc02/up_right.png",
+      "input_sha256": "6013af91f16bdb8f01d09344720ba5e2be21a96daa1abb959780c8db34b3976e",
+      "usage": "ARM_SCOPE_PATCH_ON_CORRECTED_FIXED_RIG",
+      "note": "Input predates the one-pixel ownership repair; exact input preserved separately."
+    },
+    {
+      "scope": "B1 rc02 down_right shoulder and elbow",
+      "method": "imagegen_edit",
+      "source": "source/walk_down_right_joint_edit_b1_rc02.png",
+      "sha256": "eba7d365023227a606a041af7a902a03c39b9e0b26ae0c6e2061f07c3236929a",
+      "prompt": "prompts/walk_down_right_joint_edit_b1_rc02.txt",
+      "actual_input": "source/arm_edit_inputs_b1_rc02/down_right.png",
+      "input_sha256": "74e5592b7926bb2b7f9927f6b0bc6cbf6191352b161bcad004796ecb2f4e6cc0",
+      "usage": "ARM_SCOPE_PATCH_ON_CORRECTED_FIXED_RIG",
+      "note": "Fixed canvas; no per-frame registration."
+    },
+    {
+      "scope": "B2 left local joint edit",
+      "method": "imagegen_edit",
+      "source": "source/walk_left_joint_edit_raw_v011.png",
+      "sha256": "b47c67c49c29fadee4b9350f11343df32bf3ddfc299b4858bbcf7e9cbd0b25b0",
+      "prompt": "prompts/walk_left_joint_edit_v011.txt",
+      "actual_input": "source/side_edit_inputs_b2_rc01/left.png",
+      "input_sha256": "29a2ee25439bfe454a0ea4e55ba9e44467c215d60992903fdb687d127ba05898",
+      "usage": "LOCAL_JOINT_PATCH_ON_FIXED_SIDE_RIG"
+    },
+    {
+      "scope": "B2 right local joint edit",
+      "method": "imagegen_edit",
+      "source": "source/walk_right_joint_edit_raw_v011.png",
+      "sha256": "e007114a581ac05a874c3f24773e2cae8f3d6be206e052e80ef7d32710e85ee9",
+      "prompt": "prompts/walk_right_joint_edit_v011.txt",
+      "actual_input": "source/side_edit_inputs_b2_rc01/right.png",
+      "input_sha256": "b6acbd48f7ef5bbf0f3254a3bf7b29791b4f8d7726adc3b517fc18a268914a1c",
+      "usage": "LOCAL_JOINT_PATCH_ON_FIXED_SIDE_RIG"
+    },
+    {
+      "scope": "W/E fixed hidden limbs",
+      "method": "imagegen_edit",
+      "source": "source/side_hidden_parts_raw_v011.png",
+      "sha256": "ae7f2b70c61c4d5306d34ed5cebfcb2b02f0054d91bec3613df9062568ac8f51",
+      "prompt": "prompts/side_hidden_parts_v011.txt",
+      "references": [
+        "qa/master_left_8x.png",
+        "qa/master_right_8x.png"
+      ],
+      "usage": "ONE_TIME_REGISTERED_HIDDEN_SOURCE",
+      "registration": "qa/side_walk_evidence_v011.json"
+    },
+    {
+      "scope": "C1 SW idle waist seam",
+      "source": "source/idle_down_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_down_left_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c1_rc01/idle_down_left.png",
+      "usage": "LOCAL_WAIST_PATCH_FRAME_1_ONLY",
+      "original_output": "exec-d964124c-ae79-4551-8e80-abc89d07033a.png",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "direction": "down_left",
+      "sha256": "5343e3bc8a36f2c6e9731bc62732e9aa771241a569dbe9c15f1bbb83bd63c991",
+      "input_sha256": "5dafe00fe4929e906fee9ae09ff1d172eb714936f49d4b0bf870a4d88239ade7",
+      "prompt_sha256": "80e6ab946ecb0f93f7a2efe6a3ce4a6b931aec1e962dd89c59c74002d1ed7410"
+    },
+    {
+      "scope": "C1 SW collect rejected pose drift",
+      "source": "source/collect_down_left_joint_edit_rejected_v011.png",
+      "prompt": "prompts/collect_down_left_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c1_rc01/collect_down_left.png",
+      "status": "REJECTED_NOT_USED",
+      "reason": "Changed crouch and arm pose; halo background; never composited into final frames",
+      "original_output": "exec-558f09a8-cbbb-4bc6-9f51-06bf0ca664dd.png",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "direction": "down_left",
+      "sha256": "0de7747a717c4aba7332fa39c083af4ef175d18ea612a2c437bef533bd012c30",
+      "input_sha256": "e08a52c5c75f78e11df6912a4146411f2d22a5e2385a67cd926ca7db5691cb16",
+      "prompt_sha256": "08b15ee1fee2fcc3f5972665118ab8c085b3e9e77309a6e28d485e5ebc9c9abd"
+    },
+    {
+      "scope": "C1 SW collect joint seams",
+      "source": "source/collect_down_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/collect_down_left_joint_edit_v011_retry.txt",
+      "actual_input": "source/action_edit_inputs_c1_rc01/collect_down_left.png",
+      "usage": "LOCAL_JOINT_PATCH_ON_FIXED_RIG",
+      "original_output": "exec-9c1f4d50-27d7-4ea2-b4ed-67420a69a88b.png",
+      "note": "Raw generation is an intermediate with background artifacts; protected masks, binary alpha and dark-core restriction exclude those artifacts from final sprites.",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "direction": "down_left",
+      "sha256": "9f659c9461c005805e4f756828ec68a861a74ae71b393b6ff4dbeb08c4d26fc5",
+      "input_sha256": "e08a52c5c75f78e11df6912a4146411f2d22a5e2385a67cd926ca7db5691cb16",
+      "prompt_sha256": "3877ac550d76fd9a8ee188f50722efca6ba183087cffeedf1db9eb47874878d5"
+    },
+    {
+      "scope": "S double-support neutral knee seam",
+      "method": "imagegen_edit",
+      "source": "source/down-neutral-candidate/joint_edit_raw.png",
+      "sha256": "fe9da6be22ff0c1b2778d7570a1ca355c98153d256a9506ec0950b157eb8e5c6",
+      "prompt": "prompts/down_neutral_joint_edit_v011.txt",
+      "actual_input": "source/down-neutral-candidate/edit_target_8x.png",
+      "input_sha256": "50c139a031905d40422890b244ff2f000df0a9373e1d6a8aa8afd5af6220bd0f",
+      "usage": "FIVE_PIXEL_KNEE_CORE_PATCH_ON_REGISTERED_NEUTRAL_SOURCE",
+      "original_output": "exec-9d9eadb2-bccd-4ef2-944c-5e9cdc573787.png",
+      "final_source": "source/action-candidate-masters/robot_neutral_down_v011.png",
+      "final_sha256": "3f87b8de245deebbf24f02c711ab85226ef41fd77edc1164753fb0281f46d4dd",
+      "status": "STATIC_NEUTRAL_CANDIDATE_NOT_ACTION_ACCEPTANCE"
+    },
+    {
+      "direction": "down",
+      "action": "idle",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-607965e5-0a90-47dc-8555-5976522a6b92.png",
+      "scope": "C2 idle down local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/idle_down_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_down_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/idle_down.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "0810f33913f0a304ff6d218861052ff422ade55f29a910e8438a87cfcb9c69c2",
+      "input_sha256": "cb83c068cef1a45119c4eb278930a242d299104347da08fe1713cf8680a261bf",
+      "prompt_sha256": "80db41084fa0247305ce0b36394974c08e8337dc30030c9e1f11f0f560058e37"
+    },
+    {
+      "direction": "down",
+      "action": "collect",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-9770b365-a07c-4da7-8362-ba28206490a0.png",
+      "scope": "C2 collect down local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/collect_down_joint_edit_raw_v011.png",
+      "prompt": "prompts/collect_down_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/collect_down.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "b5824e5ed876982e52c85650ddbbcd2df8ba94ff1a43caae55ee2959fa9de66a",
+      "input_sha256": "b287966d3b78fc9a456532848c52aa0b442d48ac445f307c6a2221f04ab14016",
+      "prompt_sha256": "4b7c33c40aa5683d9ed12503a3e8899b28184d7d0f00f897ee8388800f3e79da"
+    },
+    {
+      "direction": "left",
+      "action": "idle",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-37994146-75c8-455f-80f5-0966e318e40e.png",
+      "scope": "C2 idle left local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/idle_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_left_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/idle_left.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "047040fd51916486359d5cc04d77e9a5dc0b7859a09226a4617e2781d8e1e346",
+      "input_sha256": "a36215b7f5a6a83ea1f792087e5718e5f103a8346561842f6af510eaa4b0e083",
+      "prompt_sha256": "a56a217b5bec7124c12e0f28da685f1f06e0a6aae455067f4435d6d4b924c90c"
+    },
+    {
+      "direction": "left",
+      "action": "collect",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-29979557-c438-423f-934f-5013f43d28da.png",
+      "scope": "C2 collect left local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/collect_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/collect_left_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/collect_left.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "24c18e90a0f46daca5e1e294d1f66b8999fdb4d9060509c453b8593c56bd6c59",
+      "input_sha256": "43e8189a4bcff8229eb97c2041f363cd9e09a45a413771526277aff02858340e",
+      "prompt_sha256": "eb086c90ea45d21ed23f25609bddabe689ab81e29e08f69cc85990f62d572751"
+    },
+    {
+      "direction": "up_left",
+      "action": "idle",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-9124f48d-7741-43e0-adf7-001a1bb60b88.png",
+      "scope": "C2 idle up_left local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/idle_up_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_up_left_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/idle_up_left.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "12b2181bbd8b290f9a057cc708b20fe5503f76f1d556d3d4114f0aa13f007008",
+      "input_sha256": "a140c8c21a9fa492e554ca3e4125db361b7b18a8f25463fdb03ad9dfc3108171",
+      "prompt_sha256": "2fac27706a1d04403617ad39ad85360754ad2357e168566fc8082fb98bd09614"
+    },
+    {
+      "direction": "up_left",
+      "action": "collect",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-33a4d8f9-a775-49fa-8fb3-ed7c76aa93f4.png",
+      "scope": "C2 collect up_left local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/collect_up_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/collect_up_left_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/collect_up_left.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "0bb872104a8bd3d87a7d8309f463a841c676dd5ea9a61badf36d0727c5337034",
+      "input_sha256": "45fe897d30d0d615840c1df3868317154e0b5e43e5f8c7a83b54966c98deb5c9",
+      "prompt_sha256": "69b87a764ee0b0e2f1957eed4966268980eee0c1da51ea204f05c0ca1ba2367c"
+    },
+    {
+      "direction": "up",
+      "action": "idle",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-a4fbd41b-d6e2-49e8-8a8c-47fde15a7db1.png",
+      "scope": "C2 idle up local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/idle_up_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_up_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/idle_up.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "82dd1fd0f125d528c6741adff2fa2ecee806c63aefdf6e0a487527ca49e019c7",
+      "input_sha256": "e2b77df97504f590bae97357db6ebd4796b69f8c27133cfc103d0a42c3396d38",
+      "prompt_sha256": "c8fa7e433b6f2a26c0bee671d894930073bc02aa7225432ef71a18cdc2afb59d"
+    },
+    {
+      "direction": "up",
+      "action": "collect",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-14827ae2-a4aa-4ec1-9194-3b3e844e10bb.png",
+      "scope": "C2 collect up local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/collect_up_joint_edit_raw_v011.png",
+      "prompt": "prompts/collect_up_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/collect_up.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "88815874e9fe9a6651154f11248d7bc0db47849ba0d03f1018f6943d90ab144b",
+      "input_sha256": "cc281636fdf91e1e468a4cce6d5897662f1f08c6dfbbf28e91029ce8bcfb964b",
+      "prompt_sha256": "c40a41161c5e41ce9946dd3c31d5f4345c22a8630c029efe49ccc508029fe5af"
+    },
+    {
+      "direction": "up_right",
+      "action": "idle",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-951125ff-2284-4665-9a1e-095e43bcbaf4.png",
+      "scope": "C2 idle up_right local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/idle_up_right_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_up_right_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/idle_up_right.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "89b9d7463637319f0d57ceea128e5f78dc53a402a138880915959110ec67491b",
+      "input_sha256": "e41f6affbb30ad37cdff0b0aac01cfe7c57ea64e076ef60164ff10262e0c3ca0",
+      "prompt_sha256": "1e569219031a87d4c2d65ce0afb3cbede93974d4ae4979a591b9719386542919"
+    },
+    {
+      "direction": "up_right",
+      "action": "collect",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-da6e01a5-5b6d-4487-bd2d-e035a42b4582.png",
+      "scope": "C2 collect up_right local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/collect_up_right_joint_edit_raw_v011.png",
+      "prompt": "prompts/collect_up_right_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/collect_up_right.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "64c352fd191e42cbde03a19af4d09843e8ea3aec4185b80a293ed1026724df48",
+      "input_sha256": "77262d1856b94a4fd1f918e8795bbfedb9bb49aff069b49f549d30d552e703b7",
+      "prompt_sha256": "46ec287a04b131346edb29ad1c1ca973512d3ec8cbc2102094b960d75173d1e3"
+    },
+    {
+      "direction": "right",
+      "action": "idle",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-854f6d1b-9f29-4ed2-b68e-225ca8724a05.png",
+      "scope": "C2 idle right local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/idle_right_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_right_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/idle_right.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "29c3a802bbb03029fa23f97a5dd66ca03ca61c4faca5beb10e60c2939a7a980d",
+      "input_sha256": "9268572828c24ce7042ae8e2f235ed3b72db11a50f8f35ae2dfc2cb8be9f80e0",
+      "prompt_sha256": "5bbeb51f7914f8a770295d72955c93b8f3574779ef91c9e72b969de79c73dea6"
+    },
+    {
+      "direction": "right",
+      "action": "collect",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-704b6736-b845-466d-abe3-40e5dcdc9e13.png",
+      "scope": "C2 collect right local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/collect_right_joint_edit_raw_v011.png",
+      "prompt": "prompts/collect_right_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/collect_right.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "4d5fbb767d84a3ab8718184513c03d56a9040a151144a48e57762aaf11508407",
+      "input_sha256": "e385c5b3b1dda0ba34b15d4db48aead63421ffd93c522b72b77dfeb85010e6c5",
+      "prompt_sha256": "7076d404893de5757c6cd73cae53fe05f48cab5e6f6d82f115b51eeea237e149"
+    },
+    {
+      "direction": "down_right",
+      "action": "idle",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-a4aca6cf-ddda-4a22-999d-1bf27f34704d.png",
+      "scope": "C2 idle down_right local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/idle_down_right_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_down_right_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/idle_down_right.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "22d722d41928386e58ce44cf4844300b99bb75db0c2963ca51410a6158679c96",
+      "input_sha256": "48805f56dcecdf2987869896cd560c2fba1ab9a55f037a74bfb0e1f8ba35b2e3",
+      "prompt_sha256": "85f997069f7e380334d4736f89c3f2a0e977634bd4e5d50b8846207ce7ca78b9"
+    },
+    {
+      "direction": "down_right",
+      "action": "collect",
+      "original_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-db6a9aca-2ac1-444f-b400-906abddb396d.png",
+      "scope": "C2 collect down_right local joints",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "source": "source/collect_down_right_joint_edit_raw_v011.png",
+      "prompt": "prompts/collect_down_right_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c2_rc01/collect_down_right.png",
+      "usage": "MASKED_JOINT_EDIT_ON_FIXED_SOURCE_PARTS",
+      "sha256": "8978ae3ba149dda3dc778e3639e872537189eedd69a48ac24b178a09f2e93ed8",
+      "input_sha256": "2031b193f616961f7285b38933a601e3808f3d8a7b6810b2da7339f91f306c1c",
+      "prompt_sha256": "1341fa4cf1c49430edabe6986caf62735b9bf102bb0502e8922a1b9a570f4947"
+    }
+  ],
+  "new_directions_art_acceptance": "WALK_PASS_IDLE_COLLECT_PENDING",
+  "production_assets_modified": false,
+  "down_idle_source": {
+    "file": "frames/walk/down/robot_walk_down_f02_v010.png",
+    "sha256": "31aef53af6a5552d9adae69f5afefab25ee35cc30059bf285dffc375f374dc79",
+    "method": "exact frozen frame reuse",
+    "status": "IDENTITY_REFERENCE_ONLY_NOT_IDLE_ACCEPTANCE",
+    "note": "This reuse preserves approved identity, but does not automatically approve idle support or later micro-motion."
+  },
+  "current_review_metadata": "full-action-metadata.json",
+  "frozen_review": "review/phase-c2-rc02",
+  "current_candidate_revision": "phase-c2-rc02",
+  "review_history": [
+    {
+      "revision": "phase-a-rc01",
+      "scope": "phase A",
+      "decision": "NEEDS_REVISION",
+      "static_identity": "seven new directions STATIC_IDENTITY_PASS; S is the approved v010 F02 identity reference only",
+      "walk_down": "original v010 PASS retained",
+      "walk_down_left": "P2 far anatomical right thigh armor changed shape under similar poses",
+      "review": "qa/ta-receipt-phase-a-rc01.md",
+      "review_sha256": "4b2adc4c00fdc7a7d29a997873cd30e8570aae99bf93fb54258dd1e2f4e1e6c6"
+    },
+    {
+      "revision": "phase-b1-rc01",
+      "decision": "NEEDS_REVISION",
+      "issue": "P2 NE/SE same-side arm and leg phase",
+      "review": "qa/ta-receipt-phase-b1-rc01.md",
+      "review_sha256": "4046ec1488ae5f9f5ff7a8fd1474230875cc35fa952754d9a5e8dc856d486445"
+    },
+    {
+      "revision": "phase-b1-rc02",
+      "decision": "PASS",
+      "scope": "NW/N/NE/SE 32 walk frames; previous S/SW retained",
+      "review": "qa/ta-receipt-phase-b1-rc02.md",
+      "review_sha256": "238f1c932c1c5fe22ede68281312c7f530971b5686396ff49d197fa9275a0493",
+      "zip_sha256": "b301fdea0e3f634d02a0da4eac437e1ce890515b582216daadc82c82211b4aaf"
+    },
+    {
+      "revision": "phase-b2-rc01",
+      "decision": "PASS",
+      "scope": "W/E 16 walk frames; all eight walks now accepted, 64 frames",
+      "review": "qa/ta-receipt-phase-b2-rc01.md",
+      "review_sha256": "22b243cfdb61370ab5f9cae0ac06de9fa877467286b9a92f0d47fd14324402ba",
+      "zip_sha256": "538d7bb49eb2e4480046eee50306a232b7a3f130219564e1618dbfbfff19164c"
+    },
+    {
+      "revision": "phase-c1-rc01",
+      "decision": "PASS",
+      "scope": "SW idle2 and collect4, six new frames",
+      "review": "qa/ta-receipt-phase-c1-rc01.md",
+      "review_sha256": "d5ad7ddc28b3bf608bcbac0eff21a5159d1a1413a82126521dc490bdfb136374",
+      "zip_sha256": "0c62177198973b24bb3fbfcc306ba4617af3ad754eb5a0696bdfddb4f19f51df"
+    }
+  ],
+  "current_revision_fix": {
+    "revision": "phase-c2-rc02",
+    "scope": "SE collect F01/F02 retain three original outer elbow contour pixels; other 110 frames unchanged",
+    "accepted_frames_preserved": 70,
+    "identity_masters_preserved": 8,
+    "new_frames": 42,
+    "art_acceptance": "PENDING_TA",
+    "evidence": "qa/se_elbow_rc02_revision.json",
+    "changed_frames": 2,
+    "changed_pixels": 6,
+    "unchanged_frames": 110
+  },
+  "new_directions_static_identity": "STATIC_IDENTITY_PASS",
+  "static_identity_receipt": "source/static-identity-acceptance-v011.json",
+  "phase_a_acceptance": {
+    "review": "qa/ta-receipt-phase-a-rc02.md",
+    "zip_sha256": "df9884f9668dc89b8c74cf746dbd975a87e9a5b566b6783b5582cb2c78b4d521",
+    "scope": "seven static identities, S retained, SW walk 8 frames",
+    "not_accepted": [
+      "final idle",
+      "collect",
+      "remaining walks",
+      "main game integration"
+    ]
+  },
+  "phase_b": {
+    "walk_directions": [
+      "down",
+      "down_left",
+      "left",
+      "up_left",
+      "up",
+      "up_right",
+      "right",
+      "down_right"
+    ],
+    "new_direction_frames": 16,
+    "source_rig": "build_side_walk_v011.cjs",
+    "local_compositor": "composite_remaining_joints_v011.cjs",
+    "side_hidden_source": "source/side_hidden_parts_raw_v011.png",
+    "side_hidden_source_usage": "FIXED_HIDDEN_PARTS_FOR_W_E_ONLY",
+    "motion_art_acceptance": "PASS_FIXED_B2_RC01",
+    "previous_batch_baseline": "source/reference-phase-b1-rc02-metadata.json"
+  },
+  "walk_acceptance_registry": "source/walk-acceptance-v011.json",
+  "phase_c": {
+    "pilot": "down_left",
+    "new_frames": 6,
+    "art_acceptance": "SW_PILOT_PASS_RETAINED",
+    "approved_walk_frames_preserved": 64,
+    "body_pelvis_overlap_source_rows": [
+      54,
+      55
+    ],
+    "idle0_is_original_identity": true,
+    "collect3_is_idle0": true,
+    "preview": "action-review.html",
+    "independent_engine_project": "godot-action-review/project.godot",
+    "approved_new_action_frames": 6,
+    "remaining_directions": {
+      "new_clips": 14,
+      "new_frames": 42,
+      "art_acceptance": "PENDING_TA",
+      "preview": "action-batch-review.html",
+      "independent_engine_project": "godot-full-review/project.godot"
+    }
+  },
+  "down_neutral_candidate": {
+    "file": "source/action-candidate-masters/robot_neutral_down_v011.png",
+    "sha256": "3f87b8de245deebbf24f02c711ab85226ef41fd77edc1164753fb0281f46d4dd",
+    "registration": "source/down-neutral-candidate/registration.json",
+    "joint_patch": "source/down-neutral-candidate/joint_patch.json",
+    "art_acceptance": "PENDING_TA"
+  },
+  "action_acceptance_registry": "source/action-acceptance-v011.json",
+  "full_action_delivery": {
+    "metadata": "full-action-metadata.json",
+    "atlas_sha256": "0340a11ca59efdb18c64385fa24ec8faa833f0c3c6b056b5c6a97d3f3f5b4268",
+    "clips": 24,
+    "frames": 112,
+    "approved_frames": 70,
+    "new_frames_pending_art_review": 42,
+    "technical_checks": "PASS",
+    "main_project_integrated": false
+  }
+}

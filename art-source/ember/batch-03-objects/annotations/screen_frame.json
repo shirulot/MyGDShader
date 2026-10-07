@@ -1,0 +1,55 @@
+{
+  "observations": "实际母稿四个陶瓷铜栓角、钢灰边条和透空中心；母稿边宽不完全一致，原生草案64×61，需要九宫格结构整理。",
+  "adjustments": [
+    "NATIVE_NINE_SLICE_REBUILD: 保留4个实际8px不同光照角块；重画恒厚8px材质截面，不镜像光照",
+    "原生source region [16,16,80,80)为64×64；slice_region使用[x,y,w,h]=[16,16,64,64]，四边8px",
+    "中心[24,24,72,72)完整真透明，draw_center=false；完整96画布四边16px，不把留白当九宫格边条"
+  ],
+  "patches": [
+    {
+      "type": "pixel",
+      "at": [
+        24,
+        17
+      ],
+      "color": 4
+    }
+  ],
+  "native_reconstruction_file": "layers/screen_frame_native.png",
+  "native_reconstruction_record": "annotations/architectural-rebuild-record.json",
+  "tiling": {
+    "axes": [],
+    "repeat": false,
+    "stretch": "nine_slice",
+    "source_region": [
+      16,
+      16,
+      80,
+      80
+    ],
+    "source_region_convention": "[x0,y0,x1,y1)",
+    "slice_region": [
+      16,
+      16,
+      64,
+      64
+    ],
+    "slice_region_convention": "[x,y,width,height]",
+    "slice_margins": {
+      "left": 8,
+      "top": 8,
+      "right": 8,
+      "bottom": 8
+    },
+    "center_rect": [
+      24,
+      24,
+      72,
+      72
+    ],
+    "draw_center": false
+  },
+  "runtime_windows": [],
+  "components": [],
+  "emitter_points": []
+}

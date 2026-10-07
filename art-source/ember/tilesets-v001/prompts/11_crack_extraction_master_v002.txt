@@ -1,0 +1,6 @@
+Use case: background-extraction / precise-object-edit
+The referenced image is the EDIT TARGET: the failed crack decal candidate that contains a steel panel.
+Extract ONLY the very thin branching CRACK LINE from the central plate. Remove absolutely ALL surrounding metal plate, border, bolts, brass, rust spots, steel fragments and other objects. Keep only the dark thin stepped branching line, with maybe one tiny subdued lighter edge on a short segment. The crack must appear as a simple flat surface mark, not a crack cut out inside a floating steel plate.
+Background is real completely transparent Alpha. The crack itself is opaque, color #182631 or #2B3E4B. No halo, shadow, haze, gradients or antialiasing.
+Square logical32x32 native grid; sparse1px-wide short zig-zag with two little branches, total extent no greater than16x16 logical pixels, centered within transparent padding. If larger output is necessary, show it as exact nearest-neighbor enlargement. No new border or scene. No text. One single thin maintenance-wear decal ONLY.
+Critical: the final image has NO visible plate or material surface; ONLY a thin branched line on true transparent pixels.

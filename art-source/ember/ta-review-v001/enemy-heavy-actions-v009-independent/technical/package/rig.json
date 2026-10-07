@@ -1,0 +1,236 @@
+{
+  "version": "v009",
+  "unit": "enemy_tracked_heavy",
+  "source": "res://source/canonical.png",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "method": "Fixed canonical shell, projector and track/chassis ownership. One generated hidden chassis fills revealed mounting surfaces; source and fixed placement do not change between frames.",
+  "parts": [
+    {
+      "id": "left_track_mount",
+      "pivot": [
+        36,
+        104
+      ],
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          46,
+          66
+        ],
+        [
+          49,
+          66
+        ],
+        [
+          49,
+          128
+        ],
+        [
+          0,
+          128
+        ]
+      ],
+      "z": 2
+    },
+    {
+      "id": "right_track_mount",
+      "pivot": [
+        92,
+        104
+      ],
+      "polygon": [
+        [
+          82,
+          0
+        ],
+        [
+          128,
+          0
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          79,
+          128
+        ],
+        [
+          79,
+          66
+        ],
+        [
+          82,
+          66
+        ]
+      ],
+      "z": 2
+    },
+    {
+      "id": "lower_chassis_left",
+      "pivot": [
+        64,
+        104
+      ],
+      "polygon": [
+        [
+          49,
+          83
+        ],
+        [
+          56,
+          83
+        ],
+        [
+          56,
+          100
+        ],
+        [
+          72,
+          100
+        ],
+        [
+          72,
+          83
+        ],
+        [
+          79,
+          83
+        ],
+        [
+          79,
+          128
+        ],
+        [
+          49,
+          128
+        ]
+      ],
+      "z": 2
+    },
+    {
+      "id": "tower_shell",
+      "pivot": [
+        64,
+        76
+      ],
+      "polygon": [
+        [
+          46,
+          0
+        ],
+        [
+          82,
+          0
+        ],
+        [
+          82,
+          66
+        ],
+        [
+          79,
+          66
+        ],
+        [
+          79,
+          83
+        ],
+        [
+          72,
+          83
+        ],
+        [
+          72,
+          76
+        ],
+        [
+          56,
+          76
+        ],
+        [
+          56,
+          83
+        ],
+        [
+          49,
+          83
+        ],
+        [
+          49,
+          66
+        ],
+        [
+          46,
+          66
+        ]
+      ],
+      "z": 3
+    },
+    {
+      "id": "projector",
+      "pivot": [
+        64,
+        80
+      ],
+      "polygon": [
+        [
+          56,
+          76
+        ],
+        [
+          72,
+          76
+        ],
+        [
+          72,
+          100
+        ],
+        [
+          56,
+          100
+        ]
+      ],
+      "z": 4
+    }
+  ],
+  "hidden_chassis": {
+    "source": "res://source/hidden_chassis_master.png",
+    "source_rect": [
+      253,
+      238,
+      1030,
+      552
+    ],
+    "destination_rect": [
+      48,
+      78,
+      32,
+      20
+    ],
+    "clip": "fixed canonical coverage silhouette"
+  },
+  "supports": [
+    [
+      36,
+      104
+    ],
+    [
+      92,
+      104
+    ]
+  ]
+}

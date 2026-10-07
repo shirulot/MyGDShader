@@ -1,0 +1,492 @@
+{
+	"assets": [
+		{
+			"alpha": {
+				"opaque_pixels": 9216,
+				"partial_pixels": 0,
+				"transparent_pixels": 0
+			},
+			"canvas": [
+				96,
+				96
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "弹窗自身负责遮盖场景；本层保持不透明，不能靠大图裁切遮挡。",
+			"file": "res://assets/ember/ui_final/skins/panel_backplate_96.png",
+			"format": "RGBA8",
+			"id": "panel_backplate_96",
+			"layer": "opaque_backplate",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				8,
+				8,
+				8,
+				8
+			],
+			"sha256": "cdc0b4108e07470185bd407e9e444250ca07ab528f20d79bff93974fa334f69e"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 9216,
+				"partial_pixels": 0,
+				"transparent_pixels": 0
+			},
+			"canvas": [
+				96,
+				96
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "数字与标签为独立 Label；此层仅提供安静且不透明的读数底板。",
+			"file": "res://assets/ember/ui_final/skins/text_backplate_96.png",
+			"format": "RGBA8",
+			"id": "text_backplate_96",
+			"layer": "opaque_readout_backplate",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				8,
+				8,
+				8,
+				8
+			],
+			"sha256": "5dfe2e35c038e7083a118988d21370b2be0bef0b1773f81c95311a58dfe16d08"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 44,
+				"partial_pixels": 0,
+				"transparent_pixels": 212
+			},
+			"canvas": [
+				16,
+				16
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "左上 L；程序水平/垂直翻转生成另外三角，角件不能整体拉伸。",
+			"file": "res://assets/ember/ui_final/skins/bracket_corner_16.png",
+			"format": "RGBA8",
+			"id": "bracket_corner_16",
+			"layer": "bracket_overlay",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				0,
+				0,
+				0,
+				0
+			],
+			"sha256": "a64c04a56dc4b5bcd9dec33603295ac495da36a1502aac2b51e0ea63e2e91532"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 175,
+				"partial_pixels": 0,
+				"transparent_pixels": 593
+			},
+			"canvas": [
+				24,
+				32
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "每格常驻底框，24×32 画布与 fill 完全对齐；失去生命只隐藏 fill。",
+			"file": "res://assets/ember/ui_final/skins/life_outline_24x32.png",
+			"format": "RGBA8",
+			"id": "life_outline_24x32",
+			"layer": "life_outline",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				0,
+				0,
+				0,
+				0
+			],
+			"sha256": "042e6478e04bc98d30a85bc73c9ec3e2e117dc7c669ca260502c86667be6a064"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 216,
+				"partial_pixels": 0,
+				"transparent_pixels": 552
+			},
+			"canvas": [
+				24,
+				32
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "生命值决定每格显隐；与 outline 同位置，不裁切或重排画布。",
+			"file": "res://assets/ember/ui_final/skins/life_fill_24x32.png",
+			"format": "RGBA8",
+			"id": "life_fill_24x32",
+			"layer": "life_active_fill",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				0,
+				0,
+				0,
+				0
+			],
+			"sha256": "cc2439d361409573944475f60816750f6d74853570a42bac96622cda7d7a280d"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 444,
+				"partial_pixels": 0,
+				"transparent_pixels": 68
+			},
+			"canvas": [
+				32,
+				16
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "左右边固定 8px、上下边固定 4px；推荐宽度可伸展且高度维持 16px。",
+			"file": "res://assets/ember/ui_final/skins/energy_track_32x16.png",
+			"format": "RGBA8",
+			"id": "energy_track_32x16",
+			"layer": "energy_track",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				8,
+				4,
+				8,
+				4
+			],
+			"sha256": "b04b58a167ed357d91586b52d8efaa3bfc92f48ae90e23987bb546b4a65515a0"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 64,
+				"partial_pixels": 0,
+				"transparent_pixels": 0
+			},
+			"canvas": [
+				8,
+				8
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "只重复或伸展此层。由独立 ClipContents 容器按 clamp(value/max,0,1) 裁切宽度。",
+			"file": "res://assets/ember/ui_final/skins/energy_fill_8x8.png",
+			"format": "RGBA8",
+			"id": "energy_fill_8x8",
+			"layer": "energy_dynamic_fill",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				0,
+				0,
+				0,
+				0
+			],
+			"sha256": "11c91e06ac9e34ffe6e2e364e0d409e84dab5b8b256d7cbc25a422cf489e2316"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 60,
+				"partial_pixels": 0,
+				"transparent_pixels": 4
+			},
+			"canvas": [
+				8,
+				8
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "白色 alpha 技术 Mask，四个外角透明。若使用 shader，应取 alpha；不得把此图当可见层。",
+			"file": "res://assets/ember/ui_final/skins/energy_mask_8x8.png",
+			"format": "RGBA8",
+			"id": "energy_mask_8x8",
+			"layer": "optional_alpha_mask",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				1,
+				1,
+				1,
+				1
+			],
+			"sha256": "8c0a9904fad95ce3e7ef25d0aaed386eec4708528959f400f83944fab3cf57d4"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 216,
+				"partial_pixels": 0,
+				"transparent_pixels": 72
+			},
+			"canvas": [
+				12,
+				24
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "固定端帽/夹件置于填充裁切节点之外。空值、满值均保持可见。",
+			"file": "res://assets/ember/ui_final/skins/copper_clamp_12x24.png",
+			"format": "RGBA8",
+			"id": "copper_clamp_12x24",
+			"layer": "energy_cap_overlay",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				0,
+				0,
+				0,
+				0
+			],
+			"sha256": "a655e2c4c2af16b3be2ee96d203cda24014e6a6771f4bf15ec140cbcaaab7791"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 316,
+				"partial_pixels": 0,
+				"transparent_pixels": 4
+			},
+			"canvas": [
+				10,
+				32
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "独立铜拉手，可固定在抽屉边界；面板开合由容器位移控制。",
+			"file": "res://assets/ember/ui_final/skins/drawer_handle_10x32.png",
+			"format": "RGBA8",
+			"id": "drawer_handle_10x32",
+			"layer": "drawer_handle_overlay",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				0,
+				0,
+				0,
+				0
+			],
+			"sha256": "7a2d706fc876300499db0c7306137c89cd8c85711759ba06dee7a4f6c51d4673"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 9216,
+				"partial_pixels": 0,
+				"transparent_pixels": 0
+			},
+			"canvas": [
+				96,
+				96
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "只提供选中行底板；正文、图标、选中竖条独立，显隐由单一状态数据控制。",
+			"file": "res://assets/ember/ui_final/skins/selection_row_96.png",
+			"format": "RGBA8",
+			"id": "selection_row_96",
+			"layer": "selection_row_backplate",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				8,
+				8,
+				8,
+				8
+			],
+			"sha256": "be1eec6efa4d59f6e8ec19af50db3c7d5fae43231bb3bde37bfc4d0672ebdd4a"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 124,
+				"partial_pixels": 0,
+				"transparent_pixels": 4
+			},
+			"canvas": [
+				4,
+				32
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "纯白颜色载体，程序 modulate 为状态颜色；可纵向九宫伸展，保留上下 2px。",
+			"file": "res://assets/ember/ui_final/skins/selection_tick_4x32.png",
+			"format": "RGBA8",
+			"id": "selection_tick_4x32",
+			"layer": "state_color_overlay",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				1,
+				2,
+				1,
+				2
+			],
+			"sha256": "42ddbe157cf3d21df1fd66d5ceb60649da492f7ebe7157fe9623ad9ae644dcec"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 364,
+				"partial_pixels": 0,
+				"transparent_pixels": 660
+			},
+			"canvas": [
+				32,
+				32
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "安全菱形；选中与禁用效果由同源状态逻辑切换，图标不包含标签。",
+			"file": "res://assets/ember/ui_final/skins/status_safe_32.png",
+			"format": "RGBA8",
+			"id": "status_safe_32",
+			"layer": "state_icon",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				0,
+				0,
+				0,
+				0
+			],
+			"sha256": "2c1d59bd7f3cfd9c5675a4d41047a296ae47e0fd8b5b94787c0587f771bdbf14"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 313,
+				"partial_pixels": 0,
+				"transparent_pixels": 711
+			},
+			"canvas": [
+				32,
+				32
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "预警三角与镂空感叹号；形状和颜色共同传达状态。",
+			"file": "res://assets/ember/ui_final/skins/status_warning_32.png",
+			"format": "RGBA8",
+			"id": "status_warning_32",
+			"layer": "state_icon",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				0,
+				0,
+				0,
+				0
+			],
+			"sha256": "6edb51cf9347bc9767d29c1c6898da06b0cca29f6720aebfeaf473a21cf805b8"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 319,
+				"partial_pixels": 0,
+				"transparent_pixels": 705
+			},
+			"canvas": [
+				32,
+				32
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "爆发星形；没有烘焙外部火焰或场景危险边界。",
+			"file": "res://assets/ember/ui_final/skins/status_burst_32.png",
+			"format": "RGBA8",
+			"id": "status_burst_32",
+			"layer": "state_icon",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				0,
+				0,
+				0,
+				0
+			],
+			"sha256": "91a096829f8418a7f7042aa42ae61b1bb6c469ce586e4583a42f3dbf9be7e186"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 197,
+				"partial_pixels": 0,
+				"transparent_pixels": 827
+			},
+			"canvas": [
+				32,
+				32
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "冷却时钟；倒计时是独立 Label，由程序更新。",
+			"file": "res://assets/ember/ui_final/skins/status_cooldown_32.png",
+			"format": "RGBA8",
+			"id": "status_cooldown_32",
+			"layer": "state_icon",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				0,
+				0,
+				0,
+				0
+			],
+			"sha256": "8b484da57442ddc990ba9de9aea655af10194fbb13da054324d31ce6ce5dc7c3"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 112,
+				"partial_pixels": 0,
+				"transparent_pixels": 9104
+			},
+			"canvas": [
+				96,
+				96
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "纯角括号焦点层，中心透明，无文字；normal/hover/pressed 的底层由组件处理。",
+			"file": "res://assets/ember/ui_final/skins/button_focus_96.png",
+			"format": "RGBA8",
+			"id": "button_focus_96",
+			"layer": "button_focus_overlay",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				8,
+				8,
+				8,
+				8
+			],
+			"sha256": "4ff1348eaeb2f772ad9051cd1222be5a6c5c03d241741e742742d98307da7690"
+		},
+		{
+			"alpha": {
+				"opaque_pixels": 376,
+				"partial_pixels": 0,
+				"transparent_pixels": 8840
+			},
+			"canvas": [
+				96,
+				96
+			],
+			"contains_text": false,
+			"dynamic_responsibility": "细蓝灰边框且中心透明。设备真实纹理是独立 TextureRect，可由单独容器裁剪。",
+			"file": "res://assets/ember/ui_final/skins/portrait_frame_96.png",
+			"format": "RGBA8",
+			"id": "portrait_frame_96",
+			"layer": "portrait_border_overlay",
+			"native_scale": 1,
+			"nine_slice_margin_ltrb": [
+				8,
+				8,
+				8,
+				8
+			],
+			"sha256": "c8f70defb540102494c9f1c304fc1670c37b9a1ed5c4ac5b3754053d9c9f08dd"
+		}
+	],
+	"collection": "ember_ui_edge_v001",
+	"coordinate_space": "screen pixels; do not apply world TileMapLayer scale 0.25",
+	"errors": [],
+	"generator": "res://tools/build_ui_edge_skin_v001.gd",
+	"import": {
+		"compress_mode": "lossless",
+		"fix_alpha_border": false,
+		"mipmaps_generate": false,
+		"nearest": "CanvasItem.TEXTURE_FILTER_NEAREST required by consuming Control nodes; no Godot 4 importer filter flag"
+	},
+	"layer_rules": [
+		"文字/数字不进 PNG",
+		"动态能量只裁填充层",
+		"铜夹和框架在裁切层之外",
+		"portrait 设备纹理不烘焙进框",
+		"状态判定来自一个数据源",
+		"opaque backplates 覆盖背景，透明 overlay 不承担遮挡"
+	],
+	"nine_slice_order": "left, top, right, bottom",
+	"palette": {
+		"armor": "#BECBC4",
+		"burst": "#E65B4A",
+		"cooldown": "#566B78",
+		"copper": "#B77C4B",
+		"copper_dark": "#7B4D35",
+		"copper_light": "#E2B77A",
+		"cyan": "#51C5C2",
+		"ink": "#101820",
+		"ivory": "#ECE9D8",
+		"panel": "#182631",
+		"steel": "#4D6470",
+		"steel_light": "#829BA3",
+		"warning": "#E5A44B"
+	},
+	"production": "native Godot Image integer geometry; no screenshot edits",
+	"schema_version": 1,
+	"skin_direction": "A 边缘标记",
+	"technical_white": "#FFFFFF only for alpha mask and programmable state tint carrier"
+}

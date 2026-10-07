@@ -1,0 +1,45 @@
+--- reviewed snapshot
++++ current relocated guide
+@@ -10,15 +10,15 @@
+ 
+ | 依据 | 约束内容 |
+ | --- | --- |
+-| 用户选中的[控制塔](../../art-source/ember/selected-buildings-v001/references/control_tower_user_selected.png)、[维修工坊](../../art-source/ember/selected-buildings-v001/references/repair_workshop_user_selected.png)、[物流仓库](../../art-source/ember/selected-buildings-v001/references/logistics_warehouse_user_selected.png) | 整体比例、轮廓、屋顶纵深、墙面高度、门窗和装饰位置；为首批三栋的外观依据 |
++| 用户选中的[控制塔](../source/selected-buildings-v001/references/control_tower_user_selected.png)、[维修工坊](../source/selected-buildings-v001/references/repair_workshop_user_selected.png)、[物流仓库](../source/selected-buildings-v001/references/logistics_warehouse_user_selected.png) | 整体比例、轮廓、屋顶纵深、墙面高度、门窗和装饰位置；为首批三栋的外观依据 |
+ | [完整母图规则 v004](building-intact-master-v004.md) | 连续结构、一次等比注册、同源提取和无损复装 |
+-| [最终建筑登记](../../assets/ember/building_assets_v004r1/catalog_v004r1.json)与[功能层登记](../../assets/ember/building_assets_v004r1/functional_layers_v004r1.json) | 当前画布、锚点、缩放、脚印、活动区域及文件来源 |
++| [最终建筑登记](../textures/catalog_v004r1.json)与[功能层登记](../textures/functional_layers_v004r1.json) | 当前画布、锚点、缩放、脚印、活动区域及文件来源 |
+ | [生产覆盖规则 v004r1](building-production-coverage-v004r1.md) | 同一实体覆盖、二值 Alpha、Nearest 与真实场景检查 |
+-| [总体美术规范](art-style-standard-v002.md)与[v006 地板规范](reference-floor-v006-materials.md) | 配色、材料家族、机器人比例、连续安静的地面 |
++| [总体美术规范](../../../../docs/shader-learning/art-style-standard-v002.md)与[v006 地板规范](../../../../docs/shader-learning/reference-floor-v006-materials.md) | 配色、材料家族、机器人比例、连续安静的地面 |
+ 
+ 决策顺序：**原图整体效果与结构连续性 → 实际放置／进出可用 → 状态反馈准确 → 拆件复用 → 增加装饰细节。** 不为满足旧画布、模块数量或拆件形式而改变已选造型。
+ 
+-用户确认的是三张附件中的建筑外观。最终 v004r1 的技术美术回执为 [TA PASS](../../art-source/ember/ta-review-v001/building-v004r1-independent/review-building-v004r1.md)，不自动等同于用户对所有生产细节再次确认，也不涵盖完整室内和主玩法全面集成。
++用户确认的是三张附件中的建筑外观。最终 v004r1 的技术美术回执为 [TA PASS](../review/original-v004r1/review-building-v004r1.md)，不自动等同于用户对所有生产细节再次确认，也不涵盖完整室内和主玩法全面集成。
+ 
+ ## 2. 视觉样式
+ 
+@@ -140,7 +140,7 @@
+ 
+ 人门前至少保留 64×64 world 可走区域；货门通路按实际净口向外保持相应宽度。地板由笔刷生成，门前不应凭空出现平台端帽、亮边或高差。装饰、栏杆和设备不得堵住入口。
+ 
+-现行交付是整栋预制体，**建筑放置不等于建筑墙体／屋顶已支持自动铺刷**。地板自动补全继续以[瓦片专项规范](autotile-production-standard-v002.md)为准；建筑扩为面积笔刷时必须另完成：
++现行交付是整栋预制体，**建筑放置不等于建筑墙体／屋顶已支持自动铺刷**。地板自动补全继续以[瓦片专项规范](../../../../docs/shader-learning/autotile-production-standard-v002.md)为准；建筑扩为面积笔刷时必须另完成：
+ 
+ - 房间占用、地板、屋顶覆盖、方向性墙面与门洞覆写分别登记，并由共同占用数据生成。
+ - 面积邻接覆盖 47 种归一形态；方向墙面、门宽、层高和跨栋连接另列规则，不能以“47 块齐全”代替这些语义。
+@@ -197,9 +197,9 @@
+ 
+ ## 11. 当前资源与示例入口
+ 
+-- [正式完整图与功能层](../../assets/ember/building_assets_v004r1/)；[实际 Godot 闭合图](../../assets/ember/building_assets_v004r1/previews/gpu_intact_closed_v004r1.png)、[开门图](../../assets/ember/building_assets_v004r1/previews/gpu_intact_open_v004r1.png)、[交互 UI 图](../../assets/ember/building_assets_v004r1/previews/gpu_demo_ui_v004r1.png)。
+-- [统一资源入口](../../art-source/ember/buildings-final/README.md)；[静态／交互预制体及 demo](../../scenes/ember/building_assets_v004r1/)；[独立演示工程](../../art-source/ember/buildings-final/demo/project.godot)，逻辑视口 1408×800。
+-- [完整原始母图](../../art-source/ember/building-assets-v004/masters/)与[生成提示词](../../art-source/ember/building-assets-v004/prompts/)；[原始选中附件](../../art-source/ember/selected-buildings-v001/references/)。
+-- [最终冻结交付包](../../art-source/ember/deliveries/building_assets_v004r1_2026-10-06.zip)与[正式 TA 回执](../../art-source/ember/ta-review-v001/building-v004r1-independent/review-building-v004r1.md)。
++- [正式完整图与功能层](../textures/)；[实际 Godot 闭合图](../textures/previews/gpu_intact_closed_v004r1.png)、[开门图](../textures/previews/gpu_intact_open_v004r1.png)、[交互 UI 图](../textures/previews/gpu_demo_ui_v004r1.png)。
++- [统一资源入口](../README.md)；[静态／交互预制体及 demo](../scenes/)；[独立演示工程](../examples/standalone/project.godot)，逻辑视口 1408×800。
++- [完整原始母图](../source/building-assets-v004/masters/)与[生成提示词](../source/building-assets-v004/prompts/)；[原始选中附件](../source/selected-buildings-v001/references/)。
++- [最终冻结交付包](../delivery/building_assets_v004r1_2026-10-06.zip)与[正式 TA 回执](../review/original-v004r1/review-building-v004r1.md)。
+ 
+ 示例操作：WASD／方向键移动；靠近人门 `E`、货门 `G`；地面检修盖 `C`、设备启停 `F`、维修 `R`；面板附近 `P` 供电、`L` 人门锁、`X` 故障；`I` 登记玻璃亮暗；`F5/F9` 保存／恢复。`H` 整壳遮挡与 `J` 塔顶盖是检视操作。测试开关与快捷键不直接定义正式游戏的玩家权限。

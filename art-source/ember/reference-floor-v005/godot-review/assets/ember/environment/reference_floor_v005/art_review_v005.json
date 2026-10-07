@@ -1,0 +1,95 @@
+{
+  "revision": "reference_floor_v005",
+  "status": "VISUAL_CANDIDATE",
+  "user_accepted": false,
+  "source_imagegen_calls": 3,
+  "new_material_ids": [
+    7,
+    8,
+    9
+  ],
+  "retained_material_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "actual_scene_previews": [
+    "gpu_asphalt_scene_v005.png",
+    "gpu_brick_scene_v005.png",
+    "gpu_wood_scene_v005.png",
+    "gpu_mixed_scene_v005.png"
+  ],
+  "comparison": "gpu_material_comparison_v005.png",
+  "review_method": "Root agent inspected the actual Godot GPU comparison and both registered patterned materials. The comparison combines four actual scene captures, with no artistic mockup replacing the TileMap output.",
+  "fixed_standards": {
+    "texture_tile_px": 128,
+    "world_cell_px": 32,
+    "tilemap_scale": 0.25,
+    "camera_zoom": 2,
+    "coping_world_px": 8,
+    "south_facade_world_px": 32,
+    "wide_bridge_body_world_px": 40,
+    "bridge_shoulders_world_px": 12
+  },
+  "source_registration": {
+    "brick_unit_texture_px": [
+      128,
+      64
+    ],
+    "brick_columns_rows": [
+      8,
+      16
+    ],
+    "brick_alternate_row_offset_texture_px": 64,
+    "wood_board_height_texture_px": 64,
+    "wood_rows": 16,
+    "pixel_policy": "Measured source joints, artist fragment crop, nearest registration and cyclic placement. Original artist RGBA samples; no procedural repaint or recolour.",
+    "details": "source_processing_v005.json"
+  },
+  "visual_findings": [
+    "Charcoal aggregate, muted running-bond red pavers and silver-grey horizontal timber are visibly distinct at the existing native scale.",
+    "Registered brick half-pieces wrap at period edges; board bands keep two rows per128-texture cell.",
+    "Ten-material mixed map keeps a continuous ground surface without internal coping or walls at material boundaries.",
+    "All maps keep the same robot, station, rails, hatch, coping, facade and bridge geometry."
+  ],
+  "gpu_verification": {
+    "actual_scenes": 4,
+    "pure_material_edits": 3,
+    "max_rgb_error": 0.0,
+    "report": "gpu_capture_v005.json"
+  },
+  "structural_verification_report": "independent_validation_v005.json",
+  "editor_gui_undo_redo": "NOT_TESTED",
+  "verification": {
+    "full_rgba_comparisons": 12,
+    "pair_cases": 48,
+    "material_shortcut_events": [
+      {
+        "keycode": 4194332,
+        "selected_id": 7
+      },
+      {
+        "keycode": 4194333,
+        "selected_id": 8
+      },
+      {
+        "keycode": 4194334,
+        "selected_id": 9
+      },
+      {
+        "keycode": 93,
+        "selected_id": 0
+      }
+    ],
+    "compiler_sha256": "244161deb264aadf89b12356efe46f36b6893fc9d4e33486d09a8998d5e5b45d",
+    "context_tile_origin_mappings_checked": 504,
+    "painter_sha256": "71ca61135285a9e209c9fa029dfff923e9cb9fd87c5e7569f33adb6de1490ef7",
+    "status": "PASS",
+    "landing_cases": 12,
+    "same_size_bounds_shift_and_restore": true
+  }
+}

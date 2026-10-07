@@ -1,0 +1,611 @@
+{
+  "scope": "Author GPU/player/turn records are only manifest/catalog-bound, NOT independently replayed by this TA agent.",
+  "report_binding": {
+    "qa/pixel_audit.json": {
+      "sha256": "ae11e5ce5bef6c1cc9af65be993ffda415ce5f1bd65b3a74078d608a21865f7f",
+      "manifest_hash_exact": true,
+      "bound_catalog_exact": true
+    },
+    "qa/gpu_roundtrip.json": {
+      "sha256": "0e43e32e3bbbe6cb2a2e6c576d3784b6c950733e8826605751faa815878bc8d7",
+      "manifest_hash_exact": true,
+      "bound_catalog_exact": true
+    },
+    "qa/runtime.json": {
+      "sha256": "5655cf2797371bef026b532a4951e91232bb3185621bf586bb6a7e4351947f38",
+      "manifest_hash_exact": true,
+      "bound_catalog_exact": true
+    }
+  },
+  "new_gpu_records": 112,
+  "old_preserved_records": 8,
+  "new_gpu_record_zero_delta": true,
+  "gpu_file_note": "Package stores JSON GPU records; no individual GPU result PNG archive is present. QA contact and mount PNGs are separate artifacts.",
+  "runtime_players": [
+    {
+      "finishes": 0,
+      "key": "idle_down/normal",
+      "last_frame": 0,
+      "loops": 5,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_down_left/normal",
+      "last_frame": 0,
+      "loops": 5,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_left/normal",
+      "last_frame": 0,
+      "loops": 5,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_up_left/normal",
+      "last_frame": 0,
+      "loops": 5,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_up/normal",
+      "last_frame": 0,
+      "loops": 5,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_up_right/normal",
+      "last_frame": 0,
+      "loops": 5,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_right/normal",
+      "last_frame": 0,
+      "loops": 5,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_down_right/normal",
+      "last_frame": 0,
+      "loops": 5,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_down/slow",
+      "last_frame": 1,
+      "loops": 1,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_down_left/slow",
+      "last_frame": 1,
+      "loops": 1,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_left/slow",
+      "last_frame": 1,
+      "loops": 1,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_up_left/slow",
+      "last_frame": 1,
+      "loops": 1,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_up/slow",
+      "last_frame": 1,
+      "loops": 1,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_up_right/slow",
+      "last_frame": 1,
+      "loops": 1,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_right/slow",
+      "last_frame": 1,
+      "loops": 1,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 0,
+      "key": "idle_down_right/slow",
+      "last_frame": 1,
+      "loops": 1,
+      "passed": true,
+      "playing": true,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_down/normal",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_down_left/normal",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_left/normal",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_up_left/normal",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_up/normal",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_up_right/normal",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_right/normal",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_down_right/normal",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_down/slow",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_down_left/slow",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_left/slow",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_up_left/slow",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_up/slow",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_up_right/slow",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_right/slow",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "finishes": 1,
+      "key": "hit_down_right/slow",
+      "last_frame": 3,
+      "loops": 0,
+      "passed": true,
+      "playing": false,
+      "seen_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "runtime_switches": [
+    {
+      "action": "idle",
+      "direction": "down",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "idle",
+      "direction": "down_left",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "idle",
+      "direction": "left",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "idle",
+      "direction": "up_left",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "idle",
+      "direction": "up",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "idle",
+      "direction": "up_right",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "idle",
+      "direction": "right",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "idle",
+      "direction": "down_right",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "hit",
+      "direction": "down",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "hit",
+      "direction": "down_left",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "hit",
+      "direction": "left",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "hit",
+      "direction": "up_left",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "hit",
+      "direction": "up",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "hit",
+      "direction": "up_right",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "hit",
+      "direction": "right",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "action": "hit",
+      "direction": "down_right",
+      "frame": 2,
+      "passed": true,
+      "progress": 0.375
+    }
+  ],
+  "renderer": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "status": "PASS",
+  "independent_minimum_cold_file": "minimal-cold-load.json",
+  "catalog_sha256": "24cf20d4677e1e77ada77f1a6197da429e81e98531ed7341e79c94f8e6509cd8",
+  "tres_sha256": "b7c094bbf1a0ef30db9f30148643966274b5ea5729b170d60969dedde15cbe00",
+  "rig_sha256": "2021d7424cb684f9bf9398ce78ab4189f5e3fef7e3b76bd51104b34583f59bfa",
+  "entrypoint": "preview.tscn via project.godot",
+  "unused_legacy_global_rig_fields": {
+    "frame_count": 8,
+    "fps": 8,
+    "loop": true,
+    "body_y": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  "legacy_note": "Runtime and export read per-action actions definitions, which correctly say four frames, idle4FPS loop / hit12FPS oneshot. Legacy eight-frame move globals are not used by this batch."
+}

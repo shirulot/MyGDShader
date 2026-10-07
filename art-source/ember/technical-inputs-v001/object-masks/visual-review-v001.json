@@ -1,0 +1,37 @@
+{
+  "status": "D08_PRODUCER_VISUAL_REVIEW_PASS",
+  "scope": "Actually viewed all 10 six-panel 2x previews: base, selection overlay, R, G, B, A.",
+  "asset_sha256": {
+    "station": "c8e3d80b7858b22e4c2a293ec9b9a200ba9aea2b27e24e9a30983c36d4dd7fdf",
+    "console": "07eb3a4b27ec2ee5e66fa719bffb60b2b6bd7f4265f050e155a89d74d1ef735f",
+    "pump": "14eb5624ea241bc8234fd1e5e0baa0c57b1adeacb213c4f1b715febc502e4436",
+    "ventilator": "01f711785e661ced1818e981f5add1472007280177eb88653669e93bb64ed220",
+    "cooler": "c58e6a6e5183459a28a7b041587c08930d35af29ff426d735a2fd46d52fdf3da",
+    "relay": "e3f91d9ec9462f28131571589197d668b8f2d13530360c5442fada3515108a75",
+    "wall_lamp": "9ab4095dc6d324a7cd76e94aa81f9fca1a3c3a0481d091980eb9c82e2fae7d3c",
+    "floor_lamp": "ea187834f857c07d0fbd9de2ddee489805d2a52a988a72c96fa79e4c15c2375d",
+    "telepad": "f9509bfebac8f0c3344658fa7014b86b595962ac703cf399f0fd775b3447d1fc",
+    "terminal_window": "f8f95b4765e57dfd23d77db98868ea48f806e2d2314eb03e63720c4091cf17d6"
+  },
+  "catalog_sha256": "0f92025b5fec00972abb1dd00ecc737f353d7aa285d1d81ea7945a3d6f413488",
+  "preview_files": [
+    "art-source/ember/technical-inputs-v001/object-masks/review/station_mask_review_2x.png",
+    "art-source/ember/technical-inputs-v001/object-masks/review/console_mask_review_2x.png",
+    "art-source/ember/technical-inputs-v001/object-masks/review/pump_mask_review_2x.png",
+    "art-source/ember/technical-inputs-v001/object-masks/review/ventilator_mask_review_2x.png",
+    "art-source/ember/technical-inputs-v001/object-masks/review/cooler_mask_review_2x.png",
+    "art-source/ember/technical-inputs-v001/object-masks/review/relay_mask_review_2x.png",
+    "art-source/ember/technical-inputs-v001/object-masks/review/wall_lamp_mask_review_2x.png",
+    "art-source/ember/technical-inputs-v001/object-masks/review/floor_lamp_mask_review_2x.png",
+    "art-source/ember/technical-inputs-v001/object-masks/review/telepad_mask_review_2x.png",
+    "art-source/ember/technical-inputs-v001/object-masks/review/terminal_window_mask_review_2x.png"
+  ],
+  "observations": [
+    "Nine objects have R/G exactly in registered safe active windows, lenses or four telepad markers; armor/frame/external emitter regions are excluded.",
+    "Ventilator R uses the actual three blades plus hub selection; G/B remain zero. No glow window is invented.",
+    "All ten A channels are byte-identical to corresponding source Alpha. B is zero; RGB outside source Alpha is zero.",
+    "terminal_window corresponds to terminal_body 96x96. station uses only its registered 20x29 safe active area, not the entire visual window frame."
+  ],
+  "independent_acceptance": "This record documents producer visual inspection only; root and independent agents perform final acceptance.",
+  "payload_source_images_modified": false
+}

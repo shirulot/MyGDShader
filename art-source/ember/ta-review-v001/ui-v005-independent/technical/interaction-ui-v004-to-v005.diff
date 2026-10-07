@@ -1,0 +1,75 @@
+--- fixed-v004/interaction_ui.gd
++++ fixed-v005/interaction_ui.gd
+@@ -16,6 +16,8 @@
+ const PORTRAIT = preload("res://assets/ember/map_assets_v001/buildings/energy_station.png")
+ 
+ @export var settings_path := "user://ember_edge_ui_v004.cfg"
++@export var gamepad_confirm_button: JoyButton = JOY_BUTTON_A
++@export var gamepad_back_button: JoyButton = JOY_BUTTON_B
+ var hud: Control
+ var window: Control
+ var toast: Control
+@@ -379,9 +381,9 @@
+ 	if not _built:
+ 		return
+ 	var world_rect: Rect2 = hud.get_available_world_rect()
+-	var margin := minf(float(preferences.safe_margin), size.x * 0.08)
+ 	var timer: Control = hud.get("_timer")
+ 	var life: Control = hud.get("_life")
++	var margin := life.position.x
+ 	var entry_y := maxf(timer.position.y + timer.size.y, life.position.y + life.size.y) + 20
+ 	details_button.position = Vector2(floorf(margin), entry_y)
+ 	details_button.size = Vector2(124, 44)
+@@ -396,7 +398,15 @@
+ 	toast.position = Vector2(floorf((size.x - toast.size.x) * 0.5), maxf(16, size.y - 194))
+ 
+ func _input(event: InputEvent) -> void:
+-	if not is_visible_in_tree() or page.is_empty():
++	if not is_visible_in_tree():
++		return
++	# 此项目的Godot内置ui_accept/ui_cancel只有键盘事件。局部映射手柄按钮，
++	# 不改写全局InputMap；按钮可由宿主导出属性更换。每次pressed只触发一次。
++	if event is InputEventJoypadButton:
++		if _gamepad_input(event):
++			get_viewport().set_input_as_handled()
++			return
++	if page.is_empty():
+ 		return
+ 	# 外部宿主/跨视口重挂可能夺走焦点；确认键派发前先收回到当前窗口。
+ 	var focused := get_viewport().gui_get_focus_owner()
+@@ -413,6 +423,35 @@
+ 		if not get_viewport().gui_get_focus_owner() is Slider:
+ 			window.cycle_focus(event.is_action_pressed("ui_left"))
+ 			get_viewport().set_input_as_handled()
++
++func _gamepad_input(event: InputEventJoypadButton) -> bool:
++	var current_focus := get_viewport().gui_get_focus_owner()
++	if event.button_index in [JOY_BUTTON_DPAD_LEFT, JOY_BUTTON_DPAD_RIGHT] and current_focus is HSlider and window.is_ancestor_of(current_focus) and not page.is_empty():
++		if event.pressed:
++			current_focus.value += current_focus.step * (-1 if event.button_index == JOY_BUTTON_DPAD_LEFT else 1)
++		return true
++	if event.button_index == JOY_BUTTON_START:
++		if event.pressed and page.is_empty():
++			open_pause()
++		return true
++	if event.button_index == gamepad_back_button:
++		if event.pressed:
++			if not page.is_empty():
++				back()
++			elif hud.is_drawer_open():
++				hud.close_drawer()
++		return not page.is_empty() or hud.is_drawer_open() or event.pressed
++	if event.button_index != gamepad_confirm_button:
++		return false
++	var focused := get_viewport().gui_get_focus_owner()
++	if not page.is_empty() and (focused == null or not window.is_ancestor_of(focused)):
++		window.focus_first()
++		focused = get_viewport().gui_get_focus_owner()
++	if focused is Button and is_ancestor_of(focused) and focused.is_visible_in_tree() and not focused.disabled:
++		if event.pressed:
++			focused.pressed.emit()
++		return true
++	return not page.is_empty()
+ 
+ func _process(_delta: float) -> void:
+ 	if is_visible_in_tree() and is_blocking():

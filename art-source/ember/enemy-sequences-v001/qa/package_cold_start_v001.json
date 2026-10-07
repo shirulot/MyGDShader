@@ -1,0 +1,35 @@
+{
+  "declared_actions": 20,
+  "run_stderr_bytes": 0,
+  "manifest_entries_checked": 318,
+  "user_editor_pid_15844": "NOT_TOUCHED",
+  "scope": "Independent delivered package first headless editor import and 120-frame main-scene startup, no GPU rerun",
+  "visual_art_acceptance": "NEEDS_REVISION / PENDING_TA",
+  "import_exit_code": 0,
+  "animation_resources": 20.0,
+  "commands": [
+    "Godot --headless --editor --import --path <package> --quit",
+    "Godot --headless --path <package> --quit-after 120"
+  ],
+  "zip_sha256": "cf49b8c85a74a36654e280a44b371ed12d99f1130a4ef407b784720c68d358da",
+  "unit_resources": 4,
+  "frozen_content_mismatches": [],
+  "package_main_scene": "res://scenes/enemy_sequences_review_v001.tscn",
+  "zip": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/deliveries/enemy_sequences_v001_2026-10-06.zip",
+  "runtime_count_basis": "4 imported unit scenes times 5 defined animations; manifest identical to frozen GPU-validated assets",
+  "package_game_autoload": "NONE",
+  "runtime_evidence": "Main scene controller executes per-unit/per-action resource loading in _ready; short main-scene run completed with no script/resource errors. No additional instrumentation or package edits.",
+  "import_stderr_bytes": 0,
+  "production_ready": false,
+  "package_root": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/deliveries/enemy_sequences_v001_2026-10-06",
+  "import_cache": "Created and retained in package .godot; excluded from ZIP and frozen manifest",
+  "logs": [
+    "qa/package_cold_import.stdout.log",
+    "qa/package_cold_import.stderr.log",
+    "qa/package_cold_run.stdout.log",
+    "qa/package_cold_run.stderr.log"
+  ],
+  "run_exit_code": 0,
+  "status": "PASS",
+  "catalog_sha256": "568c280046c007c88240a40574592cc46e7f19b54ece1e0171a94807a3ba40e6"
+}

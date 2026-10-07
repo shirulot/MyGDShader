@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "initial_godot_cache_absent": true,
+  "zip_sha256": "19b3ba844e5df945292953520fa17a3c5a8a0c8bbf7a852a8fdd56d8e3773d05",
+  "engine": "E:\\steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+  "calls": [
+    {
+      "call": "import",
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-drone-v017-idle-hit-v001\\technical-cold-project",
+        "--editor",
+        "--import"
+      ],
+      "exit_code": 0,
+      "seconds": 5.415,
+      "stdout_file": "technical-import.stdout.log",
+      "stderr_file": "technical-import.stderr.log",
+      "stderr_bytes": 0,
+      "stdout_sha256": "f961e66696f783384f78c40291da3a850a7490c34d0904f3439ac622853e29fe",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "call": "probe",
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-drone-v017-idle-hit-v001\\technical-cold-project",
+        "--script",
+        "res://ta_probe.gd",
+        "--",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-drone-v017-idle-hit-v001\\technical-cold-probe.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.384,
+      "stdout_file": "technical-probe.stdout.log",
+      "stderr_file": "technical-probe.stderr.log",
+      "stderr_bytes": 0,
+      "stdout_sha256": "2442cc71b972cc1dc70592993d6b688d3d7a8d546fd970102d37774eb58be8d9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "passed": 25,
+  "total": 25,
+  "probe_sha256": "367fea40d72ec29ba78c7bd9976ed73cb49f8d220539eda42beb229f982204da",
+  "original_payloads": 211,
+  "payload_changes_after_import": [],
+  "ta_gpu_rerun": false,
+  "author112_gpu32players16switch_suite_rerun": false
+}

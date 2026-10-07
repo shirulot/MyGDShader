@@ -1,0 +1,14 @@
+; 独立预览工程，只比较本轮敌人示例，不加载正式游戏的单例或场景。
+config_version=5
+
+[application]
+config/name="Ember enemy examples"
+
+[display]
+window/size/viewport_width=1920
+window/size/viewport_height=768
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>采集膝盖 · 前后对照</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#182631;color:#ece9d8;font:15px/1.6 system-ui,'Microsoft YaHei',sans-serif}main{max-width:1160px;margin:24px auto;padding:0 20px}h1{margin:0;font-size:26px}p{color:#a8bbb9;margin:8px 0 18px}.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:14px 0}label{display:flex;gap:7px;align-items:center}button,select{font:inherit;color:inherit;background:#2b3e4b;border:1px solid #566b78;border-radius:5px;padding:7px 11px}button{cursor:pointer}input{accent-color:#e2b77a}.stage{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{border:1px solid #4d6470;border-radius:7px;overflow:hidden}.caption{padding:9px 14px;color:#becbc4}.surface{display:flex;justify-content:center;align-items:center;gap:25px;min-height:390px;background:#ece9d8}.dark .surface{background:#182631}.native{align-self:flex-end;margin-bottom:48px}.surface canvas{image-rendering:pixelated}#frame{width:220px}.strip{overflow-x:auto;margin-top:12px}.strip .surface{min-height:195px;gap:0}.strip canvas{width:512px;height:192px}a{color:#becbc4}#status{color:#e2b77a}footer{margin:20px 0;color:#a8bbb9;font-size:13px}@media(max-width:850px){.stage{grid-template-columns:1fr}.surface{gap:8px}}
+</style>
+<main>
+<h1>采集膝盖 · 前后对照</h1>
+<p>修订候选：下半身保持稳定支撑，上身与工具臂完成前探。待机、行走和采集首尾共96帧保留，只修改16张前探／保持帧。</p>
+<div class="controls">
+<label>方向 <select id="direction" aria-label="方向"><option value="down">南 · 正面</option><option value="down_left">西南</option><option value="left">西 · 左侧</option><option value="up_left">西北</option><option value="up">北 · 背面</option><option value="up_right">东北</option><option value="right">东 · 右侧</option><option value="down_right" selected>东南</option></select></label>
+<label>速度 <select id="speed" aria-label="速度"><option value="1">正常速度</option><option value="0.25">四分之一速度</option></select></label>
+<label>背景 <select id="background" aria-label="背景"><option value="light">浅底</option><option value="dark">深底</option></select></label>
+<label><input id="bones" type="checkbox">显示髋膝踝骨点</label>
+<label><input id="repeat" type="checkbox" checked>循环对比</label>
+</div>
+<div class="controls"><button id="play">暂停</button><button id="replay">重播</button><button id="previous">上一帧</button><button id="next">下一帧</button><input id="frame" type="range" min="0" max="3" value="0" aria-label="帧索引"><span id="status">加载中</span></div>
+<section class="stage">
+<article class="card"><div class="caption">原 v011 · 4× 与原生尺寸</div><div class="surface"><canvas id="before" width="256" height="384" aria-label="原版四倍预览"></canvas><canvas class="native" id="before-native" width="64" height="96" aria-label="原版原生预览"></canvas></div></article>
+<article class="card"><div class="caption">膝盖修订 v012 · 4× 与原生尺寸</div><div class="surface"><canvas id="after" width="256" height="384" aria-label="修订四倍预览"></canvas><canvas class="native" id="after-native" width="64" height="96" aria-label="修订原生预览"></canvas></div></article>
+</section>
+<section class="stage">
+<article class="card strip"><div class="caption">原版：准备 → 前探 → 保持 → 回位</div><div class="surface"><canvas id="before-strip" width="256" height="96" aria-label="原版四帧"></canvas></div></article>
+<article class="card strip"><div class="caption">修订：准备 → 前探 → 保持 → 回位</div><div class="surface"><canvas id="after-strip" width="256" height="96" aria-label="修订四帧"></canvas></div></article>
+</section>
+<footer>两侧同帧同步播放，素材均为6 FPS单次；循环对比会在回位后稍作停留。骨点仅为检查叠层，未写入素材。<br><a id="roi" href="qa/down_right_hip_knee_ankle_light_6x.png">髋膝踝局部对照</a> · <a id="gif" href="runtime/previews/full/collect_down_right_normal_4x_v012.gif">修订GIF</a> · <a href="runtime/preview.html">完整动作预览</a> · <a href="runtime/project.godot">独立Godot工程</a></footer>
+</main>
+<script>
+// 画布只显示PNG；骨点是可关闭的诊断图形。两侧共用时钟，禁止各自按bbox缩放。
+const $=id=>document.getElementById(id),cache=new Map();let data,current,frame=0,playing=true,elapsed=0,last=performance.now(),finished=false;
+function ctx(id){let c=$(id).getContext('2d');c.imageSmoothingEnabled=false;return c;}
+function draw(){
+ if(!current)return;
+ for(const side of['before','after']){
+  let image=cache.get(current[side][frame]);
+  for(const [id,scale]of[[side,4],[side+'-native',1]]){const c=ctx(id);c.clearRect(0,0,64*scale,96*scale);c.drawImage(image,0,0,64*scale,96*scale);}
+  if($('bones').checked){const c=ctx(side),joints=current[side==='before'?'old_joints':'new_joints'][frame];
+   for(const[id,j]of Object.entries(joints).filter(([id])=>id.startsWith('leg_'))){c.strokeStyle=c.fillStyle=id==='leg_left'?'#ef9b48':'#2bcbe5';c.lineWidth=1.5;c.beginPath();[j.root,j.joint,j.ankle].forEach((p,i)=>i?c.lineTo(p[0]*4,p[1]*4):c.moveTo(p[0]*4,p[1]*4));c.stroke();for(const p of[j.root,j.joint,j.ankle]){c.beginPath();c.arc(p[0]*4,p[1]*4,2.3,0,Math.PI*2);c.fill();}}
+  }
+ }
+ $('frame').value=frame;$('status').textContent=`F0${frame} · ${['准备','前探','保持','回位'][frame]}${finished?' · 已完成':''}`;$('play').textContent=playing?'暂停':'播放';
+}
+function choose(){
+ current=data.find(d=>d.direction===$('direction').value);frame=0;elapsed=0;finished=false;
+ for(const side of['before','after']){const c=ctx(side+'-strip');c.clearRect(0,0,256,96);current[side].forEach((file,i)=>c.drawImage(cache.get(file),i*64,0));}
+ links();draw();
+}
+function links(){const d=$('direction').value,s=$('speed').value==='1'?'normal':'slow';$('roi').href=`qa/${d}_hip_knee_ankle_${$('background').value}_6x.png`;$('gif').href=`runtime/previews/full/collect_${d}_${s}_4x_v012.gif`;}
+function step(n){playing=false;finished=false;frame=(frame+n+4)%4;elapsed=0;draw();}
+function tick(now){const dt=Math.min(100,now-last);last=now;if(playing&&current){elapsed+=dt;const duration=1000/(6*Number($('speed').value))+(frame===3&&$('repeat').checked?450:0);if(elapsed>=duration){elapsed-=duration;if(frame<3)frame++;else if($('repeat').checked)frame=0;else{finished=true;playing=false;}draw();}}requestAnimationFrame(tick);}
+ $('direction').onchange=choose;$('speed').onchange=()=>{elapsed=0;links();};$('background').onchange=()=>{document.body.className=$('background').value;links();};$('bones').onchange=draw;
+ $('play').onclick=()=>{playing=!playing;elapsed=0;draw();};$('replay').onclick=()=>{frame=0;finished=false;elapsed=0;playing=true;draw();};$('previous').onclick=()=>step(-1);$('next').onclick=()=>step(1);$('frame').oninput=()=>{playing=false;finished=false;frame=Number($('frame').value);elapsed=0;draw();};
+ (async()=>{data=await(await fetch('comparison-metadata.json')).json();await Promise.all(data.flatMap(d=>[...d.before,...d.after]).map(async file=>{const image=new Image();image.src=file;await image.decode();cache.set(file,image);}));choose();requestAnimationFrame(tick);})().catch(e=>$('status').textContent='加载失败：'+e.message);
+</script></html>

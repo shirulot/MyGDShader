@@ -1,0 +1,2482 @@
+{
+  "revision": "visual_art_review_v001",
+  "review_date": "2026-10-06",
+  "status": "NEEDS_REVISION",
+  "scope": "Four accepted enemy identities, DOWN direction only, five actions each, twenty playable review candidates; no full game integration, no other directions.",
+  "formal_production_art_pass": false,
+  "preview_use": "动作意图/造型候选与问题定位，可在独立Godot预览播放；不能视为正式原生像素单位。",
+  "source_selection": "Final twenty sources selected by root and re-exported with one registered transform per clip; frozen source/atlas hashes below. Reviewer changed no sequence_specs, atlas or gameplay file.",
+  "review_basis": [
+    "docs/shader-learning/art-style-standard-v002.md",
+    "docs/shader-learning/ember-enemy-animation-standard-v001.md",
+    "docs/shader-learning/ta-art-review-standard-v001.md",
+    "art-source/ember/enemy-design-sheets-v001/design_catalog_v001.json"
+  ],
+  "evidence_methods": [
+    "Viewed all twenty selected 128px-cell actual atlases, all source masters, fourteen revision candidates, all four final native 1x and integer 4x thirty-frame contact sheets, and the patrol eight-frame move strip.",
+    "Viewed final actual Godot GPU white-alpha screenshot and twenty-action contact screenshot. Hidden RGB seen in image viewers did not appear as opaque black/grey boards in Godot.",
+    "Source measurements used read-only System.Drawing alpha >= 128 for inclusive local lowest pixel; boundary audit used alpha > 25. Final atlas metrics below are catalog alpha >= 0.1 bounding-box bottom edges (y + height), not semantic contact points.",
+    "One common transform per whole clip; no reviewer per-frame recentering, bottom alignment, scaling, image painting, alpha threshold conversion or recolouring.",
+    "Static contact sheets and playback snapshots do not establish a complete acceptable walk cycle or strict rigid-part identity. Technical GPU/load/round-trip PASS is separately provided by the exporter."
+  ],
+  "limitations": [
+    "No manual native pixel clean-up or editable linked-cell rig was produced.",
+    "Continuous alpha is preserved from imagegen; the formal binary-alpha gate fails.",
+    "Bbox and alpha centroids include articulation and do not establish identical rigid-part shape or true support contact.",
+    "A static frame strip and playback screenshot do not establish a polished walk cycle."
+  ],
+  "global_blockers": [
+    {
+      "id": "formal_entity_binary_alpha",
+      "status": "FAIL",
+      "details": "Generated entity pixels contain continuous alpha including 250-254. Engine transparency works, but entity art is not compliant with formal 0/255-alpha standard. No threshold recolour was applied."
+    },
+    {
+      "id": "same_editable_native_master",
+      "status": "NOT_COMPLETE",
+      "details": "AI candidate strips are generated references. Head/armour/tool pixel clusters have not been locked to an editable native master across every pose."
+    },
+    {
+      "id": "fixed_root_and_cross_row_registration",
+      "status": "NEEDS_REVISION",
+      "details": "Several actions retain visible row-to-row shifts. Whole-clip export preserves these errors; no per-frame bbox fitting conceals them."
+    },
+    {
+      "id": "patrol_walk_cycle_gate",
+      "status": "NEEDS_REVISION",
+      "details": "Prioritise the first patrol move DOWN loop before further production expansion. Verify contact, down, passing, up, opposite contact and seamless loop."
+    },
+    {
+      "id": "cutter_hit_topology",
+      "status": "NEEDS_REVISION",
+      "details": "Frame2 tool modules occupy rear-leg sockets, four walking legs not independently readable.",
+      "detail": "Final selected cutter hit v001 f2 still has ambiguous rear-leg versus tool-arm mounts; v002 did not repair this and was rejected."
+    },
+    {
+      "id": "scout_rotor_and_landing",
+      "status": "NEEDS_REVISION",
+      "details": "Move/death candidates retain three-blade/two-blade-looking rotors. Death does not descend into a stable grounded corpse."
+    }
+  ],
+  "clips": [
+    {
+      "id": "enemy_patrol_idle_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_REGISTRATION_ERROR",
+      "formal_art_pass": false,
+      "findings": "工具左右与双腿保持；选中v003没有v002的格界截断。实际原生底缘[104,104,102,102]，底排全体上移2px，待机接地未统一。",
+      "next_step": "在同一原生母稿固定双脚支撑与躯干呼吸，保留底排关键姿态，修复后复验共同root。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_patrol_idle_down_master_v003.png",
+      "source_sha256": "b324bf2c9066443d14762d557d71c7a87fb3faeb0799a64070da8b32acd27882",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_patrol/idle_down_v001.png",
+      "atlas_sha256": "d40fbbcb38ea7b8fe4d490ac4ce9a214997cd5723dcc57d4df62e39e679e93e1",
+      "frame_count": 4,
+      "native_baseline_bottom_px": [
+        104,
+        104,
+        102,
+        102
+      ],
+      "f00_visible_bbox_px": [
+        44,
+        58,
+        40,
+        46
+      ],
+      "all_visible_bbox_px": [
+        [
+          44,
+          58,
+          40,
+          46
+        ],
+        [
+          44,
+          57,
+          39,
+          47
+        ],
+        [
+          44,
+          56,
+          40,
+          46
+        ],
+        [
+          44,
+          57,
+          40,
+          45
+        ]
+      ],
+      "clip_common_offset_px": [
+        31,
+        42
+      ],
+      "clip_common_scale": [
+        0.5,
+        0.5
+      ],
+      "reference_target_bbox_px": [
+        44,
+        52,
+        40,
+        52
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.072509765625,
+        0.07501220703125
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1207,
+        1229,
+        1188,
+        1198
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_patrol_move_down",
+      "visual_status": "NEEDS_WALK_CYCLE_REVISION",
+      "formal_art_pass": false,
+      "findings": "工具侧正确；f0–2同侧前脚、f3–4换侧、f5–7反复换侧，经过/抬升相不清楚、节奏不均。f6底缘102对其他帧104，需按支撑脚解释，不能仅齐bbox。",
+      "next_step": "作为首个生产闸门，先以同一可编辑母稿重做接触/下沉/经过/抬升与另一脚接触，再审完整闭环。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_patrol_move_down_master_v001.png",
+      "source_sha256": "23930aa0521b28a62dab12e216ed729dc546178ef742658d8213c59bb9546c4b",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_patrol/move_down_v001.png",
+      "atlas_sha256": "9897f84cc441f0a0abb619093f4413b66a51ffad2883441025068f6e6b4c7cea",
+      "frame_count": 8,
+      "native_baseline_bottom_px": [
+        104,
+        104,
+        104,
+        104,
+        104,
+        104,
+        102,
+        104
+      ],
+      "f00_visible_bbox_px": [
+        44,
+        56,
+        40,
+        48
+      ],
+      "all_visible_bbox_px": [
+        [
+          44,
+          56,
+          40,
+          48
+        ],
+        [
+          45,
+          56,
+          39,
+          48
+        ],
+        [
+          44,
+          56,
+          40,
+          48
+        ],
+        [
+          45,
+          56,
+          39,
+          48
+        ],
+        [
+          44,
+          56,
+          40,
+          48
+        ],
+        [
+          45,
+          56,
+          39,
+          48
+        ],
+        [
+          44,
+          56,
+          40,
+          46
+        ],
+        [
+          44,
+          56,
+          40,
+          48
+        ]
+      ],
+      "clip_common_offset_px": [
+        33,
+        46
+      ],
+      "clip_common_scale": [
+        0.4765625,
+        0.4765625
+      ],
+      "reference_target_bbox_px": [
+        44,
+        52,
+        40,
+        52
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.073974609375,
+        0.078857421875
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1253,
+        1212,
+        1224,
+        1221,
+        1270,
+        1246,
+        1251,
+        1292
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_patrol_attack_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_NOTES",
+      "formal_art_pass": false,
+      "findings": "选中v003抬枪/蓄势/后坐/回收可读、工具侧保持。f3头胸投影明显偏转，刚性头盔身份仍须复核；f3–5底缘103对f0–2的104，收回末帧没有回到相同支撑边缘。",
+      "next_step": "固定头盔/胸甲形状与双脚接触；验f03释放位置和回到待机的衔接，不把晕染隐藏RGB当作实际不透明背景。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_patrol_attack_down_master_v003.png",
+      "source_sha256": "b1abe8aeb5e033fd8c7c78695fd65c446db3aba3c745db5585db352dfb5d1f47",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_patrol/attack_down_v001.png",
+      "atlas_sha256": "660428139f128de976ebd4a3304b73c614b344692a9e529ec48e3526a10d3af8",
+      "frame_count": 6,
+      "native_baseline_bottom_px": [
+        104,
+        104,
+        104,
+        103,
+        103,
+        103
+      ],
+      "f00_visible_bbox_px": [
+        44,
+        56,
+        40,
+        48
+      ],
+      "all_visible_bbox_px": [
+        [
+          44,
+          56,
+          40,
+          48
+        ],
+        [
+          41,
+          57,
+          42,
+          47
+        ],
+        [
+          39,
+          61,
+          36,
+          43
+        ],
+        [
+          44,
+          58,
+          43,
+          45
+        ],
+        [
+          41,
+          58,
+          42,
+          45
+        ],
+        [
+          38,
+          58,
+          40,
+          45
+        ]
+      ],
+      "clip_common_offset_px": [
+        30,
+        48
+      ],
+      "clip_common_scale": [
+        0.453125,
+        0.453125
+      ],
+      "reference_target_bbox_px": [
+        44,
+        52,
+        40,
+        52
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.068603515625,
+        0.08160400390625
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1337,
+        1216,
+        1124,
+        1232,
+        1212,
+        1271
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_patrol_hit_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_REGISTRATION_ERROR",
+      "formal_art_pass": false,
+      "findings": "选中v002：f0中性、f1轻倾、f2明显侧倾、f3回稳；双腿与工具侧保持。实际底缘[104,104,105,105]，底排残留1px定位差。",
+      "next_step": "同一母稿固定支撑线和原臂工具，保留局部侧倾；弃用跨行反向退化的v003。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_patrol_hit_down_master_v002.png",
+      "source_sha256": "86ac81d79c860ec97607793c69e4510fe5184731a8af0089dad3c7ce73ff4180",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_patrol/hit_down_v001.png",
+      "atlas_sha256": "2a14745c9f3a960efd5c13e41bcc25ba0af7c6fdb50347219310a88579b52136",
+      "frame_count": 4,
+      "native_baseline_bottom_px": [
+        104,
+        104,
+        105,
+        105
+      ],
+      "f00_visible_bbox_px": [
+        44,
+        54,
+        40,
+        50
+      ],
+      "all_visible_bbox_px": [
+        [
+          44,
+          54,
+          40,
+          50
+        ],
+        [
+          40,
+          56,
+          43,
+          48
+        ],
+        [
+          41,
+          59,
+          53,
+          46
+        ],
+        [
+          41,
+          56,
+          40,
+          49
+        ]
+      ],
+      "clip_common_offset_px": [
+        25,
+        31
+      ],
+      "clip_common_scale": [
+        0.5859375,
+        0.5859375
+      ],
+      "reference_target_bbox_px": [
+        44,
+        52,
+        40,
+        52
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.081787109375,
+        0.08380126953125
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1372,
+        1340,
+        1373,
+        1369
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_patrol_death_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_REGISTRATION_ERROR",
+      "formal_art_pass": false,
+      "findings": "保留v001；侧倒/静止残骸可读，未见主要组件复制。f0–3底缘104，f4–7突然变96，末帧残骸比ground边缘高8px。v002首排越格已弃用。",
+      "next_step": "重做格内侧倒到接地的关键姿态及唯一残骸，不将上移当作完成坠地。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_patrol_death_down_master_v001.png",
+      "source_sha256": "7a2fbeb003c7e45decad76786c5b36abd5512d0558c24b0a279c0287e5fddc55",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_patrol/death_down_v001.png",
+      "atlas_sha256": "d73c3f8af05c3fb2f82e35ab36682fba9fd1fe17f0006a70c559f283f37b8ff2",
+      "frame_count": 8,
+      "native_baseline_bottom_px": [
+        104,
+        104,
+        104,
+        104,
+        96,
+        96,
+        96,
+        96
+      ],
+      "f00_visible_bbox_px": [
+        44,
+        57,
+        41,
+        47
+      ],
+      "all_visible_bbox_px": [
+        [
+          44,
+          57,
+          41,
+          47
+        ],
+        [
+          45,
+          59,
+          36,
+          45
+        ],
+        [
+          45,
+          65,
+          38,
+          39
+        ],
+        [
+          46,
+          68,
+          41,
+          36
+        ],
+        [
+          40,
+          64,
+          45,
+          32
+        ],
+        [
+          39,
+          67,
+          50,
+          29
+        ],
+        [
+          39,
+          70,
+          50,
+          26
+        ],
+        [
+          39,
+          70,
+          50,
+          26
+        ]
+      ],
+      "clip_common_offset_px": [
+        30,
+        35
+      ],
+      "clip_common_scale": [
+        0.5390625,
+        0.5390625
+      ],
+      "reference_target_bbox_px": [
+        44,
+        52,
+        40,
+        52
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.0606689453125,
+        0.08197021484375
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1343,
+        1271,
+        1181,
+        1184,
+        1144,
+        1034,
+        1005,
+        994
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_cutter_idle_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_REGISTRATION_ERROR",
+      "formal_art_pass": false,
+      "findings": "选中v002，四条短步腿与独立锯/爪基本可辨，锯观众左、爪观众右。底缘[104,104,106,106]，壳体与工具底排也下移，四腿实际接地点没有逐点登记。",
+      "next_step": "固定四腿支撑与前部工具插座，区分工具臂和步腿；恢复同一接地线后复审微动。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_cutter_idle_down_master_v002.png",
+      "source_sha256": "c9a8d9fc20ef1059cf0a64e810705e42978724e1d487cb9e700cce151f8b43e2",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_cutter/idle_down_v001.png",
+      "atlas_sha256": "b87040ac8fb7c02c733d56911619b3c072b84d2ab9c4e994cc5cfcb8a2471e28",
+      "frame_count": 4,
+      "native_baseline_bottom_px": [
+        104,
+        104,
+        106,
+        106
+      ],
+      "f00_visible_bbox_px": [
+        37,
+        65,
+        55,
+        39
+      ],
+      "all_visible_bbox_px": [
+        [
+          37,
+          65,
+          55,
+          39
+        ],
+        [
+          35,
+          64,
+          56,
+          40
+        ],
+        [
+          37,
+          68,
+          55,
+          38
+        ],
+        [
+          35,
+          67,
+          55,
+          39
+        ]
+      ],
+      "clip_common_offset_px": [
+        20,
+        32
+      ],
+      "clip_common_scale": [
+        0.6875,
+        0.6875
+      ],
+      "reference_target_bbox_px": [
+        36,
+        64,
+        56,
+        40
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.0911865234375,
+        0.09283447265625
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1496,
+        1508,
+        1494,
+        1521
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_cutter_move_down",
+      "visual_status": "NEEDS_REGISTRATION_AND_GAIT_REVIEW",
+      "formal_art_pass": false,
+      "findings": "选中v003的新atlas已保持全部8帧锯观众左、爪观众右，旧v001底排换边没有沿用。底缘[104,104,104,104,101,100,101,101]，底排上移3–4px；对角步相仍不足以通过。",
+      "next_step": "保留已修好的工具安装侧，重做四腿交替支撑与均匀循环；拒绝镜像整身或逐帧齐底。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_cutter_move_down_master_v003.png",
+      "source_sha256": "431ebb054feefa7d325b41171885062066af5afcab1cca80487a1e49b7bae803",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_cutter/move_down_v001.png",
+      "atlas_sha256": "5cedf96310573c4c8d99f05e52cd304054ac3b800112e2f33d0d6b0b77fcd36a",
+      "frame_count": 8,
+      "native_baseline_bottom_px": [
+        104,
+        104,
+        104,
+        104,
+        101,
+        100,
+        101,
+        101
+      ],
+      "f00_visible_bbox_px": [
+        37,
+        64,
+        54,
+        40
+      ],
+      "all_visible_bbox_px": [
+        [
+          37,
+          64,
+          54,
+          40
+        ],
+        [
+          38,
+          64,
+          53,
+          40
+        ],
+        [
+          39,
+          64,
+          50,
+          40
+        ],
+        [
+          36,
+          64,
+          52,
+          40
+        ],
+        [
+          37,
+          62,
+          54,
+          39
+        ],
+        [
+          38,
+          61,
+          53,
+          39
+        ],
+        [
+          36,
+          61,
+          53,
+          40
+        ],
+        [
+          35,
+          61,
+          54,
+          40
+        ]
+      ],
+      "clip_common_offset_px": [
+        30,
+        45
+      ],
+      "clip_common_scale": [
+        0.515625,
+        0.515625
+      ],
+      "reference_target_bbox_px": [
+        36,
+        64,
+        56,
+        40
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.089111328125,
+        0.09405517578125
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1522,
+        1502,
+        1524,
+        1460,
+        1527,
+        1527,
+        1540,
+        1541
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_cutter_attack_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_NOTES",
+      "formal_art_pass": false,
+      "findings": "选中v002：锯举起/前切/回收可读、工具侧正确。f1/f2锯臂靠近后腿插座，需证明是遮挡而非挂接迁移。底缘[105,105,105,101,100,101]，作用/回收底排上移4–5px。",
+      "next_step": "按拆件图固定前部工具臂座、四步腿接地点，回收末帧衔接中性；独立检查f03作用点。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_cutter_attack_down_master_v002.png",
+      "source_sha256": "ab782889c0087e34fa38d33b5cd35dc90565044fcc70e69408613d471e337070",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_cutter/attack_down_v001.png",
+      "atlas_sha256": "71a83554560387308986fb5e192b92b2e3faa6f2ada52751cea940c6135f9072",
+      "frame_count": 6,
+      "native_baseline_bottom_px": [
+        105,
+        105,
+        105,
+        101,
+        100,
+        101
+      ],
+      "f00_visible_bbox_px": [
+        37,
+        66,
+        55,
+        39
+      ],
+      "all_visible_bbox_px": [
+        [
+          37,
+          66,
+          55,
+          39
+        ],
+        [
+          35,
+          66,
+          57,
+          39
+        ],
+        [
+          33,
+          66,
+          59,
+          39
+        ],
+        [
+          36,
+          64,
+          59,
+          37
+        ],
+        [
+          34,
+          63,
+          58,
+          37
+        ],
+        [
+          36,
+          63,
+          56,
+          38
+        ]
+      ],
+      "clip_common_offset_px": [
+        28,
+        40
+      ],
+      "clip_common_scale": [
+        0.5703125,
+        0.5703125
+      ],
+      "reference_target_bbox_px": [
+        36,
+        64,
+        56,
+        40
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.08837890625,
+        0.09564208984375
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1567,
+        1520,
+        1535,
+        1448,
+        1492,
+        1529
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_cutter_hit_down",
+      "visual_status": "NEEDS_TOPOLOGY_REVISION",
+      "formal_art_pass": false,
+      "findings": "保留v001；f2抬起的锯/爪看似占用两后腿安装座，下方仅两步足清楚，四腿拓扑无法证明。底缘[103,104,95,99]，f2/f3整体定位与接地也明显变化；v002未修好安装位而弃用。",
+      "next_step": "同一模块母稿重做f2：明确四步腿与两独立工具臂座，登记受击时保留的支撑足，再做恢复过渡。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_cutter_hit_down_master_v001.png",
+      "source_sha256": "5f3740c18b34d43d4d4749b564ff2af3342c4957a8e693dc4bc0df44a43fc146",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_cutter/hit_down_v001.png",
+      "atlas_sha256": "dfc976c887ad48aae11d39f67ded64442566cc7b132101e87699d82e9892e490",
+      "frame_count": 4,
+      "native_baseline_bottom_px": [
+        103,
+        104,
+        95,
+        99
+      ],
+      "f00_visible_bbox_px": [
+        36,
+        66,
+        56,
+        37
+      ],
+      "all_visible_bbox_px": [
+        [
+          36,
+          66,
+          56,
+          37
+        ],
+        [
+          35,
+          69,
+          60,
+          35
+        ],
+        [
+          31,
+          53,
+          65,
+          42
+        ],
+        [
+          35,
+          60,
+          57,
+          39
+        ]
+      ],
+      "clip_common_offset_px": [
+        8,
+        10
+      ],
+      "clip_common_scale": [
+        0.875,
+        0.875
+      ],
+      "reference_target_bbox_px": [
+        36,
+        64,
+        56,
+        40
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.0938720703125,
+        0.1142578125
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1585,
+        1538,
+        1872,
+        1622
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_cutter_death_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_REGISTRATION_ERROR",
+      "formal_art_pass": false,
+      "findings": "选中v002：壳体降低、步腿内折、传感器熄灭可读，锯爪各1。f0–3底缘约103–104，f4–7固定97，残骸上移约7px，接地未完成。",
+      "next_step": "按同一ground参考重做压低、折腿和停住残骸，禁止靠逐帧bbox齐底掩盖。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_cutter_death_down_master_v002.png",
+      "source_sha256": "dc0ef0fa360af9397e18417311321abda98e65f24ce36ed1f0652631ac4cc36d",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_cutter/death_down_v001.png",
+      "atlas_sha256": "4aa6795850915b5f502b9a39c5e7a34014d01996e7efa13e17b254e77845c75b",
+      "frame_count": 8,
+      "native_baseline_bottom_px": [
+        104,
+        103,
+        104,
+        104,
+        97,
+        97,
+        97,
+        97
+      ],
+      "f00_visible_bbox_px": [
+        36,
+        66,
+        55,
+        38
+      ],
+      "all_visible_bbox_px": [
+        [
+          36,
+          66,
+          55,
+          38
+        ],
+        [
+          35,
+          66,
+          56,
+          37
+        ],
+        [
+          34,
+          71,
+          57,
+          33
+        ],
+        [
+          30,
+          76,
+          61,
+          28
+        ],
+        [
+          33,
+          68,
+          60,
+          29
+        ],
+        [
+          32,
+          72,
+          63,
+          25
+        ],
+        [
+          32,
+          69,
+          61,
+          28
+        ],
+        [
+          31,
+          69,
+          61,
+          28
+        ]
+      ],
+      "clip_common_offset_px": [
+        25,
+        29
+      ],
+      "clip_common_scale": [
+        0.59375,
+        0.59375
+      ],
+      "reference_target_bbox_px": [
+        36,
+        64,
+        56,
+        40
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.074462890625,
+        0.09259033203125
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1514,
+        1517,
+        1436,
+        1302,
+        1271,
+        1220,
+        1317,
+        1302
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_tracked_heavy_idle_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_NOTES",
+      "formal_art_pass": false,
+      "findings": "保留v001，双履带/单短炮身份稳定，底缘全104。活动较小，f2塔顶下沉投影可读但原生微动需要动态验收。",
+      "next_step": "保持底盘及履带接地，在同一母稿整理有意义的待机微动与色阶稳定。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_tracked_heavy_idle_down_master_v001.png",
+      "source_sha256": "0c9ba06e96c5fc60ca2b869870557d0891c09bf29417885346e853fa96a5d245",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_tracked_heavy/idle_down_v001.png",
+      "atlas_sha256": "db351e6e4c1c925d50aa3f9249d5a9d09326f748d356806524a642360c67e62d",
+      "frame_count": 4,
+      "native_baseline_bottom_px": [
+        104,
+        104,
+        104,
+        104
+      ],
+      "f00_visible_bbox_px": [
+        25,
+        50,
+        78,
+        54
+      ],
+      "all_visible_bbox_px": [
+        [
+          25,
+          50,
+          78,
+          54
+        ],
+        [
+          25,
+          50,
+          78,
+          54
+        ],
+        [
+          25,
+          52,
+          78,
+          52
+        ],
+        [
+          25,
+          50,
+          78,
+          54
+        ]
+      ],
+      "clip_common_offset_px": [
+        2,
+        3
+      ],
+      "clip_common_scale": [
+        0.96875,
+        0.96875
+      ],
+      "reference_target_bbox_px": [
+        24,
+        49,
+        80,
+        55
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.1986083984375,
+        0.20245361328125
+      ],
+      "partial_alpha_pixels_by_frame": [
+        3254,
+        3286,
+        3265,
+        3317
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_tracked_heavy_move_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_NOTES",
+      "formal_art_pass": false,
+      "findings": "保留v001，双履带/单短炮保持，履带花纹小幅变化。底缘[105,105,105,105,104,104,105,104]；相对idle的104有1px切换差，履带相位完整闭环未通过。",
+      "next_step": "固定底盘root和履带接触，整理履带连续相位，不以整图上下晃动代替推进。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_tracked_heavy_move_down_master_v001.png",
+      "source_sha256": "b042900f9230834f30e0e2e13c613cd41c3df946f021812a2cbda9755bd11ad2",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_tracked_heavy/move_down_v001.png",
+      "atlas_sha256": "ced6d1e5eabf6d8c35397d5228fa9518a5adb322b3dd78da531a973078f3f857",
+      "frame_count": 8,
+      "native_baseline_bottom_px": [
+        105,
+        105,
+        105,
+        105,
+        104,
+        104,
+        105,
+        104
+      ],
+      "f00_visible_bbox_px": [
+        24,
+        51,
+        80,
+        54
+      ],
+      "all_visible_bbox_px": [
+        [
+          24,
+          51,
+          80,
+          54
+        ],
+        [
+          24,
+          51,
+          80,
+          54
+        ],
+        [
+          24,
+          52,
+          80,
+          53
+        ],
+        [
+          24,
+          51,
+          80,
+          54
+        ],
+        [
+          24,
+          50,
+          80,
+          54
+        ],
+        [
+          24,
+          51,
+          80,
+          53
+        ],
+        [
+          24,
+          51,
+          80,
+          54
+        ],
+        [
+          24,
+          50,
+          80,
+          54
+        ]
+      ],
+      "clip_common_offset_px": [
+        16,
+        22
+      ],
+      "clip_common_scale": [
+        0.75,
+        0.75
+      ],
+      "reference_target_bbox_px": [
+        24,
+        49,
+        80,
+        55
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.2012939453125,
+        0.20599365234375
+      ],
+      "partial_alpha_pixels_by_frame": [
+        3321,
+        3375,
+        3355,
+        3356,
+        3348,
+        3298,
+        3299,
+        3368
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_tracked_heavy_attack_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_NOTES",
+      "formal_art_pass": false,
+      "findings": "保留v001，单短炮蓄势/回收和小幅后坐可读，无新增武器；底缘全104。f03后坐辨识度有限，头部投影变化需以固定装甲确认。",
+      "next_step": "实际播放复验f03释放可读性；射弹与闪光独立，固定装甲体量及接触。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_tracked_heavy_attack_down_master_v001.png",
+      "source_sha256": "cc1eac4d1b74b3fae95d4cc67324a6b21c98246f5c2097238a906db90b9ef8b9",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_tracked_heavy/attack_down_v001.png",
+      "atlas_sha256": "5d3db55112a6f335b09962e90eafac632ad1cb90e8fec95e30774269bdb61e59",
+      "frame_count": 6,
+      "native_baseline_bottom_px": [
+        104,
+        104,
+        104,
+        104,
+        104,
+        104
+      ],
+      "f00_visible_bbox_px": [
+        24,
+        50,
+        80,
+        54
+      ],
+      "all_visible_bbox_px": [
+        [
+          24,
+          50,
+          80,
+          54
+        ],
+        [
+          24,
+          54,
+          80,
+          50
+        ],
+        [
+          23,
+          52,
+          81,
+          52
+        ],
+        [
+          24,
+          50,
+          80,
+          54
+        ],
+        [
+          24,
+          52,
+          80,
+          52
+        ],
+        [
+          23,
+          50,
+          81,
+          54
+        ]
+      ],
+      "clip_common_offset_px": [
+        2,
+        3
+      ],
+      "clip_common_scale": [
+        0.96875,
+        0.96875
+      ],
+      "reference_target_bbox_px": [
+        24,
+        49,
+        80,
+        55
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.20806884765625,
+        0.215576171875
+      ],
+      "partial_alpha_pixels_by_frame": [
+        3431,
+        3409,
+        3446,
+        3489,
+        3506,
+        3532
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_tracked_heavy_hit_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_NOTES",
+      "formal_art_pass": false,
+      "findings": "保留v001，塔体侧倾后回稳，双履带/单短炮保持。底缘全105，相对idle/attack的104有1px跨动作差。",
+      "next_step": "统一底盘接触与跨动作root，保留关节侧倾，不将装甲轮廓重设计成受击形变。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_tracked_heavy_hit_down_master_v001.png",
+      "source_sha256": "00857600a71876aa1491ac81ef0e9ce666735d0302b3c3be23716a27c1f4103a",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_tracked_heavy/hit_down_v001.png",
+      "atlas_sha256": "6dbbd463f42de7b3d174948d1b76249806ac184dd7994215b7f106f5ec2f06d7",
+      "frame_count": 4,
+      "native_baseline_bottom_px": [
+        105,
+        105,
+        105,
+        105
+      ],
+      "f00_visible_bbox_px": [
+        24,
+        50,
+        80,
+        55
+      ],
+      "all_visible_bbox_px": [
+        [
+          24,
+          50,
+          80,
+          55
+        ],
+        [
+          24,
+          50,
+          80,
+          55
+        ],
+        [
+          24,
+          50,
+          80,
+          55
+        ],
+        [
+          24,
+          50,
+          80,
+          55
+        ]
+      ],
+      "clip_common_offset_px": [
+        1,
+        2
+      ],
+      "clip_common_scale": [
+        0.984375,
+        0.984375
+      ],
+      "reference_target_bbox_px": [
+        24,
+        49,
+        80,
+        55
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.2113037109375,
+        0.21478271484375
+      ],
+      "partial_alpha_pixels_by_frame": [
+        3511,
+        3462,
+        3466,
+        3519
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_tracked_heavy_death_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_REGISTRATION_ERROR",
+      "formal_art_pass": false,
+      "findings": "选中v002，顶盖抬起后塌下、传感器熄灭、双履带/单短炮不复制。f0–3底缘105，f4–7变100，履带残骸跨行上移5px。",
+      "next_step": "以履带固定支撑重做塔体塌陷与停止状态，末帧应能在ground参考上解释真实接地。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_tracked_heavy_death_down_master_v002.png",
+      "source_sha256": "40a614b72c389d2575af4904bd01c9aee28aa57ea3b65997875d39eecb8b6b4a",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_tracked_heavy/death_down_v001.png",
+      "atlas_sha256": "98f91d13d6b8a9170e1da427b8933563834e5b20965c63e5ed2dde11c27a1f53",
+      "frame_count": 8,
+      "native_baseline_bottom_px": [
+        105,
+        105,
+        105,
+        105,
+        100,
+        100,
+        100,
+        100
+      ],
+      "f00_visible_bbox_px": [
+        24,
+        50,
+        80,
+        55
+      ],
+      "all_visible_bbox_px": [
+        [
+          24,
+          50,
+          80,
+          55
+        ],
+        [
+          24,
+          57,
+          80,
+          48
+        ],
+        [
+          24,
+          61,
+          80,
+          44
+        ],
+        [
+          24,
+          52,
+          81,
+          53
+        ],
+        [
+          24,
+          50,
+          80,
+          50
+        ],
+        [
+          24,
+          60,
+          80,
+          40
+        ],
+        [
+          24,
+          60,
+          80,
+          40
+        ],
+        [
+          24,
+          60,
+          81,
+          40
+        ]
+      ],
+      "clip_common_offset_px": [
+        14,
+        13
+      ],
+      "clip_common_scale": [
+        0.78125,
+        0.78125
+      ],
+      "reference_target_bbox_px": [
+        24,
+        49,
+        80,
+        55
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.17803955078125,
+        0.2120361328125
+      ],
+      "partial_alpha_pixels_by_frame": [
+        3474,
+        3313,
+        3151,
+        3339,
+        3309,
+        3001,
+        2917,
+        2977
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_scout_drone_idle_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_NOTES",
+      "formal_art_pass": false,
+      "findings": "保留v001，双风扇/双支臂/中央传感器稳定，四叶相位较清楚。底缘[80,79,78,79]，幅度2px；格间横向也有约1–3px摆动，不能以bbox证明固定机体。",
+      "next_step": "锁定两个四叶转子及刚性支臂，按恒定ground投影点整理±1px悬浮和相位闭环。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_scout_drone_idle_down_master_v001.png",
+      "source_sha256": "13a645d36bb54f7941db608c03fb15cf4c0d04fd6a463d207f5190322bb19d0e",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_scout_drone/idle_down_v001.png",
+      "atlas_sha256": "7422c860a0a9817642ea345fc18c84f88fd9a67b80501413d1488f341d5713b6",
+      "frame_count": 4,
+      "native_baseline_bottom_px": [
+        80,
+        79,
+        78,
+        79
+      ],
+      "f00_visible_bbox_px": [
+        32,
+        55,
+        64,
+        25
+      ],
+      "all_visible_bbox_px": [
+        [
+          32,
+          55,
+          64,
+          25
+        ],
+        [
+          30,
+          54,
+          63,
+          25
+        ],
+        [
+          32,
+          53,
+          64,
+          25
+        ],
+        [
+          29,
+          54,
+          64,
+          25
+        ]
+      ],
+      "clip_common_offset_px": [
+        22,
+        24
+      ],
+      "clip_common_scale": [
+        0.6328125,
+        0.6328125
+      ],
+      "reference_target_bbox_px": [
+        32,
+        54,
+        64,
+        26
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.0732421875,
+        0.0792236328125
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1258,
+        1200,
+        1298,
+        1260
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_scout_drone_move_down",
+      "visual_status": "NEEDS_ROTOR_IDENTITY_REVISION",
+      "formal_art_pass": false,
+      "findings": "选中v002，总风扇2和中央机体保持，底缘[80,80,80,80,80,80,81,80]较稳。但f0–7主要仍像三叶Y形转子，固定四叶未修好。",
+      "next_step": "沿用固定外壳/支臂，以同一四叶部件制作转相；禁止把三叶Y视为四叶模糊相位通过。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_scout_drone_move_down_master_v002.png",
+      "source_sha256": "42c0458d020228704fc2cbf4a2f23289dd5d6359c4e28ca3b91dce4316073489",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_scout_drone/move_down_v001.png",
+      "atlas_sha256": "3c573f0756b4e56b0a21dcef7dcf45c2358cff413f36c33cb5b7a5e0fdb70452",
+      "frame_count": 8,
+      "native_baseline_bottom_px": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        81,
+        80
+      ],
+      "f00_visible_bbox_px": [
+        33,
+        54,
+        62,
+        26
+      ],
+      "all_visible_bbox_px": [
+        [
+          33,
+          54,
+          62,
+          26
+        ],
+        [
+          33,
+          54,
+          62,
+          26
+        ],
+        [
+          33,
+          53,
+          62,
+          27
+        ],
+        [
+          33,
+          54,
+          62,
+          26
+        ],
+        [
+          33,
+          54,
+          62,
+          26
+        ],
+        [
+          33,
+          54,
+          62,
+          26
+        ],
+        [
+          33,
+          54,
+          62,
+          27
+        ],
+        [
+          33,
+          54,
+          62,
+          26
+        ]
+      ],
+      "clip_common_offset_px": [
+        28,
+        25
+      ],
+      "clip_common_scale": [
+        0.5625,
+        0.5625
+      ],
+      "reference_target_bbox_px": [
+        32,
+        54,
+        64,
+        26
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.07281494140625,
+        0.0753173828125
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1198,
+        1193,
+        1218,
+        1202,
+        1221,
+        1231,
+        1222,
+        1234
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_scout_drone_attack_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_NOTES",
+      "formal_art_pass": false,
+      "findings": "选中v002，各格四叶较v001明显改善，双风扇/传感器/原短探头保持。底缘[81,82,83,78,77,77]，底排回收整体偏高，末帧与中性80不一致。",
+      "next_step": "保留四叶改善，固定地面投影root与原部件，整理前倾/释放/回到原悬浮高度；不新增枪架。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_scout_drone_attack_down_master_v002.png",
+      "source_sha256": "0ec1610a7012f6c7ae2d5483d582c8b0caa1fe7b018bd911b623d18f7e63e32e",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_scout_drone/attack_down_v001.png",
+      "atlas_sha256": "ae0404e7120f254b47f9f178890077e05ea458980be8c5a02e0d5aec1677648e",
+      "frame_count": 6,
+      "native_baseline_bottom_px": [
+        81,
+        82,
+        83,
+        78,
+        77,
+        77
+      ],
+      "f00_visible_bbox_px": [
+        34,
+        55,
+        60,
+        26
+      ],
+      "all_visible_bbox_px": [
+        [
+          34,
+          55,
+          60,
+          26
+        ],
+        [
+          33,
+          56,
+          61,
+          26
+        ],
+        [
+          33,
+          56,
+          60,
+          27
+        ],
+        [
+          34,
+          53,
+          61,
+          25
+        ],
+        [
+          32,
+          51,
+          63,
+          26
+        ],
+        [
+          32,
+          51,
+          62,
+          26
+        ]
+      ],
+      "clip_common_offset_px": [
+        26,
+        26
+      ],
+      "clip_common_scale": [
+        0.5859375,
+        0.5859375
+      ],
+      "reference_target_bbox_px": [
+        32,
+        54,
+        64,
+        26
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.07073974609375,
+        0.07647705078125
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1159,
+        1216,
+        1176,
+        1174,
+        1253,
+        1215
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_scout_drone_hit_down",
+      "visual_status": "REVIEW_SAMPLE_WITH_NOTES",
+      "formal_art_pass": false,
+      "findings": "选中v002，四叶较v001改善，左右倾斜可读，双风扇不复制。底缘[80,83,78,76]，f3回稳仍比中性高4px；部分遮挡下的四叶仍须原生母稿复核。",
+      "next_step": "固定双支臂与四叶部件，按同一悬浮中性做受击后恢复，逐格证明叶片遮挡而非数量变化。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_scout_drone_hit_down_master_v002.png",
+      "source_sha256": "e42f6cd55e079ab05423c157e62e8d0bffdd5dea869522e6946cc673258b46bd",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_scout_drone/hit_down_v001.png",
+      "atlas_sha256": "35371a27f4823cc017769fa962e7718673f6326c95369f2e562af4be6c9bc404",
+      "frame_count": 4,
+      "native_baseline_bottom_px": [
+        80,
+        83,
+        78,
+        76
+      ],
+      "f00_visible_bbox_px": [
+        34,
+        54,
+        59,
+        26
+      ],
+      "all_visible_bbox_px": [
+        [
+          34,
+          54,
+          59,
+          26
+        ],
+        [
+          32,
+          54,
+          62,
+          29
+        ],
+        [
+          30,
+          49,
+          64,
+          29
+        ],
+        [
+          32,
+          49,
+          62,
+          27
+        ]
+      ],
+      "clip_common_offset_px": [
+        15,
+        15
+      ],
+      "clip_common_scale": [
+        0.7421875,
+        0.7421875
+      ],
+      "reference_target_bbox_px": [
+        32,
+        54,
+        64,
+        26
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.0712890625,
+        0.077880859375
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1168,
+        1232,
+        1276,
+        1230
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    },
+    {
+      "id": "enemy_scout_drone_death_down",
+      "visual_status": "NEEDS_LANDING_AND_ROTOR_REVISION",
+      "formal_art_pass": false,
+      "findings": "选中v002仍未满足：f0–5转子多像三叶Y，f6/7像横向两叶条。底缘[80,84,85,89,82,85,85,85]，f3→f4从89上抬到82；f7仍比ground104高19px，坠地未完成。",
+      "next_step": "重做单向下降、支臂折叠、两个四叶转子停止和最终接地，唯一残骸不得复制风扇或叶片。",
+      "selected_source": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_scout_drone_death_down_master_v002.png",
+      "source_sha256": "6493a5e9973ffa8bd7dab8c4394da36d5bf80f7f970bd3fb4e5ea7288cbe14a9",
+      "atlas": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_scout_drone/death_down_v001.png",
+      "atlas_sha256": "0491056921707c1f20ddb1a0080252fc9b125a1be727e35ea6dad20478ef456f",
+      "frame_count": 8,
+      "native_baseline_bottom_px": [
+        80,
+        84,
+        85,
+        89,
+        82,
+        85,
+        85,
+        85
+      ],
+      "f00_visible_bbox_px": [
+        34,
+        54,
+        60,
+        26
+      ],
+      "all_visible_bbox_px": [
+        [
+          34,
+          54,
+          60,
+          26
+        ],
+        [
+          34,
+          58,
+          60,
+          26
+        ],
+        [
+          33,
+          59,
+          63,
+          26
+        ],
+        [
+          34,
+          61,
+          59,
+          28
+        ],
+        [
+          33,
+          57,
+          62,
+          25
+        ],
+        [
+          33,
+          59,
+          62,
+          26
+        ],
+        [
+          32,
+          59,
+          64,
+          26
+        ],
+        [
+          33,
+          59,
+          62,
+          26
+        ]
+      ],
+      "clip_common_offset_px": [
+        27,
+        26
+      ],
+      "clip_common_scale": [
+        0.5703125,
+        0.5703125
+      ],
+      "reference_target_bbox_px": [
+        32,
+        54,
+        64,
+        26
+      ],
+      "partial_alpha_fraction_of_canvas_range": [
+        0.07061767578125,
+        0.0760498046875
+      ],
+      "partial_alpha_pixels_by_frame": [
+        1157,
+        1192,
+        1211,
+        1234,
+        1213,
+        1243,
+        1246,
+        1210
+      ],
+      "entity_binary_alpha_status": "FAIL",
+      "technical_status": "PASS",
+      "visual_acceptance": "NEEDS_REVISION"
+    }
+  ],
+  "candidate_source_checks": [
+    {
+      "id": "enemy_patrol_idle_down",
+      "revision": "v003",
+      "recommendation": "PREFER_FOR_REVIEW_NOT_PRODUCTION_PASS",
+      "bottoms_A128": [
+        610,
+        610,
+        585,
+        585
+      ],
+      "border_note": "No clipping; original rigid position target not achieved."
+    },
+    {
+      "id": "enemy_patrol_hit_down",
+      "revision": "v002",
+      "recommendation": "PREFER_FOR_REVIEW_NOT_PRODUCTION_PASS",
+      "bottoms_A128": [
+        610,
+        610,
+        615,
+        618
+      ]
+    },
+    {
+      "id": "enemy_patrol_attack_down",
+      "revision": "v003",
+      "recommendation": "PREFER_FOR_REVIEW_NOT_PRODUCTION_PASS",
+      "bottoms_A128": [
+        490,
+        490,
+        490,
+        483,
+        483,
+        483
+      ]
+    },
+    {
+      "id": "enemy_patrol_death_down",
+      "revision": "v002",
+      "recommendation": "REJECT_KEEP_V001",
+      "bottoms_A128": [
+        442,
+        442,
+        442,
+        442,
+        362,
+        362,
+        362,
+        362
+      ],
+      "bottom_edge_pixels_A_gt25": [
+        143,
+        144,
+        154,
+        230,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reason": "First-row sprites cross fixed source-cell boundary."
+    },
+    {
+      "id": "enemy_cutter_idle_down",
+      "revision": "v002",
+      "recommendation": "PREFER_FOR_REVIEW_NOT_PRODUCTION_PASS",
+      "bottoms_A128": [
+        514,
+        514,
+        527,
+        527
+      ]
+    },
+    {
+      "id": "enemy_cutter_move_down",
+      "revision": "v003",
+      "recommendation": "PREFER_FOR_REVIEW_NOT_PRODUCTION_PASS",
+      "bottoms_A128": [
+        393,
+        393,
+        396,
+        393,
+        372,
+        368,
+        372,
+        376
+      ],
+      "identity": "Saw viewer-left and claw viewer-right in all eight frames."
+    },
+    {
+      "id": "enemy_cutter_attack_down",
+      "revision": "v002",
+      "recommendation": "PREFER_FOR_REVIEW_NOT_PRODUCTION_PASS",
+      "bottoms_A128": [
+        452,
+        452,
+        452,
+        426,
+        421,
+        428
+      ]
+    },
+    {
+      "id": "enemy_cutter_hit_down",
+      "revision": "v002",
+      "recommendation": "TOPOLOGY_NOT_FIXED_REMAIN_CANDIDATE",
+      "bottoms_A128": [
+        543,
+        543,
+        465,
+        486
+      ],
+      "frame_issues": [
+        2
+      ]
+    },
+    {
+      "id": "enemy_cutter_death_down",
+      "revision": "v002",
+      "recommendation": "PREFER_FOR_REVIEW_NOT_PRODUCTION_PASS",
+      "bottoms_A128": [
+        434,
+        428,
+        434,
+        434,
+        397,
+        397,
+        396,
+        395
+      ]
+    },
+    {
+      "id": "enemy_tracked_heavy_death_down",
+      "revision": "v002",
+      "recommendation": "PREFER_FOR_REVIEW_NOT_PRODUCTION_PASS",
+      "bottoms_A128": [
+        404,
+        404,
+        404,
+        406,
+        386,
+        386,
+        386,
+        386
+      ]
+    },
+    {
+      "id": "enemy_scout_drone_move_down",
+      "revision": "v002",
+      "recommendation": "ROTOR_COUNT_NOT_FIXED_REMAIN_CANDIDATE",
+      "bottoms_A128": [
+        339,
+        339,
+        336,
+        339,
+        339,
+        339,
+        343,
+        338
+      ]
+    },
+    {
+      "id": "enemy_scout_drone_attack_down",
+      "revision": "v002",
+      "recommendation": "PREFER_FOR_REVIEW_NOT_PRODUCTION_PASS",
+      "bottoms_A128": [
+        371,
+        382,
+        385,
+        354,
+        346,
+        344
+      ]
+    },
+    {
+      "id": "enemy_scout_drone_hit_down",
+      "revision": "v002",
+      "recommendation": "PREFER_FOR_REVIEW_NOT_PRODUCTION_PASS",
+      "bottoms_A128": [
+        425,
+        451,
+        417,
+        398
+      ]
+    },
+    {
+      "id": "enemy_scout_drone_death_down",
+      "revision": "v002",
+      "recommendation": "LANDING_AND_ROTOR_NOT_FIXED_REMAIN_CANDIDATE",
+      "bottoms_A128": [
+        327,
+        348,
+        358,
+        380,
+        339,
+        358,
+        358,
+        358
+      ]
+    }
+  ],
+  "current_atlas_snapshot_notice": "Historical snapshot from before final selection/re-export; do not treat its source choices or hashes as the frozen batch. Current bindings are in fixed_review_batch and clips.",
+  "current_atlas_snapshot": [
+    {
+      "id": "enemy_patrol_idle_down",
+      "source": "enemy_patrol_idle_down_master_v001.png",
+      "frames": 4,
+      "baseline": "104,104,100,100",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_patrol_move_down",
+      "source": "enemy_patrol_move_down_master_v001.png",
+      "frames": 8,
+      "baseline": "104,104,104,104,104,104,102,104",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_patrol_attack_down",
+      "source": "enemy_patrol_attack_down_master_v002.png",
+      "frames": 6,
+      "baseline": "104,104,104,100,100,100",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_patrol_hit_down",
+      "source": "enemy_patrol_hit_down_master_v001.png",
+      "frames": 4,
+      "baseline": "104,104,99,101",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_patrol_death_down",
+      "source": "enemy_patrol_death_down_master_v001.png",
+      "frames": 8,
+      "baseline": "104,104,104,104,96,96,96,96",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_cutter_idle_down",
+      "source": "enemy_cutter_idle_down_master_v001.png",
+      "frames": 4,
+      "baseline": "104,104,98,98",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_cutter_move_down",
+      "source": "enemy_cutter_move_down_master_v001.png",
+      "frames": 8,
+      "baseline": "104,104,104,104,98,99,98,98",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_cutter_attack_down",
+      "source": "enemy_cutter_attack_down_master_v001.png",
+      "frames": 6,
+      "baseline": "105,105,105,99,98,98",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_cutter_hit_down",
+      "source": "enemy_cutter_hit_down_master_v001.png",
+      "frames": 4,
+      "baseline": "103,104,95,99",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_cutter_death_down",
+      "source": "enemy_cutter_death_down_master_v001.png",
+      "frames": 8,
+      "baseline": "104,104,104,104,96,96,96,96",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_tracked_heavy_idle_down",
+      "source": "enemy_tracked_heavy_idle_down_master_v001.png",
+      "frames": 4,
+      "baseline": "104,104,104,104",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_tracked_heavy_move_down",
+      "source": "enemy_tracked_heavy_move_down_master_v001.png",
+      "frames": 8,
+      "baseline": "105,105,105,105,104,104,105,104",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_tracked_heavy_attack_down",
+      "source": "enemy_tracked_heavy_attack_down_master_v001.png",
+      "frames": 6,
+      "baseline": "104,104,104,104,104,104",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_tracked_heavy_hit_down",
+      "source": "enemy_tracked_heavy_hit_down_master_v001.png",
+      "frames": 4,
+      "baseline": "105,105,105,105",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_tracked_heavy_death_down",
+      "source": "enemy_tracked_heavy_death_down_master_v001.png",
+      "frames": 8,
+      "baseline": "104,104,104,104,99,99,99,99",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_scout_drone_idle_down",
+      "source": "enemy_scout_drone_idle_down_master_v001.png",
+      "frames": 4,
+      "baseline": "80,79,78,79",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_scout_drone_move_down",
+      "source": "enemy_scout_drone_move_down_master_v001.png",
+      "frames": 8,
+      "baseline": "80,80,79,80,79,79,80,79",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_scout_drone_attack_down",
+      "source": "enemy_scout_drone_attack_down_master_v001.png",
+      "frames": 6,
+      "baseline": "80,83,84,80,77,76",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_scout_drone_hit_down",
+      "source": "enemy_scout_drone_hit_down_master_v001.png",
+      "frames": 4,
+      "baseline": "79,83,78,75",
+      "technical": "PASS"
+    },
+    {
+      "id": "enemy_scout_drone_death_down",
+      "source": "enemy_scout_drone_death_down_master_v001.png",
+      "frames": 8,
+      "baseline": "80,82,84,88,82,81,81,81",
+      "technical": "PASS"
+    }
+  ],
+  "ta_status": "PENDING_TA",
+  "batch_status": "FIXED_TA_REVIEW_SAMPLE",
+  "fixed_review_batch": {
+    "catalog_path": "assets/ember/characters/enemies_v001/sequence_catalog_v001.json",
+    "catalog_sha256": "568c280046c007c88240a40574592cc46e7f19b54ece1e0171a94807a3ba40e6",
+    "spec_path": "art-source/ember/enemy-sequences-v001/sequence_specs_v001.json",
+    "spec_sha256": "225fd6333590f80e526f7422d58ac89ba74edd5d52607daf1a092f5cf2c368a7",
+    "clip_count": 20,
+    "frame_count": 120,
+    "direction": "down",
+    "root_px": [
+      64,
+      104
+    ],
+    "entity_binary_alpha_status": "FAIL_ALL_20_CLIPS",
+    "formal_production_art_pass": false
+  },
+  "evidence_files": [
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_patrol_all_frames_down_1x_v001.png",
+      "sha256": "8bcebe5a37585de0a7fbda9c0b84199e87a5f678407db10a398393817fb57955"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_patrol_all_frames_down_4x_v001.png",
+      "sha256": "7d4d61337ffe874346c1a9e5a32a65fd9ad5b4f0ae6ace54276ba31fdfd9dc71"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_cutter_all_frames_down_1x_v001.png",
+      "sha256": "70dca85011a43d86fc8003f5874771822446054f345086e51751c443f01b7190"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_cutter_all_frames_down_4x_v001.png",
+      "sha256": "6e550b7380e8226b435658b21420c2472b97e8c9e95ecc91b336823a5636c434"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_tracked_heavy_all_frames_down_1x_v001.png",
+      "sha256": "8ee53cc5fad1ebfbf7ab39a1ebd050328c10365ea7073419138170034219ca47"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_tracked_heavy_all_frames_down_4x_v001.png",
+      "sha256": "7329d802e09adcdde67b56f44a8be02a347c4d6a0e1c7e77c96adbca38450c97"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_scout_drone_all_frames_down_1x_v001.png",
+      "sha256": "d652aa9a80ead76d0a6367b235f8760dd63137eda3d0dbc0ec17376172f04767"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_scout_drone_all_frames_down_4x_v001.png",
+      "sha256": "bf860b9da35ecc8c78c1c2542dbfc3c0bd5d889cd4861964d65debfe90074f0b"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_patrol_move_down_strip_1x_v001.png",
+      "sha256": "08ef7d290e59d4003e086dbd0ec2df0de797dc073f30b62eedc17231457b86f4"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_patrol_move_down_strip_4x_v001.png",
+      "sha256": "18817c9337e27d4cd93ed469a0b1df7b5c7c88a8c6c9d73a01ba75c24032fba8"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/gpu_alpha_white_v001.png",
+      "sha256": "7dfed478c249d5a5d681da19e2ac0186e3032f478e970b9faa7495f8e75d7627"
+    },
+    {
+      "path": "assets/ember/characters/enemies_v001/previews/enemy_sequences_contact_sheet_v001.png",
+      "sha256": "b84a29e0fc0a26b41608b4a192f3969778ed28fb4197a33be308a193e5aeb7ab"
+    }
+  ],
+  "final_native_metric_notice": "baseline_bottom_px is the alpha>=0.1 visible bbox lower edge y+height in 128px native canvas, exclusive of last pixel. It is only a location diagnostic: moving tools, swing feet, occlusion and collapse change bbox; it cannot prove support contacts or unchanged rigid parts.",
+  "cross_action_neutral_checks": [
+    {
+      "unit": "enemy_patrol",
+      "f00_bbox_by_action": {
+        "idle": [
+          44,
+          58,
+          40,
+          46
+        ],
+        "move": [
+          44,
+          56,
+          40,
+          48
+        ],
+        "attack": [
+          44,
+          56,
+          40,
+          48
+        ],
+        "hit": [
+          44,
+          54,
+          40,
+          50
+        ],
+        "death": [
+          44,
+          57,
+          41,
+          47
+        ]
+      },
+      "finding": "Neutral/reference f00 heights span 46–50px and tops y54–58; transitions risk a 4px visual height/top jump. Bbox does not prove rigid helmet/torso drift; locked native parts and explicit neutral linking are still required."
+    },
+    {
+      "unit": "enemy_cutter",
+      "f00_bbox_by_action": {
+        "idle": [
+          37,
+          65,
+          55,
+          39
+        ],
+        "move": [
+          37,
+          64,
+          54,
+          40
+        ],
+        "attack": [
+          37,
+          66,
+          55,
+          39
+        ],
+        "hit": [
+          36,
+          66,
+          56,
+          37
+        ],
+        "death": [
+          36,
+          66,
+          55,
+          38
+        ]
+      },
+      "finding": "Reference f00 bottom edges span103–105 and heights37–40; tool-tip bbox cannot prove four walking foot contacts. Need separate four-leg supports and tool mounts."
+    },
+    {
+      "unit": "enemy_tracked_heavy",
+      "f00_bbox_by_action": {
+        "idle": [
+          25,
+          50,
+          78,
+          54
+        ],
+        "move": [
+          24,
+          51,
+          80,
+          54
+        ],
+        "attack": [
+          24,
+          50,
+          80,
+          54
+        ],
+        "hit": [
+          24,
+          50,
+          80,
+          55
+        ],
+        "death": [
+          24,
+          50,
+          80,
+          55
+        ]
+      },
+      "finding": "Reference f00 widths78–80 and lower edges104–105; idle versus other actions still has an up-to2px silhouette difference and1px baseline change. These are diagnostics pending rigid-part review, not production registration PASS."
+    },
+    {
+      "unit": "enemy_scout_drone",
+      "f00_bbox_by_action": {
+        "idle": [
+          32,
+          55,
+          64,
+          25
+        ],
+        "move": [
+          33,
+          54,
+          62,
+          26
+        ],
+        "attack": [
+          34,
+          55,
+          60,
+          26
+        ],
+        "hit": [
+          34,
+          54,
+          59,
+          26
+        ],
+        "death": [
+          34,
+          54,
+          60,
+          26
+        ]
+      },
+      "finding": "Reference f00 total widths span59–64px across actions while target is common64px; may include rotor projection phase but fixed shell/pod/strut identity is not established. Ground root remains(64,104), airborne bottoms80/81 are not landing proof."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "date": "2026-10-06",
+  "reviewer": "root",
+  "scope": "Manual review of final new native poses, real 40-pose GPU 4x atlas, actual UI preview, and sampled full action cycle; technical tests are independent",
+  "source_manifest_sha256": "977d382130cd89aafebbf7102dbc1daf9ff0bdb001fe5a4c47c6eb89bce030a5",
+  "catalog_sha256": "68dc31540d80f0f3215a2e679ff4f7f2fa84bb4ed551e38c583c60996ebc9f3c",
+  "frames_resource_sha256": "bb18fe3dd0ef30e2ce23f7bb659e8f68f160448c0138887a3c5d02256313cab9",
+  "atlas_sha256": "09c42739f28eb9b97f9e209e7ee05100a572968c6fc152603117165e3edb7bc4",
+  "native_review_sha256": "4d416f64fa254f34f2997f0a4368f17e47dc5890d463f0762b0cddebd7f9ec82",
+  "issues": [],
+  "observations": [
+    "Final down/left/right/up new poses retain accepted native helmet, armor palette, anatomical left wrist tool and both support feet.",
+    "Rejected initial whole-arm left-shoulder translation was replaced by explicit upper-arm/forearm segmentation; final shoulder stays with torso.",
+    "Down-facing extension has individually authored elbow connection; no visible floating fragment or open shoulder seam in final contact and actual GPU sheets.",
+    "Idle is a restrained one-pixel upper-body motion; collect is compact lowering/forearm extension, not a new large limb rotation.",
+    "Actual atlas reads every one of 40 poses; 1x and 4x GPU equality separately measured. Manual visual review does not replace connectivity and source-hash checks.",
+    "One-second preview time samples preserve idle 2FPS, walk 8FPS, collect 6FPS followed by idle; collect resource remains non-looping."
+  ],
+  "viewed_images": [
+    {
+      "sha256": "bc29d07252c35671b32e2d54a13e1536b7f4f8dca38da894c345fabaca1cab85",
+      "file": "art-source/ember/robot-actions-v003/new_actions_contact_4x_v003.png"
+    },
+    {
+      "sha256": "2215eef9269daa133bb8d837abfbf0c879674f238b5a32ce63d257265f7e906e",
+      "file": "assets/ember/characters/robot/robot_gpu_4x_v003.png"
+    },
+    {
+      "sha256": "bacd4700510aecb71ead2a636e87f25a811f8bf3a746a3989d9ca5a0d5f05a81",
+      "file": "assets/ember/characters/robot/robot_preview_v003.png"
+    },
+    {
+      "sha256": "79d8dc497ea98ec733205fb45cdeaddc2158946068b705688008be8832a89e0a",
+      "file": "art-source/ember/robot-actions-v003/previews/gpu-sequence/robot_actions_phase_04_v003.png"
+    },
+    {
+      "sha256": "d80de49d8792f2591d450c3495ae6ef5fceb7ed7e7626ab16f54ffd20bc8546e",
+      "file": "art-source/ember/robot-actions-v003/map-registration/map_overgrown_lab_anchor_v003.png"
+    }
+  ],
+  "preview_webp_sha256": "6419a08e9ccaf1298f22539f380d27d61450e4b9fe6ac95204b51cb5a1692c7f",
+  "preview_gif_sha256": "dfdf60cdab663300a302f6196232f811083effc5f30bb762d83a22afc06b8d78"
+}

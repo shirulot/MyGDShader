@@ -1,0 +1,105 @@
+{
+  "observations": "实际母稿上部横天线、窄桅杆、竖直核心与底座；高部件在原生52..128行，远高于机器人，必须登记遮挡源层。",
+  "adjustments": [
+    "核心窗[91,166,101,187)归并连续中性暗色；顶部天线浅色短条归并以去孤立颗粒",
+    "上部桅杆和横天线按y<128拆实际high_mast源层与选择mask；不是只写文字已分层",
+    "底座统一足界240，原生高天线不缩短以假装小设备"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        91,
+        166,
+        101,
+        187
+      ],
+      "color": 2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          78,
+          74
+        ],
+        [
+          85,
+          74
+        ]
+      ],
+      "color": 5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          105,
+          74
+        ],
+        [
+          112,
+          74
+        ]
+      ],
+      "color": 4
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "relay_core",
+      "visual_frame_bounds": [
+        87,
+        162,
+        106,
+        192
+      ],
+      "safe_active_rect": [
+        91,
+        166,
+        101,
+        187
+      ],
+      "center": [
+        96.0,
+        176.5
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.5,
+        0.689453125
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "components": [
+    {
+      "name": "mast_high",
+      "rects": [
+        [
+          0,
+          0,
+          192,
+          128
+        ]
+      ],
+      "z_index": 2,
+      "purpose": "高处通信桅杆/天线，前景遮挡层；完整同画布同anchor"
+    },
+    {
+      "name": "core_window",
+      "rects": [
+        [
+          91,
+          166,
+          101,
+          187
+        ]
+      ],
+      "z_index": 1,
+      "purpose": "中性核心安全内窗"
+    }
+  ],
+  "emitter_points": []
+}

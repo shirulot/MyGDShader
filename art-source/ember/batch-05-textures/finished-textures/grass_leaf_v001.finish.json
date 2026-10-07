@@ -1,0 +1,102 @@
+{
+  "id": "grass_leaf",
+  "source": "art-source/ember/batch-05-textures/generated/grass_leaf_master_v001.png",
+  "source_sha256": "ef1ce33f7a8c1a31b47337941e4fcb4f745ab0fca7ecc6973aa3dec752460d8d",
+  "prompt": "art-source/ember/batch-05-textures/prompts/grass_leaf_v001.txt",
+  "output": "art-source/ember/batch-05-textures/finished-textures/grass_leaf_v001.png",
+  "output_sha256": "1dc463fc71b8e44fc7148de106fdd05fbc0389364925eee0180c4a6e37b23888",
+  "process": {
+    "source_crop": [
+      192,
+      160,
+      875,
+      1416
+    ],
+    "native_patch_size": [
+      48,
+      110
+    ],
+    "native_patch_origin": [
+      8,
+      10
+    ],
+    "source_alpha_threshold": 160,
+    "alpha_policy": "BINARY_0_255",
+    "palette_subset": [
+      "#2B3E4B",
+      "#4D6470",
+      "#566B78",
+      "#829BA3"
+    ],
+    "native_quantization": "BOX coverage into designed native canvas, nearest fixed color, no dithering",
+    "isolated_native_pixels_removed": 0,
+    "source_use": "AI_MATERIAL_AND_SILHOUETTE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+    "native_root_junction_patch": [
+      [
+        31,
+        119
+      ],
+      [
+        32,
+        119
+      ],
+      [
+        33,
+        119
+      ]
+    ],
+    "root_anchor": [
+      32,
+      120
+    ],
+    "wind_or_height_weight_baked": false
+  },
+  "measurement": {
+    "canvas": [
+      64,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      8,
+      10,
+      56,
+      120
+    ],
+    "alpha_zero": 6899,
+    "alpha_partial": 0,
+    "alpha_opaque": 1293,
+    "visible_rgb_count": 4,
+    "palette_off_pixels": 0,
+    "edges": {
+      "X": {
+        "samples": 128,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      },
+      "Y": {
+        "samples": 64,
+        "rgba_mismatched_pixels": 0,
+        "max_channel_delta": 0,
+        "mean_absolute_channel_delta": 0.0
+      }
+    }
+  },
+  "anchor": [
+    32,
+    120
+  ],
+  "tiling": "NONE",
+  "runtime_layout": {
+    "layer_convention": "STATIC_SINGLE_FLATTENED_BASE",
+    "emitter_points": [],
+    "emission_baked": false,
+    "pbr_derived_maps": "NOT_PRODUCED",
+    "height_weight_map": "NOT_PRODUCED"
+  },
+  "source_use": "AI_MATERIAL_AND_SILHOUETTE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+  "producer_visual_status": "PRODUCER_VISUAL_REVIEW_PASS_ONLY",
+  "independent_visual_status": "PENDING_ROOT_OR_OTHER_AGENT_REVIEW",
+  "producer_visual_observation": "实际原生查看6条高度不等叶片，源低Alpha晕边已去除；根部x31..33在末行119会合，anchor32/120；bbox8/10/56/120满足四边8留白，无风摆和地面投影。"
+}

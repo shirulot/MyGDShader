@@ -1,0 +1,1287 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/ember/technical_inputs_sandbox.gd" id="1_bstyd"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/checkerboard_v001.png" id="2_mdfo5"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/color_test_v001.png" id="3_ydl4f"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/non_square_grid_v001.png" id="4_d6x5w"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/straight_background_v001.png" id="5_0vwln"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/uv_grid_v001.png" id="6_7wj1v"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/ramps/color_ramp_v001.png" id="7_twno8"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/ramps/grayscale_gradient_v001.png" id="8_yfm2q"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/masks/circle_mask_v001.png" id="9_y3211"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/masks/star_mask_v001.png" id="10_s4iie"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/noise/noise_high_v001.png" id="11_yl7ki"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/noise/noise_low_v001.png" id="12_u0xcd"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/alpha_edge_test_v001.png" id="13_5f3sk"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/energy/energy_stripe_v001.png" id="14_krnqo"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/energy/radial_ramp_v001.png" id="15_uaftt"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/test_height_v001.png" id="16_bdu7n"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/test_normal_v001.png" id="17_fstjm"]
+[ext_resource type="Texture2D" path="res://assets/ember/vfx/particles/dust_dot_v001.png" id="18_45ylj"]
+[ext_resource type="Texture2D" path="res://assets/ember/vfx/particles/rain_line_v001.png" id="19_d16ci"]
+[ext_resource type="Texture2D" path="res://assets/ember/vfx/particles/spark_v001.png" id="20_jtse0"]
+[ext_resource type="Texture2D" path="res://assets/ember/vfx/particles/water_drop_v001.png" id="21_4c46y"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/object_masks/console_mask_v001.png" id="22_dlmxk"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/object_masks/cooler_mask_v001.png" id="23_uwsvr"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/object_masks/floor_lamp_mask_v001.png" id="24_igwif"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/object_masks/pump_mask_v001.png" id="25_3sowf"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/object_masks/relay_mask_v001.png" id="26_w8gya"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/object_masks/station_mask_v001.png" id="27_hml0r"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/object_masks/telepad_mask_v001.png" id="28_bkeld"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/object_masks/terminal_window_mask_v001.png" id="29_jcwle"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/object_masks/ventilator_mask_v001.png" id="30_50j1t"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/object_masks/wall_lamp_mask_v001.png" id="31_vch7p"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/normals/station_canvas_texture_v001.tres" id="32_0yuaq"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/normals/console_canvas_texture_v001.tres" id="33_11hqg"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/normals/floor_clean_canvas_texture_v001.tres" id="34_6f74o"]
+[ext_resource type="Material" path="res://assets/ember/three_d/materials/metal_technical_v001.tres" id="35_ms0wh"]
+[ext_resource type="Material" path="res://assets/ember/three_d/materials/concrete_technical_v001.tres" id="36_q8lhf"]
+[ext_resource type="Texture2D" path="res://assets/ember/three_d/textures/grass/grass_height_weight_v001.png" id="37_xn7h4"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_avqou"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pqlsp"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_lbk84"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vo0wx"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_a0otc"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_n467f"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3fqa2"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_rskw5"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6bmaf"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i1tey"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_j0gow"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_tawl5"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3rj1c"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_sd0wu"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_n5lpr"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_a2pj4"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3fr11"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_u4u4x"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wu83u"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2kw5n"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0qmyq"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ioqet"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4tiuo"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_q3afg"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_mroh8"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_r5e2u"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_8ofky"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wynea"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5s6e4"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7w6lj"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4w62u"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0fvxc"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hmtt4"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_r846j"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_q3yvm"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wpahj"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_okm6r"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_g4hry"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2ehgv"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ma2e7"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vxpvj"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_r3yuq"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2tah8"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0sw7d"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_18tww"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_buioa"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_btf5d"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fv5l0"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_lm3sv"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ms2r0"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b2j18"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5fcvv"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_km8q5"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_tmnv4"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xa4ns"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ey1b4"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_q68ae"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i8ua7"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5cael"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_axcdb"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_m6ywv"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4s8p8"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i6n3f"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5kmaa"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_s323s"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_oksr4"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_iwflb"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_iblly"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1qgkq"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_e6j54"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_a42lo"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_dfbhr"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_f65om"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i2pkw"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_prh0d"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1hxfb"]
+light_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_hlkjq"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tx2gg"]
+gradient = SubResource("Gradient_hlkjq")
+width = 128
+height = 128
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_g0fyg"]
+diffuse_texture = SubResource("GradientTexture2D_tx2gg")
+normal_texture = ExtResource("17_fstjm")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pr07a"]
+light_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_qbe05"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_c728b"]
+gradient = SubResource("Gradient_qbe05")
+width = 512
+height = 512
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_73628"]
+light_mode = 1
+
+[sub_resource type="Environment" id="Environment_26fc5"]
+background_mode = 1
+background_color = Color(0.09411765, 0.14901961, 0.19215687, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.35
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_eb5km"]
+size = Vector2(2.8, 4)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0d54o"]
+size = Vector2(2.8, 4)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hrl74"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4tvf7"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_d0733"]
+light_mode = 1
+
+[node name="EmberTechnicalInputs" type="Control" unique_id=516411683]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1440.0
+offset_bottom = 1040.0
+script = ExtResource("1_bstyd")
+
+[node name="@ColorRect@2" type="ColorRect" parent="." unique_id=473552323]
+material = SubResource("CanvasItemMaterial_avqou")
+layout_mode = 0
+offset_right = 1440.0
+offset_bottom = 1040.0
+color = Color(0.09411765, 0.14901961, 0.19215687, 1)
+
+[node name="@Label@3" type="Label" parent="." unique_id=2085267016]
+material = SubResource("CanvasItemMaterial_pqlsp")
+layout_mode = 0
+offset_left = 24.0
+offset_top = 12.0
+offset_right = 24.0
+offset_bottom = 12.0
+theme_override_font_sizes/font_size = 26
+text = "技术输入库 · 40 PNG / 通道数据 / 内置灯光验收"
+
+[node name="@Label@4" type="Label" parent="." unique_id=29210881]
+material = SubResource("CanvasItemMaterial_lbk84")
+layout_mode = 0
+offset_left = 24.0
+offset_top = 50.0
+offset_right = 24.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 16
+text = "数据图按线性值读取；1通道采样.r。鼠标移动检修灯。资源准备不代表课程练习完成。"
+
+[node name="InputTabs" type="TabContainer" parent="." unique_id=646946158]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 86.0
+offset_right = 1424.0
+offset_bottom = 1022.0
+current_tab = 0
+
+[node name="校准与程序输入" type="Control" parent="InputTabs" unique_id=1003943807]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="@TextureRect@8" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=1473818653]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_vo0wx")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 16.0
+offset_right = 268.0
+offset_bottom = 190.0
+texture = ExtResource("2_mdfo5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@9" type="Label" parent="InputTabs/校准与程序输入" unique_id=807802677]
+material = SubResource("CanvasItemMaterial_a0otc")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 194.0
+offset_right = 12.0
+offset_bottom = 194.0
+theme_override_font_sizes/font_size = 14
+text = "checkerboard"
+
+[node name="@TextureRect@10" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=1480521728]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_n467f")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 16.0
+offset_right = 544.0
+offset_bottom = 190.0
+texture = ExtResource("3_ydl4f")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@11" type="Label" parent="InputTabs/校准与程序输入" unique_id=389075657]
+material = SubResource("CanvasItemMaterial_3fqa2")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 194.0
+offset_right = 288.0
+offset_bottom = 194.0
+theme_override_font_sizes/font_size = 14
+text = "color_test"
+
+[node name="@TextureRect@12" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=1167518692]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_rskw5")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 16.0
+offset_right = 820.0
+offset_bottom = 190.0
+texture = ExtResource("4_d6x5w")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@13" type="Label" parent="InputTabs/校准与程序输入" unique_id=1836709252]
+material = SubResource("CanvasItemMaterial_6bmaf")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 194.0
+offset_right = 564.0
+offset_bottom = 194.0
+theme_override_font_sizes/font_size = 14
+text = "non_square_grid"
+
+[node name="@TextureRect@14" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=1757250311]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_i1tey")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 16.0
+offset_right = 1096.0
+offset_bottom = 190.0
+texture = ExtResource("5_0vwln")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@15" type="Label" parent="InputTabs/校准与程序输入" unique_id=550701803]
+material = SubResource("CanvasItemMaterial_j0gow")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 194.0
+offset_right = 840.0
+offset_bottom = 194.0
+theme_override_font_sizes/font_size = 14
+text = "straight_background"
+
+[node name="@TextureRect@16" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=340577093]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_tawl5")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 16.0
+offset_right = 1372.0
+offset_bottom = 190.0
+texture = ExtResource("6_7wj1v")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@17" type="Label" parent="InputTabs/校准与程序输入" unique_id=169605273]
+material = SubResource("CanvasItemMaterial_3rj1c")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 194.0
+offset_right = 1116.0
+offset_bottom = 194.0
+theme_override_font_sizes/font_size = 14
+text = "uv_grid"
+
+[node name="@TextureRect@18" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=385946789]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_sd0wu")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 230.0
+offset_right = 268.0
+offset_bottom = 270.0
+texture = ExtResource("7_twno8")
+expand_mode = 1
+
+[node name="@Label@19" type="Label" parent="InputTabs/校准与程序输入" unique_id=243810496]
+material = SubResource("CanvasItemMaterial_n5lpr")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 408.0
+offset_right = 12.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 14
+text = "color_ramp"
+
+[node name="@TextureRect@20" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=970758066]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_a2pj4")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 230.0
+offset_right = 544.0
+offset_bottom = 270.0
+texture = ExtResource("8_yfm2q")
+expand_mode = 1
+
+[node name="@Label@21" type="Label" parent="InputTabs/校准与程序输入" unique_id=1144757712]
+material = SubResource("CanvasItemMaterial_3fr11")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 408.0
+offset_right = 288.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 14
+text = "grayscale_gradient"
+
+[node name="@TextureRect@22" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=2003498102]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_u4u4x")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 230.0
+offset_right = 820.0
+offset_bottom = 404.0
+texture = ExtResource("9_y3211")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@23" type="Label" parent="InputTabs/校准与程序输入" unique_id=2078083267]
+material = SubResource("CanvasItemMaterial_wu83u")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 408.0
+offset_right = 564.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 14
+text = "circle_mask"
+
+[node name="@TextureRect@24" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=659243698]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_2kw5n")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 230.0
+offset_right = 1096.0
+offset_bottom = 404.0
+texture = ExtResource("10_s4iie")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@25" type="Label" parent="InputTabs/校准与程序输入" unique_id=22129714]
+material = SubResource("CanvasItemMaterial_0qmyq")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 408.0
+offset_right = 840.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 14
+text = "star_mask"
+
+[node name="@TextureRect@26" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=1610447897]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_ioqet")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 230.0
+offset_right = 1372.0
+offset_bottom = 404.0
+texture = ExtResource("11_yl7ki")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@27" type="Label" parent="InputTabs/校准与程序输入" unique_id=1649765637]
+material = SubResource("CanvasItemMaterial_4tiuo")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 408.0
+offset_right = 1116.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 14
+text = "noise_high"
+
+[node name="@TextureRect@28" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=656682880]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_q3afg")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 444.0
+offset_right = 268.0
+offset_bottom = 618.0
+texture = ExtResource("12_u0xcd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@29" type="Label" parent="InputTabs/校准与程序输入" unique_id=758758812]
+material = SubResource("CanvasItemMaterial_mroh8")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 622.0
+offset_right = 12.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 14
+text = "noise_low"
+
+[node name="@TextureRect@30" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=346884106]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_r5e2u")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 444.0
+offset_right = 544.0
+offset_bottom = 618.0
+texture = ExtResource("13_5f3sk")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@31" type="Label" parent="InputTabs/校准与程序输入" unique_id=468032231]
+material = SubResource("CanvasItemMaterial_8ofky")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 622.0
+offset_right = 288.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 14
+text = "alpha_edge_test"
+
+[node name="@TextureRect@32" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=1159145931]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_wynea")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 444.0
+offset_right = 820.0
+offset_bottom = 618.0
+texture = ExtResource("14_krnqo")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@33" type="Label" parent="InputTabs/校准与程序输入" unique_id=1585477410]
+material = SubResource("CanvasItemMaterial_5s6e4")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 622.0
+offset_right = 564.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 14
+text = "energy_stripe"
+
+[node name="@TextureRect@34" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=770745309]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_7w6lj")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 444.0
+offset_right = 1096.0
+offset_bottom = 618.0
+texture = ExtResource("15_uaftt")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@35" type="Label" parent="InputTabs/校准与程序输入" unique_id=312531809]
+material = SubResource("CanvasItemMaterial_4w62u")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 622.0
+offset_right = 840.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 14
+text = "radial_ramp"
+
+[node name="@TextureRect@36" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=2133286075]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_0fvxc")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 444.0
+offset_right = 1372.0
+offset_bottom = 618.0
+texture = ExtResource("16_bdu7n")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@37" type="Label" parent="InputTabs/校准与程序输入" unique_id=1681081150]
+material = SubResource("CanvasItemMaterial_hmtt4")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 622.0
+offset_right = 1116.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 14
+text = "test_height"
+
+[node name="@TextureRect@38" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=1486567393]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_r846j")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 658.0
+offset_right = 268.0
+offset_bottom = 832.0
+texture = ExtResource("17_fstjm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@39" type="Label" parent="InputTabs/校准与程序输入" unique_id=2078468424]
+material = SubResource("CanvasItemMaterial_q3yvm")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 836.0
+offset_right = 12.0
+offset_bottom = 836.0
+theme_override_font_sizes/font_size = 14
+text = "test_normal"
+
+[node name="@TextureRect@40" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=1121760958]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_wpahj")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 658.0
+offset_right = 544.0
+offset_bottom = 832.0
+texture = ExtResource("18_45ylj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@41" type="Label" parent="InputTabs/校准与程序输入" unique_id=1184457700]
+material = SubResource("CanvasItemMaterial_okm6r")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 836.0
+offset_right = 288.0
+offset_bottom = 836.0
+theme_override_font_sizes/font_size = 14
+text = "dust_dot"
+
+[node name="@TextureRect@42" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=1951986951]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_g4hry")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 658.0
+offset_right = 820.0
+offset_bottom = 832.0
+texture = ExtResource("19_d16ci")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@43" type="Label" parent="InputTabs/校准与程序输入" unique_id=246157539]
+material = SubResource("CanvasItemMaterial_2ehgv")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 836.0
+offset_right = 564.0
+offset_bottom = 836.0
+theme_override_font_sizes/font_size = 14
+text = "rain_line"
+
+[node name="@TextureRect@44" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=318055163]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_ma2e7")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 658.0
+offset_right = 1096.0
+offset_bottom = 832.0
+texture = ExtResource("20_jtse0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@45" type="Label" parent="InputTabs/校准与程序输入" unique_id=2101683332]
+material = SubResource("CanvasItemMaterial_vxpvj")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 836.0
+offset_right = 840.0
+offset_bottom = 836.0
+theme_override_font_sizes/font_size = 14
+text = "spark"
+
+[node name="@TextureRect@46" type="TextureRect" parent="InputTabs/校准与程序输入" unique_id=1256057200]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_r3yuq")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 658.0
+offset_right = 1372.0
+offset_bottom = 832.0
+texture = ExtResource("21_4c46y")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@47" type="Label" parent="InputTabs/校准与程序输入" unique_id=366663565]
+material = SubResource("CanvasItemMaterial_2tah8")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 836.0
+offset_right = 1116.0
+offset_bottom = 836.0
+theme_override_font_sizes/font_size = 14
+text = "water_drop"
+
+[node name="设备通道" type="Control" parent="InputTabs" unique_id=675916817]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="@TextureRect@48" type="TextureRect" parent="InputTabs/设备通道" unique_id=507599993]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_0sw7d")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 18.0
+offset_right = 264.0
+offset_bottom = 334.0
+texture = ExtResource("22_dlmxk")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@49" type="Label" parent="InputTabs/设备通道" unique_id=2114875352]
+material = SubResource("CanvasItemMaterial_18tww")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 340.0
+offset_right = 12.0
+offset_bottom = 340.0
+theme_override_font_sizes/font_size = 16
+text = "console"
+
+[node name="@Label@50" type="Label" parent="InputTabs/设备通道" unique_id=1756289208]
+material = SubResource("CanvasItemMaterial_buioa")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 368.0
+offset_right = 12.0
+offset_bottom = 368.0
+theme_override_font_sizes/font_size = 13
+text = "R换色 G发光 B扰动 A轮廓"
+
+[node name="@TextureRect@51" type="TextureRect" parent="InputTabs/设备通道" unique_id=395843345]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_btf5d")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 18.0
+offset_right = 540.0
+offset_bottom = 334.0
+texture = ExtResource("23_uwsvr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@52" type="Label" parent="InputTabs/设备通道" unique_id=1104893589]
+material = SubResource("CanvasItemMaterial_fv5l0")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 340.0
+offset_right = 288.0
+offset_bottom = 340.0
+theme_override_font_sizes/font_size = 16
+text = "cooler"
+
+[node name="@Label@53" type="Label" parent="InputTabs/设备通道" unique_id=583023450]
+material = SubResource("CanvasItemMaterial_lm3sv")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 368.0
+offset_right = 288.0
+offset_bottom = 368.0
+theme_override_font_sizes/font_size = 13
+text = "R换色 G发光 B扰动 A轮廓"
+
+[node name="@TextureRect@54" type="TextureRect" parent="InputTabs/设备通道" unique_id=282970572]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_ms2r0")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 18.0
+offset_right = 816.0
+offset_bottom = 334.0
+texture = ExtResource("24_igwif")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@55" type="Label" parent="InputTabs/设备通道" unique_id=1395497315]
+material = SubResource("CanvasItemMaterial_b2j18")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 340.0
+offset_right = 564.0
+offset_bottom = 340.0
+theme_override_font_sizes/font_size = 16
+text = "floor_lamp"
+
+[node name="@Label@56" type="Label" parent="InputTabs/设备通道" unique_id=1162962682]
+material = SubResource("CanvasItemMaterial_5fcvv")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 368.0
+offset_right = 564.0
+offset_bottom = 368.0
+theme_override_font_sizes/font_size = 13
+text = "R换色 G发光 B扰动 A轮廓"
+
+[node name="@TextureRect@57" type="TextureRect" parent="InputTabs/设备通道" unique_id=1979273656]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_km8q5")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 18.0
+offset_right = 1092.0
+offset_bottom = 334.0
+texture = ExtResource("25_3sowf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@58" type="Label" parent="InputTabs/设备通道" unique_id=1533987870]
+material = SubResource("CanvasItemMaterial_tmnv4")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 340.0
+offset_right = 840.0
+offset_bottom = 340.0
+theme_override_font_sizes/font_size = 16
+text = "pump"
+
+[node name="@Label@59" type="Label" parent="InputTabs/设备通道" unique_id=1938046170]
+material = SubResource("CanvasItemMaterial_xa4ns")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 368.0
+offset_right = 840.0
+offset_bottom = 368.0
+theme_override_font_sizes/font_size = 13
+text = "R换色 G发光 B扰动 A轮廓"
+
+[node name="@TextureRect@60" type="TextureRect" parent="InputTabs/设备通道" unique_id=212780713]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_ey1b4")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 18.0
+offset_right = 1368.0
+offset_bottom = 334.0
+texture = ExtResource("26_w8gya")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@61" type="Label" parent="InputTabs/设备通道" unique_id=851501154]
+material = SubResource("CanvasItemMaterial_q68ae")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 340.0
+offset_right = 1116.0
+offset_bottom = 340.0
+theme_override_font_sizes/font_size = 16
+text = "relay"
+
+[node name="@Label@62" type="Label" parent="InputTabs/设备通道" unique_id=1906139067]
+material = SubResource("CanvasItemMaterial_i8ua7")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 368.0
+offset_right = 1116.0
+offset_bottom = 368.0
+theme_override_font_sizes/font_size = 13
+text = "R换色 G发光 B扰动 A轮廓"
+
+[node name="@TextureRect@63" type="TextureRect" parent="InputTabs/设备通道" unique_id=74868959]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_5cael")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 424.0
+offset_right = 264.0
+offset_bottom = 740.0
+texture = ExtResource("27_hml0r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@64" type="Label" parent="InputTabs/设备通道" unique_id=1787158105]
+material = SubResource("CanvasItemMaterial_axcdb")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 746.0
+offset_right = 12.0
+offset_bottom = 746.0
+theme_override_font_sizes/font_size = 16
+text = "station"
+
+[node name="@Label@65" type="Label" parent="InputTabs/设备通道" unique_id=373685844]
+material = SubResource("CanvasItemMaterial_m6ywv")
+layout_mode = 0
+offset_left = 12.0
+offset_top = 774.0
+offset_right = 12.0
+offset_bottom = 774.0
+theme_override_font_sizes/font_size = 13
+text = "R换色 G发光 B扰动 A轮廓"
+
+[node name="@TextureRect@66" type="TextureRect" parent="InputTabs/设备通道" unique_id=1446084800]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_4s8p8")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 424.0
+offset_right = 540.0
+offset_bottom = 740.0
+texture = ExtResource("28_bkeld")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@67" type="Label" parent="InputTabs/设备通道" unique_id=1897244841]
+material = SubResource("CanvasItemMaterial_i6n3f")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 746.0
+offset_right = 288.0
+offset_bottom = 746.0
+theme_override_font_sizes/font_size = 16
+text = "telepad"
+
+[node name="@Label@68" type="Label" parent="InputTabs/设备通道" unique_id=777992480]
+material = SubResource("CanvasItemMaterial_5kmaa")
+layout_mode = 0
+offset_left = 288.0
+offset_top = 774.0
+offset_right = 288.0
+offset_bottom = 774.0
+theme_override_font_sizes/font_size = 13
+text = "R换色 G发光 B扰动 A轮廓"
+
+[node name="@TextureRect@69" type="TextureRect" parent="InputTabs/设备通道" unique_id=2028984404]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_s323s")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 424.0
+offset_right = 816.0
+offset_bottom = 740.0
+texture = ExtResource("29_jcwle")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@70" type="Label" parent="InputTabs/设备通道" unique_id=1667914568]
+material = SubResource("CanvasItemMaterial_oksr4")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 746.0
+offset_right = 564.0
+offset_bottom = 746.0
+theme_override_font_sizes/font_size = 16
+text = "terminal_window"
+
+[node name="@Label@71" type="Label" parent="InputTabs/设备通道" unique_id=1378962738]
+material = SubResource("CanvasItemMaterial_iwflb")
+layout_mode = 0
+offset_left = 564.0
+offset_top = 774.0
+offset_right = 564.0
+offset_bottom = 774.0
+theme_override_font_sizes/font_size = 13
+text = "R换色 G发光 B扰动 A轮廓"
+
+[node name="@TextureRect@72" type="TextureRect" parent="InputTabs/设备通道" unique_id=429635357]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_iblly")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 424.0
+offset_right = 1092.0
+offset_bottom = 740.0
+texture = ExtResource("30_50j1t")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@73" type="Label" parent="InputTabs/设备通道" unique_id=127061071]
+material = SubResource("CanvasItemMaterial_1qgkq")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 746.0
+offset_right = 840.0
+offset_bottom = 746.0
+theme_override_font_sizes/font_size = 16
+text = "ventilator"
+
+[node name="@Label@74" type="Label" parent="InputTabs/设备通道" unique_id=1771669137]
+material = SubResource("CanvasItemMaterial_e6j54")
+layout_mode = 0
+offset_left = 840.0
+offset_top = 774.0
+offset_right = 840.0
+offset_bottom = 774.0
+theme_override_font_sizes/font_size = 13
+text = "R换色 G发光 B扰动 A轮廓"
+
+[node name="@TextureRect@75" type="TextureRect" parent="InputTabs/设备通道" unique_id=475587413]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_a42lo")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 424.0
+offset_right = 1368.0
+offset_bottom = 740.0
+texture = ExtResource("31_vch7p")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@76" type="Label" parent="InputTabs/设备通道" unique_id=1540277531]
+material = SubResource("CanvasItemMaterial_dfbhr")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 746.0
+offset_right = 1116.0
+offset_bottom = 746.0
+theme_override_font_sizes/font_size = 16
+text = "wall_lamp"
+
+[node name="@Label@77" type="Label" parent="InputTabs/设备通道" unique_id=1615405096]
+material = SubResource("CanvasItemMaterial_f65om")
+layout_mode = 0
+offset_left = 1116.0
+offset_top = 774.0
+offset_right = 1116.0
+offset_bottom = 774.0
+theme_override_font_sizes/font_size = 13
+text = "R换色 G发光 B扰动 A轮廓"
+
+[node name="2D法线检修灯" type="Control" parent="InputTabs" unique_id=1844401026]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="@CanvasModulate@78" type="CanvasModulate" parent="InputTabs/2D法线检修灯" unique_id=845013083]
+color = Color(0.16, 0.16, 0.16, 1)
+
+[node name="StationNormals" type="Sprite2D" parent="InputTabs/2D法线检修灯" unique_id=1429810657]
+texture_filter = 1
+position = Vector2(185, 348)
+scale = Vector2(2, 2)
+texture = ExtResource("32_0yuaq")
+
+[node name="@Label@79" type="Label" parent="InputTabs/2D法线检修灯" unique_id=950641882]
+material = SubResource("CanvasItemMaterial_i2pkw")
+layout_mode = 0
+offset_left = 40.0
+offset_top = 570.0
+offset_right = 40.0
+offset_bottom = 570.0
+theme_override_font_sizes/font_size = 16
+text = "采能站"
+
+[node name="ConsoleNormals" type="Sprite2D" parent="InputTabs/2D法线检修灯" unique_id=1660402015]
+texture_filter = 1
+position = Vector2(531, 348)
+scale = Vector2(2, 2)
+texture = ExtResource("33_11hqg")
+
+[node name="@Label@80" type="Label" parent="InputTabs/2D法线检修灯" unique_id=1037072938]
+material = SubResource("CanvasItemMaterial_prh0d")
+layout_mode = 0
+offset_left = 386.0
+offset_top = 570.0
+offset_right = 386.0
+offset_bottom = 570.0
+theme_override_font_sizes/font_size = 16
+text = "控制台"
+
+[node name="FloorNormals" type="Sprite2D" parent="InputTabs/2D法线检修灯" unique_id=1224683667]
+texture_filter = 1
+position = Vector2(877, 348)
+scale = Vector2(6, 6)
+texture = ExtResource("34_6f74o")
+
+[node name="@Label@81" type="Label" parent="InputTabs/2D法线检修灯" unique_id=1482831498]
+material = SubResource("CanvasItemMaterial_1hxfb")
+layout_mode = 0
+offset_left = 732.0
+offset_top = 570.0
+offset_right = 732.0
+offset_bottom = 570.0
+theme_override_font_sizes/font_size = 16
+text = "32px干净地板 ×6"
+
+[node name="AxisTest" type="Sprite2D" parent="InputTabs/2D法线检修灯" unique_id=215578370]
+texture_filter = 1
+position = Vector2(1223, 348)
+scale = Vector2(2, 2)
+texture = SubResource("CanvasTexture_g0fyg")
+
+[node name="@Label@82" type="Label" parent="InputTabs/2D法线检修灯" unique_id=744747215]
+material = SubResource("CanvasItemMaterial_pr07a")
+layout_mode = 0
+offset_left = 1078.0
+offset_top = 570.0
+offset_right = 1078.0
+offset_bottom = 570.0
+theme_override_font_sizes/font_size = 16
+text = "测试高度：凸 / 凹 / 轴向"
+
+[node name="InspectionLight" type="PointLight2D" parent="InputTabs/2D法线检修灯" unique_id=336029336]
+position = Vector2(700, 200)
+energy = 1.4
+texture = SubResource("GradientTexture2D_c728b")
+texture_scale = 4.0
+height = 100.0
+
+[node name="@Label@83" type="Label" parent="InputTabs/2D法线检修灯" unique_id=381619568]
+material = SubResource("CanvasItemMaterial_73628")
+layout_mode = 0
+offset_left = 28.0
+offset_top = 800.0
+offset_right = 28.0
+offset_bottom = 800.0
+theme_override_font_sizes/font_size = 16
+text = "移动鼠标观察法线；底图本身含原有像素材质明暗，高度场仅是登记的浅浮雕代理。"
+
+[node name="3D材质与草权重" type="Control" parent="InputTabs" unique_id=1717253687]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="@SubViewportContainer@84" type="SubViewportContainer" parent="InputTabs/3D材质与草权重" unique_id=61115173]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 780.0
+
+[node name="@SubViewport@85" type="SubViewport" parent="InputTabs/3D材质与草权重/@SubViewportContainer@84" unique_id=651915981]
+own_world_3d = true
+size = Vector2i(1000, 780)
+render_target_update_mode = 4
+
+[node name="@Node3D@86" type="Node3D" parent="InputTabs/3D材质与草权重/@SubViewportContainer@84/@SubViewport@85" unique_id=810977338]
+
+[node name="@WorldEnvironment@87" type="WorldEnvironment" parent="InputTabs/3D材质与草权重/@SubViewportContainer@84/@SubViewport@85/@Node3D@86" unique_id=2049865804]
+environment = SubResource("Environment_26fc5")
+
+[node name="SurfaceLight" type="DirectionalLight3D" parent="InputTabs/3D材质与草权重/@SubViewportContainer@84/@SubViewport@85/@Node3D@86" unique_id=544734060]
+transform = Transform3D(0.81915206, 0.4055798, -0.4055798, 0, 0.70710677, 0.70710677, 0.57357645, -0.579228, 0.579228, 0, 0, 0)
+
+[node name="@MeshInstance3D@88" type="MeshInstance3D" parent="InputTabs/3D材质与草权重/@SubViewportContainer@84/@SubViewport@85/@Node3D@86" unique_id=2082022653]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0, 0)
+material_override = ExtResource("35_ms0wh")
+mesh = SubResource("PlaneMesh_eb5km")
+
+[node name="@MeshInstance3D@89" type="MeshInstance3D" parent="InputTabs/3D材质与草权重/@SubViewportContainer@84/@SubViewport@85/@Node3D@86" unique_id=651516564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 0, 0)
+material_override = ExtResource("36_q8lhf")
+mesh = SubResource("PlaneMesh_0d54o")
+
+[node name="SurfaceCamera" type="Camera3D" parent="InputTabs/3D材质与草权重/@SubViewportContainer@84/@SubViewport@85/@Node3D@86" unique_id=1456546103]
+transform = Transform3D(1, 0, 0, 0, 0.76822126, 0.6401844, 0, -0.6401844, 0.76822126, 0, 5, 6)
+projection = 1
+size = 7.0
+
+[node name="@TextureRect@90" type="TextureRect" parent="InputTabs/3D材质与草权重" unique_id=834704126]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_hrl74")
+layout_mode = 0
+offset_left = 1100.0
+offset_top = 40.0
+offset_right = 1356.0
+offset_bottom = 552.0
+texture = ExtResource("37_xn7h4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@Label@91" type="Label" parent="InputTabs/3D材质与草权重" unique_id=818620365]
+material = SubResource("CanvasItemMaterial_4tvf7")
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 575.0
+offset_right = 1040.0
+offset_bottom = 575.0
+theme_override_font_sizes/font_size = 16
+text = "草根像素119=0 / 顶部10=1"
+
+[node name="@Label@92" type="Label" parent="InputTabs/3D材质与草权重" unique_id=1623018693]
+material = SubResource("CanvasItemMaterial_d0733")
+layout_mode = 0
+offset_left = 28.0
+offset_top = 820.0
+offset_right = 28.0
+offset_bottom = 820.0
+theme_override_font_sizes/font_size = 16
+text = "金属 / 混凝土：匹配法线 + .r 粗糙度/金属度；常量参数也保留为PNG，方便自行接入。"

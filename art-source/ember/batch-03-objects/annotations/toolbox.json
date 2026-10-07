@@ -1,0 +1,48 @@
+{
+  "observations": "实际母稿工具箱上手柄、浅陶瓷四角、两铜锁扣与左侧铰链；母稿带明显模型灰halo，原生高Alpha采样已去除，手柄内槽仍需明确透明孔。",
+  "adjustments": [
+    "NATIVE_HANDLE_APERTURE: 按实际母稿手柄内槽位置切原生[28,33,37,35)9×2真透明孔，不让halo/灰底残留",
+    "顶手柄亮钢短条[28..35,30]连续归并，箱盖上缘保留钢灰平面，两锁扣不作为运行状态灯",
+    "去所有halo和随机单点；原生44×27底界56，完整轮廓保持，未把灰halo缩图后冒充投影"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        28,
+        33,
+        37,
+        35
+      ],
+      "color": "transparent"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          28,
+          30
+        ],
+        [
+          35,
+          30
+        ]
+      ],
+      "color": 4
+    }
+  ],
+  "calibration_features": {
+    "through_hole_rects": [
+      [
+        28,
+        33,
+        37,
+        35
+      ]
+    ],
+    "orientation": "左侧单独铰链，正面2锁扣"
+  },
+  "emitter_points": [],
+  "runtime_windows": [],
+  "components": []
+}

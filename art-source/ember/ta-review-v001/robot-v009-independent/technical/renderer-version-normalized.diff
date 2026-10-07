@@ -1,0 +1,128 @@
+--- v008-normalized-to-v009
++++ fixed-v009-renderer
+@@ -4,16 +4,17 @@
+ 
+ const BASE := "art-source/ember/robot-fixed-rig-v009/"
+ const RIG_FILE := BASE + "source/rig_down_v009.json"
++const FOOT_FILE := BASE + "source/foot_motion_v009.json"
+ const SIZE := Vector2i(64,96)
+ const ROOT_ANCHOR := Vector2(32,80)
+ const PHASES := ["left_contact","left_down","right_passing","right_up","right_contact","right_down","left_passing","left_up"]
+-const BODY_BOB := [1.0,1.6,1.2,0.6,1.0,1.6,1.2,0.6]
+ # 固定一次降低母稿骨盆1px，给真实15px腿链留下屈膝余量；每帧骨长完全相同。
+ const BIND_BODY_LOWER := 1.0
+ const DEPTH_TO_SCREEN_Y := 0.65
+ const ROOT_STRIDE_PER_FRAME := 1.6
+ var workspace := ""
+ var rig: Dictionary
++var foot_motion: Dictionary
+ var rest := {}
+ var bones := {}
+ var images := {}
+@@ -41,6 +42,8 @@
+ 		if arg.begins_with("--workspace="): workspace=arg.trim_prefix("--workspace=")
+ 	if workspace.is_empty() or DisplayServer.get_name()=="headless": push_error("需要--workspace及真实GPU窗口渲染器"); quit(1); return
+ 	rig=_json(RIG_FILE)
++	foot_motion=_json(FOOT_FILE)
++	source_hashes[FOOT_FILE]=FileAccess.get_sha256(_abs(FOOT_FILE))
+ 	source_hashes[RIG_FILE]=FileAccess.get_sha256(_abs(RIG_FILE))
+ 	source_hashes[str(rig.source_master)]=FileAccess.get_sha256(_abs(str(rig.source_master)))
+ 	for key: String in rig.keypoints: rest[key]=_v2(rig.keypoints[key])
+@@ -125,31 +128,55 @@
+ 
+ func _pose(index: int) -> Dictionary:
+ 	var points := {}
+-	var bob: float=BIND_BODY_LOWER if index<0 else BODY_BOB[index]
++	var bob: float=BIND_BODY_LOWER if index<0 else foot_motion.body_lower_px[index]
+ 	var sway: float=0.0 if index<0 else [0.0,0.35,0.7,0.35,0.0,-0.35,-0.7,-0.35][index]
+ 	for key: String in rest:
+ 		var p: Vector2=rest[key]; points[key]=Vector3(p.x+sway,p.y+bob,0)
+ 	points.root=Vector3(32,80,0)
+-	# 支撑半周期局部Z每帧退1.6；若游戏root同步前进1.6，世界支撑足保持不滑。
+-	var leg_z_left: float=0 if index<0 else [3.2,1.6,0.0,-1.6,-3.2,-2.4,0.0,2.4][index]
+-	var leg_z_right: float=0 if index<0 else [-3.2,-2.4,0.0,2.4,3.2,1.6,0.0,-1.6][index]
+-	var lift_left: float=0 if index<0 else [0,0,0,0,0,1.0,3.0,1.2][index]
+-	var lift_right: float=0 if index<0 else [0,1.0,3.0,1.2,0,0,0,0][index]
+-	_solve_leg(points,"left",leg_z_left,lift_left)
+-	_solve_leg(points,"right",leg_z_right,lift_right)
++	# 先放脚，再解腿：鞋底的接触、抬升和俯仰不继承小腿转角。
++	# 左右使用同一条足部曲线、相差半周期；源造型本身的左右差异保留。
++	var feet := {}
++	for side: String in ["left","right"]:
++		var phase: int=-1 if index<0 else (index+(0 if side=="left" else 4))%8
++		feet[side]=_foot_pose(side,phase)
++		_solve_leg(points,side,feet[side].ankle)
++		points["sole_"+side]=feet[side].sole
++		points["heel_"+side]=feet[side].heel
++		points["toe_"+side]=feet[side].toe
++		points["contact_"+side]=feet[side].contact
+ 	var counter: float=0 if index<0 else [-18,-12,0,15,18,12,0,-15][index]
+ 	_solve_arm(points,"left",counter,12)
+ 	_solve_arm(points,"right",-counter,12)
+ 	var support: String="both" if index<0 else ("left" if index<4 else "right")
+ 	return {"index":index,"phase":"canonical_relaxed_bind" if index<0 else PHASES[index],"points":points,"body_lower":bob,"body_sway":sway,"support_leg":support,
+-		"lift":{"left":lift_left,"right":lift_right},"depth":{"left":leg_z_left,"right":leg_z_right}}
+-
+-func _solve_leg(points: Dictionary,side: String,z: float,lift: float) -> void:
++		"feet":feet,"lift":{"left":feet.left.lift,"right":feet.right.lift},"depth":{"left":feet.left.depth,"right":feet.right.depth}}
++
++func _foot_pose(side: String,phase: int) -> Dictionary:
++	var depth: float=0 if phase<0 else foot_motion.foot_z_px[phase]
++	var lift: float=0 if phase<0 else foot_motion.lift_px[phase]
++	var pitch: float=0 if phase<0 else foot_motion.pitch_degrees[phase]
++	var angle:=deg_to_rad(pitch)
++	var half_depth: float=foot_motion.sole_half_depth_px
++	var ankle_rest: Vector2=rest["ankle_"+side]
++	var sole_rest: Vector2=rest["sole_"+side]
++	# 正角抬脚尖，绕后跟转；负角抬后跟，绕脚尖转。鞋作为整块刚体。
++	# Y向下，地面Y80；接触轴独立于人体根节点，身体下沉不会拖动脚。
++	var pivot_z: float=-half_depth if pitch>=0 else half_depth
++	var pivot:=Vector3(ankle_rest.x,80.0-lift,depth+pivot_z)
++	var rotation:=Basis(Vector3.RIGHT,angle)
++	var sole:=pivot+rotation*Vector3(0,0,-pivot_z)
++	var ankle:=pivot+rotation*Vector3(0,ankle_rest.y-sole_rest.y,-pivot_z)
++	var heel:=pivot+rotation*Vector3(0,0,-half_depth-pivot_z)
++	var toe:=pivot+rotation*Vector3(0,0,half_depth-pivot_z)
++	return {"ankle":ankle,"sole":sole,"heel":heel,"toe":toe,"contact":pivot,
++		"contact_kind":"heel" if pitch>0 else ("toe" if pitch<0 else "flat"),
++		"pitch_degrees":pitch,"lift":lift,"depth":depth,"phase":phase}
++
++func _solve_leg(points: Dictionary,side: String,ankle: Vector3) -> void:
+ 	var hip: Vector3=points["hip_"+side]
+ 	var knee_rest: Vector2=rest["knee_"+side]; var ankle_rest: Vector2=rest["ankle_"+side]
+ 	var length_a: float=bones["thigh_"+side].rest_length
+ 	var length_b: float=bones["shin_"+side].rest_length
+-	var ankle:=Vector3(ankle_rest.x,ankle_rest.y-lift,z)
+ 	var delta:=ankle-hip; var distance:=delta.length()
+ 	if distance>length_a+length_b+0.00001: errors.append("腿目标不可达，禁止拉伸: "+side)
+ 	var along: float=(length_a*length_a-length_b*length_b+distance*distance)/(2*distance)
+@@ -159,7 +186,6 @@
+ 	var pole:=(Vector3(0,0,1)-direction*direction.dot(Vector3(0,0,1))).normalized()
+ 	points["knee_"+side]=hip+direction*along+pole*height
+ 	points["ankle_"+side]=ankle
+-	points["sole_"+side]=ankle+Vector3(0,rest["sole_"+side].y-ankle_rest.y,0)
+ 
+ func _solve_arm(points: Dictionary,side: String,upper_deg: float,elbow_deg: float) -> void:
+ 	var shoulder: Vector3=points["shoulder_"+side]
+@@ -183,11 +209,20 @@
+ 	var contacts:={}
+ 	for side: String in ["left","right"]:
+ 		var sole: Vector3=p["sole_"+side]; var projected:=_project(sole)
++		var foot: Dictionary=pose.feet[side]
++		var contact_point: Vector3=foot.contact
++		# 真正接地点可能是跟/尖；抬跟时鞋底中心不再是假定的地面点。
++		if is_zero_approx(foot.lift) and absf(contact_point.y-80.0)>0.0001:
++			errors.append("脚部接触控制未落在地面: "+side)
+ 		var root_motion: float=0.0 if pose.index<0 else ROOT_STRIDE_PER_FRAME*pose.index
+ 		var primary: bool=pose.support_leg==side or pose.support_leg=="both"
+ 		contacts[side]={"stance":primary,"primary_support":primary,"ground_contact":is_zero_approx(pose.lift[side]),"sole_world":_arr(sole),"sole_projected":[projected.x,projected.y],
+ 			"sole_world_with_root_motion":[sole.x,sole.y,sole.z+root_motion],"world_ground_y":80,"ground_touch":is_zero_approx(pose.lift[side]),
+-			"ankle3d":_arr(p["ankle_"+side]),"lift_px":pose.lift[side],"contact_definition":"actual registered sole after fixed projection; world ground Y80 differs from screen contact Y"}
++			"ankle3d":_arr(p["ankle_"+side]),"lift_px":pose.lift[side],"pitch_degrees":foot.pitch_degrees,"contact_kind":foot.contact_kind,
++			"contact_world":_arr(contact_point),"contact_projected":[_project(contact_point).x,_project(contact_point).y],
++			"heel_world":_arr(foot.heel),"toe_world":_arr(foot.toe),
++			"contact_world_with_root_motion":[contact_point.x,contact_point.y,contact_point.z+root_motion],
++			"contact_definition":"independent rigid foot heel/toe pivot on world Y80; sole center can be above ground during foot roll; flat source projection remains a small-angle 2.5D approximation"}
+ 	return {"status":"CANDIDATE","phase":pose.phase,"frame_index":pose.index,"root_anchor":[32,80],"support_leg":pose.support_leg,"double_support":pose.index<0 or pose.index in [0,4],
+ 		"source_rig_sha256":source_hashes[RIG_FILE],"source_master_sha256":source_hashes[str(rig.source_master)],
+ 		"canonical_bind_body_lower":BIND_BODY_LOWER,"pelvis_bob":pose.body_lower-BIND_BODY_LOWER,"body_lower_from_original":pose.body_lower,"body_sway_x":pose.body_sway,

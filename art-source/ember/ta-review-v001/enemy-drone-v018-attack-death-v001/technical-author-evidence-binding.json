@@ -1,0 +1,51 @@
+{
+  "qa/pixel_audit.json": {
+    "sha256": "93e3bb546d01b62a4321de79505f94e50fc4d5adcbfd6d61b3288f5ec2494ad0",
+    "catalog_sha256": "7c50cffd747c1fb3dfdd87ade24d2d0dacc72e53c1512145930e644f89959432",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; not independently replayed",
+    "frames_count": 112,
+    "binds_count": 14,
+    "preserved_count": 2
+  },
+  "qa/pose_audit.json": {
+    "sha256": "10e9ae697a2d6d1ea6eb24abe6015e2375ec903ae5108cf6e73c5fc9e0ef32d5",
+    "catalog_sha256": "7c50cffd747c1fb3dfdd87ade24d2d0dacc72e53c1512145930e644f89959432",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; not independently replayed",
+    "records_count": 16
+  },
+  "qa/gpu_roundtrip.json": {
+    "sha256": "3a97039c06eb2649d95fbc89e7ec6394296e2d00a38e07da304e172801745b41",
+    "catalog_sha256": "7c50cffd747c1fb3dfdd87ade24d2d0dacc72e53c1512145930e644f89959432",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; not independently replayed",
+    "records_count": 210,
+    "new_records": 196,
+    "preserved_records": 14,
+    "all_reported_differences_zero": true,
+    "sample_new": {
+      "action": "attack_down_left",
+      "background": "white",
+      "frame": 0,
+      "live_rig_vs_png": 0,
+      "tres_vs_png": 0
+    }
+  },
+  "qa/runtime.json": {
+    "sha256": "c6c767082d4664554175665a29eae7d06a6acc6fb5efd8e6ed265d7a75bfa97b",
+    "catalog_sha256": "7c50cffd747c1fb3dfdd87ade24d2d0dacc72e53c1512145930e644f89959432",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; not independently replayed",
+    "players_count": 32,
+    "switches_count": 16,
+    "all_players_passed": true,
+    "all_switches_passed": true,
+    "renderer": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "elapsed_ms": 9375
+  }
+}

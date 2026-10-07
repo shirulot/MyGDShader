@@ -1,0 +1,2316 @@
+{
+  "generated_utc": "2026-10-03T18:29:32.991399+00:00",
+  "catalog_path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\planned-catalog-v001.json",
+  "tool": "validate_robot_frames.py / Pillow / read-only pixel and catalog checks",
+  "validator_sha256": "a36dec23c28cf0ea3afc048aabb4239a48bd8c215d02165ee93b0fc2496959bb",
+  "mode": "PLANNING_STRUCTURE_ONLY",
+  "checks": [
+    {
+      "name": "original_down_idle_sha_hard_lock",
+      "passed": true,
+      "actual": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "expected": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+    },
+    {
+      "name": "canvas_contract",
+      "passed": true,
+      "actual": [
+        64,
+        96
+      ],
+      "expected": [
+        64,
+        96
+      ]
+    },
+    {
+      "name": "anchor_contract",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "bbox_limit_contract",
+      "passed": true,
+      "actual": [
+        40,
+        64
+      ],
+      "expected": [
+        40,
+        64
+      ]
+    },
+    {
+      "name": "four_direction_order",
+      "passed": true,
+      "actual": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "expected": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ]
+    },
+    {
+      "name": "fixed_palette_declaration",
+      "passed": true,
+      "actual": [
+        "#101820",
+        "#182631",
+        "#2B3E4B",
+        "#4D6470",
+        "#829BA3",
+        "#BECBC4",
+        "#7B4D35",
+        "#B77C4B",
+        "#E2B77A",
+        "#51C5C2",
+        "#E5A44B",
+        "#E65B4A",
+        "#566B78",
+        "#203A4B",
+        "#406B78",
+        "#ECE9D8"
+      ],
+      "expected": "the exact registered 16 colors"
+    },
+    {
+      "name": "twenty_declared_frames",
+      "passed": true,
+      "actual": 20,
+      "expected": 20
+    },
+    {
+      "name": "frame_0_unique_id",
+      "passed": true,
+      "actual": "robot_idle_down",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_idle_down_direction_state_index",
+      "passed": true,
+      "actual": [
+        "down",
+        "idle",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_idle_down_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_idle_down_sheet_coord",
+      "passed": true,
+      "actual": [
+        0,
+        0
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "down_idle_reuses_original_path",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\assets\\ember\\characters\\robot\\robot_idle_down_v001.png",
+      "expected": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\assets\\ember\\characters\\robot\\robot_idle_down_v001.png"
+    },
+    {
+      "name": "down_idle_declared_hard_lock",
+      "passed": true,
+      "actual": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "expected": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+    },
+    {
+      "name": "frame_1_unique_id",
+      "passed": true,
+      "actual": "robot_walk_down_f00",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_down_f00_direction_state_index",
+      "passed": true,
+      "actual": [
+        "down",
+        "walk",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_down_f00_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_down_f00_sheet_coord",
+      "passed": true,
+      "actual": [
+        1,
+        0
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_2_unique_id",
+      "passed": true,
+      "actual": "robot_walk_down_f01",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_down_f01_direction_state_index",
+      "passed": true,
+      "actual": [
+        "down",
+        "walk",
+        1
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_down_f01_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_down_f01_sheet_coord",
+      "passed": true,
+      "actual": [
+        2,
+        0
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_3_unique_id",
+      "passed": true,
+      "actual": "robot_walk_down_f02",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_down_f02_direction_state_index",
+      "passed": true,
+      "actual": [
+        "down",
+        "walk",
+        2
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_down_f02_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_down_f02_sheet_coord",
+      "passed": true,
+      "actual": [
+        3,
+        0
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_4_unique_id",
+      "passed": true,
+      "actual": "robot_walk_down_f03",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_down_f03_direction_state_index",
+      "passed": true,
+      "actual": [
+        "down",
+        "walk",
+        3
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_down_f03_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_down_f03_sheet_coord",
+      "passed": true,
+      "actual": [
+        4,
+        0
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_5_unique_id",
+      "passed": true,
+      "actual": "robot_idle_left",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_idle_left_direction_state_index",
+      "passed": true,
+      "actual": [
+        "left",
+        "idle",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_idle_left_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_idle_left_sheet_coord",
+      "passed": true,
+      "actual": [
+        0,
+        1
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_6_unique_id",
+      "passed": true,
+      "actual": "robot_walk_left_f00",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_left_f00_direction_state_index",
+      "passed": true,
+      "actual": [
+        "left",
+        "walk",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_left_f00_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_left_f00_sheet_coord",
+      "passed": true,
+      "actual": [
+        1,
+        1
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_7_unique_id",
+      "passed": true,
+      "actual": "robot_walk_left_f01",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_left_f01_direction_state_index",
+      "passed": true,
+      "actual": [
+        "left",
+        "walk",
+        1
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_left_f01_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_left_f01_sheet_coord",
+      "passed": true,
+      "actual": [
+        2,
+        1
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_8_unique_id",
+      "passed": true,
+      "actual": "robot_walk_left_f02",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_left_f02_direction_state_index",
+      "passed": true,
+      "actual": [
+        "left",
+        "walk",
+        2
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_left_f02_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_left_f02_sheet_coord",
+      "passed": true,
+      "actual": [
+        3,
+        1
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_9_unique_id",
+      "passed": true,
+      "actual": "robot_walk_left_f03",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_left_f03_direction_state_index",
+      "passed": true,
+      "actual": [
+        "left",
+        "walk",
+        3
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_left_f03_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_left_f03_sheet_coord",
+      "passed": true,
+      "actual": [
+        4,
+        1
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_10_unique_id",
+      "passed": true,
+      "actual": "robot_idle_right",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_idle_right_direction_state_index",
+      "passed": true,
+      "actual": [
+        "right",
+        "idle",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_idle_right_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_idle_right_sheet_coord",
+      "passed": true,
+      "actual": [
+        0,
+        2
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_11_unique_id",
+      "passed": true,
+      "actual": "robot_walk_right_f00",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_right_f00_direction_state_index",
+      "passed": true,
+      "actual": [
+        "right",
+        "walk",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_right_f00_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_right_f00_sheet_coord",
+      "passed": true,
+      "actual": [
+        1,
+        2
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_12_unique_id",
+      "passed": true,
+      "actual": "robot_walk_right_f01",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_right_f01_direction_state_index",
+      "passed": true,
+      "actual": [
+        "right",
+        "walk",
+        1
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_right_f01_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_right_f01_sheet_coord",
+      "passed": true,
+      "actual": [
+        2,
+        2
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_13_unique_id",
+      "passed": true,
+      "actual": "robot_walk_right_f02",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_right_f02_direction_state_index",
+      "passed": true,
+      "actual": [
+        "right",
+        "walk",
+        2
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_right_f02_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_right_f02_sheet_coord",
+      "passed": true,
+      "actual": [
+        3,
+        2
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_14_unique_id",
+      "passed": true,
+      "actual": "robot_walk_right_f03",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_right_f03_direction_state_index",
+      "passed": true,
+      "actual": [
+        "right",
+        "walk",
+        3
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_right_f03_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_right_f03_sheet_coord",
+      "passed": true,
+      "actual": [
+        4,
+        2
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_15_unique_id",
+      "passed": true,
+      "actual": "robot_idle_up",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_idle_up_direction_state_index",
+      "passed": true,
+      "actual": [
+        "up",
+        "idle",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_idle_up_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_idle_up_sheet_coord",
+      "passed": true,
+      "actual": [
+        0,
+        3
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_16_unique_id",
+      "passed": true,
+      "actual": "robot_walk_up_f00",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_up_f00_direction_state_index",
+      "passed": true,
+      "actual": [
+        "up",
+        "walk",
+        0
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_up_f00_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_up_f00_sheet_coord",
+      "passed": true,
+      "actual": [
+        1,
+        3
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_17_unique_id",
+      "passed": true,
+      "actual": "robot_walk_up_f01",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_up_f01_direction_state_index",
+      "passed": true,
+      "actual": [
+        "up",
+        "walk",
+        1
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_up_f01_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_up_f01_sheet_coord",
+      "passed": true,
+      "actual": [
+        2,
+        3
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_18_unique_id",
+      "passed": true,
+      "actual": "robot_walk_up_f02",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_up_f02_direction_state_index",
+      "passed": true,
+      "actual": [
+        "up",
+        "walk",
+        2
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_up_f02_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_up_f02_sheet_coord",
+      "passed": true,
+      "actual": [
+        3,
+        3
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "frame_19_unique_id",
+      "passed": true,
+      "actual": "robot_walk_up_f03",
+      "expected": "unique nonempty id"
+    },
+    {
+      "name": "robot_walk_up_f03_direction_state_index",
+      "passed": true,
+      "actual": [
+        "up",
+        "walk",
+        3
+      ],
+      "expected": "four directions x (idle0 + walk0..3)"
+    },
+    {
+      "name": "robot_walk_up_f03_fixed_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        80
+      ],
+      "expected": [
+        32,
+        80
+      ]
+    },
+    {
+      "name": "robot_walk_up_f03_sheet_coord",
+      "passed": true,
+      "actual": [
+        4,
+        3
+      ],
+      "expected": "nonnegative [column,row]"
+    },
+    {
+      "name": "complete_four_idle_sixteen_walk_roles",
+      "passed": true,
+      "actual": [
+        {
+          "role": [
+            "down",
+            "idle",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "down",
+            "walk",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "down",
+            "walk",
+            1
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "down",
+            "walk",
+            2
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "down",
+            "walk",
+            3
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "left",
+            "idle",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "left",
+            "walk",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "left",
+            "walk",
+            1
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "left",
+            "walk",
+            2
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "left",
+            "walk",
+            3
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "right",
+            "idle",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "right",
+            "walk",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "right",
+            "walk",
+            1
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "right",
+            "walk",
+            2
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "right",
+            "walk",
+            3
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "up",
+            "idle",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "up",
+            "walk",
+            0
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "up",
+            "walk",
+            1
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "up",
+            "walk",
+            2
+          ],
+          "count": 1
+        },
+        {
+          "role": [
+            "up",
+            "walk",
+            3
+          ],
+          "count": 1
+        }
+      ],
+      "expected": "every required role exactly once"
+    },
+    {
+      "name": "unique_single_frame_paths",
+      "passed": true,
+      "actual": 20,
+      "expected": 20
+    },
+    {
+      "name": "eight_animations",
+      "passed": true,
+      "actual": 8,
+      "expected": 8
+    },
+    {
+      "name": "unique_required_animation_roles",
+      "passed": true,
+      "actual": [
+        [
+          "down",
+          "idle"
+        ],
+        [
+          "down",
+          "walk"
+        ],
+        [
+          "left",
+          "idle"
+        ],
+        [
+          "left",
+          "walk"
+        ],
+        [
+          "right",
+          "idle"
+        ],
+        [
+          "right",
+          "walk"
+        ],
+        [
+          "up",
+          "idle"
+        ],
+        [
+          "up",
+          "walk"
+        ]
+      ],
+      "expected": "one idle and one walk animation per direction"
+    },
+    {
+      "name": "sheet_object",
+      "passed": true,
+      "actual": "dict",
+      "expected": "object"
+    },
+    {
+      "name": "original_down_idle_unchanged_during_read",
+      "passed": true,
+      "actual": {
+        "before": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+        "after": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      },
+      "expected": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+    }
+  ],
+  "warnings": [],
+  "frames": [
+    {
+      "id": "robot_idle_down",
+      "file": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+      "checks": [
+        {
+          "name": "png_format",
+          "passed": true,
+          "actual": "PNG",
+          "expected": "PNG"
+        },
+        {
+          "name": "native_canvas",
+          "passed": true,
+          "actual": [
+            64,
+            96
+          ],
+          "expected": [
+            64,
+            96
+          ]
+        },
+        {
+          "name": "real_alpha_channel",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        },
+        {
+          "name": "declared_sha256_present",
+          "passed": true,
+          "actual": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+          "expected": "64 hex characters in final mode"
+        },
+        {
+          "name": "declared_sha256_matches",
+          "passed": true,
+          "actual": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+          "expected": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+        },
+        {
+          "name": "nonempty_subject",
+          "passed": true,
+          "actual": [
+            12,
+            21,
+            52,
+            80
+          ],
+          "expected": "visible subject"
+        },
+        {
+          "name": "binary_alpha",
+          "passed": true,
+          "actual": [
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            255
+          ]
+        },
+        {
+          "name": "transparent_padding",
+          "passed": true,
+          "actual": 4652,
+          "expected": "> 0"
+        },
+        {
+          "name": "fixed_16_color_palette",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "no_baked_runtime_state_colors",
+          "passed": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "bbox_maximum",
+          "passed": true,
+          "actual": [
+            40,
+            59
+          ],
+          "expected": [
+            40,
+            64
+          ]
+        },
+        {
+          "name": "support_bottom_boundary_80",
+          "passed": true,
+          "actual": {
+            "bbox_bottom": 80,
+            "support_pixels_y79": 14
+          },
+          "expected": "at least one opaque candidate support pixel at y79; no visible pixels below"
+        }
+      ],
+      "size": [
+        64,
+        96
+      ],
+      "source_mode": "RGBA",
+      "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "bbox_exclusive": [
+        12,
+        21,
+        52,
+        80
+      ],
+      "subject_size": [
+        40,
+        59
+      ],
+      "transparent_pixels": 4652,
+      "semi_transparent_pixels": 0,
+      "opaque_pixels": 1492,
+      "visible_rgb_color_count": 11,
+      "off_palette_pixels": 0,
+      "baked_state_color_pixels": 0,
+      "candidate_ground_support_x_spans": [
+        [
+          19,
+          26
+        ],
+        [
+          38,
+          45
+        ]
+      ],
+      "support_boundary_y": 80,
+      "visible_centroid": [
+        31.8237,
+        50.1977
+      ],
+      "suggested_x_envelope_12_to_51": true
+    }
+  ],
+  "animations": [
+    {
+      "id": "idle_down",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_idle_down"
+          ],
+          "expected": [
+            "robot_idle_down"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 1.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "down",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_down"
+      ],
+      "fps": 1.0,
+      "preview_effective_fps": null,
+      "cycle_seconds": null
+    },
+    {
+      "id": "walk_down",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_walk_down_f00",
+            "robot_walk_down_f01",
+            "robot_walk_down_f02",
+            "robot_walk_down_f03"
+          ],
+          "expected": [
+            "robot_walk_down_f00",
+            "robot_walk_down_f01",
+            "robot_walk_down_f02",
+            "robot_walk_down_f03"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 8.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "down",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_down_f00",
+        "robot_walk_down_f01",
+        "robot_walk_down_f02",
+        "robot_walk_down_f03"
+      ],
+      "fps": 8.0,
+      "preview_effective_fps": 8.0,
+      "cycle_seconds": 0.5
+    },
+    {
+      "id": "idle_left",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_idle_left"
+          ],
+          "expected": [
+            "robot_idle_left"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 1.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "left",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_left"
+      ],
+      "fps": 1.0,
+      "preview_effective_fps": null,
+      "cycle_seconds": null
+    },
+    {
+      "id": "walk_left",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_walk_left_f00",
+            "robot_walk_left_f01",
+            "robot_walk_left_f02",
+            "robot_walk_left_f03"
+          ],
+          "expected": [
+            "robot_walk_left_f00",
+            "robot_walk_left_f01",
+            "robot_walk_left_f02",
+            "robot_walk_left_f03"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 8.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "left",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_left_f00",
+        "robot_walk_left_f01",
+        "robot_walk_left_f02",
+        "robot_walk_left_f03"
+      ],
+      "fps": 8.0,
+      "preview_effective_fps": 8.0,
+      "cycle_seconds": 0.5
+    },
+    {
+      "id": "idle_right",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_idle_right"
+          ],
+          "expected": [
+            "robot_idle_right"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 1.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "right",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_right"
+      ],
+      "fps": 1.0,
+      "preview_effective_fps": null,
+      "cycle_seconds": null
+    },
+    {
+      "id": "walk_right",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_walk_right_f00",
+            "robot_walk_right_f01",
+            "robot_walk_right_f02",
+            "robot_walk_right_f03"
+          ],
+          "expected": [
+            "robot_walk_right_f00",
+            "robot_walk_right_f01",
+            "robot_walk_right_f02",
+            "robot_walk_right_f03"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 8.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "right",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_right_f00",
+        "robot_walk_right_f01",
+        "robot_walk_right_f02",
+        "robot_walk_right_f03"
+      ],
+      "fps": 8.0,
+      "preview_effective_fps": 8.0,
+      "cycle_seconds": 0.5
+    },
+    {
+      "id": "idle_up",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_idle_up"
+          ],
+          "expected": [
+            "robot_idle_up"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 1.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "up",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_up"
+      ],
+      "fps": 1.0,
+      "preview_effective_fps": null,
+      "cycle_seconds": null
+    },
+    {
+      "id": "walk_up",
+      "checks": [
+        {
+          "name": "explicit_frame_order",
+          "passed": true,
+          "actual": [
+            "robot_walk_up_f00",
+            "robot_walk_up_f01",
+            "robot_walk_up_f02",
+            "robot_walk_up_f03"
+          ],
+          "expected": [
+            "robot_walk_up_f00",
+            "robot_walk_up_f01",
+            "robot_walk_up_f02",
+            "robot_walk_up_f03"
+          ]
+        },
+        {
+          "name": "positive_playback_fps",
+          "passed": true,
+          "actual": 8.0,
+          "expected": "finite number > 0"
+        },
+        {
+          "name": "loop_declaration",
+          "passed": true,
+          "actual": true,
+          "expected": true
+        }
+      ],
+      "direction": "up",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_up_f00",
+        "robot_walk_up_f01",
+        "robot_walk_up_f02",
+        "robot_walk_up_f03"
+      ],
+      "fps": 8.0,
+      "preview_effective_fps": 8.0,
+      "cycle_seconds": 0.5
+    }
+  ],
+  "motion": [
+    {
+      "direction": "down",
+      "status": "PENDING_FOUR_READABLE_FRAMES"
+    },
+    {
+      "direction": "left",
+      "status": "PENDING_FOUR_READABLE_FRAMES"
+    },
+    {
+      "direction": "right",
+      "status": "PENDING_FOUR_READABLE_FRAMES"
+    },
+    {
+      "direction": "up",
+      "status": "PENDING_FOUR_READABLE_FRAMES"
+    }
+  ],
+  "sheet": {
+    "checks": [
+      {
+        "name": "five_columns_four_rows",
+        "passed": true,
+        "actual": [
+          5,
+          4
+        ],
+        "expected": [
+          5,
+          4
+        ]
+      },
+      {
+        "name": "sheet_native_size_declaration",
+        "passed": true,
+        "actual": [
+          320,
+          384
+        ],
+        "expected": [
+          320,
+          384
+        ]
+      },
+      {
+        "name": "twenty_sheet_mappings",
+        "passed": true,
+        "actual": 20,
+        "expected": 20
+      },
+      {
+        "name": "sheet_entry_0_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_idle_down",
+          "coord": [
+            0,
+            0
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_idle_down_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          0,
+          0
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_idle_down_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "sheet_entry_1_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_down_f00",
+          "coord": [
+            1,
+            0
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_down_f00_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          1,
+          0
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_down_f00_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          1,
+          0
+        ],
+        "expected": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "sheet_entry_2_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_down_f01",
+          "coord": [
+            2,
+            0
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_down_f01_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          2,
+          0
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_down_f01_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          2,
+          0
+        ],
+        "expected": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "sheet_entry_3_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_down_f02",
+          "coord": [
+            3,
+            0
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_down_f02_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          3,
+          0
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_down_f02_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          3,
+          0
+        ],
+        "expected": [
+          3,
+          0
+        ]
+      },
+      {
+        "name": "sheet_entry_4_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_down_f03",
+          "coord": [
+            4,
+            0
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_down_f03_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          4,
+          0
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_down_f03_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          4,
+          0
+        ],
+        "expected": [
+          4,
+          0
+        ]
+      },
+      {
+        "name": "sheet_entry_5_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_idle_left",
+          "coord": [
+            0,
+            1
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_idle_left_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          0,
+          1
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_idle_left_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          0,
+          1
+        ],
+        "expected": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "sheet_entry_6_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_left_f00",
+          "coord": [
+            1,
+            1
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_left_f00_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          1,
+          1
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_left_f00_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          1,
+          1
+        ],
+        "expected": [
+          1,
+          1
+        ]
+      },
+      {
+        "name": "sheet_entry_7_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_left_f01",
+          "coord": [
+            2,
+            1
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_left_f01_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          2,
+          1
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_left_f01_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          2,
+          1
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      },
+      {
+        "name": "sheet_entry_8_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_left_f02",
+          "coord": [
+            3,
+            1
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_left_f02_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          3,
+          1
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_left_f02_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          3,
+          1
+        ],
+        "expected": [
+          3,
+          1
+        ]
+      },
+      {
+        "name": "sheet_entry_9_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_left_f03",
+          "coord": [
+            4,
+            1
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_left_f03_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          4,
+          1
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_left_f03_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          4,
+          1
+        ],
+        "expected": [
+          4,
+          1
+        ]
+      },
+      {
+        "name": "sheet_entry_10_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_idle_right",
+          "coord": [
+            0,
+            2
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_idle_right_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          0,
+          2
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_idle_right_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          0,
+          2
+        ],
+        "expected": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "sheet_entry_11_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_right_f00",
+          "coord": [
+            1,
+            2
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_right_f00_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          1,
+          2
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_right_f00_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          1,
+          2
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "sheet_entry_12_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_right_f01",
+          "coord": [
+            2,
+            2
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_right_f01_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          2,
+          2
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_right_f01_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          2,
+          2
+        ],
+        "expected": [
+          2,
+          2
+        ]
+      },
+      {
+        "name": "sheet_entry_13_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_right_f02",
+          "coord": [
+            3,
+            2
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_right_f02_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          3,
+          2
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_right_f02_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          3,
+          2
+        ],
+        "expected": [
+          3,
+          2
+        ]
+      },
+      {
+        "name": "sheet_entry_14_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_right_f03",
+          "coord": [
+            4,
+            2
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_right_f03_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          4,
+          2
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_right_f03_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          4,
+          2
+        ],
+        "expected": [
+          4,
+          2
+        ]
+      },
+      {
+        "name": "sheet_entry_15_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_idle_up",
+          "coord": [
+            0,
+            3
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_idle_up_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          0,
+          3
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_idle_up_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          0,
+          3
+        ],
+        "expected": [
+          0,
+          3
+        ]
+      },
+      {
+        "name": "sheet_entry_16_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_up_f00",
+          "coord": [
+            1,
+            3
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_up_f00_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          1,
+          3
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_up_f00_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          1,
+          3
+        ],
+        "expected": [
+          1,
+          3
+        ]
+      },
+      {
+        "name": "sheet_entry_17_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_up_f01",
+          "coord": [
+            2,
+            3
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_up_f01_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          2,
+          3
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_up_f01_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          2,
+          3
+        ],
+        "expected": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "sheet_entry_18_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_up_f02",
+          "coord": [
+            3,
+            3
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_up_f02_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          3,
+          3
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_up_f02_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          3,
+          3
+        ],
+        "expected": [
+          3,
+          3
+        ]
+      },
+      {
+        "name": "sheet_entry_19_valid_unique_frame",
+        "passed": true,
+        "actual": {
+          "frame_id": "robot_walk_up_f03",
+          "coord": [
+            4,
+            3
+          ]
+        },
+        "expected": "known unique frame_id and coord"
+      },
+      {
+        "name": "robot_walk_up_f03_sheet_coord_in_grid",
+        "passed": true,
+        "actual": [
+          4,
+          3
+        ],
+        "expected": "0<=x<5, 0<=y<4"
+      },
+      {
+        "name": "robot_walk_up_f03_frame_and_sheet_coord_agree",
+        "passed": true,
+        "actual": [
+          4,
+          3
+        ],
+        "expected": [
+          4,
+          3
+        ]
+      },
+      {
+        "name": "complete_sheet_frame_ids",
+        "passed": true,
+        "actual": 20,
+        "expected": 20
+      },
+      {
+        "name": "unique_sheet_coords",
+        "passed": true,
+        "actual": 20,
+        "expected": 20
+      }
+    ],
+    "file": "res://assets/ember/characters/robot/robot_animations_v001.png",
+    "status": "PENDING_NOT_PRODUCED"
+  },
+  "manual_review_required": [
+    "四方向仍是同一机器人，比例、装甲、关节和原生像素尺度一致。",
+    "上向可读为背面，左右可读为对应侧面，保持俯视三分之四正交视角。",
+    "工具始终在解剖左前臂；遮挡合理，未因左右镜像换手或翻转左上光照。",
+    "双腿交替接触/经过，支撑脚接地；动作不是整张站姿平移或局部噪点。",
+    "臂腿反向摆动，工具受控；头身轻微起伏不改变世界锚点。",
+    "逐帧、8 FPS 与末帧接首帧播放均无跳位、肢体增减、色块闪烁或滑步。",
+    "待机进入/退出行走自然；窗口定位随姿势登记，背向遮挡不画成前窗。",
+    "原生及整数 2 倍在透明、浅色、深色底上检查轮廓和 Alpha 描边。"
+  ],
+  "png_modified": false,
+  "summary": {
+    "expected_frames": 20,
+    "catalog_frames": 20,
+    "measured_frames": 1,
+    "missing_frames": [
+      "robot_walk_down_f00",
+      "robot_walk_down_f01",
+      "robot_walk_down_f02",
+      "robot_walk_down_f03",
+      "robot_idle_left",
+      "robot_walk_left_f00",
+      "robot_walk_left_f01",
+      "robot_walk_left_f02",
+      "robot_walk_left_f03",
+      "robot_idle_right",
+      "robot_walk_right_f00",
+      "robot_walk_right_f01",
+      "robot_walk_right_f02",
+      "robot_walk_right_f03",
+      "robot_idle_up",
+      "robot_walk_up_f00",
+      "robot_walk_up_f01",
+      "robot_walk_up_f02",
+      "robot_walk_up_f03"
+    ],
+    "automatic_checks": 196,
+    "failed_checks": 0,
+    "warning_count": 0,
+    "sheet_cells_measured": 0,
+    "original_down_idle_locked": true
+  },
+  "failed_checks": [],
+  "catalog_and_present_png_checks_passed": true,
+  "automated_png_and_catalog_checks_passed": false,
+  "full_art_acceptance_status": "PLANNING_ONLY_NOT_ART_ACCEPTANCE"
+}

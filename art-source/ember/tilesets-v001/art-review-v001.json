@@ -1,0 +1,638 @@
+{
+  "schema_version": 1,
+  "updated_utc": "2026-10-03T17:11:22.001910+00:00",
+  "reviewer": "/root/asset_audit",
+  "mode": "READ_ONLY_PNG_AND_METADATA_REVIEW",
+  "status": "NATIVE_ART_REVIEW_PASS_GODOT_RESOURCE_VALIDATED",
+  "png_modified_by_review": false,
+  "user_style_approval_recorded": false,
+  "native_atlases": [
+    {
+      "id": "ground_details",
+      "path": "art-source/ember/tilesets-v001/native-atlases/ground_details_v001.png",
+      "size": [
+        256,
+        64
+      ],
+      "units": 12,
+      "sha256": "f0b1481291be5816f0e775e3f193eb702d17a5da62b14ffbaefae89a3230a757",
+      "catalog_sha256_matches": true,
+      "automatic_report_sha256_matches": true,
+      "unchanged_from_initial_visual_review": true,
+      "visible_rgb_colors": 12,
+      "semi_transparent_pixels": 0,
+      "unused_cells": [
+        {
+          "coord": [
+            4,
+            1
+          ],
+          "visible_pixels": 0
+        },
+        {
+          "coord": [
+            5,
+            1
+          ],
+          "visible_pixels": 0
+        },
+        {
+          "coord": [
+            6,
+            1
+          ],
+          "visible_pixels": 0
+        },
+        {
+          "coord": [
+            7,
+            1
+          ],
+          "visible_pixels": 0
+        }
+      ]
+    },
+    {
+      "id": "structures",
+      "path": "art-source/ember/tilesets-v001/native-atlases/structures_v001.png",
+      "size": [
+        256,
+        128
+      ],
+      "units": 26,
+      "sha256": "b9f866baaa315fa6150d90ce87c8185e54cefa7b37c0afe7192d147ba0a87535",
+      "catalog_sha256_matches": true,
+      "automatic_report_sha256_matches": true,
+      "unchanged_from_initial_visual_review": true,
+      "visible_rgb_colors": 9,
+      "semi_transparent_pixels": 0,
+      "unused_cells": [
+        {
+          "coord": [
+            2,
+            3
+          ],
+          "visible_pixels": 0
+        },
+        {
+          "coord": [
+            3,
+            3
+          ],
+          "visible_pixels": 0
+        },
+        {
+          "coord": [
+            4,
+            3
+          ],
+          "visible_pixels": 0
+        },
+        {
+          "coord": [
+            5,
+            3
+          ],
+          "visible_pixels": 0
+        },
+        {
+          "coord": [
+            6,
+            3
+          ],
+          "visible_pixels": 0
+        },
+        {
+          "coord": [
+            7,
+            3
+          ],
+          "visible_pixels": 0
+        }
+      ]
+    },
+    {
+      "id": "utilities",
+      "path": "art-source/ember/tilesets-v001/native-atlases/utilities_v001.png",
+      "size": [
+        256,
+        96
+      ],
+      "units": 24,
+      "sha256": "a5cdc56c4b2fe442b103d4ae71000a78c7a07908301c552e37f6e3141cdf2cb4",
+      "catalog_sha256_matches": true,
+      "automatic_report_sha256_matches": true,
+      "unchanged_from_initial_visual_review": true,
+      "visible_rgb_colors": 10,
+      "semi_transparent_pixels": 0,
+      "unused_cells": []
+    }
+  ],
+  "checks": {
+    "native62": true,
+    "automatic_conditions_pass": true,
+    "interfaces_complete": true,
+    "no_unmatched_interface": true,
+    "atlas_hashes_consistent_and_unchanged": true,
+    "final556": true,
+    "legacy628_reconstructed": true,
+    "final_connections_subset_of_visually_reviewed_legacy": true,
+    "all_ports_alpha_continuous": true,
+    "all_port_positions_match": true
+  },
+  "automatic_recheck": {
+    "method": "Repeated validator CLI for both628 and refined556 conditions; direct atlas SHA256/pixel/declared-port measurements.",
+    "measured_units": 62,
+    "failed_automatic_rules": 0,
+    "interface_metadata_complete": true,
+    "catalog_path": "art-source/ember/tilesets-v001/native-catalog-v001.json",
+    "catalog_sha256": "19aefcd13bf90cca8748f7078987778cfbe55fd479b8658e8933c341ef14c744",
+    "measurement_report_path": "art-source/ember/tilesets-v001/validation-native-atlases.json",
+    "measurement_report_sha256": "fc116dfbbaad33926e4573343711916d8755058771f8b0ae62c3f9b8c1a6a787"
+  },
+  "pre_semantic_refinement_measurement": {
+    "directed_port_comparisons": 628,
+    "shore_port_comparisons": 144,
+    "meaning": "Historical width-only shore kind admitted opposite water sides. Reconstructed from unchanged PNGs and current metadata with the water-side suffix removed; independently observed628 earlier in this turn.",
+    "port_measurements_by_kind": {
+      "floor-flat-v001": {
+        "count": 64,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 64
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "wall-vertical-0-32-v001": {
+        "count": 32,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 32
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "wall-horizontal-0-32-v001": {
+        "count": 32,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 32
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "wall-horizontal-4-32-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 10,
+          "2": 8
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 5.572917
+      },
+      "wall-vertical-0-28-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 10,
+          "3": 8
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 3.395833
+      },
+      "wall-horizontal-0-28-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 10,
+          "3": 8
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 3.395833
+      },
+      "wall-vertical-4-32-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 10,
+          "2": 8
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 5.572917
+      },
+      "rail-h-v001": {
+        "count": 24,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 24
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "rail-v-v001": {
+        "count": 24,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 24
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "bridge-deck-h-v001": {
+        "count": 4,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 4
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "bridge-deck-v-v001": {
+        "count": 2,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 2
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "bridge-edge-h-v001": {
+        "count": 2,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 2
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "bridge-edge-v-v001": {
+        "count": 2,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 2
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "pipe-10px-v001": {
+        "count": 226,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 226
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "channel-bank-12px-v001": {
+        "count": 144,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "6": 72,
+          "8": 72
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 5.010417
+      }
+    },
+    "valid_water_layout_claim": false
+  },
+  "final_semantic_refinement_measurement": {
+    "directed_port_comparisons": 556,
+    "shore_port_comparisons": 72,
+    "removed_opposite_water_side_comparisons": 72,
+    "unmatched_declared_interfaces": 0,
+    "port_measurements_by_kind": {
+      "floor-flat-v001": {
+        "count": 64,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 64
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "wall-vertical-0-32-v001": {
+        "count": 32,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 32
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "wall-horizontal-0-32-v001": {
+        "count": 32,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 32
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "wall-horizontal-4-32-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 10,
+          "2": 8
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 5.572917
+      },
+      "wall-vertical-0-28-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 10,
+          "3": 8
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 3.395833
+      },
+      "wall-horizontal-0-28-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 10,
+          "3": 8
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 3.395833
+      },
+      "wall-vertical-4-32-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 10,
+          "2": 8
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 5.572917
+      },
+      "rail-h-v001": {
+        "count": 24,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 24
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "rail-v-v001": {
+        "count": 24,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 24
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "bridge-deck-h-v001": {
+        "count": 4,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 4
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "bridge-deck-v-v001": {
+        "count": 2,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 2
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "bridge-edge-h-v001": {
+        "count": 2,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 2
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "bridge-edge-v-v001": {
+        "count": 2,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 2
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "pipe-10px-v001": {
+        "count": 226,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "0": 226
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 0.0
+      },
+      "channel-bank-12px-water-N-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "6": 18
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 1.5
+      },
+      "channel-bank-12px-water-E-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "6": 18
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 1.5
+      },
+      "channel-bank-12px-water-S-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "6": 18
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 1.5
+      },
+      "channel-bank-12px-water-W-v001": {
+        "count": 18,
+        "port_alpha_mismatch_comparisons": 0,
+        "port_rgba_mismatch_histogram": {
+          "6": 18
+        },
+        "port_positions_mismatch_comparisons": 0,
+        "max_full_edge_mean_absolute_rgb_delta_0_255": 1.5
+      }
+    },
+    "all_556_are_subset_of_earlier_visually_reviewed_628": true,
+    "water_side_metadata_present": true
+  },
+  "visual_review_scope": {
+    "directly_viewed_files": [
+      {
+        "path": "art-source/ember/tilesets-v001/review/tileset_catalog_2x.png",
+        "sha256": "50b4d8ded2651fd95dc3f009e7620fa42f0c81be4e92bcf3a062e04effd94aef"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/module_connections_2x.png",
+        "sha256": "4af9ee7845c043211b86b62e2559d9c1cf6b981081ce8eab6ffac301c2a75d28"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/declared_connections_09.png",
+        "sha256": "a7784c528bdf994e71f582c1ead20d9953fed3c92d72b650e2d11b2ff681ffe9"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/declared_connections_10.png",
+        "sha256": "9aaa92e621271331fed2687a69c0a4254004ba60a571ad090d11a7a348f0e91c"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/declared_connections_11.png",
+        "sha256": "60f023ec683a7b4b834974792646962cc955b91c922bff8a422d0e8f0e3bdb03"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/declared_connections_12.png",
+        "sha256": "aec6cdb64965f1392425abd9ce15ecc53cdc27083ba9b52100025504e582a3f3"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/declared_connections_13.png",
+        "sha256": "002d947ee25730087c4a9eb0de8d9b386c36538550df9b51b836f1fdaddeda9b"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/declared_connections_14.png",
+        "sha256": "c31025d15896ab214f439cfed1d55c74e4e6dcb1e11e9b478568d0c182667251"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/declared_connections_15.png",
+        "sha256": "6cfec4c62b9623213f730dd5112568d29d4d38e5433b33790f8ca8525a14603b"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/declared_connections_16.png",
+        "sha256": "f2e8d71120e693f56589ffab36c3e24b08e84191ddb9387b869c4c9c51a992c5"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/declared_connections_v002_13.png",
+        "sha256": "fcda4453c823486f16c89d808bb03775f91ee8709750acb2470291c9f42c8b42"
+      },
+      {
+        "path": "art-source/ember/tilesets-v001/review/declared_connections_v002_14.png",
+        "sha256": "4809943eabd3af8bc76e047fd6e2066d333ff3b73444f041505f82ce87463e86"
+      }
+    ],
+    "legacy_direct_connection_pages": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "legacy_direct_comparisons": 308,
+    "legacy_direct_categories": {
+      "T04_pipe": 164,
+      "T05_channel": 144
+    },
+    "current_direct_connection_pages": [
+      13,
+      14
+    ],
+    "current_direct_comparisons": 76,
+    "current_direct_categories": {
+      "T04_pipe": 4,
+      "T05_channel": 72
+    },
+    "root_reported_legacy_scope": {
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "comparisons": 320,
+      "all62_catalog_and_source_connection_boards": true,
+      "status": "ROOT_AGENT_REPORTED_VISUAL_PASS_NO_ALPHA_BREAKS"
+    },
+    "coverage_explanation": "Root inspected legacy01-08, asset-audit inspected legacy09-16: combined628 physical pairings. Final556 are verified subsets of these already viewed pairs with unchanged native PNG hashes. Asset-audit additionally inspected currentv002 pages13-14 and the corrected demo. No claim is made that this reviewer personally viewed currentv002 pages01-12."
+  },
+  "visual_observations": [
+    "All62 catalog entries remain discernible at integer2x; palette, alpha silhouettes and native pixel scale are consistent.",
+    "Pipe elbows/tees/cross/valve remain distinguishable, with continuous10-pixel ports.",
+    "Shore outer/inner naming and layout_topology consistently separate physical connection direction from water-side direction. Viewed72 refined shore choices keep compatible water sides.",
+    "Bridge deck_h/deck_v contain768 opaque pixels in a24-pixel-wide span; separate edge overlays contain192 opaque pixels in a6-pixel-wide beam. Matching10 bridge comparisons have identicalRGBA ports.",
+    "ShadeRGB differences are present at some wall and shore joins; silhouettes have noAlpha break and low-contrast directional shading remains readable. These are measured differences, not claimed identicalRGBA.",
+    "Corrected pool demo faces its water sides inward with inner corners and places the review-only blue backing inside. The example bridge crosses the filled interior continuously.",
+    "Corrected pipe demo completes theT/cross branches. No nativePNG change was required for either demonstration repair."
+  ],
+  "resolved_findings": [
+    {
+      "id": "DEMO_WATER_SIDE_REVERSED",
+      "resolution": "Fixed reviewed demo: topedge_s, bottomedge_n, leftedge_e, rightedge_w; NW/NE/SW/SE pool positionsinner_se/inner_sw/inner_ne/inner_nw; backing confined inside. Independently reviewed refreshedPNG."
+    },
+    {
+      "id": "SHORE_KIND_MISSING_WATER_SIDE_CONSTRAINT",
+      "resolution": "Channel interfaces now encodewater-N/E/S/W;72 opposite-side pairs excluded. layout_topology recordsconnected_sides/water_sides/corner semantics. Native atlas hashes unchanged."
+    },
+    {
+      "id": "DEMO_PIPE_BRANCH_MISSING_LAYOUT_TILES",
+      "resolution": "Completed review layoutT/cross branches; independently viewed refreshed demo. Native pipePNG unchanged."
+    }
+  ],
+  "remaining_art_defects_in_reviewed_scope": [],
+  "acceptance_limits": [
+    "Production PNG promotion and actual Godot import/reload/render have passed; collision/navigation/Terrain/gameplay integration remain outside this resource review.",
+    "ManualTileMapLayer brushing is supported; this is not complete arbitraryTerrain autotiling.",
+    "No water-center art unit is included; demo blue interior is onlyreview backing.",
+    "Collision/navigation/game interaction behavior is not established by image validation.",
+    "Review acceptance is an agent assessment; no separateuser style confirmation is asserted."
+  ],
+  "production_godot_verification": {
+    "status": "GODOT_RESOURCE_VALIDATED",
+    "report_path": "art-source/ember/tilesets/godot_validation_v001.json",
+    "report_sha256": "36e863d472aed1c648183f87c2ab181332cde4511f2bd5086c7cc7b1338b0b4d",
+    "tile_count": 62,
+    "source_count": 3,
+    "screenshot_directly_viewed": true,
+    "screenshot_size": [
+      1200,
+      720
+    ],
+    "production_pngs": [
+      {
+        "id": "ground_details",
+        "path": "assets/ember/environment/tilesets/ground_details_v001.png",
+        "sha256": "f0b1481291be5816f0e775e3f193eb702d17a5da62b14ffbaefae89a3230a757",
+        "matches_native_sha256": true
+      },
+      {
+        "id": "structures",
+        "path": "assets/ember/environment/tilesets/structures_v001.png",
+        "sha256": "b9f866baaa315fa6150d90ce87c8185e54cefa7b37c0afe7192d147ba0a87535",
+        "matches_native_sha256": true
+      },
+      {
+        "id": "utilities",
+        "path": "assets/ember/environment/tilesets/utilities_v001.png",
+        "sha256": "a5cdc56c4b2fe442b103d4ae71000a78c7a07908301c552e37f6e3141cdf2cb4",
+        "matches_native_sha256": true
+      }
+    ],
+    "formal_catalog_cli_recheck": {
+      "measured_units": 62,
+      "failed_automatic_rules": 0,
+      "directed_connections": 556,
+      "unmatched_interfaces": 0
+    }
+  }
+}

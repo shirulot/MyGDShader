@@ -1,0 +1,52 @@
+--- tools/validate_capture_buildings_v004r1.gd
++++ assets/ember/buildings_final/tools/validate_capture_buildings_v004r1.gd
+@@ -2,8 +2,8 @@
+ ## 验证完整母图显示、门状态和真碰撞；截图来自实际 Godot 视口。
+ ## 数值报告只证明实现，不能替代用户/技术美术对原图连续转角的审阅。
+ 
+-const DEMO := preload("res://scenes/ember/building_assets_v004r1/demo.tscn")
+-const OUT := "res://assets/ember/building_assets_v004r1/previews/"
++const DEMO := preload("res://assets/ember/buildings_final/scenes/demo.tscn")
++const OUT := "res://assets/ember/buildings_final/textures/previews/"
+ var checks: Array[Dictionary] = []
+ var captures: Array[Dictionary] = []
+ 
+@@ -150,7 +150,7 @@
+ 	_check(building.building_id + ": closed shader equals complete master render", actual == expected)
+ 	# 可选拆件也要实际复合一次。功能区域互不重叠，不能靠两层半透明描边遮缝。
+ 	test_sprite.visible = false
+-	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/ember/building_assets_v004r1/functional_layers_v004r1.json"))
++	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/ember/buildings_final/textures/functional_layers_v004r1.json"))
+ 	var split_sprites: Array[Sprite2D] = []
+ 	for entry: Dictionary in manifest.buildings:
+ 		if entry.building_id != building.building_id: continue
+@@ -195,9 +195,9 @@
+ 	await process_frame
+ 
+ func _validate_coverage() -> void:
+-	var path := "res://assets/ember/building_assets_v004r1/"
++	var path := "res://assets/ember/buildings_final/textures/"
+ 	var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(path + "catalog_v004r1.json"))
+-	var previous: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://art-source/ember/building-assets-v004/registration_baseline_v004.json"))
++	var previous: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/ember/buildings_final/source/building-assets-v004/registration_baseline_v004.json"))
+ 	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(path + "functional_layers_v004r1.json"))
+ 	for b: Dictionary in catalog.buildings:
+ 		var source := Image.load_from_file(ProjectSettings.globalize_path(b.source_master))
+@@ -287,7 +287,7 @@
+ 				panel.position = origin
+ 				panel.size = Vector2(512, 512)
+ 				viewport.add_child(panel)
+-				var path: String = "res://art-source/ember/building-assets-v004/masters/" + ids[index] + "_intact_v004.png" if col % 2 == 0 else "res://assets/ember/building_assets_v004r1/complete/" + ids[index] + "_closed_v004r1.png"
++				var path: String = "res://assets/ember/buildings_final/source/building-assets-v004/masters/" + ids[index] + "_intact_v004.png" if col % 2 == 0 else "res://assets/ember/buildings_final/textures/complete/" + ids[index] + "_closed_v004r1.png"
+ 				var sprite := Sprite2D.new()
+ 				sprite.texture = load(path)
+ 				sprite.centered = false
+@@ -323,7 +323,7 @@
+ 	var master_bounds := [Rect2(270, 104, 730, 1050), Rect2(66, 298, 1126, 681), Rect2(87, 272, 1087, 635)]
+ 	for row: int in 2:
+ 		for col: int in 3:
+-			var source: String = "res://art-source/ember/selected-buildings-v001/references/" + ids[col] + "_user_selected.png" if row == 0 else "res://assets/ember/building_assets_v004r1/complete/" + ids[col] + "_closed_v004r1.png"
++			var source: String = "res://assets/ember/buildings_final/source/selected-buildings-v001/references/" + ids[col] + "_user_selected.png" if row == 0 else "res://assets/ember/buildings_final/textures/complete/" + ids[col] + "_closed_v004r1.png"
+ 			var box: Rect2 = original_bounds[col] if row == 0 else master_bounds[col]
+ 			var sprite := Sprite2D.new()
+ 			sprite.texture = load(source)

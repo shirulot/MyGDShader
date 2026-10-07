@@ -1,0 +1,19 @@
+{
+  "id": "floor_center",
+  "mask": 255,
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit.\nAsset type: one complete high-fidelity 2D industrial floor CENTER tile for Ember Energy Station v008.\nImage 1 is the approved material and full-component art reference; image 2 is the existing v007 centre tile and topology reference.\nPrimary request: repaint the existing centre tile at genuinely high fidelity, as ONE square seamless full interior steel floor tile filling the ENTIRE canvas edge-to-edge. Preserve its restrained blue-grey industrial steel plate family, small occasional brass fasteners and delicate material variation. Four sides are OPEN continuations of the same floor field. There is NO external perimeter rim, no corner hole, no circular void, no corner cutout, no border sticking into the interior, no raised trim repeating at tile boundaries. Plate seams are thin, subtle, manufacturing seams, not thick raised wall frames.\nStyle: the rich blue-grey metal, modest brass, delicately painted bevels, natural restrained highlights and fine clean detail from image1. This is not a low-resolution pixel-art conversion. Do not impose a16-colour palette, stair-step corners or32px compression. Smooth fine metal painting is allowed, no random noise.\nComposition: exactly ONE 1024x1024 square full-canvas tile, top-down orthographic flat floor. No white/transparent page margin, no grid captions, no multiple panels, no background around the tile. The square canvas itself is the complete tile footprint; every corner and every edge is filled with floor. Designed to be exported as one128x128 texture after individual cropping, never an entire atlas rescale.\nLighting: gentle consistent upper-left material lighting only, no cast shadow, no glow, no dynamic effect.\nConstraints: closed solid floor across all1024x1024, no text/UI/watermark, no objects, no logo, no perspective or isometric diamond shape, no thick outer frame. Natural plate treatment must extend through all four canvas edges without black gaps. Match the reference material instead of inventing a decorative emblem.",
+  "referenced_image_paths": [
+    "art-source/ember/autotiles-v003/industrial_tile_master_v003.png",
+    "art-source/ember/production-v008/inputs/v007_floor_mask255.png"
+  ],
+  "original_tool_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10204-0a39-77b3-b144-9e7a03fd8e93\\exec-ffebf2f7-f6a7-4449-b222-81c979658b86.png",
+  "output_hint": "Generated images are saved to C:\\Users\\shiru\\.codex\\generated_images\\01a10204-0a39-77b3-b144-9e7a03fd8e93 as C:\\Users\\shiru\\.codex\\generated_images\\01a10204-0a39-77b3-b144-9e7a03fd8e93\\exec-ffebf2f7-f6a7-4449-b222-81c979658b86.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "adoption": "GEOMETRY_CANDIDATE_PENDING_REPEAT_REVIEW",
+  "source_crop": "FULL_CANVAS_MEASURE_ON_EXPORT",
+  "target_size": [
+    128,
+    128
+  ],
+  "transparent_background": false
+}

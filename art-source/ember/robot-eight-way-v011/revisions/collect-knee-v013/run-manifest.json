@@ -1,0 +1,166 @@
+{
+  "revision": "v013",
+  "status": "CANDIDATE_PENDING_USER_VISUAL_REVIEW",
+  "scope": {
+    "cell": [
+      64,
+      96
+    ],
+    "root": [
+      32,
+      80
+    ],
+    "action": "collect",
+    "directions": [
+      "down",
+      "down_left",
+      "left",
+      "up_left",
+      "up",
+      "up_right",
+      "right",
+      "down_right"
+    ],
+    "frames": 4,
+    "fps": 6,
+    "loop": false
+  },
+  "reason": "User requires working knee hinges; v012 locked legs rejected",
+  "strips": [
+    {
+      "direction": "down",
+      "reference": "source/down/edit_target_4x.png",
+      "method": "source_part_projection_then_imagegen_joint_edit"
+    },
+    {
+      "direction": "down_left",
+      "reference": "source/down_left/edit_target_4x.png",
+      "method": "source_part_projection_then_imagegen_joint_edit"
+    },
+    {
+      "direction": "left",
+      "reference": "source/left/edit_target_4x.png",
+      "method": "source_part_projection_then_imagegen_joint_edit"
+    },
+    {
+      "direction": "up_left",
+      "reference": "source/up_left/edit_target_4x.png",
+      "method": "source_part_projection_then_imagegen_joint_edit"
+    },
+    {
+      "direction": "up",
+      "reference": "source/up/edit_target_4x.png",
+      "method": "source_part_projection_then_imagegen_joint_edit"
+    },
+    {
+      "direction": "up_right",
+      "reference": "source/up_right/edit_target_4x.png",
+      "method": "source_part_projection_then_imagegen_joint_edit"
+    },
+    {
+      "direction": "right",
+      "reference": "source/right/edit_target_4x.png",
+      "method": "source_part_projection_then_imagegen_joint_edit"
+    },
+    {
+      "direction": "down_right",
+      "reference": "source/down_right/edit_target_4x.png",
+      "method": "source_part_projection_then_imagegen_joint_edit"
+    }
+  ],
+  "generation": [
+    {
+      "direction": "down",
+      "method": "imagegen",
+      "output_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-c985d6ec-d8ba-4982-9034-287af26e3f80.png",
+      "source": "source/down/generated.png",
+      "input": "source/down/actual_imagegen_input_4x.png",
+      "prompt": "prompts/down.txt",
+      "source_sha256": "03abba6bc5d8f71c64ecca787ba6e2b8c43ecd274c82ea16d31e6e2a60e77c12",
+      "input_sha256": "14678a12d4a4e800d77a459607e07b91f8711be489861cc0b4cb8298151cdb2f",
+      "prompt_sha256": "3d8ecce2c6e0da940cb9578ec0edf6999815e294719f70fe056b222a0d020621"
+    },
+    {
+      "direction": "down_left",
+      "method": "imagegen",
+      "output_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-2ccd95d6-b832-45b3-9065-d1fed9a910a6.png",
+      "source": "source/down_left/generated.png",
+      "input": "source/down_left/actual_imagegen_input_4x.png",
+      "prompt": "prompts/down_left.txt",
+      "source_sha256": "0ec457b57416e3f1ca713022394d09a577d9f99dc2fe2fb72c4adf42359d9572",
+      "input_sha256": "087bef28e8391fc407203c3d0b13e8c4e82ca02028af906b358dd694c0c0fd5d",
+      "prompt_sha256": "9f66e2d46cc7481750ab8ff96d7e8888d6ca2812f0f8c418f8cbbe90374ee998"
+    },
+    {
+      "direction": "left",
+      "method": "imagegen",
+      "output_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-902695e3-c91c-4491-80c9-2fc8aa1b120f.png",
+      "source": "source/left/generated.png",
+      "input": "source/left/actual_imagegen_input_4x.png",
+      "prompt": "prompts/left.txt",
+      "source_sha256": "d39bfe5a5b31f5e09fafc131f96cecfec620a2fbac46873bbe5d52816218d149",
+      "input_sha256": "8e668dbc0076668b3769077479c86b06f381576873212d6c94ca87106912fab1",
+      "prompt_sha256": "2fa60609ac089280014e6c0ffc19d8b0fcfb26c7392caf66368bec4111c44a24"
+    },
+    {
+      "direction": "up_left",
+      "method": "imagegen",
+      "output_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-b18edd29-c68e-4e98-9458-c51b32bb51ad.png",
+      "source": "source/up_left/generated.png",
+      "input": "source/up_left/actual_imagegen_input_4x.png",
+      "prompt": "prompts/up_left.txt",
+      "source_sha256": "fa6b2ab3fa9fb14f21d09b08fcb967f1c3bc0cb3d8c817133b77c9aaebac0375",
+      "input_sha256": "90f7e91d2fb50b0fcaf90f53cc6fc574e23831e28e07309ee117515e8573b1c5",
+      "prompt_sha256": "566c693e3211d497df27fab99bd19aa73c8213e70e2add77e76772c8d30dcc3f"
+    },
+    {
+      "direction": "up",
+      "method": "imagegen",
+      "output_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-1061f6d2-221b-424e-a088-98e50d5697af.png",
+      "source": "source/up/generated.png",
+      "input": "source/up/actual_imagegen_input_4x.png",
+      "prompt": "prompts/up.txt",
+      "source_sha256": "6a0a4624e50dc9580a0d9da2ebdea2824d607756ba1aeec9a8f097cad2b042d1",
+      "input_sha256": "891d935dec915fd1eec6f4ee7d09ee74bb22ae2da815d2bf6d08e1f2b8979f37",
+      "prompt_sha256": "db46d2fad53f698a853e0ecf73e3a7ef8ac4121e4f6367a0f81bef8d8fb58498"
+    },
+    {
+      "direction": "up_right",
+      "method": "imagegen",
+      "output_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-715de3b4-ef33-459a-867e-12367717903e.png",
+      "source": "source/up_right/generated.png",
+      "input": "source/up_right/actual_imagegen_input_4x.png",
+      "prompt": "prompts/up_right.txt",
+      "source_sha256": "6c24adb8b8ba7147cf1b74fd48465a636cadb4830a4bbf459bc077f1311ebe73",
+      "input_sha256": "e7de5f05f0bab7e52ed3504bddc1caba4be0f2037a08db4afdc150f4f308721c",
+      "prompt_sha256": "b48d66ed770e0e20fa3ea2cf98bb7b3506760e00c0318152a2773dfc2a40d437"
+    },
+    {
+      "direction": "right",
+      "method": "imagegen",
+      "output_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-8415ae21-248f-44a9-8388-2b0c550cac4a.png",
+      "source": "source/right/generated.png",
+      "input": "source/right/actual_imagegen_input_4x.png",
+      "prompt": "prompts/right.txt",
+      "source_sha256": "6aaadd2469d0fcbe4159610086677b610bf7f4c5c68445629cd040ccc81180fe",
+      "input_sha256": "2ef259a7b06ac0f2c0fe1a9bf57e7028b056a09e531aa74ae4688f1a2c49efad",
+      "prompt_sha256": "0ff74fa1d027d726fd1ff733682a746819365ec8f150e4b441b08db8611de2e5"
+    },
+    {
+      "direction": "down_right",
+      "method": "imagegen",
+      "output_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10cd5-c2d4-7a01-8740-0c3b355f7465\\exec-6cfdbd88-1fa7-4b69-b916-2d2834867dfd.png",
+      "source": "source/down_right/generated.png",
+      "input": "source/down_right/actual_imagegen_input_4x.png",
+      "prompt": "prompts/down_right.txt",
+      "source_sha256": "10c79a27eda813462cb60152c35abcfb7b41965d333708a9a5a03b2c9d9a5fd0",
+      "input_sha256": "f14eb5bb73fd15357e55f63460849de767de8e3eae4ae3106ee57f8f39fe3642",
+      "prompt_sha256": "47620544dfb7b9a406bc0c12b147fec53cdf855168c57afbd43e4bc5f26d3af5"
+    }
+  ],
+  "preserved_frames": 96,
+  "changed_frames": 16,
+  "source_upper_body": "retained v012 actual PNG with translated upper-body mask",
+  "atlas_sha256": "aeffa9fa74af177bdd54246a2de4c00b4c89b1323dfd63554eb726362a1f4310",
+  "main_project_modified": false
+}

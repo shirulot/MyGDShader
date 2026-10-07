@@ -1,0 +1,53 @@
+[gd_resource type="TileSet" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ember/environment/tilesets/ground_details_v001.png" id="1_nvede"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7cioi"]
+resource_name = "ground_details"
+texture = ExtResource("1_nvede")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = "floor_clean"
+0:0/0/custom_data_1 = "T01"
+1:0/0 = 0
+1:0/0/custom_data_0 = "floor_worn"
+1:0/0/custom_data_1 = "T01"
+2:0/0 = 0
+2:0/0/custom_data_0 = "floor_grate"
+2:0/0/custom_data_1 = "T01"
+3:0/0 = 0
+3:0/0/custom_data_0 = "floor_wet"
+3:0/0/custom_data_1 = "T01"
+4:0/0 = 0
+4:0/0/custom_data_0 = "hatch_closed"
+4:0/0/custom_data_1 = "T07"
+5:0/0 = 0
+5:0/0/custom_data_0 = "hatch_open"
+5:0/0/custom_data_1 = "T07"
+6:0/0 = 0
+6:0/0/custom_data_0 = "decal_crack"
+6:0/0/custom_data_1 = "T08"
+7:0/0 = 0
+7:0/0/custom_data_0 = "decal_rust"
+7:0/0/custom_data_1 = "T08"
+0:1/0 = 0
+0:1/0/custom_data_0 = "decal_bolts"
+0:1/0/custom_data_1 = "T08"
+1:1/0 = 0
+1:1/0/custom_data_0 = "decal_oil"
+1:1/0/custom_data_1 = "T08"
+2:1/0 = 0
+2:1/0/custom_data_0 = "decal_cable_loop"
+2:1/0/custom_data_1 = "T08"
+3:1/0 = 0
+3:1/0/custom_data_0 = "decal_debris"
+3:1/0/custom_data_1 = "T08"
+
+[resource]
+resource_name = "Ember ground_details"
+tile_size = Vector2i(32, 32)
+custom_data_layer_0/name = "tile_id"
+custom_data_layer_0/type = 4
+custom_data_layer_1/name = "category"
+custom_data_layer_1/type = 4
+sources/0 = SubResource("TileSetAtlasSource_7cioi")

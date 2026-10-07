@@ -1,0 +1,125 @@
+{
+  "prompts": [
+    {
+      "id": "floor_center_pixel_v001",
+      "prompt": "Use case: style-transfer / game texture correction.\nAsset: one complete square industrial FLOOR CENTER tile, mask255, intended for seamless XY repetition in a Godot TileMapLayer. The attached image is the old detailed floor tile to rebuild, not a demand to retain its noisy rendering.\nPrimary correction: replace the painterly/photo-like grit with clean, deliberate PIXEL ART. Draw on a conceptual native 128x128 grid, enlarged with crisp nearest-neighbor pixel clusters. Clear 1-2 native-pixel contour/seam widths, 3-4 controlled value steps per metal surface, blue-grey steel, restrained muted brass. No smooth gradients, blur, dense scratches, grain, photorealism, 3D render or antialiased glossy edges.\nComposition: completely fill the square edge-to-edge with SOLID FLOOR, opaque all the way to all four borders. No page margin, no drop shadow, no holes, no rounded outside silhouette, no raised outer border.\nShared material basis: use a quiet regular 2-by-2 arrangement of large steel plates; the principal vertical and horizontal panel joints land exactly at the half-width/half-height, with compatible thin seam continuation at opposite borders. Same plate scale and seam profile on every side so this one tile repeats naturally. Subtle small brass fasteners wholly inside the plate corners, never cut in half at image borders. Very sparse wear, flat readable plate faces, mild consistent upper-left pixel highlight.\nKeep the reference's industrial blue-grey / muted brass identity while simplifying its numerous irregular little panels and heavy weathering. This is production tile artwork only, no labels, arrows, grids drawn over it, text, watermark, comparison board or multiple separated sprites. Output one whole square tile.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/raw/floor_center_v001.png",
+          "sha256": "255b3fafbdb1f352d3908250f65ef7e365f835c6f652304b9fbbfcb192c2d69f"
+        }
+      ]
+    },
+    {
+      "id": "floor_edge_N_pixel_v001",
+      "prompt": "Use case: precise-object-edit / matching pixel-art terrain component.\nInput image: the attached pixel-art floor center is the EXACT material, palette, plate grid and pixel-cluster reference. Preserve this square tile's regular 2x2 steel-plate design and the exact panel seam positions. This is not a style-only loose reinterpretation.\nChange only the narrow top strip into the NORTH EXTERIOR EDGE of the same floor. On a conceptual native128x128 grid the complete north rim is 8 pixels tall, exactly the top 6.25 percent of the canvas. A continuous blue-grey metal edge beam, small controlled upper-left pixel highlights and dark inner bevel, no brass fasteners near the left/right cuts. The beam is horizontal from the exact left boundary through to the exact right boundary with open cut ends, no end caps and no page margin. No beam along left, right or bottom.\nAll the floor area below the top8pixels remains completely solid and extends to the entire south, east and west borders. Do not shift the panel grid or enlarge/smaller the plates. The main vertical seam remains exactly at half width; the horizontal seam remains at half height. Keep the same restrained brass, clean pixel contours and 3-4 stepped value levels. No smoothing, gradients, dense noise, glossy photographic scratches, cast shadows or light halos.\nOutput one square complete tile, opaque RGB/PNG floor right to every border. Do not fade out or create transparent padding along the south/open edge. No labels, text, rulers, grid overlay, comparison board or separated pieces.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        }
+      ]
+    },
+    {
+      "id": "floor_narrow_NS_pixel_v001",
+      "prompt": "Use case: precise-object-edit / pixel-art terrain geometry correction.\nInput image 1 is the exact newly selected PIXEL ART floor material and plate grid. Input image2 is the rejected old thin vertical passage for direction/context ONLY: its one-third-width composition is specifically wrong and must NOT be copied.\nMake ONE complete north-south floor passage tile on a conceptual native128x128 grid. The metal floor must occupy essentially the entire canvas width: solid body x1 through x126, only a one-native-pixel optional transparent outside fringe at x0/x127. This is a ONE-WHOLE-GRID-CELL wide corridor, not a narrow strip floating in the middle. Its north and south ends must reach exactly y0 and y127 across the full126pixel opening. No large empty gutters, page margins, tall isolated object or display sheet.\nUse image1's same blue-grey pixel plates and brass, identical 2x2 plate scale and seam phase. Add continuous slim vertical manufactured edge beams along BOTH outer sides, approximately8 nativepixels wide on each side. Beams and plate material run completely through the top and bottom canvas cuts; do not cap or round off those ends, and do not add a horizontal perimeter beam on top or bottom. The passage should connect to full-width end tiles without sudden width change.\nCrisp native pixel clusters, stepped 3-4-value metal shading, restrained upper-left highlight, very sparse wear. No photographic gritty noise, gradients, blur, random extra panels, halos or shadows outside the component. No central transparent slit or Alpha holes. No text, labels, perspective, rulers, montage or additional pieces. Output one whole square PNG tile with genuine transparency only in the optional one-pixel outside side fringe.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        },
+        {
+          "path": "art-source/ember/production-v008/floor/raw/floor_narrow_NS_v002.png",
+          "sha256": "ab6e04147c941ba1be81d824daa9354b3e70fadb9dd098490c5297e85088522a"
+        }
+      ]
+    },
+    {
+      "id": "floor_edge_N_pixel_v002",
+      "prompt": "Use case: precise-object-edit / one targeted geometry correction.\nInput image1 is the current north-edge pixel tile. Input image2 is its shared center material reference. Keep the pixel-art style, palette and whole plate grid, do not redraw another material.\nThe current north exterior beam is too thin (about5 pixels on a native128-pixel grid). Increase ONLY this north beam's complete profile to 8 nativepixels tall, exactly6.25percent of the whole square height: upper highlight, cap surface, dark bevel together occupy y0..7. Increase its height by about60percent, so it is visibly thicker than the first reference. Its open cut ends still reach x0 and x127, with NO end caps, rounded tips, cut brass fasteners, page margins or vertical side beams.\nDo not shift the plate grid below it: the reference center's horizontal seam must remain at y64 and vertical seam at x64. Use a clean straight manufactured pixel edge, controlled3-4-step metal shading, very sparse wear. Below y8 the existing center floor stays fully opaque through the south and both side borders, and its regular2x2 panels retain their scale and seam phase. No blur, gradients, photo-grit, cast shadows or transparent fade.\nOne complete opaque square PNG tile, no text or labels. Change only beam thickness/profile and preserve the material and plate placement.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_edge_N_pixel_v001.png",
+          "sha256": "ed5db6cf53a1a8a880bbbb0f3ea73b051d5aecdae64c9b0c781c5e5328de800e"
+        },
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        }
+      ]
+    },
+    {
+      "id": "floor_outer_NW_pixel_v001",
+      "prompt": "Use case: precise-object-edit / shared pixel-art floor corner.\nInput image1 is the exact new NORTH EDGE tile; input image2 is the exact shared CENTER plate material. Preserve the clean pixel-art style, blue-grey/brass palette, regular2x2 plate scale and seam phase.\nMake one NORTHWEST EXTERIOR CONVEX CORNER tile, mask28: exposed north and west perimeter, open east and south floor connections. Keep the reference's complete north beam profile; add an equivalent vertical west beam at x0..7 on a conceptual native128grid. Both beams have the same8pixel nominal thickness, same3-4 stepped values and same manufactured metal layering. Their meeting at NW is a small clean pixel chamfer/miter, not a huge round pillar or detached corner bolt. Any outside corner transparency is confined to the tiny NW chamfer.\nThe horizontal north beam must continue through the exact right canvas cut; the vertical west beam must continue through the exact bottom canvas cut. No end caps, framing on east/south, repeated crossbars or brass decorations at the cuts. E and S floor material is fully filled and compatible with the shared center/north-edge plate pattern. Main material seams stay at x64 and y64; adding west trim must not rescale, shift or invent different interior plates. Remove any brass fastener covered by the new west beam instead of leaving half of it visible.\nGenuine crisp native pixel clusters, sparse wear, slight consistent upper-left shading. No smooth gradients, photorealistic grit, blur, cast shadows, page margin or isolated floating sprite. One whole square PNG tile, no text, labels or comparison sheet. Do not rotate the reference to synthesize the west lighting.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_edge_N_pixel_v002.png",
+          "sha256": "8e88a29f6e19fb25936f2e5281b42e7fafb8fe6eb95fa82dd0a3474f6254f7cd"
+        },
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        }
+      ]
+    },
+    {
+      "id": "floor_outer_NW_pixel_v002",
+      "prompt": "Use case: precise-object-edit, one targeted correction of a failed tile.\nImage1 is the failed NW outer corner to edit. Its north and west rim geometry already exists. Image2 is the REQUIRED regular four-panel pixel-art floor. Image3 is the matching north edge.\nChange ONLY the interior of image1 to restore the exact 2-BY-2 FOUR STEEL PLATES from image2. The failed image1 currently has one giant plate and no main interior cross seams: that is the specific defect. Draw a thin dark vertical joint at EXACTLY50percent width (x64 on native128grid) and a thin dark horizontal joint at EXACTLY50percent height(y64), with the same small stepped highlights and entirely visible muted-brass interior fasteners as image2. There must be FOUR distinct large plates, one in each quadrant, not a single plate, not an irregular many-panel pattern. Keep the regular panel scale and positions when adding the rim.\nPreserve image1's continuous north and west exterior rim and tiny NW chamfer, but match its north beam complete profile to image3's approximately8nativepixel profile. The east endpoint remains open at the right canvas cut, south endpoint open at the bottom canvas cut. No east or south perimeter beam and no cut fasteners at these cuts. Do not rotate either reference or create different shading on west.\nPixel-art only: crisp pixel clusters, controlled3-4-value blue-grey metal, restrained small brass, sparse wear. No photographic noise, smoothing, soft gradients, new large shadows, page margins, labels or text. One square PNG complete NW outer corner. The four-panel cross joint is mandatory and must clearly remain visible after export to128x128.\n",
+      "references": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_outer_NW_pixel_v001.png",
+          "sha256": "5029679563eddf285e683adac36a5a95c1a59de83737351a62529286c8fc5dbc"
+        },
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        },
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_edge_N_pixel_v002.png",
+          "sha256": "8e88a29f6e19fb25936f2e5281b42e7fafb8fe6eb95fa82dd0a3474f6254f7cd"
+        }
+      ]
+    },
+    {
+      "id": "bank_straight_N_pixel_v001",
+      "tool": "image_gen.imagegen built-in",
+      "transparent_background": true,
+      "prompt": "Use case: style-transfer\nAsset type: complete north industrial pool-bank tile, one transparent PNG game sprite.\nPrimary request: Redraw the complete straight north bank in crisp, clearly readable PIXEL ART, using the reference only for the blue-grey industrial steel palette, restrained brass fittings, and coping-over-dark-face structure. The earlier reference is too realistic: replace its photorealistic speckled wear with deliberate compact pixel clusters and only a few flat metal shading levels.\nInput images: Image 1 (new pixel floor master) is the preferred PIXEL CLUSTER STYLE and palette reference. Image 2 (industrial master) is palette and industrial structure reference ONLY, do not copy its realistic grit. Image 3 (old straight bank) is the complete structural reference and edit target; change its style and measured cross-section, preserve the horizontal north-facing orientation.\nScene/backdrop: actual transparent background, square tile canvas. No water, no ground, no cast shadow outside the bank.\nGeometry: use an exact square 1024x1024 canvas as an enlarged 128x128 tile. The complete bank is a horizontal strip at the TOP edge, spanning from x=0 through x=1023 with flat cut-through connection edges, and occupying exactly the upper quarter y=0..255. The lower three quarters y=256..1023 are transparent. This becomes a 32-pixel total bank width in the final 128x128 texture. Keep both left and right interface profiles at the same positions, full strip width, no stepped narrowing. Do not introduce page margins or inset ends.\nCross-section at BOTH connecting ends: top coping y=0..159 (final 20px), a thin near-black seam y=160..175 (final 2px), dark water-facing vertical face y=176..247 (final 9px), bottom rim y=248..255 (final 1px). These horizontal boundaries must run all the way to the canvas's left and right edges without caps, corner rounding, or vertical end trim. The vertical face is visibly darker and narrower than the coping.\nStyle/medium: hand-authored-looking game pixel art, crisp axis-aligned pixel contours, deliberate connected color clusters, selective 2-to-4-pixel cluster detail at final 128px size; keep independent 128px asset resolution, not a blurry photograph and not a 32px low-resolution final texture. Sparse clean metal panel divisions; no mottled rust or tiny grain. Small complete brass fittings stay inside the tile away from cut-through edges. No arbitrary 16-color palette limit.\nLighting: restrained upper-left light expressed with flat pixel bands; not a smooth gradient or rendered plastic sheen.\nColor palette: cool muted blue-grey steel coping, dark desaturated blue-grey face, a few pale cool highlights, restrained warm brass.\nConstraints: deliver exactly ONE complete component, orthographic game-tile view. The left and right cut-through interfaces must look like the same continuous cross-section when the tile repeats. Keep the bottom three quarters genuinely transparent. No end caps, no rounded termini, no isolated floating pieces, no extra preview panels, no labels, no grid, no text, no watermark. No photorealistic texture, noise, scratches, antialiased blur, realistic grit, water reflections, floor panels, decorative edge posts, or shadow crossing the tile bounds.\n",
+      "referenced_images_in_order": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+          "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+        },
+        {
+          "path": "art-source/ember/autotiles-v003/industrial_tile_master_v003.png",
+          "sha256": "dccc671f4e754e218ecfea56c07d4096a06f709e2da4fd69b702d719a57c6d7e"
+        },
+        {
+          "path": "art-source/ember/production-v008/bank/raw/bank_straight_N_v001.png",
+          "sha256": "4b6964caeafe74f071f4cf499d4e817caa3db76cfd1e60e59839ea442f5b4810"
+        }
+      ]
+    },
+    {
+      "id": "bank_inner_NW_pixel_v001",
+      "tool": "image_gen.imagegen built-in",
+      "transparent_background": true,
+      "prompt": "Use case: precise-object-edit\nAsset type: complete north-west CONCAVE industrial pool-bank corner tile, transparent PNG.\nPrimary request: Rebuild the previous curved inner-bank artwork as a compact NW concave water-boundary corner whose two CUT-THROUGH connection ports occur at the actual north-west tile corner. Match the new straight bank's crisp pixel-art industrial material, coping/face hierarchy, scale and restrained brass.\nInput images: Image 1 is the NEW straight north bank master: copy its pixel-cluster style, blue-grey color family, and actual cross-section hierarchy. Image 2 is the OLD rejected NW inner corner: it is the edit target and shows ONLY the intended curving manufactured coping with a darker water-facing rim; correct its misplaced, capped-looking ports and excessive half-tile footprint. Image 3 is the official mask127 reference: use ONLY its missing-NW-diagonal adjacency meaning, never copy red/white colors or its simplified block shape.\nActual neighborhood: this image is the center tile of a 3x3 water neighborhood. The only absent water cell is the NW diagonal cell. N, NE, E, SE, S, SW and W neighbors contain water. The north neighbor has a WEST exposed bank, meeting this corner at its NORTH port. The west neighbor has a NORTH exposed bank, meeting this corner at its WEST port. This is a compact inside turn around the protruding NW land corner, NOT an outer L around a square pool, NOT two complete 128px-long shores, and NOT an isolated annular arc with its ends inset 31px.\nCanvas and connection geometry: exact square 1024x1024 canvas, representing one final 128x128 tile. NW origin is x=0,y=0. The NORTH cut-through port must occupy exactly x=0..255 at y=0, and the WEST cut-through port must occupy exactly y=0..255 at x=0. Their final 128px positions are both [0,32), not [31,63). Both ports physically reach their own canvas edges, and their opaque steel bodies connect internally as one compact continuous component. Flat cut-through ports have no closing cap or termination trim. No page margin or detached object. East and south canvas edges remain transparent.\nShape: a small complete manufactured concave elbow located at the extreme upper-left of the canvas, with coping and a restrained darker water-facing curved rim turning smoothly between the two cut-through ports. A stepped pixel curve is welcome. Let its silhouette occupy only the local NW corner; retain empty transparent water space through the east and south parts of the tile. The geometry must connect the two specified corner-adjacent ports WITHOUT retaining the old offset annulus or drawing a large plate/floor block. Do not shift the curve to the middle of the tile. Do not draw internally capped short arms. Do not put a circular hole in the bank.\nInterface hierarchy: the WEST port pairs directly with the left-to-right new north straight bank's right interface. Keep its light coping at the north side, near-black separator below, narrow dark face toward the water, and lower rim at the same scale and positional profile. The NORTH port pairs with a WEST straight-bank cross-section, at the SAME 32px total near-edge profile, with the light coping nearer west and dark water-side face nearer east. Keep upper-left light fixed; do not rotate the reference's directional lighting as a trick. If necessary make the manufactured inside turn more compact so both correct near-edge ports can be satisfied.\nStyle: clear hand-authored-looking pixel art, crisp axis-aligned contour steps, connected blue-grey metal color clusters, only a few readable flat shading levels, a few complete brass fittings inside the coping away from connecting edges. Prefer the new bank reference over the old realistic reference. No photorealistic grit, grain, tiny scratches, smooth gradients, blurry antialiasing, or shiny 3D rendering. Preserve 128px final texture resolution; do not output a 32px texture.\nBackground: actual transparent alpha, no water, no floor, no external shadow, no fake checkerboard drawn into pixels.\nConstraints: ONE complete corner component only, not an atlas or preview page. No text, labels, grid, watermark, endcaps, corner posts, loose debris or unrelated parts. Do not produce the old N/W [31,63) port placement. A visibly curving single block does not override the strict port POSITIONS.\n",
+      "referenced_images_in_order": [
+        {
+          "path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_straight_N_pixel_v001_128.png",
+          "sha256": "1c8abdda7571b88a037474cb612a38a746d4a925c4cb06145ca60bf22ddb8990"
+        },
+        {
+          "path": "art-source/ember/production-v008/bank/raw/bank_inner_NW_v003.png",
+          "sha256": "77842daae3c005c22880dc471fba9629a3b97c44aa4a00c2aa79ee579341f35a"
+        },
+        {
+          "path": "art-source/ember/production-v008/inputs/official_mask127.png",
+          "sha256": "c19189a827c613aa19d52d8a8d65e11129806e5781be6c825fa3498ad32be156"
+        }
+      ]
+    }
+  ],
+  "tool": "image_gen.imagegen built-in"
+}

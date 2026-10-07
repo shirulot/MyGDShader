@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bcpswyqbnkkha"]
+
+[ext_resource type="Script" uid="uid://cdwnpfu3mrkjf" path="res://scenes/m0/energy_station.gd" id="1_qel26"]
+[ext_resource type="Texture2D" uid="uid://bak3k8byr5a1y" path="res://assets/shader-learning/2d/kenney-rts-scifi/station_scifi_structure_01.png" id="2_f0ftp"]
+[ext_resource type="Shader" uid="uid://dmc7h3tnsrox5" path="res://shader/energy_station.gdshader" id="2_f52ef"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ita4j"]
+radius = 55.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u0rx8"]
+resource_local_to_scene = true
+shader = ExtResource("2_f52ef")
+shader_parameter/state = 0
+shader_parameter/stateProgress = 0.0
+shader_parameter/collecting = false
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ita4j"]
+size = Vector2(31.5, 17)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mwb8w"]
+radius = 80.0
+
+[node name="EnergyStation" type="Area2D" unique_id=1635534475]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_qel26")
+
+[node name="EnergyArea" type="CollisionShape2D" parent="." unique_id=1467497338]
+shape = SubResource("CircleShape2D_ita4j")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1443742905]
+material = SubResource("ShaderMaterial_u0rx8")
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_f0ftp")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1705414868]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1661039345]
+position = Vector2(1, 18)
+shape = SubResource("RectangleShape2D_ita4j")
+
+[node name="Timer" type="Timer" parent="." unique_id=2134872988]
+wait_time = 2.0
+one_shot = true
+
+[node name="DamageArea" type="Area2D" parent="." unique_id=2083142681]
+collision_layer = 4
+collision_mask = 2
+
+[node name="DamageArea2" type="CollisionShape2D" parent="DamageArea" unique_id=1881938760]
+shape = SubResource("CircleShape2D_mwb8w")
+
+[connection signal="body_entered" from="." to="." method="_on_player_enter"]
+[connection signal="body_exited" from="." to="." method="_on_player_exite"]
+[connection signal="body_entered" from="DamageArea" to="." method="_on_damage_area_body_entered"]
+[connection signal="body_exited" from="DamageArea" to="." method="_on_damage_area_body_exited"]

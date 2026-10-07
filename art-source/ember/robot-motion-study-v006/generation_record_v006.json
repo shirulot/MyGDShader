@@ -1,0 +1,86 @@
+{
+  "revision": "robot_motion_study_v006",
+  "date": "2026-10-06",
+  "tool": "built-in imagegen",
+  "transparent_background": true,
+  "frame_count": 8,
+  "action": "walk",
+  "direction": "down",
+  "layout": {
+    "columns": 4,
+    "rows": 2
+  },
+  "references": [
+    "art-source/ember/robot-structure-v005/robot_three_views_annotated_v005.png",
+    "art-source/ember/robot-structure-v005/robot_exploded_joints_annotated_v005.png"
+  ],
+  "selected_step": 5,
+  "stages": [
+    {
+      "step": 1,
+      "prompt": "robot_walk_down_master_v006.prompt.txt",
+      "image": "source/drafts/robot_walk_down_master_v006_first.png",
+      "raw_tool_file": "exec-fe4179b7-46f0-469a-9588-f358d7842cff.png",
+      "review": "REJECTED",
+      "reason": "Repeated support phases and white knee annotation markers",
+      "image_sha256": "f54a2f6f8e15a90664042438653ed4ea0bbcb8a93105b2a0617eec241593ee61",
+      "prompt_sha256": "044261e9d590d4eb327882d35fc4f2c0682ef211e42b546474639cd2d82555e8"
+    },
+    {
+      "step": 2,
+      "prompt": "robot_walk_down_phase_fix_v006.prompt.txt",
+      "image": "source/drafts/robot_walk_down_master_v006_second.png",
+      "raw_tool_file": "exec-308383b7-a633-4f07-9c25-bcb802739bdb.png",
+      "review": "REJECTED",
+      "reason": "Knee markers removed but one support leg repeated",
+      "image_sha256": "6c6134cca5daf347aefd16b9dc07ec918d2baaf191620207f8e0ddc756678779",
+      "prompt_sha256": "7aad9222c6cd07e22795eba613b8c5ce30704228ca129646176c028ccdbcd35d"
+    },
+    {
+      "step": 3,
+      "prompt": "robot_walk_down_fresh_cycle_v006.prompt.txt",
+      "image": "source/drafts/robot_walk_down_master_v006_third.png",
+      "raw_tool_file": "exec-11c90cd2-7cc0-4ca0-a408-1c0dbc36a0a6.png",
+      "review": "REJECTED",
+      "reason": "Opposite support halves achieved, wrist tools swapped or duplicated",
+      "image_sha256": "9f40e19ffb6a4664d3707d980b80de36ee3a3cfa8af299e6c1ff41efdd6d5e35",
+      "prompt_sha256": "dd2e17a2f2ad3b5105938ec08cf2ce419257ff6d0271f5b620ed2d2a80eb6b47"
+    },
+    {
+      "step": 4,
+      "prompt": "robot_walk_down_tool_fix_v006.prompt.txt",
+      "image": "source/drafts/robot_walk_down_master_v006_fourth.png",
+      "raw_tool_file": "exec-16c95ea6-8cc9-4b60-89cc-2f8acb907354.png",
+      "review": "REJECTED",
+      "reason": "Tool-side correction did not apply to all poses",
+      "image_sha256": "4bea138c64111242f7f38f2357e364940a3ad7c1ff9a29fb3560c3415d63c96a",
+      "prompt_sha256": "5c7e1306841d7ba3b61bd4b00dfa8fbaf1244fb2229d79b7a996ba5c10d1fd15"
+    },
+    {
+      "step": 5,
+      "prompt": "robot_walk_down_position_fix_v006.prompt.txt",
+      "image": "source/robot_walk_down_master_v006.png",
+      "raw_tool_file": "exec-6f47a9b0-30a4-49e7-939b-177f0a6a6eab.png",
+      "review": "SELECTED_SOURCE_NEEDS_REVISION",
+      "reason": "Eight consistent viewer-right tools and solid joints; motion remains a trial",
+      "image_sha256": "1ea1532c567ebd5aa9f2f28160c497e8110cdb15702cfbc377e6b7ce9118762e",
+      "prompt_sha256": "15fc63cfb13c178c515e4506cf93c46f91bdaba25776dc8cb2114d3792be25ed"
+    }
+  ],
+  "export_method": "Fixed-grid whole-cell lossless PNG crops, animation encoding, uniform diagnostic downscale only",
+  "native_64x96_authoring_verified": false,
+  "production_accepted": false,
+  "production_assets_modified": false,
+  "structural_review": {
+    "status": "IMPROVED_TRIAL",
+    "tool_side": "Exactly one tool on viewer-right wrist in all eight poses",
+    "knee_annotations": "Removed",
+    "connections": "No obvious full-width gap or floating armor identified in final master by independent review"
+  },
+  "remaining_issues": [
+    "Passing and weight transfer are under-developed; transitions 3-to-4 and 7-to-0 may feel abrupt",
+    "Torso and arm counter-swing is small",
+    "Some cyan edge flecks remain; native pixel palette and binary alpha not accepted"
+  ],
+  "art_review_status": "NEEDS_REVISION"
+}

@@ -1,0 +1,281 @@
+{
+  "version": "v013-pilot",
+  "status": "FIRST_GATE_CANDIDATE",
+  "enabled_pilot_units": [
+    "enemy_tracked_heavy",
+    "enemy_cutter"
+  ],
+  "paused_for_static_revision": [
+    "enemy_patrol",
+    "enemy_scout_drone"
+  ],
+  "direction": "down_right",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "fps": 8,
+  "frames": 8,
+  "loop": true,
+  "units": [
+    {
+      "unit": "enemy_cutter",
+      "parts": [
+        {
+          "id": "rear_right",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              50,
+              0
+            ],
+            [
+              50,
+              68
+            ],
+            [
+              49,
+              68
+            ],
+            [
+              49,
+              77
+            ],
+            [
+              48,
+              77
+            ],
+            [
+              48,
+              85
+            ],
+            [
+              0,
+              85
+            ]
+          ],
+          "pivot": [
+            49,
+            77
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 0,
+          "overlap_polygons": [
+            [
+              [
+                47,
+                75
+              ],
+              [
+                52,
+                75
+              ],
+              [
+                52,
+                80
+              ],
+              [
+                47,
+                80
+              ]
+            ]
+          ]
+        },
+        {
+          "id": "rear_left",
+          "polygon": [
+            [
+              72,
+              0
+            ],
+            [
+              83,
+              0
+            ],
+            [
+              83,
+              75
+            ],
+            [
+              80,
+              79
+            ],
+            [
+              78,
+              81
+            ],
+            [
+              78,
+              74
+            ],
+            [
+              76,
+              74
+            ],
+            [
+              76,
+              70
+            ],
+            [
+              72,
+              70
+            ]
+          ],
+          "pivot": [
+            78,
+            75
+          ],
+          "end": null,
+          "exclude": [],
+          "z": -1,
+          "overlap_polygons": [
+            [
+              [
+                74,
+                73
+              ],
+              [
+                80,
+                73
+              ],
+              [
+                80,
+                79
+              ],
+              [
+                74,
+                79
+              ]
+            ]
+          ]
+        }
+      ],
+      "remove_polygons": [
+        [
+          [
+            44,
+            90
+          ],
+          [
+            55,
+            90
+          ],
+          [
+            55,
+            95
+          ],
+          [
+            44,
+            95
+          ]
+        ],
+        [
+          [
+            73,
+            85
+          ],
+          [
+            79,
+            85
+          ],
+          [
+            79,
+            90
+          ],
+          [
+            73,
+            90
+          ]
+        ]
+      ],
+      "legs": [
+        {
+          "id": "front_right",
+          "source_rect": [
+            803,
+            172,
+            226,
+            327
+          ],
+          "target_origin": [
+            47.5,
+            81
+          ],
+          "scale": 0.04,
+          "z": 1,
+          "phase_offset": 4,
+          "hip": [
+            55,
+            82
+          ],
+          "sole": [
+            52,
+            94
+          ]
+        },
+        {
+          "id": "front_left",
+          "source_rect": [
+            225,
+            172,
+            295,
+            327
+          ],
+          "target_origin": [
+            72,
+            78
+          ],
+          "scale": 0.04,
+          "z": 0,
+          "phase_offset": 0,
+          "hip": [
+            74,
+            79
+          ],
+          "sole": [
+            81,
+            91
+          ]
+        },
+        {
+          "id": "rear_right",
+          "registered": true,
+          "phase_offset": 0,
+          "hip": [
+            49,
+            77
+          ],
+          "sole": [
+            44,
+            85
+          ]
+        },
+        {
+          "id": "rear_left",
+          "registered": true,
+          "phase_offset": 4,
+          "hip": [
+            78,
+            75
+          ],
+          "sole": [
+            79,
+            79
+          ]
+        }
+      ],
+      "leg_source": "res://source/parts/cutter_down_right_legs_v001.png",
+      "note": "Original registered rear legs and all their visible armor are preserved. Only occluded front legs use the fixed generated parts. Pairs rear_right/front_left versus rear_left/front_right; concealed mounts travel <=2 px. No tool is counted as a support leg.",
+      "source": "res://source/registered/enemy_cutter_down_right.png",
+      "source_sha256": "ea8a624f5e7cb7a7453afd7ee3b9e5d76b7362fa23c6c9105bc290ea56d35819"
+    }
+  ]
+}

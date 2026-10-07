@@ -1,0 +1,9 @@
+Use case: precise-object-edit.
+Asset type: one reusable production game sprite derived from the provided map concept, not another scene render.
+Input image: the map supplies the exact object manufacture, colours, camera and pixel style. Isolate/re-render ONLY the requested object while preserving its design.
+Output: ONE full object on true transparent alpha,1024x1024 source canvas, fully inside the frame with ample empty margin. One sprite, no variants, boards, captions or other objects.
+Style: subdued worn-industrial pixel art, crisp small pixel clusters and stepped outlines, neutral off-white armour, blue-grey structure, very restrained brass/copper. Quiet purposeful wear, readable at small game size. No photorealistic PBR, blur, bloom, soft painterly gradients, glossy3D or dense grain. Fixed soft upper-left volume shade.
+Camera: same orthographic near-top-down viewpoint as the map; visible top and short south-facing front. Ground shapes horizontal/vertical, no diamond isometric, perspective convergence or dramatic product angle.
+Transparency: alpha0 in all empty space and actual holes; no painted checkerboard, white/black matte, ground patch, scene platform, separate plinth, cast shadow outside the object, lettering, labels or watermark. Export later fits original RGBA into a small native game canvas using nearest sampling, so preserve a strong coherent silhouette.
+Requested object: One flat sparse floating-leaf patch from the channels: six to nine small muted olive-green roundish pixel lily leaves at varying little sizes, with dark subdued outlines and small gaps between, viewed from the same orthographic top angle. Isolated floating leaves only. Absolutely no blue water rectangle, ground, tall vegetation, pot or shadow.
+Final native canvas 80x64px; subject fits 56x40px, ground contact uses a bottom-centre pivot. Retain the same family across all map locations.

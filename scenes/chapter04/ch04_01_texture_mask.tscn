@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://df17eb1fy7oku"]
+
+[ext_resource type="Shader" uid="uid://ovi04wvlvyqp" path="res://scenes/chapter04/ch04_01_texture_mask.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://ck0skxwlbdi5s" path="res://assets/shader-learning/2d/test_sprite_robot_512.png" id="2_robot"]
+[ext_resource type="Texture2D" uid="uid://depyfrn40jrtk" path="res://assets/ember/data/masks/circle_mask_v001.png" id="2_xp6mh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mask"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/mask_texture = ExtResource("2_xp6mh")
+
+[node name="Ch0401TextureMask" type="Node2D" unique_id=1734326440]
+
+[node name="Robot" type="Sprite2D" parent="." unique_id=1088215218]
+material = SubResource("ShaderMaterial_mask")
+position = Vector2(360, 360)
+texture = ExtResource("2_robot")

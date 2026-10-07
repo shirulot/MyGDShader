@@ -1,0 +1,40 @@
+{
+  "qa/pixel_audit.json": {
+    "sha256": "5a9191b35b0de4f38e4518a1682c9d4daa6e9576c4c9c368b6f8f18fa77e354f",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; not independently replayed",
+    "frames_count": 112,
+    "binds_count": 14,
+    "preserved_count": 2
+  },
+  "qa/pose_audit.json": {
+    "sha256": "127f34ab6170b7c16251a335d99a0adac2903a2e2d683385d175a3f4e8265e14",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; not independently replayed",
+    "records_count": 16
+  },
+  "qa/gpu_roundtrip.json": {
+    "sha256": "a22c03e610a7bc22559fa00a31d3c4e81c309f479d8c3990c9c564fe7c0eb8f9",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; not independently replayed",
+    "records_count": 210,
+    "new_records": 196,
+    "preserved_records": 14,
+    "all_reported_differences_zero": true
+  },
+  "qa/runtime.json": {
+    "sha256": "77cd55742fb683b1bdaf19ae2b80e5dd696b764a6b358ea32ab49471a7369611",
+    "catalog_binding_exact": true,
+    "status": "PASS",
+    "scope": "AUTHOR_RECORD_BINDING_ONLY; not independently replayed",
+    "players_count": 32,
+    "switches_count": 16,
+    "all_players_passed": true,
+    "all_switches_passed": true,
+    "elapsed_ms": 9358,
+    "renderer": "NVIDIA GeForce RTX 4070 Laptop GPU"
+  }
+}

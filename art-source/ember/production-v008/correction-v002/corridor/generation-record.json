@@ -1,0 +1,353 @@
+{
+  "status": "ONE_CONTINUOUS_MOTHER_COLOR_STABLE_STRUCTURAL_TARGETS_REJECTED",
+  "built_in_generation_call_count": 1,
+  "maximum_authorized_calls": 1,
+  "tool": "image_gen.imagegen built-in",
+  "transparent_background": false,
+  "tool_original_path": "C:\\Users\\shiru\\.codex\\generated_images\\01a10c06-70f1-7100-bf8d-c2032eb22807\\exec-5cc27424-cc8e-42bb-b1be-07763bebaa93.png",
+  "tool_original_sha256": "60f1e9d846190d87d30eb5afcbb28b2abb44e8078fbb61eab491f24a8f1d58ad",
+  "raw_path": "art-source/ember/production-v008/correction-v002/corridor/raw/corridor_master_pixel_v001.png",
+  "raw_sha256": "60f1e9d846190d87d30eb5afcbb28b2abb44e8078fbb61eab491f24a8f1d58ad",
+  "raw_dimensions": [
+    724,
+    2172
+  ],
+  "raw_mode": "RGB",
+  "raw_alpha_min_max": [
+    255,
+    255
+  ],
+  "actual_ratio_exact_1_to_3": true,
+  "registered_logical_size": [
+    128,
+    384
+  ],
+  "prompt_path": "art-source/ember/production-v008/correction-v002/corridor/corridor_master_pixel_v001.prompt.txt",
+  "prompt_sha256": "293ad6569f120ce1ff80d5fa798d5e634b933719729676da2ef8e2bec875db61",
+  "reference": {
+    "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+    "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819",
+    "role": "ONLY pixel style and palette reference; no old realistic or endpoint references"
+  },
+  "entries": [
+    {
+      "id": "floor_end_N_pixel_v001",
+      "family": "floor",
+      "mask": 16,
+      "mask_bit_order": "N NE E SE S SW W NW",
+      "open_sides": [
+        "S"
+      ],
+      "closed_sides": [
+        "N",
+        "E",
+        "W"
+      ],
+      "raw_path": "art-source/ember/production-v008/correction-v002/corridor/raw/corridor_master_pixel_v001.png",
+      "raw_sha256": "60f1e9d846190d87d30eb5afcbb28b2abb44e8078fbb61eab491f24a8f1d58ad",
+      "crop_xyxy": [
+        0,
+        0,
+        724,
+        724
+      ],
+      "crop_convention": "XYXY half-open",
+      "crop_size": [
+        724,
+        724
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/corridor/candidates/floor_end_N_pixel_v001_128.png",
+      "candidate_sha256": "698e26feb4ea9a1c252dc6ca85ab429ef6c5646cf5a78e27a352f894a783a6af",
+      "texture_size": [
+        128,
+        128
+      ],
+      "world_grid_units": 32,
+      "layer_scale": 0.25,
+      "uniform_scale_factor": 0.17679558011049723,
+      "resampling": "PIL.Image.Resampling.NEAREST",
+      "alpha_min_max": [
+        255,
+        255
+      ],
+      "actual_alpha_body_ports_gt127": {
+        "N": [
+          [
+            0,
+            128
+          ]
+        ],
+        "E": [
+          [
+            0,
+            128
+          ]
+        ],
+        "S": [
+          [
+            0,
+            128
+          ]
+        ],
+        "W": [
+          [
+            0,
+            128
+          ]
+        ]
+      },
+      "status": "REJECTED_STRUCTURAL_TARGETS_DIAGNOSTIC_ONLY",
+      "production_ready": false,
+      "no_local_art_or_alpha_repair": true,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_narrow_NS_pixel_v001",
+      "family": "floor",
+      "mask": 17,
+      "mask_bit_order": "N NE E SE S SW W NW",
+      "open_sides": [
+        "N",
+        "S"
+      ],
+      "closed_sides": [
+        "E",
+        "W"
+      ],
+      "raw_path": "art-source/ember/production-v008/correction-v002/corridor/raw/corridor_master_pixel_v001.png",
+      "raw_sha256": "60f1e9d846190d87d30eb5afcbb28b2abb44e8078fbb61eab491f24a8f1d58ad",
+      "crop_xyxy": [
+        0,
+        724,
+        724,
+        1448
+      ],
+      "crop_convention": "XYXY half-open",
+      "crop_size": [
+        724,
+        724
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/corridor/candidates/floor_narrow_NS_pixel_v001_128.png",
+      "candidate_sha256": "15ea3db01952bc628a30c98be6fc2e8e5bfc06b7d660485942c4357518c2333f",
+      "texture_size": [
+        128,
+        128
+      ],
+      "world_grid_units": 32,
+      "layer_scale": 0.25,
+      "uniform_scale_factor": 0.17679558011049723,
+      "resampling": "PIL.Image.Resampling.NEAREST",
+      "alpha_min_max": [
+        255,
+        255
+      ],
+      "actual_alpha_body_ports_gt127": {
+        "N": [
+          [
+            0,
+            128
+          ]
+        ],
+        "E": [
+          [
+            0,
+            128
+          ]
+        ],
+        "S": [
+          [
+            0,
+            128
+          ]
+        ],
+        "W": [
+          [
+            0,
+            128
+          ]
+        ]
+      },
+      "status": "REJECTED_STRUCTURAL_TARGETS_DIAGNOSTIC_ONLY",
+      "production_ready": false,
+      "no_local_art_or_alpha_repair": true,
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_end_S_pixel_v001",
+      "family": "floor",
+      "mask": 1,
+      "mask_bit_order": "N NE E SE S SW W NW",
+      "open_sides": [
+        "N"
+      ],
+      "closed_sides": [
+        "E",
+        "S",
+        "W"
+      ],
+      "raw_path": "art-source/ember/production-v008/correction-v002/corridor/raw/corridor_master_pixel_v001.png",
+      "raw_sha256": "60f1e9d846190d87d30eb5afcbb28b2abb44e8078fbb61eab491f24a8f1d58ad",
+      "crop_xyxy": [
+        0,
+        1448,
+        724,
+        2172
+      ],
+      "crop_convention": "XYXY half-open",
+      "crop_size": [
+        724,
+        724
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/corridor/candidates/floor_end_S_pixel_v001_128.png",
+      "candidate_sha256": "d73397ca151b62b61ea8a4b941301bb6eb0006700f059665ce85d2475ba13366",
+      "texture_size": [
+        128,
+        128
+      ],
+      "world_grid_units": 32,
+      "layer_scale": 0.25,
+      "uniform_scale_factor": 0.17679558011049723,
+      "resampling": "PIL.Image.Resampling.NEAREST",
+      "alpha_min_max": [
+        255,
+        255
+      ],
+      "actual_alpha_body_ports_gt127": {
+        "N": [
+          [
+            0,
+            128
+          ]
+        ],
+        "E": [
+          [
+            0,
+            128
+          ]
+        ],
+        "S": [
+          [
+            0,
+            128
+          ]
+        ],
+        "W": [
+          [
+            0,
+            128
+          ]
+        ]
+      },
+      "status": "REJECTED_STRUCTURAL_TARGETS_DIAGNOSTIC_ONLY",
+      "production_ready": false,
+      "no_local_art_or_alpha_repair": true,
+      "user_visual_approval": false
+    }
+  ],
+  "interface_observations": {
+    "N_end_S_to_NS_N": {
+      "visible_rgba_mismatch_samples": 125,
+      "alpha_mismatch_samples": 0,
+      "max_rgb_difference": 226,
+      "mean_rgb_absolute_difference": 10.815104166666666
+    },
+    "NS_S_to_S_end_N": {
+      "visible_rgba_mismatch_samples": 125,
+      "alpha_mismatch_samples": 0,
+      "max_rgb_difference": 105,
+      "mean_rgb_absolute_difference": 10.015625
+    },
+    "NS_repeat_S_to_NS_N": {
+      "visible_rgba_mismatch_samples": 128,
+      "alpha_mismatch_samples": 0,
+      "max_rgb_difference": 142,
+      "mean_rgb_absolute_difference": 16.018229166666668
+    },
+    "numeric_equality_is_not_visual_acceptance": true
+  },
+  "inspection": {
+    "continuous_full_width_opaque_floor": true,
+    "target_side_beam_width_pixels": 8,
+    "observed_side_frame_width_approx_pixels": [
+      2,
+      3
+    ],
+    "side_width_measurement_method": "visual estimate from registered 4x image; dark outer edge plus pale contour, plate face begins near x=2..3",
+    "side_beam_8px_result": false,
+    "target_plate_grid": "2 columns x 6 rows; seams y=64,128,192,256,320",
+    "observed_main_horizontal_dark_bands": [
+      [
+        65,
+        67
+      ],
+      [
+        131,
+        133
+      ],
+      [
+        196,
+        198
+      ],
+      [
+        262,
+        264
+      ],
+      [
+        326,
+        328
+      ],
+      [
+        381,
+        384
+      ]
+    ],
+    "horizontal_band_scan_method": "median Rec709 luma<40 over x=[8,58)+[70,120); diagnostics only, not image editing",
+    "target_grid_result": false,
+    "top_middle_bottom_interior_mean_RGB": [
+      [
+        45.8977200255102,
+        76.18191964285714,
+        87.80301339285714
+      ],
+      [
+        45.44052933673469,
+        75.30428890306122,
+        86.61336096938776
+      ],
+      [
+        45.896364795918366,
+        75.84343112244898,
+        87.11192602040816
+      ]
+    ],
+    "max_third_mean_RGB_channel_spread": 1.1896524234693828,
+    "reference_mean_RGB_interior_32px_inset_NOT_exact_style_test": [
+      51.4474662806299,
+      78.94696702210295,
+      89.9733980651084
+    ],
+    "material_visual_result": "同一母图保持蓝灰像素配色，三段均值稳定，未见整体上下渐变；用户视觉认可未取得。",
+    "geometry_visual_result": "外侧梁明显不足8px；六行板缝逐步偏离64px节奏，三格内部不能登记统一64px网格通过。"
+  },
+  "production_ready": false,
+  "user_visual_approval": false,
+  "GPU_result": "PENDING_ROOT_UNIFIED_REVIEW",
+  "operations": [
+    "one continuous generated mother",
+    "three complete equal square crops",
+    "uniform NEAREST 128px exports",
+    "CPU complete-slice repeat diagnostic only"
+  ],
+  "no_additional_generation": true,
+  "no_local_art_alpha_palette_repair": true,
+  "script_sha256": "f599cd6d7949ca972ab53e9c51e21a6528771d1e1178185c8a07ebfb8b69e069",
+  "review_paths": [
+    "art-source/ember/production-v008/correction-v002/corridor/review/corridor_mid_repeat_128x640_cpu.png",
+    "art-source/ember/production-v008/correction-v002/corridor/review/corridor_mid_repeat_2x_cpu.png",
+    "art-source/ember/production-v008/correction-v002/corridor/review/corridor_registered_128x384.png",
+    "art-source/ember/production-v008/correction-v002/corridor/review/corridor_registered_4x.png",
+    "art-source/ember/production-v008/correction-v002/corridor/review/floor_end_N_pixel_v001_4x.png",
+    "art-source/ember/production-v008/correction-v002/corridor/review/floor_end_S_pixel_v001_4x.png",
+    "art-source/ember/production-v008/correction-v002/corridor/review/floor_narrow_NS_pixel_v001_4x.png"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "standard": "standard.md",
+  "status": "PILOT_TARGETS_NOT_ACCEPTANCE_RESULTS",
+  "texture_size": [128, 128],
+  "world_grid_units": 32,
+  "layer_scale": 0.25,
+  "art_direction": "Crisp pixel-art clusters, blue-grey industrial steel, restrained brass, no photorealistic grit",
+  "whole_tile_export_resampling": "NEAREST",
+  "alpha_body_measurement_threshold_exclusive": 127,
+  "geometry_tolerance_pixels": 1,
+  "floor_narrow_NS": {
+    "ports": {"N": [1, 127], "S": [1, 127]},
+    "closed_sides": ["E", "W"],
+    "target_trim_width_pixels": 8
+  },
+  "floor_north_edge_and_outer_corner": {
+    "target_trim_width_pixels": 8,
+    "candidate_screening_range_pixels": [7, 9]
+  },
+  "bank": {
+    "target_total_width_pixels": 32,
+    "straight_N_connection_ports": {"E": [0, 32], "W": [0, 32]},
+    "outer_NW_connection_ports": {"E": [0, 32], "S": [0, 32]},
+    "inner_NW": "Match actual adjacent straight-direction profiles in a neighborhood case; width alone is insufficient."
+  },
+  "pixel_repair_allowed": false,
+  "complete_tileset_required_for_release": true
+}

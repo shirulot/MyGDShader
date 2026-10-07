@@ -1,0 +1,1519 @@
+{
+  "version": "v019-heavy-attack-death",
+  "unit": "enemy_tracked_heavy",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "method": "Fixed tower, lower chassis, tracks and cannon; hidden mount source registered once per direction; no frame regeneration or image mirroring.",
+  "configs": {
+    "down_left": {
+      "track_polygons": [
+        [
+          [
+            84,
+            60
+          ],
+          [
+            128,
+            60
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            70,
+            128
+          ],
+          [
+            70,
+            86
+          ],
+          [
+            73,
+            76
+          ],
+          [
+            77,
+            68
+          ],
+          [
+            81,
+            63
+          ],
+          [
+            84,
+            60
+          ]
+        ],
+        [
+          [
+            0,
+            50
+          ],
+          [
+            43,
+            50
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            46,
+            60
+          ],
+          [
+            46,
+            65
+          ],
+          [
+            47,
+            73
+          ],
+          [
+            46,
+            79
+          ],
+          [
+            47,
+            82
+          ],
+          [
+            47,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            75,
+            83
+          ],
+          "cross_width": 12,
+          "period": 16,
+          "shear": 0.25,
+          "sign": 1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            25,
+            73
+          ],
+          "cross_width": 13,
+          "period": 16,
+          "shear": 0.15,
+          "sign": 1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          81,
+          104
+        ],
+        [
+          31,
+          93
+        ]
+      ],
+      "source": "res://source/down_left.png",
+      "source_sha256": "aa21e0e940ff581a38b6afe5117aeabb53e464aa3203f8c50af1cd4b235593f8",
+      "tower_bottom": 78,
+      "gun": {
+        "polygon": [
+          [
+            51,
+            76
+          ],
+          [
+            55,
+            76
+          ],
+          [
+            58,
+            79
+          ],
+          [
+            58,
+            84
+          ],
+          [
+            55,
+            87
+          ],
+          [
+            51,
+            87
+          ],
+          [
+            48,
+            84
+          ],
+          [
+            48,
+            79
+          ]
+        ],
+        "pivot": [
+          55,
+          77
+        ],
+        "recoil": [
+          1,
+          -1
+        ],
+        "droop_sign": -1,
+        "housing_polygon": [
+          [
+            50,
+            69
+          ],
+          [
+            58,
+            69
+          ],
+          [
+            60,
+            73
+          ],
+          [
+            60,
+            87
+          ],
+          [
+            57,
+            92
+          ],
+          [
+            52,
+            91
+          ],
+          [
+            47,
+            84
+          ],
+          [
+            47,
+            77
+          ]
+        ],
+        "fixed_receiver_pixels": [
+          [
+            46,
+            76
+          ],
+          [
+            46,
+            77
+          ]
+        ],
+        "socket_clip_rect": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      "sensor_rect": [
+        51,
+        62,
+        9,
+        3
+      ],
+      "hidden": {
+        "source_rect": [
+          478,
+          134,
+          384,
+          239
+        ],
+        "scale": 0.08579088471849866,
+        "target_bottom": [
+          64,
+          98
+        ],
+        "canonical_y_min": 72
+      }
+    },
+    "left": {
+      "track_polygons": [
+        [
+          [
+            34,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            83
+          ],
+          [
+            92,
+            83
+          ],
+          [
+            90,
+            70
+          ],
+          [
+            87,
+            68
+          ],
+          [
+            57,
+            68
+          ],
+          [
+            50,
+            70
+          ],
+          [
+            44,
+            72
+          ],
+          [
+            39,
+            77
+          ],
+          [
+            34,
+            82
+          ]
+        ],
+        [
+          [
+            79,
+            60
+          ],
+          [
+            82,
+            60
+          ],
+          [
+            87,
+            64
+          ],
+          [
+            87,
+            68
+          ],
+          [
+            79,
+            68
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            48,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            64,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            48,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            64,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          43,
+          104
+        ],
+        [
+          85,
+          104
+        ]
+      ],
+      "source": "res://source/left.png",
+      "source_sha256": "522409a89a7748cd2c50a3822978246382c794187953084e86d7384900979d36",
+      "tower_bottom": 79,
+      "gun": {
+        "polygon": [
+          [
+            23,
+            73
+          ],
+          [
+            31,
+            73
+          ],
+          [
+            31,
+            87
+          ],
+          [
+            23,
+            87
+          ]
+        ],
+        "pivot": [
+          30,
+          80
+        ],
+        "recoil": [
+          1,
+          0
+        ],
+        "droop_sign": -1,
+        "housing_polygon": [
+          [
+            34,
+            67
+          ],
+          [
+            38,
+            67
+          ],
+          [
+            38,
+            71
+          ],
+          [
+            36,
+            75
+          ],
+          [
+            35,
+            80
+          ],
+          [
+            35,
+            88
+          ],
+          [
+            32,
+            92
+          ],
+          [
+            30,
+            90
+          ],
+          [
+            30,
+            84
+          ],
+          [
+            24,
+            84
+          ],
+          [
+            24,
+            74
+          ],
+          [
+            29,
+            74
+          ],
+          [
+            30,
+            71
+          ]
+        ],
+        "fixed_receiver_pixels": [],
+        "socket_clip_rect": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      "sensor_rect": [
+        38,
+        63,
+        3,
+        3
+      ],
+      "hidden": {
+        "source_rect": [
+          954,
+          132,
+          290,
+          239
+        ],
+        "scale": 0.08579088471849866,
+        "target_bottom": [
+          64,
+          98
+        ],
+        "canonical_y_min": 72
+      }
+    },
+    "up_left": {
+      "track_polygons": [
+        [
+          [
+            0,
+            60
+          ],
+          [
+            45,
+            60
+          ],
+          [
+            45,
+            60
+          ],
+          [
+            49,
+            67
+          ],
+          [
+            53,
+            73
+          ],
+          [
+            57,
+            82
+          ],
+          [
+            57,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ],
+        [
+          [
+            81,
+            50
+          ],
+          [
+            128,
+            50
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            82,
+            128
+          ],
+          [
+            82,
+            82
+          ],
+          [
+            85,
+            72
+          ],
+          [
+            82,
+            64
+          ],
+          [
+            81,
+            64
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            41,
+            83
+          ],
+          "cross_width": 12,
+          "period": 16,
+          "shear": 0.25,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            90,
+            72
+          ],
+          "cross_width": 11,
+          "period": 16,
+          "shear": -0.15,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          44,
+          104
+        ],
+        [
+          97,
+          93
+        ]
+      ],
+      "source": "res://source/up_left.png",
+      "source_sha256": "8b478c2f32173b75bcfa26d7f534140e4075dda1ad83d33e5185c5487af215e6",
+      "tower_bottom": 78,
+      "gun": {
+        "polygon": [],
+        "pivot": [
+          64,
+          72
+        ],
+        "recoil": [
+          0,
+          0
+        ],
+        "droop_sign": 0,
+        "housing_polygon": [],
+        "fixed_receiver_pixels": [],
+        "socket_clip_rect": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden": {
+        "source_rect": [
+          1360,
+          132,
+          376,
+          241
+        ],
+        "scale": 0.08579088471849866,
+        "target_bottom": [
+          64,
+          98
+        ],
+        "canonical_y_min": 72
+      }
+    },
+    "up": {
+      "track_polygons": [
+        [
+          [
+            0,
+            60
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            49,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ],
+        [
+          [
+            80,
+            60
+          ],
+          [
+            128,
+            60
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            80,
+            128
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            28,
+            85
+          ],
+          "cross_width": 16,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            85,
+            85
+          ],
+          "cross_width": 14,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          36,
+          104
+        ],
+        [
+          92,
+          104
+        ]
+      ],
+      "source": "res://source/up.png",
+      "source_sha256": "0f0f48f166999d08ed5a114a2a492b4c0e8837d16f0294f2a9b9b10f2d0785a6",
+      "tower_bottom": 83,
+      "gun": {
+        "polygon": [],
+        "pivot": [
+          64,
+          72
+        ],
+        "recoil": [
+          0,
+          0
+        ],
+        "droop_sign": 0,
+        "housing_polygon": [],
+        "fixed_receiver_pixels": [],
+        "socket_clip_rect": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden": {
+        "source_rect": [
+          38,
+          550,
+          369,
+          237
+        ],
+        "scale": 0.08579088471849866,
+        "target_bottom": [
+          64,
+          98
+        ],
+        "canonical_y_min": 72
+      }
+    },
+    "up_right": {
+      "track_polygons": [
+        [
+          [
+            84,
+            60
+          ],
+          [
+            128,
+            60
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            70,
+            128
+          ],
+          [
+            70,
+            86
+          ],
+          [
+            73,
+            76
+          ],
+          [
+            77,
+            68
+          ],
+          [
+            81,
+            63
+          ],
+          [
+            84,
+            60
+          ]
+        ],
+        [
+          [
+            0,
+            50
+          ],
+          [
+            43,
+            50
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            46,
+            60
+          ],
+          [
+            46,
+            65
+          ],
+          [
+            47,
+            73
+          ],
+          [
+            46,
+            79
+          ],
+          [
+            47,
+            82
+          ],
+          [
+            47,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            75,
+            83
+          ],
+          "cross_width": 12,
+          "period": 16,
+          "shear": 0.25,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            25,
+            73
+          ],
+          "cross_width": 13,
+          "period": 16,
+          "shear": 0.15,
+          "sign": -1,
+          "horizontal": false,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          81,
+          104
+        ],
+        [
+          31,
+          93
+        ]
+      ],
+      "source": "res://source/up_right.png",
+      "source_sha256": "c04db1b041d79c850c7edf06b35890a61bafafbeaf70d825fb9b60670df686b6",
+      "tower_bottom": 78,
+      "gun": {
+        "polygon": [],
+        "pivot": [
+          64,
+          72
+        ],
+        "recoil": [
+          0,
+          0
+        ],
+        "droop_sign": 0,
+        "housing_polygon": [],
+        "fixed_receiver_pixels": [],
+        "socket_clip_rect": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden": {
+        "source_rect": [
+          478,
+          543,
+          381,
+          244
+        ],
+        "scale": 0.08579088471849866,
+        "target_bottom": [
+          64,
+          98
+        ],
+        "canonical_y_min": 72
+      }
+    },
+    "right": {
+      "track_polygons": [
+        [
+          [
+            89,
+            128
+          ],
+          [
+            -5,
+            128
+          ],
+          [
+            -5,
+            83
+          ],
+          [
+            31,
+            83
+          ],
+          [
+            33,
+            70
+          ],
+          [
+            36,
+            68
+          ],
+          [
+            66,
+            68
+          ],
+          [
+            73,
+            70
+          ],
+          [
+            79,
+            72
+          ],
+          [
+            84,
+            77
+          ],
+          [
+            89,
+            82
+          ]
+        ],
+        [
+          [
+            44,
+            60
+          ],
+          [
+            41,
+            60
+          ],
+          [
+            36,
+            64
+          ],
+          [
+            36,
+            68
+          ],
+          [
+            44,
+            68
+          ]
+        ]
+      ],
+      "windows": [
+        {
+          "origin": [
+            43,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            59,
+            85
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": 1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            43,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        },
+        {
+          "origin": [
+            59,
+            101
+          ],
+          "cross_width": 0,
+          "period": 16,
+          "shear": 0,
+          "sign": -1,
+          "horizontal": true,
+          "thickness": 2
+        }
+      ],
+      "supports": [
+        [
+          38,
+          104
+        ],
+        [
+          80,
+          104
+        ]
+      ],
+      "source": "res://source/right.png",
+      "source_sha256": "a42740bfe07fbd4448bc07e59bc3febf26ebac9948a354aae54858567d6ee1b2",
+      "tower_bottom": 79,
+      "gun": {
+        "polygon": [
+          [
+            92,
+            73
+          ],
+          [
+            100,
+            73
+          ],
+          [
+            100,
+            87
+          ],
+          [
+            92,
+            87
+          ]
+        ],
+        "pivot": [
+          93,
+          80
+        ],
+        "recoil": [
+          -1,
+          0
+        ],
+        "droop_sign": 1,
+        "housing_polygon": [
+          [
+            89,
+            67
+          ],
+          [
+            85,
+            67
+          ],
+          [
+            85,
+            71
+          ],
+          [
+            87,
+            75
+          ],
+          [
+            88,
+            80
+          ],
+          [
+            88,
+            88
+          ],
+          [
+            91,
+            92
+          ],
+          [
+            93,
+            90
+          ],
+          [
+            93,
+            84
+          ],
+          [
+            99,
+            84
+          ],
+          [
+            99,
+            74
+          ],
+          [
+            94,
+            74
+          ],
+          [
+            93,
+            71
+          ]
+        ],
+        "fixed_receiver_pixels": [],
+        "socket_clip_rect": [
+          92,
+          73,
+          3,
+          14
+        ]
+      },
+      "sensor_rect": [
+        84,
+        63,
+        3,
+        3
+      ],
+      "hidden": {
+        "source_rect": [
+          966,
+          541,
+          295,
+          245
+        ],
+        "scale": 0.08579088471849866,
+        "target_bottom": [
+          64,
+          98
+        ],
+        "canonical_y_min": 72
+      }
+    },
+    "down_right": {
+      "track_polygons": [
+        [
+          [
+            0,
+            60
+          ],
+          [
+            45,
+            60
+          ],
+          [
+            49,
+            67
+          ],
+          [
+            53,
+            73
+          ],
+          [
+            57,
+            82
+          ],
+          [
+            57,
+            128
+          ],
+          [
+            0,
+            128
+          ]
+        ],
+        [
+          [
+            81,
+            50
+          ],
+          [
+            128,
+            50
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            82,
+            128
+          ],
+          [
+            82,
+            82
+          ],
+          [
+            85,
+            72
+          ],
+          [
+            82,
+            64
+          ],
+          [
+            81,
+            64
+          ]
+        ]
+      ],
+      "windows": [],
+      "supports": [
+        [
+          44,
+          104
+        ],
+        [
+          97,
+          93
+        ]
+      ],
+      "source": "res://source/down_right.png",
+      "source_sha256": "7812398344d56901cc0f3673bf724b5eb1a22c229dc30231c437c65e0ebdf073",
+      "tower_bottom": 78,
+      "gun": {
+        "polygon": [
+          [
+            71,
+            76
+          ],
+          [
+            75,
+            77
+          ],
+          [
+            78,
+            80
+          ],
+          [
+            78,
+            84
+          ],
+          [
+            75,
+            87
+          ],
+          [
+            71,
+            85
+          ],
+          [
+            68,
+            81
+          ],
+          [
+            68,
+            78
+          ]
+        ],
+        "pivot": [
+          70,
+          77
+        ],
+        "recoil": [
+          -1,
+          -1
+        ],
+        "droop_sign": 1,
+        "housing_polygon": [
+          [
+            67,
+            69
+          ],
+          [
+            74,
+            69
+          ],
+          [
+            77,
+            73
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            79,
+            84
+          ],
+          [
+            75,
+            87
+          ],
+          [
+            74,
+            92
+          ],
+          [
+            69,
+            93
+          ],
+          [
+            65,
+            89
+          ],
+          [
+            65,
+            79
+          ]
+        ],
+        "fixed_receiver_pixels": [],
+        "socket_clip_rect": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      "sensor_rect": [
+        66,
+        62,
+        10,
+        3
+      ],
+      "hidden": {
+        "source_rect": [
+          1363,
+          550,
+          380,
+          239
+        ],
+        "scale": 0.08579088471849866,
+        "target_bottom": [
+          64,
+          98
+        ],
+        "canonical_y_min": 72
+      }
+    }
+  },
+  "preserved": [
+    {
+      "action": "attack_down",
+      "atlas_sha256": "d934e8482ce6c384d662dacef271775d9a37d58fbb185d607f219fa4c6c30319",
+      "frame_hashes": [
+        "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+        "8cb2e615704090bc472d2dccacde65194f8d7c588ace1991dac2f37d8039c72a",
+        "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+        "7a4476dc366e5665d5b732253d26aaa48421d4c3819f5c1da25173ab2d3b5e47",
+        "d3ea71ca5721001bb5971e0f3324d0ab218bf2930ec96b580d3cfc33582c21c7",
+        "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85"
+      ]
+    },
+    {
+      "action": "death_down",
+      "atlas_sha256": "2f62402dee904116759de7e0647d79a37f898c2726de2b08ba66bd75c61bd008",
+      "frame_hashes": [
+        "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+        "3307f152b6a09894cf3e1023fd6b2360676b6c5ff7617169604adb26b58b3078",
+        "8dc2dc5844447052df1097526cd79f70eb02b3b3126a2847dc13e04309b67e1e",
+        "c239302b11ef8b002c59c1f7ae32697bdf181b0c9981c020701551994ec5fe95",
+        "f7bf5008424a47e343610831b8b54f595a4ac188852d2aa8a68a14a22c61f6c8",
+        "e0c40e11e16ed1c86ba17c9660e951863e7708110a71cbc583d0640fac95fd99",
+        "f7bf5008424a47e343610831b8b54f595a4ac188852d2aa8a68a14a22c61f6c8",
+        "f7bf5008424a47e343610831b8b54f595a4ac188852d2aa8a68a14a22c61f6c8"
+      ]
+    }
+  ],
+  "actions": {
+    "attack": {
+      "frame_count": 6,
+      "fps": 10,
+      "loop": false,
+      "body_y": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "recoil": [
+        0,
+        1,
+        0,
+        2,
+        1,
+        0
+      ],
+      "gun_roll": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gun_y": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "power": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "death": {
+      "frame_count": 8,
+      "fps": 10,
+      "loop": false,
+      "body_y": [
+        0,
+        2,
+        5,
+        9,
+        13,
+        12,
+        13,
+        13
+      ],
+      "recoil": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gun_roll": [
+        0,
+        0,
+        3,
+        7,
+        12,
+        12,
+        12,
+        12
+      ],
+      "gun_y": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "power": [
+        1,
+        0.7,
+        0.3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "mount_overlap": {
+    "radius_x": 3,
+    "radius_y": 1,
+    "y_min": 60,
+    "y_max": 98,
+    "method": "Duplicate fixed source mounting interface underneath moving shell; bind colors unchanged; no per-frame generation."
+  }
+}

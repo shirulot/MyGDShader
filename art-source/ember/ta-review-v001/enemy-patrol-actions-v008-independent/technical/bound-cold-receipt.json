@@ -1,0 +1,212 @@
+{
+  "status": "PASS",
+  "scope": "Recorded completed fresh ZIP import and real GPU playback; no new run triggered",
+  "zip_path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\deliveries\\enemy_patrol_actions_v008_2026-10-06.zip",
+  "zip_sha256": "4a3ab26e04abb5816c505fb0c0f851b8042886d8ea3d2b8516b1923360af74b4",
+  "cold_workspace": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-patrol-actions-v008-coldcheck",
+  "import_exit": 0,
+  "capture_exit": 0,
+  "actual_playback_report": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-patrol-actions-v008-coldcheck/qa/gpu_playback.json",
+  "playback_report_sha256": "09511b30c3def57f1b1a6d28c9ca433529b67c5e819c27fdf453e69f02a0455c",
+  "gpu": {
+    "catalog_sha256": "3d243388a98b0fa72b9506d6ea3fb30acfabd41d349aefbdab65c8973395936f",
+    "finished": {
+      "attack_down_normal": 8,
+      "attack_down_slow": 1,
+      "death_down_normal": 7,
+      "death_down_slow": 1,
+      "hit_down_normal": 11,
+      "hit_down_slow": 2,
+      "idle_down_normal": 0,
+      "idle_down_slow": 0,
+      "move_down_normal": 0,
+      "move_down_slow": 0
+    },
+    "loops": {
+      "attack_down_normal": 0,
+      "attack_down_slow": 0,
+      "death_down_normal": 0,
+      "death_down_slow": 0,
+      "hit_down_normal": 0,
+      "hit_down_slow": 0,
+      "idle_down_normal": 9,
+      "idle_down_slow": 2,
+      "move_down_normal": 9,
+      "move_down_slow": 1
+    },
+    "scope": "runtime traversal only",
+    "seconds": 9.20358403030285,
+    "seen": {
+      "attack_down_normal": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "attack_down_slow": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "death_down_normal": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "death_down_slow": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "hit_down_normal": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hit_down_slow": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "idle_down_normal": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "idle_down_slow": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "move_down_normal": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "move_down_slow": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "status": "PASS"
+  },
+  "core_files": [
+    {
+      "path": "project.godot",
+      "sha256": "53c36c03c64cb7437764b2ffa99b859d0b9807dc76b459bacc9356bee9b52b18",
+      "zip_equal": true
+    },
+    {
+      "path": "action_rig.gd",
+      "sha256": "17ccab7635a37f3b65553ae514cd3157354eaefc8ea2283be18cc92555fc8f26",
+      "zip_equal": true
+    },
+    {
+      "path": "fixed_rig.gd",
+      "sha256": "d5f47809f7e58bf50cfc0ff1f10f6dc763e05f10af769b7b33ddf7c82c18e09c",
+      "zip_equal": true
+    },
+    {
+      "path": "entity_cutout.gdshader",
+      "sha256": "24b4b3fc5e7fe8716915aef865fadfe70a823abe82abf4b8b676581d6c27d31e",
+      "zip_equal": true
+    },
+    {
+      "path": "rig.json",
+      "sha256": "520b82bcb621ce77697161ec9435ff7e783a6b8cfb1e6adcc2d99d458b669162",
+      "zip_equal": true
+    },
+    {
+      "path": "source/canonical.png",
+      "sha256": "6e2c4eb57d214de69778291bcbdc4b40dfb4a5b4881fcb33338bb5f4474f348c",
+      "zip_equal": true
+    },
+    {
+      "path": "output/catalog_v008.json",
+      "sha256": "3d243388a98b0fa72b9506d6ea3fb30acfabd41d349aefbdab65c8973395936f",
+      "zip_equal": true
+    },
+    {
+      "path": "output/patrol_actions_v008.tres",
+      "sha256": "8c5289d3290b8b8d1523988ff948bea4f6e93fde15eb3515f9e0bc1e9baa1c27",
+      "zip_equal": true
+    },
+    {
+      "path": "output/idle_down_v008.png",
+      "sha256": "84a29c3af3b2f6dff3c0136a8bc4c1104814442725fa61ac0f5ab140b1197017",
+      "zip_equal": true
+    },
+    {
+      "path": "output/move_down_v008.png",
+      "sha256": "5c1d26badf462cde1d4dee1707e2fd6bc042cabb8fb21bfb7ea06d881baa58e9",
+      "zip_equal": true
+    },
+    {
+      "path": "output/attack_down_v008.png",
+      "sha256": "37f918f6f91c5d2db7852e129a53c2aa41c3bf7a8a7c00aa2bbff548c6537fa4",
+      "zip_equal": true
+    },
+    {
+      "path": "output/hit_down_v008.png",
+      "sha256": "29763fb55e4fb728adfb947a1e94603c899aa033ce07f09b04b450c90d8a33bf",
+      "zip_equal": true
+    },
+    {
+      "path": "output/death_down_v008.png",
+      "sha256": "ebad5116319e8fea3433d95c2d70d82d0e677ce1ee265023ae67e4beedfe8428",
+      "zip_equal": true
+    }
+  ],
+  "logs": [
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-patrol-actions-v008\\qa/cold_import.log",
+      "bytes": 30613,
+      "sha256": "cf487ddcf7a84b132e68abc19883bce92d8bcead7aabc2bf69e640c12e9d7ac7"
+    },
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-patrol-actions-v008\\qa/cold_import.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-patrol-actions-v008\\qa/cold_capture.log",
+      "bytes": 1108,
+      "sha256": "5584ba38483a9b5c9f8633dab2ed256efbe183505b40cb7891f3d9812183f214"
+    },
+    {
+      "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\enemy-patrol-actions-v008\\qa/cold_capture.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

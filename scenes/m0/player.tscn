@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bw4g77fxkfsi6"]
+
+[ext_resource type="Script" uid="uid://cdsywdr6is7ht" path="res://scenes/m0/player.gd" id="1_u0rx8"]
+[ext_resource type="Shader" uid="uid://da0j4ury3fqqb" path="res://shader/player.gdshader" id="2_6rl6r"]
+[ext_resource type="Texture2D" uid="uid://behequbx0ri0g" path="res://assets/shader-learning/2d/kenney-rts-scifi/player_scifi_unit_03.png" id="2_473hp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1k11y"]
+shader = ExtResource("2_6rl6r")
+shader_parameter/progress = 0.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ita4j"]
+radius = 14.0
+height = 44.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1152978030]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_u0rx8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=503708738]
+material = SubResource("ShaderMaterial_1k11y")
+texture = ExtResource("2_473hp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1495159009]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_ita4j")
+
+[node name="Timer" type="Timer" parent="." unique_id=1028405251]
+one_shot = true

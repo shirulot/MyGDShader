@@ -1,0 +1,11084 @@
+{
+	"actors": [
+		{
+			"centered": false,
+			"clips": 16,
+			"nearest": 1
+		},
+		{
+			"centered": false,
+			"clips": 16,
+			"nearest": 1
+		}
+	],
+	"clips": [
+		{
+			"fps": 4.0,
+			"frames": 4,
+			"loop": true,
+			"name": "idle_down"
+		},
+		{
+			"fps": 4.0,
+			"frames": 4,
+			"loop": true,
+			"name": "idle_down_left"
+		},
+		{
+			"fps": 4.0,
+			"frames": 4,
+			"loop": true,
+			"name": "idle_left"
+		},
+		{
+			"fps": 4.0,
+			"frames": 4,
+			"loop": true,
+			"name": "idle_up_left"
+		},
+		{
+			"fps": 4.0,
+			"frames": 4,
+			"loop": true,
+			"name": "idle_up"
+		},
+		{
+			"fps": 4.0,
+			"frames": 4,
+			"loop": true,
+			"name": "idle_up_right"
+		},
+		{
+			"fps": 4.0,
+			"frames": 4,
+			"loop": true,
+			"name": "idle_right"
+		},
+		{
+			"fps": 4.0,
+			"frames": 4,
+			"loop": true,
+			"name": "idle_down_right"
+		},
+		{
+			"fps": 12.0,
+			"frames": 4,
+			"loop": false,
+			"name": "hit_down"
+		},
+		{
+			"fps": 12.0,
+			"frames": 4,
+			"loop": false,
+			"name": "hit_down_left"
+		},
+		{
+			"fps": 12.0,
+			"frames": 4,
+			"loop": false,
+			"name": "hit_left"
+		},
+		{
+			"fps": 12.0,
+			"frames": 4,
+			"loop": false,
+			"name": "hit_up_left"
+		},
+		{
+			"fps": 12.0,
+			"frames": 4,
+			"loop": false,
+			"name": "hit_up"
+		},
+		{
+			"fps": 12.0,
+			"frames": 4,
+			"loop": false,
+			"name": "hit_up_right"
+		},
+		{
+			"fps": 12.0,
+			"frames": 4,
+			"loop": false,
+			"name": "hit_right"
+		},
+		{
+			"fps": 12.0,
+			"frames": 4,
+			"loop": false,
+			"name": "hit_down_right"
+		}
+	],
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"errors": [],
+	"frames": 64,
+	"rig_cpu_checks": [
+		{
+			"direction": "down_left",
+			"masks": [
+				{
+					"id": "body",
+					"path": "res://../technical-runtime-mask-down_left-body.png",
+					"z": 5
+				},
+				{
+					"id": "right_thigh",
+					"path": "res://../technical-runtime-mask-down_left-right_thigh.png",
+					"z": 0
+				},
+				{
+					"id": "right_shin",
+					"path": "res://../technical-runtime-mask-down_left-right_shin.png",
+					"z": 0
+				},
+				{
+					"id": "right_cap",
+					"path": "res://../technical-runtime-mask-down_left-right_cap.png",
+					"z": 2
+				},
+				{
+					"id": "right_foot",
+					"path": "res://../technical-runtime-mask-down_left-right_foot.png",
+					"z": 1
+				},
+				{
+					"id": "left_thigh",
+					"path": "res://../technical-runtime-mask-down_left-left_thigh.png",
+					"z": 1
+				},
+				{
+					"id": "left_shin",
+					"path": "res://../technical-runtime-mask-down_left-left_shin.png",
+					"z": 1
+				},
+				{
+					"id": "left_cap",
+					"path": "res://../technical-runtime-mask-down_left-left_cap.png",
+					"z": 3
+				},
+				{
+					"id": "left_foot",
+					"path": "res://../technical-runtime-mask-down_left-left_foot.png",
+					"z": 2
+				}
+			],
+			"poses": [
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "down_left",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								69.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								82.0
+							],
+							"knee": [
+								69.0,
+								89.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"direction": "down_left",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0485280752182,
+								0.31715726852417
+							],
+							"basis_y": [
+								-0.0242640674114227,
+								1.34142124652863
+							],
+							"position": [
+								69.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.5
+							],
+							"position": [
+								58.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								81.0
+							],
+							"knee": [
+								69.0,
+								88.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								81.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "down_left",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								69.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								82.0
+							],
+							"knee": [
+								69.0,
+								89.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						1.0
+					],
+					"direction": "down_left",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.832455515861511,
+								-0.432455539703369
+							],
+							"basis_y": [
+								0.083772212266922,
+								0.716227769851685
+							],
+							"position": [
+								69.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								83.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.5
+							],
+							"position": [
+								58.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								83.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								83.0
+							],
+							"knee": [
+								69.0,
+								90.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								83.0
+							],
+							"knee": [
+								58.0,
+								90.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "down_left",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								69.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								82.0
+							],
+							"knee": [
+								69.0,
+								89.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						-1.0,
+						1.0
+					],
+					"direction": "down_left",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								-1.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.799999952316284,
+								-0.599999964237213
+							],
+							"basis_y": [
+								0.599999964237213,
+								0.799999952316284
+							],
+							"position": [
+								68.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								83.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.70710676908493,
+								-0.70710676908493
+							],
+							"basis_y": [
+								0.5,
+								0.5
+							],
+							"position": [
+								57.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								83.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								68.0,
+								83.0
+							],
+							"knee": [
+								68.0,
+								90.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								57.0,
+								83.0
+							],
+							"knee": [
+								57.0,
+								90.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						1.0,
+						0.0
+					],
+					"direction": "down_left",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								1.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.399999976158142
+							],
+							"basis_y": [
+								-0.447213590145111,
+								0.799999952316284
+							],
+							"position": [
+								70.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								59.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								70.0,
+								82.0
+							],
+							"knee": [
+								70.0,
+								89.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								59.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "down_left",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								69.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								82.0
+							],
+							"knee": [
+								69.0,
+								89.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				}
+			],
+			"textures": []
+		},
+		{
+			"direction": "left",
+			"masks": [
+				{
+					"id": "body",
+					"path": "res://../technical-runtime-mask-left-body.png",
+					"z": 10
+				},
+				{
+					"id": "left_thigh",
+					"path": "res://../technical-runtime-mask-left-left_thigh.png",
+					"z": 4
+				},
+				{
+					"id": "left_shin",
+					"path": "res://../technical-runtime-mask-left-left_shin.png",
+					"z": 4
+				},
+				{
+					"id": "left_cap",
+					"path": "res://../technical-runtime-mask-left-left_cap.png",
+					"z": 6
+				},
+				{
+					"id": "left_foot",
+					"path": "res://../technical-runtime-mask-left-left_foot.png",
+					"z": 5
+				},
+				{
+					"id": "right_thigh",
+					"path": "res://../technical-runtime-mask-left-right_thigh.png",
+					"z": -4
+				},
+				{
+					"id": "right_shin",
+					"path": "res://../technical-runtime-mask-left-right_shin.png",
+					"z": -4
+				},
+				{
+					"id": "right_cap",
+					"path": "res://../technical-runtime-mask-left-right_cap.png",
+					"z": -2
+				},
+				{
+					"id": "right_foot",
+					"path": "res://../technical-runtime-mask-left-right_foot.png",
+					"z": -3
+				}
+			],
+			"poses": [
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "left",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								94.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								68.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								66.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								86.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								91.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								65.0,
+								89.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								63.0,
+								79.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								67.0,
+								94.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								82.0
+							],
+							"knee": [
+								68.0,
+								89.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								64.0,
+								91.0
+							],
+							"ground": [
+								64.0,
+								101.0
+							],
+							"hip": [
+								63.0,
+								79.0
+							],
+							"knee": [
+								65.0,
+								86.0
+							],
+							"sole": [
+								64.0,
+								101.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"direction": "left",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								94.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0485280752182,
+								-0.31715726852417
+							],
+							"basis_y": [
+								0.0242640674114227,
+								1.34142124652863
+							],
+							"position": [
+								68.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								66.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								85.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								91.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0485280752182,
+								-0.31715726852417
+							],
+							"basis_y": [
+								0.0242640674114227,
+								1.34142124652863
+							],
+							"position": [
+								65.0,
+								88.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								63.0,
+								78.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								67.0,
+								94.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								81.0
+							],
+							"knee": [
+								68.0,
+								88.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								64.0,
+								91.0
+							],
+							"ground": [
+								64.0,
+								101.0
+							],
+							"hip": [
+								63.0,
+								78.0
+							],
+							"knee": [
+								65.0,
+								85.0
+							],
+							"sole": [
+								64.0,
+								101.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "left",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								94.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								68.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								66.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								86.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								91.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								65.0,
+								89.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								63.0,
+								79.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								67.0,
+								94.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								82.0
+							],
+							"knee": [
+								68.0,
+								89.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								64.0,
+								91.0
+							],
+							"ground": [
+								64.0,
+								101.0
+							],
+							"hip": [
+								63.0,
+								79.0
+							],
+							"knee": [
+								65.0,
+								86.0
+							],
+							"sole": [
+								64.0,
+								101.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						1.0
+					],
+					"direction": "left",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								94.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.832455515861511,
+								0.432455539703369
+							],
+							"basis_y": [
+								-0.083772212266922,
+								0.716227769851685
+							],
+							"position": [
+								68.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								66.0,
+								83.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								87.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								91.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.832455515861511,
+								0.432455539703369
+							],
+							"basis_y": [
+								-0.083772212266922,
+								0.716227769851685
+							],
+							"position": [
+								65.0,
+								90.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								63.0,
+								80.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								67.0,
+								94.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								83.0
+							],
+							"knee": [
+								68.0,
+								90.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								64.0,
+								91.0
+							],
+							"ground": [
+								64.0,
+								101.0
+							],
+							"hip": [
+								63.0,
+								80.0
+							],
+							"knee": [
+								65.0,
+								87.0
+							],
+							"sole": [
+								64.0,
+								101.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "left",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								94.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								68.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								66.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								86.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								91.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								65.0,
+								89.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								63.0,
+								79.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								67.0,
+								94.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								82.0
+							],
+							"knee": [
+								68.0,
+								89.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								64.0,
+								91.0
+							],
+							"ground": [
+								64.0,
+								101.0
+							],
+							"hip": [
+								63.0,
+								79.0
+							],
+							"knee": [
+								65.0,
+								86.0
+							],
+							"sole": [
+								64.0,
+								101.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						-1.0,
+						1.0
+					],
+					"direction": "left",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								-1.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								94.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.894427180290222,
+								-0.199999988079071
+							],
+							"basis_y": [
+								0.447213590145111,
+								0.399999976158142
+							],
+							"position": [
+								67.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								65.0,
+								83.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								87.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								91.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.894427180290222,
+								-0.199999988079071
+							],
+							"basis_y": [
+								0.447213590145111,
+								0.399999976158142
+							],
+							"position": [
+								64.0,
+								90.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								62.0,
+								80.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								67.0,
+								94.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								65.0,
+								83.0
+							],
+							"knee": [
+								67.0,
+								90.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								64.0,
+								91.0
+							],
+							"ground": [
+								64.0,
+								101.0
+							],
+							"hip": [
+								62.0,
+								80.0
+							],
+							"knee": [
+								64.0,
+								87.0
+							],
+							"sole": [
+								64.0,
+								101.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						1.0,
+						0.0
+					],
+					"direction": "left",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								1.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								94.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.03245544433594,
+								0.232455551624298
+							],
+							"basis_y": [
+								-0.483772188425064,
+								1.11622774600983
+							],
+							"position": [
+								69.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								67.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								86.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								91.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.03245544433594,
+								0.232455551624298
+							],
+							"basis_y": [
+								-0.483772188425064,
+								1.11622774600983
+							],
+							"position": [
+								66.0,
+								89.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								64.0,
+								79.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								67.0,
+								94.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								67.0,
+								82.0
+							],
+							"knee": [
+								69.0,
+								89.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								64.0,
+								91.0
+							],
+							"ground": [
+								64.0,
+								101.0
+							],
+							"hip": [
+								64.0,
+								79.0
+							],
+							"knee": [
+								66.0,
+								86.0
+							],
+							"sole": [
+								64.0,
+								101.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "left",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								94.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								68.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								66.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								65.0,
+								86.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								64.0,
+								91.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								65.0,
+								89.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								63.0,
+								79.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								67.0,
+								94.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								82.0
+							],
+							"knee": [
+								68.0,
+								89.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								64.0,
+								91.0
+							],
+							"ground": [
+								64.0,
+								101.0
+							],
+							"hip": [
+								63.0,
+								79.0
+							],
+							"knee": [
+								65.0,
+								86.0
+							],
+							"sole": [
+								64.0,
+								101.0
+							],
+							"support": true
+						}
+					}
+				}
+			],
+			"textures": []
+		},
+		{
+			"direction": "up_left",
+			"masks": [
+				{
+					"id": "body",
+					"path": "res://../technical-runtime-mask-up_left-body.png",
+					"z": 5
+				},
+				{
+					"id": "left_thigh",
+					"path": "res://../technical-runtime-mask-up_left-left_thigh.png",
+					"z": 1
+				},
+				{
+					"id": "left_shin",
+					"path": "res://../technical-runtime-mask-up_left-left_shin.png",
+					"z": 1
+				},
+				{
+					"id": "left_cap",
+					"path": "res://../technical-runtime-mask-up_left-left_cap.png",
+					"z": 3
+				},
+				{
+					"id": "left_foot",
+					"path": "res://../technical-runtime-mask-up_left-left_foot.png",
+					"z": 2
+				},
+				{
+					"id": "right_thigh",
+					"path": "res://../technical-runtime-mask-up_left-right_thigh.png",
+					"z": 0
+				},
+				{
+					"id": "right_shin",
+					"path": "res://../technical-runtime-mask-up_left-right_shin.png",
+					"z": 0
+				},
+				{
+					"id": "right_cap",
+					"path": "res://../technical-runtime-mask-up_left-right_cap.png",
+					"z": 2
+				},
+				{
+					"id": "right_foot",
+					"path": "res://../technical-runtime-mask-up_left-right_foot.png",
+					"z": 1
+				}
+			],
+			"poses": [
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up_left",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								81.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								71.0,
+								96.0
+							],
+							"ground": [
+								71.0,
+								102.0
+							],
+							"hip": [
+								71.0,
+								81.0
+							],
+							"knee": [
+								71.0,
+								88.0
+							],
+							"sole": [
+								71.0,
+								102.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"direction": "up_left",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								87.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.5
+							],
+							"position": [
+								58.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								80.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								87.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								2.0
+							],
+							"position": [
+								71.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								80.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								80.0
+							],
+							"knee": [
+								58.0,
+								87.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								71.0,
+								96.0
+							],
+							"ground": [
+								71.0,
+								102.0
+							],
+							"hip": [
+								71.0,
+								80.0
+							],
+							"knee": [
+								71.0,
+								87.0
+							],
+							"sole": [
+								71.0,
+								102.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up_left",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								81.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								71.0,
+								96.0
+							],
+							"ground": [
+								71.0,
+								102.0
+							],
+							"hip": [
+								71.0,
+								81.0
+							],
+							"knee": [
+								71.0,
+								88.0
+							],
+							"sole": [
+								71.0,
+								102.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						1.0
+					],
+					"direction": "up_left",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.5
+							],
+							"position": [
+								58.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.0
+							],
+							"position": [
+								71.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								71.0,
+								96.0
+							],
+							"ground": [
+								71.0,
+								102.0
+							],
+							"hip": [
+								71.0,
+								82.0
+							],
+							"knee": [
+								71.0,
+								89.0
+							],
+							"sole": [
+								71.0,
+								102.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up_left",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								81.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								71.0,
+								96.0
+							],
+							"ground": [
+								71.0,
+								102.0
+							],
+							"hip": [
+								71.0,
+								81.0
+							],
+							"knee": [
+								71.0,
+								88.0
+							],
+							"sole": [
+								71.0,
+								102.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						-1.0,
+						1.0
+					],
+					"direction": "up_left",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								-1.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.70710676908493,
+								-0.70710676908493
+							],
+							"basis_y": [
+								0.5,
+								0.5
+							],
+							"position": [
+								57.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.0,
+								-1.0
+							],
+							"basis_y": [
+								1.0,
+								0.0
+							],
+							"position": [
+								70.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								57.0,
+								82.0
+							],
+							"knee": [
+								57.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								71.0,
+								96.0
+							],
+							"ground": [
+								71.0,
+								102.0
+							],
+							"hip": [
+								70.0,
+								82.0
+							],
+							"knee": [
+								70.0,
+								89.0
+							],
+							"sole": [
+								71.0,
+								102.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						1.0,
+						0.0
+					],
+					"direction": "up_left",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								1.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								59.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								72.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.70710676908493,
+								0.70710676908493
+							],
+							"basis_y": [
+								-1.0,
+								1.0
+							],
+							"position": [
+								72.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								72.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								81.0
+							],
+							"knee": [
+								59.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								71.0,
+								96.0
+							],
+							"ground": [
+								71.0,
+								102.0
+							],
+							"hip": [
+								72.0,
+								81.0
+							],
+							"knee": [
+								72.0,
+								88.0
+							],
+							"sole": [
+								71.0,
+								102.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up_left",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								96.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								81.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								71.0,
+								96.0
+							],
+							"ground": [
+								71.0,
+								102.0
+							],
+							"hip": [
+								71.0,
+								81.0
+							],
+							"knee": [
+								71.0,
+								88.0
+							],
+							"sole": [
+								71.0,
+								102.0
+							],
+							"support": true
+						}
+					}
+				}
+			],
+			"textures": []
+		},
+		{
+			"direction": "up",
+			"masks": [
+				{
+					"id": "body",
+					"path": "res://../technical-runtime-mask-up-body.png",
+					"z": 5
+				},
+				{
+					"id": "left_thigh",
+					"path": "res://../technical-runtime-mask-up-left_thigh.png",
+					"z": 1
+				},
+				{
+					"id": "left_shin",
+					"path": "res://../technical-runtime-mask-up-left_shin.png",
+					"z": 1
+				},
+				{
+					"id": "left_cap",
+					"path": "res://../technical-runtime-mask-up-left_cap.png",
+					"z": 3
+				},
+				{
+					"id": "left_foot",
+					"path": "res://../technical-runtime-mask-up-left_foot.png",
+					"z": 2
+				},
+				{
+					"id": "right_thigh",
+					"path": "res://../technical-runtime-mask-up-right_thigh.png",
+					"z": 0
+				},
+				{
+					"id": "right_shin",
+					"path": "res://../technical-runtime-mask-up-right_shin.png",
+					"z": 0
+				},
+				{
+					"id": "right_cap",
+					"path": "res://../technical-runtime-mask-up-right_cap.png",
+					"z": 2
+				},
+				{
+					"id": "right_foot",
+					"path": "res://../technical-runtime-mask-up-right_foot.png",
+					"z": 1
+				}
+			],
+			"poses": [
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								70.0,
+								82.0
+							],
+							"knee": [
+								70.0,
+								89.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"direction": "up",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.5
+							],
+							"position": [
+								58.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.5
+							],
+							"position": [
+								70.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								81.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								70.0,
+								81.0
+							],
+							"knee": [
+								70.0,
+								88.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								70.0,
+								82.0
+							],
+							"knee": [
+								70.0,
+								89.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						1.0
+					],
+					"direction": "up",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.5
+							],
+							"position": [
+								58.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								83.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.5
+							],
+							"position": [
+								70.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								83.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								83.0
+							],
+							"knee": [
+								58.0,
+								90.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								70.0,
+								83.0
+							],
+							"knee": [
+								70.0,
+								90.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								70.0,
+								82.0
+							],
+							"knee": [
+								70.0,
+								89.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						-1.0,
+						1.0
+					],
+					"direction": "up",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								-1.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.70710676908493,
+								-0.70710676908493
+							],
+							"basis_y": [
+								0.5,
+								0.5
+							],
+							"position": [
+								57.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								83.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.70710676908493,
+								-0.70710676908493
+							],
+							"basis_y": [
+								0.5,
+								0.5
+							],
+							"position": [
+								69.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								69.0,
+								83.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								57.0,
+								83.0
+							],
+							"knee": [
+								57.0,
+								90.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								83.0
+							],
+							"knee": [
+								69.0,
+								90.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						1.0,
+						0.0
+					],
+					"direction": "up",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								1.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								59.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								71.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								59.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								71.0,
+								82.0
+							],
+							"knee": [
+								71.0,
+								89.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								70.0,
+								97.0
+							],
+							"ground": [
+								70.0,
+								104.0
+							],
+							"hip": [
+								70.0,
+								82.0
+							],
+							"knee": [
+								70.0,
+								89.0
+							],
+							"sole": [
+								70.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				}
+			],
+			"textures": []
+		},
+		{
+			"direction": "up_right",
+			"masks": [
+				{
+					"id": "body",
+					"path": "res://../technical-runtime-mask-up_right-body.png",
+					"z": 5
+				},
+				{
+					"id": "left_thigh",
+					"path": "res://../technical-runtime-mask-up_right-left_thigh.png",
+					"z": 0
+				},
+				{
+					"id": "left_shin",
+					"path": "res://../technical-runtime-mask-up_right-left_shin.png",
+					"z": 0
+				},
+				{
+					"id": "left_cap",
+					"path": "res://../technical-runtime-mask-up_right-left_cap.png",
+					"z": 2
+				},
+				{
+					"id": "left_foot",
+					"path": "res://../technical-runtime-mask-up_right-left_foot.png",
+					"z": 1
+				},
+				{
+					"id": "right_thigh",
+					"path": "res://../technical-runtime-mask-up_right-right_thigh.png",
+					"z": 1
+				},
+				{
+					"id": "right_shin",
+					"path": "res://../technical-runtime-mask-up_right-right_shin.png",
+					"z": 1
+				},
+				{
+					"id": "right_cap",
+					"path": "res://../technical-runtime-mask-up_right-right_cap.png",
+					"z": 3
+				},
+				{
+					"id": "right_foot",
+					"path": "res://../technical-runtime-mask-up_right-right_foot.png",
+					"z": 2
+				}
+			],
+			"poses": [
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up_right",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								56.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								57.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								80.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								56.0,
+								96.0
+							],
+							"ground": [
+								56.0,
+								100.0
+							],
+							"hip": [
+								57.0,
+								80.0
+							],
+							"knee": [
+								57.0,
+								88.0
+							],
+							"sole": [
+								56.0,
+								100.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								67.0,
+								97.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								67.0,
+								82.0
+							],
+							"knee": [
+								67.0,
+								89.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"direction": "up_right",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								87.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								56.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.1324554681778,
+								-0.683772206306458
+							],
+							"basis_y": [
+								0.132455557584763,
+								1.31622767448425
+							],
+							"position": [
+								57.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								79.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.5
+							],
+							"position": [
+								67.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								56.0,
+								96.0
+							],
+							"ground": [
+								56.0,
+								100.0
+							],
+							"hip": [
+								57.0,
+								79.0
+							],
+							"knee": [
+								57.0,
+								87.0
+							],
+							"sole": [
+								56.0,
+								100.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								67.0,
+								97.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								67.0,
+								81.0
+							],
+							"knee": [
+								67.0,
+								88.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up_right",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								56.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								57.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								80.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								56.0,
+								96.0
+							],
+							"ground": [
+								56.0,
+								100.0
+							],
+							"hip": [
+								57.0,
+								80.0
+							],
+							"knee": [
+								57.0,
+								88.0
+							],
+							"sole": [
+								56.0,
+								100.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								67.0,
+								97.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								67.0,
+								82.0
+							],
+							"knee": [
+								67.0,
+								89.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						1.0
+					],
+					"direction": "up_right",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								56.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.499999970197678,
+								0.70710676908493
+							],
+							"basis_y": [
+								-0.499999970197678,
+								0.70710676908493
+							],
+							"position": [
+								57.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.5
+							],
+							"position": [
+								67.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								83.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								56.0,
+								96.0
+							],
+							"ground": [
+								56.0,
+								100.0
+							],
+							"hip": [
+								57.0,
+								81.0
+							],
+							"knee": [
+								57.0,
+								89.0
+							],
+							"sole": [
+								56.0,
+								100.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								67.0,
+								97.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								67.0,
+								83.0
+							],
+							"knee": [
+								67.0,
+								90.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up_right",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								56.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								57.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								80.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								56.0,
+								96.0
+							],
+							"ground": [
+								56.0,
+								100.0
+							],
+							"hip": [
+								57.0,
+								80.0
+							],
+							"knee": [
+								57.0,
+								88.0
+							],
+							"sole": [
+								56.0,
+								100.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								67.0,
+								97.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								67.0,
+								82.0
+							],
+							"knee": [
+								67.0,
+								89.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						-1.0,
+						1.0
+					],
+					"direction": "up_right",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								-1.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								56.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								56.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.0
+							],
+							"position": [
+								56.0,
+								93.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								56.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.70710676908493,
+								-0.70710676908493
+							],
+							"basis_y": [
+								0.5,
+								0.5
+							],
+							"position": [
+								66.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								66.0,
+								83.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								56.0,
+								96.0
+							],
+							"ground": [
+								56.0,
+								100.0
+							],
+							"hip": [
+								56.0,
+								81.0
+							],
+							"knee": [
+								56.0,
+								89.0
+							],
+							"sole": [
+								56.0,
+								100.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								67.0,
+								97.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								66.0,
+								83.0
+							],
+							"knee": [
+								66.0,
+								90.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						1.0,
+						0.0
+					],
+					"direction": "up_right",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								1.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								56.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.31622767448425,
+								0.132455557584763
+							],
+							"basis_y": [
+								-0.683772206306458,
+								1.1324554681778
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								80.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								68.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								68.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								56.0,
+								96.0
+							],
+							"ground": [
+								56.0,
+								100.0
+							],
+							"hip": [
+								58.0,
+								80.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								56.0,
+								100.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								67.0,
+								97.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								68.0,
+								82.0
+							],
+							"knee": [
+								68.0,
+								89.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "up_right",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								88.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								56.0,
+								96.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								57.0,
+								92.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								80.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								67.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								56.0,
+								96.0
+							],
+							"ground": [
+								56.0,
+								100.0
+							],
+							"hip": [
+								57.0,
+								80.0
+							],
+							"knee": [
+								57.0,
+								88.0
+							],
+							"sole": [
+								56.0,
+								100.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								67.0,
+								97.0
+							],
+							"ground": [
+								67.0,
+								104.0
+							],
+							"hip": [
+								67.0,
+								82.0
+							],
+							"knee": [
+								67.0,
+								89.0
+							],
+							"sole": [
+								67.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				}
+			],
+			"textures": []
+		},
+		{
+			"direction": "right",
+			"masks": [
+				{
+					"id": "body",
+					"path": "res://../technical-runtime-mask-right-body.png",
+					"z": 10
+				},
+				{
+					"id": "left_thigh",
+					"path": "res://../technical-runtime-mask-right-left_thigh.png",
+					"z": -4
+				},
+				{
+					"id": "left_shin",
+					"path": "res://../technical-runtime-mask-right-left_shin.png",
+					"z": -4
+				},
+				{
+					"id": "left_cap",
+					"path": "res://../technical-runtime-mask-right-left_cap.png",
+					"z": -2
+				},
+				{
+					"id": "left_foot",
+					"path": "res://../technical-runtime-mask-right-left_foot.png",
+					"z": -3
+				},
+				{
+					"id": "right_thigh",
+					"path": "res://../technical-runtime-mask-right-right_thigh.png",
+					"z": 4
+				},
+				{
+					"id": "right_shin",
+					"path": "res://../technical-runtime-mask-right-right_shin.png",
+					"z": 4
+				},
+				{
+					"id": "right_cap",
+					"path": "res://../technical-runtime-mask-right-right_cap.png",
+					"z": 6
+				},
+				{
+					"id": "right_foot",
+					"path": "res://../technical-runtime-mask-right-right_foot.png",
+					"z": 5
+				}
+			],
+			"poses": [
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "right",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								85.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								89.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								62.0,
+								79.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								94.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								61.0,
+								91.0
+							],
+							"ground": [
+								61.0,
+								101.0
+							],
+							"hip": [
+								62.0,
+								79.0
+							],
+							"knee": [
+								61.0,
+								85.0
+							],
+							"sole": [
+								61.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								94.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"direction": "right",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								84.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.5
+							],
+							"position": [
+								61.0,
+								88.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								62.0,
+								78.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								87.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								94.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.5
+							],
+							"position": [
+								58.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								61.0,
+								91.0
+							],
+							"ground": [
+								61.0,
+								101.0
+							],
+							"hip": [
+								62.0,
+								78.0
+							],
+							"knee": [
+								61.0,
+								84.0
+							],
+							"sole": [
+								61.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								94.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								81.0
+							],
+							"knee": [
+								58.0,
+								87.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "right",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								85.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								89.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								62.0,
+								79.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								94.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								61.0,
+								91.0
+							],
+							"ground": [
+								61.0,
+								101.0
+							],
+							"hip": [
+								62.0,
+								79.0
+							],
+							"knee": [
+								61.0,
+								85.0
+							],
+							"sole": [
+								61.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								94.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						1.0
+					],
+					"direction": "right",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								86.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.5
+							],
+							"position": [
+								61.0,
+								90.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								62.0,
+								80.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								94.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.5
+							],
+							"position": [
+								58.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								83.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								61.0,
+								91.0
+							],
+							"ground": [
+								61.0,
+								101.0
+							],
+							"hip": [
+								62.0,
+								80.0
+							],
+							"knee": [
+								61.0,
+								86.0
+							],
+							"sole": [
+								61.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								94.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								83.0
+							],
+							"knee": [
+								58.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "right",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								85.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								89.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								62.0,
+								79.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								94.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								61.0,
+								91.0
+							],
+							"ground": [
+								61.0,
+								101.0
+							],
+							"hip": [
+								62.0,
+								79.0
+							],
+							"knee": [
+								61.0,
+								85.0
+							],
+							"sole": [
+								61.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								94.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						-1.0,
+						1.0
+					],
+					"direction": "right",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								-1.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								60.0,
+								86.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.70710676908493,
+								-0.70710676908493
+							],
+							"basis_y": [
+								0.5,
+								0.5
+							],
+							"position": [
+								60.0,
+								90.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								61.0,
+								80.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								57.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								94.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.70710676908493,
+								-0.70710676908493
+							],
+							"basis_y": [
+								0.5,
+								0.5
+							],
+							"position": [
+								57.0,
+								93.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								58.0,
+								83.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								61.0,
+								91.0
+							],
+							"ground": [
+								61.0,
+								101.0
+							],
+							"hip": [
+								61.0,
+								80.0
+							],
+							"knee": [
+								60.0,
+								86.0
+							],
+							"sole": [
+								61.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								94.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								83.0
+							],
+							"knee": [
+								57.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						1.0,
+						0.0
+					],
+					"direction": "right",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								1.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								62.0,
+								85.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								62.0,
+								89.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								63.0,
+								79.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								94.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.894427180290222,
+								0.447213590145111
+							],
+							"basis_y": [
+								-0.5,
+								1.0
+							],
+							"position": [
+								59.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								60.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								61.0,
+								91.0
+							],
+							"ground": [
+								61.0,
+								101.0
+							],
+							"hip": [
+								63.0,
+								79.0
+							],
+							"knee": [
+								62.0,
+								85.0
+							],
+							"sole": [
+								61.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								94.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								60.0,
+								82.0
+							],
+							"knee": [
+								59.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "right",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								85.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								91.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								61.0,
+								89.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								62.0,
+								79.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								88.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								94.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								92.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								61.0,
+								91.0
+							],
+							"ground": [
+								61.0,
+								101.0
+							],
+							"hip": [
+								62.0,
+								79.0
+							],
+							"knee": [
+								61.0,
+								85.0
+							],
+							"sole": [
+								61.0,
+								101.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								94.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								58.0,
+								88.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				}
+			],
+			"textures": []
+		},
+		{
+			"direction": "down_right",
+			"masks": [
+				{
+					"id": "body",
+					"path": "res://../technical-runtime-mask-down_right-body.png",
+					"z": 5
+				},
+				{
+					"id": "right_thigh",
+					"path": "res://../technical-runtime-mask-down_right-right_thigh.png",
+					"z": 1
+				},
+				{
+					"id": "right_shin",
+					"path": "res://../technical-runtime-mask-down_right-right_shin.png",
+					"z": 1
+				},
+				{
+					"id": "right_cap",
+					"path": "res://../technical-runtime-mask-down_right-right_cap.png",
+					"z": 3
+				},
+				{
+					"id": "right_foot",
+					"path": "res://../technical-runtime-mask-down_right-right_foot.png",
+					"z": 2
+				},
+				{
+					"id": "left_thigh",
+					"path": "res://../technical-runtime-mask-down_right-left_thigh.png",
+					"z": 0
+				},
+				{
+					"id": "left_shin",
+					"path": "res://../technical-runtime-mask-down_right-left_shin.png",
+					"z": 0
+				},
+				{
+					"id": "left_cap",
+					"path": "res://../technical-runtime-mask-down_right-left_cap.png",
+					"z": 2
+				},
+				{
+					"id": "left_foot",
+					"path": "res://../technical-runtime-mask-down_right-left_foot.png",
+					"z": 1
+				}
+			],
+			"poses": [
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "down_right",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								90.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.00000011920929,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.00000011920929
+							],
+							"position": [
+								69.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								90.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								71.0,
+								97.0
+							],
+							"ground": [
+								71.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								82.0
+							],
+							"knee": [
+								71.0,
+								90.0
+							],
+							"sole": [
+								71.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								59.0,
+								90.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						-1.0
+					],
+					"direction": "down_right",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								-1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								89.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.14285719394684
+							],
+							"position": [
+								71.0,
+								89.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.00000011920929,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.00000011920929
+							],
+							"position": [
+								69.0,
+								81.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								89.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								1.00230491161346,
+								-0.0372118949890137
+							],
+							"basis_y": [
+								0.000329285860061646,
+								1.13754117488861
+							],
+							"position": [
+								59.0,
+								89.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								81.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								71.0,
+								97.0
+							],
+							"ground": [
+								71.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								81.0
+							],
+							"knee": [
+								71.0,
+								89.0
+							],
+							"sole": [
+								71.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								81.0
+							],
+							"knee": [
+								59.0,
+								89.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "down_right",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								90.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.00000011920929,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.00000011920929
+							],
+							"position": [
+								69.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								90.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								71.0,
+								97.0
+							],
+							"ground": [
+								71.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								82.0
+							],
+							"knee": [
+								71.0,
+								90.0
+							],
+							"sole": [
+								71.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								59.0,
+								90.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "idle",
+					"body_translation": [
+						0.0,
+						1.0
+					],
+					"direction": "down_right",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								91.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.857142865657806
+							],
+							"position": [
+								71.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.00000011920929,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.00000011920929
+							],
+							"position": [
+								69.0,
+								83.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								91.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.996480047702789,
+								0.0427466779947281
+							],
+							"basis_y": [
+								-0.000502839684486389,
+								0.863249480724335
+							],
+							"position": [
+								59.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								83.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								71.0,
+								97.0
+							],
+							"ground": [
+								71.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								83.0
+							],
+							"knee": [
+								71.0,
+								91.0
+							],
+							"sole": [
+								71.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								83.0
+							],
+							"knee": [
+								59.0,
+								91.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "down_right",
+					"frame": 0,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								90.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.00000011920929,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.00000011920929
+							],
+							"position": [
+								69.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								90.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								71.0,
+								97.0
+							],
+							"ground": [
+								71.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								82.0
+							],
+							"knee": [
+								71.0,
+								90.0
+							],
+							"sole": [
+								71.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								59.0,
+								90.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						-1.0,
+						1.0
+					],
+					"direction": "down_right",
+					"frame": 1,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								-1.0,
+								1.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								70.0,
+								91.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.986393868923187,
+								-0.164398983120918
+							],
+							"basis_y": [
+								0.142857149243355,
+								0.857142865657806
+							],
+							"position": [
+								70.0,
+								91.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.00000011920929,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.00000011920929
+							],
+							"position": [
+								68.0,
+								83.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								91.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.989949464797974,
+								-0.120000004768372
+							],
+							"basis_y": [
+								0.141421362757683,
+								0.839999973773956
+							],
+							"position": [
+								58.0,
+								91.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								83.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								71.0,
+								97.0
+							],
+							"ground": [
+								71.0,
+								104.0
+							],
+							"hip": [
+								68.0,
+								83.0
+							],
+							"knee": [
+								70.0,
+								91.0
+							],
+							"sole": [
+								71.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								58.0,
+								83.0
+							],
+							"knee": [
+								58.0,
+								91.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						1.0,
+						0.0
+					],
+					"direction": "down_right",
+					"frame": 2,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								1.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								72.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								0.989949464797974,
+								0.141421362757683
+							],
+							"basis_y": [
+								-0.142857149243355,
+								1.0
+							],
+							"position": [
+								72.0,
+								90.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.00000011920929,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.00000011920929
+							],
+							"position": [
+								70.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								60.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.991860151290894,
+								0.131960019469261
+							],
+							"basis_y": [
+								-0.144019976258278,
+								1.01885139942169
+							],
+							"position": [
+								60.0,
+								90.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								60.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								71.0,
+								97.0
+							],
+							"ground": [
+								71.0,
+								104.0
+							],
+							"hip": [
+								70.0,
+								82.0
+							],
+							"knee": [
+								72.0,
+								90.0
+							],
+							"sole": [
+								71.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								60.0,
+								82.0
+							],
+							"knee": [
+								60.0,
+								90.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				},
+				{
+					"action": "hit",
+					"body_translation": [
+						0.0,
+						0.0
+					],
+					"direction": "down_right",
+					"frame": 3,
+					"part_transforms": {
+						"body": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								0.0,
+								0.0
+							]
+						},
+						"left_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								90.0
+							]
+						},
+						"left_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								97.0
+							]
+						},
+						"left_shin": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								71.0,
+								90.0
+							]
+						},
+						"left_thigh": {
+							"basis_x": [
+								1.00000011920929,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.00000011920929
+							],
+							"position": [
+								69.0,
+								82.0
+							]
+						},
+						"right_cap": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								90.0
+							]
+						},
+						"right_foot": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								58.0,
+								97.0
+							]
+						},
+						"right_shin": {
+							"basis_x": [
+								0.999999940395355,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								0.999999940395355
+							],
+							"position": [
+								59.0,
+								90.0
+							]
+						},
+						"right_thigh": {
+							"basis_x": [
+								1.0,
+								0.0
+							],
+							"basis_y": [
+								0.0,
+								1.0
+							],
+							"position": [
+								59.0,
+								82.0
+							]
+						}
+					},
+					"root": [
+						64,
+						104
+					],
+					"supports": {
+						"left": {
+							"ankle": [
+								71.0,
+								97.0
+							],
+							"ground": [
+								71.0,
+								104.0
+							],
+							"hip": [
+								69.0,
+								82.0
+							],
+							"knee": [
+								71.0,
+								90.0
+							],
+							"sole": [
+								71.0,
+								104.0
+							],
+							"support": true
+						},
+						"right": {
+							"ankle": [
+								58.0,
+								97.0
+							],
+							"ground": [
+								58.0,
+								104.0
+							],
+							"hip": [
+								59.0,
+								82.0
+							],
+							"knee": [
+								59.0,
+								90.0
+							],
+							"sole": [
+								58.0,
+								104.0
+							],
+							"support": true
+						}
+					}
+				}
+			],
+			"textures": []
+		}
+	],
+	"scope": "Fresh full-ZIP headless import;16 clips64 atlas cells RGBA, preview,7 rigs56 pose readbacks plus source masks/registered SE textures. No GPU or full playback matrix.",
+	"status": "PASS"
+}

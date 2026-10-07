@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "atlas_sha256": "9262c6eac7fb6885d529ba6a39d3ecab01305aa1d9d7f2101ba84906e5211be7",
+  "unchanged_accepted_images": 72,
+  "unchanged_accepted_walk_frames": 64,
+  "generations": [
+    {
+      "scope": "C1 SW idle waist seam",
+      "source": "source/idle_down_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/idle_down_left_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c1_rc01/idle_down_left.png",
+      "usage": "LOCAL_WAIST_PATCH_FRAME_1_ONLY",
+      "original_output": "exec-d964124c-ae79-4551-8e80-abc89d07033a.png",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "direction": "down_left",
+      "sha256": "5343e3bc8a36f2c6e9731bc62732e9aa771241a569dbe9c15f1bbb83bd63c991",
+      "input_sha256": "5dafe00fe4929e906fee9ae09ff1d172eb714936f49d4b0bf870a4d88239ade7",
+      "prompt_sha256": "80e6ab946ecb0f93f7a2efe6a3ce4a6b931aec1e962dd89c59c74002d1ed7410"
+    },
+    {
+      "scope": "C1 SW collect rejected pose drift",
+      "source": "source/collect_down_left_joint_edit_rejected_v011.png",
+      "prompt": "prompts/collect_down_left_joint_edit_v011.txt",
+      "actual_input": "source/action_edit_inputs_c1_rc01/collect_down_left.png",
+      "status": "REJECTED_NOT_USED",
+      "reason": "Changed crouch and arm pose; halo background; never composited into final frames",
+      "original_output": "exec-558f09a8-cbbb-4bc6-9f51-06bf0ca664dd.png",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "direction": "down_left",
+      "sha256": "0de7747a717c4aba7332fa39c083af4ef175d18ea612a2c437bef533bd012c30",
+      "input_sha256": "e08a52c5c75f78e11df6912a4146411f2d22a5e2385a67cd926ca7db5691cb16",
+      "prompt_sha256": "08b15ee1fee2fcc3f5972665118ab8c085b3e9e77309a6e28d485e5ebc9c9abd"
+    },
+    {
+      "scope": "C1 SW collect joint seams",
+      "source": "source/collect_down_left_joint_edit_raw_v011.png",
+      "prompt": "prompts/collect_down_left_joint_edit_v011_retry.txt",
+      "actual_input": "source/action_edit_inputs_c1_rc01/collect_down_left.png",
+      "usage": "LOCAL_JOINT_PATCH_ON_FIXED_RIG",
+      "original_output": "exec-9c1f4d50-27d7-4ea2-b4ed-67420a69a88b.png",
+      "note": "Raw generation is an intermediate with background artifacts; protected masks, binary alpha and dark-core restriction exclude those artifacts from final sprites.",
+      "method": "imagegen_edit",
+      "cell": [
+        64,
+        96
+      ],
+      "direction": "down_left",
+      "sha256": "9f659c9461c005805e4f756828ec68a861a74ae71b393b6ff4dbeb08c4d26fc5",
+      "input_sha256": "e08a52c5c75f78e11df6912a4146411f2d22a5e2385a67cd926ca7db5691cb16",
+      "prompt_sha256": "3877ac550d76fd9a8ee188f50722efca6ba183087cffeedf1db9eb47874878d5"
+    }
+  ],
+  "method": "Original imagegen mother parts, fixed transforms, local imagegen joint patches",
+  "processing": "Common sheet quantization only; no per-frame fitting, scaling or recentering",
+  "art_acceptance": "PENDING_TA"
+}

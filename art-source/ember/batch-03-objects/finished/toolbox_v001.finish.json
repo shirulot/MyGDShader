@@ -1,0 +1,127 @@
+{
+  "id": "toolbox",
+  "manifest_id": "B12",
+  "file": "art-source/ember/batch-03-objects/finished/toolbox_v001.png",
+  "production_file": "res://assets/ember/props/story/toolbox_v001.png",
+  "sha256": "d3f8b0279f5940c88e064f1d78733ea48ecb9ef320c597953902359a8b9339bd",
+  "size": [
+    64,
+    64
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/toolbox_v001.finish.json",
+  "canvas": [
+    64,
+    64
+  ],
+  "bbox": [
+    10,
+    29,
+    54,
+    56
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/toolbox/foundation_body.png",
+      "sha256": "d3f8b0279f5940c88e064f1d78733ea48ecb9ef320c597953902359a8b9339bd",
+      "z_index": 0,
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/toolbox_master_v001.png",
+    "master_sha256": "132baad1e28dfd64d8f968c70be9f7c97a5fa7c5c05e584238f3ba145d69daef",
+    "prompt": "prompts/toolbox.txt",
+    "prompt_sha256": "96650fbbad32e7fc900f6f679102701910917d036ea55102593f55fb912f2fb8",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-cd450432-43db-489d-9642-fcafe0116157.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        360,
+        287,
+        1148,
+        766
+      ],
+      "material_sampling_size": [
+        44,
+        27
+      ],
+      "native_origin": [
+        10,
+        29
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 17,
+      "native_outline_pixels_corrected": 60
+    },
+    "native_adjustments": [
+      "NATIVE_HANDLE_APERTURE: 按实际母稿手柄内槽位置切原生[28,33,37,35)9×2真透明孔，不让halo/灰底残留",
+      "顶手柄亮钢短条[28..35,30]连续归并，箱盖上缘保留钢灰平面，两锁扣不作为运行状态灯",
+      "去所有halo和随机单点；原生44×27底界56，完整轮廓保持，未把灰halo缩图后冒充投影"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": {
+    "through_hole_rects": [
+      [
+        28,
+        33,
+        37,
+        35
+      ]
+    ],
+    "orientation": "左侧单独铰链，正面2锁扣"
+  },
+  "non_runtime_glass": [],
+  "observations": "实际母稿工具箱上手柄、浅陶瓷四角、两铜锁扣与左侧铰链；母稿带明显模型灰halo，原生高Alpha采样已去除，手柄内槽仍需明确透明孔。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

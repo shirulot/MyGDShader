@@ -1,0 +1,263 @@
+{
+  "scope": "Author GPU/live rig/runtime records are only bound to fixed payload and current catalog; this TA did not rerun 96GPU/16loops/8turns.",
+  "reports": {
+    "qa/pixel_audit.json": {
+      "sha256": "b9a65ac433bc245855408ca59a25259366628b6b3dc9f1cde9503ecee03ac9dd",
+      "manifest_sha_exact": true,
+      "current_catalog_sha_exact": true
+    },
+    "qa/rotor_audit.json": {
+      "sha256": "f523441bb31247bd14cab5336d13cbbaa66e4b0782582a6c2267a67899b37d7e",
+      "manifest_sha_exact": true,
+      "current_catalog_sha_exact": true
+    },
+    "qa/gpu_roundtrip.json": {
+      "sha256": "861aa3f5f8aec3e7d90e1ff749a4edc5bfe9fc720e3abd4a30c18dc9ad063360",
+      "manifest_sha_exact": true,
+      "current_catalog_sha_exact": true
+    },
+    "qa/runtime.json": {
+      "sha256": "c103aed788b7be675e1c6927db1b2d4947dc8208d8dd0b1a8ee5c10853d09b09",
+      "manifest_sha_exact": true,
+      "current_catalog_sha_exact": true
+    }
+  },
+  "new_gpu_records": 96,
+  "preserved_records": 16,
+  "new_gpu_record_zero_difference": true,
+  "individual_gpu_png_archive": "not present; package contains JSON records and separate contact/ROI evidence",
+  "loops": {
+    "down/normal": 9,
+    "down/slow": 1,
+    "down_left/normal": 9,
+    "down_left/slow": 1,
+    "down_right/normal": 9,
+    "down_right/slow": 1,
+    "left/normal": 9,
+    "left/slow": 1,
+    "right/normal": 9,
+    "right/slow": 1,
+    "up/normal": 9,
+    "up/slow": 1,
+    "up_left/normal": 9,
+    "up_left/slow": 1,
+    "up_right/normal": 9,
+    "up_right/slow": 1
+  },
+  "seen_frames": {
+    "down/normal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "down/slow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "down_left/normal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "down_left/slow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "down_right/normal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "down_right/slow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "left/normal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "left/slow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "right/normal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "right/slow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "up/normal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "up/slow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "up_left/normal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "up_left/slow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "up_right/normal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "up_right/slow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "switches": [
+    {
+      "direction": "down",
+      "frame": 3,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "direction": "down_left",
+      "frame": 3,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "direction": "left",
+      "frame": 3,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "direction": "up_left",
+      "frame": 3,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "direction": "up",
+      "frame": 3,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "direction": "up_right",
+      "frame": 3,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "direction": "right",
+      "frame": 3,
+      "passed": true,
+      "progress": 0.375
+    },
+    {
+      "direction": "down_right",
+      "frame": 3,
+      "passed": true,
+      "progress": 0.375
+    }
+  ],
+  "renderer": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "catalog_sha256": "9b727a62f58841b24b66d509fdfd9ddd30f1853c458d5f59e1ccf73635934cde",
+  "rig_sha256": "1499720296fbac82846081195ae4d02009c3dd591977b8484d10b79d8823cbb3",
+  "tres_sha256": "2955d915fa1525b1ede8dfe53a116b90ca54c3ee09c4fd31f7a2b119702bf419"
+}

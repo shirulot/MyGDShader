@@ -1,0 +1,1625 @@
+{
+  "version": "v021-patrol-two-profile-moves-v002-c002",
+  "unit": "enemy_patrol",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "directions": [
+    "down",
+    "left",
+    "right",
+    "down_right"
+  ],
+  "outside_batch": [
+    "down_left",
+    "up_left",
+    "up",
+    "up_right"
+  ],
+  "configs": {
+    "left": {
+      "source": "res://source/left.png",
+      "source_sha256": "75f87277533af107dfe5106e81778921c619a9b6945e763f0d11a95bfd155235",
+      "far_source": "res://source/c002_left_far.png",
+      "far_sha256": "c3b084c4e91ed61e25229fd8706f3346a5c6d1a82b074c2d7b44376e5bfdf9fb",
+      "near_source": "res://source/c002_left_near.png",
+      "near_sha256": "06349d60fd59b3178721ab2813d5789ec43f33c522fed273f3fffb0683925ebb",
+      "parts": [
+        {
+          "id": "left_thigh",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              128,
+              0
+            ],
+            [
+              128,
+              92
+            ],
+            [
+              0,
+              92
+            ]
+          ],
+          "pivot": [
+            66,
+            82
+          ],
+          "end": [
+            68,
+            86
+          ],
+          "exclude": [
+            [
+              [
+                66,
+                86
+              ],
+              [
+                73,
+                86
+              ],
+              [
+                73,
+                92
+              ],
+              [
+                66,
+                92
+              ]
+            ],
+            [
+              [
+                63,
+                94
+              ],
+              [
+                70,
+                94
+              ],
+              [
+                70,
+                95
+              ],
+              [
+                72,
+                95
+              ],
+              [
+                72,
+                97
+              ],
+              [
+                74,
+                97
+              ],
+              [
+                74,
+                102
+              ],
+              [
+                69,
+                102
+              ],
+              [
+                69,
+                104
+              ],
+              [
+                59,
+                104
+              ],
+              [
+                59,
+                100
+              ],
+              [
+                60,
+                100
+              ],
+              [
+                60,
+                98
+              ],
+              [
+                62,
+                98
+              ],
+              [
+                62,
+                96
+              ],
+              [
+                63,
+                96
+              ]
+            ]
+          ],
+          "z": 4,
+          "source_kind": "near"
+        },
+        {
+          "id": "left_shin",
+          "polygon": [
+            [
+              0,
+              92
+            ],
+            [
+              128,
+              92
+            ],
+            [
+              128,
+              128
+            ],
+            [
+              0,
+              128
+            ]
+          ],
+          "pivot": [
+            68,
+            92
+          ],
+          "end": [
+            67,
+            94
+          ],
+          "exclude": [
+            [
+              [
+                63,
+                94
+              ],
+              [
+                70,
+                94
+              ],
+              [
+                70,
+                95
+              ],
+              [
+                72,
+                95
+              ],
+              [
+                72,
+                97
+              ],
+              [
+                74,
+                97
+              ],
+              [
+                74,
+                102
+              ],
+              [
+                69,
+                102
+              ],
+              [
+                69,
+                104
+              ],
+              [
+                59,
+                104
+              ],
+              [
+                59,
+                100
+              ],
+              [
+                60,
+                100
+              ],
+              [
+                60,
+                98
+              ],
+              [
+                62,
+                98
+              ],
+              [
+                62,
+                96
+              ],
+              [
+                63,
+                96
+              ]
+            ]
+          ],
+          "z": 4,
+          "source_kind": "near"
+        },
+        {
+          "id": "left_cap",
+          "polygon": [
+            [
+              66,
+              86
+            ],
+            [
+              73,
+              86
+            ],
+            [
+              73,
+              92
+            ],
+            [
+              66,
+              92
+            ]
+          ],
+          "pivot": [
+            68,
+            89
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 6,
+          "source_kind": "near"
+        },
+        {
+          "id": "left_foot",
+          "polygon": [
+            [
+              63,
+              94
+            ],
+            [
+              70,
+              94
+            ],
+            [
+              70,
+              95
+            ],
+            [
+              72,
+              95
+            ],
+            [
+              72,
+              97
+            ],
+            [
+              74,
+              97
+            ],
+            [
+              74,
+              102
+            ],
+            [
+              69,
+              102
+            ],
+            [
+              69,
+              104
+            ],
+            [
+              59,
+              104
+            ],
+            [
+              59,
+              100
+            ],
+            [
+              60,
+              100
+            ],
+            [
+              60,
+              98
+            ],
+            [
+              62,
+              98
+            ],
+            [
+              62,
+              96
+            ],
+            [
+              63,
+              96
+            ]
+          ],
+          "pivot": [
+            67,
+            94
+          ],
+          "end": null,
+          "exclude": [
+            [
+              [
+                66,
+                86
+              ],
+              [
+                73,
+                86
+              ],
+              [
+                73,
+                92
+              ],
+              [
+                66,
+                92
+              ]
+            ]
+          ],
+          "z": 5,
+          "source_kind": "near"
+        },
+        {
+          "id": "right_thigh",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              128,
+              0
+            ],
+            [
+              128,
+              89
+            ],
+            [
+              0,
+              89
+            ]
+          ],
+          "pivot": [
+            63,
+            79
+          ],
+          "end": [
+            65,
+            83
+          ],
+          "exclude": [
+            [
+              [
+                63,
+                83
+              ],
+              [
+                70,
+                83
+              ],
+              [
+                70,
+                89
+              ],
+              [
+                63,
+                89
+              ]
+            ],
+            [
+              [
+                60,
+                91
+              ],
+              [
+                67,
+                91
+              ],
+              [
+                67,
+                92
+              ],
+              [
+                69,
+                92
+              ],
+              [
+                69,
+                94
+              ],
+              [
+                71,
+                94
+              ],
+              [
+                71,
+                99
+              ],
+              [
+                66,
+                99
+              ],
+              [
+                66,
+                101
+              ],
+              [
+                56,
+                101
+              ],
+              [
+                56,
+                97
+              ],
+              [
+                57,
+                97
+              ],
+              [
+                57,
+                95
+              ],
+              [
+                59,
+                95
+              ],
+              [
+                59,
+                93
+              ],
+              [
+                60,
+                93
+              ]
+            ]
+          ],
+          "z": -4,
+          "source_kind": "far"
+        },
+        {
+          "id": "right_shin",
+          "polygon": [
+            [
+              0,
+              89
+            ],
+            [
+              128,
+              89
+            ],
+            [
+              128,
+              128
+            ],
+            [
+              0,
+              128
+            ]
+          ],
+          "pivot": [
+            65,
+            89
+          ],
+          "end": [
+            64,
+            91
+          ],
+          "exclude": [
+            [
+              [
+                60,
+                91
+              ],
+              [
+                67,
+                91
+              ],
+              [
+                67,
+                92
+              ],
+              [
+                69,
+                92
+              ],
+              [
+                69,
+                94
+              ],
+              [
+                71,
+                94
+              ],
+              [
+                71,
+                99
+              ],
+              [
+                66,
+                99
+              ],
+              [
+                66,
+                101
+              ],
+              [
+                56,
+                101
+              ],
+              [
+                56,
+                97
+              ],
+              [
+                57,
+                97
+              ],
+              [
+                57,
+                95
+              ],
+              [
+                59,
+                95
+              ],
+              [
+                59,
+                93
+              ],
+              [
+                60,
+                93
+              ]
+            ]
+          ],
+          "z": -4,
+          "source_kind": "far"
+        },
+        {
+          "id": "right_cap",
+          "polygon": [
+            [
+              63,
+              83
+            ],
+            [
+              70,
+              83
+            ],
+            [
+              70,
+              89
+            ],
+            [
+              63,
+              89
+            ]
+          ],
+          "pivot": [
+            65,
+            86
+          ],
+          "end": null,
+          "exclude": [],
+          "z": -2,
+          "source_kind": "far"
+        },
+        {
+          "id": "right_foot",
+          "polygon": [
+            [
+              60,
+              91
+            ],
+            [
+              67,
+              91
+            ],
+            [
+              67,
+              92
+            ],
+            [
+              69,
+              92
+            ],
+            [
+              69,
+              94
+            ],
+            [
+              71,
+              94
+            ],
+            [
+              71,
+              99
+            ],
+            [
+              66,
+              99
+            ],
+            [
+              66,
+              101
+            ],
+            [
+              56,
+              101
+            ],
+            [
+              56,
+              97
+            ],
+            [
+              57,
+              97
+            ],
+            [
+              57,
+              95
+            ],
+            [
+              59,
+              95
+            ],
+            [
+              59,
+              93
+            ],
+            [
+              60,
+              93
+            ]
+          ],
+          "pivot": [
+            64,
+            91
+          ],
+          "end": null,
+          "exclude": [
+            [
+              [
+                63,
+                83
+              ],
+              [
+                70,
+                83
+              ],
+              [
+                70,
+                89
+              ],
+              [
+                63,
+                89
+              ]
+            ]
+          ],
+          "z": -3,
+          "source_kind": "far"
+        }
+      ],
+      "legs": {
+        "left": {
+          "hip": [
+            66,
+            82
+          ],
+          "knee": [
+            68,
+            89
+          ],
+          "ankle": [
+            67,
+            94
+          ],
+          "sole_offset": [
+            0,
+            10
+          ]
+        },
+        "right": {
+          "hip": [
+            63,
+            79
+          ],
+          "knee": [
+            65,
+            86
+          ],
+          "ankle": [
+            64,
+            91
+          ],
+          "sole_offset": [
+            0,
+            10
+          ]
+        }
+      },
+      "heading": [
+        -1,
+        0
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            49,
+            76
+          ],
+          [
+            60,
+            76
+          ],
+          [
+            60,
+            89
+          ],
+          [
+            49,
+            89
+          ]
+        ],
+        [
+          [
+            58,
+            77
+          ],
+          [
+            72,
+            77
+          ],
+          [
+            72,
+            84
+          ],
+          [
+            58,
+            84
+          ]
+        ],
+        [
+          [
+            57,
+            84
+          ],
+          [
+            65,
+            84
+          ],
+          [
+            65,
+            95
+          ],
+          [
+            57,
+            95
+          ]
+        ]
+      ],
+      "occluded_original_polygons": [],
+      "body_source": "res://source/c002_left_body.png",
+      "body_sha256": "7ce06d54b4fe129f2526332c50d3553ef19fee490ca3a5f8bee545a0a07ca15c",
+      "approved_bind_source": "res://source/c002_neutral_left.png",
+      "source_note": "Body/near/far are byte-exact C002 v003 approved GPU exports; near/far reuse the same original same-direction visible leg with explicit integer depth offset. No rejected v001 generated boot is used."
+    },
+    "right": {
+      "source": "res://source/right.png",
+      "source_sha256": "946526f11420048d1186095ada2b034f4d57dc4738f83e99a3e65a2032a7cbad",
+      "far_source": "res://source/c002_right_far.png",
+      "far_sha256": "f0250bf0d40ae1fde72ea0804b7bd2c12dd3648dba8821fa8349b7e24ab684da",
+      "near_source": "res://source/c002_right_near.png",
+      "near_sha256": "d798fea60f4bff2a5658ef0ceb996e1461839a607e37b9d4161ae83079225222",
+      "parts": [
+        {
+          "id": "left_thigh",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              128,
+              0
+            ],
+            [
+              128,
+              89
+            ],
+            [
+              0,
+              89
+            ]
+          ],
+          "pivot": [
+            62,
+            79
+          ],
+          "end": [
+            61,
+            82
+          ],
+          "exclude": [
+            [
+              [
+                56,
+                82
+              ],
+              [
+                66,
+                82
+              ],
+              [
+                66,
+                89
+              ],
+              [
+                56,
+                89
+              ]
+            ],
+            [
+              [
+                60,
+                91
+              ],
+              [
+                64,
+                91
+              ],
+              [
+                64,
+                93
+              ],
+              [
+                68,
+                93
+              ],
+              [
+                68,
+                96
+              ],
+              [
+                70,
+                96
+              ],
+              [
+                70,
+                101
+              ],
+              [
+                56,
+                101
+              ],
+              [
+                56,
+                92
+              ],
+              [
+                60,
+                92
+              ]
+            ]
+          ],
+          "z": -4,
+          "source_kind": "far"
+        },
+        {
+          "id": "left_shin",
+          "polygon": [
+            [
+              0,
+              89
+            ],
+            [
+              128,
+              89
+            ],
+            [
+              128,
+              128
+            ],
+            [
+              0,
+              128
+            ]
+          ],
+          "pivot": [
+            61,
+            89
+          ],
+          "end": [
+            61,
+            91
+          ],
+          "exclude": [
+            [
+              [
+                60,
+                91
+              ],
+              [
+                64,
+                91
+              ],
+              [
+                64,
+                93
+              ],
+              [
+                68,
+                93
+              ],
+              [
+                68,
+                96
+              ],
+              [
+                70,
+                96
+              ],
+              [
+                70,
+                101
+              ],
+              [
+                56,
+                101
+              ],
+              [
+                56,
+                92
+              ],
+              [
+                60,
+                92
+              ]
+            ]
+          ],
+          "z": -4,
+          "source_kind": "far"
+        },
+        {
+          "id": "left_cap",
+          "polygon": [
+            [
+              56,
+              82
+            ],
+            [
+              66,
+              82
+            ],
+            [
+              66,
+              89
+            ],
+            [
+              56,
+              89
+            ]
+          ],
+          "pivot": [
+            61,
+            85
+          ],
+          "end": null,
+          "exclude": [],
+          "z": -2,
+          "source_kind": "far"
+        },
+        {
+          "id": "left_foot",
+          "polygon": [
+            [
+              60,
+              91
+            ],
+            [
+              64,
+              91
+            ],
+            [
+              64,
+              93
+            ],
+            [
+              68,
+              93
+            ],
+            [
+              68,
+              96
+            ],
+            [
+              70,
+              96
+            ],
+            [
+              70,
+              101
+            ],
+            [
+              56,
+              101
+            ],
+            [
+              56,
+              92
+            ],
+            [
+              60,
+              92
+            ]
+          ],
+          "pivot": [
+            61,
+            91
+          ],
+          "end": null,
+          "exclude": [
+            [
+              [
+                56,
+                82
+              ],
+              [
+                66,
+                82
+              ],
+              [
+                66,
+                89
+              ],
+              [
+                56,
+                89
+              ]
+            ]
+          ],
+          "z": -3,
+          "source_kind": "far"
+        },
+        {
+          "id": "right_thigh",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              128,
+              0
+            ],
+            [
+              128,
+              92
+            ],
+            [
+              0,
+              92
+            ]
+          ],
+          "pivot": [
+            59,
+            82
+          ],
+          "end": [
+            58,
+            85
+          ],
+          "exclude": [
+            [
+              [
+                53,
+                85
+              ],
+              [
+                63,
+                85
+              ],
+              [
+                63,
+                92
+              ],
+              [
+                53,
+                92
+              ]
+            ],
+            [
+              [
+                57,
+                94
+              ],
+              [
+                61,
+                94
+              ],
+              [
+                61,
+                96
+              ],
+              [
+                65,
+                96
+              ],
+              [
+                65,
+                99
+              ],
+              [
+                67,
+                99
+              ],
+              [
+                67,
+                104
+              ],
+              [
+                53,
+                104
+              ],
+              [
+                53,
+                95
+              ],
+              [
+                57,
+                95
+              ]
+            ]
+          ],
+          "z": 4,
+          "source_kind": "near"
+        },
+        {
+          "id": "right_shin",
+          "polygon": [
+            [
+              0,
+              92
+            ],
+            [
+              128,
+              92
+            ],
+            [
+              128,
+              128
+            ],
+            [
+              0,
+              128
+            ]
+          ],
+          "pivot": [
+            58,
+            92
+          ],
+          "end": [
+            58,
+            94
+          ],
+          "exclude": [
+            [
+              [
+                57,
+                94
+              ],
+              [
+                61,
+                94
+              ],
+              [
+                61,
+                96
+              ],
+              [
+                65,
+                96
+              ],
+              [
+                65,
+                99
+              ],
+              [
+                67,
+                99
+              ],
+              [
+                67,
+                104
+              ],
+              [
+                53,
+                104
+              ],
+              [
+                53,
+                95
+              ],
+              [
+                57,
+                95
+              ]
+            ]
+          ],
+          "z": 4,
+          "source_kind": "near"
+        },
+        {
+          "id": "right_cap",
+          "polygon": [
+            [
+              53,
+              85
+            ],
+            [
+              63,
+              85
+            ],
+            [
+              63,
+              92
+            ],
+            [
+              53,
+              92
+            ]
+          ],
+          "pivot": [
+            58,
+            88
+          ],
+          "end": null,
+          "exclude": [],
+          "z": 6,
+          "source_kind": "near"
+        },
+        {
+          "id": "right_foot",
+          "polygon": [
+            [
+              57,
+              94
+            ],
+            [
+              61,
+              94
+            ],
+            [
+              61,
+              96
+            ],
+            [
+              65,
+              96
+            ],
+            [
+              65,
+              99
+            ],
+            [
+              67,
+              99
+            ],
+            [
+              67,
+              104
+            ],
+            [
+              53,
+              104
+            ],
+            [
+              53,
+              95
+            ],
+            [
+              57,
+              95
+            ]
+          ],
+          "pivot": [
+            58,
+            94
+          ],
+          "end": null,
+          "exclude": [
+            [
+              [
+                53,
+                85
+              ],
+              [
+                63,
+                85
+              ],
+              [
+                63,
+                92
+              ],
+              [
+                53,
+                92
+              ]
+            ]
+          ],
+          "z": 5,
+          "source_kind": "near"
+        }
+      ],
+      "legs": {
+        "left": {
+          "hip": [
+            62,
+            79
+          ],
+          "knee": [
+            61,
+            85
+          ],
+          "ankle": [
+            61,
+            91
+          ],
+          "sole_offset": [
+            0,
+            10
+          ]
+        },
+        "right": {
+          "hip": [
+            59,
+            82
+          ],
+          "knee": [
+            58,
+            88
+          ],
+          "ankle": [
+            58,
+            94
+          ],
+          "sole_offset": [
+            0,
+            10
+          ]
+        }
+      },
+      "heading": [
+        1,
+        0
+      ],
+      "protected_body_polygons": [
+        [
+          [
+            62,
+            74
+          ],
+          [
+            74,
+            74
+          ],
+          [
+            74,
+            83
+          ],
+          [
+            62,
+            83
+          ]
+        ],
+        [
+          [
+            62,
+            82
+          ],
+          [
+            75,
+            82
+          ],
+          [
+            75,
+            93
+          ],
+          [
+            62,
+            93
+          ]
+        ],
+        [
+          [
+            52,
+            77
+          ],
+          [
+            63,
+            77
+          ],
+          [
+            63,
+            84
+          ],
+          [
+            52,
+            84
+          ]
+        ]
+      ],
+      "occluded_original_polygons": [],
+      "body_source": "res://source/c002_right_body.png",
+      "body_sha256": "0e6fe44915fd4b5897c8c40f3a0797de1232e7f2ae631e85631253d8cfe3bc63",
+      "approved_bind_source": "res://source/c002_neutral_right.png",
+      "source_note": "Body/near/far are byte-exact C002 v003 approved GPU exports; near/far reuse the same original same-direction visible leg with explicit integer depth offset. No rejected v001 generated boot is used."
+    }
+  },
+  "preserved": [
+    {
+      "action": "move_down",
+      "atlas_sha256": "5c1d26badf462cde1d4dee1707e2fd6bc042cabb8fb21bfb7ea06d881baa58e9",
+      "frame_hashes": [
+        "c08514b7eb8f7a81521191438a80664a47f8b2b7d4277e879541eb1c9ade8e8e",
+        "8d78d4692c644a5168ecf91d4a2c10673fa1b85e4f67e62b4e939259b68e615f",
+        "c42c63a4986cdd94f9eae848eb58ffa338465eeca31dbc39da7facd9ba8b99ea",
+        "df39b6ab539830b1506bd7e3d6d9f2c32e885ca5d430c2a2e959bc126057a88e",
+        "c3a932f13a3e50a47a6d58fe41b862a28ea62102e3742fe81c033df685d3c3e4",
+        "465ef88b559daa82d5a2ca7fed7c220b7fb0ae80d47e3876d670d21f2d1cf4f4",
+        "9017f6b94a89904580e1e5828fb7103da725d946e2aca43acdd454c280725512",
+        "c9934402a50e6f6d7f37323906de8934658c93beb942cf442234233bc66ae144"
+      ]
+    },
+    {
+      "action": "move_down_right",
+      "atlas_sha256": "849c2f1f465dfa0348c97271a3230b0f0c0eae3863f7b2fc0af6d872da945bb3",
+      "frame_hashes": [
+        "66dbec7273be1c2c10a991fcff27240f6802d8113eef33fda34ef44fd78060d5",
+        "ecc79476a4dcb5d4b28623e0d05d2ad756e91e60a0cefd863909443cb2ed0397",
+        "e82c09f5936bb2903ab898fe68f0a61e14a5920e288dff90acbd9e57994cfb70",
+        "f64cb15c9e6fb8636875e508c791e68c6292b2c36cb07d99285aa333ed01f983",
+        "821f92f09e24edafad1473f0c8b08b83b53df0f5a138bc8bd5583e10abe03294",
+        "2bf0765befad8e4ceea8cface29b191c75211073a6f0853eb732cffa4effbf93",
+        "da852482a9c25b607dd1139eb88f6bae261dfe155128f24b09a650f26619cc12",
+        "863e8fc5e9e41c1b635c8936b9a54d1e536ea7c1e2543eccb1396f2d8d8af9a4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "frame": 0,
+      "phase": "left_contact",
+      "body_y": 0,
+      "left": {
+        "depth": 6,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": -6,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 1,
+      "phase": "left_down",
+      "body_y": 1,
+      "left": {
+        "depth": 3,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": -3,
+        "lift": 3,
+        "support": false
+      }
+    },
+    {
+      "frame": 2,
+      "phase": "right_passing",
+      "body_y": 0,
+      "left": {
+        "depth": 0,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": 0,
+        "lift": 5,
+        "support": false
+      }
+    },
+    {
+      "frame": 3,
+      "phase": "left_up",
+      "body_y": -1,
+      "left": {
+        "depth": -3,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": 3,
+        "lift": 2,
+        "support": false
+      }
+    },
+    {
+      "frame": 4,
+      "phase": "right_contact",
+      "body_y": 0,
+      "left": {
+        "depth": -6,
+        "lift": 0,
+        "support": true
+      },
+      "right": {
+        "depth": 6,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 5,
+      "phase": "right_down",
+      "body_y": 1,
+      "left": {
+        "depth": -3,
+        "lift": 3,
+        "support": false
+      },
+      "right": {
+        "depth": 3,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 6,
+      "phase": "left_passing",
+      "body_y": 0,
+      "left": {
+        "depth": 0,
+        "lift": 5,
+        "support": false
+      },
+      "right": {
+        "depth": 0,
+        "lift": 0,
+        "support": true
+      }
+    },
+    {
+      "frame": 7,
+      "phase": "right_up",
+      "body_y": -1,
+      "left": {
+        "depth": 3,
+        "lift": 2,
+        "support": false
+      },
+      "right": {
+        "depth": -3,
+        "lift": 0,
+        "support": true
+      }
+    }
+  ],
+  "calibration_zip_sha256": "87d0ecf437c93451eddcdad59387f6f03191efcdfdfa1cb197b6e41e819f4ab2"
+}

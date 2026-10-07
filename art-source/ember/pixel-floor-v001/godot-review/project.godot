@@ -1,0 +1,20 @@
+; 地板素材专用空工程；没有原工程 Game autoload，不记录课程进度。
+config_version=5
+
+[application]
+config/name="Pixel Floor v001 - isolated terrain review"
+run/main_scene="res://scenes/ember/pixel_floor_sandbox_v001.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1152
+window/size/viewport_height=880
+window/size/window_width_override=1152
+window/size/window_height_override=880
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.06,0.10,0.12,1)

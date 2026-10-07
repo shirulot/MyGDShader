@@ -1,0 +1,321 @@
+{
+  "version": "v017-drone-idle-hit",
+  "unit": "enemy_scout_drone",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "configs": {
+    "down_left": {
+      "source": "res://source/down_left.png",
+      "source_sha256": "6e98ee35c741152a436aa8e90fb597e1b64ae87299c16c723c5f0789d8b0356a",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            48.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            79.5,
+            69.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "left": {
+      "source": "res://source/left.png",
+      "source_sha256": "a1ce3052a99109fab887c3efb515c511ba932c83388ab040330385311feba824",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            64.5,
+            57.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            64.5,
+            72.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "up_left": {
+      "source": "res://source/up_left.png",
+      "source_sha256": "e153d5fe5abe5f09c7ffdaadbc3c159e557a662499ef6f00a11ad4aca45f3a68",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            79.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            48.5,
+            70.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "up": {
+      "source": "res://source/up.png",
+      "source_sha256": "b0785d7971ca0fc4c6c869e07a3cb90771f7e944f864ee9553f921770fa3128e",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            85.5,
+            64.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            41.5,
+            64.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "up_right": {
+      "source": "res://source/up_right.png",
+      "source_sha256": "06a37e6a109b5e0e439b079d24f2125ecbd5b3ea55c9428f342b320725637775",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            79.5,
+            70.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            48.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "right": {
+      "source": "res://source/right.png",
+      "source_sha256": "5fab6a03670156d18cb3d14fe4cb4ad2c76d87fc3296259db4227518a26a898e",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            64.5,
+            72.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            64.5,
+            57.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    },
+    "down_right": {
+      "source": "res://source/down_right.png",
+      "source_sha256": "8cef29b2ad627d52c256a812133b6a3d943ddbdc2a741bd67c0043c8c018acca",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            48.5,
+            69.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            79.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ]
+    }
+  },
+  "preserved": [
+    {
+      "action": "idle_down",
+      "source": "enemy-sequences-v012",
+      "atlas_sha256": "e9ec587c5902cd50694d5a3690cb4a646e6e7c487388060024c630d9bf03b0ea",
+      "frame_hashes": [
+        "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+        "a6c6a965b0d6b5112b514badaf16b19ec70def0e2ee88a29c0c12175d29b1fbc",
+        "640d2c78b72c5b512b3aa4ac10631d78415faee97197f91ab9f1a6bdb91c3a4e",
+        "61fbfffee771470805e205c1d31de8d0a341df12dc285e7d5f63778de6f64c17"
+      ]
+    },
+    {
+      "action": "hit_down",
+      "source": "enemy-sequences-v012",
+      "atlas_sha256": "734eb1d07adad7ac2680037229870b3047f1b5a30d8d7bc8c5ad1b791fc7f219",
+      "frame_hashes": [
+        "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+        "6dd752451606ca5fa5f79bdd838211c5cb966816de01e4ee0e4ec4e6f1d58857",
+        "47f63ccb2886f29f2ae0b2aabb591b1280b2bb436b3224900a047f3c6bce5c88",
+        "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33"
+      ]
+    }
+  ],
+  "fan_source": "res://source/rotor_well_master.png",
+  "fan_source_sha256": "8824eeff102796d523fa8fab1f17f90c5716b7f34097987c0d5ea8151c2a3a94",
+  "rotor_rect": [
+    223,
+    165,
+    583,
+    584
+  ],
+  "well_rect": [
+    1000,
+    192,
+    535,
+    528
+  ],
+  "method": "Approved fixed direction sources and v011 rotor planes. Idle hover and hit rigid-body roll follow approved v011 timing. No per-frame generated art.",
+  "actions": {
+    "idle": {
+      "frames": 4,
+      "fps": 4,
+      "loop": true,
+      "body_y": [
+        0,
+        -1,
+        0,
+        1
+      ],
+      "roll": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "rotor_angles": [
+        0,
+        22.5,
+        45,
+        67.5
+      ]
+    },
+    "hit": {
+      "frames": 4,
+      "fps": 12,
+      "loop": false,
+      "body_y": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "roll": [
+        0,
+        -6,
+        3,
+        0
+      ],
+      "rotor_angles": [
+        0,
+        15,
+        8,
+        0
+      ]
+    }
+  }
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ember 敌人序列审阅</title>
+<style>
+  body { background:#17262a; color:#d5dfd9; font:16px system-ui; margin:24px; }
+  h1 { font-size:24px; }
+  p { max-width:1080px; line-height:1.6; }
+  button { padding:8px 13px; margin:3px 6px 3px 0; cursor:pointer; }
+  #grid { display:grid; grid-template-columns:repeat(5,max-content); gap:12px; margin-top:20px; }
+  .card { background:#203439; padding:12px; border:1px solid #375050; min-width:190px; }
+  .card h2 { font-size:16px; margin:0 0 8px; }
+  canvas { display:block; image-rendering:pixelated; }
+  .info { color:#aebfbd; font-size:13px; margin-top:8px; }
+  .event { color:#dfc795; font-size:13px; min-height:20px; margin-top:3px; }
+  .seek { display:flex; gap:4px; align-items:center; margin-top:6px; }
+  .seek button { padding:3px 8px; }
+  .seek input { width:120px; }
+  @media(max-width:900px) { #grid { grid-template-columns:repeat(2,max-content); } }
+</style>
+<h1>Ember 敌人序列审阅 · 正向首批</h1>
+<p>每帧 128×128，固定锚点 (64,104)。1×查看原生像素，4×为整数最近邻放大。可以暂停后逐帧检查工具左右、脚底和体量；攻击 f03、死亡 f07 的标记仅用于视觉审阅。单次动作会在展示控制器中停留后重播，资源本身不循环。</p>
+<div>
+  <button id="toggle">暂停</button><button id="restart">从头重播</button>
+  <button id="previous">全部前一帧</button><button id="next">全部后一帧</button>
+  <button id="native">1× 原生</button><button id="enlarged">4× 最近邻</button>
+  <button id="background">底色：深色</button>
+</div>
+<p id="status">播放中 · 1× 原生 · 空格暂停，左右箭头逐帧，R 重播</p>
+<div id="grid"></div>
+<script>
+// 模板只播放导出的 atlas，不生成、补绘或保存任何美术像素。
+const clips = __CLIPS__;
+const labels = {idle:'待机', move:'移动', attack:'攻击', hit:'受击', death:'死亡'};
+const eventLabels = {attack_release_visual:'f03 视觉释放点', corpse_hold_visual:'f07 残骸保持', support_phase_a:'支撑相位 A', support_phase_b:'支撑相位 B'};
+const grid = document.querySelector('#grid');
+const states = [];
+let paused = false;
+let scale = 1;
+let backgroundIndex = 0;
+let previousTime = performance.now();
+const backgrounds = [{label:'深色',color:'#203439'}, {label:'黑色',color:'#000'}, {label:'白色',color:'#fff'}];
+
+for (const clip of clips) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  const title = document.createElement('h2');
+  title.textContent = clip.name + ' · ' + labels[clip.action];
+  const canvas = document.createElement('canvas');
+  const info = document.createElement('div'); info.className = 'info';
+  const eventInfo = document.createElement('div'); eventInfo.className = 'event';
+  const seek = document.createElement('div'); seek.className = 'seek';
+  const prev = document.createElement('button'); prev.textContent = '◀'; prev.title = '前一帧';
+  const next = document.createElement('button'); next.textContent = '▶'; next.title = '后一帧';
+  const slider = document.createElement('input');
+  slider.type = 'range'; slider.min = '0'; slider.max = String(clip.frame_count - 1); slider.step = '1'; slider.value = '0';
+  slider.setAttribute('aria-label', clip.name + ' ' + labels[clip.action] + ' 帧');
+  seek.append(prev, slider, next);
+  card.append(title, canvas, info, eventInfo, seek); grid.append(card);
+  const img = new Image(); img.src = clip.image_data;
+  const state = {clip, canvas, ctx:canvas.getContext('2d'), img, info, eventInfo, slider, elapsed:0, frame:0};
+  states.push(state);
+  prev.onclick = () => seekFrame(state, state.frame - 1);
+  next.onclick = () => seekFrame(state, state.frame + 1);
+  slider.oninput = () => seekFrame(state, Number(slider.value));
+}
+
+function updateStatus() {
+  document.querySelector('#toggle').textContent = paused ? '继续' : '暂停';
+  document.querySelector('#status').textContent = (paused ? '已暂停' : '播放中') + ' · ' + scale + '× ' + (scale===1?'原生':'最近邻') + ' · 空格暂停，左右箭头逐帧，R 重播';
+}
+
+function setScale(value) {
+  scale = value;
+  for (const state of states) {
+    state.canvas.width = 128 * scale; state.canvas.height = 128 * scale;
+    state.canvas.style.width = (128 * scale) + 'px'; state.canvas.style.height = (128 * scale) + 'px';
+    state.ctx.imageSmoothingEnabled = false;
+  }
+  updateStatus();
+}
+
+function seekFrame(state, frame) {
+  paused = true;
+  const count = state.clip.frame_count;
+  state.frame = state.clip.loop ? ((frame % count) + count) % count : Math.max(0, Math.min(count - 1, frame));
+  // 为每条 clip 保存自己的时间；从手动选帧继续时不会跳回共同全局时钟。
+  state.elapsed = state.frame / state.clip.fps;
+  updateStatus();
+}
+
+function stepAll(direction) { for (const state of states) seekFrame(state, state.frame + direction); }
+function restart() { for (const state of states) { state.elapsed=0; state.frame=0; } paused=false; updateStatus(); }
+function toggle() { paused=!paused; updateStatus(); }
+function setBackground() {
+  for (const state of states) state.canvas.style.backgroundColor = backgrounds[backgroundIndex].color;
+  document.querySelector('#background').textContent = '底色：' + backgrounds[backgroundIndex].label;
+}
+
+document.querySelector('#toggle').onclick = toggle;
+document.querySelector('#restart').onclick = restart;
+document.querySelector('#previous').onclick = () => stepAll(-1);
+document.querySelector('#next').onclick = () => stepAll(1);
+document.querySelector('#native').onclick = () => setScale(1);
+document.querySelector('#enlarged').onclick = () => setScale(4);
+document.querySelector('#background').onclick = () => { backgroundIndex=(backgroundIndex+1)%backgrounds.length; setBackground(); };
+addEventListener('keydown', event => {
+  if (event.ctrlKey || event.metaKey || event.altKey || event.target.tagName==='INPUT') return;
+  if (event.code==='Space') { event.preventDefault(); toggle(); }
+  if (event.code==='ArrowLeft') { event.preventDefault(); stepAll(-1); }
+  if (event.code==='ArrowRight') { event.preventDefault(); stepAll(1); }
+  if (event.code==='KeyR') restart();
+});
+
+function tick(now) {
+  const delta = (now - previousTime) / 1000; previousTime=now;
+  for (const state of states) {
+    const clip=state.clip;
+    if (!paused) {
+      state.elapsed+=delta;
+      const duration=clip.frame_count/clip.fps;
+      const hold=clip.loop ? 0 : (clip.action==='death'?1.25:.55);
+      state.frame=Math.min(clip.frame_count-1, Math.floor((state.elapsed % (duration+hold))*clip.fps));
+    }
+    const frame=state.frame, size=128*scale;
+    state.ctx.clearRect(0,0,size,size);
+    if (state.img.complete && state.img.naturalWidth>0) {
+      state.ctx.drawImage(state.img,(frame%clip.columns)*128,Math.floor(frame/clip.columns)*128,128,128,0,0,size,size);
+    }
+    state.slider.value=String(frame);
+    state.info.textContent='f'+String(frame).padStart(2,'0')+' / f'+String(clip.frame_count-1).padStart(2,'0')+' · '+clip.fps+' FPS · '+(clip.loop?'循环':'单次，展示重播');
+    const events=(clip.events||[]).filter(item=>item.frame===frame).map(item=>eventLabels[item.name]||item.name);
+    state.eventInfo.textContent=events.length ? '视觉事件：'+events.join('，') : '视觉事件：—';
+  }
+  requestAnimationFrame(tick);
+}
+setScale(1); setBackground(); requestAnimationFrame(tick);
+</script>
+</html>

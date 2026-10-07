@@ -1,0 +1,394 @@
+{
+  "revision": "v011-phase-c1-rc01",
+  "status": "ACTION_PILOT_PENDING_TA",
+  "canvas": [
+    64,
+    96
+  ],
+  "root_anchor": [
+    32,
+    80
+  ],
+  "direction": "down_left",
+  "atlas": "robot_action_pilot_atlas_v011.png",
+  "atlas_sha256": "9262c6eac7fb6885d529ba6a39d3ecab01305aa1d9d7f2101ba84906e5211be7",
+  "clips": [
+    {
+      "name": "idle_down_left",
+      "direction": "down_left",
+      "action": "idle",
+      "fps": 2,
+      "loop": true,
+      "frames": [
+        {
+          "file": "frames/idle/down_left/robot_idle_down_left_f00_v011.png",
+          "frame": 0,
+          "sha256": "1ce8c81e3b4e1758b4478e78bb5aa1499f3e1cd95687283541a4c4e9b09d16b3",
+          "region": [
+            0,
+            0,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/idle/down_left/robot_idle_down_left_f01_v011.png",
+          "frame": 1,
+          "sha256": "113bcbae069cadbc48d571f63093fa339d8723638fa6a36e62e34abb914f93b1",
+          "region": [
+            64,
+            0,
+            64,
+            96
+          ]
+        }
+      ],
+      "art_status": "NEW_ACTION_PILOT_PENDING_TA"
+    },
+    {
+      "name": "collect_down_left",
+      "direction": "down_left",
+      "action": "collect",
+      "fps": 6,
+      "loop": false,
+      "frames": [
+        {
+          "file": "frames/collect/down_left/robot_collect_down_left_f00_v011.png",
+          "frame": 0,
+          "sha256": "cba8acb6014051921e016d3c882db8d91c125a3f78da5c84d6cbd5c5831ab95a",
+          "region": [
+            0,
+            96,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/collect/down_left/robot_collect_down_left_f01_v011.png",
+          "frame": 1,
+          "sha256": "865c7d5c485d46ef4383662b4de4ce632968132cc9dc7714a94406923bc6f2fe",
+          "region": [
+            64,
+            96,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/collect/down_left/robot_collect_down_left_f02_v011.png",
+          "frame": 2,
+          "sha256": "dcc6e8e055788354e8f7851f57ad8ddb26a79f5a53057cc9d02be487d3509de0",
+          "region": [
+            128,
+            96,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/collect/down_left/robot_collect_down_left_f03_v011.png",
+          "frame": 3,
+          "sha256": "1ce8c81e3b4e1758b4478e78bb5aa1499f3e1cd95687283541a4c4e9b09d16b3",
+          "region": [
+            192,
+            96,
+            64,
+            96
+          ]
+        }
+      ],
+      "art_status": "NEW_ACTION_PILOT_PENDING_TA"
+    },
+    {
+      "name": "walk_down_left",
+      "direction": "down_left",
+      "action": "walk",
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        {
+          "file": "frames/walk/down_left/robot_walk_down_left_f00_v011.png",
+          "frame": 0,
+          "sha256": "beab87a378fa80caad420348de058a30245b5844cc00a996fdc7df324af2baa3",
+          "region": [
+            0,
+            192,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/walk/down_left/robot_walk_down_left_f01_v011.png",
+          "frame": 1,
+          "sha256": "7e4c39ad381599521fb283fd7c0e8ae1f575373728c0c615c6a5af33f97e9ae9",
+          "region": [
+            64,
+            192,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/walk/down_left/robot_walk_down_left_f02_v011.png",
+          "frame": 2,
+          "sha256": "dad5dd4e3ac8056d6161d7a8e26609d6bf995869eddad72fb561e364439cef39",
+          "region": [
+            128,
+            192,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/walk/down_left/robot_walk_down_left_f03_v011.png",
+          "frame": 3,
+          "sha256": "03eee4b355d6270ceebde2611e7d96ef331eac4a3335e8a3bdc7873a3e215e99",
+          "region": [
+            192,
+            192,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/walk/down_left/robot_walk_down_left_f04_v011.png",
+          "frame": 4,
+          "sha256": "b45c16fe2bf5dc2f178167488fede98f621980ce62c5f416a4c75dc1a5b199e1",
+          "region": [
+            256,
+            192,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/walk/down_left/robot_walk_down_left_f05_v011.png",
+          "frame": 5,
+          "sha256": "eacb55f4f56b0f5bb674a7ff2321cebc42103141f91f58a1677f76d20fe341a6",
+          "region": [
+            320,
+            192,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/walk/down_left/robot_walk_down_left_f06_v011.png",
+          "frame": 6,
+          "sha256": "7c8b4450230387e6fe80e0077d531ac28b3b2fa4771857aa444fae00e272b740",
+          "region": [
+            384,
+            192,
+            64,
+            96
+          ]
+        },
+        {
+          "file": "frames/walk/down_left/robot_walk_down_left_f07_v011.png",
+          "frame": 7,
+          "sha256": "dfc8437abf87926d4e2d90a5cad820c2786b59a88c7ba69f9c80512b0331d75c",
+          "region": [
+            448,
+            192,
+            64,
+            96
+          ]
+        }
+      ],
+      "art_status": "PHASE_A_PASS_RETAINED"
+    },
+    {
+      "name": "pose_down_left",
+      "direction": "down_left",
+      "action": "pose",
+      "fps": 1,
+      "loop": false,
+      "frames": [
+        {
+          "file": "source/candidate-masters/robot_idle_down_left_v011.png",
+          "frame": 0,
+          "sha256": "1ce8c81e3b4e1758b4478e78bb5aa1499f3e1cd95687283541a4c4e9b09d16b3",
+          "region": [
+            0,
+            288,
+            64,
+            96
+          ]
+        }
+      ],
+      "art_status": "IDENTITY_REFERENCE_ONLY"
+    }
+  ],
+  "source_files": [
+    {
+      "file": "frames/idle/down_left/robot_idle_down_left_f00_v011.png",
+      "frame": 0,
+      "sha256": "1ce8c81e3b4e1758b4478e78bb5aa1499f3e1cd95687283541a4c4e9b09d16b3",
+      "region": [
+        0,
+        0,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/idle/down_left/robot_idle_down_left_f01_v011.png",
+      "frame": 1,
+      "sha256": "113bcbae069cadbc48d571f63093fa339d8723638fa6a36e62e34abb914f93b1",
+      "region": [
+        64,
+        0,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/collect/down_left/robot_collect_down_left_f00_v011.png",
+      "frame": 0,
+      "sha256": "cba8acb6014051921e016d3c882db8d91c125a3f78da5c84d6cbd5c5831ab95a",
+      "region": [
+        0,
+        96,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/collect/down_left/robot_collect_down_left_f01_v011.png",
+      "frame": 1,
+      "sha256": "865c7d5c485d46ef4383662b4de4ce632968132cc9dc7714a94406923bc6f2fe",
+      "region": [
+        64,
+        96,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/collect/down_left/robot_collect_down_left_f02_v011.png",
+      "frame": 2,
+      "sha256": "dcc6e8e055788354e8f7851f57ad8ddb26a79f5a53057cc9d02be487d3509de0",
+      "region": [
+        128,
+        96,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/collect/down_left/robot_collect_down_left_f03_v011.png",
+      "frame": 3,
+      "sha256": "1ce8c81e3b4e1758b4478e78bb5aa1499f3e1cd95687283541a4c4e9b09d16b3",
+      "region": [
+        192,
+        96,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/walk/down_left/robot_walk_down_left_f00_v011.png",
+      "frame": 0,
+      "sha256": "beab87a378fa80caad420348de058a30245b5844cc00a996fdc7df324af2baa3",
+      "region": [
+        0,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/walk/down_left/robot_walk_down_left_f01_v011.png",
+      "frame": 1,
+      "sha256": "7e4c39ad381599521fb283fd7c0e8ae1f575373728c0c615c6a5af33f97e9ae9",
+      "region": [
+        64,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/walk/down_left/robot_walk_down_left_f02_v011.png",
+      "frame": 2,
+      "sha256": "dad5dd4e3ac8056d6161d7a8e26609d6bf995869eddad72fb561e364439cef39",
+      "region": [
+        128,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/walk/down_left/robot_walk_down_left_f03_v011.png",
+      "frame": 3,
+      "sha256": "03eee4b355d6270ceebde2611e7d96ef331eac4a3335e8a3bdc7873a3e215e99",
+      "region": [
+        192,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/walk/down_left/robot_walk_down_left_f04_v011.png",
+      "frame": 4,
+      "sha256": "b45c16fe2bf5dc2f178167488fede98f621980ce62c5f416a4c75dc1a5b199e1",
+      "region": [
+        256,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/walk/down_left/robot_walk_down_left_f05_v011.png",
+      "frame": 5,
+      "sha256": "eacb55f4f56b0f5bb674a7ff2321cebc42103141f91f58a1677f76d20fe341a6",
+      "region": [
+        320,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/walk/down_left/robot_walk_down_left_f06_v011.png",
+      "frame": 6,
+      "sha256": "7c8b4450230387e6fe80e0077d531ac28b3b2fa4771857aa444fae00e272b740",
+      "region": [
+        384,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "frames/walk/down_left/robot_walk_down_left_f07_v011.png",
+      "frame": 7,
+      "sha256": "dfc8437abf87926d4e2d90a5cad820c2786b59a88c7ba69f9c80512b0331d75c",
+      "region": [
+        448,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "file": "source/candidate-masters/robot_idle_down_left_v011.png",
+      "frame": 0,
+      "sha256": "1ce8c81e3b4e1758b4478e78bb5aa1499f3e1cd95687283541a4c4e9b09d16b3",
+      "region": [
+        0,
+        288,
+        64,
+        96
+      ]
+    }
+  ],
+  "scope": "SW idle2 and collect4 pilot, plus approved walk8 and one identity reference",
+  "final_scope": {
+    "clips": 24,
+    "frames": 112
+  }
+}

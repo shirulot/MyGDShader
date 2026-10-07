@@ -1,0 +1,441 @@
+{
+	"captures": [
+		{
+			"kind": "ACTUAL_GODOT_GPU",
+			"path": "res://assets/ember/buildings_final/textures/previews/gpu_demo_ui_v004r1.png",
+			"sha256": "da74bd7058aa49105d7bcf32ef1b18ef09b7ec7d9de1d605961515588460f14a"
+		},
+		{
+			"kind": "ACTUAL_GODOT_GPU",
+			"path": "res://assets/ember/buildings_final/textures/previews/gpu_intact_closed_v004r1.png",
+			"sha256": "5f17257e03bbfa0812439d0b24e0cd2fb615ea75cda56dfa5bf25ce449d60e58"
+		},
+		{
+			"kind": "ACTUAL_GODOT_GPU",
+			"path": "res://assets/ember/buildings_final/textures/previews/gpu_intact_open_v004r1.png",
+			"sha256": "eaca5a64a611a7e485727070b8a78ecc4565e8019f08e20e5d619d979bb3900c"
+		},
+		{
+			"kind": "ACTUAL_GODOT_GPU",
+			"path": "res://assets/ember/buildings_final/textures/previews/gpu_intact_half_v004r1.png",
+			"sha256": "2cdc99f288a849058b06c00e696d05051abb0cffafde068580818a92189aa986"
+		},
+		{
+			"kind": "ACTUAL_GODOT_GPU",
+			"path": "res://assets/ember/buildings_final/textures/previews/gpu_intact_service_v004r1.png",
+			"sha256": "d9a4180d1b04d15f4b7a2b74ca5a7f78ff55103238b76a90f5bec00029674cb7"
+		},
+		{
+			"kind": "ACTUAL_GODOT_GPU",
+			"path": "res://assets/ember/buildings_final/textures/previews/gpu_intact_power_off_v004r1.png",
+			"sha256": "67a367a128c15e78b89593109a7ea64b97e87be82577a31bea4119e542fd77de"
+		},
+		{
+			"kind": "ACTUAL_GODOT_GPU",
+			"path": "res://assets/ember/buildings_final/textures/previews/gpu_intact_occlusion_v004r1.png",
+			"sha256": "a72ee87b722992df01bfe57123965e9031862a3cd2a957d160f5266becf8523d"
+		},
+		{
+			"kind": "REFERENCE_VS_ACTUAL_INTACT_RENDER",
+			"path": "res://assets/ember/buildings_final/textures/previews/gpu_original_vs_intact_v004r1.png",
+			"sha256": "2240aca499064cdb72fb7c6def9e546de9b37038b07872b7d90c9b93a8a4d033"
+		},
+		{
+			"kind": "ACTUAL_GPU_DARK_LIGHT_SOURCE_VS_COVERAGE_4X",
+			"path": "res://assets/ember/buildings_final/textures/previews/control_tower_coverage_edges_4x_v004r1.png",
+			"sha256": "ae924848c0f9ae8abd696fece01788a31055b2d8d65cdf9fe7d4aac4acf5a3af"
+		},
+		{
+			"kind": "ACTUAL_GPU_DARK_LIGHT_SOURCE_VS_COVERAGE_4X",
+			"path": "res://assets/ember/buildings_final/textures/previews/repair_workshop_coverage_edges_4x_v004r1.png",
+			"sha256": "dda07b02b60ea2092c5a3b2dfbeeeef7fdad16f278ae6b012be86b691bfd43cb"
+		},
+		{
+			"kind": "ACTUAL_GPU_DARK_LIGHT_SOURCE_VS_COVERAGE_4X",
+			"path": "res://assets/ember/buildings_final/textures/previews/logistics_warehouse_coverage_edges_4x_v004r1.png",
+			"sha256": "abd2c4765d6398299fd5f9e8301f8dcc9638209b6d1028a5f0910564b131d6f5"
+		}
+	],
+	"checks": [
+		{
+			"check": "control_tower: production and mask have exact shared binary coverage",
+			"pass": true
+		},
+		{
+			"check": "control_tower: coverage keeps source RGB without geometry edits",
+			"pass": true
+		},
+		{
+			"check": "control_tower: original master file unchanged",
+			"pass": true
+		},
+		{
+			"check": "control_tower: registration and apertures unchanged",
+			"pass": true
+		},
+		{
+			"check": "control_tower: binary functional PNG fixed_architecture.png",
+			"pass": true
+		},
+		{
+			"check": "control_tower: binary functional PNG personnel_leaf.png",
+			"pass": true
+		},
+		{
+			"check": "control_tower: binary functional PNG roof_hatch.png",
+			"pass": true
+		},
+		{
+			"check": "control_tower: binary functional PNG status_lenses.png",
+			"pass": true
+		},
+		{
+			"check": "control_tower: binary functional PNG glass.png",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: production and mask have exact shared binary coverage",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: coverage keeps source RGB without geometry edits",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: original master file unchanged",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: registration and apertures unchanged",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: binary functional PNG fixed_architecture.png",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: binary functional PNG personnel_leaf.png",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: binary functional PNG maintenance_cover.png",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: binary functional PNG status_lenses.png",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: binary functional PNG glass.png",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: production and mask have exact shared binary coverage",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: coverage keeps source RGB without geometry edits",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: original master file unchanged",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: registration and apertures unchanged",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: binary functional PNG fixed_architecture.png",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: binary functional PNG personnel_leaf.png",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: binary functional PNG cargo_leaf.png",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: binary functional PNG maintenance_cover.png",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: binary functional PNG status_lenses.png",
+			"pass": true
+		},
+		{
+			"check": "demo real E input displays locked-door feedback",
+			"pass": true
+		},
+		{
+			"check": "demo UI visible in viewport 0",
+			"pass": true
+		},
+		{
+			"check": "demo UI visible in viewport 1",
+			"pass": true
+		},
+		{
+			"check": "demo UI visible in viewport 2",
+			"pass": true
+		},
+		{
+			"check": "demo UI visible in viewport 3",
+			"pass": true
+		},
+		{
+			"check": "demo UI visible in viewport 4",
+			"pass": true
+		},
+		{
+			"check": "demo UI visible in viewport 5",
+			"pass": true
+		},
+		{
+			"check": "control_tower: initialize",
+			"pass": true
+		},
+		{
+			"check": "control_tower: one intact architecture",
+			"pass": true
+		},
+		{
+			"check": "control_tower: closed shader equals complete master render",
+			"pass": true
+		},
+		{
+			"check": "control_tower: exported layers reassemble identical master render",
+			"pass": true
+		},
+		{
+			"check": "control_tower: moving doors do not change any fixed pixel",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: initialize",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: one intact architecture",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: closed shader equals complete master render",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: exported layers reassemble identical master render",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: moving doors do not change any fixed pixel",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: initialize",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: one intact architecture",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: closed shader equals complete master render",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: exported layers reassemble identical master render",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: moving doors do not change any fixed pixel",
+			"pass": true
+		},
+		{
+			"check": "control_tower/personnel: closed blocks actor",
+			"pass": true
+		},
+		{
+			"check": "control_tower/personnel: locked denies open",
+			"pass": true
+		},
+		{
+			"check": "control_tower/personnel: open command",
+			"pass": true
+		},
+		{
+			"check": "control_tower/personnel: half open retains collision",
+			"pass": true
+		},
+		{
+			"check": "control_tower/personnel: power loss freezes motion",
+			"pass": true
+		},
+		{
+			"check": "control_tower/personnel: fully open clears actor path",
+			"pass": true
+		},
+		{
+			"check": "control_tower/personnel: occupied aperture refuses closing",
+			"pass": true
+		},
+		{
+			"check": "control_tower/personnel: closing reverses on occupant",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop/personnel: closed blocks actor",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop/personnel: locked denies open",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop/personnel: open command",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop/personnel: half open retains collision",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop/personnel: power loss freezes motion",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop/personnel: fully open clears actor path",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop/personnel: occupied aperture refuses closing",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop/personnel: closing reverses on occupant",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/personnel: closed blocks actor",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/personnel: locked denies open",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/personnel: open command",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/personnel: half open retains collision",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/personnel: power loss freezes motion",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/personnel: fully open clears actor path",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/personnel: occupied aperture refuses closing",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/personnel: closing reverses on occupant",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/cargo: closed blocks actor",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/cargo: locked denies open",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/cargo: open command",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/cargo: half open retains collision",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/cargo: power loss freezes motion",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/cargo: fully open clears actor path",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/cargo: occupied aperture refuses closing",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse/cargo: closing reverses on occupant",
+			"pass": true
+		},
+		{
+			"check": "save load restores player before safety probe",
+			"pass": true
+		},
+		{
+			"check": "save load preserves closing target",
+			"pass": true
+		},
+		{
+			"check": "save load preserves partial progress",
+			"pass": true
+		},
+		{
+			"check": "control_tower: repair clears fault",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: cover required for repair",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: maintenance opens",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: repair clears fault",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: cover required for repair",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: maintenance opens",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: repair clears fault",
+			"pass": true
+		},
+		{
+			"check": "control_tower: whole shell occlusion",
+			"pass": true
+		},
+		{
+			"check": "repair_workshop: whole shell occlusion",
+			"pass": true
+		},
+		{
+			"check": "logistics_warehouse: whole shell occlusion",
+			"pass": true
+		}
+	],
+	"passed": 94,
+	"renderer": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"total": 94,
+	"visual_acceptance": "PENDING_USER_AND_TA_REVIEW"
+}

@@ -1,0 +1,20 @@
+{
+  "revision": "v009",
+  "status": "AUTHORED_CANDIDATE",
+  "purpose": "Independent rigid boot control and a restrained mechanical walk; not a soft toe deformation.",
+  "phase_order": ["contact", "down", "passing_support", "toe_off", "rear_contact", "early_swing", "passing_swing", "late_swing"],
+  "body_lower_px": [0.6, 0.8, 0.3, 0.2, 0.6, 0.8, 0.3, 0.2],
+  "foot_z_px": [3.2, 1.6, 0, -1.6, -3.2, -2.4, 0, 2.4],
+  "lift_px": [0, 0, 0, 0, 0, 0.24, 0.8, 0.32],
+  "pitch_degrees": [3, 0, 0, -2, -4, -4, 0, 3],
+  "sole_half_depth_px": 2,
+  "root_stride_per_frame": 1.6,
+  "left_phase_offset": 0,
+  "right_phase_offset": 4,
+  "control_order": ["foot contact pivot and rigid pitch", "ankle from foot", "two-bone leg IK", "same fixed camera", "native raster"],
+  "references": [
+    "https://esotericsoftware.com/spine-examples-spineboy#Legs",
+    "https://www.animationmentor.com/blog/tutorial-animating-human-walk-cycle/"
+  ],
+  "limits": "The flat boot source is a 2.5D approximation. Small rigid pitch is supported; large out-of-plane angles need authored volume views. No pose-dependent bone-length clamp or output-alpha repair."
+}

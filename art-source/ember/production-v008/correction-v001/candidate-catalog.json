@@ -1,0 +1,580 @@
+{
+  "status": "STANDARD_BASED_PIXEL_CORRECTION_PARTIAL_PASS_FULL_SET_NOT_READY",
+  "production_ready": false,
+  "rejected_art_included_for_diagnosis": true,
+  "entries": [
+    {
+      "id": "floor_center",
+      "name": "地板中心",
+      "atlas_coord": [
+        0,
+        0
+      ],
+      "source_path": "art-source/ember/production-v008/correction-v001/candidates/floor_center_pixel_v001.png",
+      "intended_connection_sides": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "source_sha256": "8b8eb1c94093f0a6062842060489cf8ac2c61d785eca4d2e004d1da22b974187",
+      "status": "BASE_PIXEL_STYLE_CANDIDATE_OPAQUE_REPEAT_REVIEWED",
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          255,
+          255
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              128
+            ]
+          ],
+          "S": [
+            [
+              0,
+              128
+            ]
+          ],
+          "W": [
+            [
+              0,
+              128
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16384
+        ],
+        "darkest_cross_joint_row_in_48_80": 64,
+        "darkest_cross_joint_column_in_48_80": 64,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      },
+      "production_ready": false,
+      "user_visual_approval": false,
+      "review_reason": "center solid, no holes; user style approval pending",
+      "import_gpu_technical_status": "PASSED_SOURCE_PRESERVED"
+    },
+    {
+      "id": "floor_edge_N",
+      "name": "北直边",
+      "atlas_coord": [
+        1,
+        0
+      ],
+      "source_path": "art-source/ember/production-v008/correction-v001/candidates/floor_edge_N_pixel_v002.png",
+      "intended_connection_sides": [
+        "E",
+        "S",
+        "W"
+      ],
+      "source_sha256": "fb192e1a9a270bbf0530bfb44e509822e594777f57d124de188ea8aaacfa5c20",
+      "status": "NOT_PASSED_CROSS_JOINT_2PX_SHIFT",
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          255,
+          255
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              128
+            ]
+          ],
+          "S": [
+            [
+              0,
+              128
+            ]
+          ],
+          "W": [
+            [
+              0,
+              128
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16384
+        ],
+        "darkest_cross_joint_row_in_48_80": 66,
+        "darkest_cross_joint_column_in_48_80": 63,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      },
+      "production_ready": false,
+      "user_visual_approval": false,
+      "review_reason": "cross joint row66 versus center64",
+      "import_gpu_technical_status": "PASSED_SOURCE_PRESERVED"
+    },
+    {
+      "id": "floor_narrow_NS",
+      "name": "南北窄条",
+      "atlas_coord": [
+        2,
+        0
+      ],
+      "source_path": "art-source/ember/production-v008/correction-v001/candidates/floor_narrow_NS_pixel_v001.png",
+      "intended_connection_sides": [
+        "N",
+        "S"
+      ],
+      "source_sha256": "f731fbabe2f2edbc742cf18f68fa5f7ab385ae8bc540059ee4dfc06c44d7a07a",
+      "status": "NS_PORT_WIDTH_PASSED_BODY_ALPHA_AND_END_MATERIAL_PENDING",
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          8,
+          251
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              1,
+              127
+            ]
+          ],
+          "E": [
+            [
+              1,
+              127
+            ]
+          ],
+          "S": [
+            [
+              1,
+              127
+            ]
+          ],
+          "W": [
+            [
+              1,
+              127
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16380
+        ],
+        "darkest_cross_joint_row_in_48_80": 64,
+        "darkest_cross_joint_column_in_48_80": 64,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      },
+      "production_ready": false,
+      "user_visual_approval": false,
+      "review_reason": "N/S width126 verified; old end caps are geometry-only references; body alpha max251",
+      "import_gpu_technical_status": "PASSED_SOURCE_PRESERVED"
+    },
+    {
+      "id": "floor_outer_NW",
+      "name": "西北外角",
+      "atlas_coord": [
+        3,
+        0
+      ],
+      "source_path": "art-source/ember/production-v008/correction-v001/candidates/floor_outer_NW_pixel_v002.png",
+      "intended_connection_sides": [
+        "E",
+        "S"
+      ],
+      "source_sha256": "3fa7c6e9eefacc30f33f8e7490aa1b15243146eee739fb58d91722b428a53fc3",
+      "status": "REJECTED_CROSS_JOINT_PHASE_AND_ALPHA_SHAPE",
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          225,
+          248
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              128
+            ]
+          ],
+          "S": [
+            [
+              0,
+              128
+            ]
+          ],
+          "W": [
+            [
+              0,
+              128
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16384
+        ],
+        "darkest_cross_joint_row_in_48_80": 73,
+        "darkest_cross_joint_column_in_48_80": 64,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      },
+      "production_ready": false,
+      "user_visual_approval": false,
+      "review_reason": "cross joint row73 versus edge66; no real transparent corner, alpha225..248",
+      "import_gpu_technical_status": "PASSED_SOURCE_PRESERVED"
+    },
+    {
+      "id": "bank_straight_N",
+      "name": "北直岸",
+      "atlas_coord": [
+        4,
+        0
+      ],
+      "source_path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_straight_N_pixel_registered_v002_128.png",
+      "intended_connection_sides": [
+        "E",
+        "W"
+      ],
+      "source_sha256": "ebcff7cfb05107818b9eb227ea8a2e9fb4914e8653cca05e6451a2c6a802b630",
+      "status": "PARTIAL_NORTH_REPEAT_VISUAL_PASSED_FULL_FAMILY_PENDING",
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              23
+            ],
+            [
+              25,
+              63
+            ],
+            [
+              64,
+              103
+            ],
+            [
+              105,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              33
+            ]
+          ],
+          "S": [],
+          "W": [
+            [
+              0,
+              33
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          4219
+        ],
+        "darkest_cross_joint_row_in_48_80": 48,
+        "darkest_cross_joint_column_in_48_80": 56,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      },
+      "production_ready": false,
+      "user_visual_approval": false,
+      "review_reason": "registered open ends; E/W [0,33), displayed north repeat continuous; no full family or loop proof",
+      "import_gpu_technical_status": "PASSED_SOURCE_PRESERVED"
+    },
+    {
+      "id": "bank_inner_NW",
+      "name": "岸凹角：拒收",
+      "atlas_coord": [
+        5,
+        0
+      ],
+      "source_path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_inner_NW_pixel_v001_128.png",
+      "intended_connection_sides": [
+        "N",
+        "W"
+      ],
+      "source_sha256": "19413b2b61322fc6ee243c1b7f3fe105f149a5cc019c6ce669159027bb5e08f3",
+      "status": "REJECTED_PORTS_CROSS_SECTION_SEMANTICS_AND_STYLE",
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          0,
+          254
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              2
+            ]
+          ],
+          "E": [],
+          "S": [],
+          "W": [
+            [
+              0,
+              18
+            ],
+            [
+              19,
+              55
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          2511
+        ],
+        "darkest_cross_joint_row_in_48_80": 52,
+        "darkest_cross_joint_column_in_48_80": 55,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      },
+      "production_ready": false,
+      "user_visual_approval": false,
+      "review_reason": "N2px and W to55px; incorrect cross-section",
+      "import_gpu_technical_status": "PASSED_SOURCE_PRESERVED"
+    },
+    {
+      "id": "old_floor_cap_N",
+      "atlas_coord": [
+        6,
+        0
+      ],
+      "source_kind": "V007_DIAGNOSTIC_ONLY",
+      "mask": 16,
+      "source": {
+        "kind": "v007_reused_complete_tile",
+        "path": "assets/ember/environment/autotiles_v007/floor_autotile_v007.png",
+        "sha256": "22aa6a12da734fc6706840a1476b4d46ff07708cc49b4a732e11f879ffe04a87",
+        "original_coord": [
+          5,
+          0
+        ],
+        "actual_crop_xyxy": [
+          640,
+          0,
+          768,
+          128
+        ]
+      },
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              0,
+              128
+            ]
+          ],
+          "E": [
+            [
+              0,
+              122
+            ]
+          ],
+          "S": [
+            [
+              1,
+              127
+            ]
+          ],
+          "W": [
+            [
+              0,
+              122
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16372
+        ],
+        "darkest_cross_joint_row_in_48_80": 67,
+        "darkest_cross_joint_column_in_48_80": 48,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      }
+    },
+    {
+      "id": "old_floor_cap_S",
+      "atlas_coord": [
+        7,
+        0
+      ],
+      "source_kind": "V007_DIAGNOSTIC_ONLY",
+      "mask": 1,
+      "source": {
+        "kind": "v007_reused_complete_tile",
+        "path": "assets/ember/environment/autotiles_v007/floor_autotile_v007.png",
+        "sha256": "22aa6a12da734fc6706840a1476b4d46ff07708cc49b4a732e11f879ffe04a87",
+        "original_coord": [
+          1,
+          0
+        ],
+        "actual_crop_xyxy": [
+          128,
+          0,
+          256,
+          128
+        ]
+      },
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              1,
+              127
+            ]
+          ],
+          "E": [
+            [
+              6,
+              128
+            ]
+          ],
+          "S": [
+            [
+              0,
+              128
+            ]
+          ],
+          "W": [
+            [
+              6,
+              128
+            ]
+          ]
+        },
+        "components4_alpha_gt127": [
+          16372
+        ],
+        "darkest_cross_joint_row_in_48_80": 62,
+        "darkest_cross_joint_column_in_48_80": 48,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      }
+    },
+    {
+      "id": "old_floor_narrow_NS",
+      "atlas_coord": [
+        8,
+        0
+      ],
+      "source_path": "art-source/ember/production-v008/floor/candidates/floor_narrow_NS_v002_128.png",
+      "source_sha256": "88ca7b2d44cff5b20d5b1bd623cd968fa7b2cb51026d6a4fac242dbb8e88ff2a",
+      "source_kind": "V008_PRE_CORRECTION_46PX_DIAGNOSTIC",
+      "measurement": {
+        "size": [
+          128,
+          128
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "body_edge_intersections_alpha_gt127": {
+          "N": [
+            [
+              41,
+              87
+            ]
+          ],
+          "E": [],
+          "S": [
+            [
+              41,
+              87
+            ]
+          ],
+          "W": []
+        },
+        "components4_alpha_gt127": [
+          5888
+        ],
+        "darkest_cross_joint_row_in_48_80": 62,
+        "darkest_cross_joint_column_in_48_80": 48,
+        "joint_detection_scope": "Heuristic observation for the four-panel floor only; not a visual pass."
+      }
+    },
+    {
+      "id": "water_reference",
+      "atlas_coord": [
+        9,
+        0
+      ],
+      "source_path": "art-source/ember/production-v008/godot-review/inputs/water_v007_diagnostic.png",
+      "source_sha256": "bd1548fa5fa6a36284b7900362263ef8212c25d8d89ffd40d32599c3c3aaf9d7",
+      "source_kind": "DIAGNOSTIC_REFERENCE"
+    },
+    {
+      "id": "old_bank_straight_N",
+      "atlas_coord": [
+        10,
+        0
+      ],
+      "source_path": "art-source/ember/production-v008/bank/candidates/bank_straight_N_sample_v001.png",
+      "source_sha256": "40fd40c36671cf559fde88bbf563eb28e8c1f58d94538cff3a850641f927ee1a",
+      "source_kind": "DIAGNOSTIC_REFERENCE"
+    }
+  ],
+  "atlas_path": "art-source/ember/production-v008/correction-v001/godot-review/inputs/pilot_samples.png",
+  "atlas_sha256": "34fb1d8142c62204d7948c903e2725329a4e5123da67d957215c01d92e88a6f8",
+  "texture_tile_size": 128,
+  "world_grid_units": 32,
+  "layer_scale": 0.25,
+  "terrain_coverage_complete": false,
+  "new_diagnostic_samples": 6,
+  "production_accepted_samples": 0,
+  "review_results": "review-results.json"
+}

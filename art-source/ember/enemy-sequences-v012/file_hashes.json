@@ -1,0 +1,1532 @@
+{
+  "scope": "4 units x 5 down actions; 120 frames; art assets only",
+  "ta_status": "PASS",
+  "version": "v012",
+  "files": [
+    {
+      "path": "assembly_recipe.json",
+      "sha256": "a37186d19814d6bb967f703a83324d4791d489b78f2793d839498891056a8d23",
+      "bytes": 20418
+    },
+    {
+      "path": "build.gd",
+      "sha256": "208234c464e26a17bf90604ec07e541a88df5d7eb77880ecfab6e3f1f4e8fe0c",
+      "bytes": 2668
+    },
+    {
+      "path": "capture.gd",
+      "sha256": "350b622f4eee4df6dd5222bfe6bda760fe1798530689fda8c2cc548da989f476",
+      "bytes": 1037
+    },
+    {
+      "path": "preview.gd",
+      "sha256": "02c79158ca39d2d233d41c9057666184d1a4a5bac3e3785166213a2f163d54a7",
+      "bytes": 2214
+    },
+    {
+      "path": "preview.tscn",
+      "sha256": "198593cb9215217102b914ec9ca5e929113a8ce3fd3b45d19e67ebbb697e1b57",
+      "bytes": 167
+    },
+    {
+      "path": "project.godot",
+      "sha256": "ec63c4a50d04686179e614905b643a3104b984cd487de776918492219422375b",
+      "bytes": 371
+    },
+    {
+      "path": "README.md",
+      "sha256": "6c8018c8ac1dded6fa764ecca4b8d941367741a8d71bb23480e5666fda522169",
+      "bytes": 2316
+    },
+    {
+      "path": "TA_ACCEPTANCE.json",
+      "sha256": "2c5f9e5289a572e913490d188516fafc5aa1d24bb2fa09d2c5a9419fd06c25ff",
+      "bytes": 12516
+    },
+    {
+      "path": "output/enemy_cutter.tres",
+      "sha256": "e6f174b4d55b95f87a0df633e3bc26304ef86bb80c48bc26b7973c94fbb581e2",
+      "bytes": 8859366
+    },
+    {
+      "path": "output/enemy_patrol.tres",
+      "sha256": "df713240d62fb8a9151ba17312c48661b19448ea48bb2bb2153c83ffa0cf4490",
+      "bytes": 8854874
+    },
+    {
+      "path": "output/enemy_scout_drone.tres",
+      "sha256": "6a34352924f4794fda593ad6fb1c40b549a18d9c9e489ed9fff062988fad04cb",
+      "bytes": 8858954
+    },
+    {
+      "path": "output/enemy_tracked_heavy.tres",
+      "sha256": "fcff727a158d61a38b8008a6836fe7e3217f14c5e16cd684a8c590f47888a061",
+      "bytes": 8871923
+    },
+    {
+      "path": "output/enemy_cutter/attack_down.png",
+      "sha256": "f925321fdf91049dd519825be672a43f5c89c1cb16e7df2a6e1f906fdf279a7d",
+      "bytes": 12085
+    },
+    {
+      "path": "output/enemy_cutter/attack_down.png.import",
+      "sha256": "0d777636ab1edd338bbeee8f75b8d911f01ced07e4a8861ec7e5ce94a3b740f0",
+      "bytes": 957
+    },
+    {
+      "path": "output/enemy_cutter/death_down.png",
+      "sha256": "18b755c92ed2a462e1c4c3034618585adc37d0d0cf9059e52e4800fc317504a2",
+      "bytes": 18423
+    },
+    {
+      "path": "output/enemy_cutter/death_down.png.import",
+      "sha256": "27529e8b7f9b8e85a57ee6eb6c3ef0dede165ba7b836063808c6e3411cb34884",
+      "bytes": 954
+    },
+    {
+      "path": "output/enemy_cutter/hit_down.png",
+      "sha256": "a9bd9daeadc4b9421a4bd77a5a630cf22790364478318fb5d199c7f97f5a6e58",
+      "bytes": 9256
+    },
+    {
+      "path": "output/enemy_cutter/hit_down.png.import",
+      "sha256": "d586c78fbc601b92082e04774d89d70797ab3772f1bd05bde9305899f09a7626",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_cutter/idle_down.png",
+      "sha256": "b7ace062ddd00b41d3b182f4182185c9027abe4e7e4d30c386e026881d4b2e4e",
+      "bytes": 9067
+    },
+    {
+      "path": "output/enemy_cutter/idle_down.png.import",
+      "sha256": "563f7235ad1146893ecd3fcd2d4b4cfcf18e4a509114b83494e33272686bf8ca",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_cutter/move_down.png",
+      "sha256": "a89c3d7ef8941d009f5ea8e042ab8a4ffea2249585acd85138cb5af7f3a43772",
+      "bytes": 10844
+    },
+    {
+      "path": "output/enemy_cutter/move_down.png.import",
+      "sha256": "ce496d04ce35fd83c2d939dab6d75b19dbaa0c3546e47e72d059ec90d7d344b1",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f00.png",
+      "sha256": "e3101a2a5dec9a7aa336745efab890c7e3469b172641c40bfbc8542943c3e447",
+      "bytes": 5328
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f00.png.import",
+      "sha256": "b864a1bbcdd8d12256d4c66fb178686626662538faaec85c6562ffce60fe7a8c",
+      "bytes": 945
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f01.png",
+      "sha256": "835698437b8b8610161e0107a33f8c7623795c70396f642688dcb5b1922256da",
+      "bytes": 5469
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f01.png.import",
+      "sha256": "ff229eb1a87335a75bb0da5c8216217ac15ac382e300986a4b3461adaf191162",
+      "bytes": 945
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f02.png",
+      "sha256": "6f7dd777d2577db31d7a10975aea96925db7001f71113d1ed551b981e70c8489",
+      "bytes": 5578
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f02.png.import",
+      "sha256": "3e7cdcd1dce02b01d0803798b002420828bdddbe15cd53d8a6113836fea5f8a7",
+      "bytes": 945
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f03.png",
+      "sha256": "9334205cba22d628729a5937b2a709a0a34b7ea9e823756a5d23d8b180656deb",
+      "bytes": 5232
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f03.png.import",
+      "sha256": "6a5a4da813985bf11b366efee72683b27914d3f26492fad86bef813e1908494d",
+      "bytes": 945
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f04.png",
+      "sha256": "4afce9c619e9d0ada170a20c336a895492f3bcedc4ab4e6de4544c8854a9e254",
+      "bytes": 5270
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f04.png.import",
+      "sha256": "5221e2ebbbfa49a6273fc391cf0304bd75f87eaa9246a3eee791b3ccf0cf5b0f",
+      "bytes": 945
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f05.png",
+      "sha256": "e3101a2a5dec9a7aa336745efab890c7e3469b172641c40bfbc8542943c3e447",
+      "bytes": 5328
+    },
+    {
+      "path": "output/enemy_cutter/attack_down/f05.png.import",
+      "sha256": "18f0002617688da4466f45a9b02041bb5a3242be65302d969ce8e56bc296e1f5",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f00.png",
+      "sha256": "e3101a2a5dec9a7aa336745efab890c7e3469b172641c40bfbc8542943c3e447",
+      "bytes": 5328
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f00.png.import",
+      "sha256": "110862b04e2561654e2d6158f860ea60be0d2fd107785f5f09cde90a39f355e6",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f01.png",
+      "sha256": "d92595f9b86903aadda5c2265f56554bc5f359f8ee392fceb13164266b99ebcc",
+      "bytes": 5378
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f01.png.import",
+      "sha256": "feba8f77df8cd6f4e645754388f3ec826d5cbcab5618b1025d0fb0799b3eb597",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f02.png",
+      "sha256": "e2cff5ac98d987bf9071847a0ece1f5edc88bd8d324faf6111108e4fc11f8d1e",
+      "bytes": 5292
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f02.png.import",
+      "sha256": "9347131af4665ef8592da294567bfbb7a553f18bb51a5c6271febd3e45254c6e",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f03.png",
+      "sha256": "3888f9eef58233889938dbe11ca23f9291884523e8afac3eb91582c6dd9c6cbd",
+      "bytes": 5182
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f03.png.import",
+      "sha256": "d3d744c3a43ad624e4ec92153f14e208978e79cb19d37ae7412dbdfbe6df247e",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f04.png",
+      "sha256": "4f142021b45140a601e5bde90982a80da5c3b0acfd3a5329d8aadaffa839c0c0",
+      "bytes": 5093
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f04.png.import",
+      "sha256": "ea9176f63a7f086fc533512c74d53f546830b6a6d675f295022f9a12788c11fc",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f05.png",
+      "sha256": "1626f1955af68515976a8f5ade2a23717d8b1a65a587bbfce0dbfdfb0701365c",
+      "bytes": 5044
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f05.png.import",
+      "sha256": "55c0211311543b6fa31884d10210efe26c0b4109ff3e7789f2b5dceccb3a590b",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f06.png",
+      "sha256": "1626f1955af68515976a8f5ade2a23717d8b1a65a587bbfce0dbfdfb0701365c",
+      "bytes": 5044
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f06.png.import",
+      "sha256": "5340d7553376639a92665e64d1d194768a7dfc21d7b40b0d96b2551aa288aeec",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f07.png",
+      "sha256": "1626f1955af68515976a8f5ade2a23717d8b1a65a587bbfce0dbfdfb0701365c",
+      "bytes": 5044
+    },
+    {
+      "path": "output/enemy_cutter/death_down/f07.png.import",
+      "sha256": "0c2e0f2a3108576ac47ce9450aeeee9a5a12e7a4a717c34886435c97c3760d52",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_cutter/hit_down/f00.png",
+      "sha256": "e3101a2a5dec9a7aa336745efab890c7e3469b172641c40bfbc8542943c3e447",
+      "bytes": 5328
+    },
+    {
+      "path": "output/enemy_cutter/hit_down/f00.png.import",
+      "sha256": "a2e1de9003e82ede618be429941742ff7d4fad600bedcfd30c2699302e35532a",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_cutter/hit_down/f01.png",
+      "sha256": "c84f5fa0d875c071bd3fad06e86e6bbe00afc4780738460a8ed0ac25cd5f2db6",
+      "bytes": 5504
+    },
+    {
+      "path": "output/enemy_cutter/hit_down/f01.png.import",
+      "sha256": "35dda5bc12dbf7c5ef08e3a30f3db1d7f0b48bfb244430368f21c4900346f731",
+      "bytes": 941
+    },
+    {
+      "path": "output/enemy_cutter/hit_down/f02.png",
+      "sha256": "7f762151e628c96b6fdbfd23b47a73ea09d30d9d31e03fe54fdf80db506c2597",
+      "bytes": 5235
+    },
+    {
+      "path": "output/enemy_cutter/hit_down/f02.png.import",
+      "sha256": "c36417f8673d97e647077087797ed7b599301d5330d44ee69a18ca879ac15c25",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_cutter/hit_down/f03.png",
+      "sha256": "e3101a2a5dec9a7aa336745efab890c7e3469b172641c40bfbc8542943c3e447",
+      "bytes": 5328
+    },
+    {
+      "path": "output/enemy_cutter/hit_down/f03.png.import",
+      "sha256": "be0e5753938c0b2cea1940f2c743395436069734810a898c459b5331c13778dc",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_cutter/idle_down/f00.png",
+      "sha256": "e3101a2a5dec9a7aa336745efab890c7e3469b172641c40bfbc8542943c3e447",
+      "bytes": 5328
+    },
+    {
+      "path": "output/enemy_cutter/idle_down/f00.png.import",
+      "sha256": "4eaa3e406e4da3eee59a7f78003ce19a6a38e838c6318ebc150e0cfc4cf743a7",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/idle_down/f01.png",
+      "sha256": "5d21cc9a2db1a2fa05f0a4b62353e9e48b083270f939d246343ce4b969162300",
+      "bytes": 5381
+    },
+    {
+      "path": "output/enemy_cutter/idle_down/f01.png.import",
+      "sha256": "d2862a58404b280b9bc568f751c403ef606dfd5595277ae55bc06168c97c3455",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/idle_down/f02.png",
+      "sha256": "e3101a2a5dec9a7aa336745efab890c7e3469b172641c40bfbc8542943c3e447",
+      "bytes": 5328
+    },
+    {
+      "path": "output/enemy_cutter/idle_down/f02.png.import",
+      "sha256": "a421d150c86bcbda5164250c39008c24ea18a9981ef188ea95df692ac0af338f",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/idle_down/f03.png",
+      "sha256": "58f2c2ca992cd5483f1fbcfc03a10891ca838d117e2605b09f14a0572b84e5ed",
+      "bytes": 5300
+    },
+    {
+      "path": "output/enemy_cutter/idle_down/f03.png.import",
+      "sha256": "297e58346f07b82d2bce81c60e116edfa0007706568c5575f84b25a1edc8a43d",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f00.png",
+      "sha256": "721dbd65d42b4bd8996992b36bb2a7f15ceea6df751ddeb5a4df6a840da16328",
+      "bytes": 5371
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f00.png.import",
+      "sha256": "f206e5e3c5f688bae31c24d0373223300ddfeb570ed68f5a46906ca8cec868c8",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f01.png",
+      "sha256": "bb7d3a4735e0715531554f0c1d317869dab5239e894e11c74ff1646ec317e845",
+      "bytes": 5341
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f01.png.import",
+      "sha256": "bd16f3f98722ae6fc16857d07920894162be80a0103a6119c25da56869fde9f0",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f02.png",
+      "sha256": "5d21cc9a2db1a2fa05f0a4b62353e9e48b083270f939d246343ce4b969162300",
+      "bytes": 5381
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f02.png.import",
+      "sha256": "8841ca58b01dddf713f6b46b59b39f1b25cd49e83260cfb49a3db0d6ed0a0f58",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f03.png",
+      "sha256": "667dd9ccd31972e3eff30059d699ad3d553cb3bfbf8724793291289f1bfef7b3",
+      "bytes": 5373
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f03.png.import",
+      "sha256": "0616fb12ffd27d9e8566bbe9957e8a9ef2d222a4bb21443a46b4d47f0b75db6b",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f04.png",
+      "sha256": "1e5fbdbfea640fc67cb813d335641b1193fa273109582e706e2bae7399656184",
+      "bytes": 5369
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f04.png.import",
+      "sha256": "20afefce5fe0f2f6e701823de4605ebcad8afbe2d6b5b263d70e1af725be0478",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f05.png",
+      "sha256": "667dd9ccd31972e3eff30059d699ad3d553cb3bfbf8724793291289f1bfef7b3",
+      "bytes": 5373
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f05.png.import",
+      "sha256": "a671c103df34684d588894a7df2e9dd3949a9db16b7ec402c8516425913a5582",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f06.png",
+      "sha256": "5d21cc9a2db1a2fa05f0a4b62353e9e48b083270f939d246343ce4b969162300",
+      "bytes": 5381
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f06.png.import",
+      "sha256": "75f2a2d21ba656214681086698eaf96badc11831d8ee2553ff4084befa9bb9fe",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f07.png",
+      "sha256": "bb7d3a4735e0715531554f0c1d317869dab5239e894e11c74ff1646ec317e845",
+      "bytes": 5341
+    },
+    {
+      "path": "output/enemy_cutter/move_down/f07.png.import",
+      "sha256": "7eb97ba7d383538d5320f1143d1653e0fb591785545f0bef11bb09a54f6778e6",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_patrol/attack_down.png",
+      "sha256": "37f918f6f91c5d2db7852e129a53c2aa41c3bf7a8a7c00aa2bbff548c6537fa4",
+      "bytes": 8463
+    },
+    {
+      "path": "output/enemy_patrol/attack_down.png.import",
+      "sha256": "56acb791bee73763f14a4b3513ff64a1f103d78abbfbefcc3792331492fd2374",
+      "bytes": 957
+    },
+    {
+      "path": "output/enemy_patrol/death_down.png",
+      "sha256": "ebad5116319e8fea3433d95c2d70d82d0e677ce1ee265023ae67e4beedfe8428",
+      "bytes": 19934
+    },
+    {
+      "path": "output/enemy_patrol/death_down.png.import",
+      "sha256": "fceb8cf94e0f8082337fc5a3c6e1a390087b760316983b35d5c5e7431c5525e9",
+      "bytes": 954
+    },
+    {
+      "path": "output/enemy_patrol/hit_down.png",
+      "sha256": "29763fb55e4fb728adfb947a1e94603c899aa033ce07f09b04b450c90d8a33bf",
+      "bytes": 7830
+    },
+    {
+      "path": "output/enemy_patrol/hit_down.png.import",
+      "sha256": "7f41606faa5d5672c5944203b7013499e4f5e6cade4e7dd96f2460768b5d03f4",
+      "bytes": 947
+    },
+    {
+      "path": "output/enemy_patrol/idle_down.png",
+      "sha256": "84a29c3af3b2f6dff3c0136a8bc4c1104814442725fa61ac0f5ab140b1197017",
+      "bytes": 7004
+    },
+    {
+      "path": "output/enemy_patrol/idle_down.png.import",
+      "sha256": "1da111145016ba72d4111f90271798be25b2dde8c4271c4fde6ee1227da07fda",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_patrol/move_down.png",
+      "sha256": "5c1d26badf462cde1d4dee1707e2fd6bc042cabb8fb21bfb7ea06d881baa58e9",
+      "bytes": 8930
+    },
+    {
+      "path": "output/enemy_patrol/move_down.png.import",
+      "sha256": "f1dadb8549c349afee0f0a77af2cfba81009cb1d1a272062578e2895bc17ffbe",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f00.png",
+      "sha256": "f7b817ff8c4c6ea9af4554c37873709e9419e83f93ec540f7dd96b9b7184482d",
+      "bytes": 4549
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f00.png.import",
+      "sha256": "e064c874693706afb3c2dd4e032b7c9a5a50579bae64d8cd1071df5921c62015",
+      "bytes": 945
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f01.png",
+      "sha256": "7041dda74d2bd3dc4ae30a918be8912a48e8272d9df614e9816bb197362b5e7c",
+      "bytes": 4572
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f01.png.import",
+      "sha256": "1da45d9321b296eeb7194820a4935e5a65889ae32ea3b764bec5b592fee3c9a9",
+      "bytes": 945
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f02.png",
+      "sha256": "bb480952b4219c07eff4cf88e2e9ccf0e59a5dafd6178c0e21d521133e97fb91",
+      "bytes": 4501
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f02.png.import",
+      "sha256": "770ba8bd39864e3aaee6adaba0197c11a4dec5cc9aff794b9ba09f17558cfe63",
+      "bytes": 945
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f03.png",
+      "sha256": "0e8aa8fd6c6faae5f560aa9debe8f0f4ad786cbb24adc768589b6a503b3818cb",
+      "bytes": 4521
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f03.png.import",
+      "sha256": "36ac7bd2aa97ad1c43817b7dc9093c3be1d57a4361191b9a73fe9255c1296023",
+      "bytes": 945
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f04.png",
+      "sha256": "343de3809de30b1626cea633ae1a47d0580af5e64003b6879a1753e6ad225e3d",
+      "bytes": 4490
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f04.png.import",
+      "sha256": "ff629fc838d1b27da81a03e25ce26c7a96b0ea121873feaf9b651a49f4b39d8e",
+      "bytes": 945
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f05.png",
+      "sha256": "f7b817ff8c4c6ea9af4554c37873709e9419e83f93ec540f7dd96b9b7184482d",
+      "bytes": 4549
+    },
+    {
+      "path": "output/enemy_patrol/attack_down/f05.png.import",
+      "sha256": "fa1ace6e8cb4112e59dd9b4c1d80be6b8552f54ba2804d62bbbeb648d5b1fb15",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f00.png",
+      "sha256": "f7b817ff8c4c6ea9af4554c37873709e9419e83f93ec540f7dd96b9b7184482d",
+      "bytes": 4549
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f00.png.import",
+      "sha256": "8b728a5978a035133496f2728bead0e55e814586132f2a8a57c54ff8f9978500",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f01.png",
+      "sha256": "8a2633a461649128c8f04df0f728249d66d86f34e917e0a44a197bca9bec61ef",
+      "bytes": 4419
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f01.png.import",
+      "sha256": "3685f07a9055580298129f94ce49c70539a46bc57689033a0dcef935d354b657",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f02.png",
+      "sha256": "531cc826d273cab489ba40cc9bb28eec082370e0595a572215252b62cb1003a4",
+      "bytes": 4174
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f02.png.import",
+      "sha256": "55ba0a8c360adb8406dad305c4e4d67a11b99539cd36aca48042c4346bc0f0eb",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f03.png",
+      "sha256": "8367c990d66c90bae2621b27a6ca1c3d56ee2014fb945c0a04ef5454ebf40be2",
+      "bytes": 3834
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f03.png.import",
+      "sha256": "b84a15f9d2602c7a0ce3eca6e7380cc166b993c4a3e800d2a9f7a359fe1b1241",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f04.png",
+      "sha256": "dbed7697b8f2aabd0409456ffae90fe4173841ed41d7bac5a20fc3b1613137ee",
+      "bytes": 3670
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f04.png.import",
+      "sha256": "420928bc294e173df23ba8312ed7489228d0eba06abb75af7a7db0ace8baf0d4",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f05.png",
+      "sha256": "a870b71a0e283a002b206e7365a46151bb71e68c33a447d11096e5f414a89247",
+      "bytes": 3572
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f05.png.import",
+      "sha256": "0e9bf851475004671e09452a41779d2dca7ebaafbabcbcb8d83ce019450bb4a6",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f06.png",
+      "sha256": "9075285566e8e7464fd8c02c4161edff04423aa164db4ae407b9266d3bd654c8",
+      "bytes": 3521
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f06.png.import",
+      "sha256": "127e9ec8280a10768475f0306f5a85919129253b76da4c5e282bcdb6041fe259",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f07.png",
+      "sha256": "9075285566e8e7464fd8c02c4161edff04423aa164db4ae407b9266d3bd654c8",
+      "bytes": 3521
+    },
+    {
+      "path": "output/enemy_patrol/death_down/f07.png.import",
+      "sha256": "d7049d0837128f986d21a22e7522b8fcf711452ed2ef776c6f2c63fd4ac12258",
+      "bytes": 944
+    },
+    {
+      "path": "output/enemy_patrol/hit_down/f00.png",
+      "sha256": "f7b817ff8c4c6ea9af4554c37873709e9419e83f93ec540f7dd96b9b7184482d",
+      "bytes": 4549
+    },
+    {
+      "path": "output/enemy_patrol/hit_down/f00.png.import",
+      "sha256": "60c7cb79e28b63ba99a9d4240abe85198d5f2cc98dcb4a3e252b8e8369c84e39",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_patrol/hit_down/f01.png",
+      "sha256": "23a499b5a29834a7fcdac2581064a8f2cfa0066fb8288659d36f945ca4e05527",
+      "bytes": 4525
+    },
+    {
+      "path": "output/enemy_patrol/hit_down/f01.png.import",
+      "sha256": "fb54b3a06d51c83f6e09d098b8e86b8e48d2ee1e1ef44836a83b767bf121e5f0",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_patrol/hit_down/f02.png",
+      "sha256": "3669ab94d167048fe19c5ad9d30336a904917482cda7ccf16ad9d9de6f671c17",
+      "bytes": 4573
+    },
+    {
+      "path": "output/enemy_patrol/hit_down/f02.png.import",
+      "sha256": "b6e0fa0afc4547d27a6997f73c8c70a09cbf2547fdedb2f6a3ac98368cd4ad9f",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_patrol/hit_down/f03.png",
+      "sha256": "f7b817ff8c4c6ea9af4554c37873709e9419e83f93ec540f7dd96b9b7184482d",
+      "bytes": 4549
+    },
+    {
+      "path": "output/enemy_patrol/hit_down/f03.png.import",
+      "sha256": "32a934f943b9537a1f792e704675ecf8e06b9ca76959cc34e0dc0c39bc60373f",
+      "bytes": 941
+    },
+    {
+      "path": "output/enemy_patrol/idle_down/f00.png",
+      "sha256": "f7b817ff8c4c6ea9af4554c37873709e9419e83f93ec540f7dd96b9b7184482d",
+      "bytes": 4549
+    },
+    {
+      "path": "output/enemy_patrol/idle_down/f00.png.import",
+      "sha256": "77817024c348edf5f83b37a3de04acf67876e3101fc846ba1a21a6c6c358d27f",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_patrol/idle_down/f01.png",
+      "sha256": "8460e366334991eb265f3fd120e17ae5319151976830bc245c4a70fae7f955b2",
+      "bytes": 4560
+    },
+    {
+      "path": "output/enemy_patrol/idle_down/f01.png.import",
+      "sha256": "91bdff1b38c3e9334ea3c4a564c4a9701fe40a579e55644f623f29031cbf70ed",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_patrol/idle_down/f02.png",
+      "sha256": "3e647e017caa0444b46c5d4a2b9cac7bfa2e9dbf0e949bbeda1f060f086c7108",
+      "bytes": 4549
+    },
+    {
+      "path": "output/enemy_patrol/idle_down/f02.png.import",
+      "sha256": "a3b83a1068d3df87834fd737ff1cc96887dd89a04b8a57010a8c1bdeba58ff70",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_patrol/idle_down/f03.png",
+      "sha256": "9677afcd311e046171c5e510a480a9943d3cc237a7d6dbcfcee25f1af4bae6af",
+      "bytes": 4501
+    },
+    {
+      "path": "output/enemy_patrol/idle_down/f03.png.import",
+      "sha256": "5b352daa55c855d57a53c3faeb457a0ef7e6cd96c76bef93ccdf0266251083de",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f00.png",
+      "sha256": "c08514b7eb8f7a81521191438a80664a47f8b2b7d4277e879541eb1c9ade8e8e",
+      "bytes": 4564
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f00.png.import",
+      "sha256": "8410378657f7008ffeeb05c80a082f12aa67f574815198c51c381242521f57eb",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f01.png",
+      "sha256": "8d78d4692c644a5168ecf91d4a2c10673fa1b85e4f67e62b4e939259b68e615f",
+      "bytes": 4432
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f01.png.import",
+      "sha256": "c49daef2ef98e5c4c7c81fb75cedaee0dfd66bc125933c98ff1ccf0c2f3a7183",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f02.png",
+      "sha256": "c42c63a4986cdd94f9eae848eb58ffa338465eeca31dbc39da7facd9ba8b99ea",
+      "bytes": 4468
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f02.png.import",
+      "sha256": "5600b7c1f63b70e786c2e2f173a5d59e2a538b69cb77c1e55c2b228f4ba03bc2",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f03.png",
+      "sha256": "df39b6ab539830b1506bd7e3d6d9f2c32e885ca5d430c2a2e959bc126057a88e",
+      "bytes": 4566
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f03.png.import",
+      "sha256": "d485ceca0a3886dd9532d4e6f4fec0e70e108716ddceda8e0698000baf72bac4",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f04.png",
+      "sha256": "c3a932f13a3e50a47a6d58fe41b862a28ea62102e3742fe81c033df685d3c3e4",
+      "bytes": 4551
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f04.png.import",
+      "sha256": "4edc43f9b374688d90b3e61b10bc13c5fd34b015fe3765cbb2fa7e287baa29a2",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f05.png",
+      "sha256": "465ef88b559daa82d5a2ca7fed7c220b7fb0ae80d47e3876d670d21f2d1cf4f4",
+      "bytes": 4432
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f05.png.import",
+      "sha256": "625da90849e172c00867b6b5170f28f191442d75b29d22ee27df7600ff7eee54",
+      "bytes": 942
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f06.png",
+      "sha256": "9017f6b94a89904580e1e5828fb7103da725d946e2aca43acdd454c280725512",
+      "bytes": 4460
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f06.png.import",
+      "sha256": "d716ab7c8d8cef07c6e3602771afd675d8190394de90fc21687a006df3069019",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f07.png",
+      "sha256": "c9934402a50e6f6d7f37323906de8934658c93beb942cf442234233bc66ae144",
+      "bytes": 4586
+    },
+    {
+      "path": "output/enemy_patrol/move_down/f07.png.import",
+      "sha256": "ea7404ad45400475b72fda0e45a0a5f10150a361ab971a28d9a463b4d503b106",
+      "bytes": 943
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down.png",
+      "sha256": "61d5b9093c0b1b990d026ce98f2d04462df6c6aeab696ff6d704a8800f63ea0f",
+      "bytes": 9022
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down.png.import",
+      "sha256": "73fae7b77c97ff6204915100f7eb7d5d69b7806b0987410315ff9e4dda368e02",
+      "bytes": 962
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down.png",
+      "sha256": "5986af52aaba86467656ff3ded441ac2b5b7e7784997694d48d7c5e312e9ad23",
+      "bytes": 13551
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down.png.import",
+      "sha256": "21e5130c65fe9e1709b7b8750564a13809a7d7c094e4e49f430b39b77dbcf4a1",
+      "bytes": 959
+    },
+    {
+      "path": "output/enemy_scout_drone/hit_down.png",
+      "sha256": "734eb1d07adad7ac2680037229870b3047f1b5a30d8d7bc8c5ad1b791fc7f219",
+      "bytes": 8284
+    },
+    {
+      "path": "output/enemy_scout_drone/hit_down.png.import",
+      "sha256": "1f0a458a826e8a829de4740c1b2e8bfbdd2cb0a56658da534bcc036023289a9d",
+      "bytes": 953
+    },
+    {
+      "path": "output/enemy_scout_drone/idle_down.png",
+      "sha256": "e9ec587c5902cd50694d5a3690cb4a646e6e7c487388060024c630d9bf03b0ea",
+      "bytes": 8133
+    },
+    {
+      "path": "output/enemy_scout_drone/idle_down.png.import",
+      "sha256": "69da4163d672b05e0d663ea976fa8df1dc39082742d6a7ea2ee039c03b9a05dd",
+      "bytes": 956
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down.png",
+      "sha256": "43a1c3579245d5d494243817e86bafeac83cece11d6bee074734327992615b1d",
+      "bytes": 11404
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down.png.import",
+      "sha256": "d3b2e8d24ca31f8de4ba92fa0664baded82627344fa3d067654d21d51fd20e39",
+      "bytes": 956
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f00.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "bytes": 3936
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f00.png.import",
+      "sha256": "f5c1d69f4f619135d9f8a361824127bc1c9068b90f1706d3334162c8dd209f34",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f01.png",
+      "sha256": "6b49acacf54e62247fb1058ac5e8e70429b44f7e8bbda01835811f55ebf8d3f3",
+      "bytes": 4158
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f01.png.import",
+      "sha256": "9578436a7a2050d41458fc143ccb9edd768af1a6b40ef3612236f1944e061dba",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f02.png",
+      "sha256": "9a32ede622424434bf8c97d019831c9a1be84f6526388501f396c87d604f59ad",
+      "bytes": 4163
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f02.png.import",
+      "sha256": "3c1c14474fa05e7a0f3c71a96686c68ddc589e2abc321c435c4d2a84d9960640",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f03.png",
+      "sha256": "5398601882651cdbd2f90ad3a8aafac2bd354139aba4951464bdc6684cf44cf5",
+      "bytes": 4184
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f03.png.import",
+      "sha256": "4ce7f7e0922d0513da3f1d15b66dd595244e80c45f0b7f57856e57a47049b35b",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f04.png",
+      "sha256": "de3fb5bb00a98ee5685cffbb2613fc7380ea5032b57b6e5a20cf1b9806e70023",
+      "bytes": 4177
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f04.png.import",
+      "sha256": "8e4e4db49ac7378fe6ab91be32f9ad4c055ba04557cdd96ebc6e400f254f01da",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f05.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "bytes": 3936
+    },
+    {
+      "path": "output/enemy_scout_drone/attack_down/f05.png.import",
+      "sha256": "34675ba1837168cde09af03c8b3cdbb3e00b6d0e6b8c005efd4b80106b624323",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f00.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "bytes": 3936
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f00.png.import",
+      "sha256": "6d3fb6530239fb626f0fe1f92646268e5b4d8baccc5c3991b68bf7f378be1747",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f01.png",
+      "sha256": "6c73342859ec3090498c6306beaffebc63d4e489618d3f316000cc262ec9b8dc",
+      "bytes": 4154
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f01.png.import",
+      "sha256": "fbb794d12512b641695d00ecc7f2ebd387497dce6dd2f5b71b2a5baa403c3f23",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f02.png",
+      "sha256": "f078f37af9ddb70de4d4d96f1fefe1a8537c6d9ac01fd7c6a9b8e0a76f9ad15d",
+      "bytes": 4146
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f02.png.import",
+      "sha256": "81167e2f64783885f0f8eb974f72e412de3337652b820e8fae6ae694bd62ec13",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f03.png",
+      "sha256": "5ad5bf715316fe2dac8c83ad6d89ed216a6217060d21c1d14285e32715c5b36f",
+      "bytes": 4153
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f03.png.import",
+      "sha256": "93ce12cc8fc30bbe50d41e29fa32407c02f8da87227ee0ae214e81be063381b4",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f04.png",
+      "sha256": "e9b3589dcf5f1044e48b391460c6c774cb7a678cf95aa22fc1f3eec797c7d33e",
+      "bytes": 4130
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f04.png.import",
+      "sha256": "06ec21ddf706a0b81e19f44420e591fd039855e083097d28d1e9bb9c7188bcb2",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f05.png",
+      "sha256": "4500141210ab3e590562d5b1d64ce6efb11e38b5ee85457c310fa020c369c8a9",
+      "bytes": 4160
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f05.png.import",
+      "sha256": "e024528a4cf97ccda0e17fc04f07f56f8574b55a01ffbf858ec0dcfddd6b93c9",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f06.png",
+      "sha256": "4500141210ab3e590562d5b1d64ce6efb11e38b5ee85457c310fa020c369c8a9",
+      "bytes": 4160
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f06.png.import",
+      "sha256": "bdc656a27f4e59ca3c0b9070486df4e010c51f88c471a22c56957a9a1e3b266e",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f07.png",
+      "sha256": "4500141210ab3e590562d5b1d64ce6efb11e38b5ee85457c310fa020c369c8a9",
+      "bytes": 4160
+    },
+    {
+      "path": "output/enemy_scout_drone/death_down/f07.png.import",
+      "sha256": "5de1e95d680720fb63d1585565d838e2d71b4bb7e119077643992dfb740c21bd",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_scout_drone/hit_down/f00.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "bytes": 3936
+    },
+    {
+      "path": "output/enemy_scout_drone/hit_down/f00.png.import",
+      "sha256": "d9ed892042946409d859e720e962c55e06b27ab58ab74e5e75a7fc7e80b4642f",
+      "bytes": 947
+    },
+    {
+      "path": "output/enemy_scout_drone/hit_down/f01.png",
+      "sha256": "6dd752451606ca5fa5f79bdd838211c5cb966816de01e4ee0e4ec4e6f1d58857",
+      "bytes": 4270
+    },
+    {
+      "path": "output/enemy_scout_drone/hit_down/f01.png.import",
+      "sha256": "a1e03b0dfa2014ba843e4aae241f6b20a56dcf6db59fa95fe5b5f118e681d20e",
+      "bytes": 947
+    },
+    {
+      "path": "output/enemy_scout_drone/hit_down/f02.png",
+      "sha256": "47f63ccb2886f29f2ae0b2aabb591b1280b2bb436b3224900a047f3c6bce5c88",
+      "bytes": 4247
+    },
+    {
+      "path": "output/enemy_scout_drone/hit_down/f02.png.import",
+      "sha256": "3f70df6afa711aef37ad4258c3c4ec14ef5679de80ef4a0e20597ad39d398486",
+      "bytes": 946
+    },
+    {
+      "path": "output/enemy_scout_drone/hit_down/f03.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "bytes": 3936
+    },
+    {
+      "path": "output/enemy_scout_drone/hit_down/f03.png.import",
+      "sha256": "eb6627be2fae956b9e17bedfa31cbb7c6d43a1524375ee6e009d749fd86236fc",
+      "bytes": 947
+    },
+    {
+      "path": "output/enemy_scout_drone/idle_down/f00.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "bytes": 3936
+    },
+    {
+      "path": "output/enemy_scout_drone/idle_down/f00.png.import",
+      "sha256": "9b1e60b5a9f564fe0f8f8b37e7f2b89a9032611ebb6334af0f6bcb53e49b6c58",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/idle_down/f01.png",
+      "sha256": "a6c6a965b0d6b5112b514badaf16b19ec70def0e2ee88a29c0c12175d29b1fbc",
+      "bytes": 4158
+    },
+    {
+      "path": "output/enemy_scout_drone/idle_down/f01.png.import",
+      "sha256": "ddc80b0005149525d72c2e2c964ae62a704ca4d4236fa0d60a84df6c58d3d2cb",
+      "bytes": 947
+    },
+    {
+      "path": "output/enemy_scout_drone/idle_down/f02.png",
+      "sha256": "640d2c78b72c5b512b3aa4ac10631d78415faee97197f91ab9f1a6bdb91c3a4e",
+      "bytes": 4146
+    },
+    {
+      "path": "output/enemy_scout_drone/idle_down/f02.png.import",
+      "sha256": "9ae7e35ec227541681473f52d1e542dd820d8bfad49a5a6cefc335a023fe63b4",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/idle_down/f03.png",
+      "sha256": "61fbfffee771470805e205c1d31de8d0a341df12dc285e7d5f63778de6f64c17",
+      "bytes": 4151
+    },
+    {
+      "path": "output/enemy_scout_drone/idle_down/f03.png.import",
+      "sha256": "921dd0f5a61b814816290d71a8a139c5397ebcd36bcf0ed6568a6720e229c8a0",
+      "bytes": 947
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f00.png",
+      "sha256": "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+      "bytes": 3936
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f00.png.import",
+      "sha256": "67d186c1d4acd13baea390cd0072eb0e7b8f4b3ce0352ea8a96303fd57913ae1",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f01.png",
+      "sha256": "c5ef8ed14c68015e020dc79107328090ac9069ee2722dc8cd76440ac1fa075ea",
+      "bytes": 4155
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f01.png.import",
+      "sha256": "7617381492513d14109d69f93a4ad51b85185ddd7f52d91eca060853ec1cf79d",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f02.png",
+      "sha256": "a6c6a965b0d6b5112b514badaf16b19ec70def0e2ee88a29c0c12175d29b1fbc",
+      "bytes": 4158
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f02.png.import",
+      "sha256": "88fd2eb7eced920eea08db82dbdbf7fe3538d9ffe3d5e60e92753fe9ed142f8a",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f03.png",
+      "sha256": "56c84d8fec88b8eaf5db3588a5f3cdbecdf1beb67d24e632a42ffcbd61ebbf46",
+      "bytes": 4161
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f03.png.import",
+      "sha256": "bc737ac523ff2ba5f134875791ce2374fb274efab5ce18cb9681a62cb656e5f4",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f04.png",
+      "sha256": "aded5f2d54959625749efb4a07abad29b657575b801612585373adda2f033105",
+      "bytes": 4146
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f04.png.import",
+      "sha256": "32bdb856d6b5f79495c13dc9aa0f0103e7357126e922d7ab83bff3119793874f",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f05.png",
+      "sha256": "5e66f1becf50d31a739e127b0d9b6907d085f97d8d77fd67830cb8039243f7ce",
+      "bytes": 4156
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f05.png.import",
+      "sha256": "efd0cb03d3e8d0760b16293a6dfdfffa41679ee17c2f64f1948b9d5bccec71a7",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f06.png",
+      "sha256": "6e901d3fb1bebebaa222cc4dcf13dd7af2710edfda319b05b7406ef069688f5f",
+      "bytes": 4151
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f06.png.import",
+      "sha256": "70cdd4d985a91e1db55d10283a99277d98e43240545e327900b1a50f83172332",
+      "bytes": 948
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f07.png",
+      "sha256": "5ec799821884d5caba697aace11753517735d25ddafbda265126a5cd3ac13379",
+      "bytes": 4150
+    },
+    {
+      "path": "output/enemy_scout_drone/move_down/f07.png.import",
+      "sha256": "54c3632f3d325b01e1c30e35b7bf232ad88e3b7e7a7cce41946e0b6f51ac7e1e",
+      "bytes": 947
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down.png",
+      "sha256": "d934e8482ce6c384d662dacef271775d9a37d58fbb185d607f219fa4c6c30319",
+      "bytes": 12886
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down.png.import",
+      "sha256": "89174975a7e393a1ca351674b949a728b2be2a31fab9faa31283635ce222ec6e",
+      "bytes": 964
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down.png",
+      "sha256": "2f62402dee904116759de7e0647d79a37f898c2726de2b08ba66bd75c61bd008",
+      "bytes": 18569
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down.png.import",
+      "sha256": "910f39062fb7b9aea1154fd17eb7f2b7b0781e66bf915cb3c9f450404131c307",
+      "bytes": 961
+    },
+    {
+      "path": "output/enemy_tracked_heavy/hit_down.png",
+      "sha256": "ecf5d6e39c19b312bfe55661fc4c045bf6fad1075085edff66bd794961fe7a98",
+      "bytes": 12189
+    },
+    {
+      "path": "output/enemy_tracked_heavy/hit_down.png.import",
+      "sha256": "76640c0fd925ec0d54fe039af8a426fdeaf9a90528f47f926a5963fc5c955616",
+      "bytes": 954
+    },
+    {
+      "path": "output/enemy_tracked_heavy/idle_down.png",
+      "sha256": "28baed3260747b32ab273c8828f36a81bc8655f4c229520875e784dd7f5c03a1",
+      "bytes": 12593
+    },
+    {
+      "path": "output/enemy_tracked_heavy/idle_down.png.import",
+      "sha256": "a51183a99dc5a2e5643cb52183e7574f7ed9dc85b3e57d7229a82d86702a98ac",
+      "bytes": 957
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down.png",
+      "sha256": "5315a7af9c59ba1aa74702de8dc3318609724c6dab0bc5d9eb395c7a728276a2",
+      "bytes": 14758
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down.png.import",
+      "sha256": "1a7406f26c4c6ac9eeb3fbd46330fb1d0706d85a856debbcf7c068b1296100ad",
+      "bytes": 957
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f00.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "bytes": 9187
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f00.png.import",
+      "sha256": "33d835ce54e2d4e42580e5816ef96b42b24f2e6d85c387416472f9fc3c51f42d",
+      "bytes": 952
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f01.png",
+      "sha256": "8cb2e615704090bc472d2dccacde65194f8d7c588ace1991dac2f37d8039c72a",
+      "bytes": 9188
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f01.png.import",
+      "sha256": "47977f16c6ba4cd8f17392fee7eed356d29e376e370b2213345fb650f376d913",
+      "bytes": 952
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f02.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "bytes": 9187
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f02.png.import",
+      "sha256": "77503c17863ec6082ab1d3957bafa1410de9db469bba873c282605aa3f254b84",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f03.png",
+      "sha256": "7a4476dc366e5665d5b732253d26aaa48421d4c3819f5c1da25173ab2d3b5e47",
+      "bytes": 9055
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f03.png.import",
+      "sha256": "afad8d13983b272f27600b207f129614ae7b46e7637e74982ac1f328431e02f9",
+      "bytes": 952
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f04.png",
+      "sha256": "d3ea71ca5721001bb5971e0f3324d0ab218bf2930ec96b580d3cfc33582c21c7",
+      "bytes": 9071
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f04.png.import",
+      "sha256": "3264869230df591518a4695703f56f8518b78db32f089e9a0335cfc31007a780",
+      "bytes": 952
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f05.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "bytes": 9187
+    },
+    {
+      "path": "output/enemy_tracked_heavy/attack_down/f05.png.import",
+      "sha256": "038761ff33915713949e79f6904d5904c86609f571b1f1ad70f64dd134af1936",
+      "bytes": 952
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f00.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "bytes": 9187
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f00.png.import",
+      "sha256": "87725a6c4071209d2ce5d5c4bac32afa927b5b8946dd884f114514d82b8ec410",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f01.png",
+      "sha256": "3307f152b6a09894cf3e1023fd6b2360676b6c5ff7617169604adb26b58b3078",
+      "bytes": 8963
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f01.png.import",
+      "sha256": "3ae2e87c4e7a6cece6699186b52e0196b8491fee06bd85553fc590b05af01f8c",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f02.png",
+      "sha256": "8dc2dc5844447052df1097526cd79f70eb02b3b3126a2847dc13e04309b67e1e",
+      "bytes": 8711
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f02.png.import",
+      "sha256": "b4e1949b4e6972a93b6fcfd6ccf3029d37fd4e43c7d546318915697f9f794fbf",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f03.png",
+      "sha256": "c239302b11ef8b002c59c1f7ae32697bdf181b0c9981c020701551994ec5fe95",
+      "bytes": 8445
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f03.png.import",
+      "sha256": "b7d01f5f4014cda8ab74858ce068b0d99c06a20f8618c2e10d3cad7c622b25ad",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f04.png",
+      "sha256": "f7bf5008424a47e343610831b8b54f595a4ac188852d2aa8a68a14a22c61f6c8",
+      "bytes": 8158
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f04.png.import",
+      "sha256": "f29cef4d8c0cc1246fe4adc58833e4169e01b2b1aea20702ba3b430c32af10ba",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f05.png",
+      "sha256": "e0c40e11e16ed1c86ba17c9660e951863e7708110a71cbc583d0640fac95fd99",
+      "bytes": 8230
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f05.png.import",
+      "sha256": "de6bc8190c972e61cb0b6514edee9dda281e5585e154ded67880059db371841f",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f06.png",
+      "sha256": "f7bf5008424a47e343610831b8b54f595a4ac188852d2aa8a68a14a22c61f6c8",
+      "bytes": 8158
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f06.png.import",
+      "sha256": "a6d06c7694b0cb44a00484ef2ffa9d3f729cb6106c25e47a29858c9ef0f9f868",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f07.png",
+      "sha256": "f7bf5008424a47e343610831b8b54f595a4ac188852d2aa8a68a14a22c61f6c8",
+      "bytes": 8158
+    },
+    {
+      "path": "output/enemy_tracked_heavy/death_down/f07.png.import",
+      "sha256": "6883200733db416f94187692f53243b1d6977c6f75dd2ff6dc1aa444656cc2a0",
+      "bytes": 951
+    },
+    {
+      "path": "output/enemy_tracked_heavy/hit_down/f00.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "bytes": 9187
+    },
+    {
+      "path": "output/enemy_tracked_heavy/hit_down/f00.png.import",
+      "sha256": "d58b063229b62181b06669e985002a480120a48488c16775ee749ed817b73e61",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_tracked_heavy/hit_down/f01.png",
+      "sha256": "dfbbf184f693841dc6f69dd345bdeb12c516eba99531c81d06400441f6b94c1d",
+      "bytes": 9136
+    },
+    {
+      "path": "output/enemy_tracked_heavy/hit_down/f01.png.import",
+      "sha256": "9869737d4dfb8d0416b8f25f376a05b78b3541b1b0415cd904e831c525858ca4",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_tracked_heavy/hit_down/f02.png",
+      "sha256": "3218abb431838a921d2165a9d3d638f2c7d75987d4f5ac9f98f69071b21f71f0",
+      "bytes": 9150
+    },
+    {
+      "path": "output/enemy_tracked_heavy/hit_down/f02.png.import",
+      "sha256": "241885c635dea89f1f59ea50cf10dea6fb5200f6d11489ed8bbb982b42551c07",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_tracked_heavy/hit_down/f03.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "bytes": 9187
+    },
+    {
+      "path": "output/enemy_tracked_heavy/hit_down/f03.png.import",
+      "sha256": "34fa4ebd5e8e639805e6f61e08714dad96af2f3caf986a2009cce0756990c464",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_tracked_heavy/idle_down/f00.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "bytes": 9187
+    },
+    {
+      "path": "output/enemy_tracked_heavy/idle_down/f00.png.import",
+      "sha256": "6b956e07c0e4f8194e763e40d3dc0e948001a765f1326caef6cbd2f175d735b7",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_tracked_heavy/idle_down/f01.png",
+      "sha256": "765c42c18839f43a9975365d9f8a642ed37f28997ed4fbb05f0e7e77decd26d2",
+      "bytes": 9213
+    },
+    {
+      "path": "output/enemy_tracked_heavy/idle_down/f01.png.import",
+      "sha256": "482918995a555be0b00b276ffea66f693463724ccf24a53c4dd08957c018c0bc",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_tracked_heavy/idle_down/f02.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "bytes": 9187
+    },
+    {
+      "path": "output/enemy_tracked_heavy/idle_down/f02.png.import",
+      "sha256": "7bce47c5d63d046dc0823d9445ddb8e6471133d23ad8ede37191df8b7039a5df",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_tracked_heavy/idle_down/f03.png",
+      "sha256": "1b38ccab5d081e148b8cb85657baef458b03a5f08b02d3f3c533e16278a189fd",
+      "bytes": 9188
+    },
+    {
+      "path": "output/enemy_tracked_heavy/idle_down/f03.png.import",
+      "sha256": "56e32ca457d417ed9111b0c3f6a10958a93e9b8c84a50533579d1d3553f4d2db",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f00.png",
+      "sha256": "ecccee5ace2d92bf8694b91597ca0b7ba2fdd7de157a72ad9f6e09b43df34c85",
+      "bytes": 9187
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f00.png.import",
+      "sha256": "056e04d0389e0864e233bc19219e2e6d91c947c1371618abb5f6a91187593f13",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f01.png",
+      "sha256": "a7e6724167ae15af43b346f3f1df2bd62313fe0b323492a26fd865b42ba56463",
+      "bytes": 9223
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f01.png.import",
+      "sha256": "eae02902818aac0e8e1d053276935aefa72d03f2c00bd5352bb761f0d26b6944",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f02.png",
+      "sha256": "9832ff68c2763e897ebe98adfc68689a0ca89d254748ecff0a69ba05ddea8ec8",
+      "bytes": 9203
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f02.png.import",
+      "sha256": "59abc03db8e87d87f95bffba64b199e57485493f76417ad3c2ee81a3de89c4f3",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f03.png",
+      "sha256": "c08d80ec4935479f1db8fdee953099255528ecc80757e7aec283b4b1a5fdf1bf",
+      "bytes": 9205
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f03.png.import",
+      "sha256": "f5c31df4542c2758628e78fd8040641a08e54f6a653fbbac4b622c5459d4166d",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f04.png",
+      "sha256": "93a596fc02b905e3e7a463088b3fd8c28dd423dac69d8a5aec094ccfbd6a22ef",
+      "bytes": 9223
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f04.png.import",
+      "sha256": "d5262be7d7ff81f8450cc946e8700817fbad673de1cb87d5033123e7f8d4f9fb",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f05.png",
+      "sha256": "41e1740487d05e73a9475a856813e58371a7d7cc2e76221ae621ea13cae3a78b",
+      "bytes": 9193
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f05.png.import",
+      "sha256": "e6fe19e734e5ebcf2142b7bb67ae24dea9614b39c35f03f9f6fb36ab6657603e",
+      "bytes": 950
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f06.png",
+      "sha256": "47aebbedc19bb8e02f3daa65d59919706e1925fea4fc7cfa31e1bf3cd6a4e279",
+      "bytes": 9194
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f06.png.import",
+      "sha256": "1ae6df7a455f75cafef275b6210d8cf0ee931fadb53e9a610e81c8ab3808b9c7",
+      "bytes": 949
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f07.png",
+      "sha256": "fd0a177e90e6ef1a4025e9fa7f46031b5b7e77cb731476a2c166bb0284c4abfe",
+      "bytes": 9206
+    },
+    {
+      "path": "output/enemy_tracked_heavy/move_down/f07.png.import",
+      "sha256": "6a914f294b917f70d164d46ce76f629fab9b23df6a74b2909df08deab86b98d9",
+      "bytes": 950
+    },
+    {
+      "path": "qa/assembly_integrity.json",
+      "sha256": "c0302420999da8fe19f097d8c65c547b1477d992be410be855b33577eaeaa624",
+      "bytes": 18887
+    },
+    {
+      "path": "qa/assembly_runtime.json",
+      "sha256": "ad6a3cc63d0450a69b6a8b72c7c052e10c5d5ed3db630d92741a882f860876f8",
+      "bytes": 6655
+    },
+    {
+      "path": "qa/assembly_runtime.png",
+      "sha256": "1d3b77f40e158d2543c9924ad7fde2ab6cf25473d88f34c77b5bebd72f34cb1c",
+      "bytes": 282717
+    },
+    {
+      "path": "reviewed_packages/enemy_cutter_actions_v010_r1_2026-10-06.zip",
+      "sha256": "c154a145e56aa10cd6394507350a47dc21ead655915c73e7f74131e146f9f948",
+      "bytes": 1448992
+    },
+    {
+      "path": "reviewed_packages/enemy_drone_actions_v011_2026-10-06.zip",
+      "sha256": "13a4942d34d0ceabac7473c1689aa4784bc0c6f1555ff68817ed9d93159dab3e",
+      "bytes": 1378217
+    },
+    {
+      "path": "reviewed_packages/enemy_heavy_actions_v007_2026-10-06.zip",
+      "sha256": "05350a58ef0a0e44ee19c3c6af69a2f38048f4e1c5d4ce24afae5076ece14494",
+      "bytes": 974073
+    },
+    {
+      "path": "reviewed_packages/enemy_heavy_actions_v009_2026-10-06.zip",
+      "sha256": "329e2fb60b0e7930a5178e92b4fe014e526bc5aa771f1a8b53e69eee8b15bf18",
+      "bytes": 1753052
+    },
+    {
+      "path": "reviewed_packages/enemy_patrol_actions_v008_2026-10-06.zip",
+      "sha256": "4a3ab26e04abb5816c505fb0c0f851b8042886d8ea3d2b8516b1923360af74b4",
+      "bytes": 1098713
+    },
+    {
+      "path": "review_reports/review-cutter-actions-v010-r1.md",
+      "sha256": "3c71b7d3718d7209dea5f80c9989cffaaa60665dc41a5950f83799cd749c29d0",
+      "bytes": 2047
+    },
+    {
+      "path": "review_reports/review-drone-actions-v011.md",
+      "sha256": "01015c001d54e5bf69133e2649b8e7569f93aae76a38bf039835fca0f45d821e",
+      "bytes": 2429
+    },
+    {
+      "path": "review_reports/review-heavy-actions-v007.md",
+      "sha256": "12568b0f114cfde1e7ab4195926db7e7cd09ffa3de57662bb1bc72eed3856cf8",
+      "bytes": 2966
+    },
+    {
+      "path": "review_reports/review-heavy-actions-v009.md",
+      "sha256": "caabba8ba4b3d753ed48f7ee80a0cdbfa5ce31a98833758c9befa4213bdf381b",
+      "bytes": 3324
+    },
+    {
+      "path": "review_reports/review-patrol-actions-v008.md",
+      "sha256": "5b4ee8f13b62198d73571de50fee031cbd63b24bd7d4f1208ed049e0632c8436",
+      "bytes": 3963
+    }
+  ]
+}

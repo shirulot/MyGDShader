@@ -1,0 +1,964 @@
+{
+  "status": "PHASE_B_CANDIDATE_PENDING_VISUAL_REVIEW",
+  "direction": "up_right",
+  "source_file": "source/walk_up_right_joint_edit_raw_v011.png",
+  "source_sha256": "3d2c647d2996a9080fa732c48c903ec3dcaa4bfc7b1f9761363130f071722ae4",
+  "source_size": [
+    1448,
+    1086
+  ],
+  "common_sheet_transform": [
+    0.17679558011049723,
+    0.17679558011049723
+  ],
+  "no_per_frame_bbox_fit": true,
+  "preserve_existing_opaque_joint_core": true,
+  "protection": [
+    {
+      "part": "body",
+      "rule": "all opaque body source pixels"
+    },
+    {
+      "part": "arm_left_upper",
+      "source_y": [
+        0,
+        48
+      ],
+      "source_rect": [
+        16,
+        46,
+        8,
+        3
+      ],
+      "rule": "rigid shell and transparent contour"
+    },
+    {
+      "part": "arm_left_lower",
+      "source_y": [
+        52,
+        95
+      ],
+      "source_rect": [
+        15,
+        52,
+        9,
+        8
+      ],
+      "rule": "rigid shell and transparent contour"
+    },
+    {
+      "part": "arm_right_upper",
+      "source_y": [
+        0,
+        49
+      ],
+      "source_rect": [
+        34,
+        47,
+        11,
+        3
+      ],
+      "rule": "rigid shell and transparent contour"
+    },
+    {
+      "part": "arm_right_lower",
+      "source_y": [
+        53,
+        95
+      ],
+      "source_rect": [
+        34,
+        53,
+        13,
+        10
+      ],
+      "rule": "rigid shell and transparent contour"
+    },
+    {
+      "part": "leg_left_upper",
+      "source_y": [
+        0,
+        61
+      ],
+      "source_rect": [
+        21,
+        53,
+        9,
+        9
+      ],
+      "rule": "rigid shell and transparent contour"
+    },
+    {
+      "part": "leg_left_lower",
+      "source_y": [
+        66,
+        69
+      ],
+      "source_rect": [
+        19,
+        66,
+        12,
+        4
+      ],
+      "rule": "rigid shell and transparent contour"
+    },
+    {
+      "part": "leg_left_end",
+      "source_y": [
+        0,
+        95
+      ],
+      "source_rect": [
+        18,
+        71,
+        13,
+        7
+      ],
+      "rule": "rigid shell and transparent contour"
+    },
+    {
+      "part": "leg_right_upper",
+      "source_y": [
+        0,
+        61
+      ],
+      "source_rect": [
+        29,
+        54,
+        10,
+        8
+      ],
+      "rule": "rigid shell and transparent contour"
+    },
+    {
+      "part": "leg_right_lower",
+      "source_y": [
+        66,
+        70
+      ],
+      "source_rect": [
+        30,
+        66,
+        12,
+        5
+      ],
+      "rule": "rigid shell and transparent contour"
+    },
+    {
+      "part": "leg_right_end",
+      "source_y": [
+        0,
+        95
+      ],
+      "source_rect": [
+        29,
+        72,
+        16,
+        8
+      ],
+      "rule": "rigid shell and transparent contour"
+    }
+  ],
+  "records": [
+    {
+      "frame": 0,
+      "file": "frames/walk/up_right/robot_walk_up_right_f00_v011.png",
+      "sha256": "0ddd98ff63a2e793ee530afa84c14983888beb13a93a949fc0325cb2db866a4e",
+      "changed_pixels": 64,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            19,
+            46.7
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            19.020703415307448,
+            50.82305364609711
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            37,
+            47.7
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            37.9482090064032,
+            52.07045760535163
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            24,
+            54.7
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            28.111009960052968,
+            63.815898041791904
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            26,
+            70.49
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            34,
+            55.7
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            34.84060420517114,
+            64.66065759697626
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            33,
+            72.51
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 1,
+      "file": "frames/walk/up_right/robot_walk_up_right_f01_v011.png",
+      "sha256": "a2e5dd1565ff8e6daa39c82cf6520be13988c85adcb0bc25eeb5449e27b4a679",
+      "changed_pixels": 66,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            19,
+            47
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            18.608981451958353,
+            51.10452244421777
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            37,
+            48
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            38.379789625977686,
+            52.25396057669137
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            24,
+            55
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            27.867097357298736,
+            64.22201485734941
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            25.2,
+            70.694
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            34,
+            56
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            37.099031474906305,
+            64.44961560767943
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            33.8,
+            71.806
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "file": "frames/walk/up_right/robot_walk_up_right_f02_v011.png",
+      "sha256": "2450513bcdad7c701fa6f0a5e156679917d500cd4f847dfd82c4841dc7b6dc35",
+      "changed_pixels": 70,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            19,
+            46.6
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            18,
+            50.6
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            37,
+            47.6
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            39,
+            51.6
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            24,
+            54.6
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            26.20053499254626,
+            64.35487804878049
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            24,
+            71
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            34,
+            55.6
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            38.26175033470472,
+            63.52700978204545
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            35,
+            70.9
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "file": "frames/walk/up_right/robot_walk_up_right_f03_v011.png",
+      "sha256": "ccf032071995ed1814748d65950daaae78e8f8cc99024e577cbadd9fd4be2ec0",
+      "changed_pixels": 80,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            19,
+            46.4
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            17.41347639216956,
+            50.205646179270566
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            37,
+            47.4
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            39.57529468576648,
+            51.05620804679697
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            24,
+            54.4
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            23.942307009562473,
+            64.39983357455785
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            22.8,
+            71.306
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            34,
+            55.4
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            38.41583264174399,
+            63.242220481477695
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            36.2,
+            70.994
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "file": "frames/walk/up_right/robot_walk_up_right_f04_v011.png",
+      "sha256": "f97e3283b1caed5ecc4356c96eb5fe2f39e5c97a975f969ecca86555afd0313d",
+      "changed_pixels": 73,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            19,
+            46.7
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            17.041471741271263,
+            50.32824572758806
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            37,
+            47.7
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            39.92744068043938,
+            51.080841768333535
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            24,
+            54.7
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            23.582794108745745,
+            64.69129317177224
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            22,
+            71.51
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            34,
+            55.7
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            38.40120480809841,
+            63.55043923848669
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            37,
+            71.49
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "file": "frames/walk/up_right/robot_walk_up_right_f05_v011.png",
+      "sha256": "f8bfd9179cfa11c770674756be4de787bce19afd8879cbc24627955116448c93",
+      "changed_pixels": 87,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            19,
+            47
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            17.41347639216956,
+            50.80564617927057
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            37,
+            48
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            39.57529468576648,
+            51.65620804679697
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            24,
+            55
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            26.28531218294392,
+            64.73536584964778
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            22.8,
+            70.806
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            34,
+            56
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            38.295429619847624,
+            63.908810554118475
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            36.2,
+            71.694
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "file": "frames/walk/up_right/robot_walk_up_right_f06_v011.png",
+      "sha256": "52aa03460e4202af8c083fd14f481ee623bdb3c402d181c2f8de78ed43dcc634",
+      "changed_pixels": 72,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            19,
+            46.6
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            18,
+            50.6
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            37,
+            47.6
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            39,
+            51.6
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            24,
+            54.6
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            27.633142196807356,
+            63.91666666666667
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            24,
+            69.9
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            34,
+            55.6
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            36.82166272498033,
+            64.1462400777451
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            35,
+            72
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "file": "frames/walk/up_right/robot_walk_up_right_f07_v011.png",
+      "sha256": "e0e041973003856559a7b1248b673567b9fa2b1854044f3f82ae4f5db87ff941",
+      "changed_pixels": 79,
+      "protected_pixels_changed": 0,
+      "outside_mask_changed": 0,
+      "regions": [
+        {
+          "id": "arm_left_shoulder",
+          "center": [
+            19,
+            46.4
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_left_elbow",
+          "center": [
+            18.608981451958353,
+            50.50452244421777
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "arm_right_shoulder",
+          "center": [
+            37,
+            47.4
+          ],
+          "rx": 3.4,
+          "ry": 3.4
+        },
+        {
+          "id": "arm_right_elbow",
+          "center": [
+            38.379789625977686,
+            51.65396057669137
+          ],
+          "rx": 3.5,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_left_hip",
+          "center": [
+            24,
+            54.4
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_left_knee",
+          "center": [
+            27.984786870605234,
+            63.57177592377028
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_left_ankle",
+          "center": [
+            25.2,
+            69.994
+          ],
+          "rx": 4,
+          "ry": 3.5
+        },
+        {
+          "id": "leg_right_hip",
+          "center": [
+            34,
+            55.4
+          ],
+          "rx": 3.2,
+          "ry": 3.2
+        },
+        {
+          "id": "leg_right_knee",
+          "center": [
+            35.04014084051132,
+            64.33969278174034
+          ],
+          "rx": 4.8,
+          "ry": 4.8
+        },
+        {
+          "id": "leg_right_ankle",
+          "center": [
+            33.8,
+            72.306
+          ],
+          "rx": 4,
+          "ry": 3.5
+        }
+      ]
+    }
+  ]
+}

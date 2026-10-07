@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://csykt3uswrxwy"]
+
+[ext_resource type="Script" uid="uid://c3lcc563ovilu" path="res://scenes/m0/ember_harvest.gd" id="1_kqhls"]
+[ext_resource type="PackedScene" uid="uid://bw4g77fxkfsi6" path="res://scenes/m0/player.tscn" id="1_qcwdb"]
+[ext_resource type="PackedScene" uid="uid://bcpswyqbnkkha" path="res://scenes/m0/energy_station.tscn" id="3_kqhls"]
+[ext_resource type="Texture2D" uid="uid://ckrbladfyagjb" path="res://assets/shader-learning/common/color_test_512.png" id="3_ur1lo"]
+[ext_resource type="Script" uid="uid://cbg21h5cxykdd" path="res://scenes/m0/ui.gd" id="5_d8sqx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwb8w"]
+size = Vector2(709, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ita4j"]
+size = Vector2(17.5, 738)
+
+[sub_resource type="LabelSettings" id="LabelSettings_d8sqx"]
+line_spacing = 0.0
+font_size = 22
+
+[sub_resource type="LabelSettings" id="LabelSettings_kqhls"]
+line_spacing = 0.0
+font_size = 22
+
+[sub_resource type="LabelSettings" id="LabelSettings_ita4j"]
+font_size = 22
+font_color = Color(1, 0.26666668, 0, 1)
+
+[node name="EmberHarvest" type="Node2D" unique_id=158503554]
+script = ExtResource("1_kqhls")
+
+[node name="ColorTest512" type="Sprite2D" parent="." unique_id=1698577718]
+position = Vector2(360, 361.5)
+scale = Vector2(1.3984375, 1.4042969)
+texture = ExtResource("3_ur1lo")
+
+[node name="Block" type="Node2D" parent="." unique_id=1967506258]
+
+[node name="BottomBlock" type="StaticBody2D" parent="Block" unique_id=97954220]
+position = Vector2(2560, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Block/BottomBlock" unique_id=1360502419]
+position = Vector2(-2205, 730)
+shape = SubResource("RectangleShape2D_mwb8w")
+
+[node name="TopBlock" type="StaticBody2D" parent="Block" unique_id=1058085116]
+position = Vector2(1280, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Block/TopBlock" unique_id=1831929445]
+position = Vector2(-918.5, -1.5)
+shape = SubResource("RectangleShape2D_mwb8w")
+
+[node name="RightBlock" type="StaticBody2D" parent="Block" unique_id=148086831]
+position = Vector2(640, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Block/RightBlock" unique_id=1069386321]
+position = Vector2(85, 357)
+shape = SubResource("RectangleShape2D_ita4j")
+
+[node name="LeftBlock" type="StaticBody2D" parent="Block" unique_id=74160472]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Block/LeftBlock" unique_id=1279963448]
+position = Vector2(-3.5, 360)
+shape = SubResource("RectangleShape2D_ita4j")
+
+[node name="Player" parent="." unique_id=1152978030 instance=ExtResource("1_qcwdb")]
+y_sort_enabled = true
+position = Vector2(360, 360)
+collision_mask = 5
+
+[node name="EnergyStationA" parent="." unique_id=1635534475 instance=ExtResource("3_kqhls")]
+y_sort_enabled = true
+position = Vector2(360, 200)
+
+[node name="EnergyStationB" parent="." unique_id=1107327371 instance=ExtResource("3_kqhls")]
+y_sort_enabled = true
+position = Vector2(230, 425)
+
+[node name="EnergyStationC" parent="." unique_id=1629162643 instance=ExtResource("3_kqhls")]
+y_sort_enabled = true
+position = Vector2(490, 425)
+
+[node name="GameTimer" type="Timer" parent="." unique_id=390536890]
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1193779289]
+
+[node name="UI" type="Control" parent="CanvasLayer" unique_id=556949072]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_d8sqx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI" unique_id=1883939249]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 265.0
+offset_bottom = 92.0
+
+[node name="LifeLabel" type="Label" parent="CanvasLayer/UI/VBoxContainer" unique_id=1644856706]
+custom_maximum_size = Vector2(-1, 32)
+layout_mode = 2
+text = "HP:3
+"
+label_settings = SubResource("LabelSettings_d8sqx")
+
+[node name="EnergyLabel" type="Label" parent="CanvasLayer/UI/VBoxContainer" unique_id=458356404]
+layout_mode = 2
+text = "Energy:0"
+label_settings = SubResource("LabelSettings_kqhls")
+
+[node name="Countdown" type="Label" parent="CanvasLayer/UI" unique_id=1790249762]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -38.5
+offset_top = 15.0
+offset_right = 38.5
+offset_bottom = 38.0
+grow_horizontal = 2
+text = "Timer:120"
+label_settings = SubResource("LabelSettings_ita4j")
+horizontal_alignment = 1
+
+[connection signal="energy_collected" from="EnergyStationA" to="." method="_add_point"]
+[connection signal="energy_collected" from="EnergyStationB" to="." method="_add_point"]
+[connection signal="energy_collected" from="EnergyStationC" to="." method="_add_point"]
+[connection signal="timeout" from="GameTimer" to="CanvasLayer/UI" method="_on_game_timer_timeout"]

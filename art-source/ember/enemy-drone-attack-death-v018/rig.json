@@ -1,0 +1,467 @@
+{
+  "version": "v018-drone-attack-death",
+  "unit": "enemy_scout_drone",
+  "canvas": [
+    128,
+    128
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "directions": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "configs": {
+    "down_left": {
+      "source": "res://source/down_left.png",
+      "source_sha256": "6e98ee35c741152a436aa8e90fb597e1b64ae87299c16c723c5f0789d8b0356a",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            48.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            79.5,
+            69.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ],
+      "ground_edge_y": 83,
+      "fall_distance": 21,
+      "probe_rect": [
+        55,
+        75,
+        6,
+        5
+      ],
+      "sensor_rect": [
+        57,
+        67,
+        2,
+        2
+      ],
+      "probe_visibility": "exposed_fixed_tip_over_fixed_sleeve"
+    },
+    "left": {
+      "source": "res://source/left.png",
+      "source_sha256": "a1ce3052a99109fab887c3efb515c511ba932c83388ab040330385311feba824",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            64.5,
+            57.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            64.5,
+            72.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ],
+      "ground_edge_y": 82,
+      "fall_distance": 22,
+      "probe_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "probe_visibility": "occluded_by_casing_or_near_pod"
+    },
+    "up_left": {
+      "source": "res://source/up_left.png",
+      "source_sha256": "e153d5fe5abe5f09c7ffdaadbc3c159e557a662499ef6f00a11ad4aca45f3a68",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            79.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            48.5,
+            70.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ],
+      "ground_edge_y": 84,
+      "fall_distance": 20,
+      "probe_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "probe_visibility": "occluded_by_casing_or_near_pod"
+    },
+    "up": {
+      "source": "res://source/up.png",
+      "source_sha256": "b0785d7971ca0fc4c6c869e07a3cb90771f7e944f864ee9553f921770fa3128e",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            85.5,
+            64.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            41.5,
+            64.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ],
+      "ground_edge_y": 79,
+      "fall_distance": 25,
+      "probe_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "probe_visibility": "occluded_by_casing_or_near_pod"
+    },
+    "up_right": {
+      "source": "res://source/up_right.png",
+      "source_sha256": "06a37e6a109b5e0e439b079d24f2125ecbd5b3ea55c9428f342b320725637775",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            79.5,
+            70.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            48.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ],
+      "ground_edge_y": 84,
+      "fall_distance": 20,
+      "probe_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sensor_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "probe_visibility": "occluded_by_casing_or_near_pod"
+    },
+    "right": {
+      "source": "res://source/right.png",
+      "source_sha256": "5fab6a03670156d18cb3d14fe4cb4ad2c76d87fc3296259db4227518a26a898e",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            64.5,
+            72.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            64.5,
+            57.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ],
+      "ground_edge_y": 82,
+      "fall_distance": 22,
+      "probe_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sensor_rect": [
+        73,
+        67,
+        1,
+        2
+      ],
+      "probe_visibility": "occluded_by_casing_or_near_pod"
+    },
+    "down_right": {
+      "source": "res://source/down_right.png",
+      "source_sha256": "8cef29b2ad627d52c256a812133b6a3d943ddbdc2a741bd67c0043c8c018acca",
+      "fans": [
+        {
+          "id": "anatomical_right",
+          "center": [
+            48.5,
+            69.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": 1
+        },
+        {
+          "id": "anatomical_left",
+          "center": [
+            79.5,
+            58.5
+          ],
+          "radius": [
+            6.5,
+            4.5
+          ],
+          "spin": -1
+        }
+      ],
+      "ground_edge_y": 83,
+      "fall_distance": 21,
+      "probe_rect": [
+        67,
+        75,
+        6,
+        5
+      ],
+      "sensor_rect": [
+        69,
+        67,
+        2,
+        2
+      ],
+      "probe_visibility": "exposed_fixed_tip_over_fixed_sleeve"
+    }
+  },
+  "preserved": [
+    {
+      "action": "attack_down",
+      "atlas_sha256": "61d5b9093c0b1b990d026ce98f2d04462df6c6aeab696ff6d704a8800f63ea0f",
+      "frame_hashes": [
+        "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+        "6b49acacf54e62247fb1058ac5e8e70429b44f7e8bbda01835811f55ebf8d3f3",
+        "9a32ede622424434bf8c97d019831c9a1be84f6526388501f396c87d604f59ad",
+        "5398601882651cdbd2f90ad3a8aafac2bd354139aba4951464bdc6684cf44cf5",
+        "de3fb5bb00a98ee5685cffbb2613fc7380ea5032b57b6e5a20cf1b9806e70023",
+        "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33"
+      ]
+    },
+    {
+      "action": "death_down",
+      "atlas_sha256": "5986af52aaba86467656ff3ded441ac2b5b7e7784997694d48d7c5e312e9ad23",
+      "frame_hashes": [
+        "8996f4f7dc0a96fc3f81910d7fb4a91717ee30c36d83702c1a05bed48e645a33",
+        "6c73342859ec3090498c6306beaffebc63d4e489618d3f316000cc262ec9b8dc",
+        "f078f37af9ddb70de4d4d96f1fefe1a8537c6d9ac01fd7c6a9b8e0a76f9ad15d",
+        "5ad5bf715316fe2dac8c83ad6d89ed216a6217060d21c1d14285e32715c5b36f",
+        "e9b3589dcf5f1044e48b391460c6c774cb7a678cf95aa22fc1f3eec797c7d33e",
+        "4500141210ab3e590562d5b1d64ce6efb11e38b5ee85457c310fa020c369c8a9",
+        "4500141210ab3e590562d5b1d64ce6efb11e38b5ee85457c310fa020c369c8a9",
+        "4500141210ab3e590562d5b1d64ce6efb11e38b5ee85457c310fa020c369c8a9"
+      ]
+    }
+  ],
+  "fan_source": "res://source/rotor_well_master.png",
+  "fan_source_sha256": "8824eeff102796d523fa8fab1f17f90c5716b7f34097987c0d5ea8151c2a3a94",
+  "rotor_rect": [
+    223,
+    165,
+    583,
+    584
+  ],
+  "well_rect": [
+    1000,
+    192,
+    535,
+    528
+  ],
+  "method": "Approved fixed direction sources and v011 rotor planes. Idle hover and hit rigid-body roll follow approved v011 timing. No per-frame generated art.",
+  "actions": {
+    "attack": {
+      "frame_count": 6,
+      "fps": 10,
+      "loop": false,
+      "body_y": [
+        0,
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "probe_y": [
+        0,
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "rotor_angles": [
+        0,
+        22.5,
+        45,
+        67.5,
+        22.5,
+        0
+      ],
+      "power": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "death": {
+      "frame_count": 8,
+      "fps": 10,
+      "loop": false,
+      "drop_fraction": [
+        0,
+        0.125,
+        0.3333333333333333,
+        0.5833333333333334,
+        0.8333333333333334,
+        1,
+        1,
+        1
+      ],
+      "probe_y": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rotor_angles": [
+        0,
+        25,
+        42,
+        52,
+        58,
+        60,
+        60,
+        60
+      ],
+      "power": [
+        1,
+        0.6,
+        0.2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "death_motion": "Rigid power-loss landing. No hidden pod geometry is fabricated: shell, pods and struts retain approved static geometry; rotor braking and ground contact carry the death action."
+}

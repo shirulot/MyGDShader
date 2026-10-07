@@ -1,0 +1,162 @@
+{
+  "id": "terminal_body",
+  "manifest_id": "B10",
+  "file": "art-source/ember/batch-03-objects/finished/terminal_body_v001.png",
+  "production_file": "res://assets/ember/buildings/terminal/terminal_body_v001.png",
+  "sha256": "67c2c54fb0efbc1ffdb1cfa01c61ae6216f2947a74b1e29847c37be401c1b812",
+  "size": [
+    96,
+    96
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/terminal_body_v001.finish.json",
+  "canvas": [
+    96,
+    96
+  ],
+  "bbox": [
+    24,
+    16,
+    73,
+    80
+  ],
+  "anchor": [
+    48,
+    80
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [
+    {
+      "id": "terminal_scene_screen",
+      "visual_frame_bounds": [
+        34,
+        26,
+        61,
+        45
+      ],
+      "safe_active_rect": [
+        38,
+        30,
+        57,
+        41
+      ],
+      "center": [
+        47.5,
+        35.5
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.4947916666666667,
+        0.3697916666666667
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/terminal_body/foundation_body.png",
+      "sha256": "f77a65d08aacb3ff28adbf2756a1f72b8356f945722fa9e66d7507f3e750245d",
+      "z_index": 0,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    },
+    {
+      "name": "inner_screen",
+      "file": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen_selection.png",
+      "sha256": "5bc131473afe6cb59e3c29c47cf6fee9464308e4081ed8ac94c4ba5a7092e654",
+      "z_index": 1,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "purpose": "中性屏幕内区，真实场景内容后接入",
+      "editable_source": true,
+      "hidden_underpaint_color_index": null
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/terminal_body_master_v001.png",
+    "master_sha256": "dc8341a816b393b76fed71ab3c7437734c3ee0d013afd43175e6376422e2b994",
+    "prompt": "prompts/terminal_body.txt",
+    "prompt_sha256": "24e2e7b98b1a04a3a55a45f6d096ea6dde1682f4b25867e0d09811cca47b6ec2",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-f3240e50-0465-4245-bab2-a97f72cae5b7.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        331,
+        276,
+        919,
+        1045
+      ],
+      "material_sampling_size": [
+        49,
+        64
+      ],
+      "native_origin": [
+        24,
+        16
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 24,
+      "native_outline_pixels_corrected": 29
+    },
+    "native_adjustments": [
+      "安全内屏[38,30,57,41)逐像素归并，彻底清除母稿屏内梯度/形似内容的暗颗粒，屏幕内容应由真实场景提供",
+      "键盘左上短亮边归并3px，保留两排物理按键及右侧铜接口；底脚80",
+      "inner_screen源RGBA+mask与base同画布，可独立绑定场景屏幕材质"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [],
+  "observations": "实际母稿单屏外框、键盘格、单侧铜连接和落地脚可辨；原生采样屏内出现母稿半透明噪色，需要明确变为单一中性安全区。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

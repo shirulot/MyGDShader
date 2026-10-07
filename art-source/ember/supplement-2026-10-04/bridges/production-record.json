@@ -1,0 +1,250 @@
+{
+  "status": "NATIVE_GENERATED_PENDING_VISUAL_AND_GODOT_REVIEW",
+  "added_units": 5,
+  "old_cells_exactly_preserved": 26,
+  "catalog": "assets/ember/environment/tilesets/ember_tiles_catalog_v002.json",
+  "catalog_sha256": "5f1c6d4dab907344d797ba368926cbab76fdabbd979eaa8938a61900a35a51bd",
+  "atlas_sha256": "fdc6376f133e5c7deb24b003a800b73c11720cd7ea09f0e06e7bdfa83f9e7302",
+  "tiles": [
+    {
+      "id": "bridge_edge_h_s",
+      "name": "下边梁",
+      "category": "T06S",
+      "variant": "edge_h_s",
+      "alpha_mode": "binary",
+      "status": "NATIVE_GENERATED_PENDING_REVIEW",
+      "coord": [
+        2,
+        3
+      ],
+      "interfaces": {
+        "N": null,
+        "E": {
+          "kind": "bridge-edge-h-s-v002",
+          "ports": [
+            [
+              20,
+              26
+            ]
+          ],
+          "alpha_at_ports": "opaque",
+          "exact_edge_required": false
+        },
+        "S": null,
+        "W": {
+          "kind": "bridge-edge-h-s-v002",
+          "ports": [
+            [
+              20,
+              26
+            ]
+          ],
+          "alpha_at_ports": "opaque",
+          "exact_edge_required": false
+        }
+      },
+      "native_size": [
+        32,
+        32
+      ],
+      "sha256": "e9a6c2bf4e824cf3defaa06fd0a17557748bffb0d8292bdd64e34c6132ddcd98",
+      "source_file": "art-source/ember/supplement-2026-10-04/bridges/finished-tiles/bridge_edge_h_s_v002.png",
+      "pixel_finish_record": "art-source/ember/supplement-2026-10-04/bridges/production-record.json",
+      "layout_topology": {
+        "overlay_on_deck": true,
+        "closed_side": null,
+        "ground_under_closed_end": false
+      },
+      "source_use": "EXISTING_EDITABLE_NATIVE_RECIPE_EXTENDED_UPPER_LEFT_RELIT"
+    },
+    {
+      "id": "bridge_edge_v_e",
+      "name": "右边梁",
+      "category": "T06S",
+      "variant": "edge_v_e",
+      "alpha_mode": "binary",
+      "status": "NATIVE_GENERATED_PENDING_REVIEW",
+      "coord": [
+        3,
+        3
+      ],
+      "interfaces": {
+        "N": {
+          "kind": "bridge-edge-v-e-v002",
+          "ports": [
+            [
+              20,
+              26
+            ]
+          ],
+          "alpha_at_ports": "opaque",
+          "exact_edge_required": false
+        },
+        "E": null,
+        "S": {
+          "kind": "bridge-edge-v-e-v002",
+          "ports": [
+            [
+              20,
+              26
+            ]
+          ],
+          "alpha_at_ports": "opaque",
+          "exact_edge_required": false
+        },
+        "W": null
+      },
+      "native_size": [
+        32,
+        32
+      ],
+      "sha256": "4315bbaa90113696537853b186e8457fb27f033fe782a8b99c73fe31138fe806",
+      "source_file": "art-source/ember/supplement-2026-10-04/bridges/finished-tiles/bridge_edge_v_e_v002.png",
+      "pixel_finish_record": "art-source/ember/supplement-2026-10-04/bridges/production-record.json",
+      "layout_topology": {
+        "overlay_on_deck": true,
+        "closed_side": null,
+        "ground_under_closed_end": false
+      },
+      "source_use": "EXISTING_EDITABLE_NATIVE_RECIPE_EXTENDED_UPPER_LEFT_RELIT"
+    },
+    {
+      "id": "bridge_end_cap_w",
+      "name": "左封口",
+      "category": "T06S",
+      "variant": "end_cap_w",
+      "alpha_mode": "binary",
+      "status": "NATIVE_GENERATED_PENDING_REVIEW",
+      "coord": [
+        4,
+        3
+      ],
+      "interfaces": {
+        "N": null,
+        "E": {
+          "kind": "bridge-deck-h-v001",
+          "ports": [
+            [
+              4,
+              28
+            ]
+          ],
+          "alpha_at_ports": "opaque",
+          "exact_edge_required": false
+        },
+        "S": null,
+        "W": null
+      },
+      "native_size": [
+        32,
+        32
+      ],
+      "sha256": "75eaacb0ef4bd199755e1f47e2584e53ecb7e21f6d2beca768a81bfdaf53dbaf",
+      "source_file": "art-source/ember/supplement-2026-10-04/bridges/finished-tiles/bridge_end_cap_w_v002.png",
+      "pixel_finish_record": "art-source/ember/supplement-2026-10-04/bridges/production-record.json",
+      "layout_topology": {
+        "overlay_on_deck": false,
+        "closed_side": "W",
+        "ground_under_closed_end": true
+      },
+      "source_use": "EXISTING_EDITABLE_NATIVE_RECIPE_EXTENDED_UPPER_LEFT_RELIT"
+    },
+    {
+      "id": "bridge_end_cap_n",
+      "name": "上封口",
+      "category": "T06S",
+      "variant": "end_cap_n",
+      "alpha_mode": "binary",
+      "status": "NATIVE_GENERATED_PENDING_REVIEW",
+      "coord": [
+        5,
+        3
+      ],
+      "interfaces": {
+        "N": null,
+        "E": null,
+        "S": {
+          "kind": "bridge-deck-v-v001",
+          "ports": [
+            [
+              4,
+              28
+            ]
+          ],
+          "alpha_at_ports": "opaque",
+          "exact_edge_required": false
+        },
+        "W": null
+      },
+      "native_size": [
+        32,
+        32
+      ],
+      "sha256": "0effb26d484ba132a30a41927349e44c6a7d17cd0f7a8f2a704ec8f328cbdc4d",
+      "source_file": "art-source/ember/supplement-2026-10-04/bridges/finished-tiles/bridge_end_cap_n_v002.png",
+      "pixel_finish_record": "art-source/ember/supplement-2026-10-04/bridges/production-record.json",
+      "layout_topology": {
+        "overlay_on_deck": false,
+        "closed_side": "N",
+        "ground_under_closed_end": true
+      },
+      "source_use": "EXISTING_EDITABLE_NATIVE_RECIPE_EXTENDED_UPPER_LEFT_RELIT"
+    },
+    {
+      "id": "bridge_end_cap_s",
+      "name": "下封口",
+      "category": "T06S",
+      "variant": "end_cap_s",
+      "alpha_mode": "binary",
+      "status": "NATIVE_GENERATED_PENDING_REVIEW",
+      "coord": [
+        6,
+        3
+      ],
+      "interfaces": {
+        "N": {
+          "kind": "bridge-deck-v-v001",
+          "ports": [
+            [
+              4,
+              28
+            ]
+          ],
+          "alpha_at_ports": "opaque",
+          "exact_edge_required": false
+        },
+        "E": null,
+        "S": null,
+        "W": null
+      },
+      "native_size": [
+        32,
+        32
+      ],
+      "sha256": "2dc0964c510e6db8467627dab515669c85a61da670fffe4d6bc3930fd73fa67a",
+      "source_file": "art-source/ember/supplement-2026-10-04/bridges/finished-tiles/bridge_end_cap_s_v002.png",
+      "pixel_finish_record": "art-source/ember/supplement-2026-10-04/bridges/production-record.json",
+      "layout_topology": {
+        "overlay_on_deck": false,
+        "closed_side": "S",
+        "ground_under_closed_end": true
+      },
+      "source_use": "EXISTING_EDITABLE_NATIVE_RECIPE_EXTENDED_UPPER_LEFT_RELIT"
+    }
+  ],
+  "editable_recipe": "art-source/ember/tilesets-v001/tools/finish_structures.py",
+  "editable_recipe_sha256": "557dfe0564a30833cd0382d50bd63014963fe7e2fb2c6b9fde5a62f4b66c9846",
+  "generator_sha256": "5fdc773114bdef64ef3628392926e2f1b96348e77c0770ba19c9f2495a38ede7",
+  "source_master": "art-source/ember/tilesets-v001/generated/bridge_module_master_v001.png",
+  "source_master_sha256": "2938b378eff0b4f40e91371825b648eca90f4e148ff3fc03408b224a1827ce78",
+  "original_prompt": "art-source/ember/tilesets-v001/prompts/05_bridge_deck_master_v001.txt",
+  "tool": "NATIVE_EDITABLE_CODE_RECIPE_EXTENSION",
+  "new_imagegen_calls": 0,
+  "adjustments": [
+    "Draw lower/right beams at section [20,26) with highlight still upper/left.",
+    "Redraw three closed caps and brass fasteners without mirroring direction light.",
+    "Retain all original atlas coordinates/source IDs and old PNGs.",
+    "Ground supports caps, beams overlap deck on separate layers; water sides face inward."
+  ],
+  "protected_inputs_unchanged": true
+}

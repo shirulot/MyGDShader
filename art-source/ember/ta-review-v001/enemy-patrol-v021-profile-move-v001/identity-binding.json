@@ -1,0 +1,440 @@
+{
+  "scope": "W/E identity source and static candidate only; not full manifest, runtime or animation acceptance",
+  "zip_sha256": "4c907f50f6851787d84e7212a0cd7c64215566baf482a520fde937212db10b61",
+  "zip_bytes": 3688508,
+  "s002_zip_sha256": "28951089e1403c65f6a8446aed5f049fdba704809175da36a391c6c5fa1e99a1",
+  "bindings": {
+    "README.md": "972dcb9433d8144bac3aa7b31553c72ea82b2928551973946b9c2e1fcbd7ea53",
+    "SOURCE_RECEIPT.json": "2dbde405d6ff99b4edcf5479e9a0f583c5aaab9bc6623c2d69634db2307d1bc1",
+    "source/far_legs_v002.png": "3425c995e2cf23f68e0e849fe673a63107887bc53cd52b9a46d6e5ffef442186",
+    "source/far_legs_prompt_v002.txt": "4125fe20465cf85d98cc14da856194bd63f4fffa912a8febc871c74107eba742",
+    "source/far_registration.json": "6adc2095bcf431eab4ddcb0dafefe30c2a72f0a2b99c9316755f5768efe7b9cb",
+    "register_far.gd": "60f5989205d54afa13beddb9bcd454c28bafabb996877ef1336a9bc52071c5cd",
+    "rig.gd": "cbd55ec0c724c0d2cdd272e0559b86de054ed1a78a5a7dab93ae9278c3ffc3ff",
+    "rig.json": "1970315ec03ddfb979b4cb9bb812302cdfd211b63dbcb4af6e7e1344505943e1",
+    "qa/bind_original_candidate_2x.png": "f34ddd088350c8f93dc491b9735a0d789a40fe6ce2b8cf50a5f80be0e1392995",
+    "source/down.png": "f7b817ff8c4c6ea9af4554c37873709e9419e83f93ec540f7dd96b9b7184482d",
+    "source/down_left.png": "bf556e1e18ef5b54671545807645911dee4ca73d71db66893647c33c031d17a7",
+    "source/left.png": "75f87277533af107dfe5106e81778921c619a9b6945e763f0d11a95bfd155235",
+    "source/up_left.png": "59b575f2e2ce37671588c4d81bb16c58135df964b9d33ee33cba63df3862047e",
+    "source/up.png": "cc34f8efc1f8069d98df353cd6e39fa805d6cc1ea3670fa5bfd6203addaa8260",
+    "source/up_right.png": "34339abf0eddf9f15e28e547422d54ae9152cc087aa6b4406b96f636118348dc",
+    "source/right.png": "946526f11420048d1186095ada2b034f4d57dc4738f83e99a3e65a2032a7cbad",
+    "source/down_right.png": "e1916f467c4493bab2b95b57b558f18ab2090c45721c48cff590422139cb93f2",
+    "qa/bind_left.png": "d83e77afd838646b2f8cbf06f347f8ac8ec010c8957b6b58d56e1b620aba5f30",
+    "qa/bind_right.png": "c9c6a6ec0b58536f4e743da02a34a1b9f5c22c03c5660a41153fc59b23254bbd",
+    "source/far_registered_left.png": "661ad239b7332a3db5f0eb7a30f18e458552b8847aff55389226b2d4734e9110",
+    "source/far_registered_right.png": "a547131ca78c95f3b06b64c0cf701065fb82b15b7ea014e02cc6ccbab77ae418",
+    "source/far_registered_near_left.png": "22ed51501d9f0e5374e8585f7ecd27fb2fb969d851d3ccb033e13432ab2c49c0",
+    "source/far_registered_near_right.png": "0f2325f7f89f83b20fbb07fcbd878dc910d5c96bc619e6b5257c54de9905b07d"
+  },
+  "directions": {
+    "left": {
+      "registered_bounds_inclusive": [
+        57,
+        78,
+        70,
+        100
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bind_changed_RGBA_pixels": 209,
+      "bind_changed_bounds_inclusive": [
+        57,
+        84,
+        73,
+        103
+      ],
+      "outside_leg_rect_RGBA_diff": 0,
+      "candidate_bind_sha256": "d83e77afd838646b2f8cbf06f347f8ac8ec010c8957b6b58d56e1b620aba5f30",
+      "bottom_row_y103_original_opaque_x": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "bottom_row_y103_candidate_opaque_x": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "blue_shin_color_sample": {
+        "xy": [
+          66,
+          94
+        ],
+        "original_RGBA": [
+          32,
+          58,
+          84,
+          255
+        ],
+        "candidate_RGBA": [
+          62,
+          100,
+          147,
+          255
+        ],
+        "interpretation": "Diagnostic examples supporting observed material shift, not a pixel identity acceptance threshold"
+      }
+    },
+    "near_left": {
+      "registered_bounds_inclusive": [
+        57,
+        81,
+        70,
+        103
+      ],
+      "alpha_values": [
+        0,
+        255
+      ]
+    },
+    "near_right": {
+      "registered_bounds_inclusive": [
+        54,
+        81,
+        67,
+        103
+      ],
+      "alpha_values": [
+        0,
+        255
+      ]
+    },
+    "right": {
+      "registered_bounds_inclusive": [
+        56,
+        78,
+        69,
+        100
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bind_changed_RGBA_pixels": 213,
+      "bind_changed_bounds_inclusive": [
+        54,
+        83,
+        69,
+        103
+      ],
+      "outside_leg_rect_RGBA_diff": 0,
+      "candidate_bind_sha256": "c9c6a6ec0b58536f4e743da02a34a1b9f5c22c03c5660a41153fc59b23254bbd",
+      "bottom_row_y103_original_opaque_x": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "bottom_row_y103_candidate_opaque_x": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "blue_shin_color_sample": {
+        "xy": [
+          59,
+          94
+        ],
+        "original_RGBA": [
+          34,
+          63,
+          93,
+          255
+        ],
+        "candidate_RGBA": [
+          64,
+          101,
+          148,
+          255
+        ],
+        "interpretation": "Diagnostic examples supporting observed material shift, not a pixel identity acceptance threshold"
+      }
+    }
+  },
+  "diagnostics": {
+    "identity-profile-full-light-1x.png": {
+      "sha256": "29196ac982ac0f80aa5f77416d0f5a2eba074b759e77e3980250e1175d3d12d6",
+      "source_roi_half_open": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "scale": 1,
+      "labels": [
+        "left old",
+        "left candidate",
+        "right old",
+        "right candidate"
+      ]
+    },
+    "identity-original8-light-4x.png": {
+      "sha256": "f187fff465c15e9c638bb72e511d0727f465e40d2968c8e48f23c528176d66fb",
+      "source_roi_half_open": [
+        34,
+        45,
+        94,
+        109
+      ],
+      "scale": 4,
+      "labels": [
+        "down",
+        "down_left",
+        "left",
+        "up_left",
+        "up",
+        "up_right",
+        "right",
+        "down_right"
+      ]
+    },
+    "identity-profile-old-new-light-8x.png": {
+      "sha256": "a151405433a121ebce0195a3f3b0e8ef507c17c1b58993a9172963ab078556f6",
+      "source_roi_half_open": [
+        47,
+        75,
+        79,
+        107
+      ],
+      "scale": 8,
+      "labels": [
+        "left old",
+        "left candidate",
+        "right old",
+        "right candidate"
+      ]
+    },
+    "identity-profile-full-light-8x.png": {
+      "sha256": "bd248361270a1283b81a6389153780a77ce18604165bc7cc40ca628c1074ffc1",
+      "source_roi_half_open": [
+        47,
+        48,
+        79,
+        107
+      ],
+      "scale": 8,
+      "labels": [
+        "left old",
+        "left candidate",
+        "right old",
+        "right candidate"
+      ]
+    },
+    "identity-registered-near-far-light-8x.png": {
+      "sha256": "d374186863efc8f0e9f103301a621f672e17a547096f4d14090d86705fa577e3",
+      "source_roi_half_open": [
+        47,
+        75,
+        79,
+        107
+      ],
+      "scale": 8,
+      "labels": [
+        "left",
+        "near_left",
+        "right",
+        "near_right"
+      ]
+    },
+    "identity-profile-full-dark-1x.png": {
+      "sha256": "575049e1f29c40c81e19e3feb8cc25881595e2cab52b1c0f3bb051a86e55ece4",
+      "source_roi_half_open": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "scale": 1,
+      "labels": [
+        "left old",
+        "left candidate",
+        "right old",
+        "right candidate"
+      ]
+    },
+    "identity-original8-dark-4x.png": {
+      "sha256": "273032f8fb8f02ffa18092dd31683ad98f803564aef8d575fdf2e0b79313de91",
+      "source_roi_half_open": [
+        34,
+        45,
+        94,
+        109
+      ],
+      "scale": 4,
+      "labels": [
+        "down",
+        "down_left",
+        "left",
+        "up_left",
+        "up",
+        "up_right",
+        "right",
+        "down_right"
+      ]
+    },
+    "identity-profile-old-new-dark-8x.png": {
+      "sha256": "2b97ade725a5e64e5c600889fa3e0a6e94f56f25ca8677770bdbcac021fb02ef",
+      "source_roi_half_open": [
+        47,
+        75,
+        79,
+        107
+      ],
+      "scale": 8,
+      "labels": [
+        "left old",
+        "left candidate",
+        "right old",
+        "right candidate"
+      ]
+    },
+    "identity-profile-full-dark-8x.png": {
+      "sha256": "3c57433f6c22174d494735baee67807ae1a7cc70dcad90e3a7c0475481c1106c",
+      "source_roi_half_open": [
+        47,
+        48,
+        79,
+        107
+      ],
+      "scale": 8,
+      "labels": [
+        "left old",
+        "left candidate",
+        "right old",
+        "right candidate"
+      ]
+    },
+    "identity-registered-near-far-dark-8x.png": {
+      "sha256": "09a17e1c5862b094405204eb4d9c548579c86c79fcbe96b4c89624a109e44311",
+      "source_roi_half_open": [
+        47,
+        75,
+        79,
+        107
+      ],
+      "scale": 8,
+      "labels": [
+        "left",
+        "near_left",
+        "right",
+        "near_right"
+      ]
+    }
+  },
+  "all_eight_original_sources_same_as_S002_bytes": true,
+  "registration": {
+    "common_scale": 0.0358814352574103,
+    "directions": {
+      "left": {
+        "rect": [
+          180.0,
+          240.0,
+          450.0,
+          670.0
+        ],
+        "sha256": "661ad239b7332a3db5f0eb7a30f18e458552b8847aff55389226b2d4734e9110",
+        "source_anchor": [
+          455.0,
+          896.0
+        ],
+        "target_anchor": [
+          66.0,
+          101.0
+        ]
+      },
+      "near_left": {
+        "rect": [
+          180.0,
+          240.0,
+          450.0,
+          670.0
+        ],
+        "sha256": "22ed51501d9f0e5374e8585f7ecd27fb2fb969d851d3ccb033e13432ab2c49c0",
+        "source_anchor": [
+          455.0,
+          896.0
+        ],
+        "target_anchor": [
+          66.0,
+          104.0
+        ]
+      },
+      "near_right": {
+        "rect": [
+          920.0,
+          240.0,
+          430.0,
+          670.0
+        ],
+        "sha256": "0f2325f7f89f83b20fbb07fcbd878dc910d5c96bc619e6b5257c54de9905b07d",
+        "source_anchor": [
+          1080.0,
+          895.0
+        ],
+        "target_anchor": [
+          59.0,
+          104.0
+        ]
+      },
+      "right": {
+        "rect": [
+          920.0,
+          240.0,
+          430.0,
+          670.0
+        ],
+        "sha256": "a547131ca78c95f3b06b64c0cf701065fb82b15b7ea014e02cc6ccbab77ae418",
+        "source_anchor": [
+          1080.0,
+          895.0
+        ],
+        "target_anchor": [
+          61.0,
+          101.0
+        ]
+      }
+    },
+    "generation_exec": "47d5045e-52e1-4cdf-b4ee-dcab347aad38",
+    "source_sha256": "3425c995e2cf23f68e0e849fe673a63107887bc53cd52b9a46d6e5ffef442186"
+  },
+  "raw_source_size": [
+    1536,
+    1024
+  ],
+  "raw_source_alpha_values": 255
+}

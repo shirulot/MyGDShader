@@ -1,0 +1,28 @@
+[gd_scene format=4]
+
+[ext_resource type="Script" path="res://scripts/ember/map_asset_painter_v001.gd" id="1_ywq3y"]
+[ext_resource type="TileSet" path="res://assets/ember/environment/reference_floor_v002/floor_terrain_v002.tres" id="2_5he2j"]
+[ext_resource type="TileSet" path="res://assets/ember/environment/reference_floor_v002/bridge_terrain_v002.tres" id="3_drme7"]
+[ext_resource type="TileSet" path="res://assets/ember/map_assets_v001/floors/floor_materials_v001.tres" id="4_aismy"]
+
+[node name="IndependentMaterialPainterV006" type="Node2D" unique_id=491233295]
+texture_filter = 1
+script = ExtResource("1_ywq3y")
+bounds_cells = Rect2i(0, 0, 7, 6)
+
+[node name="Floor" type="TileMapLayer" parent="." unique_id=2098718583]
+scale = Vector2(0.25, 0.25)
+tile_map_data = PackedByteArray("AAABAAEAAAACAAEAAAACAAEAAAAHAAMAAAADAAEAAAAHAAMAAAAEAAEAAAACAAMAAAABAAIAAAABAAEAAAACAAIAAAAEAAQAAAADAAIAAAABAAUAAAAEAAIAAAACAAUAAAABAAMAAAAGAAAAAAADAAMAAAAEAAEAAAAEAAMAAAACAAUAAAABAAQAAAADAAAAAAACAAQAAAAHAAEAAAADAAQAAAABAAIAAAAEAAQAAAACAAQAAAA=")
+tile_set = ExtResource("2_5he2j")
+
+[node name="Bridge" type="TileMapLayer" parent="." unique_id=1413705142]
+scale = Vector2(0.25, 0.25)
+tile_map_data = PackedByteArray("AAAFAAIAAAACAAEAAAAGAAIAAAACAAMAAAAFAAMAAAAEAAAAAAAGAAMAAAACAAQAAAA=")
+tile_set = ExtResource("3_drme7")
+
+[node name="FloorMaterials" type="TileMapLayer" parent="." unique_id=1642140977]
+visible = false
+texture_filter = 1
+scale = Vector2(0.25, 0.25)
+tile_map_data = PackedByteArray("AAADAAIAAAADAAAAAAAEAAIAAAAEAAAAAAAEAAQAAAAFAAAAAAABAAEAAAAGAAAAAAACAAEAAAAJAAAAAAADAAEAAAAKAAAAAAAEAAEAAAALAAAAAAABAAIAAAAMAAAAAAA=")
+tile_set = ExtResource("4_aismy")

@@ -1,0 +1,52 @@
+{
+  "revision": "reference_floor_v006",
+  "status": "VISUAL_CANDIDATE",
+  "user_accepted": false,
+  "source_imagegen_calls": 3,
+  "new_material_ids": [10, 11, 12],
+  "retained_material_ids": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "actual_scene_previews": ["gpu_sand_scene_v006.png", "gpu_gravel_scene_v006.png", "gpu_moss_scene_v006.png", "gpu_mixed_scene_v006.png"],
+  "comparison": "gpu_material_comparison_v006.png",
+  "review_method": "Root agent visually inspected the four actual Godot GPU captures combined in the comparison. No concept render replaces the TileMap output.",
+  "fixed_standards": {
+    "texture_tile_px": 128,
+    "world_cell_px": 32,
+    "tilemap_scale": 0.25,
+    "camera_zoom": 2,
+    "coping_world_px": 8,
+    "south_facade_world_px": 32,
+    "wide_bridge_body_world_px": 40,
+    "bridge_shoulders_world_px": 12
+  },
+  "pixel_policy": "Whole artist masters nearest-registered to1024 period; original RGBA samples, no procedural repaint or recolour. Existing calibrated brick/wood periods reused unchanged.",
+  "visual_findings": [
+    "Warm ochre sandy soil, cool grey compacted gravel and olive-grey mossed stone are visibly distinct at the existing game scale.",
+    "Small robot and white station remain readable over the three surfaces.",
+    "All maps preserve the shared coping, facade, bridge heads, rails, hatch, robot and station scale.",
+    "Thirteen-material mixed map keeps common ground occupancy and exterior structure across material changes.",
+    "Gravel and moss are flat albedo details and do not add objects, holes, collision or navigation boundaries."
+  ],
+  "gpu_verification": {
+    "actual_scenes": 4,
+    "pure_material_edits": 3,
+    "max_rgb_error": 0.0,
+    "report": "gpu_capture_v006.json"
+  },
+  "independent_fixture_visual_review": "Root inspected independent_mixed_materials_v006.png: all thirteen floor surfaces share a continuous coping, facade and bridge landing without internal material borders.",
+  "structural_verification": {
+    "status": "PASS",
+    "report": "independent_validation_v006.json",
+    "material_pairs": 33,
+    "directional_boundary_cases": 66,
+    "frozen_old_rgba_materials": 10,
+    "bridge_landing_cases": 12,
+    "full_rgba_comparisons": 12,
+    "world_coordinate_mappings": 504,
+    "runtime_undo_cases": 4,
+    "runtime_redo_cases": 4,
+    "json_and_scene_roundtrip": true,
+    "actual_shortcut_events": true,
+    "failures": []
+  },
+  "editor_gui_undo_redo": "NOT_TESTED"
+}

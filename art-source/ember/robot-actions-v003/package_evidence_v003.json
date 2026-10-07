@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "scope": "Bind final native frames, real runtime/GPU checks, visual review, lossless encoding and source preservation before packaging.",
+  "reports": [
+    {
+      "id": "manifest",
+      "path": "art-source/ember/robot-actions-v003/frame_manifest_v003.json",
+      "status_field": "status",
+      "success_values": [
+        "PASS"
+      ],
+      "issues_field": "errors"
+    },
+    {
+      "id": "runtime",
+      "path": "art-source/ember/robot-actions-v003/runtime_verify_v003.json",
+      "status_field": "status",
+      "success_values": [
+        "ROBOT_ACTIONS_V003_PASS"
+      ],
+      "issues_field": "errors"
+    },
+    {
+      "id": "gpu",
+      "path": "art-source/ember/robot-actions-v003/runtime_gpu_v003.json",
+      "status_field": "status",
+      "success_values": [
+        "ROBOT_ACTIONS_V003_PASS"
+      ],
+      "issues_field": "errors"
+    },
+    {
+      "id": "visual",
+      "path": "art-source/ember/robot-actions-v003/visual_review_v003.json",
+      "status_field": "status",
+      "success_values": [
+        "PASS"
+      ],
+      "issues_field": "issues"
+    },
+    {
+      "id": "encoding",
+      "path": "art-source/ember/robot-actions-v003/previews/preview_encoding_v003.json",
+      "status_field": "status",
+      "success_values": [
+        "PASS"
+      ]
+    },
+    {
+      "id": "map_registration",
+      "path": "art-source/ember/robot-actions-v003/map-registration/map_registration_v003.json",
+      "status_field": "status",
+      "success_values": [
+        "PASS"
+      ],
+      "issues_field": "failures"
+    },
+    {
+      "id": "protected",
+      "path": "art-source/ember/robot-actions-v003/protected_sources_after_v003.json",
+      "status_field": "status",
+      "success_values": [
+        "PASS"
+      ],
+      "issues_field": "errors"
+    },
+    {
+      "id": "baseline",
+      "path": "art-source/ember/robot-audit-v003/alpha_audit_v003.json",
+      "status_field": "technical_status",
+      "success_values": [
+        "PASS"
+      ],
+      "issues_field": "errors"
+    },
+    {
+      "success_values": [
+        "PASS"
+      ],
+      "id": "native_review",
+      "status_field": "status",
+      "path": "art-source/ember/robot-actions-v003/native_review_v003.json",
+      "issues_field": "errors"
+    }
+  ],
+  "hash_bindings": [
+    {
+      "report": "manifest",
+      "field": "builder_sha256",
+      "path": "tools/build_robot_actions_v003.gd"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://art-source/ember/robot-actions-v003/frame_manifest_v003.json",
+      "path": "art-source/ember/robot-actions-v003/frame_manifest_v003.json"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_frames_catalog_v002.json",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v002.json"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_frames_catalog_v003.json",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v003.json"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_animations_v003.png",
+      "path": "assets/ember/characters/robot/robot_animations_v003.png"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_sprite_frames_v003.tres",
+      "path": "assets/ember/characters/robot/robot_sprite_frames_v003.tres"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://scenes/ember/robot_animation_sandbox_v003.tscn",
+      "path": "scenes/ember/robot_animation_sandbox_v003.tscn"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://scripts/ember/robot_action_preview_v003.gd",
+      "path": "scripts/ember/robot_action_preview_v003.gd"
+    },
+    {
+      "report": "runtime",
+      "field": "dependencies_sha256",
+      "key": "res://tools/build_robot_animation_v003.gd",
+      "path": "tools/build_robot_animation_v003.gd"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://art-source/ember/robot-actions-v003/frame_manifest_v003.json",
+      "path": "art-source/ember/robot-actions-v003/frame_manifest_v003.json"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_frames_catalog_v002.json",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v002.json"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_frames_catalog_v003.json",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v003.json"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_animations_v003.png",
+      "path": "assets/ember/characters/robot/robot_animations_v003.png"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://assets/ember/characters/robot/robot_sprite_frames_v003.tres",
+      "path": "assets/ember/characters/robot/robot_sprite_frames_v003.tres"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://scenes/ember/robot_animation_sandbox_v003.tscn",
+      "path": "scenes/ember/robot_animation_sandbox_v003.tscn"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://scripts/ember/robot_action_preview_v003.gd",
+      "path": "scripts/ember/robot_action_preview_v003.gd"
+    },
+    {
+      "report": "gpu",
+      "field": "dependencies_sha256",
+      "key": "res://tools/build_robot_animation_v003.gd",
+      "path": "tools/build_robot_animation_v003.gd"
+    },
+    {
+      "report": "visual",
+      "field": "source_manifest_sha256",
+      "path": "art-source/ember/robot-actions-v003/frame_manifest_v003.json"
+    },
+    {
+      "report": "visual",
+      "field": "catalog_sha256",
+      "path": "assets/ember/characters/robot/robot_frames_catalog_v003.json"
+    },
+    {
+      "report": "visual",
+      "field": "frames_resource_sha256",
+      "path": "assets/ember/characters/robot/robot_sprite_frames_v003.tres"
+    },
+    {
+      "report": "visual",
+      "field": "atlas_sha256",
+      "path": "assets/ember/characters/robot/robot_animations_v003.png"
+    },
+    {
+      "report": "encoding",
+      "field": [
+        "outputs",
+        "webp",
+        "sha256"
+      ],
+      "path": "art-source/ember/robot-actions-v003/previews/robot_actions_loop_v003.webp"
+    },
+    {
+      "report": "encoding",
+      "field": [
+        "outputs",
+        "gif",
+        "sha256"
+      ],
+      "path": "art-source/ember/robot-actions-v003/previews/robot_actions_loop_v003.gif"
+    },
+    {
+      "report": "map_registration",
+      "field": "tool_sha256",
+      "path": "tools/validate_robot_map_registration_v003.gd"
+    },
+    {
+      "report": "map_registration",
+      "field": [
+        "maps",
+        "0",
+        "scene_sha256"
+      ],
+      "path": "scenes/ember/map_assets_tidal_port_v001.tscn",
+      "archive": false
+    },
+    {
+      "report": "map_registration",
+      "field": [
+        "maps",
+        "1",
+        "scene_sha256"
+      ],
+      "path": "scenes/ember/map_assets_dry_mine_v001.tscn",
+      "archive": false
+    },
+    {
+      "report": "map_registration",
+      "field": [
+        "maps",
+        "2",
+        "scene_sha256"
+      ],
+      "path": "scenes/ember/map_assets_overgrown_lab_v001.tscn",
+      "archive": false
+    },
+    {
+      "report": "native_review",
+      "path": "art-source/ember/robot-actions-v003/frame_manifest_v003.json",
+      "field": "source_manifest_sha256"
+    },
+    {
+      "report": "encoding",
+      "path": "tools/encode_robot_preview_v003.cjs",
+      "field": "encoder_sha256"
+    }
+  ],
+  "extra_files": [
+    "tools/encode_robot_preview_v003.cjs",
+    "tools/audit_robot_alpha_v003.gd",
+    "art-source/ember/robot-audit-v003/README.md",
+    "art-source/ember/robot-audit-v003/art_review_v003.json",
+    "art-source/ember/robot-audit-v003/current_v002_gpu_checker_4x.png",
+    "art-source/ember/robot-audit-v003/current_v002_gpu_transparent_4x.png",
+    "art-source/ember/robot-actions-v003/previews/.gdignore"
+  ],
+  "cold_verify": {
+    "script": "res://tools/build_robot_animation_v003.gd",
+    "arguments": [
+      "--verify-only",
+      "--report={REPORT_PATH}"
+    ],
+    "success_stdout": "ROBOT_ACTIONS_V003 PASS",
+    "success_statuses": [
+      "ROBOT_ACTIONS_V003_PASS"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "energy",
+  "method": "AI_BODY_MATERIAL_SAMPLING_NATIVE_SEMANTIC_PIXEL_FINISH",
+  "source_use": {
+    "mother": "art-source/ember/batch-04-ui/generated/energy_master_v001.png",
+    "mother_sha256": "ce48d2b62fc0ba3f51dc03187ff0556cd823836b94082a9a8b2eac016df8b1eb",
+    "source_unchanged": true,
+    "direct_original_rgba_byte_reuse": false,
+    "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+    "sampling": {
+      "source_alpha_threshold": 128,
+      "source_body_bbox": [
+        393,
+        229,
+        862,
+        1048
+      ],
+      "material_grid_size": [
+        14,
+        24
+      ],
+      "material_grid_origin": [
+        9,
+        4
+      ],
+      "native_semantic_changed_pixels": 60
+    }
+  },
+  "adjustments": [
+    "保留电芯顶触点和外壳，合并过细壳体色粒",
+    "重建7×13中性深色窗口与1px左上亮边，避免灯亮状态"
+  ],
+  "native_pixel_source": "art-source/ember/batch-04-ui/annotations/energy_native_pixel_source_v001.json",
+  "measurement": {
+    "canvas": [
+      32,
+      32
+    ],
+    "bbox": [
+      9,
+      4,
+      23,
+      28
+    ],
+    "opaque_pixels": 302,
+    "transparent_pixels": 722,
+    "partial_alpha_pixels": 0,
+    "color_count": 12,
+    "palette_rgb": [
+      "#101820",
+      "#182631",
+      "#203A4B",
+      "#2B3E4B",
+      "#4D6470",
+      "#566B78",
+      "#7B4D35",
+      "#829BA3",
+      "#B77C4B",
+      "#BECBC4",
+      "#E2B77A",
+      "#ECE9D8"
+    ],
+    "all_opaque_colors_in_standard16": true
+  },
+  "output_sha256": "576d909c4c1068485aab26279e61ce8a5a20a32b31e900ef6c10ca0ba9a59da6"
+}

@@ -1,0 +1,128 @@
+{
+  "verdict": "TECHNICAL_PASS",
+  "closed_p2": "v001 load_state restored buildings before player and reused stale ground_rect",
+  "open_p1_p2": [],
+  "fixed_zip_sha256": "18fe88a25dc19aaaf7cdae43505ff3eb04c060b5358daf8171fcc300c4832f35",
+  "fixed_zip_bytes": 72303483,
+  "entries": 279,
+  "payloads": 278,
+  "cold_import": {
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "only_project_change": "independent user storage directory"
+  },
+  "results": [
+    {
+      "name": "original_ta41_routed_only",
+      "status": "PASS",
+      "checks": 41,
+      "cases": null,
+      "captures": 0,
+      "report": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\building-v002-independent\\technical\\cold-project\\ta-building-probe.json",
+      "report_sha256": "7712c8da4ba4b2c2a000c7ffd8bfcafc8fdc820bacf495018f3f73995407ef5f",
+      "stderr_bytes": 0,
+      "exit_code": 0
+    },
+    {
+      "name": "interaction_author_replayed",
+      "status": "PASS",
+      "checks": 148,
+      "cases": null,
+      "captures": 0,
+      "report": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\building-v002-independent\\technical\\cold-project\\assets\\ember\\building_assets_v002\\interaction_validation_v002.json",
+      "report_sha256": "f96d6f89cd6137701f1ee2131f94143ba69b5dbecd635a6506108714aec0f8e2",
+      "stderr_bytes": 0,
+      "exit_code": 0
+    },
+    {
+      "name": "save_matrix_author_replayed",
+      "status": "PASS",
+      "checks": 32,
+      "cases": 8,
+      "captures": 0,
+      "report": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\building-v002-independent\\technical\\cold-project\\assets\\ember\\building_assets_v002\\save_matrix_validation_v002.json",
+      "report_sha256": "11c4974198a0b2f181d277e8e8f1e4de9f485f2aa76759834e8c2c17094ce67f",
+      "stderr_bytes": 0,
+      "exit_code": 0
+    },
+    {
+      "name": "independent_four_gate_matrix",
+      "status": "PASS",
+      "checks": 128,
+      "cases": 32,
+      "captures": 0,
+      "report": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\building-v002-independent\\technical\\cold-project\\ta-building-save-matrix-independent.json",
+      "report_sha256": "76e21555d3f9eb50b619867bd20c2aa2dd8e6d421bdf8d317edc94f193f9cdbc",
+      "stderr_bytes": 0,
+      "exit_code": 0
+    },
+    {
+      "name": "composition_actual_gpu_replayed",
+      "status": "PASS",
+      "checks": 118,
+      "cases": null,
+      "captures": 24,
+      "report": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\building-v002-independent\\technical\\cold-project\\assets\\ember\\building_assets_v002\\composition_validation_v002.json",
+      "report_sha256": "d911d89785b6077e210ea2f7034fde441139800f70ff45e3a04e5cef92fc1bdc",
+      "stderr_bytes": 0,
+      "exit_code": 0
+    }
+  ],
+  "total_check_count": 467,
+  "source_binding": [
+    {
+      "path": "scripts/ember/building_asset_v001.gd",
+      "cold_source_matches_fixed_zip": true,
+      "sha256": "afeadbe72d0815a6c39b5afce47645bbba5e86306a8163f34707919d7f284814"
+    },
+    {
+      "path": "scripts/ember/building_demo_v001.gd",
+      "cold_source_matches_fixed_zip": true,
+      "sha256": "1e5b22e469312237b9ea348e32e00a36ea8b991824107e88df288c7af73dcea2"
+    },
+    {
+      "path": "scripts/ember/building_demo_actor_v001.gd",
+      "cold_source_matches_fixed_zip": true,
+      "sha256": "196619471b3c83fe148f7929f714b9c7861a4ec463b03f602be713720dafbcfb"
+    },
+    {
+      "path": "scripts/ember/building_asset_v002.gd",
+      "cold_source_matches_fixed_zip": true,
+      "sha256": "41bf10f30f8169f45ff905766e713076b882e1991997a55c5fab09e7931664c0"
+    },
+    {
+      "path": "scripts/ember/building_demo_v002.gd",
+      "cold_source_matches_fixed_zip": true,
+      "sha256": "c4a735a8e7f2fdcc0af1186c557cd25fc0dc2d3f76399d2d85675af55782370b"
+    },
+    {
+      "path": "assets/ember/building_assets_v002/catalog_v002.json",
+      "cold_source_matches_fixed_zip": true,
+      "sha256": "9a89de864acdcccaf98e3ed6cefab71a89d1edbb9145ae3ebc1cb32b587ed8c1"
+    },
+    {
+      "path": "tools/validate_building_interactions_v002.gd",
+      "cold_source_matches_fixed_zip": true,
+      "sha256": "5630fb5695b2c4c405d3974967a4d9cfb07d13757acbd2c2f8993f3ed39fd68a"
+    },
+    {
+      "path": "tools/validate_building_save_matrix_v002.gd",
+      "cold_source_matches_fixed_zip": true,
+      "sha256": "3cb719694a8849b0b9bb983daabf8f68ba562bebe82cfedda738a4fe70d7adb1"
+    },
+    {
+      "path": "tools/validate_building_composition_v002.gd",
+      "cold_source_matches_fixed_zip": true,
+      "sha256": "91f31b05a0629b010c943099722d3d32baee73ab15c224340d6990373482d16b"
+    }
+  ],
+  "original_ta41_only_preload_routes_changed": true,
+  "original_ta41_sha256": "fe1788cb0c3c373c2016ec29d16c0fc15c2ced4a56da4544f5bc0d47a8edb8bd",
+  "routed_ta41_sha256": "4e8d31f1bb18966f8c60db30c915b7d93a292ee263c1b932d275b2c12335a056",
+  "independent_matrix_probe_sha256": "4757e1174408fdb37707061719181f5fae787515e619d9490ac9e3ae2b0c8c31",
+  "gpu_visible_rgba_comparison_pairs": 24,
+  "gpu_visible_rgba_different_pixels": 0,
+  "gpu_complete_png_and_static_sprite_equal_closed_interactive": 3,
+  "gpu_alpha_zero_hidden_rgb_ignored": true,
+  "scope": "Three declared south-facing buildings, complete/static/functional prefabs and current demo interactions; art judgment delegated to root/style_specs."
+}

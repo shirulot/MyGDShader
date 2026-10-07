@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bof0di4smco6b"]
+
+[ext_resource type="Shader" uid="uid://ckbfnkvtws1ox" path="res://shader/main.gdshader" id="1_ekx26"]
+[ext_resource type="Texture2D" uid="uid://behequbx0ri0g" path="res://assets/shader-learning/2d/kenney-rts-scifi/player_scifi_unit_03.png" id="2_ekx26"]
+[ext_resource type="Texture2D" uid="uid://ckrbladfyagjb" path="res://assets/shader-learning/common/color_test_512.png" id="3_iypwn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qtaof"]
+shader = ExtResource("1_ekx26")
+shader_parameter/gray_progress = 0.30000000447036
+shader_parameter/white_flash = 0.0
+shader_parameter/hit_color = Color(1, 1, 1, 1)
+
+[node name="Chapter01Lab" type="Node2D" unique_id=1939048403]
+
+[node name="UVGrid" type="Sprite2D" parent="." unique_id=1571423361]
+texture_filter = 1
+material = SubResource("ShaderMaterial_qtaof")
+position = Vector2(360, 360)
+texture = ExtResource("2_ekx26")
+
+[node name="ColorTest512" type="Sprite2D" parent="." unique_id=278712898]
+position = Vector2(72, 290)
+texture = ExtResource("3_iypwn")

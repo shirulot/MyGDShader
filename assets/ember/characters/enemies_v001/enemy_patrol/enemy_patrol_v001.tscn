@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="SpriteFrames" path="res://assets/ember/characters/enemies_v001/enemy_patrol/enemy_patrol_frames_v001.tres" id="1_frames"]
+
+[node name="enemy_patrol" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = ExtResource("1_frames")
+animation = &"idle_down"
+centered = false
+offset = Vector2(-64, -104)
+metadata/frame_canvas_px = Vector2i(128, 128)
+metadata/pivot_px = Vector2i(64, 104)
+metadata/visual_acceptance = "PENDING_ART_REVIEW"

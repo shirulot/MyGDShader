@@ -1,0 +1,798 @@
+{
+  "date": "2026-10-04",
+  "status": "INDEPENDENT_OTHER_ART_41_NATIVE_PIXEL_FRACTURE_REVIEW_COMPLETE",
+  "role": "Independent reviewer of existing production; not original creator; no production edits.",
+  "scope": {
+    "production_pngs": 41,
+    "building_and_prop_pngs": 19,
+    "ui_pngs": 15,
+    "vfx_and_3d_art_pngs": 7,
+    "excluded": [
+      "robot frames and atlas",
+      "three tile atlases",
+      "40 technical data PNGs"
+    ]
+  },
+  "result": {
+    "confirmed_pixel_fracture_assets": 0,
+    "unresolved_suspect_assets": 0,
+    "normal_design_assets_with_holes_or_discontinuous_motifs": 15,
+    "other_assets_without_observed_fractures": 26,
+    "production_art_pngs_modified": 0,
+    "partial_alpha_pixels_all_41": 0,
+    "native_finished_pngs_identical_to_production": 40,
+    "late_object_assets_recomposed_from_real_layers": 18,
+    "source_recomposition_alpha_or_visible_rgb_difference_pixels": 0
+  },
+  "method": [
+    "Read 41 production PNGs, independent alpha 4/8 connected components and enclosed-hole coordinates.",
+    "Actually inspect every production PNG at native 1x and exact nearest 4x; individual images avoid downscaled large-board ambiguity.",
+    "Read additional/full-art/batch source catalogs and native finishing records; compare native finished PNG bytes for 40.",
+    "Independently alpha-compose the real 18 late object layer sets and compare all alpha and visible RGB to production.",
+    "Judge every detected hole/disconnected component by object semantics; do not apply global hole filling."
+  ],
+  "limits": [
+    "This covers native static artwork and exact integer enlargement. Runtime sampling, frame anatomy and tile neighbor seams are separate team reviews.",
+    "No fracture observed is a scoped visual result, not a guarantee against every possible future shader distortion or display scale."
+  ],
+  "coordinate_convention": "native x,y; bbox x0,y0,x1,y1 exclusive end",
+  "measurement_file": "alpha-measurements.json",
+  "measurement_sha256": "22a1b465128efbdad1168ad56d15f2978f8e7c0310c9bc1e76474826d2613ea7",
+  "catalog_sha256": {
+    "assets/ember/ember_additional_catalog_v001.json": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+    "art-source/ember/full-art-v001/candidate-catalog-v001.json": "476898dfabe9a16c3046921412179c5fe17ccf7e7d12978fdffc6242ca325b35",
+    "art-source/ember/batch-03-objects/native-catalog-v001.json": "f32f1c0be42cbe7c7188a198d3c17afcbbb96aa4400a1bdf174a418d967ced82",
+    "art-source/ember/batch-04-ui/ui-catalog-v001.json": "51be57a807111038c41feae9b777158affac3257cf3b65e51dfa769678fd66ae",
+    "art-source/ember/batch-05-textures/textures-catalog-v001.json": "ba75ca9f12bea994824a31a7bd46602965e292fb8bde232fe28a183cdd201d09",
+    "art-source/ember/batch-01/pixel-finish-v001/finishing-record.json": "a09ffeee72bf424c45dfe2ddff9895d26829fbefab8d76f67cee296f99a7c17f"
+  },
+  "assets": [
+    {
+      "id": "console_base_v001",
+      "file": "assets/ember/buildings/console/console_base_v001.png",
+      "sha256": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "console_base_v001-native-and-nearest4x.png",
+      "visual_sha256": "cecc4235326bf574c5304c362fb3cddbd0a7a7a802e9514817be87af6e72705c",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "cooler_base_v001",
+      "file": "assets/ember/buildings/cooler/cooler_base_v001.png",
+      "sha256": "86606ba53c17e572cc19e5f1b9336e8245ecc52fa01cc6ddc08761b13047ca2b",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "cooler_base_v001-native-and-nearest4x.png",
+      "visual_sha256": "95490cff594fc2f275301f9c2781631c9bc78d7d92ae5b72c9781669c421d053",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "door_closed_v001",
+      "file": "assets/ember/buildings/door/door_closed_v001.png",
+      "sha256": "4aa35db2b665e5f235d019e002bf2aed4e52243c18d00cf53d41d6176ef18437",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "door_closed_v001-native-and-nearest4x.png",
+      "visual_sha256": "f546bd7c79f860027ab445d27ba3d4d64cb01a20341098e21280927d8002fd1b",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "door_open_v001",
+      "file": "assets/ember/buildings/door/door_open_v001.png",
+      "sha256": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "开启状态通路明确为透明区域；横梁连接两侧立框。不得填成实心墙面。",
+      "native_evidence_regions": [
+        [
+          26,
+          38,
+          70,
+          112
+        ]
+      ],
+      "visual": "door_open_v001-native-and-nearest4x.png",
+      "visual_sha256": "be941ab725cbdb3ccfd6596d76c75de6fccb62bdbe6268c50e3715103d9a7b93",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "floor_lamp_v001",
+      "file": "assets/ember/buildings/lights/floor_lamp_v001.png",
+      "sha256": "09b7b326be066958f0c9015cd07bdf6532bd74c7e0861d2eabacfb3b8590b464",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "floor_lamp_v001-native-and-nearest4x.png",
+      "visual_sha256": "7c98ba2db2d92c6af08dab4887ee99e5d441c3c523d4fd0ec91ef9a65a2de80e",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "wall_lamp_v001",
+      "file": "assets/ember/buildings/lights/wall_lamp_v001.png",
+      "sha256": "aa27b42d2d09a608416bbcf770e78de947e096f7beca4797b23b38ff29932a79",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "右侧电缆弯环内孔；原生整理记录明确保留该电缆弯环与孔。",
+      "native_evidence_regions": [
+        [
+          37,
+          23,
+          39,
+          28
+        ]
+      ],
+      "visual": "wall_lamp_v001-native-and-nearest4x.png",
+      "visual_sha256": "011ecabc11cdf2b23a69e4de2dd4b603022f3c61d0d68ff3c17c660a2dc6b479",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "pump_base_v001",
+      "file": "assets/ember/buildings/pump/pump_base_v001.png",
+      "sha256": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "pump_base_v001-native-and-nearest4x.png",
+      "visual_sha256": "765e195aae6764d76bfa3eb9f4a37b9e861805a8d2db211a4ad2179cf5e45197",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "relay_base_v001",
+      "file": "assets/ember/buildings/relay/relay_base_v001.png",
+      "sha256": "2c42f50ae8af4aa2397255112fa4255ed5f50d943919611c4419d04b06669b98",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "两侧管路与主体间留空；桅杆、横梁及天线实体连续。两孔大小略有差别符合既有左右管路形状。",
+      "native_evidence_regions": [
+        [
+          71,
+          177,
+          73,
+          182
+        ],
+        [
+          119,
+          176,
+          121,
+          182
+        ]
+      ],
+      "visual": "relay_base_v001-native-and-nearest4x.png",
+      "visual_sha256": "feb8ec7a3b50d5bde6977d8f6a5152c2deba2a29eeb0e80bc3682608f6142d0e",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "station_base_v001",
+      "file": "assets/ember/buildings/station/station_base_v001.png",
+      "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "两侧弯管与圆柱本体之间的成对穿空；管路连接及基座均连续，静态底图不是分层导出丢像素。",
+      "native_evidence_regions": [
+        [
+          32,
+          81,
+          38,
+          88
+        ],
+        [
+          90,
+          81,
+          96,
+          88
+        ]
+      ],
+      "visual": "station_base_v001-native-and-nearest4x.png",
+      "visual_sha256": "8a16308bbc12558611e293c86eea1cccdabedfaea608e6b5fa72bd77d0e816f1",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "telepad_base_v001",
+      "file": "assets/ember/buildings/telepad/telepad_base_v001.png",
+      "sha256": "8d59c3ba8ed09aa50a9232c5b3f8ffe204c9a8f41da408499d5208cd8c081512",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "telepad_base_v001-native-and-nearest4x.png",
+      "visual_sha256": "08fcfe21a9f63c665015e774850926a767d3f5bbda145049bdcac9155f0cae7f",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "screen_frame_v001",
+      "file": "assets/ember/buildings/terminal/screen_frame_v001.png",
+      "sha256": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "九宫格外框中心48×48完整透明；四边连续，源登记 draw_center=false。",
+      "native_evidence_regions": [
+        [
+          24,
+          24,
+          72,
+          72
+        ]
+      ],
+      "visual": "screen_frame_v001-native-and-nearest4x.png",
+      "visual_sha256": "f1f1d12e5a59064776701fe0b64054643e906112c05757cabaf8c454732102aa",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "terminal_body_v001",
+      "file": "assets/ember/buildings/terminal/terminal_body_v001.png",
+      "sha256": "67c2c54fb0efbc1ffdb1cfa01c61ae6216f2947a74b1e29847c37be401c1b812",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "terminal_body_v001-native-and-nearest4x.png",
+      "visual_sha256": "0e476f58ec0f91e25e95105729331f904f5b5dbb271c31035cfbc2b06c6bec3e",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "ventilator_base_v001",
+      "file": "assets/ember/buildings/ventilator/ventilator_base_v001.png",
+      "sha256": "74a301919676247d40b5e163bf116d011c3231cc2d2cb18949d2e950af09f187",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "ventilator_base_v001-native-and-nearest4x.png",
+      "visual_sha256": "42ac49085c5b5077a6be6676926d955cecfceebeec7374cf0bc3ea9c684f7b2a",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "antenna_coil_v001",
+      "file": "assets/ember/props/calibration/antenna_coil_v001.png",
+      "sha256": "eb95dc28410a802402a70e43dfa7403376aebc0ad9ccc7fead3c99168d58904c",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "两处2×1穿孔是明确登记的绕组外沿穿孔，不是缺失像素。",
+      "native_evidence_regions": [
+        [
+          20,
+          27,
+          22,
+          28
+        ],
+        [
+          33,
+          27,
+          35,
+          28
+        ]
+      ],
+      "visual": "antenna_coil_v001-native-and-nearest4x.png",
+      "visual_sha256": "1558787fefda841184a20a2b1b1868acb824c84bc43115445d86752a80a21a44",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "fuse_v001",
+      "file": "assets/ember/props/calibration/fuse_v001.png",
+      "sha256": "71288a979fade1ac91a129b0d808a3576877d478c2e3c2292927d2f008c9951a",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "右端1×3槽和左端叉口为刻意不对称校准结构；源记录有透明孔坐标。",
+      "native_evidence_regions": [
+        [
+          48,
+          48,
+          49,
+          51
+        ],
+        [
+          13,
+          49,
+          16,
+          51
+        ]
+      ],
+      "visual": "fuse_v001-native-and-nearest4x.png",
+      "visual_sha256": "909ca0b1446243b344821d405261f58fbc8ca6cff51971288e4a02396c0e13e9",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "split_ring_v001",
+      "file": "assets/ember/props/calibration/split_ring_v001.png",
+      "sha256": "30147d02b0140b8a1a258cb713ef88c1778e2a6c061b3715becb2984bdf335ad",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "C形环的开口与内部空间相通；源登记 gap[41,48,44,51)，不可补成闭环。",
+      "native_evidence_regions": [
+        [
+          41,
+          48,
+          44,
+          51
+        ]
+      ],
+      "visual": "split_ring_v001-native-and-nearest4x.png",
+      "visual_sha256": "53c0764e9a3d5ef8570b6eb1df1393f2b2eafa64021edf867b06c8fabb12ea72",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "helmet_v001",
+      "file": "assets/ember/props/story/helmet_v001.png",
+      "sha256": "a920b3f0ac6940f7c2a53ccc04e59f8b13003486052d15d93e9e5488fe288dc6",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "helmet_v001-native-and-nearest4x.png",
+      "visual_sha256": "a53681aa79d95fc6d574aeb2e277c58f6ed5aa32b64cf23da94f85847c79db28",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "log_cartridge_v001",
+      "file": "assets/ember/props/story/log_cartridge_v001.png",
+      "sha256": "14faf29c1959209f37c196bf47480b41fdac604f9587b7cd9c273c80cdce9b6a",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "log_cartridge_v001-native-and-nearest4x.png",
+      "visual_sha256": "8ea53b05118e15a43859c959164e860ca6f9b49700809464dcffe96124052b09",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "toolbox_v001",
+      "file": "assets/ember/props/story/toolbox_v001.png",
+      "sha256": "d3f8b0279f5940c88e064f1d78733ea48ecb9ef320c597953902359a8b9339bd",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "手柄内槽形成33像素透明孔，包含登记核心孔[28,33,37,35)；手柄边缘和箱体仍连通。",
+      "native_evidence_regions": [
+        [
+          26,
+          33,
+          39,
+          36
+        ],
+        [
+          28,
+          33,
+          37,
+          35
+        ]
+      ],
+      "visual": "toolbox_v001-native-and-nearest4x.png",
+      "visual_sha256": "170946feda1317c3f62e3055406460a067163f99d9b98c44852aceb725138e32",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "energy_v001",
+      "file": "assets/ember/ui/icons/energy_v001.png",
+      "sha256": "576d909c4c1068485aab26279e61ce8a5a20a32b31e900ef6c10ca0ba9a59da6",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "energy_v001-native-and-nearest4x.png",
+      "visual_sha256": "070f8e964ecb51f3818daef0c6036fc2520d69948e5ab3a944b891e315d5a2e4",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "hp_v001",
+      "file": "assets/ember/ui/icons/hp_v001.png",
+      "sha256": "1e4c4d8f02dfadf0249a89a75f2e0441b0fbaaf401447124bf5673f91398a817",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "hp_v001-native-and-nearest4x.png",
+      "visual_sha256": "70e9a1b434cf79ef10e3ad33799901b91788ac73f11bb4e2203f1738396a04f5",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "interact_v001",
+      "file": "assets/ember/ui/icons/interact_v001.png",
+      "sha256": "7b770b8ddb0bb385cdabd139efb7f148ecbe9cfd93ab0de61b36f947d9940776",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "两个1像素透明点位于机械手指/关节之间，指尖2px陶瓷杆与开关连续；没有悬空手指碎片。",
+      "native_evidence_regions": [
+        [
+          19,
+          15,
+          20,
+          16
+        ],
+        [
+          18,
+          16,
+          19,
+          17
+        ]
+      ],
+      "visual": "interact_v001-native-and-nearest4x.png",
+      "visual_sha256": "dd07065229c8d22932673eb55144fc97f7dbaf81e4d16c0ba5eb1b4fff87fb73",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "log_v001",
+      "file": "assets/ember/ui/icons/log_v001.png",
+      "sha256": "b4f8460c84b54e43121940f6a1b7f13b16452528821fe1899c8a1ce37703eda9",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "log_v001-native-and-nearest4x.png",
+      "visual_sha256": "36e9669d29da5b9bdfcfd97c88495bc44fad689ba17b44bd9aa3047af5c6f4cb",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "pause_v001",
+      "file": "assets/ember/ui/icons/pause_v001.png",
+      "sha256": "575ac144805cc8cfc533060c87409e40057de2907da5cd5aace4a0ab82a23bc9",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "pause_v001-native-and-nearest4x.png",
+      "visual_sha256": "8719856fc7e62768a491aa59fa53f2c6e814d50264089a07163d517f60114fd4",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "time_v001",
+      "file": "assets/ember/ui/icons/time_v001.png",
+      "sha256": "60fe96b8625c9d5ffc5d18b715283cd634f0233c4c5d4d1c5db9e91d19be292e",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "time_v001-native-and-nearest4x.png",
+      "visual_sha256": "1b39f033fe7c2b9d3c0e4f781fad3dab6b1a7e55f2f896ba28211adce6e85d8b",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "panel_9slice_v001",
+      "file": "assets/ember/ui/panels/panel_9slice_v001.png",
+      "sha256": "d291fee85289541740b8b403535cf22d05c1f3676116fb78e3a4f50e580c79fe",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "panel_9slice_v001-native-and-nearest4x.png",
+      "visual_sha256": "6a45e37670bef0600010927e6f0a2f346bfd8ecdf0f29d953bcac1fc232246aa",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "communication_v001",
+      "file": "assets/ember/ui/tasks/communication_v001.png",
+      "sha256": "4743e61790824d784a3e8447f34fda04850de15ca00edb45d3caddc9e248210e",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "柱周围通信波瓣留空；1px亮线带暗衬是语义图标结构，柱和底座连续。所有透明孔坐标在测量附件。",
+      "native_evidence_regions": [
+        [
+          9,
+          8,
+          10,
+          9
+        ],
+        [
+          18,
+          9,
+          19,
+          13
+        ],
+        [
+          24,
+          10,
+          25,
+          13
+        ],
+        [
+          10,
+          13,
+          11,
+          14
+        ],
+        [
+          20,
+          13,
+          21,
+          14
+        ],
+        [
+          18,
+          14,
+          21,
+          18
+        ],
+        [
+          7,
+          17,
+          8,
+          18
+        ],
+        [
+          24,
+          17,
+          25,
+          18
+        ],
+        [
+          20,
+          18,
+          21,
+          19
+        ]
+      ],
+      "visual": "communication_v001-native-and-nearest4x.png",
+      "visual_sha256": "e971f79731c8e8940854b6658c2b0121dab17eedf9f01ea0052157e29c79eb84",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "cooling_v001",
+      "file": "assets/ember/ui/tasks/cooling_v001.png",
+      "sha256": "0e037939288b99d4fa1f510347e18d4d53474508383a7f0d8998d2d520099585",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "左右换热鳍片各有对称1px留空，中央六枝雪花及主体连续，不是线条端部脱落。",
+      "native_evidence_regions": [
+        [
+          7,
+          16,
+          8,
+          17
+        ],
+        [
+          24,
+          16,
+          25,
+          17
+        ]
+      ],
+      "visual": "cooling_v001-native-and-nearest4x.png",
+      "visual_sha256": "88868e006b18e34ec0c524b9bde95342ff34a53b234d5022a238bd915d33f6c0",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "drainage_v001",
+      "file": "assets/ember/ui/tasks/drainage_v001.png",
+      "sha256": "96533facc1dbe1bd9e8c095955ad086d5693c5ab7500f5baea0ff5d38eb9a0d7",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "drainage_v001-native-and-nearest4x.png",
+      "visual_sha256": "dd83ce22740465154018ffcc60747f8d45d5b9429c2c54e023557f742d735270",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "lighting_v001",
+      "file": "assets/ember/ui/tasks/lighting_v001.png",
+      "sha256": "a9d94ba7203b8ebf21e761b1830d126be899d8df4528ae3c3058716d4685676c",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "lighting_v001-native-and-nearest4x.png",
+      "visual_sha256": "a80cfa7834b1e83f36a626e4105eff9dde4148c024f4e0a6e45b1efeea144754",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "protection_v001",
+      "file": "assets/ember/ui/tasks/protection_v001.png",
+      "sha256": "101b87a8bc083b07d01e469fb41dab6082e3cda188b33abcaea37226f0ea9fc5",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "protection_v001-native-and-nearest4x.png",
+      "visual_sha256": "a1793e20b5556c6bb25fbed1e32212999c1cb62f176d122745490edb45651c69",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "teleport_v001",
+      "file": "assets/ember/ui/tasks/teleport_v001.png",
+      "sha256": "2784f5e7090d78d1ebe3e3de80fb73ed18bc1e6745f9a0b1ac6e333651dade3d",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "空心拱门与中央箭头之间透明；箭头2px杆和阶梯尖连续，底座相接。",
+      "native_evidence_regions": [
+        [
+          11,
+          10,
+          21,
+          16
+        ],
+        [
+          11,
+          17,
+          14,
+          20
+        ],
+        [
+          19,
+          17,
+          21,
+          19
+        ]
+      ],
+      "visual": "teleport_v001-native-and-nearest4x.png",
+      "visual_sha256": "b63e20ab3cca40489dd1ffcf5d395f15c8f88b656e023793cfa844ae4834a434",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "ventilation_v001",
+      "file": "assets/ember/ui/tasks/ventilation_v001.png",
+      "sha256": "d4ca2e1e5f6e0855e190eaa8eb86eae25df29f11ffdb5ef8cf2a2ba9a7201352",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "ventilation_v001-native-and-nearest4x.png",
+      "visual_sha256": "ba1f1004f0eb35b57251be8f1fdb96649105bf06bfdda1580999ac46bcd03d54",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "water_supply_v001",
+      "file": "assets/ember/ui/tasks/water_supply_v001.png",
+      "sha256": "1f427adc180a0292a036a2da0655f7ef9d1c4092542ad4f57e2fcd6108415d8b",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "water_supply_v001-native-and-nearest4x.png",
+      "visual_sha256": "92ca05fe8bf62f202e72fb6db46cf6247054be6c0ae733fed0bc967dbdf2d2ca",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "smoke_blob_v001",
+      "file": "assets/ember/vfx/smoke/smoke_blob_v001.png",
+      "sha256": "31a27aec9a4cbe4edcd73dea99676c2d534802b5063256f0706409239a446a2d",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "smoke_blob_v001-native-and-nearest4x.png",
+      "visual_sha256": "0281c93f5dc8f5e541bbaf6c781ab0330f8ab5398d499223bc23498c514acdfb",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "foam_strip_v001",
+      "file": "assets/ember/vfx/water/foam_strip_v001.png",
+      "sha256": "970dac7f57d35732c145d6b8ef307de59b9dd707cf0cd957a5ddbe3416605e24",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "主泡沫带外7像素小团为喷溅泡沫；两处透明泡孔符合断续双带，不是应连接的硬表面。X边完整配对。",
+      "native_evidence_regions": [
+        [
+          40,
+          28,
+          43,
+          32
+        ],
+        [
+          9,
+          33,
+          19,
+          38
+        ],
+        [
+          35,
+          36,
+          37,
+          38
+        ]
+      ],
+      "visual": "foam_strip_v001-native-and-nearest4x.png",
+      "visual_sha256": "37f41b126470ff19454e90728e003f69d23045243f3cb04b7cbadb7db2ea56e4",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "water_calm_v001",
+      "file": "assets/ember/vfx/water/water_calm_v001.png",
+      "sha256": "5a1aeb3389a5d633ff81e43ae299057388dda8dd8b88923690012079798d3881",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "water_calm_v001-native-and-nearest4x.png",
+      "visual_sha256": "b47a3498e8fc8dfbfaece27c5bd6416ccd008c9dd512c6d09a280db95bde8cd4",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "water_directional_v001",
+      "file": "assets/ember/vfx/water/water_directional_v001.png",
+      "sha256": "2f3d48baa11688f3f37caa230415b32cef4aa5603e1301662ce5b3b2c32b2e38",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "water_directional_v001-native-and-nearest4x.png",
+      "visual_sha256": "cd469bb764e4402b2e0cfab9c66edf06191a5210cdbbe6cc73c5ffdea596d841",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "concrete_albedo_v001",
+      "file": "assets/ember/three_d/textures/concrete/concrete_albedo_v001.png",
+      "sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "concrete_albedo_v001-native-and-nearest4x.png",
+      "visual_sha256": "ffbb0e19b31324cd4830f16b8a700467ffcd18090c4c9c6053df1308cbcc4321",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "grass_leaf_v001",
+      "file": "assets/ember/three_d/textures/grass/grass_leaf_v001.png",
+      "sha256": "1dc463fc71b8e44fc7148de106fdd05fbc0389364925eee0180c4a6e37b23888",
+      "classification": "NORMAL_DESIGN",
+      "observation_zh": "细叶斜线以相邻像素角连接：4邻接9片、8邻接1片，所有叶片属于同一株，根部x31..33/y119会合。叶间细孔和阶梯轮廓不是机器人关节缺口；需在Nearest整数倍下判断。",
+      "native_evidence_regions": [
+        [
+          31,
+          119,
+          34,
+          120
+        ],
+        [
+          39,
+          79,
+          40,
+          91
+        ],
+        [
+          36,
+          84,
+          37,
+          93
+        ],
+        [
+          28,
+          104,
+          29,
+          107
+        ],
+        [
+          29,
+          107,
+          30,
+          110
+        ],
+        [
+          27,
+          102,
+          28,
+          104
+        ],
+        [
+          38,
+          111,
+          39,
+          113
+        ]
+      ],
+      "visual": "grass_leaf_v001-native-and-nearest4x.png",
+      "visual_sha256": "6f9fc31eb5519a2b34c8b40e2d3e11ad17327b6cf4dd2a6ae4f5316b32e55126",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    },
+    {
+      "id": "metal_albedo_v001",
+      "file": "assets/ember/three_d/textures/metal/metal_albedo_v001.png",
+      "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3",
+      "classification": "NO_FRACTURE_OBSERVED",
+      "observation_zh": "原生1×和Nearest4×逐张观察，实体轮廓及内部细线没有发现非预期透明孔、悬空片或中断。",
+      "native_evidence_regions": [],
+      "visual": "metal_albedo_v001-native-and-nearest4x.png",
+      "visual_sha256": "dd390fb7cc676e5b9d6588e689dbe99e23d9355e23ea0a9ee300e6ec1210b7cb",
+      "native_visual_inspected": true,
+      "nearest_4x_visual_inspected": true
+    }
+  ]
+}

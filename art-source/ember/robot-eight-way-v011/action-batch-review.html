@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>机器人 · 八向完整动作</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#182631;color:#dbe3df;font:15px/1.55 system-ui,'Microsoft YaHei',sans-serif}main{max-width:1120px;margin:24px auto;padding:0 20px}h1{font-size:25px;margin:0 0 8px}p{margin:6px 0 14px;color:#a8bbb9}.controls{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin:12px 0}label{display:flex;align-items:center;gap:7px}button,select{border:1px solid #4d6470;border-radius:5px;padding:8px 12px;background:#2b3e4b;color:#ece9d8;font:inherit}button{cursor:pointer}button:hover{background:#435d68}input[type=range]{flex:1;min-width:130px}input[type=checkbox]{accent-color:#e2b77a}.stage{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:14px}.card{border:1px solid #344c59;border-radius:6px;overflow:hidden}.caption{padding:9px 12px;color:#a8bbb9}.surface{height:410px;display:grid;place-items:center;background:#ece9d8}.surface.dark{background:#182631}.surface.checker{background:repeating-conic-gradient(#cad0c8 0% 25%,#a8b5b6 0% 50%) 0/24px 24px}canvas{image-rendering:pixelated}.foot{padding:10px 12px;display:flex;align-items:center;gap:10px;min-height:45px}.muted{color:#a8bbb9;font-size:13px}#status{min-height:24px;color:#e2b77a}.strip{margin-top:16px;border:1px solid #344c59;border-radius:6px;padding:12px;overflow-x:auto}.strip .surface{height:208px;min-width:max-content}a{color:#bdd1d2}details{margin-top:14px}footer{margin:20px 0;color:#a8bbb9;font-size:13px}@media(max-width:720px){.stage{grid-template-columns:1fr}.native-card .surface{height:160px}}
+</style>
+<main>
+<h1>机器人 · 八向待机、行走与采集</h1>
+<p>24 段动作，112 帧。八向待机、行走和采集已通过逐批独立审查。</p>
+<div class="controls">
+<label>方向 <select id="direction" aria-label="方向"><option value="down">南 · 正面</option><option value="down_left" selected>南西</option><option value="left">西 · 左侧</option><option value="up_left">北西</option><option value="up">北 · 背面</option><option value="up_right">北东</option><option value="right">东 · 右侧</option><option value="down_right">南东</option></select></label>
+<label>动作 <select id="action" aria-label="动作"><option value="idle">待机 · 2帧</option><option value="walk">行走 · 8帧</option><option value="collect">采集 · 4帧</option></select></label>
+<label>速度 <select id="speed" aria-label="速度"><option value="1">正常速度</option><option value="0.25">四分之一速度</option></select></label>
+<label>背景 <select id="background" aria-label="背景"><option value="light">浅底</option><option value="dark">深底</option><option value="checker">棋盘格</option></select></label>
+</div>
+<div class="controls"><button id="play">暂停</button><button id="replay">重播动作</button><button id="previous">上一帧</button><button id="next">下一帧</button><label><input type="checkbox" id="return-idle" checked>采集结束回待机</label></div>
+<div id="status">正在加载实际帧……</div>
+<section class="stage">
+<div class="card"><div class="caption">4× 最近邻</div><div class="surface"><canvas id="large" width="256" height="384" aria-label="4倍动作预览"></canvas></div><div class="foot"><span id="frame-label">F00</span><input type="range" id="frame" min="0" max="1" value="0" aria-label="帧索引"></div></div>
+<div class="card native-card"><div class="caption">1× 原生 · 64 × 96</div><div class="surface"><canvas id="native" width="64" height="96" aria-label="原生动作预览"></canvas></div><div class="foot muted">固定原点 · 鞋底与关节逐帧核对</div></div>
+</section>
+<div class="strip"><div class="caption">当前动作全帧 · 从左到右</div><div class="surface"><canvas id="strip" width="128" height="96" aria-label="当前动作全帧对照"></canvas></div></div>
+<footer><a href="full-action-metadata.json">素材清单</a> · <a id="animation-link" href="previews/full/idle_down_left_normal_4x_v011.webp">当前动作 WebP</a> · <a href="godot-full-review/project.godot">独立 Godot 工程</a><br>采集：准备 → 下探 → 保持 → 回位。末帧回到同方向待机首帧；浅色甲片、左腕工具和靴子沿用固定源。</footer>
+</main>
+<script>
+// 仅显示导出的真实PNG；画布不生成或补绘角色。切向保留相位，切动作回首帧。
+const $=id=>document.getElementById(id),cache=new Map();let meta,clip,frame=0,playing=true,elapsed=0,last=performance.now();
+function context(id){const ctx=$(id).getContext('2d');ctx.imageSmoothingEnabled=false;return ctx;}
+function draw(){
+ if(!clip)return;const image=cache.get(clip.frames[frame].file);
+ for(const[id,scale]of[['large',4],['native',1]]){const ctx=context(id);ctx.clearRect(0,0,64*scale,96*scale);ctx.drawImage(image,0,0,64*scale,96*scale);}
+ $('frame').value=frame;$('frame-label').textContent=`F${String(frame).padStart(2,'0')} / ${clip.frames.length}帧`;$('play').textContent=playing?'暂停':'播放';
+}
+function choose(reset=true){
+ clip=meta.clips.find(c=>c.name===$('action').value+'_'+$('direction').value);frame=reset?0:Math.min(frame,clip.frames.length-1);elapsed=0;
+ $('frame').max=clip.frames.length-1;$('status').textContent=`${clip.fps} FPS · ${clip.loop?'循环':'非循环'} · ${clip.art_status==='PASS'?'已通过独立审查':'待审'}`;
+ const strip=$('strip');strip.width=64*clip.frames.length;strip.height=96;strip.style.width=strip.width*2+'px';strip.style.height='192px';const ctx=context('strip');clip.frames.forEach((f,i)=>ctx.drawImage(cache.get(f.file),i*64,0));
+ $('animation-link').href=`previews/full/${clip.name}_${$('speed').value==='1'?'normal':'slow'}_4x_v011.webp`;draw();
+}
+$('direction').onchange=()=>choose(false);$('action').onchange=()=>choose(true);$('speed').onchange=()=>choose(false);
+$('background').onchange=()=>document.querySelectorAll('.surface').forEach(surface=>surface.className='surface '+$('background').value);
+$('play').onclick=()=>{playing=!playing;elapsed=0;draw();};$('replay').onclick=()=>{frame=0;playing=true;elapsed=0;draw();};
+function step(change){playing=false;frame=(frame+change+clip.frames.length)%clip.frames.length;elapsed=0;draw();}
+$('previous').onclick=()=>step(-1);$('next').onclick=()=>step(1);$('frame').oninput=()=>{playing=false;frame=Number($('frame').value);elapsed=0;draw();};
+function tick(now){
+ const delta=Math.min(100,now-last);last=now;
+ if(clip&&playing){elapsed+=delta;const duration=1000/(clip.fps*Number($('speed').value));if(elapsed>=duration){elapsed-=duration;if(frame+1<clip.frames.length)frame++;else if(clip.loop)frame=0;else if($('return-idle').checked){$('action').value='idle';choose(true);}else playing=false;draw();}}
+ requestAnimationFrame(tick);
+}
+(async()=>{meta=await(await fetch('full-action-metadata.json')).json();await Promise.all(meta.clips.flatMap(c=>c.frames).map(async f=>{if(cache.has(f.file))return;const image=new Image();image.src=f.file;await image.decode();cache.set(f.file,image);}));choose();requestAnimationFrame(tick);})().catch(error=>{$('status').textContent='加载失败：'+error.message;});
+</script></html>

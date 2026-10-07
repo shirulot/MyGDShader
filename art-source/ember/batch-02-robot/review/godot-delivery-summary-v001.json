@@ -1,0 +1,198 @@
+{
+  "status": "GODOT_DELIVERY_AND_FRESH_REUSE_PASS",
+  "engine": "4.7.2-stable (steam)",
+  "timestamp_utc": "2026-10-04T01:59:42.5117404Z",
+  "delivery": [
+    "tools/build_ember_robot_animation.gd",
+    "assets/ember/characters/robot/robot_sprite_frames_v001.tres",
+    "scenes/ember/robot_animation_sandbox.tscn"
+  ],
+  "main_report": "godot_verify_only_v001.json",
+  "main_render_report": "godot_render_validation_v001.json",
+  "fresh_report": "godot_fresh_validation_v001.json",
+  "fresh_render_report": "godot_fresh_render_validation_v001.json",
+  "fresh_tileset_report": "godot_fresh_tileset_validation_v001.json",
+  "scene_preserved_during_verify": true,
+  "clip_count": 8,
+  "frame_count": 20,
+  "native_regions_equal_to_source": 20,
+  "sandbox_sprite_count": 16,
+  "runtime": {
+    "fresh_gpu": {
+      "observation_ms": 654,
+      "walk_complete_cycles": 8,
+      "idle_static": 8
+    },
+    "main": {
+      "observation_ms": 648,
+      "walk_complete_cycles": 8,
+      "idle_static": 8
+    },
+    "fresh": {
+      "observation_ms": 620,
+      "walk_complete_cycles": 8,
+      "idle_static": 8
+    },
+    "main_gpu": {
+      "observation_ms": 642,
+      "walk_complete_cycles": 8,
+      "idle_static": 8
+    },
+    "method": "frame_changed signals: all walk previews visit [0,1,2,3] and record at least one 3->0 wrap; actual scene timing, no advance()"
+  },
+  "fresh_project": {
+    "copied_files_changed": [],
+    "tileset_resource_count": 4,
+    "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\fresh-project-v001",
+    "tileset_tile_count": 62,
+    "autoload_present": false,
+    "copied_file_count": 59,
+    "godot_cache_present_before_import": false,
+    "excluded_from_zip": "review/fresh-*"
+  },
+  "protection": {
+    "verify_and_render_file_count": 25,
+    "verify_and_render_changed": [],
+    "old_project_tileset_and_original_idle_count": 38,
+    "old_changed": [],
+    "accepted_idle_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+  },
+  "gpu_visual_review": {
+    "observations": [
+      "中文标签可读，四方向 idle/walk 全部显示",
+      "原生1倍和整数2倍未裁切，脚底十字对应统一锚点",
+      "真实导入的SpriteFrames无需旧Game或原工程缓存"
+    ],
+    "size": [
+      1280,
+      800
+    ],
+    "images": [
+      "godot_robot_animation_sandbox_v001.png",
+      "godot_robot_animation_fresh_v001.png"
+    ],
+    "status": "PASS"
+  },
+  "stages": [
+    {
+      "name": "syntax",
+      "arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--check-only",
+        "--script",
+        "res://tools/build_ember_robot_animation.gd"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout": "godot-logs/syntax.stdout.log",
+      "stderr": "godot-logs/syntax.stderr.log"
+    },
+    {
+      "name": "verify",
+      "arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--script",
+        "res://tools/build_ember_robot_animation.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_verify_only_v001.json"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout": "godot-logs/verify.stdout.log",
+      "stderr": "godot-logs/verify.stderr.log"
+    },
+    {
+      "name": "render",
+      "arguments": [
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+        "--position",
+        "-2000,-2000",
+        "--script",
+        "res://tools/build_ember_robot_animation.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_render_validation_v001.json",
+        "--screenshot=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_robot_animation_sandbox_v001.png"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout": "godot-logs/render.stdout.log",
+      "stderr": "godot-logs/render.stderr.log"
+    },
+    {
+      "name": "fresh-verify",
+      "arguments": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\fresh-project-v001",
+        "--script",
+        "res://tools/build_ember_robot_animation.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_fresh_validation_v001.json"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout": "godot-logs/fresh-verify.stdout.log",
+      "stderr": "godot-logs/fresh-verify.stderr.log"
+    },
+    {
+      "name": "fresh-render",
+      "arguments": [
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\fresh-project-v001",
+        "--position",
+        "-2000,-2000",
+        "--script",
+        "res://tools/build_ember_robot_animation.gd",
+        "--",
+        "--verify-only",
+        "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_fresh_render_validation_v001.json",
+        "--screenshot=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_robot_animation_fresh_v001.png"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout": "godot-logs/fresh-render.stdout.log",
+      "stderr": "godot-logs/fresh-render.stderr.log"
+    },
+    {
+      "name": "import",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout": "godot-logs/import.stdout.log",
+      "stderr": "godot-logs/import.stderr.log",
+      "exit_code_evidence": "Actual Start-Process -Wait -PassThru ExitCode observed during this audit"
+    },
+    {
+      "name": "build",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout": "godot-logs/build.stdout.log",
+      "stderr": "godot-logs/build.stderr.log",
+      "exit_code_evidence": "Actual Start-Process -Wait -PassThru ExitCode observed during this audit"
+    },
+    {
+      "name": "fresh-import",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout": "godot-logs/fresh-import.stdout.log",
+      "stderr": "godot-logs/fresh-import.stderr.log",
+      "exit_code_evidence": "Actual Start-Process -Wait -PassThru ExitCode observed during this audit"
+    },
+    {
+      "name": "fresh-tilesets",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout": "godot-logs/fresh-tilesets.stdout.log",
+      "stderr": "godot-logs/fresh-tilesets.stderr.log",
+      "exit_code_evidence": "Actual Start-Process -Wait -PassThru ExitCode observed during this audit"
+    }
+  ],
+  "scope": "Godot资源交付、重载与播放时序；美术语义和步态视觉质量由root独立逐帧验收"
+}

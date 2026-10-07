@@ -1,0 +1,68 @@
+[
+  {
+    "stage": "initial-import",
+    "engine_arguments": [
+      "--headless",
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\production-v008\\godot-review",
+      "--editor",
+      "--import"
+    ],
+    "exit_code": 0,
+    "stdout_log": "logs/initial-import.stdout.log",
+    "stderr_log": "logs/initial-import.stderr.log",
+    "stdout_sha256": "cf9fd2a3dfae08e1a8af3b5cb09fa2362717efc5fd834ec635abd63ecce6224b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_bytes": 0
+  },
+  {
+    "stage": "policy-import",
+    "engine_arguments": [
+      "--headless",
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\production-v008\\godot-review",
+      "--editor",
+      "--import"
+    ],
+    "exit_code": 0,
+    "stdout_log": "logs/policy-import.stdout.log",
+    "stderr_log": "logs/policy-import.stderr.log",
+    "stdout_sha256": "95cbee913123f7018bb0064b9658b7fe3867ed68effe76df0d4229667f4e1f2e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_bytes": 0
+  },
+  {
+    "stage": "syntax",
+    "engine_arguments": [
+      "--headless",
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\production-v008\\godot-review",
+      "--script",
+      "res://validate.gd",
+      "--check-only"
+    ],
+    "exit_code": 0,
+    "stdout_log": "logs/syntax.stdout.log",
+    "stderr_log": "logs/syntax.stderr.log",
+    "stdout_sha256": "0fb41bb7cc71b68a335c01d8f84a806304e1cc6bb173f34ca02cb913d0f62013",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_bytes": 0
+  },
+  {
+    "stage": "gpu-validation",
+    "engine_arguments": [
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\production-v008\\godot-review",
+      "--script",
+      "res://validate.gd",
+      "--",
+      "--capture"
+    ],
+    "exit_code": 0,
+    "stdout_log": "logs/gpu-validation.stdout.log",
+    "stderr_log": "logs/gpu-validation.stderr.log",
+    "stdout_sha256": "e1fffe7224e5a89c81d09382f2e3f3317b824534e08b4ffb17ab76a749ddefb6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_bytes": 0
+  }
+]

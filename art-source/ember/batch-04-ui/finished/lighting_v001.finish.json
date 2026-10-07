@@ -1,0 +1,64 @@
+{
+  "id": "lighting",
+  "method": "AI_BODY_MATERIAL_SAMPLING_NATIVE_SEMANTIC_PIXEL_FINISH",
+  "source_use": {
+    "mother": "art-source/ember/batch-04-ui/generated/lighting_master_v001.png",
+    "mother_sha256": "57c0051d38808efc076a4a9534a678f95a891f992dc3574364f670f8561488e1",
+    "source_unchanged": true,
+    "direct_original_rgba_byte_reuse": false,
+    "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+    "sampling": {
+      "source_alpha_threshold": 128,
+      "source_body_bbox": [
+        373,
+        230,
+        881,
+        1056
+      ],
+      "material_grid_size": [
+        15,
+        24
+      ],
+      "material_grid_origin": [
+        8,
+        4
+      ],
+      "native_semantic_changed_pixels": 34
+    }
+  },
+  "adjustments": [
+    "保留灯泡玻璃和螺口轮廓；不加光线或亮灯颜色",
+    "重绘两条1px护笼、玻璃反光和螺口横线，以形状区分能量电芯"
+  ],
+  "native_pixel_source": "art-source/ember/batch-04-ui/annotations/lighting_native_pixel_source_v001.json",
+  "measurement": {
+    "canvas": [
+      32,
+      32
+    ],
+    "bbox": [
+      8,
+      4,
+      23,
+      28
+    ],
+    "opaque_pixels": 245,
+    "transparent_pixels": 779,
+    "partial_alpha_pixels": 0,
+    "color_count": 10,
+    "palette_rgb": [
+      "#101820",
+      "#203A4B",
+      "#2B3E4B",
+      "#4D6470",
+      "#566B78",
+      "#7B4D35",
+      "#829BA3",
+      "#B77C4B",
+      "#BECBC4",
+      "#ECE9D8"
+    ],
+    "all_opaque_colors_in_standard16": true
+  },
+  "output_sha256": "a9d94ba7203b8ebf21e761b1830d126be899d8df4528ae3c3058716d4685676c"
+}

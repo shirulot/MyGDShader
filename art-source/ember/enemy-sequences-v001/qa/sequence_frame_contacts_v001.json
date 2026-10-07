@@ -1,0 +1,2045 @@
+{
+	"catalog_sha256": "568c280046c007c88240a40574592cc46e7f19b54ece1e0171a94807a3ba40e6",
+	"exact_rgba_identity_checks": 120,
+	"failures": [],
+	"magnification": 4,
+	"native_cell_px": [
+		128,
+		128
+	],
+	"patrol_move_strip_native": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/previews/enemy_patrol_move_down_strip_1x_v001.png",
+	"patrol_move_strip_x4": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/previews/enemy_patrol_move_down_strip_4x_v001.png",
+	"processing": "RGBA full fixed-cell arrangement; whole contact one nearest x4 resize only",
+	"row_order": [
+		"idle",
+		"move",
+		"attack",
+		"hit",
+		"death"
+	],
+	"scope": "Complete down-direction fixed-canvas frame contacts; 5 action rows by 8 frame columns",
+	"sheets": [
+		{
+			"cells": [
+				{
+					"action": "idle",
+					"clip_id": "enemy_patrol_idle_down",
+					"column": 0,
+					"events": [],
+					"fps": 4.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "d40fbbcb38ea7b8fe4d490ac4ce9a214997cd5723dcc57d4df62e39e679e93e1"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_patrol_idle_down",
+					"column": 1,
+					"events": [],
+					"fps": 4.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "d40fbbcb38ea7b8fe4d490ac4ce9a214997cd5723dcc57d4df62e39e679e93e1"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_patrol_idle_down",
+					"column": 2,
+					"events": [],
+					"fps": 4.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "d40fbbcb38ea7b8fe4d490ac4ce9a214997cd5723dcc57d4df62e39e679e93e1"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_patrol_idle_down",
+					"column": 3,
+					"events": [],
+					"fps": 4.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "d40fbbcb38ea7b8fe4d490ac4ce9a214997cd5723dcc57d4df62e39e679e93e1"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_patrol_move_down",
+					"column": 0,
+					"events": [
+						"support_phase_a"
+					],
+					"fps": 8.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "9897f84cc441f0a0abb619093f4413b66a51ffad2883441025068f6e6b4c7cea"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_patrol_move_down",
+					"column": 1,
+					"events": [],
+					"fps": 8.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "9897f84cc441f0a0abb619093f4413b66a51ffad2883441025068f6e6b4c7cea"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_patrol_move_down",
+					"column": 2,
+					"events": [],
+					"fps": 8.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "9897f84cc441f0a0abb619093f4413b66a51ffad2883441025068f6e6b4c7cea"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_patrol_move_down",
+					"column": 3,
+					"events": [],
+					"fps": 8.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "9897f84cc441f0a0abb619093f4413b66a51ffad2883441025068f6e6b4c7cea"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_patrol_move_down",
+					"column": 4,
+					"events": [
+						"support_phase_b"
+					],
+					"fps": 8.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "9897f84cc441f0a0abb619093f4413b66a51ffad2883441025068f6e6b4c7cea"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_patrol_move_down",
+					"column": 5,
+					"events": [],
+					"fps": 8.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "9897f84cc441f0a0abb619093f4413b66a51ffad2883441025068f6e6b4c7cea"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_patrol_move_down",
+					"column": 6,
+					"events": [],
+					"fps": 8.0,
+					"frame": 6,
+					"region_1x_px": [
+						768,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "9897f84cc441f0a0abb619093f4413b66a51ffad2883441025068f6e6b4c7cea"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_patrol_move_down",
+					"column": 7,
+					"events": [],
+					"fps": 8.0,
+					"frame": 7,
+					"region_1x_px": [
+						896,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "9897f84cc441f0a0abb619093f4413b66a51ffad2883441025068f6e6b4c7cea"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_patrol_attack_down",
+					"column": 0,
+					"events": [],
+					"fps": 10.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "660428139f128de976ebd4a3304b73c614b344692a9e529ec48e3526a10d3af8"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_patrol_attack_down",
+					"column": 1,
+					"events": [],
+					"fps": 10.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "660428139f128de976ebd4a3304b73c614b344692a9e529ec48e3526a10d3af8"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_patrol_attack_down",
+					"column": 2,
+					"events": [],
+					"fps": 10.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "660428139f128de976ebd4a3304b73c614b344692a9e529ec48e3526a10d3af8"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_patrol_attack_down",
+					"column": 3,
+					"events": [
+						"attack_release_visual"
+					],
+					"fps": 10.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "660428139f128de976ebd4a3304b73c614b344692a9e529ec48e3526a10d3af8"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_patrol_attack_down",
+					"column": 4,
+					"events": [],
+					"fps": 10.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "660428139f128de976ebd4a3304b73c614b344692a9e529ec48e3526a10d3af8"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_patrol_attack_down",
+					"column": 5,
+					"events": [],
+					"fps": 10.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "660428139f128de976ebd4a3304b73c614b344692a9e529ec48e3526a10d3af8"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_patrol_hit_down",
+					"column": 0,
+					"events": [],
+					"fps": 12.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "2a14745c9f3a960efd5c13e41bcc25ba0af7c6fdb50347219310a88579b52136"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_patrol_hit_down",
+					"column": 1,
+					"events": [],
+					"fps": 12.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "2a14745c9f3a960efd5c13e41bcc25ba0af7c6fdb50347219310a88579b52136"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_patrol_hit_down",
+					"column": 2,
+					"events": [],
+					"fps": 12.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "2a14745c9f3a960efd5c13e41bcc25ba0af7c6fdb50347219310a88579b52136"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_patrol_hit_down",
+					"column": 3,
+					"events": [],
+					"fps": 12.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "2a14745c9f3a960efd5c13e41bcc25ba0af7c6fdb50347219310a88579b52136"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_patrol_death_down",
+					"column": 0,
+					"events": [],
+					"fps": 10.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "d73c3f8af05c3fb2f82e35ab36682fba9fd1fe17f0006a70c559f283f37b8ff2"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_patrol_death_down",
+					"column": 1,
+					"events": [],
+					"fps": 10.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "d73c3f8af05c3fb2f82e35ab36682fba9fd1fe17f0006a70c559f283f37b8ff2"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_patrol_death_down",
+					"column": 2,
+					"events": [],
+					"fps": 10.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "d73c3f8af05c3fb2f82e35ab36682fba9fd1fe17f0006a70c559f283f37b8ff2"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_patrol_death_down",
+					"column": 3,
+					"events": [],
+					"fps": 10.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "d73c3f8af05c3fb2f82e35ab36682fba9fd1fe17f0006a70c559f283f37b8ff2"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_patrol_death_down",
+					"column": 4,
+					"events": [],
+					"fps": 10.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "d73c3f8af05c3fb2f82e35ab36682fba9fd1fe17f0006a70c559f283f37b8ff2"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_patrol_death_down",
+					"column": 5,
+					"events": [],
+					"fps": 10.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "d73c3f8af05c3fb2f82e35ab36682fba9fd1fe17f0006a70c559f283f37b8ff2"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_patrol_death_down",
+					"column": 6,
+					"events": [],
+					"fps": 10.0,
+					"frame": 6,
+					"region_1x_px": [
+						768,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "d73c3f8af05c3fb2f82e35ab36682fba9fd1fe17f0006a70c559f283f37b8ff2"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_patrol_death_down",
+					"column": 7,
+					"events": [
+						"corpse_hold_visual"
+					],
+					"fps": 10.0,
+					"frame": 7,
+					"region_1x_px": [
+						896,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "d73c3f8af05c3fb2f82e35ab36682fba9fd1fe17f0006a70c559f283f37b8ff2"
+				}
+			],
+			"native": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/previews/enemy_patrol_all_frames_down_1x_v001.png",
+			"native_sha256": "8bcebe5a37585de0a7fbda9c0b84199e87a5f678407db10a398393817fb57955",
+			"native_size_px": [
+				1024,
+				640
+			],
+			"nearest_x4": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/previews/enemy_patrol_all_frames_down_4x_v001.png",
+			"nearest_x4_sha256": "7d4d61337ffe874346c1a9e5a32a65fd9ad5b4f0ae6ace54276ba31fdfd9dc71",
+			"nearest_x4_size_px": [
+				4096,
+				2560
+			],
+			"unit_id": "enemy_patrol"
+		},
+		{
+			"cells": [
+				{
+					"action": "idle",
+					"clip_id": "enemy_cutter_idle_down",
+					"column": 0,
+					"events": [],
+					"fps": 4.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "b87040ac8fb7c02c733d56911619b3c072b84d2ab9c4e994cc5cfcb8a2471e28"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_cutter_idle_down",
+					"column": 1,
+					"events": [],
+					"fps": 4.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "b87040ac8fb7c02c733d56911619b3c072b84d2ab9c4e994cc5cfcb8a2471e28"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_cutter_idle_down",
+					"column": 2,
+					"events": [],
+					"fps": 4.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "b87040ac8fb7c02c733d56911619b3c072b84d2ab9c4e994cc5cfcb8a2471e28"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_cutter_idle_down",
+					"column": 3,
+					"events": [],
+					"fps": 4.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "b87040ac8fb7c02c733d56911619b3c072b84d2ab9c4e994cc5cfcb8a2471e28"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_cutter_move_down",
+					"column": 0,
+					"events": [
+						"support_phase_a"
+					],
+					"fps": 8.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "5cedf96310573c4c8d99f05e52cd304054ac3b800112e2f33d0d6b0b77fcd36a"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_cutter_move_down",
+					"column": 1,
+					"events": [],
+					"fps": 8.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "5cedf96310573c4c8d99f05e52cd304054ac3b800112e2f33d0d6b0b77fcd36a"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_cutter_move_down",
+					"column": 2,
+					"events": [],
+					"fps": 8.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "5cedf96310573c4c8d99f05e52cd304054ac3b800112e2f33d0d6b0b77fcd36a"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_cutter_move_down",
+					"column": 3,
+					"events": [],
+					"fps": 8.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "5cedf96310573c4c8d99f05e52cd304054ac3b800112e2f33d0d6b0b77fcd36a"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_cutter_move_down",
+					"column": 4,
+					"events": [
+						"support_phase_b"
+					],
+					"fps": 8.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "5cedf96310573c4c8d99f05e52cd304054ac3b800112e2f33d0d6b0b77fcd36a"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_cutter_move_down",
+					"column": 5,
+					"events": [],
+					"fps": 8.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "5cedf96310573c4c8d99f05e52cd304054ac3b800112e2f33d0d6b0b77fcd36a"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_cutter_move_down",
+					"column": 6,
+					"events": [],
+					"fps": 8.0,
+					"frame": 6,
+					"region_1x_px": [
+						768,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "5cedf96310573c4c8d99f05e52cd304054ac3b800112e2f33d0d6b0b77fcd36a"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_cutter_move_down",
+					"column": 7,
+					"events": [],
+					"fps": 8.0,
+					"frame": 7,
+					"region_1x_px": [
+						896,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "5cedf96310573c4c8d99f05e52cd304054ac3b800112e2f33d0d6b0b77fcd36a"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_cutter_attack_down",
+					"column": 0,
+					"events": [],
+					"fps": 10.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "71a83554560387308986fb5e192b92b2e3faa6f2ada52751cea940c6135f9072"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_cutter_attack_down",
+					"column": 1,
+					"events": [],
+					"fps": 10.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "71a83554560387308986fb5e192b92b2e3faa6f2ada52751cea940c6135f9072"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_cutter_attack_down",
+					"column": 2,
+					"events": [],
+					"fps": 10.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "71a83554560387308986fb5e192b92b2e3faa6f2ada52751cea940c6135f9072"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_cutter_attack_down",
+					"column": 3,
+					"events": [
+						"attack_release_visual"
+					],
+					"fps": 10.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "71a83554560387308986fb5e192b92b2e3faa6f2ada52751cea940c6135f9072"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_cutter_attack_down",
+					"column": 4,
+					"events": [],
+					"fps": 10.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "71a83554560387308986fb5e192b92b2e3faa6f2ada52751cea940c6135f9072"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_cutter_attack_down",
+					"column": 5,
+					"events": [],
+					"fps": 10.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "71a83554560387308986fb5e192b92b2e3faa6f2ada52751cea940c6135f9072"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_cutter_hit_down",
+					"column": 0,
+					"events": [],
+					"fps": 12.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "dfc976c887ad48aae11d39f67ded64442566cc7b132101e87699d82e9892e490"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_cutter_hit_down",
+					"column": 1,
+					"events": [],
+					"fps": 12.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "dfc976c887ad48aae11d39f67ded64442566cc7b132101e87699d82e9892e490"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_cutter_hit_down",
+					"column": 2,
+					"events": [],
+					"fps": 12.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "dfc976c887ad48aae11d39f67ded64442566cc7b132101e87699d82e9892e490"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_cutter_hit_down",
+					"column": 3,
+					"events": [],
+					"fps": 12.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "dfc976c887ad48aae11d39f67ded64442566cc7b132101e87699d82e9892e490"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_cutter_death_down",
+					"column": 0,
+					"events": [],
+					"fps": 10.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "4aa6795850915b5f502b9a39c5e7a34014d01996e7efa13e17b254e77845c75b"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_cutter_death_down",
+					"column": 1,
+					"events": [],
+					"fps": 10.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "4aa6795850915b5f502b9a39c5e7a34014d01996e7efa13e17b254e77845c75b"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_cutter_death_down",
+					"column": 2,
+					"events": [],
+					"fps": 10.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "4aa6795850915b5f502b9a39c5e7a34014d01996e7efa13e17b254e77845c75b"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_cutter_death_down",
+					"column": 3,
+					"events": [],
+					"fps": 10.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "4aa6795850915b5f502b9a39c5e7a34014d01996e7efa13e17b254e77845c75b"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_cutter_death_down",
+					"column": 4,
+					"events": [],
+					"fps": 10.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "4aa6795850915b5f502b9a39c5e7a34014d01996e7efa13e17b254e77845c75b"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_cutter_death_down",
+					"column": 5,
+					"events": [],
+					"fps": 10.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "4aa6795850915b5f502b9a39c5e7a34014d01996e7efa13e17b254e77845c75b"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_cutter_death_down",
+					"column": 6,
+					"events": [],
+					"fps": 10.0,
+					"frame": 6,
+					"region_1x_px": [
+						768,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "4aa6795850915b5f502b9a39c5e7a34014d01996e7efa13e17b254e77845c75b"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_cutter_death_down",
+					"column": 7,
+					"events": [
+						"corpse_hold_visual"
+					],
+					"fps": 10.0,
+					"frame": 7,
+					"region_1x_px": [
+						896,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "4aa6795850915b5f502b9a39c5e7a34014d01996e7efa13e17b254e77845c75b"
+				}
+			],
+			"native": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/previews/enemy_cutter_all_frames_down_1x_v001.png",
+			"native_sha256": "70dca85011a43d86fc8003f5874771822446054f345086e51751c443f01b7190",
+			"native_size_px": [
+				1024,
+				640
+			],
+			"nearest_x4": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/previews/enemy_cutter_all_frames_down_4x_v001.png",
+			"nearest_x4_sha256": "6e550b7380e8226b435658b21420c2472b97e8c9e95ecc91b336823a5636c434",
+			"nearest_x4_size_px": [
+				4096,
+				2560
+			],
+			"unit_id": "enemy_cutter"
+		},
+		{
+			"cells": [
+				{
+					"action": "idle",
+					"clip_id": "enemy_tracked_heavy_idle_down",
+					"column": 0,
+					"events": [],
+					"fps": 4.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "db351e6e4c1c925d50aa3f9249d5a9d09326f748d356806524a642360c67e62d"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_tracked_heavy_idle_down",
+					"column": 1,
+					"events": [],
+					"fps": 4.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "db351e6e4c1c925d50aa3f9249d5a9d09326f748d356806524a642360c67e62d"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_tracked_heavy_idle_down",
+					"column": 2,
+					"events": [],
+					"fps": 4.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "db351e6e4c1c925d50aa3f9249d5a9d09326f748d356806524a642360c67e62d"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_tracked_heavy_idle_down",
+					"column": 3,
+					"events": [],
+					"fps": 4.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "db351e6e4c1c925d50aa3f9249d5a9d09326f748d356806524a642360c67e62d"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_tracked_heavy_move_down",
+					"column": 0,
+					"events": [
+						"support_phase_a"
+					],
+					"fps": 8.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "ced6d1e5eabf6d8c35397d5228fa9518a5adb322b3dd78da531a973078f3f857"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_tracked_heavy_move_down",
+					"column": 1,
+					"events": [],
+					"fps": 8.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "ced6d1e5eabf6d8c35397d5228fa9518a5adb322b3dd78da531a973078f3f857"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_tracked_heavy_move_down",
+					"column": 2,
+					"events": [],
+					"fps": 8.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "ced6d1e5eabf6d8c35397d5228fa9518a5adb322b3dd78da531a973078f3f857"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_tracked_heavy_move_down",
+					"column": 3,
+					"events": [],
+					"fps": 8.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "ced6d1e5eabf6d8c35397d5228fa9518a5adb322b3dd78da531a973078f3f857"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_tracked_heavy_move_down",
+					"column": 4,
+					"events": [
+						"support_phase_b"
+					],
+					"fps": 8.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "ced6d1e5eabf6d8c35397d5228fa9518a5adb322b3dd78da531a973078f3f857"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_tracked_heavy_move_down",
+					"column": 5,
+					"events": [],
+					"fps": 8.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "ced6d1e5eabf6d8c35397d5228fa9518a5adb322b3dd78da531a973078f3f857"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_tracked_heavy_move_down",
+					"column": 6,
+					"events": [],
+					"fps": 8.0,
+					"frame": 6,
+					"region_1x_px": [
+						768,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "ced6d1e5eabf6d8c35397d5228fa9518a5adb322b3dd78da531a973078f3f857"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_tracked_heavy_move_down",
+					"column": 7,
+					"events": [],
+					"fps": 8.0,
+					"frame": 7,
+					"region_1x_px": [
+						896,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "ced6d1e5eabf6d8c35397d5228fa9518a5adb322b3dd78da531a973078f3f857"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_tracked_heavy_attack_down",
+					"column": 0,
+					"events": [],
+					"fps": 10.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "5d3db55112a6f335b09962e90eafac632ad1cb90e8fec95e30774269bdb61e59"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_tracked_heavy_attack_down",
+					"column": 1,
+					"events": [],
+					"fps": 10.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "5d3db55112a6f335b09962e90eafac632ad1cb90e8fec95e30774269bdb61e59"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_tracked_heavy_attack_down",
+					"column": 2,
+					"events": [],
+					"fps": 10.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "5d3db55112a6f335b09962e90eafac632ad1cb90e8fec95e30774269bdb61e59"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_tracked_heavy_attack_down",
+					"column": 3,
+					"events": [
+						"attack_release_visual"
+					],
+					"fps": 10.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "5d3db55112a6f335b09962e90eafac632ad1cb90e8fec95e30774269bdb61e59"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_tracked_heavy_attack_down",
+					"column": 4,
+					"events": [],
+					"fps": 10.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "5d3db55112a6f335b09962e90eafac632ad1cb90e8fec95e30774269bdb61e59"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_tracked_heavy_attack_down",
+					"column": 5,
+					"events": [],
+					"fps": 10.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "5d3db55112a6f335b09962e90eafac632ad1cb90e8fec95e30774269bdb61e59"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_tracked_heavy_hit_down",
+					"column": 0,
+					"events": [],
+					"fps": 12.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "6dbbd463f42de7b3d174948d1b76249806ac184dd7994215b7f106f5ec2f06d7"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_tracked_heavy_hit_down",
+					"column": 1,
+					"events": [],
+					"fps": 12.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "6dbbd463f42de7b3d174948d1b76249806ac184dd7994215b7f106f5ec2f06d7"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_tracked_heavy_hit_down",
+					"column": 2,
+					"events": [],
+					"fps": 12.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "6dbbd463f42de7b3d174948d1b76249806ac184dd7994215b7f106f5ec2f06d7"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_tracked_heavy_hit_down",
+					"column": 3,
+					"events": [],
+					"fps": 12.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "6dbbd463f42de7b3d174948d1b76249806ac184dd7994215b7f106f5ec2f06d7"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_tracked_heavy_death_down",
+					"column": 0,
+					"events": [],
+					"fps": 10.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "98f91d13d6b8a9170e1da427b8933563834e5b20965c63e5ed2dde11c27a1f53"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_tracked_heavy_death_down",
+					"column": 1,
+					"events": [],
+					"fps": 10.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "98f91d13d6b8a9170e1da427b8933563834e5b20965c63e5ed2dde11c27a1f53"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_tracked_heavy_death_down",
+					"column": 2,
+					"events": [],
+					"fps": 10.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "98f91d13d6b8a9170e1da427b8933563834e5b20965c63e5ed2dde11c27a1f53"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_tracked_heavy_death_down",
+					"column": 3,
+					"events": [],
+					"fps": 10.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "98f91d13d6b8a9170e1da427b8933563834e5b20965c63e5ed2dde11c27a1f53"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_tracked_heavy_death_down",
+					"column": 4,
+					"events": [],
+					"fps": 10.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "98f91d13d6b8a9170e1da427b8933563834e5b20965c63e5ed2dde11c27a1f53"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_tracked_heavy_death_down",
+					"column": 5,
+					"events": [],
+					"fps": 10.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "98f91d13d6b8a9170e1da427b8933563834e5b20965c63e5ed2dde11c27a1f53"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_tracked_heavy_death_down",
+					"column": 6,
+					"events": [],
+					"fps": 10.0,
+					"frame": 6,
+					"region_1x_px": [
+						768,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "98f91d13d6b8a9170e1da427b8933563834e5b20965c63e5ed2dde11c27a1f53"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_tracked_heavy_death_down",
+					"column": 7,
+					"events": [
+						"corpse_hold_visual"
+					],
+					"fps": 10.0,
+					"frame": 7,
+					"region_1x_px": [
+						896,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "98f91d13d6b8a9170e1da427b8933563834e5b20965c63e5ed2dde11c27a1f53"
+				}
+			],
+			"native": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/previews/enemy_tracked_heavy_all_frames_down_1x_v001.png",
+			"native_sha256": "8ee53cc5fad1ebfbf7ab39a1ebd050328c10365ea7073419138170034219ca47",
+			"native_size_px": [
+				1024,
+				640
+			],
+			"nearest_x4": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/previews/enemy_tracked_heavy_all_frames_down_4x_v001.png",
+			"nearest_x4_sha256": "7329d802e09adcdde67b56f44a8be02a347c4d6a0e1c7e77c96adbca38450c97",
+			"nearest_x4_size_px": [
+				4096,
+				2560
+			],
+			"unit_id": "enemy_tracked_heavy"
+		},
+		{
+			"cells": [
+				{
+					"action": "idle",
+					"clip_id": "enemy_scout_drone_idle_down",
+					"column": 0,
+					"events": [],
+					"fps": 4.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "7422c860a0a9817642ea345fc18c84f88fd9a67b80501413d1488f341d5713b6"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_scout_drone_idle_down",
+					"column": 1,
+					"events": [],
+					"fps": 4.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "7422c860a0a9817642ea345fc18c84f88fd9a67b80501413d1488f341d5713b6"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_scout_drone_idle_down",
+					"column": 2,
+					"events": [],
+					"fps": 4.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "7422c860a0a9817642ea345fc18c84f88fd9a67b80501413d1488f341d5713b6"
+				},
+				{
+					"action": "idle",
+					"clip_id": "enemy_scout_drone_idle_down",
+					"column": 3,
+					"events": [],
+					"fps": 4.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						0,
+						128,
+						128
+					],
+					"row": 0,
+					"source_atlas_sha256": "7422c860a0a9817642ea345fc18c84f88fd9a67b80501413d1488f341d5713b6"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_scout_drone_move_down",
+					"column": 0,
+					"events": [
+						"support_phase_a"
+					],
+					"fps": 8.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "3c573f0756b4e56b0a21dcef7dcf45c2358cff413f36c33cb5b7a5e0fdb70452"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_scout_drone_move_down",
+					"column": 1,
+					"events": [],
+					"fps": 8.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "3c573f0756b4e56b0a21dcef7dcf45c2358cff413f36c33cb5b7a5e0fdb70452"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_scout_drone_move_down",
+					"column": 2,
+					"events": [],
+					"fps": 8.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "3c573f0756b4e56b0a21dcef7dcf45c2358cff413f36c33cb5b7a5e0fdb70452"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_scout_drone_move_down",
+					"column": 3,
+					"events": [],
+					"fps": 8.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "3c573f0756b4e56b0a21dcef7dcf45c2358cff413f36c33cb5b7a5e0fdb70452"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_scout_drone_move_down",
+					"column": 4,
+					"events": [
+						"support_phase_b"
+					],
+					"fps": 8.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "3c573f0756b4e56b0a21dcef7dcf45c2358cff413f36c33cb5b7a5e0fdb70452"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_scout_drone_move_down",
+					"column": 5,
+					"events": [],
+					"fps": 8.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "3c573f0756b4e56b0a21dcef7dcf45c2358cff413f36c33cb5b7a5e0fdb70452"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_scout_drone_move_down",
+					"column": 6,
+					"events": [],
+					"fps": 8.0,
+					"frame": 6,
+					"region_1x_px": [
+						768,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "3c573f0756b4e56b0a21dcef7dcf45c2358cff413f36c33cb5b7a5e0fdb70452"
+				},
+				{
+					"action": "move",
+					"clip_id": "enemy_scout_drone_move_down",
+					"column": 7,
+					"events": [],
+					"fps": 8.0,
+					"frame": 7,
+					"region_1x_px": [
+						896,
+						128,
+						128,
+						128
+					],
+					"row": 1,
+					"source_atlas_sha256": "3c573f0756b4e56b0a21dcef7dcf45c2358cff413f36c33cb5b7a5e0fdb70452"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_scout_drone_attack_down",
+					"column": 0,
+					"events": [],
+					"fps": 10.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "ae0404e7120f254b47f9f178890077e05ea458980be8c5a02e0d5aec1677648e"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_scout_drone_attack_down",
+					"column": 1,
+					"events": [],
+					"fps": 10.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "ae0404e7120f254b47f9f178890077e05ea458980be8c5a02e0d5aec1677648e"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_scout_drone_attack_down",
+					"column": 2,
+					"events": [],
+					"fps": 10.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "ae0404e7120f254b47f9f178890077e05ea458980be8c5a02e0d5aec1677648e"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_scout_drone_attack_down",
+					"column": 3,
+					"events": [
+						"attack_release_visual"
+					],
+					"fps": 10.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "ae0404e7120f254b47f9f178890077e05ea458980be8c5a02e0d5aec1677648e"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_scout_drone_attack_down",
+					"column": 4,
+					"events": [],
+					"fps": 10.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "ae0404e7120f254b47f9f178890077e05ea458980be8c5a02e0d5aec1677648e"
+				},
+				{
+					"action": "attack",
+					"clip_id": "enemy_scout_drone_attack_down",
+					"column": 5,
+					"events": [],
+					"fps": 10.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						256,
+						128,
+						128
+					],
+					"row": 2,
+					"source_atlas_sha256": "ae0404e7120f254b47f9f178890077e05ea458980be8c5a02e0d5aec1677648e"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_scout_drone_hit_down",
+					"column": 0,
+					"events": [],
+					"fps": 12.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "35371a27f4823cc017769fa962e7718673f6326c95369f2e562af4be6c9bc404"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_scout_drone_hit_down",
+					"column": 1,
+					"events": [],
+					"fps": 12.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "35371a27f4823cc017769fa962e7718673f6326c95369f2e562af4be6c9bc404"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_scout_drone_hit_down",
+					"column": 2,
+					"events": [],
+					"fps": 12.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "35371a27f4823cc017769fa962e7718673f6326c95369f2e562af4be6c9bc404"
+				},
+				{
+					"action": "hit",
+					"clip_id": "enemy_scout_drone_hit_down",
+					"column": 3,
+					"events": [],
+					"fps": 12.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						384,
+						128,
+						128
+					],
+					"row": 3,
+					"source_atlas_sha256": "35371a27f4823cc017769fa962e7718673f6326c95369f2e562af4be6c9bc404"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_scout_drone_death_down",
+					"column": 0,
+					"events": [],
+					"fps": 10.0,
+					"frame": 0,
+					"region_1x_px": [
+						0,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "0491056921707c1f20ddb1a0080252fc9b125a1be727e35ea6dad20478ef456f"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_scout_drone_death_down",
+					"column": 1,
+					"events": [],
+					"fps": 10.0,
+					"frame": 1,
+					"region_1x_px": [
+						128,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "0491056921707c1f20ddb1a0080252fc9b125a1be727e35ea6dad20478ef456f"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_scout_drone_death_down",
+					"column": 2,
+					"events": [],
+					"fps": 10.0,
+					"frame": 2,
+					"region_1x_px": [
+						256,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "0491056921707c1f20ddb1a0080252fc9b125a1be727e35ea6dad20478ef456f"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_scout_drone_death_down",
+					"column": 3,
+					"events": [],
+					"fps": 10.0,
+					"frame": 3,
+					"region_1x_px": [
+						384,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "0491056921707c1f20ddb1a0080252fc9b125a1be727e35ea6dad20478ef456f"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_scout_drone_death_down",
+					"column": 4,
+					"events": [],
+					"fps": 10.0,
+					"frame": 4,
+					"region_1x_px": [
+						512,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "0491056921707c1f20ddb1a0080252fc9b125a1be727e35ea6dad20478ef456f"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_scout_drone_death_down",
+					"column": 5,
+					"events": [],
+					"fps": 10.0,
+					"frame": 5,
+					"region_1x_px": [
+						640,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "0491056921707c1f20ddb1a0080252fc9b125a1be727e35ea6dad20478ef456f"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_scout_drone_death_down",
+					"column": 6,
+					"events": [],
+					"fps": 10.0,
+					"frame": 6,
+					"region_1x_px": [
+						768,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "0491056921707c1f20ddb1a0080252fc9b125a1be727e35ea6dad20478ef456f"
+				},
+				{
+					"action": "death",
+					"clip_id": "enemy_scout_drone_death_down",
+					"column": 7,
+					"events": [
+						"corpse_hold_visual"
+					],
+					"fps": 10.0,
+					"frame": 7,
+					"region_1x_px": [
+						896,
+						512,
+						128,
+						128
+					],
+					"row": 4,
+					"source_atlas_sha256": "0491056921707c1f20ddb1a0080252fc9b125a1be727e35ea6dad20478ef456f"
+				}
+			],
+			"native": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/previews/enemy_scout_drone_all_frames_down_1x_v001.png",
+			"native_sha256": "d652aa9a80ead76d0a6367b235f8760dd63137eda3d0dbc0ec17376172f04767",
+			"native_size_px": [
+				1024,
+				640
+			],
+			"nearest_x4": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/previews/enemy_scout_drone_all_frames_down_4x_v001.png",
+			"nearest_x4_sha256": "bf860b9da35ecc8c78c1c2542dbfc3c0bd5d889cd4861964d65debfe90074f0b",
+			"nearest_x4_size_px": [
+				4096,
+				2560
+			],
+			"unit_id": "enemy_scout_drone"
+		}
+	],
+	"sprite_pixel_repaint_recolour_matte": "NONE",
+	"status": "PASS"
+}

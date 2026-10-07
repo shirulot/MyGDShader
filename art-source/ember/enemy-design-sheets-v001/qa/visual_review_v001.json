@@ -1,0 +1,44 @@
+{
+  "status": "DESIGN_REFERENCE_QA_REVIEWED",
+  "final_images": [
+    {
+      "id": "enemy_patrol",
+      "three_views": "three_views/enemy_patrol_three_views_v001.png",
+      "parts": "parts/enemy_patrol_parts_v001.png",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "enemy_cutter",
+      "three_views": "three_views/enemy_cutter_three_views_v002.png",
+      "parts": "parts/enemy_cutter_parts_v002.png",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "enemy_tracked_heavy",
+      "three_views": "three_views/enemy_tracked_heavy_three_views_v001.png",
+      "parts": "parts/enemy_tracked_heavy_parts_v002.png",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "enemy_scout_drone",
+      "three_views": "three_views/enemy_scout_drone_three_views_v002.png",
+      "parts": "parts/enemy_scout_drone_parts_v002.png",
+      "status": "REVIEWED"
+    }
+  ],
+  "checks": [
+    "accepted silhouette/material identity",
+    "front/right/back view relationships",
+    "anatomical tool handedness",
+    "exact locomotion/tool/fan pair counts",
+    "part number and assembly inset correspondence"
+  ],
+  "corrected": [
+    "Cutter right-profile saw corrected to an edge-on thin disk.",
+    "Scout right profile faces left with near fan occluding the fuselage and far fan behind it.",
+    "Tracked part labels use anatomical right 06 / left 07.",
+    "Cutter legless chassis now has four short mounting sockets; exactly four detached walking legs.",
+    "Scout detached fan housings are empty with thin fixed supports; two rotors and two motors are separately shown."
+  ],
+  "scope": "Static pixel-art concept turnarounds and exploded major-module design sheets. No production-native sprite cuts, animations, collisions or gameplay."
+}

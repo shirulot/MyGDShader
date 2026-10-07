@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>固定母稿行走试样 v007</title><style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color-scheme:dark;background:#101820;color:#ece9d8}
+body{margin:0;padding:24px;max-width:1120px}h1{font-size:24px}p{color:#becbc4;line-height:1.6}
+.controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:20px 0}
+button,select{font:inherit;background:#2b3e4b;color:#ece9d8;border:1px solid #4d6470;border-radius:6px;padding:8px 14px}
+label{display:flex;align-items:center;gap:8px}input[type=range]{width:220px}
+.panels{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}.panel{border:1px solid #4d6470;border-radius:8px;overflow:hidden}
+h2{font-size:16px;padding:12px 16px;margin:0;background:#2b3e4b}.stage{padding:16px;background:#182631;min-width:110px}
+.stage.light{background:#ece9d8}canvas,img{display:block;image-rendering:pixelated}#large{width:256px;height:384px}
+#canonical{width:256px;height:384px}.caption{font-size:13px;max-width:300px;padding:12px;color:#becbc4}
+a{color:#829ba3}output{font-variant-numeric:tabular-nums}#status{font-size:14px}
+</style></head><body><h1>固定母稿行走试样 v007</h1>
+<p>朝下 · 八步相 · 待审候选。复用同一母稿和关节结构；保持 64×96 固定整格，root 为 (32,80)。</p>
+<div class="controls"><button id="play" aria-pressed="true">暂停</button>
+<label>帧 <input id="frame" aria-label="帧索引" type="range" min="0" max="7" step="1" value="0"></label><output id="phase">F00</output>
+<label><input id="ghost" type="checkbox">原始母稿叠加</label><label><input id="anchor" type="checkbox">root与地线</label>
+<label>背景 <select id="background"><option value="dark">深色</option><option value="light">浅色</option></select></label></div>
+<div class="panels"><section class="panel"><h2>原生 1×</h2><div class="stage"><canvas id="native" width="64" height="96"></canvas></div></section>
+<section class="panel"><h2>整数 4×</h2><div class="stage"><canvas id="large" width="64" height="96"></canvas></div><div class="caption">完整原格整数放大。叠加与辅助线仅用于观察，不写入角色 PNG。</div></section>
+<section class="panel"><h2>冻结原始母稿 · 4×</h2><div class="stage"><img id="canonical" src="source/robot_idle_down_canonical_original.png" alt="冻结原始母稿"></div><div class="caption">静态来源保持原始像素。新骨架静态母稿及关节补全见审阅说明。</div></section></div>
+<p id="status">正在载入八张原生帧…</p>
+<p><a href="README.md">制作与限制</a> · <a href="source/rig_down_v007.json">关节登记</a> · <a href="qa/export_motion_v007.json">导出核验</a></p>
+<script>
+const names=['左接触','左承重下降','右经过','右前摆','右接触','右承重下降','左经过','左前摆'];
+const slider=document.getElementById('frame'),play=document.getElementById('play'),ghost=document.getElementById('ghost'),anchor=document.getElementById('anchor');
+const canvases=[document.getElementById('native'),document.getElementById('large')];
+const canonical=document.getElementById('canonical');let frames=[],current=0,playing=true;
+function render(){
+ if(frames.length!==8)return;
+ canvases.forEach(canvas=>{
+  const ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,64,96);
+  ctx.globalAlpha=1;ctx.drawImage(frames[current],0,0);
+  if(ghost.checked&&canonical.complete){ctx.globalAlpha=.3;ctx.drawImage(canonical,0,0);ctx.globalAlpha=1;}
+  if(anchor.checked){ctx.fillStyle='#e2b77a';ctx.fillRect(0,80,64,1);ctx.fillRect(29,80,7,1);ctx.fillRect(32,77,1,7);}
+ });
+ slider.value=String(current);document.getElementById('phase').textContent='F'+String(current).padStart(2,'0')+' · '+names[current];
+}
+function updateButton(){play.textContent=playing?'暂停':'继续';play.setAttribute('aria-pressed',String(playing));}
+play.addEventListener('click',()=>{playing=!playing;updateButton();});
+slider.addEventListener('input',()=>{current=Number(slider.value);playing=false;updateButton();render();});
+ghost.addEventListener('change',render);anchor.addEventListener('change',render);
+document.getElementById('background').addEventListener('change',event=>document.querySelectorAll('.stage').forEach(node=>node.classList.toggle('light',event.target.value==='light')));
+Promise.all(Array.from({length:8},(_,i)=>new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>reject(new Error('尚未生成 F'+i));image.src='frames/robot_walk_down_f'+String(i).padStart(2,'0')+'_v007.png';}))).then(loaded=>{frames=loaded;render();document.getElementById('status').textContent='已加载 8 张 64×96 原生渲染候选帧 · 8 FPS · 待 TA 审阅';}).catch(error=>document.getElementById('status').textContent=error.message);
+setInterval(()=>{if(playing&&frames.length===8){current=(current+1)%8;render();}},125);
+</script></body></html>

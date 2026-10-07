@@ -1,0 +1,133 @@
+{
+  "id": "antenna_coil",
+  "manifest_id": "B11",
+  "file": "art-source/ember/batch-03-objects/finished/antenna_coil_v001.png",
+  "production_file": "res://assets/ember/props/calibration/antenna_coil_v001.png",
+  "sha256": "eb95dc28410a802402a70e43dfa7403376aebc0ad9ccc7fead3c99168d58904c",
+  "size": [
+    64,
+    64
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/antenna_coil_v001.finish.json",
+  "canvas": [
+    64,
+    64
+  ],
+  "bbox": [
+    14,
+    18,
+    50,
+    56
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/antenna_coil/foundation_body.png",
+      "sha256": "eb95dc28410a802402a70e43dfa7403376aebc0ad9ccc7fead3c99168d58904c",
+      "z_index": 0,
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/antenna_coil_master_v001.png",
+    "master_sha256": "9da1ac977e79c8be744ee245660f7dfabaf2c0bdf213ab9287a78ef4c40bcce9",
+    "prompt": "prompts/antenna_coil.txt",
+    "prompt_sha256": "6e3af3b4d2994d79358e8ad2f8d1d2a79e20103f34f0f8897d5a8768132ee757",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-a5befc17-26d6-45af-a9c1-c812378cc3aa.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        392,
+        319,
+        1008,
+        976
+      ],
+      "material_sampling_size": [
+        36,
+        38
+      ],
+      "native_origin": [
+        14,
+        18
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 15,
+      "native_outline_pixels_corrected": 91
+    },
+    "native_adjustments": [
+      "三匝绕组正面原生短高光归并为连续6px铜色段，保留匝间深色核心，不绘制信号发光",
+      "明确保留实际两处2×1透明穿孔[20,27,22,28)、[33,27,35,28)，剪去半透明点而不填孔",
+      "底脚与右侧连接器维持母稿不对称轮廓，安装边界56"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": {
+    "orientation": "右侧独有铜接口",
+    "through_hole_rects": [
+      [
+        20,
+        27,
+        22,
+        28
+      ],
+      [
+        33,
+        27,
+        35,
+        28
+      ]
+    ]
+  },
+  "non_runtime_glass": [],
+  "observations": "实际母稿三匝铜绕组、圆芯、方脚、右侧连接器；原生两个上部线圈外沿小孔实际Alpha为0，不能填黑假装孔。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

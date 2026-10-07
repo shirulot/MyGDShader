@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://bb33cvgftrb6g"]
+
+[ext_resource type="Shader" uid="uid://m8hh2ygnyaxo" path="res://scenes/chapter03/ch03_01_breathing.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://jup7m446cusg" path="res://assets/ember/characters/robot/robot_animations_v002.png" id="2_yfcy8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_breathing"]
+shader = ExtResource("1_shader")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_morlo"]
+atlas = ExtResource("2_yfcy8")
+region = Rect2(0, 288, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6geyt"]
+atlas = ExtResource("2_yfcy8")
+region = Rect2(64, 288, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmc7w"]
+atlas = ExtResource("2_yfcy8")
+region = Rect2(128, 288, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qol73"]
+atlas = ExtResource("2_yfcy8")
+region = Rect2(192, 288, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1unw"]
+atlas = ExtResource("2_yfcy8")
+region = Rect2(256, 288, 64, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ita4j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_morlo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6geyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xmc7w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qol73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1unw")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 9.0
+}]
+
+[node name="Ch0301Breathing" type="Node2D" unique_id=1667570032]
+
+[node name="Robot" type="AnimatedSprite2D" parent="." unique_id=1256307987]
+texture_filter = 1
+material = SubResource("ShaderMaterial_breathing")
+position = Vector2(360, 360)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_ita4j")
+frame_progress = 0.3803984

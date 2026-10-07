@@ -1,0 +1,252 @@
+{
+  "id": "telepad_base",
+  "manifest_id": "B09",
+  "file": "art-source/ember/batch-03-objects/finished/telepad_base_v001.png",
+  "production_file": "res://assets/ember/buildings/telepad/telepad_base_v001.png",
+  "sha256": "8d59c3ba8ed09aa50a9232c5b3f8ffe204c9a8f41da408499d5208cd8c081512",
+  "size": [
+    128,
+    160
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/telepad_base_v001.finish.json",
+  "canvas": [
+    128,
+    160
+  ],
+  "bbox": [
+    22,
+    78,
+    107,
+    144
+  ],
+  "anchor": [
+    64,
+    144
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [
+    {
+      "id": "marker_n",
+      "visual_frame_bounds": [
+        59,
+        88,
+        70,
+        94
+      ],
+      "safe_active_rect": [
+        61,
+        90,
+        68,
+        92
+      ],
+      "center": [
+        64.5,
+        91.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.50390625,
+        0.56875
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    },
+    {
+      "id": "marker_w",
+      "visual_frame_bounds": [
+        40,
+        100,
+        48,
+        110
+      ],
+      "safe_active_rect": [
+        42,
+        102,
+        45,
+        108
+      ],
+      "center": [
+        43.5,
+        105.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.33984375,
+        0.65625
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    },
+    {
+      "id": "marker_e",
+      "visual_frame_bounds": [
+        82,
+        100,
+        90,
+        110
+      ],
+      "safe_active_rect": [
+        84,
+        102,
+        87,
+        108
+      ],
+      "center": [
+        85.5,
+        105.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.66796875,
+        0.65625
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    },
+    {
+      "id": "marker_s",
+      "visual_frame_bounds": [
+        59,
+        117,
+        71,
+        123
+      ],
+      "safe_active_rect": [
+        61,
+        119,
+        68,
+        121
+      ],
+      "center": [
+        64.5,
+        120.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.50390625,
+        0.75
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "emitter_points": [
+    {
+      "id": "teleport_axis",
+      "at": [
+        64,
+        110
+      ],
+      "purpose": "平台几何中心，运行护盾/传送另叠加，无烘焙效果"
+    }
+  ],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/telepad_base/foundation_body.png",
+      "sha256": "32d7e2ed814ddeeff9061fe030bfc06170dc40950f0428db61a0d1f18fb13241",
+      "z_index": 0,
+      "canvas": [
+        128,
+        160
+      ],
+      "anchor": [
+        64,
+        144
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    },
+    {
+      "name": "marker_windows",
+      "file": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows_selection.png",
+      "sha256": "95c1d0b71eaaadb472d57a159ad80e0a2f26e4ef58341bf5e62fc1646bde096b",
+      "z_index": 1,
+      "canvas": [
+        128,
+        160
+      ],
+      "anchor": [
+        64,
+        144
+      ],
+      "purpose": "实际4个中性marker内窗源组件",
+      "editable_source": true,
+      "hidden_underpaint_color_index": null
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": [
+    64,
+    110
+  ],
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/telepad_base_master_v001.png",
+    "master_sha256": "96d1a6fe61c5e4d457ac8a15630ba3843b4bf0aa3cc83fff2a54c0ceaf75bfe7",
+    "prompt": "prompts/telepad_base.txt",
+    "prompt_sha256": "5d51d3eea5469bab5342490105ce480ad195fb36f034024dd7adb3818279bcd9",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-628d3fb8-7c40-455a-b250-4c1c9cc4d2e6.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        148,
+        445,
+        974,
+        1090
+      ],
+      "material_sampling_size": [
+        85,
+        66
+      ],
+      "native_origin": [
+        22,
+        78
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 35,
+      "native_outline_pixels_corrected": 17
+    },
+    "native_adjustments": [
+      "四marker分别以明确原生矩形归并中性暗色，保留围框，不能把中央圆盘误设发光窗",
+      "顶侧钢面连续亮边缩为短条，去细碎颜色梯度；低基座厚度与底界144保持",
+      "记录中心轴[64,110]供传送效果叠加，接地anchor[64,144]独立；四窗导出实际选择源层"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [],
+  "observations": "实际母稿为低矮八角平台，四内侧marker窗和宽平圆盘；原生中心实心可步入，外圈无自发光和护罩。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

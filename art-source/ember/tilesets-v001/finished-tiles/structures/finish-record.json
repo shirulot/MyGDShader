@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "wall_center",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按center重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "wall-vertical-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "wall-horizontal-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "wall-vertical-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "wall-horizontal-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_edge_n",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按edge_n重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "wall-horizontal-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "wall-vertical-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "wall-horizontal-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_edge_e",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按edge_e重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "wall-vertical-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": {
+        "kind": "wall-vertical-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "wall-horizontal-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_edge_s",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按edge_s重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "wall-vertical-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "wall-horizontal-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": {
+        "kind": "wall-horizontal-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_edge_w",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按edge_w重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "wall-vertical-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "wall-horizontal-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "wall-vertical-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_outer_ne",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按outer_ne重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": null,
+      "S": {
+        "kind": "wall-vertical-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "wall-horizontal-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_outer_se",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按outer_se重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "wall-vertical-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": null,
+      "W": {
+        "kind": "wall-horizontal-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_outer_sw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按outer_sw重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "wall-vertical-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "wall-horizontal-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_outer_nw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按outer_nw重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "wall-horizontal-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "wall-vertical-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_inner_ne",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按inner_ne重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "wall-vertical-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "wall-horizontal-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "wall-vertical-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "wall-horizontal-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_inner_se",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按inner_se重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "wall-vertical-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "wall-horizontal-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "wall-vertical-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "wall-horizontal-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_inner_sw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按inner_sw重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "wall-vertical-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "wall-horizontal-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "wall-vertical-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "wall-horizontal-0-28-v001",
+        "ports": [
+          [
+            0,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "wall_inner_nw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/wall_module_master_v001.png"
+    ],
+    "adjustments": [
+      "采样母稿中央墙顶钢板区域(436,283)-(1338,449)，整理为26×12像素材质片",
+      "手工重建32×32墙顶、方形凹槽与两个3×3沉头螺栓；四边连续底色",
+      "按inner_nw重画4像素边界/缺口，保持左上亮、右下暗；不旋转方向光",
+      "固定16色、二值Alpha；按真实边截面声明连接接口"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "wall-vertical-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "wall-horizontal-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "wall-vertical-0-32-v001",
+        "ports": [
+          [
+            0,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "wall-horizontal-4-32-v001",
+        "ports": [
+          [
+            4,
+            32
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "rail_straight_h",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/railing_module_master_v001.png"
+    ],
+    "adjustments": [
+      "抽取母稿左立柱区域(102,254)-(239,676)为7×21像素零件并固定调色板",
+      "在32像素网格重画双钢杆、黄铜上套环、沉头紧固件与脚座",
+      "按straight_h装配连接方向；四向重新安排左上高光，不机械旋转有向明暗",
+      "双栏杆端口分别固定9..12/19..20行或10..12/20..22列；二值Alpha"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "rail-h-v001",
+        "ports": [
+          [
+            9,
+            13
+          ],
+          [
+            19,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": {
+        "kind": "rail-h-v001",
+        "ports": [
+          [
+            9,
+            13
+          ],
+          [
+            19,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "rail_straight_v",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/railing_module_master_v001.png"
+    ],
+    "adjustments": [
+      "抽取母稿左立柱区域(102,254)-(239,676)为7×21像素零件并固定调色板",
+      "在32像素网格重画双钢杆、黄铜上套环、沉头紧固件与脚座",
+      "按straight_v装配连接方向；四向重新安排左上高光，不机械旋转有向明暗",
+      "双栏杆端口分别固定9..12/19..20行或10..12/20..22列；二值Alpha"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "rail-v-v001",
+        "ports": [
+          [
+            10,
+            13
+          ],
+          [
+            20,
+            23
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": {
+        "kind": "rail-v-v001",
+        "ports": [
+          [
+            10,
+            13
+          ],
+          [
+            20,
+            23
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "rail_corner_ne",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/railing_module_master_v001.png"
+    ],
+    "adjustments": [
+      "抽取母稿左立柱区域(102,254)-(239,676)为7×21像素零件并固定调色板",
+      "在32像素网格重画双钢杆、黄铜上套环、沉头紧固件与脚座",
+      "按corner_ne装配连接方向；四向重新安排左上高光，不机械旋转有向明暗",
+      "双栏杆端口分别固定9..12/19..20行或10..12/20..22列；二值Alpha"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "rail-v-v001",
+        "ports": [
+          [
+            10,
+            13
+          ],
+          [
+            20,
+            23
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": {
+        "kind": "rail-h-v001",
+        "ports": [
+          [
+            9,
+            13
+          ],
+          [
+            19,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "rail_corner_se",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/railing_module_master_v001.png"
+    ],
+    "adjustments": [
+      "抽取母稿左立柱区域(102,254)-(239,676)为7×21像素零件并固定调色板",
+      "在32像素网格重画双钢杆、黄铜上套环、沉头紧固件与脚座",
+      "按corner_se装配连接方向；四向重新安排左上高光，不机械旋转有向明暗",
+      "双栏杆端口分别固定9..12/19..20行或10..12/20..22列；二值Alpha"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "rail-h-v001",
+        "ports": [
+          [
+            9,
+            13
+          ],
+          [
+            19,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": {
+        "kind": "rail-v-v001",
+        "ports": [
+          [
+            10,
+            13
+          ],
+          [
+            20,
+            23
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "rail_corner_sw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/railing_module_master_v001.png"
+    ],
+    "adjustments": [
+      "抽取母稿左立柱区域(102,254)-(239,676)为7×21像素零件并固定调色板",
+      "在32像素网格重画双钢杆、黄铜上套环、沉头紧固件与脚座",
+      "按corner_sw装配连接方向；四向重新安排左上高光，不机械旋转有向明暗",
+      "双栏杆端口分别固定9..12/19..20行或10..12/20..22列；二值Alpha"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": null,
+      "S": {
+        "kind": "rail-v-v001",
+        "ports": [
+          [
+            10,
+            13
+          ],
+          [
+            20,
+            23
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": {
+        "kind": "rail-h-v001",
+        "ports": [
+          [
+            9,
+            13
+          ],
+          [
+            19,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "rail_corner_nw",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/railing_module_master_v001.png"
+    ],
+    "adjustments": [
+      "抽取母稿左立柱区域(102,254)-(239,676)为7×21像素零件并固定调色板",
+      "在32像素网格重画双钢杆、黄铜上套环、沉头紧固件与脚座",
+      "按corner_nw装配连接方向；四向重新安排左上高光，不机械旋转有向明暗",
+      "双栏杆端口分别固定9..12/19..20行或10..12/20..22列；二值Alpha"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "rail-v-v001",
+        "ports": [
+          [
+            10,
+            13
+          ],
+          [
+            20,
+            23
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": null,
+      "W": {
+        "kind": "rail-h-v001",
+        "ports": [
+          [
+            9,
+            13
+          ],
+          [
+            19,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "rail_end_h",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/railing_module_master_v001.png"
+    ],
+    "adjustments": [
+      "抽取母稿左立柱区域(102,254)-(239,676)为7×21像素零件并固定调色板",
+      "在32像素网格重画双钢杆、黄铜上套环、沉头紧固件与脚座",
+      "按end_h装配连接方向；四向重新安排左上高光，不机械旋转有向明暗",
+      "双栏杆端口分别固定9..12/19..20行或10..12/20..22列；二值Alpha"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": null,
+      "S": null,
+      "W": {
+        "kind": "rail-h-v001",
+        "ports": [
+          [
+            9,
+            13
+          ],
+          [
+            19,
+            21
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "rail_end_v",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/railing_module_master_v001.png"
+    ],
+    "adjustments": [
+      "抽取母稿左立柱区域(102,254)-(239,676)为7×21像素零件并固定调色板",
+      "在32像素网格重画双钢杆、黄铜上套环、沉头紧固件与脚座",
+      "按end_v装配连接方向；四向重新安排左上高光，不机械旋转有向明暗",
+      "双栏杆端口分别固定9..12/19..20行或10..12/20..22列；二值Alpha"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "rail-v-v001",
+        "ports": [
+          [
+            10,
+            13
+          ],
+          [
+            20,
+            23
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": null,
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "bridge_deck_h",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/bridge_module_master_v001.png"
+    ],
+    "adjustments": [
+      "仅取母稿钢板内部(277,258)-(977,983)，不采样绘制棋盘格背景",
+      "人工重建32×32桥面/边沿轮廓、检修槽与方形紧固件，移除渐变和碎色",
+      "按deck_h重新绘制左上高光、右下阴影与开放端；桥边梁为独立装饰覆盖层",
+      "开放桥面宽24像素；封闭端保留黄铜固定件；二值Alpha、固定16色"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "bridge-deck-h-v001",
+        "ports": [
+          [
+            4,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": {
+        "kind": "bridge-deck-h-v001",
+        "ports": [
+          [
+            4,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "bridge_deck_v",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/bridge_module_master_v001.png"
+    ],
+    "adjustments": [
+      "仅取母稿钢板内部(277,258)-(977,983)，不采样绘制棋盘格背景",
+      "人工重建32×32桥面/边沿轮廓、检修槽与方形紧固件，移除渐变和碎色",
+      "按deck_v重新绘制左上高光、右下阴影与开放端；桥边梁为独立装饰覆盖层",
+      "开放桥面宽24像素；封闭端保留黄铜固定件；二值Alpha、固定16色"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "bridge-deck-v-v001",
+        "ports": [
+          [
+            4,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": {
+        "kind": "bridge-deck-v-v001",
+        "ports": [
+          [
+            4,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "bridge_edge_h",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/bridge_module_master_v001.png"
+    ],
+    "adjustments": [
+      "仅取母稿钢板内部(277,258)-(977,983)，不采样绘制棋盘格背景",
+      "人工重建32×32桥面/边沿轮廓、检修槽与方形紧固件，移除渐变和碎色",
+      "按edge_h重新绘制左上高光、右下阴影与开放端；桥边梁为独立装饰覆盖层",
+      "开放桥面宽24像素；封闭端保留黄铜固定件；二值Alpha、固定16色"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": {
+        "kind": "bridge-edge-h-v001",
+        "ports": [
+          [
+            6,
+            12
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "S": null,
+      "W": {
+        "kind": "bridge-edge-h-v001",
+        "ports": [
+          [
+            6,
+            12
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "bridge_edge_v",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/bridge_module_master_v001.png"
+    ],
+    "adjustments": [
+      "仅取母稿钢板内部(277,258)-(977,983)，不采样绘制棋盘格背景",
+      "人工重建32×32桥面/边沿轮廓、检修槽与方形紧固件，移除渐变和碎色",
+      "按edge_v重新绘制左上高光、右下阴影与开放端；桥边梁为独立装饰覆盖层",
+      "开放桥面宽24像素；封闭端保留黄铜固定件；二值Alpha、固定16色"
+    ],
+    "interfaces": {
+      "N": {
+        "kind": "bridge-edge-v-v001",
+        "ports": [
+          [
+            6,
+            12
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "E": null,
+      "S": {
+        "kind": "bridge-edge-v-v001",
+        "ports": [
+          [
+            6,
+            12
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      },
+      "W": null
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  },
+  {
+    "id": "bridge_end_cap",
+    "sources": [
+      "art-source/ember/tilesets-v001/generated/bridge_module_master_v001.png"
+    ],
+    "adjustments": [
+      "仅取母稿钢板内部(277,258)-(977,983)，不采样绘制棋盘格背景",
+      "人工重建32×32桥面/边沿轮廓、检修槽与方形紧固件，移除渐变和碎色",
+      "按end_cap重新绘制左上高光、右下阴影与开放端；桥边梁为独立装饰覆盖层",
+      "开放桥面宽24像素；封闭端保留黄铜固定件；二值Alpha、固定16色"
+    ],
+    "interfaces": {
+      "N": null,
+      "E": null,
+      "S": null,
+      "W": {
+        "kind": "bridge-deck-h-v001",
+        "ports": [
+          [
+            4,
+            28
+          ]
+        ],
+        "alpha_at_ports": "opaque",
+        "exact_edge_required": false
+      }
+    },
+    "native_size": [
+      32,
+      32
+    ],
+    "method": "AI_MATERIAL_REFERENCE_AND_NATIVE_PIXEL_FINISH"
+  }
+]

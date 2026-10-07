@@ -1,0 +1,61 @@
+[
+  {
+    "stage": "builder-syntax",
+    "arguments": [
+      "--headless",
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\pixel-floor-v001\\godot-review",
+      "--script",
+      "res://tools/build_pixel_floor_v001.gd",
+      "--check-only"
+    ],
+    "exit_code": 0,
+    "stdout_log": "logs/builder-syntax.stdout.log",
+    "stderr_log": "logs/builder-syntax.stderr.log",
+    "stderr_bytes": 0
+  },
+  {
+    "stage": "painter-syntax",
+    "arguments": [
+      "--headless",
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\pixel-floor-v001\\godot-review",
+      "--script",
+      "res://scripts/ember/pixel_floor_painter_v001.gd",
+      "--check-only"
+    ],
+    "exit_code": 0,
+    "stdout_log": "logs/painter-syntax.stdout.log",
+    "stderr_log": "logs/painter-syntax.stderr.log",
+    "stderr_bytes": 0
+  },
+  {
+    "stage": "headless-validation",
+    "arguments": [
+      "--headless",
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\pixel-floor-v001\\godot-review",
+      "--script",
+      "res://tools/build_pixel_floor_v001.gd"
+    ],
+    "exit_code": 0,
+    "stdout_log": "logs/headless-validation.stdout.log",
+    "stderr_log": "logs/headless-validation.stderr.log",
+    "stderr_bytes": 0
+  },
+  {
+    "stage": "gpu-validation",
+    "arguments": [
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\pixel-floor-v001\\godot-review",
+      "--script",
+      "res://tools/build_pixel_floor_v001.gd",
+      "--",
+      "--capture"
+    ],
+    "exit_code": 0,
+    "stdout_log": "logs/gpu-validation.stdout.log",
+    "stderr_log": "logs/gpu-validation.stderr.log",
+    "stderr_bytes": 0
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "scope": "C01剩余19帧；规格文件不是完成帧",
+  "canvas": [
+    64,
+    96
+  ],
+  "anchor": [
+    32,
+    80
+  ],
+  "anchor_convention": "固定虚拟原点(32,80)；idle可见底边80，walk随抬脚与近远投影可为78..80；bbox右/下排除",
+  "subject_max": [
+    40,
+    64
+  ],
+  "visible_height_reference": 59,
+  "directions": {
+    "down": {
+      "idle_reference": "assets/ember/characters/robot/robot_idle_down_v001.png",
+      "tool_hand": "角色自身左腕；屏幕右侧",
+      "front_window": "胸窗安全区[30,52,34,54)，中心(32,53)",
+      "face": "宽深蓝灰面罩朝下；圆陶瓷头盔"
+    },
+    "up": {
+      "tool_hand": "同一角色左腕；屏幕左侧",
+      "front_window": "背视遮挡胸窗，不新造背部发光灯",
+      "face": "同尺寸陶瓷头盔背面、小钢灰维护盖；前面罩隐藏"
+    },
+    "left": {
+      "tool_hand": "同一角色左腕；近镜头/屏幕下侧手臂",
+      "front_window": "根据侧转遮挡，禁止移到后背",
+      "face": "面罩向左；近远肩/腿真实遮挡；不整体镜像right"
+    },
+    "right": {
+      "tool_hand": "同一角色左腕；远镜头/屏幕上侧手臂，可局部遮挡但保持黄铜识别",
+      "front_window": "根据侧转遮挡，禁止为显眼擅自换位置",
+      "face": "面罩向右；近远肩/腿真实遮挡；不整体镜像left"
+    }
+  },
+  "identity": [
+    "圆角浅陶瓷头盔约占可见高度1/3，深钢灰面罩及耳侧模块",
+    "陶瓷肩胸前臂小腿护甲；钢灰颈肘髋膝；短厚双靴",
+    "黄铜维修工具固定同一解剖左腕，不是武器",
+    "世界左上轻微高光固定；无投影、halo、运行状态色"
+  ],
+  "walk_phases": [
+    {
+      "frame": 0,
+      "pose": "左脚前触地，右脚后；右臂前摆、带工具左臂后摆"
+    },
+    {
+      "frame": 1,
+      "pose": "左脚支撑，右脚经过抬起；手臂经过中位"
+    },
+    {
+      "frame": 2,
+      "pose": "右脚前触地，左脚后；带工具左臂前摆、右臂后摆"
+    },
+    {
+      "frame": 3,
+      "pose": "右脚支撑，左脚经过抬起；手臂经过中位，接回frame0"
+    }
+  ],
+  "walk_native_strategy": {
+    "body_bob_max_pixels": 1,
+    "typical_foot_delta_pixels": [
+      1,
+      2
+    ],
+    "preview_fps": 8,
+    "fixed_idle_parts": "头躯干比例及装甲语汇稳定；双臂/腿/靴显式原生蒙版",
+    "frame_source_required": "每帧实际AI母稿先观看再标注pose_observation，母稿保留hash",
+    "joint_repair": "分部件位移后逐像素重画肩肘髋膝接缝，工具与左腕共同移动",
+    "prohibited": [
+      "全图warp或resize制造walk",
+      "镜像换手",
+      "每帧自动裁切",
+      "用复制idle伪称新母稿",
+      "自动宣称视觉合格"
+    ]
+  },
+  "output_policy": "先输出art-source工作帧，root视觉审查后推广正式目录；原down PNG只读"
+}

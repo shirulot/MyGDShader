@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b2s21gtsjtvla"]
+
+[ext_resource type="Shader" uid="uid://c682h3i048uwq" path="res://scenes/chapter04/ch04_03_mask_combine.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://depyfrn40jrtk" path="res://assets/ember/data/masks/circle_mask_v001.png" id="2_circle"]
+[ext_resource type="Texture2D" uid="uid://bxc2vhp3ulfyc" path="res://assets/ember/data/masks/star_mask_v001.png" id="3_star"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_combine"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/circle_mask = ExtResource("2_circle")
+shader_parameter/star_mask = ExtResource("3_star")
+shader_parameter/start = 0.4
+shader_parameter/end = 0.6
+shader_parameter/feather = 0.22
+shader_parameter/radius = 0.25
+shader_parameter/repeat_count = 4.0
+shader_parameter/move_weight = 0.1
+
+[node name="Ch0403MaskCombine" type="Node2D" unique_id=1754459972]
+
+[node name="MaskCanvas" type="ColorRect" parent="." unique_id=1160136821]
+material = SubResource("ShaderMaterial_combine")
+offset_left = 104.0
+offset_top = 104.0
+offset_right = 616.0
+offset_bottom = 616.0
+mouse_filter = 2

@@ -1,0 +1,113 @@
+{
+  "id": "floor_connected_v001",
+  "tool": "image_gen.imagegen built-in",
+  "original_tool_path": "C:/Users/shiru/.codex/generated_images/01a10204-0a39-77b3-b144-9e7a03fd8e93/exec-7bdc5cb5-d807-4a6b-8833-6e3682ada20d.png",
+  "raw_path": "art-source/ember/production-v008/correction-v002/raw/floor_connected_v001.png",
+  "raw_sha256": "cf2335ff6b9f1070f4d22e7fe126fbe9351f634acbfc99085e3faee64986bfeb",
+  "actual_raw_size": [
+    1254,
+    1254
+  ],
+  "actual_raw_mode": "RGB",
+  "transparent_background_requested": false,
+  "references": [
+    {
+      "path": "art-source/ember/production-v008/correction-v001/raw/floor_center_pixel_v001.png",
+      "sha256": "a333be82aec8c28d006e30c19c60ef5be2c6077f11c41733609375f34d22d819"
+    }
+  ],
+  "prompt_path": "art-source/ember/production-v008/correction-v002/floor_connected_v001.prompt.txt",
+  "prompt_sha256": "53246534de2813f1f59367b62a8defbfadbe95a6206c362241566adb1c930dad",
+  "prompt": "Use case: precise-object-edit / coherent pixel-art floor production master.\nReference image: the attached pixel floor is the ONE AND ONLY exact style and color reference. Keep the same blue-grey steel value ramp, muted brass, crisp pixel clusters, sparse wear and regular64nativepixel panel pitch. No other realistic or photographic material reference is allowed.\nProduce ONE single CONNECTED 2-by-2-cell FLOOR SECTION, not four separate sprites, not a display sheet and not a framed island. Conceptually the whole artwork is256x256 nativepixels. Each half-sized cell is128x128. Interior panel pattern: FOUR BY FOUR large steel plates across the whole square, each plate64x64 conceptualpixels. Principal panel joints at x64,128,192 and y64,128,192. Pixel shading3-4 controlled value steps per surface, small complete brass fittings inside the plate corners. No overall top-to-bottom lighting gradient or different colors in different quadrants.\nThis connected section has an exterior perimeter ONLY on the NORTH and WEST sides. Place a continuous8conceptualpixel complete-profile north beam along y0..7 and equal-width west beam along x0..7. At NW they meet as a clean SQUARE pixel-art manufactured corner, completely solid, with matching layered metal profile. No bevel cutout or pretend dark transparent background at that square corner.\nIMPORTANT: East and south boundaries are OPEN CUT-THROUGH FLOOR CONTINUATIONS. Absolutely no raised beam, outer frame, endcap, closure line, drop shadow or border decoration along the right or bottom canvas edge. The floor continues beyond those two cuts. The north beam reaches the right image boundary with its continuous cross-section. The west beam reaches the bottom image boundary with its continuous cross-section.\nThe four quadrants are therefore: top-left NW exterior corner; top-right north straight edge; bottom-left west straight edge; bottom-right full center. They are a SINGLE connected floor surface, with physical panel seams and colors continuing through the two half-image cut lines. Do not draw artificial tile divider/grid overlay or labels. This is artwork for later cutting into four whole tiles, and alignment/continuity matters more than decorative detail.\nCompletely fill the whole square canvas with opaque floor artwork, RGB or solid PNG. No page margins or transparent gutters. No smoothing, gradients, photorealistic grit, dense noise, fancy shiny3D highlights, different color grading, text, watermark, separate panels or additional items. Use restrained palette and pixel contours matching the attached pixel reference, not a new interpretation.\n",
+  "complete_cell_crops": [
+    {
+      "id": "floor_outer_NW",
+      "crop_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/candidates/floor_outer_NW_connected_v001_128.png",
+      "candidate_sha256": "54d0e32fa0b2690bad4e78ed084b8427415b68ba76d09bbd42a882f9f7584157"
+    },
+    {
+      "id": "floor_edge_N",
+      "crop_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/candidates/floor_edge_N_connected_v001_128.png",
+      "candidate_sha256": "7fd6157283d4badee777558bbc1ffad04effa16a3ab3a51ab21b21b666e26bb3"
+    },
+    {
+      "id": "floor_edge_W",
+      "crop_xyxy": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/candidates/floor_edge_W_connected_v001_128.png",
+      "candidate_sha256": "2f5c1a37a20bc1ae0f1b009439c0c761676642a4c6037160b4921444223495de"
+    },
+    {
+      "id": "floor_center",
+      "crop_xyxy": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/candidates/floor_center_connected_v001_128.png",
+      "candidate_sha256": "669bd9653ec8be071970e00d623a16fbde5129d1ea3c9a2077a0d1dd0ea7a1ed"
+    },
+    {
+      "id": "floor_outer_NW_registered617",
+      "crop_xyxy": [
+        0,
+        0,
+        617,
+        617
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/candidates/floor_outer_NW_registered617_128.png",
+      "candidate_sha256": "1b6cf2ed2f7a8dd9a1fdaedf5e3a677aada84e693947700562a024b90dce1a8a"
+    },
+    {
+      "id": "floor_edge_N_registered617",
+      "crop_xyxy": [
+        617,
+        0,
+        1234,
+        617
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/candidates/floor_edge_N_registered617_128.png",
+      "candidate_sha256": "c69dbac74a082b33e432112cf201074b0a80551fff9f5a5b98eb348c847f4419"
+    },
+    {
+      "id": "floor_edge_W_registered617",
+      "crop_xyxy": [
+        0,
+        617,
+        617,
+        1234
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/candidates/floor_edge_W_registered617_128.png",
+      "candidate_sha256": "aefcead0571539002c543c37775c9f8384a3f2a5298361aedbd16c9e13873dd1"
+    },
+    {
+      "id": "floor_center_registered617",
+      "crop_xyxy": [
+        617,
+        617,
+        1234,
+        1234
+      ],
+      "candidate_path": "art-source/ember/production-v008/correction-v002/candidates/floor_center_registered617_128.png",
+      "candidate_sha256": "a11e8a250511e3b31020032257ccaad636784c1341187a1989b0fb03440fe8ca"
+    }
+  ],
+  "production_ready": false
+}

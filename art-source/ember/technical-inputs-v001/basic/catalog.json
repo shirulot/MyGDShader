@@ -1,0 +1,813 @@
+{
+  "status": "BASIC_20_GENERATED",
+  "assets": [
+    {
+      "id": "uv_grid",
+      "manifest_id": "D01",
+      "file": "res://assets/ember/data/calibration/uv_grid_v001.png",
+      "sha256": "4b4a03345a8c3c8f39eb52b623b4675cd95fe519e2eb90d1935d78ff04611a2e",
+      "canvas": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": "R=U G=V background, labelled64px cells; origin top-left",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "non_square_grid",
+      "manifest_id": "D01",
+      "file": "res://assets/ember/data/calibration/non_square_grid_v001.png",
+      "sha256": "a7652899645b3a024c65eeeee334d09cc7a1fd8dbf3056bce1a73c1b560e1e98",
+      "canvas": [
+        512,
+        256
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": "512x256 native grid, 64px square cells expose aspect ratio",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "checkerboard",
+      "manifest_id": "D01",
+      "file": "res://assets/ember/data/calibration/checkerboard_v001.png",
+      "sha256": "28b8ffa55e1579f9a6910933f3d06f37547643c9c3b970ba82946fe8aaa12f12",
+      "canvas": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "data_semantics": "32px binary checker tiles; RGB32/224",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "color_test",
+      "manifest_id": "D01",
+      "file": "res://assets/ember/data/calibration/color_test_v001.png",
+      "sha256": "bf8941f026d90d5d871d751db92c7ef6bec85f3bd4b4d829c39f5bdf2665faa0",
+      "canvas": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": {
+        "patches": [
+          [
+            255,
+            0,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            0,
+            255
+          ],
+          [
+            255,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            255
+          ],
+          [
+            255,
+            0,
+            255
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            255,
+            255,
+            255
+          ]
+        ],
+        "gray_ramp_endpoints": [
+          0,
+          255
+        ],
+        "gray_steps": [
+          0,
+          17,
+          34,
+          51,
+          68,
+          85,
+          102,
+          119,
+          136,
+          153,
+          170,
+          187,
+          204,
+          221,
+          238,
+          255
+        ]
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "straight_background",
+      "manifest_id": "D01",
+      "file": "res://assets/ember/data/calibration/straight_background_v001.png",
+      "sha256": "12563caaefddbec8231ef2de773071c41db1f22ccd9ca60a4cd18ea791a10507",
+      "canvas": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": "Horizontal/vertical64px and diagonal128px straight lines for distortion",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "grayscale_gradient",
+      "manifest_id": "D02",
+      "file": "res://assets/ember/data/ramps/grayscale_gradient_v001.png",
+      "sha256": "2911d9c7191c5651c5da35b5d56f9395e6f13f37437148ff8134b9201c3d7299",
+      "canvas": [
+        256,
+        1
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": {
+        "linear_values": "x/255",
+        "endpoints": [
+          0,
+          255
+        ],
+        "steps": 256
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "color_ramp",
+      "manifest_id": "D02",
+      "file": "res://assets/ember/data/ramps/color_ramp_v001.png",
+      "sha256": "a4c3e562cb8705cfdacc5ee57092ea1e3af7c5dd3ed492ace40be45c7fdc8265",
+      "canvas": [
+        256,
+        1
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": {
+        "stops": [
+          [
+            0,
+            [
+              16,
+              24,
+              32
+            ]
+          ],
+          [
+            64,
+            [
+              30,
+              190,
+              200
+            ]
+          ],
+          [
+            128,
+            [
+              255,
+              180,
+              40
+            ]
+          ],
+          [
+            192,
+            [
+              240,
+              70,
+              60
+            ]
+          ],
+          [
+            255,
+            [
+              255,
+              255,
+              255
+            ]
+          ]
+        ],
+        "interpolation": "linear in encoded RGB; mark source_color when used as color",
+        "addressing": "clamp X; one-pixel Y"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "circle_mask",
+      "manifest_id": "D03",
+      "file": "res://assets/ember/data/masks/circle_mask_v001.png",
+      "sha256": "4b54bac369f67089c879fa33b7d342bba43dfb8234e2ceaf973a200322eebdd3",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [],
+      "data_semantics": "center128/128 radius92; 2px soft boundary; black0 white1",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "star_mask",
+      "manifest_id": "D03",
+      "file": "res://assets/ember/data/masks/star_mask_v001.png",
+      "sha256": "296147c4c560599fa360514924f200a877a7defb12b4581572703da629459c8c",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [],
+      "data_semantics": {
+        "vertices": [
+          [
+            128.0,
+            34.0
+          ],
+          [
+            152.68698059628386,
+            94.02128623625221
+          ],
+          [
+            217.39931253174444,
+            98.95240252875494
+          ],
+          [
+            167.94437368439645,
+            140.9787137637478
+          ],
+          [
+            183.25181371549246,
+            204.04759747124507
+          ],
+          [
+            128.0,
+            170.0
+          ],
+          [
+            72.74818628450754,
+            204.04759747124507
+          ],
+          [
+            88.05562631560355,
+            140.9787137637478
+          ],
+          [
+            38.60068746825556,
+            98.95240252875496
+          ],
+          [
+            103.31301940371613,
+            94.02128623625221
+          ]
+        ],
+        "binary_values": [
+          0,
+          255
+        ],
+        "origin": "center128/128"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "noise_low",
+      "manifest_id": "D04",
+      "file": "res://assets/ember/data/noise/noise_low_v001.png",
+      "sha256": "593e85cbe83f2c9e3d7a85c0af8fe9ac5bb998a30b219973be53fd98effa979a",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "data_semantics": {
+        "seed": 240410,
+        "phase_frequency_band": [
+          1,
+          4
+        ],
+        "modes": [
+          [
+            -1,
+            1,
+            2.0512689789539755,
+            0.599891052500714
+          ],
+          [
+            4,
+            -4,
+            6.205712985185638,
+            0.3734473122857906
+          ],
+          [
+            -2,
+            1,
+            3.1278186250075906,
+            0.8942101855643829
+          ],
+          [
+            -2,
+            -4,
+            2.823547758317705,
+            0.6371836238167796
+          ],
+          [
+            -3,
+            4,
+            4.664940290769204,
+            0.9450163051083942
+          ],
+          [
+            -1,
+            4,
+            5.024808296703175,
+            0.8199942332765102
+          ],
+          [
+            1,
+            -4,
+            4.623158741676254,
+            0.7660055598614546
+          ],
+          [
+            -2,
+            -3,
+            2.87801155018723,
+            0.9793330769788056
+          ],
+          [
+            -3,
+            -3,
+            3.3840802014190388,
+            0.32894852234118327
+          ],
+          [
+            -3,
+            2,
+            5.147935407658484,
+            0.30618192843060404
+          ],
+          [
+            -1,
+            -3,
+            0.31288656123275316,
+            0.42796380378911564
+          ],
+          [
+            4,
+            2,
+            0.4590348887012266,
+            0.4904397439817006
+          ],
+          [
+            2,
+            1,
+            5.184876588026078,
+            0.6976618386209682
+          ],
+          [
+            4,
+            1,
+            5.741059074557481,
+            0.3735718758956772
+          ],
+          [
+            4,
+            3,
+            1.5178504555768866,
+            0.6650564133210152
+          ],
+          [
+            -3,
+            2,
+            0.6805103391457801,
+            0.5317995082068733
+          ],
+          [
+            -2,
+            4,
+            4.760498967108383,
+            0.6520924059226723
+          ],
+          [
+            4,
+            1,
+            1.359116074113185,
+            0.5163817695963132
+          ],
+          [
+            2,
+            -4,
+            4.15860332176506,
+            0.6780310669016776
+          ],
+          [
+            -2,
+            3,
+            3.725319617956373,
+            0.35527284073694315
+          ],
+          [
+            4,
+            -4,
+            3.824664889144819,
+            0.5371248066655214
+          ],
+          [
+            2,
+            3,
+            0.7933025281099043,
+            0.9497074980774027
+          ],
+          [
+            4,
+            2,
+            6.268806476498345,
+            0.6322168524041981
+          ],
+          [
+            -3,
+            -4,
+            1.072955487364654,
+            0.6560843350105038
+          ]
+        ],
+        "coordinates": "q(s)=s-sin(2*pi*s)/(2*pi); endpoint derivative zero; nonuniform phase speed",
+        "seam": "XY endpoints and finite first differences exact"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "noise_high",
+      "manifest_id": "D04",
+      "file": "res://assets/ember/data/noise/noise_high_v001.png",
+      "sha256": "7fbd0fa409a130054d6504d4d1a135749c1d30144b9277fc7bec941f73022069",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "data_semantics": {
+        "seed": 240411,
+        "phase_frequency_band": [
+          10,
+          24
+        ],
+        "modes": [
+          [
+            -11,
+            19,
+            3.8582947755739663,
+            0.39999169560860715
+          ],
+          [
+            -14,
+            19,
+            4.860019384702083,
+            0.7080270810622235
+          ],
+          [
+            18,
+            -20,
+            3.119134495838602,
+            0.8990747830160521
+          ],
+          [
+            11,
+            14,
+            3.741360888898951,
+            0.6855015243325253
+          ],
+          [
+            -14,
+            -19,
+            1.169525127001663,
+            0.9473823369706811
+          ],
+          [
+            16,
+            23,
+            0.2328165678077561,
+            0.6901812464192238
+          ],
+          [
+            -23,
+            -10,
+            1.1473811654457653,
+            0.36544234028223577
+          ],
+          [
+            -21,
+            15,
+            2.1890328670749657,
+            0.7570705933383304
+          ],
+          [
+            11,
+            21,
+            0.3371736766249075,
+            0.5027298416894301
+          ],
+          [
+            -22,
+            -20,
+            2.4274113134452637,
+            0.34233474644194095
+          ],
+          [
+            14,
+            12,
+            0.5208612980036837,
+            0.5529668730271374
+          ],
+          [
+            -16,
+            24,
+            5.7787715046181125,
+            0.3760569335871077
+          ],
+          [
+            -12,
+            24,
+            3.354064874728648,
+            0.727227367782894
+          ],
+          [
+            19,
+            -23,
+            5.862449729034519,
+            0.32231318560261846
+          ],
+          [
+            -14,
+            -15,
+            0.36946518002094175,
+            0.8465349691327628
+          ],
+          [
+            -23,
+            12,
+            0.021528634383830916,
+            0.5894020980166166
+          ],
+          [
+            13,
+            12,
+            2.3868232854740983,
+            0.34556081262752536
+          ],
+          [
+            -10,
+            11,
+            1.9825440034619553,
+            0.8080820672457854
+          ],
+          [
+            23,
+            14,
+            5.515672559867095,
+            0.9906521236110841
+          ],
+          [
+            15,
+            -20,
+            6.261305911622954,
+            0.8168309384859809
+          ],
+          [
+            -20,
+            20,
+            1.3095863516612014,
+            0.6792243802422924
+          ],
+          [
+            10,
+            -17,
+            5.618458078395736,
+            0.40777189013016546
+          ],
+          [
+            24,
+            -22,
+            4.809099861868621,
+            0.9734964136157733
+          ],
+          [
+            -18,
+            19,
+            1.7640786758016505,
+            0.5502087583967428
+          ]
+        ],
+        "coordinates": "q(s)=s-sin(2*pi*s)/(2*pi); endpoint derivative zero; nonuniform phase speed",
+        "seam": "XY endpoints and finite first differences exact"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "alpha_edge_test",
+      "manifest_id": "D05",
+      "file": "res://assets/ember/data/calibration/alpha_edge_test_v001.png",
+      "sha256": "af62f2c5a36c367f34d398a399c4b30423c4e65938e8f50d7dc45f6334c3dbe1",
+      "canvas": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "data_semantics": {
+        "opaque_body": [
+          12,
+          12,
+          91,
+          95
+        ],
+        "transparent_hole": [
+          30,
+          30,
+          66,
+          66
+        ],
+        "thin_lines": "isolated 1px horizontal and vertical lines",
+        "alpha_gradient": "x12..75 y108..119 alpha0..255"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "radial_ramp",
+      "manifest_id": "D06",
+      "file": "res://assets/ember/data/energy/radial_ramp_v001.png",
+      "sha256": "7af92ddfe2a535e23a4182260f3d12d926658027fc2770b3518136355bfd8a3f",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [],
+      "data_semantics": "center1 to radius128=0; .r weight",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "energy_stripe",
+      "manifest_id": "D06",
+      "file": "res://assets/ember/data/energy/energy_stripe_v001.png",
+      "sha256": "1e3128dcbe9e8d6c467bd2a46260c3b598585d2f96ae4e5ae8bce532cfc2c7f2",
+      "canvas": [
+        256,
+        256
+      ],
+      "mode": "L",
+      "repeat_axes": [
+        "X",
+        "Y"
+      ],
+      "data_semantics": "eight32px sinusoidal stripes; X/Y periodic center sampling",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "test_height",
+      "manifest_id": "D07",
+      "file": "res://assets/ember/data/calibration/test_height_v001.png",
+      "sha256": "4c6ea997cc54bc842b3c301293f0fa9e50f3807f0f916fa864e645e29e7edc81",
+      "canvas": [
+        128,
+        128
+      ],
+      "mode": "L",
+      "repeat_axes": [],
+      "data_semantics": {
+        "convex_center": [
+          35,
+          46
+        ],
+        "concave_center": [
+          91,
+          46
+        ],
+        "neutral": 128,
+        "ramp_x": [
+          16,
+          88,
+          48,
+          112
+        ],
+        "ramp_y": [
+          80,
+          88,
+          112,
+          112
+        ],
+        "height_scale": 8.0
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "test_normal",
+      "manifest_id": "D07",
+      "file": "res://assets/ember/data/calibration/test_normal_v001.png",
+      "sha256": "806f82a0d4657034c873cbd23c30b846b36226b749fbe2c8bd4fe1c7accd726f",
+      "canvas": [
+        128,
+        128
+      ],
+      "mode": "RGB",
+      "repeat_axes": [],
+      "data_semantics": {
+        "height_id": "test_height",
+        "convention": "OpenGL +X,+Y,+Z; n=(-dh/dx,+dh/dy,1)",
+        "height_scale": 8.0,
+        "difference": "numpy gradient on actual quantized L PNG"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "rain_line",
+      "manifest_id": "D10",
+      "file": "res://assets/ember/vfx/particles/rain_line_v001.png",
+      "sha256": "14743fd691e33dc9a9a44eabb8ff63c35248743b68c3205ef81e7b252c0f35c4",
+      "canvas": [
+        16,
+        16
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "data_semantics": "16px native binary Alpha particle input; no baked effect",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "water_drop",
+      "manifest_id": "D10",
+      "file": "res://assets/ember/vfx/particles/water_drop_v001.png",
+      "sha256": "711d95aa06b437101dd173512ddf210576afb2167511fbbbf794feb6bd712418",
+      "canvas": [
+        16,
+        16
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "data_semantics": "16px native binary Alpha particle input; no baked effect",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "spark",
+      "manifest_id": "D10",
+      "file": "res://assets/ember/vfx/particles/spark_v001.png",
+      "sha256": "ef8c00139f785574ba5c4efffd892635026111c0afed5807376600e6362c0e2b",
+      "canvas": [
+        16,
+        16
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "data_semantics": "16px native binary Alpha particle input; no baked effect",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    },
+    {
+      "id": "dust_dot",
+      "manifest_id": "D10",
+      "file": "res://assets/ember/vfx/particles/dust_dot_v001.png",
+      "sha256": "3d7b1eca336e79d45d003cb6b59a49a2f83d7f2a2e388d6b47c23c7e9dd9cffb",
+      "canvas": [
+        16,
+        16
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "data_semantics": "16px native binary Alpha particle input; no baked effect",
+      "generator": "art-source/ember/technical-inputs-v001/basic/generate_basic.py"
+    }
+  ]
+}

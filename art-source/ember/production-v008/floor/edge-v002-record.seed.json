@@ -1,0 +1,33 @@
+{
+  "id": "floor_edge_N",
+  "mask": 124,
+  "version": "v002",
+  "tool": "image_gen.imagegen",
+  "intent": "precise-object-edit",
+  "prompt": "Use case: precise-object-edit. Fix ONE complete NORTH OUTER EDGE floor tile. Image1 is the high-resolution painted tile to edit; Image2 is a low-resolution registration reference only, showing the desired top boundary registration and the unacceptable HALF GOLD BOLTS at both beam ends; Image3 is the original high-resolution centre-floor painting reference. Preserve the rich fine blue-grey paint, restrained rust, existing interior plate seams and gentle upper-left material light of Image1. Changes ONLY: REMOVE the two brass fasteners on the NORTH beam altogether, leaving continuous plain blue-grey steel there. No yellow/brass fragments anywhere in the north beam, especially none at canvas ends, no replacement posts. Remove the transparent north page margin from Image1 by registering the complete north beam flush at the TOP canvas. Paint the complete single square floor so the TOP edge begins with the continuous north steel beam, with no gap or page margin; that beam is about10percent of the full canvas height, with natural smooth bevel matching the approved style. Preserve the entire beam as one uniform full-width component, not detached pieces. Both EAST and WEST beam endpoints continue beyond canvas and are flush-cut plain steel, with no end caps, corner columns, half bolts or perpendicular return beams. E,S,W floor material edges stay OPEN, filling the canvas exactly all the way to its edges. Do not crop half any interior brass bolt or add a repeated perimeter frame. Complete top-down orthographic square1024x1024 tile footprint, no outside page margin, not a sheet, not a tiny displayed tile. Alpha only where naturally needed outside silhouette, preserved as real transparency, not a painted checkerboard or background. Preserve high-fidelity painting fromImage1; do not copyImage2 block pixels or reduce colours. No isometric angle, perspective, water, text, logo, glow, hole, notch or strongcastshadow. This is a real complete image correction; not an overlay patch. Main goal: north beam touches TOP and left/right boundaries directly, contains NO brass at all, all other OPEN continuations extend to their edges, no half fasteners.",
+  "references": [
+    "art-source/ember/production-v008/floor/raw/floor_edge_N_v001.png",
+    "art-source/ember/production-v008/floor/candidates/floor_edge_N_v001_128.png",
+    "art-source/ember/production-v008/raw/floor_center_v001.png"
+  ],
+  "raw_file": "art-source/ember/production-v008/floor/raw/floor_edge_N_v002.png",
+  "original_tool_output_hint": "Generated images are saved to C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb as C:\\Users\\shiru\\.codex\\generated_images\\01a10ba5-b837-7a63-b1af-cdcd6f2564cb\\exec-0ea98cc6-4764-4e95-bf41-dddc21b3149e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "transparent_background_requested": true,
+  "adoption": "REJECTED_SOUTH_ALPHA_FADE",
+  "notes": "North beam was genuinely moved flush to top and both end brass bolts removed. However this single model edit introduced severe south-floor Alpha fade: y1100 median169, y1150 median71, y1253 median32; S edge Alpha>127 count0. This breaks the open south continuation. Reject as replacement; preserve full raw and full-canvas diagnostic, no clipping/filling/Alpha repair. Prior v001 registration and its known partial fasteners are retained historical candidate only.",
+  "interface_status": "NOT_PASSED",
+  "visual_status": "REJECTED_MODEL_OUTPUT_NOT_USER_APPROVED",
+  "retry_count": 1,
+  "source_crop_xyxy": [
+    0,
+    0,
+    1254,
+    1254
+  ],
+  "transparent_padding_added": [
+    0,
+    0,
+    0,
+    0
+  ]
+}

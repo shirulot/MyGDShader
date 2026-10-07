@@ -1,0 +1,112 @@
+{
+  "status": "PRODUCTION_CONTRACT_NOT_ASSET_ACCEPTANCE",
+  "canvas": [
+    64,
+    96
+  ],
+  "root_anchor": [
+    32,
+    80
+  ],
+  "direction_order": [
+    "down",
+    "down_left",
+    "left",
+    "up_left",
+    "up",
+    "up_right",
+    "right",
+    "down_right"
+  ],
+  "anatomical_tool_side": "left",
+  "mirroring": false,
+  "lighting": "screen upper left",
+  "final_total": {
+    "clips": 24,
+    "frames": 112
+  },
+  "idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true,
+    "duration_ms": 1000,
+    "phases": [
+      "stable registered mother pose",
+      "controlled one-pixel upper-body servo motion"
+    ],
+    "invariants": [
+      "feet and pelvis fixed",
+      "helmet and chest retain source shapes",
+      "shoulder and neck attachments follow rigid upper body",
+      "no per-frame texture redraw"
+    ],
+    "acceptance_boundary": "frame 1 to frame 0, then idle to walk and collect"
+  },
+  "walk": {
+    "frames": 8,
+    "fps": 8,
+    "loop": true,
+    "duration_ms": 1000,
+    "phases": [
+      "left contact",
+      "left support/down",
+      "right passing",
+      "right forward/up",
+      "right contact",
+      "right support/down",
+      "left passing",
+      "left forward/up"
+    ],
+    "invariants": [
+      "opposite arm and leg swing",
+      "single fixed direction mother and source pieces",
+      "boots remain rigid",
+      "support follows declared ground projection",
+      "no per-frame bbox fitting"
+    ],
+    "frozen_exception": "down reuses all eight approved v010 PNGs byte-for-byte",
+    "acceptance_boundary": "frame 7 to frame 0, adjacent 45 degree direction at corresponding phase"
+  },
+  "collect": {
+    "frames": 4,
+    "fps": 6,
+    "loop": false,
+    "duration_ms": 666.6666666667,
+    "phases": [
+      "prepare wrist tool",
+      "torso press and tool-arm reach with neutral leg support",
+      "hold the same support pose",
+      "recover to same-direction idle base"
+    ],
+    "invariants": [
+      "neutral registered pelvis, hip, knee and ankle positions",
+      "both boots fixed at the original stance",
+      "head/chest and tool arm retain their original short reach",
+      "F01/F02 share unchanged lower-body support",
+      "F03 equals same-direction idle F00"
+    ],
+    "event_hint": {
+      "frame": 2,
+      "purpose": "visual hold only; does not add gameplay logic"
+    },
+    "acceptance_boundary": "frame 3 to idle frame 0, non-loop completion",
+    "direction_projection": {
+      "down_up": "1px upper-body drop with fixed pelvis and legs",
+      "other_directions": "2px upper-body drop with fixed pelvis and legs"
+    }
+  },
+  "production_gates": [
+    "Phase A: eight static direction masters plus one new down_left walk pilot",
+    "Phase B: remaining six new walk directions after Phase A review; side views need visible and hidden limb sources before posing",
+    "Phase C: controlled idle and collect pilot then all directions; existing action scope retained",
+    "Phase D: final 24 clips and 112 frames, native and 4x light/dark reviews, real Godot transitions, frozen delivery"
+  ],
+  "current_unfinished": [],
+  "integration_scope": "Independent preview and SpriteFrames delivery; main game integration is separate.",
+  "final_asset_acceptance": "source/final-action-acceptance-v011.json",
+  "final_runtime_delivery": "qa/delivery_collect_knee_v012_rc01.json",
+  "final_runtime_migration_acceptance": "Not a new relocation; the fixed v012 runtime is included in its pose review.",
+  "current_user_feedback": "qa/user-feedback-collect-knee.json",
+  "revision": "collect-knee-v012-rc01",
+  "current_acceptance": "source/current-robot-action-acceptance-v012.json"
+}

@@ -1,0 +1,35 @@
+{
+  "records": [
+    {
+      "building_id": "control_tower",
+      "edit_target": "art-source/ember/selected-buildings-v001/references/control_tower_user_selected.png",
+      "prompt": "prompts/control_tower_intact.txt",
+      "selected_master": "masters/control_tower_intact_v004.png",
+      "sha256": "3989ea530ae9200b3b95763826c3b0113139f3274fa168a0db1b84308f82b7fa",
+      "method": "built-in imagegen / background-extraction",
+      "alpha": "preserved generated alpha; no thresholding or repainting"
+    },
+    {
+      "building_id": "repair_workshop",
+      "edit_target": "art-source/ember/selected-buildings-v001/references/repair_workshop_user_selected.png",
+      "prompt": "prompts/repair_workshop_intact.txt",
+      "selected_master": "masters/repair_workshop_intact_v004.png",
+      "sha256": "c61f2ad82b4e99f096321289a737b23fd7af25af7b4838cb3e1f0b600a20317c",
+      "method": "built-in imagegen / background-extraction",
+      "alpha": "preserved generated alpha; no thresholding or repainting"
+    },
+    {
+      "building_id": "logistics_warehouse",
+      "edit_target": "art-source/ember/selected-buildings-v001/references/logistics_warehouse_user_selected.png",
+      "prompt": "prompts/logistics_warehouse_intact.txt",
+      "selected_master": "masters/logistics_warehouse_intact_v004.png",
+      "sha256": "9f9f74df29d9d62259be77fa0da0cb362368e2b0640ca977aac5b9ba5b9ecc50",
+      "method": "built-in imagegen / background-extraction",
+      "alpha": "preserved generated alpha; no thresholding or repainting"
+    }
+  ],
+  "rejected_cleanup": {
+    "reason": "cleanup iteration changed framing; first extraction retained after actual GPU alpha check",
+    "path": "C:/Users/shiru/.codex/generated_images/01a11003-0cdb-7c50-906c-ef7f508dcf86/exec-9c57ee4f-a150-4864-84b2-84df9a328a0c.png"
+  }
+}

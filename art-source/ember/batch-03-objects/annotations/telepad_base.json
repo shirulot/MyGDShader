@@ -1,0 +1,217 @@
+{
+  "observations": "实际母稿为低矮八角平台，四内侧marker窗和宽平圆盘；原生中心实心可步入，外圈无自发光和护罩。",
+  "adjustments": [
+    "四marker分别以明确原生矩形归并中性暗色，保留围框，不能把中央圆盘误设发光窗",
+    "顶侧钢面连续亮边缩为短条，去细碎颜色梯度；低基座厚度与底界144保持",
+    "记录中心轴[64,110]供传送效果叠加，接地anchor[64,144]独立；四窗导出实际选择源层"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        61,
+        90,
+        68,
+        92
+      ],
+      "color": 1
+    },
+    {
+      "type": "rect",
+      "bounds": [
+        42,
+        102,
+        45,
+        108
+      ],
+      "color": 1
+    },
+    {
+      "type": "rect",
+      "bounds": [
+        84,
+        102,
+        87,
+        108
+      ],
+      "color": 1
+    },
+    {
+      "type": "rect",
+      "bounds": [
+        61,
+        119,
+        68,
+        121
+      ],
+      "color": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          61,
+          79
+        ],
+        [
+          67,
+          79
+        ]
+      ],
+      "color": 4
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "marker_n",
+      "visual_frame_bounds": [
+        59,
+        88,
+        70,
+        94
+      ],
+      "safe_active_rect": [
+        61,
+        90,
+        68,
+        92
+      ],
+      "center": [
+        64.5,
+        91.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.50390625,
+        0.56875
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    },
+    {
+      "id": "marker_w",
+      "visual_frame_bounds": [
+        40,
+        100,
+        48,
+        110
+      ],
+      "safe_active_rect": [
+        42,
+        102,
+        45,
+        108
+      ],
+      "center": [
+        43.5,
+        105.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.33984375,
+        0.65625
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    },
+    {
+      "id": "marker_e",
+      "visual_frame_bounds": [
+        82,
+        100,
+        90,
+        110
+      ],
+      "safe_active_rect": [
+        84,
+        102,
+        87,
+        108
+      ],
+      "center": [
+        85.5,
+        105.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.66796875,
+        0.65625
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    },
+    {
+      "id": "marker_s",
+      "visual_frame_bounds": [
+        59,
+        117,
+        71,
+        123
+      ],
+      "safe_active_rect": [
+        61,
+        119,
+        68,
+        121
+      ],
+      "center": [
+        64.5,
+        120.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.50390625,
+        0.75
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "interaction_center": [
+    64,
+    110
+  ],
+  "emitter_points": [
+    {
+      "id": "teleport_axis",
+      "at": [
+        64,
+        110
+      ],
+      "purpose": "平台几何中心，运行护盾/传送另叠加，无烘焙效果"
+    }
+  ],
+  "components": [
+    {
+      "name": "marker_windows",
+      "rects": [
+        [
+          61,
+          90,
+          68,
+          92
+        ],
+        [
+          42,
+          102,
+          45,
+          108
+        ],
+        [
+          84,
+          102,
+          87,
+          108
+        ],
+        [
+          61,
+          119,
+          68,
+          121
+        ]
+      ],
+      "z_index": 1,
+      "purpose": "实际4个中性marker内窗源组件"
+    }
+  ]
+}

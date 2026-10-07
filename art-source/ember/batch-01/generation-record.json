@@ -1,0 +1,126 @@
+{
+  "batch_id": "EMBER-B01",
+  "date": "2026-10-03",
+  "timezone": "Asia/Irkutsk",
+  "tool": "image_gen.imagegen (built-in)",
+  "production_standard": "docs/shader-learning/art-generation-standard.md v1.0",
+  "generation_calls": 7,
+  "requested_art_units": 6,
+  "approved_production_units": 0,
+  "ownership": "AI_GENERATED_IN_PROJECT; no external reference; not labeled CC0; no independent rights clearance claim",
+  "references": {
+    "robot_v001": "art-source/ember/batch-01/generated/robot_idle_down_master_v001.png",
+    "station_v001": "art-source/ember/batch-01/generated/station_master_v001.png",
+    "floor_clean_v001": "art-source/ember/batch-01/generated/floor_clean_master_v001.png"
+  },
+  "limitation": "Built-in tool exposes prompt, reference paths and transparency request; it has no explicit native small size, exact palette or seamless controls. Masters are candidates. Native-grid resampling is diagnostic only.",
+  "assets": [
+    {
+      "id": "robot",
+      "source": "C:\\Users\\shiru\\.codex\\generated_images\\01a10204-0a39-77b3-b144-9e7a03fd8e93\\exec-fff053a5-4513-4485-a5e9-989260e06c3e.png",
+      "file": "art-source/ember/batch-01/generated/robot_idle_down_master_v001.png",
+      "prompt": "01_robot_idle_down_v001.txt",
+      "status": "GENERATED_MASTER_NEEDS_PIXEL_FINISH",
+      "reference_versions": [],
+      "sha256": "216ead02b5066e0ce85223c4f5115d8eeb7acdf7428e539018bee309ce899773",
+      "copy_matches_original_tool_output": true
+    },
+    {
+      "id": "robot_alpha_attempt",
+      "source": "C:\\Users\\shiru\\.codex\\generated_images\\01a10204-0a39-77b3-b144-9e7a03fd8e93\\exec-b0f605ce-1414-4aab-8ecf-3bdf675c83e4.png",
+      "file": "art-source/ember/batch-01/generated/robot_idle_down_master_v002.png",
+      "prompt": "02_robot_alpha_cleanup_v002.txt",
+      "status": "CORRECTION_ATTEMPT_RETAINED_NOT_SELECTED",
+      "reference_versions": [
+        "robot_v001"
+      ],
+      "sha256": "3386398f8775dc378a267ac75f0bb9fa038583c70c51786b27620d179895c430",
+      "copy_matches_original_tool_output": true
+    },
+    {
+      "id": "station",
+      "source": "C:\\Users\\shiru\\.codex\\generated_images\\01a10204-0a39-77b3-b144-9e7a03fd8e93\\exec-7cca3b88-9081-48e2-9e7b-95b7835cb019.png",
+      "file": "art-source/ember/batch-01/generated/station_master_v001.png",
+      "prompt": "03_station_base_v001.txt",
+      "status": "GENERATED_MASTER_NEEDS_PIXEL_FINISH",
+      "reference_versions": [
+        "robot_v001"
+      ],
+      "sha256": "98ede4e6f0c955cf415d98ad48426aacc68b696032b61ab7f56b05b9754cf72f",
+      "copy_matches_original_tool_output": true
+    },
+    {
+      "id": "floor_clean",
+      "source": "C:\\Users\\shiru\\.codex\\generated_images\\01a10204-0a39-77b3-b144-9e7a03fd8e93\\exec-d282fe9d-3909-4c79-8a93-816b4ba61fe0.png",
+      "file": "art-source/ember/batch-01/generated/floor_clean_master_v001.png",
+      "prompt": "04_floor_clean_v001.txt",
+      "status": "GENERATED_MASTER_NEEDS_PIXEL_FINISH",
+      "reference_versions": [
+        "robot_v001",
+        "station_v001"
+      ],
+      "sha256": "bd6cb2e30aed07194b9b191c1e121b40eab38f2faaebcd69c9651f21336962e4",
+      "copy_matches_original_tool_output": true
+    },
+    {
+      "id": "floor_worn",
+      "source": "C:\\Users\\shiru\\.codex\\generated_images\\01a10204-0a39-77b3-b144-9e7a03fd8e93\\exec-35a69a1f-c6c9-467d-b975-91c27a261df5.png",
+      "file": "art-source/ember/batch-01/generated/floor_worn_master_v001.png",
+      "prompt": "05_floor_worn_v001.txt",
+      "status": "GENERATED_MASTER_NEEDS_PIXEL_FINISH",
+      "reference_versions": [
+        "floor_clean_v001",
+        "station_v001"
+      ],
+      "sha256": "42ebcb9106326fb2c4306231f6118e505ced7bb5a0bddcf90f1008b3441e227a",
+      "copy_matches_original_tool_output": true
+    },
+    {
+      "id": "floor_grate",
+      "source": "C:\\Users\\shiru\\.codex\\generated_images\\01a10204-0a39-77b3-b144-9e7a03fd8e93\\exec-96a197db-ba12-4731-9c39-b6f9597f4620.png",
+      "file": "art-source/ember/batch-01/generated/floor_grate_master_v001.png",
+      "prompt": "06_floor_grate_v001.txt",
+      "status": "GENERATED_MASTER_NEEDS_PIXEL_FINISH",
+      "reference_versions": [
+        "floor_clean_v001",
+        "station_v001"
+      ],
+      "sha256": "787033c8c2c9abc107beaab204959fffe73ffbf6b405c7ebfb5dbfbb3dbe507c",
+      "copy_matches_original_tool_output": true
+    },
+    {
+      "id": "floor_wet",
+      "source": "C:\\Users\\shiru\\.codex\\generated_images\\01a10204-0a39-77b3-b144-9e7a03fd8e93\\exec-0ab220d5-c87e-48cc-b53a-d1c6b2e4437a.png",
+      "file": "art-source/ember/batch-01/generated/floor_wet_master_v001.png",
+      "prompt": "07_floor_wet_v001.txt",
+      "status": "GENERATED_MASTER_NEEDS_PIXEL_FINISH",
+      "reference_versions": [
+        "floor_clean_v001",
+        "station_v001"
+      ],
+      "sha256": "89936248e69033532d674d9584bccec19f65b2179ecaf6b1baf0558040498d9f",
+      "copy_matches_original_tool_output": true
+    }
+  ],
+  "adjustment_record": [
+    {
+      "operation": "model-based alpha correction",
+      "input": "robot_v001",
+      "output": "robot_v002",
+      "result": "still has halo and semi-transparency; retain as rejected correction; select v001 as provisional style reference"
+    },
+    {
+      "operation": "manual pixel art editing",
+      "result": "none"
+    },
+    {
+      "operation": "archive",
+      "result": "copy exact tool output PNG byte-for-byte"
+    },
+    {
+      "operation": "diagnostic export",
+      "result": "nearest-neighbor target-grid resamples and integer preview/comparison composites only; no palette quantization, alpha thresholding, cropping, repositioning or seam correction"
+    }
+  ],
+  "archive_integrity": "7 source PNGs match original tool output byte-for-byte"
+}

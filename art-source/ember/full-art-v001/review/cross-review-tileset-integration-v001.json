@@ -1,0 +1,1049 @@
+{
+  "status": "INDEPENDENT_OBJECTS18_TEXTURES7_CROSS_REVIEW_PASS",
+  "reviewer": "tileset_integration (UI producer; independent of object/texture finishing)",
+  "timestamp_utc": "2026-10-04T03:13:54.980735+00:00",
+  "readonly": true,
+  "asset_count": 25,
+  "checks": 204,
+  "failures": [],
+  "catalogs": [
+    {
+      "file": "art-source/ember/batch-03-objects/native-catalog-v001.json",
+      "sha256": "f32f1c0be42cbe7c7188a198d3c17afcbbb96aa4400a1bdf174a418d967ced82"
+    },
+    {
+      "file": "art-source/ember/batch-05-textures/textures-catalog-v001.json",
+      "sha256": "ba75ca9f12bea994824a31a7bd46602965e292fb8bde232fe28a183cdd201d09"
+    }
+  ],
+  "visual_images": [
+    "art-source/ember/batch-03-objects/pixel-review/objects_contact_1x.png",
+    "art-source/ember/batch-03-objects/pixel-review/objects_contact_2x.png",
+    "art-source/ember/batch-03-objects/pixel-review/door_robot_scale_1x.png",
+    "art-source/ember/batch-05-textures/review/textures_contact_2x_v001.png",
+    "art-source/ember/batch-05-textures/review/water_calm_3x3_2x.png",
+    "art-source/ember/batch-05-textures/review/water_directional_3x3_2x.png",
+    "art-source/ember/batch-05-textures/review/foam_strip_3x3_2x.png",
+    "art-source/ember/batch-05-textures/review/metal_albedo_3x3_native.png",
+    "art-source/ember/batch-05-textures/review/concrete_albedo_3x3_native.png",
+    "art-source/ember/batch-05-textures/review/grass_leaf_native_1x.png",
+    "art-source/ember/batch-05-textures/review/smoke_blob_native_1x.png"
+  ],
+  "scope": "成品视觉、尺寸/Alpha/色板/目录SHA、母稿SHA、对象分层复合与声明平铺边；不代替根代理Godot库/StyleBoxTexture/3D远近渲染验证。",
+  "assets": [
+    {
+      "id": "console_base",
+      "file": "art-source/ember/batch-03-objects/finished/console_base_v001.png",
+      "sha256": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd",
+      "canvas": [
+        96,
+        96
+      ],
+      "bbox": [
+        18,
+        22,
+        78,
+        80
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_sha_screen_neutral": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/console_base_v001.finish.json",
+      "finishing_record_sha256": "8c5b160f6b6e9411287be38f670a63d060397e6a32a39bb86a59b7813ec0dcf5",
+      "mother_sha256": "aefde6d1b8f1f76a53ace9cf62545e6fdce8100b0aae9cb89174b62b19deeff1",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "pump_base",
+      "file": "art-source/ember/batch-03-objects/finished/pump_base_v001.png",
+      "sha256": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8",
+      "canvas": [
+        160,
+        192
+      ],
+      "bbox": [
+        25,
+        58,
+        136,
+        176
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/pump_base_v001.finish.json",
+      "finishing_record_sha256": "f2bc0467877293e55015f6d351f5e8de4ee28481021c62bcb3151fb8215cca10",
+      "mother_sha256": "bccc6b83aace92d58d1773027a497bbd317592ddf7f630e77205dd5350c9d339",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "ventilator_base",
+      "file": "art-source/ember/batch-03-objects/finished/ventilator_base_v001.png",
+      "sha256": "74a301919676247d40b5e163bf116d011c3231cc2d2cb18949d2e950af09f187",
+      "canvas": [
+        160,
+        192
+      ],
+      "bbox": [
+        40,
+        52,
+        120,
+        176
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_sha_fan_rotor": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/ventilator_base_v001.finish.json",
+      "finishing_record_sha256": "90d9b1e5599721f29553850bff4cbee09ce67b12eefeac521592c62e1555edbe",
+      "mother_sha256": "8c34821330ab9ad203c50dd55c3f61ffdb7c945b494b806e446eddee4261eeb8",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "cooler_base",
+      "file": "art-source/ember/batch-03-objects/finished/cooler_base_v001.png",
+      "sha256": "86606ba53c17e572cc19e5f1b9336e8245ecc52fa01cc6ddc08761b13047ca2b",
+      "canvas": [
+        160,
+        192
+      ],
+      "bbox": [
+        29,
+        50,
+        132,
+        176
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_sha_core_window": true,
+        "layer_sha_exchange_pipes_high": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/cooler_base_v001.finish.json",
+      "finishing_record_sha256": "6d5f54338d17d2321fe8a9ae5a7205bc1e217fdb53714ababc8adfdd52ac19fd",
+      "mother_sha256": "80c5812f8cfa201b324c7f967d63715819cb5367d380a4aca5de2e34d232f741",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "relay_base",
+      "file": "art-source/ember/batch-03-objects/finished/relay_base_v001.png",
+      "sha256": "2c42f50ae8af4aa2397255112fa4255ed5f50d943919611c4419d04b06669b98",
+      "canvas": [
+        192,
+        256
+      ],
+      "bbox": [
+        51,
+        52,
+        141,
+        240
+      ],
+      "anchor": [
+        96,
+        240
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_sha_core_window": true,
+        "layer_sha_mast_high": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/relay_base_v001.finish.json",
+      "finishing_record_sha256": "78903a7424220a6cb3620e6ff83dd27dff7ec051795baa4c5a57896c5ad2f53d",
+      "mother_sha256": "02af2ff3338c029be0e9809992ddb2e4d05e927ce73854a6990d0ea390bf9719",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "wall_lamp",
+      "file": "art-source/ember/batch-03-objects/finished/wall_lamp_v001.png",
+      "sha256": "aa27b42d2d09a608416bbcf770e78de947e096f7beca4797b23b38ff29932a79",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        21,
+        14,
+        43,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_sha_lens_neutral": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/wall_lamp_v001.finish.json",
+      "finishing_record_sha256": "e6ca68091bf0a432456b96a8f52eb8eba8718f8a79ccc6e9e9c73ba73b23ba0b",
+      "mother_sha256": "eb0849b15d8dd7a41fb82877ce6c73c277aeafd3923a5d3651f400a8c76e7706",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "floor_lamp",
+      "file": "art-source/ember/batch-03-objects/finished/floor_lamp_v001.png",
+      "sha256": "09b7b326be066958f0c9015cd07bdf6532bd74c7e0861d2eabacfb3b8590b464",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        23,
+        12,
+        41,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_sha_lens_neutral": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/floor_lamp_v001.finish.json",
+      "finishing_record_sha256": "96fa7b5f496a829b8d12c2e2060be975faebb2f919fc8584d14b2aa979f52033",
+      "mother_sha256": "b69e200b8498abd240502cf70efe82cfd67de6f2d241a2b24b06f821cd6bde8b",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "door_closed",
+      "file": "art-source/ember/batch-03-objects/finished/door_closed_v001.png",
+      "sha256": "4aa35db2b665e5f235d019e002bf2aed4e52243c18d00cf53d41d6176ef18437",
+      "canvas": [
+        96,
+        128
+      ],
+      "bbox": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "anchor": [
+        48,
+        112
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_sha_sliding_leaves": true,
+        "layer_sha_foreground_frame": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/door_closed_v001.finish.json",
+      "finishing_record_sha256": "faf87aee8e04470477e31e65158ab913798793c8aa79edaf46864b6ce3ab2a39",
+      "mother_sha256": "891d19a4c6116ec174a8e1b424f6675038870c4b62908784ea3939f2ceecc54a",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "door_open",
+      "file": "art-source/ember/batch-03-objects/finished/door_open_v001.png",
+      "sha256": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f",
+      "canvas": [
+        96,
+        128
+      ],
+      "bbox": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "anchor": [
+        48,
+        112
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_sha_foreground_frame": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/door_open_v001.finish.json",
+      "finishing_record_sha256": "cbd7e53e284f9b508a8ce7b5558301b66f86273b43aca4e457fa5e455c7093df",
+      "mother_sha256": "4f0d71fe9ff2b170ef8ccf72793adb73408fc5f1894805002f92414f56f37a8a",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "telepad_base",
+      "file": "art-source/ember/batch-03-objects/finished/telepad_base_v001.png",
+      "sha256": "8d59c3ba8ed09aa50a9232c5b3f8ffe204c9a8f41da408499d5208cd8c081512",
+      "canvas": [
+        128,
+        160
+      ],
+      "bbox": [
+        22,
+        78,
+        107,
+        144
+      ],
+      "anchor": [
+        64,
+        144
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_sha_marker_windows": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/telepad_base_v001.finish.json",
+      "finishing_record_sha256": "9515ca5c51bfe2ce3976d6664790a73a06d0f897d5587397a41a148fb81ca4b2",
+      "mother_sha256": "96d1a6fe61c5e4d457ac8a15630ba3843b4bf0aa3cc83fff2a54c0ceaf75bfe7",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "terminal_body",
+      "file": "art-source/ember/batch-03-objects/finished/terminal_body_v001.png",
+      "sha256": "67c2c54fb0efbc1ffdb1cfa01c61ae6216f2947a74b1e29847c37be401c1b812",
+      "canvas": [
+        96,
+        96
+      ],
+      "bbox": [
+        24,
+        16,
+        73,
+        80
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_sha_inner_screen": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/terminal_body_v001.finish.json",
+      "finishing_record_sha256": "d7b9aa5685d9475ff50ab1f544d2e3b5c123b30f4337b0129a24a023b4f72b0d",
+      "mother_sha256": "dc8341a816b393b76fed71ab3c7437734c3ee0d013afd43175e6376422e2b994",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "screen_frame",
+      "file": "art-source/ember/batch-03-objects/finished/screen_frame_v001.png",
+      "sha256": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+      "canvas": [
+        96,
+        96
+      ],
+      "bbox": [
+        16,
+        16,
+        80,
+        80
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 10,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/screen_frame_v001.finish.json",
+      "finishing_record_sha256": "f8f14da1d5beb21e70ef27214f3251ac226b746039cce3c5758efe7926d48324",
+      "mother_sha256": "c6ea66ec6ae879a8a30e4a6aef2314e3f46af64ef94f3f9d7cc89758232ca3f6",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "fuse",
+      "file": "art-source/ember/batch-03-objects/finished/fuse_v001.png",
+      "sha256": "71288a979fade1ac91a129b0d808a3576877d478c2e3c2292927d2f008c9951a",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        13,
+        44,
+        51,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/fuse_v001.finish.json",
+      "finishing_record_sha256": "d1e20f1d17f383f29d15cfb9b1742831f9a84cc991c88a19f99797f52a0c9219",
+      "mother_sha256": "e11da345fa2277f5c8273a18b78e60501078c7febc70ba4fa7b493f47f7db59d",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "antenna_coil",
+      "file": "art-source/ember/batch-03-objects/finished/antenna_coil_v001.png",
+      "sha256": "eb95dc28410a802402a70e43dfa7403376aebc0ad9ccc7fead3c99168d58904c",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        14,
+        18,
+        50,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/antenna_coil_v001.finish.json",
+      "finishing_record_sha256": "dcefc32cc4c2be3cc7066eb9ed3d4af3c345d6e3456eee603a0afb266f86ef71",
+      "mother_sha256": "9da1ac977e79c8be744ee245660f7dfabaf2c0bdf213ab9287a78ef4c40bcce9",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "split_ring",
+      "file": "art-source/ember/batch-03-objects/finished/split_ring_v001.png",
+      "sha256": "30147d02b0140b8a1a258cb713ef88c1778e2a6c061b3715becb2984bdf335ad",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        12,
+        24,
+        52,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 10,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/split_ring_v001.finish.json",
+      "finishing_record_sha256": "f854f8fc47841de0481b03acc71901449b1c54159bca374b38d748f83da3ccfb",
+      "mother_sha256": "88cca50a3a267ff6680c19290f8c3b3171153406f32374dbd4d5966833229ed2",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "log_cartridge",
+      "file": "art-source/ember/batch-03-objects/finished/log_cartridge_v001.png",
+      "sha256": "14faf29c1959209f37c196bf47480b41fdac604f9587b7cd9c273c80cdce9b6a",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        21,
+        22,
+        44,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/log_cartridge_v001.finish.json",
+      "finishing_record_sha256": "8db7e7fde36319f528ee9708c7ed764a960601e2aa743e66399d1d36a13f74f9",
+      "mother_sha256": "b50f9b6c11bc48941452159426244ddca387c22673cb258acc7e15af82ef8038",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "toolbox",
+      "file": "art-source/ember/batch-03-objects/finished/toolbox_v001.png",
+      "sha256": "d3f8b0279f5940c88e064f1d78733ea48ecb9ef320c597953902359a8b9339bd",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        10,
+        29,
+        54,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/toolbox_v001.finish.json",
+      "finishing_record_sha256": "635fe05dee1bdadbf225f7b7fc77fdbee79a7c8ddb6d740809b2a515f81acc11",
+      "mother_sha256": "132baad1e28dfd64d8f968c70be9f7c97a5fa7c5c05e584238f3ba145d69daef",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "helmet",
+      "file": "art-source/ember/batch-03-objects/finished/helmet_v001.png",
+      "sha256": "a920b3f0ac6940f7c2a53ccc04e59f8b13003486052d15d93e9e5488fe288dc6",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        16,
+        22,
+        49,
+        56
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 11,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "layer_sha_foundation_body": true,
+        "layer_composition_equal_to_flat_png": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-03-objects/finished/helmet_v001.finish.json",
+      "finishing_record_sha256": "f40d5d0c28fb0e104ba0e9c79580d229ae142350fbc5058877a3282038b2e12b",
+      "mother_sha256": "5a623cca2c58eab9018720f6c89aca504e66d69e50f7202958887e14ce744f4c",
+      "visual_review": "PASS",
+      "visual_observations": "在原生及整数2倍成品合集审视：识别结构、左上轻受光、设备体系和轮廓清楚；关门/开门安装位置与机器人通行比例一致。"
+    },
+    {
+      "id": "water_calm",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/water_calm_v001.png",
+      "sha256": "5a1aeb3389a5d633ff81e43ae299057388dda8dd8b88923690012079798d3881",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "alpha_values": [
+        255
+      ],
+      "color_count": 3,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "declared_periodic_edge_pixels_equal": true
+      },
+      "edge_measurement": {
+        "X_mismatched_pixels": 0,
+        "Y_mismatched_pixels": 0
+      },
+      "finishing_record": "art-source/ember/batch-05-textures/finished-textures/water_calm_v001.finish.json",
+      "finishing_record_sha256": "007611c57df275b517cd4ceb6a4586de241b97ec26942e6e6c2fd0b6095c0c9f",
+      "mother_sha256": "73aaff6127a3a29368834d5a5e61a59be1a5510b8b1076e31a4fccc216f252c0",
+      "visual_review": "PASS",
+      "visual_observations": "低对比不规则短纹；3x3检查未见边界硬线"
+    },
+    {
+      "id": "water_directional",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/water_directional_v001.png",
+      "sha256": "2f3d48baa11688f3f37caa230415b32cef4aa5603e1301662ce5b3b2c32b2e38",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "alpha_values": [
+        255
+      ],
+      "color_count": 3,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "declared_periodic_edge_pixels_equal": true
+      },
+      "edge_measurement": {
+        "X_mismatched_pixels": 0,
+        "Y_mismatched_pixels": 0
+      },
+      "finishing_record": "art-source/ember/batch-05-textures/finished-textures/water_directional_v001.finish.json",
+      "finishing_record_sha256": "f90342e48fbbf7433b3122794043912e80992c23b0121a35243e5bd1719fa4fd",
+      "mother_sha256": "6c7b396468f1d05337052a78f8834db2d25af01a151f6943fca06b8d089ca6ff",
+      "visual_review": "PASS",
+      "visual_observations": "水平断续纹与calm有不同流向语言；3x3无硬线"
+    },
+    {
+      "id": "foam_strip",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/foam_strip_v001.png",
+      "sha256": "970dac7f57d35732c145d6b8ef307de59b9dd707cf0cd957a5ddbe3416605e24",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        28,
+        64,
+        41
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 3,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "declared_periodic_edge_pixels_equal": true
+      },
+      "edge_measurement": {
+        "X_mismatched_pixels": 0
+      },
+      "finishing_record": "art-source/ember/batch-05-textures/finished-textures/foam_strip_v001.finish.json",
+      "finishing_record_sha256": "91bbde5572b0832dce7ad3d4161f5964616f3381b1753d23079dd36f86c707fe",
+      "mother_sha256": "56bb11c50e2a7bfe2eed1acbaa46d5a500182c66514cf67bd7b7cce1088b1395",
+      "visual_review": "PASS",
+      "visual_observations": "断续泡沫与透明负形明确，X拼接连续，不要求Y连接"
+    },
+    {
+      "id": "smoke_blob",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/smoke_blob_v001.png",
+      "sha256": "31a27aec9a4cbe4edcd73dea99676c2d534802b5063256f0706409239a446a2d",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        9,
+        11,
+        55,
+        53
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 3,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-05-textures/finished-textures/smoke_blob_v001.finish.json",
+      "finishing_record_sha256": "d3f67c9669aef2f9ce408e309113fc807d566fc0af2a0af8e0491b9ba67894d0",
+      "mother_sha256": "9abeda1d5c92bd2d6d88be5b8ea0b34694983870215c690097d073c26341a9e9",
+      "visual_review": "PASS",
+      "visual_observations": "四个叠合团块、完整居中；静态艺术输入未画设备或火焰"
+    },
+    {
+      "id": "grass_leaf",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/grass_leaf_v001.png",
+      "sha256": "1dc463fc71b8e44fc7148de106fdd05fbc0389364925eee0180c4a6e37b23888",
+      "canvas": [
+        64,
+        128
+      ],
+      "bbox": [
+        8,
+        10,
+        56,
+        120
+      ],
+      "anchor": [
+        32,
+        120
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "color_count": 4,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true
+      },
+      "edge_measurement": {},
+      "finishing_record": "art-source/ember/batch-05-textures/finished-textures/grass_leaf_v001.finish.json",
+      "finishing_record_sha256": "de47a4e4f36c3b4ffbeb4931e88c51052e9458b67841a97216009f744497ecbf",
+      "mother_sha256": "ef1ce33f7a8c1a31b47337941e4fcb4f745ab0fca7ecc6973aa3dec752460d8d",
+      "visual_review": "PASS",
+      "visual_observations": "多叶细轮廓与固定根部(32,120)边界；高度权重图为独立技术预算"
+    },
+    {
+      "id": "metal_albedo",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/metal_albedo_v001.png",
+      "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3",
+      "canvas": [
+        256,
+        256
+      ],
+      "bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "alpha_values": [
+        255
+      ],
+      "color_count": 2,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "declared_periodic_edge_pixels_equal": true
+      },
+      "edge_measurement": {
+        "X_mismatched_pixels": 0,
+        "Y_mismatched_pixels": 0
+      },
+      "finishing_record": "art-source/ember/batch-05-textures/finished-textures/metal_albedo_v001.finish.json",
+      "finishing_record_sha256": "bfcab97e28daca632cd9604cf8920a4d2efb61dbcbb4948112a57f6f46dbc02d",
+      "mother_sha256": "343f1305181611259b72b393150fbe00a4c77f787f15f6d274b66cabe1cbc3cb",
+      "visual_review": "PASS",
+      "visual_observations": "安静蓝灰金属面，少量簇纹；无烘焙高光/投射影"
+    },
+    {
+      "id": "concrete_albedo",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/concrete_albedo_v001.png",
+      "sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8",
+      "canvas": [
+        256,
+        256
+      ],
+      "bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "alpha_values": [
+        255
+      ],
+      "color_count": 2,
+      "checks": {
+        "native_sha_matches_catalog": true,
+        "canvas_matches": true,
+        "bbox_matches": true,
+        "standard16": true,
+        "binary_alpha": true,
+        "mother_sha_matches": true,
+        "declared_periodic_edge_pixels_equal": true
+      },
+      "edge_measurement": {
+        "X_mismatched_pixels": 0,
+        "Y_mismatched_pixels": 0
+      },
+      "finishing_record": "art-source/ember/batch-05-textures/finished-textures/concrete_albedo_v001.finish.json",
+      "finishing_record_sha256": "b6989171be46d31f410b4d678d86fb0bff987231734e68ffcca0626610e1bb6e",
+      "mother_sha256": "ff08d814da3291a47a6450a1c8d022fcc705b22dafc926056c7a65c5934b7ce4",
+      "visual_review": "PASS",
+      "visual_observations": "粗颗粒簇与金属不同、未画裂缝物体/定向光；3x3平铺无硬接线"
+    }
+  ]
+}

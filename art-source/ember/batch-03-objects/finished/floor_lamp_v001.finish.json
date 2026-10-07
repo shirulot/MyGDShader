@@ -1,0 +1,162 @@
+{
+  "id": "floor_lamp",
+  "manifest_id": "B07",
+  "file": "art-source/ember/batch-03-objects/finished/floor_lamp_v001.png",
+  "production_file": "res://assets/ember/buildings/lights/floor_lamp_v001.png",
+  "sha256": "09b7b326be066958f0c9015cd07bdf6532bd74c7e0861d2eabacfb3b8590b464",
+  "size": [
+    64,
+    64
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/floor_lamp_v001.finish.json",
+  "canvas": [
+    64,
+    64
+  ],
+  "bbox": [
+    23,
+    12,
+    41,
+    56
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [
+    {
+      "id": "lamp_lens",
+      "visual_frame_bounds": [
+        28,
+        24,
+        36,
+        34
+      ],
+      "safe_active_rect": [
+        30,
+        26,
+        34,
+        32
+      ],
+      "center": [
+        32.0,
+        29.0
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.5,
+        0.453125
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/floor_lamp/foundation_body.png",
+      "sha256": "93da96adb36678597d8958039a41db234816542aebac4f49c188feb0e227a5ea",
+      "z_index": 0,
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    },
+    {
+      "name": "lens_neutral",
+      "file": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral_selection.png",
+      "sha256": "b283880f60f9a4e8e753925b506b81c514bdc9a26003bd744646e2e3231febd9",
+      "z_index": 1,
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "purpose": "未点亮玻璃安全内区",
+      "editable_source": true,
+      "hidden_underpaint_color_index": null
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/floor_lamp_master_v001.png",
+    "master_sha256": "b69e200b8498abd240502cf70efe82cfd67de6f2d241a2b24b06f821cd6bde8b",
+    "prompt": "prompts/floor_lamp.txt",
+    "prompt_sha256": "071dbdb3ad3ba5cebd032078f6171c159b5573daf9bdd9fd823eee61a7d2b26f",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-4f28b145-177d-4ce0-b9ac-51f253e59a24.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        368,
+        355,
+        702,
+        1151
+      ],
+      "material_sampling_size": [
+        18,
+        44
+      ],
+      "native_origin": [
+        23,
+        12
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 11,
+      "native_outline_pixels_corrected": 22
+    },
+    "native_adjustments": [
+      "灯头安全内区[30,26,34,32)归并深蓝灰，去原生采样亮灰点；保留1px玻璃框和四脚螺栓",
+      "上帽金属高光整理为3px短条，左上光照方向保持；底脚边界56",
+      "lens_neutral源层真实同64画布，预留材质发光而不烘焙灯光"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [],
+  "observations": "实际母稿是窄立柱与方形落地脚，灯头为浅壳框住深玻璃；比壁灯没有背板、向上头罩更明确。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

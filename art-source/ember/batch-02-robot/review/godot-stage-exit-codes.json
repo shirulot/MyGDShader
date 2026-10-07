@@ -1,0 +1,121 @@
+[
+  {
+    "name": "syntax",
+    "arguments": [
+      "--headless",
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+      "--check-only",
+      "--script",
+      "res://tools/build_ember_robot_animation.gd"
+    ],
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "stdout": "godot-logs/syntax.stdout.log",
+    "stderr": "godot-logs/syntax.stderr.log"
+  },
+  {
+    "name": "verify",
+    "arguments": [
+      "--headless",
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+      "--script",
+      "res://tools/build_ember_robot_animation.gd",
+      "--",
+      "--verify-only",
+      "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_verify_only_v001.json"
+    ],
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "stdout": "godot-logs/verify.stdout.log",
+    "stderr": "godot-logs/verify.stderr.log"
+  },
+  {
+    "name": "render",
+    "arguments": [
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple",
+      "--position",
+      "-2000,-2000",
+      "--script",
+      "res://tools/build_ember_robot_animation.gd",
+      "--",
+      "--verify-only",
+      "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_render_validation_v001.json",
+      "--screenshot=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_robot_animation_sandbox_v001.png"
+    ],
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "stdout": "godot-logs/render.stdout.log",
+    "stderr": "godot-logs/render.stderr.log"
+  },
+  {
+    "name": "fresh-verify",
+    "arguments": [
+      "--headless",
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\fresh-project-v001",
+      "--script",
+      "res://tools/build_ember_robot_animation.gd",
+      "--",
+      "--verify-only",
+      "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_fresh_validation_v001.json"
+    ],
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "stdout": "godot-logs/fresh-verify.stdout.log",
+    "stderr": "godot-logs/fresh-verify.stderr.log"
+  },
+  {
+    "name": "fresh-render",
+    "arguments": [
+      "--path",
+      "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\fresh-project-v001",
+      "--position",
+      "-2000,-2000",
+      "--script",
+      "res://tools/build_ember_robot_animation.gd",
+      "--",
+      "--verify-only",
+      "--report=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_fresh_render_validation_v001.json",
+      "--screenshot=E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-02-robot\\review\\godot_robot_animation_fresh_v001.png"
+    ],
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "stdout": "godot-logs/fresh-render.stdout.log",
+    "stderr": "godot-logs/fresh-render.stderr.log"
+  },
+  {
+    "name": "import",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "stdout": "godot-logs/import.stdout.log",
+    "stderr": "godot-logs/import.stderr.log",
+    "exit_code_evidence": "Actual Start-Process -Wait -PassThru ExitCode observed during this audit"
+  },
+  {
+    "name": "build",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "stdout": "godot-logs/build.stdout.log",
+    "stderr": "godot-logs/build.stderr.log",
+    "exit_code_evidence": "Actual Start-Process -Wait -PassThru ExitCode observed during this audit"
+  },
+  {
+    "name": "fresh-import",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "stdout": "godot-logs/fresh-import.stdout.log",
+    "stderr": "godot-logs/fresh-import.stderr.log",
+    "exit_code_evidence": "Actual Start-Process -Wait -PassThru ExitCode observed during this audit"
+  },
+  {
+    "name": "fresh-tilesets",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "stdout": "godot-logs/fresh-tilesets.stdout.log",
+    "stderr": "godot-logs/fresh-tilesets.stderr.log",
+    "exit_code_evidence": "Actual Start-Process -Wait -PassThru ExitCode observed during this audit"
+  }
+]

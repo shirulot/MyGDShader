@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://brq53y6o4gdhb"]
+
+[ext_resource type="Shader" uid="uid://bbcpnbagmkipr" path="res://scenes/chapter04/ch04_02_distance_circle.gdshader" id="1_shader"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_circle"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/radius = 0.3999999910592
+shader_parameter/feather = 0.3499999921768
+
+[node name="Ch0402DistanceCircle" type="Node2D" unique_id=167115725]
+
+[node name="TransparencyReference" type="ColorRect" parent="." unique_id=1306472765]
+offset_left = 104.0
+offset_top = 104.0
+offset_right = 616.0
+offset_bottom = 616.0
+mouse_filter = 2
+color = Color(0.08, 0.25, 0.5, 1)
+
+[node name="CircleCanvas" type="ColorRect" parent="." unique_id=1773822554]
+material = SubResource("ShaderMaterial_circle")
+offset_left = 104.0
+offset_top = 104.0
+offset_right = 616.0
+offset_bottom = 616.0
+mouse_filter = 2

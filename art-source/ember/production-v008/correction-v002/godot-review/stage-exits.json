@@ -1,0 +1,50 @@
+﻿[
+    {
+        "stage":  "initial-import",
+        "exit_code":  0,
+        "stderr_bytes":  0,
+        "engine_arguments":  [
+                                 "--headless",
+                                 "--path",
+                                 "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\production-v008\\correction-v002\\godot-review",
+                                 "--editor",
+                                 "--import"
+                             ]
+    },
+    {
+        "stage":  "policy-import",
+        "exit_code":  0,
+        "stderr_bytes":  0,
+        "engine_arguments":  [
+                                 "--headless",
+                                 "--path",
+                                 "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\production-v008\\correction-v002\\godot-review",
+                                 "--editor",
+                                 "--import"
+                             ]
+    },
+    {
+        "stage":  "syntax",
+        "exit_code":  0,
+        "stderr_bytes":  0,
+        "engine_arguments":  [
+                                 "--headless",
+                                 "--path",
+                                 "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\production-v008\\correction-v002\\godot-review",
+                                 "--script",
+                                 "res://review.gd",
+                                 "--check-only"
+                             ]
+    },
+    {
+        "stage":  "gpu-capture",
+        "exit_code":  0,
+        "stderr_bytes":  0,
+        "engine_arguments":  [
+                                 "--path",
+                                 "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\production-v008\\correction-v002\\godot-review",
+                                 "--",
+                                 "--capture"
+                             ]
+    }
+]

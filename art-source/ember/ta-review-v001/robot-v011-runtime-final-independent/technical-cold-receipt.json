@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "zip_sha256": "8dc65a715b41b2c61a09eb6e2afbcd31134db60228f4b3081a0a39e4d153f4bb",
+  "fresh_cache_absent_before_import": true,
+  "original_payload_files": 336,
+  "payload_changes_after_engine": [],
+  "calls": [
+    {
+      "call": "import",
+      "exit_code": 0,
+      "seconds": 2.836,
+      "stderr_bytes": 0,
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\robot-v011-runtime-final-independent\\technical-cold-runtime-r2",
+        "--editor",
+        "--import",
+        "--quit"
+      ],
+      "stdout": "technical-cold-r2-import.stdout.log",
+      "stderr": "technical-cold-r2-import.stderr.log"
+    },
+    {
+      "call": "entry",
+      "exit_code": 0,
+      "seconds": 3.634,
+      "stderr_bytes": 0,
+      "args": [
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\robot-v011-runtime-final-independent\\technical-cold-runtime-r2",
+        "--position",
+        "-32000,-32000",
+        "--resolution",
+        "960x640",
+        "--rendering-method",
+        "gl_compatibility",
+        "--script",
+        "res://ta_runtime_probe.gd"
+      ],
+      "stdout": "technical-cold-r2-entry.stdout.log",
+      "stderr": "technical-cold-r2-entry.stderr.log"
+    }
+  ],
+  "probe_sha256": "d51bdc4835fbf2505cedc5ab5c04e410b1c557f38233774c1e706a6505175555",
+  "result_sha256": "23121393f7b9b23e1a8e09a1f0c519bac19c513d1500c53f93b6bc45566d44d6",
+  "screenshot_sha256": "9f552115c7a4d7f59411dfc02a310370417845ebbf6a904e147e2ea22c545332",
+  "scope": "New real runtime main scene, all24/112 imported frame readback, two natural loops and one collected clip; no repeat of source224GPU matrix"
+}

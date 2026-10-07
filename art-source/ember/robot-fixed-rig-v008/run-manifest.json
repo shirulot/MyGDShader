@@ -1,0 +1,116 @@
+{
+  "revision": "robot_fixed_rig_v008",
+  "stage": "FROZEN_CANDIDATE_PENDING_TA",
+  "scope": {
+    "direction": "down",
+    "action": "walk",
+    "frames": 8,
+    "fps": 8,
+    "canvas": [
+      64,
+      96
+    ],
+    "node_scales": [
+      1,
+      4
+    ],
+    "root_anchor": [
+      32,
+      80
+    ],
+    "projection": "screen=(X,Y+0.65Z)",
+    "world_ground_y": 80,
+    "loop": true
+  },
+  "generator": "Godot fixed editable source layers and authored cuff geometry with fixed-length 3D IK",
+  "source": {
+    "original_mother": "source/robot_idle_down_canonical_original.png",
+    "original_sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+    "rig": "source/rig_down_v008.json",
+    "rig_sha256": "e11638a6751cdaab475224cea772aa80425066daadcfab6e71436f84fd1341a4",
+    "rigid_part_layers": 23,
+    "once_authored_caps": 17,
+    "original_source_pixels": 1492,
+    "source_pixel_reassignment": 37,
+    "native": true
+  },
+  "frozen_frames": [
+    {
+      "frame": 0,
+      "phase": "left_contact",
+      "file": "res://art-source/ember/robot-fixed-rig-v008/frames/robot_walk_down_f00_v008.png",
+      "sha256": "9ad4836c732e1b8b8bcbf7c2d756bb45c8f7ab69f14efb5034afcf7a39e780e2"
+    },
+    {
+      "frame": 1,
+      "phase": "left_down",
+      "file": "res://art-source/ember/robot-fixed-rig-v008/frames/robot_walk_down_f01_v008.png",
+      "sha256": "c224f0fcc892fc1d9735352fb7ca009b12baebcf045e3681905d37aa11811dc1"
+    },
+    {
+      "frame": 2,
+      "phase": "right_passing",
+      "file": "res://art-source/ember/robot-fixed-rig-v008/frames/robot_walk_down_f02_v008.png",
+      "sha256": "27ffc6266bcd6d923e87771a4d97eecca8a6a2eab52e5bcf6cb141a03fbf2da8"
+    },
+    {
+      "frame": 3,
+      "phase": "right_up",
+      "file": "res://art-source/ember/robot-fixed-rig-v008/frames/robot_walk_down_f03_v008.png",
+      "sha256": "388e7e378dad503bda16ad70aa2a7ae02741dcfa77088485bbe123b614afcedc"
+    },
+    {
+      "frame": 4,
+      "phase": "right_contact",
+      "file": "res://art-source/ember/robot-fixed-rig-v008/frames/robot_walk_down_f04_v008.png",
+      "sha256": "5ba027dd9a38b2a64ed2fc5ad22c6963d2e41e930225114affc1ab34cd4e09cc"
+    },
+    {
+      "frame": 5,
+      "phase": "right_down",
+      "file": "res://art-source/ember/robot-fixed-rig-v008/frames/robot_walk_down_f05_v008.png",
+      "sha256": "7e119ee3834b5b4edbe1acc7253a91e752d82a4f2dfc9ae55c40ab973fc00645"
+    },
+    {
+      "frame": 6,
+      "phase": "left_passing",
+      "file": "res://art-source/ember/robot-fixed-rig-v008/frames/robot_walk_down_f06_v008.png",
+      "sha256": "f565c543aee5e317ea946aedbec919e3f955b9ab904c0bbed332d4a46df85956"
+    },
+    {
+      "frame": 7,
+      "phase": "left_up",
+      "file": "res://art-source/ember/robot-fixed-rig-v008/frames/robot_walk_down_f07_v008.png",
+      "sha256": "564cafb10f4528699a6efde3c48ea35338d144bfb2257fe7786d56a4f4d2520c"
+    }
+  ],
+  "producer_independent_art_review": "PASS_DOWN_WALK_SAMPLE_ONLY",
+  "ta_art_review": "PENDING",
+  "technical_render": "PASS",
+  "technical_playback": "PASS",
+  "natural_playback_loops": 2,
+  "encoding": "ENCODING_PASS",
+  "production_assets_modified": false,
+  "production_accepted": false,
+  "limitations": [
+    "Only down walk sample; other directions/actions and main gameplay floor/speed not accepted",
+    "Two inverse UV boundary samples in tool F01 remain Unknown; no pixel edits made to force measurement",
+    "Connectivity and export fidelity do not substitute for TA visual acceptance"
+  ],
+  "evidence": [
+    "qa/independent_art_review_v008.md",
+    "qa/export_validation_v008.json",
+    "fixed_rig_render_v008.json",
+    "fixed_rig_playback_v008.json",
+    "alpha_structure_diagnostic_v008.json",
+    "previews/robot_walk_down_fixed_rig_v008_two_normal_loops_4x.gif",
+    "previews/robot_walk_down_fixed_rig_v008_stable_visible_diagnostic_4x.png",
+    "gpu-playback/review_scene_f03_v008.png"
+  ],
+  "preserved_failed_drafts": [
+    "draft-01-pre-cap-affine",
+    "draft-02-pre-wrist-cuff",
+    "../robot-fixed-rig-v007"
+  ],
+  "delivery_zip": "art-source/ember/deliveries/robot_fixed_rig_v008_walk_down_candidate_2026-10-06.zip"
+}

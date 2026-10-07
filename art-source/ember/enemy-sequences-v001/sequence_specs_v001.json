@@ -1,0 +1,1594 @@
+{
+  "revision": "enemy_sequences_v001",
+  "status": "20_CLIP_REVIEW_BATCH_PENDING_TA",
+  "scope": "First batch: four accepted enemy units, five actions each, down/front direction only. 20 clips / 120 frames. Four independent directions are defined for later expansion.",
+  "generation_tool": "built_in_imagegen",
+  "canvas_px": [
+    128,
+    128
+  ],
+  "pivot_px": [
+    64,
+    104
+  ],
+  "source_cell_px": [
+    512,
+    512
+  ],
+  "source_enlargement": 4,
+  "directions": [
+    "down",
+    "left",
+    "right",
+    "up"
+  ],
+  "batch_directions": [
+    "down"
+  ],
+  "pixel_filter": "nearest",
+  "root_motion": "none",
+  "frame_order": "row_major_top_left",
+  "palette_rule": "Accepted ivory / blue-grey / restrained brass. No baked hit flash, bloom, smoke, projectiles or cast shadows.",
+  "export_rule": "Source grids are divided into fixed equal cells; resize full sheet once using the clip common registered cell size, then uniformly blit all scaled cells with the same offset into 128x128. Calibrate only from reference frame 0 versus accepted canonical neutral bbox. Never normalize or recenter each pose separately. Preserve source RGBA.",
+  "source_directory": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001",
+  "asset_directory": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001",
+  "animations": [
+    {
+      "id": "idle",
+      "name": "待机",
+      "frames": 4,
+      "columns": 2,
+      "rows": 2,
+      "fps": 4,
+      "loop": true,
+      "events": [],
+      "duration_seconds": 1
+    },
+    {
+      "id": "move",
+      "name": "移动",
+      "frames": 8,
+      "columns": 4,
+      "rows": 2,
+      "fps": 8,
+      "loop": true,
+      "events": [
+        {
+          "frame": 0,
+          "name": "support_phase_a"
+        },
+        {
+          "frame": 4,
+          "name": "support_phase_b"
+        }
+      ],
+      "duration_seconds": 1
+    },
+    {
+      "id": "attack",
+      "name": "攻击",
+      "frames": 6,
+      "columns": 3,
+      "rows": 2,
+      "fps": 10,
+      "loop": false,
+      "events": [
+        {
+          "frame": 3,
+          "name": "attack_release_visual"
+        }
+      ],
+      "duration_seconds": 0.6
+    },
+    {
+      "id": "hit",
+      "name": "受击",
+      "frames": 4,
+      "columns": 2,
+      "rows": 2,
+      "fps": 12,
+      "loop": false,
+      "events": [],
+      "duration_seconds": 0.3333333333333333
+    },
+    {
+      "id": "death",
+      "name": "死亡",
+      "frames": 8,
+      "columns": 4,
+      "rows": 2,
+      "fps": 10,
+      "loop": false,
+      "events": [
+        {
+          "frame": 7,
+          "name": "corpse_hold_visual"
+        }
+      ],
+      "duration_seconds": 0.8
+    }
+  ],
+  "units": [
+    {
+      "id": "enemy_patrol",
+      "name": "轻型巡逻兵",
+      "source_canvas": [
+        64,
+        96
+      ],
+      "source_pivot": [
+        32,
+        80
+      ],
+      "body_max_px": [
+        40,
+        64
+      ],
+      "reference": "enemy_patrol_three_views_v001.png",
+      "parts": "enemy_patrol_parts_v001.png",
+      "identity": "Compact ivory biped with domed helmet / blue-grey top cap, horizontal black visor with a tiny amber-red sensor, narrow blue-grey waist, stout separate legs, brass joint caps. Anatomical RIGHT arm = viewer LEFT in front is the short integrated bolt-projector. Anatomical LEFT arm = viewer RIGHT is the chunky two-prong manipulator. Keep exactly one head, one torso, two arms, two legs and two feet.",
+      "actions": {
+        "idle": [
+          "neutral accepted stance, both feet grounded",
+          "torso and helmet rise about one logical pixel, shoulder couplings relax",
+          "neutral stance, tiny manipulator finger flex",
+          "torso returns to the start with restrained one-pixel settle"
+        ],
+        "move": [
+          "right-leg forward contact / left-leg trailing contact",
+          "right-leg support / left knee begins to lift",
+          "left leg passing, torso near neutral",
+          "left leg extends toward front, right knee bends",
+          "left-leg forward contact / right-leg trailing contact",
+          "left-leg support / right knee begins to lift",
+          "right leg passing, torso near neutral",
+          "right leg extends toward front, ready to connect smoothly to frame 0"
+        ],
+        "attack": [
+          "neutral alert stance with right projector lowered",
+          "right projector elbow raises and aims forward, left claw counterbalances",
+          "short wind-up, knees brace, muzzle remains short",
+          "projector recoils briefly backward at the release pose, no flash or projectile drawn",
+          "right projector settles forward again",
+          "both arms return to the exact neutral stance"
+        ],
+        "hit": [
+          "neutral stance",
+          "torso recoils backward, knees bend slightly, both feet retain their support reference",
+          "maximum restrained recoil, helmet tips with torso while limbs remain attached",
+          "recover to neutral, no white/red recolour"
+        ],
+        "death": [
+          "neutral stance",
+          "sensor dims, knees begin to buckle",
+          "knees compress, torso lowers while arms bend inward",
+          "one knee touches down, torso pitches toward its right side",
+          "robot tips sideways, head and tools remain attached",
+          "torso and shoulder contact the ground, legs fold",
+          "all motion settles into one readable compact wreck",
+          "same settled wreck with dark sensor and no motion, keep all original components once"
+        ]
+      },
+      "reference_master": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/references/enemy_patrol_master_v001.png",
+      "reference_three_views": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_patrol_three_views_v001.png",
+      "reference_parts": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/parts/enemy_patrol_parts_v001.png",
+      "reference_scale_example": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_patrol_scale_example_v001.png"
+    },
+    {
+      "id": "enemy_cutter",
+      "name": "近战切割工蜂",
+      "source_canvas": [
+        80,
+        80
+      ],
+      "source_pivot": [
+        40,
+        64
+      ],
+      "body_max_px": [
+        56,
+        48
+      ],
+      "reference": "enemy_cutter_three_views_v002.png",
+      "parts": "enemy_cutter_parts_v002.png",
+      "identity": "Low broad ivory rounded shell with a blue-grey top service cap, horizontal front sensor, brass joints. Exactly FOUR short walking legs, plus TWO distinct forward tool arms. Anatomical RIGHT tool arm = viewer LEFT has one broad toothed circular saw; anatomical LEFT tool arm = viewer RIGHT has one gripper. Never become an upright humanoid or grow extra walking feet.",
+      "actions": {
+        "idle": [
+          "neutral low stance, four legs supporting",
+          "shell lifts one logical pixel and gripper opens slightly",
+          "neutral shell height, gripper closes slightly",
+          "settle back to frame 0, blade stays stopped"
+        ],
+        "move": [
+          "diagonal right-front / left-rear legs extend toward contact",
+          "that diagonal supports while opposite diagonal lifts",
+          "opposite diagonal passes under the chassis",
+          "opposite diagonal stretches forward toward contact",
+          "diagonal left-front / right-rear makes contact",
+          "that diagonal supports while first diagonal lifts",
+          "first diagonal passes under chassis",
+          "first diagonal stretches forward to connect with frame 0"
+        ],
+        "attack": [
+          "neutral low stance, circular saw on viewer left",
+          "right saw arm draws back slightly, left gripper braces",
+          "saw arm lifts and blade angle advances, four legs keep support",
+          "right saw sweeps forward/down in a short visible cutting strike, no slash effects",
+          "saw arm retracts from strike, shell settles",
+          "return to neutral, tool side and four legs unchanged"
+        ],
+        "hit": [
+          "neutral stance",
+          "shell lowers two logical pixels while four legs compress",
+          "shell tips slightly back, saw/gripper remain attached",
+          "four legs extend back to neutral"
+        ],
+        "death": [
+          "neutral stance",
+          "top body lowers, tool arms lose tension",
+          "four legs begin folding inward",
+          "shell sinks toward ground, cutter arm rests lower",
+          "four folded legs tuck alongside shell, blade stops",
+          "front of shell reaches ground, gripper relaxes",
+          "one compact low wreck settles, still only four legs / one saw / one claw",
+          "same still wreck, sensor dark, no extra duplicated detached pieces"
+        ]
+      },
+      "reference_master": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/references/enemy_cutter_master_v001.png",
+      "reference_three_views": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_cutter_three_views_v002.png",
+      "reference_parts": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/parts/enemy_cutter_parts_v002.png",
+      "reference_scale_example": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_cutter_scale_example_v001.png"
+    },
+    {
+      "id": "enemy_tracked_heavy",
+      "name": "履带重装机",
+      "source_canvas": [
+        112,
+        96
+      ],
+      "source_pivot": [
+        56,
+        80
+      ],
+      "body_max_px": [
+        80,
+        64
+      ],
+      "reference": "enemy_tracked_heavy_three_views_v001.png",
+      "parts": "enemy_tracked_heavy_parts_v002.png",
+      "identity": "Squat broad ivory central tower with a low blue-grey circular top cap, ONE horizontal front sensor and ONE short blunt front projector; exactly TWO thick dark-blue-grey caterpillar track pods under ivory covers, connected with brass mounts. No arms or legs, no long tank gun, no giant turret.",
+      "actions": {
+        "idle": [
+          "neutral stable tracks / compact tower",
+          "short projector rises one logical pixel in restrained adjustment",
+          "neutral projector height, slight top cap settle",
+          "return to original alignment, tracks motionless"
+        ],
+        "move": [
+          "track tread phase 0, both pods grounded",
+          "track tread phase 1 scrolls within same pod silhouettes",
+          "track tread phase 2, slight one-pixel chassis settle",
+          "track tread phase 3",
+          "track tread phase 4 / half-loop",
+          "track tread phase 5",
+          "track tread phase 6, restrained one-pixel chassis settle",
+          "track tread phase 7 ready to wrap into phase 0"
+        ],
+        "attack": [
+          "neutral compact front projector",
+          "central tower braces slightly lower, projector aligns forward",
+          "short wind-up, tiny sensor stays restrained, no glow haze",
+          "front projector slides backward two logical pixels in a clear recoil pose, tracks stay planted",
+          "projector returns forward halfway",
+          "exact neutral projector/tower alignment returns"
+        ],
+        "hit": [
+          "neutral stable chassis",
+          "central tower tips briefly two logical pixels toward its right while both track pods stay planted",
+          "tower counter-settles one logical pixel toward center",
+          "recover to neutral with original two-track envelope"
+        ],
+        "death": [
+          "neutral stance",
+          "central tower lowers slightly and sensor dims",
+          "tower tilts down into the low chassis",
+          "top cap lifts a little on its existing hinge but stays attached",
+          "projector sags down, track motion stops",
+          "central tower collapses low between two complete track pods",
+          "one compact wreck settles with two tracks and single cap/projector intact",
+          "same still wreck, sensor dark, no extra track or detached duplicate cannon"
+        ]
+      },
+      "reference_master": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/references/enemy_tracked_heavy_master_v001.png",
+      "reference_three_views": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_tracked_heavy_three_views_v001.png",
+      "reference_parts": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/parts/enemy_tracked_heavy_parts_v002.png",
+      "reference_scale_example": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_tracked_heavy_scale_example_v001.png"
+    },
+    {
+      "id": "enemy_scout_drone",
+      "name": "悬浮侦察机",
+      "source_canvas": [
+        96,
+        80
+      ],
+      "source_pivot": [
+        48,
+        56
+      ],
+      "body_max_px": [
+        64,
+        40
+      ],
+      "reference": "enemy_scout_drone_three_views_v002.png",
+      "parts": "enemy_scout_drone_parts_v002.png",
+      "identity": "Compact ivory central fuselage with blue-grey top vent, ONE small front vertical optical sensor and tiny brass lower probe. Exactly TWO enclosed horizontal fan pods on two short lateral struts; each pod contains exactly ONE FOUR-BLADE rotor with brass hub, two motors total. No legs, tail, wings or newly added weapons.",
+      "actions": {
+        "idle": [
+          "neutral hovering height, four-blade rotors at phase 0",
+          "rotors advance phase 22.5 degrees, body lifts one logical pixel",
+          "rotors advance to phase 45 degrees, body at neutral height",
+          "rotors advance to phase 67.5 degrees, body lowers one pixel before returning to frame 0 phase"
+        ],
+        "move": [
+          "slight constant forward pitch, rotor phase 0",
+          "same pitch, rotor phase 11.25 degrees",
+          "same pitch, rotor phase 22.5 degrees, body lifts one pixel",
+          "same pitch, rotor phase 33.75 degrees",
+          "same pitch, rotor phase 45 degrees",
+          "same pitch, rotor phase 56.25 degrees",
+          "same pitch, rotor phase 67.5 degrees, body settles one pixel",
+          "same pitch, rotor phase 78.75 degrees ready to wrap"
+        ],
+        "attack": [
+          "neutral front-facing hover",
+          "central optical module tips forward slightly for target lock, fans stabilize",
+          "tiny bottom probe aligns forward with the original body, no new gun",
+          "brief restrained forward pitch as sensor/probe emits an implied pulse, no beam or glow drawn",
+          "body pitches halfway back to level",
+          "exact original neutral hover returns"
+        ],
+        "hit": [
+          "neutral hover",
+          "body rolls slightly toward its right while both pods remain connected",
+          "counter-roll toward center, fan count/blade count unchanged",
+          "recover to neutral hover at original height"
+        ],
+        "death": [
+          "neutral hover, rotors turning",
+          "rotor phase advances more slowly, body drops a few pixels",
+          "one support strut folds a little, body descends farther",
+          "both fan struts fold inward, body approaches its ground-projection anchor",
+          "lower fuselage contacts the ground, two pods lower alongside",
+          "body rests low, rotor motion comes to stop",
+          "one compact wreck with both housings and both rotors present once",
+          "same still wreck, dark sensor, no shadow or spare rotor"
+        ]
+      },
+      "reference_master": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/references/enemy_scout_drone_master_v001.png",
+      "reference_three_views": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/three_views/enemy_scout_drone_three_views_v002.png",
+      "reference_parts": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-design-sheets-v001/parts/enemy_scout_drone_parts_v002.png",
+      "reference_scale_example": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-examples-v001/enemy_scout_drone_scale_example_v001.png"
+    }
+  ],
+  "clips": [
+    {
+      "id": "enemy_patrol_idle_down",
+      "unit_id": "enemy_patrol",
+      "name": "轻型巡逻兵",
+      "action": "idle",
+      "direction": "down",
+      "frame_count": 4,
+      "columns": 2,
+      "rows": 2,
+      "fps": 4,
+      "loop": true,
+      "events": [],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_patrol_idle_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_patrol_idle_down_master_v003.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_patrol_idle_down_registration_revision_v003.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_patrol/idle_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral accepted stance, both feet grounded",
+        "torso and helmet rise about one logical pixel, shoulder couplings relax",
+        "neutral stance, tiny manipulator finger flex",
+        "torso returns to the start with restrained one-pixel settle"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          64,
+          64
+        ],
+        "offset_px": [
+          31,
+          42
+        ],
+        "reference_bbox_px": [
+          27,
+          32,
+          79,
+          93
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          44,
+          52,
+          40,
+          52
+        ]
+      }
+    },
+    {
+      "id": "enemy_patrol_move_down",
+      "unit_id": "enemy_patrol",
+      "name": "轻型巡逻兵",
+      "action": "move",
+      "direction": "down",
+      "frame_count": 8,
+      "columns": 4,
+      "rows": 2,
+      "fps": 8,
+      "loop": true,
+      "events": [
+        {
+          "frame": 0,
+          "name": "support_phase_a"
+        },
+        {
+          "frame": 4,
+          "name": "support_phase_b"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_patrol_move_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_patrol_move_down_master_v001.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_patrol_move_down.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_patrol/move_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "right-leg forward contact / left-leg trailing contact",
+        "right-leg support / left knee begins to lift",
+        "left leg passing, torso near neutral",
+        "left leg extends toward front, right knee bends",
+        "left-leg forward contact / right-leg trailing contact",
+        "left-leg support / right knee begins to lift",
+        "right leg passing, torso near neutral",
+        "right leg extends toward front, ready to connect smoothly to frame 0"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          61,
+          61
+        ],
+        "offset_px": [
+          33,
+          46
+        ],
+        "reference_frame": 0,
+        "reference_bbox_px": [
+          24,
+          21,
+          83,
+          101
+        ],
+        "target_canonical_bbox_px": [
+          44,
+          52,
+          40,
+          52
+        ]
+      }
+    },
+    {
+      "id": "enemy_patrol_attack_down",
+      "unit_id": "enemy_patrol",
+      "name": "轻型巡逻兵",
+      "action": "attack",
+      "direction": "down",
+      "frame_count": 6,
+      "columns": 3,
+      "rows": 2,
+      "fps": 10,
+      "loop": false,
+      "events": [
+        {
+          "frame": 3,
+          "name": "attack_release_visual"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_patrol_attack_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_patrol_attack_down_master_v003.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_patrol_attack_down_source_revision_v003.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_patrol/attack_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral alert stance with right projector lowered",
+        "right projector elbow raises and aims forward, left claw counterbalances",
+        "short wind-up, knees brace, muzzle remains short",
+        "projector recoils briefly backward at the release pose, no flash or projectile drawn",
+        "right projector settles forward again",
+        "both arms return to the exact neutral stance"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          58,
+          58
+        ],
+        "offset_px": [
+          30,
+          48
+        ],
+        "reference_bbox_px": [
+          31,
+          18,
+          88,
+          105
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          44,
+          52,
+          40,
+          52
+        ]
+      }
+    },
+    {
+      "id": "enemy_patrol_hit_down",
+      "unit_id": "enemy_patrol",
+      "name": "轻型巡逻兵",
+      "action": "hit",
+      "direction": "down",
+      "frame_count": 4,
+      "columns": 2,
+      "rows": 2,
+      "fps": 12,
+      "loop": false,
+      "events": [],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_patrol_hit_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_patrol_hit_down_master_v002.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_patrol_hit_down_registration_revision.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_patrol/hit_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral stance",
+        "torso recoils backward, knees bend slightly, both feet retain their support reference",
+        "maximum restrained recoil, helmet tips with torso while limbs remain attached",
+        "recover to neutral, no white/red recolour"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          75,
+          75
+        ],
+        "offset_px": [
+          25,
+          31
+        ],
+        "reference_bbox_px": [
+          32,
+          40,
+          68,
+          85
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          44,
+          52,
+          40,
+          52
+        ]
+      }
+    },
+    {
+      "id": "enemy_patrol_death_down",
+      "unit_id": "enemy_patrol",
+      "name": "轻型巡逻兵",
+      "action": "death",
+      "direction": "down",
+      "frame_count": 8,
+      "columns": 4,
+      "rows": 2,
+      "fps": 10,
+      "loop": false,
+      "events": [
+        {
+          "frame": 7,
+          "name": "corpse_hold_visual"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_patrol_death_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_patrol_death_down_master_v001.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_patrol_death_down.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_patrol/death_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral stance",
+        "sensor dims, knees begin to buckle",
+        "knees compress, torso lowers while arms bend inward",
+        "one knee touches down, torso pitches toward its right side",
+        "robot tips sideways, head and tools remain attached",
+        "torso and shoulder contact the ground, legs fold",
+        "all motion settles into one readable compact wreck",
+        "same settled wreck with dark sensor and no motion, keep all original components once"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          69,
+          69
+        ],
+        "offset_px": [
+          30,
+          35
+        ],
+        "reference_frame": 0,
+        "reference_bbox_px": [
+          27,
+          41,
+          74,
+          87
+        ],
+        "target_canonical_bbox_px": [
+          44,
+          52,
+          40,
+          52
+        ]
+      }
+    },
+    {
+      "id": "enemy_cutter_idle_down",
+      "unit_id": "enemy_cutter",
+      "name": "近战切割工蜂",
+      "action": "idle",
+      "direction": "down",
+      "frame_count": 4,
+      "columns": 2,
+      "rows": 2,
+      "fps": 4,
+      "loop": true,
+      "events": [],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_cutter_idle_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_cutter_idle_down_master_v002.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_cutter_idle_down_source_revision_v002.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_cutter/idle_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral low stance, four legs supporting",
+        "shell lifts one logical pixel and gripper opens slightly",
+        "neutral shell height, gripper closes slightly",
+        "settle back to frame 0, blade stays stopped"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          88,
+          88
+        ],
+        "offset_px": [
+          20,
+          32
+        ],
+        "reference_bbox_px": [
+          24,
+          48,
+          81,
+          57
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          36,
+          64,
+          56,
+          40
+        ]
+      }
+    },
+    {
+      "id": "enemy_cutter_move_down",
+      "unit_id": "enemy_cutter",
+      "name": "近战切割工蜂",
+      "action": "move",
+      "direction": "down",
+      "frame_count": 8,
+      "columns": 4,
+      "rows": 2,
+      "fps": 8,
+      "loop": true,
+      "events": [
+        {
+          "frame": 0,
+          "name": "support_phase_a"
+        },
+        {
+          "frame": 4,
+          "name": "support_phase_b"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_cutter_move_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_cutter_move_down_master_v003.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_cutter_move_down_source_revision_v003.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_cutter/move_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "diagonal right-front / left-rear legs extend toward contact",
+        "that diagonal supports while opposite diagonal lifts",
+        "opposite diagonal passes under the chassis",
+        "opposite diagonal stretches forward toward contact",
+        "diagonal left-front / right-rear makes contact",
+        "that diagonal supports while first diagonal lifts",
+        "first diagonal passes under chassis",
+        "first diagonal stretches forward to connect with frame 0"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          66,
+          66
+        ],
+        "offset_px": [
+          30,
+          45
+        ],
+        "reference_bbox_px": [
+          14,
+          37,
+          104,
+          77
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          36,
+          64,
+          56,
+          40
+        ]
+      }
+    },
+    {
+      "id": "enemy_cutter_attack_down",
+      "unit_id": "enemy_cutter",
+      "name": "近战切割工蜂",
+      "action": "attack",
+      "direction": "down",
+      "frame_count": 6,
+      "columns": 3,
+      "rows": 2,
+      "fps": 10,
+      "loop": false,
+      "events": [
+        {
+          "frame": 3,
+          "name": "attack_release_visual"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_cutter_attack_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_cutter_attack_down_master_v002.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_cutter_attack_down_source_revision_v002.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_cutter/attack_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral low stance, circular saw on viewer left",
+        "right saw arm draws back slightly, left gripper braces",
+        "saw arm lifts and blade angle advances, four legs keep support",
+        "right saw sweeps forward/down in a short visible cutting strike, no slash effects",
+        "saw arm retracts from strike, shell settles",
+        "return to neutral, tool side and four legs unchanged"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          73,
+          73
+        ],
+        "offset_px": [
+          28,
+          40
+        ],
+        "reference_bbox_px": [
+          15,
+          45,
+          98,
+          68
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          36,
+          64,
+          56,
+          40
+        ]
+      }
+    },
+    {
+      "id": "enemy_cutter_hit_down",
+      "unit_id": "enemy_cutter",
+      "name": "近战切割工蜂",
+      "action": "hit",
+      "direction": "down",
+      "frame_count": 4,
+      "columns": 2,
+      "rows": 2,
+      "fps": 12,
+      "loop": false,
+      "events": [],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_cutter_hit_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_cutter_hit_down_master_v001.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_cutter_hit_down.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_cutter/hit_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral stance",
+        "shell lowers two logical pixels while four legs compress",
+        "shell tips slightly back, saw/gripper remain attached",
+        "four legs extend back to neutral"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          112,
+          112
+        ],
+        "offset_px": [
+          8,
+          10
+        ],
+        "reference_frame": 0,
+        "reference_bbox_px": [
+          32,
+          63,
+          64,
+          44
+        ],
+        "target_canonical_bbox_px": [
+          36,
+          64,
+          56,
+          40
+        ]
+      }
+    },
+    {
+      "id": "enemy_cutter_death_down",
+      "unit_id": "enemy_cutter",
+      "name": "近战切割工蜂",
+      "action": "death",
+      "direction": "down",
+      "frame_count": 8,
+      "columns": 4,
+      "rows": 2,
+      "fps": 10,
+      "loop": false,
+      "events": [
+        {
+          "frame": 7,
+          "name": "corpse_hold_visual"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_cutter_death_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_cutter_death_down_master_v002.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_cutter_death_down_source_revision_v002.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_cutter/death_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral stance",
+        "top body lowers, tool arms lose tension",
+        "four legs begin folding inward",
+        "shell sinks toward ground, cutter arm rests lower",
+        "four folded legs tuck alongside shell, blade stops",
+        "front of shell reaches ground, gripper relaxes",
+        "one compact low wreck settles, still only four legs / one saw / one claw",
+        "same still wreck, sensor dark, no extra duplicated detached pieces"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          76,
+          76
+        ],
+        "offset_px": [
+          25,
+          29
+        ],
+        "reference_bbox_px": [
+          18,
+          63,
+          94,
+          63
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          36,
+          64,
+          56,
+          40
+        ]
+      }
+    },
+    {
+      "id": "enemy_tracked_heavy_idle_down",
+      "unit_id": "enemy_tracked_heavy",
+      "name": "履带重装机",
+      "action": "idle",
+      "direction": "down",
+      "frame_count": 4,
+      "columns": 2,
+      "rows": 2,
+      "fps": 4,
+      "loop": true,
+      "events": [],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_tracked_heavy_idle_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_tracked_heavy_idle_down_master_v001.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_tracked_heavy_idle_down.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_tracked_heavy/idle_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral stable tracks / compact tower",
+        "short projector rises one logical pixel in restrained adjustment",
+        "neutral projector height, slight top cap settle",
+        "return to original alignment, tracks motionless"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          124,
+          124
+        ],
+        "offset_px": [
+          2,
+          3
+        ],
+        "reference_frame": 0,
+        "reference_bbox_px": [
+          23,
+          49,
+          82,
+          55
+        ],
+        "target_canonical_bbox_px": [
+          24,
+          49,
+          80,
+          55
+        ]
+      }
+    },
+    {
+      "id": "enemy_tracked_heavy_move_down",
+      "unit_id": "enemy_tracked_heavy",
+      "name": "履带重装机",
+      "action": "move",
+      "direction": "down",
+      "frame_count": 8,
+      "columns": 4,
+      "rows": 2,
+      "fps": 8,
+      "loop": true,
+      "events": [
+        {
+          "frame": 0,
+          "name": "support_phase_a"
+        },
+        {
+          "frame": 4,
+          "name": "support_phase_b"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_tracked_heavy_move_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_tracked_heavy_move_down_master_v001.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_tracked_heavy_move_down.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_tracked_heavy/move_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "track tread phase 0, both pods grounded",
+        "track tread phase 1 scrolls within same pod silhouettes",
+        "track tread phase 2, slight one-pixel chassis settle",
+        "track tread phase 3",
+        "track tread phase 4 / half-loop",
+        "track tread phase 5",
+        "track tread phase 6, restrained one-pixel chassis settle",
+        "track tread phase 7 ready to wrap into phase 0"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          96,
+          96
+        ],
+        "offset_px": [
+          16,
+          22
+        ],
+        "reference_frame": 0,
+        "reference_bbox_px": [
+          11,
+          38,
+          106,
+          72
+        ],
+        "target_canonical_bbox_px": [
+          24,
+          49,
+          80,
+          55
+        ]
+      }
+    },
+    {
+      "id": "enemy_tracked_heavy_attack_down",
+      "unit_id": "enemy_tracked_heavy",
+      "name": "履带重装机",
+      "action": "attack",
+      "direction": "down",
+      "frame_count": 6,
+      "columns": 3,
+      "rows": 2,
+      "fps": 10,
+      "loop": false,
+      "events": [
+        {
+          "frame": 3,
+          "name": "attack_release_visual"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_tracked_heavy_attack_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_tracked_heavy_attack_down_master_v001.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_tracked_heavy_attack_down.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_tracked_heavy/attack_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral compact front projector",
+        "central tower braces slightly lower, projector aligns forward",
+        "short wind-up, tiny sensor stays restrained, no glow haze",
+        "front projector slides backward two logical pixels in a clear recoil pose, tracks stay planted",
+        "projector returns forward halfway",
+        "exact neutral projector/tower alignment returns"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          124,
+          124
+        ],
+        "offset_px": [
+          2,
+          3
+        ],
+        "reference_frame": 0,
+        "reference_bbox_px": [
+          23,
+          49,
+          82,
+          55
+        ],
+        "target_canonical_bbox_px": [
+          24,
+          49,
+          80,
+          55
+        ]
+      }
+    },
+    {
+      "id": "enemy_tracked_heavy_hit_down",
+      "unit_id": "enemy_tracked_heavy",
+      "name": "履带重装机",
+      "action": "hit",
+      "direction": "down",
+      "frame_count": 4,
+      "columns": 2,
+      "rows": 2,
+      "fps": 12,
+      "loop": false,
+      "events": [],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_tracked_heavy_hit_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_tracked_heavy_hit_down_master_v001.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_tracked_heavy_hit_down.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_tracked_heavy/hit_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral stable chassis",
+        "central tower tips briefly two logical pixels toward its right while both track pods stay planted",
+        "tower counter-settles one logical pixel toward center",
+        "recover to neutral with original two-track envelope"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          126,
+          126
+        ],
+        "offset_px": [
+          1,
+          2
+        ],
+        "reference_frame": 0,
+        "reference_bbox_px": [
+          24,
+          49,
+          81,
+          55
+        ],
+        "target_canonical_bbox_px": [
+          24,
+          49,
+          80,
+          55
+        ]
+      }
+    },
+    {
+      "id": "enemy_tracked_heavy_death_down",
+      "unit_id": "enemy_tracked_heavy",
+      "name": "履带重装机",
+      "action": "death",
+      "direction": "down",
+      "frame_count": 8,
+      "columns": 4,
+      "rows": 2,
+      "fps": 10,
+      "loop": false,
+      "events": [
+        {
+          "frame": 7,
+          "name": "corpse_hold_visual"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_tracked_heavy_death_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_tracked_heavy_death_down_master_v002.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_tracked_heavy_death_down_source_revision_v002.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_tracked_heavy/death_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral stance",
+        "central tower lowers slightly and sensor dims",
+        "tower tilts down into the low chassis",
+        "top cap lifts a little on its existing hinge but stays attached",
+        "projector sags down, track motion stops",
+        "central tower collapses low between two complete track pods",
+        "one compact wreck settles with two tracks and single cap/projector intact",
+        "same still wreck, sensor dark, no extra track or detached duplicate cannon"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          100,
+          100
+        ],
+        "offset_px": [
+          14,
+          13
+        ],
+        "reference_bbox_px": [
+          13,
+          47,
+          102,
+          70
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          24,
+          49,
+          80,
+          55
+        ]
+      }
+    },
+    {
+      "id": "enemy_scout_drone_idle_down",
+      "unit_id": "enemy_scout_drone",
+      "name": "悬浮侦察机",
+      "action": "idle",
+      "direction": "down",
+      "frame_count": 4,
+      "columns": 2,
+      "rows": 2,
+      "fps": 4,
+      "loop": true,
+      "events": [],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_scout_drone_idle_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_scout_drone_idle_down_master_v001.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_scout_drone_idle_down.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_scout_drone/idle_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral hovering height, four-blade rotors at phase 0",
+        "rotors advance phase 22.5 degrees, body lifts one logical pixel",
+        "rotors advance to phase 45 degrees, body at neutral height",
+        "rotors advance to phase 67.5 degrees, body lowers one pixel before returning to frame 0 phase"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          81,
+          81
+        ],
+        "offset_px": [
+          22,
+          24
+        ],
+        "reference_frame": 0,
+        "reference_bbox_px": [
+          16,
+          49,
+          100,
+          40
+        ],
+        "target_canonical_bbox_px": [
+          32,
+          54,
+          64,
+          26
+        ]
+      }
+    },
+    {
+      "id": "enemy_scout_drone_move_down",
+      "unit_id": "enemy_scout_drone",
+      "name": "悬浮侦察机",
+      "action": "move",
+      "direction": "down",
+      "frame_count": 8,
+      "columns": 4,
+      "rows": 2,
+      "fps": 8,
+      "loop": true,
+      "events": [
+        {
+          "frame": 0,
+          "name": "support_phase_a"
+        },
+        {
+          "frame": 4,
+          "name": "support_phase_b"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_scout_drone_move_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_scout_drone_move_down_master_v002.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_scout_drone_move_down_source_revision_v002.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_scout_drone/move_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "slight constant forward pitch, rotor phase 0",
+        "same pitch, rotor phase 11.25 degrees",
+        "same pitch, rotor phase 22.5 degrees, body lifts one pixel",
+        "same pitch, rotor phase 33.75 degrees",
+        "same pitch, rotor phase 45 degrees",
+        "same pitch, rotor phase 56.25 degrees",
+        "same pitch, rotor phase 67.5 degrees, body settles one pixel",
+        "same pitch, rotor phase 78.75 degrees ready to wrap"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          72,
+          72
+        ],
+        "offset_px": [
+          28,
+          25
+        ],
+        "reference_bbox_px": [
+          9,
+          52,
+          111,
+          46
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          32,
+          54,
+          64,
+          26
+        ]
+      }
+    },
+    {
+      "id": "enemy_scout_drone_attack_down",
+      "unit_id": "enemy_scout_drone",
+      "name": "悬浮侦察机",
+      "action": "attack",
+      "direction": "down",
+      "frame_count": 6,
+      "columns": 3,
+      "rows": 2,
+      "fps": 10,
+      "loop": false,
+      "events": [
+        {
+          "frame": 3,
+          "name": "attack_release_visual"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_scout_drone_attack_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_scout_drone_attack_down_master_v002.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_scout_drone_attack_down_source_revision_v002.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_scout_drone/attack_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral front-facing hover",
+        "central optical module tips forward slightly for target lock, fans stabilize",
+        "tiny bottom probe aligns forward with the original body, no new gun",
+        "brief restrained forward pitch as sensor/probe emits an implied pulse, no beam or glow drawn",
+        "body pitches halfway back to level",
+        "exact original neutral hover returns"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          75,
+          75
+        ],
+        "offset_px": [
+          26,
+          26
+        ],
+        "reference_bbox_px": [
+          14,
+          49,
+          102,
+          44
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          32,
+          54,
+          64,
+          26
+        ]
+      }
+    },
+    {
+      "id": "enemy_scout_drone_hit_down",
+      "unit_id": "enemy_scout_drone",
+      "name": "悬浮侦察机",
+      "action": "hit",
+      "direction": "down",
+      "frame_count": 4,
+      "columns": 2,
+      "rows": 2,
+      "fps": 12,
+      "loop": false,
+      "events": [],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_scout_drone_hit_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_scout_drone_hit_down_master_v002.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_scout_drone_hit_down_source_revision_v002.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_scout_drone/hit_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral hover",
+        "body rolls slightly toward its right while both pods remain connected",
+        "counter-roll toward center, fan count/blade count unchanged",
+        "recover to neutral hover at original height"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          95,
+          95
+        ],
+        "offset_px": [
+          15,
+          15
+        ],
+        "reference_bbox_px": [
+          25,
+          52,
+          81,
+          35
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          32,
+          54,
+          64,
+          26
+        ]
+      }
+    },
+    {
+      "id": "enemy_scout_drone_death_down",
+      "unit_id": "enemy_scout_drone",
+      "name": "悬浮侦察机",
+      "action": "death",
+      "direction": "down",
+      "frame_count": 8,
+      "columns": 4,
+      "rows": 2,
+      "fps": 10,
+      "loop": false,
+      "events": [
+        {
+          "frame": 7,
+          "name": "corpse_hold_visual"
+        }
+      ],
+      "template_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/templates/enemy_scout_drone_death_down_template_v001.png",
+      "master_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/masters/enemy_scout_drone_death_down_master_v002.png",
+      "prompt_path": "E:/dev/shader/godot-shader/godot-shader-simple/art-source/ember/enemy-sequences-v001/prompts/enemy_scout_drone_death_down_source_revision_v002.prompt.txt",
+      "output_atlas_path": "E:/dev/shader/godot-shader/godot-shader-simple/assets/ember/characters/enemies_v001/enemy_scout_drone/death_down_v001.png",
+      "frame_canvas_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        104
+      ],
+      "poses": [
+        "neutral hover, rotors turning",
+        "rotor phase advances more slowly, body drops a few pixels",
+        "one support strut folds a little, body descends farther",
+        "both fan struts fold inward, body approaches its ground-projection anchor",
+        "lower fuselage contacts the ground, two pods lower alongside",
+        "body rests low, rotor motion comes to stop",
+        "one compact wreck with both housings and both rotors present once",
+        "same still wreck, dark sensor, no shadow or spare rotor"
+      ],
+      "status": "FIXED_TA_REVIEW_SAMPLE",
+      "registration": {
+        "cell_canvas_px": [
+          73,
+          73
+        ],
+        "offset_px": [
+          27,
+          26
+        ],
+        "reference_bbox_px": [
+          12,
+          50,
+          105,
+          45
+        ],
+        "reference_frame": 0,
+        "target_canonical_bbox_px": [
+          32,
+          54,
+          64,
+          26
+        ]
+      }
+    }
+  ],
+  "registration_rule": "Each clip has one cell_canvas_px/offset_px/reference_frame/reference_bbox_px transform; unregistered clips are pending and deviations recorded.",
+  "delivery_kind": "PLAYABLE_VISUAL_SAMPLES_TA_REVIEW",
+  "self_art_review": "NEEDS_REVISION: binary alpha/native pixel cleanup, source row registration, cutter hit topology and drone death/four-blade geometry remain open."
+}

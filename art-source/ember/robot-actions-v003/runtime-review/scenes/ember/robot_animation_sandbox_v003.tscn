@@ -1,0 +1,375 @@
+[gd_scene format=3]
+
+[ext_resource type="SpriteFrames" path="res://assets/ember/characters/robot/robot_sprite_frames_v003.tres" id="1_frames"]
+[ext_resource type="Script" path="res://scripts/ember/robot_action_preview_v003.gd" id="2_script"]
+
+[node name="RobotActionPreviewV003" type="Node2D"]
+texture_filter = 1
+script = ExtResource("2_script")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1536.0
+offset_bottom = 1024.0
+mouse_filter = 2
+color = Color(0.07, 0.105, 0.13, 1)
+
+[node name="Title" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 18.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 24
+text = "机器人动作 v003 · 原生 64×96 · 固定脚底 (32,80) · 整数 4×"
+
+[node name="Hint" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 52.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 18
+text = "待机 2 帧 / 2 FPS   |   行走 4 帧 / 8 FPS   |   采集 4 帧 / 6 FPS，动作不循环，小样停顿重播"
+
+[node name="Grid" type="Node2D" parent="."]
+
+[node name="DirectionDown" type="Label" parent="Grid"]
+offset_left = 106.0
+offset_top = 88.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 18
+text = "朝下 / down"
+
+[node name="IdleDown" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(166.0, 374.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"idle_down"
+autoplay = "idle_down"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionIdleDown" type="Label" parent="Grid"]
+offset_left = 84.0
+offset_top = 384.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "待机 · 循环"
+
+[node name="AnchorIdleDown" type="Line2D" parent="Grid"]
+position = Vector2(166.0, 374.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="WalkDown" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(166.0, 656.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"walk_down"
+autoplay = "walk_down"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionWalkDown" type="Label" parent="Grid"]
+offset_left = 84.0
+offset_top = 666.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "行走 · 循环"
+
+[node name="AnchorWalkDown" type="Line2D" parent="Grid"]
+position = Vector2(166.0, 656.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="CollectDown" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(166.0, 938.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"collect_down"
+autoplay = "collect_down"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionCollectDown" type="Label" parent="Grid"]
+offset_left = 84.0
+offset_top = 948.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "采集 · 单次后重播"
+
+[node name="AnchorCollectDown" type="Line2D" parent="Grid"]
+position = Vector2(166.0, 938.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="DirectionLeft" type="Label" parent="Grid"]
+offset_left = 382.0
+offset_top = 88.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 18
+text = "朝左 / left"
+
+[node name="IdleLeft" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(442.0, 374.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"idle_left"
+autoplay = "idle_left"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionIdleLeft" type="Label" parent="Grid"]
+offset_left = 360.0
+offset_top = 384.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "待机 · 循环"
+
+[node name="AnchorIdleLeft" type="Line2D" parent="Grid"]
+position = Vector2(442.0, 374.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="WalkLeft" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(442.0, 656.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"walk_left"
+autoplay = "walk_left"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionWalkLeft" type="Label" parent="Grid"]
+offset_left = 360.0
+offset_top = 666.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "行走 · 循环"
+
+[node name="AnchorWalkLeft" type="Line2D" parent="Grid"]
+position = Vector2(442.0, 656.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="CollectLeft" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(442.0, 938.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"collect_left"
+autoplay = "collect_left"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionCollectLeft" type="Label" parent="Grid"]
+offset_left = 360.0
+offset_top = 948.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "采集 · 单次后重播"
+
+[node name="AnchorCollectLeft" type="Line2D" parent="Grid"]
+position = Vector2(442.0, 938.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="DirectionRight" type="Label" parent="Grid"]
+offset_left = 658.0
+offset_top = 88.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 18
+text = "朝右 / right"
+
+[node name="IdleRight" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(718.0, 374.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"idle_right"
+autoplay = "idle_right"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionIdleRight" type="Label" parent="Grid"]
+offset_left = 636.0
+offset_top = 384.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "待机 · 循环"
+
+[node name="AnchorIdleRight" type="Line2D" parent="Grid"]
+position = Vector2(718.0, 374.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="WalkRight" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(718.0, 656.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"walk_right"
+autoplay = "walk_right"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionWalkRight" type="Label" parent="Grid"]
+offset_left = 636.0
+offset_top = 666.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "行走 · 循环"
+
+[node name="AnchorWalkRight" type="Line2D" parent="Grid"]
+position = Vector2(718.0, 656.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="CollectRight" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(718.0, 938.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"collect_right"
+autoplay = "collect_right"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionCollectRight" type="Label" parent="Grid"]
+offset_left = 636.0
+offset_top = 948.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "采集 · 单次后重播"
+
+[node name="AnchorCollectRight" type="Line2D" parent="Grid"]
+position = Vector2(718.0, 938.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="DirectionUp" type="Label" parent="Grid"]
+offset_left = 934.0
+offset_top = 88.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 18
+text = "朝上 / up"
+
+[node name="IdleUp" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(994.0, 374.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"idle_up"
+autoplay = "idle_up"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionIdleUp" type="Label" parent="Grid"]
+offset_left = 912.0
+offset_top = 384.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "待机 · 循环"
+
+[node name="AnchorIdleUp" type="Line2D" parent="Grid"]
+position = Vector2(994.0, 374.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="WalkUp" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(994.0, 656.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"walk_up"
+autoplay = "walk_up"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionWalkUp" type="Label" parent="Grid"]
+offset_left = 912.0
+offset_top = 666.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "行走 · 循环"
+
+[node name="AnchorWalkUp" type="Line2D" parent="Grid"]
+position = Vector2(994.0, 656.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="CollectUp" type="AnimatedSprite2D" parent="Grid"]
+texture_filter = 1
+position = Vector2(994.0, 938.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"collect_up"
+autoplay = "collect_up"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="CaptionCollectUp" type="Label" parent="Grid"]
+offset_left = 912.0
+offset_top = 948.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 16
+text = "采集 · 单次后重播"
+
+[node name="AnchorCollectUp" type="Line2D" parent="Grid"]
+position = Vector2(994.0, 938.0)
+points = PackedVector2Array(-16, 0, 16, 0)
+width = 1.0
+default_color = Color(0.32, 0.46, 0.49, 1)
+
+[node name="Interactive" type="Node2D" parent="."]
+
+[node name="Title" type="Label" parent="Interactive"]
+offset_left = 1186.0
+offset_top = 100.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 22
+text = "键盘交互小样"
+
+[node name="Keys" type="Label" parent="Interactive"]
+offset_left = 1186.0
+offset_top = 143.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 17
+text = "WASD / 方向键移动\n空格 / E：采集\n松开移动键：待机\n采集结束自动回待机"
+
+[node name="Status" type="Label" parent="Interactive"]
+offset_left = 1186.0
+offset_top = 245.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 18
+text = ""
+
+[node name="Actor" type="AnimatedSprite2D" parent="Interactive"]
+texture_filter = 1
+position = Vector2(1316.0, 676.0)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("1_frames")
+animation = &"idle_down"
+autoplay = "idle_down"
+centered = false
+offset = Vector2(-32, -80)
+
+[node name="Scope" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 994.0
+theme_override_colors/font_color = Color(0.78, 0.83, 0.80, 1)
+theme_override_font_sizes/font_size = 15
+text = "独立素材预览：不改变主游戏、碰撞、导航和课程 Shader。"
+

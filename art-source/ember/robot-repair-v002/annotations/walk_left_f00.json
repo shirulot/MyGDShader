@@ -1,0 +1,224 @@
+{
+  "direction": "left",
+  "state": "walk",
+  "frame_index": 0,
+  "idle_source": "art-source/ember/batch-02-robot/finished-frames/robot_idle_left_v001.png",
+  "parts_file": "annotations/rig_left_v002.json",
+  "design_observation": "实际4母稿逐项观看；造型材料语汇相同但头身/维护槽/相位有漂移，用确认方向idle保持一致",
+  "tool_hand_observation": "黄铜维修工具在屏幕右下的近侧左腕，不与right母稿镜像。近侧前臂和工具共用安装关系，工具暗孔保持中性。",
+  "pose_observation": "f00母稿前靴伸向左、另一靴后收，近侧左腕黄铜工具后摆；原生采用左脚接触及小幅反向摆臂。",
+  "adjustments": [
+    "AI_POSE_INCONSISTENCY: 观察到的模型phase/头身/装甲漂移逐帧如实记录",
+    "NATIVE_CORRECTIVE_COMPOSITING: 用确认方向idle的显式像素部件、不同近远zorder和局部关节修补",
+    "四phase明确接触/经过两脚交替；脚1–2px、摆臂1px、头身起伏1px；不整图warp/镜像",
+    "相机侧视的远近足底高度不同；虚拟地面原点固定(32,80)，抬脚可使可见底界78..80",
+    "V002_SOURCE_REPAIR: semantic boot/pelvis rig reassignment and individually drawn native joint pixels; original body shape, palette, gait offsets and draw order preserved."
+  ],
+  "offsets": {
+    "head": [
+      0,
+      0
+    ],
+    "torso": [
+      0,
+      0
+    ],
+    "left_arm": [
+      1,
+      0
+    ],
+    "right_arm": [
+      -1,
+      0
+    ],
+    "left_leg": [
+      -2,
+      0
+    ],
+    "right_leg": [
+      1,
+      0
+    ]
+  },
+  "draw_order": [
+    "right_leg",
+    "right_arm",
+    "torso",
+    "left_leg",
+    "left_arm",
+    "head"
+  ],
+  "patches": [
+    {
+      "type": "pixel",
+      "at": [
+        34,
+        46
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        35,
+        47
+      ],
+      "color": 1
+    },
+    {
+      "type": "pixel",
+      "at": [
+        30,
+        57
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        32,
+        59
+      ],
+      "color": 1
+    },
+    {
+      "type": "pixel",
+      "at": [
+        25,
+        44
+      ],
+      "color": 1
+    },
+    {
+      "type": "pixel",
+      "at": [
+        25,
+        45
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        25,
+        46
+      ],
+      "color": 1
+    },
+    {
+      "type": "pixel",
+      "at": [
+        35,
+        44
+      ],
+      "color": 1
+    },
+    {
+      "type": "pixel",
+      "at": [
+        35,
+        45
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        35,
+        46
+      ],
+      "color": 1
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "chest_status",
+      "safe_active_rect": [
+        26,
+        49,
+        28,
+        51
+      ],
+      "center": [
+        27,
+        50
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.421875,
+        0.5208333333333334
+      ],
+      "mask_delivery_status": "NOT_PRODUCED",
+      "visibility": "PARTIAL_SIDE_VIEW"
+    }
+  ],
+  "gait": {
+    "support_leg": "left",
+    "lifted_leg": null,
+    "phase": "left_contact",
+    "camera_depth": "left side: near left boot reaches row79 in contact/support phases; in f03 its complete boot lifts by2px to row77, giving visible bbox bottom78. Far right boot projects higher. Virtual anchor stays (32,80).",
+    "virtual_ground_anchor": [
+      32,
+      80
+    ]
+  },
+  "repair_version": "v002",
+  "source_annotation": "art-source/ember/batch-02-robot/annotations/walk_left_f00.json",
+  "source_annotation_sha256": "765a6bb02e9130f3b5ac385d91e0c60f24aa03863c32ef7aba4b76ff27cff516",
+  "repair_edits": [
+    {
+      "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+      "at": [
+        25,
+        44
+      ],
+      "color": 1,
+      "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+    },
+    {
+      "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+      "at": [
+        25,
+        45
+      ],
+      "color": 2,
+      "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+    },
+    {
+      "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+      "at": [
+        25,
+        46
+      ],
+      "color": 1,
+      "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+    },
+    {
+      "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+      "at": [
+        35,
+        44
+      ],
+      "color": 1,
+      "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+    },
+    {
+      "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+      "at": [
+        35,
+        45
+      ],
+      "color": 2,
+      "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+    },
+    {
+      "repair_id": "LEFT_00_SHOULDER_COUPLINGS",
+      "at": [
+        35,
+        46
+      ],
+      "color": 1,
+      "purpose": "Draw a three-pixel dark mechanical shoulder coupling; preserve upper/lower axillary negative space."
+    }
+  ]
+}

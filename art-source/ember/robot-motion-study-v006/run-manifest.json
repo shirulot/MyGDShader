@@ -1,0 +1,49 @@
+{
+  "revision": "robot_motion_study_v006",
+  "stage": "NEEDS_REVISION",
+  "scope": "First one-direction motion study based on the v005 structure rules",
+  "action": "walk",
+  "direction": "down",
+  "frame_count": 8,
+  "layout": {
+    "columns": 4,
+    "rows": 2
+  },
+  "intended_logical_cell": [
+    64,
+    96
+  ],
+  "production_native_acceptance": false,
+  "method": "Built-in imagegen for every pose; fixed-grid lossless crops and animation encoding only",
+  "references": [
+    "art-source/ember/robot-structure-v005/robot_three_views_annotated_v005.png",
+    "art-source/ember/robot-structure-v005/robot_exploded_joints_annotated_v005.png"
+  ],
+  "prompt": "robot_walk_down_master_v006.prompt.txt",
+  "invariants": [
+    "original robot identity",
+    "left-wrist brass tool",
+    "continuous chest-waist-pelvis frame",
+    "nested joints retain volume",
+    "armor overlap",
+    "fixed cell origins"
+  ],
+  "production_assets_modified": false,
+  "actual_master_pixels": [
+    1448,
+    1086
+  ],
+  "actual_export_cell_pixels": [
+    362,
+    543
+  ],
+  "frames_per_second": 8,
+  "selected_generation_step": 5,
+  "master_sha256": "1ea1532c567ebd5aa9f2f28160c497e8110cdb15702cfbc377e6b7ce9118762e",
+  "export_report": "export_motion_study_v006.json",
+  "visual_review": "visual_review_v006.md",
+  "registration_accepted": false,
+  "motion_accepted": false,
+  "art_review_status": "NEEDS_REVISION",
+  "identity_accepted": false
+}

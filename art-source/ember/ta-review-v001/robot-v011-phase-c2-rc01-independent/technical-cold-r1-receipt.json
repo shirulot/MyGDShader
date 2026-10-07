@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "source_zip_sha256": "e0a5fe91bcd62509d0f342e45334ce34cf374ebea1ac0203162d9b90f79b5643",
+  "initial_godot_cache_absent": true,
+  "original_payload_count": 1702,
+  "payload_changes_after_import": [],
+  "calls": [
+    {
+      "call": "import",
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\robot-v011-phase-c2-rc01-independent\\technical-cold-package-r1\\godot-full-review",
+        "--editor",
+        "--import"
+      ],
+      "exit_code": 0,
+      "seconds": 4.8,
+      "stdout": "technical-cold-r1-import.stdout.log",
+      "stderr": "technical-cold-r1-import.stderr.log",
+      "stderr_bytes": 0
+    },
+    {
+      "call": "probe",
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\robot-v011-phase-c2-rc01-independent\\technical-cold-package-r1\\godot-full-review",
+        "--script",
+        "res://ta_minimal_load.gd"
+      ],
+      "exit_code": 0,
+      "seconds": 2.26,
+      "stdout": "technical-cold-r1-probe.stdout.log",
+      "stderr": "technical-cold-r1-probe.stderr.log",
+      "stderr_bytes": 0
+    }
+  ],
+  "probe_sha256": "ad2f4b455088f1b799602212f0acd13be3e30dd6f8f3a2c5fa51c1342b47d10d",
+  "reason_for_repeat": "Initial TA selected-file cold copy omitted the delivered .png.import file; it auto-created fix_alpha_border=true instead of delivered false. All initial logs/FAIL JSON retained. R1 extracts all payloads from ZIP and uses original import settings.",
+  "replayed_gpu": false,
+  "replayed_full_switch_matrix": false
+}

@@ -1,0 +1,400 @@
+{
+  "verdict": "REQUIRES_LOCAL_P2_REPAIR",
+  "main_action_intent": "PASS",
+  "zip_sha256": "1bae7e4fa6932b2479274abecabe247c7efa7efbd7a8b50bbd49b864eea15295",
+  "reviewed_actual_frame_count": 14,
+  "findings": [
+    {
+      "priority": "P2",
+      "id": "attack_stray_knee_uv_pixels_near_claw",
+      "frames": [
+        2,
+        3
+      ],
+      "pixels": {
+        "2": [
+          [
+            76,
+            88
+          ],
+          [
+            76,
+            89
+          ],
+          [
+            76,
+            90
+          ]
+        ],
+        "3": [
+          [
+            76,
+            87
+          ],
+          [
+            76,
+            88
+          ],
+          [
+            76,
+            89
+          ]
+        ]
+      },
+      "impact": "A stray black bar appears beside the claw and reads like a detached tip during f02/f03; independent inverse ownership is left_knee_cap, not a legitimate claw finger.",
+      "advice": "Once repair left_knee_cap UV mask to exclude non-knee source pixels (76,87-89), then re-export. Preserve legitimate claw geometry, timings and recoil.",
+      "png_samples": [
+        {
+          "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-actions-v006-independent\\action-audit\\package\\output\\attack_down\\f02.png",
+          "frame": 2,
+          "samples": [
+            {
+              "px": [
+                76,
+                88
+              ],
+              "rgba": [
+                3,
+                11,
+                21,
+                255
+              ]
+            },
+            {
+              "px": [
+                76,
+                89
+              ],
+              "rgba": [
+                4,
+                12,
+                21,
+                255
+              ]
+            },
+            {
+              "px": [
+                76,
+                90
+              ],
+              "rgba": [
+                3,
+                12,
+                23,
+                255
+              ]
+            }
+          ]
+        },
+        {
+          "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-actions-v006-independent\\action-audit\\package\\output\\attack_down\\f03.png",
+          "frame": 3,
+          "samples": [
+            {
+              "px": [
+                76,
+                87
+              ],
+              "rgba": [
+                3,
+                11,
+                21,
+                255
+              ]
+            },
+            {
+              "px": [
+                76,
+                88
+              ],
+              "rgba": [
+                4,
+                12,
+                21,
+                255
+              ]
+            },
+            {
+              "px": [
+                76,
+                89
+              ],
+              "rgba": [
+                3,
+                12,
+                23,
+                255
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "priority": "P2",
+      "id": "death_stray_knee_uv_pixels_below_corpse",
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "pixels": {
+        "4": [
+          [
+            72,
+            97
+          ],
+          [
+            71,
+            98
+          ]
+        ],
+        "5": [
+          [
+            66,
+            102
+          ],
+          [
+            67,
+            102
+          ],
+          [
+            68,
+            102
+          ]
+        ],
+        "6": [
+          [
+            63,
+            102
+          ],
+          [
+            64,
+            102
+          ],
+          [
+            65,
+            102
+          ]
+        ],
+        "7": [
+          [
+            63,
+            102
+          ],
+          [
+            64,
+            102
+          ],
+          [
+            65,
+            102
+          ]
+        ]
+      },
+      "impact": "The same misowned left_knee_cap pixels move to below the corpse as floating dots/bars, rather than an authored leg or shoe detachment.",
+      "advice": "The same one-time left_knee_cap UV-mask correction should close this case. Preserve the fall trajectory and grounded f06/f07 corpse; do not add lines or alter the foot action.",
+      "png_samples": [
+        {
+          "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-actions-v006-independent\\action-audit\\package\\output\\death_down\\f04.png",
+          "frame": 4,
+          "samples": [
+            {
+              "px": [
+                72,
+                97
+              ],
+              "rgba": [
+                3,
+                11,
+                21,
+                255
+              ]
+            },
+            {
+              "px": [
+                71,
+                98
+              ],
+              "rgba": [
+                4,
+                12,
+                21,
+                255
+              ]
+            }
+          ]
+        },
+        {
+          "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-actions-v006-independent\\action-audit\\package\\output\\death_down\\f05.png",
+          "frame": 5,
+          "samples": [
+            {
+              "px": [
+                66,
+                102
+              ],
+              "rgba": [
+                3,
+                12,
+                23,
+                255
+              ]
+            },
+            {
+              "px": [
+                67,
+                102
+              ],
+              "rgba": [
+                4,
+                12,
+                21,
+                255
+              ]
+            },
+            {
+              "px": [
+                68,
+                102
+              ],
+              "rgba": [
+                3,
+                11,
+                21,
+                255
+              ]
+            }
+          ]
+        },
+        {
+          "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-actions-v006-independent\\action-audit\\package\\output\\death_down\\f06.png",
+          "frame": 6,
+          "samples": [
+            {
+              "px": [
+                63,
+                102
+              ],
+              "rgba": [
+                3,
+                12,
+                23,
+                255
+              ]
+            },
+            {
+              "px": [
+                64,
+                102
+              ],
+              "rgba": [
+                4,
+                12,
+                21,
+                255
+              ]
+            },
+            {
+              "px": [
+                65,
+                102
+              ],
+              "rgba": [
+                3,
+                11,
+                21,
+                255
+              ]
+            }
+          ]
+        },
+        {
+          "path": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-actions-v006-independent\\action-audit\\package\\output\\death_down\\f07.png",
+          "frame": 7,
+          "samples": [
+            {
+              "px": [
+                63,
+                102
+              ],
+              "rgba": [
+                3,
+                12,
+                23,
+                255
+              ]
+            },
+            {
+              "px": [
+                64,
+                102
+              ],
+              "rgba": [
+                4,
+                12,
+                21,
+                255
+              ]
+            },
+            {
+              "px": [
+                65,
+                102
+              ],
+              "rgba": [
+                3,
+                11,
+                21,
+                255
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contract": {
+    "attack_release_visual_frame": 3,
+    "fps": 10,
+    "release_time_seconds": 0.3,
+    "muzzle_canvas_px": [
+      46,
+      85
+    ],
+    "muzzle_sprite_local_px": [
+      -18,
+      -19
+    ],
+    "south_visual_axis": [
+      0,
+      1
+    ],
+    "recoil_f02_to_f03_px": [
+      0,
+      -2
+    ],
+    "corpse_hold_frame": 7,
+    "loop": false
+  },
+  "limitations": "No Godot rerun needed for the local visible findings. This report does not replace source/roundtrip checks, a new physics system, AI or damage integration.",
+  "shared_root_cause": {
+    "part": "left_knee_cap",
+    "source_pixels": [
+      [
+        76,
+        87
+      ],
+      [
+        76,
+        88
+      ],
+      [
+        76,
+        89
+      ]
+    ],
+    "independent_ownership_evidence": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-actions-v006-independent\\technical\\pixel-ownership.json"
+  }
+}

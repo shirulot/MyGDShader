@@ -1,0 +1,64 @@
+{
+  "revision": "robot_fixed_rig_v007",
+  "stage": "NEEDS_REVISION",
+  "scope": {
+    "direction": "down",
+    "action": "walk",
+    "frames": 8,
+    "fps": 8,
+    "canvas": [
+      64,
+      96
+    ],
+    "root_anchor": [
+      32,
+      80
+    ],
+    "subject_budget": [
+      40,
+      64
+    ]
+  },
+  "mother": {
+    "source": "assets/ember/characters/robot/robot_idle_down_v001.png",
+    "copy": "source/robot_idle_down_canonical_original.png",
+    "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+    "native_pixels": true,
+    "identity_reference": "existing accepted native-scale robot",
+    "structural_reference": "art-source/ember/robot-structure-v005/",
+    "motion_source": "single frozen mother plus editable layers and fixed joint rig; independent imagegen strips prohibited"
+  },
+  "requested_invariants": [
+    "head and chest designs frozen",
+    "all limbs bind fixed parent/pivot and segment length",
+    "tool attached anatomical left wrist",
+    "shared eleven-color palette and binary entity alpha",
+    "fixed native canvas; no bbox alignment",
+    "explicit support soles and root registered separately",
+    "both support halves and contact/down/passing/up transitions",
+    "art review is distinct from render and encoding checks"
+  ],
+  "production_assets_modified": false,
+  "production_accepted": false,
+  "art_review_status": "NEEDS_REVISION",
+  "intended_outputs": [
+    "source/rig_down_v007.json",
+    "source/part_masks_v007.json",
+    "source/parts/",
+    "poses/",
+    "frames/",
+    "previews/",
+    "qa/",
+    "godot-review/"
+  ],
+  "limitations": [
+    "Original flat idle lacks complete hidden joints. Once-defined explicit structural layers required before posing.",
+    "Native pixel rendering of rotating small parts may require annotated local outline corrections.",
+    "The rendering method and any projected foreshortening must be disclosed; source parts must not be rescaled independently per frame."
+  ],
+  "revision_reasons": [
+    "f01/f05 true transparent knee gaps and disconnected lower legs",
+    "front XY projection hides forward/back Z gait",
+    "inadequate knee sleeve end overlap"
+  ]
+}

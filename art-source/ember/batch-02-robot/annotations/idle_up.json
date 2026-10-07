@@ -1,0 +1,21 @@
+{
+  "direction": "up",
+  "state": "idle",
+  "source_subject_crop": [208,349,801,1265],
+  "native_subject_height": 59,
+  "native_subject_width": 38,
+  "native_subject_origin": [13,21],
+  "design_observation": "实际母稿是陶瓷头盔背面、钢灰下沿与两耳模块；小背部维护槽替代正面visor，浅陶瓷肩/背/前臂/小腿及深钢灰关节保留；没有前面罩或胸部灯。高Alpha主体以240分离，母稿halo不进入原生底图。",
+  "tool_hand_observation": "背视黄铜工具明确在屏幕左腕，是与down屏幕右腕对应的同一解剖左手。母稿工具为细长维修接口，不翻图。",
+  "adjustments": ["主体母稿区域做38×59网格材料采样，固定同11种静态颜色；母稿只读", "移除半透明halo/碎片，保留最大主体并重画1像素外轮廓", "头盔背槽原生重画为第28行5像素暗蓝灰与第29行3像素深口，去孤立陶瓷亮斑", "背甲维护口原生整理为3像素深口及2像素凹面，明确不是胸部发光窗", "两脚底保持第79行/边界80；左腕黄铜工具按母稿保持，不翻图"],
+  "runtime_windows": [],
+  "patches": [
+    {"type":"line","points":[[30,28],[34,28]],"color":2},
+    {"type":"line","points":[[31,29],[33,29]],"color":0},
+    {"type":"pixel","at":[27,30],"color":5},
+    {"type":"pixel","at":[33,33],"color":5},
+    {"type":"pixel","at":[34,34],"color":5},
+    {"type":"line","points":[[31,51],[33,51]],"color":0},
+    {"type":"line","points":[[31,52],[32,52]],"color":2}
+  ]
+}

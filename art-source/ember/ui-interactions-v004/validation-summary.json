@@ -1,0 +1,39 @@
+{
+  "revision": "v006",
+  "production_validation": "PASS",
+  "ta_review": "PASS",
+  "runtime_checks": 654,
+  "interaction_checks": 153,
+  "layout_samples": 70,
+  "layout_geometry_errors": 0,
+  "legacy_safe_elision_notes": 26,
+  "gpu_captures": 16,
+  "cold_import": "PASS",
+  "stderr_bytes": 0,
+  "protected_source_hashes": {
+    "scenes/m0/energy_station.gd": "F62AA3FEA83816E34F3A198545595841A2B0EC27E8D1D3AD3E167AC59403149D",
+    "scenes/ember/map_assets_tidal_port_v001.tscn": "FFECABBB1FF9B8755849D572C884768986E6D6B13FE48E9E4327292C14CA6B48",
+    "project.godot": "F1B0B9D3A429CBC38D19CFCB9C0D683F15E6543A53C175B78B2C6296CA6718BA",
+    "scenes/m0/ui.gd": "28D0783FFD5B83268DE91C0CE302ABD235C73FB74E7E5D2D0F80EE227F0D5F6C",
+    "scenes/m0/ember_harvest.gd": "1BB6558593EBBC30F4745E6E13D1321729D9F49AF80E9890223631F8E05DEE3F"
+  },
+  "source_sha256": {
+    "res://scripts/ember/ui_edge_v001/edge_hud.gd": "1194be643808c1c880d479b25121ed460c4260074905662fcfcd13675741019d",
+    "res://scripts/ember/ui_edge_v001/life_indicator.gd": "664774fe857d99abbcefd6c24325699712f2a2457b26d7f258125db13eb15034",
+    "res://scripts/ember/ui_edge_v004/interaction_ui.gd": "bb3b3e2a240137fe3995464089c3ebf6966f2a2caafec76d0f4735b498949016",
+    "res://scripts/ember/ui_edge_v004/interactive_preview.gd": "ad393c4427f07cec98e46ef7c9536291338d1f234f575260ca33a3894b26f12a",
+    "res://scripts/ember/ui_edge_v004/modal_window.gd": "0b2788cc6504c1c2d96998ca7e57e75baa3afd8c21d7dca2204716ef459c21bb",
+    "res://scripts/ember/ui_edge_v004/toast.gd": "ec20efc3a7d1a0afcf26a8435c639d9e005b1c8c1385cdd9bb6db4d75c32fe05"
+  },
+  "scope": "Horizontal life and complete declared UI flows in a real map preview; M0 teaching scene unchanged.",
+  "inherited_evidence": {
+    "from_revision": "v005",
+    "from_zip_sha256": "7792955f87603d5efbfda61dcf999b9b761370552463dc69d8cc8167f7d31a7e",
+    "unchanged_input_files": 79,
+    "inherited_runtime_checks": 486,
+    "inherited_layout_samples": 70,
+    "reason": "Only new flow slider focus overlay changed. Legacy components, skin, scenes, adapter and their tests remain byte-identical."
+  },
+  "fresh_runtime_checks": 168,
+  "ta_receipt": "art-source/ember/ui-interactions-v004/ta-acceptance-v006.json"
+}

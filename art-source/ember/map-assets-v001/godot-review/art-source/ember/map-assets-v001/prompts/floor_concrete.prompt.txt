@@ -1,0 +1,7 @@
+Use case: precise-object-edit.
+Asset type: one seamless production floor-albedo period derived from the referenced map concept.
+Input image: style and colour reference for the requested ground only; do not reproduce the scene layout.
+Output: square1024x1024 full opaque floor texture, edge-to-edge with no margin, flat orthographic top-down albedo and no directional volume light. Opposite left/right and top/bottom edges join continuously when repeated3x3; grout/plank phases also match if present.
+Style: closely match the subdued industrial game map: quiet broad low-contrast colour fields, small grouped pixel clusters, sparse wear. No photorealistic PBR, bright speckles, embossed bevel, painterly gradient or dense contrast noise. Detail stays quiet when this8x8 logical-cell period displays at512px.
+Topology: continuous flat walkable surface only; no outer border, coping, endcap, rivet arrays, frame around each cell, side face, rails, shadows, objects, grass blades, buildings, robot, hole, water, labels, grid lines, swatches or watermark. Existing47-mask shared Floor/Bridge geometry supplies the actual boundaries.
+Requested material: Desaturated light sandy-grey concrete surface matching the cargo receiving strip in the port. Quiet broad warm grey mass, subtle flat speckle, very occasional tiny low-contrast scuffs. No slab grid, thick borders, big cracks or directional shading.

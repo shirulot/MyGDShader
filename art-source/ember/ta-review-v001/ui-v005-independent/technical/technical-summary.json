@@ -1,0 +1,107 @@
+{
+  "decision": "INPUT_RUNTIME_PASS_VISIBLE_SLIDER_FOCUS_REQUIRES_P2_REPAIR",
+  "fixed_zip_sha256": "7792955f87603d5efbfda61dcf999b9b761370552463dc69d8cc8167f7d31a7e",
+  "interaction_ui_sha256": "6ef311309c5ae7559179174dbb3cfea933e75f6f83b44bf1557e7051a6bc68a8",
+  "package_checks": 357,
+  "changed_existing_scripts": [
+    "scripts/ember/ui_edge_v004/interaction_ui.gd"
+  ],
+  "existing_pngs_identical": 60,
+  "runtime_checks": {
+    "author_navigation": 12,
+    "independent_joypad": 25,
+    "unchanged_original_ta_probe": 44
+  },
+  "runtime_total": 81,
+  "input_map_unchanged": true,
+  "v004_gamepad_P2_closed": true,
+  "new_gpu_capture_count": 5,
+  "slider_focus_comparison": {
+    "changed_pixels_within_slider": 0,
+    "focus_style_class": "StyleBoxFlat",
+    "focus_true": true,
+    "slider_global_rect": [
+      84,
+      232,
+      552,
+      44
+    ],
+    "unfocus_true": true
+  },
+  "compact_hud_geometry": {
+    "details_visible": true,
+    "details_x": 32.0,
+    "life_x": 32.0,
+    "menu_visible": true,
+    "menu_x": 32.0,
+    "requested_margin": 36
+  },
+  "large_margin_geometry": {
+    "details_x": 60.0,
+    "life_x": 60.0,
+    "menu_x": 60.0,
+    "requested_margin": 60
+  },
+  "protected_source_after_review": [
+    {
+      "path": "scenes/m0/energy_station.gd",
+      "unchanged": true
+    },
+    {
+      "path": "scenes/ember/map_assets_tidal_port_v001.tscn",
+      "unchanged": true
+    },
+    {
+      "path": "project.godot",
+      "unchanged": true
+    },
+    {
+      "path": "scenes/m0/ui.gd",
+      "unchanged": true
+    },
+    {
+      "path": "scenes/m0/ember_harvest.gd",
+      "unchanged": true
+    }
+  ],
+  "stderr": [
+    {
+      "path": "cold-import.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "focus-capture.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "probe_ui_interaction_navigation_v004.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "ta_ui_v004_probe.stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "ta_ui_v005_gamepad_probe.stderr.log",
+      "bytes": 0
+    }
+  ],
+  "blocking_findings": [
+    {
+      "priority": "P2",
+      "file": "scripts/ember/ui_edge_v004/interaction_ui.gd",
+      "line": 367,
+      "issue": "HSlider has no visible keyboard/gamepad focus distinction. Actual focus=true/false, identical 552x44 slider GPU ROI (0 pixels changed).",
+      "minimal_fix": "Add explicit independent focused visual using current palette/skin; preserve input routing and source assets; submit newly frozen evidence."
+    }
+  ],
+  "scope": "Declared UI and dedicated preview host only; unchanged v004 technical checks inherited via exact source/resource diff. Art reviewer handles final visual conclusion.",
+  "inherited_review": "../../ui-v004-independent/technical/review-technical.md",
+  "evidence": [
+    "incremental-integrity.json",
+    "interaction-ui-v004-to-v005.diff",
+    "cold-project/ta-ui-probe/gamepad-v005-results.json",
+    "cold-project/ta-ui-probe/independent-results.json",
+    "gpu-focus-layout/focus-layout-gpu.json"
+  ]
+}

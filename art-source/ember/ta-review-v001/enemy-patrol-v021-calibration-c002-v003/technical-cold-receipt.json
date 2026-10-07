@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "zip_sha256": "87d0ecf437c93451eddcdad59387f6f03191efcdfdfa1cb197b6e41e819f4ab2",
+  "scope": "Two static neutral PNG, six actual part PNG, one contact sheet reconstructed by cold Godot GPU export; no action matrix.",
+  "fresh_cache_absent_before_import": true,
+  "original_payload_files": 21,
+  "reconstructed_png": 9,
+  "payload_changes_after_export": [],
+  "fixed_payload_changes": [],
+  "calls": [
+    {
+      "call": "import",
+      "exit_code": 0,
+      "seconds": 3.039,
+      "stderr_bytes": 0,
+      "args": [
+        "--headless",
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-v021-calibration-c002-v003\\technical-cold-load",
+        "--editor",
+        "--import",
+        "--quit"
+      ]
+    },
+    {
+      "call": "export",
+      "exit_code": 0,
+      "seconds": 1.614,
+      "stderr_bytes": 0,
+      "args": [
+        "--path",
+        "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\ta-review-v001\\enemy-patrol-v021-calibration-c002-v003\\technical-cold-load",
+        "--position",
+        "-32000,-32000",
+        "--resolution",
+        "256x256",
+        "--rendering-method",
+        "gl_compatibility",
+        "--script",
+        "res://export.gd"
+      ]
+    }
+  ]
+}

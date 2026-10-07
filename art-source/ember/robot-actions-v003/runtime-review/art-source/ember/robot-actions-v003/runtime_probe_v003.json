@@ -1,0 +1,36 @@
+{
+	"status": "ROBOT_ACTIONS_V003_FAIL",
+	"phase": "verify",
+	"errors": [
+		"新动作manifest尚未通过原生验证。"
+	],
+	"engine": {
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"hex": 263938,
+		"status": "stable",
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"timestamp": 0,
+		"string": "4.7.2-stable (steam)"
+	},
+	"timestamp_utc": "2026-10-06T06:21:36",
+	"gpu_requested": false,
+	"snapshot_requested": false,
+	"animation_frames_dir": "",
+	"dependencies_sha256": {
+		"res://art-source/ember/robot-actions-v003/frame_manifest_v003.json": "0bb35adb104e909331944f72ec66e911a11314f9addf4016cd2602926eee5b5b",
+		"res://assets/ember/characters/robot/robot_frames_catalog_v002.json": "edf4c4b3fc302ee1d61f08037755499acc51756718ad5f1e6beffceee20758ee",
+		"res://assets/ember/characters/robot/robot_frames_catalog_v003.json": "c8077c471771c78c78edb246e74a971c5c349b862fbe23376ee77122b328e90e",
+		"res://assets/ember/characters/robot/robot_animations_v003.png": "09c42739f28eb9b97f9e209e7ee05100a572968c6fc152603117165e3edb7bc4",
+		"res://assets/ember/characters/robot/robot_sprite_frames_v003.tres": "bb18fe3dd0ef30e2ce23f7bb659e8f68f160448c0138887a3c5d02256313cab9",
+		"res://scenes/ember/robot_animation_sandbox_v003.tscn": "a37268566495a25c38be67c49b8639486dddba5cf6d4d40d30aa91ac31398e8b",
+		"res://scripts/ember/robot_action_preview_v003.gd": "e8e206edbbe21d4ab14d9143a73b333bb3152d3ec959c4fb435c7d3971c30b6a",
+		"res://tools/build_robot_animation_v003.gd": "fdca1f53bf2c2424efbe6e477595397d8eb06fc073102b7019e0c08074f8836e"
+	},
+	"observed": {
+		"source_frames": []
+	},
+	"scope": "40个姿态源SHA/二值Alpha、逐RGBA图集、40个导入裁片、12剪辑时序、固定脚底/Nearest/4倍预览、真实计时播放、公开控制入口；可选80项透明GPU读回。关节与动作美术由独立逐帧审查负责。"
+}

@@ -1,0 +1,13 @@
+--- scripts/ember/building_demo.gd
++++ assets/ember/buildings_final/scripts/building_demo.gd
+@@ -19,8 +19,8 @@
+ 
+ 
+ # 正式组件与演员无旧版本脚本依赖。
+-const PRODUCTION_BUILDING := preload("res://scripts/ember/building_asset.gd")
+-const INTACT_ACTOR := preload("res://scripts/ember/building_demo_actor.gd")
++const PRODUCTION_BUILDING := preload("res://assets/ember/buildings_final/scripts/building_asset.gd")
++const INTACT_ACTOR := preload("res://assets/ember/buildings_final/scripts/building_demo_actor.gd")
+ const PLACEMENTS := [Vector2(160, 590), Vector2(514, 590), Vector2(1030, 590)]
+ var building_labels: Array[Label] = []
+ 

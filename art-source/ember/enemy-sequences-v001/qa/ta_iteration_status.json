@@ -1,0 +1,90 @@
+{
+  "scope": "4 enemies x 5 actions, down/front only; 20 clips and 120 frames",
+  "status": "COMPLETE_TWENTY_TA_PASS",
+  "formal_approved_clips": 20,
+  "current_gate": "COMPLETE: 20/20 formal clip approvals and final package static binding PASS",
+  "current_review_version": "v012",
+  "review_thread_id": "01a11049-fdfd-7f12-b83d-6c3a2c506501",
+  "reviewer": "技术美术总监",
+  "zip": "art-source/ember/deliveries/enemy_sequences_v012_2026-10-06.zip",
+  "zip_sha256": "42a5416385c8e8d309501fb5ec3295b1ef0e4d0d700146576b4bcca0030621fe",
+  "preview_url": "http://127.0.0.1:6106/review-current/index.html",
+  "iterations": [
+    {
+      "version": "enemy_sequences_v001",
+      "scope": "20 clips",
+      "verdict": "NEEDS_REVISION",
+      "report": "art-source/ember/ta-review-v001/enemy-v001-independent/review-enemy-v001.md"
+    },
+    {
+      "version": "patrol_move_v002",
+      "scope": "pilot 8 frames",
+      "verdict": "NEEDS_REVISION",
+      "report": "art-source/ember/ta-review-v001/enemy-patrol-v002-independent/review-enemy-patrol-v002.md"
+    },
+    {
+      "version": "patrol_move_v003",
+      "scope": "internal material and mapping experiment",
+      "verdict": "NOT_SUBMITTED"
+    },
+    {
+      "version": "patrol_move_v004",
+      "scope": "invalid endpoint report in internal package",
+      "verdict": "NOT_SUBMITTED_INVALID_QA"
+    },
+    {
+      "version": "patrol_move_v004_r1",
+      "scope": "pilot 8 frames; rigid knee caps, exact endpoint mapping, straight PNG color",
+      "verdict": "PASS_PILOT_ONLY"
+    },
+    {
+      "version": "patrol_actions_v005",
+      "scope": "idle_down + hit_down",
+      "verdict": "PASS_TWO_CLIPS",
+      "report": "art-source/ember/ta-review-v001/enemy-patrol-actions-v005-independent/review-patrol-actions-v005.md"
+    },
+    {
+      "version": "patrol_actions_v006",
+      "scope": "attack_down + death_down",
+      "verdict": "NEEDS_REVISION_LOCAL_P2"
+    },
+    {
+      "version": "patrol_actions_v008",
+      "scope": "all five patrol actions, 30 frames",
+      "verdict": "PASS_FIVE_CLIPS",
+      "report": "art-source/ember/ta-review-v001/enemy-patrol-actions-v008-independent/review-patrol-actions-v008.md"
+    },
+    {
+      "version": "heavy_actions_v007",
+      "scope": "idle_down + move_down + hit_down",
+      "verdict": "PASS_THREE_HEAVY_CLIPS"
+    },
+    {
+      "verdict": "PASS_TWO_HEAVY_CLIPS",
+      "version": "heavy_actions_v009",
+      "scope": "attack/death 14 frames"
+    },
+    {
+      "version": "cutter_actions_v010",
+      "verdict": "NEEDS_REVISION_PREVIEW_CROP_ONLY",
+      "scope": "five down clips 30 frames"
+    },
+    {
+      "version": "drone_actions_v011",
+      "scope": "five down clips 30 frames",
+      "verdict": "PASS_FIVE_DRONE_CLIPS"
+    },
+    {
+      "scope": "preview/contact crop only; all art and resources unchanged",
+      "verdict": "PASS_FIVE_CUTTER_CLIPS",
+      "version": "cutter_actions_v010_r1"
+    },
+    {
+      "scope": "approved 20 clips/120 frames exact assembly",
+      "version": "enemy_sequences_v012",
+      "verdict": "PASS_FINAL_PACKAGE_STATIC_BINDING"
+    }
+  ],
+  "next_action": "Delivered approved down/front assets and frozen v012 package; no required work remains.",
+  "production_ready": true
+}

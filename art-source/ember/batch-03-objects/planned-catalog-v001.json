@@ -1,0 +1,401 @@
+{
+  "assets": [
+    {
+      "id": "console_base",
+      "manifest_id": "B02",
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "native_target": [
+        60,
+        58
+      ],
+      "production_file": "res://assets/ember/buildings/console/console_base_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/console_base.txt"
+    },
+    {
+      "id": "pump_base",
+      "manifest_id": "B03",
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "native_target": [
+        112,
+        118
+      ],
+      "production_file": "res://assets/ember/buildings/pump/pump_base_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/pump_base.txt"
+    },
+    {
+      "id": "ventilator_base",
+      "manifest_id": "B04",
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "native_target": [
+        110,
+        124
+      ],
+      "production_file": "res://assets/ember/buildings/ventilator/ventilator_base_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/ventilator_base.txt"
+    },
+    {
+      "id": "cooler_base",
+      "manifest_id": "B05",
+      "canvas": [
+        160,
+        192
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "native_target": [
+        112,
+        126
+      ],
+      "production_file": "res://assets/ember/buildings/cooler/cooler_base_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/cooler_base.txt"
+    },
+    {
+      "id": "relay_base",
+      "manifest_id": "B06",
+      "canvas": [
+        192,
+        256
+      ],
+      "anchor": [
+        96,
+        240
+      ],
+      "native_target": [
+        132,
+        188
+      ],
+      "production_file": "res://assets/ember/buildings/relay/relay_base_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/relay_base.txt"
+    },
+    {
+      "id": "wall_lamp",
+      "manifest_id": "B07",
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "native_target": [
+        30,
+        42
+      ],
+      "production_file": "res://assets/ember/buildings/lights/wall_lamp_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/wall_lamp.txt"
+    },
+    {
+      "id": "floor_lamp",
+      "manifest_id": "B07",
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "native_target": [
+        30,
+        44
+      ],
+      "production_file": "res://assets/ember/buildings/lights/floor_lamp_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/floor_lamp.txt"
+    },
+    {
+      "id": "door_closed",
+      "manifest_id": "B08",
+      "canvas": [
+        96,
+        128
+      ],
+      "anchor": [
+        48,
+        112
+      ],
+      "native_target": [
+        64,
+        94
+      ],
+      "production_file": "res://assets/ember/buildings/door/door_closed_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/door_closed.txt"
+    },
+    {
+      "id": "door_open",
+      "manifest_id": "B08",
+      "canvas": [
+        96,
+        128
+      ],
+      "anchor": [
+        48,
+        112
+      ],
+      "native_target": [
+        64,
+        94
+      ],
+      "production_file": "res://assets/ember/buildings/door/door_open_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "art-source/ember/batch-03-objects/generated/door_closed_master_v001.png"
+      ],
+      "prompt": "prompts/door_open_actual.txt"
+    },
+    {
+      "id": "telepad_base",
+      "manifest_id": "B09",
+      "canvas": [
+        128,
+        160
+      ],
+      "anchor": [
+        64,
+        144
+      ],
+      "native_target": [
+        96,
+        66
+      ],
+      "production_file": "res://assets/ember/buildings/telepad/telepad_base_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/telepad_base.txt"
+    },
+    {
+      "id": "terminal_body",
+      "manifest_id": "B10",
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "native_target": [
+        60,
+        64
+      ],
+      "production_file": "res://assets/ember/buildings/terminal/terminal_body_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/terminal_body.txt"
+    },
+    {
+      "id": "screen_frame",
+      "manifest_id": "B10",
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        80
+      ],
+      "native_target": [
+        64,
+        64
+      ],
+      "production_file": "res://assets/ember/buildings/terminal/screen_frame_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/screen_frame.txt"
+    },
+    {
+      "id": "fuse",
+      "manifest_id": "B11",
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "native_target": [
+        38,
+        22
+      ],
+      "production_file": "res://assets/ember/props/calibration/fuse_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/fuse.txt"
+    },
+    {
+      "id": "antenna_coil",
+      "manifest_id": "B11",
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "native_target": [
+        38,
+        38
+      ],
+      "production_file": "res://assets/ember/props/calibration/antenna_coil_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/antenna_coil.txt"
+    },
+    {
+      "id": "split_ring",
+      "manifest_id": "B11",
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "native_target": [
+        40,
+        36
+      ],
+      "production_file": "res://assets/ember/props/calibration/split_ring_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/split_ring.txt"
+    },
+    {
+      "id": "log_cartridge",
+      "manifest_id": "B12",
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "native_target": [
+        32,
+        34
+      ],
+      "production_file": "res://assets/ember/props/story/log_cartridge_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/log_cartridge.txt"
+    },
+    {
+      "id": "toolbox",
+      "manifest_id": "B12",
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "native_target": [
+        44,
+        32
+      ],
+      "production_file": "res://assets/ember/props/story/toolbox_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/toolbox.txt"
+    },
+    {
+      "id": "helmet",
+      "manifest_id": "B12",
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "native_target": [
+        34,
+        34
+      ],
+      "production_file": "res://assets/ember/props/story/helmet_v001.png",
+      "references": [
+        "assets/ember/buildings/station/station_base_v001.png",
+        "assets/ember/characters/robot/robot_idle_down_v001.png"
+      ],
+      "prompt": "prompts/helmet.txt"
+    }
+  ]
+}

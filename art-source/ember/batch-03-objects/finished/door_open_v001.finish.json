@@ -1,0 +1,185 @@
+{
+  "id": "door_open",
+  "manifest_id": "B08",
+  "file": "art-source/ember/batch-03-objects/finished/door_open_v001.png",
+  "production_file": "res://assets/ember/buildings/door/door_open_v001.png",
+  "sha256": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f",
+  "size": [
+    96,
+    128
+  ],
+  "finishing_record": "art-source/ember/batch-03-objects/finished/door_open_v001.finish.json",
+  "canvas": [
+    96,
+    128
+  ],
+  "bbox": [
+    16,
+    18,
+    80,
+    112
+  ],
+  "anchor": [
+    48,
+    112
+  ],
+  "anchor_convention": "pixel boundary coordinate; source components share canvas and anchor",
+  "rgb_count": 11,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "rules": {
+    "size": true,
+    "binary_alpha": true,
+    "fixed_palette": true,
+    "min_margins": true,
+    "ground_or_install_boundary": true
+  },
+  "runtime_windows": [
+    {
+      "id": "door_status",
+      "visual_frame_bounds": [
+        70,
+        62,
+        76,
+        71
+      ],
+      "safe_active_rect": [
+        72,
+        64,
+        74,
+        69
+      ],
+      "center": [
+        73.0,
+        66.5
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.7604166666666666,
+        0.51953125
+      ],
+      "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+      "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+    }
+  ],
+  "emitter_points": [],
+  "layers": [
+    {
+      "name": "foundation_body",
+      "file": "art-source/ember/batch-03-objects/layers/door_open/foundation_body.png",
+      "sha256": "e37340845c8ef234ba11c2413da4a91e29335945ae67496d7cb5e67d1df69394",
+      "z_index": 0,
+      "canvas": [
+        96,
+        128
+      ],
+      "anchor": [
+        48,
+        112
+      ],
+      "purpose": "地基与主体余下像素",
+      "editable_source": true
+    },
+    {
+      "name": "foreground_frame",
+      "file": "art-source/ember/batch-03-objects/layers/door_open/foreground_frame.png",
+      "selection_mask": "art-source/ember/batch-03-objects/layers/door_open/foreground_frame_selection.png",
+      "sha256": "609b61c02bba134b063a7c1e064fd3b5631aaf38dc739ced8de25e0df45d55c1",
+      "z_index": 2,
+      "canvas": [
+        96,
+        128
+      ],
+      "anchor": [
+        48,
+        112
+      ],
+      "purpose": "两态精确共用过梁/立柱，前景遮挡源层",
+      "editable_source": true,
+      "hidden_underpaint_color_index": null
+    }
+  ],
+  "tiling": {
+    "axes": [],
+    "repeat": false,
+    "shared_frame_file": "layers/door_shared/frame_native.png",
+    "opening_rect": [
+      26,
+      38,
+      70,
+      112
+    ],
+    "opening_is_alpha_transparent": true,
+    "installation_point": [
+      48,
+      112
+    ]
+  },
+  "interaction_center": null,
+  "source_use": {
+    "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+    "master": "art-source/ember/batch-03-objects/generated/door_open_master_v001.png",
+    "master_sha256": "4f0d71fe9ff2b170ef8ccf72793adb73408fc5f1894805002f92414f56f37a8a",
+    "prompt": "prompts/door_open_actual.txt",
+    "prompt_sha256": "235dd6def2b0f4c7f7e6a6bae7b3aeaedcc32a5715e76b37fc9842dbdca7f271",
+    "reference_images": [
+      {
+        "file": "assets/ember/buildings/station/station_base_v001.png",
+        "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+      },
+      {
+        "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+        "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+      },
+      {
+        "file": "art-source/ember/batch-03-objects/generated/door_closed_master_v001.png",
+        "sha256": "891d19a4c6116ec174a8e1b424f6675038870c4b62908784ea3939f2ceecc54a"
+      }
+    ],
+    "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+    "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-86d11f90-625a-405e-abb2-cdc61a595d70.png",
+    "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+    "generation_date_utc": "2026-10-04",
+    "sampled": {
+      "source_subject_crop": [
+        123,
+        230,
+        999,
+        1157
+      ],
+      "material_sampling_size": [
+        64,
+        68
+      ],
+      "native_origin": [
+        16,
+        44
+      ],
+      "sampled_fragment_pixels_removed": 0,
+      "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+      "native_singleton_color_pixels_simplified": 17,
+      "native_outline_pixels_corrected": 60,
+      "native_reconstruction_file": "layers/door_shared/door_open_native.png",
+      "native_reconstruction_sha256": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f",
+      "native_reconstruction_record": "art-source/ember/batch-03-objects/annotations/architectural-rebuild-record.json",
+      "native_reconstruction_record_sha256": "756782618233937624d6ed8d6af9f7ee3f5c3247241c7efaf68a4a61a04d299d",
+      "source_pixel_use": "sampled draft material/design parts plus explicit structural native redraw; no final whole image resize"
+    },
+    "native_adjustments": [
+      "NATIVE_STRUCTURAL_REBUILD: 原生保留母稿20px过梁/12px框脚材料块；柱截面重新安排长度，接缝/铜件/门板在目标网格重画",
+      "两态共享frame_native.png同一像素结构与右柱中性窗口；anchor(48,112)固定，不整体warp",
+      "ROOT_PROPORTION_CORRECTION: 内柱共同收薄，通路宽32改44以容纳既有40px机器人，外框bbox不变",
+      "整段通路[26,38,70,112)真Alpha透明，不填黑、地板、阈条或阴影",
+      "前景过梁/立柱导出同画布可编辑源PNG和显式选择mask；框脚余像素保留foundation层"
+    ],
+    "generation_tool": "built-in image_gen.imagegen",
+    "full_image_resize_is_final": false
+  },
+  "calibration_features": null,
+  "non_runtime_glass": [],
+  "observations": "实际闭门/开门两母稿均已看；框体制造语汇一致但母稿高度偏方。原生重建94px高，共框共安装点；开门母稿空洞用于语义参考。",
+  "emission_baked": false,
+  "review_status": "PENDING_ROOT_ART_REVIEW"
+}

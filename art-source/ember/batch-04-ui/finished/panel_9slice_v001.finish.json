@@ -1,0 +1,46 @@
+{
+  "id": "panel_9slice",
+  "method": "AI_STRUCTURE_MATERIAL_REFERENCE_NATIVE_9SLICE_REBUILD",
+  "source_use": {
+    "mother": "art-source/ember/batch-04-ui/generated/panel_9slice_master_v001.png",
+    "mother_sha256": "ec3390ccd5bb9b47eff5d8a69e0aa869afbc179a324930524a4c75d5adad5d06",
+    "source_unchanged": true,
+    "direct_original_rgba_byte_reuse": false,
+    "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+    "sampling": null
+  },
+  "adjustments": [
+    "参考母稿角部螺栓、钢板倒角与暗中部语汇，96×96逐像素重建",
+    "四边8px恒厚横截面，螺栓限制在8×8角块，中央80×80统一色避免拉伸纹理",
+    "母稿不规则边缘/透视/半透明渐变全部舍弃；四角仅切去3阶透明角"
+  ],
+  "native_pixel_source": "art-source/ember/batch-04-ui/annotations/panel_9slice_native_pixel_source_v001.json",
+  "measurement": {
+    "canvas": [
+      96,
+      96
+    ],
+    "bbox": [
+      0,
+      0,
+      96,
+      96
+    ],
+    "opaque_pixels": 9192,
+    "transparent_pixels": 24,
+    "partial_alpha_pixels": 0,
+    "color_count": 8,
+    "palette_rgb": [
+      "#101820",
+      "#182631",
+      "#2B3E4B",
+      "#4D6470",
+      "#829BA3",
+      "#B77C4B",
+      "#BECBC4",
+      "#E2B77A"
+    ],
+    "all_opaque_colors_in_standard16": true
+  },
+  "output_sha256": "d291fee85289541740b8b403535cf22d05c1f3676116fb78e3a4f50e580c79fe"
+}

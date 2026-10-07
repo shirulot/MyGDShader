@@ -1,0 +1,115 @@
+{
+  "direction": "down",
+  "state": "walk",
+  "frame_index": 0,
+  "idle_source": "assets/ember/characters/robot/robot_idle_down_v001.png",
+  "parts_file": "annotations/rig_down_v001.json",
+  "design_observation": "圆陶瓷头盔、钢灰visor/关节、浅护甲和短靴；母稿为动作/材料参考而非直接帧提取",
+  "tool_hand_observation": "确认idle的解剖左腕工具在屏幕右，与left_arm整件共同移动；没有镜像换手",
+  "pose_observation": "实际母稿工具保持屏幕右腕，四张均偏屏幕左脚前，未正确交替支撑足。本帧原生重建为自身左脚触地/右脚后. 头盔与胸甲保留确认idle比例，不能把母稿独立随机变化带入动画。",
+  "adjustments": [
+    "AI_POSE_INCONSISTENCY: 四母稿同脚前与f02比例漂移如实记录",
+    "NATIVE_CORRECTIVE_COMPOSITING: 确认idle逐像素部件分区、整数位移和髋关节原生修补",
+    "f0/f2交换实际支撑脚；f1/f3对侧脚抬高2原生像素，头身最多1像素起伏",
+    "肩臂与工具同一部件；固定64×96画布和虚拟脚底(32,80)，不自动裁切/整体warp"
+  ],
+  "offsets": {
+    "head": [
+      0,
+      0
+    ],
+    "torso": [
+      0,
+      0
+    ],
+    "right_arm": [
+      0,
+      1
+    ],
+    "left_arm": [
+      0,
+      -1
+    ],
+    "right_leg": [
+      0,
+      -1
+    ],
+    "left_leg": [
+      0,
+      0
+    ]
+  },
+  "draw_order": [
+    "right_leg",
+    "left_leg",
+    "torso",
+    "right_arm",
+    "left_arm",
+    "head"
+  ],
+  "patches": [
+    {
+      "type": "pixel",
+      "at": [
+        26,
+        61
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        26,
+        62
+      ],
+      "color": 1
+    },
+    {
+      "type": "pixel",
+      "at": [
+        38,
+        61
+      ],
+      "color": 2
+    },
+    {
+      "type": "pixel",
+      "at": [
+        38,
+        62
+      ],
+      "color": 1
+    }
+  ],
+  "runtime_windows": [
+    {
+      "id": "chest_status",
+      "safe_active_rect": [
+        30,
+        52,
+        34,
+        54
+      ],
+      "center": [
+        32,
+        53
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.5,
+        0.5520833333333334
+      ],
+      "mask_delivery_status": "NOT_PRODUCED"
+    }
+  ],
+  "gait": {
+    "support_leg": "left",
+    "lifted_leg": null,
+    "phase": "left_contact",
+    "camera_depth": "down正面；双脚投影深度基本一致，至少一脚末行79",
+    "virtual_ground_anchor": [
+      32,
+      80
+    ]
+  }
+}

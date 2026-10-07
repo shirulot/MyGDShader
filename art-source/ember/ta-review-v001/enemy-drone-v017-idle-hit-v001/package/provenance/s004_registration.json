@@ -1,0 +1,390 @@
+{
+  "name": "drone-seven-directions-s004",
+  "scope": "All seven new static directions with preserved down/c002 front/c003 diagonals. Profile near pods assembled rigidly from fixed source pixels.",
+  "output_directory": "static_preflight_s004_drone",
+  "columns": 3,
+  "entries": [
+    {
+      "key": "neutral_down",
+      "copy_path": "res://source/approved_down/enemy_scout_drone.png",
+      "scope": "PRESERVED_APPROVED_DOWN"
+    },
+    {
+      "key": "generated_front",
+      "copy_path": "res://calibration_check_v002/enemy_scout_drone/generated_front.png",
+      "scope": "PRESERVED_C002_FRONT"
+    },
+    {
+      "key": "neutral_down_left",
+      "copy_path": "res://calibration_check_c003_drone/neutral_down_left.png",
+      "scope": "PRESERVED_APPROVED_C003"
+    },
+    {
+      "key": "neutral_left",
+      "scope": "NEW_DIRECTION_WITH_FIXED_POD_ASSEMBLY_PENDING",
+      "source": "res://source/registered/drone_profile_preassembly_v001/left.png",
+      "source_sha256": "c2f27bdf8c71acd7c48bbd76e7fd7c4d2b29ee84a1d4fc0b944f9e95b8d953b8",
+      "source_rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "source_anchor": [
+        0,
+        0
+      ],
+      "target_anchor": [
+        2,
+        2
+      ],
+      "scale": 1,
+      "source_axes": [
+        [
+          62.4534072875977,
+          55.0526084899902
+        ],
+        [
+          65.5465927124023,
+          73.9473876953125
+        ]
+      ],
+      "assembled_axes": [
+        [
+          62.4534072875977,
+          55.0526084899902
+        ],
+        [
+          62.5465927124023,
+          69.9473876953125
+        ]
+      ],
+      "assembly_parts": [
+        {
+          "id": "near_rotor_housing_complete",
+          "rows": [
+            [
+              68,
+              63,
+              68
+            ],
+            [
+              69,
+              61,
+              70
+            ],
+            [
+              70,
+              59,
+              72
+            ],
+            [
+              71,
+              58,
+              73
+            ],
+            [
+              72,
+              57,
+              74
+            ],
+            [
+              73,
+              56,
+              75
+            ],
+            [
+              74,
+              56,
+              75
+            ],
+            [
+              75,
+              56,
+              75
+            ],
+            [
+              76,
+              55,
+              76
+            ],
+            [
+              77,
+              55,
+              76
+            ],
+            [
+              78,
+              55,
+              76
+            ],
+            [
+              79,
+              56,
+              75
+            ],
+            [
+              80,
+              57,
+              74
+            ],
+            [
+              81,
+              58,
+              74
+            ],
+            [
+              82,
+              59,
+              73
+            ],
+            [
+              83,
+              61,
+              71
+            ]
+          ],
+          "offset": [
+            -3,
+            -4
+          ]
+        }
+      ],
+      "assembly_note": "Native source samples are assigned once to intact near pod; integer rigid translation only, no scaling or RGB repaint. Original far pod/body remain rigid. Whole-object final registration is fixed for all future frames."
+    },
+    {
+      "key": "neutral_up_left",
+      "scope": "NEW_DIRECTION_PENDING",
+      "source": "res://source/turnarounds/enemy_scout_drone_back_diagonals_v007.png",
+      "source_sha256": "cb9b363047883ae1a451f1895e71ea9c11c686ff59c4a86aa997c4ced61de242",
+      "source_rect": [
+        887,
+        0,
+        887,
+        887
+      ],
+      "source_anchor": [
+        419.49847931875,
+        440.3483075712
+      ],
+      "target_anchor": [
+        64,
+        64.5
+      ],
+      "source_axes": [
+        [
+          238.91666666669994,
+          507.7696078431
+        ],
+        [
+          600.0802919708001,
+          372.9270072993
+        ]
+      ],
+      "scale": 0.08697580719685068,
+      "scale_note": "One fixed source atlas density; all views in this source share the same isotropic scale."
+    },
+    {
+      "key": "neutral_up",
+      "scope": "NEW_DIRECTION_PENDING",
+      "source": "res://source/turnarounds/enemy_scout_drone_back_v005.png",
+      "source_sha256": "d3476b0822e99efb911104a05794eaf45e3a3a6e74b2982f29be3b69a6994308",
+      "source_rect": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "source_anchor": [
+        624.8640552995,
+        629.57603686635
+      ],
+      "target_anchor": [
+        64,
+        64.5
+      ],
+      "source_axes": [
+        [
+          408.8571428571,
+          627.5714285714
+        ],
+        [
+          840.8709677419,
+          631.5806451613
+        ]
+      ],
+      "scale": 0.10207336523125997,
+      "scale_note": "One fixed source atlas density; all views in this source share the same isotropic scale."
+    },
+    {
+      "key": "neutral_up_right",
+      "scope": "NEW_DIRECTION_PENDING",
+      "source": "res://source/turnarounds/enemy_scout_drone_back_diagonals_v007.png",
+      "source_sha256": "cb9b363047883ae1a451f1895e71ea9c11c686ff59c4a86aa997c4ced61de242",
+      "source_rect": [
+        0,
+        0,
+        887,
+        887
+      ],
+      "source_anchor": [
+        507.81373619315,
+        440.48128050344997
+      ],
+      "target_anchor": [
+        64,
+        64.5
+      ],
+      "source_axes": [
+        [
+          328.8676470588,
+          372.8970588235
+        ],
+        [
+          686.7598253275,
+          508.0655021834
+        ]
+      ],
+      "scale": 0.08697580719685068,
+      "scale_note": "One fixed source atlas density; all views in this source share the same isotropic scale."
+    },
+    {
+      "key": "neutral_right",
+      "scope": "NEW_DIRECTION_WITH_FIXED_POD_ASSEMBLY_PENDING",
+      "source": "res://source/registered/drone_profile_preassembly_v001/right.png",
+      "source_sha256": "04926dfa5e703e8660c96973ec4d70a75eaf6314fa03ad57fdf6fd83a73b56d3",
+      "source_rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "source_anchor": [
+        0,
+        0
+      ],
+      "target_anchor": [
+        -1,
+        2
+      ],
+      "scale": 1,
+      "source_axes": [
+        [
+          65.5088119506836,
+          55.0243072509766
+        ],
+        [
+          62.4911918640137,
+          73.9756927490234
+        ]
+      ],
+      "assembled_axes": [
+        [
+          65.5088119506836,
+          55.0243072509766
+        ],
+        [
+          65.4911918640137,
+          69.9756927490234
+        ]
+      ],
+      "assembly_parts": [
+        {
+          "id": "near_rotor_housing_complete",
+          "rows": [
+            [
+              68,
+              59,
+              64
+            ],
+            [
+              69,
+              57,
+              66
+            ],
+            [
+              70,
+              56,
+              67
+            ],
+            [
+              71,
+              56,
+              68
+            ],
+            [
+              72,
+              55,
+              69
+            ],
+            [
+              73,
+              54,
+              70
+            ],
+            [
+              74,
+              53,
+              70
+            ],
+            [
+              75,
+              53,
+              71
+            ],
+            [
+              76,
+              53,
+              72
+            ],
+            [
+              77,
+              53,
+              72
+            ],
+            [
+              78,
+              53,
+              72
+            ],
+            [
+              79,
+              54,
+              71
+            ],
+            [
+              80,
+              55,
+              70
+            ],
+            [
+              81,
+              56,
+              69
+            ],
+            [
+              82,
+              57,
+              68
+            ],
+            [
+              83,
+              59,
+              66
+            ]
+          ],
+          "offset": [
+            3,
+            -4
+          ]
+        }
+      ],
+      "assembly_note": "Native source samples are assigned once to intact near pod; integer rigid translation only, no scaling or RGB repaint. Original far pod/body remain rigid. Whole-object final registration is fixed for all future frames."
+    },
+    {
+      "key": "neutral_down_right",
+      "copy_path": "res://calibration_check_c003_drone/neutral_down_right.png",
+      "scope": "PRESERVED_APPROVED_C003"
+    }
+  ]
+}

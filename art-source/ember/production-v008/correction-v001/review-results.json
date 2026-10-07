@@ -1,0 +1,97 @@
+{
+  "status": "STANDARD_BASED_PIXEL_CORRECTION_PARTIAL_PASS_FULL_SET_NOT_READY",
+  "standard": "standard.md",
+  "actual_builtin_generation_calls": 8,
+  "results": [
+    {
+      "id": "floor_center",
+      "source_path": "art-source/ember/production-v008/correction-v001/candidates/floor_center_pixel_v001.png",
+      "source_sha256": "8b8eb1c94093f0a6062842060489cf8ac2c61d785eca4d2e004d1da22b974187",
+      "status": "BASE_PIXEL_STYLE_CANDIDATE_OPAQUE_REPEAT_REVIEWED",
+      "reason": "center solid, no holes; user style approval pending",
+      "production_ready": false
+    },
+    {
+      "id": "floor_edge_N",
+      "source_path": "art-source/ember/production-v008/correction-v001/candidates/floor_edge_N_pixel_v002.png",
+      "source_sha256": "fb192e1a9a270bbf0530bfb44e509822e594777f57d124de188ea8aaacfa5c20",
+      "status": "NOT_PASSED_CROSS_JOINT_2PX_SHIFT",
+      "reason": "cross joint row66 versus center64",
+      "production_ready": false
+    },
+    {
+      "id": "floor_narrow_NS",
+      "source_path": "art-source/ember/production-v008/correction-v001/candidates/floor_narrow_NS_pixel_v001.png",
+      "source_sha256": "f731fbabe2f2edbc742cf18f68fa5f7ab385ae8bc540059ee4dfc06c44d7a07a",
+      "status": "NS_PORT_WIDTH_PASSED_BODY_ALPHA_AND_END_MATERIAL_PENDING",
+      "reason": "N/S width126 verified; old end caps are geometry-only references; body alpha max251",
+      "production_ready": false
+    },
+    {
+      "id": "floor_outer_NW",
+      "source_path": "art-source/ember/production-v008/correction-v001/candidates/floor_outer_NW_pixel_v002.png",
+      "source_sha256": "3fa7c6e9eefacc30f33f8e7490aa1b15243146eee739fb58d91722b428a53fc3",
+      "status": "REJECTED_CROSS_JOINT_PHASE_AND_ALPHA_SHAPE",
+      "reason": "cross joint row73 versus edge66; no real transparent corner, alpha225..248",
+      "production_ready": false
+    },
+    {
+      "id": "bank_straight_N",
+      "source_path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_straight_N_pixel_registered_v002_128.png",
+      "source_sha256": "ebcff7cfb05107818b9eb227ea8a2e9fb4914e8653cca05e6451a2c6a802b630",
+      "status": "PARTIAL_NORTH_REPEAT_VISUAL_PASSED_FULL_FAMILY_PENDING",
+      "reason": "registered open ends; E/W [0,33), displayed north repeat continuous; no full family or loop proof",
+      "production_ready": false
+    },
+    {
+      "id": "bank_inner_NW",
+      "source_path": "art-source/ember/production-v008/correction-v001/bank/candidates/bank_inner_NW_pixel_v001_128.png",
+      "source_sha256": "19413b2b61322fc6ee243c1b7f3fe105f149a5cc019c6ce669159027bb5e08f3",
+      "status": "REJECTED_PORTS_CROSS_SECTION_SEMANTICS_AND_STYLE",
+      "reason": "N2px and W to55px; incorrect cross-section",
+      "production_ready": false
+    }
+  ],
+  "technical_validation": {
+    "complete_47": false,
+    "engine": {
+      "build": "steam",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (steam)",
+      "timestamp": 0
+    },
+    "failures": [],
+    "gpu_captures": [
+      "pixel_pilot_native_gpu.png",
+      "pixel_pilot_world32_gpu.png"
+    ],
+    "import": {
+      "alpha_differences": 0,
+      "compared_pixels": 180224,
+      "visible_rgb_differences": 0
+    },
+    "layer_scale": 0.25,
+    "padding": true,
+    "production_ready": false,
+    "source_atlas_sha256": "34fb1d8142c62204d7948c903e2725329a4e5123da67d957215c01d92e88a6f8",
+    "status": "TECHNICAL_IMPORT_GPU_CAPTURED_ART_NOT_PASSED",
+    "terrain_selection_tested_in_this_pilot": false,
+    "texture_tile_size": 128,
+    "visual_approval": false,
+    "world_cell_size": 32
+  },
+  "independent_review": "independent-review.md",
+  "frozen_files": {
+    "checked": 50,
+    "changed": [],
+    "passed": true
+  },
+  "production_ready": false,
+  "user_visual_approval": false,
+  "artwork_pixels_modified_by_code": false
+}

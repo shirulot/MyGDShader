@@ -1,0 +1,1855 @@
+{
+  "schema_version": 1,
+  "status": "D08_TEN_CHANNEL_MASKS_NUMERIC_PASS_VISUAL_REQUIRED",
+  "method": "REGISTERED_GEOMETRY_AND_ACTUAL_SELECTION_DERIVED_NO_IMAGEGEN",
+  "coordinate_convention": "origin top-left pixel boundary; [x0,y0,x1,y1), right/bottom excluded",
+  "channel_contract": {
+    "R": "recolor",
+    "G": "emission",
+    "B": "distortion",
+    "A": "exact base alpha"
+  },
+  "generated_files": 10,
+  "art_units_added": 0,
+  "production_art_modified": false,
+  "assets": [
+    {
+      "id": "station",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/station_mask_v001.png",
+      "sha256": "c8e3d80b7858b22e4c2a293ec9b9a200ba9aea2b27e24e9a30983c36d4dd7fdf",
+      "canvas": [
+        128,
+        160
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        64,
+        144
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        17,
+        26,
+        111,
+        144
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 580,
+          "bbox": [
+            54,
+            66,
+            74,
+            95
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 580,
+          "bbox": [
+            54,
+            66,
+            74,
+            95
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 8036,
+          "bbox": [
+            17,
+            26,
+            111,
+            144
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "B01",
+      "source_file": "res://assets/ember/buildings/station/station_base_v001.png",
+      "source_sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4",
+      "source_geometry_file": "art-source/ember/batch-01/pixel-finish-v001/finishing-record.json",
+      "source_geometry_sha256": "a09ffeee72bf424c45dfe2ddff9895d26829fbefab8d76f67cee296f99a7c17f",
+      "source_geometry_json_pointer": "/1/runtime_layout/windows",
+      "registered_geometry_sha256": "0ade12cb4e41c3274c8a671d9929d07df8efa833b44a94c6b8130efdc1ac4d99",
+      "registered_geometry": {
+        "canvas": [
+          128,
+          160
+        ],
+        "anchor": [
+          64,
+          144
+        ],
+        "windows": [
+          {
+            "id": "energy_core",
+            "appearance": "未运行的两档中性暗面",
+            "frame_visual_bounds": [
+              49,
+              60,
+              79,
+              102
+            ],
+            "frame_visual_bounds_role": "含安装框的视觉定位范围，非精确窗口Mask",
+            "safe_active_rect": [
+              54,
+              66,
+              74,
+              95
+            ],
+            "center": [
+              64,
+              80.5
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.5,
+              0.503125
+            ],
+            "safe_active_rect_role": "实际连续20×29暗面；也是像素整理的中间处理区，仅用于安全局部变化，未覆盖完整倒角窗口。",
+            "mask_delivery_status": "NOT_PRODUCED"
+          }
+        ],
+        "selected_layer": null,
+        "selection_sources": []
+      },
+      "selection_sources": [],
+      "selection_rect_difference_count": null,
+      "selection_basis": "已验收登记 safe_active_rect ∩ 底图 Alpha；底图没有独立窗口 selection",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/station_mask_review_2x.png"
+    },
+    {
+      "id": "console",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/console_mask_v001.png",
+      "sha256": "07eb3a4b27ec2ee5e66fa719bffb60b2b6bd7f4265f050e155a89d74d1ef735f",
+      "canvas": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        48,
+        80
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        18,
+        22,
+        78,
+        80
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 336,
+          "bbox": [
+            36,
+            33,
+            60,
+            47
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 336,
+          "bbox": [
+            36,
+            33,
+            60,
+            47
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 2928,
+          "bbox": [
+            18,
+            22,
+            78,
+            80
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "console_base",
+      "source_file": "res://assets/ember/buildings/console/console_base_v001.png",
+      "source_sha256": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/0/runtime_windows",
+      "registered_geometry_sha256": "55a1fe9fc16554ee63c7bf61416706ad5d9661c0f3accfe4b59c5a94b5d2905c",
+      "registered_geometry": {
+        "canvas": [
+          96,
+          96
+        ],
+        "anchor": [
+          48,
+          80
+        ],
+        "windows": [
+          {
+            "id": "console_screen",
+            "visual_frame_bounds": [
+              33,
+              29,
+              63,
+              50
+            ],
+            "safe_active_rect": [
+              36,
+              33,
+              60,
+              47
+            ],
+            "center": [
+              48.0,
+              40.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.5,
+              0.4166666666666667
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "screen_neutral",
+        "selection_sources": [
+          {
+            "layer_name": "screen_neutral",
+            "file": "art-source/ember/batch-03-objects/layers/console_base/screen_neutral_selection.png",
+            "sha256": "572b573f95d1bb7ca3f4ce72b6c1b69d633e723d031e8cbc63f2f3de72a5b2cb",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/console_base/screen_neutral.png",
+            "component_sha256": "307e973ffdaa9165886ad46005ea9a2601eea5210bb2f82d8d7afa2ca77d065c",
+            "component_anchor": [
+              48,
+              80
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 336,
+            "bbox": [
+              36,
+              33,
+              60,
+              47
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "screen_neutral",
+          "file": "art-source/ember/batch-03-objects/layers/console_base/screen_neutral_selection.png",
+          "sha256": "572b573f95d1bb7ca3f4ce72b6c1b69d633e723d031e8cbc63f2f3de72a5b2cb",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/console_base/screen_neutral.png",
+          "component_sha256": "307e973ffdaa9165886ad46005ea9a2601eea5210bb2f82d8d7afa2ca77d065c",
+          "component_anchor": [
+            48,
+            80
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 336,
+          "bbox": [
+            36,
+            33,
+            60,
+            47
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/console_mask_review_2x.png"
+    },
+    {
+      "id": "pump",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/pump_mask_v001.png",
+      "sha256": "14eb5624ea241bc8234fd1e5e0baa0c57b1adeacb213c4f1b715febc502e4436",
+      "canvas": [
+        160,
+        192
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        80,
+        176
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        25,
+        58,
+        136,
+        176
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 32,
+          "bbox": [
+            77,
+            140,
+            85,
+            144
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 32,
+          "bbox": [
+            77,
+            140,
+            85,
+            144
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 7731,
+          "bbox": [
+            25,
+            58,
+            136,
+            176
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "pump_base",
+      "source_file": "res://assets/ember/buildings/pump/pump_base_v001.png",
+      "source_sha256": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/1/runtime_windows",
+      "registered_geometry_sha256": "81904780b237a75f949b7dc02f1769d4be979ac4e06df1c2bea576bd22a82e31",
+      "registered_geometry": {
+        "canvas": [
+          160,
+          192
+        ],
+        "anchor": [
+          80,
+          176
+        ],
+        "windows": [
+          {
+            "id": "pump_gauge",
+            "visual_frame_bounds": [
+              73,
+              136,
+              89,
+              146
+            ],
+            "safe_active_rect": [
+              77,
+              140,
+              85,
+              144
+            ],
+            "center": [
+              81.0,
+              142.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.50625,
+              0.7395833333333334
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": null,
+        "selection_sources": []
+      },
+      "selection_sources": [],
+      "selection_rect_difference_count": null,
+      "selection_basis": "已验收登记 safe_active_rect ∩ 底图 Alpha；底图没有独立窗口 selection",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/pump_mask_review_2x.png"
+    },
+    {
+      "id": "ventilator",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/ventilator_mask_v001.png",
+      "sha256": "01f711785e661ced1818e981f5add1472007280177eb88653669e93bb64ed220",
+      "canvas": [
+        160,
+        192
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        80,
+        176
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        40,
+        52,
+        120,
+        176
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 886,
+          "bbox": [
+            57,
+            78,
+            105,
+            119
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "可选局部叶片换色"
+        },
+        "G": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "未登记发光窗口，保持0"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 7923,
+          "bbox": [
+            40,
+            52,
+            120,
+            176
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "ventilator_base",
+      "source_file": "res://assets/ember/buildings/ventilator/ventilator_base_v001.png",
+      "source_sha256": "74a301919676247d40b5e163bf116d011c3231cc2d2cb18949d2e950af09f187",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/2/runtime_windows",
+      "registered_geometry_sha256": "30ec7207bf1ab7c252706b2d9b5f8b0ff10eb12d11e79bd40a666d999794f6b2",
+      "registered_geometry": {
+        "canvas": [
+          160,
+          192
+        ],
+        "anchor": [
+          80,
+          176
+        ],
+        "windows": [],
+        "selected_layer": "fan_rotor",
+        "selection_sources": [
+          {
+            "layer_name": "fan_rotor",
+            "file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor_selection.png",
+            "sha256": "2d9be0e8bf3a63faf06e678d33f7fbaaed36bdfeee4f4fb7fff0a10822cc2fef",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor.png",
+            "component_sha256": "24c2ce3fa7876c055bfa4c19d48a5d1e6fb82b67422908e40706a9b57d19a47b",
+            "component_anchor": [
+              80,
+              176
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 886,
+            "bbox": [
+              57,
+              78,
+              105,
+              119
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "fan_rotor",
+          "file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor_selection.png",
+          "sha256": "2d9be0e8bf3a63faf06e678d33f7fbaaed36bdfeee4f4fb7fff0a10822cc2fef",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/ventilator_base/fan_rotor.png",
+          "component_sha256": "24c2ce3fa7876c055bfa4c19d48a5d1e6fb82b67422908e40706a9b57d19a47b",
+          "component_anchor": [
+            80,
+            176
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 886,
+          "bbox": [
+            57,
+            78,
+            105,
+            119
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": null,
+      "selection_basis": "真实 fan_rotor L selection；已核对与同画布叶片组件 Alpha 完全一致",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/ventilator_mask_review_2x.png"
+    },
+    {
+      "id": "cooler",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/cooler_mask_v001.png",
+      "sha256": "c58e6a6e5183459a28a7b041587c08930d35af29ff426d735a2fd46d52fdf3da",
+      "canvas": [
+        160,
+        192
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        80,
+        176
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        29,
+        50,
+        132,
+        176
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 60,
+          "bbox": [
+            75,
+            122,
+            85,
+            128
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 60,
+          "bbox": [
+            75,
+            122,
+            85,
+            128
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 10191,
+          "bbox": [
+            29,
+            50,
+            132,
+            176
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "cooler_base",
+      "source_file": "res://assets/ember/buildings/cooler/cooler_base_v001.png",
+      "source_sha256": "86606ba53c17e572cc19e5f1b9336e8245ecc52fa01cc6ddc08761b13047ca2b",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/3/runtime_windows",
+      "registered_geometry_sha256": "3db442e713aac1e6f98658a9c763ed61c51f97d170e74a14bc92ce2b36ae9759",
+      "registered_geometry": {
+        "canvas": [
+          160,
+          192
+        ],
+        "anchor": [
+          80,
+          176
+        ],
+        "windows": [
+          {
+            "id": "cooling_core",
+            "visual_frame_bounds": [
+              72,
+              118,
+              89,
+              131
+            ],
+            "safe_active_rect": [
+              75,
+              122,
+              85,
+              128
+            ],
+            "center": [
+              80.0,
+              125.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.5,
+              0.6510416666666666
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "core_window",
+        "selection_sources": [
+          {
+            "layer_name": "core_window",
+            "file": "art-source/ember/batch-03-objects/layers/cooler_base/core_window_selection.png",
+            "sha256": "7e8ddafedfe786a5cad17ce99c5148f65f15eb782bfcc99ecc96086244fb0bcb",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/cooler_base/core_window.png",
+            "component_sha256": "c8c851fbdab302086c5c37bef412060775d3b9629445ce9d5ec836b1944d3a84",
+            "component_anchor": [
+              80,
+              176
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 60,
+            "bbox": [
+              75,
+              122,
+              85,
+              128
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "core_window",
+          "file": "art-source/ember/batch-03-objects/layers/cooler_base/core_window_selection.png",
+          "sha256": "7e8ddafedfe786a5cad17ce99c5148f65f15eb782bfcc99ecc96086244fb0bcb",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/cooler_base/core_window.png",
+          "component_sha256": "c8c851fbdab302086c5c37bef412060775d3b9629445ce9d5ec836b1944d3a84",
+          "component_anchor": [
+            80,
+            176
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 60,
+          "bbox": [
+            75,
+            122,
+            85,
+            128
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/cooler_mask_review_2x.png"
+    },
+    {
+      "id": "relay",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/relay_mask_v001.png",
+      "sha256": "e3f91d9ec9462f28131571589197d668b8f2d13530360c5442fada3515108a75",
+      "canvas": [
+        192,
+        256
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        96,
+        240
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        51,
+        52,
+        141,
+        240
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 210,
+          "bbox": [
+            91,
+            166,
+            101,
+            187
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 210,
+          "bbox": [
+            91,
+            166,
+            101,
+            187
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 8932,
+          "bbox": [
+            51,
+            52,
+            141,
+            240
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "relay_base",
+      "source_file": "res://assets/ember/buildings/relay/relay_base_v001.png",
+      "source_sha256": "2c42f50ae8af4aa2397255112fa4255ed5f50d943919611c4419d04b06669b98",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/4/runtime_windows",
+      "registered_geometry_sha256": "c2f42b849334d5a2f3b84801998be48ea5387b4c05c3696b3a71b3f251e4ef53",
+      "registered_geometry": {
+        "canvas": [
+          192,
+          256
+        ],
+        "anchor": [
+          96,
+          240
+        ],
+        "windows": [
+          {
+            "id": "relay_core",
+            "visual_frame_bounds": [
+              87,
+              162,
+              106,
+              192
+            ],
+            "safe_active_rect": [
+              91,
+              166,
+              101,
+              187
+            ],
+            "center": [
+              96.0,
+              176.5
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.5,
+              0.689453125
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "core_window",
+        "selection_sources": [
+          {
+            "layer_name": "core_window",
+            "file": "art-source/ember/batch-03-objects/layers/relay_base/core_window_selection.png",
+            "sha256": "e3f1a8ee6352fcc646d77d1d051c9ca274a49b9b854291716395cfde2c7107e8",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/relay_base/core_window.png",
+            "component_sha256": "1be4315343d3aa61fcd7d9c3cd6ce57a5cb40ea638d9ebc9a5539e3f9e938595",
+            "component_anchor": [
+              96,
+              240
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 210,
+            "bbox": [
+              91,
+              166,
+              101,
+              187
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "core_window",
+          "file": "art-source/ember/batch-03-objects/layers/relay_base/core_window_selection.png",
+          "sha256": "e3f1a8ee6352fcc646d77d1d051c9ca274a49b9b854291716395cfde2c7107e8",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/relay_base/core_window.png",
+          "component_sha256": "1be4315343d3aa61fcd7d9c3cd6ce57a5cb40ea638d9ebc9a5539e3f9e938595",
+          "component_anchor": [
+            96,
+            240
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 210,
+          "bbox": [
+            91,
+            166,
+            101,
+            187
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/relay_mask_review_2x.png"
+    },
+    {
+      "id": "wall_lamp",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/wall_lamp_mask_v001.png",
+      "sha256": "9ab4095dc6d324a7cd76e94aa81f9fca1a3c3a0481d091980eb9c82e2fae7d3c",
+      "canvas": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        21,
+        14,
+        43,
+        56
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 15,
+          "bbox": [
+            30,
+            45,
+            33,
+            50
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 15,
+          "bbox": [
+            30,
+            45,
+            33,
+            50
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 637,
+          "bbox": [
+            21,
+            14,
+            43,
+            56
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "wall_lamp",
+      "source_file": "res://assets/ember/buildings/lights/wall_lamp_v001.png",
+      "source_sha256": "aa27b42d2d09a608416bbcf770e78de947e096f7beca4797b23b38ff29932a79",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/5/runtime_windows",
+      "registered_geometry_sha256": "713f07fa6f57dc4e44cf5f50244e9f81d6fa7afbc34bd97a3757db073e5c33ac",
+      "registered_geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          56
+        ],
+        "windows": [
+          {
+            "id": "lamp_lens",
+            "visual_frame_bounds": [
+              28,
+              41,
+              35,
+              52
+            ],
+            "safe_active_rect": [
+              30,
+              45,
+              33,
+              50
+            ],
+            "center": [
+              31.5,
+              47.5
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.4921875,
+              0.7421875
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "lens_neutral",
+        "selection_sources": [
+          {
+            "layer_name": "lens_neutral",
+            "file": "art-source/ember/batch-03-objects/layers/wall_lamp/lens_neutral_selection.png",
+            "sha256": "cea7a58e3cbd95dd1769c081cb4070c95b40b5c7822e6741ec6a5fe1b0ea380f",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/wall_lamp/lens_neutral.png",
+            "component_sha256": "5769bd414ff24a03a42d44ea2011b64221c511f12fb0ed597affa35f6b0c0346",
+            "component_anchor": [
+              32,
+              56
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 15,
+            "bbox": [
+              30,
+              45,
+              33,
+              50
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "lens_neutral",
+          "file": "art-source/ember/batch-03-objects/layers/wall_lamp/lens_neutral_selection.png",
+          "sha256": "cea7a58e3cbd95dd1769c081cb4070c95b40b5c7822e6741ec6a5fe1b0ea380f",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/wall_lamp/lens_neutral.png",
+          "component_sha256": "5769bd414ff24a03a42d44ea2011b64221c511f12fb0ed597affa35f6b0c0346",
+          "component_anchor": [
+            32,
+            56
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 15,
+          "bbox": [
+            30,
+            45,
+            33,
+            50
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/wall_lamp_mask_review_2x.png"
+    },
+    {
+      "id": "floor_lamp",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/floor_lamp_mask_v001.png",
+      "sha256": "ea187834f857c07d0fbd9de2ddee489805d2a52a988a72c96fa79e4c15c2375d",
+      "canvas": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        32,
+        56
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        23,
+        12,
+        41,
+        56
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 24,
+          "bbox": [
+            30,
+            26,
+            34,
+            32
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 24,
+          "bbox": [
+            30,
+            26,
+            34,
+            32
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 628,
+          "bbox": [
+            23,
+            12,
+            41,
+            56
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "floor_lamp",
+      "source_file": "res://assets/ember/buildings/lights/floor_lamp_v001.png",
+      "source_sha256": "09b7b326be066958f0c9015cd07bdf6532bd74c7e0861d2eabacfb3b8590b464",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/6/runtime_windows",
+      "registered_geometry_sha256": "9e1c715539cc1f18ee336980b3ab83ac096bbfc693fd45fa2919f5cf7a497805",
+      "registered_geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          56
+        ],
+        "windows": [
+          {
+            "id": "lamp_lens",
+            "visual_frame_bounds": [
+              28,
+              24,
+              36,
+              34
+            ],
+            "safe_active_rect": [
+              30,
+              26,
+              34,
+              32
+            ],
+            "center": [
+              32.0,
+              29.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.5,
+              0.453125
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "lens_neutral",
+        "selection_sources": [
+          {
+            "layer_name": "lens_neutral",
+            "file": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral_selection.png",
+            "sha256": "8e7b45bd054789292b1dd191960a0bf253bb195e5daf48594aaaf4f5d713056d",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral.png",
+            "component_sha256": "b283880f60f9a4e8e753925b506b81c514bdc9a26003bd744646e2e3231febd9",
+            "component_anchor": [
+              32,
+              56
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 24,
+            "bbox": [
+              30,
+              26,
+              34,
+              32
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "lens_neutral",
+          "file": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral_selection.png",
+          "sha256": "8e7b45bd054789292b1dd191960a0bf253bb195e5daf48594aaaf4f5d713056d",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/floor_lamp/lens_neutral.png",
+          "component_sha256": "b283880f60f9a4e8e753925b506b81c514bdc9a26003bd744646e2e3231febd9",
+          "component_anchor": [
+            32,
+            56
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 24,
+          "bbox": [
+            30,
+            26,
+            34,
+            32
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/floor_lamp_mask_review_2x.png"
+    },
+    {
+      "id": "telepad",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/telepad_mask_v001.png",
+      "sha256": "f9509bfebac8f0c3344658fa7014b86b595962ac703cf399f0fd775b3447d1fc",
+      "canvas": [
+        128,
+        160
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        64,
+        144
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        22,
+        78,
+        107,
+        144
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 64,
+          "bbox": [
+            42,
+            90,
+            87,
+            121
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 64,
+          "bbox": [
+            42,
+            90,
+            87,
+            121
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 4298,
+          "bbox": [
+            22,
+            78,
+            107,
+            144
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "telepad_base",
+      "source_file": "res://assets/ember/buildings/telepad/telepad_base_v001.png",
+      "source_sha256": "8d59c3ba8ed09aa50a9232c5b3f8ffe204c9a8f41da408499d5208cd8c081512",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/9/runtime_windows",
+      "registered_geometry_sha256": "dc0242c1822f5c2ba1890fc2bb0293e1f672c61a86c5848ba24c72cc26434325",
+      "registered_geometry": {
+        "canvas": [
+          128,
+          160
+        ],
+        "anchor": [
+          64,
+          144
+        ],
+        "windows": [
+          {
+            "id": "marker_n",
+            "visual_frame_bounds": [
+              59,
+              88,
+              70,
+              94
+            ],
+            "safe_active_rect": [
+              61,
+              90,
+              68,
+              92
+            ],
+            "center": [
+              64.5,
+              91.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.50390625,
+              0.56875
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          },
+          {
+            "id": "marker_w",
+            "visual_frame_bounds": [
+              40,
+              100,
+              48,
+              110
+            ],
+            "safe_active_rect": [
+              42,
+              102,
+              45,
+              108
+            ],
+            "center": [
+              43.5,
+              105.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.33984375,
+              0.65625
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          },
+          {
+            "id": "marker_e",
+            "visual_frame_bounds": [
+              82,
+              100,
+              90,
+              110
+            ],
+            "safe_active_rect": [
+              84,
+              102,
+              87,
+              108
+            ],
+            "center": [
+              85.5,
+              105.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.66796875,
+              0.65625
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          },
+          {
+            "id": "marker_s",
+            "visual_frame_bounds": [
+              59,
+              117,
+              71,
+              123
+            ],
+            "safe_active_rect": [
+              61,
+              119,
+              68,
+              121
+            ],
+            "center": [
+              64.5,
+              120.0
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.50390625,
+              0.75
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "marker_windows",
+        "selection_sources": [
+          {
+            "layer_name": "marker_windows",
+            "file": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows_selection.png",
+            "sha256": "e751f808ab84508e92db7a4da8ecf1e48cd1464438885b790def2b7783ebae17",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows.png",
+            "component_sha256": "95c1d0b71eaaadb472d57a159ad80e0a2f26e4ef58341bf5e62fc1646bde096b",
+            "component_anchor": [
+              64,
+              144
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 64,
+            "bbox": [
+              42,
+              90,
+              87,
+              121
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "marker_windows",
+          "file": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows_selection.png",
+          "sha256": "e751f808ab84508e92db7a4da8ecf1e48cd1464438885b790def2b7783ebae17",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/telepad_base/marker_windows.png",
+          "component_sha256": "95c1d0b71eaaadb472d57a159ad80e0a2f26e4ef58341bf5e62fc1646bde096b",
+          "component_anchor": [
+            64,
+            144
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 64,
+          "bbox": [
+            42,
+            90,
+            87,
+            121
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全窗口/已确认组件范围以来源几何为准，不根据底图RGB颜色扩张",
+        "B未启用；不包含外部烟火、全设备换色或新猜测动态区域"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/telepad_mask_review_2x.png"
+    },
+    {
+      "id": "terminal_window",
+      "manifest_id": "D08",
+      "file": "res://assets/ember/data/object_masks/terminal_window_mask_v001.png",
+      "sha256": "f8f95b4765e57dfd23d77db98868ea48f806e2d2314eb03e63720c4091cf17d6",
+      "canvas": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "repeat_axes": [],
+      "anchor": [
+        48,
+        80
+      ],
+      "anchor_convention": "与底图相同的原生像素边界坐标；无移动/缩放",
+      "bbox": [
+        24,
+        16,
+        73,
+        80
+      ],
+      "channels": {
+        "R": {
+          "nonzero_count": 209,
+          "bbox": [
+            38,
+            30,
+            57,
+            41
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记局部换色"
+        },
+        "G": {
+          "nonzero_count": 209,
+          "bbox": [
+            38,
+            30,
+            57,
+            41
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "安全内窗/镜片/平台标记发光门控"
+        },
+        "B": {
+          "nonzero_count": 0,
+          "bbox": null,
+          "values": [
+            0
+          ],
+          "purpose": "本批没有启用扰动区域，全部为0"
+        },
+        "A": {
+          "nonzero_count": 2610,
+          "bbox": [
+            24,
+            16,
+            73,
+            80
+          ],
+          "values": [
+            0,
+            255
+          ],
+          "purpose": "对应静态底图的完整原始 Alpha，逐字节复制"
+        }
+      },
+      "source_id": "terminal_body",
+      "source_file": "res://assets/ember/buildings/terminal/terminal_body_v001.png",
+      "source_sha256": "67c2c54fb0efbc1ffdb1cfa01c61ae6216f2947a74b1e29847c37be401c1b812",
+      "source_geometry_file": "assets/ember/ember_additional_catalog_v001.json",
+      "source_geometry_sha256": "c1f8a100b7bef1737e4bf50e089b6dacd1ae4caf6f2e4ce3967ae719e83f1876",
+      "source_geometry_json_pointer": "/assets/10/runtime_windows",
+      "registered_geometry_sha256": "af2cbf0b2d8469ce8e6ecf9d67363917d5e9a9e928a98f978ae496e54926545c",
+      "registered_geometry": {
+        "canvas": [
+          96,
+          96
+        ],
+        "anchor": [
+          48,
+          80
+        ],
+        "windows": [
+          {
+            "id": "terminal_scene_screen",
+            "visual_frame_bounds": [
+              34,
+              26,
+              61,
+              45
+            ],
+            "safe_active_rect": [
+              38,
+              30,
+              57,
+              41
+            ],
+            "center": [
+              47.5,
+              35.5
+            ],
+            "center_basis": "safe_active_rect_geometric_center",
+            "normalized_uv": [
+              0.4947916666666667,
+              0.3697916666666667
+            ],
+            "rect_convention": "[x0,y0,x1,y1), right/bottom excluded",
+            "mask_delivery_status": "NOT_PRODUCED; registered geometry only; technical channel mask is separate budget"
+          }
+        ],
+        "selected_layer": "inner_screen",
+        "selection_sources": [
+          {
+            "layer_name": "inner_screen",
+            "file": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen_selection.png",
+            "sha256": "807111f7c6a7991eb861dc3ea1372961b473b7f5856d83e10c314a8686c4926d",
+            "mode": "L",
+            "component_file": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen.png",
+            "component_sha256": "5bc131473afe6cb59e3c29c47cf6fee9464308e4081ed8ac94c4ba5a7092e654",
+            "component_anchor": [
+              48,
+              80
+            ],
+            "selection_equals_component_alpha": true,
+            "nonzero_count": 209,
+            "bbox": [
+              38,
+              30,
+              57,
+              41
+            ],
+            "values": [
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "selection_sources": [
+        {
+          "layer_name": "inner_screen",
+          "file": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen_selection.png",
+          "sha256": "807111f7c6a7991eb861dc3ea1372961b473b7f5856d83e10c314a8686c4926d",
+          "mode": "L",
+          "component_file": "art-source/ember/batch-03-objects/layers/terminal_body/inner_screen.png",
+          "component_sha256": "5bc131473afe6cb59e3c29c47cf6fee9464308e4081ed8ac94c4ba5a7092e654",
+          "component_anchor": [
+            48,
+            80
+          ],
+          "selection_equals_component_alpha": true,
+          "nonzero_count": 209,
+          "bbox": [
+            38,
+            30,
+            57,
+            41
+          ],
+          "values": [
+            0,
+            255
+          ]
+        }
+      ],
+      "selection_rect_difference_count": 0,
+      "selection_basis": "真实内窗/镜片/平台标记 selection ∩ 登记 safe_active_rect ∩ 底图 Alpha",
+      "limitations": [
+        "安全内区不等于完整窗框；不覆盖外框装甲、管口、烟/光外部区域",
+        "B未启用；不提供整设备扰动、叶片旋转答案或外部烟火Mask",
+        "terminal_window对应96×96 terminal_body，不对应独立screen_frame"
+      ],
+      "data_sampling": {
+        "source_color_hint": false,
+        "filter": "Nearest",
+        "mipmaps": false,
+        "fix_alpha_border": false,
+        "import_owner": "root整合脚本，生成器不写.import"
+      },
+      "generator": "art-source/ember/technical-inputs-v001/object-masks/tools/generate_object_masks.py",
+      "generator_sha256": "72eb371a043d87e5102ffbaa318fc0ddd279ccf35aa23a63e401148f7a3522c8",
+      "preview_2x": "art-source/ember/technical-inputs-v001/object-masks/review/terminal_window_mask_review_2x.png"
+    }
+  ]
+}

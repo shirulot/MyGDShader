@@ -1,0 +1,17 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://scenes/chapter06/ch06_01_sine_distortion.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://assets/ember/data/calibration/straight_background_v001.png" id="2_background"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_distortion"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+
+[node name="Ch0601SineDistortion" type="Node2D"]
+
+[node name="StraightBackground" type="Sprite2D" parent="."]
+texture_filter = 2
+texture_repeat = 1
+material = SubResource("ShaderMaterial_distortion")
+position = Vector2(360, 360)
+texture = ExtResource("2_background")

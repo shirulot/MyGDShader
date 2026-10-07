@@ -1,0 +1,15 @@
+--- building_asset_v004r1.gd::snapshot
++++ building_asset.gd::snapshot
+@@ -1,4 +1,9 @@
+ func snapshot() -> Dictionary:
+-	var state := super.snapshot()
+-	state.revision = "building_assets_v004r1"
+-	return state
++	var door_states: Dictionary = {}
++	for id: String in doors:
++		var door: Dictionary = doors[id]
++		door_states[id] = {"progress": door.progress, "target": door.target, "locked": door.locked}
++	return {"revision": "building_assets_v004r1", "building_id": building_id,
++		"powered": powered, "faulted": faulted, "device_enabled": device_enabled,
++		"maintenance_open": maintenance_open, "roof_hatch_open": roof_hatch_open,
++		"glass_lit": glass_lit, "doors": door_states}

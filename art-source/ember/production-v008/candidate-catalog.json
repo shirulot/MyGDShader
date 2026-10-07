@@ -1,0 +1,413 @@
+{
+  "status": "EIGHT_ART_CANDIDATES_INTERFACES_NOT_PASSED",
+  "bit_order_8": "N NE E SE S SW W NW",
+  "production_ready": false,
+  "entries": [
+    {
+      "id": "floor_center",
+      "family": "floor",
+      "mask": 255,
+      "source_path": "art-source/ember/production-v008/raw/floor_center_v001.png",
+      "actual_crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "candidate_path": "art-source/ember/production-v008/candidates/floor_center_v001.png",
+      "open_sides": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "closed_sides": [],
+      "corner_semantics": "All four diagonals filled; no hole or outside perimeter.",
+      "status": "VISUAL_SAMPLE_INTERFACES_NOT_PASSED",
+      "issues": [
+        "无真实Alpha孔洞；新旧相邻块板缝与RGB接口仍不同。"
+      ],
+      "producer_record": "floor_center_record.json",
+      "export_record": "floor_center_export.json",
+      "source_sha256": "255b3fafbdb1f352d3908250f65ef7e365f835c6f652304b9fbbfcb192c2d69f",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "c2e8e90e0ada11c4344c5a98f5c2223def604c2ad538bd135526effc0ff7ac74",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 16384,
+          "touched_edges": [
+            "E",
+            "N",
+            "S",
+            "W"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_edge_N",
+      "family": "floor",
+      "mask": 124,
+      "source_path": "art-source/ember/production-v008/floor/raw/floor_edge_N_v003.png",
+      "actual_crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "candidate_path": "art-source/ember/production-v008/floor/candidates/floor_edge_N_v003_128.png",
+      "open_sides": [
+        "E",
+        "S",
+        "W"
+      ],
+      "closed_sides": [
+        "N"
+      ],
+      "corner_semantics": "no external corner; N horizontal boundary",
+      "status": "VISUAL_SAMPLE_INTERFACES_NOT_PASSED",
+      "issues": [
+        "v003全画布RGB实底，去掉北梁切口处半黄铜；南开放端无Alpha渐隐。仍需统一梁宽、板缝和新旧相邻接口，不能登记无缝通过。"
+      ],
+      "producer_record": "floor/generation-record.json",
+      "export_record": "floor/candidate-catalog.json",
+      "source_sha256": "e5f0a7bd4fda4da216c940393844b02a3175e3b7f6b8ad5c6c4933dfe4f56923",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "8c16332f60b9eb60fc38197e612b32e0fb80be461e6b8ca16176cad87f1e43cf",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 16384,
+          "touched_edges": [
+            "E",
+            "N",
+            "S",
+            "W"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_outer_NW",
+      "family": "floor",
+      "mask": 28,
+      "source_path": "art-source/ember/production-v008/floor/raw/floor_outer_NW_v001.png",
+      "actual_crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "candidate_path": "art-source/ember/production-v008/floor/candidates/floor_outer_NW_v001_128.png",
+      "open_sides": [
+        "E",
+        "S"
+      ],
+      "closed_sides": [
+        "N",
+        "W"
+      ],
+      "corner_semantics": "convex northwest external corner",
+      "status": "VISUAL_SAMPLE_INTERFACES_NOT_PASSED",
+      "issues": [
+        "Continuous northwest manufactured convex corner. Trim width is different from straight beam; open plate seams not aligned to centre."
+      ],
+      "producer_record": "floor/generation-record.json",
+      "export_record": "floor/candidate-catalog.json",
+      "source_sha256": "e94c64129bce963c187741f62623361f09bbd57f83b181fb7fcc278346ceb9fe",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "ac4b0dd842a5645415c5a4b4c0f25ed4fa7670b0f4e7826741dced7d95a05402",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 16008,
+          "touched_edges": [
+            "E",
+            "S"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_inner_NW",
+      "family": "floor",
+      "mask": 127,
+      "source_path": "art-source/ember/production-v008/floor/raw/floor_inner_NW_v002.png",
+      "actual_crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "candidate_path": "art-source/ember/production-v008/floor/candidates/floor_inner_NW_v002_128.png",
+      "open_sides": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "closed_sides": [],
+      "corner_semantics": "northwest diagonal off; localized concave outer pocket",
+      "status": "VISUAL_SAMPLE_INTERFACES_NOT_PASSED",
+      "issues": [
+        "Single targeted model edit removes two gold corner fasteners, reduces transparent corner pocket; no centre hole or separate post. Pocket is about16percent rather than prompted12percent. Edge profiles and lips not unified."
+      ],
+      "producer_record": "floor/generation-record.json",
+      "export_record": "floor/candidate-catalog.json",
+      "source_sha256": "d08b14bd49bd31509f58a4faa1c6e678c51bb992dc51e33b74f2b8924015aae0",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "60825f6447a06c0dc0728606c1817b1d1235215e4fb78c9093bf36e122db033b",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 16040,
+          "touched_edges": [
+            "E",
+            "N",
+            "S",
+            "W"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    },
+    {
+      "id": "floor_narrow_NS",
+      "family": "floor",
+      "mask": 17,
+      "source_path": "art-source/ember/production-v008/floor/raw/floor_narrow_NS_v002.png",
+      "actual_crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "candidate_path": "art-source/ember/production-v008/floor/candidates/floor_narrow_NS_v002_128.png",
+      "open_sides": [
+        "N",
+        "S"
+      ],
+      "closed_sides": [
+        "E",
+        "W"
+      ],
+      "corner_semantics": "none; continuous longitudinal walkway",
+      "status": "VISUAL_SAMPLE_INTERFACES_NOT_PASSED",
+      "issues": [
+        "Single model edit makes explicit narrow north-south passage with broad real transparent sides and both open ends. Official red-white reference supplies neighbour semantics; its one-third width is a composition choice, not forced official geometry."
+      ],
+      "producer_record": "floor/generation-record.json",
+      "export_record": "floor/candidate-catalog.json",
+      "source_sha256": "ab6e04147c941ba1be81d824daa9354b3e70fadb9dd098490c5297e85088522a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "88ca7b2d44cff5b20d5b1bd623cd968fa7b2cb51026d6a4fac242dbb8e88ff2a",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 5888,
+          "touched_edges": [
+            "N",
+            "S"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    },
+    {
+      "id": "bank_straight_N",
+      "family": "bank",
+      "mask": 124,
+      "source_path": "art-source/ember/production-v008/bank/raw/bank_straight_N_v001.png",
+      "actual_crop_xyxy": [
+        0,
+        203,
+        1254,
+        1457
+      ],
+      "candidate_path": "art-source/ember/production-v008/bank/candidates/bank_straight_N_sample_v001.png",
+      "open_sides": [
+        "E",
+        "S",
+        "W"
+      ],
+      "closed_sides": [
+        "N"
+      ],
+      "corner_semantics": "North bank; water continues E/S/W.",
+      "status": "VISUAL_SAMPLE_PENDING_CONNECTION_REVIEW",
+      "issues": [
+        "Complete N bank registered as one image; sidewall is relatively tall; exact interfaces pending."
+      ],
+      "producer_record": "bank/generation-record.json",
+      "export_record": "bank/generation-record.json",
+      "source_sha256": "4b6964caeafe74f071f4cf499d4e817caa3db76cfd1e60e59839ea442f5b4810",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "40fd40c36671cf559fde88bbf563eb28e8c1f58d94538cff3a850641f927ee1a",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 3840,
+          "touched_edges": [
+            "E",
+            "N",
+            "W"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    },
+    {
+      "id": "bank_outer_NW",
+      "family": "bank",
+      "mask": 28,
+      "source_path": "art-source/ember/production-v008/bank/raw/bank_outer_NW_v002.png",
+      "actual_crop_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "candidate_path": "art-source/ember/production-v008/bank/candidates/bank_outer_NW_sample_v001.png",
+      "open_sides": [
+        "E",
+        "S"
+      ],
+      "closed_sides": [
+        "N",
+        "W"
+      ],
+      "corner_semantics": "Northwest outer bank; water southeast.",
+      "status": "VISUAL_SAMPLE_PENDING_CONNECTION_REVIEW",
+      "issues": [
+        "One targeted repair improved north/west total width; exact connection interfaces remain pending."
+      ],
+      "producer_record": "bank/generation-record.json",
+      "export_record": "bank/generation-record.json",
+      "source_sha256": "afe348bd4adb49364d4615f18214a57698892667370dc416c701b6e955710c4f",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "f971c7c2e0939829a82e587e1d6ec0617b930e952c5c96ac40ceb8be699a30bd",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 6930,
+          "touched_edges": [
+            "E",
+            "N",
+            "S",
+            "W"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    },
+    {
+      "id": "bank_inner_NW",
+      "family": "bank",
+      "mask": 127,
+      "source_path": "art-source/ember/production-v008/bank/raw/bank_inner_NW_v003.png",
+      "actual_crop_xyxy": [
+        66,
+        80,
+        1320,
+        1334
+      ],
+      "candidate_path": "art-source/ember/production-v008/bank/candidates/bank_inner_NW_sample_v003.png",
+      "open_sides": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "closed_sides": [],
+      "corner_semantics": "Only local NW curved bank, N/W cut ports, E/S water; exact neighboring profiles pending.",
+      "status": "VISUAL_SAMPLE_PENDING_CONNECTION_REVIEW",
+      "issues": [
+        "v003曲线构件整体注册后N/W有真实主体端口、E/S透明。跨度约半格、弧口与其他方向接口位置仍需统一；不登记正式无缝通过。"
+      ],
+      "producer_record": "bank/generation-record.json",
+      "export_record": "bank/generation-record.json",
+      "source_sha256": "77842daae3c005c22880dc471fba9629a3b97c44aa4a00c2aa79ee579341f35a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "candidate_sha256": "41ea58ba69f01a56bb1bfb62f45f92538ae4ba3dfec1d5fa5a7b37b291630682",
+      "target_size": [
+        128,
+        128
+      ],
+      "logical_tile_size": 32,
+      "layer_scale": 0.25,
+      "candidate_components_4_alpha_above_127": [
+        {
+          "pixels": 2471,
+          "touched_edges": [
+            "N",
+            "W"
+          ]
+        }
+      ],
+      "user_visual_approval": false
+    }
+  ]
+}

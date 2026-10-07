@@ -1,0 +1,1700 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "status": "NATIVE_ROBOT_20_FRAMES_V002_REPAIR_GENERATED",
+  "scope": "C01 repair: four original idle PNGs reused unchanged; sixteen versioned walk PNGs and one atlas; no new art units or collect action",
+  "canvas": [
+    64,
+    96
+  ],
+  "anchor": [
+    32,
+    80
+  ],
+  "bbox_limit": [
+    40,
+    64
+  ],
+  "directions": [
+    "down",
+    "left",
+    "right",
+    "up"
+  ],
+  "palette": [
+    "#101820",
+    "#182631",
+    "#2B3E4B",
+    "#4D6470",
+    "#829BA3",
+    "#BECBC4",
+    "#7B4D35",
+    "#B77C4B",
+    "#E2B77A",
+    "#51C5C2",
+    "#E5A44B",
+    "#E65B4A",
+    "#566B78",
+    "#203A4B",
+    "#406B78",
+    "#ECE9D8"
+  ],
+  "frames": [
+    {
+      "id": "robot_idle_down",
+      "direction": "down",
+      "state": "idle",
+      "frame_index": 0,
+      "file": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+      "coord": [
+        0,
+        0
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+      "status": "NATIVE_FRAME_ART_REVIEW_PASS",
+      "source_use": "EXISTING_ACCEPTED_FRAME_UNCHANGED",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "appearance": "中性暗蓝灰状态窗；8个像素均为#2B3E4B",
+          "safe_active_rect": [
+            30,
+            52,
+            34,
+            54
+          ],
+          "center": [
+            32,
+            53
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.5520833333333334
+          ],
+          "mask_delivery_status": "NOT_PRODUCED"
+        }
+      ],
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          12,
+          21,
+          52,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "idle足底边界80；末行79",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      }
+    },
+    {
+      "id": "robot_walk_down_f00",
+      "direction": "down",
+      "state": "walk",
+      "frame_index": 0,
+      "file": "res://assets/ember/characters/robot/robot_walk_down_f00_v002.png",
+      "coord": [
+        1,
+        0
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            30,
+            52,
+            34,
+            54
+          ],
+          "center": [
+            32,
+            53
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.5520833333333334
+          ],
+          "mask_delivery_status": "NOT_PRODUCED"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          12,
+          21,
+          52,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_down_f00",
+      "repair_changed_pixels": 9
+    },
+    {
+      "id": "robot_walk_down_f01",
+      "direction": "down",
+      "state": "walk",
+      "frame_index": 1,
+      "file": "res://assets/ember/characters/robot/robot_walk_down_f01_v002.png",
+      "coord": [
+        2,
+        0
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "f95d486bc2c11f4bf1364a879b3b091dc0015320092a26a8c0b113bf8b2bc779",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            30,
+            51,
+            34,
+            53
+          ],
+          "center": [
+            32,
+            52
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.5416666666666666
+          ],
+          "mask_delivery_status": "NOT_PRODUCED"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          12,
+          20,
+          52,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_down_f01",
+      "repair_changed_pixels": 6
+    },
+    {
+      "id": "robot_walk_down_f02",
+      "direction": "down",
+      "state": "walk",
+      "frame_index": 2,
+      "file": "res://assets/ember/characters/robot/robot_walk_down_f02_v002.png",
+      "coord": [
+        3,
+        0
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            30,
+            52,
+            34,
+            54
+          ],
+          "center": [
+            32,
+            53
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.5520833333333334
+          ],
+          "mask_delivery_status": "NOT_PRODUCED"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          12,
+          21,
+          52,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_down_f02",
+      "repair_changed_pixels": 7
+    },
+    {
+      "id": "robot_walk_down_f03",
+      "direction": "down",
+      "state": "walk",
+      "frame_index": 3,
+      "file": "res://assets/ember/characters/robot/robot_walk_down_f03_v002.png",
+      "coord": [
+        4,
+        0
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "aa6507d006d10b81bcf299c4bec1f3b59b3f21bec135ec8283497fcd47106f07",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            30,
+            51,
+            34,
+            53
+          ],
+          "center": [
+            32,
+            52
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.5,
+            0.5416666666666666
+          ],
+          "mask_delivery_status": "NOT_PRODUCED"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          12,
+          20,
+          52,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_down_f03",
+      "repair_changed_pixels": 6
+    },
+    {
+      "id": "robot_idle_left",
+      "direction": "left",
+      "state": "idle",
+      "frame_index": 0,
+      "file": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+      "coord": [
+        0,
+        1
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+      "status": "NATIVE_FRAME_ART_REVIEW_PASS",
+      "source_use": "AI_MATERIAL_AND_POSE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+      "finishing_record": "art-source/ember/batch-02-robot/finished-frames/robot_idle_left_v001.finish.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            26,
+            49,
+            28,
+            51
+          ],
+          "center": [
+            27,
+            50
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.421875,
+            0.5208333333333334
+          ],
+          "mask_delivery_status": "NOT_PRODUCED",
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          18,
+          21,
+          45,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "idle足底边界80；末行79",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE"
+    },
+    {
+      "id": "robot_walk_left_f00",
+      "direction": "left",
+      "state": "walk",
+      "frame_index": 0,
+      "file": "res://assets/ember/characters/robot/robot_walk_left_f00_v002.png",
+      "coord": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            26,
+            49,
+            28,
+            51
+          ],
+          "center": [
+            27,
+            50
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.421875,
+            0.5208333333333334
+          ],
+          "mask_delivery_status": "NOT_PRODUCED",
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          17,
+          21,
+          46,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_left_f00",
+      "repair_changed_pixels": 20
+    },
+    {
+      "id": "robot_walk_left_f01",
+      "direction": "left",
+      "state": "walk",
+      "frame_index": 1,
+      "file": "res://assets/ember/characters/robot/robot_walk_left_f01_v002.png",
+      "coord": [
+        2,
+        1
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            26,
+            48,
+            28,
+            50
+          ],
+          "center": [
+            27,
+            49
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.421875,
+            0.5104166666666666
+          ],
+          "mask_delivery_status": "NOT_PRODUCED",
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          18,
+          20,
+          45,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_left_f01",
+      "repair_changed_pixels": 18
+    },
+    {
+      "id": "robot_walk_left_f02",
+      "direction": "left",
+      "state": "walk",
+      "frame_index": 2,
+      "file": "res://assets/ember/characters/robot/robot_walk_left_f02_v002.png",
+      "coord": [
+        3,
+        1
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            26,
+            49,
+            28,
+            51
+          ],
+          "center": [
+            27,
+            50
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.421875,
+            0.5208333333333334
+          ],
+          "mask_delivery_status": "NOT_PRODUCED",
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          18,
+          21,
+          44,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_left_f02",
+      "repair_changed_pixels": 32
+    },
+    {
+      "id": "robot_walk_left_f03",
+      "direction": "left",
+      "state": "walk",
+      "frame_index": 3,
+      "file": "res://assets/ember/characters/robot/robot_walk_left_f03_v002.png",
+      "coord": [
+        4,
+        1
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            26,
+            48,
+            28,
+            50
+          ],
+          "center": [
+            27,
+            49
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.421875,
+            0.5104166666666666
+          ],
+          "mask_delivery_status": "NOT_PRODUCED",
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          18,
+          20,
+          45,
+          78
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 78,
+        "rgb_count": 11,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_left_f03",
+      "repair_changed_pixels": 22
+    },
+    {
+      "id": "robot_idle_right",
+      "direction": "right",
+      "state": "idle",
+      "frame_index": 0,
+      "file": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+      "coord": [
+        0,
+        2
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+      "status": "NATIVE_FRAME_ART_REVIEW_PASS",
+      "source_use": "AI_MATERIAL_AND_POSE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+      "finishing_record": "art-source/ember/batch-02-robot/finished-frames/robot_idle_right_v001.finish.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            36,
+            49,
+            38,
+            51
+          ],
+          "center": [
+            37,
+            50
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.578125,
+            0.5208333333333334
+          ],
+          "mask_delivery_status": "NOT_PRODUCED",
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          17,
+          21,
+          46,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "idle足底边界80；末行79",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE"
+    },
+    {
+      "id": "robot_walk_right_f00",
+      "direction": "right",
+      "state": "walk",
+      "frame_index": 0,
+      "file": "res://assets/ember/characters/robot/robot_walk_right_f00_v002.png",
+      "coord": [
+        1,
+        2
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            36,
+            49,
+            38,
+            51
+          ],
+          "center": [
+            37,
+            50
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.578125,
+            0.5208333333333334
+          ],
+          "mask_delivery_status": "NOT_PRODUCED",
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          18,
+          21,
+          48,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_right_f00",
+      "repair_changed_pixels": 0
+    },
+    {
+      "id": "robot_walk_right_f01",
+      "direction": "right",
+      "state": "walk",
+      "frame_index": 1,
+      "file": "res://assets/ember/characters/robot/robot_walk_right_f01_v002.png",
+      "coord": [
+        2,
+        2
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            36,
+            48,
+            38,
+            50
+          ],
+          "center": [
+            37,
+            49
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.578125,
+            0.5104166666666666
+          ],
+          "mask_delivery_status": "NOT_PRODUCED",
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          17,
+          20,
+          46,
+          78
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 78,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_right_f01",
+      "repair_changed_pixels": 0
+    },
+    {
+      "id": "robot_walk_right_f02",
+      "direction": "right",
+      "state": "walk",
+      "frame_index": 2,
+      "file": "res://assets/ember/characters/robot/robot_walk_right_f02_v002.png",
+      "coord": [
+        3,
+        2
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "29976d10acaf633868d577e2be6eac8194ffd162965483ff261ae3f63996f311",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            36,
+            49,
+            38,
+            51
+          ],
+          "center": [
+            37,
+            50
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.578125,
+            0.5208333333333334
+          ],
+          "mask_delivery_status": "NOT_PRODUCED",
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          16,
+          21,
+          46,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_right_f02",
+      "repair_changed_pixels": 6
+    },
+    {
+      "id": "robot_walk_right_f03",
+      "direction": "right",
+      "state": "walk",
+      "frame_index": 3,
+      "file": "res://assets/ember/characters/robot/robot_walk_right_f03_v002.png",
+      "coord": [
+        4,
+        2
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [
+        {
+          "id": "chest_status",
+          "safe_active_rect": [
+            36,
+            48,
+            38,
+            50
+          ],
+          "center": [
+            37,
+            49
+          ],
+          "center_basis": "safe_active_rect_geometric_center",
+          "normalized_uv": [
+            0.578125,
+            0.5104166666666666
+          ],
+          "mask_delivery_status": "NOT_PRODUCED",
+          "visibility": "PARTIAL_SIDE_VIEW"
+        }
+      ],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          17,
+          20,
+          46,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_right_f03",
+      "repair_changed_pixels": 8
+    },
+    {
+      "id": "robot_idle_up",
+      "direction": "up",
+      "state": "idle",
+      "frame_index": 0,
+      "file": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+      "coord": [
+        0,
+        3
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+      "status": "NATIVE_FRAME_ART_REVIEW_PASS",
+      "source_use": "AI_MATERIAL_AND_POSE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+      "finishing_record": "art-source/ember/batch-02-robot/finished-frames/robot_idle_up_v001.finish.json",
+      "runtime_windows": [],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          13,
+          21,
+          51,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "idle足底边界80；末行79",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE"
+    },
+    {
+      "id": "robot_walk_up_f00",
+      "direction": "up",
+      "state": "walk",
+      "frame_index": 0,
+      "file": "res://assets/ember/characters/robot/robot_walk_up_f00_v002.png",
+      "coord": [
+        1,
+        3
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          13,
+          21,
+          51,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_up_f00",
+      "repair_changed_pixels": 0
+    },
+    {
+      "id": "robot_walk_up_f01",
+      "direction": "up",
+      "state": "walk",
+      "frame_index": 1,
+      "file": "res://assets/ember/characters/robot/robot_walk_up_f01_v002.png",
+      "coord": [
+        2,
+        3
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          13,
+          20,
+          51,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_up_f01",
+      "repair_changed_pixels": 0
+    },
+    {
+      "id": "robot_walk_up_f02",
+      "direction": "up",
+      "state": "walk",
+      "frame_index": 2,
+      "file": "res://assets/ember/characters/robot/robot_walk_up_f02_v002.png",
+      "coord": [
+        3,
+        3
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          13,
+          21,
+          51,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_up_f02",
+      "repair_changed_pixels": 0
+    },
+    {
+      "id": "robot_walk_up_f03",
+      "direction": "up",
+      "state": "walk",
+      "frame_index": 3,
+      "file": "res://assets/ember/characters/robot/robot_walk_up_f03_v002.png",
+      "coord": [
+        4,
+        3
+      ],
+      "anchor": [
+        32,
+        80
+      ],
+      "sha256": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+      "status": "NATIVE_FRAME_V002_REPAIR_GENERATED",
+      "source_use": "EDITABLE_NATIVE_RIG_AND_ANNOTATION_REPAIR_OF_V001",
+      "finishing_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+      "runtime_windows": [],
+      "measurement": {
+        "canvas": [
+          64,
+          96
+        ],
+        "bbox": [
+          13,
+          20,
+          51,
+          80
+        ],
+        "anchor": [
+          32,
+          80
+        ],
+        "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+        "visible_bottom_boundary": 80,
+        "rgb_count": 10,
+        "rules": {
+          "binary_alpha": true,
+          "palette": true,
+          "subject_max_40x64": true,
+          "ground_boundary_80": true,
+          "subject_centered_in_x12_52": true
+        }
+      },
+      "emitter_points": [],
+      "emission_baked": false,
+      "layering": "single_flattened_rgba_frame; native rig masks are editable source annotations, not runtime component layers",
+      "tiling": "NONE_OBJECT_SPRITE",
+      "finishing_record_frame_id": "robot_walk_up_f03",
+      "repair_changed_pixels": 0
+    }
+  ],
+  "animations": [
+    {
+      "id": "idle_down",
+      "direction": "down",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_down"
+      ],
+      "fps": 1.0,
+      "loop": true,
+      "preview": "single still frame"
+    },
+    {
+      "id": "walk_down",
+      "direction": "down",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_down_f00",
+        "robot_walk_down_f01",
+        "robot_walk_down_f02",
+        "robot_walk_down_f03"
+      ],
+      "fps": 8.0,
+      "loop": true
+    },
+    {
+      "id": "idle_left",
+      "direction": "left",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_left"
+      ],
+      "fps": 1.0,
+      "loop": true,
+      "preview": "single still frame"
+    },
+    {
+      "id": "walk_left",
+      "direction": "left",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_left_f00",
+        "robot_walk_left_f01",
+        "robot_walk_left_f02",
+        "robot_walk_left_f03"
+      ],
+      "fps": 8.0,
+      "loop": true
+    },
+    {
+      "id": "idle_right",
+      "direction": "right",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_right"
+      ],
+      "fps": 1.0,
+      "loop": true,
+      "preview": "single still frame"
+    },
+    {
+      "id": "walk_right",
+      "direction": "right",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_right_f00",
+        "robot_walk_right_f01",
+        "robot_walk_right_f02",
+        "robot_walk_right_f03"
+      ],
+      "fps": 8.0,
+      "loop": true
+    },
+    {
+      "id": "idle_up",
+      "direction": "up",
+      "state": "idle",
+      "frame_ids": [
+        "robot_idle_up"
+      ],
+      "fps": 1.0,
+      "loop": true,
+      "preview": "single still frame"
+    },
+    {
+      "id": "walk_up",
+      "direction": "up",
+      "state": "walk",
+      "frame_ids": [
+        "robot_walk_up_f00",
+        "robot_walk_up_f01",
+        "robot_walk_up_f02",
+        "robot_walk_up_f03"
+      ],
+      "fps": 8.0,
+      "loop": true
+    }
+  ],
+  "sheet": {
+    "texture": "res://assets/ember/characters/robot/robot_animations_v002.png",
+    "size": [
+      320,
+      384
+    ],
+    "columns": 5,
+    "rows": 4,
+    "frames": [
+      {
+        "frame_id": "robot_idle_down",
+        "coord": [
+          0,
+          0
+        ]
+      },
+      {
+        "frame_id": "robot_walk_down_f00",
+        "coord": [
+          1,
+          0
+        ]
+      },
+      {
+        "frame_id": "robot_walk_down_f01",
+        "coord": [
+          2,
+          0
+        ]
+      },
+      {
+        "frame_id": "robot_walk_down_f02",
+        "coord": [
+          3,
+          0
+        ]
+      },
+      {
+        "frame_id": "robot_walk_down_f03",
+        "coord": [
+          4,
+          0
+        ]
+      },
+      {
+        "frame_id": "robot_idle_left",
+        "coord": [
+          0,
+          1
+        ]
+      },
+      {
+        "frame_id": "robot_walk_left_f00",
+        "coord": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame_id": "robot_walk_left_f01",
+        "coord": [
+          2,
+          1
+        ]
+      },
+      {
+        "frame_id": "robot_walk_left_f02",
+        "coord": [
+          3,
+          1
+        ]
+      },
+      {
+        "frame_id": "robot_walk_left_f03",
+        "coord": [
+          4,
+          1
+        ]
+      },
+      {
+        "frame_id": "robot_idle_right",
+        "coord": [
+          0,
+          2
+        ]
+      },
+      {
+        "frame_id": "robot_walk_right_f00",
+        "coord": [
+          1,
+          2
+        ]
+      },
+      {
+        "frame_id": "robot_walk_right_f01",
+        "coord": [
+          2,
+          2
+        ]
+      },
+      {
+        "frame_id": "robot_walk_right_f02",
+        "coord": [
+          3,
+          2
+        ]
+      },
+      {
+        "frame_id": "robot_walk_right_f03",
+        "coord": [
+          4,
+          2
+        ]
+      },
+      {
+        "frame_id": "robot_idle_up",
+        "coord": [
+          0,
+          3
+        ]
+      },
+      {
+        "frame_id": "robot_walk_up_f00",
+        "coord": [
+          1,
+          3
+        ]
+      },
+      {
+        "frame_id": "robot_walk_up_f01",
+        "coord": [
+          2,
+          3
+        ]
+      },
+      {
+        "frame_id": "robot_walk_up_f02",
+        "coord": [
+          3,
+          3
+        ]
+      },
+      {
+        "frame_id": "robot_walk_up_f03",
+        "coord": [
+          4,
+          3
+        ]
+      }
+    ],
+    "sha256": "b0a449893f3818e75b5b2b5ebed7bb6f775f951d11a7cbd1b3a446aeb80ef8e9"
+  },
+  "anchor_convention": "固定虚拟脚底原点(32,80)，idle可见底边80；walk抬脚允许可见底边78..80，画布/节点offset不随帧改变。",
+  "new_frames_in_batch": 16,
+  "art_review": "art-source/ember/robot-repair-v002/independent-repair-review.json",
+  "revision": "v002",
+  "pixel_changed_frame_count": 10,
+  "pixel_changed_frames": [
+    "robot_walk_down_f00",
+    "robot_walk_down_f01",
+    "robot_walk_down_f02",
+    "robot_walk_down_f03",
+    "robot_walk_left_f00",
+    "robot_walk_left_f01",
+    "robot_walk_left_f02",
+    "robot_walk_left_f03",
+    "robot_walk_right_f02",
+    "robot_walk_right_f03"
+  ],
+  "repair_record": "art-source/ember/robot-repair-v002/repair-record-v002.json",
+  "repair_record_sha256": "4ee095f4f062cd18a2587a2ba2757f8732c961307e12d63c93b01ae237120559",
+  "supersedes": "res://assets/ember/characters/robot/robot_frames_catalog_v001.json",
+  "supersedes_catalog_sha256": "f4b4f4a7f98afb3d14ea3d8e8825347d7d3bc747bb824d3d78c6f51195d15a94",
+  "acceptance_report": "art-source/ember/robot-repair-v002/final-acceptance.json",
+  "repair_dependency_sha256": {
+    "art-source/ember/robot-repair-v002/repair-record-v002.json": "4ee095f4f062cd18a2587a2ba2757f8732c961307e12d63c93b01ae237120559",
+    "art-source/ember/batch-02-robot/tools/finish_robot_frames.py": "03094ed523fa56ff9f751ecf4dacdb47aa0604a56941a7ab8d8accaafdbcc723",
+    "art-source/ember/robot-repair-v002/annotations/rig_down_v002.json": "86fde2a4bee0bcf1d13ec5c34e27d299cb665fe981edf75552b08a19eac82cce",
+    "art-source/ember/robot-repair-v002/annotations/rig_left_v002.json": "d8100917fb8cccf1786d7bc86aecdc2a529035dbf22292db1f85df0527185b36",
+    "art-source/ember/robot-repair-v002/annotations/rig_right_v002.json": "d5a0f9c7a5ab45b3754d94bbbcdff83a4c6b5910f799e693fc5288993965f152",
+    "art-source/ember/robot-repair-v002/annotations/rig_up_v002.json": "d780ff9ee69266563f09013fe0706c7420e47bf5bdc09346873c263deedc9fc1",
+    "art-source/ember/robot-repair-v002/annotations/walk_down_f00.json": "dbd4d5ac9f2c5bff44663251d517861a37711523dfec170d48b7686ff67cb812",
+    "art-source/ember/robot-repair-v002/annotations/walk_down_f01.json": "e908b477a928eb1b9520852d630d7c314cd2e35eb1dcebd15dfd1b2ee2c9cb79",
+    "art-source/ember/robot-repair-v002/annotations/walk_down_f02.json": "7c6e0a033f58eddc2c1f20939cfd172756795e4264d1d3da238ed46f458d4d8c",
+    "art-source/ember/robot-repair-v002/annotations/walk_down_f03.json": "65cc0fd944ae3ae3a4c94541a3595ce5f08c42e6cdfa42e10e3eca91f43bd314",
+    "art-source/ember/robot-repair-v002/annotations/walk_left_f00.json": "0c9debb8714c26a5a0626fa7d589bbee24a7bb5f4ae605958b852a113c8808f7",
+    "art-source/ember/robot-repair-v002/annotations/walk_left_f01.json": "59532f759aa6ec55b652b9ea1763e6600ab07218a25bde3fd62d3b18b03f8513",
+    "art-source/ember/robot-repair-v002/annotations/walk_left_f02.json": "856bbdd86951ca054b46175988f63662e19e6b72ab8b5f346cac12399974e4d4",
+    "art-source/ember/robot-repair-v002/annotations/walk_left_f03.json": "891c6c4f38d0bbc0bd9a89e66251f2db00818ab5cbd2f46caa39bf060e05ac4a",
+    "art-source/ember/robot-repair-v002/annotations/walk_right_f00.json": "e35264dc269a8c069513ea773c13083bfb94e132d8b31515763d81f869ce775a",
+    "art-source/ember/robot-repair-v002/annotations/walk_right_f01.json": "a5765277f5f9b44b9342dfddb1b7943b50a0cdbb2d48c042cb22708d0491e712",
+    "art-source/ember/robot-repair-v002/annotations/walk_right_f02.json": "46b4f741f69a2c526ca288dcab75890d3bb76f3391f23b5300bd298d7817533c",
+    "art-source/ember/robot-repair-v002/annotations/walk_right_f03.json": "f50ad32acd1d61f1b8737c4c7ce450e27b8ba7e16a05d86a9aa5d2433cdcf718",
+    "art-source/ember/robot-repair-v002/annotations/walk_up_f00.json": "0a743b5d080223a7153a0a6e4e7fdbb1c6fe514c45d6ff6669afce956c8e6ae6",
+    "art-source/ember/robot-repair-v002/annotations/walk_up_f01.json": "f114db9ed4ee809028e841edf814e353196b9e717d456f06b3ec84ef30af9899",
+    "art-source/ember/robot-repair-v002/annotations/walk_up_f02.json": "8a4d14cdb22ba3c237fa0b0c5e61e4f153badba4f5d9353c7d87a4096468c38c",
+    "art-source/ember/robot-repair-v002/annotations/walk_up_f03.json": "c9ab07a334948ec25ae7d003eabb0f07199949e22c76c1ca03299f2fcbc1e08a",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_animations_v002.png": "b0a449893f3818e75b5b2b5ebed7bb6f775f951d11a7cbd1b3a446aeb80ef8e9",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_down_f00_v002.png": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_down_f01_v002.png": "f95d486bc2c11f4bf1364a879b3b091dc0015320092a26a8c0b113bf8b2bc779",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_down_f02_v002.png": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_down_f03_v002.png": "aa6507d006d10b81bcf299c4bec1f3b59b3f21bec135ec8283497fcd47106f07",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_left_f00_v002.png": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_left_f01_v002.png": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_left_f02_v002.png": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_left_f03_v002.png": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_right_f00_v002.png": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_right_f01_v002.png": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_right_f02_v002.png": "29976d10acaf633868d577e2be6eac8194ffd162965483ff261ae3f63996f311",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_right_f03_v002.png": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_up_f00_v002.png": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_up_f01_v002.png": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_up_f02_v002.png": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+    "art-source/ember/robot-repair-v002/finished-frames/robot_walk_up_f03_v002.png": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+    "art-source/ember/robot-repair-v002/tools/generate_repair.py": "19f337f113ec8a1c6187b8db9125a3c9b8d40022f066b74de28e67b75cc65cae"
+  }
+}

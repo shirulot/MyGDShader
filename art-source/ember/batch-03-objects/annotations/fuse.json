@@ -1,0 +1,76 @@
+{
+  "observations": "实际母稿为横陶瓷管、两种不同端头，左端为分叉、右端细槽；原生38×12较小，孔槽需在本体像素网格清楚保留。",
+  "adjustments": [
+    "陶瓷管中部[25,47,41,50)整理为连续浅装甲块、下一行钢亮灰，消除模型微颗粒但保留上亮下暗",
+    "左叉口归并2×2透明缺口；右端依据母稿细槽原生切1×3真透明孔，形成方向/描边可观察结构",
+    "不加灯或文字；底界56，同64画布保留8px以上留边"
+  ],
+  "patches": [
+    {
+      "type": "rect",
+      "bounds": [
+        25,
+        47,
+        41,
+        50
+      ],
+      "color": 5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          26,
+          50
+        ],
+        [
+          40,
+          50
+        ]
+      ],
+      "color": 4
+    },
+    {
+      "type": "rect",
+      "bounds": [
+        13,
+        49,
+        16,
+        51
+      ],
+      "color": "transparent"
+    },
+    {
+      "type": "rect",
+      "bounds": [
+        48,
+        48,
+        49,
+        51
+      ],
+      "color": "transparent"
+    }
+  ],
+  "calibration_features": {
+    "orientation": "左叉/右细槽，不对称",
+    "through_hole_rects": [
+      [
+        48,
+        48,
+        49,
+        51
+      ]
+    ],
+    "notch_rects": [
+      [
+        13,
+        49,
+        16,
+        51
+      ]
+    ]
+  },
+  "emitter_points": [],
+  "runtime_windows": [],
+  "components": []
+}

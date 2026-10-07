@@ -1,0 +1,847 @@
+{
+	"builder_sha256": "2a4e09015b1dd5aa8166663bbfa1887a63f6a461752cfeed9e5cc344d1b44cbe",
+	"catalog": "res://assets/ember/characters/robot/robot_frames_catalog_v002.json",
+	"catalog_sha256": "4294535fb05c1fec456003184aa674c6a639d64eeb8ccb57ee03c8d9b7b14630",
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"existing_scene_preserved": true,
+	"foot_anchor": [
+		32,
+		80
+	],
+	"native_frame_size": [
+		64,
+		96
+	],
+	"observed": {
+		"clips": {
+			"idle_down": {
+				"fps": 1.0,
+				"frame_count": 1,
+				"loop_mode": 1
+			},
+			"idle_left": {
+				"fps": 1.0,
+				"frame_count": 1,
+				"loop_mode": 1
+			},
+			"idle_right": {
+				"fps": 1.0,
+				"frame_count": 1,
+				"loop_mode": 1
+			},
+			"idle_up": {
+				"fps": 1.0,
+				"frame_count": 1,
+				"loop_mode": 1
+			},
+			"walk_down": {
+				"fps": 8.0,
+				"frame_count": 4,
+				"loop_mode": 1
+			},
+			"walk_left": {
+				"fps": 8.0,
+				"frame_count": 4,
+				"loop_mode": 1
+			},
+			"walk_right": {
+				"fps": 8.0,
+				"frame_count": 4,
+				"loop_mode": 1
+			},
+			"walk_up": {
+				"fps": 8.0,
+				"frame_count": 4,
+				"loop_mode": 1
+			}
+		},
+		"import_configs": {
+			"res://assets/ember/characters/robot/robot_animations_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_idle_down_v001.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 0,
+				"detect_3d/compress_to": 1,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": true,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 0
+			},
+			"res://assets/ember/characters/robot/robot_idle_left_v001.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 0,
+				"detect_3d/compress_to": 1,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": true,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 0
+			},
+			"res://assets/ember/characters/robot/robot_idle_right_v001.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 0,
+				"detect_3d/compress_to": 1,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": true,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 0
+			},
+			"res://assets/ember/characters/robot/robot_idle_up_v001.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 0,
+				"detect_3d/compress_to": 1,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": true,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 0
+			},
+			"res://assets/ember/characters/robot/robot_walk_down_f00_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_down_f01_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_down_f02_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_down_f03_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_left_f00_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_left_f01_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_left_f02_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_left_f03_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_right_f00_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_right_f01_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_right_f02_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_right_f03_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_up_f00_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_up_f01_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_up_f02_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			},
+			"res://assets/ember/characters/robot/robot_walk_up_f03_v002.png": {
+				"compress/mode": 0,
+				"compress/normal_map": 2,
+				"detect_3d/compress_to": 0,
+				"mipmaps/generate": false,
+				"process/fix_alpha_border": false,
+				"process/normal_map_invert_y": false,
+				"process/premult_alpha": false,
+				"roughness/mode": 1
+			}
+		},
+		"input_frame_count": 20,
+		"native_frame_8_components": {
+			"robot_idle_down": 1,
+			"robot_idle_left": 1,
+			"robot_idle_right": 1,
+			"robot_idle_up": 1,
+			"robot_walk_down_f00": 1,
+			"robot_walk_down_f01": 1,
+			"robot_walk_down_f02": 1,
+			"robot_walk_down_f03": 1,
+			"robot_walk_left_f00": 1,
+			"robot_walk_left_f01": 1,
+			"robot_walk_left_f02": 1,
+			"robot_walk_left_f03": 1,
+			"robot_walk_right_f00": 1,
+			"robot_walk_right_f01": 1,
+			"robot_walk_right_f02": 1,
+			"robot_walk_right_f03": 1,
+			"robot_walk_up_f00": 1,
+			"robot_walk_up_f01": 1,
+			"robot_walk_up_f02": 1,
+			"robot_walk_up_f03": 1
+		},
+		"native_regions_equal_to_source": 20,
+		"runtime_idle_static_count": 8,
+		"runtime_observation_ms": 632,
+		"runtime_playback": {
+			"Double/IdleDown": {
+				"animation": "idle_down",
+				"transitions": [],
+				"visited_frames": [
+					0
+				],
+				"wrap_3_to_0_count": 0
+			},
+			"Double/IdleLeft": {
+				"animation": "idle_left",
+				"transitions": [],
+				"visited_frames": [
+					0
+				],
+				"wrap_3_to_0_count": 0
+			},
+			"Double/IdleRight": {
+				"animation": "idle_right",
+				"transitions": [],
+				"visited_frames": [
+					0
+				],
+				"wrap_3_to_0_count": 0
+			},
+			"Double/IdleUp": {
+				"animation": "idle_up",
+				"transitions": [],
+				"visited_frames": [
+					0
+				],
+				"wrap_3_to_0_count": 0
+			},
+			"Double/WalkDown": {
+				"animation": "walk_down",
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				],
+				"wrap_3_to_0_count": 1
+			},
+			"Double/WalkLeft": {
+				"animation": "walk_left",
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				],
+				"wrap_3_to_0_count": 1
+			},
+			"Double/WalkRight": {
+				"animation": "walk_right",
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				],
+				"wrap_3_to_0_count": 1
+			},
+			"Double/WalkUp": {
+				"animation": "walk_up",
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				],
+				"wrap_3_to_0_count": 1
+			},
+			"Native/IdleDown": {
+				"animation": "idle_down",
+				"transitions": [],
+				"visited_frames": [
+					0
+				],
+				"wrap_3_to_0_count": 0
+			},
+			"Native/IdleLeft": {
+				"animation": "idle_left",
+				"transitions": [],
+				"visited_frames": [
+					0
+				],
+				"wrap_3_to_0_count": 0
+			},
+			"Native/IdleRight": {
+				"animation": "idle_right",
+				"transitions": [],
+				"visited_frames": [
+					0
+				],
+				"wrap_3_to_0_count": 0
+			},
+			"Native/IdleUp": {
+				"animation": "idle_up",
+				"transitions": [],
+				"visited_frames": [
+					0
+				],
+				"wrap_3_to_0_count": 0
+			},
+			"Native/WalkDown": {
+				"animation": "walk_down",
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				],
+				"wrap_3_to_0_count": 1
+			},
+			"Native/WalkLeft": {
+				"animation": "walk_left",
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				],
+				"wrap_3_to_0_count": 1
+			},
+			"Native/WalkRight": {
+				"animation": "walk_right",
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				],
+				"wrap_3_to_0_count": 1
+			},
+			"Native/WalkUp": {
+				"animation": "walk_up",
+				"transitions": [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					],
+					[
+						2,
+						3
+					],
+					[
+						3,
+						0
+					],
+					[
+						0,
+						1
+					],
+					[
+						1,
+						2
+					]
+				],
+				"visited_frames": [
+					0,
+					1,
+					2,
+					3
+				],
+				"wrap_3_to_0_count": 1
+			}
+		},
+		"runtime_walk_complete_cycle_count": 8,
+		"sandbox_animated_sprite_count": 16,
+		"sheet_imported_size": [
+			320,
+			384
+		],
+		"sheet_sha256": "b0a449893f3818e75b5b2b5ebed7bb6f775f951d11a7cbd1b3a446aeb80ef8e9",
+		"source_import_readbacks": [
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_animations_v002.png",
+				"sha256": "b0a449893f3818e75b5b2b5ebed7bb6f775f951d11a7cbd1b3a446aeb80ef8e9",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_idle_down_v001.png",
+				"sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+				"transparent_rgb_changed": 1090,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_down_f00_v002.png",
+				"sha256": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_down_f01_v002.png",
+				"sha256": "f95d486bc2c11f4bf1364a879b3b091dc0015320092a26a8c0b113bf8b2bc779",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_down_f02_v002.png",
+				"sha256": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_down_f03_v002.png",
+				"sha256": "aa6507d006d10b81bcf299c4bec1f3b59b3f21bec135ec8283497fcd47106f07",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_idle_left_v001.png",
+				"sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+				"transparent_rgb_changed": 866,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_left_f00_v002.png",
+				"sha256": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_left_f01_v002.png",
+				"sha256": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_left_f02_v002.png",
+				"sha256": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_left_f03_v002.png",
+				"sha256": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_idle_right_v001.png",
+				"sha256": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+				"transparent_rgb_changed": 858,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_right_f00_v002.png",
+				"sha256": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_right_f01_v002.png",
+				"sha256": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_right_f02_v002.png",
+				"sha256": "29976d10acaf633868d577e2be6eac8194ffd162965483ff261ae3f63996f311",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_right_f03_v002.png",
+				"sha256": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_idle_up_v001.png",
+				"sha256": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+				"transparent_rgb_changed": 1036,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_up_f00_v002.png",
+				"sha256": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_up_f01_v002.png",
+				"sha256": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_up_f02_v002.png",
+				"sha256": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			},
+			{
+				"alpha_changed": 0,
+				"path": "res://assets/ember/characters/robot/robot_walk_up_f03_v002.png",
+				"sha256": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d",
+				"transparent_rgb_changed": 0,
+				"visible_rgb_changed": 0
+			}
+		],
+		"source_sha256": {
+			"robot_idle_down": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff",
+			"robot_idle_left": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77",
+			"robot_idle_right": "70b6fddef9f9dd31d875f3455686686a8719e50f042197fbba6be10b8d4f06d2",
+			"robot_idle_up": "1d5d168775122cb78cded70e0e15b94a85720b7bd374e875df20935bc9f29833",
+			"robot_walk_down_f00": "bc40c56fe0017245cb2a9d7e7c36a8b98329bd0a2c7d6afcd7d417c37dbcb1c0",
+			"robot_walk_down_f01": "f95d486bc2c11f4bf1364a879b3b091dc0015320092a26a8c0b113bf8b2bc779",
+			"robot_walk_down_f02": "c023f2ff9b42ec8e2ac37c73ed66944f6d2f14b34025be5e12f54933b9d7707b",
+			"robot_walk_down_f03": "aa6507d006d10b81bcf299c4bec1f3b59b3f21bec135ec8283497fcd47106f07",
+			"robot_walk_left_f00": "34bddd813c6dd2e8501022706e5d175df384949b76722479e97a5df3f6ca4380",
+			"robot_walk_left_f01": "2a51af097240e47c5db6fafa5bf28240024db4a85ace24d662caa2d2c076189f",
+			"robot_walk_left_f02": "2eca9169d9b659beddbe3fe747ef06dbba19a9fd88b0b17fb24e715030cbe70c",
+			"robot_walk_left_f03": "b33936031b3cc1d331a7b28a59eedee01d7e2de5e5b7f788f65f057219d90993",
+			"robot_walk_right_f00": "bb6f458b7fa168f2b239c8beb8266eb8268842826255f53181aacd0e64067d0f",
+			"robot_walk_right_f01": "08ab4f71ecd584d0af18d68ec1567431fee47b8923942e55eee92c980afa3be3",
+			"robot_walk_right_f02": "29976d10acaf633868d577e2be6eac8194ffd162965483ff261ae3f63996f311",
+			"robot_walk_right_f03": "92a0151b69af183d2eb636266da95bdb90ddc07adc03d0fd6ee4da1e4ee84014",
+			"robot_walk_up_f00": "7234ff253c8b0f2f6b4822f38af0938b682af943e82e6a5f85f02135883efb25",
+			"robot_walk_up_f01": "cec41360ed53d96d755ca76aa22a03b68778308af3643ef9758596da78a0bc21",
+			"robot_walk_up_f02": "2c0745b5aae6a7376b20c4cb1e7682f48eec2c646d476d36d31cec7ee459e1fd",
+			"robot_walk_up_f03": "9012bcb8d8873e835bc4620087ffe78117a35f100d34eedd582b50c1b2dad98d"
+		},
+		"sprite_frames_clip_count": 8,
+		"sprite_frames_frame_count": 20
+	},
+	"sandbox_scene": "res://scenes/ember/robot_animation_sandbox_v002.tscn",
+	"scope": "v002 原生 PNG 哈希、导入 Alpha/可见 RGB、20 个 8 连通主体、图集逐像素一致性、SpriteFrames 重载、8 clips、锚点、Nearest、1×/2× 场景与真实计时循环；可选完整 40 项 GPU 逐帧读回。关节造型与步态质量仍需美术审阅。",
+	"sprite_frames": "res://assets/ember/characters/robot/robot_sprite_frames_v002.tres",
+	"status": "GODOT_ROBOT_ANIMATION_VALIDATED",
+	"timestamp_utc": "2026-10-04T08:25:58",
+	"verify_only": true
+}

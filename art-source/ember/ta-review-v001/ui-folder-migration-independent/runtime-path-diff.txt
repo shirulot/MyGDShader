@@ -1,0 +1,11 @@
+--- v006/scripts/ember/ui_edge_v001/edge_ui_style.gd
++++ current/scripts/ember/ui_edge_v001/edge_ui_style.gd
+@@ -3,7 +3,7 @@
+ ## 皮肤缺失时保留简单后备绘制，便于独立审阅脚本和后续替换素材。
+ 
+ const STATE = preload("res://scripts/ember/ui_edge_v001/edge_ui_state.gd")
+-const ASSET_ROOT := "res://assets/ember/ui_edge_v001/"
++const ASSET_ROOT := "res://assets/ember/ui_final/skins/"
+ static var _font: SystemFont
+ 
+ static func font() -> Font:

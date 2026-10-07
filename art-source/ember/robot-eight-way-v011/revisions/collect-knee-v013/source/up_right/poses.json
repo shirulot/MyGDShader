@@ -1,0 +1,918 @@
+{
+  "direction": "up_right",
+  "forward": [
+    0.7071067811865476,
+    -0.7071067811865476
+  ],
+  "status": "SOURCE_PART_ASSEMBLY_FOR_IMAGEGEN",
+  "frames": [
+    {
+      "frame": 0,
+      "state": {
+        "action": "collect",
+        "frame": 0,
+        "phase": "prepare",
+        "transforms": {
+          "body": {
+            "sourcePivot": [
+              32,
+              54
+            ],
+            "targetPivot": [
+              32,
+              54
+            ],
+            "radians": 0
+          },
+          "pelvis": {
+            "sourcePivot": [
+              32,
+              56
+            ],
+            "targetPivot": [
+              32,
+              56
+            ],
+            "radians": 0
+          },
+          "arm_left_upper": {
+            "sourcePivot": [
+              19,
+              46
+            ],
+            "targetPivot": [
+              19,
+              46
+            ],
+            "radians": -0.11999999999999988
+          },
+          "arm_left_lower": {
+            "sourcePivot": [
+              18,
+              50
+            ],
+            "targetPivot": [
+              18.48604019330181,
+              50.09094675070438
+            ],
+            "radians": -0.08639999999999981
+          },
+          "arm_right_upper": {
+            "sourcePivot": [
+              37,
+              47
+            ],
+            "targetPivot": [
+              37,
+              47
+            ],
+            "radians": 0.050000000000001155
+          },
+          "arm_right_lower": {
+            "sourcePivot": [
+              39,
+              51
+            ],
+            "targetPivot": [
+              38.797583843707216,
+              51.094959380121225
+            ],
+            "radians": 0.036000000000000254
+          },
+          "leg_left_upper": {
+            "sourcePivot": [
+              24,
+              54
+            ],
+            "targetPivot": [
+              24,
+              54
+            ],
+            "radians": 0
+          },
+          "leg_left_lower": {
+            "sourcePivot": [
+              24,
+              64
+            ],
+            "targetPivot": [
+              24,
+              64
+            ],
+            "radians": 0
+          },
+          "leg_left_end": {
+            "sourcePivot": [
+              24,
+              71
+            ],
+            "targetPivot": [
+              24,
+              71
+            ],
+            "radians": 0
+          },
+          "leg_right_upper": {
+            "sourcePivot": [
+              34,
+              55
+            ],
+            "targetPivot": [
+              34,
+              55
+            ],
+            "radians": 0
+          },
+          "leg_right_lower": {
+            "sourcePivot": [
+              34,
+              64
+            ],
+            "targetPivot": [
+              34,
+              64
+            ],
+            "radians": 0
+          },
+          "leg_right_end": {
+            "sourcePivot": [
+              35,
+              72
+            ],
+            "targetPivot": [
+              35,
+              72
+            ],
+            "radians": 0
+          }
+        },
+        "joints": {
+          "arm_left": {
+            "root": [
+              19,
+              46
+            ],
+            "joint": [
+              18.48604019330181,
+              50.09094675070438
+            ],
+            "wrist": [
+              19.91377275808189,
+              54.986003412630424
+            ]
+          },
+          "arm_right": {
+            "root": [
+              37,
+              47
+            ],
+            "joint": [
+              38.797583843707216,
+              51.094959380121225
+            ],
+            "wrist": [
+              38.581630496684,
+              57.091071800007086
+            ]
+          },
+          "leg_left": {
+            "root": [
+              24,
+              54
+            ],
+            "joint": [
+              24,
+              64
+            ],
+            "ankle": [
+              24,
+              71
+            ],
+            "lift": 0,
+            "contact": true
+          },
+          "leg_right": {
+            "root": [
+              34,
+              55
+            ],
+            "joint": [
+              34,
+              64
+            ],
+            "ankle": [
+              35,
+              72
+            ],
+            "lift": 0,
+            "contact": true
+          }
+        },
+        "notes": [],
+        "pelvis_shift": [
+          0,
+          0
+        ],
+        "upper_body_shift": [
+          0,
+          0
+        ],
+        "both_feet_fixed": true
+      },
+      "baseline_sha256": "cb0242af571d34909610c1bb0f4b41585060cb4cb04344528fc544f12571c6c5"
+    },
+    {
+      "frame": 1,
+      "state": {
+        "action": "collect",
+        "frame": 1,
+        "phase": "reach",
+        "transforms": {
+          "body": {
+            "sourcePivot": [
+              32,
+              54
+            ],
+            "targetPivot": [
+              31.999999999999996,
+              56.4
+            ],
+            "radians": 0
+          },
+          "pelvis": {
+            "sourcePivot": [
+              32,
+              56
+            ],
+            "targetPivot": [
+              31.505025253169418,
+              58.573241161390705
+            ],
+            "radians": 0
+          },
+          "arm_left_upper": {
+            "sourcePivot": [
+              19,
+              46
+            ],
+            "targetPivot": [
+              19,
+              48.4
+            ],
+            "radians": -0.42000000000000015
+          },
+          "arm_left_lower": {
+            "sourcePivot": [
+              18,
+              50
+            ],
+            "targetPivot": [
+              19.717952871925974,
+              52.460116214308805
+            ],
+            "radians": -0.30239999999999956
+          },
+          "arm_right_upper": {
+            "sourcePivot": [
+              37,
+              47
+            ],
+            "targetPivot": [
+              37,
+              49.4
+            ],
+            "radians": 0.11999999999999922
+          },
+          "arm_right_lower": {
+            "sourcePivot": [
+              39,
+              51
+            ],
+            "targetPivot": [
+              38.50676844255206,
+              53.6106589579933
+            ],
+            "radians": 0.08640000000000025
+          },
+          "leg_left_upper": {
+            "sourcePivot": [
+              24,
+              54
+            ],
+            "targetPivot": [
+              23.505025253169418,
+              56.573241161390705
+            ],
+            "radians": -0.4064957180855979,
+            "sourceAxis": 1.5707963267948966,
+            "projectedScale": 0.8363273858876752
+          },
+          "leg_left_lower": {
+            "sourcePivot": [
+              24,
+              64
+            ],
+            "targetPivot": [
+              26.81180550510128,
+              64.25500879677286
+            ],
+            "radians": 0.39496701690534874,
+            "sourceAxis": 1.5707963267948966,
+            "projectedScale": 1.0439442135588708
+          },
+          "leg_left_end": {
+            "sourcePivot": [
+              24,
+              71
+            ],
+            "targetPivot": [
+              24,
+              71
+            ],
+            "radians": 0
+          },
+          "leg_right_upper": {
+            "sourcePivot": [
+              34,
+              55
+            ],
+            "targetPivot": [
+              33.505025253169414,
+              57.573241161390705
+            ],
+            "radians": -0.4722970084666487,
+            "sourceAxis": 1.5707963267948966,
+            "projectedScale": 0.8122011531816264
+          },
+          "leg_right_lower": {
+            "sourcePivot": [
+              34,
+              64
+            ],
+            "targetPivot": [
+              36.830499428054836,
+              64.08281482513895
+            ],
+            "radians": 0.35156833392289943,
+            "sourceAxis": 1.446441332248135,
+            "projectedScale": 1.007911391474382
+          },
+          "leg_right_end": {
+            "sourcePivot": [
+              35,
+              72
+            ],
+            "targetPivot": [
+              35,
+              72
+            ],
+            "radians": 0
+          }
+        },
+        "joints": {
+          "arm_left": {
+            "root": [
+              19,
+              48.4
+            ],
+            "joint": [
+              19.717952871925974,
+              52.460116214308805
+            ],
+            "wrist": [
+              22.1616381665505,
+              56.93542650308609
+            ]
+          },
+          "arm_right": {
+            "root": [
+              37,
+              49.4
+            ],
+            "joint": [
+              38.50676844255206,
+              53.6106589579933
+            ],
+            "wrist": [
+              37.98901317440413,
+              59.588278005934136
+            ]
+          },
+          "leg_left": {
+            "root": [
+              23.505025253169418,
+              56.573241161390705
+            ],
+            "joint": [
+              26.81180550510128,
+              64.25500879677286
+            ],
+            "ankle": [
+              24,
+              71
+            ],
+            "contact": true,
+            "lift": 0,
+            "sagittal_joint": [
+              3.976493480069561,
+              11.23914072355831
+            ],
+            "source_lengths": [
+              10,
+              7
+            ]
+          },
+          "leg_right": {
+            "root": [
+              33.505025253169414,
+              57.573241161390705
+            ],
+            "joint": [
+              36.830499428054836,
+              64.08281482513895
+            ],
+            "ankle": [
+              35,
+              72
+            ],
+            "contact": true,
+            "lift": 0,
+            "sagittal_joint": [
+              4.002930679444442,
+              10.073489624958144
+            ],
+            "source_lengths": [
+              9,
+              8
+            ]
+          }
+        },
+        "notes": [],
+        "pelvis_shift": [
+          -0.4949747468305833,
+          2.5732411613907042
+        ],
+        "upper_body_shift": [
+          0,
+          2.4
+        ],
+        "both_feet_fixed": true
+      },
+      "baseline_sha256": "0acb1385115cdf278638d9c212e8b969c171aa7ae4746be802deae3a3e3e9656"
+    },
+    {
+      "frame": 2,
+      "state": {
+        "action": "collect",
+        "frame": 2,
+        "phase": "hold",
+        "transforms": {
+          "body": {
+            "sourcePivot": [
+              32,
+              54
+            ],
+            "targetPivot": [
+              31.999999999999996,
+              56.4
+            ],
+            "radians": 0
+          },
+          "pelvis": {
+            "sourcePivot": [
+              32,
+              56
+            ],
+            "targetPivot": [
+              31.505025253169418,
+              58.573241161390705
+            ],
+            "radians": 0
+          },
+          "arm_left_upper": {
+            "sourcePivot": [
+              19,
+              46
+            ],
+            "targetPivot": [
+              19,
+              48.4
+            ],
+            "radians": -0.4600000000000004
+          },
+          "arm_left_lower": {
+            "sourcePivot": [
+              18,
+              50
+            ],
+            "targetPivot": [
+              19.879739930336555,
+              52.428158097067616
+            ],
+            "radians": -0.3312000000000004
+          },
+          "arm_right_upper": {
+            "sourcePivot": [
+              37,
+              47
+            ],
+            "targetPivot": [
+              37,
+              49.4
+            ],
+            "radians": 0.11999999999999922
+          },
+          "arm_right_lower": {
+            "sourcePivot": [
+              39,
+              51
+            ],
+            "targetPivot": [
+              38.50676844255206,
+              53.6106589579933
+            ],
+            "radians": 0.08640000000000025
+          },
+          "leg_left_upper": {
+            "sourcePivot": [
+              24,
+              54
+            ],
+            "targetPivot": [
+              23.505025253169418,
+              56.573241161390705
+            ],
+            "radians": -0.4064957180855979,
+            "sourceAxis": 1.5707963267948966,
+            "projectedScale": 0.8363273858876752
+          },
+          "leg_left_lower": {
+            "sourcePivot": [
+              24,
+              64
+            ],
+            "targetPivot": [
+              26.81180550510128,
+              64.25500879677286
+            ],
+            "radians": 0.39496701690534874,
+            "sourceAxis": 1.5707963267948966,
+            "projectedScale": 1.0439442135588708
+          },
+          "leg_left_end": {
+            "sourcePivot": [
+              24,
+              71
+            ],
+            "targetPivot": [
+              24,
+              71
+            ],
+            "radians": 0
+          },
+          "leg_right_upper": {
+            "sourcePivot": [
+              34,
+              55
+            ],
+            "targetPivot": [
+              33.505025253169414,
+              57.573241161390705
+            ],
+            "radians": -0.4722970084666487,
+            "sourceAxis": 1.5707963267948966,
+            "projectedScale": 0.8122011531816264
+          },
+          "leg_right_lower": {
+            "sourcePivot": [
+              34,
+              64
+            ],
+            "targetPivot": [
+              36.830499428054836,
+              64.08281482513895
+            ],
+            "radians": 0.35156833392289943,
+            "sourceAxis": 1.446441332248135,
+            "projectedScale": 1.007911391474382
+          },
+          "leg_right_end": {
+            "sourcePivot": [
+              35,
+              72
+            ],
+            "targetPivot": [
+              35,
+              72
+            ],
+            "radians": 0
+          }
+        },
+        "joints": {
+          "arm_left": {
+            "root": [
+              19,
+              48.4
+            ],
+            "joint": [
+              19.879739930336555,
+              52.428158097067616
+            ],
+            "wrist": [
+              22.451282969292237,
+              56.831244105630084
+            ]
+          },
+          "arm_right": {
+            "root": [
+              37,
+              49.4
+            ],
+            "joint": [
+              38.50676844255206,
+              53.6106589579933
+            ],
+            "wrist": [
+              37.98901317440413,
+              59.588278005934136
+            ]
+          },
+          "leg_left": {
+            "root": [
+              23.505025253169418,
+              56.573241161390705
+            ],
+            "joint": [
+              26.81180550510128,
+              64.25500879677286
+            ],
+            "ankle": [
+              24,
+              71
+            ],
+            "contact": true,
+            "lift": 0,
+            "sagittal_joint": [
+              3.976493480069561,
+              11.23914072355831
+            ],
+            "source_lengths": [
+              10,
+              7
+            ]
+          },
+          "leg_right": {
+            "root": [
+              33.505025253169414,
+              57.573241161390705
+            ],
+            "joint": [
+              36.830499428054836,
+              64.08281482513895
+            ],
+            "ankle": [
+              35,
+              72
+            ],
+            "contact": true,
+            "lift": 0,
+            "sagittal_joint": [
+              4.002930679444442,
+              10.073489624958144
+            ],
+            "source_lengths": [
+              9,
+              8
+            ]
+          }
+        },
+        "notes": [],
+        "pelvis_shift": [
+          -0.4949747468305833,
+          2.5732411613907042
+        ],
+        "upper_body_shift": [
+          0,
+          2.4
+        ],
+        "both_feet_fixed": true
+      },
+      "baseline_sha256": "3d00593bde6a6734d563c9602522cc4f7e9287b4bb688b54e448c753346e60db"
+    },
+    {
+      "frame": 3,
+      "state": {
+        "action": "collect",
+        "frame": 3,
+        "phase": "recover",
+        "transforms": {
+          "body": {
+            "sourcePivot": [
+              32,
+              54
+            ],
+            "targetPivot": [
+              32,
+              54
+            ],
+            "radians": 0
+          },
+          "pelvis": {
+            "sourcePivot": [
+              32,
+              56
+            ],
+            "targetPivot": [
+              32,
+              56
+            ],
+            "radians": 0
+          },
+          "arm_left_upper": {
+            "sourcePivot": [
+              19,
+              46
+            ],
+            "targetPivot": [
+              19,
+              46
+            ],
+            "radians": 0
+          },
+          "arm_left_lower": {
+            "sourcePivot": [
+              18,
+              50
+            ],
+            "targetPivot": [
+              18,
+              50
+            ],
+            "radians": 0
+          },
+          "arm_right_upper": {
+            "sourcePivot": [
+              37,
+              47
+            ],
+            "targetPivot": [
+              37,
+              47
+            ],
+            "radians": 0
+          },
+          "arm_right_lower": {
+            "sourcePivot": [
+              39,
+              51
+            ],
+            "targetPivot": [
+              39,
+              51
+            ],
+            "radians": 0
+          },
+          "leg_left_upper": {
+            "sourcePivot": [
+              24,
+              54
+            ],
+            "targetPivot": [
+              24,
+              54
+            ],
+            "radians": 0
+          },
+          "leg_left_lower": {
+            "sourcePivot": [
+              24,
+              64
+            ],
+            "targetPivot": [
+              24,
+              64
+            ],
+            "radians": 0
+          },
+          "leg_left_end": {
+            "sourcePivot": [
+              24,
+              71
+            ],
+            "targetPivot": [
+              24,
+              71
+            ],
+            "radians": 0
+          },
+          "leg_right_upper": {
+            "sourcePivot": [
+              34,
+              55
+            ],
+            "targetPivot": [
+              34,
+              55
+            ],
+            "radians": 0
+          },
+          "leg_right_lower": {
+            "sourcePivot": [
+              34,
+              64
+            ],
+            "targetPivot": [
+              34,
+              64
+            ],
+            "radians": 0
+          },
+          "leg_right_end": {
+            "sourcePivot": [
+              35,
+              72
+            ],
+            "targetPivot": [
+              35,
+              72
+            ],
+            "radians": 0
+          }
+        },
+        "joints": {
+          "arm_left": {
+            "root": [
+              19,
+              46
+            ],
+            "joint": [
+              18,
+              50
+            ],
+            "wrist": [
+              19,
+              55
+            ]
+          },
+          "arm_right": {
+            "root": [
+              37,
+              47
+            ],
+            "joint": [
+              39,
+              51
+            ],
+            "wrist": [
+              39,
+              57
+            ]
+          },
+          "leg_left": {
+            "root": [
+              24,
+              54
+            ],
+            "joint": [
+              24,
+              64
+            ],
+            "ankle": [
+              24,
+              71
+            ],
+            "lift": 0,
+            "contact": true
+          },
+          "leg_right": {
+            "root": [
+              34,
+              55
+            ],
+            "joint": [
+              34,
+              64
+            ],
+            "ankle": [
+              35,
+              72
+            ],
+            "lift": 0,
+            "contact": true
+          }
+        },
+        "notes": [],
+        "pelvis_shift": [
+          0,
+          0
+        ],
+        "upper_body_shift": [
+          0,
+          0
+        ],
+        "both_feet_fixed": true
+      },
+      "baseline_sha256": "70440cb3a3560c23f18768cea2fa63f2b1af465f12d1eaa0ba84348e22dba98f"
+    }
+  ]
+}

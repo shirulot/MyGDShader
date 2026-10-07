@@ -1,0 +1,38 @@
+{
+  "id": "metal",
+  "source": {
+    "file": "res://assets/ember/three_d/textures/metal/metal_albedo_v001.png",
+    "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3"
+  },
+  "annotation": {
+    "file": "res://art-source/ember/batch-05-textures/finished-textures/metal_albedo_v001.finish.json",
+    "sha256": "bfcab97e28daca632cd9604cf8920a4d2efb61dbcbb4948112a57f6f46dbc02d"
+  },
+  "period": [
+    256,
+    256
+  ],
+  "units": "artistic native-pixel relief unit",
+  "physical_model": false,
+  "no_luminance_to_height": true,
+  "method": "categorical coating microseams; separate material labels; periodic binomial smoothing",
+  "coating_label_rgb": [
+    86,
+    107,
+    120
+  ],
+  "coating_mask": "art-source/ember/technical-inputs-v001/surfaces/geometry/metal_coating_label_v001.png",
+  "coating_mask_sha256": "1a8edece7fc7503100ed1880d67dab33935a8fe117a7e872a20ba06148c1efac",
+  "max_coating_relief": 0.06,
+  "smoothing_kernel": [
+    1,
+    4,
+    6,
+    4,
+    1
+  ],
+  "kernel_divisor": 16,
+  "seam_band_px": 5,
+  "neutral_edge_band_px": 3,
+  "limitations": "no large panel grid invented; shallow label-boundary relief is an authored approximation"
+}

@@ -1,0 +1,46 @@
+{
+	"atlas_counts": {
+		"bridge": 16,
+		"floor": 47,
+		"floor_landing": 89,
+		"grate": 47,
+		"rim": 47,
+		"rim_landing": 89,
+		"seam": 16
+	},
+	"band_width_pixels": 4,
+	"checked_adjacent_band_pixels": 1638400,
+	"checked_landing_pixels": 340032,
+	"checked_pixels": 359424,
+	"checked_ports": 4096,
+	"checks": [
+		"全部351块二值 alpha：173常规+178桥落点上下文",
+		"47型末槽透明",
+		"floor 满格实体",
+		"rim mask255真实透明且注册",
+		"bridge 24px端口及2px边梁",
+		"16型主体 flood-fill连通",
+		"实际 4×3 / 3×4 邻域的接口及两侧4px连续带",
+		"格栅和桥面共享4px世界相位",
+		"低对比板材32px周期",
+		"89桥落点的24px通道/中心/4px肩口/4px短踏板"
+	],
+	"engine": "4.7.2-stable (steam)",
+	"errors": [],
+	"material_geometry": {
+		"bridge_side_rail_px": 2,
+		"bridge_width_px": 24,
+		"floor_cut_px": 2,
+		"grate_period_px": 4,
+		"landing_grate_tongue_px": 4,
+		"landing_shoulder_px": 4,
+		"rim_cap_px": 4,
+		"rim_east_total_px": 6,
+		"rim_south_total_px": 7,
+		"seam_width_px": 1
+	},
+	"material_revision": "v002",
+	"status": "CONNECTIVITY_PASS",
+	"tile_size": 32,
+	"validation_method": "穷举相邻两格周围10格的1024种布局；相邻带与同一完整世界邻域的独立几何取样一致。不是只比较边缘一排，也不以强制复制边缘过关。"
+}

@@ -1,0 +1,138 @@
+{
+  "id": "robot_walk_left_f03",
+  "source": "art-source/ember/batch-02-robot/generated/robot_walk_left_f03_master_v001.png",
+  "source_sha256": "cf32628cafe1fc66bb22e4cfade7dbbaebbf5c9ec8c0882bcc5be1579fc8f111",
+  "output": "art-source/ember/batch-02-robot/finished-frames/robot_walk_left_f03_v001.png",
+  "annotation": "art-source/ember/batch-02-robot/annotations/walk_left_f03.json",
+  "annotation_sha256": "d22ae35af52a442b4150f50c98ec80c813a338cb6b637be329696fd9cd10f71b",
+  "dependencies": [
+    {
+      "path": "art-source/ember/batch-02-robot/finished-frames/robot_idle_left_v001.png",
+      "sha256": "c1ef5ba0f584f457d69074fd32a2f654aafe370b2989bfdc802e54906d61aa77"
+    },
+    {
+      "path": "art-source/ember/batch-02-robot/annotations/rig_left_v001.json",
+      "sha256": "d55b3768914a513dcb4c67ab19911bd552fa1d6f3bfb4369089046f07e205004"
+    }
+  ],
+  "source_use": "AI_MATERIAL_AND_POSE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+  "observations": {
+    "design_observation": "实际4母稿逐项观看；造型材料语汇相同但头身/维护槽/相位有漂移，用确认方向idle保持一致",
+    "tool_hand_observation": "黄铜维修工具在屏幕右下的近侧左腕，不与right母稿镜像。近侧前臂和工具共用安装关系，工具暗孔保持中性。"
+  },
+  "adjustments": [
+    "AI_POSE_INCONSISTENCY: 观察到的模型phase/头身/装甲漂移逐帧如实记录",
+    "NATIVE_CORRECTIVE_COMPOSITING: 用确认方向idle的显式像素部件、不同近远zorder和局部关节修补",
+    "四phase明确接触/经过两脚交替；脚1–2px、摆臂1px、头身起伏1px；不整图warp/镜像",
+    "相机侧视的远近足底高度不同；虚拟地面原点固定(32,80)，抬脚可使可见底界78..80"
+  ],
+  "process": {
+    "parts_pixel_counts": {
+      "head": 395,
+      "torso": 157,
+      "right_arm": 97,
+      "left_arm": 147,
+      "right_leg": 151,
+      "left_leg": 175
+    },
+    "offsets": {
+      "head": [
+        0,
+        -1
+      ],
+      "torso": [
+        0,
+        -1
+      ],
+      "left_arm": [
+        0,
+        -1
+      ],
+      "right_arm": [
+        0,
+        -1
+      ],
+      "left_leg": [
+        0,
+        -2
+      ],
+      "right_leg": [
+        0,
+        0
+      ]
+    },
+    "draw_order": [
+      "right_leg",
+      "right_arm",
+      "torso",
+      "left_leg",
+      "left_arm",
+      "head"
+    ],
+    "pose_observation": "f03母稿前靴侧举、远靴落地，是经过相参考；原生让近侧左脚抬2px，不拉长远脚填齐bbox。",
+    "idle_transform": "NONE_WHOLE_IMAGE",
+    "joint_repair": "explicit_native_patches"
+  },
+  "measurement": {
+    "canvas": [
+      64,
+      96
+    ],
+    "bbox": [
+      18,
+      20,
+      45,
+      79
+    ],
+    "anchor": [
+      32,
+      80
+    ],
+    "anchor_convention": "walk虚拟地面原点固定(32,80)；可见底界78..80依近远投影/抬腳，不自动裁切",
+    "visible_bottom_boundary": 79,
+    "rgb_count": 11,
+    "rules": {
+      "binary_alpha": true,
+      "palette": true,
+      "subject_max_40x64": true,
+      "ground_boundary_80": true,
+      "subject_centered_in_x12_52": true
+    }
+  },
+  "runtime_windows": [
+    {
+      "id": "chest_status",
+      "safe_active_rect": [
+        26,
+        48,
+        28,
+        50
+      ],
+      "center": [
+        27,
+        49
+      ],
+      "center_basis": "safe_active_rect_geometric_center",
+      "normalized_uv": [
+        0.421875,
+        0.5104166666666666
+      ],
+      "mask_delivery_status": "NOT_PRODUCED",
+      "visibility": "PARTIAL_SIDE_VIEW"
+    }
+  ],
+  "gait": {
+    "support_leg": "right",
+    "lifted_leg": "left",
+    "phase": "left_passing",
+    "camera_depth": "left侧视：left_leg近侧靴最低79，right_leg远侧靴投影较高；f03近侧抬2px，全体最低可见末行78、bbox下边界79（含躯干/接缝），原点不动",
+    "virtual_ground_anchor": [
+      32,
+      80
+    ]
+  },
+  "emitter_points": [],
+  "emission_baked": false,
+  "review_status": "ROOT_VISUAL_REVIEW_REQUIRED",
+  "output_sha256": "1c50a3e23d413513adda8ce353a8515fb71768b5276fd84da42005cb61316f2d"
+}

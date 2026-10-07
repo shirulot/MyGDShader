@@ -1,0 +1,11 @@
+--- tools/export_building_parts_v004r1.gd
++++ assets/ember/buildings_final/tools/export_building_parts_v004r1.gd
+@@ -2,7 +2,7 @@
+ ## 从同一母图按登记的像素区域导出可选功能层。只分配像素所有权，
+ ## 不重画、不缩放任何屋檐或圆角；实际场景使用完整母图的单载体渲染。
+ 
+-const ROOT := "res://assets/ember/building_assets_v004r1/"
++const ROOT := "res://assets/ember/buildings_final/textures/"
+ 
+ func _initialize() -> void:
+ 	var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(ROOT + "catalog_v004r1.json"))

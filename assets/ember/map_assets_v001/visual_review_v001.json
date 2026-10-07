@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "scope": "Read-only visual inspection of the exact four GPU captures listed below; PASS refers only to this visual inspection, not collision, navigation or user art acceptance.",
+  "user_accepted": false,
+  "art_acceptance": "AWAITING_USER_REVIEW",
+  "source_specs_sha256": "6effeb9821d6c9d01802ded9ea4b2c363a1f90df0cf3dda4dc8315b3364d4583",
+  "screenshots": [
+    {
+      "sha256": "9c9f1cb80d9a1c31343d0b7325d6bf221b87a78532cdbcd8536e306f9a74558b",
+      "path": "previews/sprite_library_v001.png"
+    },
+    {
+      "sha256": "11409a2bf81efedbbb859150a3d9571b3d1d433c6072ae450096e6b415e59680",
+      "path": "previews/gpu_tidal_port_v001.png"
+    },
+    {
+      "sha256": "0faef9f9c40d58576dddeeb222a74d662ba3630233672f89945851183f40ec5e",
+      "path": "previews/gpu_dry_mine_v001.png"
+    },
+    {
+      "sha256": "635db01bbb300bfa0d0ba1cf93fbbe924ba4902df7070a44bd5d24e207d19775",
+      "path": "previews/gpu_overgrown_lab_v001.png"
+    }
+  ],
+  "screenshot_hashes_stable_during_final_inspection": true,
+  "passed_checks": [
+    "27 sprites share orthographic top/front viewpoint, crisp pixel scale, muted industrial colours and restrained brass accents.",
+    "All eight pipe pieces have no visible haze or rectangular backdrop in the actual GPU Sprite2D library and map captures.",
+    "Port corner wall is separate from the crates; lab upper wall corner is inside the viewport.",
+    "Mine props stay inside the canvas and the central bridge has clear visible landings.",
+    "Lily and reed sprites retain transparent gaps without opaque ground rectangles.",
+    "Three floor themes remain readable under props and use the shared coping, facade and bridge geometry.",
+    "Final screenshots show single coherent guardrails without the earlier duplicated overlapping decoration batches.",
+    "No significant prop overlap, clipping or visible bridge-exit obstruction remains in the inspected final screenshots."
+  ],
+  "resolved_checks": [
+    {
+      "observation": "The moved upper-left door now has a clear visible gap from the sample tank right post.",
+      "screenshot": "previews/gpu_overgrown_lab_v001.png",
+      "status": "RESOLVED",
+      "id": "lab_tank_door_overlap"
+    },
+    {
+      "observation": "The lower-right pump cap is below the copper rail with clear separation, while its base remains on the platform.",
+      "screenshot": "previews/gpu_overgrown_lab_v001.png",
+      "status": "RESOLVED",
+      "id": "lab_pump_railing_overlap"
+    },
+    {
+      "observation": "The east-island console has moved south, leaving a visibly clear route beyond the bridge landing.",
+      "screenshot": "previews/gpu_tidal_port_v001.png",
+      "status": "RESOLVED",
+      "id": "port_console_bridge_readability"
+    }
+  ],
+  "issues": [],
+  "advisory": [],
+  "code_modifications": "NONE",
+  "image_edits": "NONE",
+  "import_rerun": "NONE_IN_THIS_FINAL_VISUAL_CHECK"
+}

@@ -1,0 +1,6500 @@
+{
+  "status": "NATIVE_40_NUMERIC_PASS",
+  "count": 40,
+  "automatic_checks": 507,
+  "failed_checks": [],
+  "checks": [
+    {
+      "name": "all_40_unique_expected_variants",
+      "passed": true,
+      "actual": [
+        "console_base",
+        "pump_base",
+        "ventilator_base",
+        "cooler_base",
+        "relay_base",
+        "wall_lamp",
+        "floor_lamp",
+        "door_closed",
+        "door_open",
+        "telepad_base",
+        "terminal_body",
+        "screen_frame",
+        "fuse",
+        "antenna_coil",
+        "split_ring",
+        "log_cartridge",
+        "toolbox",
+        "helmet",
+        "hp",
+        "energy",
+        "time",
+        "interact",
+        "log",
+        "pause",
+        "lighting",
+        "drainage",
+        "water_supply",
+        "ventilation",
+        "cooling",
+        "communication",
+        "teleport",
+        "protection",
+        "panel_9slice",
+        "water_calm",
+        "water_directional",
+        "foam_strip",
+        "smoke_blob",
+        "grass_leaf",
+        "metal_albedo",
+        "concrete_albedo"
+      ],
+      "expected": [
+        "antenna_coil",
+        "communication",
+        "concrete_albedo",
+        "console_base",
+        "cooler_base",
+        "cooling",
+        "door_closed",
+        "door_open",
+        "drainage",
+        "energy",
+        "floor_lamp",
+        "foam_strip",
+        "fuse",
+        "grass_leaf",
+        "helmet",
+        "hp",
+        "interact",
+        "lighting",
+        "log",
+        "log_cartridge",
+        "metal_albedo",
+        "panel_9slice",
+        "pause",
+        "protection",
+        "pump_base",
+        "relay_base",
+        "screen_frame",
+        "smoke_blob",
+        "split_ring",
+        "telepad_base",
+        "teleport",
+        "terminal_body",
+        "time",
+        "toolbox",
+        "ventilation",
+        "ventilator_base",
+        "wall_lamp",
+        "water_calm",
+        "water_directional",
+        "water_supply"
+      ]
+    },
+    {
+      "name": "console_base:manifest_id",
+      "passed": true,
+      "actual": "B02",
+      "expected": "B02"
+    },
+    {
+      "name": "console_base:fixed_anchor",
+      "passed": true,
+      "actual": [
+        48,
+        80
+      ],
+      "expected": [
+        48,
+        80
+      ]
+    },
+    {
+      "name": "console_base:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\console_base_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "console_base:sha",
+      "passed": true,
+      "actual": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd",
+      "expected": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd"
+    },
+    {
+      "name": "console_base:canvas",
+      "passed": true,
+      "actual": [
+        96,
+        96
+      ],
+      "expected": [
+        96,
+        96
+      ]
+    },
+    {
+      "name": "console_base:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "console_base:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "console_base:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "console_base:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "console_base:nonempty",
+      "passed": true,
+      "actual": [
+        18,
+        22,
+        78,
+        80
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "console_base:declared_bbox",
+      "passed": true,
+      "actual": [
+        18,
+        22,
+        78,
+        80
+      ],
+      "expected": [
+        18,
+        22,
+        78,
+        80
+      ]
+    },
+    {
+      "name": "console_base:object_margin",
+      "passed": true,
+      "actual": [
+        18,
+        22,
+        78,
+        80
+      ],
+      "expected": "at least 16px each side"
+    },
+    {
+      "name": "console_base:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "console_base:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/console_base_master_v001.png",
+        "master_sha256": "aefde6d1b8f1f76a53ace9cf62545e6fdce8100b0aae9cb89174b62b19deeff1",
+        "prompt": "prompts/console_base.txt",
+        "prompt_sha256": "2416e4d83a343935edd24ce58c8cf52c12b9c4bc8ff789f4d4d2dee71b46afc2",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-a61ed0fc-90a4-4905-b936-4a793612457e.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            282,
+            307,
+            972,
+            972
+          ],
+          "material_sampling_size": [
+            60,
+            58
+          ],
+          "native_origin": [
+            18,
+            22
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 44,
+          "native_outline_pixels_corrected": 41
+        },
+        "native_adjustments": [
+          "原生大屏[36,33,60,47)消除渐变与碎灰，改为单一深蓝灰安全区；底部一行更深形成玻璃边界",
+          "左上框缘补连续3px金属亮边；保留3按钮与右下维修孔，固定基座边界80",
+          "屏幕安全区拆实际RGBA组件与二值选择mask；未交付运行灯/技术通道Mask"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "pump_base:manifest_id",
+      "passed": true,
+      "actual": "B03",
+      "expected": "B03"
+    },
+    {
+      "name": "pump_base:fixed_anchor",
+      "passed": true,
+      "actual": [
+        80,
+        176
+      ],
+      "expected": [
+        80,
+        176
+      ]
+    },
+    {
+      "name": "pump_base:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\pump_base_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "pump_base:sha",
+      "passed": true,
+      "actual": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8",
+      "expected": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8"
+    },
+    {
+      "name": "pump_base:canvas",
+      "passed": true,
+      "actual": [
+        160,
+        192
+      ],
+      "expected": [
+        160,
+        192
+      ]
+    },
+    {
+      "name": "pump_base:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "pump_base:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "pump_base:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "pump_base:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "pump_base:nonempty",
+      "passed": true,
+      "actual": [
+        25,
+        58,
+        136,
+        176
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "pump_base:declared_bbox",
+      "passed": true,
+      "actual": [
+        25,
+        58,
+        136,
+        176
+      ],
+      "expected": [
+        25,
+        58,
+        136,
+        176
+      ]
+    },
+    {
+      "name": "pump_base:object_margin",
+      "passed": true,
+      "actual": [
+        25,
+        58,
+        136,
+        176
+      ],
+      "expected": "at least 16px each side"
+    },
+    {
+      "name": "pump_base:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "pump_base:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/pump_base_master_v001.png",
+        "master_sha256": "bccc6b83aace92d58d1773027a497bbd317592ddf7f630e77205dd5350c9d339",
+        "prompt": "prompts/pump_base.txt",
+        "prompt_sha256": "5a183942c132da442e3a963c08238587f24ab38a443bbd9eaea28c2db8b0c5c3",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-6cb77688-375c-4de9-a487-8955a5227a87.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            86,
+            200,
+            1059,
+            1234
+          ],
+          "material_sampling_size": [
+            111,
+            118
+          ],
+          "native_origin": [
+            25,
+            58
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 98,
+          "native_outline_pixels_corrected": 24
+        },
+        "native_adjustments": [
+          "原生圆壳表窗[77,140,85,144)归并为中性深蓝灰，非发光运行状态",
+          "左右外接口增加3px深槽与上缘金属点，安装坐标对应真实接头；不画出水/地影",
+          "减少1px随机钢灰点并保持左右接头受同一左上光照；底界176"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "ventilator_base:manifest_id",
+      "passed": true,
+      "actual": "B04",
+      "expected": "B04"
+    },
+    {
+      "name": "ventilator_base:fixed_anchor",
+      "passed": true,
+      "actual": [
+        80,
+        176
+      ],
+      "expected": [
+        80,
+        176
+      ]
+    },
+    {
+      "name": "ventilator_base:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\ventilator_base_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "ventilator_base:sha",
+      "passed": true,
+      "actual": "74a301919676247d40b5e163bf116d011c3231cc2d2cb18949d2e950af09f187",
+      "expected": "74a301919676247d40b5e163bf116d011c3231cc2d2cb18949d2e950af09f187"
+    },
+    {
+      "name": "ventilator_base:canvas",
+      "passed": true,
+      "actual": [
+        160,
+        192
+      ],
+      "expected": [
+        160,
+        192
+      ]
+    },
+    {
+      "name": "ventilator_base:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "ventilator_base:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "ventilator_base:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "ventilator_base:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "ventilator_base:nonempty",
+      "passed": true,
+      "actual": [
+        40,
+        52,
+        120,
+        176
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "ventilator_base:declared_bbox",
+      "passed": true,
+      "actual": [
+        40,
+        52,
+        120,
+        176
+      ],
+      "expected": [
+        40,
+        52,
+        120,
+        176
+      ]
+    },
+    {
+      "name": "ventilator_base:object_margin",
+      "passed": true,
+      "actual": [
+        40,
+        52,
+        120,
+        176
+      ],
+      "expected": "at least 16px each side"
+    },
+    {
+      "name": "ventilator_base:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "ventilator_base:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/ventilator_base_master_v001.png",
+        "master_sha256": "8c34821330ab9ad203c50dd55c3f61ffdb7c945b494b806e446eddee4261eeb8",
+        "prompt": "prompts/ventilator_base.txt",
+        "prompt_sha256": "48c16d4611103314a08c3296106a243c89adaab4182639c3940ee9df834c766b",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-6012ef4b-7291-4512-95b0-621c563eb4df.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            244,
+            199,
+            901,
+            1214
+          ],
+          "material_sampling_size": [
+            80,
+            124
+          ],
+          "native_origin": [
+            40,
+            52
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 83,
+          "native_outline_pixels_corrected": 0
+        },
+        "native_adjustments": [
+          "上后方出烟口内区[75,56,86,61)归并为连续暗腔；记录实际烟粒子发射中心而不生成烟",
+          "三扇叶原生边缘亮点改成短连贯高光；中心轴保留黄铜，中性深腔补于可动叶片之下",
+          "逐像素选择真实三叶与轴组件，导出fan_rotor和选择mask；housing源PNG可独立编辑，重组与最终严格相同"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "cooler_base:manifest_id",
+      "passed": true,
+      "actual": "B05",
+      "expected": "B05"
+    },
+    {
+      "name": "cooler_base:fixed_anchor",
+      "passed": true,
+      "actual": [
+        80,
+        176
+      ],
+      "expected": [
+        80,
+        176
+      ]
+    },
+    {
+      "name": "cooler_base:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\cooler_base_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "cooler_base:sha",
+      "passed": true,
+      "actual": "86606ba53c17e572cc19e5f1b9336e8245ecc52fa01cc6ddc08761b13047ca2b",
+      "expected": "86606ba53c17e572cc19e5f1b9336e8245ecc52fa01cc6ddc08761b13047ca2b"
+    },
+    {
+      "name": "cooler_base:canvas",
+      "passed": true,
+      "actual": [
+        160,
+        192
+      ],
+      "expected": [
+        160,
+        192
+      ]
+    },
+    {
+      "name": "cooler_base:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "cooler_base:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "cooler_base:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "cooler_base:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "cooler_base:nonempty",
+      "passed": true,
+      "actual": [
+        29,
+        50,
+        132,
+        176
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "cooler_base:declared_bbox",
+      "passed": true,
+      "actual": [
+        29,
+        50,
+        132,
+        176
+      ],
+      "expected": [
+        29,
+        50,
+        132,
+        176
+      ]
+    },
+    {
+      "name": "cooler_base:object_margin",
+      "passed": true,
+      "actual": [
+        29,
+        50,
+        132,
+        176
+      ],
+      "expected": "at least 16px each side"
+    },
+    {
+      "name": "cooler_base:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "cooler_base:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/cooler_base_master_v001.png",
+        "master_sha256": "80c5812f8cfa201b324c7f967d63715819cb5367d380a4aca5de2e34d232f741",
+        "prompt": "prompts/cooler_base.txt",
+        "prompt_sha256": "c1d95814b453826fea0d544fa436878e8bc5af13d6bffaeea4411c96e88e895c",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-fdc494e1-3940-42b8-a52a-2fc9562c0d5e.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            202,
+            237,
+            943,
+            1144
+          ],
+          "material_sampling_size": [
+            103,
+            126
+          ],
+          "native_origin": [
+            29,
+            50
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 111,
+          "native_outline_pixels_corrected": 9
+        },
+        "native_adjustments": [
+          "安全小窗[75,122,85,128)重画为中性深色矩形并留边框，不让母稿渐变/伪光点进入运行窗口",
+          "中心立管顶段高光整理为5px短线、右侧保留较暗管面以固定左上光照；固定基座176",
+          "把窗口内区与高处换热管导出实际独立源层，不宣称运行通道Mask已完成"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "relay_base:manifest_id",
+      "passed": true,
+      "actual": "B06",
+      "expected": "B06"
+    },
+    {
+      "name": "relay_base:fixed_anchor",
+      "passed": true,
+      "actual": [
+        96,
+        240
+      ],
+      "expected": [
+        96,
+        240
+      ]
+    },
+    {
+      "name": "relay_base:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\relay_base_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "relay_base:sha",
+      "passed": true,
+      "actual": "2c42f50ae8af4aa2397255112fa4255ed5f50d943919611c4419d04b06669b98",
+      "expected": "2c42f50ae8af4aa2397255112fa4255ed5f50d943919611c4419d04b06669b98"
+    },
+    {
+      "name": "relay_base:canvas",
+      "passed": true,
+      "actual": [
+        192,
+        256
+      ],
+      "expected": [
+        192,
+        256
+      ]
+    },
+    {
+      "name": "relay_base:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "relay_base:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "relay_base:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "relay_base:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "relay_base:nonempty",
+      "passed": true,
+      "actual": [
+        51,
+        52,
+        141,
+        240
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "relay_base:declared_bbox",
+      "passed": true,
+      "actual": [
+        51,
+        52,
+        141,
+        240
+      ],
+      "expected": [
+        51,
+        52,
+        141,
+        240
+      ]
+    },
+    {
+      "name": "relay_base:object_margin",
+      "passed": true,
+      "actual": [
+        51,
+        52,
+        141,
+        240
+      ],
+      "expected": "at least 16px each side"
+    },
+    {
+      "name": "relay_base:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "relay_base:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/relay_base_master_v001.png",
+        "master_sha256": "02af2ff3338c029be0e9809992ddb2e4d05e927ce73854a6990d0ea390bf9719",
+        "prompt": "prompts/relay_base.txt",
+        "prompt_sha256": "0676d47a2dff3d1422a7dbd0e327a0f6578790788b68e7a35bb29bd7e89ef7bf",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-71e45619-cae3-49ee-9bd5-874c7edecf62.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            258,
+            111,
+            828,
+            1302
+          ],
+          "material_sampling_size": [
+            90,
+            188
+          ],
+          "native_origin": [
+            51,
+            52
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 107,
+          "native_outline_pixels_corrected": 24
+        },
+        "native_adjustments": [
+          "核心窗[91,166,101,187)归并连续中性暗色；顶部天线浅色短条归并以去孤立颗粒",
+          "上部桅杆和横天线按y<128拆实际high_mast源层与选择mask；不是只写文字已分层",
+          "底座统一足界240，原生高天线不缩短以假装小设备"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "wall_lamp:manifest_id",
+      "passed": true,
+      "actual": "B07",
+      "expected": "B07"
+    },
+    {
+      "name": "wall_lamp:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\wall_lamp_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "wall_lamp:sha",
+      "passed": true,
+      "actual": "aa27b42d2d09a608416bbcf770e78de947e096f7beca4797b23b38ff29932a79",
+      "expected": "aa27b42d2d09a608416bbcf770e78de947e096f7beca4797b23b38ff29932a79"
+    },
+    {
+      "name": "wall_lamp:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "wall_lamp:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "wall_lamp:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "wall_lamp:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "wall_lamp:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "wall_lamp:nonempty",
+      "passed": true,
+      "actual": [
+        21,
+        14,
+        43,
+        56
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "wall_lamp:declared_bbox",
+      "passed": true,
+      "actual": [
+        21,
+        14,
+        43,
+        56
+      ],
+      "expected": [
+        21,
+        14,
+        43,
+        56
+      ]
+    },
+    {
+      "name": "wall_lamp:object_margin",
+      "passed": true,
+      "actual": [
+        21,
+        14,
+        43,
+        56
+      ],
+      "expected": "at least 8px each side"
+    },
+    {
+      "name": "wall_lamp:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "wall_lamp:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/wall_lamp_master_v001.png",
+        "master_sha256": "eb0849b15d8dd7a41fb82877ce6c73c277aeafd3923a5d3651f400a8c76e7706",
+        "prompt": "prompts/wall_lamp.txt",
+        "prompt_sha256": "721ce3d0cd00bd249e55464b8a6bd158289061ea259459c15a69d1840c4a3067",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-10be5c7c-7d49-4f94-a3f9-e582d02a7aa0.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            295,
+            295,
+            765,
+            1173
+          ],
+          "material_sampling_size": [
+            22,
+            42
+          ],
+          "native_origin": [
+            21,
+            14
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 12,
+          "native_outline_pixels_corrected": 43
+        },
+        "native_adjustments": [
+          "笼内[30,45,33,50)玻璃整理为连续中性深灰，去微亮点，灯不发光",
+          "上安装板一枚钢灰线像素归并，保留右侧电缆弯环与孔；安装边界56",
+          "输出真实lens_neutral源组件用于后续灯色，不烘焙光圈"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "floor_lamp:manifest_id",
+      "passed": true,
+      "actual": "B07",
+      "expected": "B07"
+    },
+    {
+      "name": "floor_lamp:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\floor_lamp_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "floor_lamp:sha",
+      "passed": true,
+      "actual": "09b7b326be066958f0c9015cd07bdf6532bd74c7e0861d2eabacfb3b8590b464",
+      "expected": "09b7b326be066958f0c9015cd07bdf6532bd74c7e0861d2eabacfb3b8590b464"
+    },
+    {
+      "name": "floor_lamp:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "floor_lamp:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "floor_lamp:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "floor_lamp:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "floor_lamp:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "floor_lamp:nonempty",
+      "passed": true,
+      "actual": [
+        23,
+        12,
+        41,
+        56
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "floor_lamp:declared_bbox",
+      "passed": true,
+      "actual": [
+        23,
+        12,
+        41,
+        56
+      ],
+      "expected": [
+        23,
+        12,
+        41,
+        56
+      ]
+    },
+    {
+      "name": "floor_lamp:object_margin",
+      "passed": true,
+      "actual": [
+        23,
+        12,
+        41,
+        56
+      ],
+      "expected": "at least 8px each side"
+    },
+    {
+      "name": "floor_lamp:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "floor_lamp:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/floor_lamp_master_v001.png",
+        "master_sha256": "b69e200b8498abd240502cf70efe82cfd67de6f2d241a2b24b06f821cd6bde8b",
+        "prompt": "prompts/floor_lamp.txt",
+        "prompt_sha256": "071dbdb3ad3ba5cebd032078f6171c159b5573daf9bdd9fd823eee61a7d2b26f",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-4f28b145-177d-4ce0-b9ac-51f253e59a24.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            368,
+            355,
+            702,
+            1151
+          ],
+          "material_sampling_size": [
+            18,
+            44
+          ],
+          "native_origin": [
+            23,
+            12
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 11,
+          "native_outline_pixels_corrected": 22
+        },
+        "native_adjustments": [
+          "灯头安全内区[30,26,34,32)归并深蓝灰，去原生采样亮灰点；保留1px玻璃框和四脚螺栓",
+          "上帽金属高光整理为3px短条，左上光照方向保持；底脚边界56",
+          "lens_neutral源层真实同64画布，预留材质发光而不烘焙灯光"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "door_closed:manifest_id",
+      "passed": true,
+      "actual": "B08",
+      "expected": "B08"
+    },
+    {
+      "name": "door_closed:fixed_anchor",
+      "passed": true,
+      "actual": [
+        48,
+        112
+      ],
+      "expected": [
+        48,
+        112
+      ]
+    },
+    {
+      "name": "door_closed:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\door_closed_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "door_closed:sha",
+      "passed": true,
+      "actual": "4aa35db2b665e5f235d019e002bf2aed4e52243c18d00cf53d41d6176ef18437",
+      "expected": "4aa35db2b665e5f235d019e002bf2aed4e52243c18d00cf53d41d6176ef18437"
+    },
+    {
+      "name": "door_closed:canvas",
+      "passed": true,
+      "actual": [
+        96,
+        128
+      ],
+      "expected": [
+        96,
+        128
+      ]
+    },
+    {
+      "name": "door_closed:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "door_closed:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "door_closed:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "door_closed:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "door_closed:nonempty",
+      "passed": true,
+      "actual": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "door_closed:declared_bbox",
+      "passed": true,
+      "actual": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "expected": [
+        16,
+        18,
+        80,
+        112
+      ]
+    },
+    {
+      "name": "door_closed:object_margin",
+      "passed": true,
+      "actual": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "expected": "at least 16px each side"
+    },
+    {
+      "name": "door_closed:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "door_closed:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/door_closed_master_v001.png",
+        "master_sha256": "891d19a4c6116ec174a8e1b424f6675038870c4b62908784ea3939f2ceecc54a",
+        "prompt": "prompts/door_closed.txt",
+        "prompt_sha256": "c7c1f652fb2030bd613730fd5a024092b796fcdc8ab4337b4afed148d6a6efd6",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-a58c9fd9-3780-4f0c-89db-2c397c8ee0d1.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            188,
+            321,
+            933,
+            1086
+          ],
+          "material_sampling_size": [
+            64,
+            66
+          ],
+          "native_origin": [
+            16,
+            46
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 37,
+          "native_outline_pixels_corrected": 27,
+          "native_reconstruction_file": "layers/door_shared/door_closed_native.png",
+          "native_reconstruction_sha256": "4aa35db2b665e5f235d019e002bf2aed4e52243c18d00cf53d41d6176ef18437",
+          "native_reconstruction_record": "art-source/ember/batch-03-objects/annotations/architectural-rebuild-record.json",
+          "native_reconstruction_record_sha256": "756782618233937624d6ed8d6af9f7ee3f5c3247241c7efaf68a4a61a04d299d",
+          "source_pixel_use": "sampled draft material/design parts plus explicit structural native redraw; no final whole image resize"
+        },
+        "native_adjustments": [
+          "NATIVE_STRUCTURAL_REBUILD: 原生保留母稿20px过梁/12px框脚材料块；柱截面重新安排长度，接缝/铜件/门板在目标网格重画",
+          "两态共享frame_native.png同一像素结构与右柱中性窗口；anchor(48,112)固定，不整体warp",
+          "ROOT_PROPORTION_CORRECTION: 内柱共同收薄，通路宽32改44以容纳既有40px机器人，外框bbox不变",
+          "门板两片用钢灰折角与黄铜把手原生重画，保留中心缝",
+          "前景过梁/立柱导出同画布可编辑源PNG和显式选择mask；框脚余像素保留foundation层"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "door_open:manifest_id",
+      "passed": true,
+      "actual": "B08",
+      "expected": "B08"
+    },
+    {
+      "name": "door_open:fixed_anchor",
+      "passed": true,
+      "actual": [
+        48,
+        112
+      ],
+      "expected": [
+        48,
+        112
+      ]
+    },
+    {
+      "name": "door_open:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\door_open_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "door_open:sha",
+      "passed": true,
+      "actual": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f",
+      "expected": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f"
+    },
+    {
+      "name": "door_open:canvas",
+      "passed": true,
+      "actual": [
+        96,
+        128
+      ],
+      "expected": [
+        96,
+        128
+      ]
+    },
+    {
+      "name": "door_open:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "door_open:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "door_open:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "door_open:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "door_open:nonempty",
+      "passed": true,
+      "actual": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "door_open:declared_bbox",
+      "passed": true,
+      "actual": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "expected": [
+        16,
+        18,
+        80,
+        112
+      ]
+    },
+    {
+      "name": "door_open:object_margin",
+      "passed": true,
+      "actual": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "expected": "at least 16px each side"
+    },
+    {
+      "name": "door_open:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "door_open:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/door_open_master_v001.png",
+        "master_sha256": "4f0d71fe9ff2b170ef8ccf72793adb73408fc5f1894805002f92414f56f37a8a",
+        "prompt": "prompts/door_open_actual.txt",
+        "prompt_sha256": "235dd6def2b0f4c7f7e6a6bae7b3aeaedcc32a5715e76b37fc9842dbdca7f271",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          },
+          {
+            "file": "art-source/ember/batch-03-objects/generated/door_closed_master_v001.png",
+            "sha256": "891d19a4c6116ec174a8e1b424f6675038870c4b62908784ea3939f2ceecc54a"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-86d11f90-625a-405e-abb2-cdc61a595d70.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            123,
+            230,
+            999,
+            1157
+          ],
+          "material_sampling_size": [
+            64,
+            68
+          ],
+          "native_origin": [
+            16,
+            44
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 17,
+          "native_outline_pixels_corrected": 60,
+          "native_reconstruction_file": "layers/door_shared/door_open_native.png",
+          "native_reconstruction_sha256": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f",
+          "native_reconstruction_record": "art-source/ember/batch-03-objects/annotations/architectural-rebuild-record.json",
+          "native_reconstruction_record_sha256": "756782618233937624d6ed8d6af9f7ee3f5c3247241c7efaf68a4a61a04d299d",
+          "source_pixel_use": "sampled draft material/design parts plus explicit structural native redraw; no final whole image resize"
+        },
+        "native_adjustments": [
+          "NATIVE_STRUCTURAL_REBUILD: 原生保留母稿20px过梁/12px框脚材料块；柱截面重新安排长度，接缝/铜件/门板在目标网格重画",
+          "两态共享frame_native.png同一像素结构与右柱中性窗口；anchor(48,112)固定，不整体warp",
+          "ROOT_PROPORTION_CORRECTION: 内柱共同收薄，通路宽32改44以容纳既有40px机器人，外框bbox不变",
+          "整段通路[26,38,70,112)真Alpha透明，不填黑、地板、阈条或阴影",
+          "前景过梁/立柱导出同画布可编辑源PNG和显式选择mask；框脚余像素保留foundation层"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "telepad_base:manifest_id",
+      "passed": true,
+      "actual": "B09",
+      "expected": "B09"
+    },
+    {
+      "name": "telepad_base:fixed_anchor",
+      "passed": true,
+      "actual": [
+        64,
+        144
+      ],
+      "expected": [
+        64,
+        144
+      ]
+    },
+    {
+      "name": "telepad_base:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\telepad_base_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "telepad_base:sha",
+      "passed": true,
+      "actual": "8d59c3ba8ed09aa50a9232c5b3f8ffe204c9a8f41da408499d5208cd8c081512",
+      "expected": "8d59c3ba8ed09aa50a9232c5b3f8ffe204c9a8f41da408499d5208cd8c081512"
+    },
+    {
+      "name": "telepad_base:canvas",
+      "passed": true,
+      "actual": [
+        128,
+        160
+      ],
+      "expected": [
+        128,
+        160
+      ]
+    },
+    {
+      "name": "telepad_base:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "telepad_base:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "telepad_base:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "telepad_base:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "telepad_base:nonempty",
+      "passed": true,
+      "actual": [
+        22,
+        78,
+        107,
+        144
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "telepad_base:declared_bbox",
+      "passed": true,
+      "actual": [
+        22,
+        78,
+        107,
+        144
+      ],
+      "expected": [
+        22,
+        78,
+        107,
+        144
+      ]
+    },
+    {
+      "name": "telepad_base:object_margin",
+      "passed": true,
+      "actual": [
+        22,
+        78,
+        107,
+        144
+      ],
+      "expected": "at least 16px each side"
+    },
+    {
+      "name": "telepad_base:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "telepad_base:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/telepad_base_master_v001.png",
+        "master_sha256": "96d1a6fe61c5e4d457ac8a15630ba3843b4bf0aa3cc83fff2a54c0ceaf75bfe7",
+        "prompt": "prompts/telepad_base.txt",
+        "prompt_sha256": "5d51d3eea5469bab5342490105ce480ad195fb36f034024dd7adb3818279bcd9",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-628d3fb8-7c40-455a-b250-4c1c9cc4d2e6.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            148,
+            445,
+            974,
+            1090
+          ],
+          "material_sampling_size": [
+            85,
+            66
+          ],
+          "native_origin": [
+            22,
+            78
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 35,
+          "native_outline_pixels_corrected": 17
+        },
+        "native_adjustments": [
+          "四marker分别以明确原生矩形归并中性暗色，保留围框，不能把中央圆盘误设发光窗",
+          "顶侧钢面连续亮边缩为短条，去细碎颜色梯度；低基座厚度与底界144保持",
+          "记录中心轴[64,110]供传送效果叠加，接地anchor[64,144]独立；四窗导出实际选择源层"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "terminal_body:manifest_id",
+      "passed": true,
+      "actual": "B10",
+      "expected": "B10"
+    },
+    {
+      "name": "terminal_body:fixed_anchor",
+      "passed": true,
+      "actual": [
+        48,
+        80
+      ],
+      "expected": [
+        48,
+        80
+      ]
+    },
+    {
+      "name": "terminal_body:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\terminal_body_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "terminal_body:sha",
+      "passed": true,
+      "actual": "67c2c54fb0efbc1ffdb1cfa01c61ae6216f2947a74b1e29847c37be401c1b812",
+      "expected": "67c2c54fb0efbc1ffdb1cfa01c61ae6216f2947a74b1e29847c37be401c1b812"
+    },
+    {
+      "name": "terminal_body:canvas",
+      "passed": true,
+      "actual": [
+        96,
+        96
+      ],
+      "expected": [
+        96,
+        96
+      ]
+    },
+    {
+      "name": "terminal_body:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "terminal_body:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "terminal_body:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "terminal_body:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "terminal_body:nonempty",
+      "passed": true,
+      "actual": [
+        24,
+        16,
+        73,
+        80
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "terminal_body:declared_bbox",
+      "passed": true,
+      "actual": [
+        24,
+        16,
+        73,
+        80
+      ],
+      "expected": [
+        24,
+        16,
+        73,
+        80
+      ]
+    },
+    {
+      "name": "terminal_body:object_margin",
+      "passed": true,
+      "actual": [
+        24,
+        16,
+        73,
+        80
+      ],
+      "expected": "at least 16px each side"
+    },
+    {
+      "name": "terminal_body:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "terminal_body:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/terminal_body_master_v001.png",
+        "master_sha256": "dc8341a816b393b76fed71ab3c7437734c3ee0d013afd43175e6376422e2b994",
+        "prompt": "prompts/terminal_body.txt",
+        "prompt_sha256": "24e2e7b98b1a04a3a55a45f6d096ea6dde1682f4b25867e0d09811cca47b6ec2",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-f3240e50-0465-4245-bab2-a97f72cae5b7.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            331,
+            276,
+            919,
+            1045
+          ],
+          "material_sampling_size": [
+            49,
+            64
+          ],
+          "native_origin": [
+            24,
+            16
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 24,
+          "native_outline_pixels_corrected": 29
+        },
+        "native_adjustments": [
+          "安全内屏[38,30,57,41)逐像素归并，彻底清除母稿屏内梯度/形似内容的暗颗粒，屏幕内容应由真实场景提供",
+          "键盘左上短亮边归并3px，保留两排物理按键及右侧铜接口；底脚80",
+          "inner_screen源RGBA+mask与base同画布，可独立绑定场景屏幕材质"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "screen_frame:manifest_id",
+      "passed": true,
+      "actual": "B10",
+      "expected": "B10"
+    },
+    {
+      "name": "screen_frame:fixed_anchor",
+      "passed": true,
+      "actual": [
+        48,
+        80
+      ],
+      "expected": [
+        48,
+        80
+      ]
+    },
+    {
+      "name": "screen_frame:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\screen_frame_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "screen_frame:sha",
+      "passed": true,
+      "actual": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+      "expected": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343"
+    },
+    {
+      "name": "screen_frame:canvas",
+      "passed": true,
+      "actual": [
+        96,
+        96
+      ],
+      "expected": [
+        96,
+        96
+      ]
+    },
+    {
+      "name": "screen_frame:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "screen_frame:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "screen_frame:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "screen_frame:declared_color_count",
+      "passed": true,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "name": "screen_frame:nonempty",
+      "passed": true,
+      "actual": [
+        16,
+        16,
+        80,
+        80
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "screen_frame:declared_bbox",
+      "passed": true,
+      "actual": [
+        16,
+        16,
+        80,
+        80
+      ],
+      "expected": [
+        16,
+        16,
+        80,
+        80
+      ]
+    },
+    {
+      "name": "screen_frame:object_margin",
+      "passed": true,
+      "actual": [
+        16,
+        16,
+        80,
+        80
+      ],
+      "expected": "at least 16px each side"
+    },
+    {
+      "name": "screen_frame:slice_region",
+      "passed": true,
+      "actual": [
+        16,
+        16,
+        64,
+        64
+      ],
+      "expected": [
+        16,
+        16,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "screen_frame:slice_margins",
+      "passed": true,
+      "actual": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "expected": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "name": "screen_frame:transparent_center",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "screen_frame:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/screen_frame_master_v001.png",
+        "master_sha256": "c6ea66ec6ae879a8a30e4a6aef2314e3f46af64ef94f3f9d7cc89758232ca3f6",
+        "prompt": "prompts/screen_frame.txt",
+        "prompt_sha256": "4f9c72864fa9f6107e53e9307bd4520de5117aaf292c2be76d91ae53f35d4ca0",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-d07c2b93-53ab-4b84-b89d-a70fa3f47a58.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            187,
+            208,
+            1067,
+            1046
+          ],
+          "material_sampling_size": [
+            64,
+            61
+          ],
+          "native_origin": [
+            16,
+            19
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 3,
+          "native_outline_pixels_corrected": 181,
+          "native_reconstruction_file": "layers/screen_frame_native.png",
+          "native_reconstruction_sha256": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+          "native_reconstruction_record": "art-source/ember/batch-03-objects/annotations/architectural-rebuild-record.json",
+          "native_reconstruction_record_sha256": "756782618233937624d6ed8d6af9f7ee3f5c3247241c7efaf68a4a61a04d299d",
+          "source_pixel_use": "sampled draft material/design parts plus explicit structural native redraw; no final whole image resize"
+        },
+        "native_adjustments": [
+          "NATIVE_NINE_SLICE_REBUILD: 保留4个实际8px不同光照角块；重画恒厚8px材质截面，不镜像光照",
+          "原生source region [16,16,80,80)为64×64；slice_region使用[x,y,w,h]=[16,16,64,64]，四边8px",
+          "中心[24,24,72,72)完整真透明，draw_center=false；完整96画布四边16px，不把留白当九宫格边条"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "fuse:manifest_id",
+      "passed": true,
+      "actual": "B11",
+      "expected": "B11"
+    },
+    {
+      "name": "fuse:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\fuse_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "fuse:sha",
+      "passed": true,
+      "actual": "71288a979fade1ac91a129b0d808a3576877d478c2e3c2292927d2f008c9951a",
+      "expected": "71288a979fade1ac91a129b0d808a3576877d478c2e3c2292927d2f008c9951a"
+    },
+    {
+      "name": "fuse:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "fuse:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "fuse:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "fuse:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "fuse:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "fuse:nonempty",
+      "passed": true,
+      "actual": [
+        13,
+        44,
+        51,
+        56
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "fuse:declared_bbox",
+      "passed": true,
+      "actual": [
+        13,
+        44,
+        51,
+        56
+      ],
+      "expected": [
+        13,
+        44,
+        51,
+        56
+      ]
+    },
+    {
+      "name": "fuse:object_margin",
+      "passed": true,
+      "actual": [
+        13,
+        44,
+        51,
+        56
+      ],
+      "expected": "at least 8px each side"
+    },
+    {
+      "name": "fuse:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "fuse:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/fuse_master_v001.png",
+        "master_sha256": "e11da345fa2277f5c8273a18b78e60501078c7febc70ba4fa7b493f47f7db59d",
+        "prompt": "prompts/fuse.txt",
+        "prompt_sha256": "32bbe490cfe5ef13331244c18f365ef056802707b1d42e1f9f9b4817e199779b",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-e1e12345-48f4-4da8-b3d7-d06ad5dfd4f1.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            344,
+            336,
+            1313,
+            636
+          ],
+          "material_sampling_size": [
+            38,
+            12
+          ],
+          "native_origin": [
+            13,
+            44
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 7,
+          "native_outline_pixels_corrected": 62
+        },
+        "native_adjustments": [
+          "陶瓷管中部[25,47,41,50)整理为连续浅装甲块、下一行钢亮灰，消除模型微颗粒但保留上亮下暗",
+          "左叉口归并2×2透明缺口；右端依据母稿细槽原生切1×3真透明孔，形成方向/描边可观察结构",
+          "不加灯或文字；底界56，同64画布保留8px以上留边"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "antenna_coil:manifest_id",
+      "passed": true,
+      "actual": "B11",
+      "expected": "B11"
+    },
+    {
+      "name": "antenna_coil:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\antenna_coil_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "antenna_coil:sha",
+      "passed": true,
+      "actual": "eb95dc28410a802402a70e43dfa7403376aebc0ad9ccc7fead3c99168d58904c",
+      "expected": "eb95dc28410a802402a70e43dfa7403376aebc0ad9ccc7fead3c99168d58904c"
+    },
+    {
+      "name": "antenna_coil:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "antenna_coil:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "antenna_coil:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "antenna_coil:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "antenna_coil:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "antenna_coil:nonempty",
+      "passed": true,
+      "actual": [
+        14,
+        18,
+        50,
+        56
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "antenna_coil:declared_bbox",
+      "passed": true,
+      "actual": [
+        14,
+        18,
+        50,
+        56
+      ],
+      "expected": [
+        14,
+        18,
+        50,
+        56
+      ]
+    },
+    {
+      "name": "antenna_coil:object_margin",
+      "passed": true,
+      "actual": [
+        14,
+        18,
+        50,
+        56
+      ],
+      "expected": "at least 8px each side"
+    },
+    {
+      "name": "antenna_coil:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "antenna_coil:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/antenna_coil_master_v001.png",
+        "master_sha256": "9da1ac977e79c8be744ee245660f7dfabaf2c0bdf213ab9287a78ef4c40bcce9",
+        "prompt": "prompts/antenna_coil.txt",
+        "prompt_sha256": "6e3af3b4d2994d79358e8ad2f8d1d2a79e20103f34f0f8897d5a8768132ee757",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-a5befc17-26d6-45af-a9c1-c812378cc3aa.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            392,
+            319,
+            1008,
+            976
+          ],
+          "material_sampling_size": [
+            36,
+            38
+          ],
+          "native_origin": [
+            14,
+            18
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 15,
+          "native_outline_pixels_corrected": 91
+        },
+        "native_adjustments": [
+          "三匝绕组正面原生短高光归并为连续6px铜色段，保留匝间深色核心，不绘制信号发光",
+          "明确保留实际两处2×1透明穿孔[20,27,22,28)、[33,27,35,28)，剪去半透明点而不填孔",
+          "底脚与右侧连接器维持母稿不对称轮廓，安装边界56"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "split_ring:manifest_id",
+      "passed": true,
+      "actual": "B11",
+      "expected": "B11"
+    },
+    {
+      "name": "split_ring:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\split_ring_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "split_ring:sha",
+      "passed": true,
+      "actual": "30147d02b0140b8a1a258cb713ef88c1778e2a6c061b3715becb2984bdf335ad",
+      "expected": "30147d02b0140b8a1a258cb713ef88c1778e2a6c061b3715becb2984bdf335ad"
+    },
+    {
+      "name": "split_ring:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "split_ring:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "split_ring:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "split_ring:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "split_ring:declared_color_count",
+      "passed": true,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "name": "split_ring:nonempty",
+      "passed": true,
+      "actual": [
+        12,
+        24,
+        52,
+        56
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "split_ring:declared_bbox",
+      "passed": true,
+      "actual": [
+        12,
+        24,
+        52,
+        56
+      ],
+      "expected": [
+        12,
+        24,
+        52,
+        56
+      ]
+    },
+    {
+      "name": "split_ring:object_margin",
+      "passed": true,
+      "actual": [
+        12,
+        24,
+        52,
+        56
+      ],
+      "expected": "at least 8px each side"
+    },
+    {
+      "name": "split_ring:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "split_ring:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/split_ring_master_v001.png",
+        "master_sha256": "88cca50a3a267ff6680c19290f8c3b3171153406f32374dbd4d5966833229ed2",
+        "prompt": "prompts/split_ring.txt",
+        "prompt_sha256": "a9ed82e0237c4d248b41f0b9c8db9e02e6e6e21414aa36235430409d1f6c6662",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-0db75d14-2489-464d-9750-bce8ec630e7a.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            271,
+            225,
+            1130,
+            910
+          ],
+          "material_sampling_size": [
+            40,
+            32
+          ],
+          "native_origin": [
+            12,
+            24
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 13,
+          "native_outline_pixels_corrected": 139
+        },
+        "native_adjustments": [
+          "右下gap[41,48,44,51)归并成连续透明开口，消除采样可能残留孤立桥点，不填底色",
+          "左上陶瓷高光整理为3px短段、内缘钢灰用1px轮廓清楚收边，保留偏右铜端头",
+          "中央孔保持不规则透视椭圆原生负形，不用几何圆环替换母稿整体轮廓"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "log_cartridge:manifest_id",
+      "passed": true,
+      "actual": "B12",
+      "expected": "B12"
+    },
+    {
+      "name": "log_cartridge:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\log_cartridge_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "log_cartridge:sha",
+      "passed": true,
+      "actual": "14faf29c1959209f37c196bf47480b41fdac604f9587b7cd9c273c80cdce9b6a",
+      "expected": "14faf29c1959209f37c196bf47480b41fdac604f9587b7cd9c273c80cdce9b6a"
+    },
+    {
+      "name": "log_cartridge:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "log_cartridge:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "log_cartridge:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "log_cartridge:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "log_cartridge:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "log_cartridge:nonempty",
+      "passed": true,
+      "actual": [
+        21,
+        22,
+        44,
+        56
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "log_cartridge:declared_bbox",
+      "passed": true,
+      "actual": [
+        21,
+        22,
+        44,
+        56
+      ],
+      "expected": [
+        21,
+        22,
+        44,
+        56
+      ]
+    },
+    {
+      "name": "log_cartridge:object_margin",
+      "passed": true,
+      "actual": [
+        21,
+        22,
+        44,
+        56
+      ],
+      "expected": "at least 8px each side"
+    },
+    {
+      "name": "log_cartridge:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "log_cartridge:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/log_cartridge_master_v001.png",
+        "master_sha256": "b50f9b6c11bc48941452159426244ddca387c22673cb258acc7e15af82ef8038",
+        "prompt": "prompts/log_cartridge.txt",
+        "prompt_sha256": "389bc749643706bf1a803d89f3048b88a21b8674702bdcd11a51f8bbc683f80a",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-b6990d76-cad5-4701-bb3e-f8c6a4dd7de7.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            352,
+            269,
+            862,
+            1026
+          ],
+          "material_sampling_size": [
+            23,
+            34
+          ],
+          "native_origin": [
+            21,
+            22
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 10,
+          "native_outline_pixels_corrected": 53
+        },
+        "native_adjustments": [
+          "中心物理凹槽[29,36,35,46)归并为6px宽中性深色块、最下2行加深；它不是发光运行屏幕",
+          "两铜触点的顶边分别整理成2px材质亮点，保留槽中性及单侧锁扣不对称方向",
+          "去半透明halo与孤立钢灰点；64画布底界56，日志正文留给UI"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "toolbox:manifest_id",
+      "passed": true,
+      "actual": "B12",
+      "expected": "B12"
+    },
+    {
+      "name": "toolbox:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\toolbox_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "toolbox:sha",
+      "passed": true,
+      "actual": "d3f8b0279f5940c88e064f1d78733ea48ecb9ef320c597953902359a8b9339bd",
+      "expected": "d3f8b0279f5940c88e064f1d78733ea48ecb9ef320c597953902359a8b9339bd"
+    },
+    {
+      "name": "toolbox:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "toolbox:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "toolbox:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "toolbox:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "toolbox:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "toolbox:nonempty",
+      "passed": true,
+      "actual": [
+        10,
+        29,
+        54,
+        56
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "toolbox:declared_bbox",
+      "passed": true,
+      "actual": [
+        10,
+        29,
+        54,
+        56
+      ],
+      "expected": [
+        10,
+        29,
+        54,
+        56
+      ]
+    },
+    {
+      "name": "toolbox:object_margin",
+      "passed": true,
+      "actual": [
+        10,
+        29,
+        54,
+        56
+      ],
+      "expected": "at least 8px each side"
+    },
+    {
+      "name": "toolbox:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "toolbox:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/toolbox_master_v001.png",
+        "master_sha256": "132baad1e28dfd64d8f968c70be9f7c97a5fa7c5c05e584238f3ba145d69daef",
+        "prompt": "prompts/toolbox.txt",
+        "prompt_sha256": "96650fbbad32e7fc900f6f679102701910917d036ea55102593f55fb912f2fb8",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-cd450432-43db-489d-9642-fcafe0116157.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            360,
+            287,
+            1148,
+            766
+          ],
+          "material_sampling_size": [
+            44,
+            27
+          ],
+          "native_origin": [
+            10,
+            29
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 17,
+          "native_outline_pixels_corrected": 60
+        },
+        "native_adjustments": [
+          "NATIVE_HANDLE_APERTURE: 按实际母稿手柄内槽位置切原生[28,33,37,35)9×2真透明孔，不让halo/灰底残留",
+          "顶手柄亮钢短条[28..35,30]连续归并，箱盖上缘保留钢灰平面，两锁扣不作为运行状态灯",
+          "去所有halo和随机单点；原生44×27底界56，完整轮廓保持，未把灰halo缩图后冒充投影"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "helmet:manifest_id",
+      "passed": true,
+      "actual": "B12",
+      "expected": "B12"
+    },
+    {
+      "name": "helmet:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-03-objects\\finished\\helmet_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "helmet:sha",
+      "passed": true,
+      "actual": "a920b3f0ac6940f7c2a53ccc04e59f8b13003486052d15d93e9e5488fe288dc6",
+      "expected": "a920b3f0ac6940f7c2a53ccc04e59f8b13003486052d15d93e9e5488fe288dc6"
+    },
+    {
+      "name": "helmet:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "helmet:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "helmet:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "helmet:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "helmet:declared_color_count",
+      "passed": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "name": "helmet:nonempty",
+      "passed": true,
+      "actual": [
+        16,
+        22,
+        49,
+        56
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "helmet:declared_bbox",
+      "passed": true,
+      "actual": [
+        16,
+        22,
+        49,
+        56
+      ],
+      "expected": [
+        16,
+        22,
+        49,
+        56
+      ]
+    },
+    {
+      "name": "helmet:object_margin",
+      "passed": true,
+      "actual": [
+        16,
+        22,
+        49,
+        56
+      ],
+      "expected": "at least 8px each side"
+    },
+    {
+      "name": "helmet:base_neutral",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "helmet:source_use",
+      "passed": true,
+      "actual": {
+        "method": "AI_MATERIAL_DESIGN_REFERENCE_AND_NATIVE_PIXEL_FINISH",
+        "master": "art-source/ember/batch-03-objects/generated/helmet_master_v001.png",
+        "master_sha256": "5a623cca2c58eab9018720f6c89aca504e66d69e50f7202958887e14ce744f4c",
+        "prompt": "prompts/helmet.txt",
+        "prompt_sha256": "f227c15ae8cbc881ebb905f6188c41ebe510f59deba35dd7d4280c5f55cd11d1",
+        "reference_images": [
+          {
+            "file": "assets/ember/buildings/station/station_base_v001.png",
+            "sha256": "24e91021bf05e08a334045676f24ed36361888d1da373f422d753370a9eebef4"
+          },
+          {
+            "file": "assets/ember/characters/robot/robot_idle_down_v001.png",
+            "sha256": "c65f68455554edb03aea0a7b7b3cea6e1a779fa9d5aa49cba9b4aa5c4f6fbfff"
+          }
+        ],
+        "generation_record": "art-source/ember/batch-03-objects/generation-record.json",
+        "tool_output": "C:\\Users\\shiru\\.codex\\generated_images\\01a1029b-7769-7450-a4af-184da6aeea63\\exec-227b23f0-d020-47c9-9a3f-dee5690f8d5c.png",
+        "generation_record_sha256": "dee2a8419eeb37757f75da45b47d2e48384f773a5e73bbb3eb404a3697cc583b",
+        "generation_date_utc": "2026-10-04",
+        "sampled": {
+          "source_subject_crop": [
+            419,
+            427,
+            863,
+            883
+          ],
+          "material_sampling_size": [
+            33,
+            34
+          ],
+          "native_origin": [
+            16,
+            22
+          ],
+          "sampled_fragment_pixels_removed": 0,
+          "sampling_role": "未验收材质/轮廓起点，仍需以下原生修正",
+          "native_singleton_color_pixels_simplified": 21,
+          "native_outline_pixels_corrected": 35
+        },
+        "native_adjustments": [
+          "visor内侧[23,41,32,47)归并为中性深灰，去母稿微渐变，原有倾斜壳缘轮廓仍保留",
+          "左上陶瓷亮簇归并成3px连续色块，右侧壳面继续较暗；不镜像或改变右侧铜扣",
+          "实体1px外轮廓、二值Alpha、原生33×34底界56；玻璃无运行状态光、无地面影"
+        ],
+        "generation_tool": "built-in image_gen.imagegen",
+        "full_image_resize_is_final": false
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "hp:manifest_id",
+      "passed": true,
+      "actual": "U01",
+      "expected": "U01"
+    },
+    {
+      "name": "hp:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\hp_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "hp:sha",
+      "passed": true,
+      "actual": "1e4c4d8f02dfadf0249a89a75f2e0441b0fbaaf401447124bf5673f91398a817",
+      "expected": "1e4c4d8f02dfadf0249a89a75f2e0441b0fbaaf401447124bf5673f91398a817"
+    },
+    {
+      "name": "hp:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "hp:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "hp:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "hp:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "hp:nonempty",
+      "passed": true,
+      "actual": [
+        4,
+        5,
+        28,
+        27
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "hp:declared_bbox",
+      "passed": true,
+      "actual": [
+        4,
+        5,
+        28,
+        27
+      ],
+      "expected": [
+        4,
+        5,
+        28,
+        27
+      ]
+    },
+    {
+      "name": "hp:icon_margin",
+      "passed": true,
+      "actual": [
+        4,
+        5,
+        28,
+        27
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "hp:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "hp:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/hp_master_v001.png",
+        "mother_sha256": "c22fc0d675207701c927fed244eab901739d5d47b1cb1eb329612822d4532baf",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            232,
+            274,
+            1022,
+            989
+          ],
+          "material_grid_size": [
+            24,
+            22
+          ],
+          "material_grid_origin": [
+            4,
+            5
+          ],
+          "native_semantic_changed_pixels": 94
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "energy:manifest_id",
+      "passed": true,
+      "actual": "U01",
+      "expected": "U01"
+    },
+    {
+      "name": "energy:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\energy_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "energy:sha",
+      "passed": true,
+      "actual": "576d909c4c1068485aab26279e61ce8a5a20a32b31e900ef6c10ca0ba9a59da6",
+      "expected": "576d909c4c1068485aab26279e61ce8a5a20a32b31e900ef6c10ca0ba9a59da6"
+    },
+    {
+      "name": "energy:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "energy:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "energy:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "energy:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "energy:nonempty",
+      "passed": true,
+      "actual": [
+        9,
+        4,
+        23,
+        28
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "energy:declared_bbox",
+      "passed": true,
+      "actual": [
+        9,
+        4,
+        23,
+        28
+      ],
+      "expected": [
+        9,
+        4,
+        23,
+        28
+      ]
+    },
+    {
+      "name": "energy:icon_margin",
+      "passed": true,
+      "actual": [
+        9,
+        4,
+        23,
+        28
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "energy:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "energy:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/energy_master_v001.png",
+        "mother_sha256": "ce48d2b62fc0ba3f51dc03187ff0556cd823836b94082a9a8b2eac016df8b1eb",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            393,
+            229,
+            862,
+            1048
+          ],
+          "material_grid_size": [
+            14,
+            24
+          ],
+          "material_grid_origin": [
+            9,
+            4
+          ],
+          "native_semantic_changed_pixels": 60
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "time:manifest_id",
+      "passed": true,
+      "actual": "U01",
+      "expected": "U01"
+    },
+    {
+      "name": "time:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\time_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "time:sha",
+      "passed": true,
+      "actual": "60fe96b8625c9d5ffc5d18b715283cd634f0233c4c5d4d1c5db9e91d19be292e",
+      "expected": "60fe96b8625c9d5ffc5d18b715283cd634f0233c4c5d4d1c5db9e91d19be292e"
+    },
+    {
+      "name": "time:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "time:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "time:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "time:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "time:nonempty",
+      "passed": true,
+      "actual": [
+        6,
+        4,
+        26,
+        28
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "time:declared_bbox",
+      "passed": true,
+      "actual": [
+        6,
+        4,
+        26,
+        28
+      ],
+      "expected": [
+        6,
+        4,
+        26,
+        28
+      ]
+    },
+    {
+      "name": "time:icon_margin",
+      "passed": true,
+      "actual": [
+        6,
+        4,
+        26,
+        28
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "time:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "time:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/time_master_v001.png",
+        "mother_sha256": "a991cc1e15ad65621df47a95cd425e96ed77a4b25f57dc06c02284dab0575233",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            269,
+            196,
+            986,
+            1074
+          ],
+          "material_grid_size": [
+            20,
+            24
+          ],
+          "material_grid_origin": [
+            6,
+            4
+          ],
+          "native_semantic_changed_pixels": 162
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "interact:manifest_id",
+      "passed": true,
+      "actual": "U01",
+      "expected": "U01"
+    },
+    {
+      "name": "interact:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\interact_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "interact:sha",
+      "passed": true,
+      "actual": "7b770b8ddb0bb385cdabd139efb7f148ecbe9cfd93ab0de61b36f947d9940776",
+      "expected": "7b770b8ddb0bb385cdabd139efb7f148ecbe9cfd93ab0de61b36f947d9940776"
+    },
+    {
+      "name": "interact:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "interact:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "interact:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "interact:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "interact:nonempty",
+      "passed": true,
+      "actual": [
+        6,
+        4,
+        28,
+        28
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "interact:declared_bbox",
+      "passed": true,
+      "actual": [
+        6,
+        4,
+        28,
+        28
+      ],
+      "expected": [
+        6,
+        4,
+        28,
+        28
+      ]
+    },
+    {
+      "name": "interact:icon_margin",
+      "passed": true,
+      "actual": [
+        6,
+        4,
+        28,
+        28
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "interact:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "interact:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/interact_master_v001.png",
+        "mother_sha256": "4d14c600476a87793fba5ca01240acd0a1d910788736ccabf9804673d38437b5",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            361,
+            299,
+            941,
+            998
+          ],
+          "material_grid_size": [
+            20,
+            24
+          ],
+          "material_grid_origin": [
+            6,
+            4
+          ],
+          "native_semantic_changed_pixels": 81
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "log:manifest_id",
+      "passed": true,
+      "actual": "U01",
+      "expected": "U01"
+    },
+    {
+      "name": "log:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\log_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "log:sha",
+      "passed": true,
+      "actual": "b4f8460c84b54e43121940f6a1b7f13b16452528821fe1899c8a1ce37703eda9",
+      "expected": "b4f8460c84b54e43121940f6a1b7f13b16452528821fe1899c8a1ce37703eda9"
+    },
+    {
+      "name": "log:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "log:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "log:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "log:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "log:nonempty",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "log:declared_bbox",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": [
+        4,
+        4,
+        28,
+        28
+      ]
+    },
+    {
+      "name": "log:icon_margin",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "log:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "log:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/log_master_v001.png",
+        "mother_sha256": "79beb4a2705389da0deec7fce7f19349568cdace0ab0dbc62f2bea0ddb975452",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            268,
+            295,
+            979,
+            997
+          ],
+          "material_grid_size": [
+            24,
+            24
+          ],
+          "material_grid_origin": [
+            4,
+            4
+          ],
+          "native_semantic_changed_pixels": 48
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "pause:manifest_id",
+      "passed": true,
+      "actual": "U01",
+      "expected": "U01"
+    },
+    {
+      "name": "pause:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\pause_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "pause:sha",
+      "passed": true,
+      "actual": "575ac144805cc8cfc533060c87409e40057de2907da5cd5aace4a0ab82a23bc9",
+      "expected": "575ac144805cc8cfc533060c87409e40057de2907da5cd5aace4a0ab82a23bc9"
+    },
+    {
+      "name": "pause:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "pause:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "pause:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "pause:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "pause:nonempty",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        27
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "pause:declared_bbox",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        27
+      ],
+      "expected": [
+        4,
+        4,
+        28,
+        27
+      ]
+    },
+    {
+      "name": "pause:icon_margin",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        27
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "pause:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "pause:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/pause_master_v001.png",
+        "mother_sha256": "8b0042d18fef3c0a05bf30f015dbb90a08c3c91ecd8a4ef8d399701ec704307d",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            267,
+            283,
+            989,
+            972
+          ],
+          "material_grid_size": [
+            24,
+            23
+          ],
+          "material_grid_origin": [
+            4,
+            4
+          ],
+          "native_semantic_changed_pixels": 124
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "lighting:manifest_id",
+      "passed": true,
+      "actual": "U02",
+      "expected": "U02"
+    },
+    {
+      "name": "lighting:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\lighting_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "lighting:sha",
+      "passed": true,
+      "actual": "a9d94ba7203b8ebf21e761b1830d126be899d8df4528ae3c3058716d4685676c",
+      "expected": "a9d94ba7203b8ebf21e761b1830d126be899d8df4528ae3c3058716d4685676c"
+    },
+    {
+      "name": "lighting:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "lighting:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "lighting:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "lighting:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "lighting:nonempty",
+      "passed": true,
+      "actual": [
+        8,
+        4,
+        23,
+        28
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "lighting:declared_bbox",
+      "passed": true,
+      "actual": [
+        8,
+        4,
+        23,
+        28
+      ],
+      "expected": [
+        8,
+        4,
+        23,
+        28
+      ]
+    },
+    {
+      "name": "lighting:icon_margin",
+      "passed": true,
+      "actual": [
+        8,
+        4,
+        23,
+        28
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "lighting:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "lighting:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/lighting_master_v001.png",
+        "mother_sha256": "57c0051d38808efc076a4a9534a678f95a891f992dc3574364f670f8561488e1",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            373,
+            230,
+            881,
+            1056
+          ],
+          "material_grid_size": [
+            15,
+            24
+          ],
+          "material_grid_origin": [
+            8,
+            4
+          ],
+          "native_semantic_changed_pixels": 34
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "drainage:manifest_id",
+      "passed": true,
+      "actual": "U02",
+      "expected": "U02"
+    },
+    {
+      "name": "drainage:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\drainage_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "drainage:sha",
+      "passed": true,
+      "actual": "96533facc1dbe1bd9e8c095955ad086d5693c5ab7500f5baea0ff5d38eb9a0d7",
+      "expected": "96533facc1dbe1bd9e8c095955ad086d5693c5ab7500f5baea0ff5d38eb9a0d7"
+    },
+    {
+      "name": "drainage:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "drainage:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "drainage:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "drainage:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "drainage:nonempty",
+      "passed": true,
+      "actual": [
+        4,
+        5,
+        28,
+        26
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "drainage:declared_bbox",
+      "passed": true,
+      "actual": [
+        4,
+        5,
+        28,
+        26
+      ],
+      "expected": [
+        4,
+        5,
+        28,
+        26
+      ]
+    },
+    {
+      "name": "drainage:icon_margin",
+      "passed": true,
+      "actual": [
+        4,
+        5,
+        28,
+        26
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "drainage:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "drainage:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/drainage_master_v001.png",
+        "mother_sha256": "15cc0e9fe4f5b79fe960a6f4ff69f9d2a19b3687a11d109e7175a44175f91681",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            215,
+            294,
+            1040,
+            1014
+          ],
+          "material_grid_size": [
+            24,
+            21
+          ],
+          "material_grid_origin": [
+            4,
+            5
+          ],
+          "native_semantic_changed_pixels": 62
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "water_supply:manifest_id",
+      "passed": true,
+      "actual": "U02",
+      "expected": "U02"
+    },
+    {
+      "name": "water_supply:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\water_supply_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "water_supply:sha",
+      "passed": true,
+      "actual": "1f427adc180a0292a036a2da0655f7ef9d1c4092542ad4f57e2fcd6108415d8b",
+      "expected": "1f427adc180a0292a036a2da0655f7ef9d1c4092542ad4f57e2fcd6108415d8b"
+    },
+    {
+      "name": "water_supply:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "water_supply:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "water_supply:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "water_supply:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "water_supply:nonempty",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "water_supply:declared_bbox",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": [
+        4,
+        4,
+        28,
+        28
+      ]
+    },
+    {
+      "name": "water_supply:icon_margin",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "water_supply:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "water_supply:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/water_supply_master_v001.png",
+        "mother_sha256": "813e1d76e342b3b88475aa0c1297fe5c7e7c81dbba82de47dee492472d9fa56a",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            170,
+            218,
+            1082,
+            1132
+          ],
+          "material_grid_size": [
+            24,
+            24
+          ],
+          "material_grid_origin": [
+            4,
+            4
+          ],
+          "native_semantic_changed_pixels": 23
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "ventilation:manifest_id",
+      "passed": true,
+      "actual": "U02",
+      "expected": "U02"
+    },
+    {
+      "name": "ventilation:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\ventilation_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "ventilation:sha",
+      "passed": true,
+      "actual": "d4ca2e1e5f6e0855e190eaa8eb86eae25df29f11ffdb5ef8cf2a2ba9a7201352",
+      "expected": "d4ca2e1e5f6e0855e190eaa8eb86eae25df29f11ffdb5ef8cf2a2ba9a7201352"
+    },
+    {
+      "name": "ventilation:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "ventilation:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "ventilation:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "ventilation:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "ventilation:nonempty",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "ventilation:declared_bbox",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": [
+        4,
+        4,
+        28,
+        28
+      ]
+    },
+    {
+      "name": "ventilation:icon_margin",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "ventilation:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "ventilation:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/ventilation_master_v001.png",
+        "mother_sha256": "0fa27807f6a96aab8f5b3fba03740638d4e4db68dcbcf899498843c7456b7809",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            198,
+            200,
+            1056,
+            1054
+          ],
+          "material_grid_size": [
+            24,
+            24
+          ],
+          "material_grid_origin": [
+            4,
+            4
+          ],
+          "native_semantic_changed_pixels": 16
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "cooling:manifest_id",
+      "passed": true,
+      "actual": "U02",
+      "expected": "U02"
+    },
+    {
+      "name": "cooling:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\cooling_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "cooling:sha",
+      "passed": true,
+      "actual": "0e037939288b99d4fa1f510347e18d4d53474508383a7f0d8998d2d520099585",
+      "expected": "0e037939288b99d4fa1f510347e18d4d53474508383a7f0d8998d2d520099585"
+    },
+    {
+      "name": "cooling:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "cooling:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "cooling:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "cooling:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "cooling:nonempty",
+      "passed": true,
+      "actual": [
+        4,
+        6,
+        28,
+        26
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "cooling:declared_bbox",
+      "passed": true,
+      "actual": [
+        4,
+        6,
+        28,
+        26
+      ],
+      "expected": [
+        4,
+        6,
+        28,
+        26
+      ]
+    },
+    {
+      "name": "cooling:icon_margin",
+      "passed": true,
+      "actual": [
+        4,
+        6,
+        28,
+        26
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "cooling:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "cooling:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/cooling_master_v001.png",
+        "mother_sha256": "1ef5c4e10fb284f94ba9376f8bd8e597d3b1fb67cfad916083176993279f776a",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            159,
+            250,
+            1095,
+            1044
+          ],
+          "material_grid_size": [
+            24,
+            20
+          ],
+          "material_grid_origin": [
+            4,
+            6
+          ],
+          "native_semantic_changed_pixels": 110
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "communication:manifest_id",
+      "passed": true,
+      "actual": "U02",
+      "expected": "U02"
+    },
+    {
+      "name": "communication:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\communication_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "communication:sha",
+      "passed": true,
+      "actual": "4743e61790824d784a3e8447f34fda04850de15ca00edb45d3caddc9e248210e",
+      "expected": "4743e61790824d784a3e8447f34fda04850de15ca00edb45d3caddc9e248210e"
+    },
+    {
+      "name": "communication:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "communication:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "communication:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "communication:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "communication:nonempty",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "communication:declared_bbox",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": [
+        4,
+        4,
+        28,
+        28
+      ]
+    },
+    {
+      "name": "communication:icon_margin",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "communication:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "communication:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/communication_master_v001.png",
+        "mother_sha256": "1de2f91ffafc1a7d06ccb00ac287d147bcf4960406187acf3812c1bfd4a17025",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            335,
+            222,
+            919,
+            1065
+          ],
+          "material_grid_size": [
+            17,
+            24
+          ],
+          "material_grid_origin": [
+            7,
+            4
+          ],
+          "native_semantic_changed_pixels": 219
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "teleport:manifest_id",
+      "passed": true,
+      "actual": "U03",
+      "expected": "U03"
+    },
+    {
+      "name": "teleport:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\teleport_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "teleport:sha",
+      "passed": true,
+      "actual": "2784f5e7090d78d1ebe3e3de80fb73ed18bc1e6745f9a0b1ac6e333651dade3d",
+      "expected": "2784f5e7090d78d1ebe3e3de80fb73ed18bc1e6745f9a0b1ac6e333651dade3d"
+    },
+    {
+      "name": "teleport:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "teleport:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "teleport:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "teleport:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "teleport:nonempty",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        27
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "teleport:declared_bbox",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        27
+      ],
+      "expected": [
+        4,
+        4,
+        28,
+        27
+      ]
+    },
+    {
+      "name": "teleport:icon_margin",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        28,
+        27
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "teleport:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "teleport:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/teleport_master_v001.png",
+        "mother_sha256": "af3cbc1809d5a693825789369ac304ba3b9e33ff80d4e027b44c0a65dae04785",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            205,
+            231,
+            1049,
+            1049
+          ],
+          "material_grid_size": [
+            24,
+            23
+          ],
+          "material_grid_origin": [
+            4,
+            4
+          ],
+          "native_semantic_changed_pixels": 54
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "protection:manifest_id",
+      "passed": true,
+      "actual": "U03",
+      "expected": "U03"
+    },
+    {
+      "name": "protection:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\protection_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "protection:sha",
+      "passed": true,
+      "actual": "101b87a8bc083b07d01e469fb41dab6082e3cda188b33abcaea37226f0ea9fc5",
+      "expected": "101b87a8bc083b07d01e469fb41dab6082e3cda188b33abcaea37226f0ea9fc5"
+    },
+    {
+      "name": "protection:canvas",
+      "passed": true,
+      "actual": [
+        32,
+        32
+      ],
+      "expected": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "protection:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "protection:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "protection:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "protection:nonempty",
+      "passed": true,
+      "actual": [
+        5,
+        4,
+        26,
+        28
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "protection:declared_bbox",
+      "passed": true,
+      "actual": [
+        5,
+        4,
+        26,
+        28
+      ],
+      "expected": [
+        5,
+        4,
+        26,
+        28
+      ]
+    },
+    {
+      "name": "protection:icon_margin",
+      "passed": true,
+      "actual": [
+        5,
+        4,
+        26,
+        28
+      ],
+      "expected": "within [4,4,28,28)"
+    },
+    {
+      "name": "protection:icon_center",
+      "passed": true,
+      "actual": [
+        16,
+        16
+      ],
+      "expected": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "protection:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/protection_master_v001.png",
+        "mother_sha256": "7593c5e138afac02fbd4af1f252767f4da40722b910518097886a6c91c8eb2ba",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": {
+          "source_alpha_threshold": 128,
+          "source_body_bbox": [
+            304,
+            278,
+            951,
+            1027
+          ],
+          "material_grid_size": [
+            21,
+            24
+          ],
+          "material_grid_origin": [
+            5,
+            4
+          ],
+          "native_semantic_changed_pixels": 85
+        }
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "panel_9slice:manifest_id",
+      "passed": true,
+      "actual": "U04",
+      "expected": "U04"
+    },
+    {
+      "name": "panel_9slice:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-04-ui\\finished\\panel_9slice_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "panel_9slice:sha",
+      "passed": true,
+      "actual": "d291fee85289541740b8b403535cf22d05c1f3676116fb78e3a4f50e580c79fe",
+      "expected": "d291fee85289541740b8b403535cf22d05c1f3676116fb78e3a4f50e580c79fe"
+    },
+    {
+      "name": "panel_9slice:canvas",
+      "passed": true,
+      "actual": [
+        96,
+        96
+      ],
+      "expected": [
+        96,
+        96
+      ]
+    },
+    {
+      "name": "panel_9slice:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "panel_9slice:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "panel_9slice:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "panel_9slice:nonempty",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        96,
+        96
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "panel_9slice:declared_bbox",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        96,
+        96
+      ],
+      "expected": [
+        0,
+        0,
+        96,
+        96
+      ]
+    },
+    {
+      "name": "panel_9slice:slice_margins",
+      "passed": true,
+      "actual": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "expected": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "name": "panel_9slice:source_use",
+      "passed": true,
+      "actual": {
+        "mother": "art-source/ember/batch-04-ui/generated/panel_9slice_master_v001.png",
+        "mother_sha256": "ec3390ccd5bb9b47eff5d8a69e0aa869afbc179a324930524a4c75d5adad5d06",
+        "source_unchanged": true,
+        "direct_original_rgba_byte_reuse": false,
+        "meaning": "母稿仅作轮廓/量化材料起点并明确重画语义；面板只引用结构/材料，不冒称原图像素保留。",
+        "sampling": null
+      },
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "water_calm:manifest_id",
+      "passed": true,
+      "actual": "V01",
+      "expected": "V01"
+    },
+    {
+      "name": "water_calm:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-05-textures\\finished-textures\\water_calm_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "water_calm:sha",
+      "passed": true,
+      "actual": "5a1aeb3389a5d633ff81e43ae299057388dda8dd8b88923690012079798d3881",
+      "expected": "5a1aeb3389a5d633ff81e43ae299057388dda8dd8b88923690012079798d3881"
+    },
+    {
+      "name": "water_calm:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "water_calm:mode",
+      "passed": true,
+      "actual": "RGB",
+      "expected": "RGB"
+    },
+    {
+      "name": "water_calm:alpha",
+      "passed": true,
+      "actual": [
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "water_calm:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "water_calm:nonempty",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "water_calm:declared_bbox",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "expected": [
+        0,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "water_calm:seam_X",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "water_calm:seam_Y",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "water_calm:source_use",
+      "passed": true,
+      "actual": "AI_MATERIAL_PATTERN_REFERENCE_WITH_NATIVE_GRID_RECONSTRUCTION",
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "water_directional:manifest_id",
+      "passed": true,
+      "actual": "V01",
+      "expected": "V01"
+    },
+    {
+      "name": "water_directional:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-05-textures\\finished-textures\\water_directional_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "water_directional:sha",
+      "passed": true,
+      "actual": "2f3d48baa11688f3f37caa230415b32cef4aa5603e1301662ce5b3b2c32b2e38",
+      "expected": "2f3d48baa11688f3f37caa230415b32cef4aa5603e1301662ce5b3b2c32b2e38"
+    },
+    {
+      "name": "water_directional:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "water_directional:mode",
+      "passed": true,
+      "actual": "RGB",
+      "expected": "RGB"
+    },
+    {
+      "name": "water_directional:alpha",
+      "passed": true,
+      "actual": [
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "water_directional:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "water_directional:nonempty",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "water_directional:declared_bbox",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "expected": [
+        0,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "water_directional:seam_X",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "water_directional:seam_Y",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "water_directional:source_use",
+      "passed": true,
+      "actual": "AI_MATERIAL_PATTERN_REFERENCE_WITH_NATIVE_GRID_RECONSTRUCTION",
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "foam_strip:manifest_id",
+      "passed": true,
+      "actual": "V02",
+      "expected": "V02"
+    },
+    {
+      "name": "foam_strip:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-05-textures\\finished-textures\\foam_strip_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "foam_strip:sha",
+      "passed": true,
+      "actual": "970dac7f57d35732c145d6b8ef307de59b9dd707cf0cd957a5ddbe3416605e24",
+      "expected": "970dac7f57d35732c145d6b8ef307de59b9dd707cf0cd957a5ddbe3416605e24"
+    },
+    {
+      "name": "foam_strip:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "foam_strip:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "foam_strip:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "foam_strip:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "foam_strip:nonempty",
+      "passed": true,
+      "actual": [
+        0,
+        28,
+        64,
+        41
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "foam_strip:declared_bbox",
+      "passed": true,
+      "actual": [
+        0,
+        28,
+        64,
+        41
+      ],
+      "expected": [
+        0,
+        28,
+        64,
+        41
+      ]
+    },
+    {
+      "name": "foam_strip:seam_X",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "foam_strip:source_use",
+      "passed": true,
+      "actual": "AI_MATERIAL_AND_SILHOUETTE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "smoke_blob:manifest_id",
+      "passed": true,
+      "actual": "V03",
+      "expected": "V03"
+    },
+    {
+      "name": "smoke_blob:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-05-textures\\finished-textures\\smoke_blob_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "smoke_blob:sha",
+      "passed": true,
+      "actual": "31a27aec9a4cbe4edcd73dea99676c2d534802b5063256f0706409239a446a2d",
+      "expected": "31a27aec9a4cbe4edcd73dea99676c2d534802b5063256f0706409239a446a2d"
+    },
+    {
+      "name": "smoke_blob:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "smoke_blob:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "smoke_blob:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "smoke_blob:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "smoke_blob:nonempty",
+      "passed": true,
+      "actual": [
+        9,
+        11,
+        55,
+        53
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "smoke_blob:declared_bbox",
+      "passed": true,
+      "actual": [
+        9,
+        11,
+        55,
+        53
+      ],
+      "expected": [
+        9,
+        11,
+        55,
+        53
+      ]
+    },
+    {
+      "name": "smoke_blob:source_use",
+      "passed": true,
+      "actual": "AI_MATERIAL_AND_SILHOUETTE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "grass_leaf:manifest_id",
+      "passed": true,
+      "actual": "X01",
+      "expected": "X01"
+    },
+    {
+      "name": "grass_leaf:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-05-textures\\finished-textures\\grass_leaf_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "grass_leaf:sha",
+      "passed": true,
+      "actual": "1dc463fc71b8e44fc7148de106fdd05fbc0389364925eee0180c4a6e37b23888",
+      "expected": "1dc463fc71b8e44fc7148de106fdd05fbc0389364925eee0180c4a6e37b23888"
+    },
+    {
+      "name": "grass_leaf:canvas",
+      "passed": true,
+      "actual": [
+        64,
+        128
+      ],
+      "expected": [
+        64,
+        128
+      ]
+    },
+    {
+      "name": "grass_leaf:mode",
+      "passed": true,
+      "actual": "RGBA",
+      "expected": "RGBA"
+    },
+    {
+      "name": "grass_leaf:alpha",
+      "passed": true,
+      "actual": [
+        0,
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "grass_leaf:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "grass_leaf:nonempty",
+      "passed": true,
+      "actual": [
+        8,
+        10,
+        56,
+        120
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "grass_leaf:declared_bbox",
+      "passed": true,
+      "actual": [
+        8,
+        10,
+        56,
+        120
+      ],
+      "expected": [
+        8,
+        10,
+        56,
+        120
+      ]
+    },
+    {
+      "name": "grass_leaf:root_anchor",
+      "passed": true,
+      "actual": [
+        32,
+        120
+      ],
+      "expected": [
+        32,
+        120
+      ]
+    },
+    {
+      "name": "grass_leaf:leaf_margin",
+      "passed": true,
+      "actual": [
+        8,
+        10,
+        56,
+        120
+      ],
+      "expected": "transparent outer border; root boundary y120"
+    },
+    {
+      "name": "grass_leaf:source_use",
+      "passed": true,
+      "actual": "AI_MATERIAL_AND_SILHOUETTE_REFERENCE_WITH_NATIVE_PIXEL_FINISH",
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "metal_albedo:manifest_id",
+      "passed": true,
+      "actual": "X02",
+      "expected": "X02"
+    },
+    {
+      "name": "metal_albedo:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-05-textures\\finished-textures\\metal_albedo_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "metal_albedo:sha",
+      "passed": true,
+      "actual": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3",
+      "expected": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3"
+    },
+    {
+      "name": "metal_albedo:canvas",
+      "passed": true,
+      "actual": [
+        256,
+        256
+      ],
+      "expected": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "metal_albedo:mode",
+      "passed": true,
+      "actual": "RGB",
+      "expected": "RGB"
+    },
+    {
+      "name": "metal_albedo:alpha",
+      "passed": true,
+      "actual": [
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "metal_albedo:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "metal_albedo:nonempty",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "metal_albedo:declared_bbox",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "expected": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "name": "metal_albedo:seam_X",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "metal_albedo:seam_Y",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "metal_albedo:source_use",
+      "passed": true,
+      "actual": "AI_MATERIAL_PATTERN_REFERENCE_WITH_NATIVE_GRID_RECONSTRUCTION",
+      "expected": "explicit source semantics"
+    },
+    {
+      "name": "concrete_albedo:manifest_id",
+      "passed": true,
+      "actual": "X03",
+      "expected": "X03"
+    },
+    {
+      "name": "concrete_albedo:exists",
+      "passed": true,
+      "actual": "E:\\dev\\shader\\godot-shader\\godot-shader-simple\\art-source\\ember\\batch-05-textures\\finished-textures\\concrete_albedo_v001.png",
+      "expected": "actual PNG"
+    },
+    {
+      "name": "concrete_albedo:sha",
+      "passed": true,
+      "actual": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8",
+      "expected": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8"
+    },
+    {
+      "name": "concrete_albedo:canvas",
+      "passed": true,
+      "actual": [
+        256,
+        256
+      ],
+      "expected": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "concrete_albedo:mode",
+      "passed": true,
+      "actual": "RGB",
+      "expected": "RGB"
+    },
+    {
+      "name": "concrete_albedo:alpha",
+      "passed": true,
+      "actual": [
+        255
+      ],
+      "expected": "binary or explicitly registered soft smoke"
+    },
+    {
+      "name": "concrete_albedo:palette",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "concrete_albedo:nonempty",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "expected": "visible content"
+    },
+    {
+      "name": "concrete_albedo:declared_bbox",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "expected": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "name": "concrete_albedo:seam_X",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "concrete_albedo:seam_Y",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "concrete_albedo:source_use",
+      "passed": true,
+      "actual": "AI_MATERIAL_PATTERN_REFERENCE_WITH_NATIVE_GRID_RECONSTRUCTION",
+      "expected": "explicit source semantics"
+    }
+  ],
+  "assets": [
+    {
+      "id": "console_base",
+      "sha256": "8a161353bc098d37bebd6970ed3b9351a145673364735dde20ca6b2f5782edbd",
+      "file": "res://art-source/ember/batch-03-objects/finished/console_base_v001.png",
+      "canvas": [
+        96,
+        96
+      ],
+      "bbox": [
+        18,
+        22,
+        78,
+        80
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "pump_base",
+      "sha256": "9664823c9da49b6297e3aa22b6a8337f33dbdcda1b19dc289b3cc117bcb923a8",
+      "file": "res://art-source/ember/batch-03-objects/finished/pump_base_v001.png",
+      "canvas": [
+        160,
+        192
+      ],
+      "bbox": [
+        25,
+        58,
+        136,
+        176
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "ventilator_base",
+      "sha256": "74a301919676247d40b5e163bf116d011c3231cc2d2cb18949d2e950af09f187",
+      "file": "res://art-source/ember/batch-03-objects/finished/ventilator_base_v001.png",
+      "canvas": [
+        160,
+        192
+      ],
+      "bbox": [
+        40,
+        52,
+        120,
+        176
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "cooler_base",
+      "sha256": "86606ba53c17e572cc19e5f1b9336e8245ecc52fa01cc6ddc08761b13047ca2b",
+      "file": "res://art-source/ember/batch-03-objects/finished/cooler_base_v001.png",
+      "canvas": [
+        160,
+        192
+      ],
+      "bbox": [
+        29,
+        50,
+        132,
+        176
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "relay_base",
+      "sha256": "2c42f50ae8af4aa2397255112fa4255ed5f50d943919611c4419d04b06669b98",
+      "file": "res://art-source/ember/batch-03-objects/finished/relay_base_v001.png",
+      "canvas": [
+        192,
+        256
+      ],
+      "bbox": [
+        51,
+        52,
+        141,
+        240
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "wall_lamp",
+      "sha256": "aa27b42d2d09a608416bbcf770e78de947e096f7beca4797b23b38ff29932a79",
+      "file": "res://art-source/ember/batch-03-objects/finished/wall_lamp_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        21,
+        14,
+        43,
+        56
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "floor_lamp",
+      "sha256": "09b7b326be066958f0c9015cd07bdf6532bd74c7e0861d2eabacfb3b8590b464",
+      "file": "res://art-source/ember/batch-03-objects/finished/floor_lamp_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        23,
+        12,
+        41,
+        56
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "door_closed",
+      "sha256": "4aa35db2b665e5f235d019e002bf2aed4e52243c18d00cf53d41d6176ef18437",
+      "file": "res://art-source/ember/batch-03-objects/finished/door_closed_v001.png",
+      "canvas": [
+        96,
+        128
+      ],
+      "bbox": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "door_open",
+      "sha256": "adae213f892927d77a6e3a84c5f225bf17dcbe46df28bfc55366a4781a28fa7f",
+      "file": "res://art-source/ember/batch-03-objects/finished/door_open_v001.png",
+      "canvas": [
+        96,
+        128
+      ],
+      "bbox": [
+        16,
+        18,
+        80,
+        112
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "telepad_base",
+      "sha256": "8d59c3ba8ed09aa50a9232c5b3f8ffe204c9a8f41da408499d5208cd8c081512",
+      "file": "res://art-source/ember/batch-03-objects/finished/telepad_base_v001.png",
+      "canvas": [
+        128,
+        160
+      ],
+      "bbox": [
+        22,
+        78,
+        107,
+        144
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "terminal_body",
+      "sha256": "67c2c54fb0efbc1ffdb1cfa01c61ae6216f2947a74b1e29847c37be401c1b812",
+      "file": "res://art-source/ember/batch-03-objects/finished/terminal_body_v001.png",
+      "canvas": [
+        96,
+        96
+      ],
+      "bbox": [
+        24,
+        16,
+        73,
+        80
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "screen_frame",
+      "sha256": "295aea8594a53fc3d74a5d4f33a95a647239053f6e9a3d54c21d97bdb1f19343",
+      "file": "res://art-source/ember/batch-03-objects/finished/screen_frame_v001.png",
+      "canvas": [
+        96,
+        96
+      ],
+      "bbox": [
+        16,
+        16,
+        80,
+        80
+      ],
+      "visible_colors": 10,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "fuse",
+      "sha256": "71288a979fade1ac91a129b0d808a3576877d478c2e3c2292927d2f008c9951a",
+      "file": "res://art-source/ember/batch-03-objects/finished/fuse_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        13,
+        44,
+        51,
+        56
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "antenna_coil",
+      "sha256": "eb95dc28410a802402a70e43dfa7403376aebc0ad9ccc7fead3c99168d58904c",
+      "file": "res://art-source/ember/batch-03-objects/finished/antenna_coil_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        14,
+        18,
+        50,
+        56
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "split_ring",
+      "sha256": "30147d02b0140b8a1a258cb713ef88c1778e2a6c061b3715becb2984bdf335ad",
+      "file": "res://art-source/ember/batch-03-objects/finished/split_ring_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        12,
+        24,
+        52,
+        56
+      ],
+      "visible_colors": 10,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "log_cartridge",
+      "sha256": "14faf29c1959209f37c196bf47480b41fdac604f9587b7cd9c273c80cdce9b6a",
+      "file": "res://art-source/ember/batch-03-objects/finished/log_cartridge_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        21,
+        22,
+        44,
+        56
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "toolbox",
+      "sha256": "d3f8b0279f5940c88e064f1d78733ea48ecb9ef320c597953902359a8b9339bd",
+      "file": "res://art-source/ember/batch-03-objects/finished/toolbox_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        10,
+        29,
+        54,
+        56
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "helmet",
+      "sha256": "a920b3f0ac6940f7c2a53ccc04e59f8b13003486052d15d93e9e5488fe288dc6",
+      "file": "res://art-source/ember/batch-03-objects/finished/helmet_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        16,
+        22,
+        49,
+        56
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "hp",
+      "sha256": "1e4c4d8f02dfadf0249a89a75f2e0441b0fbaaf401447124bf5673f91398a817",
+      "file": "res://art-source/ember/batch-04-ui/finished/hp_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        5,
+        28,
+        27
+      ],
+      "visible_colors": 13,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "energy",
+      "sha256": "576d909c4c1068485aab26279e61ce8a5a20a32b31e900ef6c10ca0ba9a59da6",
+      "file": "res://art-source/ember/batch-04-ui/finished/energy_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        9,
+        4,
+        23,
+        28
+      ],
+      "visible_colors": 12,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "time",
+      "sha256": "60fe96b8625c9d5ffc5d18b715283cd634f0233c4c5d4d1c5db9e91d19be292e",
+      "file": "res://art-source/ember/batch-04-ui/finished/time_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        6,
+        4,
+        26,
+        28
+      ],
+      "visible_colors": 12,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "interact",
+      "sha256": "7b770b8ddb0bb385cdabd139efb7f148ecbe9cfd93ab0de61b36f947d9940776",
+      "file": "res://art-source/ember/batch-04-ui/finished/interact_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        6,
+        4,
+        28,
+        28
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "log",
+      "sha256": "b4f8460c84b54e43121940f6a1b7f13b16452528821fe1899c8a1ce37703eda9",
+      "file": "res://art-source/ember/batch-04-ui/finished/log_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "visible_colors": 12,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "pause",
+      "sha256": "575ac144805cc8cfc533060c87409e40057de2907da5cd5aace4a0ab82a23bc9",
+      "file": "res://art-source/ember/batch-04-ui/finished/pause_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        28,
+        27
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "lighting",
+      "sha256": "a9d94ba7203b8ebf21e761b1830d126be899d8df4528ae3c3058716d4685676c",
+      "file": "res://art-source/ember/batch-04-ui/finished/lighting_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        8,
+        4,
+        23,
+        28
+      ],
+      "visible_colors": 10,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "drainage",
+      "sha256": "96533facc1dbe1bd9e8c095955ad086d5693c5ab7500f5baea0ff5d38eb9a0d7",
+      "file": "res://art-source/ember/batch-04-ui/finished/drainage_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        5,
+        28,
+        26
+      ],
+      "visible_colors": 12,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "water_supply",
+      "sha256": "1f427adc180a0292a036a2da0655f7ef9d1c4092542ad4f57e2fcd6108415d8b",
+      "file": "res://art-source/ember/batch-04-ui/finished/water_supply_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "visible_colors": 13,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "ventilation",
+      "sha256": "d4ca2e1e5f6e0855e190eaa8eb86eae25df29f11ffdb5ef8cf2a2ba9a7201352",
+      "file": "res://art-source/ember/batch-04-ui/finished/ventilation_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "visible_colors": 12,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "cooling",
+      "sha256": "0e037939288b99d4fa1f510347e18d4d53474508383a7f0d8998d2d520099585",
+      "file": "res://art-source/ember/batch-04-ui/finished/cooling_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        6,
+        28,
+        26
+      ],
+      "visible_colors": 12,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "communication",
+      "sha256": "4743e61790824d784a3e8447f34fda04850de15ca00edb45d3caddc9e248210e",
+      "file": "res://art-source/ember/batch-04-ui/finished/communication_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "visible_colors": 10,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "teleport",
+      "sha256": "2784f5e7090d78d1ebe3e3de80fb73ed18bc1e6745f9a0b1ac6e333651dade3d",
+      "file": "res://art-source/ember/batch-04-ui/finished/teleport_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        28,
+        27
+      ],
+      "visible_colors": 13,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "protection",
+      "sha256": "101b87a8bc083b07d01e469fb41dab6082e3cda188b33abcaea37226f0ea9fc5",
+      "file": "res://art-source/ember/batch-04-ui/finished/protection_v001.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "bbox": [
+        5,
+        4,
+        26,
+        28
+      ],
+      "visible_colors": 11,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "panel_9slice",
+      "sha256": "d291fee85289541740b8b403535cf22d05c1f3676116fb78e3a4f50e580c79fe",
+      "file": "res://art-source/ember/batch-04-ui/finished/panel_9slice_v001.png",
+      "canvas": [
+        96,
+        96
+      ],
+      "bbox": [
+        0,
+        0,
+        96,
+        96
+      ],
+      "visible_colors": 8,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "water_calm",
+      "sha256": "5a1aeb3389a5d633ff81e43ae299057388dda8dd8b88923690012079798d3881",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/water_calm_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "visible_colors": 3,
+      "alpha_levels": [
+        255
+      ],
+      "seam_mismatches": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    {
+      "id": "water_directional",
+      "sha256": "2f3d48baa11688f3f37caa230415b32cef4aa5603e1301662ce5b3b2c32b2e38",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/water_directional_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "visible_colors": 3,
+      "alpha_levels": [
+        255
+      ],
+      "seam_mismatches": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    {
+      "id": "foam_strip",
+      "sha256": "970dac7f57d35732c145d6b8ef307de59b9dd707cf0cd957a5ddbe3416605e24",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/foam_strip_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        28,
+        64,
+        41
+      ],
+      "visible_colors": 3,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {
+        "X": 0
+      }
+    },
+    {
+      "id": "smoke_blob",
+      "sha256": "31a27aec9a4cbe4edcd73dea99676c2d534802b5063256f0706409239a446a2d",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/smoke_blob_v001.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "bbox": [
+        9,
+        11,
+        55,
+        53
+      ],
+      "visible_colors": 3,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "grass_leaf",
+      "sha256": "1dc463fc71b8e44fc7148de106fdd05fbc0389364925eee0180c4a6e37b23888",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/grass_leaf_v001.png",
+      "canvas": [
+        64,
+        128
+      ],
+      "bbox": [
+        8,
+        10,
+        56,
+        120
+      ],
+      "visible_colors": 4,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "seam_mismatches": {}
+    },
+    {
+      "id": "metal_albedo",
+      "sha256": "78fba8138af7c017153072b1a1d571347083fde755a0362e2d3b96670acc40a3",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/metal_albedo_v001.png",
+      "canvas": [
+        256,
+        256
+      ],
+      "bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "visible_colors": 2,
+      "alpha_levels": [
+        255
+      ],
+      "seam_mismatches": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    {
+      "id": "concrete_albedo",
+      "sha256": "dbc40d451cfe317852dd0363d49f277ca9169f87cbf3eaa06795a66b59a31cd8",
+      "file": "res://art-source/ember/batch-05-textures/finished-textures/concrete_albedo_v001.png",
+      "canvas": [
+        256,
+        256
+      ],
+      "bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "visible_colors": 2,
+      "alpha_levels": [
+        255
+      ],
+      "seam_mismatches": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  ],
+  "images_modified": false,
+  "visual_review": "SEPARATE_REQUIRED",
+  "validator_sha256": "8ed221d44bf07bdf193d3339ee60581be9eb0161e2086c3789a497c5c6eb52a4"
+}
