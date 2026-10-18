@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Shader" path="res://scenes/chapter08/ch08_02_shield.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="2_robot"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_shield"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/shield_color = Color(0.25, 0.75, 1, 1)
+shader_parameter/outer_radius = 0.4
+shader_parameter/ring_width = 0.06
+shader_parameter/edge_softness = 0.01
+
+[node name="Ch0802Shield" type="Node2D"]
+
+[node name="Robot" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(360, 360)
+scale = Vector2(2, 2)
+texture = ExtResource("2_robot")
+
+[node name="ShieldCanvas" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_shield")
+offset_left = 104.0
+offset_top = 104.0
+offset_right = 616.0
+offset_bottom = 616.0
+mouse_filter = 2

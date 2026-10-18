@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://df3xx6iw20ajs"]
+
+[ext_resource type="Shader" uid="uid://bdpp5l3glad6j" path="res://scenes/chapter07/ch07_03_emphasis_presets.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://ccte1j3fhlkvr" path="res://assets/ember/data/calibration/alpha_edge_test_v001.png" id="2_alpha_test"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_Selection"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/sample_radius = 1.0
+shader_parameter/core_radius = 1.0
+shader_parameter/outer_strength = 0.52999998815344
+shader_parameter/border_color = Color(1, 0.5, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_Interactable"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/sample_radius = 2.0
+shader_parameter/core_radius = 1.0
+shader_parameter/outer_strength = 0.249999994412
+shader_parameter/border_color = Color(1, 0.735357, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_Rare"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/sample_radius = 3.0
+shader_parameter/core_radius = 1.0
+shader_parameter/outer_strength = 0.5999999865888
+shader_parameter/border_color = Color(0.85430586, 0.58383155, 0.3491902, 1)
+
+[node name="Ch0703EmphasisPresets" type="Node2D" unique_id=882475603]
+
+[node name="Background" type="ColorRect" parent="." unique_id=1637635136]
+offset_right = 720.0
+offset_bottom = 720.0
+mouse_filter = 2
+color = Color(0.12, 0.14, 0.18, 1)
+
+[node name="SelectionLabel" type="Label" parent="." unique_id=2096469825]
+offset_left = 62.0
+offset_top = 50.0
+offset_right = 318.0
+offset_bottom = 82.0
+text = "选择"
+horizontal_alignment = 1
+
+[node name="SelectionSprite" type="Sprite2D" parent="." unique_id=1087129944]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_Selection")
+position = Vector2(190, 225)
+scale = Vector2(2, 2)
+texture = ExtResource("2_alpha_test")
+
+[node name="InteractableLabel" type="Label" parent="." unique_id=1441108134]
+offset_left = 402.0
+offset_top = 50.0
+offset_right = 658.0
+offset_bottom = 82.0
+text = "可交互"
+horizontal_alignment = 1
+
+[node name="InteractableSprite" type="Sprite2D" parent="." unique_id=1451056377]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_Interactable")
+position = Vector2(530, 225)
+scale = Vector2(2, 2)
+texture = ExtResource("2_alpha_test")
+
+[node name="RareLabel" type="Label" parent="." unique_id=1436184509]
+offset_left = 232.0
+offset_top = 380.0
+offset_right = 488.0
+offset_bottom = 412.0
+text = "稀有"
+horizontal_alignment = 1
+
+[node name="RareSprite" type="Sprite2D" parent="." unique_id=1768349442]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_Rare")
+position = Vector2(360, 550)
+scale = Vector2(2, 2)
+texture = ExtResource("2_alpha_test")

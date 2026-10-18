@@ -50,7 +50,7 @@ godot --editor --path .
 
 课程规划包含 **6 个 Phase、16 个 Chapter、48 个 Section**，由独立实验逐步过渡到 2D 游戏应用和小型 3D 可玩项目。
 
-截至 **2026-10-07**，C01～C06 核心学习已完成，C06 水波、局部热浪、像素化和 RGB 色散的四组实验已核对；现已新开 C07，从 Alpha 与邻域采样起步，尚无本章验收作品。学习进度与游戏接入分别登记：已学会某个效果，不代表该效果已经用于 M0。
+截至 **2026-10-14**，C01～C07 核心学习已完成（21/48 小节）；[C07 报告 v1](docs/shader-learning/chapter07-completion-report.md)、三组保存作品及人类正常运行确认已静态核对，未新增 GPU 实测。课程完成与游戏应用分别登记，C07 游戏应用全部仍 PLANNED。
 
 | 章节 | 内容 | 可打开的场景示例 |
 | --- | --- | --- |
@@ -60,9 +60,10 @@ godot --editor --path .
 | C04 | 纹理 Mask、距离圆形、Mask 组合 | [ch04_03_mask_combine.tscn](scenes/chapter04/ch04_03_mask_combine.tscn) |
 | C05 | Noise、溶解与边缘色带 | [ch05_02_noise_dissolve.tscn](scenes/chapter05/ch05_02_noise_dissolve.tscn) |
 | C06 | 水波、局部热浪、像素化与 RGB 色散 | [ch06_01_sine_distortion.tscn](scenes/chapter06/ch06_01_sine_distortion.tscn)、[ch06_03_rgb_split.tscn](scenes/chapter06/ch06_03_rgb_split.tscn) |
-| C07 · 进行中 | Alpha 邻域描边；随后学习多层假光与强调参数 | [本章交接](docs/shader-learning/chapter07-chat-prompt.md)，实验由新教师逐步准备 |
+| C07 · 已完成 | 四方向描边、两层假光与三种强调预设 | [三预设场景](scenes/chapter07/ch07_03_emphasis_presets.tscn) |
+| C08 · 进行中 | 08.1 扫描传送起步；08.2 护盾、08.3 环波未开始 | [本章交接](docs/shader-learning/chapter08-chat-prompt.md) |
 
-C07 核心结束后拟插入一次现有站点状态的描边/假发光接入，当前不开游戏 Chat，不扩玩法。C08～C16 的效果、参数驱动、后处理、灯光与 3D 内容仍按课程路线推进。查看 [完整课程](docs/shader-learning/curriculum.md)、[最新进度](docs/shader-learning/progress.md)和[游戏效果应用矩阵](docs/shader-learning/game-effect-coverage.md)。
+2026-10-14 用户明确选择直接继续 [C08 Shader 教学](docs/shader-learning/chapter08-chat-prompt.md)，从 08.1 启动；08.2/08.3 未开始，新 Chat 已创建，实验尚未验收。C07-A 后移至 C09 后的 M1 再核对接入，原游戏应用保留，不因延期取消。M1/C09、M2/C11、M3/C13 不变，商业不扩范围；实际调度见 [最新进度](docs/shader-learning/progress.md)。
 
 `shader/main.gdshader` 保留基础练习；章节实验使用各自的 Shader。`shader/demos/` 保存历史实验，`shader/player.gdshader` 和 `shader/energy_station.gdshader` 用于 M0 的角色与站点反馈。
 

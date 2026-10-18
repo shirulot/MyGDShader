@@ -99,7 +99,7 @@ assets/shader-learning/
 | 05 | 既有 D04 低频/高频 Noise；NoiseTexture2D 内建资源 | 优先复用项目生成数据，仍学习内建资源 | 05.1 先观察已有两图，再按小步连接最小 NoiseTexture2D；不重复生成 PNG |
 | 06 | 既有直线背景、低频 Noise/圆 Mask、非方形校准/色块 | 复用已登记项目生成输入 | 四实验已实际使用；本章未用机器人或 C05 内建 Noise，无新 PNG |
 | 07 | 既有 D05 Alpha 校准 Sprite；可选独立机器人帧 | 复用项目生成与已登记角色 | 07.1 优先 128×128 Alpha 图，孔洞/细线/渐变齐全，不重复生成 |
-| 08 | 环形 Gradient、能量纹理 | 程序生成 | 按 Section 分别生成 |
+| 08 | 独立机器人帧、既有 D04 Noise / D06 径向渐变与能量条纹 | 复用已登记项目资源 | 08.1 首步只用机器人；按小步连接其他输入，不重新生成；准备与实际使用分开记录 |
 | 09 | 一个统一主题的 Sprite 与背景 | 从已生成资源中组合 | 不新增大素材包 |
 | 10 | 最小交互场景 | Godot 节点搭建 | 章节 Chat 创建 |
 | 11 | 角色、HP 和攻击触发代理 | 简单几何或自制占位图 | 章节 Chat 创建 |
@@ -272,16 +272,32 @@ T01 四种地板母稿共 4/4 候选。高分辨率母稿、目标网格诊断�
 
 技术校准/Noise/Mask 来源 `GENERATED_IN_PROJECT`，沿用 technical-input catalog / 已登记生成脚本；Color Test 来源 `tools/generate_chapter01_assets.ps1`。颜色底图读完整 RGBA，Noise/Mask 读 `.r`；色散保留原点 Alpha 的代码已核对，但全不透明色块不能证明透明机器人视觉。前两节实际 Linear，像素化/色散 Nearest；按当前实验解释，不机械套用 catalog 通用备注。四实验核心完成，真实游戏水渠/热浪/终端应用仍待验收，不以素材交付替代。
 
-## C07 最小资源计划（2026-10-07）
+## C07 资源准备与实际使用（2026-10-12；原计划2026-10-07）
 
-用于 [C07 交接](chapter07-chat-prompt.md)。已核对文件、catalog 尺寸与 D05 哈希；此处登记准备齐全，不冒充课程作品/应用完成。
+用于 [C07 交接](chapter07-chat-prompt.md)。[完成报告v1](chapter07-completion-report.md)与三组作品核对通过；实际只使用D05，机器人帧未用。C07核心完成不改变真实游戏应用状态，后续 [C07-A](c07-game-checkpoint-chat-prompt.md) 新像素资源连接与站点轮廓需另验。
 
 | 输入 | 本章用途与边界 | 来源 |
 | --- | --- | --- |
-| `assets/ember/data/calibration/alpha_edge_test_v001.png`，128×128 RGBA | 07.1 首步 Alpha 读数，再邻域/孔洞/细线；有透明椭圆孔洞、孤立单像素线与 Alpha 渐变。先 1 源像素描边；边距不是任意宽光晕保证。读 `.a`，不读通用数据备注的 `.r` | D05，`GENERATED_IN_PROJECT`；`art-source/ember/technical-inputs-v001/basic/generate_basic.py`；technical-input catalog 中 `alpha_edge_test` |
-| `assets/ember/characters/robot/robot_idle_down_v001.png`，64×96 RGBA | 适合时验证真实非方形轮廓与假发光；先独立 Sprite2D 帧，不引入 AtlasUV/动画 | AI 母稿经原生整理，不是 CC0；当前 v003 组合仍复用此已登记待机帧 |
+| `assets/ember/data/calibration/alpha_edge_test_v001.png`，128×128 RGBA | 三实验实际使用：Alpha/孔洞/细线/渐变、1/2/3源像素逐层累计与两层假光；读`.a`，Nearest、Repeat Disabled。最少底部留边8源像素，当前R≤3可用，不是任意宽度或Atlas保证 | D05，`GENERATED_IN_PROJECT`；`art-source/ember/technical-inputs-v001/basic/generate_basic.py`；technical-input catalog 中 `alpha_edge_test`；SHA256 `af62f2c5a36c367f34d398a399c4b30423c4e65938e8f50d7dc45f6334c3dbe1` |
+| `assets/ember/characters/robot/robot_idle_down_v001.png`，64×96 RGBA | 原计划可选，C07未实际使用；C07-A拟最小连接到已有Player/Sprite2D，不引入AtlasUV/动画或改变碰撞规则 | AI 母稿经原生整理，不是 CC0；当前 v003 组合仍复用此已登记待机帧 |
 
 D05 1 源纹理像素为每轴 1/128 UV（0.0078125）；Sprite scale=4 且无其他变换时为 4 场景单位，实际屏幕像素另受视口/窗口缩放影响。机器人每轴单位分别 1/64、1/96 UV，不混称显示距离。可用现有节点做背景，首步不用 Noise、地板、额外美术或 GDScript；不重新生成 D05、不改旧实验/M0。07.2 保留两层假柔光与成本观察，07.3 保留三种参数化强调，不因像素风选材删标准。
+
+C07实际07.1/07.2 scale4、07.3 scale2；无新PNG、下载/生图或课程GDScript。C07-A地板入口为`assets/ember/environment/reference_floor_v006/README.md`、`floor_context_v006.tres`及其已登记依赖，128纹理格/32世界格/层scale0.25；仅计划现有场地视觉底层，不搬入铺刷沙盒/相机或扩地图。站点继续以现有设备纹理验证本次轮廓，不用机器人代替设备，真实留边/Alpha/宽度另验；最小资源接入不等于美术全包/功能/商业验收。
+
+## C08 最小资源准备（2026-10-14）
+
+用于 [C08 交接](chapter08-chat-prompt.md)。当前仅完成文件与数据台账核对，不表示 C08 已用过这些资源或完成效果。C07-A 已后移至 C09 后 M1；不将地板、美术替换或站点接入作为本章前置。
+
+| 输入 | 用途与边界 | 来源 / 核对 |
+| --- | --- | --- |
+| `assets/ember/characters/robot/robot_idle_down_v001.png`，64×96 RGBA | 08.1 首步独立 Sprite2D，默认纹理采样起点；按 UV.y 自上向下显隐。画布含透明留边，半幅不等于一半不透明面积；不引入 Atlas/动画 | 已登记 AI 母稿经原生整理，非 CC0；文件存在，沿用 C05 实际使用资源 |
+| `assets/ember/data/noise/noise_low_v001.png`，256×256 L | 08.1 后续局部不规则细节 / 08.2 能量流备选；首步不用；`.r` 是线性数据，不加 source_color | D04，GENERATED_IN_PROJECT；SHA256 `593e85cbe83f2c9e3d7a85c0af8fe9ac5bb998a30b219973be53fd98effa979a` |
+| `assets/ember/data/energy/radial_ramp_v001.png`，256×256 L | 08.2 / 08.3 备选径向输入，中心1向外0；它是径向渐变，不是现成圆环，环形权重由学习者构造 | D06，GENERATED_IN_PROJECT；SHA256 `7af92ddfe2a535e23a4182260f3d12d926658027fc2770b3518136355bfd8a3f` |
+| `assets/ember/data/energy/energy_stripe_v001.png`，256×256 L | 后续护盾流动纹理备选；周期条带，`.r` 线性数据；不代替已学程序扫描线的拆解 | D06，GENERATED_IN_PROJECT；SHA256 `1e3128dcbe9e8d6c467bd2a46260c3b598585d2f96ae4e5ae8bce532cfc2c7f2` |
+| `scenes/chapter05/ch05_01_builtin_noise.tres` | 后续可复用的 NoiseTexture2D/FastNoiseLite，256×256、seed7、frequency0.08、无分形、seamless；需要改参时另存独立资源，不改旧实验 | 已存在的 Godot 内建资源，无外部 PNG 依赖，不新增外部许可 |
+
+D04/D06 元数据见 `assets/ember/data/technical_inputs_catalog_v001.json`，生成出处沿用 `art-source/ember/technical-inputs-v001/basic/generate_basic.py`。最小练习无需地板、新素材包、GDScript 或 M0 改动；08.2/08.3 到节再建最小节点，不预写完整效果。游戏场景与美术近期有用户改动/删除，后续 M1 重新读取当时有效资源，不能照旧 C07-A 提示恢复已删除资产。教师结课再据真实场景补“实际使用”，素材准备不等于课程、应用或商业验收。
 
 ## 资源验收
 

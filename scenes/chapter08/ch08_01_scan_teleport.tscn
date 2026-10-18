@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://d2iaucgn7kger"]
+
+[ext_resource type="Shader" uid="uid://cr06gtl7yqncb" path="res://scenes/chapter08/ch08_01_scan_teleport.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="2_robot"]
+[ext_resource type="Texture2D" uid="uid://bdi0mh6ck27g" path="res://assets/ember/data/noise/noise_low_v001.png" id="3_noise"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_scan"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/edge_color = Color(1, 1, 1, 1)
+shader_parameter/scan_strength = 0.30000000447036
+shader_parameter/teleport_speed = 0.2
+shader_parameter/blue_bar = Color(0.25, 0.75, 1, 1)
+shader_parameter/noise_texture = ExtResource("3_noise")
+shader_parameter/noise_strength = 0.5
+shader_parameter/edge_width = 0.05
+shader_parameter/edge_strength = 1.0
+
+[node name="Ch0801ScanTeleport" type="Node2D" unique_id=1594100171]
+
+[node name="Robot" type="Sprite2D" parent="." unique_id=2094758378]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_scan")
+position = Vector2(360, 360)
+scale = Vector2(4, 4)
+texture = ExtResource("2_robot")
