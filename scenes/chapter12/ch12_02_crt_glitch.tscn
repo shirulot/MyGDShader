@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bm05y0b3kdq0"]
+
+[ext_resource type="Texture2D" uid="uid://ckrbladfyagjb" path="res://assets/shader-learning/common/color_test_512.png" id="1_background"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="2_robot"]
+[ext_resource type="Shader" uid="uid://dxba27ole1ef2" path="res://scenes/chapter12/ch12_02_crt_glitch.gdshader" id="3_shader"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_crt"]
+shader = ExtResource("3_shader")
+shader_parameter/scan_strength = 0.25
+shader_parameter/curvature = 0.15
+shader_parameter/glitch_offset = 0.01
+shader_parameter/rgb_offset_px = 3.0
+
+[node name="Ch1202CrtGlitch" type="Node2D" unique_id=1628272441]
+
+[node name="ColorTest" type="Sprite2D" parent="." unique_id=840944285]
+position = Vector2(360, 360)
+scale = Vector2(1.40625, 1.40625)
+texture = ExtResource("1_background")
+
+[node name="Robot" type="Sprite2D" parent="." unique_id=296629202]
+texture_filter = 1
+position = Vector2(510, 360)
+scale = Vector2(3, 3)
+texture = ExtResource("2_robot")
+
+[node name="ScreenEffect" type="ColorRect" parent="." unique_id=1202974754]
+material = SubResource("ShaderMaterial_crt")
+offset_right = 720.0
+offset_bottom = 720.0
+mouse_filter = 2

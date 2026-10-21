@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bwe5mi3i8n4u6"]
+
+[ext_resource type="Texture2D" uid="uid://ckrbladfyagjb" path="res://assets/shader-learning/common/color_test_512.png" id="1_background"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="2_robot"]
+[ext_resource type="Shader" uid="uid://d10f0vg258oac" path="res://scenes/chapter12/ch12_01_screen_window.gdshader" id="3_shader"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_window"]
+shader = ExtResource("3_shader")
+shader_parameter/zoom = 4.0
+
+[node name="Ch1201ScreenWindow" type="Node2D" unique_id=1950336807]
+
+[node name="ColorTest" type="Sprite2D" parent="." unique_id=1129956850]
+position = Vector2(360, 360)
+scale = Vector2(1.40625, 1.40625)
+texture = ExtResource("1_background")
+
+[node name="Robot" type="Sprite2D" parent="." unique_id=941463570]
+texture_filter = 1
+position = Vector2(510, 360)
+scale = Vector2(3, 3)
+texture = ExtResource("2_robot")
+
+[node name="ScreenWindow" type="ColorRect" parent="." unique_id=678984801]
+material = SubResource("ShaderMaterial_window")
+offset_left = 180.0
+offset_top = 180.0
+offset_right = 540.0
+offset_bottom = 540.0
+mouse_filter = 2

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dfbajph0k7mth"]
+
+[ext_resource type="Script" uid="uid://b4ut6upu83cse" path="res://scenes/chapter11/ch11_01_damage_proxy.gd" id="1_proxy"]
+[ext_resource type="Script" uid="uid://cch1hu0f5moee" path="res://scenes/chapter11/ch11_01_hit_vfx.gd" id="2_vfx"]
+[ext_resource type="Shader" uid="uid://ckbfnkvtws1ox" path="res://shader/main.gdshader" id="3_shader"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="4_robot"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_flash"]
+shader = ExtResource("3_shader")
+shader_parameter/gray_progress = 0.0
+shader_parameter/white_flash = 0.0
+shader_parameter/hit_color = Color(1, 1, 1, 1)
+
+[node name="Ch1101DamageFeedback" type="Node2D" unique_id=1721058565]
+
+[node name="Robot" type="Sprite2D" parent="." unique_id=978078342]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_flash")
+position = Vector2(360, 340)
+scale = Vector2(4, 4)
+texture = ExtResource("4_robot")
+
+[node name="DamageProxy" type="Node" parent="." unique_id=223585036]
+script = ExtResource("1_proxy")
+
+[node name="HitVFX" type="Node" parent="." unique_id=75411504]
+script = ExtResource("2_vfx")
+
+[node name="SimulateDamage" type="Button" parent="." unique_id=2005544666]
+offset_left = 260.0
+offset_top = 580.0
+offset_right = 460.0
+offset_bottom = 636.0
+text = "模拟受击"
+
+[connection signal="pressed" from="SimulateDamage" to="DamageProxy" method="_on_simulate_damage_pressed"]

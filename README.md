@@ -50,7 +50,9 @@ godot --editor --path .
 
 课程规划包含 **6 个 Phase、16 个 Chapter、48 个 Section**，由独立实验逐步过渡到 2D 游戏应用和小型 3D 可玩项目。
 
-截至 **2026-10-14**，C01～C07 核心学习已完成（21/48 小节）；[C07 报告 v1](docs/shader-learning/chapter07-completion-report.md)、三组保存作品及人类正常运行确认已静态核对，未新增 GPU 实测。课程完成与游戏应用分别登记，C07 游戏应用全部仍 PLANNED。
+截至 **2026-10-21**，C01～C11 核心完成（33/48 小节）；[C11报告](docs/shader-learning/chapter11-completion-report.md)及[教学记录](docs/shader-learning/chapter11-teaching-notes.md)已核对。8项PASS属于教师headless事件/参数/节点检查，非GPU验收；真实游戏应用仍PLANNED。
+
+当前调度（2026-10-21）：依用户“游戏接入不急 我说需要时再说”，Shader主线继续C12→C13→C14～C16；伴随游戏C07-A/M1/M2/M3仅在用户明确提出时启动。原知识门槛、全效果可玩应用义务与商业边界保留，应用未验收项仍为PLANNED；下方旧日期调度不作为当前启动依据。
 
 | 章节 | 内容 | 可打开的场景示例 |
 | --- | --- | --- |
@@ -61,9 +63,13 @@ godot --editor --path .
 | C05 | Noise、溶解与边缘色带 | [ch05_02_noise_dissolve.tscn](scenes/chapter05/ch05_02_noise_dissolve.tscn) |
 | C06 | 水波、局部热浪、像素化与 RGB 色散 | [ch06_01_sine_distortion.tscn](scenes/chapter06/ch06_01_sine_distortion.tscn)、[ch06_03_rgb_split.tscn](scenes/chapter06/ch06_03_rgb_split.tscn) |
 | C07 · 已完成 | 四方向描边、两层假光与三种强调预设 | [三预设场景](scenes/chapter07/ch07_03_emphasis_presets.tscn) |
-| C08 · 进行中 | 08.1 扫描传送起步；08.2 护盾、08.3 环波未开始 | [本章交接](docs/shader-learning/chapter08-chat-prompt.md) |
+| C08 · 已完成 | 扫描传送、护盾、单次冲击波独立实验 | [结课报告](docs/shader-learning/chapter08-completion-report.md) / [教学记录](docs/shader-learning/chapter08-teaching-notes.md) |
+| C09 · 已完成 | 圆形扫描窗口：拆层、参数化与自主组合 | [结课报告](docs/shader-learning/chapter09-completion-report.md) / [教学记录](docs/shader-learning/chapter09-teaching-notes.md) |
+| C10 · 已完成 | 参数写读、Tween 单次反馈与双对象材质隔离 | [结课报告](docs/shader-learning/chapter10-completion-report.md) / [教学记录](docs/shader-learning/chapter10-teaching-notes.md) |
+| C11 · 已完成 | 伤害/HP反馈、死亡溶解与双对象复用 | [实际成品](scenes/chapter11/ch11_03_reuse.tscn) / [报告](docs/shader-learning/chapter11-completion-report.md) / [教学记录](docs/shader-learning/chapter11-teaching-notes.md) |
+| C12 · 进行中 | 12.1 读屏/局部后处理；12.2/12.3 未开始 | [本章交接](docs/shader-learning/chapter12-chat-prompt.md) |
 
-2026-10-14 用户明确选择直接继续 [C08 Shader 教学](docs/shader-learning/chapter08-chat-prompt.md)，从 08.1 启动；08.2/08.3 未开始，新 Chat 已创建，实验尚未验收。C07-A 后移至 C09 后的 M1 再核对接入，原游戏应用保留，不因延期取消。M1/C09、M2/C11、M3/C13 不变，商业不扩范围；实际调度见 [最新进度](docs/shader-learning/progress.md)。
+2026-10-19：已创建 [C09 综合效果教学](docs/shader-learning/chapter09-chat-prompt.md)，从09.1拆层开始，09.2/09.3未开始；作品尚未验收。C07-A仍在C09后M1核对接入，旧游戏应用全部保留，M1/C09、M2/C11、M3/C13及商业范围不变。实际调度见[最新进度](docs/shader-learning/progress.md)。
 
 `shader/main.gdshader` 保留基础练习；章节实验使用各自的 Shader。`shader/demos/` 保存历史实验，`shader/player.gdshader` 和 `shader/energy_station.gdshader` 用于 M0 的角色与站点反馈。
 

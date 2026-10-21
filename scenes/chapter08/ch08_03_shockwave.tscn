@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://81rmpqgq2hl"]
+
+[ext_resource type="Shader" uid="uid://bta1bexxp6pc" path="res://scenes/chapter08/ch08_03_shockwave.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="2_robot"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_shockwave"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/progress = 0.999999977648
+shader_parameter/duration = 1.5
+shader_parameter/wave_color = Color(0.35, 0.85, 1, 1)
+shader_parameter/start_radius = 0.08
+shader_parameter/end_radius = 0.42
+shader_parameter/wave_width = 0.04
+shader_parameter/edge_softness = 0.008
+
+[node name="Ch0803Shockwave" type="Node2D" unique_id=1879238783]
+
+[node name="Robot" type="Sprite2D" parent="." unique_id=1456353090]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(360, 360)
+scale = Vector2(2, 2)
+texture = ExtResource("2_robot")
+
+[node name="WaveCanvas" type="ColorRect" parent="." unique_id=238715551]
+material = SubResource("ShaderMaterial_shockwave")
+offset_left = 104.0
+offset_top = 104.0
+offset_right = 616.0
+offset_bottom = 616.0
+mouse_filter = 2

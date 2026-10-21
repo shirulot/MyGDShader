@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://dhjqgct85c7ca"]
+
+[ext_resource type="Script" uid="uid://bhhpc8hyl3gm2" path="res://scenes/chapter10/ch10_03_material_ownership.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="3_robot"]
+
+[sub_resource type="Shader" id="Shader_my5h2"]
+code = "shader_type canvas_item;
+uniform float gray_progress : hint_range(0.0, 1.0, 0.05);
+uniform float white_flash : hint_range(0.0, 1.0, 0.5);
+// 受击颜色：默认白色，可在材质 Inspector 中选择。
+uniform vec3 hit_color : source_color = vec3(1.0);
+
+void vertex() {
+	// Called for every vertex the material is visible on.
+}
+
+void fragment() {
+	vec4 tempColor = texture(TEXTURE, UV);
+	vec3 outputColor = mix(tempColor.rgb,hit_color,white_flash);
+	COLOR = vec4(outputColor,tempColor.a);
+}
+
+//void light() {
+//	// Called for every pixel for every light affecting the CanvasItem.
+//	// Uncomment to replace the default light processing function with this one.
+//}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y7p12"]
+resource_local_to_scene = true
+shader = SubResource("Shader_my5h2")
+shader_parameter/gray_progress = 0.0
+shader_parameter/white_flash = 0.0
+shader_parameter/hit_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Shader" id="Shader_gbdts"]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+uniform float gray_progress : hint_range(0.0, 1.0, 0.05);
+uniform float white_flash : hint_range(0.0, 1.0, 0.5);
+// 受击颜色：默认白色，可在材质 Inspector 中选择。
+uniform vec3 hit_color : source_color = vec3(1.0);
+
+void vertex() {
+	// Called for every vertex the material is visible on.
+}
+
+void fragment() {
+	vec4 tempColor = texture(TEXTURE, UV);
+	vec3 outputColor = mix(tempColor.rgb,hit_color,white_flash);
+	COLOR = vec4(outputColor,tempColor.a);
+}
+
+//void light() {
+//	// Called for every pixel for every light affecting the CanvasItem.
+//	// Uncomment to replace the default light processing function with this one.
+//}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_shared"]
+shader = SubResource("Shader_gbdts")
+shader_parameter/gray_progress = 0.0
+shader_parameter/white_flash = 0.0
+shader_parameter/hit_color = Color(1, 1, 1, 1)
+
+[node name="Ch1003MaterialOwnership" type="Node2D" unique_id=1724004267]
+script = ExtResource("1_script")
+
+[node name="Robot" type="Sprite2D" parent="." unique_id=129276697]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_y7p12")
+position = Vector2(220, 360)
+scale = Vector2(4, 4)
+texture = ExtResource("3_robot")
+
+[node name="RobotB" type="Sprite2D" parent="." unique_id=2130997147]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_shared")
+position = Vector2(500, 360)
+scale = Vector2(4, 4)
+texture = ExtResource("3_robot")

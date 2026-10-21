@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dyv2oumeklmwk"]
+
+[ext_resource type="PackedScene" uid="uid://317xtehj1c7d" path="res://scenes/chapter11/ch11_02_health_feedback.tscn" id="1_0fbcl"]
+
+[node name="Ch1103Reuse" type="Node2D" unique_id=1661349950]
+
+[node name="ActorA" parent="." unique_id=319250096 instance=ExtResource("1_0fbcl")]
+position = Vector2(-180, 0)
+
+[node name="ActorB" parent="." unique_id=1824103373 instance=ExtResource("1_0fbcl")]
+position = Vector2(180, 0)

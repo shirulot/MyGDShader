@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://dseu5fg4ka5sr"]
+
+[ext_resource type="Texture2D" uid="uid://bdi0mh6ck27g" path="res://assets/ember/data/noise/noise_low_v001.png" id="2_fb8ea"]
+[ext_resource type="Shader" uid="uid://cvp4gefr2q04y" path="res://scenes/chapter11/ch11_02_health_feedback.gdshader" id="3_health_shader"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="5_robot"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_alive"]
+resource_local_to_scene = true
+shader = ExtResource("3_health_shader")
+shader_parameter/white_flash = 0.0
+shader_parameter/hit_color = Color(1, 1, 1, 1)
+shader_parameter/low_hp_color = Color(1, 0.35, 0.15, 1)
+shader_parameter/danger_progress = 0.0
+shader_parameter/noise = ExtResource("2_fb8ea")
+shader_parameter/dissolve_progress = 1.0
+
+[sub_resource type="GDScript" id="GDScript_xakcb"]
+script/source = "extends Node
+
+# 保留你在 11.2 写好的 HP 与受击通知；死亡规则也由代理负责。
+var max_hp := 100
+@export var hp := max_hp
+signal damage();
+signal health_changed(hp, max_hp);
+
+# TODO：声明 died 信号，并保存是否已经进入死亡状态。
+
+func _on_simulate_damage_pressed() -> void:
+	# TODO：已死亡时忽略新的伤害；首次降到 0 时只发死亡通知。
+	hp = clamp(hp - 25, 0, max_hp)
+	health_changed.emit(hp, max_hp)
+	# 下面是原来的普通受击通知，由你增加死亡 / 存活的分支。
+	damage.emit();
+"
+
+[sub_resource type="GDScript" id="GDScript_22xnp"]
+script/source = "extends Node
+
+# 存活时使用 11.2 已完成的材质；溶解材质作为独立输入由场景提供。
+@export var death_material: ShaderMaterial
+@onready var robot: Sprite2D = $\"../Robot\"
+@onready var hp_label: Label = $\"../HPLabel\"
+
+var tween: Tween = null
+
+func _ready() -> void:
+	$\"../DamageProxy\".damage.connect(_on_damaged);
+	$\"../DamageProxy\".health_changed.connect(_update_hp)
+	var proxy = $\"../DamageProxy\"
+	_update_hp(proxy.hp, proxy.max_hp)
+	# TODO：连接死亡通知，并显式初始化溶解材质的进度为 0。
+
+func _update_hp(hp: int, max_hp: int) -> void:
+	hp_label.text = \"HP：%d（满血 %d）\" % [hp, max_hp]
+	var danger_progress = clamp(1.0 - hp * 1.0 / max_hp, 0.0, 1.0);
+	robot.material.set_shader_parameter(\"danger_progress\", danger_progress);
+
+func _on_damaged() -> void:
+	# 保留你已通过的瞬时受击逻辑。
+	if tween != null && tween.is_valid():
+		tween.kill()
+	tween = create_tween()
+	robot.material.set_shader_parameter(\"white_flash\", 1.0);
+	tween.tween_property(robot.material, \"shader_parameter/white_flash\", 0.0, 0.3);
+
+func _on_died() -> void:
+	# TODO：中止并复位受击反馈，切换到 death_material，再驱动溶解。
+	# 死亡开始 / 动画完成 / 隐藏是不同的时刻，本步先做到溶解完成。
+	pass
+"
+
+[sub_resource type="Shader" id="Shader_3yfwf"]
+code = "shader_type canvas_item;
+
+// C05 已完成算法的独立副本；本节复用，不修改旧作品。
+// TEXTURE 提供机器人颜色，noise_texture 提供溶解阈值数据。
+uniform sampler2D noise_texture : filter_linear, repeat_disable;
+uniform float dissolve_progress : hint_range(0.0, 1.0, 0.01) = 0.0;
+uniform float edge_width : hint_range(0.01, 0.2, 0.01) = 0.05;
+uniform vec3 line_color = vec3(1.0, 0.55, 0.1);
+
+void fragment() {
+	vec4 origin = texture(TEXTURE, UV);
+	vec4 noise = texture(noise_texture, UV);
+	float weight = step(dissolve_progress, noise.r);
+	float smoothWeight = smoothstep(dissolve_progress, dissolve_progress + edge_width, noise.r);
+	if (dissolve_progress >= 1.0) {
+		weight = 0.0;
+	}
+	if (weight == 0.0) {
+		discard;
+	}
+	if (weight - smoothWeight > 0.0 && dissolve_progress > 0.0) {
+		vec3 last_line_color = mix(line_color, origin.rgb, smoothWeight);
+		COLOR = vec4(last_line_color, origin.a);
+	} else {
+		COLOR = origin;
+	}
+}
+"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_death"]
+seed = 7
+frequency = 0.02
+fractal_type = 0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_death"]
+width = 256
+height = 256
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_death")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_death"]
+resource_local_to_scene = true
+shader = SubResource("Shader_3yfwf")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_death")
+shader_parameter/dissolve_progress = 0.0
+shader_parameter/edge_width = 0.1
+shader_parameter/line_color = Vector3(1, 0.55, 0.1)
+
+[node name="Ch1103DeathFeedback" type="Node2D" unique_id=342743331]
+position = Vector2(360, 340)
+
+[node name="Robot" type="Sprite2D" parent="." unique_id=1857412432]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_alive")
+scale = Vector2(4, 4)
+texture = ExtResource("5_robot")
+
+[node name="DamageProxy" type="Node" parent="." unique_id=236943276]
+script = SubResource("GDScript_xakcb")
+
+[node name="HitVFX" type="Node" parent="." unique_id=530098180]
+script = SubResource("GDScript_22xnp")
+death_material = SubResource("ShaderMaterial_death")
+
+[node name="HPLabel" type="Label" parent="." unique_id=1439439790]
+offset_left = -200.0
+offset_top = -250.0
+offset_right = 200.0
+offset_bottom = -208.0
+text = "HP：待连接（满血 100）"
+horizontal_alignment = 1
+
+[node name="SimulateDamage" type="Button" parent="." unique_id=1654091852]
+offset_left = -100.0
+offset_top = 240.0
+offset_right = 100.0
+offset_bottom = 296.0
+text = "模拟受击（25）"
+
+[connection signal="pressed" from="SimulateDamage" to="DamageProxy" method="_on_simulate_damage_pressed"]

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://317xtehj1c7d"]
+
+[ext_resource type="Script" uid="uid://njrll4pmunkl" path="res://scenes/chapter11/ch11_02_health_proxy.gd" id="1_proxy"]
+[ext_resource type="Texture2D" uid="uid://bdi0mh6ck27g" path="res://assets/ember/data/noise/noise_low_v001.png" id="2_6d3ek"]
+[ext_resource type="Script" uid="uid://dctwxy730iss3" path="res://scenes/chapter11/ch11_02_health_vfx.gd" id="2_vfx"]
+[ext_resource type="Shader" uid="uid://cvp4gefr2q04y" path="res://scenes/chapter11/ch11_02_health_feedback.gdshader" id="3_shader"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="4_robot"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_health"]
+resource_local_to_scene = true
+shader = ExtResource("3_shader")
+shader_parameter/white_flash = 0.0
+shader_parameter/hit_color = Color(1, 1, 1, 1)
+shader_parameter/low_hp_color = Color(1, 0.35, 0.15, 1)
+shader_parameter/danger_progress = 0.0
+shader_parameter/noise = ExtResource("2_6d3ek")
+shader_parameter/dissolve_progress = 0.999999977648
+
+[node name="Ch1102HealthFeedback" type="Node2D" unique_id=319250096]
+
+[node name="Robot" type="Sprite2D" parent="." unique_id=112758634]
+texture_filter = 1
+texture_repeat = 1
+material = SubResource("ShaderMaterial_health")
+position = Vector2(360, 340)
+scale = Vector2(4, 4)
+texture = ExtResource("4_robot")
+
+[node name="DamageProxy" type="Node" parent="." unique_id=1127110070]
+script = ExtResource("1_proxy")
+
+[node name="HitVFX" type="Node" parent="." unique_id=567058460]
+script = ExtResource("2_vfx")
+
+[node name="HPLabel" type="Label" parent="." unique_id=1147448535]
+offset_left = 160.0
+offset_top = 90.0
+offset_right = 560.0
+offset_bottom = 132.0
+text = "HP：待连接（满血 100）"
+horizontal_alignment = 1
+
+[node name="SimulateDamage" type="Button" parent="." unique_id=257883897]
+offset_left = 260.0
+offset_top = 580.0
+offset_right = 460.0
+offset_bottom = 636.0
+text = "模拟受击（25）"
+
+[connection signal="pressed" from="SimulateDamage" to="DamageProxy" method="_on_simulate_damage_pressed"]

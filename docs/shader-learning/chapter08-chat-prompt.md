@@ -1,5 +1,7 @@
 # Chapter 08 Chat 交接：传送、护盾与能量效果
 
+> 2026-10-19：本章三节核心已由统合者核对完成，见[结课报告v1](chapter08-completion-report.md)及[当前进度](progress.md)。下文保留2026-10-14原始启动提示，后续课程已衔接[C09](chapter09-chat-prompt.md)，历史起点不代表当前掌握/应用状态。
+
 日期：2026-10-14。依据用户直接要求新建第八章 Chat；前置 C03～C06 已完成，C07 核心也已完成。C07-A 游戏接入后移至 C09 后 M1，保留原工作与全效果应用义务。当前创建状态/Chat ID 以 [progress.md](progress.md) 为准。
 
 按 [章节模板](chapter-chat-template.md) 填齐全部字段，带入 [完整长期规则](learner-preferences.md) 与 [自动回报授权](handoff-protocol.md)。第一步仅最小连线，核心 Shader 由学习者写；08.2、08.3 未开始。

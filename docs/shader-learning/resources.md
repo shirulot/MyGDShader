@@ -100,10 +100,10 @@ assets/shader-learning/
 | 06 | 既有直线背景、低频 Noise/圆 Mask、非方形校准/色块 | 复用已登记项目生成输入 | 四实验已实际使用；本章未用机器人或 C05 内建 Noise，无新 PNG |
 | 07 | 既有 D05 Alpha 校准 Sprite；可选独立机器人帧 | 复用项目生成与已登记角色 | 07.1 优先 128×128 Alpha 图，孔洞/细线/渐变齐全，不重复生成 |
 | 08 | 独立机器人帧、既有 D04 Noise / D06 径向渐变与能量条纹 | 复用已登记项目资源 | 08.1 首步只用机器人；按小步连接其他输入，不重新生成；准备与实际使用分开记录 |
-| 09 | 一个统一主题的 Sprite 与背景 | 从已生成资源中组合 | 不新增大素材包 |
-| 10 | 最小交互场景 | Godot 节点搭建 | 章节 Chat 创建 |
-| 11 | 角色、HP 和攻击触发代理 | 简单几何或自制占位图 | 章节 Chat 创建 |
-| 12 | 可滚动的综合测试场景 | 复用前章效果和背景 | 不下载新素材 |
+| 09 | 独立ColorRect程序扫描窗口 | 纯程序图案，无外部纹理 | 已实际完成一套自主作品；站点/机器人/D04/D06仅准备或观察 |
+| 10 | 机器人、C01闪白、独立脚本/材质 | 已登记资源 | 已完成参数/Tween/固定双对象隔离；无新图片 |
+| 11 | 机器人、D04 Noise、独立HP/表现/综合Shader | 已登记角色/技术输入 | 已完成事件/HP/死亡及双实例复用；C05切材质方案只预备未用 |
+| 12 | Color Test背景、机器人、独立读屏ColorRect；后续最小运动/事件代理 | 复用已登记图片/基础节点 | 12.1先单个屏幕采样窗口，CRT/Glitch和冲击到节再接，不下载新素材 |
 | 13 | 2D Normal Map、Light Occluder 轮廓 | 生成或 CC0 | 使用前核验许可 |
 | 14 | 球、立方体和 Plane | PrimitiveMesh | 无外部资源 |
 | 15 | 草片 Mesh、低模角色代理 | 自建 PrimitiveMesh；必要时 CC0 | 到章时决定 |
@@ -285,9 +285,9 @@ D05 1 源纹理像素为每轴 1/128 UV（0.0078125）；Sprite scale=4 且无�
 
 C07实际07.1/07.2 scale4、07.3 scale2；无新PNG、下载/生图或课程GDScript。C07-A地板入口为`assets/ember/environment/reference_floor_v006/README.md`、`floor_context_v006.tres`及其已登记依赖，128纹理格/32世界格/层scale0.25；仅计划现有场地视觉底层，不搬入铺刷沙盒/相机或扩地图。站点继续以现有设备纹理验证本次轮廓，不用机器人代替设备，真实留边/Alpha/宽度另验；最小资源接入不等于美术全包/功能/商业验收。
 
-## C08 最小资源准备（2026-10-14）
+## C08 资源准备与实际使用（准备2026-10-14；结课2026-10-19）
 
-用于 [C08 交接](chapter08-chat-prompt.md)。当前仅完成文件与数据台账核对，不表示 C08 已用过这些资源或完成效果。C07-A 已后移至 C09 后 M1；不将地板、美术替换或站点接入作为本章前置。
+用于[C08交接](chapter08-chat-prompt.md)。依据[结课报告v1](chapter08-completion-report.md)及最新三套场景核对：实际使用机器人单帧、D04低频Noise、D06能量条纹；径向Ramp与C05内建Noise只准备未用。下表保留原准备用途，实际情况见表后。C07-A依2026-10-21最新要求，仅用户明确提出需要时安排；本章核心完成，真实应用仍PLANNED。
 
 | 输入 | 用途与边界 | 来源 / 核对 |
 | --- | --- | --- |
@@ -297,7 +297,59 @@ C07实际07.1/07.2 scale4、07.3 scale2；无新PNG、下载/生图或课程GDSc
 | `assets/ember/data/energy/energy_stripe_v001.png`，256×256 L | 后续护盾流动纹理备选；周期条带，`.r` 线性数据；不代替已学程序扫描线的拆解 | D06，GENERATED_IN_PROJECT；SHA256 `1e3128dcbe9e8d6c467bd2a46260c3b598585d2f96ae4e5ae8bce532cfc2c7f2` |
 | `scenes/chapter05/ch05_01_builtin_noise.tres` | 后续可复用的 NoiseTexture2D/FastNoiseLite，256×256、seed7、frequency0.08、无分形、seamless；需要改参时另存独立资源，不改旧实验 | 已存在的 Godot 内建资源，无外部 PNG 依赖，不新增外部许可 |
 
-D04/D06 元数据见 `assets/ember/data/technical_inputs_catalog_v001.json`，生成出处沿用 `art-source/ember/technical-inputs-v001/basic/generate_basic.py`。最小练习无需地板、新素材包、GDScript 或 M0 改动；08.2/08.3 到节再建最小节点，不预写完整效果。游戏场景与美术近期有用户改动/删除，后续 M1 重新读取当时有效资源，不能照旧 C07-A 提示恢复已删除资产。教师结课再据真实场景补“实际使用”，素材准备不等于课程、应用或商业验收。
+D04/D06元数据见 `assets/ember/data/technical_inputs_catalog_v001.json`。历史生成出处 `art-source/ember/technical-inputs-v001/basic/generate_basic.py` 当前不存在，未恢复删除或声称现场核验源文件；PNG仍可复用，哈希与台账一致。游戏场景/美术已有用户改动，M1按当时现状核对，不照旧入口恢复旧资产。
+
+实际使用：08.1 Sprite2D采机器人RGBA（Nearest、禁重复），Noise采D04低频图的.r（Linear、禁重复），仅调边带RGB份额；08.2/08.3机器人仅作中心位置参照（scale2），512×512 ColorRect生成环形Alpha。08.2采D06能量条纹.r（Linear、Repeat Enabled），滚动数据坐标而形状固定；08.3程序环形，不采径向Ramp。无新图片、下载、素材生产或课程GDScript，未新增Godot/GPU实测；三层参数、环形和单次播放的课程验收不替代游戏事件/重开验证。
+
+## C09 资源准备与实际使用（2026-10-19）
+
+用于[C09交接](chapter09-chat-prompt.md)。原主题建议为“采能装置的充能/预警能量场”，用户随后要求游戏后置，改为独立程序扫描窗口；下列是原资源准备清单，不冒充实际采样。
+
+- 复用 `assets/ember/buildings/station/station_base_v001.png`，128×160 RGBA，AI母稿经原生像素整理、非CC0，沿用本台账首批原生对象来源；机器人单帧可作比例参照。文件当前存在，旧母稿/整理源有缺失，不把历史链接当现场核验。
+- 范围与背景用现有Godot ColorRect/基础节点；第一步观察参考并先列输入/坐标/Mask/动画/合成表，只连接当前需要的一层，不预写成品。需要测试透明孔洞等时可复用D05，而不提前加全部资源。
+- 若拆解确实需要Noise/能量流，再复用C08已用D04低频图/D06能量条纹；读取.r线性数据，来源/哈希沿上节。既有C07/C08成品只作观察与已学方法来源，不等于C09独立设计证据。
+- 实际使用已依据[C09报告](chapter09-completion-report.md)核对：`scenes/chapter09/ch09_01_scan_layers.gdshader/.tscn`，512×512 ColorRect纯程序图案，无外部纹理、图片下载或GDScript。站点/机器人只准备/观察，D04/D06未采样；HTML可调预览仅教学参照。
+- 原四颜色输入按学习者请求调整，最终主蓝风格及实际保存见报告；教师额外改grid_alpha后撤回，属执行事故，未计作学习者核心实现或自主配色。未新增Godot/GPU实测或全参数组合验收。
+
+## C10 资源准备与实际使用（准备2026-10-19；结课2026-10-20）
+
+用于[C10交接](chapter10-chat-prompt.md)。依据[结课报告v1](chapter10-completion-report.md)和最新两套场景/脚本，C10三节核心已完成；下列为原资源准备清单，实际使用见表后。依2026-10-21用户补充，伴随游戏仅在用户明确提出需要时安排，真实应用仍PLANNED。
+
+- 首步优先复用 `shader/main.gdshader` 的已学闪白输出：有效float接口 `white_flash`0～1，颜色 `hit_color`默认RGB(1,1,1)，底图Alpha保留；`gray_progress`当前闲置，不当作可用灰度驱动。这个Shader作为只读已完成输入，挂在新建独立ShaderMaterial，不改C01/M0/原材质。
+- 底图用既有 `assets/ember/characters/robot/robot_idle_down_v001.png`（64×96 RGBA，已登记AI母稿原生整理，非CC0）。首步一个Sprite2D、独立材质与最小脚本入口；关键参数定位/写入由学习者完成，不再要求重写已通过的闪白算法。教师可准备连线与空脚本，不写完整控制面板/Tween/隔离答案。
+- 10.2在相同接口上渐进加入Tween与明确的重触发/恢复策略；10.3再按需增加多个Sprite2D和材质资源做共享/隔离对照。新脚本/场景是本章主要练习，逐步创建、记录提示级别；不提前铺三套实验或修改项目InputMap/主场景。
+- 若有教学理由才选C05 `scenes/chapter05/ch05_02_noise_dissolve.gdshader` 的进度接口作额外例子；首步无需Noise、D06、地板、动画或新素材。C08自动进度覆盖旧手动接口的成品不能直接当作已可外部驱动。
+- 当前project.godot标记Godot4.7，已验收的共享脚本/材质和用户未提交作品保护。教师讲新API时核对实际安装版本/官方文档，按最小类型与节点路径说明；独立运行不新增完整游戏玩法或扩M0。
+
+实际使用核对：`ch10_01_parameter_drive.tscn/.gd`复用机器人与外部`shader/main.gdshader`；`ch10_03_material_ownership.tscn/.gd`复制学习者控制链，最终Robot和RobotB使用两份不同ShaderMaterial，且各自持有一份内嵌Shader程序。后者是用户编辑器的有效隔离方案，资源名shared不能误判为共享，local_to_scene不是同场景分离的唯一依据。两场景机器人scale4、Nearest，无新图片/外部下载/Noise/地板；C05溶解实际未用。
+
+已新增的本章GDScript/场景是练习成品。教师最终headless加载退出0但有脚本UID回退文本路径警告，未擅改用户场景；加载不等于GPU/输入/生命周期实测。按用户接受的空格/B/C范围验收，非操作键可能中止留中间值仍延期；课程完成不改变游戏应用状态。
+
+## C11 资源准备与实际使用（准备2026-10-20；结课2026-10-21）
+
+用于[C11交接](chapter11-chat-prompt.md)。依据[报告v1](chapter11-completion-report.md)与实际02综合/03复用场景，三节核心已完成。下方保留原准备清单，实际采用单Shader、反向溶解接口见表后；伴随游戏仅在用户明确提出需要时安排，真实应用仍PLANNED。
+
+- 11.1首步用 `assets/ember/characters/robot/robot_idle_down_v001.png`（64×96 RGBA，已登记AI母稿原生整理、非CC0）、已学 `shader/main.gdshader` 的white_flash/hit_color和C10已完成的Tween方法。旧文件只读，新场景/材质/脚本在scenes/chapter11/逐步建立；最小模拟受击触发者与VFX接收者即可，不做移动/碰撞/敌人系统。
+- C10两份脚本可作为已学方法来源，迁移需说明旧按键控制改为事件接收的去留，核心signal/状态/组件连接由学习者写。不得把全按键入口kill当通用事件代码；旧Demo延期留在旧作品，不自动回改。
+- 11.2再按需加HP代理/Label或Slider等节点；低血持续反馈与瞬时受击层的参数职责/优先级由学习者渐进实现。需要扩Shader时在C11新文件中完成，不改C01、C05、C10/M0或预填整套状态机。
+- 11.3到节复用 `scenes/chapter05/ch05_02_noise_dissolve.gdshader` 和其场景内NoiseTexture2D/FastNoiseLite配置作为新独立资源（当前seed7、frequency0.02、256×256、无分形），或在有教学理由时采用已登记D04。先记录实际选用，再核验；不用重新生成图片。
+- C05现有材质保存dissolve_progress约1是历史终点，C11新实验的正常初态须明确初始化为0，正edge_width沿原合同；不把旧终点直接复制为“初始消失”的故障。11.3的完成信号、隐藏/释放、第二目标复用及重置由学习者实现，不由教师预写答案。
+- 机器人、C01闪白、C05溶解入口已核存在，无地板/动画/素材包需求；旧资源生产源缺失按历史出处记录，不恢复删除。本轮统合没有新建任何练习脚本/场景或运行Godot，教师后续最小连线与实际使用另记。
+
+实际使用（2026-10-21）：最终入口`scenes/chapter11/ch11_03_reuse.tscn`实例化两份`ch11_02_health_feedback.tscn`，脚本/Shader程序共享，源材质Local To Scene使每实例材质不同。机器人v001（64×96 RGBA、Nearest、scale4）与D04 `noise_low_v001.png`（256×256 L）为实际纹理；noise读取.r且最终无source_color。D04 SHA256仍为`593e85cbe83f2c9e3d7a85c0af8fe9ac5bb998a30b219973be53fd98effa979a`，沿用GENERATED_IN_PROJECT历史出处，不恢复缺失源。
+
+**最终C11接口是dissolve_progress 1完整→0消失**，0显式Alpha0，非原准备清单C05的0→1；存活色偏→闪白RGB、死亡1秒溶解后finished隐藏Robot。C05整套材质/内嵌Noise只准备未用，残留`ch11_03_death_feedback.tscn`是未引用预备资源，不是成品。无新图片/下载/游戏功能；教师8项headless PASS验证事件/参数/节点及全新实例初态，不是GPU/同实例复活或对象池验证。
+
+## C12 最小资源准备（2026-10-21）
+
+用于[C12交接](chapter12-chat-prompt.md)。当前为开章准备，未登记实际使用/成品；继续独立Shader主线C12→C13→C14～C16，伴随游戏仅在用户明确提出需要时安排。
+
+- 底图优先复用`assets/shader-learning/common/color_test_512.png`，512×512 RGBA，GENERATED_IN_PROJECT，历史来源`tools/generate_chapter01_assets.ps1`；现有色块便于对比灰度/反色/色散，不重复生成。适合时叠既有机器人单帧，证明屏幕采样包含多个先画对象，而非只读单Sprite纹理。
+- 首步仅底图/机器人与一个后绘制的独立ColorRect/材质，720×720当前实验窗口中可用中央360×360观察区。教师准备最小连线/默认起点，屏幕采样/灰度逻辑由学习者写；不一次搭CRT、故障、冲击和转场。
+- 读屏需要区分SCREEN_UV与对象UV，并说明绘制/拷贝时点；首个2D读屏节点的自动后缓冲与多读屏节点不是任意连续链，需要实际多pass时再说明BackBufferCopy及有效拷贝区域。依据[Godot4.7读屏说明](https://docs.godotengine.org/en/4.7/tutorials/shaders/screen-reading_shaders.html)及[CanvasItem参考](https://docs.godotengine.org/en/4.7/tutorials/shaders/shader_reference/canvas_item_shader.html)，不把普通TEXTURE采样当读取屏幕。
+- 12.2复用当前背景与C03条带/C06色散/Noise方法，先稳定CRT再故障时间块/局部Mask。按实际需要再接已登记D04，不提前新增纹理或高级模糊链；各子层能关闭，视觉参数可按画面调。
+- 12.3才增加最小事件/位置代理和Tween，学习者写中心转换/进度/重播/结束；区分世界、画布/viewport与窗口物理像素，不硬套世界坐标除窗口宽高。转场保留原练习/挑战与最终具名应用要求，不拿新游戏制作代替课堂。
+- 当前没有新图片/素材包/GDScript、Godot或GPU实测；新的读屏节点与脚本由教师按当步最小准备、学习者写核心。旧M0/已验课程、用户未提交改动和素材删除继续保留。
 
 ## 资源验收
 

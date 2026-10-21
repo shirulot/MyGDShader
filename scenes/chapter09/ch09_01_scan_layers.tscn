@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cl2bx8kc5w688"]
+
+[ext_resource type="Shader" uid="uid://rsbps63qlfpw" path="res://scenes/chapter09/ch09_01_scan_layers.gdshader" id="1_shader"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_scan"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/background_color = Color(0.102745, 0.135686, 0.166667, 1)
+shader_parameter/grid_color = Color(0.2, 0.611765, 1, 1)
+shader_parameter/scan_color = Color(0.185412, 0.540353, 0.875, 1)
+shader_parameter/ring_color = Color(0.165961, 0.445137, 0.708333, 1)
+shader_parameter/radius = 0.4
+shader_parameter/grid_width = 0.004
+shader_parameter/ring_width = 0.01
+shader_parameter/ring_edge = 0.0025
+shader_parameter/scan_width = 0.1
+shader_parameter/scan_edge = 0.05
+shader_parameter/grid_alpha = 0.2
+shader_parameter/grid_count = 20.0
+shader_parameter/scan_speed = 0.4
+
+[node name="Ch0901ScanLayers" type="Node2D" unique_id=194870075]
+
+[node name="ScanCanvas" type="ColorRect" parent="." unique_id=443378621]
+texture_repeat = 1
+material = SubResource("ShaderMaterial_scan")
+offset_left = 104.0
+offset_top = 102.0
+offset_right = 616.0
+offset_bottom = 614.0
+mouse_filter = 2
