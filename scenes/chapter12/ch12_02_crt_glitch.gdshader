@@ -6,6 +6,7 @@ uniform float scan_strength : hint_range(0.0, 1.0, 0.01) = 0.25;
 uniform float curvature : hint_range(0.0, 0.5, 0.01) = 0.15;
 uniform float glitch_offset : hint_range(0.0, 0.03, 0.01) = 0.01;
 uniform float rgb_offset_px : hint_range(0.0, 3.0, 1.0) = 1.0;
+uniform float pixel_size_px : hint_range(1.0, 16.0, 1.0) = 4.0;
 
 vec2 get_new_scale_uv (vec2 scale_uv,vec2 screen_uv, float translation_time,bool is_translation){
 	vec2 new_scale_uv = scale_uv;
@@ -57,10 +58,14 @@ void fragment() {
 	float translation_type = mod(time_floor,5.0);
 	bool is_translation = SCREEN_UV.y > 0.4 && SCREEN_UV.y < 0.6 && (translation_type == 1.0 || translation_type == 0.0);
 	scale_uv = get_new_scale_uv(scale_uv,SCREEN_UV,translation_time,is_translation);
-	
+	vec2 pixel_uv = scale_uv;
+	if(is_translation && pixel_size_px > 1.0){
+		vec2 cell_size_uv = SCREEN_PIXEL_SIZE * pixel_size_px;
+		pixel_uv = (floor(scale_uv / cell_size_uv) + vec2(0.5)) * cell_size_uv ; 
+	}
 	vec4 mirro = texture(screen_texture, scale_uv);
 	vec2 pix = SCREEN_PIXEL_SIZE * rgb_offset_px;
-	vec3 mirro_rgb = get_mirro_rgb(mirro,scale_uv,pix,is_translation);
-	vec4 result_color = get_result_color(newScreenUV,scale_uv,mirro_rgb,mirro.a);
+	vec3 mirro_rgb = get_mirro_rgb(mirro,pixel_uv,pix,is_translation);
+	vec4 result_color = get_result_color(newScreenUV,pixel_uv,mirro_rgb,mirro.a);
 	COLOR = result_color;
 }

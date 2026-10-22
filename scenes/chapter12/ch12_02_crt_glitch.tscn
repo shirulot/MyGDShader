@@ -6,10 +6,11 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_crt"]
 shader = ExtResource("3_shader")
-shader_parameter/scan_strength = 0.25
-shader_parameter/curvature = 0.15
+shader_parameter/scan_strength = 0.1999999955296
+shader_parameter/curvature = 0.499999988824
 shader_parameter/glitch_offset = 0.01
-shader_parameter/rgb_offset_px = 3.0
+shader_parameter/rgb_offset_px = 1.0
+shader_parameter/pixel_size_px = 16.0
 
 [node name="Ch1202CrtGlitch" type="Node2D" unique_id=1628272441]
 
