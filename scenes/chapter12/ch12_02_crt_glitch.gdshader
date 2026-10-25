@@ -63,7 +63,7 @@ void fragment() {
 		vec2 cell_size_uv = SCREEN_PIXEL_SIZE * pixel_size_px;
 		pixel_uv = (floor(scale_uv / cell_size_uv) + vec2(0.5)) * cell_size_uv ; 
 	}
-	vec4 mirro = texture(screen_texture, scale_uv);
+	vec4 mirro = texture(screen_texture, pixel_uv);
 	vec2 pix = SCREEN_PIXEL_SIZE * rgb_offset_px;
 	vec3 mirro_rgb = get_mirro_rgb(mirro,pixel_uv,pix,is_translation);
 	vec4 result_color = get_result_color(newScreenUV,pixel_uv,mirro_rgb,mirro.a);

@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Shader" path="res://scenes/chapter13/ch13_02_shared_environment.gdshader" id="1_shader"]
+
+[sub_resource type="Gradient" id="Gradient_gray"]
+colors = PackedColorArray(0.55, 0.55, 0.55, 1, 0.55, 0.55, 0.55, 1)
+
+[sub_resource type="GradientTexture2D" id="Texture_gray"]
+gradient = SubResource("Gradient_gray")
+width = 128
+height = 128
+
+[sub_resource type="ShaderMaterial" id="Material_A"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+
+[sub_resource type="ShaderMaterial" id="Material_B"]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+
+[node name="Ch1302SharedEnvironment" type="Node2D"]
+
+[node name="SurfaceA" type="Sprite2D" parent="."]
+material = SubResource("Material_A")
+position = Vector2(200, 360)
+scale = Vector2(2, 2)
+texture = SubResource("Texture_gray")
+
+[node name="SurfaceB" type="Sprite2D" parent="."]
+material = SubResource("Material_B")
+position = Vector2(488, 360)
+scale = Vector2(2.5, 2)
+texture = SubResource("Texture_gray")
+
+[node name="SeamGuide" type="Line2D" parent="."]
+points = PackedVector2Array(328, 232, 328, 488)
+width = 2.0
+default_color = Color(0.06, 0.07, 0.09, 1)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Title" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 696.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 24
+text = "13.2 共享环境：两个对象，一份全局输入"
+
+[node name="LabelA" type="Label" parent="HUD"]
+offset_left = 72.0
+offset_top = 190.0
+offset_right = 328.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 20
+text = "A · 独立材质"
+
+[node name="LabelB" type="Label" parent="HUD"]
+offset_left = 344.0
+offset_top = 190.0
+offset_right = 648.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 20
+text = "B · 独立材质"
+
+[node name="Instructions" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 550.0
+offset_right = 696.0
+offset_bottom = 670.0
+theme_override_font_sizes/font_size = 18
+text = "本步目标：改变一份全局危险强度，让 A / B 同步染色。\n0：原灰色；1：危险红色；中间值：平滑混合。\n两个材质独立；共享 Shader 代码。"

@@ -103,8 +103,8 @@ assets/shader-learning/
 | 09 | 独立ColorRect程序扫描窗口 | 纯程序图案，无外部纹理 | 已实际完成一套自主作品；站点/机器人/D04/D06仅准备或观察 |
 | 10 | 机器人、C01闪白、独立脚本/材质 | 已登记资源 | 已完成参数/Tween/固定双对象隔离；无新图片 |
 | 11 | 机器人、D04 Noise、独立HP/表现/综合Shader | 已登记角色/技术输入 | 已完成事件/HP/死亡及双实例复用；C05切材质方案只预备未用 |
-| 12 | Color Test背景、机器人、独立读屏ColorRect；后续最小运动/事件代理 | 复用已登记图片/基础节点 | 12.1先单个屏幕采样窗口，CRT/Glitch和冲击到节再接，不下载新素材 |
-| 13 | 2D Normal Map、Light Occluder 轮廓 | 生成或 CC0 | 使用前核验许可 |
+| 12 | Color Test、机器人、三个独立读屏场景及12.3脚本 | 已登记图片/基础节点 | 三节核心完成；无新增图片，HTML预览/补全插件与课程作品分开 |
+| 13 | D07已知高度/法线、可选D09设备CanvasTexture、既有Noise/Mask与重效果 | 复用项目生成/登记资源 | 首步仅法线/平面对照与一个移动灯；到节再做环境协调和性能对照，无需下载 |
 | 14 | 球、立方体和 Plane | PrimitiveMesh | 无外部资源 |
 | 15 | 草片 Mesh、低模角色代理 | 自建 PrimitiveMesh；必要时 CC0 | 到章时决定 |
 | 16 | 水面 Plane、护盾 Sphere、简单角色 | 复用 14～15 | 不新增大素材包 |
@@ -340,9 +340,9 @@ D04/D06元数据见 `assets/ember/data/technical_inputs_catalog_v001.json`。历
 
 **最终C11接口是dissolve_progress 1完整→0消失**，0显式Alpha0，非原准备清单C05的0→1；存活色偏→闪白RGB、死亡1秒溶解后finished隐藏Robot。C05整套材质/内嵌Noise只准备未用，残留`ch11_03_death_feedback.tscn`是未引用预备资源，不是成品。无新图片/下载/游戏功能；教师8项headless PASS验证事件/参数/节点及全新实例初态，不是GPU/同实例复活或对象池验证。
 
-## C12 最小资源准备（2026-10-21）
+## C12 资源准备与实际使用（准备2026-10-21；结课2026-10-25）
 
-用于[C12交接](chapter12-chat-prompt.md)。当前为开章准备，未登记实际使用/成品；继续独立Shader主线C12→C13→C14～C16，伴随游戏仅在用户明确提出需要时安排。
+用于[C12交接](chapter12-chat-prompt.md)。已按[报告v1](chapter12-completion-report.md)与三套最新场景核对核心完成；下列保留原准备清单，实际使用见表后。继续独立Shader主线C13→C14～C16，伴随游戏仅在用户明确提出需要时安排。
 
 - 底图优先复用`assets/shader-learning/common/color_test_512.png`，512×512 RGBA，GENERATED_IN_PROJECT，历史来源`tools/generate_chapter01_assets.ps1`；现有色块便于对比灰度/反色/色散，不重复生成。适合时叠既有机器人单帧，证明屏幕采样包含多个先画对象，而非只读单Sprite纹理。
 - 首步仅底图/机器人与一个后绘制的独立ColorRect/材质，720×720当前实验窗口中可用中央360×360观察区。教师准备最小连线/默认起点，屏幕采样/灰度逻辑由学习者写；不一次搭CRT、故障、冲击和转场。
@@ -350,6 +350,27 @@ D04/D06元数据见 `assets/ember/data/technical_inputs_catalog_v001.json`。历
 - 12.2复用当前背景与C03条带/C06色散/Noise方法，先稳定CRT再故障时间块/局部Mask。按实际需要再接已登记D04，不提前新增纹理或高级模糊链；各子层能关闭，视觉参数可按画面调。
 - 12.3才增加最小事件/位置代理和Tween，学习者写中心转换/进度/重播/结束；区分世界、画布/viewport与窗口物理像素，不硬套世界坐标除窗口宽高。转场保留原练习/挑战与最终具名应用要求，不拿新游戏制作代替课堂。
 - 当前没有新图片/素材包/GDScript、Godot或GPU实测；新的读屏节点与脚本由教师按当步最小准备、学习者写核心。旧M0/已验课程、用户未提交改动和素材删除继续保留。
+
+实际使用（2026-10-25）：三个`scenes/chapter12/ch12_0{1,2,3}_*.tscn`均复用ColorTest512×512与机器人v00164×96，Nearest机器人scale3，无新增PNG、外部下载、Noise、地板或游戏接入。12.1为360×360灰度放大镜，zoom默认2/保存4；12.2为720×720固定读屏，保存扫描强度约0.2、曲率0.5、横移0.01UV、色散1像素/像素格16像素，最终中心/色散/边界统一接pixel_uv。12.3改Control满视口根/背景/ScreenEffect、忽略GUI鼠标，脚本驱动中心/半径/强度；环半宽0.015、点击12像素→0与半径0→0.6并行0.6秒，_ready初始关闭。
+
+`previews/ch12-ring-parameters.html`只是独立参数目标预览；`addons/learning_completion/`是用户另行要求的GDScript工具，project.godot有启用配置，但未核验可见编辑器启用状态。教师10项headless为参数/生命周期检查，30/33项为工具检查，均不充当GPU图像或课程零提示掌握证据。12.1/12.2固定几何、Camera/多viewport/HUD/转场与性能的未验边界见报告，不追认资源生产即应用完成。
+
+## C13 最小资源准备（2026-10-25）
+
+用于[C13交接](chapter13-chat-prompt.md)。前置C07/C11/C12核心已完成；本章为独立Shader课程，不启动伴随游戏。以下是原候选输入计划；首步准备与13.1实际使用状态见本节末，整章尚未完成。
+
+- 13.1首步复用D07 `assets/ember/data/calibration/test_normal_v001.png`（128×128 RGB，GENERATED_IN_PROJECT），`test_height_v001.png`（128×128 L）只作已知凹凸解释参照；以中性常色测试Sprite/内置纹理比较平面法线与已知法线，避免将底图明暗误认作受光变化。两图当前SHA256均与`technical_inputs_catalog_v001.json`一致：法线`806f82a0d4657034c873cbd23c30b846b36226b749fbe2c8bd4fe1c7accd726f`；高度`4c6ea997cc54bc842b3c301293f0fa9e50f3807f0f916fa864e645e29e7edc81`。历史生成源`art-source/ember/technical-inputs-v001/basic/generate_basic.py`当前缺失，不重生/恢复删除。
+- 教师只准备当前中性底图、独立材质/CanvasTexture连线、一个PointLight2D及必要CanvasModulate；灯纹理可用内置径向GradientTexture2D，不下载灯图。先解释并观察移动灯下左右/上下凸凹变化，再由学习者写法线相关Shader与局部调节；不能把CanvasTexture接线当整节Shader已掌握，保留normal编码、方向/导入排错和light()基本职责。控制灯高/能量，避免过曝掩盖法线。
+- 需要真实像素表面对照时，再用`assets/ember/data/normals/station_canvas_texture_v001.tres`及其现存station_base/normal配对；它是登记浅浮雕代理，非真实三维表面、非CC0。不强制给机器人凭空配不匹配Normal，也不改旧材质/导入/主游戏。
+- 13.2到节复用D04低频Noise、D03 Mask及两个独立对象，先实现一项全局风/流动/危险区协调，说明共享时间/空间与局部参数各自职责。全局uniform声明与注册/清理按实际Godot版本核对，必要项目级改动先说明具体范围，不污染已验实验；不提前搭完整雨水/火焰/游戏地图。
+- 13.3到节在本章独立对照中复用C07邻域采样或C12 CRT/折射，复制保留旧作品；同设备/渲染器/视口/场景负载下观察真实GPU/帧时间并比较视觉。静态采样计数和headless不冒充GPU性能；若差异低于噪声如实记录，不伪造提速。保留采样次数、过绘、分支和质量档位全部核心。
+- 已核对[Godot4.7灯光说明](https://docs.godotengine.org/en/4.7/tutorials/2d/2d_lights_and_shadows.html)、[CanvasItem参考](https://docs.godotengine.org/en/4.7/tutorials/shaders/shader_reference/canvas_item_shader.html)与[全局uniform](https://docs.godotengine.org/en/4.7/tutorials/shaders/shader_reference/shading_language.html#global-uniforms)；教师进入对应步骤时仍按本机4.7.2/实际渲染器核验。优先MCP/文件/命令行，不抢占用户鼠标键盘；运行时光照画面由学习者正常操作反馈，不能用控制桌面代替教学。
+
+2026-10-25首步实际准备：`scenes/chapter13/ch13_01_normal_light.tscn`、同名`.gd`/`.gdshader`。128×128内置常灰GradientTexture2D经Sprite缩放为384×384，中心(360,360)，边界(168,168)～(552,552)；独立CanvasTexture/ShaderMaterial、单PointLight2D（径向内置GradientTexture2D、白色、height=120px、energy=1.0）及CanvasModulate。脚本只做鼠标移灯与N切换同一表面的normal_texture，起始平面；D07法线已由preload实际引用，高度图只作解释参考，未接入渲染。两PNG尺寸/哈希重新核对一致，无新PNG/下载/导入策略或项目配置修改。Godot4.7.2 headless实例化与切换检查通过，仅支持结构/引用/尺寸和灯位不变，不证明GPU画面或学习者掌握；可见对照待学习者运行。13.2/13.3未准备。
+
+2026-10-26实际使用更新：13.1已由学习者完成法线RGB观察、NORMAL_MAP压平/翻G、自定义light及点积受光、灯纹理×材质染色×能量；教师核心复核通过，学习者已确认进入13.2。仍使用同一D07/内置常灰和径向纹理，未使用D09、未新增图片或更改导入。当前保存为暖色材质染光(1,0.65,0.30)、白色Lamp/energy=1.5/height=120px，压平0/翻转false。实际画面据用户正常运行反馈，教师静态核对与初始headless结构检查分开；非GPU性能或真实游戏应用验收。详细证据与提示级别见[教学记录](chapter13-teaching-notes.md)。
+
+13.2首步起点：`scenes/chapter13/ch13_02_shared_environment.tscn`及同名Shader。两个相邻Sprite使用内置常灰128×128纹理、两份独立材质/同一个默认采样Shader，显示尺寸256×256与320×256；headless已核对实际矩形、资源引用与材质独立，不代表效果验收。首步由学习者在Shader Globals注册`ch13_danger_level` float并实现共享染色；教师未写混合效果、未修改project.godot或新建图片。GDScript驱动、共同空间危险区边界、局部独立到后续小步再实现；D03/D04此时未实际使用，13.3未开始。
 
 ## 资源验收
 

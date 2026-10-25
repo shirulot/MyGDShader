@@ -50,9 +50,9 @@ godot --editor --path .
 
 课程规划包含 **6 个 Phase、16 个 Chapter、48 个 Section**，由独立实验逐步过渡到 2D 游戏应用和小型 3D 可玩项目。
 
-截至 **2026-10-21**，C01～C11 核心完成（33/48 小节）；[C11报告](docs/shader-learning/chapter11-completion-report.md)及[教学记录](docs/shader-learning/chapter11-teaching-notes.md)已核对。8项PASS属于教师headless事件/参数/节点检查，非GPU验收；真实游戏应用仍PLANNED。
+截至 **2026-10-25**，C01～C12 核心完成（36/48 小节）；[C12报告v1](docs/shader-learning/chapter12-completion-report.md)及[教学记录](docs/shader-learning/chapter12-teaching-notes.md)已核对。12.3的10项PASS属于教师headless参数/生命周期检查，非GPU验收；视觉反馈另据用户确认，C12真实游戏应用仍PLANNED。
 
-当前调度（2026-10-21）：依用户“游戏接入不急 我说需要时再说”，Shader主线继续C12→C13→C14～C16；伴随游戏C07-A/M1/M2/M3仅在用户明确提出时启动。原知识门槛、全效果可玩应用义务与商业边界保留，应用未验收项仍为PLANNED；下方旧日期调度不作为当前启动依据。
+当前调度（2026-10-25）：准备C13独立Normal/2D灯光实验，Shader主线继续C13→C14～C16；Chat创建与实际调度以[最新进度](docs/shader-learning/progress.md)为准。依用户“游戏接入不急 我说需要时再说”，伴随游戏C07-A/M1/M2/M3仅在用户明确提出时启动。原知识门槛、全效果可玩应用义务与商业边界保留，应用未验收项仍为PLANNED；下方旧日期调度不作为当前启动依据。
 
 | 章节 | 内容 | 可打开的场景示例 |
 | --- | --- | --- |
@@ -67,7 +67,8 @@ godot --editor --path .
 | C09 · 已完成 | 圆形扫描窗口：拆层、参数化与自主组合 | [结课报告](docs/shader-learning/chapter09-completion-report.md) / [教学记录](docs/shader-learning/chapter09-teaching-notes.md) |
 | C10 · 已完成 | 参数写读、Tween 单次反馈与双对象材质隔离 | [结课报告](docs/shader-learning/chapter10-completion-report.md) / [教学记录](docs/shader-learning/chapter10-teaching-notes.md) |
 | C11 · 已完成 | 伤害/HP反馈、死亡溶解与双对象复用 | [实际成品](scenes/chapter11/ch11_03_reuse.tscn) / [报告](docs/shader-learning/chapter11-completion-report.md) / [教学记录](docs/shader-learning/chapter11-teaching-notes.md) |
-| C12 · 进行中 | 12.1 读屏/局部后处理；12.2/12.3 未开始 | [本章交接](docs/shader-learning/chapter12-chat-prompt.md) |
+| C12 · 已完成 | 局部读屏、CRT/Glitch、点击折射环 | [12.1场景](scenes/chapter12/ch12_01_screen_window.tscn) / [12.2场景](scenes/chapter12/ch12_02_crt_glitch.tscn) / [12.3场景](scenes/chapter12/ch12_03_screen_shockwave.tscn) / [报告](docs/shader-learning/chapter12-completion-report.md) / [教学记录](docs/shader-learning/chapter12-teaching-notes.md) |
+| C13 · 进行中 | 13.1 Normal/2D灯光起步；13.2/13.3未开始 | [本章交接](docs/shader-learning/chapter13-chat-prompt.md) |
 
 2026-10-19：已创建 [C09 综合效果教学](docs/shader-learning/chapter09-chat-prompt.md)，从09.1拆层开始，09.2/09.3未开始；作品尚未验收。C07-A仍在C09后M1核对接入，旧游戏应用全部保留，M1/C09、M2/C11、M3/C13及商业范围不变。实际调度见[最新进度](docs/shader-learning/progress.md)。
 

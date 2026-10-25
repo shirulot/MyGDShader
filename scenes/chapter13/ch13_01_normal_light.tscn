@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://c7xxd2s0yk375"]
+
+[ext_resource type="Script" uid="uid://7eix6fmqid1e" path="res://scenes/chapter13/ch13_01_normal_light.gd" id="1_script"]
+[ext_resource type="Shader" uid="uid://cbsh4r7b1eh5g" path="res://scenes/chapter13/ch13_01_normal_light.gdshader" id="2_shader"]
+
+[sub_resource type="ShaderMaterial" id="Material_surface"]
+shader = ExtResource("2_shader")
+shader_parameter/normal_strength = 0.0
+shader_parameter/flip_normal_y = false
+shader_parameter/light_color = Color(1, 0.65, 0.3, 1)
+
+[sub_resource type="Gradient" id="Gradient_gray"]
+colors = PackedColorArray(0.55, 0.55, 0.55, 1, 0.55, 0.55, 0.55, 1)
+
+[sub_resource type="GradientTexture2D" id="Texture_gray"]
+gradient = SubResource("Gradient_gray")
+width = 128
+height = 128
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_surface"]
+resource_local_to_scene = true
+diffuse_texture = SubResource("Texture_gray")
+texture_filter = 1
+
+[sub_resource type="Gradient" id="Gradient_light"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="Texture_light"]
+gradient = SubResource("Gradient_light")
+width = 1024
+height = 1024
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[node name="Ch1301NormalLight" type="Node2D" unique_id=1774986315]
+script = ExtResource("1_script")
+
+[node name="Ambient" type="CanvasModulate" parent="." unique_id=522942006]
+color = Color(0.16, 0.16, 0.16, 1)
+
+[node name="Surface" type="Sprite2D" parent="." unique_id=1244435156]
+material = SubResource("Material_surface")
+position = Vector2(360, 360)
+scale = Vector2(3, 3)
+texture = SubResource("CanvasTexture_surface")
+
+[node name="Lamp" type="PointLight2D" parent="." unique_id=584048026]
+position = Vector2(240, 260)
+energy = 1.5
+texture = SubResource("Texture_light")
+height = 120.0
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1557027225]
+
+[node name="Title" type="Label" parent="HUD" unique_id=473566573]
+offset_left = 24.0
+offset_top = 18.0
+offset_right = 696.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 24
+text = "13.1 同一表面：平面 / 已知法线"
+
+[node name="Status" type="Label" parent="HUD" unique_id=98064518]
+offset_left = 24.0
+offset_top = 64.0
+offset_right = 696.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 20
+
+[node name="Instructions" type="Label" parent="HUD" unique_id=598328979]
+offset_left = 24.0
+offset_top = 590.0
+offset_right = 696.0
+offset_bottom = 700.0
+theme_override_font_sizes/font_size = 18
+text = "移动鼠标：移动白灯；固定鼠标后按 N 对照。
+灰色底图始终相同；法线不作为底色显示。
+法线开启时：上半部左凸 / 右凹，下半部为斜坡。
+灯高 120 px，能量 1.0；本步先保持不变。"

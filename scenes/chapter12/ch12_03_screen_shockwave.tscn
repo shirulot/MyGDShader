@@ -1,17 +1,30 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene format=3 uid="uid://txoddver0j41"]
 
-[ext_resource type="Texture2D" path="res://assets/shader-learning/common/color_test_512.png" id="1_background"]
-[ext_resource type="Texture2D" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="2_robot"]
-[ext_resource type="Shader" path="res://scenes/chapter12/ch12_03_screen_shockwave.gdshader" id="3_shader"]
-[ext_resource type="Script" path="res://scenes/chapter12/ch12_03_screen_shockwave.gd" id="4_script"]
+[ext_resource type="Texture2D" uid="uid://ckrbladfyagjb" path="res://assets/shader-learning/common/color_test_512.png" id="1_background"]
+[ext_resource type="Texture2D" uid="uid://coxrlmxl33sx8" path="res://assets/ember/characters/robot/robot_idle_down_v001.png" id="2_robot"]
+[ext_resource type="Shader" uid="uid://c1nr5cs5ib8cb" path="res://scenes/chapter12/ch12_03_screen_shockwave.gdshader" id="3_shader"]
+[ext_resource type="Script" uid="uid://dlxtiak1tnu2x" path="res://scenes/chapter12/ch12_03_screen_shockwave.gd" id="4_script"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_shockwave"]
 shader = ExtResource("3_shader")
+shader_parameter/center_uv = Vector2(0.5, 0.5)
+shader_parameter/ring_radius = 0.0
+shader_parameter/ring_half_width = 0.015
+shader_parameter/refraction_px = 12.0
+shader_parameter/marker_color = Color(0.25, 0.75, 1, 1)
 
-[node name="Ch1203ScreenShockwave" type="Node2D"]
+[node name="Ch1203ScreenShockwave" type="Control" unique_id=997244337]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("4_script")
 
-[node name="ColorTest" type="TextureRect" parent="."]
+[node name="ColorTest" type="TextureRect" parent="." unique_id=1664311261]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -21,14 +34,15 @@ mouse_filter = 2
 texture = ExtResource("1_background")
 expand_mode = 1
 
-[node name="Robot" type="Sprite2D" parent="."]
+[node name="Robot" type="Sprite2D" parent="." unique_id=347466863]
 texture_filter = 1
 position = Vector2(510, 360)
 scale = Vector2(3, 3)
 texture = ExtResource("2_robot")
 
-[node name="ScreenEffect" type="ColorRect" parent="."]
+[node name="ScreenEffect" type="ColorRect" parent="." unique_id=898763799]
 material = SubResource("ShaderMaterial_shockwave")
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

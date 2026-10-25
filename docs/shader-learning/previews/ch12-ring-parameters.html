@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>圆心、半径与半宽 · 交互示例</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#10171d;color:#e5edf3}
+*{box-sizing:border-box}body{margin:0;padding:28px;max-width:1120px;margin-inline:auto}
+.eyebrow{font-size:12px;color:#7f9aa9;letter-spacing:2px}h1{font-size:clamp(23px,4vw,32px);margin:8px 0 10px;font-weight:650}
+.intro{color:#aabdc9;line-height:1.7;margin:0 0 24px}.layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,1fr);gap:22px}
+.stage{border:1px solid #30424e;background:#141f28;border-radius:16px;overflow:hidden;align-self:start}
+canvas{width:100%;display:block;aspect-ratio:1;touch-action:none;cursor:crosshair;outline-offset:-4px}
+.stage-footer{padding:13px 17px;border-top:1px solid #30424e;display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#aabdc9}
+.controls{display:flex;flex-direction:column;gap:13px}.card{padding:18px;border:1px solid #30424e;border-radius:14px;background:#19232c}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.label{font-size:17px;font-weight:650}.code{font-size:12px;color:#aabdc9;font-family:ui-monospace,Consolas,monospace;margin-top:5px}
+.value{font-family:ui-monospace,Consolas,monospace;font-size:19px;font-variant-numeric:tabular-nums}.card p{font-size:14px;color:#b6c5ce;margin:12px 0 0;line-height:1.65}
+input[type=range]{width:100%;margin:18px 0 0;accent-color:#ffc775;cursor:pointer}.width input{accent-color:#65d6ff}.radius .value{color:#ffc775}.width .value{color:#65d6ff}
+.actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:3px 0}
+button{background:#233543;border:1px solid #405767;color:#e5edf3;padding:9px 14px;border-radius:8px;cursor:pointer;font:inherit;font-size:13px}button:hover{background:#30495b}
+label.toggle{font-size:13px;color:#c0cfd7;display:flex;gap:7px;align-items:center;cursor:pointer}input[type=checkbox]{accent-color:#65d6ff}
+.section{margin-top:22px;padding:20px;border-radius:14px;border:1px solid #30424e;background:#19232c}
+.section h2{font-size:16px;margin:0 0 14px}.track{position:relative;height:48px;margin-top:10px;border-bottom:1px solid #647985;background:linear-gradient(transparent 23px,#536775 23px,#536775 25px,transparent 25px)}
+.band{position:absolute;top:10px;height:29px;background:#65d6ff90;border-left:2px solid #65d6ff;border-right:2px solid #65d6ff}
+.tick{position:absolute;top:4px;bottom:1px;width:2px;background:#ffc775}.origin{position:absolute;top:18px;left:0;width:12px;height:12px;border-radius:50%;background:#fff;transform:translateX(-50%)}
+.values{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:16px;font-size:13px;color:#b6c5ce}.values b{color:#e5edf3;font-weight:500}.foot{color:#829baa;font-size:12px;line-height:1.7;margin-top:14px}
+@media(max-width:760px){body{padding:18px}.layout{grid-template-columns:1fr}.controls{gap:10px}.card{padding:16px}.value{font-size:17px}}
+</style>
+<header><div class="eyebrow">CHAPTER 12 · 圆环参数实验</div><h1>圈在哪里？多大？多粗？</h1><p class="intro">点击或拖动画布改变圆心，再分别调整两个滑块，观察蓝色圆环。</p></header>
+<main class="layout">
+  <div class="stage"><canvas id="view" tabindex="0" aria-label="圆环交互画布。点击或拖动移动圆心，也可聚焦后使用方向键。"></canvas><div class="stage-footer"><span>点击 / 拖动：移动圆心</span><span>方形视口 · 坐标 0～1</span></div></div>
+  <div class="controls">
+    <section class="card"><div class="row"><div><div class="label">① 圆心位置</div><div class="code">center_uv</div></div><output class="value" id="centerValue">(0.50, 0.50)</output></div><p>决定圈画在哪里。<br>白色小点是辅助标记，代表你点击的位置。</p></section>
+    <section class="card radius"><div class="row"><div><label class="label" for="radius">② 圆环半径</label><div class="code">ring_radius</div></div><output class="value" id="radiusValue" for="radius">0.180</output></div><input id="radius" type="range" min="0.06" max="0.38" step="0.001" value="0.18"><p>决定圈有多大。<br>黄色线段从圆心连到蓝色环带的正中。</p></section>
+    <section class="card width"><div class="row"><div><label class="label" for="halfWidth">③ 环带半宽</label><div class="code">ring_half_width</div></div><output class="value" id="widthValue" for="halfWidth">0.015</output></div><input id="halfWidth" type="range" min="0.003" max="0.06" step="0.001" value="0.015"><p>决定蓝色环带有多粗。<br>从环带正中向内、向外，各占一个半宽。<br>当前总厚度：<strong id="fullWidth">0.030</strong></p></section>
+    <div class="actions"><label class="toggle"><input id="guides" type="checkbox" checked>显示辅助标记</label><button id="reset" type="button">恢复默认</button></div>
+  </div>
+</main>
+<section class="section"><h2>把圆环的一条半径展开来看</h2><div class="track" aria-hidden="true"><div class="origin"></div><div class="band" id="band"></div><div class="tick" id="middle"></div></div><div class="values"><span>起点：<b>圆心 0</b></span><span>蓝圈内边：<b id="innerValue">0.165</b></span><span>环带正中：<b id="middleValue">0.180</b></span><span>蓝圈外边：<b id="outerValue">0.195</b></span></div></section>
+<p class="foot">数值单位是方形视口边长的比例。白点、黄线和虚线用于说明参数；取消辅助标记即可查看纯圆环效果。当前示例为静态圆环。</p>
+<script>
+// 独立教学预览：用 Canvas 描画可见目标，不修改 Godot 场景或提供 Shader 答案。
+const canvas = document.querySelector('#view');
+const ctx = canvas.getContext('2d');
+const radiusInput = document.querySelector('#radius');
+const widthInput = document.querySelector('#halfWidth');
+const guidesInput = document.querySelector('#guides');
+const center = {x:0.5, y:0.5};
+const text = (id,value) => { document.getElementById(id).textContent=value; };
+function draw() {
+  const box=canvas.getBoundingClientRect(), s=box.width, dpr=window.devicePixelRatio||1;
+  canvas.width=Math.round(s*dpr); canvas.height=Math.round(s*dpr);
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  const r=Number(radiusInput.value), hw=Number(widthInput.value), x=center.x*s, y=center.y*s;
+  ctx.fillStyle='#14212b';ctx.fillRect(0,0,s,s);
+  // 棋盘和网格在圈内、圈外均保持可见，便于辨认这是环而不是圆盘。
+  for(let iy=0;iy<10;iy++) for(let ix=0;ix<10;ix++) {
+    if((ix+iy)%2===0){ctx.fillStyle='#192a35';ctx.fillRect(ix*s/10,iy*s/10,s/10,s/10);}
+  }
+  ctx.strokeStyle='#29404e';ctx.lineWidth=1;ctx.beginPath();
+  for(let i=1;i<10;i++){ctx.moveTo(i*s/10,0);ctx.lineTo(i*s/10,s);ctx.moveTo(0,i*s/10);ctx.lineTo(s,i*s/10);}ctx.stroke();
+  ctx.beginPath();ctx.arc(x,y,r*s,0,Math.PI*2);ctx.lineWidth=2*hw*s;ctx.strokeStyle='#40bfff';ctx.stroke();
+  if(guidesInput.checked){
+    ctx.beginPath();ctx.arc(x,y,r*s,0,Math.PI*2);ctx.strokeStyle='#e5f6ffb0';ctx.lineWidth=1;ctx.setLineDash([4,5]);ctx.stroke();ctx.setLineDash([]);
+    // 让半径线指向空间较大的一侧，靠近画布边缘时仍可读。
+    const sign=center.x>0.5?-1:1, end=x+sign*r*s;
+    ctx.strokeStyle='#ffc775';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(end,y);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(end,y-6);ctx.lineTo(end,y+6);ctx.stroke();
+    ctx.font='13px system-ui';ctx.textAlign='center';
+    ctx.fillStyle='#14212be8';ctx.fillRect((x+end)/2-25,y-29,50,20);
+    ctx.fillStyle='#ffc775';ctx.fillText('半径',(x+end)/2,y-14);
+    ctx.beginPath();ctx.arc(x,y,4,0,Math.PI*2);ctx.fillStyle='#fff';ctx.fill();
+    ctx.strokeStyle='#14212b';ctx.lineWidth=2;ctx.stroke();
+  }
+  text('centerValue',`(${center.x.toFixed(2)}, ${center.y.toFixed(2)})`);
+  text('radiusValue',r.toFixed(3));text('widthValue',hw.toFixed(3));text('fullWidth',(2*hw).toFixed(3));
+  text('innerValue',(r-hw).toFixed(3));text('middleValue',r.toFixed(3));text('outerValue',(r+hw).toFixed(3));
+  const extent=0.5;document.querySelector('#band').style.left=`${(r-hw)/extent*100}%`;
+  document.querySelector('#band').style.width=`${2*hw/extent*100}%`;
+  document.querySelector('#middle').style.left=`${r/extent*100}%`;
+}
+function moveCenter(e){
+  const box=canvas.getBoundingClientRect();
+  center.x=Math.max(0,Math.min(1,(e.clientX-box.left)/box.width));
+  center.y=Math.max(0,Math.min(1,(e.clientY-box.top)/box.height));draw();
+}
+canvas.addEventListener('pointerdown',e=>{if(e.button!==0)return;canvas.setPointerCapture(e.pointerId);moveCenter(e);});
+canvas.addEventListener('pointermove',e=>{if(canvas.hasPointerCapture(e.pointerId))moveCenter(e);});
+canvas.addEventListener('pointerup',e=>{if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);});
+canvas.addEventListener('keydown',e=>{
+  const directions={ArrowLeft:[-0.01,0],ArrowRight:[0.01,0],ArrowUp:[0,-0.01],ArrowDown:[0,0.01]};
+  if(!directions[e.key])return;e.preventDefault();
+  center.x=Math.max(0,Math.min(1,center.x+directions[e.key][0]));center.y=Math.max(0,Math.min(1,center.y+directions[e.key][1]));draw();
+});
+radiusInput.addEventListener('input',draw);widthInput.addEventListener('input',draw);guidesInput.addEventListener('change',draw);
+document.querySelector('#reset').addEventListener('click',()=>{center.x=center.y=0.5;radiusInput.value='0.18';widthInput.value='0.015';guidesInput.checked=true;draw();});
+new ResizeObserver(draw).observe(canvas);draw();
+</script>
+</html>
